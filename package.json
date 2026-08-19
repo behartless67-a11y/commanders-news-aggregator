@@ -1,0 +1,23 @@
+{
+  "name": "commanders-news-aggregator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A headline river of Washington Commanders news, pulled nightly from the team's own site plus national and blog coverage.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "collect": "node src/cli.js collect",
+    "build": "node src/cli.js build",
+    "run": "node src/cli.js run",
+    "serve": "node src/cli.js serve",
+    "sources": "node src/cli.js sources",
+    "doctor": "node src/cli.js doctor",
+    "status": "node src/cli.js status"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "fast-xml-parser": "^5.0.0"
+  }
+}

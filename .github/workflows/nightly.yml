@@ -1,0 +1,45 @@
+name: Nightly build
+
+on:
+  schedule:
+    # 08:00 UTC = 3 or 4 AM America/New_York depending on DST.
+    - cron: '0 8 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run collect
+
+      - run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      # Commit the updated item state so tomorrow's run only adds genuinely
+      # new items, the same idempotency `collect` already guarantees
+      # locally. Nothing to commit on a quiet night is not an error.
+      - name: Commit updated data
+        run: |
+          git config user.name "nightly-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Nightly data update"
+          git push
+
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
