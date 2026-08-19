@@ -44,6 +44,8 @@ export async function buildSite() {
   const css = await fs.readFile(path.resolve('src/site/assets/site.css'), 'utf8');
   await fs.writeFile(path.join(DIST_DIR, 'site.css'), css, 'utf8');
 
+  await fs.copyFile(path.resolve('src/site/assets/logo.png'), path.join(DIST_DIR, 'logo.png'));
+
   log.ok(`built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s)`);
   return { count: sorted.length };
 }

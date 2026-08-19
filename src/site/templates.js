@@ -36,8 +36,8 @@ function header(activeFile, generatedAt) {
   <div class="wrap">
     <div class="header-inner">
       <div class="brand">
+        <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
         <div class="brand-text">
-          <h1>The Burgundy Wire</h1>
           <p>Every Commanders headline, one page, updated nightly.</p>
         </div>
       </div>
