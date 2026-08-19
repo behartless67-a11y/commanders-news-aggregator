@@ -69,7 +69,7 @@ img, svg{ display:block; max-width:100%; }
 .brand{ display:flex; align-items:center; gap:14px; }
 
 .brand-logo{
-  height: 44px;
+  height: clamp(64px, 9vw, 96px);
   width: auto;
 }
 
