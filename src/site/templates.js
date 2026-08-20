@@ -15,8 +15,14 @@ const PAGES = [
  * each "show more" press adds. Every item is still in the HTML — this is a
  * display state, not a fetch, so it costs nothing to expand and the page works
  * fully expanded when JavaScript is unavailable.
+ *
+ * 14 is measured, not guessed: at 1440px and up the video rail renders 1537px
+ * tall and 14 cards come to 1559px, so the two columns start level and there's no
+ * visible jump on load. Card heights move with headline and excerpt length
+ * though, so site.js measures both columns and tops the river up when a day's
+ * items run short — see balance() there. Re-measure if the rail changes.
  */
-const RIVER_INITIAL = Number(process.env.RIVER_INITIAL || 7);
+const RIVER_INITIAL = Number(process.env.RIVER_INITIAL || 14);
 const RIVER_BATCH = Number(process.env.RIVER_BATCH || 10);
 
 function itemCard(item, index) {

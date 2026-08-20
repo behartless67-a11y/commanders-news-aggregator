@@ -612,11 +612,45 @@ main.layout{
   color: var(--text-muted);
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Footer ----------
+   Team burgundy (#5A1414, the official colour) rather than the page's near-black,
+   with a gold hairline to seat it. The palette variables are re-declared inside
+   this scope because the muted greys were tuned against #14100f: --text-faint on
+   burgundy drops to about 3:1, which is under the 4.5:1 needed for body text, so
+   the footer gets lighter tones and a visible border instead of inheriting ones
+   that only work on the darker background. */
 .site-footer{
-  border-top: 1px solid var(--border-soft);
-  background: var(--bg-alt);
+  --text-faint: #cbbfba;
+  --border-soft: rgba(255,182,18,0.18);
+  border-top: 1px solid rgba(255,182,18,0.35);
+  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
   padding: 28px 0 20px;
+}
+
+/* On burgundy the team badge's own burgundy tint disappears — darken instead. */
+.site-footer .badge-team{
+  background: rgba(0,0,0,0.3);
+  border-color: rgba(255,182,18,0.45);
+}
+
+.site-footer .badge-national{
+  background: rgba(0,0,0,0.22);
+}
+
+.site-footer .source-list a,
+.site-footer .footer-col p,
+.site-footer .legend-row span.desc{
+  color: #e2d9d5;
+}
+
+.site-footer .source-list a:hover{ color: var(--gold); }
+
+.site-footer .rss-link{
+  border-color: rgba(255,182,18,0.45);
+}
+
+.site-footer .rss-link:hover{
+  background: rgba(0,0,0,0.25);
 }
 
 .footer-grid{

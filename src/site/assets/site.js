@@ -71,21 +71,73 @@
   if (river && more) {
     var batch = Number(more.getAttribute('data-batch')) || 10;
     var label = more.querySelector('.river-more-label');
+    var rail = document.querySelector('.sidebar');
+    // Mirrors the breakpoint in site.css where the rail moves beside the river.
+    // Below it the two stack, and there is no column to balance against.
+    var twoColumn = window.matchMedia('(min-width: 900px)');
 
-    more.addEventListener('click', function () {
-      var hidden = river.querySelectorAll('.card-extra:not(.is-revealed)');
-      var reveal = Math.min(batch, hidden.length);
-      for (var i = 0; i < reveal; i++) hidden[i].classList.add('is-revealed');
+    var hiddenCards = function () {
+      return river.querySelectorAll('.card-extra:not(.is-revealed)');
+    };
 
-      var left = hidden.length - reveal;
-      if (left <= 0) {
-        // Nothing else to show — drop the collapsed state entirely so the
-        // last-card border rules behave as they do on a fully expanded page.
-        river.classList.remove('is-collapsed');
-        more.remove();
+    var syncMore = function () {
+      if (!more) return;
+      var left = hiddenCards().length;
+      if (left > 0) {
+        if (label) label.textContent = 'Show ' + Math.min(batch, left) + ' more';
         return;
       }
-      if (label) label.textContent = 'Show ' + Math.min(batch, left) + ' more';
+      // Nothing else to show — drop the collapsed state entirely so the
+      // last-card border rules behave as they do on a fully expanded page.
+      river.classList.remove('is-collapsed');
+      more.remove();
+      more = null;
+    };
+
+    /**
+     * Level the two columns up.
+     *
+     * RIVER_INITIAL is a static guess made at build time, but card heights depend
+     * on how long each headline and excerpt runs, so on any given day it can fall
+     * short of the video rail and leave the river trailing off into dead space
+     * beside six videos. Measure both and reveal stories until the river is at
+     * least as tall as the rail.
+     *
+     * Reveal-only, deliberately: it never re-hides a story the reader has already
+     * been shown, so it can't undo a press of the button or fight the server's
+     * count. Erring one card tall is also the better direction — it puts the
+     * button at the foot of the rail instead of stranding a gap above it.
+     */
+    var balance = function () {
+      if (!more || !rail || !twoColumn.matches) return;
+      // Bounded: one layout read per reveal, once, and never more than the
+      // stories actually present.
+      var guard = 0;
+      while (river.offsetHeight < rail.offsetHeight && guard++ < 60) {
+        var next = hiddenCards()[0];
+        if (!next) break;
+        next.classList.add('is-revealed');
+      }
+      syncMore();
+    };
+
+    more.addEventListener('click', function () {
+      var hidden = hiddenCards();
+      var reveal = Math.min(batch, hidden.length);
+      for (var i = 0; i < reveal; i++) hidden[i].classList.add('is-revealed');
+      syncMore();
+    });
+
+    balance();
+    // Thumbnails are sized by attribute and aspect-ratio so the rail's height is
+    // stable before they load, but the webfont is not — re-check once it has
+    // settled, and after a resize reflows the cards.
+    window.addEventListener('load', balance);
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(balance, 150);
     });
   }
 

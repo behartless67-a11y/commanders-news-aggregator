@@ -154,9 +154,19 @@ every visitor who never pressed play.
 
 ### Progressive reveal and back to top
 
-The river renders **all** its items and shows the first `RIVER_INITIAL` (7), with
+The river renders **all** its items and shows the first `RIVER_INITIAL` (14), with
 a chevron button revealing `RIVER_BATCH` (10) more per press. Nothing is fetched
 on expand — it's a CSS display state, so `site.js` only flips classes.
+
+`RIVER_INITIAL`'s default is **measured, not guessed**: at 1440px and up the video
+rail renders 1537px tall and 14 cards come to 1556px, so the two columns start
+level rather than leaving the river trailing off into dead space beside six
+videos. Because card heights move with headline and excerpt length, `balance()` in
+`site.js` measures both columns on load and tops the river up when a day's items
+run short. It is deliberately **reveal-only** — it never re-hides a story, so it
+can't undo a button press, and erring one card tall puts the button at the foot of
+the rail instead of stranding a gap above it. Re-measure the default if the rail
+changes size.
 
 With JavaScript off, a collapsed river would strand items behind a dead button,
 so `renderPage` emits a `<noscript>` block that un-collapses it and hides the
@@ -225,7 +235,7 @@ All optional — see `.env.example`.
 | `MAX_WIRE_AGE_DAYS` | `14` | Tighter window for league-wide wires |
 | `MAX_ITEMS_PER_SOURCE` | `15` | Per-source cap per run |
 | `MAX_RIVER_ITEMS` | `60` | How many items the front page renders |
-| `RIVER_INITIAL` | `7` | Items visible before the reader presses "show more" |
+| `RIVER_INITIAL` | `14` | Items visible before the reader presses "show more" — sized to match the video rail's height |
 | `RIVER_BATCH` | `10` | Items revealed per press |
 | `MAX_VIDEOS` | `6` | Clips in the right-hand video rail |
 | `FETCH_DELAY_MS` | `700` | Politeness delay per host |
@@ -264,6 +274,13 @@ whole league needs the keyword filter.
 burgundy/gold, hairline-separated river running wide (`--max: 1920px`) with the
 video rail on the right. "About this page" and "Reading the badges" live in the
 footer rather than a sidebar widget, because the right column is the video rail.
+
+The footer is filled with the team's official burgundy (`#5A1414`). Note that it
+**re-declares `--text-faint` and `--border-soft` inside its own scope**: the
+palette's muted greys were tuned against the near-black page background, and on
+burgundy `--text-faint` falls to roughly 3:1 contrast — under the 4.5:1 that body
+text needs. Anything else placed on a burgundy panel needs the same treatment
+rather than inheriting tones that only work on the dark background.
 
 Contracts to preserve if you swap templates:
 
