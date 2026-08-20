@@ -55,6 +55,14 @@ export const SOCIAL_ACCOUNTS = [
     label: 'The Athletic',
     alwaysRelevant: true,
   },
+  {
+    // Practice-day video/photo threads, added 2026-08-20 — flag for review if
+    // he turns out to also cover other DC teams; treated as beat for now.
+    handle: 'Scott7news',
+    name: 'Scott Abraham',
+    label: 'Local TV',
+    alwaysRelevant: true,
+  },
 
   // --- National insiders: filtered for a Commanders signal ---
   {
@@ -85,6 +93,15 @@ export const SOCIAL_ACCOUNTS = [
     handle: 'pfrumors',
     name: 'Pro Football Rumors',
     label: 'PFR',
+    alwaysRelevant: false,
+  },
+  {
+    // Covers NFL *and* NHL for NBC Sports Washington, not Commanders-only —
+    // unlike JPFinlayNBCS, whose beat assignment there is specifically the
+    // Commanders.
+    handle: 'granthpaulsen',
+    name: 'Grant Paulsen',
+    label: '106.7 The Fan',
     alwaysRelevant: false,
   },
 ];

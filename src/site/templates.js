@@ -267,12 +267,13 @@ function weekLabel(record) {
 /** Model citation markers ("[3, 11]") are for validation, not the reading view — the consolidated source list at the end of the post carries that job instead. */
 const stripInlineCites = (text) => String(text || '').replace(/\s*\[[\d,\s]+\]/g, '');
 
+/**
+ * Threads are an internal organizing tool for citations, not a reader-facing
+ * feature — see prompt.js's STRUCTURE rule. No heading, no wrapping box; the
+ * bodies are meant to read as one continuous column when concatenated.
+ */
 function digestThread(thread) {
-  return `
-      <section class="digest-thread">
-        <h3>${escapeHtml(thread.title)}</h3>
-        <p>${escapeHtml(stripInlineCites(thread.body))}</p>
-      </section>`;
+  return `      <p class="digest-para">${escapeHtml(stripInlineCites(thread.body))}</p>`;
 }
 
 function digestAlsoNoted(alsoNoted) {

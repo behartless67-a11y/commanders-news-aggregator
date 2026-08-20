@@ -6,6 +6,7 @@ import { buildCorpus, renderCorpus } from './select.js';
 import { SYSTEM_PROMPT, SCHEMA, buildUserPrompt } from './prompt.js';
 import { generate as callModel } from './provider.js';
 import { validate } from './validate.js';
+import { sanitizeDigest } from './sanitize.js';
 
 const MODEL = process.env.DIGEST_MODEL || 'gemma4:26b';
 
@@ -63,6 +64,7 @@ export async function generateDigest({ force = false, now = new Date() } = {}) {
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const prompt = buildUserPrompt(corpusText, problems);
     result = await callModel({ model: MODEL, system: SYSTEM_PROMPT, prompt, schema: SCHEMA });
+    result.json = sanitizeDigest(result.json);
     const outcome = validate(corpus, result.json);
     problems = outcome.problems;
 
