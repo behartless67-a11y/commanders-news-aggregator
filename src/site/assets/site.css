@@ -153,8 +153,10 @@ img, svg{ display:block; max-width:100%; }
   display:inline-block;
   padding: 9px 4px;
   margin-right: 18px;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--text-muted);
   border-bottom: 2px solid transparent;
 }
@@ -992,6 +994,9 @@ main.layout{
   line-height: 1.6;
 }
 
+/* Shown only below the mobile breakpoint — see that media query. */
+.footer-about-short{ display: none; }
+
 .footer-col p:last-child{ margin-bottom: 0; }
 
 .source-list{
@@ -1082,4 +1087,26 @@ main.layout{
 
 @media (max-width: 480px){
   .card-time{ margin-left:0; width:100%; order:3; }
+}
+
+/* Below tablet, the logo-alone-on-top / nav-and-tagline-sharing-a-row layout
+   (see header() in templates.js) doesn't have room to breathe — the row
+   wrapped but stayed left/right-aligned, and .filter-tabs itself had no
+   wrap at all, so a narrow phone clipped the last tab off-screen instead of
+   wrapping it. Centering everything here is a deliberate phone-only
+   departure from the desktop layout, not a scaled-down version of it. */
+@media (max-width: 640px){
+  .header-inner{ justify-content: center; }
+  .brand-logo{ height: 100px; }
+  .header-bottom-row{ flex-direction: column; align-items: center; }
+  .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
+  /* min-width:0 is the actual fix — a flex item's default min-width:auto
+     refuses to shrink below its content's width even with width:100% set,
+     which is what was pushing this past the edge instead of wrapping. */
+  .tagline-big{ text-align: center; width: 100%; min-width: 0; }
+
+  /* Two full paragraphs of "About this page" pushed every other footer
+     column down a full screen's worth on a phone — one line covers it. */
+  .footer-about-full{ display: none; }
+  .footer-about-short{ display: block; }
 }

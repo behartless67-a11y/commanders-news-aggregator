@@ -282,8 +282,9 @@ function footer(sources, generatedAt) {
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <h3>About this page</h3>
-        <p>The Burgundy Wire pulls headlines from the Commanders' official site and national outlets into one running feed. Every link goes straight to the original publisher — we host no articles ourselves.</p>
-        <p>Rebuilt automatically every night.</p>
+        <p class="footer-about-full">The Burgundy Wire pulls headlines from the Commanders' official site and national outlets into one running feed. Every link goes straight to the original publisher — we host no articles ourselves.</p>
+        <p class="footer-about-full">Rebuilt automatically every night.</p>
+        <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt nightly.</p>
       </div>
       <div class="footer-col">
         <h3>Reading the badges</h3>
