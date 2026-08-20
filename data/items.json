@@ -310,5 +310,41 @@
     "excerpt": "Diggs has a long history of joining offenses led by young quarterbacks, and Washington is hoping he can provide the same boost for Jayden Daniels",
     "publishedAt": "2026-08-18T18:04:16.000Z",
     "collectedAt": "2026-08-19T18:27:13.284Z"
+  },
+  "hogs-haven-e96712a522bc": {
+    "id": "hogs-haven-e96712a522bc",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/433927/washington-commanders-johnny-newton-surgery-torn-pectoral-muscle-injury",
+    "title": "Commanders injury news: Johnny Newton reportedly has surgery on torn pec",
+    "excerpt": "Commanders defensive lineman Johnny Newton had surgery on a torn pectoral muscle in New York on Wednesday, according to The Athletic’s Nicki Jhabvala. \n\n He is expected to be out a significant stretch, meaning months of…",
+    "publishedAt": "2026-08-20T01:25:48.000Z",
+    "collectedAt": "2026-08-20T08:35:36.731Z"
+  },
+  "hogs-haven-732a67f0e1db": {
+    "id": "hogs-haven-732a67f0e1db",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/433911/come-join-the-nfc-east-mixtape",
+    "title": "Come join the NFC East Mixtape!",
+    "excerpt": "SB Nation’s coverage of the Commanders is expanding. \n\n Hogs Haven will remain your primary source for Commanders news, analysis and commentary, with a new place for discussing how Washington fits into the NFC East.…",
+    "publishedAt": "2026-08-19T22:00:00.000Z",
+    "collectedAt": "2026-08-20T08:35:36.731Z"
+  },
+  "pft-f79181bb80cf": {
+    "id": "pft-f79181bb80cf",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-rb-rachaad-white-tweaked-his-hamstring",
+    "title": "Commanders RB Rachaad White tweaked his hamstring",
+    "excerpt": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.\n Mike Garafolo of NFL Media reports that White tweaked his hamstring in the joint practice with the Dolphins. White worked…",
+    "publishedAt": "2026-08-20T02:34:55.000Z",
+    "collectedAt": "2026-08-20T08:35:37.038Z"
   }
 }
