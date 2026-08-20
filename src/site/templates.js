@@ -63,7 +63,7 @@ function header(activeFile, generatedAt, hasWeekly = false) {
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
         <div class="brand-text">
-          <p>Every Commanders headline, one page, updated nightly.</p>
+          <p>One page. Every headline. Hail to efficiency.</p>
         </div>
       </div>
       <div class="updated-line">
