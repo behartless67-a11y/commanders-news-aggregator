@@ -401,6 +401,19 @@ Live at **https://commanders-news-aggregator.netlify.app**.
 triggered by hand with `gh workflow run nightly.yml`. `NETLIFY_AUTH_TOKEN` is a
 repo secret and `NETLIFY_SITE_ID` / `SITE_URL` are repo variables.
 
+`.github/workflows/social.yml` runs the same build-and-deploy shape hourly,
+but only `social` → `build` — never `collect` — because the ticker's beat
+reporter updates go stale within the hour in a way article headlines don't.
+The two workflows share a `concurrency: group: site-deploy` so their once-a-day
+overlap at 08:00 UTC queues instead of racing on the same `git push`.
+
+**This repo is private**, so GitHub Actions minutes aren't unlimited (2,000
+free/month on standard runners). Hourly adds roughly 1,000-1,100 minutes/month
+on top of the nightly job's ~60 — real, but under the free tier on its own.
+If other Actions usage on this account starts crowding that budget, the fix is
+a one-line change to `social.yml`'s cron (e.g. `0 */2 * * *` for every 2 hours
+instead of every 1).
+
 **The weekly digest is not part of this cron, on purpose.** GitHub's hosted
 runners have no GPU and no Ollama, and — separately — auto-publish was a
 deliberate non-goal (see Weekly AI digest, above). Run `npm run digest` and

@@ -1,0 +1,56 @@
+name: Social ticker refresh
+
+# Separate from nightly.yml on purpose: articles are fine on a nightly
+# cadence, but the ticker carries beat reporters' injury/practice updates that
+# go stale within the hour, not overnight. This workflow only runs `social` +
+# `build` — never `collect` — so it never re-fetches the news feeds.
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+# Shares a group with nightly.yml: the hourly `0 * * * *` tick and the nightly
+# `0 8 * * *` tick land on the same minute once a day, and both workflows
+# commit data/ and push. Without this they'd race on that push.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # Third-party mirror — a bad hour must not fail the run, the ticker just
+      # renders from whatever's already in data/social.json.
+      - run: npm run social
+        continue-on-error: true
+
+      - run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "social-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Hourly social update"
+          git push
+
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}

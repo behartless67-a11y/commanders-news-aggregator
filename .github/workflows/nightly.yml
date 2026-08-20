@@ -6,6 +6,13 @@ on:
     - cron: '0 8 * * *'
   workflow_dispatch: {}
 
+# Shared with social.yml: its hourly `0 * * * *` tick lands on this same
+# minute once a day, and both workflows commit data/ and push. Without this
+# they'd race on that push.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
