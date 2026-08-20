@@ -307,6 +307,11 @@ function collectCites(digest) {
   return order;
 }
 
+/**
+ * Collapsed by default behind one toggle — a flat visible list of 30-40
+ * sources dominated the bottom of the page more than the article itself.
+ * Native <details>, so it works with no JavaScript.
+ */
 function digestSourceFooter(cites, byIndex) {
   const items = cites
     .map((n) => byIndex.get(n))
@@ -320,9 +325,11 @@ function digestSourceFooter(cites, byIndex) {
   if (!items) return '';
   return `
       <section class="digest-source-footer">
-        <h3 class="digest-source-heading">Sources</h3>
-        <p class="digest-source-note">This recap was written from the reporting below. Follow any link for the original story.</p>
-        <ol class="digest-source-list">${items}</ol>
+        <details class="digest-source-toggle">
+          <summary>Sources (${cites.length})</summary>
+          <p class="digest-source-note">This recap was written from the reporting below. Follow any link for the original story.</p>
+          <ol class="digest-source-list">${items}</ol>
+        </details>
       </section>`;
 }
 

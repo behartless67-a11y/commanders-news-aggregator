@@ -638,19 +638,21 @@ main.layout{
   max-width: 76ch;
 }
 
-.digest-source-heading{
+.digest-source-toggle summary{
+  cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--text-faint);
   font-weight: 700;
-  margin: 0 0 6px;
 }
+
+.digest-source-toggle summary:hover{ color: var(--gold); }
 
 .digest-source-note{
   font-size: 12.5px;
   color: var(--text-faint);
-  margin: 0 0 14px;
+  margin: 14px 0 14px;
 }
 
 .digest-source-list{
