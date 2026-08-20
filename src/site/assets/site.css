@@ -53,6 +53,36 @@ img, svg{ display:block; max-width:100%; }
   padding: 0 24px;
 }
 
+/* ---------- Hero (header + ticker backdrop) ----------
+   Photo: "Atlanta Falcons at Washington Commanders 2024 16.jpg" by Dissident93,
+   Wikimedia Commons, CC0 (public domain — no attribution required, credited
+   here anyway). Hotlinked from Wikimedia's own CDN, never copied to our own
+   origin — the same policy the video rail follows for thumbnails, and for the
+   same reason: serving it from the source's CDN is defensible, copying it to
+   our origin is not. .site-header and .ticker keep their own burgundy washes,
+   which layer on top of the dark scrim below for a bit of color instead of
+   flat black. */
+.hero{
+  position: relative;
+  background:
+    url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg')
+    center 35% / cover no-repeat,
+    var(--bg);
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,8,7,0.72) 0%, rgba(10,8,7,0.82) 60%, var(--bg) 100%);
+  pointer-events: none;
+}
+
+.hero > *{
+  position: relative;
+  z-index: 1;
+}
+
 /* ---------- Header ---------- */
 .site-header{
   border-bottom: 1px solid var(--border-soft);
@@ -741,6 +771,17 @@ main.layout{
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   padding: 14px 18px;
+}
+
+/* Team burgundy, matching the footer treatment — same reason: --text-faint
+   and --border-soft are tuned against the near-black page background and
+   fall under AA contrast on burgundy, so both get re-declared in this scope
+   rather than inherited. See .site-footer for the same pattern. */
+.widget-videos{
+  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
+  border-color: rgba(255,182,18,0.35);
+  --text-faint: #cbbfba;
+  --border-soft: rgba(255,182,18,0.18);
 }
 
 .widget h2{

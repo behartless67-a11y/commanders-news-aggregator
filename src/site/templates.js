@@ -354,7 +354,9 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 </head>
 <body>
 
+<div class="hero">
 ${header('weekly.html', generatedAt, true)}
+</div>
 
 <main class="layout layout-wide">
   <article class="digest-post">
@@ -405,7 +407,9 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 </head>
 <body>
 
+<div class="hero">
 ${header('weekly.html', generatedAt, true)}
+</div>
 
 <main class="layout layout-wide">
   <h1 class="weekly-index-heading">Weekly Recap</h1>
@@ -477,9 +481,11 @@ export function renderPage(
 </head>
 <body>
 
+<div class="hero">
 ${header(activeFile, generatedAt, hasWeekly)}
 
 ${ticker(socialPosts)}
+</div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
