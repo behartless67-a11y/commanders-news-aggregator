@@ -35,6 +35,12 @@ jobs:
       - run: npm run social
         continue-on-error: true
 
+      # Powers the player-name → commanders.com profile links in the digest
+      # and river excerpts. A bad night here degrades to no links, same as a
+      # bad social night degrades to no ticker — never worth failing the build.
+      - run: npm run roster
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}

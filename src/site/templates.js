@@ -1,5 +1,6 @@
 import { escapeHtml } from '../lib/text.js';
 import { relativeLabel, formatDateTime, formatDate, rfc822 } from '../lib/dates.js';
+import { linkPlayers } from '../lib/roster-links.js';
 
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national' };
@@ -25,7 +26,15 @@ const PAGES = [
 const RIVER_INITIAL = Number(process.env.RIVER_INITIAL || 14);
 const RIVER_BATCH = Number(process.env.RIVER_BATCH || 10);
 
-function itemCard(item, index) {
+/**
+ * `index` here is the card's position in the river (for the RIVER_INITIAL
+ * cutoff) — unrelated to `rosterIndex`, the player name → profile-link
+ * lookup, named differently on purpose so the two are never confused at a
+ * glance. The excerpt is the only part of a card eligible for player links —
+ * the headline is already one whole `<a>` to the original article, and HTML
+ * can't nest a second `<a>` inside it.
+ */
+function itemCard(item, index, rosterIndex) {
   const badgeClass = CATEGORY_BADGE_CLASS[item.category] || 'badge-national';
   const badgeLabel = CATEGORY_LABEL[item.category] || item.category;
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
@@ -38,7 +47,7 @@ function itemCard(item, index) {
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
       <h3 class="card-headline"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
-      ${item.excerpt ? `<p class="card-excerpt">${escapeHtml(item.excerpt)}</p>` : ''}
+      ${item.excerpt ? `<p class="card-excerpt">${linkPlayers(item.excerpt, rosterIndex)}</p>` : ''}
     </article>`;
 }
 
@@ -272,13 +281,13 @@ const stripInlineCites = (text) => String(text || '').replace(/\s*\[[\d,\s]+\]/g
  * feature — see prompt.js's STRUCTURE rule. No heading, no wrapping box; the
  * bodies are meant to read as one continuous column when concatenated.
  */
-function digestThread(thread) {
-  return `      <p class="digest-para">${escapeHtml(stripInlineCites(thread.body))}</p>`;
+function digestThread(thread, rosterIndex) {
+  return `      <p class="digest-para">${linkPlayers(stripInlineCites(thread.body), rosterIndex)}</p>`;
 }
 
-function digestAlsoNoted(alsoNoted) {
+function digestAlsoNoted(alsoNoted, rosterIndex) {
   if (!alsoNoted?.length) return '';
-  const items = alsoNoted.map((a) => `<li>${escapeHtml(stripInlineCites(a.text))}</li>`).join('');
+  const items = alsoNoted.map((a) => `<li>${linkPlayers(stripInlineCites(a.text), rosterIndex)}</li>`).join('');
   return `
       <section class="digest-thread digest-also">
         <h3>Also noted</h3>
@@ -334,11 +343,11 @@ function digestSourceFooter(cites, byIndex) {
       </section>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null }) {
   const byIndex = new Map(record.corpus.map((e) => [e.n, e]));
   const { digest } = record;
-  const threads = digest.threads.map((t) => digestThread(t)).join('\n');
-  const also = digestAlsoNoted(digest.alsoNoted);
+  const threads = digest.threads.map((t) => digestThread(t, rosterIndex)).join('\n');
+  const also = digestAlsoNoted(digest.alsoNoted, rosterIndex);
   const sourceFooter = digestSourceFooter(collectCites(digest), byIndex);
 
   return `<!doctype html>
@@ -363,7 +372,7 @@ ${header('weekly.html', generatedAt, true)}
   <article class="digest-post">
     <h1>${escapeHtml(digest.headline)}</h1>
     <p class="digest-week">Week of ${escapeHtml(weekLabel(record))} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
-    <p class="digest-lede">${escapeHtml(stripInlineCites(digest.lede))}</p>
+    <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
 ${threads}
 ${also}
 ${sourceFooter}
@@ -443,9 +452,12 @@ export function renderPage(
     socialPosts = [],
     videos = [],
     hasWeekly = false,
+    rosterIndex = null,
   },
 ) {
-  const cards = items.map(itemCard).join('\n');
+  // Not items.map(itemCard) — Array.map's third argument is the array
+  // itself, and itemCard's third parameter is rosterIndex, not that array.
+  const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
   const rail = videoRail(videos);
 
   // Only collapse when there is actually something to hide — the National

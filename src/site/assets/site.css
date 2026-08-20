@@ -650,6 +650,23 @@ main.layout{
   margin: 0 0 18px;
 }
 
+/* Player-name links (see linkPlayers() in src/lib/roster-links.js) inherit
+   plain text color by default — without this they're indistinguishable from
+   the surrounding prose, since the base `a{ color: inherit }` rule gives no
+   visual sign a name is clickable until hovered. */
+.digest-para a,
+.card-excerpt a{
+  text-decoration: underline;
+  text-decoration-color: rgba(255,182,18,0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.digest-para a:hover,
+.card-excerpt a:hover{
+  text-decoration-color: var(--gold);
+}
+
 /* Still used for the "Also noted" postscript, which is deliberately set off
    from the column above it with a divider, unlike the flowing paragraphs. */
 .digest-thread{

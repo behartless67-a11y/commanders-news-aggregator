@@ -3,6 +3,9 @@ import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
+import { loadRosterCache } from '../lib/roster.js';
+import { buildRosterIndex } from '../lib/roster-links.js';
+import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, PAGES } from './templates.js';
 
@@ -45,6 +48,11 @@ export async function buildSite() {
   const videos = allSorted.filter((item) => VIDEO_SOURCE_IDS.has(item.sourceId)).slice(0, MAX_VIDEOS);
   const generatedAt = new Date().toISOString();
 
+  // Null (not an empty index) when the cache is empty, so linkPlayers()
+  // degrades to plain escaped text instead of matching against nothing.
+  const rosterPlayers = await loadRosterCache();
+  const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
+
   // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
   // one that failed review, must never appear on the live site. See
   // src/digest/ for the generation and review gate that sets this field.
@@ -67,12 +75,13 @@ export async function buildSite() {
       socialPosts,
       videos,
       hasWeekly,
+      rosterIndex,
     });
     await fs.writeFile(path.join(DIST_DIR, page.file), html, 'utf8');
   }
 
   if (hasWeekly) {
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex };
     await fs.writeFile(path.join(DIST_DIR, 'weekly.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `weekly-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');

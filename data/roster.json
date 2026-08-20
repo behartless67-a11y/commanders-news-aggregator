@@ -1,0 +1,566 @@
+[
+  {
+    "slug": "nick-allegretti",
+    "name": "Nick Allegretti",
+    "jersey": "67",
+    "position": "G"
+  },
+  {
+    "slug": "kaytron-allen",
+    "name": "Kaytron Allen",
+    "jersey": "31",
+    "position": "RB"
+  },
+  {
+    "slug": "trey-amos",
+    "name": "Trey Amos",
+    "jersey": "23",
+    "position": "CB"
+  },
+  {
+    "slug": "dorance-armstrong",
+    "name": "Dorance Armstrong",
+    "jersey": "92",
+    "position": "DE"
+  },
+  {
+    "slug": "ricky-barber",
+    "name": "Ricky Barber",
+    "jersey": "50",
+    "position": "DT"
+  },
+  {
+    "slug": "krys-barnes",
+    "name": "Krys Barnes",
+    "jersey": "47",
+    "position": "ILB"
+  },
+  {
+    "slug": "john-bates",
+    "name": "John Bates",
+    "jersey": "87",
+    "position": "TE"
+  },
+  {
+    "slug": "jaden-bradley",
+    "name": "Jaden Bradley",
+    "jersey": "86",
+    "position": "WR"
+  },
+  {
+    "slug": "dyami-brown",
+    "name": "Dyami Brown",
+    "jersey": "6",
+    "position": "WR"
+  },
+  {
+    "slug": "treylon-burks",
+    "name": "Treylon Burks",
+    "jersey": "13",
+    "position": "WR"
+  },
+  {
+    "slug": "percy-butler",
+    "name": "Percy Butler",
+    "jersey": "35",
+    "position": "S"
+  },
+  {
+    "slug": "lawrence-cager",
+    "name": "Lawrence Cager",
+    "jersey": "89",
+    "position": "TE"
+  },
+  {
+    "slug": "k-lavon-chaisson",
+    "name": "K'Lavon Chaisson",
+    "jersey": "45",
+    "position": "OLB"
+  },
+  {
+    "slug": "leo-chenal",
+    "name": "Leo Chenal",
+    "jersey": "54",
+    "position": "LB"
+  },
+  {
+    "slug": "brandon-coleman",
+    "name": "Brandon Coleman",
+    "jersey": "74",
+    "position": "G"
+  },
+  {
+    "slug": "josh-conerly-jr",
+    "name": "Josh Conerly Jr.",
+    "jersey": "72",
+    "position": "T"
+  },
+  {
+    "slug": "sam-cosmi",
+    "name": "Sam Cosmi",
+    "jersey": "76",
+    "position": "G"
+  },
+  {
+    "slug": "byron-cowart",
+    "name": "Byron Cowart",
+    "jersey": "55",
+    "position": "DT"
+  },
+  {
+    "slug": "jacory-croskey-merritt",
+    "name": "Jacory Croskey-Merritt",
+    "jersey": "22",
+    "position": "RB"
+  },
+  {
+    "slug": "nick-cross",
+    "name": "Nick Cross",
+    "jersey": "25",
+    "position": "S"
+  },
+  {
+    "slug": "jayden-daniels",
+    "name": "Jayden Daniels",
+    "jersey": "5",
+    "position": "QB"
+  },
+  {
+    "slug": "fred-davis-ii",
+    "name": "Fred Davis II",
+    "jersey": "38",
+    "position": "CB"
+  },
+  {
+    "slug": "rasul-douglas",
+    "name": "Rasul Douglas",
+    "jersey": "31",
+    "position": "CB"
+  },
+  {
+    "slug": "julian-good-jones",
+    "name": "Julian Good-Jones",
+    "jersey": "61",
+    "position": "G"
+  },
+  {
+    "slug": "matt-gulbin",
+    "name": "Matt Gulbin",
+    "jersey": "66",
+    "position": "C"
+  },
+  {
+    "slug": "antonio-hamilton-sr",
+    "name": "Antonio Hamilton Sr.",
+    "jersey": "34",
+    "position": "CB"
+  },
+  {
+    "slug": "will-harris",
+    "name": "Will Harris",
+    "jersey": "3",
+    "position": "S"
+  },
+  {
+    "slug": "sam-hartman",
+    "name": "Sam Hartman",
+    "jersey": "15",
+    "position": "QB"
+  },
+  {
+    "slug": "robert-henry-jr",
+    "name": "Robert Henry Jr.",
+    "jersey": "30",
+    "position": "RB"
+  },
+  {
+    "slug": "trey-hill",
+    "name": "Trey Hill",
+    "jersey": "60",
+    "position": "C"
+  },
+  {
+    "slug": "maurice-hurst",
+    "name": "Maurice Hurst",
+    "jersey": "77",
+    "position": "DT"
+  },
+  {
+    "slug": "drake-jackson",
+    "name": "Drake Jackson",
+    "jersey": "93",
+    "position": "DE"
+  },
+  {
+    "slug": "javontae-jean-baptiste",
+    "name": "Javontae Jean-Baptiste",
+    "jersey": "41",
+    "position": "OLB"
+  },
+  {
+    "slug": "van-jefferson",
+    "name": "Van Jefferson",
+    "jersey": "12",
+    "position": "WR"
+  },
+  {
+    "slug": "d-j-johnson-2",
+    "name": "D.J. Johnson",
+    "jersey": "53",
+    "position": "DE"
+  },
+  {
+    "slug": "jacoby-jones",
+    "name": "Jacoby Jones",
+    "jersey": "84",
+    "position": "WR"
+  },
+  {
+    "slug": "joshua-josephs",
+    "name": "Joshua Josephs",
+    "jersey": "48",
+    "position": "OLB"
+  },
+  {
+    "slug": "ale-kaho",
+    "name": "Ale Kaho",
+    "jersey": "51",
+    "position": "LB"
+  },
+  {
+    "slug": "athan-kaliakmanis",
+    "name": "Athan Kaliakmanis",
+    "jersey": "16",
+    "position": "QB"
+  },
+  {
+    "slug": "javon-kinlaw",
+    "name": "Javon Kinlaw",
+    "jersey": "99",
+    "position": "DT"
+  },
+  {
+    "slug": "qwuantrezz-knight",
+    "name": "Qwuantrezz Knight",
+    "jersey": "32",
+    "position": "S"
+  },
+  {
+    "slug": "jaylin-lane",
+    "name": "Jaylin Lane",
+    "jersey": "83",
+    "position": "WR"
+  },
+  {
+    "slug": "frankie-luvu",
+    "name": "Frankie Luvu",
+    "jersey": "4",
+    "position": "LB"
+  },
+  {
+    "slug": "jeffrey-m-ba",
+    "name": "Jeffrey M'ba",
+    "jersey": "60",
+    "position": "DT"
+  },
+  {
+    "slug": "jordan-magee",
+    "name": "Jordan Magee",
+    "jersey": "58",
+    "position": "LB"
+  },
+  {
+    "slug": "t-j-maguranyanga-2",
+    "name": "T.J. Maguranyanga",
+    "jersey": "59",
+    "position": "DE"
+  },
+  {
+    "slug": "marcus-mariota",
+    "name": "Marcus Mariota",
+    "jersey": "8",
+    "position": "QB"
+  },
+  {
+    "slug": "jartavius-martin",
+    "name": "Quan Martin",
+    "jersey": "20",
+    "position": "S"
+  },
+  {
+    "slug": "luke-mccaffrey",
+    "name": "Luke McCaffrey",
+    "jersey": "11",
+    "position": "WR"
+  },
+  {
+    "slug": "tre-mckitty",
+    "name": "Tre' McKitty",
+    "jersey": "46",
+    "position": "TE"
+  },
+  {
+    "slug": "terry-mclaurin",
+    "name": "Terry McLaurin",
+    "jersey": "17",
+    "position": "WR"
+  },
+  {
+    "slug": "jeremy-mcnichols",
+    "name": "Jeremy McNichols",
+    "jersey": "26",
+    "position": "RB"
+  },
+  {
+    "slug": "kain-medrano",
+    "name": "Kain Medrano",
+    "jersey": "56",
+    "position": "LB"
+  },
+  {
+    "slug": "quentin-moore",
+    "name": "Quentin Moore",
+    "jersey": "40",
+    "position": "TE"
+  },
+  {
+    "slug": "fabian-moreau",
+    "name": "Fabian Moreau",
+    "jersey": "30",
+    "position": "CB"
+  },
+  {
+    "slug": "nick-nash",
+    "name": "Nick Nash",
+    "jersey": "19W",
+    "position": "WR"
+  },
+  {
+    "slug": "jer-zhan-newton",
+    "name": "Jer'Zhan Newton",
+    "jersey": "95",
+    "position": "DT"
+  },
+  {
+    "slug": "chig-okonkwo",
+    "name": "Chig Okonkwo",
+    "jersey": "85",
+    "position": "TE"
+  },
+  {
+    "slug": "charles-omenihu",
+    "name": "Charles Omenihu",
+    "jersey": "90",
+    "position": "DE"
+  },
+  {
+    "slug": "tyler-ott",
+    "name": "Tyler Ott",
+    "jersey": "69",
+    "position": "LS"
+  },
+  {
+    "slug": "odafe-oweh",
+    "name": "Odafe Oweh",
+    "jersey": "98",
+    "position": "OLB"
+  },
+  {
+    "slug": "tyler-owens",
+    "name": "Tyler Owens",
+    "jersey": "18",
+    "position": "S"
+  },
+  {
+    "slug": "chris-paul",
+    "name": "Chris Paul",
+    "jersey": "75",
+    "position": "G"
+  },
+  {
+    "slug": "daron-payne",
+    "name": "Daron Payne",
+    "jersey": "94",
+    "position": "DT"
+  },
+  {
+    "slug": "nicholas-petit-frere",
+    "name": "Nicholas Petit-Frere",
+    "jersey": "77",
+    "position": "OT"
+  },
+  {
+    "slug": "jeremy-reaves",
+    "name": "Jeremy Reaves",
+    "jersey": "39",
+    "position": "S"
+  },
+  {
+    "slug": "craig-reynolds",
+    "name": "Craig Reynolds",
+    "jersey": "24",
+    "position": "RB"
+  },
+  {
+    "slug": "amik-robertson",
+    "name": "Amik Robertson",
+    "jersey": "2",
+    "position": "CB"
+  },
+  {
+    "slug": "darius-rush",
+    "name": "Darius Rush",
+    "jersey": "29",
+    "position": "CB"
+  },
+  {
+    "slug": "mike-sainristil",
+    "name": "Mike Sainristil",
+    "jersey": "0",
+    "position": "CB"
+  },
+  {
+    "slug": "foster-sarell",
+    "name": "Foster Sarell",
+    "jersey": "79",
+    "position": "T"
+  },
+  {
+    "slug": "max-scharping",
+    "name": "Max Scharping",
+    "jersey": "68",
+    "position": "G"
+  },
+  {
+    "slug": "trent-scott",
+    "name": "Trent Scott",
+    "jersey": "73",
+    "position": "T"
+  },
+  {
+    "slug": "tim-settle",
+    "name": "Tim Settle",
+    "jersey": "97",
+    "position": "DT"
+  },
+  {
+    "slug": "ben-sinnott",
+    "name": "Ben Sinnott",
+    "jersey": "82",
+    "position": "TE"
+  },
+  {
+    "slug": "malik-spencer",
+    "name": "Malik Spencer",
+    "jersey": "36",
+    "position": "S"
+  },
+  {
+    "slug": "drew-stevens",
+    "name": "Drew Stevens",
+    "jersey": "19",
+    "position": "K"
+  },
+  {
+    "slug": "sonny-styles",
+    "name": "Sonny Styles",
+    "jersey": "52",
+    "position": "LB"
+  },
+  {
+    "slug": "tanoa-togiai",
+    "name": "Tanoa Togiai",
+    "jersey": "62",
+    "position": "G"
+  },
+  {
+    "slug": "laremy-tunsil",
+    "name": "Laremy Tunsil",
+    "jersey": "78",
+    "position": "T"
+  },
+  {
+    "slug": "shy-tuttle",
+    "name": "Shy Tuttle",
+    "jersey": "79",
+    "position": "DT"
+  },
+  {
+    "slug": "car-lin-vigers",
+    "name": "Car'lin Vigers",
+    "jersey": "37",
+    "position": "CB"
+  },
+  {
+    "slug": "tress-way",
+    "name": "Tress Way",
+    "jersey": "10",
+    "position": "P"
+  },
+  {
+    "slug": "rachaad-white",
+    "name": "Rachaad White",
+    "jersey": "1",
+    "position": "RB"
+  },
+  {
+    "slug": "antonio-williams",
+    "name": "Antonio Williams",
+    "jersey": "14",
+    "position": "WR"
+  },
+  {
+    "slug": "andrew-wylie",
+    "name": "Andrew Wylie",
+    "jersey": "71",
+    "position": "T/G"
+  },
+  {
+    "slug": "colson-yankoff",
+    "name": "Colson Yankoff",
+    "jersey": "80",
+    "position": "TE"
+  },
+  {
+    "slug": "deatrich-wise",
+    "name": "Deatrich Wise Jr.",
+    "jersey": "91",
+    "position": "DE"
+  },
+  {
+    "slug": "jerome-ford",
+    "name": "Jerome Ford",
+    "jersey": "34",
+    "position": "RB"
+  },
+  {
+    "slug": "nick-bellore",
+    "name": "Nick Bellore",
+    "jersey": "57",
+    "position": "LB"
+  },
+  {
+    "slug": "dj-davidson",
+    "name": "DJ Davidson",
+    "jersey": "77",
+    "position": "DT"
+  },
+  {
+    "slug": "ahkello-witherspoon",
+    "name": "Ahkello Witherspoon",
+    "jersey": "24",
+    "position": "CB"
+  },
+  {
+    "slug": "daniel-brunskill",
+    "name": "Daniel Brunskill",
+    "jersey": "63",
+    "position": "OT"
+  },
+  {
+    "slug": "curtis-jacobs",
+    "name": "Curtis Jacobs",
+    "jersey": "57",
+    "position": "LB"
+  }
+]

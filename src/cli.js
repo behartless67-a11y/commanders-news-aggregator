@@ -11,6 +11,7 @@ import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
+import { fetchRoster, saveRosterCache } from './lib/roster.js';
 
 const USAGE = `
 Commanders headline river
@@ -23,6 +24,7 @@ Commanders headline river
   npm run sources            list configured sources
   npm run doctor             check every source and report what is broken
   node src/cli.js status     item counts and last run info
+  npm run roster             refresh the cached commanders.com roster (for player-name linking)
 
   npm run digest             write this week's AI recap draft (needs Ollama running)
   npm run digest:list        list every recap and its status
@@ -181,6 +183,16 @@ async function main() {
     case 'status':
       await status();
       break;
+    case 'roster': {
+      const players = await fetchRoster();
+      if (players.length) {
+        await saveRosterCache(players);
+        log.ok(`roster: cached ${players.length} player(s)`);
+      } else {
+        log.warn('roster: fetch returned nothing — leaving the existing cache in place');
+      }
+      break;
+    }
     case 'digest': {
       const sub = rest[0];
       if (sub === 'list') await digestList();
