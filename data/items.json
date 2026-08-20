@@ -934,5 +934,29 @@
     "excerpt": "Washington Commanders linebacker Jordan Magee was projected for the chopping block during final cuts, which would be a massive shock.",
     "publishedAt": "2026-08-20T16:00:00.000Z",
     "collectedAt": "2026-08-20T16:47:13.784Z"
+  },
+  "riggos-rag-b0892f69f418": {
+    "id": "riggos-rag-b0892f69f418",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-watching-their-quiet-tyler-owens-plan-become-visible-camp",
+    "title": "Commanders are watching their quiet Tyler Owens plan become visible at camp",
+    "excerpt": "Washington Commanders defensive coordinator Daronte Jones might have the key to unlocking defensive back Tyler Owens' true potential.",
+    "publishedAt": "2026-08-20T17:30:00.000Z",
+    "collectedAt": "2026-08-20T17:46:34.651Z"
+  },
+  "pft-66a4b3d224fc": {
+    "id": "pft-66a4b3d224fc",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-will-start-joshua-dobbs-at-qb-on-saturday-vs-commanders",
+    "title": "Lions will start Joshua Dobbs at QB on Saturday vs. Commanders",
+    "excerpt": "Quarterback Joshua Dobbs will get an opportunity to go ahead in Detroit’s backup competition this weekend.\n Head coach Dan Campbell told reporters in his Thursday press conference that Dobbs will start for the Lions…",
+    "publishedAt": "2026-08-20T17:35:31.000Z",
+    "collectedAt": "2026-08-20T17:46:38.442Z"
   }
 }
