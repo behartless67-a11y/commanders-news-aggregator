@@ -1,5 +1,5 @@
 import { escapeHtml } from '../lib/text.js';
-import { relativeLabel, formatDateTime, formatDate, rfc822 } from '../lib/dates.js';
+import { relativeLabel, formatDateTime, formatDate, parseGameTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
 
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
@@ -179,24 +179,72 @@ function videoCard(item) {
 }
 
 /**
- * Right-hand video rail. Each card ships from the build as an ordinary link to
- * YouTube, so it works with no JavaScript at all; site.js upgrades it to an
+ * Right-hand video widget. Each card ships from the build as an ordinary link
+ * to YouTube, so it works with no JavaScript at all; site.js upgrades it to an
  * inline player on click — see that file for why the players aren't embedded
- * up front. Returns empty string with no videos, and renderPage then widens the
- * river to the full page rather than leaving a dead column.
+ * up front. Returns empty string with no videos.
  */
-function videoRail(videos) {
+function videoWidget(videos) {
   const cards = videos.map(videoCard).filter(Boolean).join('\n');
   if (!cards) return '';
 
-  return `<aside class="sidebar" aria-labelledby="video-rail-heading">
+  return `
     <div class="widget widget-videos">
       <h2 id="video-rail-heading">Latest video</h2>
       <ul class="video-column">
 ${cards}
       </ul>
       <p class="videos-note">Uploaded by the Washington Commanders and played here through YouTube's own embedded player. <a href="https://www.youtube.com/@Commanders" target="_blank" rel="noopener noreferrer">View the channel</a></p>
-    </div>
+    </div>`;
+}
+
+/** Games this many days out that still don't have a real date show "TBD" rather than being silently dropped or mis-sorted against dated games. */
+const MAX_SCHEDULE_ROWS = 5;
+
+/**
+ * Opponent logos are hotlinked directly from static.www.nfl.com — the exact
+ * CDN commanders.com's own schedule page uses to show the same logos, not a
+ * downloaded "logo pack". Shown purely to identify an opponent on a
+ * schedule, the same nominative use every sports app makes; the footer's
+ * existing non-affiliation disclaimer already covers this. Never rehosted.
+ */
+function scheduleRow(game) {
+  const iso = game.gametime ? parseGameTime(game.gametime) : null;
+  const when = iso ? formatDate(iso) : 'TBD';
+  const prefix = game.homeAway === 'AT' ? '@' : 'vs';
+  const weekLabel = game.season === 'preseason' ? `Pre ${(game.week || '').replace(/^WEEK/i, '')}`.trim() : game.week;
+  const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(game.opponentAbbr)}`;
+
+  return `
+        <li class="schedule-row">
+          <img class="schedule-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(game.opponent)}" width="28" height="28" loading="lazy" decoding="async" />
+          <span class="schedule-info">
+            <span class="schedule-matchup">${escapeHtml(prefix)} ${escapeHtml(game.opponentShort || game.opponent)}</span>
+            <span class="schedule-date">${escapeHtml(weekLabel || '')} · ${escapeHtml(when)}</span>
+          </span>
+        </li>`;
+}
+
+function scheduleWidget(games) {
+  const upcoming = (games || []).filter((g) => !g.isBye && !g.result).slice(0, MAX_SCHEDULE_ROWS);
+  if (!upcoming.length) return '';
+
+  return `
+    <div class="widget widget-schedule">
+      <h2>Schedule</h2>
+      <ul class="schedule-list">${upcoming.map(scheduleRow).join('\n')}
+      </ul>
+    </div>`;
+}
+
+/** Returns empty string with nothing to show in either widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
+function sidebar(videos, games) {
+  const video = videoWidget(videos);
+  const schedule = scheduleWidget(games);
+  if (!video && !schedule) return '';
+  return `<aside class="sidebar" aria-labelledby="video-rail-heading">
+${video}
+${schedule}
   </aside>`;
 }
 
@@ -451,6 +499,7 @@ export function renderPage(
     heading = 'Latest headlines',
     socialPosts = [],
     videos = [],
+    games = [],
     hasWeekly = false,
     rosterIndex = null,
   },
@@ -458,7 +507,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = videoRail(videos);
+  const rail = sidebar(videos, games);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.

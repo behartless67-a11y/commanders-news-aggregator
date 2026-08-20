@@ -41,6 +41,9 @@ jobs:
       - run: npm run roster
         continue-on-error: true
 
+      - run: npm run schedule
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}

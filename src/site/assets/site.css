@@ -799,11 +799,54 @@ main.layout{
    and --border-soft are tuned against the near-black page background and
    fall under AA contrast on burgundy, so both get re-declared in this scope
    rather than inherited. See .site-footer for the same pattern. */
-.widget-videos{
+.widget-videos,
+.widget-schedule{
   background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
   border-color: rgba(255,182,18,0.35);
   --text-faint: #cbbfba;
   --border-soft: rgba(255,182,18,0.18);
+}
+
+/* ---------- Schedule widget ----------
+   Opponent logos are hotlinked from static.www.nfl.com — the same CDN
+   commanders.com's own schedule page uses — never downloaded or rehosted.
+   See scheduleRow() in templates.js for the reasoning. */
+.schedule-list{
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule-row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.schedule-logo{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.schedule-info{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.schedule-matchup{
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.schedule-date{
+  font-size: 11.5px;
+  color: var(--text-faint);
 }
 
 .widget h2{
@@ -973,6 +1016,23 @@ main.layout{
 /* Between tablet and desktop, five footer columns are too many. */
 @media (min-width: 640px) and (max-width: 899px){
   .footer-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Above ~1400px, .card-excerpt's own 105ch cap (deliberate — see that rule)
+   left a growing dead gap between the river and a sidebar that was still
+   only 320px wide, worse the wider the screen got. Rather than let the river
+   column alone absorb reclaimed width it can't use, the sidebar widens and
+   the video widget sits beside a new schedule widget instead of above it. */
+@media (min-width: 1400px){
+  main.layout{
+    grid-template-columns: minmax(0, 1fr) 640px;
+  }
+  .sidebar{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .widget-videos{ flex: 0 0 320px; }
+  .widget-schedule{ flex: 1 1 0; min-width: 0; }
 }
 
 @media (max-width: 480px){

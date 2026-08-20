@@ -56,4 +56,18 @@ export function rfc822(iso) {
   return (Number.isNaN(date.getTime()) ? new Date() : date).toUTCString();
 }
 
+/**
+ * Commanders.com's schedule page emits "MM/DD/YYYY HH:mm:ss ±HH:mm" rather
+ * than ISO — parsed explicitly rather than handed to `new Date()` directly,
+ * since that format isn't guaranteed portable across JS engines even though
+ * V8 happens to accept it.
+ */
+export function parseGameTime(value) {
+  const m = /^(\d{2})\/(\d{2})\/(\d{4})\s+(\d{2}):(\d{2}):(\d{2})\s*([+-]\d{2}:?\d{2})$/.exec(String(value || ''));
+  if (!m) return null;
+  const [, mm, dd, yyyy, hh, min, ss, offset] = m;
+  const normalizedOffset = offset.includes(':') ? offset : `${offset.slice(0, 3)}:${offset.slice(3)}`;
+  return toIso(`${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}${normalizedOffset}`);
+}
+
 export { TZ };

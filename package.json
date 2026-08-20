@@ -17,6 +17,7 @@
     "doctor": "node src/cli.js doctor",
     "status": "node src/cli.js status",
     "roster": "node src/cli.js roster",
+    "schedule": "node src/cli.js schedule",
     "digest": "node src/cli.js digest",
     "digest:list": "node src/cli.js digest list",
     "digest:review": "node src/cli.js digest review",

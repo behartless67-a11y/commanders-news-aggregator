@@ -4,6 +4,7 @@ import { SOURCES } from '../../config/sources.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
+import { loadScheduleCache } from '../lib/schedule.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
@@ -52,6 +53,7 @@ export async function buildSite() {
   // degrades to plain escaped text instead of matching against nothing.
   const rosterPlayers = await loadRosterCache();
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
+  const games = await loadScheduleCache();
 
   // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
   // one that failed review, must never appear on the live site. See
@@ -74,6 +76,7 @@ export async function buildSite() {
       heading: HEADING[page.file],
       socialPosts,
       videos,
+      games,
       hasWeekly,
       rosterIndex,
     });
