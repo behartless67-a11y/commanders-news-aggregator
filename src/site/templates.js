@@ -257,7 +257,7 @@ function footer(sources, generatedAt) {
  * result or a share link without ever seeing the archive page.
  */
 function digestDisclosure(model) {
-  return `<p class="digest-disclosure">Written by a local AI model (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim below links to the source it came from; nothing here is original reporting. <a href="weekly.html">All weekly recaps</a></p>`;
+  return `<p class="digest-disclosure">Written by a local AI model (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim is sourced above; nothing here is original reporting. <a href="weekly.html">All weekly recaps</a></p>`;
 }
 
 function weekLabel(record) {
@@ -351,13 +351,13 @@ ${header('weekly.html', generatedAt, true)}
 
 <main class="layout layout-wide">
   <article class="digest-post">
-    ${digestDisclosure(record.model)}
     <h1>${escapeHtml(digest.headline)}</h1>
     <p class="digest-week">Week of ${escapeHtml(weekLabel(record))} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
     <p class="digest-lede">${escapeHtml(stripInlineCites(digest.lede))}</p>
 ${threads}
 ${also}
 ${sourceFooter}
+    ${digestDisclosure(record.model)}
   </article>
 </main>
 
@@ -402,10 +402,10 @@ ${header('weekly.html', generatedAt, true)}
 
 <main class="layout layout-wide">
   <h1 class="weekly-index-heading">Weekly Recap</h1>
-  ${digestDisclosure(records[0]?.model || 'a local model')}
   <div class="digest-list">
     ${cards || '<p class="river-empty">No recaps published yet.</p>'}
   </div>
+  ${digestDisclosure(records[0]?.model || 'a local model')}
 </main>
 
 ${footer(sources, generatedAt)}
