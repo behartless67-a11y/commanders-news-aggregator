@@ -9,6 +9,8 @@ import { collectAll, collectSocialAll } from './collectors/index.js';
 import { log } from './lib/log.js';
 import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
+import { generateDigest } from './digest/generate.js';
+import { digestList, digestReview, digestSetStatus } from './digest/review.js';
 
 const USAGE = `
 Commanders headline river
@@ -22,9 +24,16 @@ Commanders headline river
   npm run doctor             check every source and report what is broken
   node src/cli.js status     item counts and last run info
 
+  npm run digest             write this week's AI recap draft (needs Ollama running)
+  npm run digest:list        list every recap and its status
+  npm run digest:review -- <week>    print a draft with every citation resolved
+  npm run digest:approve -- <week>   mark a draft published — build then picks it up
+  npm run digest:reject -- <week>    mark a draft rejected
+
 Flags
   --only=id,id               limit collect/doctor to specific source ids
   --port=N                   port for serve (default 8080)
+  --force                    with digest, regenerate even if today's draft exists
 `;
 
 function parseArgs(argv) {
@@ -172,6 +181,15 @@ async function main() {
     case 'status':
       await status();
       break;
+    case 'digest': {
+      const sub = rest[0];
+      if (sub === 'list') await digestList();
+      else if (sub === 'review') await digestReview(rest[1]);
+      else if (sub === 'approve') await digestSetStatus(rest[1], 'published');
+      else if (sub === 'reject') await digestSetStatus(rest[1], 'rejected');
+      else await generateDigest({ force: !!flags.force });
+      break;
+    }
     default:
       console.log(USAGE);
       if (command) process.exitCode = 1;

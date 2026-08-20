@@ -171,11 +171,16 @@ export function mergeSocial(store, incoming) {
       added += 1;
       continue;
     }
-    // Re-apply the display text. Unlike articles, a post's text is derived from
-    // the bridge's markup by cleanPostText(), so improving that cleaning should
-    // fix posts already in the store rather than only future ones.
+    // Re-apply the display text and label. Both are derived at collection time
+    // (text by cleanPostText(), label by whether the post is the watched
+    // account's own — see normalize() in mastodon.js), so fixing that logic
+    // should correct posts already in the store rather than only future ones.
     if (existing.text !== post.text) {
       existing.text = post.text;
+      updated += 1;
+    }
+    if (existing.label !== post.label) {
+      existing.label = post.label;
       updated += 1;
     }
   }

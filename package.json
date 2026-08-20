@@ -15,7 +15,12 @@
     "serve": "node src/cli.js serve",
     "sources": "node src/cli.js sources",
     "doctor": "node src/cli.js doctor",
-    "status": "node src/cli.js status"
+    "status": "node src/cli.js status",
+    "digest": "node src/cli.js digest",
+    "digest:list": "node src/cli.js digest list",
+    "digest:review": "node src/cli.js digest review",
+    "digest:approve": "node src/cli.js digest approve",
+    "digest:reject": "node src/cli.js digest reject"
   },
   "dependencies": {
     "dotenv": "^17.0.0",

@@ -3,7 +3,8 @@ import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
-import { renderPage, renderRss, PAGES } from './templates.js';
+import { listDigests } from '../digest/generate.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -44,6 +45,14 @@ export async function buildSite() {
   const videos = allSorted.filter((item) => VIDEO_SOURCE_IDS.has(item.sourceId)).slice(0, MAX_VIDEOS);
   const generatedAt = new Date().toISOString();
 
+  // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
+  // one that failed review, must never appear on the live site. See
+  // src/digest/ for the generation and review gate that sets this field.
+  const publishedDigests = (await listDigests())
+    .filter((d) => d.status === 'published')
+    .sort((a, b) => b.week.localeCompare(a.week));
+  const hasWeekly = publishedDigests.length > 0;
+
   await fs.mkdir(DIST_DIR, { recursive: true });
 
   for (const page of PAGES) {
@@ -57,8 +66,17 @@ export async function buildSite() {
       heading: HEADING[page.file],
       socialPosts,
       videos,
+      hasWeekly,
     });
     await fs.writeFile(path.join(DIST_DIR, page.file), html, 'utf8');
+  }
+
+  if (hasWeekly) {
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt };
+    await fs.writeFile(path.join(DIST_DIR, 'weekly.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
+    for (const record of publishedDigests) {
+      await fs.writeFile(path.join(DIST_DIR, `weekly-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
+    }
   }
 
   const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
@@ -70,7 +88,7 @@ export async function buildSite() {
 
   log.ok(
     `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
-      `${socialPosts.length} ticker post(s), ${videos.length} video(s)`,
+      `${socialPosts.length} ticker post(s), ${videos.length} video(s), ${publishedDigests.length} weekly recap(s)`,
   );
-  return { count: sorted.length, social: socialPosts.length, videos: videos.length };
+  return { count: sorted.length, social: socialPosts.length, videos: videos.length, digests: publishedDigests.length };
 }

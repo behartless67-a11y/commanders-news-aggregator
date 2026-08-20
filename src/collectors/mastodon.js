@@ -88,7 +88,7 @@ function handleOf(status) {
   return acct.split('@')[0];
 }
 
-function normalize(status, { name, label, sourceKey }) {
+function normalize(status, { account, sourceKey }) {
   // A boost carries the real post nested inside it.
   const post = status.reblog || status;
   const url = permalinkOf(post);
@@ -96,13 +96,19 @@ function normalize(status, { name, label, sourceKey }) {
   if (!url || !text) return null;
 
   const handle = handleOf(post);
+  // `account`'s name/label describe the timeline we asked for, not necessarily
+  // this post's actual author — a boosted post arrives with the booster's
+  // config attached unless we check. Only apply them when the post is the
+  // watched account's own; otherwise fall back the same way a tag-timeline
+  // stranger already does.
+  const isOwnPost = Boolean(account) && handle.toLowerCase() === account.handle.toLowerCase();
   return {
     id: `social-${sha1(url).slice(0, 12)}`,
     url,
     text,
     handle,
-    author: name || cleanDisplayName(post.account?.display_name) || handle,
-    label: label || '',
+    author: (isOwnPost && account.name) || cleanDisplayName(post.account?.display_name) || handle,
+    label: (isOwnPost && account.label) || '',
     sourceKey,
     publishedAt: toIso(post.created_at),
     collectedAt: new Date().toISOString(),
@@ -135,15 +141,7 @@ export async function collectAccount(account) {
     return [];
   }
 
-  return statuses
-    .map((s) =>
-      normalize(s, {
-        name: account.name,
-        label: account.label,
-        sourceKey: `@${account.handle}`,
-      }),
-    )
-    .filter(Boolean);
+  return statuses.map((s) => normalize(s, { account, sourceKey: `@${account.handle}` })).filter(Boolean);
 }
 
 export async function collectTag(entry) {
@@ -156,5 +154,5 @@ export async function collectTag(entry) {
 
   // Tag posts come from arbitrary accounts, so the author name has to be read
   // off each post instead of taken from config.
-  return statuses.map((s) => normalize(s, { sourceKey: entry.name })).filter(Boolean);
+  return statuses.map((s) => normalize(s, { account: null, sourceKey: entry.name })).filter(Boolean);
 }
