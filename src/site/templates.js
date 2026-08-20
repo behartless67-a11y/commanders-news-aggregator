@@ -71,12 +71,12 @@ function header(activeFile, generatedAt, hasWeekly = false) {
     <div class="header-inner">
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
-        <div class="brand-text">
-          <p>One page. Every headline. Hail to efficiency.</p>
-        </div>
       </div>
-      <div class="updated-line">
-        <div><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
+      <div class="header-right">
+        <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
+        <div class="updated-line">
+          <div><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
+        </div>
       </div>
     </div>
     <nav class="filter-tabs" aria-label="Filter headlines by source type">
@@ -209,7 +209,11 @@ const MAX_SCHEDULE_ROWS = 5;
  * existing non-affiliation disclaimer already covers this. Never rehosted.
  */
 function weekLabelOf(game) {
-  return game.season === 'preseason' ? `Pre ${(game.week || '').replace(/^WEEK/i, '')}`.trim() : game.week;
+  // .replace() alone left a leading space in the fragment ("WEEK 1" -> " 1"),
+  // and .trim() on the assembled string only strips the ends, not that
+  // internal gap - rendered live as "Pre  1" before this was caught.
+  const num = (game.week || '').replace(/^WEEK/i, '').trim();
+  return game.season === 'preseason' ? `Pre ${num}` : game.week;
 }
 
 function scheduleRow(game) {
