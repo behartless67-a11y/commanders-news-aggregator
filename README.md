@@ -64,6 +64,7 @@ rather than worked around:
 | Commanders (YouTube) | Team | no | The team's own uploads — press conferences and camp clips. The only first-party source still publishing, given the text feed above. Shorts are dropped (see below) |
 | ClutchPoints | Team | **yes** | Team-tagged feed, but it carries the occasional site-wide fantasy piece, so it goes through the keyword filter anyway |
 | DC Sports King | Team | **yes** | Local DC outlet covering Wizards/Nationals/WWE too, so filtered |
+| WJLA (ABC7) | Team | no | The DC ABC affiliate runs a dedicated Commanders vertical with its own feed, not just a general sports section — same-day fresh |
 | Pro Football Talk | League | yes | NFL-wide |
 | CBS Sports | League | yes | NFL-wide |
 | Yahoo Sports | League | yes | NFL-wide |
@@ -90,6 +91,36 @@ assumed):
   quality, not availability.
 - **NBC Washington** (the local station) — feed works, but its sports feed is
   dominated by soccer, F1, and WNBA; too little signal to be worth a fetch.
+- **WUSA9** — has a real `/section/washington-commanders` page, but every URL
+  on the site returns HTTP 200 with the full JS-rendered homepage rather than
+  real content — the same single-page-app problem that ruled out NBC Sports
+  Washington. The 200 status makes this the one worth double-checking
+  `content_type` on, not just the status code.
+- **FOX5 DC** — has a real Commanders tag page but no discoverable RSS at any
+  of the usual WordPress or Arc Publishing feed paths.
+- **Washington Times** — its sports feed works, but is general-sports
+  (tennis, golf) and its football feed is mostly college football; too little
+  Commanders density to be worth adding on top of the sources already here.
+- **USA Today's own NFL feed** (as opposed to the already-dead *Commanders
+  Wire*) — `rss.usatoday.com` 301-redirects straight to the homepage. USA
+  Today has discontinued public RSS network-wide, not just for the team site.
+- **DC Black** — surfaced by an AI brainstorm (see below) as a plausible local
+  DC source. It's a Black-owned-business and community-events site with zero
+  sports content — a clean example of a model asserting relevance it had no
+  basis for, caught by the same "verify with curl before adding" rule
+  everything else here follows.
+
+**On using a second local model to help hunt for sources (2026-08-20):** asked
+`qwen3.8` (running locally in Ollama) to independently brainstorm new
+candidates, deliberately kept separate from the search above so neither
+anchored on the other. It repeatedly tried to re-suggest sources it had just
+been told were already dead (Bleacher Report, The Athletic, Washington Post),
+hedged nearly every RSS guess as "likely" rather than checked, and asserted DC
+Black was sports-relevant with no actual basis. One name from its list — DC
+Black — got curl-verified and rejected; the rest of its suggestions had no
+real feed by its own admission and weren't pursued. Useful as a second set of
+name ideas, not as a source of verified facts — every claim still got checked
+the same way a human's guess would have been.
 
 ### Social ticker
 

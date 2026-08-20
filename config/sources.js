@@ -7,7 +7,11 @@
  * scraped around. Confirmed dead or blocked as of 2026-08-20: Commanders Wire
  * (USA Today), SI/FanNation, Yardbarker, Yahoo's team feed, WTOP, Athlon,
  * Bleacher Report, CBS's team feed, SB Nation's league feed, 247Sports,
- * FanSided's network feed, Reddit r/Commanders, The Athletic, Washington Post.
+ * FanSided's network feed, Reddit r/Commanders, The Athletic, Washington Post,
+ * WUSA9 (200 status, but every URL serves the JS homepage — no real feed),
+ * FOX5 DC (no discoverable feed), Washington Times (works but low
+ * Commanders density), USA Today's own NFL feed (redirects to homepage),
+ * DC Black (not a sports site at all).
  *
  * Fields:
  *   id             stable slug, used in stored item IDs — do not rename casually
@@ -97,6 +101,19 @@ export const SOURCES = [
     alwaysRelevant: false,
     enabled: true,
     url: 'https://www.dcsportsking.com/feed/',
+  },
+  {
+    // ABC's DC affiliate runs a dedicated Commanders vertical with its own
+    // feed, not just a general sports section — confirmed 2026-08-20 with
+    // same-day-fresh, Commanders-only items (Sonny Styles, Nick Cross).
+    id: 'wjla-commanders',
+    name: 'WJLA (ABC7)',
+    homepage: 'https://wjla.com/sports/washington-commanders',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: true,
+    enabled: true,
+    url: 'https://wjla.com/sports/washington-commanders.rss',
   },
 
   // ------------------------------------------------------------- league
