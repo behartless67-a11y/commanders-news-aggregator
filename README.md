@@ -125,6 +125,49 @@ Caveats worth knowing before relying on it:
 - Posts age out after `MAX_SOCIAL_AGE_DAYS` (3) — a three-day-old "he's
   practicing today" tweet is worse than an empty ticker.
 
+### Video rail
+
+The right-hand column carries the six most recent uploads from the team's
+YouTube channel, marked in `config/sources.js` with `media: 'video'` (a flag, not
+a hardcoded source id, so a second channel is a config edit). The video ID is
+parsed out of the stored watch URL at render time, so the collector stays a plain
+RSS collector.
+
+**On copyright:** embedding through YouTube's own player is the sanctioned way to
+do this, not a grey area. The uploader controls it — YouTube's oEmbed endpoint
+401s for a video with embedding disabled, and it returns player markup for these
+(verified 2026-08-20, channel `Washington Commanders`). Views still count for the
+uploader and YouTube still serves its ads. Two rules keep it that way:
+
+- **Never rehost.** Don't extract the video file, proxy the stream, or cache
+  thumbnails locally. Thumbnails are hotlinked from `i.ytimg.com` deliberately —
+  serving Google's image from Google's CDN is the defensible position; copying it
+  onto our own origin is not.
+- **Attribute and don't imply endorsement.** Each card credits the channel and
+  the footer carries the not-affiliated disclaimer.
+
+Cards ship as ordinary links to youtube.com and `site.js` swaps in a
+`youtube-nocookie.com` player on click. That's a load-bearing decision, not
+polish: YouTube's player is roughly a megabyte of script per embed, and six eager
+iframes would outweigh the rest of the site and hand YouTube a page view for
+every visitor who never pressed play.
+
+### Progressive reveal and back to top
+
+The river renders **all** its items and shows the first `RIVER_INITIAL` (7), with
+a chevron button revealing `RIVER_BATCH` (10) more per press. Nothing is fetched
+on expand — it's a CSS display state, so `site.js` only flips classes.
+
+With JavaScript off, a collapsed river would strand items behind a dead button,
+so `renderPage` emits a `<noscript>` block that un-collapses it and hides the
+button. It's placed **after** the stylesheet link to win the cascade. The
+back-to-top control is a plain `#top` anchor (it works without JS); the script
+only decides when it's worth showing.
+
+Two consequences worth knowing if you edit the river markup: the button is the
+river's last child, so card borders use `:last-of-type` rather than
+`:last-child`; and revealed cards restore to `display: flex`, matching `.card`.
+
 ### Relevance filtering
 
 Most items in a league-wide feed are about other teams. `src/lib/relevance.js`
@@ -182,6 +225,9 @@ All optional — see `.env.example`.
 | `MAX_WIRE_AGE_DAYS` | `14` | Tighter window for league-wide wires |
 | `MAX_ITEMS_PER_SOURCE` | `15` | Per-source cap per run |
 | `MAX_RIVER_ITEMS` | `60` | How many items the front page renders |
+| `RIVER_INITIAL` | `7` | Items visible before the reader presses "show more" |
+| `RIVER_BATCH` | `10` | Items revealed per press |
+| `MAX_VIDEOS` | `6` | Clips in the right-hand video rail |
 | `FETCH_DELAY_MS` | `700` | Politeness delay per host |
 | `SOCIAL_ENABLED` | `true` | Set `false` to skip social collection entirely |
 | `MAX_SOCIAL_AGE_DAYS` | `3` | Drop posts older than this from the ticker |
@@ -214,13 +260,23 @@ whole league needs the keyword filter.
 
 ## Design
 
-`src/site/assets/site.css` is the finished "Burgundy Wire" design (dark
-burgundy/gold, hairline-separated river, sticky sidebar). Contracts to preserve
-if you swap templates:
+`src/site/assets/site.css` is the finished "Burgundy Wire" design — dark
+burgundy/gold, hairline-separated river running wide (`--max: 1920px`) with the
+video rail on the right. "About this page" and "Reading the badges" live in the
+footer rather than a sidebar widget, because the right column is the video rail.
+
+Contracts to preserve if you swap templates:
 
 - **River item:** `title`, `url`, `sourceName`, `category`, `excerpt`,
   `publishedAt`
 - **Ticker post:** `text`, `url`, `handle`, `publishedAt`
+- **Video item:** any item whose `url` is a YouTube watch URL, from a source
+  flagged `media: 'video'`
+
+`src/site/assets/site.js` is the **only** JavaScript on the site — click-to-play
+video, progressive reveal, back-to-top visibility. Keep it that way if you can;
+each of those three exists because the no-JS alternative was materially worse,
+and all three degrade to working HTML without it.
 
 The ticker's seamless loop depends on the post list being rendered **twice**
 inside `.ticker-track` (the animation slides exactly `-50%`). The second copy

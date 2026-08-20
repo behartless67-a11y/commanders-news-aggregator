@@ -16,6 +16,16 @@ const MAX_RIVER_ITEMS = Number(process.env.MAX_RIVER_ITEMS || 60);
  */
 const MAX_TICKER_POSTS = Number(process.env.MAX_TICKER_POSTS || 30);
 
+/** How many clips the right-hand video rail carries. */
+const MAX_VIDEOS = Number(process.env.MAX_VIDEOS || 6);
+
+/**
+ * Sources whose links are YouTube watch URLs, flagged in config/sources.js
+ * rather than matched on id here — adding a second channel should be a config
+ * edit, not a code edit.
+ */
+const VIDEO_SOURCE_IDS = new Set(SOURCES.filter((s) => s.media === 'video').map((s) => s.id));
+
 const HEADING = {
   'index.html': 'Latest headlines',
   'team-sources.html': 'Team source headlines',
@@ -26,8 +36,12 @@ export async function buildSite() {
   const items = await loadItems();
   // Each page is capped to its most recent N rather than rendering the full
   // backlog the store has accumulated since the last prune.
-  const sorted = sortedItems(items).slice(0, MAX_RIVER_ITEMS);
+  const allSorted = sortedItems(items);
+  const sorted = allSorted.slice(0, MAX_RIVER_ITEMS);
   const socialPosts = sortedSocial(await loadSocial()).slice(0, MAX_TICKER_POSTS);
+  // Drawn from the whole store, not the capped river — the rail shouldn't empty
+  // out just because a busy news week pushed the clips past MAX_RIVER_ITEMS.
+  const videos = allSorted.filter((item) => VIDEO_SOURCE_IDS.has(item.sourceId)).slice(0, MAX_VIDEOS);
   const generatedAt = new Date().toISOString();
 
   await fs.mkdir(DIST_DIR, { recursive: true });
@@ -42,6 +56,7 @@ export async function buildSite() {
       activeFile: page.file,
       heading: HEADING[page.file],
       socialPosts,
+      videos,
     });
     await fs.writeFile(path.join(DIST_DIR, page.file), html, 'utf8');
   }
@@ -49,13 +64,13 @@ export async function buildSite() {
   const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
-  const css = await fs.readFile(path.resolve('src/site/assets/site.css'), 'utf8');
-  await fs.writeFile(path.join(DIST_DIR, 'site.css'), css, 'utf8');
-
-  await fs.copyFile(path.resolve('src/site/assets/logo.png'), path.join(DIST_DIR, 'logo.png'));
+  for (const asset of ['site.css', 'site.js', 'logo.png']) {
+    await fs.copyFile(path.resolve('src/site/assets', asset), path.join(DIST_DIR, asset));
+  }
 
   log.ok(
-    `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ${socialPosts.length} ticker post(s)`,
+    `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
+      `${socialPosts.length} ticker post(s), ${videos.length} video(s)`,
   );
-  return { count: sorted.length, social: socialPosts.length };
+  return { count: sorted.length, social: socialPosts.length, videos: videos.length };
 }

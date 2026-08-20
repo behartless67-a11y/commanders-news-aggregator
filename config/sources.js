@@ -18,6 +18,8 @@
  *   alwaysRelevant true when everything the source publishes is about the
  *                  Commanders already, so the keyword filter in
  *                  src/lib/relevance.js is skipped
+ *   media          optional; 'video' marks a feed whose links are YouTube watch
+ *                  URLs, which the build also renders as the video shelf
  *   enabled        set false to park a source without deleting its config
  */
 
@@ -80,6 +82,7 @@ export const SOURCES = [
     category: 'team',
     collector: 'rss',
     alwaysRelevant: true,
+    media: 'video',
     enabled: true,
     url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC2a0ENbCZqIO5C1fWXGXZXA',
   },

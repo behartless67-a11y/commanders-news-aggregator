@@ -18,7 +18,10 @@
   --text-muted: #a89f9b;
   --text-faint: #7c7370;
   --radius: 10px;
-  --max: 1680px;
+  /* Wide on purpose. The river is the point of the page, so it gets the room;
+     .card-excerpt keeps its own max-width so body text never runs to a
+     comically long line on a big monitor. */
+  --max: 1920px;
   font-size: 16px;
 }
 
@@ -297,6 +300,81 @@ main.layout{
   padding: 24px 0;
 }
 
+/* ---------- Progressive reveal ----------
+   Every headline is in the HTML; these rules only decide what's on screen.
+   templates.js ships a <noscript> override that undoes both, so the river is
+   never collapsed without the script that expands it. */
+.river.is-collapsed .card-extra{ display: none; }
+.river.is-collapsed .card-extra.is-revealed{ display: flex; }
+
+.river-more{
+  display: none;
+  align-items: center;
+  gap: 6px;
+  align-self: center;
+  margin: 20px 0 4px;
+  padding: 9px 20px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.river.is-collapsed .river-more{ display: inline-flex; }
+
+.river-more:hover{
+  background: var(--burgundy);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.river-more-chevron{ fill: var(--gold); flex-shrink: 0; }
+
+/* ---------- Back to top ---------- */
+.to-top{
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 20;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--burgundy);
+  border: 1px solid rgba(255,182,18,0.45);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  /* Hidden until site.js decides the page is scrolled far enough to want it. */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease,
+    background 120ms ease, border-color 120ms ease;
+}
+
+.to-top.is-visible{
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.to-top:hover{
+  background: var(--burgundy-600);
+  border-color: var(--gold);
+}
+
+.to-top svg{ fill: var(--gold); }
+
+@media (prefers-reduced-motion: no-preference){
+  html{ scroll-behavior: smooth; }
+}
+
 /* ---------- Card ---------- */
 .card{
   position:relative;
@@ -307,7 +385,9 @@ main.layout{
   gap: 4px;
 }
 
-.river .card:last-child{
+/* :last-of-type, not :last-child — the "show more" button is the river's last
+   child, so :last-child would never match a card once it's present. */
+.river .card:last-of-type{
   border-bottom: none;
 }
 
@@ -376,6 +456,115 @@ main.layout{
   max-width: 105ch;
   margin: 0;
 }
+
+/* ---------- Video rail ----------
+   Thumbnails are hotlinked from YouTube's own image CDN and each card is a plain
+   link until clicked; site.js swaps in the embedded player on demand. Do not
+   render the iframes up front — see src/site/assets/site.js. */
+.video-column{
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-link{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.video-thumb{
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid var(--border-soft);
+  background: var(--surface);
+}
+
+.video-thumb img{
+  width: 100%;
+  height: 100%;
+  /* hqdefault.jpg is 480x360 — YouTube letterboxes 16:9 uploads into it, so
+     crop the bars off rather than showing them. */
+  object-fit: cover;
+}
+
+.video-frame{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-play{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20,16,15,0.7);
+  border: 1px solid rgba(255,182,18,0.45);
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.video-play svg{
+  fill: var(--gold);
+  margin-left: 2px;
+}
+
+.video-link:hover .video-play{
+  background: var(--burgundy);
+  border-color: var(--gold);
+}
+
+.video-meta{ display: block; }
+
+.video-title{
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.video-link:hover .video-title{ color: var(--gold); }
+
+.video-time{
+  display: block;
+  font-size: 11.5px;
+  color: var(--text-faint);
+  margin-top: 3px;
+}
+
+/* Once a player is in place the card is no longer a link. */
+.video-link.is-playing{ cursor: default; }
+.video-link.is-playing .video-play{ display: none; }
+.video-link.is-playing .video-title{ color: var(--text); }
+
+.videos-note{
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+.videos-note a{
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.videos-note a:hover{ color: var(--gold); }
 
 /* ---------- Sidebar ---------- */
 .sidebar{
@@ -446,6 +635,17 @@ main.layout{
   font-weight: 700;
 }
 
+/* "About this page" and "Reading the badges" live here rather than in a
+   sidebar widget — the right-hand column is the video rail now. */
+.footer-col p{
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer-col p:last-child{ margin-bottom: 0; }
+
 .source-list{
   list-style:none;
   margin:0; padding:0;
@@ -495,15 +695,24 @@ main.layout{
 /* ---------- Desktop ---------- */
 @media (min-width: 900px){
   main.layout{
-    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-columns: minmax(0, 1fr) 320px;
     align-items: start;
   }
-  .sidebar{ position: sticky; top: 20px; }
+  /* No videos to show — don't leave a dead column beside the river. */
+  main.layout.layout-wide{
+    grid-template-columns: minmax(0, 1fr);
+  }
   .footer-grid{
-    grid-template-columns: repeat(2, 1fr) auto;
+    grid-template-columns: 1.7fr 1.3fr 1fr 1fr auto;
+    gap: 32px;
     align-items: start;
   }
   .card-top{ gap: 12px; }
+}
+
+/* Between tablet and desktop, five footer columns are too many. */
+@media (min-width: 640px) and (max-width: 899px){
+  .footer-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px){
