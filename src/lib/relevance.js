@@ -32,10 +32,39 @@ export function relevanceSignal(text) {
   return null;
 }
 
+/**
+ * Deliberately reads the headline and the URL slug only — never the body.
+ *
+ * The excerpt used to count, and it let through articles that are plainly about
+ * another team but happen to name this one in passing: a Miami blog's mailbag
+ * ("The Phinsider Mailbag: Willie Gay roster status") reached the top of the
+ * river on an incidental mention alone. Joint-practice notes, photo captions,
+ * and "related reading" tails all produce that false positive.
+ *
+ * A headline (or the slug an editor derived from it) is what an outlet says the
+ * article is *about*, which is the question we actually care about. The cost is
+ * dropping the occasional on-topic piece behind a coy headline; for a link
+ * river, precision beats recall — a wrong item is visible and annoying, a
+ * missing one usually arrives via another source.
+ */
 export function isRelevant(source, item) {
   if (source.alwaysRelevant) return true;
-  const haystack = [item.title, item.excerpt, item.url].filter(Boolean).join(' \n ');
+  const haystack = [item.title, item.url].filter(Boolean).join(' \n ');
   return relevanceSignal(haystack) !== null;
+}
+
+/**
+ * Reject titles that are hashtag strings rather than headlines — the shape of a
+ * social clip, not an article. The team's YouTube feed mixes press conferences
+ * ("HC Dan Quinn Speaks To The Media Before Practice") with Shorts whose entire
+ * title is "🔥🔥🔥 #nfl #commanders #football #shorts #raisehail", and the latter
+ * tells a reader nothing in a headline river.
+ *
+ * Three hashtags is the threshold: real headlines essentially never carry that
+ * many, and every Short observed carries at least three.
+ */
+export function isSocialFiller(title) {
+  return (String(title || '').match(/#\w+/g) || []).length >= 3;
 }
 
 export const RELEVANCE_TERMS = TERMS;

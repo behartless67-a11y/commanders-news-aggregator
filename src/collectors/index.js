@@ -1,7 +1,7 @@
-import { enabledSources } from '../../config/sources.js';
+import { enabledSources, sourceById } from '../../config/sources.js';
 import { SOCIAL_ACCOUNTS, SOCIAL_TAGS, SOCIAL_ENABLED } from '../../config/social.js';
 import { log } from '../lib/log.js';
-import { isRelevant, relevanceSignal } from '../lib/relevance.js';
+import { isRelevant, relevanceSignal, isSocialFiller } from '../lib/relevance.js';
 import { daysAgo } from '../lib/dates.js';
 import {
   loadItems,
@@ -47,6 +47,29 @@ const MAX_SOCIAL_AGE_DAYS = Number(process.env.MAX_SOCIAL_AGE_DAYS || 3);
  */
 const MIN_SOCIAL_TEXT_CHARS = Number(process.env.MIN_SOCIAL_TEXT_CHARS || 25);
 
+/**
+ * Re-check stored items against the current relevance rules and drop the ones
+ * that no longer pass. Without this, tightening the filter only affects future
+ * collections while old false positives sit on the page indefinitely — the
+ * store is append-only during a merge.
+ *
+ * Items from a source that is no longer in the registry are left alone: they
+ * can't be re-evaluated, and silently deleting them on an unrelated config edit
+ * would be surprising.
+ */
+function pruneIrrelevant(store) {
+  let dropped = 0;
+  for (const [id, item] of Object.entries(store)) {
+    const source = sourceById(item.sourceId);
+    if (!source) continue;
+    if (isRelevant(source, item) && !isSocialFiller(item.title)) continue;
+    log.debug(`dropping no-longer-relevant item: ${item.title}`);
+    delete store[id];
+    dropped += 1;
+  }
+  return dropped;
+}
+
 export async function collectAll({ only } = {}) {
   const sources = enabledSources().filter((s) => !only || only.includes(s.id));
   const store = await loadItems();
@@ -70,7 +93,7 @@ export async function collectAll({ only } = {}) {
       continue;
     }
 
-    const relevant = raw.filter((item) => isRelevant(source, item));
+    const relevant = raw.filter((item) => isRelevant(source, item) && !isSocialFiller(item.title));
     // Every source gets the 45-day ceiling; wires additionally get the tighter
     // window. Undated items (a handful of feeds omit pubDate) are still kept —
     // dropping them on first sight would silently lose real stories.
@@ -92,10 +115,13 @@ export async function collectAll({ only } = {}) {
   }
 
   const pruned = pruneItems(store, MAX_ITEM_AGE_DAYS);
+  const dropped = pruneIrrelevant(store);
   await saveItems(store);
-  await recordRun({ stage: 'collect', sources: sources.length, added: totalAdded, pruned });
-  log.ok(`collect done — ${totalAdded} new item(s), ${pruned} aged out`);
-  return { perSource, totalAdded, pruned };
+  await recordRun({ stage: 'collect', sources: sources.length, added: totalAdded, pruned, dropped });
+  log.ok(
+    `collect done — ${totalAdded} new item(s), ${pruned} aged out, ${dropped} no longer relevant`,
+  );
+  return { perSource, totalAdded, pruned, dropped };
 }
 
 /**

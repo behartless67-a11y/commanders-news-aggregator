@@ -47,30 +47,44 @@ nor raw post markup is ever published as-is.
 
 ### Sources
 
-Verified working by hand (2026-08-19) with a direct `curl` before being added
+Verified working by hand (2026-08-20) with a direct `curl` before being added
 — several plausible candidates turned out to be dead ends and are left out
 rather than worked around:
 
-| Source | Category | Notes |
-|---|---|---|
-| Commanders.com | Team | Official feed, but **stale upstream**: as of 2026-08-20 its newest item was 63 days old, so it contributes nothing under the 45-day ceiling. Left enabled — if the team starts publishing to it again it'll flow straight in, and `collect` warns when a feed is all-relevant-but-all-expired. |
-| Hogs Haven | Team | SB Nation Commanders blog — the highest-volume, most current source |
-| Pro Football Talk | League | NFL-wide; filtered to Commanders mentions |
-| CBS Sports | League | NFL-wide; filtered |
-| Yahoo Sports | League | NFL-wide; filtered |
+| Source | Category | Filtered | Notes |
+|---|---|---|---|
+| Commanders.com | Team | no | Official feed, but **stale upstream**: as of 2026-08-20 its newest item was 63 days old, so it contributes nothing under the 45-day ceiling. Left enabled — if the team starts publishing to it again it'll flow straight in, and `collect` warns when a feed is all-relevant-but-all-expired. |
+| Hogs Haven | Team | no | SB Nation Commanders blog — consistently current |
+| Riggo's Rag | Team | no | Commanders-only FanSided blog, ~90 items per fetch and same-day fresh; currently the highest-volume source |
+| Commanders (YouTube) | Team | no | The team's own uploads — press conferences and camp clips. The only first-party source still publishing, given the text feed above. Shorts are dropped (see below) |
+| ClutchPoints | Team | **yes** | Team-tagged feed, but it carries the occasional site-wide fantasy piece, so it goes through the keyword filter anyway |
+| DC Sports King | Team | **yes** | Local DC outlet covering Wizards/Nationals/WWE too, so filtered |
+| Pro Football Talk | League | yes | NFL-wide |
+| CBS Sports | League | yes | NFL-wide |
+| Yahoo Sports | League | yes | NFL-wide |
 
-**Parked / not usable:**
+**Parked / not usable** (each of these was actually fetched and inspected, not
+assumed):
+
 - **ESPN** — its RSS is served behind an AWS WAF JavaScript challenge to
   automated clients. That's an explicit request not to be read by a script;
   defeating it is out of scope, same policy as this project's sibling,
   Blue Ridge Bulletin. Flip `enabled: true` in `config/sources.js` if ESPN
   ever opens the feed back up.
-- **Commanders Wire** (USA Today) — no public RSS endpoint found at any of
-  the usual paths.
 - **Reddit r/Commanders** — blocks unauthenticated bot fetches (403); would
   need OAuth via Reddit's API to add properly.
-- **Riggo's Rag / SI.com, The Athletic, Washington Post** — no working feed
-  found, or blocked.
+- **Blocked or no feed at any usual path:** Commanders Wire (USA Today),
+  SI/FanNation, Yardbarker, Yahoo's *team* feed, WTOP, Athlon, Bleacher
+  Report, CBS's *team* feed, SB Nation's league feed, 247Sports, FanSided's
+  network feed, The Athletic, Washington Post.
+- **NBC Sports Washington** — its `/rss` path returns a gzipped HTML
+  single-page app, not a feed.
+- **Google News RSS** — works, and returns plenty of fresh items, but every
+  link is a Google redirect rather than the publisher's URL, and it aggregates
+  other aggregators (so it would duplicate everything above). Rejected on
+  quality, not availability.
+- **NBC Washington** (the local station) — feed works, but its sports feed is
+  dominated by soccer, F1, and WNBA; too little signal to be worth a fetch.
 
 ### Social ticker
 
@@ -87,8 +101,17 @@ bot wall) and every ticker entry links back to the original post on x.com.
 Currently mirrored and live: `@Commanders`, `@JPFinlayNBCS`, `@john_keim`,
 `@BenStandig`, `@tashanreed` (all beat, unfiltered) plus `@AdamSchefter`,
 `@RapSheet`, `@MikeGarafolo`, `@JosinaAnderson`, `@pfrumors` (national,
-keyword-filtered). Hashtag timelines `#Commanders` and `#RaiseHail` catch
-on-topic posts from people who aren't on the roster.
+keyword-filtered). Hashtag timelines `#Commanders`, `#RaiseHail`, and `#HTTC`
+catch on-topic posts from people who aren't on the roster — always
+keyword-filtered, because "#commanders" collides with the Magic: the Gathering
+format.
+
+Posts are shown **in full**, not truncated: a clipped tweet is worse than no
+tweet, since the half you can read is exactly the half that makes you want the
+rest. That makes the track's width vary a lot day to day, so the CSS
+`animation-duration` is computed at build time from the total character count
+(`TICKER_CHARS_PER_SEC`) — reading speed stays constant whether it's a busy news
+day or a quiet one.
 
 Caveats worth knowing before relying on it:
 
@@ -104,11 +127,31 @@ Caveats worth knowing before relying on it:
 
 ### Relevance filtering
 
-The four league-wide feeds are NFL-wide — most items are about other teams.
-`src/lib/relevance.js` keeps only items mentioning "commanders" (unambiguous
-inside an NFL-only feed) or a short list of marquee names (head coach, QB,
-GM). Sources flagged `alwaysRelevant` (the team's own site, Hogs Haven) skip
-this check entirely.
+Most items in a league-wide feed are about other teams. `src/lib/relevance.js`
+keeps only items mentioning "commanders" (unambiguous inside an NFL-only feed)
+or a short list of marquee names (head coach, QB, GM). Sources flagged
+`alwaysRelevant` — the Commanders-only ones — skip this check entirely.
+
+**It reads the headline and the URL slug only, never the article body.** The
+excerpt used to count, and it let through pieces that are plainly about another
+team but name this one in passing: a Miami blog's mailbag ("The Phinsider
+Mailbag: Willie Gay roster status") reached the *top* of the river on an
+incidental mention alone. Joint-practice notes, photo captions, and "related
+reading" tails all produce that false positive. A headline is what an outlet
+says its article is about, which is the actual question. The cost is losing the
+occasional on-topic piece behind a coy headline — for a link river, precision
+beats recall, since a wrong item is visible and annoying while a missing one
+usually arrives via another source.
+
+A second filter, `isSocialFiller`, drops titles that are hashtag strings rather
+than headlines (three or more `#tags`). The team's YouTube feed mixes real press
+conferences in with Shorts titled `🔥🔥🔥 #nfl #commanders #football #shorts`,
+which tell a reader nothing in a headline river — that check alone takes a
+typical YouTube fetch from 15 items down to 6.
+
+Both filters are also applied **retroactively** to the stored backlog on every
+run, so tightening a rule cleans up existing false positives instead of only
+affecting future collections.
 
 ### Duplicates and freshness
 
@@ -144,6 +187,7 @@ All optional — see `.env.example`.
 | `MAX_SOCIAL_AGE_DAYS` | `3` | Drop posts older than this from the ticker |
 | `MIN_SOCIAL_TEXT_CHARS` | `25` | Skip bare photo/video captions |
 | `MAX_TICKER_POSTS` | `30` | Posts in the ticker (rendered twice, for the loop) |
+| `TICKER_CHARS_PER_SEC` | `8.6` | Scroll speed — characters sliding past per second. Lower is slower |
 | `SOCIAL_RETAIN_DAYS` | `10` | How long `data/social.json` keeps posts |
 | `SOCIAL_PER_ACCOUNT` | `8` | Posts fetched per account per run |
 | `SOCIAL_INSTANCE` | `https://mastodon.social` | Instance whose public API is read |
@@ -182,7 +226,9 @@ The ticker's seamless loop depends on the post list being rendered **twice**
 inside `.ticker-track` (the animation slides exactly `-50%`). The second copy
 is `aria-hidden` so assistive tech and crawlers see each post once. It pauses
 on hover/focus and drops to a plain scrollable row under
-`prefers-reduced-motion`.
+`prefers-reduced-motion`. Don't add a `max-width`/ellipsis to `.ticker-text` —
+posts are meant to be shown whole, and clipping them also breaks the
+length-derived scroll duration.
 
 ## Known gaps
 
@@ -197,8 +243,8 @@ on hover/focus and drops to a plain scrollable row under
   site is unaffected. A paid X API tier would be the only way to make this
   first-party.
 - **The official Commanders.com feed is stale upstream** and currently
-  contributes zero items, so "Team Sources" is effectively Hogs Haven plus the
-  ticker's `@Commanders` posts.
+  contributes zero items. First-party coverage therefore comes from the team's
+  YouTube uploads and the ticker's `@Commanders` posts rather than the news feed.
 - **The marquee-name list in `relevance.js` will go stale** as the roster
   turns over. It's a bonus catch on top of the "commanders" keyword, not the
   primary signal, so this is low-stakes — just something to revisit each

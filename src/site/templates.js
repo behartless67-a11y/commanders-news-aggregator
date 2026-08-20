@@ -62,6 +62,14 @@ function tickerPost(post) {
 }
 
 /**
+ * Roughly how many characters of ticker should slide past per second. Posts are
+ * shown in full, so the track's width varies a lot from day to day — deriving
+ * the animation duration from the actual text length keeps the reading speed
+ * constant instead of letting a wordy day scroll faster than a quiet one.
+ */
+const TICKER_CHARS_PER_SEC = Number(process.env.TICKER_CHARS_PER_SEC || 8.6);
+
+/**
  * Marquee of recent posts. The track is rendered twice so the CSS animation can
  * loop seamlessly — the second copy is aria-hidden so screen readers and search
  * engines see each post once. Returns empty string when there's nothing to show,
@@ -71,11 +79,18 @@ function ticker(posts) {
   if (!posts.length) return '';
   const track = posts.map(tickerPost).join('\n      ');
 
+  // Handle and timestamp occupy space too, so they count toward the width.
+  const chars = posts.reduce(
+    (total, p) => total + p.text.length + p.handle.length + 12,
+    0,
+  );
+  const seconds = Math.max(60, Math.round(chars / TICKER_CHARS_PER_SEC));
+
   return `<section class="ticker" aria-label="Recent posts from Commanders reporters">
   <div class="ticker-rail">
     <span class="ticker-label" aria-hidden="true">Live</span>
     <div class="ticker-viewport">
-      <div class="ticker-track">
+      <div class="ticker-track" style="animation-duration: ${seconds}s">
         <div class="ticker-group">
       ${track}
         </div>

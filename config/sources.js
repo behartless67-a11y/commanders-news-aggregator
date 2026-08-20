@@ -1,11 +1,13 @@
 /**
  * Source registry.
  *
- * Every entry is a working RSS/Atom feed, verified by hand (2026-08-19) with
- * a direct curl before being added here — several plausible-looking
- * candidates (Commanders Wire, Reddit r/Commanders, SI/Riggo's Rag, The
- * Athletic, Washington Post) either serve no public feed or block bot
- * fetches outright, and are left out rather than scraped around.
+ * Every entry is a working RSS/Atom feed, verified by hand with a direct curl
+ * before being added here — many plausible-looking candidates either serve no
+ * public feed or block bot fetches outright, and are left out rather than
+ * scraped around. Confirmed dead or blocked as of 2026-08-20: Commanders Wire
+ * (USA Today), SI/FanNation, Yardbarker, Yahoo's team feed, WTOP, Athlon,
+ * Bleacher Report, CBS's team feed, SB Nation's league feed, 247Sports,
+ * FanSided's network feed, Reddit r/Commanders, The Athletic, Washington Post.
  *
  * Fields:
  *   id             stable slug, used in stored item IDs — do not rename casually
@@ -40,6 +42,58 @@ export const SOURCES = [
     alwaysRelevant: true,
     enabled: true,
     url: 'https://www.hogshaven.com/rss/index.xml',
+  },
+  {
+    // Commanders-only FanSided blog. High volume (90 items) and same-day fresh.
+    id: 'riggos-rag',
+    name: "Riggo's Rag",
+    homepage: 'https://riggosrag.com/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: true,
+    enabled: true,
+    url: 'https://riggosrag.com/feed/',
+  },
+  {
+    // ClutchPoints' team-tagged feed. Filtered rather than trusted whole: the
+    // team feed carries the occasional site-wide piece ("Top 5 Fantasy Football
+    // Sleepers At Tight End"). Its real Commanders items all name the team in
+    // the headline or the slug, so the keyword filter keeps them — including
+    // ones filed under another team ("Seahawks' Diggs signing creates
+    // full-circle moment with Commanders").
+    id: 'clutchpoints',
+    name: 'ClutchPoints',
+    homepage: 'https://clutchpoints.com/nfl/washington-commanders',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: false,
+    enabled: true,
+    url: 'https://clutchpoints.com/nfl/washington-commanders/feed',
+  },
+  {
+    // The team's own YouTube uploads — press conferences, camp clips. Worth
+    // having because commanders.com's text feed has gone stale upstream, so
+    // this is currently the only first-party source still publishing.
+    id: 'commanders-youtube',
+    name: 'Commanders (YouTube)',
+    homepage: 'https://www.youtube.com/@Commanders',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: true,
+    enabled: true,
+    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC2a0ENbCZqIO5C1fWXGXZXA',
+  },
+  {
+    // Local DC outlet covering every team in the city (Wizards, Nationals, and
+    // the odd WWE history piece), so it is filtered rather than trusted whole.
+    id: 'dc-sports-king',
+    name: 'DC Sports King',
+    homepage: 'https://dcsportsking.com/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: false,
+    enabled: true,
+    url: 'https://www.dcsportsking.com/feed/',
   },
 
   // ------------------------------------------------------------- league

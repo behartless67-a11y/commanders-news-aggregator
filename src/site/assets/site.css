@@ -194,7 +194,10 @@ img, svg{ display:block; max-width:100%; }
 .ticker-track{
   display: flex;
   width: max-content;
-  animation: ticker-scroll 210s linear infinite;
+  /* Duration is set inline per build from the total text length, so the scroll
+     speed stays constant no matter how wordy the day's posts are. This value is
+     only a fallback. */
+  animation: ticker-scroll 600s linear infinite;
 }
 
 .ticker-group{
@@ -242,10 +245,6 @@ img, svg{ display:block; max-width:100%; }
 
 .ticker-text{
   color: var(--text);
-  /* One very long post shouldn't push everything else off the loop. */
-  max-width: 62ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .ticker-time{
