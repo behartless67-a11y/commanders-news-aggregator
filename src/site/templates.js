@@ -57,7 +57,7 @@ function itemCard(item, index, rosterIndex) {
  * worse than no link. Weekly pages pass activeFile: 'weekly.html' whether
  * they're the archive or a single post, so the tab stays highlighted for both.
  */
-function header(activeFile, generatedAt, hasWeekly = false) {
+function header(activeFile, hasWeekly = false) {
   const tabs = PAGES.map(
     (p) =>
       `<a href="${p.file}"${p.file === activeFile ? ' aria-current="page"' : ''}>${escapeHtml(p.label)}</a>`,
@@ -72,16 +72,13 @@ function header(activeFile, generatedAt, hasWeekly = false) {
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
       </div>
-      <div class="header-right">
-        <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
-        <div class="updated-line">
-          <div><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
-        </div>
-      </div>
     </div>
-    <nav class="filter-tabs" aria-label="Filter headlines by source type">
-      ${tabs}${weeklyTab}
-    </nav>
+    <div class="header-bottom-row">
+      <nav class="filter-tabs" aria-label="Filter headlines by source type">
+        ${tabs}${weeklyTab}
+      </nav>
+      <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
+    </div>
   </div>
 </header>`;
 }
@@ -213,7 +210,7 @@ function weekLabelOf(game) {
   // and .trim() on the assembled string only strips the ends, not that
   // internal gap - rendered live as "Pre  1" before this was caught.
   const num = (game.week || '').replace(/^WEEK/i, '').trim();
-  return game.season === 'preseason' ? `Pre ${num}` : game.week;
+  return game.season === 'preseason' ? `Pre ${num}` : `Week ${num}`;
 }
 
 function scheduleRow(game) {
@@ -433,7 +430,7 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <body>
 
 <div class="hero">
-${header('weekly.html', generatedAt, true)}
+${header('weekly.html', true)}
 </div>
 
 <main class="layout layout-wide">
@@ -486,7 +483,7 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <body>
 
 <div class="hero">
-${header('weekly.html', generatedAt, true)}
+${header('weekly.html', true)}
 </div>
 
 <main class="layout layout-wide">
@@ -564,14 +561,17 @@ export function renderPage(
 <body>
 
 <div class="hero">
-${header(activeFile, generatedAt, hasWeekly)}
+${header(activeFile, hasWeekly)}
 
 ${ticker(socialPosts)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
-    <h2 class="river-heading">${escapeHtml(heading)}</h2>
+    <div class="river-heading-row">
+      <h2 class="river-heading">${escapeHtml(heading)}</h2>
+      <div class="river-updated"><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
+    </div>
 ${cards || '<p class="river-empty">No items yet — run `npm run collect` first.</p>'}${moreButton}
   </section>
 
