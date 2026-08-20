@@ -23,6 +23,11 @@ jobs:
 
       - run: npm run collect
 
+      # The social ticker reads a third-party mirror, so a bad night there must
+      # not fail the whole build — the site just renders without the ticker.
+      - run: npm run social
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "collect": "node src/cli.js collect",
+    "social": "node src/cli.js social",
     "build": "node src/cli.js build",
     "run": "node src/cli.js run",
     "serve": "node src/cli.js serve",

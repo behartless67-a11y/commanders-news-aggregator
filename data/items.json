@@ -1,184 +1,4 @@
 {
-  "commanders-official-f7c15ed9db8a": {
-    "id": "commanders-official-f7c15ed9db8a",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/commanders-select-sam-howell-witbh-no-144-overall-pick",
-    "title": "Commanders select Sam Howell with No. 144 overall pick",
-    "excerpt": "Howell was named a Manning Award finalist and has shown he can be a dual threat.",
-    "publishedAt": "2022-04-30T18:10:58.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-25647d52e5b7": {
-    "id": "commanders-official-25647d52e5b7",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/commanders-select-brian-robinson-nfl-draft-third-round",
-    "title": "Commanders select Brian Robinson Jr. with the No. 98 overall pick",
-    "excerpt": "Robinson's rushing earned him spots in the Alabama record books.",
-    "publishedAt": "2022-04-30T03:23:20.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-9c4c5f7b3f5f": {
-    "id": "commanders-official-9c4c5f7b3f5f",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/veteran-scouts-paul-skansi-and-chuck-cook-retire",
-    "title": "Veteran scouts Paul Skansi and Chuck Cook retire",
-    "excerpt": "Skansi, who oversaw scouting in the West, and Cook, who worked primarily in the Southeast region, both arrived in Washington in 2017.",
-    "publishedAt": "2026-06-18T16:01:11.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-a6f511c944b4": {
-    "id": "commanders-official-a6f511c944b4",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/stafford-virginia-natives-michelle-boateng-and-chris-hicks-relish-surreal-bill-walsh-fellowship-opportunity",
-    "title": "Stafford, Virginia natives Michelle Boateng and Chris Hicks relish \"surreal\" Bill Walsh Fellowship opportunity",
-    "excerpt": "The North Stafford High School alums have attacked the opportunity with pride in their work and an eagerness to further their development.",
-    "publishedAt": "2026-05-22T19:30:04.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-6cb2adf333e6": {
-    "id": "commanders-official-6cb2adf333e6",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/behind-the-build-q-a-andy-vanhorn-commanders-head-of-real-estate",
-    "title": "Behind the Build Q&A: Andy VanHorn, Commanders Head of Real Estate",
-    "excerpt": "Andy VanHorn, the Commanders’ Head of Real Estate, brings over 20 years of experience to this critical, first-of-its-kind role with the franchise.",
-    "publishedAt": "2026-04-11T12:57:38.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-69fa670494b0": {
-    "id": "commanders-official-69fa670494b0",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/commanders-park-a-perfect-fit-for-2026-hbcu-showcase-and-ipp-pro-day",
-    "title": "Commanders Park a \"perfect fit\" for 2026 HBCU Showcase and IPP Pro Day",
-    "excerpt": "Combining the Pro Days for often overlooked players for the first time in Ashburn, Virginia, specifically, helped to “create more value for these athletes,” according to the NFL’s Director of Football Development Daniel…",
-    "publishedAt": "2026-03-31T19:23:55.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-82be9d5a0910": {
-    "id": "commanders-official-82be9d5a0910",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/i-feel-like-i-m-stronger-fox-thornhill-spends-day-as-honorary-commander-for-make-a-wish-experience",
-    "title": "\"I feel like I'm stronger:\" Fox Thornhill spends day as honorary Commander for Make-A-Wish experience",
-    "excerpt": "The day not only fulfilled a wish but imbued Fox and the Thornhills with memories that will last a lifetime",
-    "publishedAt": "2025-11-07T21:48:46.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-8a018235c17f": {
-    "id": "commanders-official-8a018235c17f",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/hail-tales-hits-the-unforeseen-financial-cost-of-the-1966-win-against-the-giants",
-    "title": "Hail Tales hits | The unforeseen financial cost of the 1966 win against the Giants",
-    "excerpt": "The Burgundy & Gold lost 14 footballs -- 13 on extra point attempts and one as part of a Brig Owens touchdown -- during what would eventually be a 72-41 Washington win against the New York Giants.",
-    "publishedAt": "2025-07-31T20:45:49.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-9d0101ed291c": {
-    "id": "commanders-official-9d0101ed291c",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/it-feels-different-back-together-sunday-shows-off-energy-pride-of-fan-base",
-    "title": "'It feels different': Back Together Sunday shows off energy, pride of fan base",
-    "excerpt": "Washington fans, filled with pride and galvanized by the team’s recent momentum, showed up by the thousands",
-    "publishedAt": "2025-07-27T15:36:46.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-ee763d25b861": {
-    "id": "commanders-official-ee763d25b861",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/series-of-commanders-camps-in-the-dmv-offers-unique-chance-for-flag-football-fun-development",
-    "title": "Series of Commanders Camps in the DMV offers unique chance for flag football fun, development",
-    "excerpt": "Hosted from end of June to mid-August, Commanders Camps will take place in areas including Alexandria, Potomac, Capitol Hill and more.",
-    "publishedAt": "2025-05-15T19:18:12.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-1e727e3edf70": {
-    "id": "commanders-official-1e727e3edf70",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/the-washington-commanders-selected-to-play-the-miami-dolphins-in-madrid-spain",
-    "title": "Washington Commanders selected to play the Miami Dolphins in Madrid, Spain",
-    "excerpt": "It will be the first-ever regular season NFL game played in the country. Kickoff time is set for 9:30am ET on Sun., Nov. 16 with the game being televised on NFL Network.",
-    "publishedAt": "2025-05-13T12:57:44.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-8bc7b9db63d0": {
-    "id": "commanders-official-8bc7b9db63d0",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/commanders-set-to-play-eagles-at-northwest-stadium-on-saturday-dec-20",
-    "title": "Commanders set to play Eagles at Northwest Stadium on Saturday, Dec. 20",
-    "excerpt": "The Washington Commanders will host the Philadelphia Eagles at Northwest Stadium on Saturday, Dec. 20 in a rematch of the 2024 NFC Championship game. The game will be televised on FOX.",
-    "publishedAt": "2025-05-12T21:17:12.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-ce4caa39b26c": {
-    "id": "commanders-official-ce4caa39b26c",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/mayor-bowser-and-washington-commanders-announce-historic-deal-to-bring-the-team-home",
-    "title": "Mayor Bowser and Washington Commanders announce historic deal to bring the team Home and activate 180 acres of opportunity at the RFK campus",
-    "excerpt": "$2.7 Billion Investment from the Commanders is the Single Largest Private Investment in District History.",
-    "publishedAt": "2025-04-28T15:11:53.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-ff13f7a0fe04": {
-    "id": "commanders-official-ff13f7a0fe04",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/former-washington-fullback-don-bosseler-passes-away-at-88",
-    "title": "Former Washington fullback Don Bosseler passes away at 88",
-    "excerpt": "The ninth overall pick in the 1957 NFL Draft, Bosseler spent his entire pro career in Washington. Nicknamed “Bull” because of the way he would run through tacklers, Bosseler was a force on Washington’s offense from 1957…",
-    "publishedAt": "2024-11-07T22:05:57.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
-  "commanders-official-18ddc22d3c52": {
-    "id": "commanders-official-18ddc22d3c52",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/former-washington-cornerback-pat-fischer-passes-away-at-84",
-    "title": "Former Washington cornerback Pat Fischer passes away at 84",
-    "excerpt": "During a pro career that spanned 17 years, Fischer played in 213 games and recorded 56 interceptions. Ten of those seasons were spent in Washington, where he became a lynchpin of the Burgundy & Gold’s defense during the…",
-    "publishedAt": "2024-10-08T18:46:54.000Z",
-    "collectedAt": "2026-08-19T18:27:13.106Z"
-  },
   "hogs-haven-f5bcc53f4fa3": {
     "id": "hogs-haven-f5bcc53f4fa3",
     "sourceId": "hogs-haven",
@@ -311,6 +131,30 @@
     "publishedAt": "2026-08-18T18:04:16.000Z",
     "collectedAt": "2026-08-19T18:27:13.284Z"
   },
+  "hogs-haven-35864a1394e9": {
+    "id": "hogs-haven-35864a1394e9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-training-camp/433479/washington-commanders-news-sights-sounds-from-training-camp-day-14",
+    "title": "Washington Commanders News: Sights and Sounds from Training Camp Day 14",
+    "excerpt": "ASHBURN, VA - AUGUST 01: Josh Conerly Jr. #72 and Sam Cosmi #76 of the Washington Commanders participate in a drill during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by…",
+    "publishedAt": "2026-08-20T12:00:00.000Z",
+    "collectedAt": "2026-08-20T13:18:17.806Z"
+  },
+  "hogs-haven-a7ea71c03d1e": {
+    "id": "hogs-haven-a7ea71c03d1e",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/433866/injury-concerns-pile-up-heading-into-lions-preseason-game-johnny-newton-odafe-oweh",
+    "title": "Commanders News: Injury concerns pile up heading into 2nd preseason game",
+    "excerpt": "The Daily Slop – 20 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports…",
+    "publishedAt": "2026-08-20T11:30:00.000Z",
+    "collectedAt": "2026-08-20T13:18:17.806Z"
+  },
   "hogs-haven-e96712a522bc": {
     "id": "hogs-haven-e96712a522bc",
     "sourceId": "hogs-haven",
@@ -321,7 +165,7 @@
     "title": "Commanders injury news: Johnny Newton reportedly has surgery on torn pec",
     "excerpt": "Commanders defensive lineman Johnny Newton had surgery on a torn pectoral muscle in New York on Wednesday, according to The Athletic’s Nicki Jhabvala. \n\n He is expected to be out a significant stretch, meaning months of…",
     "publishedAt": "2026-08-20T01:25:48.000Z",
-    "collectedAt": "2026-08-20T08:35:36.731Z"
+    "collectedAt": "2026-08-20T13:18:17.806Z"
   },
   "hogs-haven-732a67f0e1db": {
     "id": "hogs-haven-732a67f0e1db",
@@ -333,7 +177,31 @@
     "title": "Come join the NFC East Mixtape!",
     "excerpt": "SB Nation’s coverage of the Commanders is expanding. \n\n Hogs Haven will remain your primary source for Commanders news, analysis and commentary, with a new place for discussing how Washington fits into the NFC East.…",
     "publishedAt": "2026-08-19T22:00:00.000Z",
-    "collectedAt": "2026-08-20T08:35:36.731Z"
+    "collectedAt": "2026-08-20T13:18:17.806Z"
+  },
+  "pft-6bd1cd594fe9": {
+    "id": "pft-6bd1cd594fe9",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-to-play-good-amount-of-starters-saturday-but-unsure-on-jayden-daniels",
+    "title": "Commanders to play \"good amount\" of starters Saturday, but unsure on Jayden Daniels",
+    "excerpt": "Commanders head coach Dan Quinn shared some plans for Saturday's game against the Lions during a Thursday morning press conference, but the status of quarterback Jayden Daniels remains up in the air. \n Quinn said, via…",
+    "publishedAt": "2026-08-20T12:36:53.000Z",
+    "collectedAt": "2026-08-20T13:18:17.948Z"
+  },
+  "pft-216994e3cc3f": {
+    "id": "pft-216994e3cc3f",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-dt-johnny-newton-to-miss-significant-time-after-pec-surgery",
+    "title": "Commanders DT Johnny Newton to miss significant time after pec surgery",
+    "excerpt": "Commanders defensive tackle Johnny Newton went to see a specialist in New York this week about his pectoral injury and the result of that meeting will be an extended absence from the lineup. \n Head coach Dan Quinn told…",
+    "publishedAt": "2026-08-20T12:25:12.000Z",
+    "collectedAt": "2026-08-20T13:18:17.948Z"
   },
   "pft-f79181bb80cf": {
     "id": "pft-f79181bb80cf",
@@ -345,6 +213,30 @@
     "title": "Commanders RB Rachaad White tweaked his hamstring",
     "excerpt": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.\n Mike Garafolo of NFL Media reports that White tweaked his hamstring in the joint practice with the Dolphins. White worked…",
     "publishedAt": "2026-08-20T02:34:55.000Z",
-    "collectedAt": "2026-08-20T08:35:37.038Z"
+    "collectedAt": "2026-08-20T13:18:17.948Z"
+  },
+  "yahoo-nfl-28ce1dae632c": {
+    "id": "yahoo-nfl-28ce1dae632c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/phinsider-mailbag-willie-gay-roster-130000087.html",
+    "title": "The Phinsider Mailbag: Willie Gay roster status, Safety position battle",
+    "excerpt": "MADRID, SPAIN - NOVEMBER 13: Willie Gay Jr. during the Miami Dolphins training session ahead their upcoming the National Football League (NFL) 2025 Madrid Game against Washington Commanders at Riyadh Air Metropolitano…",
+    "publishedAt": "2026-08-20T13:00:00.000Z",
+    "collectedAt": "2026-08-20T13:18:18.158Z"
+  },
+  "yahoo-nfl-33eb039da636": {
+    "id": "yahoo-nfl-33eb039da636",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-injury-concerns-pile-heading-113000850.html",
+    "title": "Commanders injury concerns pile up heading into second preseason game - Daily Slop",
+    "excerpt": "The Daily Slop – 20 August 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in…",
+    "publishedAt": "2026-08-20T11:30:00.000Z",
+    "collectedAt": "2026-08-20T13:18:18.158Z"
   }
 }

@@ -5,17 +5,18 @@ import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES, enabledSources } from '../config/sources.js';
-import { collectAll } from './collectors/index.js';
+import { collectAll, collectSocialAll } from './collectors/index.js';
 import { log } from './lib/log.js';
-import { loadItems, loadState } from './lib/store.js';
+import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
 
 const USAGE = `
 Commanders headline river
 
   npm run collect            read every enabled source, store new items
+  npm run social             read the social ticker accounts and hashtags
   npm run build              render the static site into dist/
-  npm run run                collect, then build, then print status
+  npm run run                collect, social, then build, then print status
   npm run serve              serve dist/ on http://localhost:8080
   npm run sources            list configured sources
   npm run doctor             check every source and report what is broken
@@ -118,13 +119,19 @@ async function doctor(only) {
 
 async function status() {
   const items = await loadItems();
+  const social = await loadSocial();
   const state = await loadState();
   const lastCollect = (state.runs || []).find((r) => r.stage === 'collect');
+  const lastSocial = (state.runs || []).find((r) => r.stage === 'social');
 
   console.log('');
   console.log(`  items in store    ${Object.keys(items).length}`);
+  console.log(`  social posts      ${Object.keys(social).length}`);
   if (lastCollect) {
     console.log(`  last collect      ${lastCollect.at} (+${lastCollect.added} new)`);
+  }
+  if (lastSocial) {
+    console.log(`  last social       ${lastSocial.at} (+${lastSocial.added} new)`);
   }
   console.log('');
 }
@@ -138,12 +145,17 @@ async function main() {
     case 'collect':
       await collectAll({ only });
       break;
+    case 'social':
+      await collectSocialAll();
+      break;
     case 'build':
       await buildSite();
       break;
     case 'run':
       log.step('collecting');
       await collectAll({ only });
+      log.step('collecting social');
+      await collectSocialAll();
       log.step('building');
       await buildSite();
       await status();

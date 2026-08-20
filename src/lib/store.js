@@ -12,6 +12,7 @@ import { normalizeTitle } from './text.js';
 export const DATA_DIR = path.resolve(process.env.DATA_DIR || 'data');
 const ITEMS_PATH = path.join(DATA_DIR, 'items.json');
 const STATE_PATH = path.join(DATA_DIR, 'state.json');
+const SOCIAL_PATH = path.join(DATA_DIR, 'social.json');
 
 async function readJson(file, fallback) {
   try {
@@ -112,9 +113,92 @@ export function mergeItems(store, incoming) {
   return { added, updated };
 }
 
+/**
+ * Drop items past the age ceiling. The store is append-only during a merge, so
+ * without this an item that was fresh when first collected would live on the
+ * page forever. Undated items fall back to when we first saw them.
+ * Returns the number removed.
+ */
+export function pruneItems(store, maxAgeDays) {
+  const cutoff = Date.now() - maxAgeDays * 86400000;
+  let removed = 0;
+  for (const [id, item] of Object.entries(store)) {
+    const when = new Date(item.publishedAt || item.collectedAt).getTime();
+    if (Number.isNaN(when) || when < cutoff) {
+      delete store[id];
+      removed += 1;
+    }
+  }
+  return removed;
+}
+
 /** All stored items, newest first. */
 export function sortedItems(items) {
   return Object.values(items).sort((a, b) =>
+    (b.publishedAt || b.collectedAt).localeCompare(a.publishedAt || a.collectedAt),
+  );
+}
+
+/* ------------------------------ social posts ------------------------------ */
+
+/**
+ * Social posts live in their own file rather than in items.json. They are a
+ * different kind of thing: they render in the ticker instead of the river, they
+ * never belong in the RSS feed, and the cross-source duplicate matching above
+ * (which compares headlines) is meaningless for them. Post IDs are keyed on the
+ * permalink, so the same tweet arriving from both an account timeline and a
+ * hashtag timeline collapses to one entry on its own.
+ */
+
+/** A ticker of month-old tweets is worse than a short ticker, so the store is pruned. */
+const SOCIAL_RETAIN_DAYS = Number(process.env.SOCIAL_RETAIN_DAYS || 10);
+
+export async function loadSocial() {
+  return readJson(SOCIAL_PATH, {});
+}
+
+export async function saveSocial(posts) {
+  await writeJson(SOCIAL_PATH, posts);
+}
+
+export function mergeSocial(store, incoming) {
+  let added = 0;
+  let updated = 0;
+  for (const post of incoming) {
+    const existing = store[post.id];
+    if (!existing) {
+      store[post.id] = post;
+      added += 1;
+      continue;
+    }
+    // Re-apply the display text. Unlike articles, a post's text is derived from
+    // the bridge's markup by cleanPostText(), so improving that cleaning should
+    // fix posts already in the store rather than only future ones.
+    if (existing.text !== post.text) {
+      existing.text = post.text;
+      updated += 1;
+    }
+  }
+  return { added, updated };
+}
+
+/** Drop posts past the retention window. Returns the number removed. */
+export function pruneSocial(store) {
+  const cutoff = Date.now() - SOCIAL_RETAIN_DAYS * 86400000;
+  let removed = 0;
+  for (const [id, post] of Object.entries(store)) {
+    const when = new Date(post.publishedAt || post.collectedAt).getTime();
+    if (Number.isNaN(when) || when < cutoff) {
+      delete store[id];
+      removed += 1;
+    }
+  }
+  return removed;
+}
+
+/** All stored social posts, newest first. */
+export function sortedSocial(posts) {
+  return Object.values(posts).sort((a, b) =>
     (b.publishedAt || b.collectedAt).localeCompare(a.publishedAt || a.collectedAt),
   );
 }

@@ -52,6 +52,42 @@ function header(activeFile, generatedAt) {
 </header>`;
 }
 
+function tickerPost(post) {
+  const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
+  return `<a class="ticker-post" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+        <span class="ticker-handle">@${escapeHtml(post.handle)}</span>
+        <span class="ticker-text">${escapeHtml(post.text)}</span>
+        ${when ? `<span class="ticker-time">${escapeHtml(when)}</span>` : ''}
+      </a>`;
+}
+
+/**
+ * Marquee of recent posts. The track is rendered twice so the CSS animation can
+ * loop seamlessly — the second copy is aria-hidden so screen readers and search
+ * engines see each post once. Returns empty string when there's nothing to show,
+ * so a failed social collection leaves no empty furniture behind.
+ */
+function ticker(posts) {
+  if (!posts.length) return '';
+  const track = posts.map(tickerPost).join('\n      ');
+
+  return `<section class="ticker" aria-label="Recent posts from Commanders reporters">
+  <div class="ticker-rail">
+    <span class="ticker-label" aria-hidden="true">Live</span>
+    <div class="ticker-viewport">
+      <div class="ticker-track">
+        <div class="ticker-group">
+      ${track}
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+      ${track}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`;
+}
+
 function sidebar(sources) {
   const teamNames = sources.filter((s) => s.category === 'team').map((s) => s.name).join(', ');
   const leagueNames = sources.filter((s) => s.category === 'league').map((s) => s.name).join(', ');
@@ -113,7 +149,18 @@ function footer(sources, generatedAt) {
 </footer>`;
 }
 
-export function renderPage(items, { siteName, siteUrl, sources, generatedAt, activeFile = 'index.html', heading = 'Latest headlines' }) {
+export function renderPage(
+  items,
+  {
+    siteName,
+    siteUrl,
+    sources,
+    generatedAt,
+    activeFile = 'index.html',
+    heading = 'Latest headlines',
+    socialPosts = [],
+  },
+) {
   const cards = items.map(itemCard).join('\n');
 
   return `<!doctype html>
@@ -132,6 +179,8 @@ export function renderPage(items, { siteName, siteUrl, sources, generatedAt, act
 <body>
 
 ${header(activeFile, generatedAt)}
+
+${ticker(socialPosts)}
 
 <main class="layout">
   <section class="river" aria-label="Commanders news headlines">
