@@ -706,5 +706,41 @@
     "excerpt": "Recently, the Washington Commanders have been getting all kinds of negative press surrounding quarterback Jayden Daniels and his fiasco with the LSU Tigers football program. Daniels sent a cease-and-desist letter to LSU…",
     "publishedAt": "2026-08-16T18:34:17.000Z",
     "collectedAt": "2026-08-20T13:33:45.028Z"
+  },
+  "hogs-haven-8470a1158349": {
+    "id": "hogs-haven-8470a1158349",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/nfl-training-camp/433476/commanders-camp-talk-dan-quinn-gives-updates-injuries-jayden-daniels-vs-lions",
+    "title": "Commanders Camp Talk: Dan Quinn gives updates on injuries, Jayden Daniels vs Lions",
+    "excerpt": "The Washington Commanders training camp rolls on for Day 14 in Ashburn, VA.\n\n Head coach Dan Quinn spoke to reporters before the start of today’s practice and provided updates on the growing list of injured players. CB…",
+    "publishedAt": "2026-08-20T15:00:00.000Z",
+    "collectedAt": "2026-08-20T15:40:01.336Z"
+  },
+  "riggos-rag-db8dee1ede4c": {
+    "id": "riggos-rag-db8dee1ede4c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/mike-garafolo-uncovers-commanders-truth-after-wild-rachaad-white-injury-claim",
+    "title": "Mike Garafolo uncovers Commanders truth after wild Rachaad White injury claim",
+    "excerpt": "NFL Network insider Mike Garafolo uncovered the truth after a wild injury claim around Washington Commanders running back Rachaad White.",
+    "publishedAt": "2026-08-20T14:30:00.000Z",
+    "collectedAt": "2026-08-20T15:40:01.751Z"
+  },
+  "clutchpoints-33423b1329a9": {
+    "id": "clutchpoints-33423b1329a9",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-rachaad-white-practice-confirms-best-case-scenario-injury",
+    "title": "Rachaad White sighting at Commanders practice confirms best-case scenario for injury",
+    "excerpt": "The Washington Commanders have been dealing with multiple injuries throughout training camp. Washington will already be without Johnny Newton , who should miss significant time with a pectoral injury. But the good news…",
+    "publishedAt": "2026-08-20T13:34:53.000Z",
+    "collectedAt": "2026-08-20T15:40:01.921Z"
   }
 }
