@@ -1,5 +1,5 @@
 import { escapeHtml } from '../lib/text.js';
-import { relativeLabel, formatDateTime, formatDate, parseGameTime, rfc822 } from '../lib/dates.js';
+import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
 
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
@@ -208,11 +208,28 @@ const MAX_SCHEDULE_ROWS = 5;
  * schedule, the same nominative use every sports app makes; the footer's
  * existing non-affiliation disclaimer already covers this. Never rehosted.
  */
+function weekLabelOf(game) {
+  return game.season === 'preseason' ? `Pre ${(game.week || '').replace(/^WEEK/i, '')}`.trim() : game.week;
+}
+
 function scheduleRow(game) {
+  if (game.isBye) {
+    return `
+        <li class="schedule-row schedule-row--bye">
+          <span class="schedule-logo schedule-logo--empty" aria-hidden="true"></span>
+          <span class="schedule-info">
+            <span class="schedule-matchup">Bye week</span>
+            <span class="schedule-date">${escapeHtml(weekLabelOf(game) || '')}</span>
+          </span>
+        </li>`;
+  }
+
   const iso = game.gametime ? parseGameTime(game.gametime) : null;
-  const when = iso ? formatDate(iso) : 'TBD';
+  // A played game shows its result where the date would go — the date only
+  // matters looking forward, the result only matters looking back.
+  const dateOrResult = game.result ? `${game.result} ${game.points || ''}`.trim() : iso ? formatGameDateTime(iso) : 'TBD';
+  const resultClass = game.result === 'W' ? ' is-win' : game.result === 'L' ? ' is-loss' : '';
   const prefix = game.homeAway === 'AT' ? '@' : 'vs';
-  const weekLabel = game.season === 'preseason' ? `Pre ${(game.week || '').replace(/^WEEK/i, '')}`.trim() : game.week;
   const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(game.opponentAbbr)}`;
 
   return `
@@ -220,19 +237,18 @@ function scheduleRow(game) {
           <img class="schedule-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(game.opponent)}" width="28" height="28" loading="lazy" decoding="async" />
           <span class="schedule-info">
             <span class="schedule-matchup">${escapeHtml(prefix)} ${escapeHtml(game.opponentShort || game.opponent)}</span>
-            <span class="schedule-date">${escapeHtml(weekLabel || '')} · ${escapeHtml(when)}</span>
+            <span class="schedule-date${resultClass}">${escapeHtml(weekLabelOf(game) || '')} · ${escapeHtml(dateOrResult)}</span>
           </span>
         </li>`;
 }
 
+/** The full season, preseason through the regular-season finale, not just what's left to play. */
 function scheduleWidget(games) {
-  const upcoming = (games || []).filter((g) => !g.isBye && !g.result).slice(0, MAX_SCHEDULE_ROWS);
-  if (!upcoming.length) return '';
-
+  if (!games?.length) return '';
   return `
-    <div class="widget widget-schedule">
+    <div class="widget-schedule">
       <h2>Schedule</h2>
-      <ul class="schedule-list">${upcoming.map(scheduleRow).join('\n')}
+      <ul class="schedule-list">${games.map(scheduleRow).join('\n')}
       </ul>
     </div>`;
 }

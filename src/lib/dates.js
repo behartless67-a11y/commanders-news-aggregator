@@ -70,4 +70,13 @@ export function parseGameTime(value) {
   return toIso(`${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}${normalizedOffset}`);
 }
 
+/** "Sat, Aug 22 · 12:00 PM" — weekday and kickoff time together, compact enough for a schedule row. */
+export function formatGameDateTime(iso) {
+  const date = iso ? new Date(iso) : null;
+  if (!date || Number.isNaN(date.getTime())) return '';
+  const day = date.toLocaleDateString('en-US', { timeZone: TZ, weekday: 'short', month: 'short', day: 'numeric' });
+  const time = date.toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' });
+  return `${day} · ${time}`;
+}
+
 export { TZ };
