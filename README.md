@@ -188,6 +188,23 @@ polish: YouTube's player is roughly a megabyte of script per embed, and six eage
 iframes would outweigh the rest of the site and hand YouTube a page view for
 every visitor who never pressed play.
 
+### Podcasts page
+
+A dedicated page (`podcasts.html`, linked from the nav) embedding a handful of
+real, currently-active Commanders shows via Spotify's own public embed
+iframes (`open.spotify.com/embed/show/<id>`) — no API key, no scraping, and
+no episode content ever passes through this project's servers. Shows are
+picked in `PODCASTS` in `src/site/templates.js` and were verified live on
+Spotify (2026-08-21), not guessed from memory — an AI model's training data
+is not a reliable source for "is this show still active" or "what's its real
+show ID," and a wrong ID just embeds a broken player. Current lineup:
+Command Center Podcast (the team's own), Beltway Football (Monumental Sports
+Network), and Locked On Commanders (Locked On Podcast Network).
+
+The page also carries the video rail and schedule sidebar, same as Weekly
+Recap — both were empty single-column pages at first, which read as
+unfinished next to the news river's two-column layout.
+
 ### Progressive reveal and back to top
 
 The river renders **all** its items and shows the first `RIVER_INITIAL` (14), with
@@ -299,6 +316,43 @@ hardening. Speed doesn't matter for a job that runs once a week; hallucination
 rate is the only axis that does. Override with `DIGEST_MODEL` if you pull
 something else into Ollama.
 
+**Voice, length, and quotes (2026-08-21 revision).** The first published
+recap (2026-08-20) was short and paraphrase-only — accurate, but it read like
+a summary rather than a column, and it left real material on the table: the
+corpus already carries full-text beat-reporter posts (Ben Standig, Tashan
+Reed, John Keim, JP Finlay, Mike Garafolo) with quotable lines that the
+original prompt never asked the model to prefer over its own paraphrase.
+`src/digest/prompt.js`'s VOICE and STRUCTURE sections and hard rule 13 were
+revised to fix that:
+
+- **VOICE** now permits wit to show up regularly through the piece rather
+  than only in the one moment that "earns" it most. Still dry and
+  understated at baseline, still PG, still no forced puns — a flat sentence
+  still beats a bad joke.
+- **STRUCTURE** went from 3-6 threads/2-4 sentences to 4-7 threads/3-5
+  sentences, with an explicit steer to go deeper on the sources already in
+  hand (specific quotes, specific numbers) rather than pad the thread count.
+- **Rule 13** tells the model to prefer a source's exact quoted words over
+  paraphrasing them, with attribution, whenever a source is a direct quote.
+- **`alsoNoted` was removed from the schema entirely** after the first
+  revision's worked example produced a postscript with stray, only
+  loosely-relevant facts that didn't earn a real thread. If a storyline
+  isn't worth a thread of its own, it's not worth including at all now —
+  there's no leftover-facts bucket to fall back on.
+- `excerpt()` in `src/lib/text.js` was bumped from 220 to 500 characters, so
+  RSS article excerpts carry more of the source's own quotable language into
+  the corpus rather than getting cut at roughly one sentence. This shares a
+  code path with the site's own river card excerpts (`.card-excerpt`),
+  which already truncate visually via CSS, so the longer text doesn't break
+  card layout.
+
+The 2026-08-20 recap in `data/digests/` was hand-rewritten under these new
+rules as a worked example before trusting them to an unattended model run —
+same corpus, same citations, pulling quotes that were already sitting
+unused in the data. It still has an `alsoNoted` block from before that field
+was removed; old records aren't retroactively rewritten, only future ones
+follow the new schema.
+
 ### Duplicates and freshness
 
 `src/lib/store.js` collapses the same story picked up by two outlets within
@@ -382,6 +436,27 @@ burgundy `--text-faint` falls to roughly 3:1 contrast — under the 4.5:1 that b
 text needs. Anything else placed on a burgundy panel needs the same treatment
 rather than inheriting tones that only work on the dark background.
 
+**Logo and home screen icon.** `src/site/assets/logo.png` is a transparent
+PNG, auto-cropped to its own artwork (no dead padding) so `.brand-logo`'s
+CSS `height` fills the box it's given instead of floating small inside a
+mostly-empty canvas. The "SPORTS · NEWS · DC" line is **not** part of the
+image — it was cropped off and re-added as a real `<p class="brand-kicker">`
+in `header()`, because baked-in raster text at that size became unreadable
+once the logo picked up a drop-shadow filter; real text has no such problem
+and stays crisp at any size.
+
+The home-screen icon (`apple-touch-icon.png`, `favicon-16/32.png`,
+`icon-192/512.png`, `site.webmanifest`, all in `src/site/assets/`) is a
+separate square mark, not a shrunk version of the wordmark logo — the full
+"THE BURGUNDY WIRE" lockup is illegible at 32px, so the icon is a close-up
+of the logo's spear/arrow element on a solid burgundy background instead.
+Source art came from Ideogram; the generated PNG's "transparent" corners
+were actually a baked-in gray checkerboard texture (`mode: 'RGB'`, not
+`RGBA`), not real alpha, so they were flood-filled with the logo's own
+burgundy (`rgb(90,19,21)`, sampled from the art itself) before resizing down
+to each icon size. Regenerate all sizes from a new master with Pillow if the
+mark changes; there's no build step for this, they're committed as-is.
+
 Contracts to preserve if you swap templates:
 
 - **River item:** `title`, `url`, `sourceName`, `category`, `excerpt`,
@@ -427,23 +502,40 @@ length-derived scroll duration.
 
 Live at **https://commanders-news-aggregator.netlify.app**.
 
-`.github/workflows/nightly.yml` runs `collect` → `social` → `build` → commit
-`data/` → `netlify deploy --prod` on a nightly cron (08:00 UTC), and can be
-triggered by hand with `gh workflow run nightly.yml`. `NETLIFY_AUTH_TOKEN` is a
-repo secret and `NETLIFY_SITE_ID` / `SITE_URL` are repo variables.
+`.github/workflows/nightly.yml` (name predates the current schedule; it's no
+longer nightly) runs `collect` → `social` → `build` → commit `data/` →
+`netlify deploy --prod` every 4 hours (`0 */4 * * *`), and can be triggered
+by hand with `gh workflow run nightly.yml`. `NETLIFY_AUTH_TOKEN` is a repo
+secret and `NETLIFY_SITE_ID` / `SITE_URL` are repo variables. It was bumped
+from once a day (2026-08-21) because a day's worth of camp news was
+noticeably stale by the next morning's run.
 
-`.github/workflows/social.yml` runs the same build-and-deploy shape hourly,
-but only `social` → `build` — never `collect` — because the ticker's beat
-reporter updates go stale within the hour in a way article headlines don't.
-The two workflows share a `concurrency: group: site-deploy` so their once-a-day
-overlap at 08:00 UTC queues instead of racing on the same `git push`.
+`.github/workflows/social.yml` runs the same build-and-deploy shape every 2
+hours (`0 */2 * * *`, down from hourly the same day, to offset the extra
+deploy volume from the change above), but only `social` → `build` — never
+`collect` — because the ticker's beat reporter updates go stale faster than
+article headlines do. The two workflows share a `concurrency: group:
+site-deploy` so their overlapping ticks (every 4 hours, both land on the
+same minute) queue instead of racing on the same `git push`.
 
 **This repo is private**, so GitHub Actions minutes aren't unlimited (2,000
-free/month on standard runners). Hourly adds roughly 1,000-1,100 minutes/month
-on top of the nightly job's ~60 — real, but under the free tier on its own.
-If other Actions usage on this account starts crowding that budget, the fix is
-a one-line change to `social.yml`'s cron (e.g. `0 */2 * * *` for every 2 hours
-instead of every 1).
+free/month on standard runners). At roughly 2 minutes per run, the current
+schedule costs about 360 min/month from the 4-hourly job and about 720
+min/month from the 2-hourly one, call it ~1,100/month combined, under the
+free tier on its own. If other Actions usage on this account starts crowding
+that budget, both crons are one-line changes back toward a lower frequency.
+
+**Netlify's deploy allowance is metered separately from GitHub Actions
+minutes**, and it's the tighter constraint of the two — this account hit its
+production-deploy cap once already (2026-08-21) with the *lower* pre-bump
+deploy volume (25/day: 1 nightly + 24 hourly), which paused every `netlify
+deploy --prod` call, scheduled or manual, until credits were added in the
+dashboard. The schedule above (6 + 12 = 18 deploys/day) is actually *fewer*
+deploys/day than before the bump, since cutting the ticker from hourly to
+every 2 hours outweighs adding the nightly job's extra runs — but it's worth
+watching the Netlify dashboard's credit balance if deploys start silently
+failing; a `JSONHTTPError: Forbidden` from `netlify deploy` with no other
+explanation is the symptom, not a broken token.
 
 **The weekly digest is not part of this cron, on purpose.** GitHub's hosted
 runners have no GPU and no Ollama, and — separately — auto-publish was a

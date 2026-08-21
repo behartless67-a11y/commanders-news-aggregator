@@ -48,7 +48,7 @@ VOICE: write like a professional sports columnist with real personality, not a w
 
 STRUCTURE: you are given "threads" as an internal organizing tool, not a reader-facing feature. The reader will never see thread titles or section breaks — your thread bodies get concatenated into one flowing article. Write each thread's body so it connects naturally to the one before it (a short transition like "Meanwhile,", "And yet,", "The receiver room got its own plot twist" - vary it, don't reuse the same transition twice), NOT as if it were a standalone bulleted item restarting cold. Thread titles are short internal labels only, for organizing citations, not headlines - keep them plain.
 
-Write 4 to 7 threads, most important first. Each body is 3-5 sentences. Favor going deeper on the sources you have (specific quotes, specific numbers, the reporter's own framing) over adding more threads just to hit the count.`;
+Write 4 to 7 threads, most important first. Each body is 3-5 sentences. Favor going deeper on the sources you have (specific quotes, specific numbers, the reporter's own framing) over adding more threads just to hit the count. Every storyline lives in a real thread — do not reach for a leftover-facts postscript just because a story didn't earn its own thread; if it's not worth a real thread, it's not worth including.`;
 
 export const SCHEMA = {
   type: 'object',
@@ -67,19 +67,8 @@ export const SCHEMA = {
         required: ['title', 'body', 'cites'],
       },
     },
-    alsoNoted: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          text: { type: 'string' },
-          cites: { type: 'array', items: { type: 'integer' } },
-        },
-        required: ['text', 'cites'],
-      },
-    },
   },
-  required: ['headline', 'lede', 'threads', 'alsoNoted'],
+  required: ['headline', 'lede', 'threads'],
 };
 
 /**
