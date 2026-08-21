@@ -71,6 +71,7 @@ function header(activeFile, hasWeekly = false) {
     <div class="header-inner">
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
+        <p class="brand-kicker">Sports &middot; News &middot; DC</p>
         <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
       </div>
     </div>

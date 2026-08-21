@@ -104,6 +104,18 @@ img, svg{ display:block; max-width:100%; }
 .brand-logo{
   height: clamp(140px, 20vw, 260px);
   width: auto;
+  filter: drop-shadow(3px 3px 0 rgba(0,0,0,1));
+}
+
+/* Real text instead of baked into the logo art — legible at any size and
+   unaffected by the logo's drop-shadow filter. */
+.brand-kicker{
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .brand-mark{
