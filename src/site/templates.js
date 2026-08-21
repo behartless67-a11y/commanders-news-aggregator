@@ -71,13 +71,13 @@ function header(activeFile, hasWeekly = false) {
     <div class="header-inner">
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
+        <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
       </div>
     </div>
     <div class="header-bottom-row">
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
         ${tabs}${weeklyTab}
       </nav>
-      <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
     </div>
   </div>
 </header>`;

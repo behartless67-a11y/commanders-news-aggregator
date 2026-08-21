@@ -87,22 +87,22 @@ img, svg{ display:block; max-width:100%; }
 .site-header{
   border-bottom: 1px solid var(--border-soft);
   background: linear-gradient(180deg, rgba(90,20,20,0.18), transparent);
-  padding: 8px 0 0;
+  padding: 36px 0 0;
 }
 
 .header-inner{
   display:flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
   padding-bottom: 6px;
 }
 
-.brand{ display:flex; align-items:center; gap:14px; }
+.brand{ display:flex; flex-direction: column; align-items:center; gap:10px; }
 
 .brand-logo{
-  height: clamp(100px, 13vw, 165px);
+  height: clamp(140px, 20vw, 260px);
   width: auto;
 }
 
@@ -124,7 +124,7 @@ img, svg{ display:block; max-width:100%; }
 .header-bottom-row{
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 10px;
@@ -138,7 +138,7 @@ img, svg{ display:block; max-width:100%; }
   line-height: 1.15;
   color: var(--gold);
   font-weight: 600;
-  text-align: right;
+  text-align: center;
   text-shadow: 0 2px 10px rgba(0,0,0,0.55);
 }
 
