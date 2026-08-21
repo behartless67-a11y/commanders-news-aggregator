@@ -177,6 +177,21 @@ img, svg{ display:block; max-width:100%; }
   color: var(--text);
 }
 
+/* Jumps to an on-page widget rather than filtering the river, so it sits
+   apart from the other tabs instead of reading as one of the choices. */
+.filter-tabs a.nav-jump{
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 18px;
+  border-left: 1px solid var(--border-soft);
+}
+
+/* Only the first nav-jump pushes the group right — a second auto margin
+   here would split the two apart instead of keeping them together. */
+.filter-tabs a.nav-jump + a.nav-jump{
+  margin-left: 0;
+}
+
 .filter-tabs a[aria-current="page"]{
   color: var(--gold);
   border-bottom-color: var(--gold);
@@ -651,7 +666,6 @@ main.layout{
   padding: 10px 16px;
   margin: 28px 0 0;
   line-height: 1.6;
-  max-width: 76ch;
 }
 
 .digest-disclosure a{ color: var(--text-muted); font-weight: 600; }
@@ -661,7 +675,6 @@ main.layout{
   font-size: clamp(22px, 3vw, 30px);
   line-height: 1.25;
   margin: 0 0 6px;
-  max-width: 76ch;
 }
 
 .digest-week{
@@ -675,7 +688,6 @@ main.layout{
   color: var(--text-muted);
   line-height: 1.6;
   margin: 0 0 20px;
-  max-width: 76ch;
 }
 
 /* One continuous column, not boxed sections — see digestThread() in
@@ -684,7 +696,6 @@ main.layout{
   font-size: 14.5px;
   color: var(--text);
   line-height: 1.65;
-  max-width: 76ch;
   margin: 0 0 18px;
 }
 
@@ -710,7 +721,6 @@ main.layout{
 .digest-thread{
   border-top: 1px solid var(--border-soft);
   padding: 20px 0;
-  max-width: 76ch;
 }
 
 .digest-thread h3{
@@ -726,7 +736,6 @@ main.layout{
   border-top: 1px solid var(--border-soft);
   margin-top: 26px;
   padding-top: 22px;
-  max-width: 76ch;
 }
 
 .digest-source-toggle summary{
@@ -783,40 +792,12 @@ main.layout{
   margin: 4px 0 6px;
 }
 
-.digest-list{
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  max-width: 76ch;
-}
-
-.digest-card{
-  display: block;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.digest-card-week{
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-faint);
-  font-weight: 700;
-}
-
-.digest-card h2{
-  font-size: 17px;
-  margin: 4px 0 6px;
-  color: var(--text);
-}
-
-.digest-card:hover h2{ color: var(--gold); }
-
-.digest-card p{
-  font-size: 13.5px;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin: 0;
+/* Between two full recaps stacked on the index page — .digest-post already
+   carries its own bottom spacing, so this only needs to draw the line. */
+.digest-divider{
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+  margin: 8px 0 32px;
 }
 
 /* ---------- Sidebar ---------- */
@@ -858,6 +839,38 @@ main.layout{
   letter-spacing: 0.07em;
   color: var(--text-faint);
   font-weight: 700;
+}
+
+/* ---------- Podcasts page ----------
+   Spotify's own public embed iframes — no API key, no scraping. Each embed
+   ships its own dark player chrome, so this page only needs to handle
+   spacing and the rounded corners; Spotify handles the rest. */
+.podcasts-heading{
+  font-size: clamp(20px, 2.6vw, 26px);
+  margin: 4px 0 6px;
+}
+
+.page-intro{
+  color: var(--text-muted);
+  max-width: 60ch;
+  margin: 0 0 20px;
+}
+
+.podcast-page-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 560px;
+}
+
+.podcast-embed{
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.podcast-embed iframe{
+  display: block;
+  border-radius: 12px;
 }
 
 .schedule-list{
@@ -1109,9 +1122,13 @@ main.layout{
    departure from the desktop layout, not a scaled-down version of it. */
 @media (max-width: 640px){
   .header-inner{ justify-content: center; }
-  .brand-logo{ height: 100px; }
+  .brand-logo{ height: 160px; }
   .header-bottom-row{ flex-direction: column; align-items: center; }
   .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
+  /* The auto margin that separates it from the filter tabs on desktop only
+     makes sense in a single unwrapped row — on a wrapped, centered mobile
+     row it would just shove it to a line of its own. */
+  .filter-tabs a.nav-jump{ margin-left: 0; border-left: none; padding-left: 4px; }
   /* min-width:0 is the actual fix — a flex item's default min-width:auto
      refuses to shrink below its content's width even with width:100% set,
      which is what was pushing this past the edge instead of wrapping. */

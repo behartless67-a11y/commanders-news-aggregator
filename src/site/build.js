@@ -8,7 +8,7 @@ import { loadScheduleCache } from '../lib/schedule.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -84,17 +84,33 @@ export async function buildSite() {
   }
 
   if (hasWeekly) {
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games };
     await fs.writeFile(path.join(DIST_DIR, 'weekly.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `weekly-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
     }
   }
 
+  await fs.writeFile(
+    path.join(DIST_DIR, 'podcasts.html'),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, videos, games }),
+    'utf8',
+  );
+
   const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
-  for (const asset of ['site.css', 'site.js', 'logo.png']) {
+  for (const asset of [
+    'site.css',
+    'site.js',
+    'logo.png',
+    'apple-touch-icon.png',
+    'favicon-32.png',
+    'favicon-16.png',
+    'icon-192.png',
+    'icon-512.png',
+    'site.webmanifest',
+  ]) {
     await fs.copyFile(path.resolve('src/site/assets', asset), path.join(DIST_DIR, asset));
   }
 

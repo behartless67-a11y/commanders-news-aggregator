@@ -65,6 +65,11 @@ function header(activeFile, hasWeekly = false) {
   const weeklyTab = hasWeekly
     ? `\n      <a href="weekly.html"${activeFile === 'weekly.html' ? ' aria-current="page"' : ''}>Weekly Recap</a>`
     : '';
+  // Jumps to the schedule widget on the main river page rather than a filter
+  // of its own — always points at index.html#schedule since the weekly pages
+  // don't render the sidebar that widget lives in.
+  const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
+  const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
 
   return `<header class="site-header" id="top">
   <div class="wrap">
@@ -77,7 +82,7 @@ function header(activeFile, hasWeekly = false) {
     </div>
     <div class="header-bottom-row">
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}
+        ${tabs}${weeklyTab}${scheduleLink}${podcastsLink}
       </nav>
     </div>
   </div>
@@ -244,11 +249,31 @@ function scheduleRow(game) {
         </li>`;
 }
 
+/**
+ * Spotify's own oEmbed iframe — no API key, no scraping, just the public
+ * embed URL every show page exposes. Shows picked and verified live on
+ * Spotify (real, currently-publishing) rather than guessed from memory.
+ */
+const PODCASTS = [
+  { name: 'Command Center Podcast', id: '5f67fuVkHGhkASVhl3Msby' },
+  { name: 'Beltway Football', id: '67M5rgs9T8427Lr1A6BG7n' },
+  { name: 'Locked On Commanders', id: '4F9T8e4JLYDZrvOAW0MPrf' },
+];
+
+function podcastEmbeds() {
+  return PODCASTS.map(
+    (p) => `
+      <div class="podcast-embed">
+        <iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>`,
+  ).join('\n');
+}
+
 /** The full season, preseason through the regular-season finale, not just what's left to play. */
 function scheduleWidget(games) {
   if (!games?.length) return '';
   return `
-    <div class="widget-schedule">
+    <div class="widget-schedule" id="schedule">
       <h2>Schedule</h2>
       <ul class="schedule-list">${games.map(scheduleRow).join('\n')}
       </ul>
@@ -410,12 +435,28 @@ function digestSourceFooter(cites, byIndex) {
       </section>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null }) {
+/** Shared by the single-post page and the index — the index now shows full
+ * recaps rather than link-out previews, so both need the same article body. */
+function digestArticleBody(record, rosterIndex, headingTag = 'h2') {
   const byIndex = new Map(record.corpus.map((e) => [e.n, e]));
   const { digest } = record;
   const threads = digest.threads.map((t) => digestThread(t, rosterIndex)).join('\n');
   const also = digestAlsoNoted(digest.alsoNoted, rosterIndex);
   const sourceFooter = digestSourceFooter(collectCites(digest), byIndex);
+  return `
+    <article class="digest-post">
+      <${headingTag}>${escapeHtml(digest.headline)}</${headingTag}>
+      <p class="digest-week">Week of ${escapeHtml(weekLabel(record))} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
+      <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
+${threads}
+${also}
+${sourceFooter}
+    </article>`;
+}
+
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [] }) {
+  const { digest } = record;
+  const rail = sidebar(videos, games);
 
   return `<!doctype html>
 <html lang="en">
@@ -428,6 +469,11 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
 </head>
 <body>
 
@@ -435,16 +481,13 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 ${header('weekly.html', true)}
 </div>
 
-<main class="layout layout-wide">
-  <article class="digest-post">
-    <h1>${escapeHtml(digest.headline)}</h1>
-    <p class="digest-week">Week of ${escapeHtml(weekLabel(record))} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
-    <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
-${threads}
-${also}
-${sourceFooter}
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+${digestArticleBody(record, rosterIndex, 'h1')}
     ${digestDisclosure(record.model)}
-  </article>
+  </div>
+
+  ${rail}
 </main>
 
 ${footer(sources, generatedAt)}
@@ -458,17 +501,11 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt }) {
-  const cards = records
-    .map(
-      (r) => `
-      <a class="digest-card" href="weekly-${escapeHtml(r.week)}.html">
-        <span class="digest-card-week">${escapeHtml(weekLabel(r))}</span>
-        <h2>${escapeHtml(r.digest.headline)}</h2>
-        <p>${escapeHtml(stripInlineCites(r.digest.lede))}</p>
-      </a>`,
-    )
-    .join('\n');
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [] }) {
+  const rail = sidebar(videos, games);
+  const articles = records
+    .map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`)
+    .join('\n    <hr class="digest-divider">\n');
 
   return `<!doctype html>
 <html lang="en">
@@ -481,6 +518,11 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
 </head>
 <body>
 
@@ -488,12 +530,60 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 ${header('weekly.html', true)}
 </div>
 
-<main class="layout layout-wide">
-  <h1 class="weekly-index-heading">Weekly Recap</h1>
-  <div class="digest-list">
-    ${cards || '<p class="river-empty">No recaps published yet.</p>'}
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+    <h1 class="weekly-index-heading">Weekly Recap</h1>
+    ${articles || '<p class="river-empty">No recaps published yet.</p>'}
   </div>
-  ${digestDisclosure(records[0]?.model || 'a local model')}
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [] }) {
+  const rail = sidebar(videos, games);
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podcasts — ${escapeHtml(siteName)}</title>
+<meta name="description" content="Commanders podcasts worth your time, embedded to stream right from ${escapeHtml(siteName)}.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('podcasts.html', hasWeekly)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+    <h1 class="podcasts-heading">Podcasts</h1>
+    <p class="page-intro">A few Commanders shows worth following, streaming right here.</p>
+    <div class="podcast-page-list">${podcastEmbeds()}
+    </div>
+  </div>
+
+  ${rail}
 </main>
 
 ${footer(sources, generatedAt)}
@@ -552,6 +642,11 @@ export function renderPage(
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
 <noscript><style>
   /* Every headline is already in the HTML, so with no JavaScript to expand it
      the river must not stay collapsed — show all of it and drop the button that
