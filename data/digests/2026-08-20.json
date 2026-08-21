@@ -7,72 +7,43 @@
   "windowStart": "2026-08-13T15:35:37.136Z",
   "windowEnd": "2026-08-20T15:35:37.136Z",
   "digest": {
-    "headline": "Newton and the Front Seven Hit a Pec-tacular Setback",
-    "lede": "The Washington Commanders' defensive line is facing a significant period of instability following news that defensive tackle Johnny Newton underwent surgery to repair a torn pectoral muscle [3, 12, 96]. The procedure, performed in New York, is expected to result in an extended absence for the third-year defender [3, 12, 91].",
+    "headline": "Torn Pec, Torn Depth Chart: Johnny Newton's Surgery Headlines a Brutal Week Up Front",
+    "lede": "The Washington Commanders' defensive front took its worst hit of camp this week. Defensive tackle Johnny Newton had surgery to repair a torn pectoral muscle, serious enough to end any debate about whether he'd suit up Saturday against the Lions [3, 12, 89]. He won't be the only name missing from that lineup.",
     "threads": [
       {
-        "title": "Injury concerns mount across the roster",
-        "body": "The Commanders' injury list expanded significantly this week, affecting both sides of the ball [5, 6, 22]. Running back Rachaad White is dealing with a hamstring injury sustained during joint practices with the Dolphins, though head coach Dan Quinn noted the issue is not considered long-term [10, 75, 77, 95]. On the offensive line, center Nick Allegretti was pulled from practice due to calf tightness, though imaging showed no setbacks [76, 81, 83]. The defensive unit is also managing injuries to linebacker K'Lavon Chaisson (knee), linebacker Jordan Magee (shoulder), linebacker Odafe Oweh (calf), and cornerback Trey Amos (ankle) [69, 100, 101]. Additionally, quarterback Marcus Mariota is sidelined with a right knee MCL sprain [49, 52, 100].",
-        "cites": [
-          5,
-          6,
-          7,
-          10,
-          22,
-          24,
-          49,
-          52,
-          69,
-          71,
-          73,
-          75,
-          76,
-          77,
-          80,
-          81,
-          82,
-          83,
-          100,
-          101
-        ]
+        "title": "Newton's surgery and the outlook",
+        "body": "Newton flew to New York to see a specialist, and the diagnosis was as bad as it gets for a player several beat writers have already called a make-or-break third season [3, 12, 93]. Tashan Reed of The Athletic broke the news overnight: \"Some overnight news: #Commanders DT Johnny Newton had surgery to repair a torn pec, per source. It'll be interesting to see whether he did enough to make the roster.\" [89] Pro Football Rumors added that \"a firm recovery timetable is not yet in place\" [62]. That leaves the door open, unhappily, for backup Ricky Barber to get real reps sooner than anyone wanted [23].",
+        "cites": [3, 12, 23, 62, 89, 93]
       },
       {
-        "title": "Preseason plans and roster updates",
-        "body": "Head coach Dan Quinn indicated that a good amount of starters will receive playing time during Saturday's game against the Lions, though the status of quarterback Jayden Daniels remains uncertain and will depend on the health of players around him [2, 78, 79, 84, 85]. In recent roster moves, the team released kicker Jake Moody after undrafted rookie Drew Stevens won the kicking competition [32, 46, 107, 109]. The front office also signed defensive tackle Maurice Hurst Jr. and running back Craig Reynolds [102, 110].",
-        "cites": [
-          2,
-          32,
-          46,
-          76,
-          78,
-          79,
-          84,
-          85,
-          102,
-          107,
-          109,
-          110
-        ]
+        "title": "The rest of the injury report reads like a hospital waiting room",
+        "body": "Reed's Wednesday not-practicing list ran nine names deep, from Marcus Mariota's MCL to Trey Amos's ankle, with Newton, Tunsil, Allegretti, Oweh, Chaisson, and Magee filling out the rest [69, 100, 101]. Daron Payne joined the list two days later with what both John Keim and Ben Standig called a \"minor\" issue, sitting out what Keim described as \"a lighter practice: typical of a Friday practice in-season\" [60, 61]. JP Finlay offered the week's most useful perspective check: \"Dude every team in the league gets a bunch of camp injuries. It's football.\" [90] Not every name is in real danger. Mike Garafolo reported White's hamstring is \"not considered serious or long-term\" for a back who has \"excelled in David Blough's offense\" [95, 75, 77].",
+        "cites": [60, 61, 69, 75, 77, 90, 95, 100, 101]
       },
       {
-        "title": "Personnel shifts and departures",
-        "body": "The Commanders' wide receiver room will see a matchup between brothers this season, as Trevon Diggs signed with the Seattle Seahawks, while Washington's Stefon Diggs remains with the team [14, 15]. Meanwhile, running back Jerome Ford's roster hopes declined after being placed on injured reserve [37, 41]. Defensive back Robert McDaniel was waived by the team but subsequently signed with the Tampa Bay Buccaneers [38].",
-        "cites": [
-          14,
-          15,
-          37,
-          38,
-          41
-        ]
+        "title": "Saturday's plan against the Lions",
+        "body": "Despite the injury list, Dan Quinn intends to play his starters. \"Dan Quinn said part of today's practice would focus on the Lions. Jayden Daniels is with the 1s seeing this part of practice,\" Ben Standig reported, adding dryly that Daniels \"is also practice and he is the starting QB.\" [63, 2] Quinn has stopped short of confirming Daniels will actually play, saying only that a \"good amount of starters\" will see the field [2, 78, 79, 84, 85].",
+        "cites": [2, 63, 78, 79, 84, 85]
+      },
+      {
+        "title": "Special teams got resolved, one battle at a time",
+        "body": "\"The #Commanders have released K Jake Moody, per sources. Drew Stevens wins the kicking job,\" Tashan Reed reported, closing the book on a competition the undrafted rookie won outright [107, 109, 46, 32]. The front office also signed defensive tackle Maurice Hurst Jr. and running back Craig Reynolds for depth [102, 110].",
+        "cites": [32, 46, 102, 107, 109, 110]
+      },
+      {
+        "title": "The internet had its own preseason too",
+        "body": "ClutchPoints noted that Washington \"likely won't consider ChatGPT when they make their roster decisions,\" before running the bot's projected 53-man roster anyway and explaining exactly where it whiffed [36, 45]. Jayden Daniels, meanwhile, is \"finding out the hard way\" that the internet remains undefeated, per Mike Florio, after his LSU legal dispute turned into what ClutchPoints called \"the joke of the summer\" [43]. He even picked up an unlikely heckler in an MLS team's social account [48].",
+        "cites": [36, 43, 45, 48]
       }
     ],
     "alsoNoted": [
       {
-        "text": "Daron Payne did not practice due to a minor injury [60, 61].",
-        "cites": [
-          60,
-          61
-        ]
+        "text": "Trevon Diggs signed with Seattle, meaning Washington's Stefon Diggs will now face his own brother twice a year [14, 15].",
+        "cites": [14, 15]
+      },
+      {
+        "text": "Jerome Ford's roster bid ended on injured reserve, and Robert McDaniel, waived by Washington, landed on his feet in Tampa Bay days later [37, 38, 41].",
+        "cites": [37, 38, 41]
       }
     ]
   },

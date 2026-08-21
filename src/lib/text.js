@@ -64,7 +64,7 @@ export function cleanTitle(value) {
 }
 
 /** Trim a feed's body/summary down to a short river excerpt. */
-export function excerpt(text, max = 220) {
+export function excerpt(text, max = 500) {
   const clean = stripHtml(text);
   if (clean.length <= max) return clean;
   const cut = clean.slice(0, max);
