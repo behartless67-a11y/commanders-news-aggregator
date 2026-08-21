@@ -958,5 +958,77 @@
     "excerpt": "Quarterback Joshua Dobbs will get an opportunity to go ahead in Detroit’s backup competition this weekend.\n Head coach Dan Campbell told reporters in his Thursday press conference that Dobbs will start for the Lions…",
     "publishedAt": "2026-08-20T17:35:31.000Z",
     "collectedAt": "2026-08-20T17:46:38.442Z"
+  },
+  "hogs-haven-32fc2b86af68": {
+    "id": "hogs-haven-32fc2b86af68",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-training-camp/433454/joshua-josephs-jayden-daniels-ricky-barber-storylines-preseason",
+    "title": "Joshua Josephs among top Commanders storylines as training camp continues",
+    "excerpt": "The Washington Commanders conducted more back-to-back sessions of training camp this week. Several players were out with injuries sustained during the team’s first preseason game versus the Miami Dolphins or the joint…",
+    "publishedAt": "2026-08-20T21:00:07.000Z",
+    "collectedAt": "2026-08-21T08:37:58.365Z"
+  },
+  "hogs-haven-65add2e4f703": {
+    "id": "hogs-haven-65add2e4f703",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/433648/washington-commanders-laremy-tunsil-injury-left-tackle-brandon-coleman-taylor-decker",
+    "title": "Washington Commanders have good options to fill in for Laremy Tunsil",
+    "excerpt": "Rising optimism for the Commanders’ season was dealt a setback when Laremy Tunsil suffered a torn triceps in training-camp one-on-ones against edge rusher Odafe Oweh. The injury required surgery and is expected to…",
+    "publishedAt": "2026-08-20T18:00:00.000Z",
+    "collectedAt": "2026-08-21T08:37:58.365Z"
+  },
+  "riggos-rag-40199d0ac796": {
+    "id": "riggos-rag-40199d0ac796",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sam-cosmi-proved-stefon-diggs-has-commanders-locker-room-rethinking-everything",
+    "title": "Sam Cosmi proved Stefon Diggs has Commanders' locker room rethinking everything",
+    "excerpt": "Veteran right guard Sam Cosmi proved that wide receiver Stefon Diggs has the Washington Commanders' locker room rethinking everything.",
+    "publishedAt": "2026-08-20T19:00:00.000Z",
+    "collectedAt": "2026-08-21T08:37:58.633Z"
+  },
+  "clutchpoints-c6f10d4d32f2": {
+    "id": "clutchpoints-c6f10d4d32f2",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-did-jayden-daniels-troll-himself-viral-5-moment-with-fan",
+    "title": "Did Commanders’ Jayden Daniels troll himself in viral ‘5’ moment with fan?",
+    "excerpt": "Roasting Jayden Daniels has become one of the more fascinating crazes in the recent cultural zeitgeist. Several leagues and companies have mocked the Washington Commanders quarterback for his LSU jersey controversy.…",
+    "publishedAt": "2026-08-21T03:44:59.000Z",
+    "collectedAt": "2026-08-21T08:37:58.752Z"
+  },
+  "commanders-youtube-9e2fa22c1a1b": {
+    "id": "commanders-youtube-9e2fa22c1a1b",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=bIZb-TCu7KQ",
+    "title": "HC Dan Quinn Mic'd Up For Preseason Week 1 vs. Miami | Washington Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-08-20T22:00:23.000Z",
+    "collectedAt": "2026-08-21T08:37:59.023Z"
+  },
+  "commanders-youtube-a1cc55e168b1": {
+    "id": "commanders-youtube-a1cc55e168b1",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=-pzgzA0YV2I",
+    "title": "EXCLUSIVE Defensive Debrief, Detroit Lions Preview & Command Center Cup Championship",
+    "excerpt": "",
+    "publishedAt": "2026-08-20T20:00:01.000Z",
+    "collectedAt": "2026-08-21T08:37:59.023Z"
   }
 }
