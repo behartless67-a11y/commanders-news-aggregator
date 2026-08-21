@@ -2,13 +2,13 @@ name: Nightly build
 
 on:
   schedule:
-    # 08:00 UTC = 3 or 4 AM America/New_York depending on DST.
-    - cron: '0 8 * * *'
+    # Every 4 hours on the hour (00:00, 04:00, 08:00 UTC, etc).
+    - cron: '0 */4 * * *'
   workflow_dispatch: {}
 
 # Shared with social.yml: its hourly `0 * * * *` tick lands on this same
-# minute once a day, and both workflows commit data/ and push. Without this
-# they'd race on that push.
+# minute six times a day now, and both workflows commit data/ and push.
+# Without this they'd race on that push.
 concurrency:
   group: site-deploy
   cancel-in-progress: false
