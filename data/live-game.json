@@ -1,0 +1,59 @@
+{
+  "eventId": "401873601",
+  "opponent": "Detroit Lions",
+  "lastRecappedPeriod": 1,
+  "entries": [
+    {
+      "period": 1,
+      "label": "End of Q1",
+      "body": "This one opened in bizarre fashion. After Detroit's Jonathan Kennedy returned the opening kickoff to the 23 and Jahmyr... er, this was preseason personnel, so it was Jared Saylors and J.Dobbs running Detroit's offense to start [1, 2]. Dobbs was promptly sacked for a 9-yard loss and fumbled, and Washington's Joshua Josephs scooped it up and rumbled in for the score, with @Commanders confirming Josephs got the touchdown himself [3, 39]. Ben Standig noted the defense already had two turnovers and four sacks about 1.5 quarters into the game, which tells you all you need to know about how lopsided the trenches were early [43, 46, 49]. Detroit's D.Stevens added the extra point and Washington got the ball back trailing 7-0 briefly before things evened out.\n\nWashington's answer came on a drive that mixed Dobbs' arm and legs. A short completion to B.Wright and grinding runs from Saylors and J.Small pushed things along, though Dobbs also threw an incompletion deep to T.Martin before that same route combo turned disastrous, with Q.Martin intercepting a short middle pass intended for T.Martin and returning it to midfield [5, 6, 7, 8, 9, 10]. JP Finlay flagged Jayden Daniels drawing quarterback duty on the ensuing series with \"OK AK show something,\" and Daniels was immediately sacked for a 10-yard loss by D.Wonnum before Washington had to punt away, with Standig crediting the rugby-player-turned-edge-rusher storyline for the pressure up front [12, 13, 15, 49]. Detroit tried to answer with K.Allen and J.Small chipping out gains of 11 and 7 before a Dobbs completion to C.Wilson went for 17 yards on a deep middle shot, but Wilson was hurt on the very next play and did not return [14, 17, 19, 20, 21]. Two plays later Dobbs broke a 50-yard touchdown run on the left edge to answer Washington's opening score, with J.Bates knotting things at 7-7 on the extra point [22, 23]. JP Finlay's \"Great pressure from big TJ, big hit\" and the Commanders' own \"TJ takes him down\" post both point to more pressure off the edge continuing to define the game as the quarter wound down, with Athan Kaliakmanis eventually entering at quarterback for Washington and leading a long, grinding possession of scrambles, a sack erased by a Detroit holding penalty, and a False Start on Washington's own C.Okonkwo, before the clock expired with Detroit's Cole Reynolds and Luke McCaffrey chewing up yardage toward midfield [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 50, 51].",
+      "cites": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        43,
+        46,
+        49,
+        50,
+        51
+      ],
+      "score": {
+        "commanders": "7",
+        "opponent": "7"
+      },
+      "generatedAt": "2026-08-22T17:01:59.305Z",
+      "model": "anthropic.claude-sonnet-5"
+    }
+  ],
+  "gameOver": false
+}
