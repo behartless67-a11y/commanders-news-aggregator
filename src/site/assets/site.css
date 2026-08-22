@@ -744,12 +744,42 @@ main.layout{
   margin: 0 0 10px;
 }
 
-.live-award{
+.live-score-subtitle{
+  margin: -4px 0 14px;
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.live-award-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
   margin-top: 14px;
+}
+
+@media (max-width: 640px){
+  .live-award-row{ grid-template-columns: 1fr; }
+}
+
+.live-award{
   padding: 14px 18px;
+  border-radius: var(--radius);
+}
+
+.live-award--hero{
   background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
   border: 1px solid rgba(255,182,18,0.35);
-  border-radius: var(--radius);
+}
+
+.live-award--goat{
+  background: linear-gradient(180deg, #2a2422 0%, #1a1615 100%);
+  border: 1px solid var(--border-soft);
+}
+
+.live-award--goat .live-award-name,
+.live-award--goat .live-award-icon{
+  color: var(--text-muted);
+  fill: var(--text-muted);
 }
 
 .live-award-name{

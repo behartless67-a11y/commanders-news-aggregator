@@ -17,6 +17,24 @@ const MAX_SOCIAL_FOR_RECAP = Number(process.env.LIVE_SOCIAL_COUNT || 15);
 /** Wider pool for the once-per-game final-thoughts wrap-up, which draws on the whole game rather than one quarter. */
 const MAX_SOCIAL_FOR_FINAL = Number(process.env.LIVE_FINAL_SOCIAL_COUNT || 40);
 
+/**
+ * Bedrock's Messages endpoint rejects `strict: true` on tool definitions
+ * (see cloud-provider.js), so a "required" field in the schema isn't
+ * actually enforced server-side - the model can just skip one. Cheap
+ * insurance: retry once, plain, before accepting a result that's missing
+ * something the render path depends on (an empty headline just falls back
+ * to the plain score line, but an empty body would render a blank entry).
+ */
+async function generateWithRetry({ system, prompt, schema, requiredFields, label }) {
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const result = await callModel({ system, prompt, schema });
+    const missing = requiredFields.filter((f) => !result.json[f]);
+    if (!missing.length) return result;
+    log.warn(`live: ${label} attempt ${attempt} missing ${missing.join(', ')}${attempt < 2 ? ', retrying' : ', keeping it anyway'}`);
+    if (attempt === 2) return result;
+  }
+}
+
 function labelFor(period, isFinal) {
   if (isFinal) return 'Final';
   if (period === 2) return 'Halftime';
@@ -70,7 +88,13 @@ export async function updateLiveGame() {
     socialPosts,
   });
 
-  const result = await callModel({ system: LIVE_SYSTEM_PROMPT, prompt, schema: LIVE_SCHEMA });
+  const result = await generateWithRetry({
+    system: LIVE_SYSTEM_PROMPT,
+    prompt,
+    schema: LIVE_SCHEMA,
+    requiredFields: ['body'],
+    label: 'quarter recap',
+  });
 
   // Cheap grounding check in place of the weekly digest's full validate.js —
   // proportionate to how much smaller this prompt's source surface is (a
@@ -122,7 +146,13 @@ async function generateFinalThoughts(game) {
       plays: game.plays,
       socialPosts,
     });
-    const result = await callModel({ system: FINAL_SYSTEM_PROMPT, prompt, schema: FINAL_SCHEMA });
+    const result = await generateWithRetry({
+      system: FINAL_SYSTEM_PROMPT,
+      prompt,
+      schema: FINAL_SCHEMA,
+      requiredFields: ['headline', 'body', 'heroRecipient', 'goatRecipient'],
+      label: 'final thoughts',
+    });
 
     const maxCite = game.plays.length + socialPosts.length;
     const cites = Array.isArray(result.json.cites) ? result.json.cites.filter((n) => Number.isInteger(n) && n >= 1 && n <= maxCite) : [];
@@ -130,8 +160,10 @@ async function generateFinalThoughts(game) {
     return {
       headline: result.json.headline,
       body: result.json.body,
-      awardRecipient: result.json.awardRecipient,
-      awardReason: result.json.awardReason,
+      heroRecipient: result.json.heroRecipient,
+      heroReason: result.json.heroReason,
+      goatRecipient: result.json.goatRecipient,
+      goatReason: result.json.goatReason,
       cites,
       generatedAt: new Date().toISOString(),
       model: result.model,

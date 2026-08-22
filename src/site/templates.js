@@ -227,7 +227,7 @@ function weekLabelOf(game) {
   // and .trim() on the assembled string only strips the ends, not that
   // internal gap - rendered live as "Pre  1" before this was caught.
   const num = (game.week || '').replace(/^WEEK/i, '').trim();
-  return game.season === 'preseason' ? `Pre ${num}` : `Week ${num}`;
+  return game.season === 'preseason' ? `Preseason ${num}` : `Week ${num}`;
 }
 
 /**
@@ -523,17 +523,27 @@ function liveParagraphs(text, rosterIndex) {
  * to an actual postgame take, plus this site's own running bit instead of
  * a generic "game ball".
  */
+const LIVE_AWARD_ICON = '<svg class="live-award-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66l.07-.11L13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15L11 21z"/></svg>';
+
+function liveAwardCard(kind, recipient, reason, rosterIndex) {
+  return `
+        <div class="live-award live-award--${kind}">
+          <p class="live-award-name">${LIVE_AWARD_ICON} The Live Wire Award &middot; ${kind === 'hero' ? 'Hero' : 'Goat'}</p>
+          <p class="live-award-recipient">${linkPlayers(stripInlineCites(recipient || ''), rosterIndex)}</p>
+          <p class="live-award-reason">${linkPlayers(stripInlineCites(reason || ''), rosterIndex)}</p>
+        </div>`;
+}
+
 function finalThoughtsBlock(finalThoughts, rosterIndex) {
   if (!finalThoughts) return '';
   return `
       <div class="live-final-thoughts">
         <h3>Final Thoughts</h3>
         ${liveParagraphs(finalThoughts.body, rosterIndex)}
-        <div class="live-award">
-          <p class="live-award-name"><svg class="live-award-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66l.07-.11L13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15L11 21z"/></svg> The Live Wire Award</p>
-          <p class="live-award-tagline">Goes to whoever had this game's single biggest impact on the outcome, for better or worse. Hero and goat are both eligible.</p>
-          <p class="live-award-recipient">${linkPlayers(stripInlineCites(finalThoughts.awardRecipient || ''), rosterIndex)}</p>
-          <p class="live-award-reason">${linkPlayers(stripInlineCites(finalThoughts.awardReason || ''), rosterIndex)}</p>
+        <p class="live-award-tagline">Two Live Wire Awards a game: Hero for the single biggest positive impact, Goat for the single biggest negative one.</p>
+        <div class="live-award-row">
+${liveAwardCard('hero', finalThoughts.heroRecipient, finalThoughts.heroReason, rosterIndex)}
+${liveAwardCard('goat', finalThoughts.goatRecipient, finalThoughts.goatReason, rosterIndex)}
         </div>
       </div>`;
 }
@@ -552,9 +562,16 @@ function liveGamePost(state, rosterIndex) {
   if (!state?.entries?.length) return '';
   const badge = state.gameOver ? '' : ' <span class="live-badge" aria-label="Game in progress">Live</span>';
   const finalScore = state.entries[state.entries.length - 1]?.score;
-  const heading = state.gameOver && finalScore
+  const scoreLine = state.gameOver && finalScore
     ? `Final: Commanders ${finalScore.commanders}, ${escapeHtml(state.opponent)} ${finalScore.opponent}`
     : `Live: Commanders vs ${escapeHtml(state.opponent)}${badge}`;
+  // Once final-thoughts exists, its (deliberately sassy, see live-prompt.js
+  // rule 8) headline becomes the real title, with the plain score line
+  // demoted to a subtitle underneath rather than doubling up on the score.
+  const sassyHeadline = state.finalThoughts?.headline ? linkPlayers(stripInlineCites(state.finalThoughts.headline), rosterIndex) : null;
+  const titleBlock = sassyHeadline
+    ? `<h2>${sassyHeadline}</h2>\n      <p class="live-score-subtitle">${scoreLine}</p>`
+    : `<h2>${scoreLine}</h2>`;
   const entries = [...state.entries]
     .reverse()
     .map(
@@ -567,7 +584,7 @@ function liveGamePost(state, rosterIndex) {
     .join('\n');
   return `
     <article class="digest-post live-game-post">
-      <h2>${heading}</h2>
+      ${titleBlock}
 ${finalThoughtsBlock(state.finalThoughts, rosterIndex)}
 ${entries}
     </article>`;

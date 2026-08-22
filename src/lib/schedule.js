@@ -64,7 +64,14 @@ function parseGame(chunk, season) {
   const result = pick(/score--result">([^<]+)</, chunk);
   const points = pick(/score--points">([^<]+)</, chunk);
 
-  if (!opponent || !opponentAbbr) return null;
+  // `opponentAbbr` matching our own team is a real failure mode, not a real
+  // game: caught 2026-08-22 when a fetch mid-game (a third markup variant
+  // alongside pregame/post-game, apparently rendered while a card is
+  // showing live) picked up the Commanders' own logo instead of the
+  // opponent's, silently storing a corrupted "opponent: WAS" row with no
+  // week label. A missing week is the same signal — better to skip the
+  // chunk and retry on the next fetch than cache garbage.
+  if (!opponent || !opponentAbbr || opponentAbbr === 'WAS' || !week) return null;
   return { season, week, gametime, homeAway, opponentAbbr, opponent, opponentShort, venue, result, points, isBye: false };
 }
 

@@ -78,20 +78,23 @@ HARD RULES:
 4. NEVER use an em dash (—). Use a comma, a period, or parentheses instead.
 5. No speculation about next week, no predictions, no rhetorical questions, no direct address to the reader.
 6. "body" is 2-4 paragraphs: what went right, what went wrong, and the overall shape of the game (who controlled it, when it swung, how it ended). Separate paragraphs with a blank line. This is the one part of the live blog that's allowed to sound like a real postgame wrap-up, not a play-by-play log.
-7. "${LIVE_AWARD_NAME}" goes to exactly one player for this game, Commanders or otherwise, picked for the single most impactful game, not a popularity pick. Ground the pick in real, cited plays (a turnover created, a big touchdown, a string of sacks, a key drop, a costly penalty) - it can go to a goat as easily as a hero if that's who actually decided the game. "awardReason" should be a short, funny, specific sentence that could not be copy-pasted onto a different player's award.
+7. "${LIVE_AWARD_NAME}" is given out TWICE, to two different players: a Hero and a Goat. The Hero is whoever had the single biggest positive impact on the result (a big touchdown, a takeaway, a lockdown defensive game). The Goat is whoever had the single biggest negative impact (a costly turnover, a blown coverage, a drive-killing penalty, a missed kick). Ground both picks in real, cited plays, not vibes. Each reason is a short, funny, specific sentence that could not be copy-pasted onto a different player.
+8. "headline" is the one line that gets to be genuinely sassy, not just descriptive. This is the title readers see first, above the score. It should sound like a real headline, still literally true and grounded in the actual result, but with real wit or a knowing jab, not a flat score recap. The final score itself is shown separately right below it, so the headline doesn't need to restate the score.
 
 VOICE: same as the rest of the live blog, funnier and looser than the weekly digest, personality throughout, but every laugh has to be standing on a real cited fact.`;
 
 export const FINAL_SCHEMA = {
   type: 'object',
   properties: {
-    headline: { type: 'string', description: 'The whole-game headline, e.g. "Commanders fall 24-20 in a game the O-line lost early"' },
+    headline: { type: 'string', description: 'One sassy, witty headline for the whole game, e.g. "Commanders fall 24-20 in a game the O-line lost early". The score is shown separately, so don\'t restate it here.' },
     body: { type: 'string', description: '2-4 paragraphs, separated by blank lines: what went right, what went wrong, how the game unfolded overall.' },
-    awardRecipient: { type: 'string', description: 'Full name of the one player who wins the award this game.' },
-    awardReason: { type: 'string', description: 'One or two funny, specific, cited-in-fact sentences on why they won it.' },
+    heroRecipient: { type: 'string', description: 'Full name of the player with the single biggest positive impact.' },
+    heroReason: { type: 'string', description: 'One or two funny, specific, cited-in-fact sentences on why they earned it.' },
+    goatRecipient: { type: 'string', description: 'Full name of the player with the single biggest negative impact. Must be a different player than heroRecipient.' },
+    goatReason: { type: 'string', description: 'One or two funny, specific, cited-in-fact sentences on why they earned it.' },
     cites: { type: 'array', items: { type: 'integer' } },
   },
-  required: ['headline', 'body', 'awardRecipient', 'awardReason', 'cites'],
+  required: ['headline', 'body', 'heroRecipient', 'heroReason', 'goatRecipient', 'goatReason', 'cites'],
 };
 
 export function buildFinalUserPrompt({ finalScore, opponent, plays, socialPosts }) {
