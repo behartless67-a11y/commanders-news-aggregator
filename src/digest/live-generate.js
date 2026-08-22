@@ -1,6 +1,6 @@
 import { findLiveEventId, fetchLiveGame, loadLiveGameState, saveLiveGameState } from '../lib/livegame.js';
 import { loadSocial, sortedSocial } from '../lib/store.js';
-import { LIVE_SYSTEM_PROMPT, LIVE_SCHEMA, buildLiveUserPrompt } from './live-prompt.js';
+import { LIVE_SYSTEM_PROMPT, LIVE_SCHEMA, buildLiveUserPrompt, FINAL_SYSTEM_PROMPT, FINAL_SCHEMA, buildFinalUserPrompt } from './live-prompt.js';
 import { generate as callModel } from './cloud-provider.js';
 import { log } from '../lib/log.js';
 
@@ -13,6 +13,9 @@ import { log } from '../lib/log.js';
  * quarter" without needing to reason about drive/quarter wall-clock time.
  */
 const MAX_SOCIAL_FOR_RECAP = Number(process.env.LIVE_SOCIAL_COUNT || 15);
+
+/** Wider pool for the once-per-game final-thoughts wrap-up, which draws on the whole game rather than one quarter. */
+const MAX_SOCIAL_FOR_FINAL = Number(process.env.LIVE_FINAL_SOCIAL_COUNT || 40);
 
 function labelFor(period, isFinal) {
   if (isFinal) return 'Final';
@@ -89,7 +92,52 @@ export async function updateLiveGame() {
   state.lastRecappedPeriod = targetPeriod;
   state.gameOver = isFinal;
 
+  // Piggybacks on the same tick that writes the last quarter's recap, since
+  // that's exactly when `isFinal` first flips true — no separate check
+  // needed on a later run, and every later run's targetPeriod will already
+  // be <= lastRecappedPeriod and short-circuit above before reaching here.
+  if (isFinal && !state.finalThoughts) {
+    state.finalThoughts = await generateFinalThoughts(game);
+  }
+
   await saveLiveGameState(state);
   log.ok(`live: wrote "${labelFor(targetPeriod, isFinal)}" recap (${game.commandersScore}-${game.opponentScore})`);
   return state;
+}
+
+/**
+ * Whole-game wrap-up plus the Live Wire Award pick, generated once at
+ * `gameOver`, working from every play in the game (not just one quarter)
+ * and a wider social pool. Failure here degrades to no final-thoughts
+ * section rather than blocking the last quarter's recap from saving — a
+ * partial live blog is better than losing a good quarter recap over a
+ * flaky second model call.
+ */
+async function generateFinalThoughts(game) {
+  try {
+    const socialPosts = sortedSocial(await loadSocial()).slice(0, MAX_SOCIAL_FOR_FINAL);
+    const prompt = buildFinalUserPrompt({
+      finalScore: { commanders: game.commandersScore, opponent: game.opponentScore },
+      opponent: game.opponent,
+      plays: game.plays,
+      socialPosts,
+    });
+    const result = await callModel({ system: FINAL_SYSTEM_PROMPT, prompt, schema: FINAL_SCHEMA });
+
+    const maxCite = game.plays.length + socialPosts.length;
+    const cites = Array.isArray(result.json.cites) ? result.json.cites.filter((n) => Number.isInteger(n) && n >= 1 && n <= maxCite) : [];
+
+    return {
+      headline: result.json.headline,
+      body: result.json.body,
+      awardRecipient: result.json.awardRecipient,
+      awardReason: result.json.awardReason,
+      cites,
+      generatedAt: new Date().toISOString(),
+      model: result.model,
+    };
+  } catch (err) {
+    log.warn(`live: final-thoughts generation failed, leaving it off this post: ${err.message}`);
+    return null;
+  }
 }

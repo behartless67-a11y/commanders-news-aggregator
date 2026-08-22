@@ -56,3 +56,57 @@ ${socialLines || '(no relevant posts)'}
 
 Write this quarter's recap as JSON. Cite every play number you used for a fact; cite a social post number only when you're echoing its color commentary with attribution.`;
 }
+
+/**
+ * Fixed, never model-chosen — a recurring bit only works if it's the same
+ * name every game. The model's job is picking who wins it and why, not
+ * naming it; letting it invent a new name each time would read as random
+ * rather than as this site's own thing.
+ */
+export const LIVE_AWARD_NAME = 'The Live Wire Award';
+
+export const FINAL_SYSTEM_PROMPT = `You are wrapping up a Washington Commanders game with a whole-game final-thoughts post, right after the last quarter's own recap has already covered the play-by-play in detail.
+
+You are given two numbered lists: PLAYS (every play from the entire game) and SOCIAL (posts from beat reporters and fans collected over the course of the game). Together they are the complete extent of what you know.
+
+Your job here is different from a quarter recap: don't re-walk the play-by-play (that's already been covered quarter by quarter). Instead, step back and assess the game as a whole.
+
+HARD RULES:
+1. Every factual statement must trace to a PLAY or SOCIAL post. Cite the numbers you used, like [3, 5].
+2. Never state a fact that is not in PLAYS or SOCIAL. If you are unsure, leave it out.
+3. Color commentary and opinions ("the offensive line struggled", "the defense looked dominant") need real support from PLAYS (a pattern across multiple plays, e.g. several sacks allowed or forced) or an attributed SOCIAL post — not asserted on your own authority with no evidence behind it.
+4. NEVER use an em dash (—). Use a comma, a period, or parentheses instead.
+5. No speculation about next week, no predictions, no rhetorical questions, no direct address to the reader.
+6. "body" is 2-4 paragraphs: what went right, what went wrong, and the overall shape of the game (who controlled it, when it swung, how it ended). Separate paragraphs with a blank line. This is the one part of the live blog that's allowed to sound like a real postgame wrap-up, not a play-by-play log.
+7. "${LIVE_AWARD_NAME}" goes to exactly one player for this game, Commanders or otherwise, picked for the single most impactful game, not a popularity pick. Ground the pick in real, cited plays (a turnover created, a big touchdown, a string of sacks, a key drop, a costly penalty) - it can go to a goat as easily as a hero if that's who actually decided the game. "awardReason" should be a short, funny, specific sentence that could not be copy-pasted onto a different player's award.
+
+VOICE: same as the rest of the live blog, funnier and looser than the weekly digest, personality throughout, but every laugh has to be standing on a real cited fact.`;
+
+export const FINAL_SCHEMA = {
+  type: 'object',
+  properties: {
+    headline: { type: 'string', description: 'The whole-game headline, e.g. "Commanders fall 24-20 in a game the O-line lost early"' },
+    body: { type: 'string', description: '2-4 paragraphs, separated by blank lines: what went right, what went wrong, how the game unfolded overall.' },
+    awardRecipient: { type: 'string', description: 'Full name of the one player who wins the award this game.' },
+    awardReason: { type: 'string', description: 'One or two funny, specific, cited-in-fact sentences on why they won it.' },
+    cites: { type: 'array', items: { type: 'integer' } },
+  },
+  required: ['headline', 'body', 'awardRecipient', 'awardReason', 'cites'],
+};
+
+export function buildFinalUserPrompt({ finalScore, opponent, plays, socialPosts }) {
+  const playLines = plays.map((p, i) => `${i + 1}. [Q${p.period ?? '?'} ${p.clock ?? ''}] ${p.text}`).join('\n');
+  const socialLines = socialPosts
+    .map((s, i) => `${plays.length + i + 1}. @${s.handle} (${s.author || 'fan'}): ${s.text}`)
+    .join('\n');
+
+  return `Final score against the ${opponent}: Commanders ${finalScore.commanders}, ${opponent} ${finalScore.opponent}.
+
+PLAYS (entire game):
+${playLines || '(no plays recorded)'}
+
+SOCIAL (collected throughout the game):
+${socialLines || '(no relevant posts)'}
+
+Write the final-thoughts wrap-up and pick this game's "${LIVE_AWARD_NAME}" recipient as JSON.`;
+}

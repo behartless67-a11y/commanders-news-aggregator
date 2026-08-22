@@ -730,6 +730,51 @@ main.layout{
   color: var(--gold);
 }
 
+.live-final-thoughts{
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.live-final-thoughts h3{
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  margin: 0 0 10px;
+}
+
+.live-award{
+  margin-top: 14px;
+  padding: 14px 18px;
+  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
+  border: 1px solid rgba(255,182,18,0.35);
+  border-radius: var(--radius);
+}
+
+.live-award-name{
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+}
+
+.live-award-recipient{
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.live-award-reason{
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #e2d9d5;
+}
+
 .digest-lede{
   font-size: 16px;
   color: var(--text-muted);

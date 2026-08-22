@@ -502,31 +502,72 @@ ${sourceFooter}
  * a handful of social posts (see src/digest/live-generate.js), not linkable
  * articles the way the weekly digest's citations are.
  */
+/**
+ * The model may write one paragraph or several (separated by a blank line,
+ * see live-prompt.js) depending on how much real detail was available —
+ * each becomes its own <p> rather than one block with a raw line break
+ * sitting in the middle of it. Citation brackets ([3, 5]) are for grounding
+ * only, never reader-facing, same as the weekly digest's stripInlineCites.
+ */
+function liveParagraphs(text, rosterIndex) {
+  return String(text || '')
+    .split(/\n\s*\n/)
+    .filter(Boolean)
+    .map((para) => `<p class="digest-para">${linkPlayers(stripInlineCites(para.trim()), rosterIndex)}</p>`)
+    .join('\n        ');
+}
+
+/**
+ * Generated once, at game end (see generateFinalThoughts in
+ * live-generate.js) — a step back from the quarter-by-quarter play-by-play
+ * to an actual postgame take, plus this site's own running bit instead of
+ * a generic "game ball".
+ */
+function finalThoughtsBlock(finalThoughts, rosterIndex) {
+  if (!finalThoughts) return '';
+  return `
+      <div class="live-final-thoughts">
+        <h3>Final Thoughts</h3>
+        ${liveParagraphs(finalThoughts.body, rosterIndex)}
+        <div class="live-award">
+          <p class="live-award-name">🏆 The Live Wire Award</p>
+          <p class="live-award-recipient">${linkPlayers(stripInlineCites(finalThoughts.awardRecipient || ''), rosterIndex)}</p>
+          <p class="live-award-reason">${linkPlayers(stripInlineCites(finalThoughts.awardReason || ''), rosterIndex)}</p>
+        </div>
+      </div>`;
+}
+
+/**
+ * The live game-day post — separate from digestArticleBody because its data
+ * shape is fundamentally different (an accumulating list of quarter
+ * entries from data/live-game.json, not a single one-shot digest record).
+ * Entries render newest-first, matching live-blog convention, with the
+ * once-per-game final-thoughts wrap-up (if any) leading the whole post.
+ * No source-footer link list — the "sources" here are ESPN's own play text
+ * and a handful of social posts (see src/digest/live-generate.js), not
+ * linkable articles the way the weekly digest's citations are.
+ */
 function liveGamePost(state, rosterIndex) {
   if (!state?.entries?.length) return '';
   const badge = state.gameOver ? '' : ' <span class="live-badge" aria-label="Game in progress">Live</span>';
+  const finalScore = state.entries[state.entries.length - 1]?.score;
+  const heading = state.gameOver && finalScore
+    ? `Final: Commanders ${finalScore.commanders}, ${escapeHtml(state.opponent)} ${finalScore.opponent}`
+    : `Live: Commanders vs ${escapeHtml(state.opponent)}${badge}`;
   const entries = [...state.entries]
     .reverse()
-    .map((e) => {
-      // The model may write one paragraph or two (separated by a blank
-      // line, see live-prompt.js) depending on how much real detail the
-      // quarter supported — each becomes its own <p> rather than one
-      // block with a raw line break sitting in the middle of it.
-      const paragraphs = String(e.body || '')
-        .split(/\n\s*\n/)
-        .filter(Boolean)
-        .map((para) => `<p class="digest-para">${linkPlayers(para.trim(), rosterIndex)}</p>`)
-        .join('\n        ');
-      return `
+    .map(
+      (e) => `
       <div class="live-entry">
         <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}</p>
-        ${paragraphs}
-      </div>`;
-    })
+        ${liveParagraphs(e.body, rosterIndex)}
+      </div>`,
+    )
     .join('\n');
   return `
     <article class="digest-post live-game-post">
-      <h2>Live: Commanders vs ${escapeHtml(state.opponent)}${badge}</h2>
+      <h2>${heading}</h2>
+${finalThoughtsBlock(state.finalThoughts, rosterIndex)}
 ${entries}
       <p class="digest-disclosure">Written by a cloud AI model (${escapeHtml(state.entries[0]?.model || '')}) from live play-by-play and social posts as the game happened, not by a person.</p>
     </article>`;

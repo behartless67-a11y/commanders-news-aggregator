@@ -1,7 +1,7 @@
 {
   "eventId": "401873601",
   "opponent": "Detroit Lions",
-  "lastRecappedPeriod": 3,
+  "lastRecappedPeriod": 4,
   "entries": [
     {
       "period": 1,
@@ -142,7 +142,93 @@
       },
       "generatedAt": "2026-08-22T18:42:55.020Z",
       "model": "anthropic.claude-sonnet-5"
+    },
+    {
+      "period": 4,
+      "label": "Final",
+      "headline": "Commanders tie it on Kaliakmanis-to-Nash, but a fumbled return sets up Detroit's late field goal",
+      "body": "This looked like preseason clock-killer football until it very much wasn't. Washington opened the quarter still down 13-17 and immediately cashed in on Athan Kaliakmanis's arm: a 55-yard strike deep right to Nick Nash set up the drive at the Detroit 20 [1], with Ben Standig calling that connection \"a sweet throw\" and pointing to it as evidence the seventh-round rookie is helping his case for the QB3 job [51]. After a delay of game penalty stalled things briefly [3], Kaliakmanis kept finding Nash and Jaylen Jones on short completions to move the chains [4, 5], and Drew Stevens capped the drive with a 32-yard field goal to tie the game [6]. The Commanders' Twitter account gave Stevens the \"Drew puts us back on top\" treatment, though a made field goal from 13 only ties it rather than actually putting Washington ahead [55]. John Keim noted Kaliakmanis had been facing pressure but staying composed in the pocket [49], and JP Finlay was sufficiently impressed by an 11-of-14, 162-yard day that he went and looked up the rookie's Rutgers stats [52], with Tashan Reed and other observers echoing that this was clearly his best week of camp [53, 54].\n\nDetroit answered with a long, penalty-choked drive that ate most of the middle of the quarter. Back-to-back false starts and a defensive pass interference call on Washington's Chris Vigers bailed out a stalled series and kept it alive [11, 12, 13], but the Lions still had to punt it away after Luke Altmyer misfired on a pass to Dominic Lovett [16, 17]. Washington's ensuing possession went nowhere fast: Sam Hartman found Jaylen Jones for a nice 24-yard gain [20], but the drive died on 4th down when Hartman overthrew Chase Reynolds, a miss Tashan Reed reported left Hartman visibly upset with himself [24, 47]. Detroit then flipped the field again, this time getting L.Altmyer sacked for a 9-yard loss [26] before he bounced back with a 16-yard completion to Malik Cunningham [27] and a scramble-and-connect series to Jaylen Meeks that pushed them into scoring range [28, 29]. A neutral zone infraction on Washington gave the Lions a free five yards [30], and after a few short Tr.Williams runs stalled the drive around the 18 [31, 32, 33], Jake Bates knocked through a 37-yard field goal to make it 13-20 [35]. Washington's return then imploded immediately: Reid Henry brought the kickoff back 21 yards only to fumble it away, recovered by Detroit's Ephesians Hunter at the Washington 25 [36], handing the Lions the ball right back with under two minutes left. Detroit ran out the clock from there behind Blackshear (with a Washington timeout in between) [37, 38, 39, 41, 42, 43] and Altmyer took two kneel-downs to end it [44, 45].",
+      "cites": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        16,
+        17,
+        20,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "score": {
+        "commanders": "13",
+        "opponent": "17"
+      },
+      "generatedAt": "2026-08-22T19:26:29.511Z",
+      "model": "anthropic.claude-sonnet-5"
     }
   ],
-  "gameOver": false
+  "gameOver": true,
+  "finalThoughts": {
+    "headline": "Commanders fall 17-13 as a promising defense and a shaky O-line cancel each other out",
+    "body": "This one had a bit of everything preseason football usually promises and rarely delivers cleanly: a pick-six style scoop-and-score, a 50-yard scamper by a backup QB, four first-half sacks from the Washington pass rush, and a fourth-quarter kickoff fumble that handed Detroit the field position it needed to seal it. The Commanders defense was genuinely disruptive for a long stretch, racking up takeaways and pressure that Tashan Reed flagged as the story of the first half, \"the pass rush looks really good... that's making life easier for the secondary and leading to more turnovers\" [182]. Joshua Josephs turned Josh Dobbs' fumble into an early defensive touchdown [3, 185], and Ben Standig counted two turnovers and four sacks from the defense in the first quarter and a half alone [189], with TJ Maguranyanga adding a highlight sack that got its own social media victory lap [195, 196, 197].\n\nThe problem was the other side of the ball. Jayden Daniels' lone series ended with a sack and an incompletion before he was pulled for the day [12, 13, 201, 202], and John Keim noted the protection on that opening series alone was enough to make anyone comfortable ending his day right there [202]. Reed summed up the broader issue bluntly: through three possessions the offense had produced 63 total yards, and \"the offensive line is a problem\" [182, 184]. Behind Daniels, both Sam Hartman and Athan Kaliakmanis got extended run, and while Kaliakmanis flashed some real promise (11-of-14 for 162 yards including a 55-yard bomb to Nick Nash) [122, 172, 173], the ground game and short-yardage offense sputtered against Detroit's front, particularly on that long fourth-quarter red zone stall by Tremayne Williams that Detroit's defense simply refused to give an inch on [151, 152, 153, 154].\n\nThe game swung fully in Detroit's favor after halftime. Washington's own miscue, a kickoff fumble by J.Meeks recovered by Detroit at the WAS 25 [157], set up the Lions' go-ahead field goal that put them up for good with under two minutes left [156, 157]. Before that, Detroit had methodically ground out a third-quarter touchdown drive behind Tremayne Williams' short-yardage pounding to answer Washington's own late scoring push [115, 117, 118]. Washington's response was a string of Danny Stevens field goals (27 and 32 yards) rather than the sustained drives needed to pull away [91, 127], and that difference, touchdowns for Detroit, field goals for Washington, ended up being the entire final margin.\n\nOverall this was a game Washington's defense nearly stole outright in the first half before the offense's line issues and a special teams fumble let Detroit claw it back in the fourth quarter. The pass rush provided the highlights; the offensive line and a costly kickoff fumble provided the final result.",
+    "awardRecipient": "J.Meeks",
+    "awardReason": "Nothing says \"thanks for the field position\" quite like fumbling a kickoff return straight into Detroit's lap at the WAS 25 with under three minutes left, directly teeing up the game-winning field goal [157].",
+    "cites": [
+      3,
+      12,
+      13,
+      91,
+      115,
+      117,
+      118,
+      122,
+      127,
+      151,
+      152,
+      153,
+      154,
+      156,
+      157,
+      172,
+      173,
+      182,
+      184,
+      189,
+      195,
+      196,
+      197,
+      201,
+      202
+    ],
+    "generatedAt": "2026-08-22T19:26:48.064Z",
+    "model": "anthropic.claude-sonnet-5"
+  }
 }

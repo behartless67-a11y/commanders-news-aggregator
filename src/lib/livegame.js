@@ -29,13 +29,24 @@ async function fetchJson(url) {
   }
 }
 
-/** The Commanders event ID currently `in` progress, or null if there isn't one right now. */
+/**
+ * The Commanders event ID that's either `in` progress or just went `post`
+ * (final), or null if there's neither right now. Matching only `in` was a
+ * real bug found 2026-08-22, hours after shipping: the instant a game
+ * finishes and flips to `post`, that check returned null and the whole
+ * pipeline stopped seeing the game at all, one tick before it could ever
+ * write the last quarter's recap or the final-thoughts wrap-up. Including
+ * `post` is safe against re-processing an old game forever, since
+ * `updateLiveGame`'s own `targetPeriod <= lastRecappedPeriod` check already
+ * no-ops once everything's been recapped, and the default scoreboard call
+ * only ever returns the current week's games regardless.
+ */
 export async function findLiveEventId() {
   const data = await fetchJson(SCOREBOARD_URL);
   if (!data) return null;
   const event = (data.events || []).find(
     (e) =>
-      e.competitions?.[0]?.status?.type?.state === 'in' &&
+      ['in', 'post'].includes(e.competitions?.[0]?.status?.type?.state) &&
       e.competitions[0].competitors?.some((c) => c.team?.abbreviation === COMMANDERS_ABBR),
   );
   return event?.id || null;
@@ -86,16 +97,25 @@ export async function fetchLiveGame(eventId) {
     return null;
   }
 
+  const plays = flattenPlays(data.drives);
+  // `status.period` disappears entirely once a game goes final (confirmed
+  // 2026-08-22, checking the real completed game right after this bug blocked
+  // that game's own final recap) — only `status.type` survives. The actual
+  // last period played is recoverable from the plays themselves, which keep
+  // their period number regardless of game state.
+  const lastPlayedPeriod = plays.reduce((max, p) => (p.period != null && p.period > max ? p.period : max), 0);
+  const period = status?.period ?? (lastPlayedPeriod || null);
+
   return {
     eventId,
     state: status?.type?.state || null, // 'pre' | 'in' | 'post'
-    period: status?.period ?? null,
+    period,
     clock: status?.displayClock ?? null,
     opponent: opponent.team?.displayName || null,
     commandersScore: commanders.score ?? null,
     opponentScore: opponent.score ?? null,
     isHome: commanders.homeAway === 'home',
-    plays: flattenPlays(data.drives),
+    plays,
   };
 }
 
