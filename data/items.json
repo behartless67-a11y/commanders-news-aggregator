@@ -1163,18 +1163,6 @@
     "publishedAt": "2026-08-21T15:17:21.000Z",
     "collectedAt": "2026-08-21T16:58:41.342Z"
   },
-  "riggos-rag-3613fd06136e": {
-    "id": "riggos-rag-3613fd06136e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jacoby-jones-making-commanders-looming-roster-decision-dangerously-risky",
-    "title": "Jacoby Jones is making Commanders' looming roster decision dangerously risky",
-    "excerpt": "Washington Commanders wide receiver Jacoby Jones is standing out this summer, which presents general manager Adam Peters with a dilemma.",
-    "publishedAt": "2026-08-21T21:00:00.000Z",
-    "collectedAt": "2026-08-21T21:19:59.817Z"
-  },
   "riggos-rag-7a0a9c77b15a": {
     "id": "riggos-rag-7a0a9c77b15a",
     "sourceId": "riggos-rag",
@@ -1185,7 +1173,7 @@
     "title": "Sonny Styles has a powerful weapon against premature Commanders doubt",
     "excerpt": "Washington Commanders rookie linebacker Sonny Styles has a power weapon to counteract the premature doubt following his preseason debut.",
     "publishedAt": "2026-08-21T19:00:01.000Z",
-    "collectedAt": "2026-08-21T21:19:59.817Z"
+    "collectedAt": "2026-08-21T20:23:23.531Z"
   },
   "riggos-rag-d15fca947524": {
     "id": "riggos-rag-d15fca947524",
@@ -1197,7 +1185,7 @@
     "title": "Joey Porter Jr. trade whispers could test Commanders' offseason restraint",
     "excerpt": "The Washington Commanders' offseason restraint could be tested by the trade whispers around Pittsburgh Steelers cornerback Joey Porter Jr.",
     "publishedAt": "2026-08-21T17:30:00.000Z",
-    "collectedAt": "2026-08-21T21:19:59.817Z"
+    "collectedAt": "2026-08-21T20:23:23.531Z"
   },
   "commanders-youtube-8dea79351762": {
     "id": "commanders-youtube-8dea79351762",
@@ -1209,7 +1197,7 @@
     "title": "\"we all want to eat\" 😤",
     "excerpt": "",
     "publishedAt": "2026-08-21T18:17:10.000Z",
-    "collectedAt": "2026-08-21T21:20:00.603Z"
+    "collectedAt": "2026-08-21T20:23:23.940Z"
   },
   "hogs-haven-5b025e07bda2": {
     "id": "hogs-haven-5b025e07bda2",
@@ -1221,6 +1209,18 @@
     "title": "Commanders vs. Lions Preseason Week 2: Schedule, TV, Radio, Streaming, Odds",
     "excerpt": "Jan 18, 2025; Detroit, Michigan, USA; Washington Commanders quarterback Jayden Daniels (5) looks to pass defended by Detroit Lions defensive back Brian Branch (32) during the second half at Ford Field. Mandatory Credit: David Reginek-Imagn Images | USA TODAY Sports via Reuters Con \n \n The Washington Commanders hosted the Miami Dolphins at Northwest Stadium last Friday and got their first win of the (pre)season. Jayden Daniels didn’t play last week, but could play a series vs the Detroit Lions…",
     "publishedAt": "2026-08-21T22:00:00.000Z",
-    "collectedAt": "2026-08-22T01:07:49.782Z"
+    "collectedAt": "2026-08-22T01:06:09.677Z"
+  },
+  "riggos-rag-3613fd06136e": {
+    "id": "riggos-rag-3613fd06136e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jacoby-jones-making-commanders-looming-roster-decision-dangerously-risky",
+    "title": "Jacoby Jones is making Commanders' looming roster decision dangerously risky",
+    "excerpt": "Washington Commanders wide receiver Jacoby Jones is standing out this summer, which presents general manager Adam Peters with a dilemma.",
+    "publishedAt": "2026-08-21T21:00:00.000Z",
+    "collectedAt": "2026-08-22T01:06:09.969Z"
   }
 }

@@ -1,28 +1,114 @@
 {
   "runs": [
     {
-      "at": "2026-08-22T01:07:55.457Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 1,
-      "pruned": 0,
-      "dropped": 0
+      "at": "2026-08-22T10:13:23.683Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
     },
     {
-      "at": "2026-08-21T21:20:06.351Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 4,
-      "pruned": 0,
-      "dropped": 0
+      "at": "2026-08-22T08:27:22.883Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
     },
     {
-      "at": "2026-08-21T21:17:32.566Z",
+      "at": "2026-08-22T08:27:02.036Z",
       "stage": "collect",
-      "sources": 2,
+      "sources": 10,
       "added": 0,
       "pruned": 0,
       "dropped": 0
+    },
+    {
+      "at": "2026-08-22T08:17:42.532Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T06:21:53.798Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T04:30:43.659Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T04:30:22.729Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-22T04:22:18.219Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T02:46:27.051Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T01:06:34.521Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-22T01:06:13.801Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-22T00:39:09.129Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-21T22:13:30.149Z",
+      "stage": "social",
+      "added": 2,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-21T20:23:47.628Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-21T20:23:28.796Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 3,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-21T20:14:35.113Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-21T18:22:44.591Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
     },
     {
       "at": "2026-08-21T16:59:00.607Z",
@@ -292,100 +378,6 @@
       "at": "2026-08-20T16:23:56.211Z",
       "stage": "social",
       "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T15:48:30.248Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T15:48:11.209Z",
-      "stage": "collect",
-      "sources": 9,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-20T15:40:26.532Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T15:40:04.888Z",
-      "stage": "collect",
-      "sources": 9,
-      "added": 3,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-20T15:25:31.108Z",
-      "stage": "social",
-      "added": 4,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:34:12.372Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:33:47.723Z",
-      "stage": "collect",
-      "sources": 9,
-      "added": 1,
-      "pruned": 0,
-      "dropped": 10
-    },
-    {
-      "at": "2026-08-20T13:32:26.217Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:31:55.906Z",
-      "stage": "collect",
-      "sources": 9,
-      "added": 49,
-      "pruned": 0,
-      "dropped": 1
-    },
-    {
-      "at": "2026-08-20T13:26:10.561Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:25:30.038Z",
-      "stage": "collect",
-      "sources": 5,
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:24:33.606Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:24:05.762Z",
-      "stage": "collect",
-      "sources": 5,
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T13:21:56.323Z",
-      "stage": "social",
-      "added": 61,
       "pruned": 0
     }
   ]
