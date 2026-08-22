@@ -911,10 +911,10 @@ main.layout{
 }
 
 .podcast-page-list{
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  max-width: 560px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 24px;
+  align-items: start;
 }
 
 .podcast-description{
@@ -1198,6 +1198,7 @@ main.layout{
   .header-inner{ justify-content: center; }
   .brand-logo{ height: 160px; }
   .header-bottom-row{ flex-direction: column; align-items: center; }
+  .podcast-page-list{ grid-template-columns: 1fr; }
   .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
   /* The auto margin that separates it from the filter tabs on desktop only
      makes sense in a single unwrapped row — on a wrapped, centered mobile
