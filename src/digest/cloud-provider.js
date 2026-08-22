@@ -41,7 +41,7 @@ function getClient() {
 export async function generate({ system, prompt, schema, model = LIVE_BLOG_MODEL }) {
   const response = await getClient().messages.create({
     model,
-    max_tokens: 4096,
+    max_tokens: 8192,
     system,
     messages: [{ role: 'user', content: prompt }],
     tools: [

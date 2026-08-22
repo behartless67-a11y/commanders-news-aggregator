@@ -507,13 +507,22 @@ function liveGamePost(state, rosterIndex) {
   const badge = state.gameOver ? '' : ' <span class="live-badge" aria-label="Game in progress">Live</span>';
   const entries = [...state.entries]
     .reverse()
-    .map(
-      (e) => `
+    .map((e) => {
+      // The model may write one paragraph or two (separated by a blank
+      // line, see live-prompt.js) depending on how much real detail the
+      // quarter supported — each becomes its own <p> rather than one
+      // block with a raw line break sitting in the middle of it.
+      const paragraphs = String(e.body || '')
+        .split(/\n\s*\n/)
+        .filter(Boolean)
+        .map((para) => `<p class="digest-para">${linkPlayers(para.trim(), rosterIndex)}</p>`)
+        .join('\n        ');
+      return `
       <div class="live-entry">
         <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}</p>
-        <p class="digest-para">${linkPlayers(e.body, rosterIndex)}</p>
-      </div>`,
-    )
+        ${paragraphs}
+      </div>`;
+    })
     .join('\n');
   return `
     <article class="digest-post live-game-post">
