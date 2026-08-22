@@ -80,6 +80,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // itself is also present in the sidebar on Blog/Podcasts.
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
+  const howItWorksLink = `\n      <a href="how-it-works.html" class="nav-jump"${activeFile === 'how-it-works.html' ? ' aria-current="page"' : ''}>How It Works</a>`;
 
   return `<header class="site-header" id="top">
   <div class="wrap">
@@ -92,7 +93,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
     </div>
     <div class="header-bottom-row">
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${podcastsLink}
+        ${tabs}${weeklyTab}${scheduleLink}${podcastsLink}${howItWorksLink}
       </nav>
     </div>
   </div>
@@ -276,16 +277,31 @@ function scheduleRow(game, odds = null) {
  * Spotify (real, currently-publishing) rather than guessed from memory.
  */
 const PODCASTS = [
-  { name: 'Command Center Podcast', id: '5f67fuVkHGhkASVhl3Msby' },
-  { name: 'Beltway Football', id: '67M5rgs9T8427Lr1A6BG7n' },
-  { name: 'Locked On Commanders', id: '4F9T8e4JLYDZrvOAW0MPrf' },
+  {
+    name: 'Command Center Podcast',
+    id: '5f67fuVkHGhkASVhl3Msby',
+    description: 'The team\'s own official podcast. Former Washington players Santana Moss, Fred Smoot, and Logan Paulsen break down the current roster and each week\'s game with an insider\'s eye, mixed with stories from their own playing days.',
+  },
+  {
+    name: 'Beltway Football',
+    id: '67M5rgs9T8427Lr1A6BG7n',
+    description: 'Monumental Sports Network\'s daily Commanders show, covering practice reports, roster moves, and game breakdowns from a local DC sports desk.',
+  },
+  {
+    name: 'Locked On Commanders',
+    id: '4F9T8e4JLYDZrvOAW0MPrf',
+    description: 'Part of the Locked On Podcast Network\'s one-team-per-show lineup, publishing daily with a national-analyst take on the Commanders specifically, not the whole NFC East.',
+  },
 ];
 
 function podcastEmbeds() {
   return PODCASTS.map(
     (p) => `
-      <div class="podcast-embed">
-        <iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <div class="podcast-embed-block">
+        <div class="podcast-embed">
+          <iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <p class="podcast-description">${escapeHtml(p.description)}</p>
       </div>`,
   ).join('\n');
 }
@@ -589,6 +605,86 @@ ${header('blog.html', true, isGameLive)}
   <div>
     <h1 class="weekly-index-heading">Blog</h1>
     ${articles || '<p class="river-empty">No posts published yet.</p>'}
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting);
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How It Works — ${escapeHtml(siteName)}</title>
+<meta name="description" content="A mostly-honest, occasionally unhinged explanation of the robots that run this site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('how-it-works.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div class="how-it-works">
+    <h1 class="podcasts-heading">How This Whole Thing Works</h1>
+    <p class="page-intro">A layman's explanation. Mostly accurate. No robots were harmed, though several were mildly scolded.</p>
+
+    <section class="how-section">
+      <h2>The headline river</h2>
+      <p class="digest-para">Every few hours, a small script that has never once been outside opens up eight or so Commanders websites, reads every headline, and asks itself one question: "does this mention the Commanders." If yes, it keeps it. If it's actually about the Lions and the Commanders got mentioned in passing, it throws it out, because this script has standards. It is not a journalist. It has never broken a story in its life. It just really, really likes making lists.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The ticker</h2>
+      <p class="digest-para">That scrolling strip near the top is basically this site eavesdropping on beat reporters' social media, through a side door, because the front door started charging rent a while back. It refreshes every couple hours normally, and every 15 minutes during a game, so you can watch the press box lose its mind in close to real time without opening a single app.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The Blog (weekly editions)</h2>
+      <p class="digest-para">Once a week, an AI model that lives on this computer (not the cloud, not anyone else's business) reads everything that happened and writes a proper column about it, complete with quotes and, if it's feeling spicy, a pun. Here's the important part: it doesn't get to publish anything itself. A human reads the draft first and has to physically click "approve." This rule exists because an early test model once confidently reported that a player was on this team who has, in fact, never once put on a Commanders helmet. Robots lie sometimes. Not on purpose. They just really want the sentence to sound good.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The Blog (game days, new and slightly reckless)</h2>
+      <p class="digest-para">During an actual game, there's no time for a human to review anything between the 2nd and 3rd quarter, so this part runs completely unsupervised. Every 15 minutes, a different (faster, cloud-based) AI checks the score, and if a quarter just ended, it writes a quick recap using the real play-by-play plus whatever beat reporters and fans are posting live. It publishes itself. Nobody reads it first. The one leash it's on: it is not allowed to decide on its own that a catch was "amazing." It can only say that if an actual person online already said it first, with their name attached. Left to its own devices, it would apparently just say "outstanding" about everything, so this rule keeps it honest.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The betting line</h2>
+      <p class="digest-para">The point spread and over/under next to the schedule come straight from a real sportsbook, by way of ESPN's own public data, the same feed that powers the little widget on espn.com. Nothing here is a tip, a lock, or financial advice from a website that also aggregates blog posts about a rookie kicker.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>Podcasts, schedule, fantasy, etc.</h2>
+      <p class="digest-para">The schedule is scraped from the team's own site. The podcasts are just real Spotify players, embedded, doing what Spotify players do. There is no fourth thing hiding here that secretly runs on a hamster wheel. Probably.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The fine print, but funnier</h2>
+      <p class="digest-para">This is a hobby project built by one person and several well-behaved scripts, not a newsroom. If something here is wrong, it's almost certainly the robots' fault, and they have already been informed of this in writing.</p>
+    </section>
   </div>
 
   ${rail}

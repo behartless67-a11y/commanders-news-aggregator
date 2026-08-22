@@ -913,8 +913,28 @@ main.layout{
 .podcast-page-list{
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 28px;
   max-width: 560px;
+}
+
+.podcast-description{
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* ---------- How It Works ---------- */
+.how-it-works{ max-width: 76ch; }
+
+.how-section{
+  margin: 0 0 26px;
+}
+
+.how-section h2{
+  font-size: 17px;
+  margin: 0 0 8px;
+  color: var(--gold);
 }
 
 .podcast-embed{

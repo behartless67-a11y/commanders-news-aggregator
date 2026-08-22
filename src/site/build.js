@@ -11,7 +11,7 @@ import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderHowItWorksPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -109,6 +109,12 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
     renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    'utf8',
+  );
+
+  await fs.writeFile(
+    path.join(DIST_DIR, 'how-it-works.html'),
+    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
     'utf8',
   );
 
