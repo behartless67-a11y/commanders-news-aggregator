@@ -144,6 +144,7 @@
   // schedule list underneath it runs much longer than any reasonable initial
   // batch of players should chase.
   setupReveal('.roster-list', '.roster-more', 'roster-row-extra', '.widget-videos');
+  setupReveal('.blog-list', '.blog-more', 'blog-post-extra', '.widget-videos');
 
   /**
    * Back-to-top. The anchor works on its own — this only decides when it's worth

@@ -50,6 +50,10 @@ const RIVER_BATCH = Number(process.env.RIVER_BATCH || 10);
 const ROSTER_INITIAL = Number(process.env.ROSTER_INITIAL || 5);
 const ROSTER_BATCH = Number(process.env.ROSTER_BATCH || 5);
 
+/** Same convention again — a full post is much taller than either of the above, so one at a time is already a lot to reveal. */
+const BLOG_INITIAL = Number(process.env.BLOG_INITIAL || 1);
+const BLOG_BATCH = Number(process.env.BLOG_BATCH || 1);
+
 /**
  * `index` here is the card's position in the river (for the RIVER_INITIAL
  * cutoff) — unrelated to `rosterIndex`, the player name → profile-link
@@ -671,11 +675,27 @@ ${footer(sources, generatedAt)}
 
 export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null }) {
   const rail = sidebar(videos, games, betting);
-  const weeklyArticles = records
-    .map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`)
-    .join('\n    <hr class="digest-divider">\n');
   const livePost = liveGamePost(liveGame, rosterIndex);
-  const articles = [livePost, weeklyArticles].filter(Boolean).join('\n    <hr class="digest-divider">\n');
+  const weeklyPosts = records.map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`);
+  const posts = [livePost, ...weeklyPosts].filter(Boolean);
+  // Same progressive-reveal convention as the river/roster, at the whole-post
+  // level — a single full post can already be taller than the video widget
+  // beside it, so as the Blog fills up with more of them this keeps the
+  // archive from just being one long uninterrupted scroll.
+  const blogCollapsed = posts.length > BLOG_INITIAL;
+  const postBlocks = posts.map((html, i) => {
+    const divider = i > 0 ? '<hr class="digest-divider">\n    ' : '';
+    return `<div class="blog-post${i >= BLOG_INITIAL ? ' blog-post-extra' : ''}">${divider}${html}</div>`;
+  });
+  const articles = postBlocks.join('\n    ');
+  const nextBlogBatch = Math.min(BLOG_BATCH, posts.length - BLOG_INITIAL);
+  const blogMoreButton = blogCollapsed
+    ? `
+    <button class="blog-more" type="button" data-batch="${BLOG_BATCH}">
+      <span class="blog-more-label">Show ${nextBlogBatch} more</span>
+      <svg class="river-more-chevron" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+    </button>`
+    : '';
 
   return `<!doctype html>
 <html lang="en">
@@ -694,6 +714,13 @@ ${socialMetaTags({ title: `Blog — ${siteName}`, description: 'AI-written recap
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
+<noscript><style>
+  /* Same reasoning as the river's own noscript override — every post is
+     already in the HTML, so with no JS to expand it the list must not stay
+     collapsed. */
+  .blog-list.is-collapsed .blog-post-extra{ display: block; }
+  .blog-list.is-collapsed + .blog-more{ display: none; }
+</style></noscript>
 </head>
 <body>
 
@@ -703,7 +730,12 @@ ${header('blog.html', true, isGameLive)}
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
-    ${articles || '<p class="river-empty">No posts published yet.</p>'}
+    ${
+      articles
+        ? `<div class="blog-list${blogCollapsed ? ' is-collapsed' : ''}">${articles}</div>
+    ${blogMoreButton}`
+        : '<p class="river-empty">No posts published yet.</p>'
+    }
   </div>
 
   ${rail}
