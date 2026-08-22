@@ -753,52 +753,52 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 
     <section class="how-section">
       <h2>The headline river</h2>
-      <p class="digest-para">Every few hours, a small script that has never once been outside opens up eight or so Commanders websites, reads every headline, and asks itself one question: "does this mention the Commanders." If yes, it keeps it. If it's actually about the Lions and the Commanders got mentioned in passing, it throws it out, because this script has standards. It is not a journalist. It has never broken a story in its life. It just really, really likes making lists.</p>
+      <p class="digest-para">Every few hours, a script opens up eight or so Commanders websites and asks one question of every headline: "does this mention the Commanders." If it's actually about the Lions and the Commanders got mentioned in passing, it's out. It is not a journalist. It just really, really likes making lists.</p>
     </section>
 
     <section class="how-section">
       <h2>The ticker</h2>
-      <p class="digest-para">That scrolling strip near the top is basically this site eavesdropping on beat reporters' social media, through a side door, because the front door started charging rent a while back. It refreshes every couple hours normally, and every 15 minutes during a game, so you can watch the press box lose its mind in close to real time without opening a single app.</p>
+      <p class="digest-para">That scrolling strip near the top is this site eavesdropping on beat reporters' social media, through a side door, because the front door started charging rent. It refreshes every couple hours, and every 15 minutes during a game.</p>
     </section>
 
     <section class="how-section">
       <h2>The Blog (weekly editions)</h2>
-      <p class="digest-para">Once a week, an AI model that lives on this computer (not the cloud, not anyone else's business) reads everything that happened and writes a proper column about it, complete with quotes and, if it's feeling spicy, a pun. Here's the important part: it doesn't get to publish anything itself. A human reads the draft first and has to physically click "approve." This rule exists because an early test model once confidently reported that a player was on this team who has, in fact, never once put on a Commanders helmet. Robots lie sometimes. Not on purpose. They just really want the sentence to sound good.</p>
+      <p class="digest-para">Once a week, an AI model that lives on this computer reads everything that happened and writes a proper column, quotes and all. It doesn't get to publish itself — a human reads the draft and has to click "approve" first, after an early test model once confidently invented a player who never put on a Commanders helmet.</p>
     </section>
 
     <section class="how-section">
       <h2>The Blog (game days, new and slightly reckless)</h2>
-      <p class="digest-para">During an actual game, there's no time for a human to review anything between the 2nd and 3rd quarter, so this part runs completely unsupervised. Every 15 minutes, a different (faster, cloud-based) AI checks the score, and if a quarter just ended, it writes a quick recap using the real play-by-play plus whatever beat reporters and fans are posting live. It publishes itself. Nobody reads it first. The one leash it's on: it is not allowed to decide on its own that a catch was "amazing." It can only say that if an actual person online already said it first, with their name attached. Left to its own devices, it would apparently just say "outstanding" about everything, so this rule keeps it honest.</p>
+      <p class="digest-para">During an actual game there's no time for a human between quarters, so this part runs unsupervised. Every 15 minutes a faster, cloud-based AI checks the score and, if a quarter just ended, writes a recap from the real play-by-play plus what fans and reporters are posting live. Its one leash: it can only call a play "amazing" if a real person already said so first, with their name attached.</p>
     </section>
 
     <section class="how-section">
       <h2>The betting line</h2>
-      <p class="digest-para">The point spread and over/under next to the schedule come straight from a real sportsbook, by way of ESPN's own public data, the same feed that powers the little widget on espn.com. Nothing here is a tip, a lock, or financial advice from a website that also aggregates blog posts about a rookie kicker.</p>
+      <p class="digest-para">The spread and over/under next to the schedule come from a real sportsbook, by way of ESPN's own public data. Not a tip, a lock, or financial advice.</p>
     </section>
 
     <section class="how-section">
       <h2>Podcasts and the schedule</h2>
-      <p class="digest-para">The schedule is scraped from the team's own site. The podcasts are just real Spotify players, embedded, doing what Spotify players do. There is no fourth thing hiding here that secretly runs on a hamster wheel. Probably.</p>
+      <p class="digest-para">The schedule is scraped from the team's own site. The podcasts are just real Spotify players, doing what Spotify players do.</p>
     </section>
 
     <section class="how-section">
       <h2>The Roster page</h2>
-      <p class="digest-para">Every player, photo included, but sorted by something commanders.com's own roster page will never tell you: who this site's own coverage is actually talking about this week. Under the hood, a robot re-reads every headline it has already collected and tallies which names show up, then cross-references that against ESPN's real season stats so the numbers next to a player's face are, in fact, real numbers about real football he played, not a guess. The other 70-ish players nobody's written about lately are still in there. They're just filed under a button, out of respect.</p>
+      <p class="digest-para">Every player, photo included, sorted by something commanders.com's own roster page won't tell you: who this site's own coverage is actually talking about this week, backed by real ESPN season stats next to each name. The other 70-ish quiet players are still in there, just filed under a button.</p>
     </section>
 
     <section class="how-section">
       <h2>The Videos page (phones only)</h2>
-      <p class="digest-para">On a phone, the video rail moves off the main page entirely and gets its own "Videos" tab, because scrolling past six embedded press conferences just to reach the schedule is not what anyone opened this site to do. On a bigger screen, the rail just sits there beside everything else, same as always, and the Videos tab politely does not exist, because it would be redundant, and redundant tabs are how normal websites turn into ten tabs.</p>
+      <p class="digest-para">On a phone, the video rail moves off the main page and gets its own "Videos" tab, since scrolling past six press conferences to reach the schedule wasn't the point. On a bigger screen the rail just sits beside everything else, and the tab doesn't bother existing.</p>
     </section>
 
     <section class="how-section">
       <h2>The plumbing nobody asked about</h2>
-      <p class="digest-para">None of this lives on a server this site's owner has to think about. A robot on GitHub's own computers wakes up every few hours, does the collecting and writing described above, and hands the finished result to Netlify, which is the thing that actually serves the page when you load it. If that robot oversleeps or the internet has a bad day, the site just keeps showing whatever it built last time, which beats showing nothing.</p>
+      <p class="digest-para">None of this lives on a server anyone has to babysit. A robot on GitHub's own computers wakes up every few hours, does the collecting and writing, and hands the result to Netlify to serve. If it oversleeps, the site just keeps showing whatever it built last time.</p>
     </section>
 
     <section class="how-section">
       <h2>Why "The Burgundy Wire"?</h2>
-      <p class="digest-para">Burgundy, because that is aggressively the team's color. Wire, because a "news wire" is the old-timey term for exactly what this is: one feed, everything that came in, in order, no fluff. Also because "The Burgundy RSS Feed" tested poorly with a focus group of one person and that one person was right.</p>
+      <p class="digest-para">Burgundy, because that's aggressively the team's color. Wire, because a "news wire" is the old-timey term for exactly what this is. "The Burgundy RSS Feed" tested poorly with a focus group of one person.</p>
     </section>
 
     <section class="how-section">

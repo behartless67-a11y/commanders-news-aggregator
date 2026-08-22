@@ -1243,12 +1243,11 @@ main.layout{
 }
 
 /* ---------- How It Works ---------- */
-/* Was capped at 76ch for prose comfort, but that left the column dead-ending
-   well short of the video widget beside it — widened out to the same edge
-   the rest of the page's content already uses. */
+/* Was capped at 76ch for prose comfort, but that left a dead strip of black
+   between the text and the video widget beside it — widened out all the way
+   to the same edge the rest of the page's content already uses. */
 .how-it-works{ max-width: none; }
-
-.how-section p.digest-para{ max-width: 76ch; }
+.how-it-works .digest-para{ max-width: none; }
 
 .how-section{
   margin: 0 0 26px;
