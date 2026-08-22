@@ -14,15 +14,15 @@
   },
   {
     "season": "preseason",
-    "week": null,
+    "week": "WEEK 2",
     "gametime": "08/22/2026 12:00:00 -04:00",
-    "homeAway": null,
-    "opponentAbbr": "WAS",
-    "opponent": "Washington Commanders",
-    "opponentShort": "Commanders",
+    "homeAway": "AT",
+    "opponentAbbr": "DET",
+    "opponent": "Detroit Lions",
+    "opponentShort": "Lions",
     "venue": "Ford Field",
-    "result": null,
-    "points": null,
+    "result": "L",
+    "points": "13 - 17",
     "isBye": false
   },
   {
