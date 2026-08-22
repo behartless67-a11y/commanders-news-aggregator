@@ -17,7 +17,11 @@
  *   id             stable slug, used in stored item IDs — do not rename casually
  *   name           display name, shown as attribution
  *   homepage       human-facing landing page for the source
- *   category       'team' | 'league' — drives the badge shown on each item
+ *   category       'team' | 'league' | 'fantasy' — drives the badge shown on
+ *                  each item. 'fantasy' sources are matched against the full
+ *                  roster (+ aliases) instead of the short marquee-name list,
+ *                  since fantasy headlines name players without naming the
+ *                  team — see src/lib/relevance.js.
  *   collector      which collector module handles it (only 'rss' for now)
  *   alwaysRelevant true when everything the source publishes is about the
  *                  Commanders already, so the keyword filter in
@@ -163,6 +167,38 @@ export const SOURCES = [
     alwaysRelevant: false,
     enabled: true,
     url: 'https://sports.yahoo.com/nfl/rss/',
+  },
+
+  // ------------------------------------------------------------ fantasy
+  // PARKED 2026-08-22. Both feeds are real and verified working, but a
+  // Fantasy tab built on them stayed empty in practice: they're small,
+  // NFL-wide tickers (5-15 items) that rarely happen to mention one specific
+  // team, and no free/keyless team-filtered fantasy RSS exists (RotoWire's
+  // own `team=` param is silently ignored — confirmed by diffing output
+  // with and without it). The site's `category: 'fantasy'` handling and the
+  // roster/surname-based relevance fallback in src/lib/relevance.js were
+  // left in place rather than ripped out, in case this is revisited with a
+  // better source. FantasyPros' rss.php now 302s to a plain webpage, not a
+  // feed — never worked, not included even parked.
+  {
+    id: 'rotowire-fantasy',
+    name: 'RotoWire',
+    homepage: 'https://www.rotowire.com/',
+    category: 'fantasy',
+    collector: 'rss',
+    alwaysRelevant: false,
+    enabled: false,
+    url: 'https://www.rotowire.com/rss/news.php?sport=NFL',
+  },
+  {
+    id: 'rotoballer',
+    name: 'RotoBaller',
+    homepage: 'https://www.rotoballer.com/',
+    category: 'fantasy',
+    collector: 'rss',
+    alwaysRelevant: false,
+    enabled: false,
+    url: 'https://www.rotoballer.com/feed',
   },
 ];
 

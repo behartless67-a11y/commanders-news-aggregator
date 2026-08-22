@@ -5,6 +5,7 @@ import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
 import { loadScheduleCache } from '../lib/schedule.js';
+import { loadBettingCache } from '../lib/betting.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
@@ -54,6 +55,7 @@ export async function buildSite() {
   const rosterPlayers = await loadRosterCache();
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
   const games = await loadScheduleCache();
+  const betting = await loadBettingCache();
 
   // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
   // one that failed review, must never appear on the live site. See
@@ -77,6 +79,7 @@ export async function buildSite() {
       socialPosts,
       videos,
       games,
+      betting,
       hasWeekly,
       rosterIndex,
     });
@@ -84,16 +87,20 @@ export async function buildSite() {
   }
 
   if (hasWeekly) {
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games };
-    await fs.writeFile(path.join(DIST_DIR, 'weekly.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
+    // "Blog" is the reader-facing name and URL only — the underlying digest
+    // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
+    // "weekly" internally, since posts may cover a single game day now but
+    // generation/review/approve didn't change.
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting };
+    await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
     for (const record of publishedDigests) {
-      await fs.writeFile(path.join(DIST_DIR, `weekly-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
+      await fs.writeFile(path.join(DIST_DIR, `blog-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
     }
   }
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, videos, games }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, videos, games, betting }),
     'utf8',
   );
 

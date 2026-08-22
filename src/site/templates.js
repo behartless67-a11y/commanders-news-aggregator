@@ -53,9 +53,13 @@ function itemCard(item, index, rosterIndex) {
 
 /**
  * `hasWeekly` gates the tab entirely rather than always showing it — until a
- * digest is approved, dist/weekly.html doesn't exist, and a link to a 404 is
- * worse than no link. Weekly pages pass activeFile: 'weekly.html' whether
+ * digest is approved, dist/blog.html doesn't exist, and a link to a 404 is
+ * worse than no link. Blog pages pass activeFile: 'blog.html' whether
  * they're the archive or a single post, so the tab stays highlighted for both.
+ * (Internally still "weekly" — recap generation, `npm run digest`, and
+ * `data/digests/` are unchanged; only the reader-facing name and URL moved
+ * to "Blog", since posts may start covering single game days, not just a
+ * full week.)
  */
 function header(activeFile, hasWeekly = false) {
   const tabs = PAGES.map(
@@ -63,11 +67,12 @@ function header(activeFile, hasWeekly = false) {
       `<a href="${p.file}"${p.file === activeFile ? ' aria-current="page"' : ''}>${escapeHtml(p.label)}</a>`,
   ).join('\n      ');
   const weeklyTab = hasWeekly
-    ? `\n      <a href="weekly.html"${activeFile === 'weekly.html' ? ' aria-current="page"' : ''}>Weekly Recap</a>`
+    ? `\n      <a href="blog.html"${activeFile === 'blog.html' ? ' aria-current="page"' : ''}>Blog</a>`
     : '';
-  // Jumps to the schedule widget on the main river page rather than a filter
-  // of its own — always points at index.html#schedule since the weekly pages
-  // don't render the sidebar that widget lives in.
+  // Jumps to the schedule widget rather than a filter of its own — always
+  // points at index.html#schedule specifically (not a same-page "#schedule"
+  // anchor), so it behaves the same from every page even though the widget
+  // itself is also present in the sidebar on Blog/Podcasts.
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
 
@@ -77,7 +82,7 @@ function header(activeFile, hasWeekly = false) {
       <div class="brand">
         <img class="brand-logo" src="logo.png" alt="The Burgundy Wire" />
         <p class="brand-kicker">Sports &middot; News &middot; DC</p>
-        <p class="tagline-big">One page. Every headline. Hail to efficiency.</p>
+        <p class="tagline-big">One page. Every headline. Hail efficiency.</p>
       </div>
     </div>
     <div class="header-bottom-row">
@@ -219,7 +224,14 @@ function weekLabelOf(game) {
   return game.season === 'preseason' ? `Pre ${num}` : `Week ${num}`;
 }
 
-function scheduleRow(game) {
+/**
+ * `odds` is only ever set for the one row `scheduleWidget` has matched to
+ * the cached betting line (see there) — every other row gets `null` and
+ * renders exactly as before. Inline on the matchup rather than a separate
+ * widget, so it reads as "the odds for this game" rather than a second,
+ * disconnected feature competing for sidebar space.
+ */
+function scheduleRow(game, odds = null) {
   if (game.isBye) {
     return `
         <li class="schedule-row schedule-row--bye">
@@ -238,6 +250,9 @@ function scheduleRow(game) {
   const resultClass = game.result === 'W' ? ' is-win' : game.result === 'L' ? ' is-loss' : '';
   const prefix = game.homeAway === 'AT' ? '@' : 'vs';
   const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(game.opponentAbbr)}`;
+  const oddsLine = odds
+    ? `<span class="schedule-odds">${escapeHtml(odds.spreadDetails || '')}${odds.overUnder != null ? ` &middot; O/U ${escapeHtml(String(odds.overUnder))}` : ''}${odds.moneyline ? ` &middot; ML ${escapeHtml(odds.moneyline)}` : ''}</span>`
+    : '';
 
   return `
         <li class="schedule-row">
@@ -245,6 +260,7 @@ function scheduleRow(game) {
           <span class="schedule-info">
             <span class="schedule-matchup">${escapeHtml(prefix)} ${escapeHtml(game.opponentShort || game.opponent)}</span>
             <span class="schedule-date${resultClass}">${escapeHtml(weekLabelOf(game) || '')} · ${escapeHtml(dateOrResult)}</span>
+            ${oddsLine}
           </span>
         </li>`;
 }
@@ -269,21 +285,36 @@ function podcastEmbeds() {
   ).join('\n');
 }
 
-/** The full season, preseason through the regular-season finale, not just what's left to play. */
-function scheduleWidget(games) {
+/**
+ * The full season, preseason through the regular-season finale, not just
+ * what's left to play. `betting` (from data/betting.json, see
+ * src/lib/betting.js) is a single next-game snapshot, not a full odds
+ * table — matched here to whichever row it belongs to (by opponent, on the
+ * first not-yet-played meeting, so a division rival's later rematch never
+ * wrongly inherits this week's line) rather than shown as its own widget,
+ * so it reads as "the odds for this game" rather than a second, unrelated
+ * feature competing for sidebar space.
+ */
+function scheduleWidget(games, betting = null) {
   if (!games?.length) return '';
+  const bettingGame = betting ? games.find((g) => !g.isBye && !g.result && g.opponentAbbr === betting.opponentAbbr) : null;
+  // Straight from ESPN's own payload for whichever sportsbook is the
+  // provider, not written here — see betting.js. Shown once for the widget,
+  // not repeated per row.
+  const disclaimer = bettingGame && betting.disclaimer ? `<p class="betting-disclaimer">${escapeHtml(betting.disclaimer)}</p>` : '';
   return `
     <div class="widget-schedule" id="schedule">
       <h2>Schedule</h2>
-      <ul class="schedule-list">${games.map(scheduleRow).join('\n')}
+      <ul class="schedule-list">${games.map((g) => scheduleRow(g, g === bettingGame ? betting : null)).join('\n')}
       </ul>
+      ${disclaimer}
     </div>`;
 }
 
 /** Returns empty string with nothing to show in either widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
-function sidebar(videos, games) {
+function sidebar(videos, games, betting = null) {
   const video = videoWidget(videos);
-  const schedule = scheduleWidget(games);
+  const schedule = scheduleWidget(games, betting);
   if (!video && !schedule) return '';
   return `<aside class="sidebar" aria-labelledby="video-rail-heading">
 ${video}
@@ -309,8 +340,8 @@ function footer(sources, generatedAt) {
       <div class="footer-col footer-about">
         <h3>About this page</h3>
         <p class="footer-about-full">The Burgundy Wire pulls headlines from the Commanders' official site and national outlets into one running feed. Every link goes straight to the original publisher — we host no articles ourselves.</p>
-        <p class="footer-about-full">Rebuilt automatically every night.</p>
-        <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt nightly.</p>
+        <p class="footer-about-full">Rebuilt automatically every few hours.</p>
+        <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt every few hours.</p>
       </div>
       <div class="footer-col">
         <h3>Reading the badges</h3>
@@ -358,7 +389,7 @@ function footer(sources, generatedAt) {
  * result or a share link without ever seeing the archive page.
  */
 function digestDisclosure(model) {
-  return `<p class="digest-disclosure">Written by a local AI model (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim is sourced above; nothing here is original reporting. <a href="weekly.html">All weekly recaps</a></p>`;
+  return `<p class="digest-disclosure">Written by a local AI model (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim is sourced above; nothing here is original reporting. <a href="blog.html">All posts</a></p>`;
 }
 
 function weekLabel(record) {
@@ -454,9 +485,9 @@ ${sourceFooter}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [] }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null }) {
   const { digest } = record;
-  const rail = sidebar(videos, games);
+  const rail = sidebar(videos, games, betting);
 
   return `<!doctype html>
 <html lang="en">
@@ -478,7 +509,7 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <body>
 
 <div class="hero">
-${header('weekly.html', true)}
+${header('blog.html', true)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
@@ -501,8 +532,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [] }) {
-  const rail = sidebar(videos, games);
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null }) {
+  const rail = sidebar(videos, games, betting);
   const articles = records
     .map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`)
     .join('\n    <hr class="digest-divider">\n');
@@ -512,8 +543,8 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weekly Recap — ${escapeHtml(siteName)}</title>
-<meta name="description" content="AI-written weekly recaps of Washington Commanders news, generated locally and reviewed before publishing.">
+<title>Blog — ${escapeHtml(siteName)}</title>
+<meta name="description" content="AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -527,13 +558,13 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <body>
 
 <div class="hero">
-${header('weekly.html', true)}
+${header('blog.html', true)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
-    <h1 class="weekly-index-heading">Weekly Recap</h1>
-    ${articles || '<p class="river-empty">No recaps published yet.</p>'}
+    <h1 class="weekly-index-heading">Blog</h1>
+    ${articles || '<p class="river-empty">No posts published yet.</p>'}
   </div>
 
   ${rail}
@@ -550,8 +581,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [] }) {
-  const rail = sidebar(videos, games);
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null }) {
+  const rail = sidebar(videos, games, betting);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -609,6 +640,7 @@ export function renderPage(
     socialPosts = [],
     videos = [],
     games = [],
+    betting = null,
     hasWeekly = false,
     rosterIndex = null,
   },
@@ -616,7 +648,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games);
+  const rail = sidebar(videos, games, betting);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.

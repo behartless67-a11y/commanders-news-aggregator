@@ -23,6 +23,34 @@ const TERMS = [
   'adam peters',
 ];
 
+/**
+ * Fantasy-specific fallback for skill players whose surname is genuinely
+ * unambiguous league-wide — checked only after both `relevanceSignal` and
+ * the full-roster full-name match (see `isRelevant`) have already missed,
+ * since fantasy headlines skip the team name AND often skip the first name
+ * ("McLaurin: Full practice participant"). Deliberately hand-picked, not
+ * generated from the roster: most skill-position surnames are too common to
+ * risk it (Jones, Williams, Brown, White, Allen, Ford, Bates — every one of
+ * those collides with an actual fantasy-relevant player on a different
+ * team), and even a distinctive-looking one needs a real check before
+ * joining this list, not just "no other Commander has it." Add an entry
+ * only after confirming no other current skill player league-wide shares
+ * the surname; this list grows the same way ROSTER_ALIASES does, one
+ * verified addition at a time, not swept in wholesale.
+ */
+const FANTASY_SURNAMES = [
+  'mclaurin',
+  'croskey-merritt',
+  'kaliakmanis',
+  'okonkwo',
+  'sinnott',
+  'yankoff',
+  'mariota',
+  'hartman',
+  'mcnichols',
+  'burks',
+];
+
 export function relevanceSignal(text) {
   const haystack = String(text || '').toLowerCase();
   if (!haystack) return null;
@@ -47,10 +75,33 @@ export function relevanceSignal(text) {
  * river, precision beats recall — a wrong item is visible and annoying, a
  * missing one usually arrives via another source.
  */
-export function isRelevant(source, item) {
+/**
+ * `rosterIndex` (from `buildRosterIndex` in roster-links.js — the same index
+ * that powers player-name linking in the digest) is only consulted for
+ * `category: 'fantasy'` sources. Fantasy headlines are exactly the case the
+ * short TERMS list above can't handle: "Start or sit: McLaurin in Week 3"
+ * never says "Commanders", and TERMS is deliberately kept to a handful of
+ * marquee names (coach/QB/GM) rather than grown to cover every skill
+ * position, since it would go stale every roster cycle. The full roster is
+ * already fetched and cached for player-name linking, so reusing it here
+ * costs nothing extra and stays current the same way.
+ *
+ * `rosterIndex.pattern` carries the `g` flag (shared with `linkPlayers`,
+ * which needs it for `matchAll`) — `.test()` on a global regex is stateful,
+ * so `lastIndex` is reset before every call rather than trusting a fresh
+ * regex per source.
+ */
+export function isRelevant(source, item, rosterIndex = null) {
   if (source.alwaysRelevant) return true;
   const haystack = [item.title, item.url].filter(Boolean).join(' \n ');
-  return relevanceSignal(haystack) !== null;
+  if (relevanceSignal(haystack) !== null) return true;
+  if (source.category !== 'fantasy') return false;
+  if (rosterIndex) {
+    rosterIndex.pattern.lastIndex = 0;
+    if (rosterIndex.pattern.test(haystack)) return true;
+  }
+  const lower = haystack.toLowerCase();
+  return FANTASY_SURNAMES.some((surname) => lower.includes(surname));
 }
 
 /**

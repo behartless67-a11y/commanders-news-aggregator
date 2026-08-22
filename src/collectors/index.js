@@ -1,8 +1,11 @@
 import { enabledSources, sourceById } from '../../config/sources.js';
 import { SOCIAL_ACCOUNTS, SOCIAL_TAGS, SOCIAL_ENABLED } from '../../config/social.js';
+import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { log } from '../lib/log.js';
 import { isRelevant, relevanceSignal, isSocialFiller } from '../lib/relevance.js';
 import { daysAgo } from '../lib/dates.js';
+import { loadRosterCache } from '../lib/roster.js';
+import { buildRosterIndex } from '../lib/roster-links.js';
 import {
   loadItems,
   saveItems,
@@ -57,12 +60,12 @@ const MIN_SOCIAL_TEXT_CHARS = Number(process.env.MIN_SOCIAL_TEXT_CHARS || 25);
  * can't be re-evaluated, and silently deleting them on an unrelated config edit
  * would be surprising.
  */
-function pruneIrrelevant(store) {
+function pruneIrrelevant(store, rosterIndex) {
   let dropped = 0;
   for (const [id, item] of Object.entries(store)) {
     const source = sourceById(item.sourceId);
     if (!source) continue;
-    if (isRelevant(source, item) && !isSocialFiller(item.title)) continue;
+    if (isRelevant(source, item, rosterIndex) && !isSocialFiller(item.title)) continue;
     log.debug(`dropping no-longer-relevant item: ${item.title}`);
     delete store[id];
     dropped += 1;
@@ -75,6 +78,10 @@ export async function collectAll({ only } = {}) {
   const store = await loadItems();
   const perSource = {};
   let totalAdded = 0;
+  // Built once per run, not per source — degrades to null (no fantasy-only
+  // matches) until `npm run roster` has been run at least once, same as
+  // player-name linking does elsewhere.
+  const rosterIndex = buildRosterIndex(await loadRosterCache(), ROSTER_ALIASES);
 
   for (const source of sources) {
     const collector = COLLECTORS[source.collector];
@@ -93,7 +100,7 @@ export async function collectAll({ only } = {}) {
       continue;
     }
 
-    const relevant = raw.filter((item) => isRelevant(source, item) && !isSocialFiller(item.title));
+    const relevant = raw.filter((item) => isRelevant(source, item, rosterIndex) && !isSocialFiller(item.title));
     // Every source gets the 45-day ceiling; wires additionally get the tighter
     // window. Undated items (a handful of feeds omit pubDate) are still kept —
     // dropping them on first sight would silently lose real stories.
@@ -115,7 +122,7 @@ export async function collectAll({ only } = {}) {
   }
 
   const pruned = pruneItems(store, MAX_ITEM_AGE_DAYS);
-  const dropped = pruneIrrelevant(store);
+  const dropped = pruneIrrelevant(store, rosterIndex);
   await saveItems(store);
   await recordRun({ stage: 'collect', sources: sources.length, added: totalAdded, pruned, dropped });
   log.ok(
