@@ -192,6 +192,13 @@ img, svg{ display:block; max-width:100%; }
   margin-left: 0;
 }
 
+/* Shown only below the phone breakpoint — see the override in the
+   max-width: 640px block further down. ".filter-tabs a" alone already sets
+   display, so this needs the same class+element specificity to actually win. */
+.filter-tabs a.nav-mobile-only{
+  display: none;
+}
+
 /* Pulses gently rather than sitting static — meant to read as "something is
    happening right now", not just a static label. Respects reduced-motion
    like every other animation on the site (see .ticker-track). */
@@ -446,6 +453,37 @@ main.layout{
 }
 
 .river-more-chevron{ fill: var(--gold); flex-shrink: 0; }
+
+/* Same progressive-reveal convention as the river above, applied to the
+   Roster page's "in the news" list — a player row is much taller than a
+   headline card, so five is a fuller initial screen than fourteen is there. */
+.roster-list.is-collapsed .roster-row-extra{ display: none; }
+.roster-list.is-collapsed .roster-row-extra.is-revealed{ display: flex; }
+
+.roster-more{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: center;
+  margin: 16px 0 4px;
+  padding: 9px 20px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.roster-more:hover{
+  background: var(--burgundy);
+  border-color: var(--gold);
+  color: var(--gold);
+}
 
 /* ---------- Back to top ---------- */
 .to-top{
@@ -910,11 +948,6 @@ main.layout{
 .digest-source-list a{ color: var(--text); font-weight: 600; }
 .digest-source-list a:hover{ color: var(--gold); }
 
-.weekly-index-heading{
-  font-size: clamp(20px, 2.6vw, 26px);
-  margin: 4px 0 6px;
-}
-
 /* Between two full recaps stacked on the index page — .digest-post already
    carries its own bottom spacing, so this only needs to draw the line. */
 .digest-divider{
@@ -1014,8 +1047,208 @@ main.layout{
   color: var(--text-muted);
 }
 
+/* ---------- Roster ---------- */
+/* The 60ch cap on .page-intro reads fine as body copy elsewhere, but next to
+   a 92-row roster it just leaves the rest of the content width empty above
+   the list — widen it out to the same edge the rows below it already use. */
+.page-intro-wide{
+  max-width: none;
+}
+
+/* Mostly visited on a phone (see the mobile-only nav link in header()), but
+   still readable if opened on a wider screen — capped rather than letting
+   the video cards stretch full-bleed across a desktop layout-wide page. */
+.videos-page{
+  max-width: 480px;
+}
+
+/* Single column, full width of the content area next to the video/schedule
+   rail — every row gets the room a photo plus a stat line needs, instead of
+   squeezing two narrow cards side by side. */
+.roster-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.roster-row{
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.roster-photo-link{
+  flex: none;
+}
+
+.roster-photo{
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+
+.roster-photo-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-faint);
+}
+
+.roster-info{
+  flex: 1;
+  min-width: 0;
+}
+
+.roster-info-top{
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.roster-name{
+  font-size: 16px;
+  margin: 0;
+}
+
+.roster-name a{
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(255,182,18,0.45);
+  text-underline-offset: 2px;
+}
+
+.roster-name a:hover{
+  text-decoration-color: var(--gold);
+}
+
+.roster-jersey{
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-faint);
+}
+
+.roster-position{
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.roster-mention-count{
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.roster-mention-count-zero{
+  color: var(--text-faint);
+  font-weight: 500;
+}
+
+.roster-stats{
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 0;
+}
+
+.roster-stats-season{
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.roster-stat{
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.roster-stat strong{
+  color: var(--text);
+  font-weight: 700;
+}
+
+.roster-recent{
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.roster-recent a{
+  font-size: 12.5px;
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(255,182,18,0.45);
+  text-underline-offset: 2px;
+}
+
+.roster-recent a:hover{
+  text-decoration-color: var(--gold);
+}
+
+.roster-recent-time{
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
+/* Native <details> — no JS needed to collapse the ~70 players this page has
+   nothing to say about yet, and it still works with JS disabled, same as
+   the river's own noscript fallback. */
+.roster-quiet-section{
+  margin-top: 22px;
+}
+
+.roster-quiet-section summary{
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 13.5px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-soft);
+  list-style: none;
+}
+
+.roster-quiet-section summary::-webkit-details-marker{
+  display: none;
+}
+
+.roster-quiet-section summary::before{
+  content: '▸ ';
+  color: var(--gold);
+}
+
+.roster-quiet-section[open] summary::before{
+  content: '▾ ';
+}
+
+.roster-quiet-section summary:hover{
+  color: var(--text);
+}
+
+.roster-quiet-section .roster-list{
+  margin-top: 8px;
+}
+
 /* ---------- How It Works ---------- */
-.how-it-works{ max-width: 76ch; }
+/* Was capped at 76ch for prose comfort, but that left the column dead-ending
+   well short of the video widget beside it — widened out to the same edge
+   the rest of the page's content already uses. */
+.how-it-works{ max-width: none; }
+
+.how-section p.digest-para{ max-width: 76ch; }
 
 .how-section{
   margin: 0 0 26px;
@@ -1289,6 +1522,16 @@ main.layout{
   .brand-logo{ height: 160px; }
   .header-bottom-row{ flex-direction: column; align-items: center; }
   .podcast-page-list{ grid-template-columns: 1fr; }
+  .roster-row{ flex-wrap: wrap; }
+  .roster-mention-count{ margin-left: 0; }
+
+  /* Phone-only: the main river pages drop the video rail from the sidebar
+     here (articles and schedule only) and pick up the "Videos" nav link
+     instead — see the nav-mobile-only rule below and renderVideosPage() in
+     templates.js. Blog/Podcasts/Roster keep their rail's video widget as-is;
+     only the river pages (.page-river) make this trade. */
+  .page-river .widget-videos{ display: none; }
+  .filter-tabs a.nav-mobile-only{ display: inline-block; }
   .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
   /* The auto margin that separates it from the filter tabs on desktop only
      makes sense in a single unwrapped row — on a wrapped, centered mobile

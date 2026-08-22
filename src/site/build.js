@@ -8,10 +8,10 @@ import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
-import { buildRosterIndex } from '../lib/roster-links.js';
+import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderHowItWorksPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -56,6 +56,9 @@ export async function buildSite() {
   // degrades to plain escaped text instead of matching against nothing.
   const rosterPlayers = await loadRosterCache();
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
+  // Full store, not the capped river — a player's mention count shouldn't
+  // shrink just because a busy week pushed their one story past MAX_RIVER_ITEMS.
+  const mentionCounts = countMentions(allSorted, rosterIndex);
   const games = await loadScheduleCache();
   const betting = await loadBettingCache();
   const isGameLive = isGameWindowActive(games);
@@ -113,8 +116,32 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'videos.html'),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'how-it-works.html'),
     renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    'utf8',
+  );
+
+  await fs.writeFile(
+    path.join(DIST_DIR, 'roster.html'),
+    renderRosterPage({
+      siteName: SITE_NAME,
+      siteUrl: SITE_URL,
+      sources: SOURCES,
+      generatedAt,
+      hasWeekly,
+      isGameLive,
+      videos,
+      games,
+      betting,
+      rosterPlayers,
+      mentionCounts,
+    }),
     'utf8',
   );
 

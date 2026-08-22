@@ -58,63 +58,61 @@
   });
 
   /**
-   * Progressive reveal of the river.
+   * Progressive reveal, shared by the river and the Roster page's "in the
+   * news" list.
    *
-   * The build ships every headline and marks the ones past the first batch with
-   * .card-extra; CSS hides those while .river carries .is-collapsed. So this only
-   * flips classes — nothing is fetched, and a reader with JavaScript off gets the
-   * whole river via the <noscript> override rather than a dead button.
+   * The build ships every item and marks the ones past the first batch with
+   * `extraClass`; CSS hides those while the list carries .is-collapsed. So
+   * this only flips classes — nothing is fetched, and a reader with
+   * JavaScript off gets the whole list via each page's own <noscript>
+   * override rather than a dead button.
+   *
+   * Also levels the list up to match the video/schedule rail beside it:
+   * RIVER_INITIAL (or its Roster equivalent) is a static guess made at build
+   * time, but actual item heights vary, so on any given day the list can
+   * fall short of the rail and leave it trailing into dead space. Reveal-only,
+   * deliberately — it never re-hides an item the reader has already been
+   * shown, so it can't undo a press of the button or fight the server's
+   * count. Erring one item tall is also the better direction — it puts the
+   * button at the foot of the rail instead of stranding a gap above it.
    */
-  var river = document.querySelector('.river.is-collapsed');
-  var more = river && river.querySelector('.river-more');
+  function setupReveal(listSelector, moreSelector, extraClass, railSelector) {
+    var list = document.querySelector(listSelector + '.is-collapsed');
+    var more = document.querySelector(moreSelector);
+    if (!list || !more) return;
 
-  if (river && more) {
     var batch = Number(more.getAttribute('data-batch')) || 10;
-    var label = more.querySelector('.river-more-label');
-    var rail = document.querySelector('.sidebar');
-    // Mirrors the breakpoint in site.css where the rail moves beside the river.
+    var label = more.querySelector('span');
+    var rail = document.querySelector(railSelector || '.sidebar');
+    // Mirrors the breakpoint in site.css where the rail moves beside the list.
     // Below it the two stack, and there is no column to balance against.
     var twoColumn = window.matchMedia('(min-width: 900px)');
 
-    var hiddenCards = function () {
-      return river.querySelectorAll('.card-extra:not(.is-revealed)');
+    var hiddenItems = function () {
+      return list.querySelectorAll('.' + extraClass + ':not(.is-revealed)');
     };
 
     var syncMore = function () {
       if (!more) return;
-      var left = hiddenCards().length;
+      var left = hiddenItems().length;
       if (left > 0) {
         if (label) label.textContent = 'Show ' + Math.min(batch, left) + ' more';
         return;
       }
       // Nothing else to show — drop the collapsed state entirely so the
-      // last-card border rules behave as they do on a fully expanded page.
-      river.classList.remove('is-collapsed');
+      // last-item border rules behave as they do on a fully expanded page.
+      list.classList.remove('is-collapsed');
       more.remove();
       more = null;
     };
 
-    /**
-     * Level the two columns up.
-     *
-     * RIVER_INITIAL is a static guess made at build time, but card heights depend
-     * on how long each headline and excerpt runs, so on any given day it can fall
-     * short of the video rail and leave the river trailing off into dead space
-     * beside six videos. Measure both and reveal stories until the river is at
-     * least as tall as the rail.
-     *
-     * Reveal-only, deliberately: it never re-hides a story the reader has already
-     * been shown, so it can't undo a press of the button or fight the server's
-     * count. Erring one card tall is also the better direction — it puts the
-     * button at the foot of the rail instead of stranding a gap above it.
-     */
     var balance = function () {
       if (!more || !rail || !twoColumn.matches) return;
       // Bounded: one layout read per reveal, once, and never more than the
-      // stories actually present.
+      // items actually present.
       var guard = 0;
-      while (river.offsetHeight < rail.offsetHeight && guard++ < 60) {
-        var next = hiddenCards()[0];
+      while (list.offsetHeight < rail.offsetHeight && guard++ < 60) {
+        var next = hiddenItems()[0];
         if (!next) break;
         next.classList.add('is-revealed');
       }
@@ -122,16 +120,16 @@
     };
 
     more.addEventListener('click', function () {
-      var hidden = hiddenCards();
+      var hidden = hiddenItems();
       var reveal = Math.min(batch, hidden.length);
       for (var i = 0; i < reveal; i++) hidden[i].classList.add('is-revealed');
       syncMore();
     });
 
     balance();
-    // Thumbnails are sized by attribute and aspect-ratio so the rail's height is
-    // stable before they load, but the webfont is not — re-check once it has
-    // settled, and after a resize reflows the cards.
+    // Thumbnails/photos are sized by attribute so the rail's height is stable
+    // before they load, but the webfont is not — re-check once it has
+    // settled, and after a resize reflows the list.
     window.addEventListener('load', balance);
 
     var resizeTimer;
@@ -140,6 +138,12 @@
       resizeTimer = setTimeout(balance, 150);
     });
   }
+
+  setupReveal('.river', '.river-more', 'card-extra');
+  // Balanced against the video widget alone, not the whole sidebar — the
+  // schedule list underneath it runs much longer than any reasonable initial
+  // batch of players should chase.
+  setupReveal('.roster-list', '.roster-more', 'roster-row-extra', '.widget-videos');
 
   /**
    * Back-to-top. The anchor works on its own — this only decides when it's worth

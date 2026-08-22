@@ -35,6 +35,38 @@ export function buildRosterIndex(players, aliases = {}) {
 }
 
 /**
+ * Tallies how many stored items mention each roster player by name, for the
+ * Roster page's "who's actually in the news" ranking — the one thing that
+ * page offers over just linking out to commanders.com's own roster. Reads
+ * the headline only, same as relevance.js's own reasoning: the excerpt
+ * mentions plenty of players in passing (joint-practice notes, "also saw…"
+ * asides) who the headline isn't actually about.
+ *
+ * Counts at most once per player per item even if a name appears twice in
+ * one headline (rare, but a plural like "the Diggs brothers" could
+ * double-match otherwise), and caps `recentItems` at 3 so a heavily-covered
+ * player doesn't carry their entire history into the page.
+ */
+export function countMentions(items, index) {
+  const counts = new Map();
+  if (!index) return counts;
+  for (const item of items) {
+    const haystack = item.title || '';
+    const seenInItem = new Set();
+    for (const m of haystack.matchAll(index.pattern)) {
+      const info = index.map.get(m[0]);
+      if (!info || seenInItem.has(info.slug)) continue;
+      seenInItem.add(info.slug);
+      const entry = counts.get(info.slug) || { count: 0, recentItems: [] };
+      entry.count += 1;
+      if (entry.recentItems.length < 3) entry.recentItems.push(item);
+      counts.set(info.slug, entry);
+    }
+  }
+  return counts;
+}
+
+/**
  * Wraps every roster-matched full name in a link to that player's
  * commanders.com profile. Everything else in the text is HTML-escaped
  * normally — this is the only place a caller needs, no separate

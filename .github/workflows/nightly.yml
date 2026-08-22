@@ -36,8 +36,10 @@ jobs:
         continue-on-error: true
 
       # Powers the player-name → commanders.com profile links in the digest
-      # and river excerpts. A bad night here degrades to no links, same as a
-      # bad social night degrades to no ticker — never worth failing the build.
+      # and river excerpts, plus the Roster page's photos. A bad night here
+      # degrades to no links, same as a bad social night degrades to no
+      # ticker — never worth failing the build. Season stats are refreshed
+      # separately and weekly — see roster-stats.yml — not on this cadence.
       - run: npm run roster
         continue-on-error: true
 

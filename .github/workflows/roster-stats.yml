@@ -1,0 +1,50 @@
+name: Weekly roster stats
+
+on:
+  schedule:
+    # Tuesdays at 12:00 UTC (8am EDT / 7am EST) — after both Sunday's games
+    # and Monday Night Football have gone final, so ESPN's per-player season
+    # stats are fully settled before the Roster page reads them. Any earlier
+    # in the week risks catching a Monday-night player mid-game.
+    - cron: '0 12 * * 2'
+  workflow_dispatch: {}
+
+# Shared with nightly.yml/social.yml — same push race, same fix.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run roster-stats
+
+      - run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "roster-stats-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Weekly roster stats update"
+          git push
+
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}

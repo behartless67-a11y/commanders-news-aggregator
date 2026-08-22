@@ -5,6 +5,26 @@ import { linkPlayers } from '../lib/roster-links.js';
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national' };
 
+/**
+ * Open Graph / Twitter Card tags — without these, a pasted link (Slack,
+ * Teams, iMessage, etc.) shows an empty placeholder image, since those
+ * clients never fall back to just grabbing any image on the page. `image`
+ * needs an absolute URL, not "logo.png", since the client fetching the
+ * preview has no page context to resolve a relative one against.
+ */
+function socialMetaTags({ title, description, siteUrl }) {
+  const image = `${siteUrl}/logo.png`;
+  return `<meta property="og:title" content="${escapeHtml(title)}">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:image" content="${escapeHtml(image)}">
+<meta property="og:url" content="${escapeHtml(siteUrl)}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escapeHtml(title)}">
+<meta name="twitter:description" content="${escapeHtml(description)}">
+<meta name="twitter:image" content="${escapeHtml(image)}">`;
+}
+
 const PAGES = [
   { file: 'index.html', label: 'All', match: () => true },
   { file: 'team-sources.html', label: 'Team Sources', match: (item) => item.category === 'team' },
@@ -25,6 +45,10 @@ const PAGES = [
  */
 const RIVER_INITIAL = Number(process.env.RIVER_INITIAL || 14);
 const RIVER_BATCH = Number(process.env.RIVER_BATCH || 10);
+
+/** Same progressive-reveal convention as the river, just a shorter initial batch — a player row is much taller than a headline card. */
+const ROSTER_INITIAL = Number(process.env.ROSTER_INITIAL || 5);
+const ROSTER_BATCH = Number(process.env.ROSTER_BATCH || 5);
 
 /**
  * `index` here is the card's position in the river (for the RIVER_INITIAL
@@ -80,7 +104,14 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // itself is also present in the sidebar on Blog/Podcasts.
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
+  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' ? ' aria-current="page"' : ''}>Roster</a>`;
   const howItWorksLink = `\n      <a href="how-it-works.html" class="nav-jump"${activeFile === 'how-it-works.html' ? ' aria-current="page"' : ''}>How It Works</a>`;
+  // Phone-only: on the main river pages the video rail is dropped from the
+  // sidebar at this width (see .page-river .widget-videos in site.css) so the
+  // page is articles and schedule only — this is the only way to reach the
+  // videos there. Wider screens still see the rail in place, so the link
+  // would just be a redundant second path to the same widget.
+  const videosLink = `\n      <a href="videos.html" class="nav-jump nav-mobile-only"${activeFile === 'videos.html' ? ' aria-current="page"' : ''}>Videos</a>`;
 
   return `<header class="site-header" id="top">
   <div class="wrap">
@@ -93,7 +124,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
     </div>
     <div class="header-bottom-row">
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${podcastsLink}${howItWorksLink}
+        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${podcastsLink}${rosterLink}${howItWorksLink}
       </nav>
     </div>
   </div>
@@ -601,6 +632,7 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
+${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -652,6 +684,7 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blog — ${escapeHtml(siteName)}</title>
 <meta name="description" content="AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.">
+${socialMetaTags({ title: `Blog — ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -670,7 +703,6 @@ ${header('blog.html', true, isGameLive)}
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
-    <h1 class="weekly-index-heading">Blog</h1>
     ${articles || '<p class="river-empty">No posts published yet.</p>'}
   </div>
 
@@ -697,6 +729,7 @@ export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How It Works — ${escapeHtml(siteName)}</title>
 <meta name="description" content="A mostly-honest, occasionally unhinged explanation of the robots that run this site.">
+${socialMetaTags({ title: `How It Works — ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -716,7 +749,7 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div class="how-it-works">
     <h1 class="podcasts-heading">How This Whole Thing Works</h1>
-    <p class="page-intro">A layman's explanation. Mostly accurate. No robots were harmed, though several were mildly scolded.</p>
+    <p class="page-intro page-intro-wide">A layman's explanation. Mostly accurate. No robots were harmed, though several were mildly scolded.</p>
 
     <section class="how-section">
       <h2>The headline river</h2>
@@ -744,14 +777,197 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
     </section>
 
     <section class="how-section">
-      <h2>Podcasts, schedule, fantasy, etc.</h2>
+      <h2>Podcasts and the schedule</h2>
       <p class="digest-para">The schedule is scraped from the team's own site. The podcasts are just real Spotify players, embedded, doing what Spotify players do. There is no fourth thing hiding here that secretly runs on a hamster wheel. Probably.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The Roster page</h2>
+      <p class="digest-para">Every player, photo included, but sorted by something commanders.com's own roster page will never tell you: who this site's own coverage is actually talking about this week. Under the hood, a robot re-reads every headline it has already collected and tallies which names show up, then cross-references that against ESPN's real season stats so the numbers next to a player's face are, in fact, real numbers about real football he played, not a guess. The other 70-ish players nobody's written about lately are still in there. They're just filed under a button, out of respect.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The Videos page (phones only)</h2>
+      <p class="digest-para">On a phone, the video rail moves off the main page entirely and gets its own "Videos" tab, because scrolling past six embedded press conferences just to reach the schedule is not what anyone opened this site to do. On a bigger screen, the rail just sits there beside everything else, same as always, and the Videos tab politely does not exist, because it would be redundant, and redundant tabs are how normal websites turn into ten tabs.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The plumbing nobody asked about</h2>
+      <p class="digest-para">None of this lives on a server this site's owner has to think about. A robot on GitHub's own computers wakes up every few hours, does the collecting and writing described above, and hands the finished result to Netlify, which is the thing that actually serves the page when you load it. If that robot oversleeps or the internet has a bad day, the site just keeps showing whatever it built last time, which beats showing nothing.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>Why "The Burgundy Wire"?</h2>
+      <p class="digest-para">Burgundy, because that is aggressively the team's color. Wire, because a "news wire" is the old-timey term for exactly what this is: one feed, everything that came in, in order, no fluff. Also because "The Burgundy RSS Feed" tested poorly with a focus group of one person and that one person was right.</p>
     </section>
 
     <section class="how-section">
       <h2>The fine print, but funnier</h2>
       <p class="digest-para">This is a hobby project built by one person and several well-behaved scripts, not a newsroom. If something here is wrong, it's almost certainly the robots' fault, and they have already been informed of this in writing.</p>
     </section>
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * A player's own commanders.com profile is a click away for anyone who wants
+ * height/weight/college, so this row doesn't repeat that page. Its reason to
+ * exist is the season stat line (from ESPN, refreshed nightly alongside the
+ * roster itself — see roster-stats.js) and the mention count: how much of
+ * this site's own aggregated coverage is actually about that player right
+ * now, with the actual headlines to back the number up.
+ */
+function rosterCard(player, mentionInfo, { showMentionBadge = true, extra = false } = {}) {
+  const count = mentionInfo ? mentionInfo.count : 0;
+  const recent = mentionInfo ? mentionInfo.recentItems : [];
+  const mentionLabel = count === 1 ? '1 mention' : `${count} mentions`;
+  const profileUrl = `https://www.commanders.com/team/players-roster/${escapeHtml(player.slug)}/`;
+  const photo = player.photo
+    ? `<img class="roster-photo" src="${escapeHtml(player.photo)}" alt="" loading="lazy" width="96" height="96">`
+    : `<span class="roster-photo roster-photo-placeholder" aria-hidden="true">#${escapeHtml(player.jersey)}</span>`;
+  const statsLine = player.stats
+    ? `<div class="roster-stats">
+        <span class="roster-stats-season">${escapeHtml(String(player.stats.season))} season</span>
+        ${player.stats.fields.map((f) => `<span class="roster-stat"><strong>${escapeHtml(f.value)}</strong> ${escapeHtml(f.label)}</span>`).join('\n        ')}
+      </div>`
+    : '';
+  return `
+    <article class="roster-row${extra ? ' roster-row-extra' : ''}">
+      <a class="roster-photo-link" href="${profileUrl}" target="_blank" rel="noopener noreferrer" tabindex="-1">${photo}</a>
+      <div class="roster-info">
+        <div class="roster-info-top">
+          <h3 class="roster-name"><a href="${profileUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(player.name)}</a></h3>
+          <span class="roster-jersey">#${escapeHtml(player.jersey)}</span>
+          <span class="roster-position">${escapeHtml(player.position)}</span>
+          ${showMentionBadge ? `<span class="roster-mention-count">${mentionLabel}</span>` : ''}
+        </div>
+        ${statsLine}
+        ${
+          recent.length
+            ? `<ul class="roster-recent">
+          ${recent
+            .map((item) => {
+              const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
+              return `<li><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>${when ? ` <span class="roster-recent-time">${escapeHtml(when)}</span>` : ''}</li>`;
+            })
+            .join('\n          ')}
+        </ul>`
+            : ''
+        }
+      </div>
+    </article>`;
+}
+
+export function renderRosterPage({
+  siteName,
+  siteUrl,
+  sources,
+  generatedAt,
+  hasWeekly = false,
+  videos = [],
+  games = [],
+  betting = null,
+  isGameLive = false,
+  rosterPlayers = [],
+  mentionCounts = new Map(),
+}) {
+  const rail = sidebar(videos, games, betting);
+  // Most-talked-about first — the entire point of this page over just
+  // linking to commanders.com's own roster. Ties (usually both at zero)
+  // fall back to alphabetical so the order is at least stable build to build.
+  const sorted = [...rosterPlayers].sort((a, b) => {
+    const countA = mentionCounts.get(a.slug)?.count || 0;
+    const countB = mentionCounts.get(b.slug)?.count || 0;
+    return countB - countA || a.name.localeCompare(b.name);
+  });
+  // Split rather than one long list — most of a 92-man roster has no recent
+  // coverage at all, and burying the players this page is actually about
+  // under 70 quiet rows defeats the point. The quiet rest of the roster is
+  // still here, just tucked behind a native <details> disclosure so it costs
+  // nothing (no JS) to expand and nothing to skip past when collapsed.
+  const mentioned = sorted.filter((p) => mentionCounts.get(p.slug)?.count);
+  const unmentioned = sorted.filter((p) => !mentionCounts.get(p.slug)?.count);
+  // Same progressive-reveal convention as the river (see RIVER_INITIAL) —
+  // rows past the initial batch are marked, not omitted, so the noscript
+  // fallback and a JS-driven "show more" both work off the same markup.
+  const mentionedCollapsed = mentioned.length > ROSTER_INITIAL;
+  const mentionedCards = mentioned
+    .map((p, i) => rosterCard(p, mentionCounts.get(p.slug), { extra: i >= ROSTER_INITIAL }))
+    .join('\n');
+  const unmentionedCards = unmentioned.map((p) => rosterCard(p, null, { showMentionBadge: false })).join('\n');
+  const nextRosterBatch = Math.min(ROSTER_BATCH, mentioned.length - ROSTER_INITIAL);
+  const rosterMoreButton = mentionedCollapsed
+    ? `
+    <button class="roster-more" type="button" data-batch="${ROSTER_BATCH}">
+      <span class="roster-more-label">Show ${nextRosterBatch} more</span>
+      <svg class="river-more-chevron" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+    </button>`
+    : '';
+  const description = "The full Commanders roster, ranked by who this site's own coverage is actually talking about right now.";
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roster — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Roster — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+<noscript><style>
+  /* Same reasoning as the river's own noscript override — every row is
+     already in the HTML, so with no JS to expand it the list must not stay
+     collapsed. */
+  .roster-list.is-collapsed .roster-row-extra{ display: flex; }
+  .roster-list.is-collapsed + .roster-more{ display: none; }
+</style></noscript>
+</head>
+<body>
+
+<div class="hero">
+${header('roster.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div class="roster-page">
+    <h1 class="podcasts-heading">Roster</h1>
+    <p class="page-intro page-intro-wide">Every player on the roster, ranked by who's actually showing up in this site's own Commanders coverage — not just an alphabetical list you could get anywhere.</p>
+    ${
+      rosterPlayers.length
+        ? `<div class="roster-list${mentionedCollapsed ? ' is-collapsed' : ''}">${mentionedCards}
+    </div>
+    ${rosterMoreButton}
+    ${
+      unmentioned.length
+        ? `<details class="roster-quiet-section">
+      <summary>Rest of the roster — no recent mentions (${unmentioned.length})</summary>
+      <div class="roster-list">${unmentionedCards}
+      </div>
+    </details>`
+        : ''
+    }`
+        : `<p class="page-intro">Roster data hasn't loaded yet — check back after the next build.</p>`
+    }
   </div>
 
   ${rail}
@@ -777,6 +993,7 @@ export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, ha
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Podcasts — ${escapeHtml(siteName)}</title>
 <meta name="description" content="Commanders podcasts worth your time, embedded to stream right from ${escapeHtml(siteName)}.">
+${socialMetaTags({ title: `Podcasts — ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -802,6 +1019,59 @@ ${header('podcasts.html', hasWeekly, isGameLive)}
   </div>
 
   ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * Phone-only landing spot for the video rail — see the "Videos" nav link in
+ * header() and .page-river .widget-videos in site.css. On a wider screen the
+ * rail is already visible beside the river/blog/podcasts/roster content, so
+ * this page is never linked to there; it still renders and works if visited
+ * directly, same as any other page.
+ */
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
+  const widget = videoWidget(videos);
+  const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videos — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Videos — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('videos.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="videos-page">
+    <h1 class="podcasts-heading">Videos</h1>
+    <p class="page-intro">The same clips from the video rail, on their own page.</p>
+    ${widget || '<p class="river-empty">No videos yet — check back after the next build.</p>'}
+  </div>
 </main>
 
 ${footer(sources, generatedAt)}
@@ -857,6 +1127,7 @@ export function renderPage(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(siteName)} — Washington Commanders News</title>
 <meta name="description" content="Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.">
+${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: 'Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.', siteUrl })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -883,7 +1154,7 @@ ${header(activeFile, hasWeekly, isGameLive)}
 ${ticker(socialPosts)}
 </div>
 
-<main class="layout${rail ? '' : ' layout-wide'}">
+<main class="layout page-river${rail ? '' : ' layout-wide'}">
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
     <div class="river-heading-row">
       <h2 class="river-heading">${escapeHtml(heading)}</h2>

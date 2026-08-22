@@ -11,7 +11,7 @@ import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
-import { fetchRoster, saveRosterCache } from './lib/roster.js';
+import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './lib/roster.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
 import { updateLiveGame } from './digest/live-generate.js';
@@ -28,7 +28,8 @@ Commanders headline river
   npm run sources            list configured sources
   npm run doctor             check every source and report what is broken
   node src/cli.js status     item counts and last run info
-  npm run roster             refresh the cached commanders.com roster (for player-name linking)
+  npm run roster             refresh the cached ESPN roster (name, jersey, position, photo)
+  npm run roster-stats       refresh cached season stats per player (weekly, ESPN)
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
@@ -192,12 +193,35 @@ async function main() {
       await status();
       break;
     case 'roster': {
+      // Basic info only (name, jersey, position, photo) — cheap enough to
+      // run every few hours for call-ups and roster moves. Season stats are
+      // refreshed on their own weekly schedule (see the 'roster-stats' case
+      // and roster-stats.yml), so a stat line already on file is carried
+      // forward here rather than being blanked out until next Tuesday.
       const players = await fetchRoster();
       if (players.length) {
-        await saveRosterCache(players);
-        log.ok(`roster: cached ${players.length} player(s)`);
+        const previous = await loadRosterCache();
+        const statsBySlug = new Map(previous.map((p) => [p.slug, p.stats]));
+        const merged = players.map((p) => ({ ...p, stats: statsBySlug.get(p.slug) ?? null }));
+        await saveRosterCache(merged);
+        log.ok(`roster: cached ${merged.length} player(s)`);
       } else {
         log.warn('roster: fetch returned nothing — leaving the existing cache in place');
+      }
+      break;
+    }
+    case 'roster-stats': {
+      // Deliberately weekly (Tuesday mornings, after Sunday and Monday Night
+      // Football have both gone final) rather than on every roster refresh —
+      // one ESPN request per player is too heavy to repeat every few hours
+      // for a number that only changes once a week anyway.
+      const current = await loadRosterCache();
+      if (current.length) {
+        const withStats = await attachStats(current);
+        await saveRosterCache(withStats);
+        log.ok(`roster-stats: refreshed stats for ${withStats.length} player(s)`);
+      } else {
+        log.warn('roster-stats: no cached roster yet — run npm run roster first');
       }
       break;
     }

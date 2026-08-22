@@ -3,63 +3,90 @@ import path from 'node:path';
 import { fetchText } from './http.js';
 import { log } from './log.js';
 import { DATA_DIR } from './store.js';
+import { fetchPlayerStats } from './roster-stats.js';
 
 const CACHE_PATH = path.join(DATA_DIR, 'roster.json');
 
 /**
- * Commanders.com's roster page — plain server-rendered HTML, no bot wall, on
- * the same domain the news feed already reads from. One page, ~94 rows:
- * name (linked, with a stable /team/players-roster/first-last/ slug), jersey
- * number, position, height, weight, experience, college.
- *
- * The site's displayed name is not always what anyone actually calls a
- * player — DT Jer'Zhan Newton is "Johnny Newton" in every beat reporter's
- * coverage, and the roster page has no idea. That gap is closed by
- * config/roster-aliases.js, not here; this module only knows what
- * commanders.com itself says.
+ * ESPN's own team roster endpoint — the same undocumented, public, key-free
+ * API already used for the scoreboard and betting line. Replaced a
+ * commanders.com HTML scrape that gave name/jersey/position but no photo and
+ * no stable per-player ID, which the Roster page's headshots and season
+ * stats both need.
  */
+const ROSTER_URL = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/wsh/roster';
 
-const ROSTER_URL = 'https://www.commanders.com/team/players-roster/';
-
-// Jersey is usually digits, but a practice-squad player gets a "W" suffix
-// (e.g. "19W"); position is usually one code, but a swing lineman gets a
-// slash ("T/G") — both need a looser character class than a first pass
-// assumed, caught by checking the two rows a stricter regex silently missed.
-const ROW_RE =
-  /<a href="\/team\/players-roster\/([a-z0-9-]+)\/">([^<]+)<\/a><\/span><\/div><\/td><td data-append="1">([\dA-Z]+)<\/td><td data-append="1">([A-Z/]+)<\/td>/g;
-
-function decodeEntities(s) {
-  return String(s)
-    .replace(/&#x27;|&#39;/g, "'")
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"');
+/**
+ * commanders.com's own profile-page slugs are just the lowercased full name
+ * with every run of non-alphanumeric characters (spaces, apostrophes,
+ * periods) collapsed to one hyphen — confirmed by reproducing every
+ * apostrophe/suffix name already on the roster (K'Lavon Chaisson ->
+ * "k-lavon-chaisson", Josh Conerly Jr. -> "josh-conerly-jr", Jer'Zhan Newton
+ * -> "jer-zhan-newton") from commanders.com's real slugs. Deriving it here
+ * means linking back to a player's commanders.com profile no longer
+ * requires scraping that page at all.
+ */
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 export async function fetchRoster() {
-  const html = await fetchText(ROSTER_URL, { cache: false });
-  if (!html) {
-    log.warn('roster: could not fetch commanders.com roster page');
+  const text = await fetchText(ROSTER_URL, { cache: false });
+  if (!text) {
+    log.warn('roster: could not fetch ESPN team roster');
+    return [];
+  }
+
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    log.warn('roster: ESPN roster response was not valid JSON — API may have changed shape');
     return [];
   }
 
   const players = [];
-  for (const m of html.matchAll(ROW_RE)) {
-    const [, slug, name, jersey, position] = m;
-    players.push({ slug, name: decodeEntities(name), jersey, position });
+  for (const group of data.athletes || []) {
+    for (const p of group.items || []) {
+      if (!p.fullName || !p.position?.abbreviation) continue;
+      players.push({
+        slug: slugify(p.fullName),
+        name: p.fullName,
+        jersey: String(p.jersey || ''),
+        position: p.position.abbreviation,
+        espnId: p.id,
+        photo: p.headshot?.href || null,
+      });
+    }
   }
 
   if (!players.length) {
-    log.warn('roster: page fetched but no rows matched — commanders.com may have changed its markup');
+    log.warn('roster: page fetched but no players matched — ESPN may have changed its response shape');
   }
   return players;
 }
 
 /**
- * A wholesale cache, not an append-only store like items.json/social.json —
- * there's no merge semantics to preserve, since a fresh fetch is always a
- * complete, authoritative roster snapshot, not a partial one to combine with
- * the last.
+ * One ESPN request per player — too heavy to run on the same frequent
+ * cadence as `fetchRoster()`, so this is called on its own weekly schedule
+ * instead (Tuesday mornings, see roster-stats.yml and the 'roster-stats'
+ * CLI case), never from the build itself. `fetchPlayerStats` already
+ * degrades to null per-player on any failure, so one bad response just means
+ * that player's card has no stats line, not a failed refresh.
  */
+export async function attachStats(players) {
+  const withStats = [];
+  for (const player of players) {
+    const stats = await fetchPlayerStats(player.espnId, player.position);
+    withStats.push({ ...player, stats });
+  }
+  return withStats;
+}
+
+/** Wholesale cache, same convention as schedule.js/betting.js — a fresh fetch is always a complete, authoritative snapshot. */
 export async function saveRosterCache(players) {
   await fs.mkdir(path.dirname(CACHE_PATH), { recursive: true });
   const tmp = `${CACHE_PATH}.tmp`;
