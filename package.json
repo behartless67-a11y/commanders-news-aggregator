@@ -19,6 +19,7 @@
     "roster": "node src/cli.js roster",
     "schedule": "node src/cli.js schedule",
     "betting": "node src/cli.js betting",
+    "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",
     "digest:list": "node src/cli.js digest list",
     "digest:review": "node src/cli.js digest review",
@@ -26,6 +27,7 @@
     "digest:reject": "node src/cli.js digest reject"
   },
   "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^0.33.1",
     "dotenv": "^17.0.0",
     "fast-xml-parser": "^5.0.0"
   }

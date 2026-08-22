@@ -6,6 +6,8 @@ import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.j
 import { loadRosterCache } from '../lib/roster.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
+import { isGameWindowActive } from '../lib/gamewindow.js';
+import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
@@ -56,6 +58,8 @@ export async function buildSite() {
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
   const games = await loadScheduleCache();
   const betting = await loadBettingCache();
+  const isGameLive = isGameWindowActive(games);
+  const liveGame = await loadLiveGameState();
 
   // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
   // one that failed review, must never appear on the live site. See
@@ -63,7 +67,10 @@ export async function buildSite() {
   const publishedDigests = (await listDigests())
     .filter((d) => d.status === 'published')
     .sort((a, b) => b.week.localeCompare(a.week));
-  const hasWeekly = publishedDigests.length > 0;
+  // The Blog tab/page exist if there's a weekly recap OR a live game post —
+  // a game-day-only blog (no weekly digest ever approved yet) should still
+  // be reachable, not hidden behind the weekly gate.
+  const hasWeekly = publishedDigests.length > 0 || Boolean(liveGame?.entries?.length);
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
@@ -81,6 +88,7 @@ export async function buildSite() {
       games,
       betting,
       hasWeekly,
+      isGameLive,
       rosterIndex,
     });
     await fs.writeFile(path.join(DIST_DIR, page.file), html, 'utf8');
@@ -91,7 +99,7 @@ export async function buildSite() {
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, isGameLive, liveGame };
     await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `blog-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
@@ -100,7 +108,7 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, videos, games, betting }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
     'utf8',
   );
 

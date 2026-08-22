@@ -61,13 +61,18 @@ function itemCard(item, index, rosterIndex) {
  * to "Blog", since posts may start covering single game days, not just a
  * full week.)
  */
-function header(activeFile, hasWeekly = false) {
+function header(activeFile, hasWeekly = false, isGameLive = false) {
   const tabs = PAGES.map(
     (p) =>
       `<a href="${p.file}"${p.file === activeFile ? ' aria-current="page"' : ''}>${escapeHtml(p.label)}</a>`,
   ).join('\n      ');
+  // The badge is driven by the same schedule-window check that gates the
+  // 15-minute ticker cadence (see src/lib/gamewindow.js) — one signal, two
+  // consumers, so a game showing "live" here and the ticker refreshing fast
+  // never disagree with each other.
+  const liveBadge = isGameLive ? ' <span class="live-badge" aria-label="Game in progress">Live</span>' : '';
   const weeklyTab = hasWeekly
-    ? `\n      <a href="blog.html"${activeFile === 'blog.html' ? ' aria-current="page"' : ''}>Blog</a>`
+    ? `\n      <a href="blog.html"${activeFile === 'blog.html' ? ' aria-current="page"' : ''}>Blog${liveBadge}</a>`
     : '';
   // Jumps to the schedule widget rather than a filter of its own — always
   // points at index.html#schedule specifically (not a same-page "#schedule"
@@ -408,16 +413,6 @@ function digestThread(thread, rosterIndex) {
   return `      <p class="digest-para">${linkPlayers(stripInlineCites(thread.body), rosterIndex)}</p>`;
 }
 
-function digestAlsoNoted(alsoNoted, rosterIndex) {
-  if (!alsoNoted?.length) return '';
-  const items = alsoNoted.map((a) => `<li>${linkPlayers(stripInlineCites(a.text), rosterIndex)}</li>`).join('');
-  return `
-      <section class="digest-thread digest-also">
-        <h3>Also noted</h3>
-        <ul>${items}</ul>
-      </section>`;
-}
-
 /**
  * Every citation used anywhere in the post, deduplicated and in first-cited
  * order, so a source backing three different threads appears once — not
@@ -436,7 +431,6 @@ function collectCites(digest) {
     }
   };
   digest.threads.forEach((t) => add(t.cites));
-  (digest.alsoNoted || []).forEach((a) => add(a.cites));
   return order;
 }
 
@@ -472,7 +466,6 @@ function digestArticleBody(record, rosterIndex, headingTag = 'h2') {
   const byIndex = new Map(record.corpus.map((e) => [e.n, e]));
   const { digest } = record;
   const threads = digest.threads.map((t) => digestThread(t, rosterIndex)).join('\n');
-  const also = digestAlsoNoted(digest.alsoNoted, rosterIndex);
   const sourceFooter = digestSourceFooter(collectCites(digest), byIndex);
   return `
     <article class="digest-post">
@@ -480,12 +473,41 @@ function digestArticleBody(record, rosterIndex, headingTag = 'h2') {
       <p class="digest-week">Week of ${escapeHtml(weekLabel(record))} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
       <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
 ${threads}
-${also}
 ${sourceFooter}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null }) {
+/**
+ * The live game-day post — separate from digestArticleBody because its data
+ * shape is fundamentally different (an accumulating list of quarter
+ * entries from data/live-game.json, not a single one-shot digest record).
+ * Entries render newest-first, matching live-blog convention, and no
+ * source-footer link list — the "sources" here are ESPN's own play text and
+ * a handful of social posts (see src/digest/live-generate.js), not linkable
+ * articles the way the weekly digest's citations are.
+ */
+function liveGamePost(state, rosterIndex) {
+  if (!state?.entries?.length) return '';
+  const badge = state.gameOver ? '' : ' <span class="live-badge" aria-label="Game in progress">Live</span>';
+  const entries = [...state.entries]
+    .reverse()
+    .map(
+      (e) => `
+      <div class="live-entry">
+        <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}</p>
+        <p class="digest-para">${linkPlayers(e.body, rosterIndex)}</p>
+      </div>`,
+    )
+    .join('\n');
+  return `
+    <article class="digest-post live-game-post">
+      <h2>Live: Commanders vs ${escapeHtml(state.opponent)}${badge}</h2>
+${entries}
+      <p class="digest-disclosure">Written by a cloud AI model (${escapeHtml(state.entries[0]?.model || '')}) from live play-by-play and social posts as the game happened, not by a person.</p>
+    </article>`;
+}
+
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
   const { digest } = record;
   const rail = sidebar(videos, games, betting);
 
@@ -509,7 +531,7 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <body>
 
 <div class="hero">
-${header('blog.html', true)}
+${header('blog.html', true, isGameLive)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
@@ -532,11 +554,13 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null }) {
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null }) {
   const rail = sidebar(videos, games, betting);
-  const articles = records
+  const weeklyArticles = records
     .map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`)
     .join('\n    <hr class="digest-divider">\n');
+  const livePost = liveGamePost(liveGame, rosterIndex);
+  const articles = [livePost, weeklyArticles].filter(Boolean).join('\n    <hr class="digest-divider">\n');
 
   return `<!doctype html>
 <html lang="en">
@@ -558,7 +582,7 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <body>
 
 <div class="hero">
-${header('blog.html', true)}
+${header('blog.html', true, isGameLive)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
@@ -581,7 +605,7 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null }) {
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
   const rail = sidebar(videos, games, betting);
   return `<!doctype html>
 <html lang="en">
@@ -603,7 +627,7 @@ export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, ha
 <body>
 
 <div class="hero">
-${header('podcasts.html', hasWeekly)}
+${header('podcasts.html', hasWeekly, isGameLive)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
@@ -642,6 +666,7 @@ export function renderPage(
     games = [],
     betting = null,
     hasWeekly = false,
+    isGameLive = false,
     rosterIndex = null,
   },
 ) {
@@ -690,7 +715,7 @@ export function renderPage(
 <body>
 
 <div class="hero">
-${header(activeFile, hasWeekly)}
+${header(activeFile, hasWeekly, isGameLive)}
 
 ${ticker(socialPosts)}
 </div>

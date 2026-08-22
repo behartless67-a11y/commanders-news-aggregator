@@ -12,8 +12,10 @@ import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
 import { fetchRoster, saveRosterCache } from './lib/roster.js';
-import { fetchSchedule, saveScheduleCache } from './lib/schedule.js';
+import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
+import { updateLiveGame } from './digest/live-generate.js';
+import { isGameWindowActive } from './lib/gamewindow.js';
 
 const USAGE = `
 Commanders headline river
@@ -29,6 +31,8 @@ Commanders headline river
   npm run roster             refresh the cached commanders.com roster (for player-name linking)
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
+  npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
+  node src/cli.js gamecheck  print true/false: is a Commanders game in its live window right now
 
   npm run digest             write this week's AI recap draft (needs Ollama running)
   npm run digest:list        list every recap and its status
@@ -205,6 +209,22 @@ async function main() {
       } else {
         log.warn('schedule: fetch returned nothing — leaving the existing cache in place');
       }
+      break;
+    }
+    case 'gamecheck': {
+      const games = await loadScheduleCache();
+      const live = isGameWindowActive(games);
+      console.log(live ? 'true' : 'false');
+      // Writes a step output for GitHub Actions when run there; a no-op
+      // locally, where GITHUB_OUTPUT is unset.
+      if (process.env.GITHUB_OUTPUT) {
+        await fsp.appendFile(process.env.GITHUB_OUTPUT, `live=${live}\n`);
+      }
+      break;
+    }
+    case 'live': {
+      const state = await updateLiveGame();
+      if (!state) log.info('live: nothing new to publish');
       break;
     }
     case 'betting': {

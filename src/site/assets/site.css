@@ -192,6 +192,33 @@ img, svg{ display:block; max-width:100%; }
   margin-left: 0;
 }
 
+/* Pulses gently rather than sitting static — meant to read as "something is
+   happening right now", not just a static label. Respects reduced-motion
+   like every other animation on the site (see .ticker-track). */
+.live-badge{
+  display: inline-block;
+  margin-left: 5px;
+  padding: 1px 6px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #14100f;
+  background: var(--gold);
+  border-radius: 999px;
+  vertical-align: 2px;
+  animation: live-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes live-pulse{
+  0%, 100%{ opacity: 1; }
+  50%{ opacity: 0.55; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .live-badge{ animation: none; }
+}
+
 .filter-tabs a[aria-current="page"]{
   color: var(--gold);
   border-bottom-color: var(--gold);
@@ -684,6 +711,25 @@ main.layout{
   margin: 0 0 18px;
 }
 
+/* ---------- Live game post ---------- */
+.live-entry{
+  border-top: 1px solid var(--border-soft);
+  padding: 14px 0;
+}
+
+.live-entry:first-of-type{
+  border-top: 0;
+  padding-top: 0;
+}
+
+.live-entry-meta{
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+}
+
 .digest-lede{
   font-size: 16px;
   color: var(--text-muted);
@@ -773,20 +819,6 @@ main.layout{
 
 .digest-source-list a{ color: var(--text); font-weight: 600; }
 .digest-source-list a:hover{ color: var(--gold); }
-
-.digest-also ul{
-  list-style: none;
-  margin: 0; padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.digest-also li{
-  font-size: 14.5px;
-  color: var(--text);
-  line-height: 1.65;
-}
 
 .weekly-index-heading{
   font-size: clamp(20px, 2.6vw, 26px);

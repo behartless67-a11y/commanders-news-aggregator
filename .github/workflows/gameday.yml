@@ -1,0 +1,79 @@
+name: Gameday refresh
+
+# Every 15 minutes, all week, all year — cheap outside an actual game thanks
+# to the early-exit check below. src/lib/gamewindow.js decides "live" purely
+# from the already-cached schedule (kickoff time + a fixed window), not a
+# second live API poll, so the check itself costs nothing but reading a
+# small JSON file already in the checkout.
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+# Shares the group with nightly.yml/social.yml: whenever this tick lands on
+# the same minute as either of those (every 4h/2h respectively), commits
+# and pushes would otherwise race on data/.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Check for a live game window
+        id: check
+        run: node src/cli.js gamecheck
+
+      # The ticker's beat-reporter posts are exactly the color commentary
+      # `npm run live` (next step) draws on for the quarter recap, so it
+      # refreshes first.
+      - name: Refresh social ticker
+        if: steps.check.outputs.live == 'true'
+        run: npm run social
+        continue-on-error: true
+
+      # Cloud model call (Bedrock/Claude, see src/digest/cloud-provider.js) —
+      # a bad call here must never take the ticker refresh down with it, so
+      # this is continue-on-error the same way `social` is above.
+      - name: Write a quarter recap if one just ended
+        if: steps.check.outputs.live == 'true'
+        run: npm run live
+        continue-on-error: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+
+      - name: Build
+        if: steps.check.outputs.live == 'true'
+        run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Commit updated data
+        if: steps.check.outputs.live == 'true'
+        run: |
+          git config user.name "gameday-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Gameday update"
+          git push
+
+      - name: Deploy to Netlify
+        if: steps.check.outputs.live == 'true'
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
