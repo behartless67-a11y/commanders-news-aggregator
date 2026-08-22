@@ -753,12 +753,27 @@ main.layout{
 }
 
 .live-award-name{
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin: 0 0 4px;
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--gold);
+}
+
+.live-award-icon{
+  fill: var(--gold);
+  flex-shrink: 0;
+}
+
+.live-award-tagline{
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-faint);
 }
 
 .live-award-recipient{

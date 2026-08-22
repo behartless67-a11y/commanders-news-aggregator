@@ -530,7 +530,8 @@ function finalThoughtsBlock(finalThoughts, rosterIndex) {
         <h3>Final Thoughts</h3>
         ${liveParagraphs(finalThoughts.body, rosterIndex)}
         <div class="live-award">
-          <p class="live-award-name">🏆 The Live Wire Award</p>
+          <p class="live-award-name"><svg class="live-award-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66l.07-.11L13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15L11 21z"/></svg> The Live Wire Award</p>
+          <p class="live-award-tagline">Goes to whoever had this game's single biggest impact on the outcome, for better or worse. Hero and goat are both eligible.</p>
           <p class="live-award-recipient">${linkPlayers(stripInlineCites(finalThoughts.awardRecipient || ''), rosterIndex)}</p>
           <p class="live-award-reason">${linkPlayers(stripInlineCites(finalThoughts.awardReason || ''), rosterIndex)}</p>
         </div>
@@ -569,7 +570,6 @@ function liveGamePost(state, rosterIndex) {
       <h2>${heading}</h2>
 ${finalThoughtsBlock(state.finalThoughts, rosterIndex)}
 ${entries}
-      <p class="digest-disclosure">Written by a cloud AI model (${escapeHtml(state.entries[0]?.model || '')}) from live play-by-play and social posts as the game happened, not by a person.</p>
     </article>`;
 }
 
