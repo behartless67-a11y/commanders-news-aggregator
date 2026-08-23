@@ -1334,7 +1334,7 @@ ${header('contact.html', hasWeekly, isGameLive)}
     <h1 class="podcasts-heading">Contact</h1>
     <p class="page-intro">Found a bug, have a tip, or just want to yell about the offensive line? Send it here.</p>
 
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+    <form name="contact" method="POST" action="/contact.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
       <input type="hidden" name="form-name" value="contact" />
       <p class="contact-honeypot">
         <label>Leave this field blank<input name="bot-field" /></label>
@@ -1345,7 +1345,7 @@ ${header('contact.html', hasWeekly, isGameLive)}
       </label>
       <label class="contact-field">
         <span>Email</span>
-        <input class="contact-input" type="email" name="email" autocomplete="email" required />
+        <input class="contact-input" type="email" name="email" autocomplete="email" />
       </label>
       <label class="contact-field">
         <span>Message</span>
