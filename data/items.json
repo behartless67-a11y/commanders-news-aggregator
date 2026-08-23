@@ -1486,5 +1486,65 @@
     "excerpt": "DETROIT (AP) — Joshua Dobbs ran for a 50-yard touchdown and the Detroit Lions held on for a 17-13 preseason win against the Washington Commanders on Saturday.Do",
     "publishedAt": "2026-08-22T21:30:16.000Z",
     "collectedAt": "2026-08-23T01:11:37.742Z"
+  },
+  "riggos-rag-3e9de394f998": {
+    "id": "riggos-rag-3e9de394f998",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-telling-admission-signals-commanders-gamble-already-unraveling",
+    "title": "Dan Quinn's telling admission signals Commanders' gamble is already unraveling",
+    "excerpt": "Washington Commanders head coach Dan Quinn acknowledged the problem at center, which has been a real concern throughout the offseason.",
+    "publishedAt": "2026-08-23T11:30:00.000Z",
+    "collectedAt": "2026-08-23T12:35:23.583Z"
+  },
+  "riggos-rag-7fac58abd487": {
+    "id": "riggos-rag-7fac58abd487",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-winners-3-losers-washington-commanders-preseason-defeat-lions",
+    "title": "5 winners (and 3 losers) from Commanders' preseason defeat to the Lions",
+    "excerpt": "Who were the big winners and losers from the Washington Commanders' preseason defeat to the Detroit Lions at Ford Field?",
+    "publishedAt": "2026-08-23T10:00:01.000Z",
+    "collectedAt": "2026-08-23T12:35:23.583Z"
+  },
+  "yahoo-nfl-f5445aab4367": {
+    "id": "yahoo-nfl-f5445aab4367",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/lions-vs-commanders-snap-counts-120000536.html",
+    "title": "What Lions vs. Commanders snap counts tell us about Detroit’s roster",
+    "excerpt": "DETROIT, MICHIGAN - AUGUST 22: Trayveon Williams #47 and Joshua Dobbs #6 of the Detroit Lions celebrate after Williams scored a touchdown during the third quarter of a preseason game against the Washington Commanders at Ford Field on August 22, 2026 in Detroit, Michigan. (Photo by Nic Antaya/Getty Images) | Getty Images How the Detroit Lions utilize their players in the preseason can often tell a lot about their intentions when it comes to next week’s roster cuts. It’s not only how much you…",
+    "publishedAt": "2026-08-23T12:00:00.000Z",
+    "collectedAt": "2026-08-23T12:35:27.904Z"
+  },
+  "yahoo-nfl-636cd9c6a245": {
+    "id": "yahoo-nfl-636cd9c6a245",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/5-lions-hurt-roster-chances-110000421.html",
+    "title": "5 Lions who hurt their roster chances vs. Commanders",
+    "excerpt": "DETROIT,MICHIGAN-AUGUST 22: Detroit Lions quarterback Joshua Dobbs (6) goes to pass the ball during the second half of an NFL preseason football game between the Washington Commanders and the Detroit Lions in Detroit, Michigan USA, on Saturday, August 22, 2026 (Photo by Amy Lemus/NurPhoto via Getty Images) | NurPhoto via Getty Images Even though the stakes of a preseason game are low, a win feels good nonetheless. The Detroit Lions defeated the Washington Commanders in their second preseason…",
+    "publishedAt": "2026-08-23T11:00:00.000Z",
+    "collectedAt": "2026-08-23T12:35:27.904Z"
+  },
+  "yahoo-nfl-c5bda91c67a5": {
+    "id": "yahoo-nfl-c5bda91c67a5",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/most-promising-part-lions-win-101114635.html",
+    "title": "What was the most promising part of the Lions’ win over the Commanders?",
+    "excerpt": "DETROIT, MICHIGAN - AUGUST 22: Jayden Daniels #5 of the Washington Commanders is sacked by DJ Wonnum #98 of the Detroit Lions during the first half at Ford Field on August 22, 2026 in Detroit, Michigan. (Photo by Gregory Shamus/Getty Images) | Getty Images The Detroit Lions defeated the Washington Commanders 17-13 on Saturday afternoon in their second preseason game of 2026. Obviously, the final score of the game matters little, but there were certainly developments during the game that were…",
+    "publishedAt": "2026-08-23T10:11:14.000Z",
+    "collectedAt": "2026-08-23T12:35:27.904Z"
   }
 }
