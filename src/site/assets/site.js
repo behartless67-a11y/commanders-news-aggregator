@@ -163,4 +163,24 @@
     window.addEventListener('scroll', sync, { passive: true });
     sync();
   }
+
+  /**
+   * Reformat each schedule row's kickoff time into the visitor's own
+   * timezone. The server has no way to know that at build time, so it
+   * renders in Eastern (see SITE_TZ in dates.js) with the game's real ISO
+   * timestamp carried in data-iso — this just re-renders that timestamp
+   * through the browser's own resolved timezone. A played game shows a
+   * final score instead of a time and carries no data-iso, so it's
+   * untouched here.
+   */
+  var timeEls = document.querySelectorAll('.schedule-time[data-iso]');
+  if (timeEls.length) {
+    var fmt = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+    var timeFmt = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit' });
+    for (var i = 0; i < timeEls.length; i++) {
+      var date = new Date(timeEls[i].getAttribute('data-iso'));
+      if (isNaN(date.getTime())) continue;
+      timeEls[i].textContent = fmt.format(date) + ' · ' + timeFmt.format(date);
+    }
+  }
 })();

@@ -62,11 +62,34 @@ const BLOG_BATCH = Number(process.env.BLOG_BATCH || 1);
  * the headline is already one whole `<a>` to the original article, and HTML
  * can't nest a second `<a>` inside it.
  */
+/**
+ * First `n` sentences of an excerpt, for the mobile-only short version below
+ * (see .card-excerpt-full/.card-excerpt-short) — a plain punctuation split is
+ * good enough for a decorative truncation, not a citation boundary, so the
+ * rare miss on an abbreviation like "Jr." is an acceptable trade for staying
+ * dependency-free.
+ */
+function firstSentences(text, n) {
+  const sentences = String(text || '').match(/[^.!?]+[.!?]+(?:\s+|$)|[^.!?]+$/g) || [];
+  if (sentences.length <= n) return String(text || '').trim();
+  return sentences.slice(0, n).join('').trim();
+}
+
 function itemCard(item, index, rosterIndex) {
   const badgeClass = CATEGORY_BADGE_CLASS[item.category] || 'badge-national';
   const badgeLabel = CATEGORY_LABEL[item.category] || item.category;
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
   const extra = index >= RIVER_INITIAL ? ' card-extra' : '';
+  // Two separate elements, not one truncated by CSS line-clamp — a line
+  // count varies with viewport width and font size, but "two sentences" is
+  // an exact, meaningful unit a reader can expect consistently on a phone.
+  // Always both, even when identical (a short excerpt has nothing to trim),
+  // so the mobile CSS swap below never has to guess whether a short version
+  // exists.
+  const excerptMarkup = item.excerpt
+    ? `<p class="card-excerpt card-excerpt-full">${linkPlayers(item.excerpt, rosterIndex)}</p>
+      <p class="card-excerpt card-excerpt-short">${linkPlayers(firstSentences(item.excerpt, 2), rosterIndex)}</p>`
+    : '';
   return `
     <article class="card${extra}">
       <div class="card-top">
@@ -75,7 +98,7 @@ function itemCard(item, index, rosterIndex) {
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
       <h3 class="card-headline"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
-      ${item.excerpt ? `<p class="card-excerpt">${linkPlayers(item.excerpt, rosterIndex)}</p>` : ''}
+      ${excerptMarkup}
     </article>`;
 }
 
@@ -128,6 +151,8 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
       </div>
     </div>
     <div class="header-bottom-row">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+      <label for="nav-toggle" class="nav-mobile-toggle">Menu</label>
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
         ${tabs}${weeklyTab}${scheduleLink}${videosLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}
       </nav>
@@ -287,8 +312,16 @@ function scheduleRow(game, odds = null) {
 
   const iso = game.gametime ? parseGameTime(game.gametime) : null;
   // A played game shows its result where the date would go — the date only
-  // matters looking forward, the result only matters looking back.
-  const dateOrResult = game.result ? `${game.result} ${game.points || ''}`.trim() : iso ? formatGameDateTime(iso) : 'TBD';
+  // matters looking forward, the result only matters looking back. An
+  // upcoming game's date/time carries its own ISO timestamp so site.js can
+  // reformat it into the visitor's own timezone — server-rendered, it's
+  // always Eastern (see SITE_TZ in dates.js), which reads wrong for anyone
+  // watching from another timezone.
+  const dateOrResult = game.result
+    ? escapeHtml(`${game.result} ${game.points || ''}`.trim())
+    : iso
+      ? `<span class="schedule-time" data-iso="${escapeHtml(iso)}">${escapeHtml(formatGameDateTime(iso))}</span>`
+      : 'TBD';
   const resultClass = game.result === 'W' ? ' is-win' : game.result === 'L' ? ' is-loss' : '';
   const prefix = game.homeAway === 'AT' ? '@' : 'vs';
   const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(game.opponentAbbr)}`;
@@ -301,7 +334,7 @@ function scheduleRow(game, odds = null) {
           <img class="schedule-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(game.opponent)}" width="28" height="28" loading="lazy" decoding="async" />
           <span class="schedule-info">
             <span class="schedule-matchup">${escapeHtml(prefix)} ${escapeHtml(game.opponentShort || game.opponent)}</span>
-            <span class="schedule-date${resultClass}">${escapeHtml(weekLabelOf(game) || '')} · ${escapeHtml(dateOrResult)}</span>
+            <span class="schedule-date${resultClass}">${escapeHtml(weekLabelOf(game) || '')} · ${dateOrResult}</span>
             ${oddsLine}
           </span>
         </li>`;
@@ -328,14 +361,33 @@ const PODCASTS = [
     id: '4F9T8e4JLYDZrvOAW0MPrf',
     description: 'Part of the Locked On Podcast Network\'s one-team-per-show lineup, publishing daily with a national-analyst take on the Commanders specifically, not the whole NFC East.',
   },
+  {
+    name: 'All Ears with JP Finlay',
+    provider: 'apple',
+    id: '1790896157',
+    slug: 'all-ears-nbcs-washington-commanders-podcast-with-jp-finlay',
+    description: "NBC Sports Washington's JP Finlay covering the Commanders, from a beat reporter who's in the building every day rather than a national or ex-player angle.",
+  },
 ];
+
+/** Both Spotify and Apple ship a public, key-free embed iframe — no scraping, same reasoning as the schedule/betting widgets pulling from public endpoints. */
+function podcastEmbed(p) {
+  if (p.provider === 'apple') {
+    // 175, not Apple's larger default — at 450 the embed has room to switch
+    // into its wide two-panel episode-list layout, which threw this card
+    // wildly out of proportion with every Spotify one beside it. 175 keeps
+    // it to the same compact single-episode card the others use.
+    return `<iframe src="https://embed.podcasts.apple.com/us/podcast/${p.slug}/id${p.id}?theme=dark" title="${escapeHtml(p.name)}" width="100%" height="175" style="width:100%;overflow:hidden;background:transparent;" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" loading="lazy"></iframe>`;
+  }
+  return `<iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+}
 
 function podcastEmbeds() {
   return PODCASTS.map(
     (p) => `
       <div class="podcast-embed-block">
         <div class="podcast-embed">
-          <iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          ${podcastEmbed(p)}
         </div>
         <p class="podcast-description">${escapeHtml(p.description)}</p>
       </div>`,
@@ -453,8 +505,20 @@ function weekLabel(record) {
   return `${formatDate(record.windowStart)} – ${formatDate(record.windowEnd)}`;
 }
 
-/** Model citation markers ("[3, 11]") are for validation, not the reading view — the consolidated source list at the end of the post carries that job instead. */
-const stripInlineCites = (text) => String(text || '').replace(/\s*\[[\d,\s]+\]/g, '');
+/**
+ * Model citation markers ("[3, 11]") are for validation, not the reading
+ * view — the consolidated source list at the end of the post carries that
+ * job instead. Also spaces out ESPN's own play-by-play abbreviation style
+ * ("L.Altmyer") into normal prose ("L. Altmyer") — the model quotes that
+ * style verbatim from the source plays, but it reads as a typo once it's in
+ * a sentence meant to be read, not a box score. "T.J.Watt" only gains the
+ * one space before the surname, matching how a compound-initial name is
+ * actually punctuated ("T.J. Watt").
+ */
+const stripInlineCites = (text) =>
+  String(text || '')
+    .replace(/\s*\[[\d,\s]+\]/g, '')
+    .replace(/\b([A-Z])\.([A-Z][a-z])/g, '$1. $2');
 
 /**
  * Threads are an internal organizing tool for citations, not a reader-facing
