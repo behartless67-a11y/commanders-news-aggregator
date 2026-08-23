@@ -36,24 +36,38 @@ export const SOCIAL_ACCOUNTS = [
     name: 'JP Finlay',
     label: 'NBC Sports Washington',
     alwaysRelevant: true,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/592/331/798/763/619/original/a3701f8e35f78563.jpg',
+    bio: 'Covers the Commanders for NBC Sports Washington and hosts the All Ears podcast. Also holds a weekday radio slot on 106.7 The Fan.',
   },
   {
     handle: 'john_keim',
     name: 'John Keim',
     label: 'ESPN',
     alwaysRelevant: true,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/588/365/336/241/532/original/48c6d5c30b2714fc.jpg',
+    bio: "ESPN's Commanders beat reporter, covering the team full-time. Also hosts The John Keim Report podcast.",
   },
   {
+    // Bio confirms this, 2026-08-23: he's since left The Athletic for his
+    // own independent newsletter/podcast — this label feeds the digest's
+    // own citations too (see select.js's AUTHORS map), so it needs to stay
+    // accurate, not just cosmetic.
     handle: 'BenStandig',
     name: 'Ben Standig',
-    label: 'The Athletic',
+    label: 'Last Man Standig',
     alwaysRelevant: true,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/589/048/520/308/375/original/0fcf61c6e3514d05.jpg',
+    bio: 'Independent Commanders and NFL reporter behind the Last Man Standig newsletter and podcast, previously of The Athletic. A three-time NFL mock draft contest winner.',
   },
   {
+    // Same as Ben Standig above — bio confirms The Washington Post, not
+    // The Athletic.
     handle: 'tashanreed',
     name: 'Tashan Reed',
-    label: 'The Athletic',
+    label: 'The Washington Post',
     alwaysRelevant: true,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/787/869/365/684/987/original/605b3c25d3ba43d3.jpg',
+    bio: 'Commanders beat reporter for The Washington Post. Hosts the Between the Lines podcast and is a Mizzou journalism alum.',
   },
   {
     // Practice-day video/photo threads, added 2026-08-20 — flag for review if

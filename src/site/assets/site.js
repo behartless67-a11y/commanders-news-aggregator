@@ -147,6 +147,76 @@
   setupReveal('.blog-list', '.blog-more', 'blog-post-extra', '.widget-videos');
 
   /**
+   * The Beat Writers page has several independent list+button pairs on one
+   * page (one per reporter), which setupReveal above doesn't handle — it
+   * only ever finds the first match. Same balance-against-the-video-widget
+   * behavior, just looped per column instead of assuming there's only one.
+   */
+  var beatColumns = document.querySelectorAll('.beat-column');
+  if (beatColumns.length) {
+    var beatRail = document.querySelector('.widget-videos');
+    var beatTwoColumn = window.matchMedia('(min-width: 900px)');
+    var beatBalancers = [];
+
+    beatColumns.forEach(function (column) {
+      var list = column.querySelector('.beat-list.is-collapsed');
+      var more = column.querySelector('.beat-more');
+      if (!list || !more) return;
+
+      var batch = Number(more.getAttribute('data-batch')) || 5;
+      var label = more.querySelector('span');
+
+      var hiddenItems = function () {
+        return list.querySelectorAll('.beat-post-extra:not(.is-revealed)');
+      };
+
+      var syncMore = function () {
+        if (!more) return;
+        var left = hiddenItems().length;
+        if (left > 0) {
+          if (label) label.textContent = 'Show ' + Math.min(batch, left) + ' more';
+          return;
+        }
+        list.classList.remove('is-collapsed');
+        more.remove();
+        more = null;
+      };
+
+      var balance = function () {
+        if (!more || !beatRail || !beatTwoColumn.matches) return;
+        var guard = 0;
+        while (list.offsetHeight < beatRail.offsetHeight && guard++ < 60) {
+          var next = hiddenItems()[0];
+          if (!next) break;
+          next.classList.add('is-revealed');
+        }
+        syncMore();
+      };
+
+      more.addEventListener('click', function () {
+        var hidden = hiddenItems();
+        var reveal = Math.min(batch, hidden.length);
+        for (var i = 0; i < reveal; i++) hidden[i].classList.add('is-revealed');
+        syncMore();
+      });
+
+      beatBalancers.push(balance);
+      balance();
+    });
+
+    var runAllBeatBalancers = function () {
+      beatBalancers.forEach(function (fn) { fn(); });
+    };
+    window.addEventListener('load', runAllBeatBalancers);
+
+    var beatResizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(beatResizeTimer);
+      beatResizeTimer = setTimeout(runAllBeatBalancers, 150);
+    });
+  }
+
+  /**
    * Back-to-top. The anchor works on its own — this only decides when it's worth
    * showing, so it stays out of the way near the top of a page.
    */

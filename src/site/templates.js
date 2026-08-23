@@ -1,6 +1,7 @@
 import { escapeHtml } from '../lib/text.js';
 import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
+import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national' };
@@ -53,6 +54,10 @@ const ROSTER_BATCH = Number(process.env.ROSTER_BATCH || 5);
 /** Same convention again — a full post is much taller than either of the above, so one at a time is already a lot to reveal. */
 const BLOG_INITIAL = Number(process.env.BLOG_INITIAL || 1);
 const BLOG_BATCH = Number(process.env.BLOG_BATCH || 1);
+
+/** Per-column initial batch on the Beat Writers page — short, since there's one of these per reporter and several columns on screen at once. */
+const BEAT_INITIAL = Number(process.env.BEAT_INITIAL || 5);
+const BEAT_BATCH = Number(process.env.BEAT_BATCH || 5);
 
 /**
  * `index` here is the card's position in the river (for the RIVER_INITIAL
@@ -139,6 +144,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // videos there. Wider screens still see the rail in place, so the link
   // would just be a redundant second path to the same widget.
   const videosLink = `\n      <a href="videos.html" class="nav-jump nav-mobile-only"${activeFile === 'videos.html' ? ' aria-current="page"' : ''}>Videos</a>`;
+  const beatWritersLink = `\n      <a href="beat-writers.html" class="nav-jump"${activeFile === 'beat-writers.html' ? ' aria-current="page"' : ''}>Beat Writers</a>`;
   const contactLink = `\n      <a href="contact.html" class="nav-jump"${activeFile === 'contact.html' ? ' aria-current="page"' : ''}>Contact</a>`;
 
   return `<header class="site-header" id="top">
@@ -154,7 +160,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
       <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
       <label for="nav-toggle" class="nav-mobile-toggle">Menu</label>
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}
+        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${beatWritersLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}
       </nav>
     </div>
   </div>
@@ -1432,6 +1438,120 @@ ${footer(sources, generatedAt)}
   });
 })();
 </script>
+</body>
+</html>`;
+}
+
+/**
+ * The main ticker mixes every watched account into one scrolling strip,
+ * which was the most-requested gap in the first round of real feedback: a
+ * reader who wants to catch up on one specific beat reporter has to wait
+ * for their posts to scroll past, mixed in with everyone else's. This page
+ * is the fix — one column per beat reporter (not the national insiders,
+ * who only show up when a post is actually about the Commanders, and not
+ * the team's own account, which is already covered everywhere else on the
+ * site), each showing that reporter's own posts on their own.
+ */
+function beatPost(post, extra) {
+  const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
+  return `
+      <li class="beat-post${extra ? ' beat-post-extra' : ''}">
+        <a href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="beat-post-text">${escapeHtml(post.text)}</span>
+          ${when ? `<span class="beat-post-time">${escapeHtml(when)}</span>` : ''}
+        </a>
+      </li>`;
+}
+
+function beatColumn(account, posts) {
+  const collapsed = posts.length > BEAT_INITIAL;
+  const items = posts.map((p, i) => beatPost(p, i >= BEAT_INITIAL)).join('');
+  const nextBatch = Math.min(BEAT_BATCH, posts.length - BEAT_INITIAL);
+  const moreButton = collapsed
+    ? `
+      <button class="beat-more" type="button" data-batch="${BEAT_BATCH}">
+        <span class="beat-more-label">Show ${nextBatch} more</span>
+        <svg class="river-more-chevron" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+      </button>`
+    : '';
+
+  const avatar = account.avatar
+    ? `<img class="beat-avatar" src="${escapeHtml(account.avatar)}" alt="" width="56" height="56" loading="lazy" />`
+    : `<span class="beat-avatar beat-avatar-placeholder" aria-hidden="true">${escapeHtml(account.name.charAt(0))}</span>`;
+
+  return `
+    <section class="beat-column">
+      <div class="beat-column-head">
+        ${avatar}
+        <div>
+          <h2 class="beat-column-heading">${escapeHtml(account.name)} <span class="beat-column-source">${escapeHtml(account.label)}</span></h2>
+          ${account.bio ? `<p class="beat-bio">${escapeHtml(account.bio)}</p>` : ''}
+        </div>
+      </div>
+      ${
+        posts.length
+          ? `<ul class="beat-list${collapsed ? ' is-collapsed' : ''}">${items}
+      </ul>
+      ${moreButton}`
+          : '<p class="page-intro">No recent posts.</p>'
+      }
+    </section>`;
+}
+
+export function renderBeatWritersPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [] }) {
+  const accounts = SOCIAL_ACCOUNTS.filter((a) => a.alwaysRelevant && a.handle !== 'Commanders');
+  const columns = accounts
+    .map((account) => beatColumn(account, socialPosts.filter((p) => p.handle === account.handle)))
+    .join('\n');
+  const description = 'Every Commanders beat reporter\'s own posts, one column each, without wading through everyone else\'s to find them.';
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beat Writers — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Beat Writers — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+<noscript><style>
+  /* Same reasoning as the river's own noscript override — every post is
+     already in the HTML, so with no JS to expand it the list must not stay
+     collapsed. */
+  .beat-list.is-collapsed .beat-post-extra{ display: list-item; }
+  .beat-list.is-collapsed + .beat-more{ display: none; }
+</style></noscript>
+</head>
+<body>
+
+<div class="hero">
+${header('beat-writers.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="beat-writers-page">
+    <h1 class="podcasts-heading">Beat Writers</h1>
+    <p class="page-intro page-intro-wide">Every Commanders beat reporter's own feed, one column each — the same reporters in the ticker up top, without waiting for their posts to scroll past. Updates on the same schedule as the ticker, every two hours.</p>
+    <div class="beat-grid">${columns}
+    </div>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
 </body>
 </html>`;
 }

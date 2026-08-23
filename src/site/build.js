@@ -11,7 +11,7 @@ import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderContactPage, renderAdminPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderContactPage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -46,7 +46,8 @@ export async function buildSite() {
   // backlog the store has accumulated since the last prune.
   const allSorted = sortedItems(items);
   const sorted = allSorted.slice(0, MAX_RIVER_ITEMS);
-  const socialPosts = sortedSocial(await loadSocial()).slice(0, MAX_TICKER_POSTS);
+  const allSocial = sortedSocial(await loadSocial());
+  const socialPosts = allSocial.slice(0, MAX_TICKER_POSTS);
   // Drawn from the whole store, not the capped river — the rail shouldn't empty
   // out just because a busy news week pushed the clips past MAX_RIVER_ITEMS.
   const videos = allSorted.filter((item) => VIDEO_SOURCE_IDS.has(item.sourceId)).slice(0, MAX_VIDEOS);
@@ -154,6 +155,12 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'admin.html'),
     renderAdminPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt }),
+    'utf8',
+  );
+
+  await fs.writeFile(
+    path.join(DIST_DIR, 'beat-writers.html'),
+    renderBeatWritersPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial }),
     'utf8',
   );
 
