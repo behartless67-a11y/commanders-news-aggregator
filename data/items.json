@@ -1363,7 +1363,7 @@
     "category": "league",
     "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-preseason-week-2-schedule-whos-playing-starters-143714619.html",
     "title": "NFL news, live updates: Shedeur Sanders, Jayden Daniels set to see action in Week 2 of preseason",
-    "excerpt": "Week 2 of the preseason continued with three more games on Friday night.\n Denver Broncos QB Bo Nix put on a show in his first game action since he broke his ankle in the playoffs. He hit new Denver receiver Jaylen Waddle for a big gain and then found RJ Harvey for a long touchdown pass on the opening drive against the Packers.\n Earlier in the night, New York Jets starting QB Geno Smith lit up the Steelers in his lone drive of the day , going 7 for 7 for 65 yards and a TD pass.\n Former No. 1…",
+    "excerpt": "Week 2 of the preseason continued Saturday with 10 more games. Some big names saw the field as position battles continue around the league. \n Jayden Daniels, Terry McLaurin and Stefon Diggs saw limited action for the Washington Commanders, while the Cleveland Browns started Shedeur Sanders against the Buffalo Bills . Deshaun Watson also saw playing time, which didn’t get a good reception from Browns fans that the veteran QB took personally . \n On Friday, Denver Broncos QB Bo Nix put on a show…",
     "publishedAt": "2026-08-20T14:37:14.000Z",
     "collectedAt": "2026-08-22T16:20:55.517Z"
   },
@@ -1459,8 +1459,32 @@
     "category": "league",
     "url": "https://sports.yahoo.com/articles/lions-17-commanders-13-five-190004128.html",
     "title": "Lions 17, Commanders 13: Five takeaways from Washington’s preseason loss",
-    "excerpt": "BOX SCORE \n Commanders head coach Dan Quinn said a solid number of starters would play Saturday’s preseason game against the Detroit Lions. \n He was a man of his word in that regard. The Commanders deemed just 15 players inactive , and most all of them were hurt. Running back Bill Croskey-Merritt was the only healthy scratch, an obvious move to take unnecessary hits on Washington’s primary ball carrier. \n Every other healthy player was available, even the team’s biggest stars. That included…",
+    "excerpt": "BOX SCORE \n\n Commanders head coach Dan Quinn said a solid number of starters would play Saturday’s preseason game against the Detroit Lions. \n\n He was a man of his word in that regard. The Commanders deemed just 15 players inactive , and most all of them were hurt. Running back Bill Croskey-Merritt was the only healthy scratch, an obvious move to take unnecessary hits on Washington’s primary ball carrier. \n\n Every other healthy player was available, even the team’s biggest stars. That included…",
     "publishedAt": "2026-08-22T19:00:04.000Z",
     "collectedAt": "2026-08-22T20:19:55.885Z"
+  },
+  "hogs-haven-76a243d49e02": {
+    "id": "hogs-haven-76a243d49e02",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-preseason/434574/why-commanders-qb-jayden-daniels-found-value-in-preseason-cameo-vs-lions",
+    "title": "Why Commanders QB Jayden Daniels found value in preseason cameo vs. Lions",
+    "excerpt": "Jayden Daniels got some preseason action in Saturday’s game at Detroit. \n\n Keyword: Some.  \n\n The Commanders went three-and-out on their opening offensive series, with an incomplete check down pass, a sack on playaction and a handoff on third-and-a-country-mile. \n\n The drive was lightning quick, but it didn’t prompt head coach Dan Quinn to trot his quarterback out there for another series.  \n\n Going into it, I knew that, if it was going to be 10 plays or three plays, that’s how we were going to…",
+    "publishedAt": "2026-08-22T21:13:40.000Z",
+    "collectedAt": "2026-08-23T01:11:33.708Z"
+  },
+  "wjla-commanders-1c505ff91e2b": {
+    "id": "wjla-commanders-1c505ff91e2b",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-offense-sputters-defense-creates-turnovers-in-17-13-loss-to-lions",
+    "title": "Commanders offense sputters, defense creates turnovers in 17-13 loss to Lions",
+    "excerpt": "DETROIT (AP) — Joshua Dobbs ran for a 50-yard touchdown and the Detroit Lions held on for a 17-13 preseason win against the Washington Commanders on Saturday.Do",
+    "publishedAt": "2026-08-22T21:30:16.000Z",
+    "collectedAt": "2026-08-23T01:11:37.742Z"
   }
 }
