@@ -116,6 +116,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // videos there. Wider screens still see the rail in place, so the link
   // would just be a redundant second path to the same widget.
   const videosLink = `\n      <a href="videos.html" class="nav-jump nav-mobile-only"${activeFile === 'videos.html' ? ' aria-current="page"' : ''}>Videos</a>`;
+  const contactLink = `\n      <a href="contact.html" class="nav-jump"${activeFile === 'contact.html' ? ' aria-current="page"' : ''}>Contact</a>`;
 
   return `<header class="site-header" id="top">
   <div class="wrap">
@@ -128,7 +129,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
     </div>
     <div class="header-bottom-row">
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${podcastsLink}${rosterLink}${howItWorksLink}
+        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}
       </nav>
     </div>
   </div>
@@ -1104,6 +1105,81 @@ ${header('videos.html', hasWeekly, isGameLive)}
     <p class="page-intro">The same clips from the video rail, on their own page.</p>
     ${widget || '<p class="river-empty">No videos yet — check back after the next build.</p>'}
   </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * Netlify Forms, not a custom backend — `data-netlify="true"` on a plain
+ * HTML form is enough for Netlify's own build step to wire up submission
+ * handling and spam filtering (the honeypot field below) with zero server
+ * code here. Where a submission actually lands (which inbox, forwarded to
+ * where) is configured once in the Netlify dashboard, not in this markup —
+ * this page never mentions or exposes the address it actually reaches.
+ */
+export function renderContactPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting);
+  const description = `Get in touch with ${siteName}.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Contact — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('contact.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+    <h1 class="podcasts-heading">Contact</h1>
+    <p class="page-intro">Found a bug, have a tip, or just want to yell about the offensive line? Send it here.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="contact-honeypot">
+        <label>Leave this field blank<input name="bot-field" /></label>
+      </p>
+      <label class="contact-field">
+        <span>Name</span>
+        <input class="contact-input" type="text" name="name" autocomplete="name" />
+      </label>
+      <label class="contact-field">
+        <span>Email</span>
+        <input class="contact-input" type="email" name="email" autocomplete="email" required />
+      </label>
+      <label class="contact-field">
+        <span>Message</span>
+        <textarea class="contact-input contact-textarea" name="message" rows="6" required></textarea>
+      </label>
+      <button class="contact-submit" type="submit">Send</button>
+    </form>
+  </div>
+
+  ${rail}
 </main>
 
 ${footer(sources, generatedAt)}

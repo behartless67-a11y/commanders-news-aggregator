@@ -1049,6 +1049,79 @@ main.layout{
   padding-top: 8px;
 }
 
+/* ---------- Contact page ----------
+   Netlify Forms, no backend — see renderContactPage() in templates.js. */
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  margin-top: 8px;
+}
+
+/* Netlify's own spam-filtering convention: present in the DOM for a bot to
+   fill in, hidden from a real visitor without display:none (which some spam
+   bots skip over precisely because it's the obvious tell). */
+.contact-honeypot{
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.contact-input{
+  font-family: inherit;
+  font-size: 14.5px;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.contact-input:focus{
+  outline: none;
+  border-color: var(--gold);
+}
+
+.contact-textarea{
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-submit{
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--gold);
+  background: var(--burgundy);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.contact-submit:hover{
+  background: var(--gold);
+  color: var(--burgundy-800);
+}
+
 /* ---------- Podcasts page ----------
    Spotify's own public embed iframes — no API key, no scraping. Each embed
    ships its own dark player chrome, so this page only needs to handle
