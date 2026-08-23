@@ -1,6 +1,84 @@
 {
   "runs": [
     {
+      "at": "2026-08-23T10:13:56.982Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T08:27:17.763Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T08:26:58.999Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-23T08:18:24.782Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T06:23:26.975Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T04:34:48.397Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T04:34:29.905Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-23T04:27:33.553Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T02:54:46.529Z",
+      "stage": "social",
+      "added": 1,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T01:11:58.000Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T01:11:38.831Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-23T00:41:54.935Z",
+      "stage": "social",
+      "added": 7,
+      "pruned": 0
+    },
+    {
       "at": "2026-08-22T22:12:01.116Z",
       "stage": "social",
       "added": 5,
@@ -304,78 +382,6 @@
       "at": "2026-08-21T07:36:45.393Z",
       "stage": "social",
       "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T06:33:44.475Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T05:26:08.158Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T04:31:11.126Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T03:44:08.458Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T02:20:40.584Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T00:53:02.041Z",
-      "stage": "social",
-      "added": 4,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T23:19:22.638Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T22:19:28.804Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T21:21:16.874Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T20:20:33.231Z",
-      "stage": "social",
-      "added": 4,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T19:25:40.338Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-20T18:54:25.224Z",
-      "stage": "social",
-      "added": 1,
       "pruned": 0
     }
   ]
