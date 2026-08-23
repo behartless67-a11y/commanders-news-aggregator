@@ -1126,8 +1126,7 @@ ${footer(sources, generatedAt)}
  * where) is configured once in the Netlify dashboard, not in this markup —
  * this page never mentions or exposes the address it actually reaches.
  */
-export function renderContactPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting);
+export function renderContactPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
   const description = `Get in touch with ${siteName}.`;
   return `<!doctype html>
 <html lang="en">
@@ -1153,8 +1152,8 @@ ${socialMetaTags({ title: `Contact — ${siteName}`, description, siteUrl })}
 ${header('contact.html', hasWeekly, isGameLive)}
 </div>
 
-<main class="layout${rail ? '' : ' layout-wide'}">
-  <div>
+<main class="layout layout-wide">
+  <div class="contact-page">
     <h1 class="podcasts-heading">Contact</h1>
     <p class="page-intro">Found a bug, have a tip, or just want to yell about the offensive line? Send it here.</p>
 
@@ -1178,8 +1177,6 @@ ${header('contact.html', hasWeekly, isGameLive)}
       <button class="contact-submit" type="submit">Send</button>
     </form>
   </div>
-
-  ${rail}
 </main>
 
 ${footer(sources, generatedAt)}

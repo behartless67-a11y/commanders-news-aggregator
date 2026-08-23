@@ -147,7 +147,7 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'contact.html'),
-    renderContactPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    renderContactPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
   );
 

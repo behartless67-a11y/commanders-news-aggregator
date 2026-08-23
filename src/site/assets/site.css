@@ -163,8 +163,11 @@ img, svg{ display:block; max-width:100%; }
 
 .filter-tabs a{
   display:inline-block;
-  padding: 9px 4px;
-  margin-right: 18px;
+  /* Symmetric on purpose — the active-page underline is this box's own
+     border-bottom, so uneven left/right padding (the old nav-jump override
+     below used to add extra padding-left for its own divider) throws the
+     underline visibly off-center under the text. */
+  padding: 9px 14px;
   font-size: 12.5px;
   font-weight: 600;
   text-transform: uppercase;
@@ -177,13 +180,18 @@ img, svg{ display:block; max-width:100%; }
   color: var(--text);
 }
 
+/* One consistent, actually-visible divider between every link, not just a
+   single faint one marking where the "jump" group used to start — this is
+   deliberately a stronger value than var(--border)/var(--border-soft) used
+   elsewhere, which at this size read as almost invisible. */
+.filter-tabs a + a{
+  border-left: 1px solid rgba(255,255,255,0.22);
+}
+
 /* Jumps to an on-page widget rather than filtering the river, so it sits
    apart from the other tabs instead of reading as one of the choices. */
 .filter-tabs a.nav-jump{
   margin-left: auto;
-  margin-right: 0;
-  padding-left: 18px;
-  border-left: 1px solid var(--border-soft);
 }
 
 /* Only the first nav-jump pushes the group right — a second auto margin
@@ -595,10 +603,13 @@ main.layout{
   color: var(--gold);
 }
 
+/* Solid white with burgundy text — the team-source pill already claims
+   burgundy-bg/gold-text, so this is deliberately its inverse rather than
+   another dark, low-contrast variant that disappears against the page. */
 .badge-national{
-  background: rgba(255,255,255,0.04);
-  border-color: var(--border-soft);
-  color: var(--text-muted);
+  background: #fff;
+  border-color: #fff;
+  color: var(--burgundy);
 }
 
 
@@ -619,7 +630,10 @@ main.layout{
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.005em;
-  margin: 0;
+  /* Offset from the badge row above it — a hanging-indent feel, badge and
+     source flush left, headline/excerpt indented under it, so the pill
+     reads as the marker for the whole card instead of just another line. */
+  margin: 0 0 0 12px;
 }
 
 .card-headline a{
@@ -635,7 +649,7 @@ main.layout{
   color: var(--text-muted);
   line-height: 1.5;
   max-width: 105ch;
-  margin: 0;
+  margin: 0 0 0 12px;
 }
 
 /* ---------- Video rail ----------
@@ -1051,12 +1065,20 @@ main.layout{
 
 /* ---------- Contact page ----------
    Netlify Forms, no backend — see renderContactPage() in templates.js. */
+/* No sidebar on this page (see renderContactPage) — centered on the page
+   rather than left-aligned against a now-empty second column. */
+.contact-page{
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .contact-form{
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 480px;
   margin-top: 8px;
+  text-align: left;
 }
 
 /* Netlify's own spam-filtering convention: present in the DOM for a bot to
@@ -1468,14 +1490,12 @@ main.layout{
   padding: 28px 0 20px;
 }
 
-/* On burgundy the team badge's own burgundy tint disappears — darken instead. */
+/* On burgundy the team badge's own burgundy tint disappears — darken instead.
+   The national badge is solid white now, which already contrasts fine
+   against burgundy on its own and needs no override here. */
 .site-footer .badge-team{
   background: rgba(0,0,0,0.3);
   border-color: rgba(255,182,18,0.45);
-}
-
-.site-footer .badge-national{
-  background: rgba(0,0,0,0.22);
 }
 
 .site-footer .source-list a,
@@ -1638,8 +1658,11 @@ main.layout{
   .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
   /* The auto margin that separates it from the filter tabs on desktop only
      makes sense in a single unwrapped row — on a wrapped, centered mobile
-     row it would just shove it to a line of its own. */
-  .filter-tabs a.nav-jump{ margin-left: 0; border-left: none; padding-left: 4px; }
+     row it would just shove it to a line of its own. The between-link
+     dividers have the same problem: a link that wraps to a new row would
+     carry a stray vertical line orphaned at the start of it. */
+  .filter-tabs a.nav-jump{ margin-left: 0; }
+  .filter-tabs a + a{ border-left: none; }
   /* min-width:0 is the actual fix — a flex item's default min-width:auto
      refuses to shrink below its content's width even with width:100% set,
      which is what was pushing this past the edge instead of wrapping. */
