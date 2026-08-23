@@ -1,6 +1,32 @@
 {
   "runs": [
     {
+      "at": "2026-08-23T22:11:54.815Z",
+      "stage": "social",
+      "added": 4,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T20:20:07.901Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-23T20:19:48.871Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-23T20:11:39.569Z",
+      "stage": "social",
+      "added": 1,
+      "pruned": 0
+    },
+    {
       "at": "2026-08-23T18:15:07.280Z",
       "stage": "social",
       "added": 1,
@@ -361,30 +387,6 @@
       "added": 11,
       "pruned": 0,
       "dropped": 0
-    },
-    {
-      "at": "2026-08-21T16:23:51.485Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T15:26:11.803Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T14:27:13.352Z",
-      "stage": "social",
-      "added": 5,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T13:39:35.816Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
     }
   ]
 }
