@@ -183,4 +183,16 @@
       timeEls[i].textContent = fmt.format(date) + ' · ' + timeFmt.format(date);
     }
   }
+
+  /**
+   * One pageview beacon per load, to the same site's own track Function —
+   * no third-party analytics script, nothing but a path and a count (see
+   * netlify/functions/track.js). Fire-and-forget: a failed or blocked beacon
+   * should never affect the page a reader is actually here for.
+   */
+  fetch('/.netlify/functions/track', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path: window.location.pathname }),
+  }).catch(function () {});
 })();

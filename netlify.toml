@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions."admin-drafts"]
+  included_files = ["data/digests/*.json"]

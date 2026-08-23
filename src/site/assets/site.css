@@ -1625,6 +1625,123 @@ main.layout{
   color: var(--text-faint);
 }
 
+/* Deliberately unstyled beyond blending in — findable if you know it's
+   there, not advertised as a nav item. */
+.footer-admin-link{
+  color: var(--text-faint);
+  text-decoration: none;
+}
+
+.footer-admin-link:hover{
+  color: var(--gold);
+}
+
+/* ---------- Admin page ---------- */
+.admin-page{
+  max-width: 640px;
+}
+
+.admin-error{
+  color: #ff8a8a;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.admin-section{
+  margin-top: 34px;
+}
+
+.admin-section-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-total{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.admin-total strong{
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.admin-bars{
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 80px;
+  margin: 14px 0;
+}
+
+.admin-bar{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background: var(--surface);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.admin-bar-fill{
+  width: 100%;
+  min-height: 2px;
+  background: var(--gold);
+}
+
+.admin-path-list{
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.admin-path-list strong{
+  color: var(--text);
+}
+
+.admin-draft{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.admin-draft-head{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.admin-draft-status{
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.admin-draft-status--published{
+  color: var(--gold);
+}
+
+.admin-draft-headline{
+  margin: 8px 0;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
 /* ---------- Desktop ---------- */
 @media (min-width: 900px){
   main.layout{

@@ -481,7 +481,7 @@ function footer(sources, generatedAt) {
     </div>
     <div class="footer-bottom">
       <span>Headlines link to their original publishers. The Burgundy Wire is an independent fan project, not affiliated with the Washington Commanders or the NFL.</span>
-      <span>&copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
+      <span>&copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire &middot; <a href="admin.html" class="footer-admin-link">Admin</a></span>
     </div>
   </div>
 </footer>`;
@@ -1250,6 +1250,188 @@ ${footer(sources, generatedAt)}
 </a>
 
 <script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * The only page on the site with real client-side logic — everything else
+ * works with JavaScript off. That's a deliberate exception here, not a
+ * drift from the rest of the site: this page is a thin client over the
+ * password-gated Functions in netlify/functions/ (admin-login, admin-stats,
+ * admin-drafts), which are where the actual access control lives. The HTML
+ * shipped here is public and harmless on its own — a login form and some
+ * empty containers — since nothing behind the password is readable without
+ * a valid session cookie the login Function issues. Kept out of site.js
+ * entirely so that file stays true to its own "only JS on the site" claim
+ * for every reader-facing page.
+ */
+export function renderAdminPage({ siteName, siteUrl, sources, generatedAt }) {
+  const description = `${siteName} admin.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — ${escapeHtml(siteName)}</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('admin.html', false, false)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="admin-page">
+    <h1 class="podcasts-heading">Admin</h1>
+
+    <form id="admin-login-form" class="contact-form">
+      <label class="contact-field">
+        <span>Password</span>
+        <input class="contact-input" type="password" name="password" autocomplete="current-password" required />
+      </label>
+      <button class="contact-submit" type="submit">Log in</button>
+      <p id="admin-login-error" class="admin-error" hidden>Wrong password.</p>
+    </form>
+
+    <div id="admin-dashboard" hidden>
+      <section class="admin-section">
+        <div class="admin-section-head">
+          <h2>Traffic</h2>
+          <button id="admin-logout" class="roster-more" type="button">Log out</button>
+        </div>
+        <div id="admin-stats"><p class="page-intro">Loading…</p></div>
+      </section>
+
+      <section class="admin-section">
+        <h2>Blog drafts</h2>
+        <div id="admin-drafts"><p class="page-intro">Loading…</p></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('admin-login-form');
+  var error = document.getElementById('admin-login-error');
+  var dashboard = document.getElementById('admin-dashboard');
+  var statsEl = document.getElementById('admin-stats');
+  var draftsEl = document.getElementById('admin-drafts');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function showDashboard() {
+    form.hidden = true;
+    dashboard.hidden = false;
+    loadStats();
+    loadDrafts();
+  }
+
+  function loadStats() {
+    fetch('/.netlify/functions/admin-stats', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        var maxDay = Math.max(1, data.days.reduce(function (m, d) { return Math.max(m, d.count); }, 0));
+        var bars = data.days.map(function (d) {
+          var pct = Math.round((d.count / maxDay) * 100);
+          return '<div class="admin-bar" title="' + esc(d.date) + ': ' + d.count + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
+        }).join('');
+        var paths = data.topPaths.map(function (p) {
+          return '<li>' + esc(p.path) + ' <strong>' + p.count + '</strong></li>';
+        }).join('');
+        statsEl.innerHTML =
+          '<p class="admin-total"><strong>' + data.total + '</strong> total pageviews</p>' +
+          '<div class="admin-bars">' + bars + '</div>' +
+          '<h3>Most viewed pages</h3>' +
+          '<ul class="admin-path-list">' + (paths || '<li>No data yet.</li>') + '</ul>';
+      })
+      .catch(function () { statsEl.innerHTML = '<p class="page-intro">Could not load traffic stats.</p>'; });
+  }
+
+  function loadDrafts() {
+    fetch('/.netlify/functions/admin-drafts', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        if (!data.records.length) {
+          draftsEl.innerHTML = '<p class="page-intro">No drafts yet.</p>';
+          return;
+        }
+        draftsEl.innerHTML = data.records.map(function (r) {
+          return (
+            '<div class="admin-draft">' +
+              '<div class="admin-draft-head">' +
+                '<strong>' + esc(r.week) + '</strong>' +
+                '<span class="admin-draft-status admin-draft-status--' + esc(r.status) + '">' + esc(r.status) + '</span>' +
+              '</div>' +
+              '<p class="admin-draft-headline">' + esc(r.headline || '(no headline)') + '</p>' +
+              (r.status === 'draft'
+                ? '<button class="roster-more admin-approve" type="button" data-week="' + esc(r.week) + '">Approve &amp; publish</button>'
+                : '') +
+            '</div>'
+          );
+        }).join('');
+      })
+      .catch(function () { draftsEl.innerHTML = '<p class="page-intro">Could not load drafts.</p>'; });
+  }
+
+  draftsEl && draftsEl.addEventListener('click', function (event) {
+    var btn = event.target.closest('.admin-approve');
+    if (!btn) return;
+    btn.disabled = true;
+    btn.textContent = 'Publishing…';
+    fetch('/.netlify/functions/admin-approve', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ week: btn.getAttribute('data-week') }),
+    })
+      .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
+      .catch(function () { btn.disabled = false; btn.textContent = 'Not available yet'; });
+  });
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    error.hidden = true;
+    fetch('/.netlify/functions/admin-login', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: form.password.value }),
+    })
+      .then(function (r) { return r.json().then(function (data) { return { ok: r.ok && data.ok }; }); })
+      .then(function (result) { if (result.ok) { showDashboard(); } else { error.hidden = false; } })
+      .catch(function () { error.hidden = false; });
+  });
+
+  document.getElementById('admin-logout').addEventListener('click', function () {
+    fetch('/.netlify/functions/admin-logout', { method: 'POST', credentials: 'same-origin' }).then(function () {
+      dashboard.hidden = true;
+      form.hidden = false;
+      form.reset();
+    });
+  });
+})();
+</script>
 </body>
 </html>`;
 }
