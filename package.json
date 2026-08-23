@@ -25,7 +25,11 @@
     "digest:list": "node src/cli.js digest list",
     "digest:review": "node src/cli.js digest review",
     "digest:approve": "node src/cli.js digest approve",
-    "digest:reject": "node src/cli.js digest reject"
+    "digest:reject": "node src/cli.js digest reject",
+    "preview": "node src/cli.js preview",
+    "preview:list": "node src/cli.js preview list",
+    "preview:approve": "node src/cli.js preview approve",
+    "preview:reject": "node src/cli.js preview reject"
   },
   "dependencies": {
     "@anthropic-ai/bedrock-sdk": "^0.33.1",

@@ -1,4 +1,4 @@
-import { parseGameTime } from './dates.js';
+import { parseGameTime, TZ } from './dates.js';
 
 /**
  * "Is a Commanders game in its live window right now?" — driven entirely by
@@ -37,4 +37,21 @@ export function currentGameWindow(games, now = new Date()) {
 
 export function isGameWindowActive(games, now = new Date()) {
   return currentGameWindow(games, now) !== null;
+}
+
+/**
+ * The one game (if any) kicking off on the calendar day after `now`, in
+ * whatever timezone `now` itself is in — the caller decides that by what it
+ * passes in, same as the game preview workflow deciding "day before" means
+ * Eastern, not UTC. Used to gate the preview post: it only ever exists for a
+ * game that's truly tomorrow, never generated a day early or late because a
+ * kickoff landed near a timezone boundary.
+ */
+export function gameTomorrow(games, now = new Date()) {
+  // Calendar days in SITE_TZ specifically, not the runtime's own timezone —
+  // GitHub Actions runners are UTC, and comparing raw UTC calendar days
+  // would disagree with Eastern's near midnight UTC (8pm Eastern).
+  const dayKey = (d) => d.toLocaleDateString('en-US', { timeZone: TZ });
+  const tomorrowKey = dayKey(new Date(now.getTime() + 86400000));
+  return withKickoff(games).find((g) => dayKey(new Date(g.kickoffIso)) === tomorrowKey) || null;
 }

@@ -11,6 +11,7 @@ import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
+import { generatePreview, listPreviews, setPreviewStatus } from './digest/preview-generate.js';
 import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './lib/roster.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
@@ -40,6 +41,11 @@ Commanders headline river
   npm run digest:review -- <week>    print a draft with every citation resolved
   npm run digest:approve -- <week>   mark a draft published — build then picks it up
   npm run digest:reject -- <week>    mark a draft rejected
+
+  npm run preview             write tomorrow's game preview draft, if a game is tomorrow (needs Ollama running)
+  npm run preview:list        list every preview and its status
+  npm run preview:approve -- <gameKey>   mark a preview published — build then picks it up
+  npm run preview:reject -- <gameKey>    mark a preview rejected
 
 Flags
   --only=id,id               limit collect/doctor to specific source ids
@@ -268,6 +274,20 @@ async function main() {
       else if (sub === 'approve') await digestSetStatus(rest[1], 'published');
       else if (sub === 'reject') await digestSetStatus(rest[1], 'rejected');
       else await generateDigest({ force: !!flags.force });
+      break;
+    }
+    case 'preview': {
+      const sub = rest[0];
+      if (sub === 'list') {
+        const records = await listPreviews();
+        if (!records.length) log.info('no previews yet — run `npm run preview`');
+        else console.table(records.map((r) => ({ gameKey: r.gameKey, opponent: r.opponent, status: r.status, warnings: r.warnings?.length || 0 })));
+      } else if (sub === 'approve') await setPreviewStatus(rest[1], 'published');
+      else if (sub === 'reject') await setPreviewStatus(rest[1], 'rejected');
+      else {
+        const record = await generatePreview({ force: !!flags.force });
+        if (!record) log.info('preview: nothing to do');
+      }
       break;
     }
     default:

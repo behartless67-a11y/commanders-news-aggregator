@@ -25,12 +25,14 @@ export default async (req) => {
   }
 
   const body = await req.json().catch(() => ({}));
-  const week = String(body.week || '').trim();
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(week)) {
-    return new Response(JSON.stringify({ error: 'invalid week' }), { status: 400 });
+  const key = String(body.key || '').trim();
+  const type = body.type === 'preview' ? 'preview' : 'weekly';
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(key)) {
+    return new Response(JSON.stringify({ error: 'invalid key' }), { status: 400 });
   }
 
-  const path = `data/digests/${week}.json`;
+  const dir = type === 'preview' ? 'previews' : 'digests';
+  const path = `data/${dir}/${key}.json`;
   const headers = {
     Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
     Accept: 'application/vnd.github+json',
@@ -55,7 +57,7 @@ export default async (req) => {
     method: 'PUT',
     headers,
     body: JSON.stringify({
-      message: `Approve digest ${week} via admin panel`,
+      message: `Approve ${type} ${key} via admin panel`,
       content: Buffer.from(`${JSON.stringify(record, null, 2)}\n`, 'utf8').toString('base64'),
       sha: file.sha,
     }),

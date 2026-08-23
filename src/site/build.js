@@ -11,7 +11,8 @@ import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderContactPage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
+import { listPreviews } from '../digest/preview-generate.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderContactPage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -71,10 +72,13 @@ export async function buildSite() {
   const publishedDigests = (await listDigests())
     .filter((d) => d.status === 'published')
     .sort((a, b) => b.week.localeCompare(a.week));
-  // The Blog tab/page exist if there's a weekly recap OR a live game post —
-  // a game-day-only blog (no weekly digest ever approved yet) should still
-  // be reachable, not hidden behind the weekly gate.
-  const hasWeekly = publishedDigests.length > 0 || Boolean(liveGame?.entries?.length);
+  const publishedPreviews = (await listPreviews())
+    .filter((p) => p.status === 'published')
+    .sort((a, b) => b.gameKey.localeCompare(a.gameKey));
+  // The Blog tab/page exist if there's a weekly recap, a preview, or a live
+  // game post — a game-day-only blog (no weekly digest ever approved yet)
+  // should still be reachable, not hidden behind the weekly gate.
+  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || Boolean(liveGame?.entries?.length);
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
@@ -104,9 +108,12 @@ export async function buildSite() {
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
     const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, isGameLive, liveGame };
-    await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, opts), 'utf8');
+    await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews }), 'utf8');
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `blog-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
+    }
+    for (const record of publishedPreviews) {
+      await fs.writeFile(path.join(DIST_DIR, `blog-preview-${record.gameKey}.html`), renderPreviewPost(record, opts), 'utf8');
     }
   }
 

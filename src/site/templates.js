@@ -600,6 +600,29 @@ ${sourceFooter}
 }
 
 /**
+ * Same shape as digestArticleBody, and reuses digestThread/digestSourceFooter
+ * unchanged — the one thing a preview record doesn't carry that a weekly
+ * digest does is windowStart/windowEnd (there's no "week of" for a preview,
+ * just a specific game), so this writes its own subtitle line instead of
+ * calling weekLabel().
+ */
+function previewArticleBody(record, rosterIndex, headingTag = 'h2') {
+  const byIndex = new Map(record.corpus.map((e) => [e.n, e]));
+  const { digest } = record;
+  const threads = digest.threads.map((t) => digestThread(t, rosterIndex)).join('\n');
+  const sourceFooter = digestSourceFooter(collectCites(digest), byIndex);
+  const matchup = `Preview: ${record.homeAway === 'AT' ? 'at' : 'vs.'} ${record.opponent}`;
+  return `
+    <article class="digest-post preview-post">
+      <${headingTag}>${escapeHtml(digest.headline)}</${headingTag}>
+      <p class="digest-week">${escapeHtml(matchup)} · generated ${escapeHtml(formatDateTime(record.generatedAt))}</p>
+      <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
+${threads}
+${sourceFooter}
+    </article>`;
+}
+
+/**
  * The live game-day post — separate from digestArticleBody because its data
  * shape is fundamentally different (an accumulating list of quarter
  * entries from data/live-game.json, not a single one-shot digest record).
@@ -767,11 +790,67 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null }) {
+/** Same shape as renderWeeklyPost, using previewArticleBody() instead of digestArticleBody() — see that function's own comment for why. */
+export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
+  const { digest } = record;
+  const rail = sidebar(videos, games, betting);
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(digest.lede)}">
+${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('blog.html', true, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+${previewArticleBody(record, rosterIndex, 'h1')}
+    ${digestDisclosure(record.model)}
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null, previewRecords = [] }) {
   const rail = sidebar(videos, games, betting);
   const livePost = liveGamePost(liveGame, rosterIndex);
-  const weeklyPosts = records.map((r) => `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}`);
-  const posts = [livePost, ...weeklyPosts].filter(Boolean);
+  // Weekly digests and previews are two different record shapes sharing one
+  // reverse-chronological stream — a preview published Thursday belongs
+  // between last week's recap and this week's, not shoved to the end just
+  // because it's a different content type.
+  const dated = [
+    ...records.map((r) => ({ sortKey: r.week, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...previewRecords.map((r) => ({ sortKey: r.gameKey, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+  ].sort((a, b) => b.sortKey.localeCompare(a.sortKey));
+  const posts = [livePost, ...dated.map((d) => d.html)].filter(Boolean);
   // Same progressive-reveal convention as the river/roster, at the whole-post
   // level — a single full post can already be taller than the video widget
   // beside it, so as the Blog fills up with more of them this keeps the
@@ -890,6 +969,11 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
     <section class="how-section">
       <h2>The Blog (weekly editions)</h2>
       <p class="digest-para">Once a week, an AI model that lives on this computer reads everything that happened and writes a proper column, quotes and all. It doesn't get to publish itself — a human reads the draft and has to click "approve" first, after an early test model once confidently invented a player who never put on a Commanders helmet.</p>
+    </section>
+
+    <section class="how-section">
+      <h2>The Blog (game previews)</h2>
+      <p class="digest-para">The day before a game, the same local AI writes a preview from the matchup itself, the current betting line, and whatever's been reported that week, no result implied since there isn't one yet. Same rule as the weekly edition: a human has to approve it before it publishes.</p>
     </section>
 
     <section class="how-section">
@@ -1406,15 +1490,16 @@ ${footer(sources, generatedAt)}
           return;
         }
         draftsEl.innerHTML = data.records.map(function (r) {
+          var typeLabel = r.type === 'preview' ? 'Preview' : 'Weekly';
           return (
             '<div class="admin-draft">' +
               '<div class="admin-draft-head">' +
-                '<strong>' + esc(r.week) + '</strong>' +
+                '<strong>' + esc(typeLabel) + ' &middot; ' + esc(r.key) + '</strong>' +
                 '<span class="admin-draft-status admin-draft-status--' + esc(r.status) + '">' + esc(r.status) + '</span>' +
               '</div>' +
               '<p class="admin-draft-headline">' + esc(r.headline || '(no headline)') + '</p>' +
               (r.status === 'draft'
-                ? '<button class="roster-more admin-approve" type="button" data-week="' + esc(r.week) + '">Approve &amp; publish</button>'
+                ? '<button class="roster-more admin-approve" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Approve &amp; publish</button>'
                 : '') +
             '</div>'
           );
@@ -1432,7 +1517,7 @@ ${footer(sources, generatedAt)}
       method: 'POST',
       credentials: 'same-origin',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ week: btn.getAttribute('data-week') }),
+      body: JSON.stringify({ key: btn.getAttribute('data-key'), type: btn.getAttribute('data-type') }),
     })
       .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
       .catch(function () { btn.disabled = false; btn.textContent = 'Not available yet'; });

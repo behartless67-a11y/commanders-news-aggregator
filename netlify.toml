@@ -3,4 +3,4 @@
   functions = "netlify/functions"
 
 [functions."admin-drafts"]
-  included_files = ["data/digests/*.json"]
+  included_files = ["data/digests/*.json", "data/previews/*.json"]
