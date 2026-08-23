@@ -102,6 +102,12 @@ function normalize(status, { account, sourceKey }) {
   // watched account's own; otherwise fall back the same way a tag-timeline
   // stranger already does.
   const isOwnPost = Boolean(account) && handle.toLowerCase() === account.handle.toLowerCase();
+  // mastodon.social's own cached copy, not the tweet's original pbs.twimg.com
+  // URL — same reasoning as the Beat Writers avatars, one less thing to break
+  // if X ever changes how it serves media to third parties.
+  const images = (post.media_attachments || [])
+    .filter((m) => m.type === 'image' && m.url)
+    .map((m) => m.url);
   return {
     id: `social-${sha1(url).slice(0, 12)}`,
     url,
@@ -110,6 +116,7 @@ function normalize(status, { account, sourceKey }) {
     author: (isOwnPost && account.name) || cleanDisplayName(post.account?.display_name) || handle,
     label: (isOwnPost && account.label) || '',
     sourceKey,
+    images,
     publishedAt: toIso(post.created_at),
     collectedAt: new Date().toISOString(),
   };

@@ -640,11 +640,34 @@ function liveAwardCard(kind, recipient, reason, rosterIndex) {
         </div>`;
 }
 
+/**
+ * Real photos from posts already cited in the body text (see
+ * photosFromCites() in live-generate.js) — never a photo the model picked on
+ * its own, so every image here is one a reader could also find by following
+ * the same post's own link. Wrapped in a link back to that post rather than
+ * shown bare, same "always attribute" rule as everything else on this page.
+ */
+function finalThoughtsPhotos(images) {
+  if (!images?.length) return '';
+  return `
+        <div class="live-photo-row">
+          ${images
+            .map(
+              (img) => `<a class="live-photo" href="${escapeHtml(img.postUrl)}" target="_blank" rel="noopener noreferrer">
+            <img src="${escapeHtml(img.url)}" alt="" loading="lazy" />
+            <span class="live-photo-credit">via @${escapeHtml(img.author)}</span>
+          </a>`,
+            )
+            .join('\n          ')}
+        </div>`;
+}
+
 function finalThoughtsBlock(finalThoughts, rosterIndex) {
   if (!finalThoughts) return '';
   return `
       <div class="live-final-thoughts">
         <h3>Final Thoughts</h3>
+        ${finalThoughtsPhotos(finalThoughts.images)}
         ${liveParagraphs(finalThoughts.body, rosterIndex)}
         <p class="live-award-tagline">Two Live Wire Awards a game: Hero for the single biggest positive impact, Goat for the single biggest negative one.</p>
         <div class="live-award-row">

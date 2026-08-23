@@ -130,6 +130,30 @@ export async function updateLiveGame() {
 }
 
 /**
+ * Real photos, but only from posts the model already cited as a source for
+ * something it wrote — never picked independently by the model itself. That
+ * keeps the same grounding guarantee everything else here has: every photo
+ * shown is tied to an attributed post a reader can click through to, not a
+ * free-standing pick that could be off-topic or, worse, from the wrong game.
+ * Capped at 3 to match the "spanning the game recap" spot this fills, not a
+ * full gallery.
+ */
+function photosFromCites(cites, playCount, socialPosts) {
+  const images = [];
+  for (const n of cites) {
+    if (n <= playCount) continue;
+    const post = socialPosts[n - playCount - 1];
+    if (!post?.images?.length) continue;
+    for (const url of post.images) {
+      if (images.some((img) => img.url === url)) continue;
+      images.push({ url, postUrl: post.url, author: post.author || post.handle });
+      if (images.length >= 3) return images;
+    }
+  }
+  return images;
+}
+
+/**
  * Whole-game wrap-up plus the Live Wire Award pick, generated once at
  * `gameOver`, working from every play in the game (not just one quarter)
  * and a wider social pool. Failure here degrades to no final-thoughts
@@ -165,6 +189,7 @@ async function generateFinalThoughts(game) {
       goatRecipient: result.json.goatRecipient,
       goatReason: result.json.goatReason,
       cites,
+      images: photosFromCites(cites, game.plays.length, socialPosts),
       generatedAt: new Date().toISOString(),
       model: result.model,
     };
