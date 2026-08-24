@@ -13,7 +13,8 @@ import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
+import { listOriginals } from '../digest/originals.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, blogRiverItems, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -44,9 +45,28 @@ const HEADING = {
 
 export async function buildSite() {
   const items = await loadItems();
+
+  // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
+  // one that failed review, must never appear on the live site. See
+  // src/digest/ for the generation and review gate that sets this field.
+  const publishedDigests = (await listDigests())
+    .filter((d) => d.status === 'published')
+    .sort((a, b) => b.week.localeCompare(a.week));
+  const publishedPreviews = (await listPreviews())
+    .filter((p) => p.status === 'published')
+    .sort((a, b) => b.gameKey.localeCompare(a.gameKey));
+  const publishedOriginals = (await listOriginals())
+    .filter((o) => o.status === 'published')
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+
+  // Published Blog posts compete for river placement on their own publish
+  // date, same as any other item — not pinned above or below real headlines.
+  const blogItems = blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals);
+  const itemsWithBlog = { ...items, ...Object.fromEntries(blogItems.map((b) => [b.id, b])) };
+
   // Each page is capped to its most recent N rather than rendering the full
   // backlog the store has accumulated since the last prune.
-  const allSorted = sortedItems(items);
+  const allSorted = sortedItems(itemsWithBlog);
   const sorted = allSorted.slice(0, MAX_RIVER_ITEMS);
   const allSocial = sortedSocial(await loadSocial());
   const socialPosts = allSocial.slice(0, MAX_TICKER_POSTS);
@@ -68,19 +88,11 @@ export async function buildSite() {
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
-  // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
-  // one that failed review, must never appear on the live site. See
-  // src/digest/ for the generation and review gate that sets this field.
-  const publishedDigests = (await listDigests())
-    .filter((d) => d.status === 'published')
-    .sort((a, b) => b.week.localeCompare(a.week));
-  const publishedPreviews = (await listPreviews())
-    .filter((p) => p.status === 'published')
-    .sort((a, b) => b.gameKey.localeCompare(a.gameKey));
-  // The Blog tab/page exist if there's a weekly recap, a preview, or a live
-  // game post — a game-day-only blog (no weekly digest ever approved yet)
-  // should still be reachable, not hidden behind the weekly gate.
-  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || Boolean(liveGame?.entries?.length);
+  // The Blog tab/page exist if there's a weekly recap, a preview, an
+  // original post, or a live game post — a game-day-only blog (no weekly
+  // digest ever approved yet) should still be reachable, not hidden behind
+  // the weekly gate.
+  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || publishedOriginals.length > 0 || Boolean(liveGame?.entries?.length);
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
@@ -110,12 +122,19 @@ export async function buildSite() {
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
     const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, isGameLive, liveGame };
-    await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews }), 'utf8');
+    await fs.writeFile(
+      path.join(DIST_DIR, 'blog.html'),
+      renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
+      'utf8',
+    );
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `blog-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
     }
     for (const record of publishedPreviews) {
       await fs.writeFile(path.join(DIST_DIR, `blog-preview-${record.gameKey}.html`), renderPreviewPost(record, opts), 'utf8');
+    }
+    for (const record of publishedOriginals) {
+      await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, opts), 'utf8');
     }
   }
 
