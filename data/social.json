@@ -2930,5 +2930,43 @@
     "images": [],
     "publishedAt": "2026-08-24T01:15:53.000Z",
     "collectedAt": "2026-08-24T02:55:47.581Z"
+  },
+  "social-62466a8fe28a": {
+    "id": "social-62466a8fe28a",
+    "url": "https://x.com/AndrewSiciliano/status/2091729404485566548",
+    "text": "Mike Macdonald says 2nd round pick Bud Clark has a broken ankle. The DB will be out \"multiple months\".",
+    "handle": "AndrewSiciliano",
+    "author": "Andrew Siciliano",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T03:28:47.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
+  },
+  "social-eeaf4f61c2d2": {
+    "id": "social-eeaf4f61c2d2",
+    "url": "https://x.com/JPFinlayNBCS/status/2091724595703304276",
+    "text": "A lot of time between now and then. Not to mention Allegretti should be back this week. The assumption the sky is falling is overblown",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T03:09:40.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
+  },
+  "social-62328e2c0378": {
+    "id": "social-62328e2c0378",
+    "url": "https://x.com/RapSheet/status/2091721310044917897",
+    "text": "#Raiders RB Ashton Jeanty, who had to be helped off the practice field today, is believed to have sprained his ankle, sources tell @AdamSchefter and me. Las Vegas still are unsure how long he will be out, but it is not considered a long-term injury and the organization is breathing a sigh of relief.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/148/238/912/676/693/original/166e8f307c874c85.jpg"
+    ],
+    "publishedAt": "2026-08-24T02:56:37.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
   }
 }
