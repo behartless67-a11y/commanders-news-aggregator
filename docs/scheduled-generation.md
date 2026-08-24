@@ -24,6 +24,11 @@
 - Mobile: collapsible nav dropdown and a collapsible footer, both using the
   same zero-JS checkbox+label pattern; the river shows two sentences per
   card instead of the full excerpt.
+- **Depth Chart tab** (`/depth-chart.html`, a sub-tab on the Roster page) —
+  scrapes commanders.com's own depth chart on the same nightly cadence as
+  the roster. Defense was empty on the live source at ship time (the team
+  hadn't published it yet mid-preseason); that section shows "Not yet
+  released" instead of an empty table until commanders.com fills it in.
 
 ## Scheduling the weekly Blog draft and game previews
 
