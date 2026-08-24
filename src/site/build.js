@@ -15,7 +15,7 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, blogRiverItems, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, blogRiverItems, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -221,10 +221,33 @@ export async function buildSite() {
   const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
+  // Every real page just written above, for Search Console to crawl from —
+  // not admin.html, which robots.txt below excludes from crawling entirely.
+  const staticPaths = [
+    'index.html', 'team-sources.html', 'national-coverage.html',
+    'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
+    'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
+    'music.html', 'beat-writers.html',
+  ];
+  const sitemapEntries = [
+    ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),
+    ...(hasWeekly ? [{ path: 'blog.html', lastmod: generatedAt }] : []),
+    ...publishedDigests.map((r) => ({ path: `blog-${r.week}.html`, lastmod: r.reviewedAt || r.generatedAt })),
+    ...publishedPreviews.map((r) => ({ path: `blog-preview-${r.gameKey}.html`, lastmod: r.reviewedAt || r.generatedAt })),
+    ...publishedOriginals.map((r) => ({ path: `blog-original-${r.slug}.html`, lastmod: r.publishedAt })),
+  ];
+  await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
+  await fs.writeFile(
+    path.join(DIST_DIR, 'robots.txt'),
+    `User-agent: *\nDisallow: /admin.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+    'utf8',
+  );
+
   for (const asset of [
     'site.css',
     'site.js',
     'logo.png',
+    'og-image.png',
     'apple-touch-icon.png',
     'favicon-32.png',
     'favicon-16.png',

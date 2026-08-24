@@ -16,7 +16,13 @@ const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) 
  * preview has no page context to resolve a relative one against.
  */
 function socialMetaTags({ title, description, siteUrl }) {
-  const image = `${siteUrl}/logo.png`;
+  // Not logo.png directly — that's a transparent PNG meant to sit on the
+  // hero photo, so a client with no page context to render it against (a
+  // Slack/iMessage/Twitter preview card) showed it on whatever background
+  // that client defaults to, usually white. og-image.png is the same logo
+  // pre-composited onto the site's own near-black background (--bg,
+  // #14100f) at the standard 1200x630 social-card size instead.
+  const image = `${siteUrl}/og-image.png`;
   return `<meta property="og:title" content="${escapeHtml(title)}">
 <meta property="og:description" content="${escapeHtml(description)}">
 <meta property="og:image" content="${escapeHtml(image)}">
@@ -2168,8 +2174,8 @@ export function renderPage(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(siteName)} — Washington Commanders News</title>
-<meta name="description" content="Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.">
-${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: 'Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.', siteUrl })}
+<meta name="description" content="Every Washington Commanders headline in one place, updated around the clock from team and national sources, plus beat writer posts, live game recaps, and a weekly AI-written Blog.">
+${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: 'Every Washington Commanders headline in one place, updated around the clock from team and national sources, plus beat writer posts, live game recaps, and a weekly AI-written Blog.', siteUrl })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2244,6 +2250,29 @@ export function renderRss(items, { siteName, siteUrl, generatedAt }) {
   ${entries}
 </channel>
 </rss>`;
+}
+
+/**
+ * `entries` is every real page build.js just wrote to dist/, static pages
+ * and per-post pages alike — not the same list as PAGES, which is only the
+ * three river filters. `lastmod` is optional per entry (a genuinely static
+ * page like Contact has no meaningful "last modified") — Google treats a
+ * missing lastmod as "unknown", never as an error.
+ */
+export function renderSitemap(entries, { siteUrl }) {
+  const urls = entries
+    .map(
+      (e) => `
+  <url>
+    <loc>${escapeHtml(`${siteUrl}/${e.path}`)}</loc>
+    ${e.lastmod ? `<lastmod>${escapeHtml(e.lastmod.slice(0, 10))}</lastmod>` : ''}
+  </url>`,
+    )
+    .join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}
+</urlset>`;
 }
 
 export { PAGES };
