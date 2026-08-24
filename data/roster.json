@@ -1753,30 +1753,5 @@
         }
       ]
     }
-  },
-  {
-    "slug": "jerome-ford",
-    "name": "Jerome Ford",
-    "jersey": "34",
-    "position": "RB",
-    "espnId": "4372019",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4372019.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "CAR",
-          "value": "24"
-        },
-        {
-          "label": "YDS",
-          "value": "73"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
   }
 ]
