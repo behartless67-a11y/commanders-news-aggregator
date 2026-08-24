@@ -1,4 +1,31 @@
-# Scheduling the weekly Blog draft and game previews
+# Session notes: what shipped, and what's left to schedule
+
+## Everything shipped in this session, for reference
+
+- **Roster page** (`/roster.html`) — ESPN photos, jersey/position, season
+  stats (refreshed weekly, Tuesday mornings, via `roster-stats.yml`), ranked
+  by real mention counts from this site's own coverage.
+- **Beat Writers page** (`/beat-writers.html`) — one column per beat
+  reporter, with photo/bio, updating on the same 2-hour cadence as the
+  ticker (no extra collection needed — reads the same social store).
+- **Final Thoughts photos** — the live game-day wrap-up now pulls real
+  photos from cited social posts (only ever games from here forward; the
+  Aug 22 Lions game predates this and has none stored).
+- **Game preview post type** — new Blog content alongside the weekly
+  recap, day-before-game, reviewed the same way (see below).
+- **Admin panel** (`/admin.html`, linked quietly from the footer, password-
+  gated) — traffic stats (pageviews, 14-day chart, top pages) and a list of
+  every weekly/preview draft with an Approve & Publish button. The password
+  is stored as a SHA-256 hash in the `ADMIN_PASSWORD_HASH` Netlify env var,
+  never in the repo.
+- **Contact page** (`/contact.html`) — Netlify Forms, no backend. Submits
+  to `admin@theburgundywire.com`, which ImprovMX forwards to
+  `bh4hb@virginia.edu`. Only "Message" is required.
+- Mobile: collapsible nav dropdown and a collapsible footer, both using the
+  same zero-JS checkbox+label pattern; the river shows two sentences per
+  card instead of the full excerpt.
+
+## Scheduling the weekly Blog draft and game previews
 
 The weekly Blog post and the day-before-game preview both run on a **local**
 Ollama model (see `src/digest/provider.js`), not the cloud, because two of
