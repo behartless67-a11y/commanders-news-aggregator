@@ -631,6 +631,15 @@ main.layout{
   color: var(--burgundy);
 }
 
+/* Informational, not a category — deliberately quieter than the team/
+   national pills so it reads as a secondary note, not a third badge type. */
+.badge-paywall{
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-faint);
+  margin-left: 6px;
+}
+
 
 .card-source{
   font-size: 13px;
@@ -1203,6 +1212,45 @@ main.layout{
 .contact-submit:hover{
   background: var(--gold);
   color: var(--burgundy-800);
+}
+
+/* ---------- Donate page ---------- */
+.donate-venmo{
+  margin: 24px 0;
+}
+
+.donate-venmo-button{
+  display: inline-block;
+  padding: 12px 28px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--burgundy-800);
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.donate-venmo-button:hover{
+  background: transparent;
+  color: var(--gold);
+}
+
+.donate-footnote{
+  font-size: 12.5px;
+  color: var(--text-faint);
+}
+
+/* A quiet gold outline so "Donate" reads as a friendly ask, not just another
+   nav destination lost in a row of links. Matches .filter-tabs a's own
+   class+element specificity to actually override its padding. */
+.filter-tabs a.nav-donate{
+  border: 1px solid rgba(255,182,18,0.4);
+  border-radius: 999px;
+  padding: 6px 12px;
 }
 
 /* ---------- Podcasts page ----------

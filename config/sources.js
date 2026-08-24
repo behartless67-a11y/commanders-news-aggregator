@@ -7,7 +7,7 @@
  * scraped around. Confirmed dead or blocked as of 2026-08-20: Commanders Wire
  * (USA Today), SI/FanNation, Yardbarker, Yahoo's team feed, WTOP, Athlon,
  * Bleacher Report, CBS's team feed, SB Nation's league feed, 247Sports,
- * FanSided's network feed, Reddit r/Commanders, The Athletic, Washington Post,
+ * FanSided's network feed, Reddit r/Commanders, Washington Post,
  * WUSA9 (200 status, but every URL serves the JS homepage — no real feed),
  * FOX5 DC (no discoverable feed), Washington Times (works but low
  * Commanders density), USA Today's own NFL feed (redirects to homepage),
@@ -28,6 +28,9 @@
  *                  src/lib/relevance.js is skipped
  *   media          optional; 'video' marks a feed whose links are YouTube watch
  *                  URLs, which the build also renders as the video shelf
+ *   paywalled      optional; true shows a "Paywall" pill on that source's
+ *                  cards — the excerpt here is always free, but the link-out
+ *                  to read the full piece is not
  *   enabled        set false to park a source without deleting its config
  */
 
@@ -79,6 +82,25 @@ export const SOURCES = [
     alwaysRelevant: false,
     enabled: true,
     url: 'https://clutchpoints.com/nfl/washington-commanders/feed',
+  },
+  {
+    // The Athletic's beat writer for the Commanders. Not the same as the
+    // dead team-tag feed noted above — this is her personal author feed
+    // (discovered via the <link rel="alternate"> tag on her author page),
+    // which robots.txt allows even though it disallows /athletic/rss-feed/
+    // and rss=1 query links. Mixed with her older Broncos-era pieces and the
+    // occasional league-wide story, so filtered rather than trusted whole —
+    // same pattern as ClutchPoints above. Links go to a paywalled article
+    // like every other source on this site; only the free excerpt is shown.
+    id: 'athletic-jhabvala',
+    name: 'Nicki Jhabvala (The Athletic)',
+    homepage: 'https://www.nytimes.com/athletic/author/nicki-jhabvala/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: false,
+    paywalled: true,
+    enabled: true,
+    url: 'https://www.nytimes.com/athletic/rss/author/nicki-jhabvala/',
   },
   {
     // The team's own YouTube uploads — press conferences, camp clips. Worth

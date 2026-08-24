@@ -2,9 +2,11 @@ import { escapeHtml } from '../lib/text.js';
 import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
+import { SOURCES } from '../../config/sources.js';
 
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national' };
+const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
 /**
  * Open Graph / Twitter Card tags — without these, a pasted link (Slack,
@@ -83,6 +85,9 @@ function firstSentences(text, n) {
 function itemCard(item, index, rosterIndex) {
   const badgeClass = CATEGORY_BADGE_CLASS[item.category] || 'badge-national';
   const badgeLabel = CATEGORY_LABEL[item.category] || item.category;
+  const paywallPill = PAYWALLED_SOURCE_IDS.has(item.sourceId)
+    ? '<span class="badge badge-paywall">Paywall</span>'
+    : '';
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
   const extra = index >= RIVER_INITIAL ? ' card-extra' : '';
   // Two separate elements, not one truncated by CSS line-clamp — a line
@@ -98,7 +103,7 @@ function itemCard(item, index, rosterIndex) {
   return `
     <article class="card${extra}">
       <div class="card-top">
-        <span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>
+        <span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>${paywallPill}
         <span class="card-source">${escapeHtml(item.sourceName)}</span>
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
@@ -150,6 +155,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   const videosLink = `\n      <a href="videos.html" class="nav-jump nav-mobile-only"${activeFile === 'videos.html' ? ' aria-current="page"' : ''}>Videos</a>`;
   const beatWritersLink = `\n      <a href="beat-writers.html" class="nav-jump"${activeFile === 'beat-writers.html' ? ' aria-current="page"' : ''}>Beat Writers</a>`;
   const contactLink = `\n      <a href="contact.html" class="nav-jump"${activeFile === 'contact.html' ? ' aria-current="page"' : ''}>Contact</a>`;
+  const donateLink = `\n      <a href="donate.html" class="nav-jump nav-donate"${activeFile === 'donate.html' ? ' aria-current="page"' : ''}>Donate</a>`;
 
   return `<header class="site-header" id="top">
   <div class="wrap">
@@ -164,7 +170,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
       <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
       <label for="nav-toggle" class="nav-mobile-toggle">Menu</label>
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${beatWritersLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}
+        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${beatWritersLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}${donateLink}
       </nav>
     </div>
   </div>
@@ -1465,6 +1471,55 @@ ${header('contact.html', hasWeekly, isGameLive)}
       </label>
       <button class="contact-submit" type="submit">Send</button>
     </form>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `${siteName} is a free, ad-free fan project. Chip in toward hosting if you'd like.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Donate — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('donate.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page">
+    <h1 class="podcasts-heading">Keep It Ad-Free</h1>
+    <p class="page-intro">This is a one-fan passion project, not a startup. There's no ad network, no investors, no growth targets, and no plans to ever change that. A banner ad for car insurance has no business interrupting a story about the offensive line.</p>
+    <p class="page-intro">That said, hosting, domains, and API bills don't run on vibes, and "exposure" isn't a currency any hosting provider accepts. If this site has saved you from opening eleven tabs every morning, chipping in a few bucks toward the monthly bill would mean a lot. Genuinely, hail yes, thank you. No subscriptions, no tiers, no secret Discord. Just a fellow Commanders fan trying to keep the lights on without ever making you sit through a pop-up.</p>
+    <div class="donate-venmo">
+      <a class="donate-venmo-button" href="https://venmo.com/u/TheBurgundyWire" target="_blank" rel="noopener noreferrer">Venmo: @TheBurgundyWire</a>
+    </div>
+    <p class="page-intro donate-footnote">Every dollar goes straight to hosting. None of it goes toward therapy for whatever the offensive line does to me personally each Sunday. That one's on me.</p>
   </div>
 </main>
 
