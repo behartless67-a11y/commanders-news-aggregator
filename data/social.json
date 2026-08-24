@@ -3274,5 +3274,115 @@
     "images": [],
     "publishedAt": "2026-08-24T18:04:43.000Z",
     "collectedAt": "2026-08-24T18:25:08.032Z"
+  },
+  "social-ece592d21913": {
+    "id": "social-ece592d21913",
+    "url": "https://x.com/JPFinlayNBCS/status/2091975055303442497",
+    "text": "Jeremy Reaves explains he was excited for the practice today and if you’re not excited for practice you’re in the wrong profession",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T19:44:54.000Z",
+    "collectedAt": "2026-08-24T20:18:26.117Z"
+  },
+  "social-5e201f0896ce": {
+    "id": "social-5e201f0896ce",
+    "url": "https://x.com/JPFinlayNBCS/status/2091954877417071011",
+    "text": "Stef Diggs now wearing 3 in practice after wearing it in the preseason game. Diggs previously wearing 18 at prax",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/151/892/490/045/357/original/eee26e9bcb546c87.jpg"
+    ],
+    "publishedAt": "2026-08-24T18:24:44.000Z",
+    "collectedAt": "2026-08-24T20:18:26.117Z"
+  },
+  "social-9de291db7b7d": {
+    "id": "social-9de291db7b7d",
+    "url": "https://x.com/john_keim/status/2091961097771270217",
+    "text": "Three running backs are working today: Kaytron Allen, Robert Henry Jr and Craig Reynolds.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-24T18:49:27.000Z",
+    "collectedAt": "2026-08-24T20:18:27.220Z"
+  },
+  "social-dd96d895bbed": {
+    "id": "social-dd96d895bbed",
+    "url": "https://x.com/BenStandig/status/2091965383137702235",
+    "text": "Laremy Tunsil is elsewhere recovering from triceps surgery, but the food trucks he hired to feed his teammates and others are here. Very cool gesture.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-24T19:06:28.000Z",
+    "collectedAt": "2026-08-24T20:18:28.690Z"
+  },
+  "social-690b6f097a64": {
+    "id": "social-690b6f097a64",
+    "url": "https://x.com/BenStandig/status/2091955966296092833",
+    "text": "Not seeing TE Ben Sinnott at practice. He left Saturday's game early with an undisclosed issue.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-24T18:29:03.000Z",
+    "collectedAt": "2026-08-24T20:18:28.690Z"
+  },
+  "social-4e7cea2f275b": {
+    "id": "social-4e7cea2f275b",
+    "url": "https://x.com/BenStandig/status/2091954682780668278",
+    "text": "Stefon Diggs still rocking the No. 3 jersey.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-24T18:23:57.000Z",
+    "collectedAt": "2026-08-24T20:18:28.690Z"
+  },
+  "social-5343960de678": {
+    "id": "social-5343960de678",
+    "url": "https://x.com/tashanreed/status/2091963733341831270",
+    "text": "#Commanders DE Dorance Armstrong is back out here",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-08-24T18:59:55.000Z",
+    "collectedAt": "2026-08-24T20:18:30.224Z"
+  },
+  "social-d0aaec586036": {
+    "id": "social-d0aaec586036",
+    "url": "https://x.com/tashanreed/status/2091960439827583037",
+    "text": "I don't see TE Ben Sinnott at practice for the #Commanders today",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-08-24T18:46:50.000Z",
+    "collectedAt": "2026-08-24T20:18:30.224Z"
+  },
+  "social-730b71d4719c": {
+    "id": "social-730b71d4719c",
+    "url": "https://x.com/tashanreed/status/2091955055553392643",
+    "text": "#Commanders DT Tim Settle (calf) and RB Rachaad White (hamstring) returned to practice today. The other players who didn't play against the Lions remain out.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-08-24T18:25:26.000Z",
+    "collectedAt": "2026-08-24T20:18:30.224Z"
   }
 }
