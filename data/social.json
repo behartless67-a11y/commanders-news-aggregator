@@ -2968,5 +2968,31 @@
     ],
     "publishedAt": "2026-08-24T02:56:37.000Z",
     "collectedAt": "2026-08-24T04:35:39.296Z"
+  },
+  "social-7dcec3370be4": {
+    "id": "social-7dcec3370be4",
+    "url": "https://x.com/john_keim/status/2091860868845732324",
+    "text": "He was released with an injury settlement. Had a hamstring injury. Was going to be difficult for him to make the roster even if healthy.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-24T12:11:10.000Z",
+    "collectedAt": "2026-08-24T12:26:26.836Z"
+  },
+  "social-957888cd3157": {
+    "id": "social-957888cd3157",
+    "url": "https://x.com/BenStandig/status/2091853367337193702",
+    "text": "Commanders 53-man roster projection 2.0: Is AK ok for QB3? More linebackers or corners? Six receivers? Seven? More? Injuries and competitions mean roster gymnastics coming for sure. My best read + roster gamesmanship ahead of Ravens week. ⤵️ commanders-53-man-roster-projection-88d?utm_source=share&utm_medium=android&r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/150/298/633/952/079/original/ac41d6dd1fcc016a.jpg"
+    ],
+    "publishedAt": "2026-08-24T11:41:22.000Z",
+    "collectedAt": "2026-08-24T12:26:28.472Z"
   }
 }
