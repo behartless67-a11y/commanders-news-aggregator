@@ -141,6 +141,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // itself is also present in the sidebar on Blog/Podcasts.
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
+  const musicLink = `\n      <a href="music.html" class="nav-jump"${activeFile === 'music.html' ? ' aria-current="page"' : ''}>Music</a>`;
   // Depth Chart is a second view of the same subject (see rosterSubTabs()
   // in templates.js), not a separate nav destination — this stays
   // highlighted on both so the nav doesn't go dark on the one page that
@@ -170,7 +171,7 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
       <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
       <label for="nav-toggle" class="nav-mobile-toggle">Menu</label>
       <nav class="filter-tabs" aria-label="Filter headlines by source type">
-        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${beatWritersLink}${podcastsLink}${rosterLink}${howItWorksLink}${contactLink}${donateLink}
+        ${tabs}${weeklyTab}${scheduleLink}${videosLink}${beatWritersLink}${podcastsLink}${musicLink}${rosterLink}${howItWorksLink}${contactLink}${donateLink}
       </nav>
     </div>
   </div>
@@ -1399,6 +1400,85 @@ ${header('videos.html', hasWeekly, isGameLive)}
     <h1 class="podcasts-heading">Videos</h1>
     <p class="page-intro">The same clips from the video rail, on their own page.</p>
     ${widget || '<p class="river-empty">No videos yet — check back after the next build.</p>'}
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * Five AI-generated hype songs, two fake artists, one shared cover. Each
+ * track gets its own plain <audio> element rather than one custom player
+ * with JS-driven track switching, same zero-JS reasoning as the rest of
+ * the site, and it means a reader can genuinely play more than one at once
+ * if they're unwell enough to want that.
+ */
+const HYPE_TRACKS = [
+  { title: 'Burgundy & Gold', artist: 'Turn Up Syndicate', file: 'music/hype-01-burgundy-gold.mp3' },
+  { title: 'Beltway Anthem', artist: 'MACH-6', file: 'music/hype-02-beltway-anthem.mp3' },
+  { title: 'Tunnel Walk', artist: 'Turn Up Syndicate', file: 'music/hype-03-tunnel-walk.mp3' },
+  { title: 'Warpath Cadence', artist: 'MACH-6', file: 'music/hype-04-warpath-cadence.mp3' },
+  { title: 'One City', artist: 'Turn Up Syndicate x MACH-6', file: 'music/hype-05-one-city.mp3' },
+];
+
+function musicTrack(track, index) {
+  const number = String(index + 1).padStart(2, '0');
+  return `<div class="music-track">
+      <div class="music-track-info">
+        <span class="music-track-number">${number}</span>
+        <div>
+          <p class="music-track-title">${escapeHtml(track.title)}</p>
+          <p class="music-track-artist">${escapeHtml(track.artist)}</p>
+        </div>
+      </div>
+      <audio class="music-track-player" controls preload="none" src="${escapeHtml(track.file)}"></audio>
+    </div>`;
+}
+
+export function renderMusicPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `Five AI-generated Commanders hype songs. Corny or not, you be the judge.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Music — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('music.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="music-page">
+    <h1 class="podcasts-heading">Music</h1>
+    <p class="page-intro">A depth chart and a paywall pill weren't enough robot content for one week, so an AI music generator also got a crack at five different Commanders hype songs, credited to two artists that do not exist. Nobody asked for this. Corny or not, you be the judge.</p>
+    <div class="music-hero">
+      <img class="music-album-art" src="music/hype-album-art.png" alt="Commanders Hype Songs cover art" loading="lazy" />
+    </div>
+    <div class="music-tracklist">
+      ${HYPE_TRACKS.map(musicTrack).join('\n')}
+    </div>
   </div>
 </main>
 

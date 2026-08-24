@@ -13,7 +13,7 @@ import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -174,6 +174,12 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'music.html'),
+    renderMusicPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'admin.html'),
     renderAdminPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt }),
     'utf8',
@@ -201,6 +207,10 @@ export async function buildSite() {
   ]) {
     await fs.copyFile(path.resolve('src/site/assets', asset), path.join(DIST_DIR, asset));
   }
+
+  // The hype songs and their cover art, recursive since it's a whole
+  // subfolder rather than the single flat files handled above.
+  await fs.cp(path.resolve('src/site/assets/music'), path.join(DIST_DIR, 'music'), { recursive: true });
 
   log.ok(
     `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
