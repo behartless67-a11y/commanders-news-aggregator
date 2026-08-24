@@ -1707,6 +1707,13 @@ main.layout{
   margin-bottom: 18px;
 }
 
+/* Hidden above the phone breakpoint (see the max-width: 640px override
+   further down) — same checkbox+label collapse convention as the mobile
+   nav dropdown, reusing .nav-toggle-checkbox's visually-hidden styling. */
+.footer-toggle{
+  display: none;
+}
+
 .footer-col h3{
   margin: 0 0 14px;
   font-size: 12px;
@@ -2008,4 +2015,24 @@ main.layout{
      column down a full screen's worth on a phone — one line covers it. */
   .footer-about-full{ display: none; }
   .footer-about-short{ display: block; }
+
+  /* The five-column footer (About/badges/Team Sources/National
+     Coverage/Subscribe) is nice-to-have reference material, not something
+     worth a full extra screen of scrolling on a phone — collapsed behind a
+     tap, same convention as the mobile nav dropdown just above it. */
+  .footer-grid{ display: none; }
+  .footer-toggle{
+    display: block;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    cursor: pointer;
+  }
+  .footer-toggle::after{ content: ' \25BE'; }
+  .nav-toggle-checkbox:checked ~ .footer-toggle::after{ content: ' \25B4'; }
+  .nav-toggle-checkbox:checked ~ .footer-grid{ display: grid; }
 }

@@ -451,6 +451,8 @@ function footer(sources, generatedAt) {
 
   return `<footer class="site-footer">
   <div class="wrap">
+    <input type="checkbox" id="footer-toggle" class="nav-toggle-checkbox" />
+    <label for="footer-toggle" class="footer-toggle">More about this site</label>
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <h3>About this page</h3>
