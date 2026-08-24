@@ -43,6 +43,12 @@ jobs:
       - run: npm run roster
         continue-on-error: true
 
+      # Same cadence as roster — a single page fetch, cheap enough to run
+      # every few hours, and depth chart moves change more often than the
+      # roster itself does during camp/preseason.
+      - run: npm run depth-chart
+        continue-on-error: true
+
       - run: npm run schedule
         continue-on-error: true
 

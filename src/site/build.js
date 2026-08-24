@@ -4,6 +4,7 @@ import { SOURCES } from '../../config/sources.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
+import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
@@ -12,7 +13,7 @@ import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderContactPage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -58,6 +59,7 @@ export async function buildSite() {
   // degrades to plain escaped text instead of matching against nothing.
   const rosterPlayers = await loadRosterCache();
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
+  const depthChart = await loadDepthChartCache();
   // Full store, not the capped river — a player's mention count shouldn't
   // shrink just because a busy week pushed their one story past MAX_RIVER_ITEMS.
   const mentionCounts = countMentions(allSorted, rosterIndex);
@@ -150,6 +152,12 @@ export async function buildSite() {
       rosterPlayers,
       mentionCounts,
     }),
+    'utf8',
+  );
+
+  await fs.writeFile(
+    path.join(DIST_DIR, 'depth-chart.html'),
+    renderDepthChartPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, depthChart }),
     'utf8',
   );
 

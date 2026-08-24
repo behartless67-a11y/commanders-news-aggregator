@@ -1,0 +1,285 @@
+[
+  {
+    "section": "Offense",
+    "rows": [
+      {
+        "position": "WR",
+        "tiers": [
+          {
+            "slug": "terry-mclaurin",
+            "name": "Terry McLaurin"
+          },
+          {
+            "slug": "dyami-brown",
+            "name": "Dyami Brown"
+          },
+          {
+            "slug": "van-jefferson",
+            "name": "Van Jefferson"
+          },
+          {
+            "slug": "nick-nash",
+            "name": "Nick Nash"
+          }
+        ]
+      },
+      {
+        "position": "LT",
+        "tiers": [
+          {
+            "slug": "laremy-tunsil",
+            "name": "Laremy Tunsil"
+          },
+          {
+            "slug": "andrew-wylie",
+            "name": "Andrew Wylie"
+          },
+          {
+            "slug": "brandon-coleman",
+            "name": "Brandon Coleman"
+          },
+          {
+            "slug": "foster-sarell",
+            "name": "Foster Sarell"
+          }
+        ]
+      },
+      {
+        "position": "LG",
+        "tiers": [
+          {
+            "slug": "chris-paul",
+            "name": "Chris Paul"
+          },
+          {
+            "slug": "brandon-coleman",
+            "name": "Brandon Coleman"
+          },
+          {
+            "slug": "max-scharping",
+            "name": "Max Scharping"
+          }
+        ]
+      },
+      {
+        "position": "C",
+        "tiers": [
+          {
+            "slug": "nick-allegretti",
+            "name": "Nick Allegretti"
+          },
+          {
+            "slug": "julian-good-jones",
+            "name": "Julian Good-Jones"
+          },
+          {
+            "slug": "matt-gulbin",
+            "name": "Matt Gulbin"
+          },
+          {
+            "slug": "daniel-brunskill",
+            "name": "Daniel Brunskill"
+          }
+        ]
+      },
+      {
+        "position": "RG",
+        "tiers": [
+          {
+            "slug": "sam-cosmi",
+            "name": "Sam Cosmi"
+          },
+          {
+            "slug": "andrew-wylie",
+            "name": "Andrew Wylie"
+          },
+          {
+            "slug": "tanoa-togiai",
+            "name": "Tanoa Togiai"
+          }
+        ]
+      },
+      {
+        "position": "RT",
+        "tiers": [
+          {
+            "slug": "josh-conerly-jr",
+            "name": "Josh Conerly Jr."
+          },
+          {
+            "slug": "trent-scott",
+            "name": "Trent Scott"
+          },
+          {
+            "slug": "nicholas-petit-frere",
+            "name": "Nicholas Petit-Frere"
+          }
+        ]
+      },
+      {
+        "position": "TE",
+        "tiers": [
+          {
+            "slug": "chig-okonkwo",
+            "name": "Chig Okonkwo"
+          },
+          {
+            "slug": "ben-sinnott",
+            "name": "Ben Sinnott"
+          },
+          {
+            "slug": "lawrence-cager",
+            "name": "Lawrence Cager"
+          }
+        ]
+      },
+      {
+        "position": "TE",
+        "tiers": [
+          {
+            "slug": "john-bates",
+            "name": "John Bates"
+          },
+          {
+            "slug": "colson-yankoff",
+            "name": "Colson Yankoff"
+          },
+          {
+            "slug": "quentin-moore",
+            "name": "Quentin Moore"
+          }
+        ]
+      },
+      {
+        "position": "WR",
+        "tiers": [
+          {
+            "slug": "luke-mccaffrey",
+            "name": "Luke McCaffrey"
+          },
+          {
+            "slug": "jaylin-lane",
+            "name": "Jaylin Lane"
+          },
+          {
+            "slug": "jacoby-jones",
+            "name": "Jacoby Jones"
+          },
+          {
+            "slug": "jaden-bradley",
+            "name": "Jaden Bradley"
+          }
+        ]
+      },
+      {
+        "position": "WR",
+        "tiers": [
+          {
+            "slug": "treylon-burks",
+            "name": "Treylon Burks"
+          },
+          {
+            "slug": "antonio-williams",
+            "name": "Antonio Williams"
+          }
+        ]
+      },
+      {
+        "position": "QB",
+        "tiers": [
+          {
+            "slug": "jayden-daniels",
+            "name": "Jayden Daniels"
+          },
+          {
+            "slug": "marcus-mariota",
+            "name": "Marcus Mariota"
+          },
+          {
+            "slug": "sam-hartman",
+            "name": "Sam Hartman"
+          },
+          {
+            "slug": "athan-kaliakmanis",
+            "name": "Athan Kaliakmanis"
+          }
+        ]
+      },
+      {
+        "position": "RB",
+        "tiers": [
+          {
+            "slug": "jacory-croskey-merritt",
+            "name": "Jacory Croskey-Merritt"
+          },
+          {
+            "slug": "rachaad-white",
+            "name": "Rachaad White"
+          },
+          {
+            "slug": "jeremy-mcnichols",
+            "name": "Jeremy McNichols"
+          },
+          {
+            "slug": "robert-henry-jr",
+            "name": "Robert Henry Jr."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Special Teams",
+    "rows": [
+      {
+        "position": "P",
+        "tiers": [
+          {
+            "slug": "tress-way",
+            "name": "Tress Way"
+          }
+        ]
+      },
+      {
+        "position": "H",
+        "tiers": [
+          {
+            "slug": "tress-way",
+            "name": "Tress Way"
+          }
+        ]
+      },
+      {
+        "position": "LS",
+        "tiers": [
+          {
+            "slug": "tyler-ott",
+            "name": "Tyler Ott"
+          }
+        ]
+      },
+      {
+        "position": "KR",
+        "tiers": [
+          {
+            "slug": "jeremy-mcnichols",
+            "name": "Jeremy McNichols"
+          }
+        ]
+      },
+      {
+        "position": "PR",
+        "tiers": [
+          {
+            "slug": "jaylin-lane",
+            "name": "Jaylin Lane"
+          },
+          {
+            "slug": "mike-sainristil",
+            "name": "Mike Sainristil"
+          }
+        ]
+      }
+    ]
+  }
+]

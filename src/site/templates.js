@@ -136,7 +136,11 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   // itself is also present in the sidebar on Blog/Podcasts.
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
-  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' ? ' aria-current="page"' : ''}>Roster</a>`;
+  // Depth Chart is a second view of the same subject (see rosterSubTabs()
+  // in templates.js), not a separate nav destination — this stays
+  // highlighted on both so the nav doesn't go dark on the one page that
+  // isn't literally named "Roster".
+  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' || activeFile === 'depth-chart.html' ? ' aria-current="page"' : ''}>Roster</a>`;
   const howItWorksLink = `\n      <a href="how-it-works.html" class="nav-jump"${activeFile === 'how-it-works.html' ? ' aria-current="page"' : ''}>How It Works</a>`;
   // Phone-only: on the main river pages the video rail is dropped from the
   // sidebar at this width (see .page-river .widget-videos in site.css) so the
@@ -995,7 +999,7 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 
     <section class="how-section">
       <h2>The Roster page</h2>
-      <p class="digest-para">Every player, photo included, sorted by something commanders.com's own roster page won't tell you: who this site's own coverage is actually talking about this week, backed by real ESPN season stats next to each name. The other 70-ish quiet players are still in there, just filed under a button.</p>
+      <p class="digest-para">Every player, photo included, sorted by something commanders.com's own roster page won't tell you: who this site's own coverage is actually talking about this week, backed by real ESPN season stats next to each name. The other 70-ish quiet players are still in there, just filed under a button. A "Depth Chart" tab up top pulls the team's own official depth chart straight from their site, position by position.</p>
     </section>
 
     <section class="how-section">
@@ -1082,6 +1086,14 @@ function rosterCard(player, mentionInfo, { showMentionBadge = true, extra = fals
     </article>`;
 }
 
+/** Shared by the Roster and Depth Chart pages — one subject, two views, not two unrelated nav items. */
+function rosterSubTabs(active) {
+  return `<div class="roster-subtabs">
+    <a href="roster.html"${active === 'roster' ? ' aria-current="page"' : ''}>Roster</a>
+    <a href="depth-chart.html"${active === 'depth-chart' ? ' aria-current="page"' : ''}>Depth Chart</a>
+  </div>`;
+}
+
 export function renderRosterPage({
   siteName,
   siteUrl,
@@ -1163,6 +1175,7 @@ ${header('roster.html', hasWeekly, isGameLive)}
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div class="roster-page">
     <h1 class="podcasts-heading">Roster</h1>
+    ${rosterSubTabs('roster')}
     <p class="page-intro page-intro-wide">Every player on the roster, ranked by who's actually showing up in this site's own Commanders coverage — not just an alphabetical list you could get anywhere.</p>
     ${
       rosterPlayers.length
@@ -1183,6 +1196,103 @@ ${header('roster.html', hasWeekly, isGameLive)}
   </div>
 
   ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+const DEPTH_CHART_SECTIONS = ['Offense', 'Defense', 'Special Teams'];
+const DEPTH_CHART_TIER_LABELS = ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth'];
+
+/**
+ * A section commanders.com hasn't populated yet (their whole Defense table
+ * was empty when this shipped, mid-preseason) renders as "not yet released"
+ * rather than an empty table — the cache only ever stores sections that had
+ * at least one real name in them (see depthchart.js), so an absent section
+ * here means the source itself has nothing yet, not a scrape failure.
+ */
+function depthChartTable(section) {
+  if (!section?.rows?.length) {
+    return '<p class="page-intro">Not yet released.</p>';
+  }
+  const maxTiers = Math.min(6, Math.max(...section.rows.map((r) => r.tiers.length)));
+  const headerCells = DEPTH_CHART_TIER_LABELS.slice(0, maxTiers)
+    .map((l) => `<th>${l}</th>`)
+    .join('');
+  const rows = section.rows
+    .map((r) => {
+      const cells = Array.from({ length: maxTiers }, (_, i) => r.tiers[i] || null);
+      const tds = cells
+        .map(
+          (t) =>
+            `<td>${
+              t
+                ? `<a href="https://www.commanders.com/team/players-roster/${escapeHtml(t.slug)}/" target="_blank" rel="noopener noreferrer">${escapeHtml(t.name)}</a>`
+                : ''
+            }</td>`,
+        )
+        .join('');
+      return `<tr><td class="depth-chart-position">${escapeHtml(r.position)}</td>${tds}</tr>`;
+    })
+    .join('\n');
+  return `<div class="depth-chart-scroll">
+      <table class="depth-chart-table">
+        <thead><tr><th>Position</th>${headerCells}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+export function renderDepthChartPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, depthChart = [] }) {
+  const byName = new Map(depthChart.map((s) => [s.section, s]));
+  const description = "The Commanders' current depth chart by position, straight from the team's own site.";
+  const sections = DEPTH_CHART_SECTIONS.map(
+    (name) => `
+    <section class="how-section">
+      <h2>${escapeHtml(name)}</h2>
+      ${depthChartTable(byName.get(name))}
+    </section>`,
+  ).join('\n');
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depth Chart — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Depth Chart — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('depth-chart.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="roster-page">
+    <h1 class="podcasts-heading">Depth Chart</h1>
+    ${rosterSubTabs('depth-chart')}
+    <p class="page-intro page-intro-wide">${escapeHtml(description)}</p>
+    ${sections}
+  </div>
 </main>
 
 ${footer(sources, generatedAt)}

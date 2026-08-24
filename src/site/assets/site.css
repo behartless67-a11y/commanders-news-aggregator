@@ -1368,6 +1368,81 @@ main.layout{
   max-width: 480px;
 }
 
+/* Roster / Depth Chart — one subject, two views (see rosterSubTabs() in
+   templates.js), styled like a smaller second-level version of the main
+   filter-tabs rather than another full nav row. */
+.roster-subtabs{
+  display: flex;
+  gap: 4px;
+  margin: 4px 0 18px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.roster-subtabs a{
+  padding: 7px 4px;
+  margin-right: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.roster-subtabs a:hover{
+  color: var(--text);
+}
+
+.roster-subtabs a[aria-current="page"]{
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.depth-chart-scroll{
+  overflow-x: auto;
+  margin-bottom: 8px;
+}
+
+.depth-chart-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.depth-chart-table th{
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.depth-chart-table td{
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+
+.depth-chart-position{
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.depth-chart-table td a{
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(255,182,18,0.45);
+  text-underline-offset: 2px;
+}
+
+.depth-chart-table td a:hover{
+  text-decoration-color: var(--gold);
+}
+
 /* Single column, full width of the content area next to the video/schedule
    rail — every row gets the room a photo plus a stat line needs, instead of
    squeezing two narrow cards side by side. */

@@ -13,6 +13,7 @@ import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
 import { generatePreview, listPreviews, setPreviewStatus } from './digest/preview-generate.js';
 import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './lib/roster.js';
+import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
 import { updateLiveGame } from './digest/live-generate.js';
@@ -31,6 +32,7 @@ Commanders headline river
   node src/cli.js status     item counts and last run info
   npm run roster             refresh the cached ESPN roster (name, jersey, position, photo)
   npm run roster-stats       refresh cached season stats per player (weekly, ESPN)
+  npm run depth-chart        refresh the cached commanders.com depth chart
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
@@ -228,6 +230,16 @@ async function main() {
         log.ok(`roster-stats: refreshed stats for ${withStats.length} player(s)`);
       } else {
         log.warn('roster-stats: no cached roster yet — run npm run roster first');
+      }
+      break;
+    }
+    case 'depth-chart': {
+      const sections = await fetchDepthChart();
+      if (sections.length) {
+        await saveDepthChartCache(sections);
+        log.ok(`depth-chart: cached ${sections.length} section(s)`);
+      } else {
+        log.warn('depth-chart: fetch returned nothing — leaving the existing cache in place');
       }
       break;
     }

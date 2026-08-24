@@ -18,6 +18,7 @@
     "status": "node src/cli.js status",
     "roster": "node src/cli.js roster",
     "roster-stats": "node src/cli.js roster-stats",
+    "depth-chart": "node src/cli.js depth-chart",
     "schedule": "node src/cli.js schedule",
     "betting": "node src/cli.js betting",
     "live": "node src/cli.js live",
