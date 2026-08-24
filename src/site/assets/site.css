@@ -1887,20 +1887,6 @@ main.layout{
 
 .widget p:last-child{ margin-bottom:0; }
 
-.legend-row{
-  display:flex;
-  align-items:center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.legend-row:last-child{ margin-bottom:0; }
-
-.legend-row span.desc{
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
 /* ---------- Footer ----------
    Team burgundy (#5A1414, the official colour) rather than the page's near-black,
    with a gold hairline to seat it. The palette variables are re-declared inside
@@ -1925,8 +1911,7 @@ main.layout{
 }
 
 .site-footer .source-list a,
-.site-footer .footer-col p,
-.site-footer .legend-row span.desc{
+.site-footer .footer-col p{
   color: #e2d9d5;
 }
 
@@ -1959,12 +1944,12 @@ main.layout{
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-faint);
+  color: var(--gold);
   font-weight: 700;
 }
 
-/* "About this page" and "Reading the badges" live here rather than in a
-   sidebar widget — the right-hand column is the video rail now. */
+/* "About this page" lives here rather than in a sidebar widget — the
+   right-hand column is the video rail now. */
 .footer-col p{
   margin: 0 0 10px;
   font-size: 13px;
@@ -1989,6 +1974,15 @@ main.layout{
   font-size: 14px;
   color: var(--text-muted);
   font-weight: 500;
+}
+
+/* Team Sources has enough entries to make the footer noticeably taller
+   than the other columns beside it — two columns keeps every link at the
+   same reading size instead of shrinking text to force it into one. */
+.source-list-columns{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
 }
 
 .source-list a:hover{ color: var(--gold); }
@@ -2151,7 +2145,7 @@ main.layout{
     grid-template-columns: minmax(0, 1fr);
   }
   .footer-grid{
-    grid-template-columns: 1.7fr 1.3fr 1fr 1fr auto;
+    grid-template-columns: 1.4fr 1.4fr 1fr auto;
     gap: 32px;
     align-items: start;
   }

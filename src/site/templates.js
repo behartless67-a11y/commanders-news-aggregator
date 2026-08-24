@@ -468,8 +468,6 @@ function footer(sources, generatedAt) {
     .filter((s) => s.category === 'league')
     .map((s) => `<li><a href="${escapeHtml(s.homepage)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.name)}</a></li>`)
     .join('');
-  const teamNames = sources.filter((s) => s.category === 'team').map((s) => s.name).join(', ');
-  const leagueNames = sources.filter((s) => s.category === 'league').map((s) => s.name).join(', ');
 
   return `<footer class="site-footer">
   <div class="wrap">
@@ -483,19 +481,8 @@ function footer(sources, generatedAt) {
         <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt every few hours.</p>
       </div>
       <div class="footer-col">
-        <h3>Reading the badges</h3>
-        <div class="legend-row">
-          <span class="badge badge-team">Team Source</span>
-          <span class="desc">${escapeHtml(teamNames)}</span>
-        </div>
-        <div class="legend-row">
-          <span class="badge badge-national">National Coverage</span>
-          <span class="desc">${escapeHtml(leagueNames)}</span>
-        </div>
-      </div>
-      <div class="footer-col">
         <h3>Team Sources</h3>
-        <ul class="source-list">${teamLinks}</ul>
+        <ul class="source-list source-list-columns">${teamLinks}</ul>
       </div>
       <div class="footer-col">
         <h3>National Coverage</h3>
@@ -510,8 +497,8 @@ function footer(sources, generatedAt) {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Headlines link to their original publishers. The Burgundy Wire is an independent fan project, not affiliated with the Washington Commanders or the NFL.</span>
-      <span>&copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire &middot; <a href="admin.html" class="footer-admin-link">Admin</a></span>
+      <span>Headlines link to their original publishers. The Burgundy Wire is one fan's independent project, built and run solo, not an official team site and not affiliated with the Washington Commanders or the NFL, just deeply, unreasonably invested.</span>
+      <span><a href="admin.html" class="footer-admin-link">Admin</a> &middot; &copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
     </div>
   </div>
 </footer>`;
@@ -2174,8 +2161,8 @@ export function renderPage(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(siteName)} — Washington Commanders News</title>
-<meta name="description" content="Every Washington Commanders headline in one place, updated around the clock from team and national sources, plus beat writer posts, live game recaps, and a weekly AI-written Blog.">
-${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: 'Every Washington Commanders headline in one place, updated around the clock from team and national sources, plus beat writer posts, live game recaps, and a weekly AI-written Blog.', siteUrl })}
+<meta name="description" content="The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.">
+${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
