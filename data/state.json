@@ -1,6 +1,78 @@
 {
   "runs": [
     {
+      "at": "2026-08-24T10:28:21.315Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T08:45:33.339Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T08:45:13.996Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-24T08:36:47.661Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T06:36:55.870Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T04:42:17.727Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T04:41:58.743Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-24T04:35:54.736Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T02:55:59.145Z",
+      "stage": "social",
+      "added": 4,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T01:09:42.874Z",
+      "stage": "social",
+      "added": 1,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-24T01:09:23.426Z",
+      "stage": "collect",
+      "sources": 10,
+      "added": 1,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
       "at": "2026-08-24T00:41:16.463Z",
       "stage": "social",
       "added": 0,
@@ -315,76 +387,6 @@
       "added": 0,
       "pruned": 0,
       "dropped": 0
-    },
-    {
-      "at": "2026-08-22T04:22:18.219Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-22T02:46:27.051Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-22T01:06:34.521Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-22T01:06:13.801Z",
-      "stage": "collect",
-      "sources": 10,
-      "added": 2,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-22T00:39:09.129Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T22:13:30.149Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T20:23:47.628Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T20:23:28.796Z",
-      "stage": "collect",
-      "sources": 10,
-      "added": 3,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-21T20:14:35.113Z",
-      "stage": "social",
-      "added": 3,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T18:22:44.591Z",
-      "stage": "social",
-      "added": 3,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-21T16:59:00.607Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
     }
   ]
 }

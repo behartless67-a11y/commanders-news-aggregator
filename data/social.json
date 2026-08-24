@@ -2868,5 +2868,105 @@
     "images": [],
     "publishedAt": "2026-08-23T21:22:19.000Z",
     "collectedAt": "2026-08-23T22:11:38.529Z"
+  },
+  "social-f2b22d4ed57d": {
+    "id": "social-f2b22d4ed57d",
+    "url": "https://x.com/Commanders/status/2091691970015989975",
+    "text": "come for the catch, stay for the reactions",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-08-24T01:00:02.000Z",
+    "collectedAt": "2026-08-24T01:09:25.000Z"
+  },
+  "social-6995677a9074": {
+    "id": "social-6995677a9074",
+    "url": "https://x.com/JPFinlayNBCS/status/2091704124584624289",
+    "text": "Won’t be surprised if we see some roster moves before prax tomorrow. There’s some obvious (Tunsil) and some others prob in the works",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T01:48:19.000Z",
+    "collectedAt": "2026-08-24T02:55:43.470Z"
+  },
+  "social-c0e0346a868a": {
+    "id": "social-c0e0346a868a",
+    "url": "https://x.com/WashMystics/status/2091698740469912026",
+    "text": "WE'RE GOING TO THE PLAYOFFS!!!",
+    "handle": "WashMystics",
+    "author": "Washington Mystics",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/147/887/244/151/544/original/070d97a4c1880bdb.jpg"
+    ],
+    "publishedAt": "2026-08-24T01:26:56.000Z",
+    "collectedAt": "2026-08-24T02:55:43.470Z"
+  },
+  "social-ac66e1a50f08": {
+    "id": "social-ac66e1a50f08",
+    "url": "https://x.com/BenStandig/status/2091714431839261056",
+    "text": "This kind of low-key swap would be cool for the Commanders to land OL help by moving a WR or S.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-24T02:29:17.000Z",
+    "collectedAt": "2026-08-24T02:55:46.251Z"
+  },
+  "social-0587759ff55f": {
+    "id": "social-0587759ff55f",
+    "url": "https://x.com/tashanreed/status/2091695960434802844",
+    "text": "As a society we need to do a better job of ignoring lames",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-08-24T01:15:53.000Z",
+    "collectedAt": "2026-08-24T02:55:47.581Z"
+  },
+  "social-62466a8fe28a": {
+    "id": "social-62466a8fe28a",
+    "url": "https://x.com/AndrewSiciliano/status/2091729404485566548",
+    "text": "Mike Macdonald says 2nd round pick Bud Clark has a broken ankle. The DB will be out \"multiple months\".",
+    "handle": "AndrewSiciliano",
+    "author": "Andrew Siciliano",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T03:28:47.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
+  },
+  "social-eeaf4f61c2d2": {
+    "id": "social-eeaf4f61c2d2",
+    "url": "https://x.com/JPFinlayNBCS/status/2091724595703304276",
+    "text": "A lot of time between now and then. Not to mention Allegretti should be back this week. The assumption the sky is falling is overblown",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-24T03:09:40.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
+  },
+  "social-62328e2c0378": {
+    "id": "social-62328e2c0378",
+    "url": "https://x.com/RapSheet/status/2091721310044917897",
+    "text": "#Raiders RB Ashton Jeanty, who had to be helped off the practice field today, is believed to have sprained his ankle, sources tell @AdamSchefter and me. Las Vegas still are unsure how long he will be out, but it is not considered a long-term injury and the organization is breathing a sigh of relief.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/148/238/912/676/693/original/166e8f307c874c85.jpg"
+    ],
+    "publishedAt": "2026-08-24T02:56:37.000Z",
+    "collectedAt": "2026-08-24T04:35:39.296Z"
   }
 }
