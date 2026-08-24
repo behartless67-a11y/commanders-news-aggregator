@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Deatrich Wise",
+    "position": "DE",
+    "status": "PUP",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Jacory Croskey-Merritt",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Jer'Zhan Newton",
+    "position": "DL",
+    "status": "Out",
+    "bodyPart": "Pectoral",
+    "notes": "Surgery"
+  },
+  {
+    "name": "Jeremy McNichols",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Quadriceps",
+    "notes": null
+  },
+  {
+    "name": "Jerome Ford",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
+    "notes": null
+  },
+  {
+    "name": "John Bates",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
+    "notes": null
+  },
+  {
+    "name": "Jordan Magee",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "K'Lavon Chaisson",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Laremy Tunsil",
+    "position": "OL",
+    "status": "Out",
+    "bodyPart": "Triceps",
+    "notes": null
+  },
+  {
+    "name": "Marcus Mariota",
+    "position": "QB",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
+    "name": "Nick Allegretti",
+    "position": "G",
+    "status": "Questionable",
+    "bodyPart": "Calf",
+    "notes": "Strain"
+  },
+  {
+    "name": "Odafe Oweh",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Rachaad White",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Tim Settle",
+    "position": "DT",
+    "status": "Questionable",
+    "bodyPart": "Calf",
+    "notes": "Strain"
+  },
+  {
+    "name": "Trey Amos",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Ankle",
+    "notes": null
+  }
+]

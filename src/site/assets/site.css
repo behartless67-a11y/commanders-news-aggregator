@@ -1582,6 +1582,32 @@ main.layout{
   text-decoration-color: var(--gold);
 }
 
+/* Three severity tiers (see INJURY_STATUS_CLASS in templates.js) — a reader
+   scanning this wants "how worried should I be" at a glance, not to parse
+   five different status words the same shade of gray. */
+.injury-status{
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.injury-status-out{
+  background: rgba(178,15,3,0.18);
+  color: #ff8a7a;
+}
+
+.injury-status-doubtful{
+  background: rgba(255,182,18,0.16);
+  color: var(--gold);
+}
+
+.injury-status-questionable{
+  background: rgba(255,255,255,0.08);
+  color: var(--text-muted);
+}
+
 /* Single column, full width of the content area next to the video/schedule
    rail — every row gets the room a photo plus a stat line needs, instead of
    squeezing two narrow cards side by side. */

@@ -52,6 +52,12 @@ jobs:
       - run: npm run schedule
         continue-on-error: true
 
+      # Third-party read on the same injury designations (see injuries.js
+      # for why commanders.com's own page isn't scrapeable) — same
+      # never-fail-the-build treatment as every other cache refresh here.
+      - run: npm run injuries
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}

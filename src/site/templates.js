@@ -142,11 +142,16 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
   const musicLink = `\n      <a href="music.html" class="nav-jump"${activeFile === 'music.html' ? ' aria-current="page"' : ''}>Music</a>`;
-  // Depth Chart is a second view of the same subject (see rosterSubTabs()
-  // in templates.js), not a separate nav destination — this stays
-  // highlighted on both so the nav doesn't go dark on the one page that
-  // isn't literally named "Roster".
-  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' || activeFile === 'depth-chart.html' ? ' aria-current="page"' : ''}>Roster</a>`;
+  // "Player Updates" is the umbrella nav label for the Roster/Depth
+  // Chart/Injury Tracker group (see rosterSubTabs() in templates.js) — the
+  // URL and the Roster sub-tab's own label stay "roster.html"/"Roster"
+  // since that's still an accurate name for the player-list sub-page
+  // itself, same "label moved, internals didn't" pattern as Blog/weekly.
+  // Depth Chart and Injury Tracker are second/third views of the same
+  // subject, not separate nav destinations — this stays highlighted on all
+  // three so the nav doesn't go dark on a page that isn't literally named
+  // "Roster".
+  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' || activeFile === 'depth-chart.html' || activeFile === 'injury-report.html' ? ' aria-current="page"' : ''}>Player Updates</a>`;
   const howItWorksLink = `\n      <a href="how-it-works.html" class="nav-jump"${activeFile === 'how-it-works.html' ? ' aria-current="page"' : ''}>How It Works</a>`;
   // Phone-only: on the main river pages the video rail is dropped from the
   // sidebar at this width (see .page-river .widget-videos in site.css) so the
@@ -1218,11 +1223,12 @@ function rosterCard(player, mentionInfo, { showMentionBadge = true, extra = fals
     </article>`;
 }
 
-/** Shared by the Roster and Depth Chart pages — one subject, two views, not two unrelated nav items. */
+/** Shared by the Roster, Depth Chart, and Injury Report pages — one subject, three views, not three unrelated nav items. */
 function rosterSubTabs(active) {
   return `<div class="roster-subtabs">
     <a href="roster.html"${active === 'roster' ? ' aria-current="page"' : ''}>Roster</a>
     <a href="depth-chart.html"${active === 'depth-chart' ? ' aria-current="page"' : ''}>Depth Chart</a>
+    <a href="injury-report.html"${active === 'injury-report' ? ' aria-current="page"' : ''}>Injury Tracker</a>
   </div>`;
 }
 
@@ -1424,6 +1430,91 @@ ${header('depth-chart.html', hasWeekly, isGameLive)}
     ${rosterSubTabs('depth-chart')}
     <p class="page-intro page-intro-wide">${escapeHtml(description)}</p>
     ${sections}
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * Out/IR share the same "not playing" severity, Doubtful sits alone in the
+ * middle, and Questionable/PUP/NFI are all "could go either way" — three
+ * visual tiers, not five, since a reader scanning this wants "how worried
+ * should I be", not to memorize which of five words means what.
+ */
+const INJURY_STATUS_CLASS = {
+  Out: 'injury-status-out',
+  IR: 'injury-status-out',
+  Doubtful: 'injury-status-doubtful',
+  Questionable: 'injury-status-questionable',
+  PUP: 'injury-status-questionable',
+  NFI: 'injury-status-questionable',
+};
+
+function injuryReportTable(entries) {
+  if (!entries.length) {
+    return '<p class="page-intro">No players currently listed with an injury.</p>';
+  }
+  const rows = entries
+    .map((e) => {
+      const statusClass = INJURY_STATUS_CLASS[e.status] || 'injury-status-questionable';
+      const detail = [e.bodyPart, e.notes].filter(Boolean).join(' &middot; ');
+      return `<tr>
+        <td>${escapeHtml(e.name)}</td>
+        <td>${escapeHtml(e.position || '')}</td>
+        <td><span class="injury-status ${statusClass}">${escapeHtml(e.status)}</span></td>
+        <td>${detail ? escapeHtml(detail) : '&mdash;'}</td>
+      </tr>`;
+    })
+    .join('\n');
+  return `<div class="depth-chart-scroll">
+      <table class="depth-chart-table injury-table">
+        <thead><tr><th>Player</th><th>Pos</th><th>Status</th><th>Injury</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+export function renderInjuryReportPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, injuries = [] }) {
+  const description = "Who's currently hurt on the Commanders, and how serious it looks.";
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Injury Tracker — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Injury Tracker — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('injury-report.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="roster-page">
+    <h1 class="podcasts-heading">Injury Tracker</h1>
+    ${rosterSubTabs('injury-report')}
+    <p class="page-intro page-intro-wide">${escapeHtml(description)} Pulled from a third-party read on the same injury designations teams report, not commanders.com's own report directly.</p>
+    ${injuryReportTable(injuries)}
   </div>
 </main>
 
