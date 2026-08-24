@@ -174,8 +174,17 @@ img, svg{ display:block; max-width:100%; }
   display: none;
 }
 
+/* flex-wrap so a width too narrow for all 12 tabs on one line sends whole
+   tabs to a second row — without it, flex's default min-width:auto still
+   let each tab's own box get squeezed below its text's natural width, and
+   a two-word label ("Team Sources") wrapped itself onto two lines instead
+   of the row wrapping. That only showed up at in-between (half-screened
+   laptop) widths above the phone dropdown breakpoint, never full-width or
+   phone-narrow, which is why it went unnoticed until someone reported it
+   at that specific width. */
 .filter-tabs{
   display:flex;
+  flex-wrap: wrap;
   gap: 4px;
   border-bottom: 1px solid var(--border-soft);
 }
@@ -193,6 +202,7 @@ img, svg{ display:block; max-width:100%; }
   letter-spacing: 0.04em;
   color: var(--text-muted);
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .filter-tabs a:hover{
