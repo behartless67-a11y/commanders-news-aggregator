@@ -10,7 +10,7 @@ import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
-import { gameTomorrow } from '../lib/gamewindow.js';
+import { gameToday } from '../lib/gamewindow.js';
 import { parseGameTime } from '../lib/dates.js';
 
 // Same model as the weekly digest, same reason (see provider.js) — this
@@ -32,17 +32,23 @@ async function writeRecord(file, record) {
 }
 
 /**
- * Generates a preview for whichever game is on the calendar tomorrow (see
- * gameTomorrow() in gamewindow.js) — the caller doesn't pick a game, the
+ * Generates a preview for whichever game is on the calendar today (see
+ * gameToday() in gamewindow.js) — the caller doesn't pick a game, the
  * schedule does, so this can be run on a blind daily schedule and just no-op
  * on the ~360 days a year that isn't true. Keyed and written once per game
  * date, same never-silently-regenerate rule as the weekly digest.
+ *
+ * Runs the morning of the game, not the evening before — moved 2026-08-24 to
+ * catch overnight/gameday-morning news (inactives buzz, beat-writer "what to
+ * watch" pieces) that a day-before generation would always miss. Every game
+ * this covers kicks off at noon ET or later except one 9:30 AM London game,
+ * which gets a shorter-but-still-real review window rather than none.
  */
 export async function generatePreview({ force = false, now = new Date() } = {}) {
   const games = await loadScheduleCache();
-  const game = gameTomorrow(games, now);
+  const game = gameToday(games, now);
   if (!game) {
-    log.info('preview: no game tomorrow — nothing to preview');
+    log.info('preview: no game today — nothing to preview');
     return null;
   }
 
