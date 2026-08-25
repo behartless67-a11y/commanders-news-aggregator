@@ -289,6 +289,33 @@
   }
 
   /**
+   * A single boolean flag saying "this browser has been here before" — the
+   * opposite lifetime from sessionId() above on purpose. sessionId() answers
+   * "how many distinct browsers today" and must forget between visits to do
+   * that honestly; this answers "does this browser ever come back" and can
+   * only do that by remembering past the tab closing. localStorage, not a
+   * cookie: still nothing sent to any other site, still not readable
+   * server-side except as the one bit this function derives from it, and
+   * still not an identifier — just a bit, no id, nothing to correlate across
+   * browsers or link back to a person.
+   *
+   * Reads and (if unset) writes the flag in the same call, so a page that
+   * never finishes loading still leaves the flag in whatever state a
+   * completed pageview would have left it — there's no separate "first
+   * visit" step to skip.
+   */
+  function isReturningVisitor() {
+    try {
+      var key = 'bw_seen';
+      var seenBefore = Boolean(localStorage.getItem(key));
+      if (!seenBefore) localStorage.setItem(key, '1');
+      return seenBefore;
+    } catch (err) {
+      return false;
+    }
+  }
+
+  /**
    * One pageview beacon per load, to the same site's own track Function —
    * no third-party analytics script (see netlify/functions/track.js).
    * Fire-and-forget: a failed or blocked beacon should never affect the page
@@ -301,6 +328,12 @@
       path: window.location.pathname,
       referrer: document.referrer,
       sid: sessionId(),
+      returning: isReturningVisitor(),
+      // A bare number, bucketed server-side (see deviceBucket() in
+      // track.js) rather than a label chosen here — one thing this client
+      // doesn't have to decide, and one fewer arbitrary string that could
+      // reach the server.
+      viewportWidth: window.innerWidth,
     }),
   }).catch(function () {});
 

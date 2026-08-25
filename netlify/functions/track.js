@@ -1,20 +1,29 @@
 import { getStore } from '@netlify/blobs';
+import { TZ } from '../../src/lib/dates.js';
 
 /**
  * Fired by two tiny beacons in site.js — the only way to get real traffic
  * numbers without a paid analytics add-on or a third-party script, since
  * Netlify's own CDN logs aren't exposed to a site owner on this plan.
- * "Basic statistics," deliberately: a running total, a per-day trend (now
- * with a same-day unique count alongside it), an all-time top path list,
- * where traffic actually comes from, and which sources readers click through
- * to read — not a replacement for real analytics tooling.
+ * "Basic statistics," deliberately: a running total, day/month/hour/weekday
+ * trends, same-day and ever-returning visitor counts, an all-time top path
+ * list, where traffic actually comes from, which sources readers click
+ * through to read, and a rough browser/OS/device/language split — not a
+ * replacement for real analytics tooling.
  *
  * Two event shapes share this one endpoint rather than two separate
  * functions, distinguished by `type`:
- *   - a pageview (default, `type` omitted) — { path, referrer, sid }
+ *   - a pageview (default, `type` omitted) — { path, referrer, sid, returning, viewportWidth }
  *   - an outbound click (`type: 'outbound'`) — { sourceId }
  * A single endpoint keeps the beacon wiring in site.js to one URL and lets
  * both share the underlying bump() helper and store.
+ *
+ * Every bucketing decision here — referrer, browser, OS, device, language —
+ * happens server-side off signals the browser already sends (a header) or a
+ * raw number the client has no reason to lie about (viewport width), rather
+ * than trusting a pre-labeled string from the client. That keeps the set of
+ * possible Blobs keys bounded and predictable no matter what a browser
+ * extension or a stray script sends in.
  */
 
 const MAX_LEN = 200;
@@ -67,6 +76,91 @@ function referrerBucket(rawReferrer, requestHost) {
   return host;
 }
 
+/**
+ * Coarse browser/OS names off the User-Agent header every request already
+ * sends — no client code needed. Order matters: Edge and Opera both carry a
+ * "Chrome/" token for compatibility, and iOS Chrome (CriOS) carries "Safari/"
+ * too, so the specific tokens are checked before the generic ones they'd
+ * otherwise be swallowed by.
+ */
+function parseUserAgent(ua) {
+  const s = String(ua || '');
+  let browser = 'Other';
+  if (/Edg\//.test(s)) browser = 'Edge';
+  else if (/OPR\/|Opera/.test(s)) browser = 'Opera';
+  else if (/Firefox\//.test(s)) browser = 'Firefox';
+  else if (/CriOS\//.test(s)) browser = 'Chrome';
+  else if (/Chrome\//.test(s)) browser = 'Chrome';
+  else if (/Safari\//.test(s)) browser = 'Safari';
+
+  let os = 'Other';
+  if (/iPhone|iPad|iPod/.test(s)) os = 'iOS';
+  else if (/Android/.test(s)) os = 'Android';
+  else if (/Windows/.test(s)) os = 'Windows';
+  else if (/Macintosh|Mac OS X/.test(s)) os = 'macOS';
+  else if (/Linux/.test(s)) os = 'Linux';
+
+  return { browser, os };
+}
+
+/**
+ * Matches the site's own responsive breakpoints (see site.css — 640px is the
+ * phone-nav-dropdown cutoff, 900px is where the sidebar becomes two columns,
+ * 1400px is where the video/schedule rail itself goes two-across), so this
+ * answers "how many readers see the layout the mobile-specific CSS was
+ * written for" rather than an arbitrary phone/tablet/desktop split that
+ * doesn't line up with any real decision this site has made.
+ *
+ * Returns null on a missing/invalid width rather than guessing — the caller
+ * skips the counter entirely for that pageview instead of miscounting it.
+ */
+function deviceBucket(rawWidth) {
+  const width = Number(rawWidth);
+  if (!Number.isFinite(width) || width <= 0) return null;
+  if (width <= 640) return 'Phone';
+  if (width <= 899) return 'Tablet';
+  if (width <= 1399) return 'Desktop';
+  return 'Wide desktop';
+}
+
+/**
+ * Only the primary language subtag ("en" out of "en-US"), not the full
+ * Accept-Language header — a full header (with its exact ordering and
+ * quality values) is specific enough to help fingerprint a browser; the
+ * primary subtag alone is not, and a rough "how many non-English readers
+ * does this get" is genuinely useful for an English-only site while the raw
+ * header buys nothing more for that question.
+ */
+const LANGUAGE_NAMES = {
+  en: 'English', es: 'Spanish', fr: 'French', de: 'German', pt: 'Portuguese',
+  it: 'Italian', ja: 'Japanese', ko: 'Korean', zh: 'Chinese', ru: 'Russian',
+  ar: 'Arabic', nl: 'Dutch', pl: 'Polish', tr: 'Turkish', hi: 'Hindi',
+};
+
+function languageBucket(acceptLanguage) {
+  if (!acceptLanguage) return 'Unknown';
+  const primary = acceptLanguage.split(',')[0].split(';')[0].trim().split('-')[0].toLowerCase();
+  return LANGUAGE_NAMES[primary] || primary.toUpperCase() || 'Unknown';
+}
+
+/**
+ * Hour (00-23) and weekday, in the site's own timezone rather than UTC —
+ * "when do readers show up" is only useful measured against the clock they
+ * actually keep. Uses Intl rather than hand-rolled offset math, same as the
+ * site's own date formatting in src/lib/dates.js.
+ */
+function hourAndWeekday(date) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: TZ,
+    hour: 'numeric',
+    hourCycle: 'h23',
+    weekday: 'short',
+  }).formatToParts(date);
+  const hour = String(parseInt(parts.find((p) => p.type === 'hour').value, 10)).padStart(2, '0');
+  const weekday = parts.find((p) => p.type === 'weekday').value;
+  return { hour, weekday };
+}
+
 export default async (req) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
 
@@ -90,9 +184,19 @@ export default async (req) => {
   }
 
   const path = typeof body.path === 'string' ? body.path.slice(0, MAX_LEN) : '/';
-  const day = new Date().toISOString().slice(0, 10);
+  const now = new Date();
+  const day = now.toISOString().slice(0, 10);
+  const month = day.slice(0, 7);
 
-  const tasks = [bump('total'), bump(`day:${day}`), bump(`path:${encodeURIComponent(path)}`)];
+  const tasks = [
+    bump('total'),
+    bump(`day:${day}`),
+    bump(`path:${encodeURIComponent(path)}`),
+    // A direct forward-written counter, not a sum of 30 daily counters read
+    // back later — a year of history is 12 cheap reads this way instead of
+    // ~365, at the cost of one extra bump() here.
+    bump(`month:${month}`),
+  ];
 
   const bucket = referrerBucket(
     typeof body.referrer === 'string' ? body.referrer.slice(0, MAX_LEN) : '',
@@ -100,11 +204,30 @@ export default async (req) => {
   );
   if (bucket) tasks.push(bump(`ref:${encodeURIComponent(bucket)}`));
 
+  const { browser, os } = parseUserAgent(req.headers.get('user-agent'));
+  tasks.push(bump(`browser:${browser}`), bump(`os:${os}`));
+
+  const device = deviceBucket(body.viewportWidth);
+  if (device) tasks.push(bump(`device:${device}`));
+
+  tasks.push(bump(`lang:${languageBucket(req.headers.get('accept-language'))}`));
+
+  const { hour, weekday } = hourAndWeekday(now);
+  tasks.push(bump(`hour:${hour}`), bump(`dow:${weekday}`));
+
+  // Ever-returning vs. new — see the localStorage flag in site.js. Two
+  // all-time running totals, same shape as `total` itself; no per-visitor
+  // record is kept, just which of two buckets this one pageview falls into.
+  tasks.push(bump(body.returning ? 'visitor:return' : 'visitor:new'));
+
   // Unique-visitor count for today, deduped against a per-day session-id set
   // rather than a persistent cookie — `sid` (see site.js) lives in
   // sessionStorage, so it identifies "this browser tab today," never a
   // person across visits, and nothing here can turn it back into one: it's a
-  // client-generated random string with no other data attached.
+  // client-generated random string with no other data attached. (Separate
+  // from the returning-visitor flag above, which is the opposite lifetime —
+  // that one deliberately does outlive the tab, this one deliberately
+  // doesn't; see the comments in site.js for why both exist.)
   //
   // The set itself (`visitors:<date>`) is read-modify-written per pageview,
   // same non-atomic tradeoff as bump() above, and is never pruned — it's

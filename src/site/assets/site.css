@@ -2376,8 +2376,17 @@ main.layout{
 }
 
 /* ---------- Admin page ---------- */
+/* Wide enough for the Traffic grid's tiles to actually form columns (see
+   .admin-grid) — the old 640px cap predates that grid and was sized for a
+   single-column stack of stats and the login form alone. The login form
+   itself stays narrow regardless (see .admin-login-form) — a password field
+   stretched to this width would look like a bug, not a feature. */
 .admin-page{
-  max-width: 640px;
+  max-width: 1160px;
+}
+
+.admin-login-form{
+  max-width: 360px;
 }
 
 .admin-error{
@@ -2395,6 +2404,47 @@ main.layout{
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+}
+
+/* Each stat/chart/ranked-list becomes its own tile in a responsive grid
+   instead of one long stack — auto-fit sizes however many ~260px columns
+   actually fit, and auto-flow: dense backfills the gap a full-width tile
+   (.admin-tile-wide, the trend charts and the hour-of-day chart) leaves
+   beside it, rather than leaving that space empty until the next tile that
+   happens to come after it in the markup. */
+.admin-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-auto-flow: dense;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.admin-tile{
+  background: var(--bg-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+}
+
+.admin-tile h3{
+  margin: 0 0 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+/* The trend charts and the 24-bar hour-of-day chart — narrow columns squeeze
+   these into illegible slivers, so they claim the whole grid row regardless
+   of how many normal tiles would otherwise fit beside them. */
+.admin-tile-wide{
+  grid-column: 1 / -1;
+}
+
+.admin-tile .admin-total{
+  margin: 0 0 6px;
 }
 
 .admin-total{

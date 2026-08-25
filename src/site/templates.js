@@ -2017,7 +2017,7 @@ ${header('admin.html', false, false)}
   <div class="admin-page">
     <h1 class="podcasts-heading">Admin</h1>
 
-    <form id="admin-login-form" class="contact-form">
+    <form id="admin-login-form" class="contact-form admin-login-form">
       <label class="contact-field">
         <span>Password</span>
         <input class="contact-input" type="password" name="password" autocomplete="current-password" required />
@@ -2033,8 +2033,6 @@ ${header('admin.html', false, false)}
           <button id="admin-logout" class="roster-more" type="button">Log out</button>
         </div>
         <div id="admin-stats"><p class="page-intro">Loading…</p></div>
-        <div id="admin-referrers"></div>
-        <div id="admin-outbound"></div>
       </section>
 
       <section class="admin-section">
@@ -2054,8 +2052,6 @@ ${footer(sources, generatedAt)}
   var error = document.getElementById('admin-login-error');
   var dashboard = document.getElementById('admin-dashboard');
   var statsEl = document.getElementById('admin-stats');
-  var referrersEl = document.getElementById('admin-referrers');
-  var outboundEl = document.getElementById('admin-outbound');
   var draftsEl = document.getElementById('admin-drafts');
 
   function esc(s) {
@@ -2071,9 +2067,9 @@ ${footer(sources, generatedAt)}
     loadDrafts();
   }
 
-  // Shared by the three "top N" lists below — same <li>label <strong>count</strong>
-  // markup as the original path list, just parameterized on which field holds
-  // the label.
+  // Shared by every "top N" tile — same <li>label <strong>count</strong>
+  // markup regardless of which field holds the label, so adding one more
+  // breakdown (browser, OS, device...) never needs its own renderer.
   function rankedList(rows, labelKey) {
     if (!rows.length) return '<li>No data yet.</li>';
     return rows.map(function (r) {
@@ -2081,35 +2077,78 @@ ${footer(sources, generatedAt)}
     }).join('');
   }
 
+  // Shared by every fixed-order chart (14-day, 12-month, hour-of-day,
+  // day-of-week) — unlike rankedList, item order here is meaningful (a
+  // calendar, a clock, a week) and must never be sorted by count the way a
+  // "top N" list is, or the chart stops reading as a timeline.
+  function barRow(items, tooltip) {
+    var max = Math.max(1, items.reduce(function (m, it) { return Math.max(m, it.count); }, 0));
+    return '<div class="admin-bars">' + items.map(function (it) {
+      var pct = Math.round((it.count / max) * 100);
+      return '<div class="admin-bar" title="' + esc(tooltip(it)) + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
+    }).join('') + '</div>';
+  }
+
+  function tile(title, bodyHtml, wide) {
+    return '<div class="admin-tile' + (wide ? ' admin-tile-wide' : '') + '"><h3>' + esc(title) + '</h3>' + bodyHtml + '</div>';
+  }
+
   function loadStats() {
     fetch('/.netlify/functions/admin-stats', { credentials: 'same-origin' })
       .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
       .then(function (data) {
-        var maxDay = Math.max(1, data.days.reduce(function (m, d) { return Math.max(m, d.count); }, 0));
-        var bars = data.days.map(function (d) {
-          var pct = Math.round((d.count / maxDay) * 100);
-          // Uniques ride along in the tooltip rather than as a second bar —
-          // a two-series chart needs a legend and twice the width to stay
-          // readable, and "how many of today's views were the same handful
-          // of readers reloading" is a hover-away detail, not a headline one.
-          var title = esc(d.date) + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') +
-            ', ' + d.uniques + ' unique';
-          return '<div class="admin-bar" title="' + title + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
-        }).join('');
-        statsEl.innerHTML =
+        // Derived from data already being collected, not a new counter of its
+        // own — "pages per visit" is just views divided by uniques over the
+        // same 14-day window the daily chart already carries.
+        var last14Views = data.days.reduce(function (s, d) { return s + d.count; }, 0);
+        var last14Uniques = data.days.reduce(function (s, d) { return s + d.uniques; }, 0);
+        var perVisit = last14Uniques ? (last14Views / last14Uniques).toFixed(1) : '—';
+
+        var visitorTotal = data.visitors.new + data.visitors.returning;
+        var returnPct = visitorTotal ? Math.round((data.visitors.returning / visitorTotal) * 100) : 0;
+
+        var tiles = [];
+
+        tiles.push(tile('Overview',
           '<p class="admin-total"><strong>' + data.total + '</strong> total pageviews</p>' +
-          '<div class="admin-bars">' + bars + '</div>' +
-          '<h3>Most viewed pages</h3>' +
-          '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>';
+          '<p class="admin-total"><strong>' + data.outboundTotal + '</strong> outbound clicks</p>' +
+          '<p class="admin-total"><strong>' + returnPct + '%</strong> returning visitors (all-time)</p>' +
+          '<p class="admin-total"><strong>' + perVisit + '</strong> pages per visit (last 14 days)</p>'
+        ));
 
-        referrersEl.innerHTML =
-          '<h3>Traffic sources</h3>' +
-          '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>';
+        // Uniques ride along in the tooltip rather than as a second bar — a
+        // two-series chart needs a legend and twice the width to stay
+        // readable, and "how many of today's views were the same handful of
+        // readers reloading" is a hover-away detail, not a headline one.
+        tiles.push(tile('Last 14 days', barRow(data.days, function (d) {
+          return d.date + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') + ', ' + d.uniques + ' unique';
+        }), true));
 
-        outboundEl.innerHTML =
-          '<h3>Outbound clicks</h3>' +
-          '<p class="admin-total"><strong>' + data.outboundTotal + '</strong> clicks through to a source</p>' +
-          '<ul class="admin-path-list">' + rankedList(data.topOutbound, 'sourceName') + '</ul>';
+        tiles.push(tile('Last 12 months', barRow(data.months, function (m) {
+          return m.month + ': ' + m.count + ' view' + (m.count === 1 ? '' : 's');
+        }), true));
+
+        // Site time, not each visitor's own — see hourAndWeekday() in
+        // track.js. Labeled explicitly since a raw hour number alone would
+        // read as whatever timezone the person looking at the dashboard
+        // happens to assume.
+        tiles.push(tile('By hour of day (Eastern Time)', barRow(data.hours, function (h) {
+          return h.hour + ':00 — ' + h.count + ' view' + (h.count === 1 ? '' : 's');
+        }), true));
+
+        tiles.push(tile('By day of week', barRow(data.weekdays, function (w) {
+          return w.weekday + ': ' + w.count + ' view' + (w.count === 1 ? '' : 's');
+        })));
+
+        tiles.push(tile('Most viewed pages', '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>'));
+        tiles.push(tile('Traffic sources', '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>'));
+        tiles.push(tile('Outbound clicks by source', '<ul class="admin-path-list">' + rankedList(data.topOutbound, 'sourceName') + '</ul>'));
+        tiles.push(tile('Browsers', '<ul class="admin-path-list">' + rankedList(data.topBrowsers, 'browser') + '</ul>'));
+        tiles.push(tile('Operating systems', '<ul class="admin-path-list">' + rankedList(data.topOS, 'os') + '</ul>'));
+        tiles.push(tile('Device size', '<ul class="admin-path-list">' + rankedList(data.topDevices, 'device') + '</ul>'));
+        tiles.push(tile('Languages', '<ul class="admin-path-list">' + rankedList(data.topLanguages, 'language') + '</ul>'));
+
+        statsEl.innerHTML = '<div class="admin-grid">' + tiles.join('') + '</div>';
       })
       .catch(function () {
         statsEl.innerHTML = '<p class="page-intro">Could not load traffic stats.</p>';
