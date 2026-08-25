@@ -1,11 +1,12 @@
-name: Weekly roster stats
+name: Weekly roster and team stats
 
 on:
   schedule:
     # Tuesdays at 12:00 UTC (8am EDT / 7am EST) — after both Sunday's games
-    # and Monday Night Football have gone final, so ESPN's per-player season
-    # stats are fully settled before the Roster page reads them. Any earlier
-    # in the week risks catching a Monday-night player mid-game.
+    # and Monday Night Football have gone final, so ESPN's per-player and
+    # per-team season stats are fully settled before the Roster and Team
+    # Stats widget read them. Any earlier in the week risks catching a
+    # Monday-night player, or that game's box score, mid-game.
     - cron: '0 12 * * 2'
   workflow_dispatch: {}
 
@@ -31,6 +32,18 @@ jobs:
 
       - run: npm run roster-stats
 
+      # Refreshes the current season's team offense/defense totals and ranks
+      # for the sidebar's Team Stats widget (see src/lib/teamstats.js). Its
+      # own defense derivation re-fetches every completed box score each run
+      # rather than just the newest one, so this is the most expensive single
+      # step here — still cheap enough weekly, but not something to move to a
+      # more frequent cadence without also teaching it to fetch incrementally.
+      # continue-on-error, same as every other cache refresh in this repo: a
+      # bad week here should leave last week's cache in place, not fail the
+      # build.
+      - run: npm run team-stats
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}
@@ -40,7 +53,7 @@ jobs:
           git config user.name "roster-stats-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet && echo "no data changes" || git commit -m "Weekly roster stats update"
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Weekly roster and team stats update"
           git push
 
       - name: Deploy to Netlify
