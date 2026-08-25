@@ -8,6 +8,7 @@ import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
+import { loadTeamStatsCache, buildLeaders } from '../lib/teamstats.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -87,6 +88,14 @@ export async function buildSite() {
   const mentionCounts = countMentions(allSorted, rosterIndex);
   const games = await loadScheduleCache();
   const betting = await loadBettingCache();
+  // Null when `npm run team-stats` has never run (or its last run failed), and
+  // the sidebar then omits the widget entirely rather than rendering an empty
+  // shell. Leaders come off the roster cache rather than the stats fetch, so
+  // they cost nothing extra here.
+  const teamStatsCache = await loadTeamStatsCache();
+  const teamStats = teamStatsCache
+    ? { ...teamStatsCache, leaders: buildLeaders(rosterPlayers) }
+    : null;
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
@@ -111,6 +120,7 @@ export async function buildSite() {
       videos,
       games,
       betting,
+      teamStats,
       hasWeekly,
       isGameLive,
       rosterIndex,
@@ -123,7 +133,7 @@ export async function buildSite() {
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, isGameLive, liveGame };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, isGameLive, liveGame };
     await fs.writeFile(
       path.join(DIST_DIR, 'blog.html'),
       renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
@@ -142,19 +152,19 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'videos.html'),
-    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'how-it-works.html'),
-    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting }),
+    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
     'utf8',
   );
 
@@ -170,6 +180,7 @@ export async function buildSite() {
       videos,
       games,
       betting,
+      teamStats,
       rosterPlayers,
       mentionCounts,
     }),
@@ -224,7 +235,7 @@ export async function buildSite() {
   // the exact spot readers asked for it.
   await fs.writeFile(
     path.join(DIST_DIR, 'social-feed.html'),
-    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting }),
+    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats }),
     'utf8',
   );
 
