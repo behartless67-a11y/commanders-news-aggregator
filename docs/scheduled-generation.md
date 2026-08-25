@@ -57,16 +57,24 @@ in the admin panel (`/admin.html`) or via `npm run digest:approve` /
 | Task | When | Command |
 |---|---|---|
 | Weekly Blog draft | Fridays, 2:00 PM Eastern | `npm run digest` |
-| Game preview draft | Daily, 5:00 PM Eastern | `npm run preview` |
+| Game preview draft | Daily, 7:00 AM Eastern | `npm run preview` |
 
 `npm run preview` is safe to run every day — it checks the cached schedule
-for a game kicking off tomorrow and does nothing at all on the ~360 days a
-year that isn't true (see `gameTomorrow()` in `src/lib/gamewindow.js`). No
+for a game kicking off **today** and does nothing at all on the ~360 days a
+year that isn't true (see `gameToday()` in `src/lib/gamewindow.js`). No
 separate "is there a game" check is needed before running it.
 
 2:00 PM Friday, not 4:00 PM, is deliberate: it leaves a two-hour window to
 review and approve the draft before the 4:00 PM target you actually want
 readers to see it.
+
+**Game preview runs the morning of the game, not the evening before**
+(changed 2026-08-24) — a day-before generation always missed overnight and
+gameday-morning news (beat-writer "what to watch" pieces, injury-report
+buzz), which is exactly the freshest material a preview should be able to
+use. Every game on the schedule kicks off at noon Eastern or later except
+one 9:30 AM London game, which still gets a real review window before
+kickoff (about 2.5 hours), just a shorter one than every other week.
 
 ## The script
 
@@ -116,7 +124,7 @@ dialog lets you set the exact trigger and working directory):
   - Start in: `C:\path\to\repo`
 
 **Task 2 — Game preview draft**
-- Trigger: Daily, 5:00 PM
+- Trigger: Daily, 7:00 AM
 - Action: Start a program
   - Program: `powershell.exe`
   - Arguments: `-ExecutionPolicy Bypass -File "C:\path\to\repo\scheduled-post.ps1" -Task preview`

@@ -21,6 +21,7 @@
     "depth-chart": "node src/cli.js depth-chart",
     "schedule": "node src/cli.js schedule",
     "betting": "node src/cli.js betting",
+    "injuries": "node src/cli.js injuries",
     "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",
     "digest:list": "node src/cli.js digest list",

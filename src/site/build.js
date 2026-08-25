@@ -7,13 +7,15 @@ import { loadRosterCache } from '../lib/roster.js';
 import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
+import { loadInjuriesCache } from '../lib/injuries.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, PAGES } from './templates.js';
+import { listOriginals } from '../digest/originals.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, blogRiverItems, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -44,9 +46,28 @@ const HEADING = {
 
 export async function buildSite() {
   const items = await loadItems();
+
+  // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
+  // one that failed review, must never appear on the live site. See
+  // src/digest/ for the generation and review gate that sets this field.
+  const publishedDigests = (await listDigests())
+    .filter((d) => d.status === 'published')
+    .sort((a, b) => b.week.localeCompare(a.week));
+  const publishedPreviews = (await listPreviews())
+    .filter((p) => p.status === 'published')
+    .sort((a, b) => b.gameKey.localeCompare(a.gameKey));
+  const publishedOriginals = (await listOriginals())
+    .filter((o) => o.status === 'published')
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+
+  // Published Blog posts compete for river placement on their own publish
+  // date, same as any other item — not pinned above or below real headlines.
+  const blogItems = blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals);
+  const itemsWithBlog = { ...items, ...Object.fromEntries(blogItems.map((b) => [b.id, b])) };
+
   // Each page is capped to its most recent N rather than rendering the full
   // backlog the store has accumulated since the last prune.
-  const allSorted = sortedItems(items);
+  const allSorted = sortedItems(itemsWithBlog);
   const sorted = allSorted.slice(0, MAX_RIVER_ITEMS);
   const allSocial = sortedSocial(await loadSocial());
   const socialPosts = allSocial.slice(0, MAX_TICKER_POSTS);
@@ -60,6 +81,7 @@ export async function buildSite() {
   const rosterPlayers = await loadRosterCache();
   const rosterIndex = rosterPlayers.length ? buildRosterIndex(rosterPlayers, ROSTER_ALIASES) : null;
   const depthChart = await loadDepthChartCache();
+  const injuries = await loadInjuriesCache();
   // Full store, not the capped river — a player's mention count shouldn't
   // shrink just because a busy week pushed their one story past MAX_RIVER_ITEMS.
   const mentionCounts = countMentions(allSorted, rosterIndex);
@@ -68,19 +90,11 @@ export async function buildSite() {
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
-  // Only status: 'published' ever reaches dist/ — a draft awaiting review, or
-  // one that failed review, must never appear on the live site. See
-  // src/digest/ for the generation and review gate that sets this field.
-  const publishedDigests = (await listDigests())
-    .filter((d) => d.status === 'published')
-    .sort((a, b) => b.week.localeCompare(a.week));
-  const publishedPreviews = (await listPreviews())
-    .filter((p) => p.status === 'published')
-    .sort((a, b) => b.gameKey.localeCompare(a.gameKey));
-  // The Blog tab/page exist if there's a weekly recap, a preview, or a live
-  // game post — a game-day-only blog (no weekly digest ever approved yet)
-  // should still be reachable, not hidden behind the weekly gate.
-  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || Boolean(liveGame?.entries?.length);
+  // The Blog tab/page exist if there's a weekly recap, a preview, an
+  // original post, or a live game post — a game-day-only blog (no weekly
+  // digest ever approved yet) should still be reachable, not hidden behind
+  // the weekly gate.
+  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || publishedOriginals.length > 0 || Boolean(liveGame?.entries?.length);
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
@@ -110,12 +124,19 @@ export async function buildSite() {
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
     const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, isGameLive, liveGame };
-    await fs.writeFile(path.join(DIST_DIR, 'blog.html'), renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews }), 'utf8');
+    await fs.writeFile(
+      path.join(DIST_DIR, 'blog.html'),
+      renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
+      'utf8',
+    );
     for (const record of publishedDigests) {
       await fs.writeFile(path.join(DIST_DIR, `blog-${record.week}.html`), renderWeeklyPost(record, opts), 'utf8');
     }
     for (const record of publishedPreviews) {
       await fs.writeFile(path.join(DIST_DIR, `blog-preview-${record.gameKey}.html`), renderPreviewPost(record, opts), 'utf8');
+    }
+    for (const record of publishedOriginals) {
+      await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, opts), 'utf8');
     }
   }
 
@@ -162,6 +183,12 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'injury-report.html'),
+    renderInjuryReportPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, injuries }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'contact.html'),
     renderContactPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
@@ -204,10 +231,33 @@ export async function buildSite() {
   const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
+  // Every real page just written above, for Search Console to crawl from —
+  // not admin.html, which robots.txt below excludes from crawling entirely.
+  const staticPaths = [
+    'index.html', 'team-sources.html', 'national-coverage.html',
+    'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
+    'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
+    'music.html', 'beat-writers.html',
+  ];
+  const sitemapEntries = [
+    ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),
+    ...(hasWeekly ? [{ path: 'blog.html', lastmod: generatedAt }] : []),
+    ...publishedDigests.map((r) => ({ path: `blog-${r.week}.html`, lastmod: r.reviewedAt || r.generatedAt })),
+    ...publishedPreviews.map((r) => ({ path: `blog-preview-${r.gameKey}.html`, lastmod: r.reviewedAt || r.generatedAt })),
+    ...publishedOriginals.map((r) => ({ path: `blog-original-${r.slug}.html`, lastmod: r.publishedAt })),
+  ];
+  await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
+  await fs.writeFile(
+    path.join(DIST_DIR, 'robots.txt'),
+    `User-agent: *\nDisallow: /admin.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+    'utf8',
+  );
+
   for (const asset of [
     'site.css',
     'site.js',
     'logo.png',
+    'og-image.png',
     'apple-touch-icon.png',
     'favicon-32.png',
     'favicon-16.png',

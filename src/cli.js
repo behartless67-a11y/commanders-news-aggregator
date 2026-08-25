@@ -16,6 +16,7 @@ import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './li
 import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
+import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { updateLiveGame } from './digest/live-generate.js';
 import { isGameWindowActive } from './lib/gamewindow.js';
 
@@ -35,6 +36,7 @@ Commanders headline river
   npm run depth-chart        refresh the cached commanders.com depth chart
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
+  npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
   node src/cli.js gamecheck  print true/false: is a Commanders game in its live window right now
 
@@ -276,6 +278,16 @@ async function main() {
         log.ok(`betting: cached line for Commanders vs ${line.opponent}`);
       } else {
         log.warn('betting: fetch returned nothing (bye week, offseason, or a fetch issue) — leaving the existing cache in place');
+      }
+      break;
+    }
+    case 'injuries': {
+      const entries = await fetchInjuries();
+      if (entries) {
+        await saveInjuriesCache(entries);
+        log.ok(`injuries: cached ${entries.length} player(s) currently listed with an injury`);
+      } else {
+        log.warn('injuries: fetch failed — leaving the existing cache in place');
       }
       break;
     }

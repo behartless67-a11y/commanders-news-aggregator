@@ -4,8 +4,8 @@ import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
 
-const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage' };
-const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national' };
+const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Original' };
+const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
 /**
@@ -16,7 +16,13 @@ const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) 
  * preview has no page context to resolve a relative one against.
  */
 function socialMetaTags({ title, description, siteUrl }) {
-  const image = `${siteUrl}/logo.png`;
+  // Not logo.png directly — that's a transparent PNG meant to sit on the
+  // hero photo, so a client with no page context to render it against (a
+  // Slack/iMessage/Twitter preview card) showed it on whatever background
+  // that client defaults to, usually white. og-image.png is the same logo
+  // pre-composited onto the site's own near-black background (--bg,
+  // #14100f) at the standard 1200x630 social-card size instead.
+  const image = `${siteUrl}/og-image.png`;
   return `<meta property="og:title" content="${escapeHtml(title)}">
 <meta property="og:description" content="${escapeHtml(description)}">
 <meta property="og:image" content="${escapeHtml(image)}">
@@ -111,7 +117,7 @@ function itemCard(item, index, rosterIndex) {
         <span class="card-source">${escapeHtml(item.sourceName)}</span>
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
-      <h3 class="card-headline"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
+      <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ' target="_blank" rel="noopener noreferrer"'}>${escapeHtml(item.title)}</a></h3>
       ${excerptMarkup}
     </article>`;
 }
@@ -146,11 +152,16 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
   const scheduleLink = `\n      <a href="index.html#schedule" class="nav-jump">Schedule</a>`;
   const podcastsLink = `\n      <a href="podcasts.html" class="nav-jump"${activeFile === 'podcasts.html' ? ' aria-current="page"' : ''}>Podcasts</a>`;
   const musicLink = `\n      <a href="music.html" class="nav-jump"${activeFile === 'music.html' ? ' aria-current="page"' : ''}>Music</a>`;
-  // Depth Chart is a second view of the same subject (see rosterSubTabs()
-  // in templates.js), not a separate nav destination — this stays
-  // highlighted on both so the nav doesn't go dark on the one page that
-  // isn't literally named "Roster".
-  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' || activeFile === 'depth-chart.html' ? ' aria-current="page"' : ''}>Roster</a>`;
+  // "Player Updates" is the umbrella nav label for the Roster/Depth
+  // Chart/Injury Tracker group (see rosterSubTabs() in templates.js) — the
+  // URL and the Roster sub-tab's own label stay "roster.html"/"Roster"
+  // since that's still an accurate name for the player-list sub-page
+  // itself, same "label moved, internals didn't" pattern as Blog/weekly.
+  // Depth Chart and Injury Tracker are second/third views of the same
+  // subject, not separate nav destinations — this stays highlighted on all
+  // three so the nav doesn't go dark on a page that isn't literally named
+  // "Roster".
+  const rosterLink = `\n      <a href="roster.html" class="nav-jump"${activeFile === 'roster.html' || activeFile === 'depth-chart.html' || activeFile === 'injury-report.html' ? ' aria-current="page"' : ''}>Player Updates</a>`;
   const howItWorksLink = `\n      <a href="how-it-works.html" class="nav-jump"${activeFile === 'how-it-works.html' ? ' aria-current="page"' : ''}>How It Works</a>`;
   // Phone-only: on the main river pages the video rail is dropped from the
   // sidebar at this width (see .page-river .widget-videos in site.css) so the
@@ -461,8 +472,6 @@ function footer(sources, generatedAt) {
     .filter((s) => s.category === 'league')
     .map((s) => `<li><a href="${escapeHtml(s.homepage)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.name)}</a></li>`)
     .join('');
-  const teamNames = sources.filter((s) => s.category === 'team').map((s) => s.name).join(', ');
-  const leagueNames = sources.filter((s) => s.category === 'league').map((s) => s.name).join(', ');
 
   return `<footer class="site-footer">
   <div class="wrap">
@@ -476,19 +485,8 @@ function footer(sources, generatedAt) {
         <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt every few hours.</p>
       </div>
       <div class="footer-col">
-        <h3>Reading the badges</h3>
-        <div class="legend-row">
-          <span class="badge badge-team">Team Source</span>
-          <span class="desc">${escapeHtml(teamNames)}</span>
-        </div>
-        <div class="legend-row">
-          <span class="badge badge-national">National Coverage</span>
-          <span class="desc">${escapeHtml(leagueNames)}</span>
-        </div>
-      </div>
-      <div class="footer-col">
         <h3>Team Sources</h3>
-        <ul class="source-list">${teamLinks}</ul>
+        <ul class="source-list source-list-columns">${teamLinks}</ul>
       </div>
       <div class="footer-col">
         <h3>National Coverage</h3>
@@ -503,8 +501,8 @@ function footer(sources, generatedAt) {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Headlines link to their original publishers. The Burgundy Wire is an independent fan project, not affiliated with the Washington Commanders or the NFL.</span>
-      <span>&copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire &middot; <a href="admin.html" class="footer-admin-link">Admin</a></span>
+      <span>Headlines link to their original publishers. The Burgundy Wire is one fan's independent project, built and run solo, not an official team site and not affiliated with the Washington Commanders or the NFL, just deeply, unreasonably invested.</span>
+      <span><a href="admin.html" class="footer-admin-link">Admin</a> &middot; &copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
     </div>
   </div>
 </footer>`;
@@ -529,6 +527,15 @@ function weekLabel(record) {
 }
 
 /**
+ * A hand-written post has no model and no "all claims sourced above" to
+ * disclose — this exists only so a reader lands on the same reassurance in
+ * reverse: this one wasn't generated at all.
+ */
+function originalDisclosure() {
+  return `<p class="digest-disclosure">Written by hand, not generated. <a href="blog.html">All posts</a></p>`;
+}
+
+/**
  * Model citation markers ("[3, 11]") are for validation, not the reading
  * view — the consolidated source list at the end of the post carries that
  * job instead. Also spaces out ESPN's own play-by-play abbreviation style
@@ -542,6 +549,54 @@ const stripInlineCites = (text) =>
   String(text || '')
     .replace(/\s*\[[\d,\s]+\]/g, '')
     .replace(/\b([A-Z])\.([A-Z][a-z])/g, '$1. $2');
+
+/**
+ * Published Blog posts (weekly recaps and game previews), reshaped into the
+ * same item fields itemCard() already knows how to render — so a new post
+ * competes for river placement by its own publish date instead of getting
+ * pinned above or below real headlines. `internal: true` is the only field
+ * a normal collected item never has; it's what tells itemCard() to link
+ * same-site instead of opening a new tab.
+ */
+export function blogRiverItems(digests, previews, originals = []) {
+  const fromDigest = (record) => ({
+    id: `blog-digest-${record.week}`,
+    sourceId: 'blog',
+    sourceName: 'The Burgundy Wire',
+    category: 'blog',
+    url: `blog-${record.week}.html`,
+    title: record.digest.headline,
+    excerpt: firstSentences(stripInlineCites(record.digest.lede), 2),
+    publishedAt: record.reviewedAt || record.generatedAt,
+    internal: true,
+  });
+  const fromPreview = (record) => ({
+    id: `blog-preview-${record.gameKey}`,
+    sourceId: 'blog',
+    sourceName: 'The Burgundy Wire',
+    category: 'blog',
+    url: `blog-preview-${record.gameKey}.html`,
+    title: record.digest.headline,
+    excerpt: firstSentences(stripInlineCites(record.digest.lede), 2),
+    publishedAt: record.reviewedAt || record.generatedAt,
+    internal: true,
+  });
+  // category: 'original' rather than 'blog' — same page placement (see
+  // PAGES below), but its own badge text on the river card so a hand-written
+  // post reads as distinct from an AI-generated recap at a glance.
+  const fromOriginal = (record) => ({
+    id: `blog-original-${record.slug}`,
+    sourceId: 'blog',
+    sourceName: 'The Burgundy Wire',
+    category: 'original',
+    url: `blog-original-${record.slug}.html`,
+    title: record.title,
+    excerpt: firstSentences(record.paragraphs[0], 2),
+    publishedAt: record.publishedAt,
+    internal: true,
+  });
+  return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal)];
+}
 
 /**
  * Threads are an internal organizing tool for citations, not a reader-facing
@@ -636,6 +691,23 @@ function previewArticleBody(record, rosterIndex, headingTag = 'h2') {
       <p class="digest-lede">${linkPlayers(stripInlineCites(digest.lede), rosterIndex)}</p>
 ${threads}
 ${sourceFooter}
+    </article>`;
+}
+
+/**
+ * Hand-written posts (src/digest/originals.js) — no threads, no citations,
+ * no corpus; just paragraphs someone actually typed. The "Original" badge is
+ * the one visible signal that separates this from the AI-generated recap
+ * and preview posts sharing the same Blog archive.
+ */
+function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
+  const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
+  return `
+    <article class="digest-post original-post">
+      <p class="original-badge-row"><span class="badge badge-blog">Original</span></p>
+      <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
+      <p class="digest-week">${escapeHtml(formatDate(record.publishedAt))}</p>
+${paragraphs}
     </article>`;
 }
 
@@ -856,16 +928,67 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null, previewRecords = [] }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
+  // The opening paragraph alone is only 2 sentences — pull the third from the
+  // paragraph after it rather than stopping short of the requested length.
+  const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
+  const rail = sidebar(videos, games, betting);
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(excerpt)}">
+${socialMetaTags({ title: `${record.title} — ${siteName}`, description: excerpt, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('blog.html', true, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+${originalArticleBody(record, rosterIndex, 'h1')}
+    ${originalDisclosure()}
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
   const rail = sidebar(videos, games, betting);
   const livePost = liveGamePost(liveGame, rosterIndex);
-  // Weekly digests and previews are two different record shapes sharing one
-  // reverse-chronological stream — a preview published Thursday belongs
-  // between last week's recap and this week's, not shoved to the end just
-  // because it's a different content type.
+  // Weekly digests, previews, and originals are three different record
+  // shapes sharing one reverse-chronological stream — a preview published
+  // Thursday belongs between last week's recap and this week's, not shoved
+  // to the end just because it's a different content type.
   const dated = [
     ...records.map((r) => ({ sortKey: r.week, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
     ...previewRecords.map((r) => ({ sortKey: r.gameKey, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...originalRecords.map((r) => ({ sortKey: r.publishedAt, html: `${originalArticleBody(r, rosterIndex, 'h2')}\n    ${originalDisclosure()}` })),
   ].sort((a, b) => b.sortKey.localeCompare(a.sortKey));
   const posts = [livePost, ...dated.map((d) => d.html)].filter(Boolean);
   // Same progressive-reveal convention as the river/roster, at the whole-post
@@ -1097,11 +1220,12 @@ function rosterCard(player, mentionInfo, { showMentionBadge = true, extra = fals
     </article>`;
 }
 
-/** Shared by the Roster and Depth Chart pages — one subject, two views, not two unrelated nav items. */
+/** Shared by the Roster, Depth Chart, and Injury Report pages — one subject, three views, not three unrelated nav items. */
 function rosterSubTabs(active) {
   return `<div class="roster-subtabs">
     <a href="roster.html"${active === 'roster' ? ' aria-current="page"' : ''}>Roster</a>
     <a href="depth-chart.html"${active === 'depth-chart' ? ' aria-current="page"' : ''}>Depth Chart</a>
+    <a href="injury-report.html"${active === 'injury-report' ? ' aria-current="page"' : ''}>Injury Tracker</a>
   </div>`;
 }
 
@@ -1303,6 +1427,94 @@ ${header('depth-chart.html', hasWeekly, isGameLive)}
     ${rosterSubTabs('depth-chart')}
     <p class="page-intro page-intro-wide">${escapeHtml(description)}</p>
     ${sections}
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * Out/IR share the same "not playing" severity, Doubtful sits alone in the
+ * middle, and Questionable/PUP/NFI are all "could go either way" — three
+ * visual tiers, not five, since a reader scanning this wants "how worried
+ * should I be", not to memorize which of five words means what.
+ */
+const INJURY_STATUS_CLASS = {
+  Out: 'injury-status-out',
+  IR: 'injury-status-out',
+  Doubtful: 'injury-status-doubtful',
+  Questionable: 'injury-status-questionable',
+  PUP: 'injury-status-questionable',
+  NFI: 'injury-status-questionable',
+};
+
+function injuryReportTable(entries) {
+  if (!entries.length) {
+    return '<p class="page-intro">No players currently listed with an injury.</p>';
+  }
+  const rows = entries
+    .map((e) => {
+      const statusClass = INJURY_STATUS_CLASS[e.status] || 'injury-status-questionable';
+      // Each piece escaped individually, then joined with a raw entity —
+      // escaping the already-joined string would turn "&middot;" itself
+      // into literal "&amp;middot;" text instead of a rendered dot.
+      const detail = [e.bodyPart, e.notes].filter(Boolean).map(escapeHtml).join(' &middot; ');
+      return `<tr>
+        <td>${escapeHtml(e.name)}</td>
+        <td>${escapeHtml(e.position || '')}</td>
+        <td><span class="injury-status ${statusClass}">${escapeHtml(e.status)}</span></td>
+        <td>${detail || '&mdash;'}</td>
+      </tr>`;
+    })
+    .join('\n');
+  return `<div class="depth-chart-scroll">
+      <table class="depth-chart-table injury-table">
+        <thead><tr><th>Player</th><th>Pos</th><th>Status</th><th>Injury</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+export function renderInjuryReportPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, injuries = [] }) {
+  const description = "Who's currently hurt on the Commanders, and how serious it looks.";
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Injury Tracker — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Injury Tracker — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('injury-report.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="roster-page">
+    <h1 class="podcasts-heading">Injury Tracker</h1>
+    ${rosterSubTabs('injury-report')}
+    <p class="page-intro page-intro-wide">${escapeHtml(description)} Pulled from a third-party read on the same injury designations teams report, not commanders.com's own report directly.</p>
+    ${injuryReportTable(injuries)}
   </div>
 </main>
 
@@ -1985,13 +2197,13 @@ ${header('social-feed.html', hasWeekly, isGameLive)}
 </div>
 
 <main class="layout${rail ? '' : ' layout-wide'}">
-  <div class="river-heading-group">
-    <h1 class="podcasts-heading">Social Feed</h1>
-    <span class="river-heading-sep" aria-hidden="true">|</span>
-    <a class="river-heading-link" href="index.html">Latest Headlines</a>
-  </div>
-  <p class="page-intro page-intro-wide social-feed-intro">Every post from the ticker up top, merged into one list, newest first. No headlines, just the reporters. Updates on the same schedule as the ticker, every two hours.</p>
   <div class="social-feed-page">
+    <div class="river-heading-group">
+      <h1 class="podcasts-heading">Social Feed</h1>
+      <span class="river-heading-sep" aria-hidden="true">|</span>
+      <a class="river-heading-link" href="index.html">Latest Headlines</a>
+    </div>
+    <p class="page-intro page-intro-wide">Every post from the ticker up top, merged into one list, newest first. No headlines, just the reporters. Updates on the same schedule as the ticker, every two hours.</p>
     <ul class="social-feed-list${collapsed ? ' is-collapsed' : ''}">${items || ''}
     </ul>
     ${!socialPosts.length ? '<p class="river-empty">No posts yet.</p>' : ''}
@@ -2053,8 +2265,8 @@ export function renderPage(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(siteName)} — Washington Commanders News</title>
-<meta name="description" content="Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.">
-${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: 'Every Commanders headline, one page, updated nightly. Aggregated from team and national sources.', siteUrl })}
+<meta name="description" content="The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.">
+${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2133,6 +2345,29 @@ export function renderRss(items, { siteName, siteUrl, generatedAt }) {
   ${entries}
 </channel>
 </rss>`;
+}
+
+/**
+ * `entries` is every real page build.js just wrote to dist/, static pages
+ * and per-post pages alike — not the same list as PAGES, which is only the
+ * three river filters. `lastmod` is optional per entry (a genuinely static
+ * page like Contact has no meaningful "last modified") — Google treats a
+ * missing lastmod as "unknown", never as an error.
+ */
+export function renderSitemap(entries, { siteUrl }) {
+  const urls = entries
+    .map(
+      (e) => `
+  <url>
+    <loc>${escapeHtml(`${siteUrl}/${e.path}`)}</loc>
+    ${e.lastmod ? `<lastmod>${escapeHtml(e.lastmod.slice(0, 10))}</lastmod>` : ''}
+  </url>`,
+    )
+    .join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}
+</urlset>`;
 }
 
 export { PAGES };
