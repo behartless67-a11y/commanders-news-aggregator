@@ -2381,12 +2381,22 @@ main.layout{
    single-column stack of stats and the login form alone. The login form
    itself stays narrow regardless (see .admin-login-form) — a password field
    stretched to this width would look like a bug, not a feature. */
+/* margin: 0 auto on both — main.layout.layout-wide only sets a single grid
+   column, it doesn't center what's inside it, so a block with its own
+   max-width and no auto margins sits flush against the left edge with all
+   the reclaimed width as a dead gap on the right. Text inside stays
+   left-aligned throughout (headings, the ranked lists, the login form's own
+   labels) — a wide screen needed the block itself centered, not every line
+   of a data grid re-aligned to the middle, which would fight the
+   left-to-right scan a ranked list or a form actually reads by. */
 .admin-page{
   max-width: 1160px;
+  margin: 0 auto;
 }
 
 .admin-login-form{
   max-width: 360px;
+  margin: 0 auto;
 }
 
 .admin-error{
