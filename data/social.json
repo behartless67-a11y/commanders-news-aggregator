@@ -3913,5 +3913,43 @@
     "images": [],
     "publishedAt": "2026-08-25T15:24:10.000Z",
     "collectedAt": "2026-08-25T16:24:53.285Z"
+  },
+  "social-906d16c3d492": {
+    "id": "social-906d16c3d492",
+    "url": "https://x.com/john_keim/status/2092297328866550163",
+    "text": "Every team's 53-man roster projection (turned in Sunday; ran Monday; things can change)... 41/2026-nfl-53-man-roster-projections-every-team-positions-cuts",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-25T17:05:30.000Z",
+    "collectedAt": "2026-08-25T18:24:02.237Z"
+  },
+  "social-5f04d5e50dbe": {
+    "id": "social-5f04d5e50dbe",
+    "url": "https://x.com/BenStandig/status/2092303040556491094",
+    "text": "Published 53-player projection 2.0 on Monday. Had Will Harris on the outside. Interesting questions remain at WR, OL, RB, LB, and honestly, every room except TE, ST, and now S. commanders-53-man-roster-projection-88d",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/157/337/300/016/309/original/bc0ee4ea9344c4b6.jpg"
+    ],
+    "publishedAt": "2026-08-25T17:28:12.000Z",
+    "collectedAt": "2026-08-25T18:24:03.617Z"
+  },
+  "social-591bf0411db4": {
+    "id": "social-591bf0411db4",
+    "url": "https://x.com/RichEisenShow/status/2092304163342557334",
+    "text": "💻 @ChaseDaniel@twitter.com Will Jayden Daniels bounce back from his injury-filled 2025 and regain his rookie year form? #NFL #RaiseHail",
+    "handle": "RichEisenShow",
+    "author": "Rich Eisen Show",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-08-25T17:32:40.000Z",
+    "collectedAt": "2026-08-25T18:24:15.670Z"
   }
 }
