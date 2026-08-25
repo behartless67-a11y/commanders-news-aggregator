@@ -419,6 +419,39 @@ main.layout{
   margin: 0;
 }
 
+.river-heading-group{
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.river-heading-sep{
+  color: var(--text-faint);
+  font-weight: 400;
+}
+
+/* Burgundy background rather than burgundy text — the color itself is too
+   close to the page's near-black background to read as plain text, so it
+   gets the same burgundy-bg/gold-text pairing as badge-team elsewhere. */
+.river-heading-link{
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  background: var(--burgundy);
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.river-heading-link:hover{
+  background: var(--burgundy-600);
+}
+
 .river-updated{
   font-size: 12.5px;
   color: var(--text-faint);
@@ -1464,6 +1497,118 @@ main.layout{
 }
 
 .beat-more:hover{
+  background: var(--burgundy);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ---------- Social Feed ----------
+   Same ticker posts as the marquee up top, merged into one plain
+   chronological list instead of a scrolling strip. */
+.social-feed-page{
+  max-width: 680px;
+}
+
+/* A sibling of .social-feed-page and the sidebar within main.layout's own
+   grid, not nested inside either — grid-column: 1 / -1 spans across both
+   the list column and the video/schedule rail, same as the Beat Writers
+   page's own full-width description. */
+.social-feed-intro{
+  grid-column: 1 / -1;
+}
+
+.social-feed-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-feed-list.is-collapsed .social-feed-post-extra{ display: none; }
+.social-feed-list.is-collapsed .social-feed-post-extra.is-revealed{ display: flex; }
+
+.social-feed-post{
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.social-feed-avatar{
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.social-feed-avatar-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--gold);
+  background: rgba(90,20,20,0.35);
+  border: 1px solid rgba(255,182,18,0.3);
+}
+
+.social-feed-body{
+  display: block;
+  min-width: 0;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.social-feed-head{
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.social-feed-handle{
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--gold);
+}
+
+.social-feed-time{
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.social-feed-text{
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.social-feed-post:hover .social-feed-text{
+  color: var(--gold);
+}
+
+.social-feed-more{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 0 4px;
+  padding: 7px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.social-feed-more:hover{
   background: var(--burgundy);
   border-color: var(--gold);
   color: var(--gold);

@@ -145,6 +145,7 @@
   // batch of players should chase.
   setupReveal('.roster-list', '.roster-more', 'roster-row-extra', '.widget-videos');
   setupReveal('.blog-list', '.blog-more', 'blog-post-extra', '.widget-videos');
+  setupReveal('.social-feed-list', '.social-feed-more', 'social-feed-post-extra');
 
   /**
    * The Beat Writers page has several independent list+button pairs on one

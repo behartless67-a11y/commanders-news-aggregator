@@ -13,7 +13,7 @@ import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
-import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, PAGES } from './templates.js';
+import { renderPage, renderRss, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -188,6 +188,16 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'beat-writers.html'),
     renderBeatWritersPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial }),
+    'utf8',
+  );
+
+  // A reader-requested "just the social posts, chronologically" view.
+  // Deliberately not a top-nav tab — linked inline from the river heading
+  // instead (see the river-heading-group in renderPage()), since that's
+  // the exact spot readers asked for it.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'social-feed.html'),
+    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting }),
     'utf8',
   );
 

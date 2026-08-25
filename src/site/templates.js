@@ -61,6 +61,10 @@ const BLOG_BATCH = Number(process.env.BLOG_BATCH || 1);
 const BEAT_INITIAL = Number(process.env.BEAT_INITIAL || 5);
 const BEAT_BATCH = Number(process.env.BEAT_BATCH || 5);
 
+/** Same progressive-reveal convention again, for the single chronological feed (Social page) mixing every watched account together. */
+const SOCIAL_FEED_INITIAL = Number(process.env.SOCIAL_FEED_INITIAL || 20);
+const SOCIAL_FEED_BATCH = Number(process.env.SOCIAL_FEED_BATCH || 20);
+
 /**
  * `index` here is the card's position in the river (for the RIVER_INITIAL
  * cutoff) — unrelated to `rosterIndex`, the player name → profile-link
@@ -1911,6 +1915,103 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
+const SOCIAL_ACCOUNTS_BY_HANDLE = new Map(SOCIAL_ACCOUNTS.map((a) => [a.handle, a]));
+
+/**
+ * Requested directly by a reader on social media: one page with nothing
+ * but the ticker's own posts, chronological, no headlines mixed in. Reuses
+ * the ticker's own post data and the Beat Writers page's avatar lookup, but
+ * as one merged list instead of per-reporter columns or a scrolling strip.
+ */
+function socialFeedPost(post, extra) {
+  const account = SOCIAL_ACCOUNTS_BY_HANDLE.get(post.handle);
+  const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
+  const avatar = account?.avatar
+    ? `<img class="social-feed-avatar" src="${escapeHtml(account.avatar)}" alt="" width="44" height="44" loading="lazy" />`
+    : `<span class="social-feed-avatar social-feed-avatar-placeholder" aria-hidden="true">${escapeHtml(post.handle.charAt(0))}</span>`;
+  return `
+      <li class="social-feed-post${extra ? ' social-feed-post-extra' : ''}">
+        ${avatar}
+        <a class="social-feed-body" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+          <span class="social-feed-head">
+            <span class="social-feed-handle">@${escapeHtml(post.handle)}</span>
+            ${when ? `<span class="social-feed-time">${escapeHtml(when)}</span>` : ''}
+          </span>
+          <span class="social-feed-text">${escapeHtml(post.text)}</span>
+        </a>
+      </li>`;
+}
+
+export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null }) {
+  const rail = sidebar(videos, games, betting);
+  const collapsed = socialPosts.length > SOCIAL_FEED_INITIAL;
+  const items = socialPosts.map((p, i) => socialFeedPost(p, i >= SOCIAL_FEED_INITIAL)).join('');
+  const nextBatch = Math.min(SOCIAL_FEED_BATCH, socialPosts.length - SOCIAL_FEED_INITIAL);
+  const moreButton = collapsed
+    ? `
+      <button class="social-feed-more" type="button" data-batch="${SOCIAL_FEED_BATCH}">
+        <span>Show ${nextBatch} more</span>
+        <svg class="river-more-chevron" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+      </button>`
+    : '';
+  const description = 'Every post from the ticker, one merged chronological feed instead of a scrolling strip.';
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Feed — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Social Feed — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+<noscript><style>
+  .social-feed-list.is-collapsed .social-feed-post-extra{ display: flex; }
+  .social-feed-list.is-collapsed + .social-feed-more{ display: none; }
+</style></noscript>
+</head>
+<body>
+
+<div class="hero">
+${header('social-feed.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div class="river-heading-group">
+    <h1 class="podcasts-heading">Social Feed</h1>
+    <span class="river-heading-sep" aria-hidden="true">|</span>
+    <a class="river-heading-link" href="index.html">Latest Headlines</a>
+  </div>
+  <p class="page-intro page-intro-wide social-feed-intro">Every post from the ticker up top, merged into one list, newest first. No headlines, just the reporters. Updates on the same schedule as the ticker, every two hours.</p>
+  <div class="social-feed-page">
+    <ul class="social-feed-list${collapsed ? ' is-collapsed' : ''}">${items || ''}
+    </ul>
+    ${!socialPosts.length ? '<p class="river-empty">No posts yet.</p>' : ''}
+    ${moreButton}
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
 export function renderPage(
   items,
   {
@@ -1983,7 +2084,11 @@ ${ticker(socialPosts)}
 <main class="layout page-river${rail ? '' : ' layout-wide'}">
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
     <div class="river-heading-row">
-      <h2 class="river-heading">${escapeHtml(heading)}</h2>
+      <div class="river-heading-group">
+        <h2 class="river-heading">${escapeHtml(heading)}</h2>
+        <span class="river-heading-sep" aria-hidden="true">|</span>
+        <a class="river-heading-link" href="social-feed.html">Social Feed</a>
+      </div>
       <div class="river-updated"><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
     </div>
 ${cards || '<p class="river-empty">No items yet — run `npm run collect` first.</p>'}${moreButton}
