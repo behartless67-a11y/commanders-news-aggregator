@@ -83,11 +83,22 @@ img, svg{ display:block; max-width:100%; }
   z-index: 1;
 }
 
-/* ---------- Header ---------- */
+/* ---------- Header ----------
+   Sized to run about a third shorter than the original hero (~421px → ~285px
+   on a wide desktop) after a reader wrote in that it was too tall — taken in
+   two passes, 25% then a further 10%. The cut is deliberately uneven rather
+   than a flat scale on every value: the logo and the surrounding whitespace
+   absorb almost all of it (the logo alone gives back 90px of the ~136px),
+   while the kicker, tagline, and nav labels scale only slightly, since
+   scaling type by the same factor would have taken the nav to ~8px and the
+   kicker below that. The whitespace is now at its floor — if this needs to
+   come down again, .brand-logo is the only lever left, and below ~140px the
+   wordmark stops out-weighing the tagline and the hero loses its focal
+   point. Retune here, not in the type sizes. */
 .site-header{
   border-bottom: 1px solid var(--border-soft);
   background: linear-gradient(180deg, rgba(90,20,20,0.18), transparent);
-  padding: 36px 0 0;
+  padding: 18px 0 0;
 }
 
 .header-inner{
@@ -96,13 +107,16 @@ img, svg{ display:block; max-width:100%; }
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
-.brand{ display:flex; flex-direction: column; align-items:center; gap:10px; }
+.brand{ display:flex; flex-direction: column; align-items:center; gap:5px; }
 
+/* ~0.65 of the original clamp(140px, 20vw, 260px) — all three stops scaled by
+   the same factor so the logo shrinks proportionally across the whole range
+   rather than snapping at the clamp boundaries. */
 .brand-logo{
-  height: clamp(140px, 20vw, 260px);
+  height: clamp(92px, 13vw, 170px);
   width: auto;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,1));
 }
@@ -110,8 +124,8 @@ img, svg{ display:block; max-width:100%; }
 /* Real text instead of baked into the logo art — legible at any size and
    unaffected by the logo's drop-shadow filter. */
 .brand-kicker{
-  margin: 4px 0 0;
-  font-size: 13px;
+  margin: 2px 0 0;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -139,14 +153,14 @@ img, svg{ display:block; max-width:100%; }
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 /* Deliberately lighter and smaller than the logo — the logo is meant to read
    as the dominant element, not compete with this. */
 .tagline-big{
   margin: 0;
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: clamp(15px, 1.6vw, 21px);
   line-height: 1.15;
   color: var(--gold);
   font-weight: 600;
@@ -195,7 +209,7 @@ img, svg{ display:block; max-width:100%; }
      border-bottom, so uneven left/right padding (the old nav-jump override
      below used to add extra padding-left for its own divider) throws the
      underline visibly off-center under the text. */
-  padding: 9px 14px;
+  padding: 7px 14px;
   font-size: 12.5px;
   font-weight: 600;
   text-transform: uppercase;
@@ -885,6 +899,173 @@ main.layout{
   margin: 0 0 10px;
 }
 
+/* ---------- Team stats widget ----------
+   Offense/Defense behind a radio toggle rather than both stacked — see
+   teamStatsWidget() in templates.js for why (rail height) and for why the two
+   sides don't carry the same information (ESPN publishes no opponent ranks).
+   Sits above the schedule because the schedule runs a full season of rows. */
+/* No card at all: no fill, no border, no shadow. The block reads as part of the
+   rail rather than a panel sitting between the video widget and the schedule.
+   No local ink overrides either — with the page background showing through, the
+   inherited light-on-dark values are already right, so --text/--text-muted/
+   --text-faint stay as the theme defines them.
+   `padding: 0` rather than keeping .widget's `14px 18px`: the schedule below is
+   deliberately not a card either (see .widget-schedule) and sits flush to the
+   rail edge, so any horizontal padding here would indent the stats further in
+   than everything beneath them.
+   Selector is doubled (.widget.widget-teamstats) on purpose. This block sits
+   above .widget in the file, and at equal specificity .widget's own
+   `background` and `border` shorthand would win — which is what previously
+   rendered a dark card behind this. Doubling makes it order-independent rather
+   than dependent on staying below .widget the way .widget-videos silently is. */
+.widget.widget-teamstats{
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.widget-teamstats h2{
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  margin: 0 0 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ts-season{
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+/* Same visually-hidden treatment as .nav-toggle-checkbox — the inputs drive
+   the panels through :checked and are never meant to be seen. */
+.ts-radio{
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.ts-tabstrip{
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 8px;
+}
+
+.ts-tabstrip label{
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 9px;
+  color: var(--text-faint);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.ts-tabstrip label:hover{ color: var(--text); }
+
+.ts-panel{ display: none; }
+
+/* The checked tab and its panel are both selected off the same input, so the
+   highlight and the visible group can never disagree. Gold, the site's accent
+   on dark — same for .ts-rank and .ts-leader-val below. (These were burgundy
+   while the widget had a gold panel behind it; with the panel gone, burgundy on
+   the page background is near-invisible at about 1.5:1.) */
+#ts-off:checked ~ .ts-tabstrip label[for="ts-off"],
+#ts-def:checked ~ .ts-tabstrip label[for="ts-def"]{
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+#ts-off:checked ~ .ts-panel-off,
+#ts-def:checked ~ .ts-panel-def{ display: block; }
+
+/* With only one side available there are no radios in the markup at all, so
+   the sole panel has to show without a :checked rule to trigger it. Keyed on a
+   class set by the template rather than :not(:has(.ts-radio)) — if :has() were
+   unsupported the widget would render completely blank. */
+.widget-teamstats-single .ts-panel{ display: block; }
+
+.ts-headline{
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.ts-headline .ts-rank{
+  color: var(--gold);
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Defense has no league rank to show. Reads as a stated absence rather than a
+   missing gold number, which would look like a rendering bug. */
+.ts-norank{
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ts-line{ min-width: 0; }
+
+.ts-leaders{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-soft);
+  padding-top: 6px;
+}
+
+.ts-leader{
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12.5px;
+  padding: 3px 0;
+  color: var(--text);
+}
+
+.ts-leader-key{
+  flex: 0 0 32px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+
+/* min-width:0 plus the ellipsis is what keeps a long name ("Jacory
+   Croskey-Merritt") from pushing the value off the 320px rail. */
+.ts-leader-name{
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ts-leader-val{
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
 /* ---------- Live game post ---------- */
 .live-entry{
   border-top: 1px solid var(--border-soft);
@@ -902,6 +1083,25 @@ main.layout{
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--gold);
+}
+
+/* Posting time on each in-game entry (see liveGamePost in templates.js).
+   Deliberately quieter than the gold period/score label it trails — it's
+   there to answer "when did this go up", not to compete with the score. */
+.live-entry-time{
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0;
+}
+
+/* Same treatment inside the Final Thoughts <h3>, which is uppercase and
+   letter-spaced — the timestamp opts out of both so it doesn't read as part
+   of the heading itself. */
+.live-final-thoughts-time{
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .live-final-thoughts{
@@ -1129,6 +1329,16 @@ main.layout{
   display:flex;
   flex-direction: column;
   gap: 14px;
+}
+
+/* Wraps the team-stats and schedule widgets so they stay stacked together when
+   the rail goes two-across above 1400px. Inert at narrower widths — a single
+   column nested inside a single column. */
+.sidebar-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
 }
 
 .widget{
@@ -2308,7 +2518,9 @@ main.layout{
     align-items: flex-start;
   }
   .widget-videos{ flex: 0 0 320px; }
-  .widget-schedule{ flex: 1 1 0; min-width: 0; }
+  /* The stats+schedule column takes the reclaimed width, not the schedule
+     alone — see sidebar() in templates.js for why they're nested. */
+  .sidebar-stack{ flex: 1 1 0; min-width: 0; }
 }
 
 @media (max-width: 480px){
@@ -2323,7 +2535,7 @@ main.layout{
    departure from the desktop layout, not a scaled-down version of it. */
 @media (max-width: 640px){
   .header-inner{ justify-content: center; }
-  .brand-logo{ height: 160px; }
+  .brand-logo{ height: 105px; }
   .header-bottom-row{ flex-direction: column; align-items: center; }
   .podcast-page-list{ grid-template-columns: 1fr; }
   .beat-grid{ grid-template-columns: 1fr; }

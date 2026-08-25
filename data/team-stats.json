@@ -1,0 +1,40 @@
+{
+  "season": "2025",
+  "seasonType": 2,
+  "fetchedAt": "2026-08-25T18:15:23.164Z",
+  "offense": {
+    "yardsPerGame": {
+      "value": "318.8",
+      "rank": 22,
+      "rankLabel": "22nd"
+    },
+    "pointsPerGame": {
+      "value": "20.9",
+      "rank": 22,
+      "rankLabel": "22nd"
+    },
+    "passYardsPerGame": {
+      "value": "184.1",
+      "rank": 24,
+      "rankLabel": "24th"
+    },
+    "rushYardsPerGame": {
+      "value": "134.7",
+      "rank": 4,
+      "rankLabel": "4th"
+    }
+  },
+  "defense": {
+    "games": 17,
+    "yardsPerGame": {
+      "value": "384.3",
+      "rank": null,
+      "rankLabel": null
+    },
+    "pointsPerGame": {
+      "value": "26.5",
+      "rank": null,
+      "rankLabel": null
+    }
+  }
+}

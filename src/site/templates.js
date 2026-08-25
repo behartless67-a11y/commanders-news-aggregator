@@ -452,14 +452,107 @@ function scheduleWidget(games, betting = null) {
     </div>`;
 }
 
-/** Returns empty string with nothing to show in either widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
-function sidebar(videos, games, betting = null) {
+/**
+ * One stat group at a time behind an Offense/Defense toggle, rather than both
+ * stacked — the rail already carries a full-season schedule under it, and
+ * showing both groups at once was twice the height for content most readers
+ * only want half of. A radio pair plus CSS sibling selectors, same zero-JS
+ * approach as the phone nav dropdown (see .nav-toggle-checkbox), so the widget
+ * works with JavaScript off and costs the page nothing.
+ *
+ * The two halves are deliberately not symmetrical, and that's a data limit
+ * rather than a design choice: ESPN publishes a league rank for a team's own
+ * offensive output but returns zeroes for every opponent field, so the
+ * defensive figures are derived from box scores and have no rank to show. See
+ * src/lib/teamstats.js. Defense renders its number with no rank instead of
+ * borrowing offense's or inventing one.
+ */
+function teamStatsWidget(teamStats) {
+  if (!teamStats?.offense) return '';
+
+  const stat = (s) => (s?.value != null ? s.value : null);
+  const rankOf = (s) =>
+    s?.rankLabel
+      ? `<strong class="ts-rank">${escapeHtml(s.rankLabel)}</strong>`
+      : '<span class="ts-norank">rank n/a</span>';
+
+  const group = (side, data, leaders) => {
+    if (!data) return '';
+    const yds = stat(data.yardsPerGame);
+    const pts = stat(data.pointsPerGame);
+    const suffix = side === 'def' ? ' allowed' : '';
+    const line = [
+      yds ? `${escapeHtml(yds)} yds/gm${suffix}` : null,
+      pts ? `${escapeHtml(pts)} pts/gm${suffix}` : null,
+    ]
+      .filter(Boolean)
+      .join(' &middot; ');
+    return `
+      <div class="ts-panel ts-panel-${side}">
+        <p class="ts-headline">${rankOf(data.yardsPerGame)} <span class="ts-line">${line}</span></p>
+        ${leaders}
+      </div>`;
+  };
+
+  const leaderList = (rows) =>
+    rows.length
+      ? `<ul class="ts-leaders">${rows
+          .map(
+            (r) =>
+              `<li class="ts-leader"><span class="ts-leader-key">${escapeHtml(r.key)}</span><span class="ts-leader-name">${escapeHtml(r.name)}</span><span class="ts-leader-val">${escapeHtml(r.value)}</span></li>`,
+          )
+          .join('')}</ul>`
+      : '';
+
+  const offense = group('off', teamStats.offense, leaderList(teamStats.leaders?.offense || []));
+  const defense = group('def', teamStats.defense, leaderList(teamStats.leaders?.defense || []));
+  if (!offense && !defense) return '';
+
+  // Only offer the toggle when there are two sides to toggle between —
+  // with defense unavailable this degrades to a plain offense block.
+  const tabs = offense && defense;
+
+  // The single-side variant is flagged with a class rather than detected in CSS
+  // with :not(:has(...)) — the panel has to be visible for the widget to say
+  // anything at all, so its display must not hinge on :has() support.
+  return `
+    <div class="widget widget-teamstats${tabs ? '' : ' widget-teamstats-single'}">
+      <h2 id="team-stats-heading">Team Stats <span class="ts-season">${escapeHtml(String(teamStats.season || ''))}</span></h2>
+${
+  tabs
+    ? `      <input type="radio" name="ts-tab" id="ts-off" class="ts-radio" checked />
+      <input type="radio" name="ts-tab" id="ts-def" class="ts-radio" />
+      <div class="ts-tabstrip">
+        <label for="ts-off">Offense</label>
+        <label for="ts-def">Defense</label>
+      </div>
+${offense}
+${defense}`
+    : `${offense}${defense}`
+}
+    </div>`;
+}
+
+/** Returns empty string with nothing to show in any widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
+function sidebar(videos, games, betting = null, teamStats = null) {
   const video = videoWidget(videos);
+  const stats = teamStatsWidget(teamStats);
   const schedule = scheduleWidget(games, betting);
-  if (!video && !schedule) return '';
+  if (!video && !schedule && !stats) return '';
+  // Stats above the schedule deliberately: the schedule runs a full season of
+  // rows, so anything placed under it is effectively unreachable without a
+  // long scroll.
+  //
+  // Stats and schedule share a nested column rather than being siblings of the
+  // video widget, because above 1400px the rail turns into a two-across row
+  // (see the min-width: 1400px block in site.css) — as flat siblings the stats
+  // block became a third column *beside* the schedule instead of above it.
+  // Nesting keeps "stats, then schedule" true at every width. Below 1400px the
+  // wrapper is a no-op: one column inside one column.
+  const stack = [stats, schedule].filter(Boolean).join('\n');
   return `<aside class="sidebar" aria-labelledby="video-rail-heading">
 ${video}
-${schedule}
+${stack ? `    <div class="sidebar-stack">\n${stack}\n    </div>` : ''}
   </aside>`;
 }
 
@@ -527,12 +620,16 @@ function weekLabel(record) {
 }
 
 /**
- * A hand-written post has no model and no "all claims sourced above" to
- * disclose — this exists only so a reader lands on the same reassurance in
- * reverse: this one wasn't generated at all.
+ * The counterpart to digestDisclosure() for a personal post: no model to name
+ * and no "every claim is sourced above", because there's no generation step
+ * and no corpus behind one of these (see src/digest/originals.js — a record
+ * is written by hand and only needs status: 'published'). What it discloses
+ * instead is the split the author actually works in: the take is theirs, the
+ * prose got an AI polish. Deliberately lighter in tone than the digest's
+ * disclosure, since it's a personal essay rather than a machine recap.
  */
 function originalDisclosure() {
-  return `<p class="digest-disclosure">Written by hand, not generated. <a href="blog.html">All posts</a></p>`;
+  return `<p class="digest-disclosure">These are my thoughts &mdash; AI just made them pretty. <a href="blog.html">All posts</a></p>`;
 }
 
 /**
@@ -776,9 +873,15 @@ function finalThoughtsPhotos(images) {
 
 function finalThoughtsBlock(finalThoughts, rosterIndex) {
   if (!finalThoughts) return '';
+  // Written after the last entry rather than alongside it, so it gets its own
+  // posting time for the same reason the entries do — see the note in
+  // liveGamePost().
+  const posted = finalThoughts.generatedAt
+    ? `<time class="live-entry-time" datetime="${escapeHtml(finalThoughts.generatedAt)}">${escapeHtml(formatDateTime(finalThoughts.generatedAt))}</time>`
+    : '';
   return `
       <div class="live-final-thoughts">
-        <h3>Final Thoughts</h3>
+        <h3>Final Thoughts${posted ? ` <span class="live-final-thoughts-time">${posted}</span>` : ''}</h3>
         ${finalThoughtsPhotos(finalThoughts.images)}
         ${liveParagraphs(finalThoughts.body, rosterIndex)}
         <p class="live-award-tagline">Two Live Wire Awards a game: Hero for the single biggest positive impact, Goat for the single biggest negative one.</p>
@@ -787,6 +890,23 @@ ${liveAwardCard('hero', finalThoughts.heroRecipient, finalThoughts.heroReason, r
 ${liveAwardCard('goat', finalThoughts.goatRecipient, finalThoughts.goatReason, rosterIndex)}
         </div>
       </div>`;
+}
+
+/**
+ * When the live post last said something new — its newest entry, or the
+ * final-thoughts wrap-up written after the last one. This is the post's
+ * release time, so the Blog index can sort it into the stream by date like
+ * every other post instead of pinning it on top: while a game is in progress
+ * it's minutes old and lands first on its own, and once the game is over a
+ * post published later correctly moves above it.
+ */
+function liveReleasedAt(state) {
+  return (
+    [state?.finalThoughts?.generatedAt, ...(state?.entries || []).map((e) => e.generatedAt)]
+      .filter(Boolean)
+      .sort()
+      .pop() || ''
+  );
 }
 
 /**
@@ -815,13 +935,23 @@ function liveGamePost(state, rosterIndex) {
     : `<h2>${scoreLine}</h2>`;
   const entries = [...state.entries]
     .reverse()
-    .map(
-      (e) => `
+    .map((e) => {
+      // Each entry goes up mid-game, minutes after the period it covers, so it
+      // carries its own posting time. "End of Q3" alone doesn't tell a reader
+      // arriving later whether they're looking at something from ten minutes
+      // ago or from last Saturday — and since entries accumulate into one post
+      // over several hours, the post's own date can't answer that either.
+      // <time datetime> so the machine-readable instant rides along with the
+      // formatted one, same as the river's cards.
+      const posted = e.generatedAt
+        ? ` &middot; <time class="live-entry-time" datetime="${escapeHtml(e.generatedAt)}">${escapeHtml(formatDateTime(e.generatedAt))}</time>`
+        : '';
+      return `
       <div class="live-entry">
-        <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}</p>
+        <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}${posted}</p>
         ${liveParagraphs(e.body, rosterIndex)}
-      </div>`,
-    )
+      </div>`;
+    })
     .join('\n');
   return `
     <article class="digest-post live-game-post">
@@ -831,9 +961,9 @@ ${entries}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting);
+  const rail = sidebar(videos, games, betting, teamStats);
 
   return `<!doctype html>
 <html lang="en">
@@ -880,9 +1010,9 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderWeeklyPost, using previewArticleBody() instead of digestArticleBody() — see that function's own comment for why. */
-export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
+export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting);
+  const rail = sidebar(videos, games, betting, teamStats);
 
   return `<!doctype html>
 <html lang="en">
@@ -928,11 +1058,11 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
   // The opening paragraph alone is only 2 sentences — pull the third from the
   // paragraph after it rather than stopping short of the requested length.
   const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
-  const rail = sidebar(videos, games, betting);
+  const rail = sidebar(videos, games, betting, teamStats);
 
   return `<!doctype html>
 <html lang="en">
@@ -978,23 +1108,36 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
-  const rail = sidebar(videos, games, betting);
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
+  const rail = sidebar(videos, games, betting, teamStats);
   const livePost = liveGamePost(liveGame, rosterIndex);
-  // Weekly digests, previews, and originals are three different record
-  // shapes sharing one reverse-chronological stream — a preview published
-  // Thursday belongs between last week's recap and this week's, not shoved
-  // to the end just because it's a different content type.
+  // Weekly digests, previews, originals, and the live game post are four
+  // different record shapes sharing one reverse-chronological stream, keyed on
+  // when each was *released* rather than on what it covers.
+  //
+  // Three of the four used to sort on the wrong field. A digest sorted by
+  // `week` (the range it recaps) and a preview by `gameKey` (the game it looks
+  // ahead to), so a preview written today for a game three weeks out jumped
+  // above everything already published, and a digest reviewed two days after
+  // its window closed sorted as if it had gone up on day one. The live post
+  // wasn't sorted at all — it was pinned to the head of the list, ahead of
+  // posts written days later. Release timestamps fix all four, and they're
+  // also exactly what the river already sorts these by (see blogRiverItems),
+  // so the Blog and the river can no longer disagree about which post is
+  // newest.
   const dated = [
-    ...records.map((r) => ({ sortKey: r.week, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
-    ...previewRecords.map((r) => ({ sortKey: r.gameKey, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...records.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...previewRecords.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
     ...originalRecords.map((r) => ({ sortKey: r.publishedAt, html: `${originalArticleBody(r, rosterIndex, 'h2')}\n    ${originalDisclosure()}` })),
-  ].sort((a, b) => b.sortKey.localeCompare(a.sortKey));
-  const posts = [livePost, ...dated.map((d) => d.html)].filter(Boolean);
+    ...(livePost ? [{ sortKey: liveReleasedAt(liveGame), html: livePost }] : []),
+  ].sort((a, b) => String(b.sortKey || '').localeCompare(String(a.sortKey || '')));
+  const posts = dated.map((d) => d.html);
   // Same progressive-reveal convention as the river/roster, at the whole-post
   // level — a single full post can already be taller than the video widget
   // beside it, so as the Blog fills up with more of them this keeps the
-  // archive from just being one long uninterrupted scroll.
+  // archive from just being one long uninterrupted scroll. Every post is in
+  // the HTML either way — this only controls how many are expanded on load,
+  // so a collapsed post is still reachable and still indexable.
   const blogCollapsed = posts.length > BLOG_INITIAL;
   const postBlocks = posts.map((html, i) => {
     const divider = i > 0 ? '<hr class="digest-divider">\n    ' : '';
@@ -1065,8 +1208,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting);
+export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1238,11 +1381,12 @@ export function renderRosterPage({
   videos = [],
   games = [],
   betting = null,
+  teamStats = null,
   isGameLive = false,
   rosterPlayers = [],
   mentionCounts = new Map(),
 }) {
-  const rail = sidebar(videos, games, betting);
+  const rail = sidebar(videos, games, betting, teamStats);
   // Most-talked-about first — the entire point of this page over just
   // linking to commanders.com's own roster. Ties (usually both at zero)
   // fall back to alphabetical so the order is at least stable build to build.
@@ -1529,8 +1673,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting);
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1584,7 +1728,7 @@ ${footer(sources, generatedAt)}
  * this page is never linked to there; it still renders and works if visited
  * directly, same as any other page.
  */
-export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, isGameLive = false }) {
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
   const widget = videoWidget(videos);
   const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
   return `<!doctype html>
@@ -2154,8 +2298,8 @@ function socialFeedPost(post, extra) {
       </li>`;
 }
 
-export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null }) {
-  const rail = sidebar(videos, games, betting);
+export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null }) {
+  const rail = sidebar(videos, games, betting, teamStats);
   const collapsed = socialPosts.length > SOCIAL_FEED_INITIAL;
   const items = socialPosts.map((p, i) => socialFeedPost(p, i >= SOCIAL_FEED_INITIAL)).join('');
   const nextBatch = Math.min(SOCIAL_FEED_BATCH, socialPosts.length - SOCIAL_FEED_INITIAL);
@@ -2237,6 +2381,7 @@ export function renderPage(
     videos = [],
     games = [],
     betting = null,
+    teamStats = null,
     hasWeekly = false,
     isGameLive = false,
     rosterIndex = null,
@@ -2245,7 +2390,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games, betting);
+  const rail = sidebar(videos, games, betting, teamStats);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.

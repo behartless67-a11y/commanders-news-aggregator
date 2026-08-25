@@ -17,6 +17,7 @@ import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
+import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
 import { updateLiveGame } from './digest/live-generate.js';
 import { isGameWindowActive } from './lib/gamewindow.js';
 
@@ -37,6 +38,7 @@ Commanders headline river
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
+  npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
   node src/cli.js gamecheck  print true/false: is a Commanders game in its live window right now
 
@@ -288,6 +290,26 @@ async function main() {
         log.ok(`injuries: cached ${entries.length} player(s) currently listed with an injury`);
       } else {
         log.warn('injuries: fetch failed — leaving the existing cache in place');
+      }
+      break;
+    }
+    case 'team-stats': {
+      // --season is worth having as a flag rather than always using "now":
+      // through the preseason the current year has no regular-season totals
+      // yet, so the only honest thing to show is last season's, and that
+      // choice belongs to whoever runs it.
+      const stats = await fetchTeamStats({ season: flags.season ? Number(flags.season) : undefined });
+      if (stats) {
+        await saveTeamStatsCache(stats);
+        const off = stats.offense?.yardsPerGame;
+        const def = stats.defense?.yardsPerGame;
+        log.ok(
+          `team-stats: cached ${stats.season} — offense ${off?.value ?? '?'} yds/gm` +
+            `${off?.rankLabel ? ` (${off.rankLabel})` : ''}, ` +
+            `defense ${def?.value ?? 'unavailable'}${def ? ` yds/gm allowed over ${stats.defense.games} game(s)` : ''}`,
+        );
+      } else {
+        log.warn('team-stats: fetch failed — leaving the existing cache in place');
       }
       break;
     }
