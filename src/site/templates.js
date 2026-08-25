@@ -2070,10 +2070,16 @@ ${footer(sources, generatedAt)}
   // Shared by every "top N" tile — same <li>label <strong>count</strong>
   // markup regardless of which field holds the label, so adding one more
   // breakdown (browser, OS, device...) never needs its own renderer.
+  // The label is truncated to one line, not left to wrap — a bare hostname
+  // or a full blog-post path has no spaces to wrap on, so an untruncated
+  // long one doesn't wrap either, it just forces its own width past the
+  // grid tile's minimum and drags the whole row wider along with it. title=
+  // carries the full text back for anyone who needs it.
   function rankedList(rows, labelKey) {
     if (!rows.length) return '<li>No data yet.</li>';
     return rows.map(function (r) {
-      return '<li>' + esc(r[labelKey]) + ' <strong>' + r.count + '</strong></li>';
+      var label = esc(r[labelKey]);
+      return '<li><span class="admin-path-label" title="' + label + '">' + label + '</span> <strong>' + r.count + '</strong></li>';
     }).join('');
   }
 

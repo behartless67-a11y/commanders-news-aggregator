@@ -2389,8 +2389,13 @@ main.layout{
    labels) — a wide screen needed the block itself centered, not every line
    of a data grid re-aligned to the middle, which would fight the
    left-to-right scan a ranked list or a form actually reads by. */
+/* No max-width of its own, deliberately — this is a single-user page read on
+   a widescreen monitor (not a public page needing a phone-first fallback the
+   way the rest of the site does), and a tile grid benefits from more width
+   the way a column of prose doesn't. It still inherits main.layout's own
+   1920px ceiling (var(--max)), same as every other page — this just stops
+   capping it any tighter than that. */
 .admin-page{
-  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -2424,9 +2429,9 @@ main.layout{
    happens to come after it in the markup. */
 .admin-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-auto-flow: dense;
-  gap: 16px;
+  gap: 14px;
   margin-top: 14px;
 }
 
@@ -2446,11 +2451,16 @@ main.layout{
   font-weight: 700;
 }
 
-/* The trend charts and the 24-bar hour-of-day chart — narrow columns squeeze
-   these into illegible slivers, so they claim the whole grid row regardless
-   of how many normal tiles would otherwise fit beside them. */
+/* The trend charts and the 24-bar hour-of-day chart — narrow columns would
+   squeeze these into illegible slivers, so they claim two grid columns'
+   worth of width instead of one. Deliberately span 2, not 1 / -1 (the whole
+   row): on a wide monitor with room for 5+ columns, that let two of these
+   charts share a row instead of each claiming the entire width regardless of
+   how much was actually left over — on a narrower screen with only two
+   columns to begin with, span 2 still is the whole row, so nothing changes
+   there. */
 .admin-tile-wide{
-  grid-column: 1 / -1;
+  grid-column: span 2;
 }
 
 .admin-tile .admin-total{
@@ -2529,7 +2539,27 @@ main.layout{
   color: var(--text-muted);
 }
 
+.admin-path-list li{
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+/* min-width:0 is what actually lets this shrink and ellipsize inside a flex
+   row — without it a flex item's default min-width:auto refuses to shrink
+   below its own content's width, which is exactly the untruncated-URL
+   problem this exists to fix (see rankedList() in templates.js). */
+.admin-path-label{
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .admin-path-list strong{
+  flex: 0 0 auto;
   color: var(--text);
 }
 
