@@ -3975,5 +3975,31 @@
     "images": [],
     "publishedAt": "2026-08-25T18:52:30.000Z",
     "collectedAt": "2026-08-25T19:43:57.253Z"
+  },
+  "social-fd34e0e02143": {
+    "id": "social-fd34e0e02143",
+    "url": "https://x.com/Commanders/status/2092341246840934826",
+    "text": "We have released T Foster Sarell",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/157/930/322/768/203/original/65ddff552bda2fe5.jpg"
+    ],
+    "publishedAt": "2026-08-25T20:00:01.000Z",
+    "collectedAt": "2026-08-25T20:03:37.640Z"
+  },
+  "social-c58b49046a73": {
+    "id": "social-c58b49046a73",
+    "url": "https://x.com/john_keim/status/2092341454425252181",
+    "text": "Washington has released OT Foster Sarell.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-25T20:00:51.000Z",
+    "collectedAt": "2026-08-25T20:03:40.379Z"
   }
 }

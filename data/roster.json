@@ -824,6 +824,24 @@
     }
   },
   {
+    "slug": "boogie-basham",
+    "name": "Boogie Basham",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4037239",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4037239.png",
+    "stats": null
+  },
+  {
+    "slug": "joshuah-bledsoe",
+    "name": "Joshuah Bledsoe",
+    "jersey": "",
+    "position": "S",
+    "espnId": "4241199",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4241199.png",
+    "stats": null
+  },
+  {
     "slug": "percy-butler",
     "name": "Percy Butler",
     "jersey": "35",
@@ -1008,31 +1026,6 @@
     }
   },
   {
-    "slug": "will-harris",
-    "name": "Will Harris",
-    "jersey": "3",
-    "position": "S",
-    "espnId": "3915297",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3915297.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "38"
-        },
-        {
-          "label": "SACK",
-          "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "maurice-hurst-ii",
     "name": "Maurice Hurst II",
     "jersey": "77",
@@ -1131,6 +1124,15 @@
         }
       ]
     }
+  },
+  {
+    "slug": "quindell-johnson",
+    "name": "Quindell Johnson",
+    "jersey": "",
+    "position": "S",
+    "espnId": "4371731",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4371731.png",
+    "stats": null
   },
   {
     "slug": "joshua-josephs",
@@ -1608,15 +1610,6 @@
         }
       ]
     }
-  },
-  {
-    "slug": "malik-spencer",
-    "name": "Malik Spencer",
-    "jersey": "36",
-    "position": "S",
-    "espnId": "4782664",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4782664.png",
-    "stats": null
   },
   {
     "slug": "sonny-styles",
