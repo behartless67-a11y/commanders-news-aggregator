@@ -527,12 +527,16 @@ function weekLabel(record) {
 }
 
 /**
- * A hand-written post has no model and no "all claims sourced above" to
- * disclose — this exists only so a reader lands on the same reassurance in
- * reverse: this one wasn't generated at all.
+ * The counterpart to digestDisclosure() for a personal post: no model to name
+ * and no "every claim is sourced above", because there's no generation step
+ * and no corpus behind one of these (see src/digest/originals.js — a record
+ * is written by hand and only needs status: 'published'). What it discloses
+ * instead is the split the author actually works in: the take is theirs, the
+ * prose got an AI polish. Deliberately lighter in tone than the digest's
+ * disclosure, since it's a personal essay rather than a machine recap.
  */
 function originalDisclosure() {
-  return `<p class="digest-disclosure">Written by hand, not generated. <a href="blog.html">All posts</a></p>`;
+  return `<p class="digest-disclosure">These are my thoughts &mdash; AI just made them pretty. <a href="blog.html">All posts</a></p>`;
 }
 
 /**
@@ -776,9 +780,15 @@ function finalThoughtsPhotos(images) {
 
 function finalThoughtsBlock(finalThoughts, rosterIndex) {
   if (!finalThoughts) return '';
+  // Written after the last entry rather than alongside it, so it gets its own
+  // posting time for the same reason the entries do — see the note in
+  // liveGamePost().
+  const posted = finalThoughts.generatedAt
+    ? `<time class="live-entry-time" datetime="${escapeHtml(finalThoughts.generatedAt)}">${escapeHtml(formatDateTime(finalThoughts.generatedAt))}</time>`
+    : '';
   return `
       <div class="live-final-thoughts">
-        <h3>Final Thoughts</h3>
+        <h3>Final Thoughts${posted ? ` <span class="live-final-thoughts-time">${posted}</span>` : ''}</h3>
         ${finalThoughtsPhotos(finalThoughts.images)}
         ${liveParagraphs(finalThoughts.body, rosterIndex)}
         <p class="live-award-tagline">Two Live Wire Awards a game: Hero for the single biggest positive impact, Goat for the single biggest negative one.</p>
@@ -787,6 +797,23 @@ ${liveAwardCard('hero', finalThoughts.heroRecipient, finalThoughts.heroReason, r
 ${liveAwardCard('goat', finalThoughts.goatRecipient, finalThoughts.goatReason, rosterIndex)}
         </div>
       </div>`;
+}
+
+/**
+ * When the live post last said something new — its newest entry, or the
+ * final-thoughts wrap-up written after the last one. This is the post's
+ * release time, so the Blog index can sort it into the stream by date like
+ * every other post instead of pinning it on top: while a game is in progress
+ * it's minutes old and lands first on its own, and once the game is over a
+ * post published later correctly moves above it.
+ */
+function liveReleasedAt(state) {
+  return (
+    [state?.finalThoughts?.generatedAt, ...(state?.entries || []).map((e) => e.generatedAt)]
+      .filter(Boolean)
+      .sort()
+      .pop() || ''
+  );
 }
 
 /**
@@ -815,13 +842,23 @@ function liveGamePost(state, rosterIndex) {
     : `<h2>${scoreLine}</h2>`;
   const entries = [...state.entries]
     .reverse()
-    .map(
-      (e) => `
+    .map((e) => {
+      // Each entry goes up mid-game, minutes after the period it covers, so it
+      // carries its own posting time. "End of Q3" alone doesn't tell a reader
+      // arriving later whether they're looking at something from ten minutes
+      // ago or from last Saturday — and since entries accumulate into one post
+      // over several hours, the post's own date can't answer that either.
+      // <time datetime> so the machine-readable instant rides along with the
+      // formatted one, same as the river's cards.
+      const posted = e.generatedAt
+        ? ` &middot; <time class="live-entry-time" datetime="${escapeHtml(e.generatedAt)}">${escapeHtml(formatDateTime(e.generatedAt))}</time>`
+        : '';
+      return `
       <div class="live-entry">
-        <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}</p>
+        <p class="live-entry-meta">${escapeHtml(e.label)} &middot; Commanders ${e.score.commanders}, ${escapeHtml(state.opponent)} ${e.score.opponent}${posted}</p>
         ${liveParagraphs(e.body, rosterIndex)}
-      </div>`,
-    )
+      </div>`;
+    })
     .join('\n');
   return `
     <article class="digest-post live-game-post">
@@ -981,20 +1018,33 @@ ${footer(sources, generatedAt)}
 export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
   const rail = sidebar(videos, games, betting);
   const livePost = liveGamePost(liveGame, rosterIndex);
-  // Weekly digests, previews, and originals are three different record
-  // shapes sharing one reverse-chronological stream — a preview published
-  // Thursday belongs between last week's recap and this week's, not shoved
-  // to the end just because it's a different content type.
+  // Weekly digests, previews, originals, and the live game post are four
+  // different record shapes sharing one reverse-chronological stream, keyed on
+  // when each was *released* rather than on what it covers.
+  //
+  // Three of the four used to sort on the wrong field. A digest sorted by
+  // `week` (the range it recaps) and a preview by `gameKey` (the game it looks
+  // ahead to), so a preview written today for a game three weeks out jumped
+  // above everything already published, and a digest reviewed two days after
+  // its window closed sorted as if it had gone up on day one. The live post
+  // wasn't sorted at all — it was pinned to the head of the list, ahead of
+  // posts written days later. Release timestamps fix all four, and they're
+  // also exactly what the river already sorts these by (see blogRiverItems),
+  // so the Blog and the river can no longer disagree about which post is
+  // newest.
   const dated = [
-    ...records.map((r) => ({ sortKey: r.week, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
-    ...previewRecords.map((r) => ({ sortKey: r.gameKey, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...records.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...previewRecords.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
     ...originalRecords.map((r) => ({ sortKey: r.publishedAt, html: `${originalArticleBody(r, rosterIndex, 'h2')}\n    ${originalDisclosure()}` })),
-  ].sort((a, b) => b.sortKey.localeCompare(a.sortKey));
-  const posts = [livePost, ...dated.map((d) => d.html)].filter(Boolean);
+    ...(livePost ? [{ sortKey: liveReleasedAt(liveGame), html: livePost }] : []),
+  ].sort((a, b) => String(b.sortKey || '').localeCompare(String(a.sortKey || '')));
+  const posts = dated.map((d) => d.html);
   // Same progressive-reveal convention as the river/roster, at the whole-post
   // level — a single full post can already be taller than the video widget
   // beside it, so as the Blog fills up with more of them this keeps the
-  // archive from just being one long uninterrupted scroll.
+  // archive from just being one long uninterrupted scroll. Every post is in
+  // the HTML either way — this only controls how many are expanded on load,
+  // so a collapsed post is still reachable and still indexable.
   const blogCollapsed = posts.length > BLOG_INITIAL;
   const postBlocks = posts.map((html, i) => {
     const divider = i > 0 ? '<hr class="digest-divider">\n    ' : '';
