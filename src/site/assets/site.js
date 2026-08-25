@@ -256,14 +256,74 @@
   }
 
   /**
+   * A random id naming this browser tab's session, so the track Function can
+   * tell "the same reader loaded three pages" apart from "three different
+   * readers loaded one page each" — otherwise every pageview looks identical
+   * and there's no way to derive a unique-visitor count at all.
+   *
+   * sessionStorage rather than a cookie or localStorage: it clears itself when
+   * the tab closes, so nothing here identifies a return visit, let alone a
+   * person. It never leaves this browser except as this one random string,
+   * with no other data attached — see the server-side handling in
+   * netlify/functions/track.js for what becomes of it.
+   *
+   * Wrapped in try/catch because sessionStorage can throw synchronously (not
+   * just return null) in a handful of locked-down contexts — some privacy
+   * extensions, some in-app browsers. Same rule as the beacon itself: this is
+   * allowed to silently not happen, never allowed to break the page.
+   */
+  function sessionId() {
+    try {
+      var key = 'bw_sid';
+      var existing = sessionStorage.getItem(key);
+      if (existing) return existing;
+      var id =
+        window.crypto && window.crypto.randomUUID
+          ? window.crypto.randomUUID()
+          : Date.now().toString(36) + Math.random().toString(36).slice(2);
+      sessionStorage.setItem(key, id);
+      return id;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  /**
    * One pageview beacon per load, to the same site's own track Function —
-   * no third-party analytics script, nothing but a path and a count (see
-   * netlify/functions/track.js). Fire-and-forget: a failed or blocked beacon
-   * should never affect the page a reader is actually here for.
+   * no third-party analytics script (see netlify/functions/track.js).
+   * Fire-and-forget: a failed or blocked beacon should never affect the page
+   * a reader is actually here for.
    */
   fetch('/.netlify/functions/track', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ path: window.location.pathname }),
+    body: JSON.stringify({
+      path: window.location.pathname,
+      referrer: document.referrer,
+      sid: sessionId(),
+    }),
   }).catch(function () {});
+
+  /**
+   * A second, separate beacon for outbound clicks — river cards mark their
+   * external link with data-outbound="<sourceId>" (see itemCard() in
+   * templates.js; internal Blog posts carry no such attribute, since they're
+   * not a click-through to a source). Delegated on document rather than bound
+   * per card, so it keeps working after the progressive-reveal button in
+   * setupReveal() adds more cards to the DOM later.
+   *
+   * Fired on click, not on navigation completing: this is a bare <a
+   * target="_blank">, and the new tab opens regardless of whether this
+   * beacon's fetch ever resolves. Never call preventDefault here — a reader's
+   * click must not depend on an analytics request succeeding.
+   */
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-outbound]');
+    if (!link) return;
+    fetch('/.netlify/functions/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'outbound', sourceId: link.getAttribute('data-outbound') }),
+    }).catch(function () {});
+  });
 })();

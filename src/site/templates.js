@@ -117,7 +117,7 @@ function itemCard(item, index, rosterIndex) {
         <span class="card-source">${escapeHtml(item.sourceName)}</span>
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
-      <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ' target="_blank" rel="noopener noreferrer"'}>${escapeHtml(item.title)}</a></h3>
+      <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ` target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}"`}>${escapeHtml(item.title)}</a></h3>
       ${excerptMarkup}
     </article>`;
 }
@@ -2033,6 +2033,8 @@ ${header('admin.html', false, false)}
           <button id="admin-logout" class="roster-more" type="button">Log out</button>
         </div>
         <div id="admin-stats"><p class="page-intro">Loading…</p></div>
+        <div id="admin-referrers"></div>
+        <div id="admin-outbound"></div>
       </section>
 
       <section class="admin-section">
@@ -2052,6 +2054,8 @@ ${footer(sources, generatedAt)}
   var error = document.getElementById('admin-login-error');
   var dashboard = document.getElementById('admin-dashboard');
   var statsEl = document.getElementById('admin-stats');
+  var referrersEl = document.getElementById('admin-referrers');
+  var outboundEl = document.getElementById('admin-outbound');
   var draftsEl = document.getElementById('admin-drafts');
 
   function esc(s) {
@@ -2067,6 +2071,16 @@ ${footer(sources, generatedAt)}
     loadDrafts();
   }
 
+  // Shared by the three "top N" lists below — same <li>label <strong>count</strong>
+  // markup as the original path list, just parameterized on which field holds
+  // the label.
+  function rankedList(rows, labelKey) {
+    if (!rows.length) return '<li>No data yet.</li>';
+    return rows.map(function (r) {
+      return '<li>' + esc(r[labelKey]) + ' <strong>' + r.count + '</strong></li>';
+    }).join('');
+  }
+
   function loadStats() {
     fetch('/.netlify/functions/admin-stats', { credentials: 'same-origin' })
       .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
@@ -2074,18 +2088,32 @@ ${footer(sources, generatedAt)}
         var maxDay = Math.max(1, data.days.reduce(function (m, d) { return Math.max(m, d.count); }, 0));
         var bars = data.days.map(function (d) {
           var pct = Math.round((d.count / maxDay) * 100);
-          return '<div class="admin-bar" title="' + esc(d.date) + ': ' + d.count + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
-        }).join('');
-        var paths = data.topPaths.map(function (p) {
-          return '<li>' + esc(p.path) + ' <strong>' + p.count + '</strong></li>';
+          // Uniques ride along in the tooltip rather than as a second bar —
+          // a two-series chart needs a legend and twice the width to stay
+          // readable, and "how many of today's views were the same handful
+          // of readers reloading" is a hover-away detail, not a headline one.
+          var title = esc(d.date) + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') +
+            ', ' + d.uniques + ' unique';
+          return '<div class="admin-bar" title="' + title + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
         }).join('');
         statsEl.innerHTML =
           '<p class="admin-total"><strong>' + data.total + '</strong> total pageviews</p>' +
           '<div class="admin-bars">' + bars + '</div>' +
           '<h3>Most viewed pages</h3>' +
-          '<ul class="admin-path-list">' + (paths || '<li>No data yet.</li>') + '</ul>';
+          '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>';
+
+        referrersEl.innerHTML =
+          '<h3>Traffic sources</h3>' +
+          '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>';
+
+        outboundEl.innerHTML =
+          '<h3>Outbound clicks</h3>' +
+          '<p class="admin-total"><strong>' + data.outboundTotal + '</strong> clicks through to a source</p>' +
+          '<ul class="admin-path-list">' + rankedList(data.topOutbound, 'sourceName') + '</ul>';
       })
-      .catch(function () { statsEl.innerHTML = '<p class="page-intro">Could not load traffic stats.</p>'; });
+      .catch(function () {
+        statsEl.innerHTML = '<p class="page-intro">Could not load traffic stats.</p>';
+      });
   }
 
   function loadDrafts() {
