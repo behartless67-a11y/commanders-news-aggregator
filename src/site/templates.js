@@ -2152,13 +2152,19 @@ ${footer(sources, generatedAt)}
         // two-series chart needs a legend and twice the width to stay
         // readable, and "how many of today's views were the same handful of
         // readers reloading" is a hover-away detail, not a headline one.
+        // The caption after each chart fills space the wide tiles otherwise
+        // leave empty below a short bar row — same info the axis already
+        // implies, spelled out for whoever's glancing at this without having
+        // read the axis first.
         tiles.push(tile('Last 14 days', barRow(data.days, function (d) {
           return d.date + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') + ', ' + d.uniques + ' unique';
-        }, function (d) { return dayLabel(d.date); }), true));
+        }, function (d) { return dayLabel(d.date); }) +
+          '<p class="admin-chart-caption">Pageviews per day, most recent 14 days.</p>', true));
 
         tiles.push(tile('Last 12 months', barRow(data.months, function (m) {
           return m.month + ': ' + m.count + ' view' + (m.count === 1 ? '' : 's');
-        }, function (m) { return monthLabel(m.month); }), true));
+        }, function (m) { return monthLabel(m.month); }) +
+          '<p class="admin-chart-caption">Pageviews per month, trailing 12 months.</p>', true));
 
         // Site time, not each visitor's own — see hourAndWeekday() in
         // track.js. Labeled explicitly since a raw hour number alone would
@@ -2166,11 +2172,13 @@ ${footer(sources, generatedAt)}
         // happens to assume.
         tiles.push(tile('By hour of day (Eastern Time)', barRow(data.hours, function (h) {
           return h.hour + ':00 — ' + h.count + ' view' + (h.count === 1 ? '' : 's');
-        }, function (h) { return hourLabel(h.hour); }), true));
+        }, function (h) { return hourLabel(h.hour); }) +
+          '<p class="admin-chart-caption">All-time pageviews added up by hour of day, Eastern Time — when readers actually show up.</p>', true));
 
         tiles.push(tile('By day of week', barRow(data.weekdays, function (w) {
           return w.weekday + ': ' + w.count + ' view' + (w.count === 1 ? '' : 's');
-        }, function (w) { return w.weekday; })));
+        }, function (w) { return w.weekday; }) +
+          '<p class="admin-chart-caption">All-time pageviews added up by day of the week.</p>'));
 
         tiles.push(tile('Most viewed pages', '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>'));
         tiles.push(tile('Traffic sources', '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>'));
