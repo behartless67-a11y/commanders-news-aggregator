@@ -31,12 +31,12 @@
             "name": "Laremy Tunsil"
           },
           {
-            "slug": "andrew-wylie",
-            "name": "Andrew Wylie"
-          },
-          {
             "slug": "brandon-coleman",
             "name": "Brandon Coleman"
+          },
+          {
+            "slug": "andrew-wylie",
+            "name": "Andrew Wylie"
           },
           {
             "slug": "foster-sarell",
@@ -52,12 +52,12 @@
             "name": "Chris Paul"
           },
           {
-            "slug": "brandon-coleman",
-            "name": "Brandon Coleman"
-          },
-          {
             "slug": "max-scharping",
             "name": "Max Scharping"
+          },
+          {
+            "slug": "daniel-brunskill",
+            "name": "Daniel Brunskill"
           }
         ]
       },
@@ -77,8 +77,8 @@
             "name": "Matt Gulbin"
           },
           {
-            "slug": "daniel-brunskill",
-            "name": "Daniel Brunskill"
+            "slug": "trey-hill",
+            "name": "Trey Hill"
           }
         ]
       },
@@ -90,8 +90,8 @@
             "name": "Sam Cosmi"
           },
           {
-            "slug": "andrew-wylie",
-            "name": "Andrew Wylie"
+            "slug": "trent-scott",
+            "name": "Trent Scott"
           },
           {
             "slug": "tanoa-togiai",
@@ -107,8 +107,8 @@
             "name": "Josh Conerly Jr."
           },
           {
-            "slug": "trent-scott",
-            "name": "Trent Scott"
+            "slug": "andrew-wylie",
+            "name": "Andrew Wylie"
           },
           {
             "slug": "nicholas-petit-frere",
@@ -130,6 +130,10 @@
           {
             "slug": "lawrence-cager",
             "name": "Lawrence Cager"
+          },
+          {
+            "slug": "tre-mckitty",
+            "name": "Tre&#x27; McKitty"
           }
         ]
       },
@@ -229,6 +233,235 @@
     ]
   },
   {
+    "section": "Defense",
+    "rows": [
+      {
+        "position": "DL",
+        "tiers": [
+          {
+            "slug": "daron-payne",
+            "name": "Daron Payne"
+          },
+          {
+            "slug": "deatrich-wise",
+            "name": "Deatrich Wise Jr."
+          },
+          {
+            "slug": "byron-cowart",
+            "name": "Byron Cowart"
+          }
+        ]
+      },
+      {
+        "position": "DL",
+        "tiers": [
+          {
+            "slug": "tim-settle",
+            "name": "Tim Settle"
+          },
+          {
+            "slug": "jer-zhan-newton",
+            "name": "Jer&#x27;Zhan Newton"
+          },
+          {
+            "slug": "shy-tuttle",
+            "name": "Shy Tuttle"
+          },
+          {
+            "slug": "jeffrey-m-ba",
+            "name": "Jeffrey M&#x27;ba"
+          }
+        ]
+      },
+      {
+        "position": "DL",
+        "tiers": [
+          {
+            "slug": "javon-kinlaw",
+            "name": "Javon Kinlaw"
+          },
+          {
+            "slug": "charles-omenihu",
+            "name": "Charles Omenihu"
+          },
+          {
+            "slug": "ricky-barber",
+            "name": "Ricky Barber"
+          },
+          {
+            "slug": "maurice-hurst",
+            "name": "Maurice Hurst"
+          }
+        ]
+      },
+      {
+        "position": "OLB",
+        "tiers": [
+          {
+            "slug": "odafe-oweh",
+            "name": "Odafe Oweh"
+          },
+          {
+            "slug": "joshua-josephs",
+            "name": "Joshua Josephs"
+          },
+          {
+            "slug": "javontae-jean-baptiste",
+            "name": "Javontae Jean-Baptiste"
+          },
+          {
+            "slug": "t-j-maguranyanga-2",
+            "name": "T.J. Maguranyanga"
+          }
+        ]
+      },
+      {
+        "position": "LB",
+        "tiers": [
+          {
+            "slug": "sonny-styles",
+            "name": "Sonny Styles"
+          },
+          {
+            "slug": "leo-chenal",
+            "name": "Leo Chenal"
+          },
+          {
+            "slug": "ale-kaho",
+            "name": "Ale Kaho"
+          },
+          {
+            "slug": "curtis-jacobs",
+            "name": "Curtis Jacobs"
+          }
+        ]
+      },
+      {
+        "position": "LB",
+        "tiers": [
+          {
+            "slug": "frankie-luvu",
+            "name": "Frankie Luvu"
+          },
+          {
+            "slug": "jordan-magee",
+            "name": "Jordan Magee"
+          },
+          {
+            "slug": "kain-medrano",
+            "name": "Kain Medrano"
+          },
+          {
+            "slug": "krys-barnes",
+            "name": "Krys Barnes"
+          }
+        ]
+      },
+      {
+        "position": "OLB",
+        "tiers": [
+          {
+            "slug": "k-lavon-chaisson",
+            "name": "K&#x27;Lavon Chaisson"
+          },
+          {
+            "slug": "dorance-armstrong",
+            "name": "Dorance Armstrong"
+          },
+          {
+            "slug": "d-j-johnson-2",
+            "name": "D.J. Johnson"
+          }
+        ]
+      },
+      {
+        "position": "CB",
+        "tiers": [
+          {
+            "slug": "trey-amos",
+            "name": "Trey Amos"
+          },
+          {
+            "slug": "rasul-douglas",
+            "name": "Rasul Douglas"
+          },
+          {
+            "slug": "fred-davis-ii",
+            "name": "Fred Davis II"
+          }
+        ]
+      },
+      {
+        "position": "CB",
+        "tiers": [
+          {
+            "slug": "amik-robertson",
+            "name": "Amik Robertson"
+          },
+          {
+            "slug": "antonio-hamilton-sr",
+            "name": "Antonio Hamilton Sr."
+          },
+          {
+            "slug": "car-lin-vigers",
+            "name": "Car&#x27;lin Vigers"
+          }
+        ]
+      },
+      {
+        "position": "CB",
+        "tiers": [
+          {
+            "slug": "mike-sainristil",
+            "name": "Mike Sainristil"
+          },
+          {
+            "slug": "fabian-moreau",
+            "name": "Fabian Moreau"
+          },
+          {
+            "slug": "darius-rush",
+            "name": "Darius Rush"
+          }
+        ]
+      },
+      {
+        "position": "SS",
+        "tiers": [
+          {
+            "slug": "nick-cross",
+            "name": "Nick Cross"
+          },
+          {
+            "slug": "tyler-owens",
+            "name": "Tyler Owens"
+          },
+          {
+            "slug": "qwuantrezz-knight",
+            "name": "Qwuantrezz Knight"
+          }
+        ]
+      },
+      {
+        "position": "FS",
+        "tiers": [
+          {
+            "slug": "jeremy-reaves",
+            "name": "Jeremy Reaves"
+          },
+          {
+            "slug": "jartavius-martin",
+            "name": "Quan Martin"
+          },
+          {
+            "slug": "percy-butler",
+            "name": "Percy Butler"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "section": "Special Teams",
     "rows": [
       {
@@ -237,6 +470,15 @@
           {
             "slug": "tress-way",
             "name": "Tress Way"
+          }
+        ]
+      },
+      {
+        "position": "K",
+        "tiers": [
+          {
+            "slug": "drew-stevens",
+            "name": "Drew Stevens"
           }
         ]
       },
@@ -262,8 +504,16 @@
         "position": "KR",
         "tiers": [
           {
-            "slug": "jeremy-mcnichols",
-            "name": "Jeremy McNichols"
+            "slug": "luke-mccaffrey",
+            "name": "Luke McCaffrey"
+          },
+          {
+            "slug": "jaylin-lane",
+            "name": "Jaylin Lane"
+          },
+          {
+            "slug": "dyami-brown",
+            "name": "Dyami Brown"
           }
         ]
       },
@@ -275,8 +525,16 @@
             "name": "Jaylin Lane"
           },
           {
-            "slug": "mike-sainristil",
-            "name": "Mike Sainristil"
+            "slug": "luke-mccaffrey",
+            "name": "Luke McCaffrey"
+          },
+          {
+            "slug": "treylon-burks",
+            "name": "Treylon Burks"
+          },
+          {
+            "slug": "antonio-williams",
+            "name": "Antonio Williams"
           }
         ]
       }
