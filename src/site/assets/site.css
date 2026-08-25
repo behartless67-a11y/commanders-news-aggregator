@@ -2457,17 +2457,29 @@ main.layout{
   font-size: 20px;
 }
 
+/* Each bar and its label share one column (.admin-bar-col) rather than the
+   label sitting inside .admin-bar itself — .admin-bar is a fixed-height box
+   the fill grows up from the bottom of, and text dropped inside that would
+   either get clipped by its overflow:hidden or thrown off the height math
+   the fill's own percentage assumes. The fixed height that used to live on
+   .admin-bars (the row) moves to .admin-bar (each box) instead, since the
+   row now also contains label text of its own varying height. */
 .admin-bars{
   display: flex;
   align-items: flex-end;
   gap: 4px;
-  height: 80px;
   margin: 14px 0;
 }
 
-.admin-bar{
+.admin-bar-col{
   flex: 1;
-  height: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-bar{
+  height: 80px;
   display: flex;
   align-items: flex-end;
   background: var(--surface);
@@ -2479,6 +2491,21 @@ main.layout{
   width: 100%;
   min-height: 2px;
   background: var(--gold);
+}
+
+/* Deliberately terse (see the labelFn calls in loadStats() — "8/12", "Aug",
+   "3p", "Sun") rather than the full date/time — the hover title carries the
+   detail, this just has to fit under a bar that can be as narrow as ~25px
+   when 24 of them share a row. */
+.admin-bar-label{
+  margin-top: 4px;
+  font-size: 9px;
+  line-height: 1.3;
+  color: var(--text-faint);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .admin-path-list{
@@ -2585,7 +2612,12 @@ main.layout{
    departure from the desktop layout, not a scaled-down version of it. */
 @media (max-width: 640px){
   .header-inner{ justify-content: center; }
-  .brand-logo{ height: 105px; }
+  /* A further trim past the two proportional header cuts this size already
+     tracked (160px → 120px → 105px, matching desktop's own two passes) —
+     this one has no desktop pass to mirror, so 92px isn't a ratio, it's
+     desktop's own clamp() floor (clamp(92px, 13vw, 170px)) reused as a fixed
+     phone value instead of picking a new number out of nowhere. */
+  .brand-logo{ height: 92px; }
   .header-bottom-row{ flex-direction: column; align-items: center; }
   .podcast-page-list{ grid-template-columns: 1fr; }
   .beat-grid{ grid-template-columns: 1fr; }
@@ -2624,9 +2656,17 @@ main.layout{
     display: flex;
     background: #000;
     border-radius: var(--radius);
-    padding: 8px 0;
+    padding: 6px 0;
   }
-  .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; }
+  .filter-tabs{ justify-content: center; flex-wrap: wrap; width: 100%; gap: 3px; }
+
+  /* Tighter than the desktop row's own padding/size (7px 14px, 12.5px) —
+     .filter-tabs is display:none on desktop at this width, so this only ever
+     touches the open dropdown, never the row itself. 13 links at the desktop
+     size wrapped into 5 rows and pushed the ticker most of a screen down;
+     smaller text and padding both shrink each row and let more links share a
+     row, which is where most of the height actually comes back. */
+  .filter-tabs a{ padding: 5px 8px; font-size: 11px; letter-spacing: 0.03em; }
 
   /* Two sentences instead of the full excerpt — see firstSentences() in
      templates.js. */

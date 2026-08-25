@@ -2081,12 +2081,38 @@ ${footer(sources, generatedAt)}
   // day-of-week) — unlike rankedList, item order here is meaningful (a
   // calendar, a clock, a week) and must never be sorted by count the way a
   // "top N" list is, or the chart stops reading as a timeline.
-  function barRow(items, tooltip) {
+  function barRow(items, tooltip, label) {
     var max = Math.max(1, items.reduce(function (m, it) { return Math.max(m, it.count); }, 0));
     return '<div class="admin-bars">' + items.map(function (it) {
       var pct = Math.round((it.count / max) * 100);
-      return '<div class="admin-bar" title="' + esc(tooltip(it)) + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>';
+      return '<div class="admin-bar-col">' +
+        '<div class="admin-bar" title="' + esc(tooltip(it)) + '"><div class="admin-bar-fill" style="height:' + pct + '%"></div></div>' +
+        '<div class="admin-bar-label">' + esc(label(it)) + '</div>' +
+      '</div>';
     }).join('') + '</div>';
+  }
+
+  var MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  // Short axis labels for the four ordered charts — deliberately terser than
+  // the hover tooltip's full sentence, since these sit under a bar that can
+  // be as narrow as ~25px once 24 of them (see the hour-of-day chart) share
+  // one row.
+  function dayLabel(iso) {
+    var parts = iso.split('-');
+    return parseInt(parts[1], 10) + '/' + parseInt(parts[2], 10);
+  }
+
+  function monthLabel(yyyyMm) {
+    return MONTH_ABBR[parseInt(yyyyMm.slice(5, 7), 10) - 1] || yyyyMm;
+  }
+
+  function hourLabel(hh) {
+    var h = parseInt(hh, 10);
+    var period = h < 12 ? 'a' : 'p';
+    var h12 = h % 12;
+    if (h12 === 0) h12 = 12;
+    return h12 + period;
   }
 
   function tile(title, bodyHtml, wide) {
@@ -2122,11 +2148,11 @@ ${footer(sources, generatedAt)}
         // readers reloading" is a hover-away detail, not a headline one.
         tiles.push(tile('Last 14 days', barRow(data.days, function (d) {
           return d.date + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') + ', ' + d.uniques + ' unique';
-        }), true));
+        }, function (d) { return dayLabel(d.date); }), true));
 
         tiles.push(tile('Last 12 months', barRow(data.months, function (m) {
           return m.month + ': ' + m.count + ' view' + (m.count === 1 ? '' : 's');
-        }), true));
+        }, function (m) { return monthLabel(m.month); }), true));
 
         // Site time, not each visitor's own — see hourAndWeekday() in
         // track.js. Labeled explicitly since a raw hour number alone would
@@ -2134,11 +2160,11 @@ ${footer(sources, generatedAt)}
         // happens to assume.
         tiles.push(tile('By hour of day (Eastern Time)', barRow(data.hours, function (h) {
           return h.hour + ':00 — ' + h.count + ' view' + (h.count === 1 ? '' : 's');
-        }), true));
+        }, function (h) { return hourLabel(h.hour); }), true));
 
         tiles.push(tile('By day of week', barRow(data.weekdays, function (w) {
           return w.weekday + ': ' + w.count + ' view' + (w.count === 1 ? '' : 's');
-        })));
+        }, function (w) { return w.weekday; })));
 
         tiles.push(tile('Most viewed pages', '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>'));
         tiles.push(tile('Traffic sources', '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>'));
