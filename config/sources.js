@@ -57,6 +57,22 @@ export const SOURCES = [
     url: 'https://www.hogshaven.com/rss/index.xml',
   },
   {
+    // A dedicated Commanders category feed, not a filtered slice of a
+    // general NFL feed — verified 2026-08-26 with a direct curl: standard
+    // WordPress RSS, robots.txt allows everything, and every item across the
+    // fetch (8 at a time) was genuinely Commanders-specific, not just
+    // NFL-tagged. Lower volume than Hogs Haven/Riggo's Rag (8 items per
+    // fetch vs. their dozens), but same-week fresh.
+    id: 'atoz-sports',
+    name: 'A to Z Sports',
+    homepage: 'https://atozsports.com/nfl/washington-commanders-news/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: true,
+    enabled: true,
+    url: 'https://atozsports.com/nfl/washington-commanders-news/feed/',
+  },
+  {
     // Commanders-only FanSided blog. High volume (90 items) and same-day fresh.
     id: 'riggos-rag',
     name: "Riggo's Rag",

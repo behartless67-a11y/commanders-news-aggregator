@@ -2594,6 +2594,18 @@ main.layout{
   padding: 8px 16px;
 }
 
+/* Guarantees the RSS and Watch Party links stack on their own lines rather
+   than sitting side by side — .rss-link is inline-flex, so two of them as
+   plain siblings would otherwise flow onto the same line whenever the
+   column is wide enough to fit both, instead of always stacking the way
+   every other footer column's content does. */
+.footer-links-col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .rss-link:hover{
   color: var(--gold);
   border-color: var(--gold);
@@ -3154,7 +3166,7 @@ body.tv-page{
 }
 
 .tv-logo{
-  width: min(55vw, 820px);
+  width: min(48vw, 720px);
   height: auto;
   filter: drop-shadow(6px 6px 0 rgba(0,0,0,1));
 }
@@ -3185,9 +3197,9 @@ body.tv-page{
      line-clamp on .tv-post-text below — without it, whichever slot's post
      happens to be short leaves a shorter box than its neighbors and the row
      visibly resizes every time any one of the three slots cycles. */
-  min-height: 5.5em;
+  min-height: 6em;
   text-align: center;
-  font-size: clamp(16px, 1.7vw, 24px);
+  font-size: clamp(18px, 2vw, 27px);
   line-height: 1.35;
   color: var(--text);
   text-shadow: 0 2px 14px rgba(0,0,0,0.6);

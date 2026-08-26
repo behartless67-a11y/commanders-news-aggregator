@@ -681,11 +681,20 @@ function footer(sources, generatedAt) {
         <h3>National Coverage</h3>
         <ul class="source-list">${leagueLinks}</ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-links-col">
         <h3>Subscribe</h3>
         <a class="rss-link" href="feed.xml">
           <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9h-2.5a6.5 6.5 0 0 0-6.5-6.5V11zm0-6a15 15 0 0 1 15 15h-2.5A12.5 12.5 0 0 0 4 7.5V5zm2 12.5A1.75 1.75 0 1 1 6 21a1.75 1.75 0 0 1 0-3.5z"/></svg>
           RSS Feed
+        </a>
+        <!-- Deliberately not in the main nav — a reader tapping a normal-
+             looking nav tab shouldn't land on a full-bleed slideshow that
+             takes over the screen. This is the one place someone hosting a
+             watch party (or looking for it a second time) would actually
+             think to check. -->
+        <a class="rss-link" href="tv.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-5l1.5 3h-9L12 17H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2v8h14V7H5z"/></svg>
+          Watch Party Mode
         </a>
       </div>
     </div>
