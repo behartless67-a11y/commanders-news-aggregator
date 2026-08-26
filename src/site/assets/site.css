@@ -2923,12 +2923,21 @@ main.layout.page-admin{
    + 480px river + 320px sidebar + two 28px gaps + 48px page padding ≈
    1204px, so 1300px leaves a bit of slack rather than sitting right at that
    floor. Below this the ticker carries the same content instead (see the
-   .ticker rule here and liveFeedWidget() in templates.js) — the two are
-   never both visible at once. Higher specificity than the plain main.layout
-   rule above (.page-river adds a second class), so this wins regardless of
-   which one comes first in the file. */
+   .hero .ticker rule here and liveFeedWidget() in templates.js) — the two
+   are never both visible at once on a river page. Higher specificity than
+   the plain main.layout rule above (.page-river adds a second class), so
+   this wins regardless of which one comes first in the file.
+   .hero .ticker, not a bare .ticker — .ticker and .page-river are siblings
+   in the DOM (the ticker sits inside .hero, which comes before <main>), not
+   ancestor/descendant, so a .page-river-scoped selector could never have
+   matched it anyway. Scoping to .hero is what actually distinguishes a
+   river page's ticker from /tv.html's, which calls the same ticker()
+   function but never wraps it in .hero — a bare .ticker rule here caught
+   that one too and hid it at any width past 1300px, discovered by actually
+   screenshotting the TV page in headless Chrome rather than assuming this
+   rule's scope was still accurate once it got a second caller. */
 @media (min-width: 1300px){
-  .ticker{ display: none; }
+  .hero .ticker{ display: none; }
   main.layout.page-river{
     grid-template-columns: 280px minmax(0, 1fr) 320px;
     align-items: start;
@@ -3069,4 +3078,146 @@ main.layout.page-admin{
   .footer-toggle::after{ content: ' \25BE'; }
   .nav-toggle-checkbox:checked ~ .footer-toggle::after{ content: ' \25B4'; }
   .nav-toggle-checkbox:checked ~ .footer-grid{ display: grid; }
+}
+
+/* ---------- TV / lobby display mode (/tv.html) ----------
+   A different reading context from every other page — glanced at from
+   across a room for hours, not scrolled or clicked through at a desk — so
+   this shares almost none of the normal page chrome's sizing, kept as its
+   own section rather than folded into any of the rules above. What it does
+   reuse is the ticker component itself (just restyled far larger here, not
+   rebuilt) and the same hero photo/scrim technique the header uses, both
+   deliberately, so this still feels like the same site from across a room. */
+body.tv-page{
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.tv-bg{
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg')
+    center 35% / cover no-repeat,
+    var(--bg);
+}
+
+/* Darker and flatter than .hero::before's own scrim — that one fades to the
+   plain page background at the bottom because real content (the ticker,
+   headlines) takes over from there; here the photo is the entire
+   background for the whole screen, so the scrim has to carry contrast
+   evenly top to bottom instead of handing off partway down. */
+.tv-bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,8,7,0.72) 0%, rgba(10,8,7,0.58) 45%, rgba(10,8,7,0.8) 100%);
+}
+
+/* The ticker, restyled roughly 2.5x larger — same markup, same seamless
+   loop/pause-on-hover/reduced-motion fallback as the header's own copy (see
+   .ticker earlier in this file), just legible from across a room instead of
+   at a desk. */
+.tv-page .ticker{
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(90,20,20,0.65), rgba(90,20,20,0.35));
+}
+
+.tv-page .ticker-rail{ padding: 0 40px; gap: 24px; }
+.tv-page .ticker-label{ font-size: 20px; gap: 10px; }
+.tv-page .ticker-label::before{ width: 10px; height: 10px; }
+.tv-page .ticker-post{ padding: 26px 0; margin-right: 64px; font-size: 32px; gap: 14px; }
+.tv-page .ticker-time{ font-size: 26px; }
+.tv-page .ticker-viewport{
+  mask-image: linear-gradient(90deg, transparent, #000 80px, #000 calc(100% - 80px), transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px, #000 calc(100% - 80px), transparent);
+}
+
+/* Fixed rather than flowing below the ticker, with top: 96px to clear it —
+   the ticker's own height is set by its enlarged font/padding above, not by
+   anything this rule reads, so this is a matching estimate, not a
+   computed value; retune together if the ticker's size changes. */
+.tv-main{
+  position: fixed;
+  inset: 0;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  z-index: 1;
+  padding: 40px;
+}
+
+.tv-logo{
+  width: min(55vw, 820px);
+  height: auto;
+  filter: drop-shadow(6px 6px 0 rgba(0,0,0,1));
+}
+
+/* Opacity-only transition, deliberately — animating width/height/position
+   here too would mean a long post replacing a short one visibly resizes or
+   shifts mid-fade instead of just fading, since the text swap happens while
+   fully transparent (see showNext() in renderTvPage()). */
+.tv-post{
+  margin: 0;
+  max-width: 1100px;
+  min-height: 1.35em;
+  text-align: center;
+  font-size: clamp(22px, 3vw, 38px);
+  line-height: 1.35;
+  color: var(--text);
+  text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tv-post.is-visible{ opacity: 1; }
+
+.tv-post-handle{
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 0.6em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Text stays visible ("Exit Full Screen") rather than hiding once active —
+   a kiosk needs an easy way back out of fullscreen as much as into it. */
+.tv-fullscreen-btn{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 2;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,182,18,0.4);
+  background: rgba(20,16,15,0.6);
+  color: var(--gold);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.tv-fullscreen-btn:hover{
+  background: var(--burgundy);
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .tv-post{ transition: none; }
+}
+
+@media (max-width: 900px){
+  .tv-logo{ width: min(70vw, 480px); }
+  .tv-main{ gap: 32px; }
 }

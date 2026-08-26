@@ -1956,6 +1956,122 @@ ${footer(sources, generatedAt)}
 }
 
 /**
+ * A full-bleed lobby/TV display mode — glanced at from across a room, run
+ * unattended for hours, no reader with a mouse to click "show more" — a
+ * different reading context from every other page on the site rather than
+ * a variant of one, so it shares almost none of the usual header()/footer()/
+ * nav chrome. Not linked from the site nav on purpose; reached by typing or
+ * bookmarking /tv.html directly, the way a lobby display's URL usually
+ * works.
+ *
+ * Three independent moving pieces:
+ *   - The existing ticker() component, restyled far larger by .tv-page's own
+ *     CSS rather than rebuilt — it already handles the seamless loop,
+ *     pause-on-hover/focus, and the reduced-motion fallback, and none of
+ *     that changes just because the text is now 3x the size.
+ *   - A one-post-at-a-time cross-fade through the fuller post pool (up to 40,
+ *     not the ticker's own smaller cap) — different content than the ticker
+ *     is showing at any given moment, so a room glancing up at different
+ *     times doesn't just see the same words scroll by twice.
+ *   - A full-page reload every 10 minutes. This page is meant to sit open
+ *     for hours; without a reload, whatever was baked in at the moment
+ *     someone opened the tab is what stays on screen until someone actually
+ *     walks over and refreshes it.
+ */
+export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
+  const posts = socialPosts.slice(0, 40);
+  // Only the three fields the fade-through actually reads — not the full
+  // post objects, and escaped for the one place they're not otherwise
+  // auto-escaped: sitting inside a <script> tag as a literal, where a
+  // post's own text containing "</script>" would otherwise end the script
+  // element early.
+  const postsJson = JSON.stringify(posts.map((p) => ({ handle: p.handle, text: p.text }))).replace(/</g, '\\u003c');
+  const description = `${siteName} — full-screen display mode for a lobby or watch party.`;
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(siteName)} — Display</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="${escapeHtml(description)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body class="tv-page">
+
+<div class="tv-bg" aria-hidden="true"></div>
+
+${ticker(posts)}
+
+<main class="tv-main">
+  <img class="tv-logo" src="logo.png" alt="${escapeHtml(siteName)}" />
+  <p id="tv-post" class="tv-post" aria-live="polite"></p>
+</main>
+
+<button class="tv-fullscreen-btn" id="tv-fullscreen-btn" type="button">Full Screen</button>
+
+<script>
+(function () {
+  'use strict';
+  var posts = ${postsJson};
+  var postEl = document.getElementById('tv-post');
+  var i = 0;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  // Fade out, swap the text while invisible, fade back in — never animates
+  // the text change itself, only the opacity, so a long post replacing a
+  // short one never looks like it's sliding or resizing mid-transition.
+  function showNext() {
+    if (!posts.length) return;
+    postEl.classList.remove('is-visible');
+    setTimeout(function () {
+      var p = posts[i % posts.length];
+      i += 1;
+      postEl.innerHTML = '<span class="tv-post-handle">@' + esc(p.handle) + '</span><span class="tv-post-text">' + esc(p.text) + '</span>';
+      postEl.classList.add('is-visible');
+    }, 500);
+  }
+
+  if (posts.length) {
+    showNext();
+    setInterval(showNext, 9000);
+  }
+
+  var btn = document.getElementById('tv-fullscreen-btn');
+  btn.addEventListener('click', function () {
+    // Browsers only allow requestFullscreen() from a direct user gesture
+    // like this click — a page can never enter fullscreen on its own,
+    // which is exactly why this button has to exist at all.
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen().catch(function () {});
+    }
+  });
+  document.addEventListener('fullscreenchange', function () {
+    btn.textContent = document.fullscreenElement ? 'Exit Full Screen' : 'Full Screen';
+  });
+
+  setTimeout(function () { window.location.reload(); }, 10 * 60 * 1000);
+})();
+</script>
+</body>
+</html>`;
+}
+
+/**
  * Netlify Forms, not a custom backend — `data-netlify="true"` on a plain
  * HTML form is enough for Netlify's own build step to wire up submission
  * handling and spam filtering (the honeypot field below) with zero server

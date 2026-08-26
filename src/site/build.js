@@ -16,7 +16,7 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, blogRiverItems, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -203,6 +203,16 @@ export async function buildSite() {
     'utf8',
   );
 
+  // Not in PAGES/HEADING or any nav link — a lobby/TV display mode reached
+  // by its own URL, not a page a reader browses to. allSocial (the full
+  // pool), not the ticker's own capped socialPosts — more variety to rotate
+  // through over the hours this is meant to stay open.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'tv.html'),
+    renderTvPage({ siteName: SITE_NAME, siteUrl: SITE_URL, socialPosts: allSocial }),
+    'utf8',
+  );
+
   await fs.writeFile(
     path.join(DIST_DIR, 'donate.html'),
     renderDonatePage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
@@ -241,7 +251,8 @@ export async function buildSite() {
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
   // Every real page just written above, for Search Console to crawl from —
-  // not admin.html, which robots.txt below excludes from crawling entirely.
+  // not admin.html or tv.html, which robots.txt below excludes from
+  // crawling entirely (neither is a page a reader browses to).
   const staticPaths = [
     'index.html', 'team-sources.html', 'national-coverage.html',
     'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
@@ -258,7 +269,7 @@ export async function buildSite() {
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
   await fs.writeFile(
     path.join(DIST_DIR, 'robots.txt'),
-    `User-agent: *\nDisallow: /admin.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+    `User-agent: *\nDisallow: /admin.html\nDisallow: /tv.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
     'utf8',
   );
 
