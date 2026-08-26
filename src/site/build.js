@@ -65,6 +65,22 @@ export async function buildSite() {
   // Published Blog posts compete for river placement on their own publish
   // date, same as any other item — not pinned above or below real headlines.
   const blogItems = blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals);
+
+  // A future publishedAt silently defeats that "compete on your own date"
+  // rule: the river sorts on this field, so a post dated ahead of now
+  // outranks every real headline until the clock catches up, and
+  // relativeLabel() reads it as "just now" the whole time (negative minutes
+  // fall through its < 1 branch) — so it looks freshly posted rather than
+  // wrong. Both hand-written posts so far were stamped with a round
+  // hour that landed in the future, which is exactly the mistake this
+  // catches. Warn rather than clamp or hide: clamping to build time still
+  // pins it to the top, and hiding it would silently un-publish a post
+  // someone believed was live.
+  const nowIso = new Date().toISOString();
+  const futureBlog = blogItems.filter((b) => b.publishedAt && b.publishedAt > nowIso);
+  for (const b of futureBlog) {
+    log.warn(`build: ${b.id} is dated ${b.publishedAt}, in the future — it will sit above every real headline until then`);
+  }
   const itemsWithBlog = { ...items, ...Object.fromEntries(blogItems.map((b) => [b.id, b])) };
 
   // Each page is capped to its most recent N rather than rendering the full
