@@ -37,10 +37,6 @@
           {
             "slug": "andrew-wylie",
             "name": "Andrew Wylie"
-          },
-          {
-            "slug": "foster-sarell",
-            "name": "Foster Sarell"
           }
         ]
       },
@@ -371,6 +367,10 @@
           {
             "slug": "d-j-johnson-2",
             "name": "D.J. Johnson"
+          },
+          {
+            "slug": "boogie-basham",
+            "name": "Boogie Basham"
           }
         ]
       },
@@ -439,6 +439,10 @@
           {
             "slug": "qwuantrezz-knight",
             "name": "Qwuantrezz Knight"
+          },
+          {
+            "slug": "quindell-johnson",
+            "name": "Quindell Johnson"
           }
         ]
       },
@@ -456,6 +460,10 @@
           {
             "slug": "percy-butler",
             "name": "Percy Butler"
+          },
+          {
+            "slug": "joshuah-bledsoe",
+            "name": "Joshuah Bledsoe"
           }
         ]
       }
