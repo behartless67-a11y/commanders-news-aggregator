@@ -1969,10 +1969,10 @@ ${footer(sources, generatedAt)}
  *     CSS rather than rebuilt — it already handles the seamless loop,
  *     pause-on-hover/focus, and the reduced-motion fallback, and none of
  *     that changes just because the text is now 3x the size.
- *   - A one-post-at-a-time cross-fade through the fuller post pool (up to 40,
- *     not the ticker's own smaller cap) — different content than the ticker
- *     is showing at any given moment, so a room glancing up at different
- *     times doesn't just see the same words scroll by twice.
+ *   - Three independent cross-fading slots (not the ticker's own smaller
+ *     cap — up to 40 posts to draw from), each walking every 3rd post so the
+ *     row never shows the same post twice at once, and staggered so the
+ *     three don't all fade out in the same instant — see makeSlot() below.
  *   - A full-page reload every 10 minutes. This page is meant to sit open
  *     for hours; without a reload, whatever was baked in at the moment
  *     someone opened the tab is what stays on screen until someone actually
@@ -2012,7 +2012,11 @@ ${ticker(posts)}
 
 <main class="tv-main">
   <img class="tv-logo" src="logo.png" alt="${escapeHtml(siteName)}" />
-  <p id="tv-post" class="tv-post" aria-live="polite"></p>
+  <div class="tv-posts">
+    <p class="tv-post" aria-live="polite"></p>
+    <p class="tv-post" aria-live="polite"></p>
+    <p class="tv-post" aria-live="polite"></p>
+  </div>
 </main>
 
 <button class="tv-fullscreen-btn" id="tv-fullscreen-btn" type="button">Full Screen</button>
@@ -2021,8 +2025,7 @@ ${ticker(posts)}
 (function () {
   'use strict';
   var posts = ${postsJson};
-  var postEl = document.getElementById('tv-post');
-  var i = 0;
+  var slotEls = Array.prototype.slice.call(document.querySelectorAll('.tv-post'));
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -2030,23 +2033,40 @@ ${ticker(posts)}
     });
   }
 
+  // Each slot walks every Nth post (slot 0: posts[0, 3, 6, ...], slot 1:
+  // posts[1, 4, 7, ...], and so on for however many slots there are), so the
+  // slots showing at once are always different posts, never the same one
+  // duplicated across the row.
+  //
   // Fade out, swap the text while invisible, fade back in — never animates
   // the text change itself, only the opacity, so a long post replacing a
   // short one never looks like it's sliding or resizing mid-transition.
-  function showNext() {
-    if (!posts.length) return;
-    postEl.classList.remove('is-visible');
-    setTimeout(function () {
-      var p = posts[i % posts.length];
-      i += 1;
-      postEl.innerHTML = '<span class="tv-post-handle">@' + esc(p.handle) + '</span><span class="tv-post-text">' + esc(p.text) + '</span>';
-      postEl.classList.add('is-visible');
-    }, 500);
+  function makeSlot(el, startIndex) {
+    var i = startIndex;
+    return function tick() {
+      if (!posts.length) return;
+      el.classList.remove('is-visible');
+      setTimeout(function () {
+        var p = posts[i % posts.length];
+        i += slotEls.length;
+        el.innerHTML = '<span class="tv-post-handle">@' + esc(p.handle) + '</span><span class="tv-post-text">' + esc(p.text) + '</span>';
+        el.classList.add('is-visible');
+      }, 500);
+    };
   }
 
   if (posts.length) {
-    showNext();
-    setInterval(showNext, 9000);
+    slotEls.forEach(function (el, slotIndex) {
+      var tick = makeSlot(el, slotIndex);
+      // Staggered start — slot 0 at 0s, slot 1 at 3s, slot 2 at 6s (evenly
+      // spread across the 9s interval every slot shares) — so the row never
+      // fades all three out at the same instant. Each slot's own 9s cadence
+      // continues unstaggered after this first tick.
+      setTimeout(function () {
+        tick();
+        setInterval(tick, 9000);
+      }, slotIndex * (9000 / slotEls.length));
+    });
   }
 
   var btn = document.getElementById('tv-fullscreen-btn');
