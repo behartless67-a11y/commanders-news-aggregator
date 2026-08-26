@@ -490,8 +490,10 @@ function teamStatsWidget(teamStats) {
         : '';
     return `
       <div class="ts-panel ts-panel-${side}">
-        ${headline(yds, 'yds/gm', data.yardsPerGame)}
-        ${headline(pts, 'pts/gm', data.pointsPerGame)}
+        <div class="ts-headline-row">
+          ${headline(yds, 'yds/gm', data.yardsPerGame)}
+          ${headline(pts, 'pts/gm', data.pointsPerGame)}
+        </div>
         ${leaders}
       </div>`;
   };

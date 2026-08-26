@@ -994,19 +994,29 @@ main.layout{
    unsupported the widget would render completely blank. */
 .widget-teamstats-single .ts-panel{ display: block; }
 
-.ts-headline{
+/* Yards and points side by side, not stacked — two separate rank numbers
+   read as one comparison at a glance this way instead of two disconnected
+   lines. */
+.ts-headline-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
   margin: 0 0 8px;
-  font-size: 12px;
+}
+
+.ts-headline{
+  margin: 0;
+  font-size: 11px;
   color: var(--text-muted);
   display: flex;
   align-items: baseline;
-  gap: 7px;
+  gap: 6px;
   flex-wrap: wrap;
 }
 
 .ts-headline .ts-rank{
   color: var(--gold);
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1;
 }
