@@ -586,15 +586,6 @@
     }
   },
   {
-    "slug": "foster-sarell",
-    "name": "Foster Sarell",
-    "jersey": "79",
-    "position": "OT",
-    "espnId": "4242555",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4242555.png",
-    "stats": null
-  },
-  {
     "slug": "max-scharping",
     "name": "Max Scharping",
     "jersey": "68",
@@ -1746,5 +1737,14 @@
         }
       ]
     }
+  },
+  {
+    "slug": "malik-spencer",
+    "name": "Malik Spencer",
+    "jersey": "36",
+    "position": "S",
+    "espnId": "4782664",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4782664.png",
+    "stats": null
   }
 ]
