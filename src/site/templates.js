@@ -245,6 +245,98 @@ function ticker(posts) {
 }
 
 /**
+ * How many posts feed the left-column live feed's continuous loop. Matches
+ * MAX_TICKER_POSTS' own default in build.js — one loop-group needs to be
+ * taller than the river ever realistically gets, or the animation runs out
+ * of content mid-loop and the same gap of nothing shows up at the same point
+ * on every cycle regardless of scroll position (a taller box alone doesn't
+ * fix that, only more posts in the loop does). 12 was short enough for that
+ * to happen on an ordinary river; this uses the same-size pool the ticker
+ * already draws from rather than an arbitrarily smaller slice of it.
+ */
+const LIVE_FEED_COUNT = Number(process.env.LIVE_FEED_COUNT || 30);
+
+/** Flat per-post pace for the loop's scroll speed — see the comment in liveFeedWidget() for why this isn't derived from character count the way the ticker's is. */
+const LIVE_FEED_SECONDS_PER_POST = Number(process.env.LIVE_FEED_SECONDS_PER_POST || 4.5);
+
+/**
+ * Same fields as socialFeedPost() (avatar, handle, timestamp, text) at a
+ * smaller size to fit a narrower column — this isn't a distinct data shape,
+ * just a more compact rendering of the same social post for a different spot
+ * on the page. The whole post is one <a>, like .ticker-post, rather than an
+ * avatar beside a separately-linked body — one tap target, and it sidesteps
+ * ever nesting a link inside a link.
+ */
+function liveFeedPost(post) {
+  const account = SOCIAL_ACCOUNTS_BY_HANDLE.get(post.handle);
+  const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
+  const avatar = account?.avatar
+    ? `<img class="live-feed-avatar" src="${escapeHtml(account.avatar)}" alt="" width="32" height="32" loading="lazy" />`
+    : `<span class="live-feed-avatar live-feed-avatar-placeholder" aria-hidden="true">${escapeHtml(post.handle.charAt(0))}</span>`;
+  return `
+        <a class="live-feed-post" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+          ${avatar}
+          <span class="live-feed-body">
+            <span class="live-feed-head-row">
+              <span class="live-feed-handle">@${escapeHtml(post.handle)}</span>
+              ${when ? `<span class="live-feed-time">${escapeHtml(when)}</span>` : ''}
+            </span>
+            <span class="live-feed-text">${escapeHtml(post.text)}</span>
+          </span>
+        </a>`;
+}
+
+/**
+ * Left-column replacement for the horizontal ticker, on wide screens only
+ * (see the shared min-width: 1300px breakpoint in site.css) — below that
+ * width there isn't room for a genuine third column without crushing the
+ * river, so the ticker keeps carrying the same content there instead. The
+ * two never show at once: same posts, same underlying data, just two
+ * different presentations for two different amounts of available width.
+ *
+ * Same seamless-loop technique as ticker(), rotated 90°: the post list is
+ * rendered twice into stacked .live-feed-group blocks inside one
+ * .live-feed-track, which animates translateY to exactly -50% and repeats —
+ * because the second copy is byte-identical to the first, the loop point is
+ * invisible. The second copy is aria-hidden so a screen reader (or a search
+ * engine) encounters each post once, not twice.
+ *
+ * Duration is a flat rate per post, not derived from character count the way
+ * the ticker's is — a single-line horizontal strip's width is reliably
+ * proportional to its text length, but a vertical post's rendered height
+ * isn't: every post here is clamped to 3 lines (see .live-feed-text), so a
+ * much longer post doesn't take proportionally more room, it just clamps at
+ * the same height a short one would. Counting posts is the more honest
+ * estimate of how long one full loop actually takes.
+ *
+ * Stretches to match the river column's height instead of scrolling inside a
+ * fixed box — see align-self: stretch on .widget.live-feed in site.css.
+ * Returns empty string with nothing to show, same as ticker() and sidebar().
+ */
+function liveFeedWidget(posts) {
+  if (!posts.length) return '';
+  const capped = posts.slice(0, LIVE_FEED_COUNT);
+  const group = capped.map(liveFeedPost).join('');
+  const seconds = Math.max(20, Math.round(capped.length * LIVE_FEED_SECONDS_PER_POST));
+  return `
+    <aside class="widget live-feed" aria-labelledby="live-feed-heading">
+      <div class="live-feed-head">
+        <h2 id="live-feed-heading">Live Feed</h2>
+        <a class="live-feed-viewall" href="social-feed.html">View all</a>
+      </div>
+      <div class="live-feed-viewport">
+        <div class="live-feed-track" style="animation-duration: ${seconds}s">
+          <div class="live-feed-group">${group}
+          </div>
+          <div class="live-feed-group" aria-hidden="true">${group}
+          </div>
+        </div>
+      </div>
+      <a class="live-feed-more-link" href="social-feed.html">View all live updates</a>
+    </aside>`;
+}
+
+/**
  * Pull the 11-character video ID out of a YouTube watch URL. Derived at render
  * time rather than stored, so the collector stays a plain RSS collector — a
  * video item is just an item whose link happens to be a watch URL.
@@ -2556,6 +2648,8 @@ ${ticker(socialPosts)}
 </div>
 
 <main class="layout page-river${rail ? '' : ' layout-wide'}">
+  ${liveFeedWidget(socialPosts)}
+
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
     <div class="river-heading-row">
       <div class="river-heading-group">

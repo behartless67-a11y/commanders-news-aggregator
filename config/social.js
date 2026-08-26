@@ -30,6 +30,7 @@ export const SOCIAL_ACCOUNTS = [
     name: 'Washington Commanders',
     label: 'Official',
     alwaysRelevant: true,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/700/148/958/599/960/original/028d3fbd2326c127.jpg',
   },
   {
     handle: 'JPFinlayNBCS',
@@ -72,6 +73,16 @@ export const SOCIAL_ACCOUNTS = [
   {
     // Practice-day video/photo threads, added 2026-08-20 — flag for review if
     // he turns out to also cover other DC teams; treated as beat for now.
+    //
+    // Not actually mirrored on the bridge as of 2026-08-26 — a direct lookup
+    // (GET /api/v1/accounts/lookup?acct=Scott7news@sportsbots.xyz) returns a
+    // plain 404, same as the Nicki Jhabvala case in the file header comment.
+    // So this isn't just missing an avatar, it has no posts flowing through
+    // resolveAccountId()/collectAccount() at all right now — collectAccount()
+    // already logs a warning and skips it rather than failing the build (see
+    // src/collectors/mastodon.js), so nothing is broken, this entry is just
+    // dormant. Left in rather than removed, in case the bridge picks him back
+    // up later — revisit if he's still unmirrored after a while.
     handle: 'Scott7news',
     name: 'Scott Abraham',
     label: 'Local TV',
@@ -84,30 +95,35 @@ export const SOCIAL_ACCOUNTS = [
     name: 'Adam Schefter',
     label: 'ESPN',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/588/365/370/019/082/original/f086948affb1182d.jpg',
   },
   {
     handle: 'RapSheet',
     name: 'Ian Rapoport',
     label: 'NFL Network',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/565/144/092/095/359/original/a4400b723be1d2ea.jpg',
   },
   {
     handle: 'MikeGarafolo',
     name: 'Mike Garafolo',
     label: 'NFL Network',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/560/794/329/859/190/original/020e3a3544c4ac94.jpg',
   },
   {
     handle: 'JosinaAnderson',
     name: 'Josina Anderson',
     label: 'Insider',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/567/064/102/804/900/original/5a67beb450d760f7.jpg',
   },
   {
     handle: 'pfrumors',
     name: 'Pro Football Rumors',
     label: 'PFR',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/109/900/964/055/544/094/original/add6b43c6544ef15.jpg',
   },
   {
     // Covers NFL *and* NHL for NBC Sports Washington, not Commanders-only —
@@ -117,6 +133,7 @@ export const SOCIAL_ACCOUNTS = [
     name: 'Grant Paulsen',
     label: '106.7 The Fan',
     alwaysRelevant: false,
+    avatar: 'https://files.mastodon.social/cache/accounts/avatars/111/840/283/497/327/313/original/3fe888ca1ce0d510.jpg',
   },
 ];
 

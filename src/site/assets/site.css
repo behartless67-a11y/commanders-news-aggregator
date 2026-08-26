@@ -411,6 +411,225 @@ img, svg{ display:block; max-width:100%; }
   .ticker-group[aria-hidden="true"]{ display: none; }
 }
 
+/* ---------- Live feed (left column, wide desktop only) ----------
+   Stands in for the ticker at wide widths rather than sitting alongside it —
+   see liveFeedWidget() in templates.js and the shared min-width: 1300px
+   breakpoint further down (.ticker is hidden there, this appears there).
+   Same underlying posts either way; just two presentations for two very
+   different amounts of available width. */
+.widget.live-feed{
+  padding: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  /* Fills the grid row's full height (set by whichever column is tallest —
+     almost always the river) rather than a fixed box of its own. The
+     surrounding grid still defaults to align-items: start for its other
+     items (see main.layout.page-river), so the sidebar's own height is
+     completely unaffected by this — align-self only overrides this one
+     item's own cross-axis sizing, it isn't a container-wide switch. */
+  align-self: stretch;
+  /* The same burgundy card treatment .widget-videos already uses, not a new
+     look of its own — gold-on-gold (the first attempt here) forced the
+     accent links to white and measured under 3:1 for body text either way;
+     burgundy is proven and everything already clears AA against it without
+     even needing this override (checked: --text 11.3:1, --text-muted 5.2:1,
+     --gold-accent 7.7:1, all against the gradient's worst/lighter end), so
+     --text-faint is the only tier that needs a nudge, same as the video
+     widget's own one-line override. */
+  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
+  /* Same hard-edge, zero-blur shadow as .widget-videos, in place of a
+     border. */
+  border-color: transparent;
+  box-shadow: 3px 3px 0 var(--gold);
+  --text-faint: #cbbfba;
+  --border-soft: rgba(255,182,18,0.18);
+}
+
+.live-feed-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.live-feed-head h2{
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+.live-feed-viewall{
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+
+.live-feed-viewall:hover{ color: var(--text); }
+
+/* The scrolling middle section, same viewport/track/group shape as the
+   ticker (see .ticker-viewport/.ticker-track/.ticker-group) just rotated:
+   this one animates translateY instead of translateX.
+   flex-basis: 0, not auto — this item's *content* is two full copies of
+   the post list stacked (see .live-feed-group), deliberately taller than
+   this box will ever actually render, with the excess clipped by
+   overflow:hidden below. If the basis were auto, that oversized content
+   would count as this item's "preferred size" while .widget.live-feed's own
+   height is still being decided (align-self: stretch only fixes the FINAL
+   size, not what's used for the grid's earlier auto-row-height pass), and
+   the whole row would balloon to roughly twice the height the river
+   actually needs. Basis 0 tells the flex algorithm to ignore that content
+   size and let flex-grow (still 1) fill whatever height the row turns out
+   to be instead — the visible result is identical, only the sizing math
+   changes. */
+.live-feed-viewport{
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(180deg, transparent, #000 20px, #000 calc(100% - 20px), transparent);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 20px, #000 calc(100% - 20px), transparent);
+}
+
+.live-feed-track{
+  display: flex;
+  flex-direction: column;
+  /* Duration is set inline per build, from post count (see the comment in
+     liveFeedWidget()) — this is only the fallback. */
+  animation: live-feed-scroll 60s linear infinite;
+}
+
+/* Two of these, byte-identical (the second is the aria-hidden duplicate) —
+   margin-bottom rather than a gap on .live-feed-track itself is what makes
+   the -50% loop land exactly on the second copy's first post: the track's
+   total height is 2×(one group's content + this trailing margin), so half
+   of that is exactly one group plus its own trailing space, matching every
+   other inter-post gap instead of drifting by half of one. */
+.live-feed-group{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 16px 0;
+  margin-bottom: 12px;
+}
+
+@keyframes live-feed-scroll{
+  from{ transform: translateY(0); }
+  to{ transform: translateY(-50%); }
+}
+
+/* Same reasoning as .ticker:hover/:focus-within — let someone actually read
+   and click a post instead of it sliding out from under the pointer. */
+.live-feed:hover .live-feed-track,
+.live-feed:focus-within .live-feed-track{
+  animation-play-state: paused;
+}
+
+.live-feed-post{
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.live-feed-avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.live-feed-avatar-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  color: var(--text-faint);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.live-feed-body{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.live-feed-head-row{
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+.live-feed-handle{
+  font-weight: 700;
+  font-size: 12.5px;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.live-feed-time{
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+/* Clamped to 3 lines rather than shown in full — this is a preview column,
+   not the reading view (that's social-feed.html, one tap away via either
+   link on this card). -webkit-line-clamp degrades gracefully: unsupported
+   just means an unclamped post, not a broken one. */
+.live-feed-text{
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.live-feed-post:hover .live-feed-text{ color: var(--text); }
+
+.live-feed-more-link{
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+
+.live-feed-more-link:hover{ color: var(--text); }
+
+/* Same treatment as .ticker-track's own reduced-motion block: turn the
+   animation off and let the viewport become a plain manually-scrolled box
+   instead. The aria-hidden duplicate group is hidden here too — with no
+   animation to loop through it, it would just be the same 12 posts shown
+   twice in a row on scroll, not a second, separate reason for it to exist. */
+@media (prefers-reduced-motion: reduce){
+  .live-feed-track{ animation: none; }
+  .live-feed-viewport{
+    overflow-y: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .live-feed-group[aria-hidden="true"]{ display: none; }
+}
+
 /* ---------- Layout ---------- */
 main.layout{
   max-width: var(--max);
@@ -2234,6 +2453,16 @@ main.layout{
 }
 
 .schedule-date.is-win{ color: var(--gold); font-weight: 600; }
+/* is-loss was already applied in the markup (see resultClass in
+   scheduleRow()) with nothing here to render it. Deliberately a muted
+   burgundy rather than a brighter alert-red (#ff8a7a, used for
+   .injury-status-out, was tried first) — a loss shouldn't visually shout the
+   way a win in gold does. --burgundy-600 rather than the base --burgundy:
+   the base measured 1.29:1 against the widget background, essentially
+   unreadable rather than just quiet, so this steps up to the palette's next
+   lighter burgundy (1.67:1) — still unmistakably the same color family, not
+   a shade lighter toward pink/red the way #ff8a7a was. */
+.schedule-date.is-loss{ color: var(--burgundy-600); font-weight: 600; }
 
 .widget h2{
   margin: 0 0 8px;
@@ -2669,6 +2898,23 @@ main.layout{
   .footer-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
+/* The live feed column (river pages only — see .page-river below) needs
+   real room on both sides of it: a comfortable minimum is roughly 280px feed
+   + 480px river + 320px sidebar + two 28px gaps + 48px page padding ≈
+   1204px, so 1300px leaves a bit of slack rather than sitting right at that
+   floor. Below this the ticker carries the same content instead (see the
+   .ticker rule here and liveFeedWidget() in templates.js) — the two are
+   never both visible at once. Higher specificity than the plain main.layout
+   rule above (.page-river adds a second class), so this wins regardless of
+   which one comes first in the file. */
+@media (min-width: 1300px){
+  .ticker{ display: none; }
+  main.layout.page-river{
+    grid-template-columns: 280px minmax(0, 1fr) 320px;
+    align-items: start;
+  }
+}
+
 /* Above ~1400px, .card-excerpt's own 105ch cap (deliberate — see that rule)
    left a growing dead gap between the river and a sidebar that was still
    only 320px wide, worse the wider the screen got. Rather than let the river
@@ -2677,6 +2923,13 @@ main.layout{
 @media (min-width: 1400px){
   main.layout{
     grid-template-columns: minmax(0, 1fr) 640px;
+  }
+  /* Same specificity and same min-width: 1300px condition (still true here)
+     as the .page-river rule above, so source order decides — this one is
+     textually later, so it correctly wins and gives the sidebar its full
+     640px alongside the feed column instead of freezing it at 320px. */
+  main.layout.page-river{
+    grid-template-columns: 280px minmax(0, 1fr) 640px;
   }
   .sidebar{
     flex-direction: row;
