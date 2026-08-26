@@ -1,7 +1,7 @@
 {
   "season": "2025",
   "seasonType": 2,
-  "fetchedAt": "2026-08-25T18:15:23.164Z",
+  "fetchedAt": "2026-08-26T00:24:57.605Z",
   "offense": {
     "yardsPerGame": {
       "value": "318.8",
@@ -36,5 +36,41 @@
       "rank": null,
       "rankLabel": null
     }
+  },
+  "leaders": {
+    "offense": [
+      {
+        "key": "Pass",
+        "name": "Marcus Mariota",
+        "value": "1,695"
+      },
+      {
+        "key": "Rush",
+        "name": "Jacory Croskey-Merritt",
+        "value": "805"
+      },
+      {
+        "key": "Recv",
+        "name": "Deebo Samuel Sr.",
+        "value": "727"
+      }
+    ],
+    "defense": [
+      {
+        "key": "Tckl",
+        "name": "Bobby Wagner",
+        "value": "162"
+      },
+      {
+        "key": "Sack",
+        "name": "Von Miller",
+        "value": "9"
+      },
+      {
+        "key": "Int",
+        "name": "Mike Sainristil",
+        "value": "4"
+      }
+    ]
   }
 }

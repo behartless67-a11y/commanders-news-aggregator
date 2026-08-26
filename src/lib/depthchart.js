@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fetchText } from './http.js';
 import { log } from './log.js';
+import { stripHtml } from './text.js';
 import { DATA_DIR } from './store.js';
 
 /**
@@ -37,8 +38,12 @@ function parseTable(section, tableHtml) {
     const tiers = cells
       .slice(1)
       .map((cell) => {
+        // commanders.com writes names like "K&#x27;Lavon Chaisson" straight
+        // into the HTML — decoded here, once, so escapeHtml() at render time
+        // has plain text to escape instead of re-escaping an entity into
+        // "&amp;#x27;" (which then displays as literal "&#x27;").
         const m = PLAYER_RE.exec(cell);
-        return m ? { slug: m[1], name: m[2] } : null;
+        return m ? { slug: m[1], name: stripHtml(m[2]) } : null;
       })
       .filter(Boolean);
     if (tiers.length) rows.push({ position, tiers });

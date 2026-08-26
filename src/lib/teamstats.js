@@ -37,6 +37,8 @@ const SCHEDULE_URL = (season, seasonType) =>
   `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${TEAM_ABBR}/schedule?season=${season}&seasontype=${seasonType}`;
 const SUMMARY_URL = (eventId) =>
   `https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${eventId}`;
+const LEADERS_URL = (season, seasonType) =>
+  `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/${season}/types/${seasonType}/teams/${TEAM_ID}/leaders`;
 
 const CACHE_PATH = path.join(DATA_DIR, 'team-stats.json');
 
@@ -175,6 +177,7 @@ export async function fetchTeamStats({ season, seasonType = REGULAR_SEASON } = {
   }
 
   const defense = await fetchDefenseAllowed(year, seasonType);
+  const leaders = await fetchTeamLeaders(year, seasonType);
 
   return {
     season: String(year),
@@ -184,57 +187,57 @@ export async function fetchTeamStats({ season, seasonType = REGULAR_SEASON } = {
     // Null when the derivation failed; the widget hides the defense half
     // rather than showing zeroes.
     defense,
+    leaders,
   };
 }
 
 /**
- * Per-group statistical leaders, read out of the roster cache rather than
- * fetched — roster-stats.js already stores a season stat line per player, so
- * this is free.
+ * Per-category statistical leaders, from ESPN's own team+season-scoped
+ * leaders endpoint — NOT derived from the roster cache. An earlier version
+ * cross-referenced the *current* roster against each player's own most
+ * recent season stat line, which silently misattributed a stat to
+ * Washington whenever a since-signed player actually earned it somewhere
+ * else: verified wrong in production, where it named the 2025 tackle and
+ * sack leaders as two players who weren't on the team that season, while
+ * ESPN's own leaders list correctly named Bobby Wagner and Von Miller.
+ * This endpoint only ever lists players who accumulated the stat while
+ * actually on this team that season, so that whole failure mode is gone.
  *
- * Position filtering is what disambiguates the labels, not the label alone:
- * "YDS" appears in the passing, rushing, receiving *and* defensive stat lines
- * (see CATEGORY_FIELDS in roster-stats.js), so "most YDS" without a position
- * filter would compare a quarterback's passing yards against a receiver's
- * receiving yards and call the quarterback the receiving leader.
- *
- * Caveat worth knowing before trusting these: the underlying line is whatever
- * ESPN's per-athlete endpoint reports for that season, so a player who changed
- * teams mid-season carries his combined total, not just his Washington one.
+ * Only the top leader per category is kept, matching the widget's "one
+ * name per stat" display. Each entry only carries an athlete $ref, not a
+ * name, so every category needs one follow-up fetch to resolve it.
  */
-const LEADER_GROUPS = {
-  offense: [
-    { key: 'Pass', label: 'YDS', positions: ['QB'] },
-    { key: 'Rush', label: 'YDS', positions: ['RB', 'FB'] },
-    { key: 'Recv', label: 'YDS', positions: ['WR', 'TE'] },
-  ],
-  defense: [
-    { key: 'Tckl', label: 'TCKL', positions: null },
-    { key: 'Sack', label: 'SACK', positions: null },
-    { key: 'Int', label: 'INT', positions: ['CB', 'DB', 'S', 'SS', 'FS', 'DE', 'DT', 'NT', 'LB', 'ILB', 'OLB', 'EDGE'] },
-  ],
-};
+const LEADER_CATEGORIES = [
+  { name: 'passingYards', group: 'offense', key: 'Pass' },
+  { name: 'rushingYards', group: 'offense', key: 'Rush' },
+  { name: 'receivingYards', group: 'offense', key: 'Recv' },
+  { name: 'totalTackles', group: 'defense', key: 'Tckl' },
+  { name: 'sacks', group: 'defense', key: 'Sack' },
+  { name: 'interceptions', group: 'defense', key: 'Int' },
+];
 
-export function buildLeaders(players = []) {
-  const numeric = (raw) => {
-    const n = parseFloat(String(raw).replace(/,/g, ''));
-    return Number.isFinite(n) ? n : null;
-  };
-  const fieldOf = (player, label) => (player.stats?.fields || []).find((f) => f.label === label);
+async function fetchAthleteName(ref) {
+  const athlete = await fetchJson(ref, 'athlete');
+  return athlete?.displayName || null;
+}
 
-  const leaderFor = ({ key, label, positions }) => {
-    const best = players
-      .filter((p) => p.stats && (!positions || positions.includes(p.position)))
-      .map((p) => ({ player: p, field: fieldOf(p, label) }))
-      .filter((x) => x.field && numeric(x.field.value) > 0)
-      .sort((a, b) => numeric(b.field.value) - numeric(a.field.value))[0];
-    return best ? { key, name: best.player.name, value: String(best.field.value) } : null;
-  };
+export async function fetchTeamLeaders(season, seasonType = REGULAR_SEASON) {
+  const data = await fetchJson(LEADERS_URL(season, seasonType), `team leaders ${season}`);
+  const categories = data?.categories;
+  if (!categories?.length) {
+    log.warn(`team-stats: no leaders for ${season} seasontype ${seasonType}`);
+    return { offense: [], defense: [] };
+  }
 
-  return {
-    offense: LEADER_GROUPS.offense.map(leaderFor).filter(Boolean),
-    defense: LEADER_GROUPS.defense.map(leaderFor).filter(Boolean),
-  };
+  const result = { offense: [], defense: [] };
+  for (const { name, group, key } of LEADER_CATEGORIES) {
+    const top = categories.find((c) => c.name === name)?.leaders?.[0];
+    if (!top?.athlete?.$ref) continue;
+    const athleteName = await fetchAthleteName(top.athlete.$ref);
+    if (!athleteName) continue;
+    result[group].push({ key, name: athleteName, value: top.displayValue });
+  }
+  return result;
 }
 
 export async function saveTeamStatsCache(stats) {

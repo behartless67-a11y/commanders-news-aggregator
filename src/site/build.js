@@ -8,7 +8,7 @@ import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
-import { loadTeamStatsCache, buildLeaders } from '../lib/teamstats.js';
+import { loadTeamStatsCache } from '../lib/teamstats.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -90,12 +90,10 @@ export async function buildSite() {
   const betting = await loadBettingCache();
   // Null when `npm run team-stats` has never run (or its last run failed), and
   // the sidebar then omits the widget entirely rather than rendering an empty
-  // shell. Leaders come off the roster cache rather than the stats fetch, so
-  // they cost nothing extra here.
-  const teamStatsCache = await loadTeamStatsCache();
-  const teamStats = teamStatsCache
-    ? { ...teamStatsCache, leaders: buildLeaders(rosterPlayers) }
-    : null;
+  // shell. Leaders are already part of this cache (see fetchTeamStats() in
+  // teamstats.js) — fetched from ESPN's own team-scoped leaders endpoint,
+  // not derived from the current roster.
+  const teamStats = await loadTeamStatsCache();
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
