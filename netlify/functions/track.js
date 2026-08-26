@@ -161,7 +161,7 @@ function hourAndWeekday(date) {
   return { hour, weekday };
 }
 
-export default async (req) => {
+export default async (req, context) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
 
   const body = await req.json().catch(() => ({}));
@@ -214,6 +214,27 @@ export default async (req) => {
 
   const { hour, weekday } = hourAndWeekday(now);
   tasks.push(bump(`hour:${hour}`), bump(`dow:${weekday}`));
+
+  // Netlify resolves this from the request's IP at the edge and hands the
+  // Function only the derived place-name fields — country/subdivision(state)
+  // name and code, city, coordinates, postal code — not a separate lookup
+  // this code has to make. context.ip (the raw address) is available on the
+  // same object and is deliberately never touched here or written anywhere:
+  // country/state is a coarse-enough bucket to be a reasonable thing to
+  // aggregate, the address it was derived from is not, and the whole point
+  // of this file has been to never store anything that specific. Subdivision
+  // is skipped without a country ("state" isn't a meaningful bucket on its
+  // own — Virginia and a same-named subdivision in another country would
+  // collide) and geo itself is skipped entirely when Netlify doesn't supply
+  // it (some local/CI requests won't have it), rather than bumping a
+  // misleading "Unknown".
+  const geo = context?.geo;
+  if (geo?.country?.name) {
+    tasks.push(bump(`country:${encodeURIComponent(geo.country.name)}`));
+    if (geo.subdivision?.name) {
+      tasks.push(bump(`state:${encodeURIComponent(`${geo.subdivision.name}, ${geo.country.code || geo.country.name}`)}`));
+    }
+  }
 
   // Ever-returning vs. new — see the localStorage flag in site.js. Two
   // all-time running totals, same shape as `total` itself; no per-visitor

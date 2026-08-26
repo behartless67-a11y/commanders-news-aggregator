@@ -64,6 +64,8 @@ export default async (req) => {
     topOS,
     topDevices,
     topLanguages,
+    topCountries,
+    topStates,
   ] = await Promise.all([
     text('total'),
     text('outboundTotal'),
@@ -81,6 +83,8 @@ export default async (req) => {
     topN('os:', 'os'),
     topN('device:', 'device'),
     topN('lang:', 'language'),
+    topN('country:', 'country'),
+    topN('state:', 'state'),
   ]);
 
   const days = dayDates.map((date, i) => ({ date, count: dayCounts[i], uniques: dayUniques[i] }));
@@ -105,6 +109,8 @@ export default async (req) => {
       topOS,
       topDevices,
       topLanguages,
+      topCountries,
+      topStates,
     }),
     { headers: { 'Content-Type': 'application/json' } },
   );

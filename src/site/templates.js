@@ -2115,7 +2115,7 @@ ${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl })}
 ${header('admin.html', false, false)}
 </div>
 
-<main class="layout layout-wide">
+<main class="layout layout-wide page-admin">
   <div class="admin-page">
     <h1 class="podcasts-heading">Admin</h1>
 
@@ -2289,6 +2289,8 @@ ${footer(sources, generatedAt)}
         tiles.push(tile('Operating systems', '<ul class="admin-path-list">' + rankedList(data.topOS, 'os') + '</ul>'));
         tiles.push(tile('Device size', '<ul class="admin-path-list">' + rankedList(data.topDevices, 'device') + '</ul>'));
         tiles.push(tile('Languages', '<ul class="admin-path-list">' + rankedList(data.topLanguages, 'language') + '</ul>'));
+        tiles.push(tile('Countries', '<ul class="admin-path-list">' + rankedList(data.topCountries, 'country') + '</ul>'));
+        tiles.push(tile('States / provinces', '<ul class="admin-path-list">' + rankedList(data.topStates, 'state') + '</ul>'));
 
         statsEl.innerHTML = '<div class="admin-grid">' + tiles.join('') + '</div>';
       })

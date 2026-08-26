@@ -2637,12 +2637,20 @@ main.layout{
    labels) — a wide screen needed the block itself centered, not every line
    of a data grid re-aligned to the middle, which would fight the
    left-to-right scan a ranked list or a form actually reads by. */
-/* No max-width of its own, deliberately — this is a single-user page read on
-   a widescreen monitor (not a public page needing a phone-first fallback the
-   way the rest of the site does), and a tile grid benefits from more width
-   the way a column of prose doesn't. It still inherits main.layout's own
-   1920px ceiling (var(--max)), same as every other page — this just stops
-   capping it any tighter than that. */
+/* main.layout's own max-width: var(--max) (1920px) is a site-wide ceiling
+   every reader-facing page shares deliberately — a page of prose or a video
+   grid genuinely gets worse past that width, so every other page keeps it.
+   This one doesn't share that constraint: it's a single-user data grid, not
+   something anyone reads for its prose, so the extra width a wide monitor
+   has past 1920px is just more columns and less scrolling, not a downside.
+   The class this targets (.page-admin) is only ever on this page's <main> —
+   see renderAdminPage() — so no other page's width changes. */
+main.layout.page-admin{
+  max-width: none;
+}
+
+/* No max-width of its own, deliberately — a tile grid benefits from more
+   width the way a column of prose doesn't. */
 .admin-page{
   margin: 0 auto;
 }
