@@ -481,15 +481,17 @@ function teamStatsWidget(teamStats) {
     const yds = stat(data.yardsPerGame);
     const pts = stat(data.pointsPerGame);
     const suffix = side === 'def' ? ' allowed' : '';
-    const line = [
-      yds ? `${escapeHtml(yds)} yds/gm${suffix}` : null,
-      pts ? `${escapeHtml(pts)} pts/gm${suffix}` : null,
-    ]
-      .filter(Boolean)
-      .join(' &middot; ');
+    // Each stat gets its own rank now, not just yards with points riding
+    // along as plain text beside it — a reader asking "where do we rank
+    // in points" shouldn't have to go find that number on a different page.
+    const headline = (statVal, label, rankData) =>
+      statVal
+        ? `<p class="ts-headline">${rankOf(rankData)} <span class="ts-line">${escapeHtml(statVal)} ${label}${suffix}</span></p>`
+        : '';
     return `
       <div class="ts-panel ts-panel-${side}">
-        <p class="ts-headline">${rankOf(data.yardsPerGame)} <span class="ts-line">${line}</span></p>
+        ${headline(yds, 'yds/gm', data.yardsPerGame)}
+        ${headline(pts, 'pts/gm', data.pointsPerGame)}
         ${leaders}
       </div>`;
   };
