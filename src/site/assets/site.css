@@ -418,9 +418,20 @@ img, svg{ display:block; max-width:100%; }
    Same underlying posts either way; just two presentations for two very
    different amounts of available width. */
 .widget.live-feed{
+  /* Hidden by default, shown only at the same min-width: 1300px breakpoint
+     that hides .hero .ticker (see that rule further down) — this widget only
+     ever makes sense as the ticker's wide-screen replacement, never both at
+     once. The grid-column change at that breakpoint (main.layout.page-river)
+     controls its layout once visible, but never actually controlled whether
+     it rendered at all below that width — on mobile this sat in normal block
+     flow above the river as an empty-looking header+footer with no visible
+     posts between them, since align-self: stretch and the flex-basis: 0
+     viewport sizing (needed to stop this box inflating a wide-screen grid
+     row) had no meaningful row to stretch against in a single-column mobile
+     layout, collapsing the scrollable middle to near-zero height instead. */
+  display: none;
   padding: 0;
   min-width: 0;
-  display: flex;
   flex-direction: column;
   /* Fills the grid row's full height (set by whichever column is tallest —
      almost always the river) rather than a fixed box of its own. The
@@ -3035,6 +3046,7 @@ main.layout.page-admin{
    rule's scope was still accurate once it got a second caller. */
 @media (min-width: 1300px){
   .hero .ticker{ display: none; }
+  .widget.live-feed{ display: flex; }
   main.layout.page-river{
     grid-template-columns: 280px minmax(0, 1fr) 320px;
     align-items: start;
