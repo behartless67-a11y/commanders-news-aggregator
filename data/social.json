@@ -4652,5 +4652,31 @@
     "images": [],
     "publishedAt": "2026-08-26T17:43:28.000Z",
     "collectedAt": "2026-08-26T18:44:10.942Z"
+  },
+  "social-be5bb90c416f": {
+    "id": "social-be5bb90c416f",
+    "url": "https://x.com/john_keim/status/2092691732668268923",
+    "text": "From a distance: Antonio Williams vs Kyle Hamilton.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T19:12:44.000Z",
+    "collectedAt": "2026-08-26T19:30:23.536Z"
+  },
+  "social-443b19598808": {
+    "id": "social-443b19598808",
+    "url": "https://x.com/spotrac/status/2092691087462715471",
+    "text": "Stefon Diggs' $4M incentive package with the #Commanders is tied to Receptions, Rec. Yards, Rec. TDs, playing time, playoff wins, and a Pro Bowl nod.",
+    "handle": "spotrac",
+    "author": "Spotrac",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/163/388/958/639/106/original/d19cb35a935920e2.png"
+    ],
+    "publishedAt": "2026-08-26T19:10:10.000Z",
+    "collectedAt": "2026-08-26T19:30:39.371Z"
   }
 }
