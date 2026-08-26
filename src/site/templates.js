@@ -633,7 +633,7 @@ function weekLabel(record) {
  * disclosure, since it's a personal essay rather than a machine recap.
  */
 function originalDisclosure() {
-  return `<p class="digest-disclosure">These are my thoughts &mdash; AI just made them pretty. <a href="blog.html">All posts</a></p>`;
+  return `<p class="digest-disclosure">These are my thoughts. AI just made them pretty. <a href="blog.html">All posts</a></p>`;
 }
 
 /**
@@ -803,12 +803,18 @@ ${sourceFooter}
  */
 function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
   const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
+  // Raw HTML, not escaped like the paragraphs above — trusted because these
+  // records are hand-authored by the site owner, not user input. Lets a plug
+  // like "go listen to the Music page" carry a real link instead of a bare
+  // URL, without teaching every paragraph to parse markdown for one field.
+  const plug = record.plug ? `<p class="digest-para original-plug">${record.plug}</p>` : '';
   return `
     <article class="digest-post original-post">
       <p class="original-badge-row"><span class="badge badge-blog">Original</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
       <p class="digest-week">${escapeHtml(formatDate(record.publishedAt))}</p>
 ${paragraphs}
+${plug}
     </article>`;
 }
 

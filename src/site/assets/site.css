@@ -1252,6 +1252,15 @@ main.layout{
   margin: 0 0 18px;
 }
 
+/* A plug for another page (see record.plug in originalArticleBody()) reads
+   as an aside, not the next beat of the essay — set off from the prose
+   above it rather than blending straight in. */
+.original-plug{
+  padding-top: 14px;
+  border-top: 1px solid var(--border-soft);
+  color: var(--text-muted);
+}
+
 /* Player-name links (see linkPlayers() in src/lib/roster-links.js) inherit
    plain text color by default — without this they're indistinguishable from
    the surrounding prose, since the base `a{ color: inherit }` rule gives no
