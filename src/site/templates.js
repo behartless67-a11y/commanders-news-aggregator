@@ -629,23 +629,64 @@ ${defense}`
     </div>`;
 }
 
+const ORDINAL = ['1st', '2nd', '3rd', '4th'];
+
+/**
+ * NFC East only, styled as a close visual match to the schedule widget right
+ * below it (same 28x28 hotlinked logo treatment, same two-line info column) —
+ * see src/lib/standings.js for where the data and the sort order come from,
+ * and why it's win percentage rather than a rank ESPN hands back pre-computed.
+ * The Commanders' own row gets a subtle highlight, same spirit as
+ * .schedule-date's win/loss coloring — the one row a Commanders-focused site's
+ * reader is actually here to find fastest in a list of four.
+ */
+function standingsWidget(standings) {
+  if (!standings?.teams?.length) return '';
+  const rows = standings.teams
+    .map((t, i) => {
+      const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(t.abbr)}`;
+      const isCommanders = t.abbr === 'WAS';
+      return `
+        <li class="standings-row${isCommanders ? ' is-commanders' : ''}">
+          <span class="standings-rank">${ORDINAL[i] || `${i + 1}th`}</span>
+          <img class="standings-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(t.name)}" width="28" height="28" loading="lazy" decoding="async" />
+          <span class="standings-info">
+            <span class="standings-team">${escapeHtml(t.name)}</span>
+            <span class="standings-record">${escapeHtml(t.overall || '')}${t.streak && t.streak !== '-' ? ` &middot; ${escapeHtml(t.streak)}` : ''}</span>
+          </span>
+        </li>`;
+    })
+    .join('\n');
+  return `
+    <div class="widget-standings">
+      <h2>NFC East${standings.season ? ` <span class="standings-season">${escapeHtml(standings.season)}</span>` : ''}</h2>
+      <ul class="standings-list">${rows}
+      </ul>
+    </div>`;
+}
+
 /** Returns empty string with nothing to show in any widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
-function sidebar(videos, games, betting = null, teamStats = null) {
+function sidebar(videos, games, betting = null, teamStats = null, standings = null) {
   const video = videoWidget(videos);
   const stats = teamStatsWidget(teamStats);
+  const standingsBlock = standingsWidget(standings);
   const schedule = scheduleWidget(games, betting);
-  if (!video && !schedule && !stats) return '';
-  // Stats above the schedule deliberately: the schedule runs a full season of
-  // rows, so anything placed under it is effectively unreachable without a
-  // long scroll.
+  if (!video && !schedule && !stats && !standingsBlock) return '';
+  // Stats, then standings, then schedule, all deliberately — the schedule
+  // runs a full season of rows, so anything placed under it is effectively
+  // unreachable without a long scroll. Standings sits directly above the
+  // schedule specifically (not above stats) because the nav's own Schedule
+  // link already jumps straight to id="schedule" on this same widget below —
+  // this keeps that link landing right next to the thing a reader jumped
+  // here to see, not several widgets above it.
   //
-  // Stats and schedule share a nested column rather than being siblings of the
-  // video widget, because above 1400px the rail turns into a two-across row
-  // (see the min-width: 1400px block in site.css) — as flat siblings the stats
-  // block became a third column *beside* the schedule instead of above it.
-  // Nesting keeps "stats, then schedule" true at every width. Below 1400px the
+  // All three share a nested column rather than being siblings of the video
+  // widget, because above 1400px the rail turns into a two-across row (see
+  // the min-width: 1400px block in site.css) — as flat siblings a widget
+  // became a third column *beside* the schedule instead of above it. Nesting
+  // keeps this same top-to-bottom order true at every width. Below 1400px the
   // wrapper is a no-op: one column inside one column.
-  const stack = [stats, schedule].filter(Boolean).join('\n');
+  const stack = [stats, standingsBlock, schedule].filter(Boolean).join('\n');
   return `<aside class="sidebar" aria-labelledby="video-rail-heading">
 ${video}
 ${stack ? `    <div class="sidebar-stack">\n${stack}\n    </div>` : ''}
@@ -1072,9 +1113,9 @@ ${entries}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1121,9 +1162,9 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderWeeklyPost, using previewArticleBody() instead of digestArticleBody() — see that function's own comment for why. */
-export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1169,11 +1210,11 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   // The opening paragraph alone is only 2 sentences — pull the third from the
   // paragraph after it rather than stopping short of the requested length.
   const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1219,8 +1260,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   const livePost = liveGamePost(liveGame, rosterIndex);
   // Weekly digests, previews, originals, and the live game post are four
   // different record shapes sharing one reverse-chronological stream, keyed on
@@ -1319,8 +1360,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1492,12 +1533,12 @@ export function renderRosterPage({
   videos = [],
   games = [],
   betting = null,
-  teamStats = null,
+  teamStats = null, standings = null,
   isGameLive = false,
   rosterPlayers = [],
   mentionCounts = new Map(),
 }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   // Most-talked-about first — the entire point of this page over just
   // linking to commanders.com's own roster. Ties (usually both at zero)
   // fall back to alphabetical so the order is at least stable build to build.
@@ -1784,8 +1825,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1839,7 +1880,7 @@ ${footer(sources, generatedAt)}
  * this page is never linked to there; it still renders and works if visited
  * directly, same as any other page.
  */
-export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const widget = videoWidget(videos);
   const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
   return `<!doctype html>
@@ -2654,8 +2695,8 @@ function socialFeedPost(post, extra) {
       </li>`;
 }
 
-export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null, standings = null }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   const collapsed = socialPosts.length > SOCIAL_FEED_INITIAL;
   const items = socialPosts.map((p, i) => socialFeedPost(p, i >= SOCIAL_FEED_INITIAL)).join('');
   const nextBatch = Math.min(SOCIAL_FEED_BATCH, socialPosts.length - SOCIAL_FEED_INITIAL);
@@ -2737,7 +2778,7 @@ export function renderPage(
     videos = [],
     games = [],
     betting = null,
-    teamStats = null,
+    teamStats = null, standings = null,
     hasWeekly = false,
     isGameLive = false,
     rosterIndex = null,
@@ -2746,7 +2787,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.

@@ -9,6 +9,7 @@ import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
+import { loadStandingsCache } from '../lib/standings.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -94,6 +95,9 @@ export async function buildSite() {
   // teamstats.js) — fetched from ESPN's own team-scoped leaders endpoint,
   // not derived from the current roster.
   const teamStats = await loadTeamStatsCache();
+  // Null when `npm run standings` has never run — same never-render-an-empty-
+  // shell rule as teamStats above.
+  const standings = await loadStandingsCache();
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
@@ -119,6 +123,7 @@ export async function buildSite() {
       games,
       betting,
       teamStats,
+      standings,
       hasWeekly,
       isGameLive,
       rosterIndex,
@@ -131,7 +136,7 @@ export async function buildSite() {
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, isGameLive, liveGame };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, standings, isGameLive, liveGame };
     await fs.writeFile(
       path.join(DIST_DIR, 'blog.html'),
       renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
@@ -150,19 +155,19 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'videos.html'),
-    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'how-it-works.html'),
-    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
@@ -179,6 +184,7 @@ export async function buildSite() {
       games,
       betting,
       teamStats,
+      standings,
       rosterPlayers,
       mentionCounts,
     }),
@@ -243,7 +249,7 @@ export async function buildSite() {
   // the exact spot readers asked for it.
   await fs.writeFile(
     path.join(DIST_DIR, 'social-feed.html'),
-    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats }),
+    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 

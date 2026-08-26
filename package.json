@@ -22,6 +22,7 @@
     "schedule": "node src/cli.js schedule",
     "betting": "node src/cli.js betting",
     "injuries": "node src/cli.js injuries",
+    "standings": "node src/cli.js standings",
     "team-stats": "node src/cli.js team-stats",
     "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",

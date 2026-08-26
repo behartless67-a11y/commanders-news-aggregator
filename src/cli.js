@@ -16,6 +16,7 @@ import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './li
 import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
+import { fetchNfcEastStandings, saveStandingsCache } from './lib/standings.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
 import { updateLiveGame } from './digest/live-generate.js';
@@ -37,6 +38,7 @@ Commanders headline river
   npm run depth-chart        refresh the cached commanders.com depth chart
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
+  npm run standings          refresh the cached NFC East standings (ESPN)
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
@@ -280,6 +282,16 @@ async function main() {
         log.ok(`betting: cached line for Commanders vs ${line.opponent}`);
       } else {
         log.warn('betting: fetch returned nothing (bye week, offseason, or a fetch issue) — leaving the existing cache in place');
+      }
+      break;
+    }
+    case 'standings': {
+      const standings = await fetchNfcEastStandings();
+      if (standings) {
+        await saveStandingsCache(standings);
+        log.ok(`standings: cached NFC East (${standings.teams.map((t) => `${t.abbr} ${t.overall}`).join(', ')})`);
+      } else {
+        log.warn('standings: fetch failed — leaving the existing cache in place');
       }
       break;
     }

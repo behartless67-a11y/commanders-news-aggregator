@@ -1600,6 +1600,91 @@ main.layout{
   --border-soft: rgba(255,182,18,0.18);
 }
 
+/* ---------- Standings widget (NFC East, above the schedule) ----------
+   Deliberately styled as a close match to the schedule widget right below
+   it — same plain-list-not-boxed-card treatment for the same reason (see
+   the note on .widget-schedule just below), same row height and logo size,
+   same hotlinked-logo policy. Four rows only, so this never competes with
+   the schedule for scroll room the way stacking it below would have — see
+   standingsWidget() in templates.js for why it sits above specifically. */
+.widget-standings h2{
+  margin: 0 0 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.standings-season{
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.standings-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.standings-row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The one row a Commanders-focused site's reader is actually here to find
+   fastest in a list of only four — same spirit as .schedule-date.is-win's
+   gold, just on the whole row instead of one field, since there's no
+   win/loss result field here to carry it instead. */
+.standings-row.is-commanders .standings-team{
+  color: var(--gold);
+}
+
+.standings-rank{
+  flex-shrink: 0;
+  width: 22px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.standings-logo{
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.standings-info{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.standings-team{
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standings-record{
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
 /* ---------- Schedule widget ----------
    Deliberately not a `.widget` card like the video rail — a season's worth
    of rows reads better as a plain list than a boxed panel, and the contrast
