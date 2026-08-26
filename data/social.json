@@ -4565,5 +4565,92 @@
     "images": [],
     "publishedAt": "2026-08-26T17:23:12.423Z",
     "collectedAt": "2026-08-26T17:37:01.113Z"
+  },
+  "social-44d95ffc113b": {
+    "id": "social-44d95ffc113b",
+    "url": "https://x.com/Commanders/status/2092675066727153740",
+    "text": ". @KingTunsil78@twitter.com out here in Baltimore supporting the guys",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/163/143/568/224/429/original/52af6c5e095f0b02.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/163/143/623/648/378/original/88bbf228cf821dd2.jpg"
+    ],
+    "publishedAt": "2026-08-26T18:06:30.000Z",
+    "collectedAt": "2026-08-26T18:44:07.527Z"
+  },
+  "social-ff2c5d3e1d19": {
+    "id": "social-ff2c5d3e1d19",
+    "url": "https://x.com/JPFinlayNBCS/status/2092674718524375236",
+    "text": "New All Ears tonight - hit me with mailbag questions",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-26T18:05:07.000Z",
+    "collectedAt": "2026-08-26T18:44:09.122Z"
+  },
+  "social-decc8af4f783": {
+    "id": "social-decc8af4f783",
+    "url": "https://x.com/john_keim/status/2092676994173370814",
+    "text": "Jayden Daniels: “not the best day we could have had”",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T18:14:10.000Z",
+    "collectedAt": "2026-08-26T18:44:10.942Z"
+  },
+  "social-4ba316471965": {
+    "id": "social-4ba316471965",
+    "url": "https://x.com/john_keim/status/2092671558783266944",
+    "text": "They clearly could have been helped by having Cosmi today. Allegretti needs to get healthy, but they need a stronger plan behind him. It made a difference today.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T17:52:34.000Z",
+    "collectedAt": "2026-08-26T18:44:10.942Z"
+  },
+  "social-0a955b2456a2": {
+    "id": "social-0a955b2456a2",
+    "url": "https://x.com/john_keim/status/2092671321461162047",
+    "text": "On offense: Some issues with snaps; a false start; one explosive (to McLaurin); run game struggled. Just a rough showing -- Brandon Coleman said the OL has to be the ones to push it and it was \"up and down.\" Baltimore has an excellent D. Has given its own O fits this summer.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T17:51:37.000Z",
+    "collectedAt": "2026-08-26T18:44:10.942Z"
+  },
+  "social-3f582d5cf1b1": {
+    "id": "social-3f582d5cf1b1",
+    "url": "https://x.com/john_keim/status/2092670329730613707",
+    "text": "Jayden Daniels: \"We just overall got to keep building and keep growing. You're not winning a Super Bowl right now. You're not playing for a Super Bowl right now.\"",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T17:47:41.000Z",
+    "collectedAt": "2026-08-26T18:44:10.942Z"
+  },
+  "social-4fd9f7c71b8f": {
+    "id": "social-4fd9f7c71b8f",
+    "url": "https://x.com/john_keim/status/2092669271054688378",
+    "text": "@smlinspire@twitter.com They needed to sign another vet for sure. Initially was told that was likely. Didn’t happen. Not my fault. Sorry.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-26T17:43:28.000Z",
+    "collectedAt": "2026-08-26T18:44:10.942Z"
   }
 }
