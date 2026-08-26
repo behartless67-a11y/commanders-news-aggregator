@@ -2649,10 +2649,22 @@ main.layout.page-admin{
   max-width: none;
 }
 
-/* No max-width of its own, deliberately — a tile grid benefits from more
-   width the way a column of prose doesn't. */
+/* No max-width of its own, and — as of this rule — no margin: 0 auto either.
+   That margin dates from when this block still had a max-width and needed
+   centering inside the wider main.layout.page-admin around it; once the cap
+   was dropped, it became actively counterproductive, not just unnecessary.
+   Confirmed with a headless-Chrome measurement, not just read: an "auto"
+   margin takes precedence over grid stretch alignment — it tells the browser
+   "shrink this box to its content's width, then center whatever space is
+   left over" — which is exactly backwards for a box that's supposed to fill
+   1856px of a 1904px viewport. With the auto margin in place, .admin-page
+   (and everything grid-sized inside it, including .admin-grid) was shrinking
+   to ~660px — just wide enough for its own widest tile row — no matter how
+   wide main.layout.page-admin actually was. Removing it, not fighting it
+   with an explicit width: 100%, since there's nothing left to center once
+   the box is meant to fill 100% of its row on its own. */
 .admin-page{
-  margin: 0 auto;
+  margin: 0;
 }
 
 .admin-login-form{
