@@ -93,9 +93,22 @@ export async function generatePreview({ force = false, now = new Date() } = {}) 
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const prompt = buildPreviewUserPrompt(corpusText, game.opponent, problems);
-    result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt, schema: PREVIEW_SCHEMA });
-    result.json = sanitizeDigest(result.json);
-    const outcome = validate(corpus, result.json);
+    let outcome;
+    try {
+      result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt, schema: PREVIEW_SCHEMA });
+      result.json = sanitizeDigest(result.json);
+      outcome = validate(corpus, result.json);
+    } catch (err) {
+      // A malformed response (e.g. Bedrock's tool call not actually
+      // matching PREVIEW_SCHEMA's shape — seen once in testing: threads
+      // came back as something other than an array) is exactly the kind of
+      // thing a retry with a more pointed instruction can fix, same as a
+      // validation failure. Letting it escape here would abort the whole
+      // run on attempt 1 with MAX_ATTEMPTS-1 retries never even tried.
+      log.warn(`preview: attempt ${attempt} threw (${err.message}) — retrying`);
+      problems = [`Your last response could not be parsed (${err.message}). Return valid JSON exactly matching the schema, with "threads" as an array.`];
+      continue;
+    }
     problems = outcome.problems;
 
     if (problems.length === 0) {
