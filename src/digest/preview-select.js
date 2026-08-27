@@ -10,8 +10,8 @@ import { buildCorpus } from './select.js';
  * "real" here because it's sitting in a cited corpus entry, same as any
  * other fact.
  */
-export async function buildPreviewCorpus({ game, betting, now = Date.now() }) {
-  const base = await buildCorpus(now);
+export async function buildPreviewCorpus({ game, betting, now = Date.now(), excludeSourceIds = [] }) {
+  const base = await buildCorpus(now, { excludeSourceIds });
 
   const pinned = [];
   pinned.push({

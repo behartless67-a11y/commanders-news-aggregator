@@ -1,0 +1,77 @@
+name: Game-day preview
+
+# Once a day, morning — generatePreview() itself no-ops on the ~360 days a
+# year that isn't a game day (see gameToday() in gamewindow.js), so this is
+# safe to run blind. 11:00 UTC is 7am ET during EDT (roughly Aug-early Nov,
+# which covers preseason/most of the regular season); it drifts to 6am ET
+# once the clocks fall back for late-season/playoff games. A GitHub Actions
+# cron can't express "7am in whatever the US Eastern offset currently is"
+# directly, and an hour of drift on a handful of late-season games isn't
+# worth a second cron entry to fix.
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Regenerate even if a draft already exists for today (testing only)'
+        required: false
+        default: 'false'
+
+# Shares the group with nightly.yml/social.yml/gameday.yml: any of them
+# landing on the same push would otherwise race on data/.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # Writes data/previews/<gameKey>.json with status: 'draft' — never
+      # published from here. See preview-generate.js: Bedrock/Claude, not
+      # local Ollama, specifically so this can run unattended in CI at all,
+      # and to sidestep the 16k-token local context limit that was silently
+      # truncating away the "you're playing X" fact on every local run (see
+      # that file's header comment for the full story). A bad call here
+      # must never take the nightly build down with it.
+      - name: Write today's preview draft if a game is today
+        run: node src/cli.js preview ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+        continue-on-error: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+
+      - run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      # A fresh draft has to actually deploy for admin-drafts.js to see it —
+      # that Function only reads whatever was bundled at the last deploy
+      # (see its own header comment), so "generated but never redeployed"
+      # would sit invisible on the admin panel indefinitely.
+      - name: Commit updated data
+        run: |
+          git config user.name "preview-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "Game-day preview draft"
+          git push
+
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}

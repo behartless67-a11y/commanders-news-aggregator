@@ -52,6 +52,15 @@ jobs:
       - run: npm run schedule
         continue-on-error: true
 
+      # ESPN's own scoreboard already tracks "the next game that hasn't been
+      # played yet" (see betting.js), so this alone is what keeps the
+      # matchup widget and the preview generator pointed at the right game
+      # once one game ends and the next week's line opens — nothing had
+      # been calling this on any schedule before, so the cache just sat on
+      # whichever game was next the last time someone ran it by hand.
+      - run: npm run betting
+        continue-on-error: true
+
       # Third-party read on the same injury designations (see injuries.js
       # for why commanders.com's own page isn't scrapeable) — same
       # never-fail-the-build treatment as every other cache refresh here.

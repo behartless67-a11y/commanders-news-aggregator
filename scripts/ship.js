@@ -8,14 +8,19 @@ import { sendAlertEmail } from '../src/lib/alert.js';
 const ALERT_FLAG = 'C:/tmp/x-scrape-alert.flag';
 
 /**
- * Runs one local-only collection/generation step, then ships whatever it
- * wrote straight to production — commit, push, deploy — with no human in
- * the loop. Used for the two things that can only run on a machine holding
- * a real session/model (Nicki's browser scrape, the game-day preview draft;
- * see docs/x-browser-scraping.md), which a GitHub Actions runner can't do
- * itself. Every other collector already ships this way via its own GitHub
- * Actions workflow (nightly.yml/social.yml/gameday.yml) — this is the same
- * shape, just triggered by a local Windows Scheduled Task instead of cron.
+ * Runs Nicki's X-browser scrape, then ships whatever it wrote straight to
+ * production — commit, push, deploy — with no human in the loop. This is
+ * the one collector that can only run on a machine holding a real logged-in
+ * browser session (see docs/x-browser-scraping.md), which a GitHub Actions
+ * runner can't provide. Every other collector already ships this way via
+ * its own GitHub Actions workflow (nightly.yml/social.yml/gameday.yml) —
+ * this is the same shape, just triggered by a local Windows Scheduled Task
+ * instead of cron.
+ *
+ * The game-day preview draft used to run through this same script, but
+ * moved to .github/workflows/preview.yml once it switched to Bedrock/Claude
+ * (see preview-generate.js) — that doesn't need a local Ollama session, so
+ * it runs the same way every other cloud-model step does, in CI.
  *
  * Deliberately runs from its own dedicated clone (see the Task Scheduler
  * setup in docs/x-browser-scraping.md), never the interactive dev checkout
@@ -23,18 +28,17 @@ const ALERT_FLAG = 'C:/tmp/x-scrape-alert.flag';
  * invocation, which would silently destroy uncommitted work if this ever
  * pointed at a directory a human also edits in.
  *
- * Usage: node scripts/ship.js <x-scrape|preview>
+ * Usage: node scripts/ship.js x-scrape
  */
 
 const MODE = process.argv[2];
-if (MODE !== 'x-scrape' && MODE !== 'preview') {
-  console.error('usage: node scripts/ship.js <x-scrape|preview>');
+if (MODE !== 'x-scrape') {
+  console.error('usage: node scripts/ship.js x-scrape');
   process.exit(1);
 }
 
 const COMMANDS = {
   'x-scrape': { run: 'node src/cli.js x-scrape', message: 'Automated: Nicki X update' },
-  preview: { run: 'node src/cli.js preview', message: 'Automated: game-day preview draft' },
 };
 
 function sh(cmd) {
@@ -128,8 +132,6 @@ async function handleSessionAlert() {
   }
 }
 
-if (MODE === 'x-scrape') {
-  await handleSessionAlert();
-}
+await handleSessionAlert();
 
-process.exit(MODE === 'x-scrape' ? exitCode : 0);
+process.exit(exitCode);

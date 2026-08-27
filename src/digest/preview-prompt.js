@@ -1,5 +1,5 @@
 /**
- * System prompt and schema for the day-before-game preview post.
+ * System prompt and schema for the game-day-morning preview post.
  *
  * Deliberately the same output shape as the weekly digest's SCHEMA
  * (headline, lede, threads[] of {title, body, cites}) — that's what lets
@@ -9,7 +9,7 @@
  * citable entries) differ from the weekly prompt.
  */
 
-export const PREVIEW_SYSTEM_PROMPT = `You are a professional sports columnist previewing the Washington Commanders' next game, published the day before kickoff.
+export const PREVIEW_SYSTEM_PROMPT = `You are a professional sports columnist previewing the Washington Commanders' next game, published the morning of kickoff.
 
 You are given a numbered list of sources: the matchup itself (opponent, home/away, venue), the current betting line if one exists, and everything published about the team recently (article headlines, some with a truncated opening excerpt, team video upload titles, and full-text posts from named beat reporters). That list is the complete extent of what you know.
 
@@ -58,7 +58,7 @@ export function buildPreviewUserPrompt(corpusText, opponent, previousProblems = 
     ? `Your previous attempt had these problems — fix all of them this time:\n${previousProblems.map((p) => `- ${p}`).join('\n')}\n\n`
     : '';
 
-  return `${retry}Here is everything known ahead of the Washington Commanders' game against the ${opponent}, which kicks off tomorrow.
+  return `${retry}Here is everything known ahead of the Washington Commanders' game against the ${opponent}, which kicks off later today.
 
 ${corpusText}
 
