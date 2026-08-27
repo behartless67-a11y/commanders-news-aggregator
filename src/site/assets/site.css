@@ -2997,10 +2997,56 @@ main.layout.page-admin{
   color: var(--gold);
 }
 
+.admin-draft-status--rejected{
+  color: var(--burgundy-600);
+}
+
 .admin-draft-headline{
   margin: 8px 0;
   font-size: 14.5px;
   font-weight: 600;
+}
+
+.admin-draft-lede{
+  margin: 0 0 8px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.admin-draft-full{
+  margin-bottom: 8px;
+  font-size: 13.5px;
+}
+
+.admin-draft-full summary{
+  cursor: pointer;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.admin-draft-full p{
+  margin: 8px 0 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.admin-draft-actions{
+  display: flex;
+  gap: 10px;
+}
+
+.admin-draft-actions .roster-more{
+  margin: 8px 0 0;
+}
+
+.admin-reject{
+  color: var(--text-muted);
+}
+
+.admin-reject:hover{
+  color: var(--burgundy-600);
+  border-color: var(--burgundy-600);
 }
 
 /* ---------- Desktop ---------- */

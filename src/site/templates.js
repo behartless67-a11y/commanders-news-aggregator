@@ -2495,6 +2495,7 @@ ${footer(sources, generatedAt)}
         }
         draftsEl.innerHTML = data.records.map(function (r) {
           var typeLabel = r.type === 'preview' ? 'Preview' : 'Weekly';
+          var bodyHtml = (r.body || []).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
           return (
             '<div class="admin-draft">' +
               '<div class="admin-draft-head">' +
@@ -2502,8 +2503,15 @@ ${footer(sources, generatedAt)}
                 '<span class="admin-draft-status admin-draft-status--' + esc(r.status) + '">' + esc(r.status) + '</span>' +
               '</div>' +
               '<p class="admin-draft-headline">' + esc(r.headline || '(no headline)') + '</p>' +
+              (r.lede ? '<p class="admin-draft-lede">' + esc(r.lede) + '</p>' : '') +
+              (bodyHtml
+                ? '<details class="admin-draft-full"><summary>Read full draft</summary>' + bodyHtml + '</details>'
+                : '') +
               (r.status === 'draft'
-                ? '<button class="roster-more admin-approve" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Approve &amp; publish</button>'
+                ? '<div class="admin-draft-actions">' +
+                    '<button class="roster-more admin-approve" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Approve &amp; publish</button>' +
+                    '<button class="roster-more admin-reject" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Reject</button>' +
+                  '</div>'
                 : '') +
             '</div>'
           );
@@ -2513,18 +2521,34 @@ ${footer(sources, generatedAt)}
   }
 
   draftsEl && draftsEl.addEventListener('click', function (event) {
-    var btn = event.target.closest('.admin-approve');
-    if (!btn) return;
-    btn.disabled = true;
-    btn.textContent = 'Publishing…';
-    fetch('/.netlify/functions/admin-approve', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ key: btn.getAttribute('data-key'), type: btn.getAttribute('data-type') }),
-    })
-      .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
-      .catch(function () { btn.disabled = false; btn.textContent = 'Not available yet'; });
+    var approveBtn = event.target.closest('.admin-approve');
+    var rejectBtn = event.target.closest('.admin-reject');
+    if (approveBtn) {
+      approveBtn.disabled = true;
+      approveBtn.textContent = 'Publishing…';
+      fetch('/.netlify/functions/admin-approve', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: approveBtn.getAttribute('data-key'), type: approveBtn.getAttribute('data-type') }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
+        .catch(function () { approveBtn.disabled = false; approveBtn.textContent = 'Not available yet'; });
+      return;
+    }
+    if (rejectBtn) {
+      if (!window.confirm('Reject this draft? It will never be published.')) return;
+      rejectBtn.disabled = true;
+      rejectBtn.textContent = 'Rejecting…';
+      fetch('/.netlify/functions/admin-reject', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: rejectBtn.getAttribute('data-key'), type: rejectBtn.getAttribute('data-type') }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
+        .catch(function () { rejectBtn.disabled = false; rejectBtn.textContent = 'Not available yet'; });
+    }
   });
 
   form.addEventListener('submit', function (event) {

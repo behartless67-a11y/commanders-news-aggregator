@@ -31,6 +31,10 @@ async function readDir(dir, type, keyField) {
         status: raw.status,
         headline: raw.digest?.headline,
         lede: raw.digest?.lede,
+        // Plain thread bodies, no citation markers resolved — enough to read
+        // and judge the draft without needing the full public render (which
+        // an unpublished draft has no URL for anyway).
+        body: (raw.digest?.threads || []).map((t) => t.body).filter(Boolean),
         generatedAt: raw.generatedAt,
         warnings: raw.warnings?.length || 0,
       };
