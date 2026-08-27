@@ -497,11 +497,12 @@ const PODCASTS = [
 /** Both Spotify and Apple ship a public, key-free embed iframe — no scraping, same reasoning as the schedule/betting widgets pulling from public endpoints. */
 function podcastEmbed(p) {
   if (p.provider === 'apple') {
-    // 175, not Apple's larger default — at 450 the embed has room to switch
-    // into its wide two-panel episode-list layout, which threw this card
-    // wildly out of proportion with every Spotify one beside it. 175 keeps
-    // it to the same compact single-episode card the others use.
-    return `<iframe src="https://embed.podcasts.apple.com/us/podcast/${p.slug}/id${p.id}?theme=dark" title="${escapeHtml(p.name)}" width="100%" height="175" style="width:100%;overflow:hidden;background:transparent;" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" loading="lazy"></iframe>`;
+    // Matches Spotify's own height below, not the smaller 175 this used to
+    // be — that made the card visibly shorter than every Spotify one beside
+    // it. 450 is the one height confirmed (by eye, in a real browser) to
+    // flip this embed into a wide two-panel episode-list layout; 352 is
+    // Spotify's own number and stays well clear of that.
+    return `<iframe src="https://embed.podcasts.apple.com/us/podcast/${p.slug}/id${p.id}?theme=dark" title="${escapeHtml(p.name)}" width="100%" height="352" style="width:100%;overflow:hidden;background:transparent;" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" loading="lazy"></iframe>`;
   }
   return `<iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 }
@@ -572,6 +573,8 @@ function teamStatsWidget(teamStats) {
     if (!data) return '';
     const yds = stat(data.yardsPerGame);
     const pts = stat(data.pointsPerGame);
+    const rushYds = stat(data.rushYardsPerGame);
+    const passYds = stat(data.passYardsPerGame);
     const suffix = side === 'def' ? ' allowed' : '';
     // Each stat gets its own rank now, not just yards with points riding
     // along as plain text beside it — a reader asking "where do we rank
@@ -585,6 +588,10 @@ function teamStatsWidget(teamStats) {
         <div class="ts-headline-row">
           ${headline(yds, 'yds/gm', data.yardsPerGame)}
           ${headline(pts, 'pts/gm', data.pointsPerGame)}
+        </div>
+        <div class="ts-headline-row">
+          ${headline(rushYds, 'rush yds/gm', data.rushYardsPerGame)}
+          ${headline(passYds, 'pass yds/gm', data.passYardsPerGame)}
         </div>
         ${leaders}
       </div>`;

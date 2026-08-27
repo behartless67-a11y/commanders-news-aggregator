@@ -112,6 +112,8 @@ async function fetchDefenseAllowed(season, seasonType) {
   let games = 0;
   let yards = 0;
   let points = 0;
+  let passYards = 0;
+  let rushYards = 0;
 
   for (const event of completed) {
     const summary = await fetchJson(SUMMARY_URL(event.id), `box score ${event.id}`);
@@ -124,16 +126,20 @@ async function fetchDefenseAllowed(season, seasonType) {
     const opponent = teams.find((t) => String(t.team?.id) !== TEAM_ID);
     if (!opponent) continue;
 
-    const totalYards = (opponent.statistics || []).find((s) => s.name === 'totalYards');
+    const stat = (name) => (opponent.statistics || []).find((s) => s.name === name);
+    const totalYards = stat('totalYards');
     const opponentScore = (summary.header?.competitions?.[0]?.competitors || []).find(
       (c) => String(c.team?.id) !== TEAM_ID,
     )?.score;
 
     if (totalYards == null && opponentScore == null) continue;
 
+    const numOf = (s) => Number(String(s?.displayValue ?? 0).replace(/,/g, '')) || 0;
     games += 1;
-    yards += Number(String(totalYards?.displayValue ?? 0).replace(/,/g, '')) || 0;
+    yards += numOf(totalYards);
     points += Number(opponentScore ?? 0) || 0;
+    passYards += numOf(stat('netPassingYards'));
+    rushYards += numOf(stat('rushingYards'));
   }
 
   if (!games) {
@@ -146,6 +152,8 @@ async function fetchDefenseAllowed(season, seasonType) {
     // Ranks are null by design — see the note at the top of this file.
     yardsPerGame: { value: (yards / games).toFixed(1), rank: null, rankLabel: null },
     pointsPerGame: { value: (points / games).toFixed(1), rank: null, rankLabel: null },
+    passYardsPerGame: { value: (passYards / games).toFixed(1), rank: null, rankLabel: null },
+    rushYardsPerGame: { value: (rushYards / games).toFixed(1), rank: null, rankLabel: null },
   };
 }
 
