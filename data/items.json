@@ -2770,5 +2770,29 @@
     "excerpt": "The Commanders and the Ravens had a joint practice today that reporters on the scene described as an ugly performance from the Commanders' offense. Jayden Daniels was a little more charitable in his description of it, but admitted it wasn't good enough.\n Daniels said after practice that the offense could have been better, but also described it as a learning experience.\n \"Not the best day that I thought we could have had, all-around, from myself to everybody else, but these are the opportunities…",
     "publishedAt": "2026-08-26T19:02:18.000Z",
     "collectedAt": "2026-08-26T22:42:53.270Z"
+  },
+  "cbs-nfl-f2333e0083ca": {
+    "id": "cbs-nfl-f2333e0083ca",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/commanders-ravens-joint-practice-takeaways",
+    "title": "Commanders offense called 'worst I've ever seen' in years: Fact or fiction from joint practice vs. Ravens",
+    "excerpt": "Washington's offensive line looked awful, while Lamar Jackson and Baltimore offered plenty of reasons for optimism",
+    "publishedAt": "2026-08-27T01:37:59.000Z",
+    "collectedAt": "2026-08-27T07:19:26.037Z"
+  },
+  "yahoo-nfl-249fb428254c": {
+    "id": "yahoo-nfl-249fb428254c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/ravens-wideouts-battle-physical-commanders-003634736.html",
+    "title": "Ravens wideouts battle physical Commanders secondary at joint practice",
+    "excerpt": "OWINGS MILLS, MD - AUGUST 26: Ja'kobi Lane #6 of the Baltimore Ravens makes a catch during the Washington Commanders and Baltimore Ravens joint practice at Under Armour Performance Center Baltimore Ravens on August 26, 2026 in Owings Mills, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images At the beginning of the Ravens’ joint practice with the Commanders, it seemed like Baltimore’s offense would be in for a long afternoon. \n The Commanders’ cornerbacks consistently stymied the…",
+    "publishedAt": "2026-08-27T00:36:34.000Z",
+    "collectedAt": "2026-08-27T07:19:26.306Z"
   }
 }
