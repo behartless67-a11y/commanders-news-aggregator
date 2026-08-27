@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES, enabledSources } from '../config/sources.js';
-import { collectAll, collectSocialAll } from './collectors/index.js';
+import { collectAll, collectSocialAll, collectSocialBrowser } from './collectors/index.js';
 import { log } from './lib/log.js';
 import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
@@ -27,6 +27,7 @@ Commanders headline river
 
   npm run collect            read every enabled source, store new items
   npm run social             read the social ticker accounts and hashtags
+  npm run x-scrape           read X accounts not on the bridge, via a logged-in Chrome (local machine only)
   npm run build              render the static site into dist/
   npm run run                collect, social, then build, then print status
   npm run serve              serve dist/ on http://localhost:8080
@@ -182,6 +183,18 @@ async function main() {
     case 'social':
       await collectSocialAll();
       break;
+    case 'x-scrape': {
+      const result = await collectSocialBrowser();
+      // Non-zero on a dead session, not on a merely quiet day — so the
+      // Windows Scheduled Task running this on a schedule shows a failed
+      // "Last Run Result" only when it actually needs a re-login, not every
+      // time she just didn't post. See docs/x-browser-scraping.md.
+      if (result.sessionExpired) {
+        log.error('x-scrape: session expired — log in again in the scraper Chrome profile');
+        process.exitCode = 1;
+      }
+      break;
+    }
     case 'build':
       await buildSite();
       break;

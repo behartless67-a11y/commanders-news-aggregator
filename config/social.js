@@ -88,6 +88,26 @@ export const SOCIAL_ACCOUNTS = [
     label: 'Local TV',
     alwaysRelevant: true,
   },
+  {
+    // Same non-mirrored situation as Scott7news above (see the file header
+    // comment for the lookup that confirms it), but not left dormant the
+    // same way — `viaBrowser: true` routes her through
+    // src/collectors/xbrowser.js instead of the Mastodon bridge, reading a
+    // real logged-in Chrome session. See docs/x-browser-scraping.md before
+    // touching this: local-only, never run from CI, needs its own Chrome
+    // profile kept logged in on whatever machine runs `npm run x-scrape`.
+    // collectSocialAll() still tries her via collectAccount() every run too
+    // (harmless 404, same as Scott7news) since she's a normal SOCIAL_ACCOUNTS
+    // entry — this is deliberate, not a leftover: it's what makes her show up
+    // in the ticker/Beat Writers page/avatar lookups exactly like every other
+    // account here, with viaBrowser only changing *how* her posts get
+    // collected, not where she appears once collected.
+    handle: 'NickiJhabvala',
+    name: 'Nicki Jhabvala',
+    label: 'The Athletic',
+    alwaysRelevant: true,
+    viaBrowser: true,
+  },
 
   // --- National insiders: filtered for a Commanders signal ---
   {
@@ -151,3 +171,6 @@ export const SOCIAL_TAGS = [
 ];
 
 export const SOCIAL_ENABLED = process.env.SOCIAL_ENABLED !== 'false';
+
+/** The subset of SOCIAL_ACCOUNTS read via a logged-in Chrome instead of the bridge — see that flag's comment above. */
+export const SOCIAL_BROWSER_ACCOUNTS = SOCIAL_ACCOUNTS.filter((a) => a.viaBrowser);
