@@ -5008,5 +5008,57 @@
     "images": [],
     "publishedAt": "2026-08-25T20:02:57.000Z",
     "collectedAt": "2026-08-27T14:10:46.688Z"
+  },
+  "social-7601f94da109": {
+    "id": "social-7601f94da109",
+    "url": "https://x.com/GrantPaulsen/status/2092701028416098631",
+    "text": "Huge show event. Going to spend an evening with Adam Peters and Commanders fans getting ready for the season! Next Thursday night at Arlington Drafthouse. Grab your tickets now!",
+    "handle": "GrantPaulsen",
+    "author": "Grant Paulsen",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/168/021/094/927/343/original/6e933ee5c3921b5d.jpg"
+    ],
+    "publishedAt": "2026-08-26T19:49:40.000Z",
+    "collectedAt": "2026-08-27T14:57:44.067Z"
+  },
+  "social-af99deac42b8": {
+    "id": "social-af99deac42b8",
+    "url": "https://x.com/john_keim/status/2092933672122929280",
+    "text": "On video talking about the joint practice. Rough day for the O: what is cause for concern; a little perspective and moves that still need to be made. Antonio Williams has some vet savvy, also some good footwork off the line. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-27T11:14:06.000Z",
+    "collectedAt": "2026-08-27T14:57:45.604Z"
+  },
+  "social-9222c28ee135": {
+    "id": "social-9222c28ee135",
+    "url": "https://x.com/BenStandig/status/2092936770794987543",
+    "text": "🎙 Talking about the Commanders' disjointed practice v. Ravens with @ByLiamGriffin@twitter.com . Context is key - missing linemen, no game plan adjustments - but Washington's ineffective execution on offense and \"flat\" start defensively soured the final camp session. disjointed/id1760952448?i=1000786155400",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-27T11:26:25.000Z",
+    "collectedAt": "2026-08-27T14:57:47.223Z"
+  },
+  "social-729f796f03c4": {
+    "id": "social-729f796f03c4",
+    "url": "https://x.com/FilmstudyRavens/status/2092946730681503863",
+    "text": "Podcast: Camp notes for 8/26/26 joint practice between #Ravens and #Commanders , including Tavius Robinson, Trey Hendrickson, and Kyle Hamilton highlights. tes-8-26-26/ #Ravensflock #RavensflockMexico #RavensBRA @UKRavens@twitter.com @scottishravens@twitter.com @TheGermanFlock@twitter.com @DutchFlock@twitter.com",
+    "handle": "FilmstudyRavens",
+    "author": "Ken McKusick",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/167/383/038/748/883/original/a4b535ba06766343.jpg"
+    ],
+    "publishedAt": "2026-08-27T12:06:00.000Z",
+    "collectedAt": "2026-08-27T14:57:59.349Z"
   }
 }
