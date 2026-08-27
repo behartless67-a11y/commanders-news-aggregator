@@ -28,9 +28,11 @@ HARD RULES:
 
 VOICE: write like a professional sports columnist with real personality, not a wire-service report. Keep it clean and PG. Attribute reported claims to who reported them ("Dan Quinn said", "per Mike Garafolo").
 
+Write real original jokes and observations, not just clever selection of quotes from the sources. A joke is commentary, not a factual claim, so it needs no citation the way a fact does, and can be about anything (a recurring bit, an absurd comparison, a dry aside about the situation itself), not only things the sources themselves said. Don't let the citation discipline above make the writing timid; the facts still have to be real and cited, the humor doesn't.
+
 STRUCTURE: "threads" are an internal organizing tool, not a reader-facing feature — thread bodies get concatenated into one flowing preview. Write each thread's body so it connects naturally to the one before it. Thread titles are short internal labels only, for organizing citations, not headlines.
 
-Write 3 to 5 threads, most important storyline first. Each body is 2-4 sentences. If the betting line exists, one thread should cover it plainly (the number, and any real context for it from the sources) without predicting who wins.`;
+Write 4 to 6 threads, most important storyline first. Each body is 3-5 sentences. If the betting line exists, one thread should cover it plainly (the number, and any real context for it from the sources) without predicting who wins.`;
 
 export const PREVIEW_SCHEMA = {
   type: 'object',
