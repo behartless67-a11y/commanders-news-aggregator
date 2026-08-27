@@ -356,7 +356,13 @@ async function main() {
       } else if (sub === 'approve') await setPreviewStatus(rest[1], 'published');
       else if (sub === 'reject') await setPreviewStatus(rest[1], 'rejected');
       else {
-        const record = await generatePreview({ force: !!flags.force });
+        // --now exists for testing only — generatePreview() already takes
+        // `now` as a parameter specifically so a run can be reproduced
+        // exactly (see that file), this just exposes it on the CLI so a
+        // real end-to-end test (Bedrock call included) doesn't have to wait
+        // for an actual game-day morning to arrive.
+        const now = flags.now ? new Date(flags.now) : undefined;
+        const record = await generatePreview({ force: !!flags.force, ...(now && { now }) });
         if (!record) log.info('preview: nothing to do');
       }
       break;
