@@ -1230,25 +1230,27 @@ main.layout{
 .ts-headline-row{
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 10px;
   margin: 0 0 8px;
 }
 
 .ts-headline{
   margin: 0;
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--text-muted);
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  flex-wrap: wrap;
+  gap: 5px;
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .ts-headline .ts-rank{
   color: var(--gold);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 /* Defense has no league rank to show. Reads as a stated absence rather than a
@@ -1261,7 +1263,7 @@ main.layout{
   letter-spacing: 0.06em;
 }
 
-.ts-line{ min-width: 0; }
+.ts-line{ min-width: 0; white-space: nowrap; }
 
 .ts-leaders{
   list-style: none;
@@ -3094,7 +3096,12 @@ main.layout.page-admin{
   .hero .ticker{ display: none; }
   .widget.live-feed{ display: flex; }
   main.layout.page-river{
-    grid-template-columns: 280px minmax(0, 1fr) 320px;
+    /* Sidebar widened 320px -> 360px so Team Stats' rush/pass row (longer
+       text than the yards/points row above it, especially defense's
+       "141.8 rush yds/gm allowed") fits on one line without shrinking its
+       text past legibility — the river absorbs the difference via its own
+       minmax(0, 1fr), wrapping headlines a bit more instead. */
+    grid-template-columns: 280px minmax(0, 1fr) 360px;
     align-items: start;
   }
 }
@@ -3119,7 +3126,11 @@ main.layout.page-admin{
     flex-direction: row;
     align-items: flex-start;
   }
-  .widget-videos{ flex: 0 0 320px; }
+  /* 280px, not 320px — the 40px given up here is exactly what
+     sidebar-stack (flex: 1 1 0 below) needs to keep Team Stats' rush/pass
+     row on one line at this breakpoint too, matching the 320 -> 360 sidebar
+     widening at 1300px above. */
+  .widget-videos{ flex: 0 0 280px; }
   /* The stats+schedule column takes the reclaimed width, not the schedule
      alone — see sidebar() in templates.js for why they're nested. */
   .sidebar-stack{ flex: 1 1 0; min-width: 0; }
