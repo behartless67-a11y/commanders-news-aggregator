@@ -4,12 +4,87 @@
   "homeAway": "AT",
   "status": "draft",
   "model": "anthropic.claude-sonnet-5",
-  "generatedAt": "2026-08-27T17:47:57.828Z",
+  "generatedAt": "2026-08-27T17:57:47.704Z",
   "attempts": 1,
   "digest": {
-    "headline": "Commanders' Shaky Offensive Line Faces One Last Test Against Ravens Before Games Start Counting",
-    "lede": "Washington closes out the preseason on the road at Baltimore with the same question that's dogged the whole camp: can this offensive line hold up? After a joint practice that got called \"the worst I've ever seen the Commanders' offense in years,\" the Commanders need something better than what they showed this week, even if nobody involved is panicking about it just yet.</parameter>\n<parameter name=\"threads\">[{\"title\":\"The O-line crisis\",\"body\":\"The Commanders' offensive line has been the story of camp, and it boiled over during Wednesday's joint practice in Owings Mills, where Nicki Jhabvala of The Athletic wrote flatly, \\\"This is the worst I've ever seen the Commanders' offense in years. Inoperable offensive line\\\" [11, 17, 133]. Jayden Daniels was more measured, calling it \\\"not the best day that I thought we could've had, all around\\\" [18, 124], while Jeremy Reaves offered his own blunt diagnosis of the joint practice flop [5, 113]. The problems are largely personnel-driven: right guard Sam Cosmi was out sick, center Nick Allegretti (calf) still isn't full-go, and left tackle Laremy Tunsil, out for the season after triceps surgery, watched from the sideline in street clothes [125, 138, 140, 51]. That left Daniels working behind a line featuring Matt Gulbin and Julian Good-Jones rotating at center and Good-Jones and Tanoa Togiai at right guard [125], a patchwork group ESPN's John Keim noted was without the potential difference-maker Cosmi could have provided that day [119].\",\"cites\":[5,11,17,18,51,113,119,124,125,133,138,140]},{\"title\":\"Center search and Humphries addition\",\"body\":\"The center spot has been an unresolved issue dating back months, with Jhabvala tweeting simply, \\\"The Commanders need a center. Badly. Still. That is all\\\" [139], and Dan Quinn himself acknowledging, \\\"we've got work to do to figure out where we want to get to in center\\\" [274, 62, 66, 281]. In response to Tunsil's injury, Washington moved to sign veteran tackle D.J. Humphries, a former Pro Bowl left tackle with 101 career starts, to a one-year deal, giving the tackle group starter experience even if it doesn't solve the interior [24, 25, 30, 31, 149, 150, 165]. NBC Sports Washington's JP Finlay relayed a pointed comment from Mike Jones that captures the front office's mood: \"If fans are worried I assure you Dan Quinn and Adam Peters are 10x more concerned\" [101]. ESPN's Keim has repeatedly suggested the most realistic fixes are a trade or a post-cutdown addition rather than anything on the current roster [102, 210].\",\"cites\":[24,25,30,31,62,66,101,102,139,149,150,165,210,274,281]},{\"title\":\"Injuries piling up\",\"body\":\"Beyond the line, Washington is dealing with a lengthy injury list heading into the finale, including cornerback Trey Amos (ankle) and edge rusher Odafe Oweh (calf), both of whom Quinn addressed with a notable sigh, saying only, \\\"They're both working hard and making progress\\\" [23, 175, 198]. Tight end Ben Sinnott (oblique) is considered unlikely to play against Baltimore [140, 192, 193, 194], and running back Rachaad White is progressing from a hamstring injury but has been limited to individual work [48, 142, 185, 222]. The roster is also fresher at safety after Washington released veteran Will Harris, choosing depth and special-teams value in Jeremy Reaves, Nick Cross and Quan Martin over Harris's experience [16, 36, 37, 38, 61, 178]. Martin, for his part, has had a strong camp that Quinn praised for its \"intensity and urgency\" [74, 197, 49].\",\"cites\":[16,23,36,37,38,48,49,61,74,142,175,178,185,192,193,194,198,222]},{\"title\":\"The betting line\",\"body\":\"Baltimore is favored by 3 points with an over/under of 34.5 and Washington sitting at +121 on the moneyline, according to DraftKings odds via ESPN [2]. Context for that number includes the fact this is the preseason finale for both teams, with Washington still hunting for a winning preseason record after dropping to 1-1 following a loss to Detroit [50], and with several key starters, including Sinnott and possibly others banged up this week, unlikely to see extended action.\",\"cites\":[2,50]},{\"title\":\"Elsewhere on the roster: Daniels, LSU, and young players stepping up\",\"body\":\"Amid the line concerns, Daniels has tried to keep perspective, noting \"the good thing about it is it's August... our first game is September 13th\" [123, 127, 121]. He also closed the book, for now, on his LSU jersey-number dispute, telling reporters, \"I've said everything I needed to say\" about the situation and that his focus is on \"Commanders football\" [7, 104, 284, 289]. On a brighter note, rookie wide receiver Antonio Williams flashed in the joint practice, capping the session with a touchdown catch from Daniels under pressure [8, 59, 129, 132, 134], and Daniels praised him as \"a kid that wants to learn, he's always asking questions\" [126]. Cornerback Mike Sainristil also picked off Lamar Jackson late in the joint practice, one of the few defensive bright spots on a day Baltimore's offense otherwise found openings with regularity [113, 131, 135].\",\"cites\":[7,8,59,104,121,123,126,127,129,131,132,134,135,284,289]}]",
-    "threads": [],
+    "headline": "Commanders' Patchwork Offensive Line Faces Its Sternest Test Yet in Baltimore Finale",
+    "lede": "The Commanders close out the preseason at M&T Bank Stadium with a matter far more pressing than the final score: can this offensive line, missing bodies and a real answer at center, survive to September 13. Everything else, from Jayden Daniels' cameo snap counts to the LSU jersey drama, is background noise compared to what happened in Owings Mills this week.",
+    "threads": [
+      {
+        "title": "The matchup and the line",
+        "body": "Washington travels to M&T Bank Stadium for the preseason finale against Baltimore, wrapping up an exhibition slate the Commanders hoped would build momentum, not questions [1, 50]. DraftKings has the Ravens as 3-point favorites with an over/under of 34.5 and Washington's moneyline sitting at plus-121 [2]. There's no outcome to forecast here, but the number itself reflects a Baltimore team that, per multiple reports out of joint practice, has \"given its own O fits\" defensively while its offense torched the Commanders' banged-up front this week [120, 113].",
+        "cites": [
+          1,
+          2,
+          50,
+          120,
+          113
+        ]
+      },
+      {
+        "title": "The joint practice fallout",
+        "body": "The real story isn't Friday's exhibition, it's Wednesday's joint practice, which by nearly every account was a disaster for Washington's offense. The Athletic's Nicki Jhabvala called it \"the worst I've ever seen the Commanders' offense in years\" with an \"inoperable offensive line,\" and CBS Sports framed the same sentiment as fact-or-fiction fodder [133, 13]. Beat reporters tempered the ugliness with context, noting missing linemen (Cosmi out sick, Tunsil and Allegretti already sidelined) and zero game-plan wrinkles installed for the exhibition setting [105, 111, 140]. Safety Jeremy Reaves wasn't in a charitable mood afterward, telling teammates flatly, \"That's how you win five games,\" a pointed rebuke of the sloppy performance regardless of the injury excuses [113]. Even Daniels, usually even-keeled, admitted it was \"not the best day that I thought we could've had, all around, myself and everybody else\" [124, 18].",
+        "cites": [
+          133,
+          13,
+          105,
+          111,
+          140,
+          113,
+          124,
+          18
+        ]
+      },
+      {
+        "title": "The center saga and the O-line reinforcements",
+        "body": "Underneath all of it is the position battle that's defined Washington's camp: center. With Nick Allegretti still working back from a calf injury, Julian Good-Jones and Matt Gulbin have carried the bulk of the reps, and head coach Dan Quinn has been candid that the group is still \"digging\" for answers, saying bluntly, \"we've got work to do to figure out where we want to get to at center\" [227, 229, 274]. Jhabvala's blunt assessment sums up the anxiety: \"The Commanders need a center. Badly. Still. That is all\" [139]. The urgency only grew when starting left tackle Laremy Tunsil was ruled out for the season with a torn triceps, prompting Washington to work out and sign veteran D.J. Humphries, a former Pro Bowl tackle with 101 career starts, to a one-year deal [51, 30, 165, 25]. NBC Sports Washington's JP Finlay relayed a pointed comment from a colleague capturing the mood in the building: \"If fans are worried I assure you Dan Quinn and Adam Peters are 10x more concerned\" [101].",
+        "cites": [
+          227,
+          229,
+          274,
+          139,
+          51,
+          30,
+          165,
+          25,
+          101
+        ]
+      },
+      {
+        "title": "Daniels, the LSU noise, and staying on message",
+        "body": "Amid the O-line chaos, Daniels has tried to keep his own focus narrow. Asked this week about his ongoing dispute with LSU over his retired jersey number, he shut the topic down, saying, \"I've said everything I had to say within the statement. Now it's really just getting ready for Week 1\" [7, 284, 289]. He's preached the same patience about the offense's growing pains, reminding everyone that \"it's August... our first game is Sept. 13. That's when it really matters\" [123, 127]. That perspective matters given how little he's actually played this preseason, a total of three snaps against Detroit before Quinn pulled the plug [77, 76]. Whether Daniels sees the field at all in Baltimore remains to be seen, but the bigger point, as Daniels himself keeps stressing, is building continuity with whatever front five ends up protecting him.",
+        "cites": [
+          7,
+          284,
+          289,
+          123,
+          127,
+          77,
+          76
+        ]
+      },
+      {
+        "title": "Injuries piling up on both sides of the ball",
+        "body": "Washington enters the finale thin at multiple spots beyond the offensive line. Cornerback Trey Amos and edge rusher Odafe Oweh remain sidelined, with Quinn sighing when asked about their timelines and simply saying, \"They're both working hard and making progress\" [175, 198]. Tight end Ben Sinnott is considered unlikely to play after an oblique injury, and running backs Jacory Croskey-Merritt and Rachaad White have both been managing lower-body issues throughout the week [192, 193, 196, 48, 142]. The roster crunch forced some difficult moves already, including releasing veteran safety Will Harris and signing depth pieces like linebacker Boogie Basham and safeties Joshuah Bledsoe and Quindell Johnson [38, 16, 43]. Amid the churn, there have been bright spots, particularly rookie wide receiver Antonio Williams, who capped Wednesday's practice with a fourth-down touchdown grab from Daniels under pressure, and safety Quan Martin, who's quietly stacked interceptions in back-to-back preseason games [129, 132, 59, 342, 345].",
+        "cites": [
+          175,
+          198,
+          192,
+          193,
+          196,
+          48,
+          142,
+          38,
+          16,
+          43,
+          129,
+          132,
+          59,
+          342,
+          345
+        ]
+      }
+    ],
     "alsoNoted": []
   },
   "corpus": [
@@ -5393,5 +5468,10 @@
       "collectedAt": "2026-08-21T16:23:34.709Z"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "thread 2: name \"Athletic\" appears in no source",
+    "thread 2: name \"Nicki\" appears in no source",
+    "thread 2: name \"Jhabvala\" appears in no source",
+    "thread 3: name \"Finlay\" appears in no source"
+  ]
 }
