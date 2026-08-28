@@ -5118,5 +5118,41 @@
     "images": [],
     "publishedAt": "2026-08-27T20:32:47.000Z",
     "collectedAt": "2026-08-27T22:06:25.989Z"
+  },
+  "social-0cc4a9743d77": {
+    "id": "social-0cc4a9743d77",
+    "url": "https://x.com/Commanders/status/2093126415084638331",
+    "text": "can't believe they didn't remember 😔",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-08-28T00:00:00.000Z",
+    "collectedAt": "2026-08-28T00:06:14.599Z"
+  },
+  "social-75dfb8d800ba": {
+    "id": "social-75dfb8d800ba",
+    "url": "https://x.com/john_keim/status/2093122052752375815",
+    "text": "With @NickiJhabvala@twitter.com as we discuss how injuries have slowed the early momentum; taking a look at roster decisions and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000786348512",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-27T23:42:40.000Z",
+    "collectedAt": "2026-08-28T00:06:17.370Z"
+  },
+  "social-8025e319d6d8": {
+    "id": "social-8025e319d6d8",
+    "url": "https://x.com/BenStandig/status/2093120687011442706",
+    "text": "Will update after tomorrow's game/Saturday morning. For now...",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-27T23:37:14.000Z",
+    "collectedAt": "2026-08-28T00:06:19.025Z"
   }
 }
