@@ -5225,5 +5225,19 @@
     "images": [],
     "publishedAt": "2026-08-28T19:12:44.000Z",
     "collectedAt": "2026-08-28T19:53:22.334Z"
+  },
+  "social-47aa36d73ac3": {
+    "id": "social-47aa36d73ac3",
+    "url": "https://x.com/john_keim/status/2093428263351714161",
+    "text": "Tonight’s view for the preseason finale:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/174/918/434/049/260/original/28ce5776333dd64b.jpg"
+    ],
+    "publishedAt": "2026-08-28T19:59:26.000Z",
+    "collectedAt": "2026-08-28T20:06:19.875Z"
   }
 }
