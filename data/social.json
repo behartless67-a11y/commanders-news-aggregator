@@ -5173,5 +5173,19 @@
     "images": [],
     "publishedAt": "2026-08-28T13:09:56.790Z",
     "collectedAt": "2026-08-28T13:32:30.122Z"
+  },
+  "social-06d93befa030": {
+    "id": "social-06d93befa030",
+    "url": "https://x.com/JPFinlayNBCS/status/2093335778738741585",
+    "text": "Doing radio from M&T ahead of tonight’s Commanders/Ravens matchup. And people say I’m always running late",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/173/463/551/128/412/original/37a9960131235bb4.jpg"
+    ],
+    "publishedAt": "2026-08-28T13:51:56.000Z",
+    "collectedAt": "2026-08-28T14:06:17.976Z"
   }
 }
