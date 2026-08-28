@@ -549,17 +549,6 @@
     "publishedAt": "2026-08-18T12:11:23.000Z",
     "collectedAt": "2026-08-20T13:21:53.814Z"
   },
-  "social-7a696558d12f": {
-    "id": "social-7a696558d12f",
-    "url": "https://x.com/RapSheet/status/2089685197390328268",
-    "text": "A slew of moves for the #Commanders .",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "publishedAt": "2026-08-18T12:05:50.000Z",
-    "collectedAt": "2026-08-20T13:21:53.814Z"
-  },
   "social-685c78b3c2e3": {
     "id": "social-685c78b3c2e3",
     "url": "https://x.com/Commanders/status/2089776589936415132",
@@ -5145,5 +5134,17 @@
     "images": [],
     "publishedAt": "2026-08-28T00:21:00.000Z",
     "collectedAt": "2026-08-28T01:53:59.277Z"
+  },
+  "social-8834b2669b5d": {
+    "id": "social-8834b2669b5d",
+    "url": "https://x.com/john_keim/status/2093303138891542580",
+    "text": "On video with @NickiJhabvala@twitter.com as we discuss the impact of the Commanders’ lingering injuries -players will return but lost valuable time; roster decisions ahead of final cuts. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-28T11:42:14.000Z",
+    "collectedAt": "2026-08-28T12:06:16.950Z"
   }
 }
