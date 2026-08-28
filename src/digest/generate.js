@@ -4,11 +4,11 @@ import { DATA_DIR } from '../lib/store.js';
 import { log } from '../lib/log.js';
 import { buildCorpus, renderCorpus } from './select.js';
 import { SYSTEM_PROMPT, SCHEMA, buildUserPrompt } from './prompt.js';
-import { generate as callModel } from './provider.js';
+import { generate as callModel } from './cloud-provider.js';
 import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 
-const MODEL = process.env.DIGEST_MODEL || 'gemma4:26b';
+const MODEL = process.env.DIGEST_MODEL || 'anthropic.claude-sonnet-5';
 
 // A February week can produce a handful of items. Declining to write about
 // almost nothing is the honest choice, not a padded post.
