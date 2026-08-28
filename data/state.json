@@ -1,6 +1,12 @@
 {
   "runs": [
     {
+      "at": "2026-08-28T13:32:32.223Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 1
+    },
+    {
       "at": "2026-08-28T12:06:32.459Z",
       "stage": "social",
       "added": 1,
@@ -407,13 +413,6 @@
     },
     {
       "at": "2026-08-27T14:47:38.878Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-08-27T14:45:36.966Z",
       "stage": "social-browser",
       "added": 0,
       "pruned": 0,

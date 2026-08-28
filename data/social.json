@@ -538,17 +538,6 @@
     "publishedAt": "2026-08-18T14:30:07.000Z",
     "collectedAt": "2026-08-20T13:21:53.814Z"
   },
-  "social-0bcf2d0e2d77": {
-    "id": "social-0bcf2d0e2d77",
-    "url": "https://x.com/tashanreed/status/2089686595532198063",
-    "text": "The #Commanders make a collection of roster moves:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "publishedAt": "2026-08-18T12:11:23.000Z",
-    "collectedAt": "2026-08-20T13:21:53.814Z"
-  },
   "social-685c78b3c2e3": {
     "id": "social-685c78b3c2e3",
     "url": "https://x.com/Commanders/status/2089776589936415132",
@@ -5146,5 +5135,43 @@
     "images": [],
     "publishedAt": "2026-08-28T11:42:14.000Z",
     "collectedAt": "2026-08-28T12:06:16.950Z"
+  },
+  "social-19a84454d086": {
+    "id": "social-19a84454d086",
+    "url": "https://x.com/Commanders/status/2093322718532014251",
+    "text": "Last one before it counts",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/173/263/526/393/368/original/4c95746f24e46c08.jpg"
+    ],
+    "publishedAt": "2026-08-28T13:00:02.000Z",
+    "collectedAt": "2026-08-28T13:32:10.742Z"
+  },
+  "social-1696edcfc443": {
+    "id": "social-1696edcfc443",
+    "url": "https://mysportgallery.com/@slessans2/117173295271543669",
+    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-08-28T13:09:56.000Z",
+    "collectedAt": "2026-08-28T13:32:30.122Z"
+  },
+  "social-e20741c36531": {
+    "id": "social-e20741c36531",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mu5gpoee7e2m",
+    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-08-28T13:09:56.790Z",
+    "collectedAt": "2026-08-28T13:32:30.122Z"
   }
 }
