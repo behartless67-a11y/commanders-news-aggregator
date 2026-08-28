@@ -2,7 +2,7 @@
   "gameKey": "2026-08-28",
   "opponent": "Baltimore Ravens",
   "homeAway": "AT",
-  "status": "draft",
+  "status": "published",
   "model": "anthropic.claude-sonnet-5",
   "generatedAt": "2026-08-28T11:01:38.382Z",
   "attempts": 3,
@@ -5880,5 +5880,6 @@
     "thread 5: name \"Jhabvala\" appears in no source",
     "thread 6: name \"DraftKings\" appears in no source",
     "thread 6: name \"Yahoo\" appears in no source"
-  ]
+  ],
+  "reviewedAt": "2026-08-28T11:51:39.308Z"
 }
