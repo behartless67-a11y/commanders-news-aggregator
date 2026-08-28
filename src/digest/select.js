@@ -60,12 +60,21 @@ function substanceWords(text) {
  * Everything published about the team in the last `DIGEST_WINDOW_DAYS`, minus
  * the junk a model would either ignore or mangle. `now` is a parameter (rather
  * than read inside) so a run can be reproduced exactly.
+ *
+ * `excludeSourceIds` exists for exactly one reason: a cloud-model caller (see
+ * preview-generate.js) must never forward Hogs Haven's or ClutchPoints'
+ * article text to a third party — both disallow AI crawlers by name in
+ * robots.txt (see README, "Why local only"). The local-only weekly digest
+ * passes nothing here and reads every source, same as always.
  */
-export async function buildCorpus(now = Date.now()) {
+export async function buildCorpus(now = Date.now(), { excludeSourceIds = [] } = {}) {
   const cutoff = now - WINDOW_DAYS * 86400000;
+  const excluded = new Set(excludeSourceIds);
   const dropped = [];
 
   const inWindow = sortedItems(await loadItems()).filter(
+    (i) => !excluded.has(i.sourceId),
+  ).filter(
     (i) => new Date(i.publishedAt || i.collectedAt).getTime() >= cutoff,
   );
 

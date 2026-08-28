@@ -245,6 +245,98 @@ function ticker(posts) {
 }
 
 /**
+ * How many posts feed the left-column live feed's continuous loop. Matches
+ * MAX_TICKER_POSTS' own default in build.js — one loop-group needs to be
+ * taller than the river ever realistically gets, or the animation runs out
+ * of content mid-loop and the same gap of nothing shows up at the same point
+ * on every cycle regardless of scroll position (a taller box alone doesn't
+ * fix that, only more posts in the loop does). 12 was short enough for that
+ * to happen on an ordinary river; this uses the same-size pool the ticker
+ * already draws from rather than an arbitrarily smaller slice of it.
+ */
+const LIVE_FEED_COUNT = Number(process.env.LIVE_FEED_COUNT || 30);
+
+/** Flat per-post pace for the loop's scroll speed — see the comment in liveFeedWidget() for why this isn't derived from character count the way the ticker's is. */
+const LIVE_FEED_SECONDS_PER_POST = Number(process.env.LIVE_FEED_SECONDS_PER_POST || 4.5);
+
+/**
+ * Same fields as socialFeedPost() (avatar, handle, timestamp, text) at a
+ * smaller size to fit a narrower column — this isn't a distinct data shape,
+ * just a more compact rendering of the same social post for a different spot
+ * on the page. The whole post is one <a>, like .ticker-post, rather than an
+ * avatar beside a separately-linked body — one tap target, and it sidesteps
+ * ever nesting a link inside a link.
+ */
+function liveFeedPost(post) {
+  const account = SOCIAL_ACCOUNTS_BY_HANDLE.get(post.handle);
+  const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
+  const avatar = account?.avatar
+    ? `<img class="live-feed-avatar" src="${escapeHtml(account.avatar)}" alt="" width="32" height="32" loading="lazy" />`
+    : `<span class="live-feed-avatar live-feed-avatar-placeholder" aria-hidden="true">${escapeHtml(post.handle.charAt(0))}</span>`;
+  return `
+        <a class="live-feed-post" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+          ${avatar}
+          <span class="live-feed-body">
+            <span class="live-feed-head-row">
+              <span class="live-feed-handle">@${escapeHtml(post.handle)}</span>
+              ${when ? `<span class="live-feed-time">${escapeHtml(when)}</span>` : ''}
+            </span>
+            <span class="live-feed-text">${escapeHtml(post.text)}</span>
+          </span>
+        </a>`;
+}
+
+/**
+ * Left-column replacement for the horizontal ticker, on wide screens only
+ * (see the shared min-width: 1300px breakpoint in site.css) — below that
+ * width there isn't room for a genuine third column without crushing the
+ * river, so the ticker keeps carrying the same content there instead. The
+ * two never show at once: same posts, same underlying data, just two
+ * different presentations for two different amounts of available width.
+ *
+ * Same seamless-loop technique as ticker(), rotated 90°: the post list is
+ * rendered twice into stacked .live-feed-group blocks inside one
+ * .live-feed-track, which animates translateY to exactly -50% and repeats —
+ * because the second copy is byte-identical to the first, the loop point is
+ * invisible. The second copy is aria-hidden so a screen reader (or a search
+ * engine) encounters each post once, not twice.
+ *
+ * Duration is a flat rate per post, not derived from character count the way
+ * the ticker's is — a single-line horizontal strip's width is reliably
+ * proportional to its text length, but a vertical post's rendered height
+ * isn't: every post here is clamped to 3 lines (see .live-feed-text), so a
+ * much longer post doesn't take proportionally more room, it just clamps at
+ * the same height a short one would. Counting posts is the more honest
+ * estimate of how long one full loop actually takes.
+ *
+ * Stretches to match the river column's height instead of scrolling inside a
+ * fixed box — see align-self: stretch on .widget.live-feed in site.css.
+ * Returns empty string with nothing to show, same as ticker() and sidebar().
+ */
+function liveFeedWidget(posts) {
+  if (!posts.length) return '';
+  const capped = posts.slice(0, LIVE_FEED_COUNT);
+  const group = capped.map(liveFeedPost).join('');
+  const seconds = Math.max(20, Math.round(capped.length * LIVE_FEED_SECONDS_PER_POST));
+  return `
+    <aside class="widget live-feed" aria-labelledby="live-feed-heading">
+      <div class="live-feed-head">
+        <h2 id="live-feed-heading">Live Feed</h2>
+        <a class="live-feed-viewall" href="social-feed.html">View all</a>
+      </div>
+      <div class="live-feed-viewport">
+        <div class="live-feed-track" style="animation-duration: ${seconds}s">
+          <div class="live-feed-group">${group}
+          </div>
+          <div class="live-feed-group" aria-hidden="true">${group}
+          </div>
+        </div>
+      </div>
+      <a class="live-feed-more-link" href="social-feed.html">View all live updates</a>
+    </aside>`;
+}
+
+/**
  * Pull the 11-character video ID out of a YouTube watch URL. Derived at render
  * time rather than stored, so the collector stays a plain RSS collector — a
  * video item is just an item whose link happens to be a watch URL.
@@ -405,11 +497,12 @@ const PODCASTS = [
 /** Both Spotify and Apple ship a public, key-free embed iframe — no scraping, same reasoning as the schedule/betting widgets pulling from public endpoints. */
 function podcastEmbed(p) {
   if (p.provider === 'apple') {
-    // 175, not Apple's larger default — at 450 the embed has room to switch
-    // into its wide two-panel episode-list layout, which threw this card
-    // wildly out of proportion with every Spotify one beside it. 175 keeps
-    // it to the same compact single-episode card the others use.
-    return `<iframe src="https://embed.podcasts.apple.com/us/podcast/${p.slug}/id${p.id}?theme=dark" title="${escapeHtml(p.name)}" width="100%" height="175" style="width:100%;overflow:hidden;background:transparent;" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" loading="lazy"></iframe>`;
+    // Matches Spotify's own height below, not the smaller 175 this used to
+    // be — that made the card visibly shorter than every Spotify one beside
+    // it. 450 is the one height confirmed (by eye, in a real browser) to
+    // flip this embed into a wide two-panel episode-list layout; 352 is
+    // Spotify's own number and stays well clear of that.
+    return `<iframe src="https://embed.podcasts.apple.com/us/podcast/${p.slug}/id${p.id}?theme=dark" title="${escapeHtml(p.name)}" width="100%" height="352" style="width:100%;overflow:hidden;background:transparent;" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" loading="lazy"></iframe>`;
   }
   return `<iframe src="https://open.spotify.com/embed/show/${p.id}?utm_source=generator" title="${escapeHtml(p.name)}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 }
@@ -480,6 +573,8 @@ function teamStatsWidget(teamStats) {
     if (!data) return '';
     const yds = stat(data.yardsPerGame);
     const pts = stat(data.pointsPerGame);
+    const rushYds = stat(data.rushYardsPerGame);
+    const passYds = stat(data.passYardsPerGame);
     const suffix = side === 'def' ? ' allowed' : '';
     // Each stat gets its own rank now, not just yards with points riding
     // along as plain text beside it — a reader asking "where do we rank
@@ -493,6 +588,10 @@ function teamStatsWidget(teamStats) {
         <div class="ts-headline-row">
           ${headline(yds, 'yds/gm', data.yardsPerGame)}
           ${headline(pts, 'pts/gm', data.pointsPerGame)}
+        </div>
+        <div class="ts-headline-row">
+          ${headline(rushYds, 'rush yds/gm', data.rushYardsPerGame)}
+          ${headline(passYds, 'pass yds/gm', data.passYardsPerGame)}
         </div>
         ${leaders}
       </div>`;
@@ -537,23 +636,64 @@ ${defense}`
     </div>`;
 }
 
+const ORDINAL = ['1st', '2nd', '3rd', '4th'];
+
+/**
+ * NFC East only, styled as a close visual match to the schedule widget right
+ * below it (same 28x28 hotlinked logo treatment, same two-line info column) —
+ * see src/lib/standings.js for where the data and the sort order come from,
+ * and why it's win percentage rather than a rank ESPN hands back pre-computed.
+ * The Commanders' own row gets a subtle highlight, same spirit as
+ * .schedule-date's win/loss coloring — the one row a Commanders-focused site's
+ * reader is actually here to find fastest in a list of four.
+ */
+function standingsWidget(standings) {
+  if (!standings?.teams?.length) return '';
+  const rows = standings.teams
+    .map((t, i) => {
+      const logo = `https://static.www.nfl.com/t_q-best/league/api/clubs/logos/${encodeURIComponent(t.abbr)}`;
+      const isCommanders = t.abbr === 'WAS';
+      return `
+        <li class="standings-row${isCommanders ? ' is-commanders' : ''}">
+          <span class="standings-rank">${ORDINAL[i] || `${i + 1}th`}</span>
+          <img class="standings-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(t.name)}" width="28" height="28" loading="lazy" decoding="async" />
+          <span class="standings-info">
+            <span class="standings-team">${escapeHtml(t.name)}</span>
+            <span class="standings-record">${escapeHtml(t.overall || '')}${t.streak && t.streak !== '-' ? ` &middot; ${escapeHtml(t.streak)}` : ''}</span>
+          </span>
+        </li>`;
+    })
+    .join('\n');
+  return `
+    <div class="widget-standings">
+      <h2>NFC East${standings.season ? ` <span class="standings-season">${escapeHtml(standings.season)}</span>` : ''}</h2>
+      <ul class="standings-list">${rows}
+      </ul>
+    </div>`;
+}
+
 /** Returns empty string with nothing to show in any widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
-function sidebar(videos, games, betting = null, teamStats = null) {
+function sidebar(videos, games, betting = null, teamStats = null, standings = null) {
   const video = videoWidget(videos);
   const stats = teamStatsWidget(teamStats);
+  const standingsBlock = standingsWidget(standings);
   const schedule = scheduleWidget(games, betting);
-  if (!video && !schedule && !stats) return '';
-  // Stats above the schedule deliberately: the schedule runs a full season of
-  // rows, so anything placed under it is effectively unreachable without a
-  // long scroll.
+  if (!video && !schedule && !stats && !standingsBlock) return '';
+  // Stats, then standings, then schedule, all deliberately — the schedule
+  // runs a full season of rows, so anything placed under it is effectively
+  // unreachable without a long scroll. Standings sits directly above the
+  // schedule specifically (not above stats) because the nav's own Schedule
+  // link already jumps straight to id="schedule" on this same widget below —
+  // this keeps that link landing right next to the thing a reader jumped
+  // here to see, not several widgets above it.
   //
-  // Stats and schedule share a nested column rather than being siblings of the
-  // video widget, because above 1400px the rail turns into a two-across row
-  // (see the min-width: 1400px block in site.css) — as flat siblings the stats
-  // block became a third column *beside* the schedule instead of above it.
-  // Nesting keeps "stats, then schedule" true at every width. Below 1400px the
+  // All three share a nested column rather than being siblings of the video
+  // widget, because above 1400px the rail turns into a two-across row (see
+  // the min-width: 1400px block in site.css) — as flat siblings a widget
+  // became a third column *beside* the schedule instead of above it. Nesting
+  // keeps this same top-to-bottom order true at every width. Below 1400px the
   // wrapper is a no-op: one column inside one column.
-  const stack = [stats, schedule].filter(Boolean).join('\n');
+  const stack = [stats, standingsBlock, schedule].filter(Boolean).join('\n');
   return `<aside class="sidebar" aria-labelledby="video-rail-heading">
 ${video}
 ${stack ? `    <div class="sidebar-stack">\n${stack}\n    </div>` : ''}
@@ -589,11 +729,20 @@ function footer(sources, generatedAt) {
         <h3>National Coverage</h3>
         <ul class="source-list">${leagueLinks}</ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-links-col">
         <h3>Subscribe</h3>
         <a class="rss-link" href="feed.xml">
           <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9h-2.5a6.5 6.5 0 0 0-6.5-6.5V11zm0-6a15 15 0 0 1 15 15h-2.5A12.5 12.5 0 0 0 4 7.5V5zm2 12.5A1.75 1.75 0 1 1 6 21a1.75 1.75 0 0 1 0-3.5z"/></svg>
           RSS Feed
+        </a>
+        <!-- Deliberately not in the main nav — a reader tapping a normal-
+             looking nav tab shouldn't land on a full-bleed slideshow that
+             takes over the screen. This is the one place someone hosting a
+             watch party (or looking for it a second time) would actually
+             think to check. -->
+        <a class="rss-link" href="tv.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-5l1.5 3h-9L12 17H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2v8h14V7H5z"/></svg>
+          Watch Party Mode
         </a>
       </div>
     </div>
@@ -971,9 +1120,9 @@ ${entries}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1020,9 +1169,9 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderWeeklyPost, using previewArticleBody() instead of digestArticleBody() — see that function's own comment for why. */
-export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1068,11 +1217,11 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   // The opening paragraph alone is only 2 sentences — pull the third from the
   // paragraph after it rather than stopping short of the requested length.
   const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
 <html lang="en">
@@ -1118,8 +1267,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   const livePost = liveGamePost(liveGame, rosterIndex);
   // Weekly digests, previews, originals, and the live game post are four
   // different record shapes sharing one reverse-chronological stream, keyed on
@@ -1218,8 +1367,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1391,12 +1540,12 @@ export function renderRosterPage({
   videos = [],
   games = [],
   betting = null,
-  teamStats = null,
+  teamStats = null, standings = null,
   isGameLive = false,
   rosterPlayers = [],
   mentionCounts = new Map(),
 }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   // Most-talked-about first — the entire point of this page over just
   // linking to commanders.com's own roster. Ties (usually both at zero)
   // fall back to alphabetical so the order is at least stable build to build.
@@ -1683,8 +1832,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1738,7 +1887,7 @@ ${footer(sources, generatedAt)}
  * this page is never linked to there; it still renders and works if visited
  * directly, same as any other page.
  */
-export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, isGameLive = false }) {
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
   const widget = videoWidget(videos);
   const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
   return `<!doctype html>
@@ -1859,6 +2008,142 @@ ${footer(sources, generatedAt)}
 </a>
 
 <script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * A full-bleed lobby/TV display mode — glanced at from across a room, run
+ * unattended for hours, no reader with a mouse to click "show more" — a
+ * different reading context from every other page on the site rather than
+ * a variant of one, so it shares almost none of the usual header()/footer()/
+ * nav chrome. Not linked from the site nav on purpose; reached by typing or
+ * bookmarking /tv.html directly, the way a lobby display's URL usually
+ * works.
+ *
+ * Three independent moving pieces:
+ *   - The existing ticker() component, restyled far larger by .tv-page's own
+ *     CSS rather than rebuilt — it already handles the seamless loop,
+ *     pause-on-hover/focus, and the reduced-motion fallback, and none of
+ *     that changes just because the text is now 3x the size.
+ *   - Three independent cross-fading slots (not the ticker's own smaller
+ *     cap — up to 40 posts to draw from), each walking every 3rd post so the
+ *     row never shows the same post twice at once, and staggered so the
+ *     three don't all fade out in the same instant — see makeSlot() below.
+ *   - A full-page reload every 10 minutes. This page is meant to sit open
+ *     for hours; without a reload, whatever was baked in at the moment
+ *     someone opened the tab is what stays on screen until someone actually
+ *     walks over and refreshes it.
+ */
+export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
+  const posts = socialPosts.slice(0, 40);
+  // Only the three fields the fade-through actually reads — not the full
+  // post objects, and escaped for the one place they're not otherwise
+  // auto-escaped: sitting inside a <script> tag as a literal, where a
+  // post's own text containing "</script>" would otherwise end the script
+  // element early.
+  const postsJson = JSON.stringify(posts.map((p) => ({ handle: p.handle, text: p.text }))).replace(/</g, '\\u003c');
+  const description = `${siteName} — full-screen display mode for a lobby or watch party.`;
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(siteName)} — Display</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="${escapeHtml(description)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body class="tv-page">
+
+<div class="tv-bg" aria-hidden="true"></div>
+
+${ticker(posts)}
+
+<main class="tv-main">
+  <img class="tv-logo" src="logo.png" alt="${escapeHtml(siteName)}" />
+  <div class="tv-posts">
+    <p class="tv-post" aria-live="polite"></p>
+    <p class="tv-post" aria-live="polite"></p>
+    <p class="tv-post" aria-live="polite"></p>
+  </div>
+</main>
+
+<button class="tv-fullscreen-btn" id="tv-fullscreen-btn" type="button">Full Screen</button>
+
+<script>
+(function () {
+  'use strict';
+  var posts = ${postsJson};
+  var slotEls = Array.prototype.slice.call(document.querySelectorAll('.tv-post'));
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  // Each slot walks every Nth post (slot 0: posts[0, 3, 6, ...], slot 1:
+  // posts[1, 4, 7, ...], and so on for however many slots there are), so the
+  // slots showing at once are always different posts, never the same one
+  // duplicated across the row.
+  //
+  // Fade out, swap the text while invisible, fade back in — never animates
+  // the text change itself, only the opacity, so a long post replacing a
+  // short one never looks like it's sliding or resizing mid-transition.
+  function makeSlot(el, startIndex) {
+    var i = startIndex;
+    return function tick() {
+      if (!posts.length) return;
+      el.classList.remove('is-visible');
+      setTimeout(function () {
+        var p = posts[i % posts.length];
+        i += slotEls.length;
+        el.innerHTML = '<span class="tv-post-handle">@' + esc(p.handle) + '</span><span class="tv-post-text">' + esc(p.text) + '</span>';
+        el.classList.add('is-visible');
+      }, 500);
+    };
+  }
+
+  if (posts.length) {
+    slotEls.forEach(function (el, slotIndex) {
+      var tick = makeSlot(el, slotIndex);
+      // Staggered start — slot 0 at 0s, slot 1 at 3s, slot 2 at 6s (evenly
+      // spread across the 9s interval every slot shares) — so the row never
+      // fades all three out at the same instant. Each slot's own 9s cadence
+      // continues unstaggered after this first tick.
+      setTimeout(function () {
+        tick();
+        setInterval(tick, 9000);
+      }, slotIndex * (9000 / slotEls.length));
+    });
+  }
+
+  var btn = document.getElementById('tv-fullscreen-btn');
+  btn.addEventListener('click', function () {
+    // Browsers only allow requestFullscreen() from a direct user gesture
+    // like this click — a page can never enter fullscreen on its own,
+    // which is exactly why this button has to exist at all.
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen().catch(function () {});
+    }
+  });
+  document.addEventListener('fullscreenchange', function () {
+    btn.textContent = document.fullscreenElement ? 'Exit Full Screen' : 'Full Screen';
+  });
+
+  setTimeout(function () { window.location.reload(); }, 10 * 60 * 1000);
+})();
+</script>
 </body>
 </html>`;
 }
@@ -2023,7 +2308,7 @@ ${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl })}
 ${header('admin.html', false, false)}
 </div>
 
-<main class="layout layout-wide">
+<main class="layout layout-wide page-admin">
   <div class="admin-page">
     <h1 class="podcasts-heading">Admin</h1>
 
@@ -2197,6 +2482,8 @@ ${footer(sources, generatedAt)}
         tiles.push(tile('Operating systems', '<ul class="admin-path-list">' + rankedList(data.topOS, 'os') + '</ul>'));
         tiles.push(tile('Device size', '<ul class="admin-path-list">' + rankedList(data.topDevices, 'device') + '</ul>'));
         tiles.push(tile('Languages', '<ul class="admin-path-list">' + rankedList(data.topLanguages, 'language') + '</ul>'));
+        tiles.push(tile('Countries', '<ul class="admin-path-list">' + rankedList(data.topCountries, 'country') + '</ul>'));
+        tiles.push(tile('States / provinces', '<ul class="admin-path-list">' + rankedList(data.topStates, 'state') + '</ul>'));
 
         statsEl.innerHTML = '<div class="admin-grid">' + tiles.join('') + '</div>';
       })
@@ -2215,6 +2502,7 @@ ${footer(sources, generatedAt)}
         }
         draftsEl.innerHTML = data.records.map(function (r) {
           var typeLabel = r.type === 'preview' ? 'Preview' : 'Weekly';
+          var bodyHtml = (r.body || []).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
           return (
             '<div class="admin-draft">' +
               '<div class="admin-draft-head">' +
@@ -2222,8 +2510,15 @@ ${footer(sources, generatedAt)}
                 '<span class="admin-draft-status admin-draft-status--' + esc(r.status) + '">' + esc(r.status) + '</span>' +
               '</div>' +
               '<p class="admin-draft-headline">' + esc(r.headline || '(no headline)') + '</p>' +
+              (r.lede ? '<p class="admin-draft-lede">' + esc(r.lede) + '</p>' : '') +
+              (bodyHtml
+                ? '<details class="admin-draft-full"><summary>Read full draft</summary>' + bodyHtml + '</details>'
+                : '') +
               (r.status === 'draft'
-                ? '<button class="roster-more admin-approve" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Approve &amp; publish</button>'
+                ? '<div class="admin-draft-actions">' +
+                    '<button class="roster-more admin-approve" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Approve &amp; publish</button>' +
+                    '<button class="roster-more admin-reject" type="button" data-key="' + esc(r.key) + '" data-type="' + esc(r.type) + '">Reject</button>' +
+                  '</div>'
                 : '') +
             '</div>'
           );
@@ -2233,18 +2528,34 @@ ${footer(sources, generatedAt)}
   }
 
   draftsEl && draftsEl.addEventListener('click', function (event) {
-    var btn = event.target.closest('.admin-approve');
-    if (!btn) return;
-    btn.disabled = true;
-    btn.textContent = 'Publishing…';
-    fetch('/.netlify/functions/admin-approve', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ key: btn.getAttribute('data-key'), type: btn.getAttribute('data-type') }),
-    })
-      .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
-      .catch(function () { btn.disabled = false; btn.textContent = 'Not available yet'; });
+    var approveBtn = event.target.closest('.admin-approve');
+    var rejectBtn = event.target.closest('.admin-reject');
+    if (approveBtn) {
+      approveBtn.disabled = true;
+      approveBtn.textContent = 'Publishing…';
+      fetch('/.netlify/functions/admin-approve', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: approveBtn.getAttribute('data-key'), type: approveBtn.getAttribute('data-type') }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
+        .catch(function () { approveBtn.disabled = false; approveBtn.textContent = 'Not available yet'; });
+      return;
+    }
+    if (rejectBtn) {
+      if (!window.confirm('Reject this draft? It will never be published.')) return;
+      rejectBtn.disabled = true;
+      rejectBtn.textContent = 'Rejecting…';
+      fetch('/.netlify/functions/admin-reject', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: rejectBtn.getAttribute('data-key'), type: rejectBtn.getAttribute('data-type') }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error(); loadDrafts(); })
+        .catch(function () { rejectBtn.disabled = false; rejectBtn.textContent = 'Not available yet'; });
+    }
   });
 
   form.addEventListener('submit', function (event) {
@@ -2415,8 +2726,8 @@ function socialFeedPost(post, extra) {
       </li>`;
 }
 
-export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null }) {
-  const rail = sidebar(videos, games, betting, teamStats);
+export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null, standings = null }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings);
   const collapsed = socialPosts.length > SOCIAL_FEED_INITIAL;
   const items = socialPosts.map((p, i) => socialFeedPost(p, i >= SOCIAL_FEED_INITIAL)).join('');
   const nextBatch = Math.min(SOCIAL_FEED_BATCH, socialPosts.length - SOCIAL_FEED_INITIAL);
@@ -2498,7 +2809,7 @@ export function renderPage(
     videos = [],
     games = [],
     betting = null,
-    teamStats = null,
+    teamStats = null, standings = null,
     hasWeekly = false,
     isGameLive = false,
     rosterIndex = null,
@@ -2507,7 +2818,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games, betting, teamStats);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.
@@ -2556,6 +2867,8 @@ ${ticker(socialPosts)}
 </div>
 
 <main class="layout page-river${rail ? '' : ' layout-wide'}">
+  ${liveFeedWidget(socialPosts)}
+
   <section class="river${collapsed ? ' is-collapsed' : ''}" aria-label="Commanders news headlines">
     <div class="river-heading-row">
       <div class="river-heading-group">

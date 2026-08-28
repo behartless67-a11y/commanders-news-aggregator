@@ -1,400 +1,422 @@
 {
   "runs": [
     {
-      "at": "2026-08-26T10:24:56.027Z",
+      "at": "2026-08-28T10:06:29.722Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-26T08:40:57.448Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-26T08:40:37.558Z",
+      "at": "2026-08-28T10:06:08.925Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
+      "added": 4,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-28T10:05:10.325Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-28T08:06:29.749Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-28T08:06:09.446Z",
+      "stage": "collect",
+      "sources": 12,
       "added": 0,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-26T08:31:14.491Z",
+      "at": "2026-08-28T08:05:10.093Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-28T06:06:29.128Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-26T06:30:28.926Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-26T04:37:53.402Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-26T04:37:34.529Z",
+      "at": "2026-08-28T06:06:08.862Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-28T06:05:11.163Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-28T04:06:27.035Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-28T04:06:07.605Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-28T04:05:11.711Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-28T04:02:22.542Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 1
+    },
+    {
+      "at": "2026-08-28T04:01:57.394Z",
+      "stage": "collect",
+      "sources": 12,
       "added": 1,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-26T04:30:41.842Z",
+      "at": "2026-08-28T02:06:48.575Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-26T02:57:15.165Z",
-      "stage": "social",
+      "at": "2026-08-28T02:06:11.745Z",
+      "stage": "collect",
+      "sources": 12,
       "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-26T01:10:22.641Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-26T01:10:01.391Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 6,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-26T00:40:55.507Z",
-      "stage": "social",
-      "added": 5,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T22:16:16.860Z",
-      "stage": "social",
-      "added": 9,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T20:27:33.049Z",
-      "stage": "social",
+      "at": "2026-08-28T02:05:11.163Z",
+      "stage": "social-browser",
       "added": 0,
-      "pruned": 0
+      "pruned": 1,
+      "sessionExpired": false
     },
     {
-      "at": "2026-08-25T20:27:09.699Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-25T20:20:09.832Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T20:19:48.172Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-25T20:17:56.268Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T20:11:12.926Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T20:10:53.024Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-25T20:03:55.196Z",
+      "at": "2026-08-28T01:54:13.153Z",
       "stage": "social",
       "added": 2,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T20:03:35.732Z",
+      "at": "2026-08-28T00:06:34.844Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-28T00:06:12.772Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
       "added": 0,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-25T19:44:11.773Z",
+      "at": "2026-08-28T00:05:11.432Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 1,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T22:06:30.438Z",
+      "stage": "social",
+      "added": 3,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T22:06:10.507Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 3,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T22:05:11.437Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 1,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T20:06:35.355Z",
       "stage": "social",
       "added": 2,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T19:43:52.795Z",
+      "at": "2026-08-27T20:06:14.622Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T20:05:10.494Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T18:50:31.407Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 1
+    },
+    {
+      "at": "2026-08-27T18:50:02.669Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T18:06:36.612Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T18:06:11.179Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T18:05:11.681Z",
+      "stage": "social-browser",
+      "added": 1,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T18:04:22.725Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T18:03:58.846Z",
+      "stage": "collect",
+      "sources": 12,
       "added": 1,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-25T18:49:13.273Z",
+      "at": "2026-08-27T17:41:02.007Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T18:48:53.497Z",
+      "at": "2026-08-27T17:40:42.690Z",
       "stage": "collect",
-      "sources": 11,
-      "added": 3,
+      "sources": 12,
+      "added": 1,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-25T18:24:16.224Z",
-      "stage": "social",
-      "added": 3,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T16:35:02.543Z",
-      "stage": "social",
+      "at": "2026-08-27T17:39:39.169Z",
+      "stage": "social-browser",
       "added": 0,
+      "pruned": 2,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T17:04:10.325Z",
+      "stage": "social",
+      "added": 1,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T16:34:42.492Z",
+      "at": "2026-08-27T17:03:40.388Z",
       "stage": "collect",
-      "sources": 11,
-      "added": 8,
+      "sources": 12,
+      "added": 0,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-25T16:25:04.648Z",
+      "at": "2026-08-27T16:42:37.610Z",
       "stage": "social",
-      "added": 3,
+      "added": 1,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T14:35:05.538Z",
-      "stage": "social",
-      "added": 14,
-      "pruned": 0
+      "at": "2026-08-27T16:42:16.597Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 1,
+      "pruned": 0,
+      "dropped": 0
     },
     {
-      "at": "2026-08-25T12:42:54.947Z",
+      "at": "2026-08-27T16:06:32.299Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T12:42:36.061Z",
+      "at": "2026-08-27T16:06:10.319Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T16:05:11.410Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T15:40:08.991Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T15:39:45.919Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T15:38:48.674Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T15:37:34.206Z",
+      "stage": "social",
+      "added": 2,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T15:37:09.418Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 2,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-08-27T15:36:11.222Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 1,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T14:58:00.592Z",
+      "stage": "social",
+      "added": 4,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T14:57:41.204Z",
+      "stage": "collect",
+      "sources": 12,
       "added": 10,
       "pruned": 0,
       "dropped": 0
     },
     {
-      "at": "2026-08-25T12:27:29.067Z",
-      "stage": "social",
-      "added": 15,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T10:21:51.283Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T08:39:48.843Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T08:39:30.385Z",
-      "stage": "collect",
-      "sources": 11,
+      "at": "2026-08-27T14:55:58.639Z",
+      "stage": "social-browser",
       "added": 0,
       "pruned": 0,
-      "dropped": 0
+      "sessionExpired": false
     },
     {
-      "at": "2026-08-25T08:30:50.337Z",
-      "stage": "social",
+      "at": "2026-08-27T14:54:16.852Z",
+      "stage": "social-browser",
       "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T06:28:30.440Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T04:37:09.901Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T04:36:50.719Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 1,
       "pruned": 0,
-      "dropped": 0
+      "sessionExpired": false
     },
     {
-      "at": "2026-08-25T04:29:37.853Z",
+      "at": "2026-08-27T14:53:04.036Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T14:47:38.878Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T14:45:36.966Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-08-27T14:10:46.694Z",
+      "stage": "social-browser",
+      "added": 14,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-27T07:19:47.308Z",
       "stage": "social",
       "added": 0,
       "pruned": 0
     },
     {
-      "at": "2026-08-25T02:50:58.963Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T01:08:06.258Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-25T01:07:48.022Z",
+      "at": "2026-08-27T07:19:26.318Z",
       "stage": "collect",
-      "sources": 11,
+      "sources": 12,
       "added": 2,
       "pruned": 0,
       "dropped": 0
-    },
-    {
-      "at": "2026-08-25T00:40:17.056Z",
-      "stage": "social",
-      "added": 8,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T22:16:16.214Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T20:28:13.093Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T20:27:51.919Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 8,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-24T20:18:42.523Z",
-      "stage": "social",
-      "added": 9,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T18:25:24.135Z",
-      "stage": "social",
-      "added": 20,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T16:35:08.091Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T16:34:43.422Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 6,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-24T16:24:03.620Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T14:32:46.777Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T12:44:47.482Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T12:44:28.964Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-24T12:26:40.806Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-24T11:38:16.556Z",
-      "stage": "collect",
-      "sources": 11,
-      "added": 16,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-24T10:28:21.315Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
     }
   ]
 }

@@ -10,6 +10,7 @@
   "scripts": {
     "collect": "node src/cli.js collect",
     "social": "node src/cli.js social",
+    "x-scrape": "node src/cli.js x-scrape",
     "build": "node src/cli.js build",
     "run": "node src/cli.js run",
     "serve": "node src/cli.js serve",
@@ -22,6 +23,7 @@
     "schedule": "node src/cli.js schedule",
     "betting": "node src/cli.js betting",
     "injuries": "node src/cli.js injuries",
+    "standings": "node src/cli.js standings",
     "team-stats": "node src/cli.js team-stats",
     "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",

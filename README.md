@@ -152,9 +152,11 @@ day or a quiet one.
 Caveats worth knowing before relying on it:
 
 - **The roster is limited to what the bridge mirrors.** Not every reporter is
-  on it — `@NickiJhabvala` has only a single-tweet stub, not a real mirror, so
-  she can't be included. A handle the bridge doesn't carry logs a warning and
-  is skipped, never fatal.
+  on it — `@NickiJhabvala` has only a single-tweet stub, not a real mirror. A
+  handle the bridge doesn't carry logs a warning and is skipped, never fatal.
+  For a reporter missing from the bridge, `npm run x-scrape` is a separate,
+  local-only fallback that reads X directly through a logged-in Chrome
+  profile — see `docs/x-browser-scraping.md`.
 - **It's a third-party mirror**, so it can lag or disappear. `npm run social`
   is `continue-on-error` in CI and the ticker renders as nothing at all when
   there are no posts, so the news river never goes down with it.

@@ -1,5 +1,5 @@
 import { enabledSources, sourceById } from '../../config/sources.js';
-import { SOCIAL_ACCOUNTS, SOCIAL_TAGS, SOCIAL_ENABLED } from '../../config/social.js';
+import { SOCIAL_ACCOUNTS, SOCIAL_TAGS, SOCIAL_ENABLED, SOCIAL_BROWSER_ACCOUNTS } from '../../config/social.js';
 import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { log } from '../lib/log.js';
 import { isRelevant, relevanceSignal, isSocialFiller } from '../lib/relevance.js';
@@ -19,6 +19,7 @@ import {
 } from '../lib/store.js';
 import { collect as collectRss } from './rss.js';
 import { collectAccount, collectTag } from './mastodon.js';
+import { collectXProfile } from './xbrowser.js';
 
 const COLLECTORS = { rss: collectRss };
 
@@ -49,6 +50,14 @@ const MAX_SOCIAL_AGE_DAYS = Number(process.env.MAX_SOCIAL_AGE_DAYS || 3);
  * ("Early scene:"), which carries nothing once the media is stripped away.
  */
 const MIN_SOCIAL_TEXT_CHARS = Number(process.env.MIN_SOCIAL_TEXT_CHARS || 25);
+
+/** Shared by collectSocialAll() and collectSocialBrowser() — same freshness/length bar for every social source, whichever way it was fetched. */
+function keepSocialPost(post, alwaysRelevant) {
+  if (post.text.length < MIN_SOCIAL_TEXT_CHARS) return false;
+  if (post.publishedAt && daysAgo(post.publishedAt) > MAX_SOCIAL_AGE_DAYS) return false;
+  if (alwaysRelevant) return true;
+  return relevanceSignal(`${post.text} ${post.handle}`) !== null;
+}
 
 /**
  * Re-check stored items against the current relevance rules and drop the ones
@@ -146,13 +155,6 @@ export async function collectSocialAll() {
   const perAccount = {};
   let totalAdded = 0;
 
-  const keep = (post, alwaysRelevant) => {
-    if (post.text.length < MIN_SOCIAL_TEXT_CHARS) return false;
-    if (post.publishedAt && daysAgo(post.publishedAt) > MAX_SOCIAL_AGE_DAYS) return false;
-    if (alwaysRelevant) return true;
-    return relevanceSignal(`${post.text} ${post.handle}`) !== null;
-  };
-
   for (const account of SOCIAL_ACCOUNTS) {
     let posts = [];
     try {
@@ -163,7 +165,7 @@ export async function collectSocialAll() {
       continue;
     }
 
-    const kept = posts.filter((p) => keep(p, account.alwaysRelevant));
+    const kept = posts.filter((p) => keepSocialPost(p, account.alwaysRelevant));
     const { added } = mergeSocial(store, kept);
     totalAdded += added;
     perAccount[`@${account.handle}`] = { found: posts.length, kept: kept.length, added };
@@ -181,7 +183,7 @@ export async function collectSocialAll() {
     }
 
     // Tag timelines are never trusted on their own — see config/social.js.
-    const kept = posts.filter((p) => keep(p, false));
+    const kept = posts.filter((p) => keepSocialPost(p, false));
     const { added } = mergeSocial(store, kept);
     totalAdded += added;
     perAccount[entry.name] = { found: posts.length, kept: kept.length, added };
@@ -193,4 +195,48 @@ export async function collectSocialAll() {
   await recordRun({ stage: 'social', added: totalAdded, pruned: removed });
   log.ok(`social done — ${totalAdded} new post(s), ${removed} pruned`);
   return { totalAdded, perAccount };
+}
+
+/**
+ * Reads the browser-only accounts (see SOCIAL_BROWSER_ACCOUNTS in
+ * config/social.js) and merges them into the same store collectSocialAll()
+ * writes to. Kept as its own entry point, called only from `npm run
+ * x-scrape`, never from collectAll/collectSocialAll or a GitHub Actions
+ * workflow — this needs a real logged-in Chrome profile on the machine that
+ * runs it, which a CI runner doesn't have.
+ */
+export async function collectSocialBrowser() {
+  const store = await loadSocial();
+  const perAccount = {};
+  let totalAdded = 0;
+  // Set true if any account's session looks expired. The CLI turns this
+  // into a non-zero exit code, so the Windows Scheduled Task running this
+  // shows a failed "Last Run Result" — that native history is the failsafe,
+  // not a bespoke alert — see docs/x-browser-scraping.md.
+  let sessionExpired = false;
+
+  for (const account of SOCIAL_BROWSER_ACCOUNTS) {
+    let posts = [];
+    try {
+      const result = await collectXProfile(account);
+      posts = result.posts;
+      if (result.sessionExpired) sessionExpired = true;
+    } catch (err) {
+      log.error(`x-browser @${account.handle}: ${err.message}`);
+      perAccount[`@${account.handle}`] = { error: err.message };
+      continue;
+    }
+
+    const kept = posts.filter((p) => keepSocialPost(p, account.alwaysRelevant));
+    const { added } = mergeSocial(store, kept);
+    totalAdded += added;
+    perAccount[`@${account.handle}`] = { found: posts.length, kept: kept.length, added };
+    log.info(`@${account.handle}: ${posts.length} fetched, ${kept.length} kept, ${added} new`);
+  }
+
+  const removed = pruneSocial(store);
+  await saveSocial(store);
+  await recordRun({ stage: 'social-browser', added: totalAdded, pruned: removed, sessionExpired });
+  log.ok(`x-scrape done — ${totalAdded} new post(s), ${removed} pruned`);
+  return { totalAdded, perAccount, sessionExpired };
 }

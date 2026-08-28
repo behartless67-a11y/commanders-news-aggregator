@@ -140,6 +140,60 @@
   }
 
   setupReveal('.river', '.river-more', 'card-extra');
+
+  /**
+   * Matches the live feed's own height to the river's, in JS rather than
+   * leaning on CSS grid stretch alone. align-self: stretch on .live-feed
+   * (see site.css) sizes the grid *cell* correctly, but that cell contains a
+   * flex column whose scrolling middle section has to actually grow to fill
+   * it — flex-basis: 0 tells that section not to demand its own (oversized,
+   * looped-twice) content height, but nothing forces it to claim 100% of a
+   * newly-stretched ancestor's height in return, in every browser's flex
+   * layout pass. Measuring .river directly and setting an explicit pixel
+   * height sidesteps that uncertainty instead of trusting it.
+   *
+   * Runs after setupReveal('.river', ...) is wired up above, and its
+   * listeners are added after that call registers its own — same-target
+   * listeners for one event fire in registration order, so balance() has
+   * already settled the river's real height (which can itself grow to match
+   * the sidebar) by the time this reads it, not a stale pre-balance one.
+   */
+  // Same breakpoint the CSS uses to swap the ticker for this column in the
+  // first place (see the shared min-width: 1300px rule in site.css) — below
+  // it everything stacks in one column, live feed above the river rather
+  // than beside it, and forcing a matching height there would be sizing one
+  // box to a sibling it isn't even next to anymore.
+  var liveFeedWide = window.matchMedia('(min-width: 1300px)');
+
+  function syncLiveFeedHeight() {
+    var feed = document.querySelector('.live-feed');
+    var river = document.querySelector('.river');
+    if (!feed || !river) return;
+    // Cleared rather than left stale on a resize down past the breakpoint —
+    // otherwise a reader who resizes narrower keeps whatever fixed height
+    // was last set while the layout underneath it has already gone back to
+    // a single stacked column.
+    feed.style.height = liveFeedWide.matches ? river.offsetHeight + 'px' : '';
+  }
+
+  syncLiveFeedHeight();
+  window.addEventListener('load', syncLiveFeedHeight);
+
+  var liveFeedResizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(liveFeedResizeTimer);
+    liveFeedResizeTimer = setTimeout(syncLiveFeedHeight, 150);
+  });
+
+  // The river also grows on demand, when a reader presses "Show more" —
+  // delegated on document rather than bound to .river-more directly, so it
+  // still fires after setupReveal's own click handler (bound directly on the
+  // button) has already revealed more cards: a listener on an ancestor sees
+  // a bubbling click after one on the target itself.
+  document.addEventListener('click', function (event) {
+    if (event.target.closest('.river-more')) syncLiveFeedHeight();
+  });
+
   // Balanced against the video widget alone, not the whole sidebar — the
   // schedule list underneath it runs much longer than any reasonable initial
   // batch of players should chase.

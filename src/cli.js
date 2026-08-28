@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES, enabledSources } from '../config/sources.js';
-import { collectAll, collectSocialAll } from './collectors/index.js';
+import { collectAll, collectSocialAll, collectSocialBrowser } from './collectors/index.js';
 import { log } from './lib/log.js';
 import { loadItems, loadState, loadSocial } from './lib/store.js';
 import { buildSite } from './site/build.js';
@@ -16,6 +16,7 @@ import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './li
 import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
+import { fetchNfcEastStandings, saveStandingsCache } from './lib/standings.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
 import { updateLiveGame } from './digest/live-generate.js';
@@ -26,6 +27,7 @@ Commanders headline river
 
   npm run collect            read every enabled source, store new items
   npm run social             read the social ticker accounts and hashtags
+  npm run x-scrape           read X accounts not on the bridge, via a logged-in Chrome (local machine only)
   npm run build              render the static site into dist/
   npm run run                collect, social, then build, then print status
   npm run serve              serve dist/ on http://localhost:8080
@@ -37,6 +39,7 @@ Commanders headline river
   npm run depth-chart        refresh the cached commanders.com depth chart
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
+  npm run standings          refresh the cached NFC East standings (ESPN)
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
@@ -180,6 +183,18 @@ async function main() {
     case 'social':
       await collectSocialAll();
       break;
+    case 'x-scrape': {
+      const result = await collectSocialBrowser();
+      // Non-zero on a dead session, not on a merely quiet day — so the
+      // Windows Scheduled Task running this on a schedule shows a failed
+      // "Last Run Result" only when it actually needs a re-login, not every
+      // time she just didn't post. See docs/x-browser-scraping.md.
+      if (result.sessionExpired) {
+        log.error('x-scrape: session expired — log in again in the scraper Chrome profile');
+        process.exitCode = 1;
+      }
+      break;
+    }
     case 'build':
       await buildSite();
       break;
@@ -283,6 +298,16 @@ async function main() {
       }
       break;
     }
+    case 'standings': {
+      const standings = await fetchNfcEastStandings();
+      if (standings) {
+        await saveStandingsCache(standings);
+        log.ok(`standings: cached NFC East (${standings.teams.map((t) => `${t.abbr} ${t.overall}`).join(', ')})`);
+      } else {
+        log.warn('standings: fetch failed — leaving the existing cache in place');
+      }
+      break;
+    }
     case 'injuries': {
       const entries = await fetchInjuries();
       if (entries) {
@@ -331,7 +356,13 @@ async function main() {
       } else if (sub === 'approve') await setPreviewStatus(rest[1], 'published');
       else if (sub === 'reject') await setPreviewStatus(rest[1], 'rejected');
       else {
-        const record = await generatePreview({ force: !!flags.force });
+        // --now exists for testing only — generatePreview() already takes
+        // `now` as a parameter specifically so a run can be reproduced
+        // exactly (see that file), this just exposes it on the CLI so a
+        // real end-to-end test (Bedrock call included) doesn't have to wait
+        // for an actual game-day morning to arrive.
+        const now = flags.now ? new Date(flags.now) : undefined;
+        const record = await generatePreview({ force: !!flags.force, ...(now && { now }) });
         if (!record) log.info('preview: nothing to do');
       }
       break;

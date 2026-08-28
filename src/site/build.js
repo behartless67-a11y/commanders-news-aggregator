@@ -9,6 +9,7 @@ import { loadScheduleCache } from '../lib/schedule.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
+import { loadStandingsCache } from '../lib/standings.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -16,7 +17,7 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, blogRiverItems, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -64,6 +65,22 @@ export async function buildSite() {
   // Published Blog posts compete for river placement on their own publish
   // date, same as any other item — not pinned above or below real headlines.
   const blogItems = blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals);
+
+  // A future publishedAt silently defeats that "compete on your own date"
+  // rule: the river sorts on this field, so a post dated ahead of now
+  // outranks every real headline until the clock catches up, and
+  // relativeLabel() reads it as "just now" the whole time (negative minutes
+  // fall through its < 1 branch) — so it looks freshly posted rather than
+  // wrong. Both hand-written posts so far were stamped with a round
+  // hour that landed in the future, which is exactly the mistake this
+  // catches. Warn rather than clamp or hide: clamping to build time still
+  // pins it to the top, and hiding it would silently un-publish a post
+  // someone believed was live.
+  const nowIso = new Date().toISOString();
+  const futureBlog = blogItems.filter((b) => b.publishedAt && b.publishedAt > nowIso);
+  for (const b of futureBlog) {
+    log.warn(`build: ${b.id} is dated ${b.publishedAt}, in the future — it will sit above every real headline until then`);
+  }
   const itemsWithBlog = { ...items, ...Object.fromEntries(blogItems.map((b) => [b.id, b])) };
 
   // Each page is capped to its most recent N rather than rendering the full
@@ -94,6 +111,9 @@ export async function buildSite() {
   // teamstats.js) — fetched from ESPN's own team-scoped leaders endpoint,
   // not derived from the current roster.
   const teamStats = await loadTeamStatsCache();
+  // Null when `npm run standings` has never run — same never-render-an-empty-
+  // shell rule as teamStats above.
+  const standings = await loadStandingsCache();
   const isGameLive = isGameWindowActive(games);
   const liveGame = await loadLiveGameState();
 
@@ -119,6 +139,7 @@ export async function buildSite() {
       games,
       betting,
       teamStats,
+      standings,
       hasWeekly,
       isGameLive,
       rosterIndex,
@@ -131,7 +152,7 @@ export async function buildSite() {
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, isGameLive, liveGame };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, standings, isGameLive, liveGame };
     await fs.writeFile(
       path.join(DIST_DIR, 'blog.html'),
       renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
@@ -150,19 +171,19 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'videos.html'),
-    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'how-it-works.html'),
-    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats }),
+    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
@@ -179,6 +200,7 @@ export async function buildSite() {
       games,
       betting,
       teamStats,
+      standings,
       rosterPlayers,
       mentionCounts,
     }),
@@ -200,6 +222,16 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'contact.html'),
     renderContactPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
+  // Not in PAGES/HEADING or any nav link — a lobby/TV display mode reached
+  // by its own URL, not a page a reader browses to. allSocial (the full
+  // pool), not the ticker's own capped socialPosts — more variety to rotate
+  // through over the hours this is meant to stay open.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'tv.html'),
+    renderTvPage({ siteName: SITE_NAME, siteUrl: SITE_URL, socialPosts: allSocial }),
     'utf8',
   );
 
@@ -233,7 +265,7 @@ export async function buildSite() {
   // the exact spot readers asked for it.
   await fs.writeFile(
     path.join(DIST_DIR, 'social-feed.html'),
-    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats }),
+    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats, standings }),
     'utf8',
   );
 
@@ -241,7 +273,8 @@ export async function buildSite() {
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
   // Every real page just written above, for Search Console to crawl from —
-  // not admin.html, which robots.txt below excludes from crawling entirely.
+  // not admin.html or tv.html, which robots.txt below excludes from
+  // crawling entirely (neither is a page a reader browses to).
   const staticPaths = [
     'index.html', 'team-sources.html', 'national-coverage.html',
     'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
@@ -258,7 +291,7 @@ export async function buildSite() {
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
   await fs.writeFile(
     path.join(DIST_DIR, 'robots.txt'),
-    `User-agent: *\nDisallow: /admin.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+    `User-agent: *\nDisallow: /admin.html\nDisallow: /tv.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
     'utf8',
   );
 

@@ -5,7 +5,7 @@ import { log } from '../lib/log.js';
 import { renderCorpus } from './select.js';
 import { buildPreviewCorpus } from './preview-select.js';
 import { PREVIEW_SYSTEM_PROMPT, PREVIEW_SCHEMA, buildPreviewUserPrompt } from './preview-prompt.js';
-import { generate as callModel } from './provider.js';
+import { generate as callModel } from './cloud-provider.js';
 import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 import { loadScheduleCache } from '../lib/schedule.js';
@@ -13,10 +13,25 @@ import { loadBettingCache } from '../lib/betting.js';
 import { gameToday } from '../lib/gamewindow.js';
 import { parseGameTime } from '../lib/dates.js';
 
-// Same model as the weekly digest, same reason (see provider.js) — this
-// pulls from the identical headline corpus, so it inherits the same
-// local-only commitment for the sources that disallow AI crawlers.
-const MODEL = process.env.DIGEST_MODEL || 'gemma4:26b';
+/**
+ * Cloud (Bedrock/Claude), not local Ollama — deliberately different from the
+ * weekly digest. Two reasons this is safe where the digest's own "local
+ * only" policy (provider.js) still stands:
+ *   1. A daily preview costs a fraction of a cent on Bedrock — nothing like
+ *      the per-message cost that made a third-party API a bad fit before.
+ *   2. Found 2026-08-27: the local pipeline's corpus can run 100k+
+ *      characters, well past provider.js's 16k-token context cap, and
+ *      Ollama truncates overflow from the front — exactly where the pinned
+ *      "you're playing X" fact and instruction sentence live. All three
+ *      test generations (two models) wrote about the wrong, already-played
+ *      opponent as a result. Claude's context window is nowhere near that
+ *      limit, so this class of bug can't recur here.
+ * EXCLUDED_SOURCE_IDS still applies, same as ever: Hogs Haven and
+ * ClutchPoints disallow AI crawlers by name in robots.txt (see README), and
+ * that's a hard boundary regardless of which cloud model reads the corpus.
+ */
+const MODEL = process.env.PREVIEW_MODEL || 'anthropic.claude-sonnet-5';
+const EXCLUDED_SOURCE_IDS = ['hogs-haven', 'clutchpoints'];
 const MAX_ATTEMPTS = Number(process.env.PREVIEW_MAX_ATTEMPTS || 3);
 
 export const PREVIEWS_DIR = path.join(DATA_DIR, 'previews');
@@ -66,16 +81,34 @@ export async function generatePreview({ force = false, now = new Date() } = {}) 
   const betting = await loadBettingCache();
   const bettingForThisGame = betting && betting.opponentAbbr === game.opponentAbbr ? betting : null;
 
-  const corpus = await buildPreviewCorpus({ game, betting: bettingForThisGame, now: now.getTime() });
+  const corpus = await buildPreviewCorpus({
+    game,
+    betting: bettingForThisGame,
+    now: now.getTime(),
+    excludeSourceIds: EXCLUDED_SOURCE_IDS,
+  });
   const corpusText = renderCorpus(corpus);
   let problems = [];
   let result;
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const prompt = buildPreviewUserPrompt(corpusText, game.opponent, problems);
-    result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt, schema: PREVIEW_SCHEMA });
-    result.json = sanitizeDigest(result.json);
-    const outcome = validate(corpus, result.json);
+    let outcome;
+    try {
+      result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt, schema: PREVIEW_SCHEMA });
+      result.json = sanitizeDigest(result.json);
+      outcome = validate(corpus, result.json);
+    } catch (err) {
+      // A malformed response (e.g. Bedrock's tool call not actually
+      // matching PREVIEW_SCHEMA's shape — seen once in testing: threads
+      // came back as something other than an array) is exactly the kind of
+      // thing a retry with a more pointed instruction can fix, same as a
+      // validation failure. Letting it escape here would abort the whole
+      // run on attempt 1 with MAX_ATTEMPTS-1 retries never even tried.
+      log.warn(`preview: attempt ${attempt} threw (${err.message}) — retrying`);
+      problems = [`Your last response could not be parsed (${err.message}). Return valid JSON exactly matching the schema, with "threads" as an array.`];
+      continue;
+    }
     problems = outcome.problems;
 
     if (problems.length === 0) {
