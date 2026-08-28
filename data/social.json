@@ -527,17 +527,6 @@
     "publishedAt": "2026-08-19T12:00:57.000Z",
     "collectedAt": "2026-08-20T13:21:53.814Z"
   },
-  "social-685c78b3c2e3": {
-    "id": "social-685c78b3c2e3",
-    "url": "https://x.com/Commanders/status/2089776589936415132",
-    "text": "one-handed pick alert 🚨 @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "publishedAt": "2026-08-18T18:08:59.000Z",
-    "collectedAt": "2026-08-20T13:21:54.956Z"
-  },
   "social-94b7f50157bf": {
     "id": "social-94b7f50157bf",
     "url": "https://x.com/BenStandig/status/2090428922546577537",
@@ -5212,5 +5201,29 @@
     "images": [],
     "publishedAt": "2026-08-28T16:46:38.000Z",
     "collectedAt": "2026-08-28T18:06:16.648Z"
+  },
+  "social-20bf3dd1691d": {
+    "id": "social-20bf3dd1691d",
+    "url": "https://x.com/Commanders/status/2093424048906670275",
+    "text": "Checking in for the preseason finale ✔️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-08-28T19:42:41.000Z",
+    "collectedAt": "2026-08-28T19:53:22.333Z"
+  },
+  "social-0fb1853aab29": {
+    "id": "social-0fb1853aab29",
+    "url": "https://x.com/Commanders/status/2093416508596634017",
+    "text": "While we wait for kickoff, please enjoy @JR1ERA@twitter.com mic'd up at joint practice 🎤 @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-08-28T19:12:44.000Z",
+    "collectedAt": "2026-08-28T19:53:22.334Z"
   }
 }

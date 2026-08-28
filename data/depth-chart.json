@@ -175,6 +175,10 @@
         "position": "WR",
         "tiers": [
           {
+            "slug": "stefon-diggs",
+            "name": "Stefon Diggs"
+          },
+          {
             "slug": "treylon-burks",
             "name": "Treylon Burks"
           },
