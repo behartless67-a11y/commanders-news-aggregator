@@ -13,37 +13,80 @@
       {
         "title": "Newton's surgery and the outlook",
         "body": "Newton flew to New York to see a specialist, and the diagnosis was as bad as it gets for a player several beat writers have already called a make-or-break third season [3, 12, 93]. Tashan Reed of The Athletic broke the news overnight: \"Some overnight news: #Commanders DT Johnny Newton had surgery to repair a torn pec, per source. It'll be interesting to see whether he did enough to make the roster.\" [89] Pro Football Rumors added that \"a firm recovery timetable is not yet in place\" [62]. That leaves the door open, unhappily, for backup Ricky Barber to get real reps sooner than anyone wanted [23].",
-        "cites": [3, 12, 23, 62, 89, 93]
+        "cites": [
+          3,
+          12,
+          23,
+          62,
+          89,
+          93
+        ]
       },
       {
         "title": "The rest of the injury report reads like a hospital waiting room",
         "body": "Reed's Wednesday not-practicing list ran nine names deep, from Marcus Mariota's MCL to Trey Amos's ankle, with Newton, Tunsil, Allegretti, Oweh, Chaisson, and Magee filling out the rest [69, 100, 101]. Daron Payne joined the list two days later with what both John Keim and Ben Standig called a \"minor\" issue, sitting out what Keim described as \"a lighter practice: typical of a Friday practice in-season\" [60, 61]. JP Finlay offered the week's most useful perspective check: \"Dude every team in the league gets a bunch of camp injuries. It's football.\" [90] Not every name is in real danger. Mike Garafolo reported White's hamstring is \"not considered serious or long-term\" for a back who has \"excelled in David Blough's offense\" [95, 75, 77].",
-        "cites": [60, 61, 69, 75, 77, 90, 95, 100, 101]
+        "cites": [
+          60,
+          61,
+          69,
+          75,
+          77,
+          90,
+          95,
+          100,
+          101
+        ]
       },
       {
         "title": "Saturday's plan against the Lions",
         "body": "Despite the injury list, Dan Quinn intends to play his starters. \"Dan Quinn said part of today's practice would focus on the Lions. Jayden Daniels is with the 1s seeing this part of practice,\" Ben Standig reported, adding dryly that Daniels \"is also practice and he is the starting QB.\" [63, 2] Quinn has stopped short of confirming Daniels will actually play, saying only that a \"good amount of starters\" will see the field [2, 78, 79, 84, 85].",
-        "cites": [2, 63, 78, 79, 84, 85]
+        "cites": [
+          2,
+          63,
+          78,
+          79,
+          84,
+          85
+        ]
       },
       {
         "title": "Special teams got resolved, one battle at a time",
         "body": "\"The #Commanders have released K Jake Moody, per sources. Drew Stevens wins the kicking job,\" Tashan Reed reported, closing the book on a competition the undrafted rookie won outright [107, 109, 46, 32]. The front office also signed defensive tackle Maurice Hurst Jr. and running back Craig Reynolds for depth [102, 110].",
-        "cites": [32, 46, 102, 107, 109, 110]
+        "cites": [
+          32,
+          46,
+          102,
+          107,
+          109,
+          110
+        ]
       },
       {
         "title": "The internet had its own preseason too",
         "body": "ClutchPoints noted that Washington \"likely won't consider ChatGPT when they make their roster decisions,\" before running the bot's projected 53-man roster anyway and explaining exactly where it whiffed [36, 45]. Jayden Daniels, meanwhile, is \"finding out the hard way\" that the internet remains undefeated, per Mike Florio, after his LSU legal dispute turned into what ClutchPoints called \"the joke of the summer\" [43]. He even picked up an unlikely heckler in an MLS team's social account [48].",
-        "cites": [36, 43, 45, 48]
+        "cites": [
+          36,
+          43,
+          45,
+          48
+        ]
       }
     ],
     "alsoNoted": [
       {
         "text": "Trevon Diggs signed with Seattle, meaning Washington's Stefon Diggs will now face his own brother twice a year [14, 15].",
-        "cites": [14, 15]
+        "cites": [
+          14,
+          15
+        ]
       },
       {
         "text": "Jerome Ford's roster bid ended on injured reserve, and Robert McDaniel, waived by Washington, landed on his feet in Tampa Bay days later [37, 38, 41].",
-        "cites": [37, 38, 41]
+        "cites": [
+          37,
+          38,
+          41
+        ]
       }
     ]
   },
@@ -1539,5 +1582,5 @@
     }
   ],
   "warnings": [],
-  "reviewedAt": "2026-08-20T15:36:10.935Z"
+  "reviewedAt": "2026-08-28T12:00:44.315Z"
 }

@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - 'data/digests/**'
+      - 'data/previews/**'
   workflow_dispatch: {}
 
 # Shared with nightly.yml/social.yml/roster-stats.yml — same push race, same fix.
