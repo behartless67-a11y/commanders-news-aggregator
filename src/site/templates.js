@@ -1364,6 +1364,10 @@ ${header('blog.html', true, isGameLive)}
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
+    <aside class="blog-about-card">
+      <p class="blog-about-text">Who wrote all this? A guy who ended up in a ditch at a bar during a Redskins-Cowboys game and has been at this ever since. It made sense at the time.</p>
+      <a class="blog-about-link" href="blog-original-how-a-crt-tv-a-ditch-and-the-internet-made-me-a-lifer.html">Meet the lunatic behind the site &rarr;</a>
+    </aside>
     ${
       articles
         ? `<div class="blog-list${blogCollapsed ? ' is-collapsed' : ''}">${articles}</div>

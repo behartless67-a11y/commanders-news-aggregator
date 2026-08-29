@@ -802,6 +802,34 @@ main.layout{
 /* Same convention again, at the whole-post level on the Blog archive — a
    single post can already be taller than the video widget beside it, so
    this is "one at a time," not "a batch of rows." */
+/* About-the-author teaser card, pinned above the post list on the Blog page. */
+.blog-about-card{
+  border-left: 3px solid var(--gold);
+  background: var(--surface);
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.blog-about-text{
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.blog-about-link{
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.blog-about-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .blog-list.is-collapsed .blog-post-extra{ display: none; }
 .blog-list.is-collapsed .blog-post-extra.is-revealed{ display: block; }
 
