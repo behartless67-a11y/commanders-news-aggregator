@@ -26,19 +26,6 @@
     "isBye": false
   },
   {
-    "season": "preseason",
-    "week": "WEEK 3",
-    "gametime": "08/28/2026 18:00:00 -04:00",
-    "homeAway": "AT",
-    "opponentAbbr": "BAL",
-    "opponent": "Baltimore Ravens",
-    "opponentShort": "Ravens",
-    "venue": "M&T Bank Stadium",
-    "result": null,
-    "points": null,
-    "isBye": false
-  },
-  {
     "season": "regular",
     "week": "WEEK 1",
     "gametime": "09/13/2026 16:25:00 -04:00",
