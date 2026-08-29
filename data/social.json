@@ -76,17 +76,6 @@
     "publishedAt": "2026-08-19T19:35:01.000Z",
     "collectedAt": "2026-08-20T13:21:13.507Z"
   },
-  "social-eb03163dc3d6": {
-    "id": "social-eb03163dc3d6",
-    "url": "https://x.com/Commanders/status/2090064992229814688",
-    "text": "Happy birthday, @RealAndrewWylie@twitter.com ! 🎂",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-19T13:15:00.000Z",
-    "collectedAt": "2026-08-20T13:21:13.507Z"
-  },
   "social-9ae5fe753e80": {
     "id": "social-9ae5fe753e80",
     "url": "https://x.com/JPFinlayNBCS/status/2090426341006999774",
@@ -415,17 +404,6 @@
     "label": "",
     "sourceKey": "@tashanreed",
     "publishedAt": "2026-08-19T15:23:11.000Z",
-    "collectedAt": "2026-08-20T13:21:32.384Z"
-  },
-  "social-3e13b936f0c8": {
-    "id": "social-3e13b936f0c8",
-    "url": "https://x.com/tashanreed/status/2090066575948648717",
-    "text": "#Commanders not at practice: QB Marcus Mariota (MCL), RB Jeremy McNichols (quad), RB Rachaad White (N/A), LT Laremy Tunsil (triceps), DT Johnny Newton (pec), DT Tim Settle (calf), OLB Odafe Oweh (calf), OLB K'Lavon Chaisson (knee), LB Jordan Magee (shoulder), CB Trey Amos (ankle)",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-19T13:21:17.000Z",
     "collectedAt": "2026-08-20T13:21:32.384Z"
   },
   "social-11b177dd8b5c": {
@@ -6179,5 +6157,17 @@
     "images": [],
     "publishedAt": "2026-08-29T02:08:58.000Z",
     "collectedAt": "2026-08-29T02:42:40.301Z"
+  },
+  "social-cc74987bd1db": {
+    "id": "social-cc74987bd1db",
+    "url": "https://x.com/NickiJhabvala/status/2093680074247532811",
+    "text": "With cuts looming, here’s my 53-man roster projection for the Commanders …",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-29T12:40:03.000Z",
+    "collectedAt": "2026-08-29T14:05:09.088Z"
   }
 }
