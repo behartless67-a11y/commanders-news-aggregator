@@ -17,7 +17,7 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -62,9 +62,16 @@ export async function buildSite() {
     .filter((o) => o.status === 'published')
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
+  // liveGame must be loaded first so its river item can be included here.
+  const liveGame = await loadLiveGameState();
+  const liveItem = liveGameRiverItem(liveGame);
+
   // Published Blog posts compete for river placement on their own publish
   // date, same as any other item — not pinned above or below real headlines.
-  const blogItems = blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals);
+  const blogItems = [
+    ...blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals),
+    ...(liveItem ? [liveItem] : []),
+  ];
 
   // A future publishedAt silently defeats that "compete on your own date"
   // rule: the river sorts on this field, so a post dated ahead of now
@@ -115,7 +122,7 @@ export async function buildSite() {
   // shell rule as teamStats above.
   const standings = await loadStandingsCache();
   const isGameLive = isGameWindowActive(games);
-  const liveGame = await loadLiveGameState();
+  // liveGame already loaded above for river item inclusion.
 
   // The Blog tab/page exist if there's a weekly recap, a preview, an
   // original post, or a live game post — a game-day-only blog (no weekly

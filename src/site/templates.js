@@ -848,6 +848,25 @@ export function blogRiverItems(digests, previews, originals = []) {
   return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal)];
 }
 
+/** River card entry for the live game-day post, so it shows on the main river alongside other blog content. */
+export function liveGameRiverItem(state) {
+  if (!state?.entries?.length) return null;
+  const ft = state.finalThoughts;
+  const title = ft?.headline || `Commanders vs. ${state.opponent} — Game Recap`;
+  const lede = ft?.body ? firstSentences(ft.body, 2) : (state.entries[state.entries.length - 1]?.body || '');
+  return {
+    id: 'blog-live-game',
+    sourceId: 'blog',
+    sourceName: 'The Burgundy Wire',
+    category: 'blog',
+    url: 'blog.html',
+    title,
+    excerpt: firstSentences(lede, 2),
+    publishedAt: liveReleasedAt(state),
+    internal: true,
+  };
+}
+
 /**
  * Threads are an internal organizing tool for citations, not a reader-facing
  * feature — see prompt.js's STRUCTURE rule. No heading, no wrapping box; the
