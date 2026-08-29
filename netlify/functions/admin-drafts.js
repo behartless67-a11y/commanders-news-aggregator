@@ -49,7 +49,9 @@ export default async (req) => {
     readDir(path.resolve('data/digests'), 'weekly', 'week'),
     readDir(path.resolve('data/previews'), 'preview', 'gameKey'),
   ]);
-  const records = [...digests, ...previews].sort((a, b) => b.key.localeCompare(a.key));
+  const records = [...digests, ...previews]
+    .filter((r) => r.status !== 'rejected')
+    .sort((a, b) => b.key.localeCompare(a.key));
 
   return new Response(JSON.stringify({ records }), { headers: { 'Content-Type': 'application/json' } });
 };
