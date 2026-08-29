@@ -54,17 +54,6 @@
     "publishedAt": "2026-08-19T22:42:00.000Z",
     "collectedAt": "2026-08-20T13:21:13.507Z"
   },
-  "social-68973f5fb7c3": {
-    "id": "social-68973f5fb7c3",
-    "url": "https://x.com/Commanders/status/2090182013076836713",
-    "text": ". @UnitedSt8Of_Ham@twitter.com SNAGGED ‼️ @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-19T21:00:00.000Z",
-    "collectedAt": "2026-08-20T13:21:13.507Z"
-  },
   "social-9ae5fe753e80": {
     "id": "social-9ae5fe753e80",
     "url": "https://x.com/JPFinlayNBCS/status/2090426341006999774",
@@ -140,17 +129,6 @@
     "label": "NBC Sports Washington",
     "sourceKey": "@JPFinlayNBCS",
     "publishedAt": "2026-08-20T01:32:13.000Z",
-    "collectedAt": "2026-08-20T13:21:18.535Z"
-  },
-  "social-99a839ae9af9": {
-    "id": "social-99a839ae9af9",
-    "url": "https://x.com/SharpFootball/status/2090190346927919350",
-    "text": "Rachaad White was fine prior to this ice bucket challenge on 8/17 he’s mysteriously missed the last 2 days of practice since the Commanders posted this video (8/18, 8/19) did he injure himself right here?",
-    "handle": "SharpFootball",
-    "author": "JP Finlay",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-19T21:33:07.000Z",
     "collectedAt": "2026-08-20T13:21:18.535Z"
   },
   "social-3eabad9fb5c0": {
@@ -6281,5 +6259,29 @@
     "images": [],
     "publishedAt": "2026-08-29T19:40:25.000Z",
     "collectedAt": "2026-08-29T20:06:22.508Z"
+  },
+  "social-c6d3a41d1b9a": {
+    "id": "social-c6d3a41d1b9a",
+    "url": "https://x.com/NickiJhabvala/status/2093821557231493130",
+    "text": "The Commanders have waived S Joshuah Bledsoe, source confirmed (1st by @john_keim",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-29T22:02:15.000Z",
+    "collectedAt": "2026-08-29T22:05:09.798Z"
+  },
+  "social-1d68ececd4e3": {
+    "id": "social-1d68ececd4e3",
+    "url": "https://x.com/NickiJhabvala/status/2093819248120356986",
+    "text": "The Commanders have released S Qwuantrezz Knight, source confirmed (1st by @john_keim",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-29T21:53:04.000Z",
+    "collectedAt": "2026-08-29T22:05:09.798Z"
   }
 }
