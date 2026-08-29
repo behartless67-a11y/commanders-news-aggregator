@@ -32,28 +32,6 @@
     "publishedAt": "2026-08-20T00:17:00.000Z",
     "collectedAt": "2026-08-20T13:21:13.507Z"
   },
-  "social-76329a3e6ebb": {
-    "id": "social-76329a3e6ebb",
-    "url": "https://x.com/Commanders/status/2090220013185552885",
-    "text": "Just the beginning @kaytron_allen@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-19T23:31:00.000Z",
-    "collectedAt": "2026-08-20T13:21:13.507Z"
-  },
-  "social-ba021175bd36": {
-    "id": "social-ba021175bd36",
-    "url": "https://x.com/Commanders/status/2090207682028552359",
-    "text": "a little R&R 🧖 @SNICKERS@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-19T22:42:00.000Z",
-    "collectedAt": "2026-08-20T13:21:13.507Z"
-  },
   "social-9ae5fe753e80": {
     "id": "social-9ae5fe753e80",
     "url": "https://x.com/JPFinlayNBCS/status/2090426341006999774",
@@ -6395,5 +6373,77 @@
     ],
     "publishedAt": "2026-08-29T20:32:20.000Z",
     "collectedAt": "2026-08-29T22:06:35.887Z"
+  },
+  "social-e3e388740cb4": {
+    "id": "social-e3e388740cb4",
+    "url": "https://x.com/john_keim/status/2093836846404968609",
+    "text": "Washington is releasing LB DJ Johnson as @BenStandig first reported",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-29T23:03:00.000Z",
+    "collectedAt": "2026-08-29T23:41:42.246Z"
+  },
+  "social-8638a65a2dd9": {
+    "id": "social-8638a65a2dd9",
+    "url": "https://x.com/john_keim/status/2093835357506650365",
+    "text": "As @BenStandig reported Washington is releasing OLB Carlos “Boogie” Basham.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-29T22:57:05.000Z",
+    "collectedAt": "2026-08-29T23:41:42.246Z"
+  },
+  "social-5ec4751d135c": {
+    "id": "social-5ec4751d135c",
+    "url": "https://x.com/john_keim/status/2093827414983917729",
+    "text": "Quick video: Who will the Commanders keep at receiver? Van or Luke? 031",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-29T22:25:31.000Z",
+    "collectedAt": "2026-08-29T23:41:42.247Z"
+  },
+  "social-fc35dabcb004": {
+    "id": "social-fc35dabcb004",
+    "url": "https://x.com/BenStandig/status/2093838004666110425",
+    "text": "The Commanders are also releasing, per sources: WR Nick Nash S Qwuantrezz Knight S Joshuha Beldsoe",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-29T23:07:36.000Z",
+    "collectedAt": "2026-08-29T23:41:43.848Z"
+  },
+  "social-31b54ff5e761": {
+    "id": "social-31b54ff5e761",
+    "url": "https://x.com/BenStandig/status/2093830554302967819",
+    "text": "The Commanders are releasing the following players, per sources: LB Boogie Basham LB D.J. Johnson",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-29T22:38:00.000Z",
+    "collectedAt": "2026-08-29T23:41:43.848Z"
+  },
+  "social-7d89962c84de": {
+    "id": "social-7d89962c84de",
+    "url": "https://x.com/RapSheet/status/2093830416302043344",
+    "text": "The #Commanders are releasing edge Boogie Basham, as their cuts continue.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-08-29T22:37:27.000Z",
+    "collectedAt": "2026-08-29T23:41:49.553Z"
   }
 }
