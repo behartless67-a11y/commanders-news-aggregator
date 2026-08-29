@@ -14,6 +14,13 @@ import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 
 const WINDOW_DAYS = Number(process.env.DIGEST_WINDOW_DAYS || 7);
 
+// Hard cap on corpus size. A 450-entry corpus (~16k tokens) causes Bedrock
+// Sonnet to lose track of the JSON schema for the threads array. Capping at
+// 60 articles and 80 social posts keeps the prompt well under 8k tokens,
+// which is reliable with tool_use structured output.
+const MAX_CORPUS_ARTICLES = Number(process.env.DIGEST_MAX_ARTICLES || 40);
+const MAX_CORPUS_POSTS = Number(process.env.DIGEST_MAX_POSTS || 50);
+
 // A post with fewer real words than this is a graphic or a sponsor tag, not
 // information — "🔥🔥🔥 @SeatGeek | #RaiseHail" has zero of substance to write
 // about it.
@@ -127,8 +134,12 @@ export async function buildCorpus(now = Date.now(), { excludeSourceIds = [] } = 
 
   // One sequence across all three kinds — a citation is always just an
   // integer, so validation and rendering don't need to know what it points to
-  // until they look it up.
-  const entries = [...articles, ...videos, ...posts].map((e, i) => ({ n: i + 1, ...e }));
+  // until they look it up. Cap articles and posts to the most recent N so
+  // the corpus stays manageable for structured output (sortedItems already
+  // puts newest first, so slicing keeps the most relevant material).
+  const cappedArticles = articles.slice(0, MAX_CORPUS_ARTICLES);
+  const cappedPosts = posts.slice(0, MAX_CORPUS_POSTS);
+  const entries = [...cappedArticles, ...videos, ...cappedPosts].map((e, i) => ({ n: i + 1, ...e }));
   const byIndex = new Map(entries.map((e) => [e.n, e]));
 
   return {

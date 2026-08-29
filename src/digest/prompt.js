@@ -55,6 +55,9 @@ STRUCTURE: you are given "threads" as an internal organizing tool, not a reader-
 
 Write 4 to 7 threads, most important first. Each body is 3-5 sentences. Favor going deeper on the sources you have (specific quotes, specific numbers, the reporter's own framing) over adding more threads just to hit the count. Every storyline lives in a real thread — do not reach for a leftover-facts postscript just because a story didn't earn its own thread; if it's not worth a real thread, it's not worth including.`;
 
+// Schema kept for reference and for callers that need it (e.g. validate.js
+// type checks). The digest no longer uses tool_use — see generateText() in
+// cloud-provider.js and generate.js for why.
 export const SCHEMA = {
   type: 'object',
   properties: {
@@ -90,5 +93,12 @@ export function buildUserPrompt(corpusText, previousProblems = []) {
 
 ${corpusText}
 
-Write the weekly recap as JSON. Remember: consolidate duplicate coverage, cite the source numbers you used for every storyline, and add nothing that is not above.`;
+Write the weekly recap as JSON with these fields:
+- headline (string)
+- lede (string)
+- thread_titles (array of strings, one short label per thread)
+- thread_bodies (array of strings, one paragraph per thread — must be same length as thread_titles)
+- thread_cites (array of arrays of integers, citation numbers per thread — must be same length as thread_titles)
+
+Remember: consolidate duplicate coverage, cite the source numbers you used for every storyline, and add nothing that is not above.`;
 }

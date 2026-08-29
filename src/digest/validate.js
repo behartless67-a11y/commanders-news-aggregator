@@ -54,6 +54,9 @@ export function validate(corpus, digest) {
   if (!digest || !Array.isArray(digest.threads)) {
     return { problems: ['response has no threads array'], warnings };
   }
+  if (digest.threads.length === 0) {
+    return { problems: ['threads array is empty — write 4 to 7 threads'], warnings };
+  }
 
   // `prose` is what gets the name check — a Title Case heading ("Defensive
   // Line and Linebacker Injuries") is capitalised by convention, not reference.

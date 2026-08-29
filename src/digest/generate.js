@@ -4,7 +4,7 @@ import { DATA_DIR } from '../lib/store.js';
 import { log } from '../lib/log.js';
 import { buildCorpus, renderCorpus } from './select.js';
 import { SYSTEM_PROMPT, SCHEMA, buildUserPrompt } from './prompt.js';
-import { generate as callModel } from './cloud-provider.js';
+import { generateText as callModel } from './cloud-provider.js';
 import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 
@@ -63,7 +63,7 @@ export async function generateDigest({ force = false, now = new Date() } = {}) {
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const prompt = buildUserPrompt(corpusText, problems);
-    result = await callModel({ model: MODEL, system: SYSTEM_PROMPT, prompt, schema: SCHEMA });
+    result = await callModel({ model: MODEL, system: SYSTEM_PROMPT, prompt });
     result.json = sanitizeDigest(result.json);
     const outcome = validate(corpus, result.json);
     problems = outcome.problems;

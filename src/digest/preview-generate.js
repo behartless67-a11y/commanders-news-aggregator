@@ -5,7 +5,7 @@ import { log } from '../lib/log.js';
 import { renderCorpus } from './select.js';
 import { buildPreviewCorpus } from './preview-select.js';
 import { PREVIEW_SYSTEM_PROMPT, PREVIEW_SCHEMA, buildPreviewUserPrompt } from './preview-prompt.js';
-import { generate as callModel } from './cloud-provider.js';
+import { generateText as callModel } from './cloud-provider.js';
 import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 import { loadScheduleCache } from '../lib/schedule.js';
@@ -95,7 +95,7 @@ export async function generatePreview({ force = false, now = new Date() } = {}) 
     const prompt = buildPreviewUserPrompt(corpusText, game.opponent, problems);
     let outcome;
     try {
-      result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt, schema: PREVIEW_SCHEMA });
+      result = await callModel({ model: MODEL, system: PREVIEW_SYSTEM_PROMPT, prompt });
       result.json = sanitizeDigest(result.json);
       outcome = validate(corpus, result.json);
     } catch (err) {
