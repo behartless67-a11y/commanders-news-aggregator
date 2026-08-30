@@ -10,50 +10,6 @@
     "publishedAt": "2026-08-20T20:12:00.000Z",
     "collectedAt": "2026-08-20T20:20:08.870Z"
   },
-  "social-9a32bc2c3601": {
-    "id": "social-9a32bc2c3601",
-    "url": "https://x.com/john_keim/status/2090526710177435833",
-    "text": "On video yapping again. This time about injuries, Nick Allegretti and the C situation; Frankie Luvu Interview about his role in this D, what makes it so good for LBs... He's in position for a bounceback year. ... _bbhqgcs6i via @YouTube@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T19:49:42.000Z",
-    "collectedAt": "2026-08-20T20:20:11.603Z"
-  },
-  "social-4f5336f556a6": {
-    "id": "social-4f5336f556a6",
-    "url": "https://x.com/john_keim/status/2090521499241525288",
-    "text": "Wrapping up the day at camp: injury updates. What if they need to find another C? What are the options? Will Daniels play vs Detroit? A few minutes talking to Frankie Luvu - what he likes about the D; he took one for the team in ‘25. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000784638875",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T19:29:00.000Z",
-    "collectedAt": "2026-08-20T20:20:11.604Z"
-  },
-  "social-8577322ba8f6": {
-    "id": "social-8577322ba8f6",
-    "url": "https://x.com/BenStandig/status/2090530404826542348",
-    "text": "🎙 Dan Quinn said plenty of starters will face the Lions on Saturday. Signs suggest Jayden Daniels might be among them. Should he? The injury list keeps growing. Daron Payne the latest. Other injury updates. Who had the best catch in practice? 👂 ⤵️ whos-gonna-motor-and-whos-gonna-cool-their-jets-in-detroit/id1760952448?i=1000784641807",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T20:04:23.000Z",
-    "collectedAt": "2026-08-20T20:20:14.032Z"
-  },
-  "social-05bee580d619": {
-    "id": "social-05bee580d619",
-    "url": "https://x.com/AdamSchefter/status/2090530521558220913",
-    "text": "NFL fined the Cowboys and Saints $500,000 each for what it called “the actions that took place at the joint practice between the teams earlier this week.” The Competition Committee has made sportsmanship – including at joint practices – a point of emphasis over the past several years. All clubs were reminded by memo prior to training camp of their responsibility in preventing unsportsmanlike behavior at joint practices that has the potential to result in injury.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T20:04:51.000Z",
-    "collectedAt": "2026-08-20T21:21:01.256Z"
-  },
   "social-d22c6c67edfb": {
     "id": "social-d22c6c67edfb",
     "url": "https://x.com/Commanders/status/2090559510003990795",
@@ -6442,5 +6398,65 @@
     "images": [],
     "publishedAt": "2026-08-30T18:06:45.000Z",
     "collectedAt": "2026-08-30T18:55:41.357Z"
+  },
+  "social-a135614552d0": {
+    "id": "social-a135614552d0",
+    "url": "https://x.com/NickiJhabvala/status/2094153468571263350",
+    "text": "The Commanders released DT Shy Tuttle, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T20:01:09.000Z",
+    "collectedAt": "2026-08-30T20:05:10.325Z"
+  },
+  "social-1ad0831bf7f7": {
+    "id": "social-1ad0831bf7f7",
+    "url": "https://x.com/NickiJhabvala/status/2094147694864265257",
+    "text": "As other have reported, the Commanders have released OL Trent Scott, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T19:38:12.000Z",
+    "collectedAt": "2026-08-30T20:05:10.325Z"
+  },
+  "social-e6b0383ca5c2": {
+    "id": "social-e6b0383ca5c2",
+    "url": "https://x.com/NickiJhabvala/status/2094146464263942264",
+    "text": "The Commanders waived RB Robert Henry Jr., per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T19:33:19.000Z",
+    "collectedAt": "2026-08-30T20:05:10.325Z"
+  },
+  "social-1741404a11cb": {
+    "id": "social-1741404a11cb",
+    "url": "https://x.com/NickiJhabvala/status/2094142150111867272",
+    "text": "The Commanders waived QB Sam Hartman, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T19:16:10.000Z",
+    "collectedAt": "2026-08-30T20:05:10.325Z"
+  },
+  "social-d2738fa0eae9": {
+    "id": "social-d2738fa0eae9",
+    "url": "https://x.com/NickiJhabvala/status/2094134698263838992",
+    "text": "The Commanders released G/C Julian Good-Jones, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T18:46:33.000Z",
+    "collectedAt": "2026-08-30T20:05:10.325Z"
   }
 }
