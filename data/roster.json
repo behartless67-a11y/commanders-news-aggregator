@@ -296,31 +296,6 @@
     "stats": null
   },
   {
-    "slug": "van-jefferson",
-    "name": "Van Jefferson",
-    "jersey": "12",
-    "position": "WR",
-    "espnId": "3930066",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "29"
-        },
-        {
-          "label": "YDS",
-          "value": "350"
-        },
-        {
-          "label": "TD",
-          "value": "1"
-        }
-      ]
-    }
-  },
-  {
     "slug": "jacoby-jones",
     "name": "Jacoby Jones",
     "jersey": "84",
@@ -595,24 +570,6 @@
     }
   },
   {
-    "slug": "max-scharping",
-    "name": "Max Scharping",
-    "jersey": "68",
-    "position": "G",
-    "espnId": "3126035",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3126035.png",
-    "stats": null
-  },
-  {
-    "slug": "trent-scott",
-    "name": "Trent Scott",
-    "jersey": "73",
-    "position": "OT",
-    "espnId": "3123303",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
-    "stats": null
-  },
-  {
     "slug": "ben-sinnott",
     "name": "Ben Sinnott",
     "jersey": "82",
@@ -822,15 +779,6 @@
         }
       ]
     }
-  },
-  {
-    "slug": "boogie-basham",
-    "name": "Boogie Basham",
-    "jersey": "",
-    "position": "LB",
-    "espnId": "4037239",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4037239.png",
-    "stats": null
   },
   {
     "slug": "joshuah-bledsoe",
@@ -1618,40 +1566,6 @@
     "position": "LB",
     "espnId": "5081807",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081807.png",
-    "stats": null
-  },
-  {
-    "slug": "shy-tuttle",
-    "name": "Shy Tuttle",
-    "jersey": "79",
-    "position": "DT",
-    "espnId": "3886601",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3886601.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "15"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "car-lin-vigers",
-    "name": "Car'lin Vigers",
-    "jersey": "37",
-    "position": "CB",
-    "espnId": "4917486",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4917486.png",
     "stats": null
   },
   {
