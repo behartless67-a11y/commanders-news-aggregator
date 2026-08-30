@@ -6391,5 +6391,55 @@
     "images": [],
     "publishedAt": "2026-08-29T22:58:34.000Z",
     "collectedAt": "2026-08-30T00:05:09.852Z"
+  },
+  "social-7a505798aa28": {
+    "id": "social-7a505798aa28",
+    "url": "https://x.com/TomPelissero/status/2093834870690603468",
+    "text": "The Commanders are waiving OT Nicholas Petit-Frere, per source.",
+    "handle": "TomPelissero",
+    "author": "Tom Pelissero",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-08-29T22:55:09.000Z",
+    "collectedAt": "2026-08-30T02:06:19.848Z"
+  },
+  "social-83e63c50e28e": {
+    "id": "social-83e63c50e28e",
+    "url": "https://x.com/JPFinlayNBCS/status/2093852626114756837",
+    "text": "Cool to watch Tavita. Rooting for that dude",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/181/540/717/049/123/original/b20909c7a7b9ecee.jpg"
+    ],
+    "publishedAt": "2026-08-30T00:05:42.000Z",
+    "collectedAt": "2026-08-30T02:06:19.849Z"
+  },
+  "social-b0c2c1249ae0": {
+    "id": "social-b0c2c1249ae0",
+    "url": "https://x.com/steelers/status/2093814493776109887",
+    "text": "We have released LB Jamin Davis and WR Levi Wentz. @BordasLaw@twitter.com e-second-wave-of-moves-to-get-to-53-man-roster",
+    "handle": "steelers",
+    "author": "Pittsburgh Steelers",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-29T21:34:11.000Z",
+    "collectedAt": "2026-08-30T02:06:22.666Z"
+  },
+  "social-3e98423144d6": {
+    "id": "social-3e98423144d6",
+    "url": "https://x.com/BenStandig/status/2093860430334611600",
+    "text": "@john_keim had the 411 on the safeties initially.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-30T00:36:43.000Z",
+    "collectedAt": "2026-08-30T02:06:22.666Z"
   }
 }
