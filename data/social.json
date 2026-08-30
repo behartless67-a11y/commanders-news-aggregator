@@ -6181,5 +6181,53 @@
     "images": [],
     "publishedAt": "2026-08-30T16:01:36.000Z",
     "collectedAt": "2026-08-30T16:10:19.089Z"
+  },
+  "social-e98be34ff836": {
+    "id": "social-e98be34ff836",
+    "url": "https://x.com/john_keim/status/2094094021391995042",
+    "text": "Craig Reynolds has been released per source. Another PS candidate for sure. @BenStandig 1st reported",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-30T16:04:55.000Z",
+    "collectedAt": "2026-08-30T16:11:32.995Z"
+  },
+  "social-00e8526b6583": {
+    "id": "social-00e8526b6583",
+    "url": "https://x.com/john_keim/status/2094093650816836003",
+    "text": "Craig Reynolds has been released per source. Another PS candidate for sure. @NickiJhabvala@twitter.com 1st reported",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-30T16:03:27.000Z",
+    "collectedAt": "2026-08-30T16:11:32.995Z"
+  },
+  "social-87fd344b2f07": {
+    "id": "social-87fd344b2f07",
+    "url": "https://x.com/BenStandig/status/2094093900994445572",
+    "text": "The Commanders are releasing OL Daniel Brunskill, per source.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-30T16:04:27.000Z",
+    "collectedAt": "2026-08-30T16:11:34.152Z"
+  },
+  "social-2d4cb9cbff81": {
+    "id": "social-2d4cb9cbff81",
+    "url": "https://x.com/BenStandig/status/2094093219722141921",
+    "text": "The Commanders are releasing C Trey Hill, per source.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-30T16:01:44.000Z",
+    "collectedAt": "2026-08-30T16:11:34.152Z"
   }
 }
