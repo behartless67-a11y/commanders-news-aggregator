@@ -1,15 +1,4 @@
 {
-  "social-e193fdb4bd00": {
-    "id": "social-e193fdb4bd00",
-    "url": "https://x.com/Commanders/status/2090408765715845164",
-    "text": "LIVE: HC Dan Quinn speaks to the media before practice GL",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-20T12:01:02.000Z",
-    "collectedAt": "2026-08-20T13:21:13.506Z"
-  },
   "social-9ae5fe753e80": {
     "id": "social-9ae5fe753e80",
     "url": "https://x.com/JPFinlayNBCS/status/2090426341006999774",
@@ -87,39 +76,6 @@
     "publishedAt": "2026-08-20T12:06:28.000Z",
     "collectedAt": "2026-08-20T13:21:24.023Z"
   },
-  "social-9318174e27d8": {
-    "id": "social-9318174e27d8",
-    "url": "https://x.com/john_keim/status/2090409574712930583",
-    "text": "Dan Quinn said C Nick Allegretti cut short his work Wednesday because of tightness in his calf. Had an imaging test and showed no issues. Won’t play Saturday.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T12:04:15.000Z",
-    "collectedAt": "2026-08-20T13:21:24.023Z"
-  },
-  "social-f57289af457a": {
-    "id": "social-f57289af457a",
-    "url": "https://x.com/john_keim/status/2090405686031098291",
-    "text": "Quick video talking about Sonny Styles, what he wants to do Saturday; what he’s shown so far 395",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T11:48:48.000Z",
-    "collectedAt": "2026-08-20T13:21:24.023Z"
-  },
-  "social-3e8d4bce1511": {
-    "id": "social-3e8d4bce1511",
-    "url": "https://x.com/john_keim/status/2090399246654517728",
-    "text": "Today’s sked: ☀️😎: mid to upper 70s 🎤: Dan Quinn before practice. Lots to discuss with injuries 🏈: 8:30 am practice. Quick one, similar to Fridays in season 🎤: Players TBD 👨🏻‍💻: finish stories 🎥: video to 🗣️🎙️: podcast later today",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T11:23:12.000Z",
-    "collectedAt": "2026-08-20T13:21:24.023Z"
-  },
   "social-3e3b20b8cf35": {
     "id": "social-3e3b20b8cf35",
     "url": "https://x.com/BenStandig/status/2090427728302338085",
@@ -186,28 +142,6 @@
     "publishedAt": "2026-08-20T12:07:10.000Z",
     "collectedAt": "2026-08-20T13:21:30.123Z"
   },
-  "social-cec6fcc57d38": {
-    "id": "social-cec6fcc57d38",
-    "url": "https://x.com/BenStandig/status/2090409083618623680",
-    "text": "Dan Quinn time. \"Good amount of starters will get playing time\" against the Lions. No specifics yet.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T12:02:18.000Z",
-    "collectedAt": "2026-08-20T13:21:30.124Z"
-  },
-  "social-8fe0583cc236": {
-    "id": "social-8fe0583cc236",
-    "url": "https://x.com/BenStandig/status/2090409383804965125",
-    "text": "C Nick Allegretti felt tightness in his previously injured calf yesterday. Testing showed no setbacks. Will be kept out of the game in Detroit.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T12:03:29.000Z",
-    "collectedAt": "2026-08-20T13:21:30.124Z"
-  },
   "social-ae02fd34bb7f": {
     "id": "social-ae02fd34bb7f",
     "url": "https://x.com/tashanreed/status/2090427847118577791",
@@ -239,28 +173,6 @@
     "label": "",
     "sourceKey": "@tashanreed",
     "publishedAt": "2026-08-20T12:26:12.000Z",
-    "collectedAt": "2026-08-20T13:21:32.384Z"
-  },
-  "social-6853eec2028c": {
-    "id": "social-6853eec2028c",
-    "url": "https://x.com/tashanreed/status/2090409097627643949",
-    "text": "#Commanders HC Dan Quinn said starters will get some playing time against the Lions on Saturday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-20T12:02:21.000Z",
-    "collectedAt": "2026-08-20T13:21:32.384Z"
-  },
-  "social-871474b4598a": {
-    "id": "social-871474b4598a",
-    "url": "https://x.com/tashanreed/status/2090409260437893288",
-    "text": "#Commanders C Nick Allegretti's calf was tight during practice yesterday, so the team pulled him. Quinn said tests came back clean, but he won't play this week and he'll be re-evaluated next week.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-20T12:03:00.000Z",
     "collectedAt": "2026-08-20T13:21:32.384Z"
   },
   "social-382136c76f0f": {
@@ -416,17 +328,6 @@
     "sourceKey": "@Commanders",
     "publishedAt": "2026-08-20T18:01:26.000Z",
     "collectedAt": "2026-08-20T18:07:31.224Z"
-  },
-  "social-c0581c7a02ca": {
-    "id": "social-c0581c7a02ca",
-    "url": "https://x.com/BenStandig/status/2090388843618775397",
-    "text": "Me on video talking about the Wizards' trade last night that brings guard Tre Mann to join Tre Johnson and Trae Young in the backcourt. tre-times-is-the-charm-wizards-acquire",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T10:41:52.000Z",
-    "collectedAt": "2026-08-20T18:54:11.933Z"
   },
   "social-05afe4dcb84d": {
     "id": "social-05afe4dcb84d",
