@@ -65,17 +65,6 @@
     "publishedAt": "2026-08-20T12:07:12.000Z",
     "collectedAt": "2026-08-20T13:21:24.023Z"
   },
-  "social-cd9e6267c2ad": {
-    "id": "social-cd9e6267c2ad",
-    "url": "https://x.com/john_keim/status/2090410135067738228",
-    "text": "Quinn said CB Trey Amos (sprained ankle) is “trending up” for his return. Won’t play Saturday. Still unsure of exact return date.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-20T12:06:28.000Z",
-    "collectedAt": "2026-08-20T13:21:24.023Z"
-  },
   "social-3e3b20b8cf35": {
     "id": "social-3e3b20b8cf35",
     "url": "https://x.com/BenStandig/status/2090427728302338085",
@@ -6287,5 +6276,17 @@
     "images": [],
     "publishedAt": "2026-08-30T00:36:43.000Z",
     "collectedAt": "2026-08-30T02:06:22.666Z"
+  },
+  "social-f88f55c6c433": {
+    "id": "social-f88f55c6c433",
+    "url": "https://x.com/john_keim/status/2094032873879646427",
+    "text": "@AnthonyConway00@twitter.com Last year? May have had a chance. But deeper this year and all those ahead can help them right now. What did he show in games that would warrant another team putting him on their 53 right now? Not a knock but it’s how u have to view. Many teams have a version of him.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-30T12:01:57.000Z",
+    "collectedAt": "2026-08-30T12:06:22.092Z"
   }
 }
