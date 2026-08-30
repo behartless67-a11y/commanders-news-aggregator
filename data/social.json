@@ -1,26 +1,4 @@
 {
-  "social-05afe4dcb84d": {
-    "id": "social-05afe4dcb84d",
-    "url": "https://x.com/Commanders/status/2090532320960794672",
-    "text": "another @USAA@twitter.com Salute to Service bootcamp in the books 💪",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-20T20:12:00.000Z",
-    "collectedAt": "2026-08-20T20:20:08.870Z"
-  },
-  "social-d22c6c67edfb": {
-    "id": "social-d22c6c67edfb",
-    "url": "https://x.com/Commanders/status/2090559510003990795",
-    "text": "DQ ‼️ @NWFCU@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-20T22:00:02.000Z",
-    "collectedAt": "2026-08-20T22:19:11.662Z"
-  },
   "social-31426b841c5a": {
     "id": "social-31426b841c5a",
     "url": "https://x.com/Commanders/status/2090567050901291068",
@@ -6762,5 +6740,53 @@
     "images": [],
     "publishedAt": "2026-08-30T19:19:30.345Z",
     "collectedAt": "2026-08-30T20:06:38.644Z"
+  },
+  "social-62c70c34f35e": {
+    "id": "social-62c70c34f35e",
+    "url": "https://x.com/NickiJhabvala/status/2094184816690291034",
+    "text": "Undrafted G Tanoa Togiai made the Commanders' roster.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T22:05:43.000Z",
+    "collectedAt": "2026-08-30T22:05:10.100Z"
+  },
+  "social-841c430adc11": {
+    "id": "social-841c430adc11",
+    "url": "https://x.com/NickiJhabvala/status/2094184095458767293",
+    "text": "QB Athan Kaliakmanis made the Commanders' initial 53.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T22:02:51.000Z",
+    "collectedAt": "2026-08-30T22:05:10.100Z"
+  },
+  "social-6b298ece7937": {
+    "id": "social-6b298ece7937",
+    "url": "https://x.com/NickiJhabvala/status/2094183780151906447",
+    "text": "The Commanders placed CB Trey Amos&nbsp;and RB Jeremy McNichols on the Reserve/Injured List with designations to return, and DE Deatrich Wise Jr. on the Reserve/Physically Unable to Perform list. That means LT Laremy Tunsil and DT Johnny Newton are likely to go on IR in the next day",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T22:01:35.000Z",
+    "collectedAt": "2026-08-30T22:05:10.100Z"
+  },
+  "social-9064cd119941": {
+    "id": "social-9064cd119941",
+    "url": "https://x.com/NickiJhabvala/status/2094154886682124593",
+    "text": "So the Commanders OL will come back from its bye to host the Eagles in Week 8 and Myles Garrett and Aaron Donald in Week 9. That’s less than ideal.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-30T20:06:47.000Z",
+    "collectedAt": "2026-08-30T22:05:10.100Z"
   }
 }
