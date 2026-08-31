@@ -7,6 +7,13 @@
     "notes": null
   },
   {
+    "name": "Curtis Jacobs",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
@@ -17,6 +24,13 @@
     "name": "Drake Jackson",
     "position": "DL",
     "status": "IR",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Jacoby Jones",
+    "position": "WR",
+    "status": "Questionable",
     "bodyPart": "Undisclosed",
     "notes": null
   },
@@ -105,8 +119,22 @@
     "notes": null
   },
   {
+    "name": "Quentin Moore",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
     "name": "Rachaad White",
     "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "T.J. Maguranyanga",
+    "position": "DE",
     "status": "Questionable",
     "bodyPart": "Undisclosed",
     "notes": null
