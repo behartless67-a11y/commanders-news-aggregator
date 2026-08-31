@@ -6932,5 +6932,43 @@
     "images": [],
     "publishedAt": "2026-08-30T22:22:05.000Z",
     "collectedAt": "2026-08-31T00:06:27.748Z"
+  },
+  "social-3dc1983f2326": {
+    "id": "social-3dc1983f2326",
+    "url": "https://x.com/JPFinlayNBCS/status/2094238732832383062",
+    "text": "Debating drafting Travis Kelce in fantasy so did a quick search for some football news",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/187/575/299/838/192/original/0811e2179607de58.jpg"
+    ],
+    "publishedAt": "2026-08-31T01:39:57.000Z",
+    "collectedAt": "2026-08-31T02:06:28.241Z"
+  },
+  "social-ea6405fc9aec": {
+    "id": "social-ea6405fc9aec",
+    "url": "https://x.com/john_keim/status/2094233620206490072",
+    "text": "A big key for Luke McCaffrey: averaged 29.6 yards per KR last season. His 7 returns of 35-plus yards were tied for most in the NFL in only 9 games. Had a solid summer in practice but the ST work is important. Also covers kicks",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T01:19:38.000Z",
+    "collectedAt": "2026-08-31T02:06:29.804Z"
+  },
+  "social-e8d361e98d49": {
+    "id": "social-e8d361e98d49",
+    "url": "https://x.com/john_keim/status/2094231568550088837",
+    "text": "The hard part with Trey Amos’ absence, especially for the opener: they’re already down Dorance Armstrong and there’s uncertainty about Odafe Oweh. If going to play heavy zone, need a strong pass rush. Will impact corner play. Can survive a lot at CB with a strong rush.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T01:11:29.000Z",
+    "collectedAt": "2026-08-31T02:06:29.804Z"
   }
 }
