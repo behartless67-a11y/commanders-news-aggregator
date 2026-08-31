@@ -1,6 +1,6 @@
 {
   "key": "2026-08-31",
-  "status": "draft",
+  "status": "published",
   "model": "anthropic.claude-sonnet-5",
   "generatedAt": "2026-08-31T14:22:49.681Z",
   "attempts": 1,
@@ -1378,5 +1378,6 @@
       "publishedAt": "2026-08-30T19:17:17.000Z",
       "collectedAt": "2026-08-30T20:06:27.168Z"
     }
-  ]
+  ],
+  "reviewedAt": "2026-08-31T14:37:37.714Z"
 }
