@@ -1,26 +1,4 @@
 {
-  "social-31426b841c5a": {
-    "id": "social-31426b841c5a",
-    "url": "https://x.com/Commanders/status/2090567050901291068",
-    "text": "day by day @CarterMachinery@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-20T22:30:00.000Z",
-    "collectedAt": "2026-08-20T23:19:05.782Z"
-  },
-  "social-5598b94c767a": {
-    "id": "social-5598b94c767a",
-    "url": "https://x.com/Commanders/status/2090585924488839222",
-    "text": "lotta work in the forecast ⚡️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-20T23:45:00.000Z",
-    "collectedAt": "2026-08-21T00:52:44.538Z"
-  },
   "social-5a4dacd01dc3": {
     "id": "social-5a4dacd01dc3",
     "url": "https://x.com/JPFinlayNBCS/status/2090597994139644290",
@@ -31,28 +9,6 @@
     "sourceKey": "@JPFinlayNBCS",
     "publishedAt": "2026-08-21T00:32:57.000Z",
     "collectedAt": "2026-08-21T00:52:45.538Z"
-  },
-  "social-9f1193fc7082": {
-    "id": "social-9f1193fc7082",
-    "url": "https://x.com/BenStandig/status/2090587880280273009",
-    "text": "I dropped some bars on Bill.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T23:52:46.000Z",
-    "collectedAt": "2026-08-21T00:52:48.503Z"
-  },
-  "social-638b4b5a4389": {
-    "id": "social-638b4b5a4389",
-    "url": "https://x.com/BenStandig/status/2090585472137314489",
-    "text": "“I heard you heard my song!” Indeed. That’s how @JacoryMerritt15@twitter.com greeted me after Thursday’s practice. Turns out, we were already on the same verse. how-a-rap-song-fits-the-bill-and",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-20T23:43:12.000Z",
-    "collectedAt": "2026-08-21T00:52:48.503Z"
   },
   "social-5aa722487362": {
     "id": "social-5aa722487362",
@@ -6876,5 +6832,17 @@
     "images": [],
     "publishedAt": "2026-08-30T20:29:12.000Z",
     "collectedAt": "2026-08-30T22:06:25.751Z"
+  },
+  "social-854f334c8d0e": {
+    "id": "social-854f334c8d0e",
+    "url": "https://x.com/NickiJhabvala/status/2094213830926549319",
+    "text": "Let's try this again because ... I'm dumb. Here's the ACTUAL Commanders initial 53-man roster. It has an odd split — 27 offense, 23 defense — but that could change in the next day or so:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T00:01:00.000Z",
+    "collectedAt": "2026-08-31T00:05:10.516Z"
   }
 }
