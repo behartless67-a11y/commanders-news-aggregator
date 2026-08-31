@@ -1,6 +1,20 @@
 {
   "runs": [
     {
+      "at": "2026-08-31T10:06:41.948Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-08-31T10:06:21.777Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 1,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
       "at": "2026-08-31T10:05:10.614Z",
       "stage": "social-browser",
       "added": 0,
@@ -400,19 +414,6 @@
       "added": 0,
       "pruned": 0,
       "dropped": 0
-    },
-    {
-      "at": "2026-08-30T04:05:09.118Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-08-30T03:40:11.172Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 3
     }
   ]
 }
