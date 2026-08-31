@@ -46,7 +46,7 @@ function checkDraft(draft) {
   }
   if (!Array.isArray(draft?.paragraphs)) problems.push('"paragraphs" must be an array of strings.');
   else {
-    if (draft.paragraphs.length < 4) problems.push('"paragraphs" needs at least 4 entries.');
+    if (draft.paragraphs.length < 6) problems.push('"paragraphs" needs at least 6 entries.');
     if (draft.paragraphs.some((p) => typeof p !== 'string' || !p.trim())) {
       problems.push('every entry in "paragraphs" must be a non-empty string.');
     }
