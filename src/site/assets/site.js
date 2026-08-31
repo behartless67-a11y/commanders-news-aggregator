@@ -374,7 +374,16 @@
    * no third-party analytics script (see netlify/functions/track.js).
    * Fire-and-forget: a failed or blocked beacon should never affect the page
    * a reader is actually here for.
+   *
+   * Skip the beacon entirely when an admin session cookie is present — the
+   * admin is almost certainly the site owner refreshing after updates, not
+   * a real visitor, and their traffic would otherwise inflate the numbers.
+   * The cookie itself is verified server-side; checking for its existence
+   * here is enough to suppress the beacon without exposing anything.
    */
+  if (document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); })) {
+    // admin browsing — don't count this
+  } else
   fetch('/.netlify/functions/track', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
