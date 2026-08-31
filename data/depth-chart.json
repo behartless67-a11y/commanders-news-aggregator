@@ -62,6 +62,10 @@
             "name": "Sam Cosmi"
           },
           {
+            "slug": "trent-scott",
+            "name": "Trent Scott"
+          },
+          {
             "slug": "tanoa-togiai",
             "name": "Tanoa Togiai"
           }
@@ -116,6 +120,10 @@
           {
             "slug": "jaylin-lane",
             "name": "Jaylin Lane"
+          },
+          {
+            "slug": "jaden-bradley",
+            "name": "Jaden Bradley"
           }
         ]
       },
@@ -148,6 +156,10 @@
             "name": "Marcus Mariota"
           },
           {
+            "slug": "sam-hartman",
+            "name": "Sam Hartman"
+          },
+          {
             "slug": "athan-kaliakmanis",
             "name": "Athan Kaliakmanis"
           }
@@ -167,6 +179,10 @@
           {
             "slug": "jeremy-mcnichols",
             "name": "Jeremy McNichols"
+          },
+          {
+            "slug": "robert-henry-jr",
+            "name": "Robert Henry Jr."
           }
         ]
       }
@@ -185,6 +201,10 @@
           {
             "slug": "deatrich-wise",
             "name": "Deatrich Wise Jr."
+          },
+          {
+            "slug": "byron-cowart",
+            "name": "Byron Cowart"
           }
         ]
       },
@@ -198,6 +218,14 @@
           {
             "slug": "jer-zhan-newton",
             "name": "Jer'Zhan Newton"
+          },
+          {
+            "slug": "shy-tuttle",
+            "name": "Shy Tuttle"
+          },
+          {
+            "slug": "jeffrey-m-ba",
+            "name": "Jeffrey M'ba"
           }
         ]
       },
@@ -245,6 +273,10 @@
           {
             "slug": "leo-chenal",
             "name": "Leo Chenal"
+          },
+          {
+            "slug": "ale-kaho",
+            "name": "Ale Kaho"
           }
         ]
       },
@@ -275,6 +307,10 @@
           {
             "slug": "dorance-armstrong",
             "name": "Dorance Armstrong"
+          },
+          {
+            "slug": "d-j-johnson-2",
+            "name": "D.J. Johnson"
           }
         ]
       },
@@ -288,6 +324,10 @@
           {
             "slug": "rasul-douglas",
             "name": "Rasul Douglas"
+          },
+          {
+            "slug": "fred-davis-ii",
+            "name": "Fred Davis II"
           }
         ]
       },
@@ -306,6 +346,14 @@
           {
             "slug": "mike-sainristil",
             "name": "Mike Sainristil"
+          },
+          {
+            "slug": "fabian-moreau",
+            "name": "Fabian Moreau"
+          },
+          {
+            "slug": "darius-rush",
+            "name": "Darius Rush"
           }
         ]
       },
