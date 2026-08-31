@@ -4,8 +4,8 @@ import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
 
-const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Original' };
-const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog' };
+const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Original', monday: 'A Case of the Mondays' };
+const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog', monday: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
 /**
@@ -764,8 +764,9 @@ function footer(sources, generatedAt) {
  * not just once, because a reader can land on a single post from a search
  * result or a share link without ever seeing the archive page.
  */
-function digestDisclosure(model) {
-  return `<p class="digest-disclosure">Written by a local AI model (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim is sourced above; nothing here is original reporting. <a href="blog.html">All posts</a></p>`;
+function digestDisclosure(model, local = true) {
+  const where = local ? 'a local AI model' : 'an AI model';
+  return `<p class="digest-disclosure">Written by ${where} (${escapeHtml(model)}) from that week's headlines and reporter posts — not by a person. Every claim is sourced above; nothing here is original reporting. <a href="blog.html">All posts</a></p>`;
 }
 
 function weekLabel(record) {
@@ -808,7 +809,7 @@ const stripInlineCites = (text) =>
  * a normal collected item never has; it's what tells itemCard() to link
  * same-site instead of opening a new tab.
  */
-export function blogRiverItems(digests, previews, originals = []) {
+export function blogRiverItems(digests, previews, originals = [], mondays = []) {
   const fromDigest = (record) => ({
     id: `blog-digest-${record.week}`,
     sourceId: 'blog',
@@ -845,7 +846,21 @@ export function blogRiverItems(digests, previews, originals = []) {
     publishedAt: record.publishedAt,
     internal: true,
   });
-  return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal)];
+  // Same reasoning as fromOriginal above: its own category so the river
+  // card badge reads "A Case of the Mondays" rather than a generic AI-digest
+  // "Blog" badge.
+  const fromMonday = (record) => ({
+    id: `blog-monday-${record.key}`,
+    sourceId: 'blog',
+    sourceName: 'The Burgundy Wire',
+    category: 'monday',
+    url: `blog-monday-${record.key}.html`,
+    title: record.title,
+    excerpt: firstSentences(record.paragraphs[0], 2),
+    publishedAt: record.reviewedAt || record.generatedAt,
+    internal: true,
+  });
+  return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal), ...mondays.map(fromMonday)];
 }
 
 /** River card entry for the live game-day post, so it shows on the main river alongside other blog content. */
@@ -984,6 +999,29 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
 ${paragraphs}
 ${plug}
     </article>`;
+}
+
+/**
+ * "A Case of the Mondays" (src/digest/monday-generate.js) — its own record
+ * shape, plain paragraphs like an original post rather than threads with
+ * per-sentence citations, because the whole point is a looser, funnier
+ * voice than the digest/preview pipeline's citation discipline allows (see
+ * monday-prompt.js). "Facts about the Commanders are still sourced; the
+ * jokes are original" is disclosed explicitly below since that split isn't
+ * obvious just from reading the post the way it is for an original essay.
+ */
+function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
+  const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
+  return `
+    <article class="digest-post monday-post">
+      <p class="original-badge-row"><span class="badge badge-blog">A Case of the Mondays</span></p>
+      <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
+${paragraphs}
+    </article>`;
+}
+
+function mondayDisclosure(model) {
+  return `<p class="digest-disclosure">Written by an AI model (${escapeHtml(model)}). Every fact about the Commanders is sourced from that weekend's headlines and reporter posts; the jokes are the model's own, not sourced from anyone quoted above. <a href="blog.html">All posts</a></p>`;
 }
 
 /**
@@ -1219,7 +1257,7 @@ ${header('blog.html', true, isGameLive)}
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
 ${previewArticleBody(record, rosterIndex, 'h1')}
-    ${digestDisclosure(record.model)}
+    ${digestDisclosure(record.model, false)}
   </div>
 
   ${rail}
@@ -1286,7 +1324,56 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [] }) {
+/** Same shape as renderOriginalPost, using mondayArticleBody()/mondayDisclosure() instead — see those functions' own comments for why this is a distinct record shape. */
+export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+  const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
+  const rail = sidebar(videos, games, betting, teamStats, standings);
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(excerpt)}">
+${socialMetaTags({ title: `${record.title} — ${siteName}`, description: excerpt, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('blog.html', true, isGameLive)}
+</div>
+
+<main class="layout${rail ? '' : ' layout-wide'}">
+  <div>
+${mondayArticleBody(record, rosterIndex, 'h1')}
+    ${mondayDisclosure(record.model)}
+  </div>
+
+  ${rail}
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [], mondayRecords = [] }) {
   const rail = sidebar(videos, games, betting, teamStats, standings);
   const livePost = liveGamePost(liveGame, rosterIndex);
   // Weekly digests, previews, originals, and the live game post are four
@@ -1305,8 +1392,9 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
   // newest.
   const dated = [
     ...records.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${digestArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
-    ...previewRecords.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model)}` })),
+    ...previewRecords.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${previewArticleBody(r, rosterIndex, 'h2')}\n    ${digestDisclosure(r.model, false)}` })),
     ...originalRecords.map((r) => ({ sortKey: r.publishedAt, html: `${originalArticleBody(r, rosterIndex, 'h2')}\n    ${originalDisclosure()}` })),
+    ...mondayRecords.map((r) => ({ sortKey: r.reviewedAt || r.generatedAt, html: `${mondayArticleBody(r, rosterIndex, 'h2')}\n    ${mondayDisclosure(r.model)}` })),
     ...(livePost ? [{ sortKey: liveReleasedAt(liveGame), html: livePost }] : []),
   ].sort((a, b) => String(b.sortKey || '').localeCompare(String(a.sortKey || '')));
   const posts = dated.map((d) => d.html);

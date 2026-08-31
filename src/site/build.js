@@ -17,7 +17,8 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { listMondays } from '../digest/monday-generate.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -61,6 +62,9 @@ export async function buildSite() {
   const publishedOriginals = (await listOriginals())
     .filter((o) => o.status === 'published')
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const publishedMondays = (await listMondays())
+    .filter((m) => m.status === 'published')
+    .sort((a, b) => b.key.localeCompare(a.key));
 
   // liveGame must be loaded first so its river item can be included here.
   const liveGame = await loadLiveGameState();
@@ -69,7 +73,7 @@ export async function buildSite() {
   // Published Blog posts compete for river placement on their own publish
   // date, same as any other item — not pinned above or below real headlines.
   const blogItems = [
-    ...blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals),
+    ...blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals, publishedMondays),
     ...(liveItem ? [liveItem] : []),
   ];
 
@@ -128,7 +132,7 @@ export async function buildSite() {
   // original post, or a live game post — a game-day-only blog (no weekly
   // digest ever approved yet) should still be reachable, not hidden behind
   // the weekly gate.
-  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || publishedOriginals.length > 0 || Boolean(liveGame?.entries?.length);
+  const hasWeekly = publishedDigests.length > 0 || publishedPreviews.length > 0 || publishedOriginals.length > 0 || publishedMondays.length > 0 || Boolean(liveGame?.entries?.length);
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
@@ -162,7 +166,7 @@ export async function buildSite() {
     const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, standings, isGameLive, liveGame };
     await fs.writeFile(
       path.join(DIST_DIR, 'blog.html'),
-      renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals }),
+      renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals, mondayRecords: publishedMondays }),
       'utf8',
     );
     for (const record of publishedDigests) {
@@ -173,6 +177,9 @@ export async function buildSite() {
     }
     for (const record of publishedOriginals) {
       await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, opts), 'utf8');
+    }
+    for (const record of publishedMondays) {
+      await fs.writeFile(path.join(DIST_DIR, `blog-monday-${record.key}.html`), renderMondayPost(record, opts), 'utf8');
     }
   }
 
@@ -294,6 +301,7 @@ export async function buildSite() {
     ...publishedDigests.map((r) => ({ path: `blog-${r.week}.html`, lastmod: r.reviewedAt || r.generatedAt })),
     ...publishedPreviews.map((r) => ({ path: `blog-preview-${r.gameKey}.html`, lastmod: r.reviewedAt || r.generatedAt })),
     ...publishedOriginals.map((r) => ({ path: `blog-original-${r.slug}.html`, lastmod: r.publishedAt })),
+    ...publishedMondays.map((r) => ({ path: `blog-monday-${r.key}.html`, lastmod: r.reviewedAt || r.generatedAt })),
   ];
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
   await fs.writeFile(

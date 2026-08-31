@@ -1,0 +1,40 @@
+{
+  "fetchedAt": "2026-08-31T13:49:14.098Z",
+  "uva": {
+    "lastGame": {
+      "date": "2026-08-29T19:30Z",
+      "uvaScore": "34",
+      "opponentScore": "8",
+      "opponent": "NC State Wolfpack",
+      "isHome": true,
+      "won": true,
+      "venue": "Scott Stadium"
+    },
+    "nextGame": {
+      "date": "2026-09-11T23:00Z",
+      "opponent": "Norfolk State Spartans",
+      "isHome": true
+    }
+  },
+  "notable": [
+    {
+      "date": "2026-08-29T19:00Z",
+      "teams": [
+        {
+          "name": "USC Trojans",
+          "abbr": "USC",
+          "rank": 14,
+          "score": "42",
+          "winner": true
+        },
+        {
+          "name": "San José State Spartans",
+          "abbr": "SJSU",
+          "rank": null,
+          "score": "26",
+          "winner": false
+        }
+      ]
+    }
+  ]
+}

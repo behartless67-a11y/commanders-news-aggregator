@@ -25,6 +25,7 @@
     "injuries": "node src/cli.js injuries",
     "standings": "node src/cli.js standings",
     "team-stats": "node src/cli.js team-stats",
+    "college-football": "node src/cli.js college-football",
     "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",
     "digest:list": "node src/cli.js digest list",
@@ -34,7 +35,11 @@
     "preview": "node src/cli.js preview",
     "preview:list": "node src/cli.js preview list",
     "preview:approve": "node src/cli.js preview approve",
-    "preview:reject": "node src/cli.js preview reject"
+    "preview:reject": "node src/cli.js preview reject",
+    "monday": "node src/cli.js monday",
+    "monday:list": "node src/cli.js monday list",
+    "monday:approve": "node src/cli.js monday approve",
+    "monday:reject": "node src/cli.js monday reject"
   },
   "dependencies": {
     "@anthropic-ai/bedrock-sdk": "^0.33.1",

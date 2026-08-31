@@ -1,0 +1,81 @@
+name: A Case of the Mondays
+
+# Weekly, Monday morning — generateMonday() itself no-ops any other day of
+# the week (see that file), so this is safe to run blind. 12:00 UTC is 8am
+# ET during EDT; same DST-drift caveat as preview.yml's own cron comment.
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Regenerate even if a draft already exists, and skip the Monday-only gate (testing only)'
+        required: false
+        default: 'false'
+      now:
+        description: 'Override "now" for testing, e.g. 2026-08-31T09:00:00-04:00 (testing only — leave blank for real runs)'
+        required: false
+        default: ''
+
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # Real, current UVA/college-football results (see collegefootball.js)
+      # for the recap's college football section — this corpus otherwise
+      # carries zero college sports at all. Soft-fails like every other
+      # cache refresh here: a bad fetch just means that section is thin or
+      # absent this week, not a broken build.
+      - run: npm run college-football
+        continue-on-error: true
+
+      # Writes data/mondays/<key>.json with status: 'draft' — never
+      # published from here. See monday-generate.js: same Bedrock/Claude
+      # path as the game-day preview, and the same reason (cheap per run,
+      # and no local-only constraint since this excludes Hogs Haven and
+      # ClutchPoints the same way the preview corpus does).
+      - name: Write this week's Monday recap draft
+        run: >
+          node src/cli.js monday
+          ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+          ${{ github.event.inputs.now != '' && format('--now={0}', github.event.inputs.now) || '' }}
+        continue-on-error: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+
+      - run: npm run build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      # Same reasoning as preview.yml's own commit step: admin-drafts.js
+      # only sees whatever was bundled at the last deploy.
+      - name: Commit updated data
+        run: |
+          git config user.name "monday-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "no data changes" || git commit -m "A Case of the Mondays draft"
+          git push
+
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}

@@ -12,6 +12,7 @@ import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
 import { generatePreview, listPreviews, setPreviewStatus } from './digest/preview-generate.js';
+import { generateMonday, listMondays, setMondayStatus } from './digest/monday-generate.js';
 import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './lib/roster.js';
 import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
@@ -19,6 +20,7 @@ import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
 import { fetchNfcEastStandings, saveStandingsCache } from './lib/standings.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
+import { fetchCollegeFootball, saveCollegeFootballCache } from './lib/collegefootball.js';
 import { updateLiveGame } from './digest/live-generate.js';
 import { isGameWindowActive } from './lib/gamewindow.js';
 
@@ -42,6 +44,7 @@ Commanders headline river
   npm run standings          refresh the cached NFC East standings (ESPN)
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
+  npm run college-football   refresh cached UVA result + notable ranked results (ESPN) for the Monday recap
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
   node src/cli.js gamecheck  print true/false: is a Commanders game in its live window right now
 
@@ -51,10 +54,15 @@ Commanders headline river
   npm run digest:approve -- <week>   mark a draft published — build then picks it up
   npm run digest:reject -- <week>    mark a draft rejected
 
-  npm run preview             write tomorrow's game preview draft, if a game is tomorrow (needs Ollama running)
+  npm run preview             write today's game preview draft, if a game is today (Bedrock/Claude)
   npm run preview:list        list every preview and its status
   npm run preview:approve -- <gameKey>   mark a preview published — build then picks it up
   npm run preview:reject -- <gameKey>    mark a preview rejected
+
+  npm run monday              write this week's "A Case of the Mondays" draft, if it's Monday (Bedrock/Claude)
+  npm run monday:list         list every Monday recap and its status
+  npm run monday:approve -- <key>   mark a recap published — build then picks it up
+  npm run monday:reject -- <key>    mark a recap rejected
 
 Flags
   --only=id,id               limit collect/doctor to specific source ids
@@ -338,6 +346,19 @@ async function main() {
       }
       break;
     }
+    case 'college-football': {
+      const cfb = await fetchCollegeFootball();
+      if (cfb) {
+        await saveCollegeFootballCache(cfb);
+        const last = cfb.uva.lastGame;
+        log.ok(
+          `college-football: cached — UVA ${last ? `${last.won ? 'beat' : 'lost to'} ${last.opponent} ${last.uvaScore}-${last.opponentScore}` : 'no recent game'}, ${cfb.notable.length} notable ranked result(s)`,
+        );
+      } else {
+        log.warn('college-football: fetch failed — leaving the existing cache in place');
+      }
+      break;
+    }
     case 'digest': {
       const sub = rest[0];
       if (sub === 'list') await digestList();
@@ -364,6 +385,23 @@ async function main() {
         const now = flags.now ? new Date(flags.now) : undefined;
         const record = await generatePreview({ force: !!flags.force, ...(now && { now }) });
         if (!record) log.info('preview: nothing to do');
+      }
+      break;
+    }
+    case 'monday': {
+      const sub = rest[0];
+      if (sub === 'list') {
+        const records = await listMondays();
+        if (!records.length) log.info('no Monday recaps yet — run `npm run monday`');
+        else console.table(records.map((r) => ({ key: r.key, title: r.title, status: r.status })));
+      } else if (sub === 'approve') await setMondayStatus(rest[1], 'published');
+      else if (sub === 'reject') await setMondayStatus(rest[1], 'rejected');
+      else {
+        // --now/--force exist for testing only, same reasoning as preview's
+        // own flags above.
+        const now = flags.now ? new Date(flags.now) : undefined;
+        const record = await generateMonday({ force: !!flags.force, ...(now && { now }) });
+        if (!record) log.info('monday: nothing to do');
       }
       break;
     }

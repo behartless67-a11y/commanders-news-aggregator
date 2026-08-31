@@ -73,9 +73,14 @@ function substanceWords(text) {
  * article text to a third party — both disallow AI crawlers by name in
  * robots.txt (see README, "Why local only"). The local-only weekly digest
  * passes nothing here and reads every source, same as always.
+ *
+ * `windowDays` exists for the Monday recap (see monday-generate.js), which
+ * wants "the weekend that just happened," not the digest's default rolling
+ * week — the same call reused with a tighter window rather than a parallel
+ * implementation.
  */
-export async function buildCorpus(now = Date.now(), { excludeSourceIds = [] } = {}) {
-  const cutoff = now - WINDOW_DAYS * 86400000;
+export async function buildCorpus(now = Date.now(), { excludeSourceIds = [], windowDays = WINDOW_DAYS } = {}) {
+  const cutoff = now - windowDays * 86400000;
   const excluded = new Set(excludeSourceIds);
   const dropped = [];
 

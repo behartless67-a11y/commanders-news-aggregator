@@ -12,7 +12,7 @@
  * for a dash the model chose not to use in the first place always reads
  * better than one substituted after the fact.
  */
-function stripEmDash(text) {
+export function stripEmDash(text) {
   if (!text) return text;
   let out = String(text).replace(/\s*—\s*/g, ', ');
   out = out
@@ -36,5 +36,14 @@ export function sanitizeDigest(digest) {
       body: stripEmDash(t.body),
     })),
     alsoNoted: (digest.alsoNoted || []).map((a) => ({ ...a, text: stripEmDash(a.text) })),
+  };
+}
+
+/** Same mechanical cleanup, for the paragraphs[] shape (Monday recap, originals) instead of threads[]. */
+export function sanitizeParagraphs(post) {
+  return {
+    ...post,
+    title: stripEmDash(post.title),
+    paragraphs: (post.paragraphs || []).map((p) => stripEmDash(p)),
   };
 }

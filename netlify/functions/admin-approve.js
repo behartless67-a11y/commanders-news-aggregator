@@ -26,12 +26,13 @@ export default async (req) => {
 
   const body = await req.json().catch(() => ({}));
   const key = String(body.key || '').trim();
-  const type = body.type === 'preview' ? 'preview' : 'weekly';
+  const DIR_BY_TYPE = { preview: 'previews', monday: 'mondays', weekly: 'digests' };
+  const type = DIR_BY_TYPE[body.type] ? body.type : 'weekly';
   if (!/^\d{4}-\d{2}-\d{2}$/.test(key)) {
     return new Response(JSON.stringify({ error: 'invalid key' }), { status: 400 });
   }
 
-  const dir = type === 'preview' ? 'previews' : 'digests';
+  const dir = DIR_BY_TYPE[type];
   const path = `data/${dir}/${key}.json`;
   const headers = {
     Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
