@@ -1,37 +1,4 @@
 {
-  "social-60e8bc32d793": {
-    "id": "social-60e8bc32d793",
-    "url": "https://x.com/JPFinlayNBCS/status/2090881950844109311",
-    "text": "First flight of football season means time for @PardonMyTake book",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-21T19:21:18.000Z",
-    "collectedAt": "2026-08-21T20:14:15.003Z"
-  },
-  "social-9faf1db8f11e": {
-    "id": "social-9faf1db8f11e",
-    "url": "https://x.com/john_keim/status/2090888078600606181",
-    "text": "A quick video with Jacory Croskey-Merritt on his thoughts on the offense and his pass catching. We took turns holding the mic. 196",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-21T19:45:39.000Z",
-    "collectedAt": "2026-08-21T20:14:16.253Z"
-  },
-  "social-dc6cfc7b7973": {
-    "id": "social-dc6cfc7b7973",
-    "url": "https://x.com/MySportsUpdate/status/2090878108882657369",
-    "text": "The #Commanders are undergoing a major defensive change with DC Daronte Jones, who comes from Brian Flores’ system in Minnesota. It’s a complex defense, but Jones is known as an excellent teacher: “Players have given him credit for making it sound simple.” ~ @tashanreed",
-    "handle": "MySportsUpdate",
-    "author": "Ari Meirov",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-21T19:06:02.000Z",
-    "collectedAt": "2026-08-21T20:14:19.318Z"
-  },
   "social-cbbc77c3e8c9": {
     "id": "social-cbbc77c3e8c9",
     "url": "https://x.com/Commanders/status/2090911054096159144",
@@ -7349,5 +7316,77 @@
     "images": [],
     "publishedAt": "2026-08-31T18:24:35.000Z",
     "collectedAt": "2026-08-31T18:46:36.951Z"
+  },
+  "social-92a2dd9f0494": {
+    "id": "social-92a2dd9f0494",
+    "url": "https://x.com/NickiJhabvala/status/2094517011799851086",
+    "text": "The 12 players the Commanders have signed so far to the practice squad. They have 5 more slots (Pole is set to fly out here tonight, per source): WR Jaden Bradley DT Byron Cowart CB Fred Davis II C/G Julian Good-Jones QB Sam Hartman RB Robert Henry Jr. OLB D.J. Johnson LB Ale",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:05:44.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
+  },
+  "social-b4536f9d41af": {
+    "id": "social-b4536f9d41af",
+    "url": "https://x.com/NickiJhabvala/status/2094516688754499901",
+    "text": "Dan Quinn said they're \"still working through where they're at at center.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:04:27.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
+  },
+  "social-ae252e9512d4": {
+    "id": "social-ae252e9512d4",
+    "url": "https://x.com/NickiJhabvala/status/2094516260994208191",
+    "text": "Adam Peters: \"Really pleased with where we are, how we competed in camp and where we ended up.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:02:45.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
+  },
+  "social-852bad773fb8": {
+    "id": "social-852bad773fb8",
+    "url": "https://x.com/NickiJhabvala/status/2094516166295245058",
+    "text": "Dan Quinn said Nick Allegretti, Marcus Mariota, Daron Payne and Ben Sinnott are among the players who will return to practice today.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:02:22.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
+  },
+  "social-12f290822f4a": {
+    "id": "social-12f290822f4a",
+    "url": "https://x.com/NickiJhabvala/status/2094510583882072346",
+    "text": "Former Chiefs T Esa Pole plans to sign to the Commanders practice squad, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T19:40:11.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
+  },
+  "social-edb157b13c22": {
+    "id": "social-edb157b13c22",
+    "url": "https://x.com/NickiJhabvala/status/2094490203683438935",
+    "text": "Commanders are signing RB Robert Henry Jr. to the practice squad as well, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T18:19:12.000Z",
+    "collectedAt": "2026-08-31T20:05:11.365Z"
   }
 }
