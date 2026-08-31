@@ -1,26 +1,4 @@
 {
-  "social-cbbc77c3e8c9": {
-    "id": "social-cbbc77c3e8c9",
-    "url": "https://x.com/Commanders/status/2090911054096159144",
-    "text": "*don't say it don't say it don't say it* business trip 🧳😎",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-21T21:16:57.000Z",
-    "collectedAt": "2026-08-21T22:13:11.071Z"
-  },
-  "social-bcf8967214f7": {
-    "id": "social-bcf8967214f7",
-    "url": "https://x.com/JPFinlayNBCS/status/2090903214241509771",
-    "text": "Said this on radio but nothing is official unless you tweet it - I do think we see Jayden for a series in Detroit. Things can always change but it was tracking that way.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-21T20:45:48.000Z",
-    "collectedAt": "2026-08-21T22:13:12.350Z"
-  },
   "social-66fd8d541d71": {
     "id": "social-66fd8d541d71",
     "url": "https://x.com/john_keim/status/2091135175295893572",
@@ -7548,5 +7526,53 @@
     "images": [],
     "publishedAt": "2026-08-31T20:02:22.000Z",
     "collectedAt": "2026-08-31T20:06:32.889Z"
+  },
+  "social-1fa6e08a2334": {
+    "id": "social-1fa6e08a2334",
+    "url": "https://x.com/NickiJhabvala/status/2094523291503329533",
+    "text": "Official now: LT Laremy Tunsil (triceps) and DT Johnny Newton (pec) are placed on IR, and Tuttle and Moreau are back.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:30:41.000Z",
+    "collectedAt": "2026-08-31T22:05:10.100Z"
+  },
+  "social-3cfeea7c0c5a": {
+    "id": "social-3cfeea7c0c5a",
+    "url": "https://x.com/NickiJhabvala/status/2094520825206489368",
+    "text": "DT Shy Tuttle is also re-signing to the Commanders' 53, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:20:53.000Z",
+    "collectedAt": "2026-08-31T22:05:10.100Z"
+  },
+  "social-61b7e523bbcf": {
+    "id": "social-61b7e523bbcf",
+    "url": "https://x.com/NickiJhabvala/status/2094519479833071872",
+    "text": "Dan Quinn confirmed CB Fabian Moreau is signing back to the 53.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:15:32.000Z",
+    "collectedAt": "2026-08-31T22:05:10.100Z"
+  },
+  "social-955c0ad2037f": {
+    "id": "social-955c0ad2037f",
+    "url": "https://x.com/NickiJhabvala/status/2094518307856531795",
+    "text": "Dan Quinn said Odafe Oweh is \"making a lot of progress\" but won't be practicing this week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T20:10:53.000Z",
+    "collectedAt": "2026-08-31T22:05:10.100Z"
   }
 }
