@@ -4,3 +4,23 @@
 
 [functions."admin-drafts"]
   included_files = ["data/digests/*.json", "data/previews/*.json", "data/mondays/*.json"]
+
+# Security headers applied to every response from the CDN.
+# None of these break the site — they only restrict what external parties
+# can do with it (embed it in iframes, inject scripts, etc.).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent the site from being embedded in an iframe on another domain
+    # (clickjacking protection).
+    X-Frame-Options = "SAMEORIGIN"
+    # Tell browsers not to sniff the content-type of responses.
+    X-Content-Type-Options = "nosniff"
+    # Don't send the full URL as a referrer when clicking outbound links —
+    # just the origin (theburgundywire.com), not the specific path.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Force HTTPS for 1 year for any browser that has visited before.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Permissions policy: disable features we never use so a compromised
+    # third-party script can't request them either.
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"

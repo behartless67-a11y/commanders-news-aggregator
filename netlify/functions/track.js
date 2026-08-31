@@ -164,6 +164,28 @@ function hourAndWeekday(date) {
 export default async (req, context) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
 
+  // Reject requests that didn't come from our own site. Checks the Origin
+  // header (set by browsers on cross-origin fetches) and falls back to
+  // Referer for older clients. Both are spoofable by a determined attacker,
+  // but they block the casual "curl this endpoint 10,000 times" scenario
+  // that would inflate the stats without this check. Absent headers (e.g.
+  // from a same-origin fetch on the page itself) are allowed through.
+  const origin = req.headers.get('origin');
+  const referer = req.headers.get('referer');
+  const host = req.headers.get('host') || '';
+  const allowed = ['theburgundywire.com', 'localhost'];
+  if (origin) {
+    const originHost = new URL(origin).hostname;
+    if (!allowed.some((h) => originHost === h || originHost.endsWith('.' + h))) {
+      return new Response('Forbidden', { status: 403 });
+    }
+  } else if (referer) {
+    const refHost = new URL(referer).hostname;
+    if (!allowed.some((h) => refHost === h || refHost.endsWith('.' + h))) {
+      return new Response('Forbidden', { status: 403 });
+    }
+  }
+
   const body = await req.json().catch(() => ({}));
   const store = getStore('site-stats');
 
