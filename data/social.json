@@ -1,15 +1,4 @@
 {
-  "social-64201b87ae49": {
-    "id": "social-64201b87ae49",
-    "url": "https://x.com/JPFinlayNBCS/status/2090834725661213113",
-    "text": "Scouting report on Amik Robertson from @DanMillerFox2@twitter.com : \"He's just tough as nails, great teammate, great guy to talk with. He's going to give you everything he's got. He's not a shutdown corner but he gives you so much versatility.\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-21T16:13:39.000Z",
-    "collectedAt": "2026-08-21T16:23:34.709Z"
-  },
   "social-8808a72b3079": {
     "id": "social-8808a72b3079",
     "url": "https://x.com/Commanders/status/2090865768313524369",
@@ -20,28 +9,6 @@
     "sourceKey": "@Commanders",
     "publishedAt": "2026-08-21T18:17:00.000Z",
     "collectedAt": "2026-08-21T18:22:21.000Z"
-  },
-  "social-fc8c8473deb4": {
-    "id": "social-fc8c8473deb4",
-    "url": "https://x.com/Commanders/status/2090846396777992458",
-    "text": "HC Dan Quinn took on the ALS Ice Bucket Challenge in support of @ChrisJohnson28@twitter.com , @SteveGleason@twitter.com , @timgreenbooks@twitter.com and everyone affected by ALS @AtlantaFalcons | @NFL",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-21T17:00:01.000Z",
-    "collectedAt": "2026-08-21T18:22:21.000Z"
-  },
-  "social-78b7b5dd01f9": {
-    "id": "social-78b7b5dd01f9",
-    "url": "https://x.com/tashanreed/status/2090846880666169470",
-    "text": "It's really not that deep lol",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Athletic",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-21T17:01:57.000Z",
-    "collectedAt": "2026-08-21T18:22:31.761Z"
   },
   "social-60e8bc32d793": {
     "id": "social-60e8bc32d793",
@@ -7090,5 +7057,41 @@
     ],
     "publishedAt": "2026-08-31T14:58:24.000Z",
     "collectedAt": "2026-08-31T16:06:52.288Z"
+  },
+  "social-e65438e3bd68": {
+    "id": "social-e65438e3bd68",
+    "url": "https://x.com/NickiJhabvala/status/2094486137775567077",
+    "text": "All of today's waiver claims:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T18:03:03.000Z",
+    "collectedAt": "2026-08-31T18:05:10.922Z"
+  },
+  "social-0c09dfb8c63d": {
+    "id": "social-0c09dfb8c63d",
+    "url": "https://x.com/NickiJhabvala/status/2094484212363510153",
+    "text": "The Commanders are signing WR Jaden Bradley to their practice squad, per source.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T17:55:24.000Z",
+    "collectedAt": "2026-08-31T18:05:10.922Z"
+  },
+  "social-d5354e7e2739": {
+    "id": "social-d5354e7e2739",
+    "url": "https://x.com/NickiJhabvala/status/2094483421003198610",
+    "text": "The Commanders did not claim anyone off waivers.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-08-31T17:52:15.000Z",
+    "collectedAt": "2026-08-31T18:05:10.922Z"
   }
 }
