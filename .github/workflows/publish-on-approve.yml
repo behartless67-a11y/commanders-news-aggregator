@@ -6,6 +6,7 @@ on:
     paths:
       - 'data/digests/**'
       - 'data/previews/**'
+      - 'data/mondays/**'
   workflow_dispatch: {}
 
 # Shared with nightly.yml/social.yml/roster-stats.yml — same push race, same fix.
