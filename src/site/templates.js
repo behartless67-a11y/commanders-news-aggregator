@@ -2587,7 +2587,7 @@ ${footer(sources, generatedAt)}
           '<p class="admin-chart-caption">All-time pageviews added up by day of the week.</p>'));
 
         tiles.push(tile('Most viewed pages', '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>'));
-        var blogPaths = (data.topPaths || []).filter(function (p) { return /^\/blog/.test(p.path); });
+        var blogPaths = (data.topPaths || []).filter(function (p) { return p.path && p.path.indexOf('/blog') === 0; });
         tiles.push(tile('Blog post traffic', blogPaths.length ? '<ul class="admin-path-list">' + rankedList(blogPaths, 'path') + '</ul>' : '<p class="page-intro" style="font-size:12.5px">No blog views recorded yet.</p>'));
         tiles.push(tile('Traffic sources', '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>'));
         tiles.push(tile('Outbound clicks by source', '<ul class="admin-path-list">' + rankedList(data.topOutbound, 'sourceName') + '</ul>'));
