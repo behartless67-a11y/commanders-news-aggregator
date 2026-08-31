@@ -1,15 +1,4 @@
 {
-  "social-8808a72b3079": {
-    "id": "social-8808a72b3079",
-    "url": "https://x.com/Commanders/status/2090865768313524369",
-    "text": "\"we all want to eat\" 😤 @TheTerry_25@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-21T18:17:00.000Z",
-    "collectedAt": "2026-08-21T18:22:21.000Z"
-  },
   "social-60e8bc32d793": {
     "id": "social-60e8bc32d793",
     "url": "https://x.com/JPFinlayNBCS/status/2090881950844109311",
@@ -7312,5 +7301,41 @@
     "images": [],
     "publishedAt": "2026-08-31T17:59:43.327Z",
     "collectedAt": "2026-08-31T18:06:47.657Z"
+  },
+  "social-a8217dd220cb": {
+    "id": "social-a8217dd220cb",
+    "url": "https://x.com/john_keim/status/2094491189961503114",
+    "text": "LB Ale Kaho headed to the Commanders' practice squad per source.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T18:23:08.000Z",
+    "collectedAt": "2026-08-31T18:25:31.631Z"
+  },
+  "social-d8fb197f5f05": {
+    "id": "social-d8fb197f5f05",
+    "url": "https://x.com/john_keim/status/2094490339507667356",
+    "text": "QB Sam Harrtman is signing to the Commanders practice squad, per source",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T18:19:45.000Z",
+    "collectedAt": "2026-08-31T18:25:31.631Z"
+  },
+  "social-6ce39c7f2e3b": {
+    "id": "social-6ce39c7f2e3b",
+    "url": "https://x.com/BenStandig/status/2094488040278257706",
+    "text": "The Commanders are signing NT Jeffrey M'ba to the practice squad, as @john_keim mentioned earlier.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-08-31T18:10:37.000Z",
+    "collectedAt": "2026-08-31T18:25:33.956Z"
   }
 }
