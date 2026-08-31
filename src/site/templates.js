@@ -4,7 +4,7 @@ import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
 
-const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Original', monday: 'A Case of the Mondays' };
+const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Blog', monday: 'Blog' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog', monday: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
@@ -993,7 +993,7 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
   const plug = record.plug ? `<p class="digest-para original-plug">${record.plug}</p>` : '';
   return `
     <article class="digest-post original-post">
-      <p class="original-badge-row"><span class="badge badge-blog">Original</span></p>
+      <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
       <p class="digest-week">${escapeHtml(formatDate(record.publishedAt))}</p>
 ${paragraphs}
@@ -2587,6 +2587,8 @@ ${footer(sources, generatedAt)}
           '<p class="admin-chart-caption">All-time pageviews added up by day of the week.</p>'));
 
         tiles.push(tile('Most viewed pages', '<ul class="admin-path-list">' + rankedList(data.topPaths, 'path') + '</ul>'));
+        var blogPaths = (data.topPaths || []).filter(function (p) { return /^\/blog/.test(p.path); });
+        tiles.push(tile('Blog post traffic', blogPaths.length ? '<ul class="admin-path-list">' + rankedList(blogPaths, 'path') + '</ul>' : '<p class="page-intro" style="font-size:12.5px">No blog views recorded yet.</p>'));
         tiles.push(tile('Traffic sources', '<ul class="admin-path-list">' + rankedList(data.topReferrers, 'referrer') + '</ul>'));
         tiles.push(tile('Outbound clicks by source', '<ul class="admin-path-list">' + rankedList(data.topOutbound, 'sourceName') + '</ul>'));
         tiles.push(tile('Browsers', '<ul class="admin-path-list">' + rankedList(data.topBrowsers, 'browser') + '</ul>'));
