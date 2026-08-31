@@ -176,7 +176,7 @@
   {
     "slug": "stefon-diggs",
     "name": "Stefon Diggs",
-    "jersey": "18",
+    "jersey": "3",
     "position": "WR",
     "espnId": "2976212",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png",
@@ -652,7 +652,7 @@
   {
     "slug": "javontae-jean-baptiste",
     "name": "Javontae Jean-Baptiste",
-    "jersey": "90",
+    "jersey": "41",
     "position": "LB",
     "espnId": "4361357",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361357.png",
@@ -1136,6 +1136,33 @@
     }
   },
   {
+    "slug": "curtis-jacobs",
+    "name": "Curtis Jacobs",
+    "jersey": "57",
+    "position": "LB",
+    "espnId": "4429097",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429097.png",
+    "stats": null
+  },
+  {
+    "slug": "jacoby-jones",
+    "name": "Jacoby Jones",
+    "jersey": "84",
+    "position": "WR",
+    "espnId": "5083297",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5083297.png",
+    "stats": null
+  },
+  {
+    "slug": "t-j-maguranyanga",
+    "name": "T.J. Maguranyanga",
+    "jersey": "59",
+    "position": "DE",
+    "espnId": "5278092",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5278092.png",
+    "stats": null
+  },
+  {
     "slug": "jeremy-mcnichols",
     "name": "Jeremy McNichols",
     "jersey": "26",
@@ -1159,6 +1186,15 @@
         }
       ]
     }
+  },
+  {
+    "slug": "quentin-moore",
+    "name": "Quentin Moore",
+    "jersey": "40",
+    "position": "TE",
+    "espnId": "4875350",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4875350.png",
+    "stats": null
   },
   {
     "slug": "malik-spencer",
