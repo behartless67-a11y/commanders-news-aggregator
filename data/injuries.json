@@ -51,7 +51,7 @@
   {
     "name": "Jeremy McNichols",
     "position": "RB",
-    "status": "Questionable",
+    "status": "IR",
     "bodyPart": "Quadriceps",
     "notes": null
   },
@@ -149,8 +149,8 @@
   {
     "name": "Trey Amos",
     "position": "DB",
-    "status": "Questionable",
+    "status": "IR",
     "bodyPart": "Ankle",
-    "notes": null
+    "notes": "Sprain"
   }
 ]
