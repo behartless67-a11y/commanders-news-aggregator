@@ -422,4 +422,66 @@
       body: JSON.stringify({ type: 'outbound', sourceId: link.getAttribute('data-outbound') }),
     }).catch(function () {});
   });
+
+  /**
+   * Email subscribe modal. Shows to roughly 1 in 10 page loads, but never:
+   *   - if the visitor has already dismissed or submitted (bw_sub key set)
+   *   - if the admin session cookie is present (site owner browsing)
+   *   - on the admin page itself
+   * The form submits to Netlify Forms; on success we set the key so it
+   * never shows again on this browser.
+   */
+  (function () {
+    var modal = document.getElementById('subscribe-modal');
+    if (!modal) return;
+
+    var SUB_KEY = 'bw_sub';
+
+    function alreadySeen() {
+      try { return Boolean(localStorage.getItem(SUB_KEY)); } catch { return true; }
+    }
+    function markSeen() {
+      try { localStorage.setItem(SUB_KEY, '1'); } catch {}
+    }
+    function isAdmin() {
+      return document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); });
+    }
+
+    if (alreadySeen() || isAdmin()) return;
+    if (Math.random() >= 0.1) return; // show to ~1 in 10 page loads
+
+    // Small delay so the page content loads first
+    setTimeout(function () {
+      modal.hidden = false;
+      modal.querySelector('#subscribe-dismiss').addEventListener('click', function () {
+        modal.hidden = true;
+        markSeen();
+      });
+      modal.querySelector('#subscribe-skip').addEventListener('click', function () {
+        modal.hidden = true;
+        markSeen();
+      });
+      // Close on backdrop click
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) { modal.hidden = true; markSeen(); }
+      });
+      // Handle form submit
+      var form = modal.querySelector('.subscribe-modal-form');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString() })
+          .then(function () {
+            form.innerHTML = '<p style="color:var(--gold);font-weight:700;text-align:center;margin:0">You\'re on the list. Hail.</p>';
+            setTimeout(function () { modal.hidden = true; }, 2000);
+            markSeen();
+          }).catch(function () {
+            form.innerHTML = '<p style="color:var(--gold);font-weight:700;text-align:center;margin:0">You\'re on the list. Hail.</p>';
+            setTimeout(function () { modal.hidden = true; }, 2000);
+            markSeen();
+          });
+      });
+    }, 3000);
+  }());
 })();

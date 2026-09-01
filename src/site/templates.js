@@ -3003,6 +3003,25 @@ ${footer(sources, generatedAt)}
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
 
+<div class="subscribe-modal" id="subscribe-modal" hidden aria-modal="true" role="dialog" aria-labelledby="subscribe-heading">
+  <div class="subscribe-modal-card">
+    <button class="subscribe-modal-close" id="subscribe-dismiss" aria-label="Close">&times;</button>
+    <img class="subscribe-modal-logo" src="logo.png" alt="The Burgundy Wire" />
+    <p class="subscribe-modal-eyebrow">One more thing</p>
+    <h2 class="subscribe-modal-heading" id="subscribe-heading">The Weekly Recap. In Your Inbox. No algorithms deciding what you see.</h2>
+    <p class="subscribe-modal-body">Once a week, a real Commanders fan (me) writes up the week's biggest storylines. The injuries that are keeping me up at night, the games I'm irrationally optimistic about, and the decades of earned trauma that color all of it. The thoughts are mine. The grammar? That's Claude's problem. Think of it as the group chat you wish you were in, cleaned up just enough to not embarrass anyone.</p>
+    <p class="subscribe-modal-body">Weekly game blog. Occasional unhinged season predictions. Zero obligation to be professional about any of it.</p>
+    <p class="subscribe-modal-fine">No spam. No ads. One fan, one AI, and way too many feelings about this team.</p>
+    <form class="subscribe-modal-form" name="email-subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="email-subscribe" />
+      <input type="hidden" name="bot-field" />
+      <input class="subscribe-modal-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+      <button class="subscribe-modal-submit" type="submit">Put me on the list</button>
+    </form>
+    <button class="subscribe-modal-skip" id="subscribe-skip">I'm already emotionally compromised enough</button>
+  </div>
+</div>
+
 <script src="site.js" defer></script>
 </body>
 </html>`;
