@@ -2453,6 +2453,11 @@ ${header('admin.html', false, false)}
         <h2>Blog drafts</h2>
         <div id="admin-drafts"><p class="page-intro">Loading…</p></div>
       </section>
+
+      <section class="admin-section">
+        <h2>Newsletter</h2>
+        <div id="admin-newsletter"><p class="page-intro">Loading…</p></div>
+      </section>
     </div>
   </div>
 </main>
@@ -2474,11 +2479,58 @@ ${footer(sources, generatedAt)}
     });
   }
 
+  var newsletterEl = document.getElementById('admin-newsletter');
+
   function showDashboard() {
     form.hidden = true;
     dashboard.hidden = false;
     loadStats();
     loadDrafts();
+    loadNewsletter();
+  }
+
+  function loadNewsletter() {
+    fetch('/.netlify/functions/newsletter-list', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        var emailList = data.emails.length
+          ? '<ul class="admin-path-list" style="margin:8px 0 16px">' + data.emails.map(function (e) { return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>'
+          : '<p class="page-intro" style="margin:8px 0 16px">No subscribers yet.</p>';
+        newsletterEl.innerHTML = '<p class="page-intro"><strong style="color:var(--gold)">' + data.count + '</strong> subscriber' + (data.count === 1 ? '' : 's') + '</p>' +
+          emailList +
+          '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">' +
+          '<input id="nl-subject" class="contact-input" type="text" placeholder="Email subject line" style="flex:1;min-width:200px" />' +
+          '</div>' +
+          '<textarea id="nl-body" class="contact-input" rows="6" placeholder="Email body HTML (paragraphs, links, etc.)" style="width:100%;box-sizing:border-box;margin-bottom:12px;font-family:monospace;font-size:13px"></textarea>' +
+          '<button id="nl-send" class="roster-more" type="button">Send to all subscribers</button>' +
+          '<p id="nl-result" class="page-intro" hidden style="color:var(--gold);margin-top:8px"></p>';
+
+        document.getElementById('nl-send').addEventListener('click', function () {
+          var subject = document.getElementById('nl-subject').value.trim();
+          var body = document.getElementById('nl-body').value.trim();
+          var result = document.getElementById('nl-result');
+          if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
+          var btn = document.getElementById('nl-send');
+          btn.disabled = true; btn.textContent = 'Sending…';
+          fetch('/.netlify/functions/newsletter-send', {
+            method: 'POST', credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ subject: subject, body: body }),
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+              result.textContent = 'Sent ' + d.sent + (d.failed ? ', ' + d.failed + ' failed.' : '.');
+              result.hidden = false;
+              btn.disabled = false; btn.textContent = 'Send to all subscribers';
+            })
+            .catch(function () {
+              result.textContent = 'Something went wrong.';
+              result.hidden = false;
+              btn.disabled = false; btn.textContent = 'Send to all subscribers';
+            });
+        });
+      })
+      .catch(function () { newsletterEl.innerHTML = '<p class="page-intro">Could not load subscribers.</p>'; });
   }
 
   // Shared by every "top N" tile — same <li>label <strong>count</strong>
