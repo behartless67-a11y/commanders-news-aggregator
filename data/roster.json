@@ -364,6 +364,24 @@
     "stats": null
   },
   {
+    "slug": "esa-pole",
+    "name": "Esa Pole",
+    "jersey": "",
+    "position": "OT",
+    "espnId": "5153070",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5153070.png",
+    "stats": null
+  },
+  {
+    "slug": "joshua-simon",
+    "name": "Joshua Simon",
+    "jersey": "",
+    "position": "TE",
+    "espnId": "4430482",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430482.png",
+    "stats": null
+  },
+  {
     "slug": "ben-sinnott",
     "name": "Ben Sinnott",
     "jersey": "82",
@@ -404,6 +422,15 @@
     "position": "OT",
     "espnId": "3051890",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3051890.png",
+    "stats": null
+  },
+  {
+    "slug": "jack-westover",
+    "name": "Jack Westover",
+    "jersey": "",
+    "position": "TE",
+    "espnId": "4361100",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361100.png",
     "stats": null
   },
   {
@@ -1040,6 +1067,15 @@
     "position": "LB",
     "espnId": "5081807",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081807.png",
+    "stats": null
+  },
+  {
+    "slug": "isaac-yiadom",
+    "name": "Isaac Yiadom",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "3122797",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
     "stats": null
   },
   {

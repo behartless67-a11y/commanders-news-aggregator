@@ -7000,7 +7000,7 @@
     "text": "Honoring 9 and 51 at halftime of the home opener 💛 📰",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "Official",
+    "label": "",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/197/336/722/591/820/original/5251ec006cd2ab97.jpg"
@@ -7033,5 +7033,41 @@
     ],
     "publishedAt": "2026-09-01T20:02:00.000Z",
     "collectedAt": "2026-09-01T20:07:19.635Z"
+  },
+  "social-fd89749d2fee": {
+    "id": "social-fd89749d2fee",
+    "url": "https://x.com/JPFinlayNBCS/status/2094909101717307856",
+    "text": "Come hangout for Seahawks/Pats. Will do a live mailbag too. Gonna be a fun night",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-01T22:03:46.000Z",
+    "collectedAt": "2026-09-01T22:06:33.592Z"
+  },
+  "social-d34e49751250": {
+    "id": "social-d34e49751250",
+    "url": "https://x.com/john_keim/status/2094878988246175959",
+    "text": "The Commanders signed CB Terrell Smith to the practice squad. That’s now 17 on the PS.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-01T20:04:06.000Z",
+    "collectedAt": "2026-09-01T22:06:34.966Z"
+  },
+  "social-1a63bd50a06d": {
+    "id": "social-1a63bd50a06d",
+    "url": "https://x.com/tashanreed/status/2094879986578526249",
+    "text": "That'll do it for the #Commanders practice squad:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-01T20:08:04.000Z",
+    "collectedAt": "2026-09-01T22:06:37.716Z"
   }
 }
