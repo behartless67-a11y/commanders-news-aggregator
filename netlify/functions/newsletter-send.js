@@ -23,9 +23,15 @@ function buildHtml(subject, body, email) {
 <style>
   body { margin: 0; padding: 0; background: #14100f; font-family: 'Helvetica Neue', Arial, sans-serif; }
   .wrap { max-width: 600px; margin: 0 auto; background: #1a1414; }
-  .header { background: #3c0d0d; padding: 28px 32px; text-align: center; border-bottom: 3px solid #FFB612; }
-  .header img { height: 70px; width: auto; }
-  .header p { color: #a89f9b; font-size: 12px; margin: 8px 0 0; letter-spacing: 0.1em; text-transform: uppercase; }
+  .header {
+    background: linear-gradient(160deg, rgba(90,20,20,0.55) 0%, rgba(20,16,15,0.92) 100%), #14100f;
+    padding: 36px 32px 28px;
+    text-align: center;
+    border-bottom: 3px solid #FFB612;
+  }
+  .header img { height: 90px; width: auto; filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.9)); }
+  .header-stars { font-size: 16px; margin: 8px 0 4px; letter-spacing: 6px; }
+  .header p { color: #a89f9b; font-size: 11px; margin: 4px 0 0; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
   .body { padding: 32px; color: #efe9e4; font-size: 15px; line-height: 1.65; }
   .body h1 { color: #FFB612; font-size: 22px; margin: 0 0 20px; line-height: 1.3; }
   .body p { margin: 0 0 16px; color: #efe9e4; }
@@ -39,7 +45,8 @@ function buildHtml(subject, body, email) {
 <div class="wrap">
   <div class="header">
     <img src="${SITE_URL}/logo.png" alt="The Burgundy Wire" />
-    <p>Washington Commanders news and opinions</p>
+    <div class="header-stars">&#9733; &#9733; &#9733;</div>
+    <p>Sports &middot; News &middot; DC</p>
   </div>
   <div class="body">
     ${body}
@@ -66,9 +73,20 @@ export default async (req) => {
     return new Response(JSON.stringify({ error: 'RESEND_API_KEY not configured' }), { status: 501 });
   }
 
-  const { subject, body } = await req.json().catch(() => ({}));
+  const { subject, body, testOnly } = await req.json().catch(() => ({}));
   if (!subject || !body) {
     return new Response(JSON.stringify({ error: 'subject and body required' }), { status: 400 });
+  }
+
+  // Test mode: send only to the site owner
+  if (testOnly) {
+    const TEST_EMAIL = process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu';
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ from: FROM, to: TEST_EMAIL, subject: `[TEST] ${subject}`, html: buildHtml(subject, body, TEST_EMAIL) }),
+    });
+    return new Response(JSON.stringify({ sent: res.ok ? 1 : 0, test: true }), { headers: { 'Content-Type': 'application/json' } });
   }
 
   const store = getStore('subscribers');

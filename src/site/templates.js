@@ -2502,7 +2502,10 @@ ${footer(sources, generatedAt)}
           '<input id="nl-subject" class="contact-input" type="text" placeholder="Email subject line" style="flex:1;min-width:200px" />' +
           '</div>' +
           '<textarea id="nl-body" class="contact-input" rows="6" placeholder="Email body HTML (paragraphs, links, etc.)" style="width:100%;box-sizing:border-box;margin-bottom:12px;font-family:monospace;font-size:13px"></textarea>' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+          '<button id="nl-test" class="roster-more" type="button" style="background:var(--surface-2);border:1px solid var(--border)">Send test to me</button>' +
           '<button id="nl-send" class="roster-more" type="button">Send to all subscribers</button>' +
+          '</div>' +
           '<p id="nl-result" class="page-intro" hidden style="color:var(--gold);margin-top:8px"></p>';
 
         document.getElementById('nl-send').addEventListener('click', function () {
@@ -2510,6 +2513,31 @@ ${footer(sources, generatedAt)}
           var body = document.getElementById('nl-body').value.trim();
           var result = document.getElementById('nl-result');
           if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
+        document.getElementById('nl-test').addEventListener('click', function () {
+          var subject = document.getElementById('nl-subject').value.trim();
+          var body = document.getElementById('nl-body').value.trim();
+          var result = document.getElementById('nl-result');
+          if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
+          var btn = document.getElementById('nl-test');
+          btn.disabled = true; btn.textContent = 'Sending…';
+          fetch('/.netlify/functions/newsletter-send', {
+            method: 'POST', credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ subject: subject, body: body, testOnly: true }),
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+              result.textContent = d.sent ? 'Test sent to bh4hb@virginia.edu!' : (d.error || 'Something went wrong.');
+              result.hidden = false;
+              btn.disabled = false; btn.textContent = 'Send test to me';
+            })
+            .catch(function () {
+              result.textContent = 'Something went wrong.';
+              result.hidden = false;
+              btn.disabled = false; btn.textContent = 'Send test to me';
+            });
+        });
+
           var btn = document.getElementById('nl-send');
           btn.disabled = true; btn.textContent = 'Sending…';
           fetch('/.netlify/functions/newsletter-send', {
