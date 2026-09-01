@@ -424,6 +424,34 @@
   });
 
   /**
+   * Hail Mail floating bar. Shows after 2 seconds on every page load, as
+   * long as the visitor hasn't subscribed or dismissed it (or is the admin).
+   * Tapping "Sign me up" opens the subscribe modal; X permanently dismisses.
+   */
+  (function () {
+    var bar = document.getElementById('hail-mail-bar');
+    if (!bar) return;
+    var BAR_KEY = 'bw_bar_dismissed';
+    function dismissed() { try { return Boolean(localStorage.getItem(BAR_KEY)); } catch { return true; } }
+    function dismiss() { try { localStorage.setItem(BAR_KEY, '1'); } catch {} }
+    function isAdmin() { return document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); }); }
+    function subscribed() { try { return Boolean(localStorage.getItem('bw_sub')); } catch { return false; } }
+    if (dismissed() || subscribed() || isAdmin()) return;
+    setTimeout(function () {
+      bar.hidden = false;
+      document.getElementById('hail-mail-bar-open').addEventListener('click', function () {
+        bar.hidden = true;
+        var modal = document.getElementById('subscribe-modal');
+        if (modal) { modal.hidden = false; }
+      });
+      document.getElementById('hail-mail-bar-close').addEventListener('click', function () {
+        bar.hidden = true;
+        dismiss();
+      });
+    }, 2000);
+  }());
+
+  /**
    * Email subscribe modal. Shows to roughly 1 in 10 page loads, but never:
    *   - if the visitor has already dismissed or submitted (bw_sub key set)
    *   - if the admin session cookie is present (site owner browsing)
@@ -448,7 +476,13 @@
     }
 
     if (alreadySeen() || isAdmin()) return;
-    if (Math.random() >= 0.1) return; // show to ~1 in 10 page loads
+
+    // Show on every 10th visit rather than randomly — feels intentional,
+    // not annoying, and gives regulars a break between prompts.
+    var VISIT_KEY = 'bw_visits';
+    var visits;
+    try { visits = (Number(localStorage.getItem(VISIT_KEY)) || 0) + 1; localStorage.setItem(VISIT_KEY, String(visits)); } catch { visits = 1; }
+    if (visits % 10 !== 0) return;
 
     // Small delay so the page content loads first
     setTimeout(function () {

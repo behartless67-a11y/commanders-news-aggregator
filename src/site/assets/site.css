@@ -3588,3 +3588,65 @@ body.tv-page{
   .subscribe-modal-form{ flex-direction: column; }
   .subscribe-modal-card{ padding: 24px 20px; }
 }
+
+/* ---------- Hail Mail floating bar ---------- */
+.hail-mail-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--burgundy-800);
+  border-top: 2px solid var(--gold);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 998;
+  flex-wrap: wrap;
+}
+
+.hail-mail-bar[hidden]{ display: none; }
+
+.hail-mail-bar-text{
+  flex: 1;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  min-width: 200px;
+}
+
+.hail-mail-bar-text strong{
+  color: var(--gold);
+}
+
+.hail-mail-bar-btn{
+  background: var(--gold);
+  color: #0a0807;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hail-mail-bar-btn:hover{ background: var(--gold-dim); }
+
+.hail-mail-bar-close{
+  background: none;
+  border: none;
+  color: var(--text-faint);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.hail-mail-bar-close:hover{ color: var(--text); }
+
+@media (max-width: 480px){
+  .hail-mail-bar{ padding: 10px 16px; gap: 10px; }
+  .hail-mail-bar-text{ font-size: 12.5px; }
+}

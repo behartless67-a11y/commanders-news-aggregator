@@ -3091,6 +3091,12 @@ ${footer(sources, generatedAt)}
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
 
+<div class="hail-mail-bar" id="hail-mail-bar" hidden>
+  <span class="hail-mail-bar-text">Get <strong>Hail Mail</strong> in your inbox. The weekly newsletter for Commanders fans who feel too much.</span>
+  <button class="hail-mail-bar-btn" id="hail-mail-bar-open">Sign me up</button>
+  <button class="hail-mail-bar-close" id="hail-mail-bar-close" aria-label="Dismiss">&times;</button>
+</div>
+
 <div class="subscribe-modal" id="subscribe-modal" hidden aria-modal="true" role="dialog" aria-labelledby="subscribe-heading">
   <div class="subscribe-modal-card">
     <button class="subscribe-modal-close" id="subscribe-dismiss" aria-label="Close">&times;</button>
