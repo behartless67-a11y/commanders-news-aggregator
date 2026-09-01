@@ -1142,7 +1142,23 @@
     "position": "LB",
     "espnId": "4429097",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429097.png",
-    "stats": null
+    "stats": {
+      "season": 2024,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "4"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "jacoby-jones",
@@ -1151,7 +1167,23 @@
     "position": "WR",
     "espnId": "5083297",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5083297.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "1"
+        },
+        {
+          "label": "YDS",
+          "value": "25"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "t-j-maguranyanga",
@@ -1160,7 +1192,23 @@
     "position": "DE",
     "espnId": "5278092",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5278092.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "1"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "jeremy-mcnichols",
@@ -1246,7 +1294,23 @@
     "position": "DT",
     "espnId": "3916922",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
-    "stats": null
+    "stats": {
+      "season": 2024,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "26"
+        },
+        {
+          "label": "SACK",
+          "value": "2.5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "fred-davis-ii",
@@ -1300,7 +1364,23 @@
     "position": "LB",
     "espnId": "4361090",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361090.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "4"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "jeffrey-m-ba",
@@ -1318,7 +1398,23 @@
     "position": "RB",
     "espnId": "4421446",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4421446.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "3"
+        },
+        {
+          "label": "YDS",
+          "value": "4"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "darius-rush",
@@ -1327,7 +1423,23 @@
     "position": "CB",
     "espnId": "4362858",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362858.png",
-    "stats": null
+    "stats": {
+      "season": 2023,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "3"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "trent-scott",

@@ -4,6 +4,14 @@ import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
 
+// Every Blog-tab post type (digest, preview, original, Monday recap) shares
+// this one label/class — 'blog'/'original'/'monday' stay distinct as
+// `category` values (blogRiverItems() still tags each type separately, in
+// case anything else ever needs to tell them apart), but a reader on the
+// river only ever needs to know "this is one of the site's own posts," not
+// which of four flavors. Fixed 2026-08-31 after the Monday recap's full-
+// phrase badge ("A Case of the Mondays") sat visibly wider than every other
+// terse, 1-2-word badge next to it in the same river.
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Blog', monday: 'Blog' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog', monday: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
@@ -1014,7 +1022,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
   const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
   return `
     <article class="digest-post monday-post">
-      <p class="original-badge-row"><span class="badge badge-blog">A Case of the Mondays</span></p>
+      <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
 ${paragraphs}
     </article>`;
