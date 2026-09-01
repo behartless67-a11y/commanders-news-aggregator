@@ -7385,7 +7385,7 @@
     "text": "it's official: Stef is staying in 3",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/191/667/485/211/470/original/ced72be051cac7c6.jpg"
@@ -7972,5 +7972,31 @@
     ],
     "publishedAt": "2026-08-31T22:44:39.000Z",
     "collectedAt": "2026-08-31T23:30:00.776Z"
+  },
+  "social-a21c03fa12d6": {
+    "id": "social-a21c03fa12d6",
+    "url": "https://x.com/AdamSchefter/status/2094568199874322820",
+    "text": "More about the Cowboys waiving QB Joe Milton III and naming Sam Howell their backup QB, via @toddarcher : 42/cowboys-waive-joe-milton-iii-name-sam-howell-backup-qb",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T23:29:08.000Z",
+    "collectedAt": "2026-09-01T00:06:36.681Z"
+  },
+  "social-9159016a706d": {
+    "id": "social-9159016a706d",
+    "url": "https://x.com/3DownNation/status/2094576965579600034",
+    "text": "Commanders add former CFL player Julian Good-Jones to practice roster manders-add-former-cfl-player-julian-good-jones-to-practice-roster/ #Commanders #Washington #NFL #Stamps #CFL",
+    "handle": "3DownNation",
+    "author": "3DownNation",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/192/860/773/829/615/original/95b573b50b9acf4d.png"
+    ],
+    "publishedAt": "2026-09-01T00:03:58.000Z",
+    "collectedAt": "2026-09-01T00:06:51.002Z"
   }
 }
