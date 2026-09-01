@@ -1,26 +1,4 @@
 {
-  "social-b292b3c6678e": {
-    "id": "social-b292b3c6678e",
-    "url": "https://x.com/BenStandig/status/2091164889066639711",
-    "text": "Stefon Diggs is wearing No. 3 today. This is NOT his official number TBD until final cuts.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "The Athletic",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-22T14:05:36.000Z",
-    "collectedAt": "2026-08-22T14:11:55.164Z"
-  },
-  "social-0d733eb701fb": {
-    "id": "social-0d733eb701fb",
-    "url": "https://x.com/tashanreed/status/2091164809744007269",
-    "text": "The #Commanders inactive vs. the Lions: QB Marcus Mariota, RBs Jacory Croskey-Merritt, Rachaad White & Jeremy McNichols, CB Trey Amos, OLBs Odafe Oweh & K'Lavon Chaisson, LB Jordan Magee, C Nick Allegretti, LT Laremy Tunsil, DEs Dorance Armstrong & Deatrich Wise & DTs Daron Payne, Jer'Zhan Newton & Tim Settle.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-22T14:05:17.000Z",
-    "collectedAt": "2026-08-22T14:11:56.590Z"
-  },
   "social-b80de13e9666": {
     "id": "social-b80de13e9666",
     "url": "https://x.com/Commanders/status/2091196433357521128",
@@ -7991,5 +7969,73 @@
     "images": [],
     "publishedAt": "2026-09-01T12:26:43.000Z",
     "collectedAt": "2026-09-01T14:05:11.410Z"
+  },
+  "social-e626b8c94965": {
+    "id": "social-e626b8c94965",
+    "url": "https://x.com/Commanders/status/2094787444902330757",
+    "text": "LIVE: Assistant GM Lance Newmark speaks to the media GL",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-01T14:00:20.000Z",
+    "collectedAt": "2026-09-01T14:06:31.747Z"
+  },
+  "social-1f3545d412ae": {
+    "id": "social-1f3545d412ae",
+    "url": "https://x.com/Commanders/status/2094787360626246035",
+    "text": "We have T Esa Pole, TE Joshua Simon, TE Jack Westover and CB Isaac Yiadom to the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/196/153/073/713/492/original/e65b26ec092326d1.jpg"
+    ],
+    "publishedAt": "2026-09-01T14:00:00.000Z",
+    "collectedAt": "2026-09-01T14:06:31.747Z"
+  },
+  "social-265363db080b": {
+    "id": "social-265363db080b",
+    "url": "https://x.com/JPFinlayNBCS/status/2094763453579718874",
+    "text": "Adam Peters knows some Commanders fans are concerned after a rough finish to preseason \"but there’s a lot of stuff that we’re doing here that maybe they don’t see.\" Confidence remains in Ashburn. READ: eters-doesnt-care-if-youre",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/195/775/236/421/714/original/4701081a22ddd944.jpg"
+    ],
+    "publishedAt": "2026-09-01T12:25:00.000Z",
+    "collectedAt": "2026-09-01T14:06:33.217Z"
+  },
+  "social-0c314bf08897": {
+    "id": "social-0c314bf08897",
+    "url": "https://x.com/BenStandig/status/2094766383254888702",
+    "text": "Link: commanders-say-theres-plenty-fans",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/195/817/001/400/645/original/11d9b6aa617d24b8.jpg"
+    ],
+    "publishedAt": "2026-09-01T12:36:39.000Z",
+    "collectedAt": "2026-09-01T14:06:35.977Z"
+  },
+  "social-ee2ef2e49466": {
+    "id": "social-ee2ef2e49466",
+    "url": "https://x.com/BenStandig/status/2094766044510409158",
+    "text": "The Commanders aren’t worried. A lot of their fans are. Adam Peters offered fair reasons for optimism after an ugly pre-season finish. But sometimes acknowledging the apprehension — and its roots — is more reassuring than explaining it away. Especially after 5-12. Link ⤵️",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/195/809/590/654/727/original/5afb2c17e89f5e40.jpg"
+    ],
+    "publishedAt": "2026-09-01T12:35:18.000Z",
+    "collectedAt": "2026-09-01T14:06:35.977Z"
   }
 }
