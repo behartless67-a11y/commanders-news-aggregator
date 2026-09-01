@@ -7998,5 +7998,45 @@
     ],
     "publishedAt": "2026-09-01T00:03:58.000Z",
     "collectedAt": "2026-09-01T00:06:51.002Z"
+  },
+  "social-a5d7bc74226e": {
+    "id": "social-a5d7bc74226e",
+    "url": "https://x.com/BenStandig/status/2094594538568360446",
+    "text": "Turns out the Commanders released four players on Sunday with injury designations. Sharing for those scoring at home.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/193/136/801/054/577/original/a795a936d9630d77.jpg"
+    ],
+    "publishedAt": "2026-09-01T01:13:48.000Z",
+    "collectedAt": "2026-09-01T02:06:28.509Z"
+  },
+  "social-840f483d2ac2": {
+    "id": "social-840f483d2ac2",
+    "url": "https://x.com/JPFinlayNBCS/status/2094578134406279592",
+    "text": "Adam Peters knows some fans are nervous, but he's convinced this Commanders team is ready to roll. READ: eters-doesnt-care-if-youre",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/192/881/811/477/469/original/c78b993c9e5e2169.jpg"
+    ],
+    "publishedAt": "2026-09-01T00:08:37.000Z",
+    "collectedAt": "2026-09-01T02:06:28.509Z"
+  },
+  "social-3e074b06c96c": {
+    "id": "social-3e074b06c96c",
+    "url": "https://x.com/john_keim/status/2094592286575276523",
+    "text": "On the OL, improved health updates; the mystery of both coordinators, corner play and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000787081018",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-01T01:04:51.000Z",
+    "collectedAt": "2026-09-01T02:06:29.926Z"
   }
 }

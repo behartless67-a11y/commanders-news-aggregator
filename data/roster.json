@@ -1229,5 +1229,113 @@
         }
       ]
     }
+  },
+  {
+    "slug": "jaden-bradley",
+    "name": "Jaden Bradley",
+    "jersey": "86",
+    "position": "WR",
+    "espnId": "4683111",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683111.png",
+    "stats": null
+  },
+  {
+    "slug": "byron-cowart",
+    "name": "Byron Cowart",
+    "jersey": "55",
+    "position": "DT",
+    "espnId": "3916922",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
+    "stats": null
+  },
+  {
+    "slug": "fred-davis-ii",
+    "name": "Fred Davis II",
+    "jersey": "38",
+    "position": "CB",
+    "espnId": "4686092",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4686092.png",
+    "stats": null
+  },
+  {
+    "slug": "julian-good-jones",
+    "name": "Julian Good-Jones",
+    "jersey": "61",
+    "position": "G",
+    "espnId": "3917949",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3917949.png",
+    "stats": null
+  },
+  {
+    "slug": "sam-hartman",
+    "name": "Sam Hartman",
+    "jersey": "15",
+    "position": "QB",
+    "espnId": "4361994",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361994.png",
+    "stats": null
+  },
+  {
+    "slug": "robert-henry-jr",
+    "name": "Robert Henry Jr.",
+    "jersey": "30",
+    "position": "RB",
+    "espnId": "5151317",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5151317.png",
+    "stats": null
+  },
+  {
+    "slug": "d-j-johnson",
+    "name": "D.J. Johnson",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "12803",
+    "photo": null,
+    "stats": null
+  },
+  {
+    "slug": "ale-kaho",
+    "name": "Ale Kaho",
+    "jersey": "51",
+    "position": "LB",
+    "espnId": "4361090",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361090.png",
+    "stats": null
+  },
+  {
+    "slug": "jeffrey-m-ba",
+    "name": "Jeffrey M'ba",
+    "jersey": "60",
+    "position": "DT",
+    "espnId": "5081056",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081056.png",
+    "stats": null
+  },
+  {
+    "slug": "craig-reynolds",
+    "name": "Craig Reynolds",
+    "jersey": "24",
+    "position": "RB",
+    "espnId": "4421446",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4421446.png",
+    "stats": null
+  },
+  {
+    "slug": "darius-rush",
+    "name": "Darius Rush",
+    "jersey": "29",
+    "position": "CB",
+    "espnId": "4362858",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362858.png",
+    "stats": null
+  },
+  {
+    "slug": "trent-scott",
+    "name": "Trent Scott",
+    "jersey": "73",
+    "position": "OT",
+    "espnId": "3123303",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
+    "stats": null
   }
 ]
