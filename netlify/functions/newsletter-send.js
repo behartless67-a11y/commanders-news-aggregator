@@ -22,7 +22,7 @@ function buildHtml(subject, body, email) {
 <title>${subject}</title>
 <style>
   body { margin: 0; padding: 0; background: #14100f; font-family: 'Helvetica Neue', Arial, sans-serif; }
-  .wrap { max-width: 600px; margin: 0 auto; background: #1a1414; }
+  .wrap { max-width: 680px; margin: 0 auto; background: #1a1414; width: 100%; }
   .header {
     background: linear-gradient(160deg, rgba(90,20,20,0.55) 0%, rgba(20,16,15,0.92) 100%), #14100f;
     padding: 36px 32px 28px;
