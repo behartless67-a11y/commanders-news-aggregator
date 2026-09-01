@@ -10,17 +10,6 @@
     "publishedAt": "2026-08-22T16:10:56.000Z",
     "collectedAt": "2026-08-22T16:12:02.112Z"
   },
-  "social-a815c98fe03b": {
-    "id": "social-a815c98fe03b",
-    "url": "https://x.com/Commanders/status/2091168972561330564",
-    "text": "Jayden Daniels plays football today",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-22T14:21:49.000Z",
-    "collectedAt": "2026-08-22T16:12:02.114Z"
-  },
   "social-5c9aebaf5f7a": {
     "id": "social-5c9aebaf5f7a",
     "url": "https://x.com/JPFinlayNBCS/status/2091196211386552730",
@@ -98,17 +87,6 @@
     "publishedAt": "2026-08-22T15:49:43.000Z",
     "collectedAt": "2026-08-22T16:12:03.273Z"
   },
-  "social-0625e4984b35": {
-    "id": "social-0625e4984b35",
-    "url": "https://x.com/JPFinlayNBCS/status/2091169330075521354",
-    "text": "Stefon Diggs getting ready for his first action in burgundy and gold",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-22T14:23:14.000Z",
-    "collectedAt": "2026-08-22T16:12:03.273Z"
-  },
   "social-7aadfe96d0f7": {
     "id": "social-7aadfe96d0f7",
     "url": "https://x.com/john_keim/status/2091196313052336385",
@@ -118,17 +96,6 @@
     "label": "ESPN",
     "sourceKey": "@john_keim",
     "publishedAt": "2026-08-22T16:10:28.000Z",
-    "collectedAt": "2026-08-22T16:12:05.000Z"
-  },
-  "social-a0c45655e1c0": {
-    "id": "social-a0c45655e1c0",
-    "url": "https://x.com/john_keim/status/2091165509131608090",
-    "text": "You will not see a lot of what they will do during the season. Bare bones game plan. As much about the “operation”;",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "publishedAt": "2026-08-22T14:08:04.000Z",
     "collectedAt": "2026-08-22T16:12:05.000Z"
   },
   "social-4434db2aa4a3": {
@@ -8037,5 +8004,53 @@
     ],
     "publishedAt": "2026-09-01T12:35:18.000Z",
     "collectedAt": "2026-09-01T14:06:35.977Z"
+  },
+  "social-88adfb02b78d": {
+    "id": "social-88adfb02b78d",
+    "url": "https://x.com/john_keim/status/2094791980022698317",
+    "text": "Washington signed 4 more to the practice squad today: T Esa Pole, TE Joshua Simon, TE Jack Westover and CB Isaac Yiadom. They now have 16 players on the PS.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-01T14:18:22.000Z",
+    "collectedAt": "2026-09-01T14:23:59.693Z"
+  },
+  "social-5ef14dd6dbe6": {
+    "id": "social-5ef14dd6dbe6",
+    "url": "https://x.com/BenStandig/status/2094791647322145026",
+    "text": "The Commanders add two tight ends to the PS at point where Ben Sinnott is dealing with an oblique injury. Lance Newmark says the additions are not related to the 53. Interesting that Cager isn't here as well. 🤷‍♂️",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-01T14:17:02.000Z",
+    "collectedAt": "2026-09-01T14:24:01.126Z"
+  },
+  "social-2eee185c1a34": {
+    "id": "social-2eee185c1a34",
+    "url": "https://x.com/BenStandig/status/2094787531409670470",
+    "text": "The Commanders have signed T Esa Pole, TE Joshua Simon, TE Jack Westover and CB Isaac Yiadom to the practice squad.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-01T14:00:41.000Z",
+    "collectedAt": "2026-09-01T14:24:01.126Z"
+  },
+  "social-9e7301d00d72": {
+    "id": "social-9e7301d00d72",
+    "url": "https://x.com/tashanreed/status/2094787945228099677",
+    "text": "The #Commanders have made the following additions to their practice squad, bringing them up to 16 players: - T Esa Pole - TE Joshua Simon - TE Jack Westover - CB Isaac Yiadom",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-01T14:02:20.000Z",
+    "collectedAt": "2026-09-01T14:24:02.668Z"
   }
 }
