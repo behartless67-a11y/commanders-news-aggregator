@@ -7385,7 +7385,7 @@
     "text": "it's official: Stef is staying in 3",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/191/667/485/211/470/original/ced72be051cac7c6.jpg"
@@ -7596,7 +7596,7 @@
     "text": "We have made the following roster moves: - Placed DT Jer’Zhan Newton and T Laremy Tunsil on the Reserve/Injured List - Re-signed CB Fabian Moreau and DT Shy Tuttle",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "Official",
+    "label": "",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/192/019/033/980/419/original/8285d8349ec46b0f.jpg"
@@ -7972,5 +7972,107 @@
     ],
     "publishedAt": "2026-08-31T22:44:39.000Z",
     "collectedAt": "2026-08-31T23:30:00.776Z"
+  },
+  "social-a21c03fa12d6": {
+    "id": "social-a21c03fa12d6",
+    "url": "https://x.com/AdamSchefter/status/2094568199874322820",
+    "text": "More about the Cowboys waiving QB Joe Milton III and naming Sam Howell their backup QB, via @toddarcher : 42/cowboys-waive-joe-milton-iii-name-sam-howell-backup-qb",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-08-31T23:29:08.000Z",
+    "collectedAt": "2026-09-01T00:06:36.681Z"
+  },
+  "social-9159016a706d": {
+    "id": "social-9159016a706d",
+    "url": "https://x.com/3DownNation/status/2094576965579600034",
+    "text": "Commanders add former CFL player Julian Good-Jones to practice roster manders-add-former-cfl-player-julian-good-jones-to-practice-roster/ #Commanders #Washington #NFL #Stamps #CFL",
+    "handle": "3DownNation",
+    "author": "3DownNation",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/192/860/773/829/615/original/95b573b50b9acf4d.png"
+    ],
+    "publishedAt": "2026-09-01T00:03:58.000Z",
+    "collectedAt": "2026-09-01T00:06:51.002Z"
+  },
+  "social-a5d7bc74226e": {
+    "id": "social-a5d7bc74226e",
+    "url": "https://x.com/BenStandig/status/2094594538568360446",
+    "text": "Turns out the Commanders released four players on Sunday with injury designations. Sharing for those scoring at home.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/193/136/801/054/577/original/a795a936d9630d77.jpg"
+    ],
+    "publishedAt": "2026-09-01T01:13:48.000Z",
+    "collectedAt": "2026-09-01T02:06:28.509Z"
+  },
+  "social-840f483d2ac2": {
+    "id": "social-840f483d2ac2",
+    "url": "https://x.com/JPFinlayNBCS/status/2094578134406279592",
+    "text": "Adam Peters knows some fans are nervous, but he's convinced this Commanders team is ready to roll. READ: eters-doesnt-care-if-youre",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/192/881/811/477/469/original/c78b993c9e5e2169.jpg"
+    ],
+    "publishedAt": "2026-09-01T00:08:37.000Z",
+    "collectedAt": "2026-09-01T02:06:28.509Z"
+  },
+  "social-3e074b06c96c": {
+    "id": "social-3e074b06c96c",
+    "url": "https://x.com/john_keim/status/2094592286575276523",
+    "text": "On the OL, improved health updates; the mystery of both coordinators, corner play and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000787081018",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-01T01:04:51.000Z",
+    "collectedAt": "2026-09-01T02:06:29.926Z"
+  },
+  "social-8efc6e1fbe90": {
+    "id": "social-8efc6e1fbe90",
+    "url": "https://x.com/JPFinlayNBCS/status/2094614237075140926",
+    "text": "Breaking down what was said and not said from Dan Quinn and Adam Peters cVkRnZr4L0",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-01T02:32:04.000Z",
+    "collectedAt": "2026-09-01T02:36:06.492Z"
+  },
+  "social-a995ab7f28b0": {
+    "id": "social-a995ab7f28b0",
+    "url": "https://x.com/JPFinlayNBCS/status/2094624728426127780",
+    "text": "Tiafoe gotta show some serious guts now. This damn Damm dude",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-01T03:13:46.000Z",
+    "collectedAt": "2026-09-01T03:35:50.441Z"
+  },
+  "social-0b4e62e4321d": {
+    "id": "social-0b4e62e4321d",
+    "url": "https://x.com/Orioles/status/2094651795238732079",
+    "text": "WHEN COWS FLY COLTON COWSER HOME RUN ROBBERY TO END IT!!",
+    "handle": "Orioles",
+    "author": "Baltimore Orioles",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-01T05:01:19.000Z",
+    "collectedAt": "2026-09-01T06:06:32.642Z"
   }
 }
