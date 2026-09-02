@@ -2442,6 +2442,36 @@ ${header('admin.html', false, false)}
 
     <div id="admin-dashboard" hidden>
       <section class="admin-section">
+        <h2>Quick links</h2>
+        <div class="admin-quick-links">
+          <a href="https://app.netlify.com/projects/commanders-news-aggregator" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">Netlify</span>
+            <span class="admin-quick-link-desc">Deploys, env vars, forms, functions</span>
+          </a>
+          <a href="https://github.com/behartless67-a11y/commanders-news-aggregator" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">GitHub</span>
+            <span class="admin-quick-link-desc">Source code, Actions, automated runs</span>
+          </a>
+          <a href="https://resend.com/emails" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">Resend</span>
+            <span class="admin-quick-link-desc">Email delivery logs and domain status</span>
+          </a>
+          <a href="https://search.google.com/search-console" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">Search Console</span>
+            <span class="admin-quick-link-desc">Google indexing, sitemap, search traffic</span>
+          </a>
+          <a href="https://github.com/behartless67-a11y/commanders-news-aggregator/actions" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">GitHub Actions</span>
+            <span class="admin-quick-link-desc">Scheduled collect, digest, nightly build</span>
+          </a>
+          <a href="https://app.netlify.com/projects/commanders-news-aggregator/forms" target="_blank" rel="noopener" class="admin-quick-link">
+            <span class="admin-quick-link-name">Form Submissions</span>
+            <span class="admin-quick-link-desc">Raw email signups captured by Netlify Forms</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="admin-section">
         <div class="admin-section-head">
           <h2>Traffic</h2>
           <button id="admin-logout" class="roster-more" type="button">Log out</button>
