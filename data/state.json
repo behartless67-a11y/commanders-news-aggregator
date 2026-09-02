@@ -1,6 +1,172 @@
 {
   "runs": [
     {
+      "at": "2026-09-02T10:06:50.996Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T10:06:31.319Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T10:05:11.118Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-09-02T08:23:40.631Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T08:23:20.600Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T08:06:55.324Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T08:06:32.266Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T08:05:10.290Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-09-02T06:45:45.120Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T06:06:54.395Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T06:06:32.608Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T06:05:10.415Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-09-02T04:06:49.828Z",
+      "stage": "social",
+      "added": 1,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T04:06:29.382Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T04:05:10.932Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 3,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-09-02T02:54:04.152Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T02:53:44.736Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T02:06:49.914Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T02:06:30.875Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T02:05:10.466Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 0,
+      "sessionExpired": false
+    },
+    {
+      "at": "2026-09-02T01:57:37.151Z",
+      "stage": "social",
+      "added": 2,
+      "pruned": 2
+    },
+    {
+      "at": "2026-09-02T00:06:53.541Z",
+      "stage": "social",
+      "added": 0,
+      "pruned": 0
+    },
+    {
+      "at": "2026-09-02T00:06:34.751Z",
+      "stage": "collect",
+      "sources": 12,
+      "added": 0,
+      "pruned": 0,
+      "dropped": 0
+    },
+    {
+      "at": "2026-09-02T00:05:11.029Z",
+      "stage": "social-browser",
+      "added": 0,
+      "pruned": 5,
+      "sessionExpired": false
+    },
+    {
       "at": "2026-09-01T22:23:03.499Z",
       "stage": "social",
       "added": 0,
@@ -245,172 +411,6 @@
       "stage": "collect",
       "sources": 12,
       "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-09-01T06:05:10.057Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-09-01T04:06:50.460Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-09-01T04:06:31.153Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-09-01T04:05:10.381Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-09-01T03:36:06.450Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-09-01T03:35:47.462Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 0,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-09-01T02:36:22.521Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-09-01T02:06:45.030Z",
-      "stage": "social",
-      "added": 3,
-      "pruned": 0
-    },
-    {
-      "at": "2026-09-01T02:06:25.772Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 1,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-09-01T02:05:10.353Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-09-01T00:06:52.143Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
-    },
-    {
-      "at": "2026-09-01T00:06:32.236Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 1,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-09-01T00:05:11.209Z",
-      "stage": "social-browser",
-      "added": 0,
-      "pruned": 0,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-08-31T23:37:24.286Z",
-      "stage": "social",
-      "added": 0,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-31T23:37:04.607Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 1,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-31T23:30:01.965Z",
-      "stage": "social",
-      "added": 2,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-31T22:06:44.602Z",
-      "stage": "social",
-      "added": 30,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-31T22:06:25.257Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 8,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-31T22:05:10.105Z",
-      "stage": "social-browser",
-      "added": 4,
-      "pruned": 2,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-08-31T20:06:45.505Z",
-      "stage": "social",
-      "added": 13,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-31T20:06:25.389Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 4,
-      "pruned": 0,
-      "dropped": 0
-    },
-    {
-      "at": "2026-08-31T20:05:11.370Z",
-      "stage": "social-browser",
-      "added": 6,
-      "pruned": 3,
-      "sessionExpired": false
-    },
-    {
-      "at": "2026-08-31T18:46:56.422Z",
-      "stage": "social",
-      "added": 1,
-      "pruned": 0
-    },
-    {
-      "at": "2026-08-31T18:46:30.005Z",
-      "stage": "collect",
-      "sources": 12,
-      "added": 1,
       "pruned": 0,
       "dropped": 0
     }
