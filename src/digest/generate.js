@@ -9,7 +9,8 @@ import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 
 const MODEL = process.env.DIGEST_MODEL || 'anthropic.claude-sonnet-5';
-const NOTIFY_EMAIL = process.env.DIGEST_NOTIFY_EMAIL || 'bh4hb@virginia.edu';
+// Send to both so UVA spam filters can't swallow the only copy.
+const NOTIFY_EMAILS = (process.env.DIGEST_NOTIFY_EMAIL || 'bh4hb@virginia.edu,behartless67@gmail.com').split(',').map(e => e.trim());
 const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
 
 async function notifyDraftReady(key, headline) {
@@ -19,7 +20,7 @@ async function notifyDraftReady(key, headline) {
     headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       from: 'The Burgundy Wire <newsletter@theburgundywire.com>',
-      to: NOTIFY_EMAIL,
+      to: NOTIFY_EMAILS,
       subject: `Digest draft ready to approve: ${key}`,
       html: `<p style="font-family:sans-serif;font-size:15px;color:#333">
         Your weekly digest draft is ready to review and approve.<br><br>
