@@ -416,15 +416,6 @@
     "stats": null
   },
   {
-    "slug": "laremy-tunsil",
-    "name": "Laremy Tunsil",
-    "jersey": "78",
-    "position": "OT",
-    "espnId": "3051890",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3051890.png",
-    "stats": null
-  },
-  {
     "slug": "jack-westover",
     "name": "Jack Westover",
     "jersey": "",
@@ -836,29 +827,13 @@
     }
   },
   {
-    "slug": "jer-zhan-newton",
-    "name": "Jer'Zhan Newton",
-    "jersey": "95",
-    "position": "DT",
-    "espnId": "4430560",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430560.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "38"
-        },
-        {
-          "label": "SACK",
-          "value": "5"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
+    "slug": "fabian-moreau",
+    "name": "Fabian Moreau",
+    "jersey": "30",
+    "position": "CB",
+    "espnId": "2971586",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2971586.png",
+    "stats": null
   },
   {
     "slug": "charles-omenihu",
@@ -1067,6 +1042,15 @@
     "position": "LB",
     "espnId": "5081807",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081807.png",
+    "stats": null
+  },
+  {
+    "slug": "shy-tuttle",
+    "name": "Shy Tuttle",
+    "jersey": "79",
+    "position": "DT",
+    "espnId": "3886601",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3886601.png",
     "stats": null
   },
   {
@@ -1281,12 +1265,46 @@
     "stats": null
   },
   {
+    "slug": "jer-zhan-newton",
+    "name": "Jer'Zhan Newton",
+    "jersey": "95",
+    "position": "DT",
+    "espnId": "4430560",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430560.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "38"
+        },
+        {
+          "label": "SACK",
+          "value": "5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "malik-spencer",
     "name": "Malik Spencer",
     "jersey": "36",
     "position": "S",
     "espnId": "4782664",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4782664.png",
+    "stats": null
+  },
+  {
+    "slug": "laremy-tunsil",
+    "name": "Laremy Tunsil",
+    "jersey": "78",
+    "position": "OT",
+    "espnId": "3051890",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3051890.png",
     "stats": null
   },
   {
