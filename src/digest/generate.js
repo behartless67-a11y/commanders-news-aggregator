@@ -9,6 +9,30 @@ import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 
 const MODEL = process.env.DIGEST_MODEL || 'anthropic.claude-sonnet-5';
+const NOTIFY_EMAIL = process.env.DIGEST_NOTIFY_EMAIL || 'bh4hb@virginia.edu';
+const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
+
+async function notifyDraftReady(key, headline) {
+  if (!process.env.RESEND_API_KEY) return;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      from: 'The Burgundy Wire <newsletter@theburgundywire.com>',
+      to: NOTIFY_EMAIL,
+      subject: `Digest draft ready to approve: ${key}`,
+      html: `<p style="font-family:sans-serif;font-size:15px;color:#333">
+        Your weekly digest draft is ready to review and approve.<br><br>
+        <strong>Week:</strong> ${key}<br>
+        <strong>Headline:</strong> ${headline || '(no headline)'}<br><br>
+        <a href="${SITE_URL}/admin.html" style="background:#5A1414;color:#FFB612;font-weight:700;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block">
+          Review and approve
+        </a><br><br>
+        <small style="color:#999">Once approved it goes live on the site and you can send Hail Mail from the admin panel.</small>
+      </p>`,
+    }),
+  });
+}
 
 // A February week can produce a handful of items. Declining to write about
 // almost nothing is the honest choice, not a padded post.
@@ -86,6 +110,8 @@ export async function generateDigest({ force = false, now = new Date() } = {}) {
         `digest: wrote draft ${key} (${attempt} attempt(s), ${outcome.warnings.length} warning(s)) — ` +
           `review with \`npm run digest:review -- ${key}\``,
       );
+      // Notify the site owner so they can approve remotely.
+      await notifyDraftReady(key, result.json.headline).catch(() => {});
       return record;
     }
     log.warn(`digest: attempt ${attempt} failed validation (${problems.length} problem(s)) — retrying`);
