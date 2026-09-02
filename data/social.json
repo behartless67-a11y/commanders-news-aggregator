@@ -7104,5 +7104,31 @@
     "images": [],
     "publishedAt": "2026-09-02T17:47:51.000Z",
     "collectedAt": "2026-09-02T18:06:40.220Z"
+  },
+  "social-0053d468f38b": {
+    "id": "social-0053d468f38b",
+    "url": "https://x.com/BenStandig/status/2095216150493761597",
+    "text": "Link: ben-sinnott-ate-his-way-into-becoming?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/202/855/915/290/689/original/22e902d49ad45243.jpg"
+    ],
+    "publishedAt": "2026-09-02T18:23:52.000Z",
+    "collectedAt": "2026-09-02T19:18:56.104Z"
+  },
+  "social-f11663337c41": {
+    "id": "social-f11663337c41",
+    "url": "https://x.com/BenStandig/status/2095216585468260373",
+    "text": "Link: ben-sinnott-ate-his-way-into-becoming?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-02T18:25:35.000Z",
+    "collectedAt": "2026-09-02T19:18:56.104Z"
   }
 }
