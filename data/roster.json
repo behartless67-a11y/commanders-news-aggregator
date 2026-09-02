@@ -364,24 +364,6 @@
     "stats": null
   },
   {
-    "slug": "esa-pole",
-    "name": "Esa Pole",
-    "jersey": "",
-    "position": "OT",
-    "espnId": "5153070",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5153070.png",
-    "stats": null
-  },
-  {
-    "slug": "joshua-simon",
-    "name": "Joshua Simon",
-    "jersey": "",
-    "position": "TE",
-    "espnId": "4430482",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430482.png",
-    "stats": null
-  },
-  {
     "slug": "ben-sinnott",
     "name": "Ben Sinnott",
     "jersey": "82",
@@ -413,15 +395,6 @@
     "position": "G",
     "espnId": "4605488",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4605488.png",
-    "stats": null
-  },
-  {
-    "slug": "jack-westover",
-    "name": "Jack Westover",
-    "jersey": "",
-    "position": "TE",
-    "espnId": "4361100",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361100.png",
     "stats": null
   },
   {
@@ -1054,15 +1027,6 @@
     "stats": null
   },
   {
-    "slug": "isaac-yiadom",
-    "name": "Isaac Yiadom",
-    "jersey": "",
-    "position": "CB",
-    "espnId": "3122797",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
-    "stats": null
-  },
-  {
     "slug": "tyler-ott",
     "name": "Tyler Ott",
     "jersey": "69",
@@ -1446,6 +1410,15 @@
     "stats": null
   },
   {
+    "slug": "esa-pole",
+    "name": "Esa Pole",
+    "jersey": "",
+    "position": "OT",
+    "espnId": "5153070",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5153070.png",
+    "stats": null
+  },
+  {
     "slug": "craig-reynolds",
     "name": "Craig Reynolds",
     "jersey": "24",
@@ -1502,6 +1475,42 @@
     "position": "OT",
     "espnId": "3123303",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
+    "stats": null
+  },
+  {
+    "slug": "joshua-simon",
+    "name": "Joshua Simon",
+    "jersey": "",
+    "position": "TE",
+    "espnId": "4430482",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430482.png",
+    "stats": null
+  },
+  {
+    "slug": "terell-smith",
+    "name": "Terell Smith",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "4360935",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4360935.png",
+    "stats": null
+  },
+  {
+    "slug": "jack-westover",
+    "name": "Jack Westover",
+    "jersey": "",
+    "position": "TE",
+    "espnId": "4361100",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361100.png",
+    "stats": null
+  },
+  {
+    "slug": "isaac-yiadom",
+    "name": "Isaac Yiadom",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "3122797",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
     "stats": null
   }
 ]
