@@ -29,7 +29,7 @@ function buildHtml(subject, body, email) {
     text-align: center;
     border-bottom: 3px solid #FFB612;
   }
-  .header img { height: 90px; width: auto; filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.9)); }
+  .header img { height: 60px; max-height: 60px; width: auto; max-width: 260px; filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.9)); }
   .header-stars { font-size: 16px; margin: 8px 0 4px; letter-spacing: 6px; }
   .header p { color: #a89f9b; font-size: 11px; margin: 4px 0 0; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
   .body { padding: 32px; color: #efe9e4; font-size: 15px; line-height: 1.65; }
