@@ -1,37 +1,4 @@
 {
-  "social-a9da783ee394": {
-    "id": "social-a9da783ee394",
-    "url": "https://x.com/Commanders/status/2091559841794084953",
-    "text": "Remembering Sonny Jurgensen on what would have been his 92nd birthday 🤍",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "publishedAt": "2026-08-23T16:15:00.000Z",
-    "collectedAt": "2026-08-23T16:22:03.672Z"
-  },
-  "social-60657a9bc3a2": {
-    "id": "social-60657a9bc3a2",
-    "url": "https://x.com/JPFinlayNBCS/status/2091559948106739943",
-    "text": "Dan Quinn will address the media at 4:30 and will certainly be asked about Jayden Daniels playing just 3 preseason snaps. The truth is there is no right answer for QB play in preseason -no-right-answer-for-jayden?r=8ta70&utm_medium=ios",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-23T16:15:25.000Z",
-    "collectedAt": "2026-08-23T16:22:04.784Z"
-  },
-  "social-dd0290af42d1": {
-    "id": "social-dd0290af42d1",
-    "url": "https://x.com/chargers/status/2091568649681137860",
-    "text": "we've placed C tyler biadasz on reserve/injured + signed WR gary jennings",
-    "handle": "chargers",
-    "author": "Los Angeles Chargers",
-    "label": "",
-    "sourceKey": "@BenStandig",
-    "publishedAt": "2026-08-23T16:50:00.000Z",
-    "collectedAt": "2026-08-23T18:14:53.914Z"
-  },
   "social-723e4e62bad7": {
     "id": "social-723e4e62bad7",
     "url": "https://x.com/JPFinlayNBCS/status/2091617464387870866",
@@ -7077,5 +7044,41 @@
     "images": [],
     "publishedAt": "2026-09-02T15:41:41.000Z",
     "collectedAt": "2026-09-02T16:05:12.972Z"
+  },
+  "social-fe08b27cb489": {
+    "id": "social-fe08b27cb489",
+    "url": "https://x.com/PFTCommenter/status/2095136527193985501",
+    "text": "It would be absoluteley insane to forget about this guy but ppl are doing it every day",
+    "handle": "PFTCommenter",
+    "author": "PFT Commenter",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-02T13:07:28.000Z",
+    "collectedAt": "2026-09-02T17:30:30.916Z"
+  },
+  "social-a69e4846fb8e": {
+    "id": "social-a69e4846fb8e",
+    "url": "https://x.com/JPFinlayNBCS/status/2095182072671252683",
+    "text": "Dan Quinn says Sonny Styles put in a lot of time to learn the defensive system and that he's a player on an upward trajectory. Styles and Luvu will both make defensive calls",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-02T16:08:27.000Z",
+    "collectedAt": "2026-09-02T17:30:30.916Z"
+  },
+  "social-c056c7e4dd85": {
+    "id": "social-c056c7e4dd85",
+    "url": "https://x.com/JPFinlayNBCS/status/2095181748267081779",
+    "text": "Dan Quinn says the leadership from Jeremy Reaves, Terry McLaurin and Frankie Luvu has really stood out this summer leading into the regular season",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-02T16:07:10.000Z",
+    "collectedAt": "2026-09-02T17:30:30.916Z"
   }
 }
