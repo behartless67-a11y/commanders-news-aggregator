@@ -29,7 +29,7 @@ function buildHtml(subject, body, email) {
     text-align: center;
     border-bottom: 3px solid #FFB612;
   }
-  .header img { height: 60px; max-height: 60px; width: auto; max-width: 260px; filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.9)); }
+  .header img { height: 60px; max-height: 60px; width: auto; max-width: 200px; filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.9)); display: block; margin: 0 auto; }
   .header-stars { font-size: 16px; margin: 8px 0 4px; letter-spacing: 6px; }
   .header p { color: #a89f9b; font-size: 11px; margin: 4px 0 0; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
   .body { padding: 32px; color: #efe9e4; font-size: 15px; line-height: 1.65; }
@@ -44,7 +44,7 @@ function buildHtml(subject, body, email) {
 <body>
 <div class="wrap">
   <div class="header">
-    <img src="${SITE_URL}/logo.png" alt="The Burgundy Wire" />
+    <img src="${SITE_URL}/logo.png" alt="The Burgundy Wire" width="200" height="93" />
     <div class="header-stars">&#9733; &#9733; &#9733;</div>
     <p>Sports &middot; News &middot; DC</p>
   </div>
