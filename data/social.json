@@ -1,26 +1,4 @@
 {
-  "social-9603c90dcf45": {
-    "id": "social-9603c90dcf45",
-    "url": "https://x.com/JPFinlayNBCS/status/2091322124870778951",
-    "text": "Cool look at the size of Ford Field",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-23T00:30:24.000Z",
-    "collectedAt": "2026-08-23T00:41:38.199Z"
-  },
-  "social-78217e00cf32": {
-    "id": "social-78217e00cf32",
-    "url": "https://x.com/JPFinlayNBCS/status/2091342789640331700",
-    "text": "New All Ears is up and I had an awesome conversation with Jaden Bradley. The undrafted rook keeps making the kind of plays that make coaches notice rbPu1X-frf via @YouTube@twitter.com",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "publishedAt": "2026-08-23T01:52:30.000Z",
-    "collectedAt": "2026-08-23T02:54:31.054Z"
-  },
   "social-cb9a6c9ce421": {
     "id": "social-cb9a6c9ce421",
     "url": "https://x.com/john_keim/status/2091370006894309872",
@@ -7003,5 +6981,29 @@
     "images": [],
     "publishedAt": "2026-09-01T20:08:04.000Z",
     "collectedAt": "2026-09-01T22:06:37.716Z"
+  },
+  "social-48af63561d1e": {
+    "id": "social-48af63561d1e",
+    "url": "https://x.com/JPFinlayNBCS/status/2094954629138182597",
+    "text": "I realize I’m very late to this but watching Monfils play tennis is electric",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-02T01:04:40.000Z",
+    "collectedAt": "2026-09-02T01:57:21.204Z"
+  },
+  "social-2e7ecabe9f7b": {
+    "id": "social-2e7ecabe9f7b",
+    "url": "https://x.com/john_keim/status/2094961872151749077",
+    "text": "On the offense, looking at the positions to determine if they’re better or worse than last year. At QB: Daniels is better and I explain why. More. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000787279229",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-02T01:33:27.000Z",
+    "collectedAt": "2026-09-02T01:57:22.476Z"
   }
 }
