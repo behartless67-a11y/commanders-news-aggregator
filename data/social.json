@@ -1,15 +1,4 @@
 {
-  "social-6ce0f3c458f4": {
-    "id": "social-6ce0f3c458f4",
-    "url": "https://x.com/tashanreed/status/2091540278138016095",
-    "text": "Also thought Will Harris misread this one:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "publishedAt": "2026-08-23T14:57:15.000Z",
-    "collectedAt": "2026-08-23T16:13:17.148Z"
-  },
   "social-a9da783ee394": {
     "id": "social-a9da783ee394",
     "url": "https://x.com/Commanders/status/2091559841794084953",
@@ -6952,5 +6941,117 @@
     "images": [],
     "publishedAt": "2026-09-02T11:54:22.000Z",
     "collectedAt": "2026-09-02T12:06:34.274Z"
+  },
+  "social-1f03d2b8d370": {
+    "id": "social-1f03d2b8d370",
+    "url": "https://x.com/Commanders/status/2095174426975470067",
+    "text": "LIVE: HC Dan Quinn speaks to the media after practice JN",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-02T15:38:04.000Z",
+    "collectedAt": "2026-09-02T15:58:14.597Z"
+  },
+  "social-6a72cc774553": {
+    "id": "social-6a72cc774553",
+    "url": "https://x.com/john_keim/status/2095175436732932320",
+    "text": "Dan Quinn on Stefon Diggs: \"I knew he was a good player...I didn't know good the fire was....Knew good in zones; better beating man than I thought.\"",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-02T15:42:05.000Z",
+    "collectedAt": "2026-09-02T15:58:17.283Z"
+  },
+  "social-d44416ec2011": {
+    "id": "social-d44416ec2011",
+    "url": "https://x.com/john_keim/status/2095175088253337677",
+    "text": "LB K'Lavon Chaisson did practice today, as did Bill Croskey-Merritt for the second consecutive day. Dan Quinn said he expects Odafe Oweh back at practice next week. Asked if he's optimistic about Oweh for the opener, Quinn didn't want to go there yet.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-02T15:40:42.000Z",
+    "collectedAt": "2026-09-02T15:58:17.283Z"
+  },
+  "social-f132636b5834": {
+    "id": "social-f132636b5834",
+    "url": "https://x.com/john_keim/status/2095153999875895519",
+    "text": "Back… last workout for the week/",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/201/880/421/526/517/original/e964b23825efbd4d.jpg"
+    ],
+    "publishedAt": "2026-09-02T14:16:54.000Z",
+    "collectedAt": "2026-09-02T15:58:17.283Z"
+  },
+  "social-45a880e16d9a": {
+    "id": "social-45a880e16d9a",
+    "url": "https://x.com/BenStandig/status/2095174964651364747",
+    "text": "Dan Quinn time. K'Lavon Chaisson returned to practice today. Odafe Oweh will be full in practice next week. What that means for Week 1 tbd; game shape after misisng time is the tbd variable.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-02T15:40:12.000Z",
+    "collectedAt": "2026-09-02T15:58:19.174Z"
+  },
+  "social-a1033a86c46a": {
+    "id": "social-a1033a86c46a",
+    "url": "https://x.com/BenStandig/status/2095168326817194427",
+    "text": "“This is a real NFL offense now.” Ben Sinnott on David Blough’s scheme, why TE is the NFL’s second-hardest position — “and I don’t think it’s even close” — plus Gronk, yo-yos, developing from a 200-pound lightweight and more. Q&A with the Commanders TE: ben-sinnott-ate-his-way-into-becoming?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/202/102/423/714/250/original/1628b691fac98d48.jpg"
+    ],
+    "publishedAt": "2026-09-02T15:13:50.000Z",
+    "collectedAt": "2026-09-02T15:58:19.174Z"
+  },
+  "social-852b72678afd": {
+    "id": "social-852b72678afd",
+    "url": "https://x.com/BenStandig/status/2095153775753269709",
+    "text": "Good news on the injury front.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-02T14:16:00.000Z",
+    "collectedAt": "2026-09-02T15:58:19.175Z"
+  },
+  "social-5b8b82345f2a": {
+    "id": "social-5b8b82345f2a",
+    "url": "https://x.com/tashanreed/status/2095176739085312218",
+    "text": "#Commanders HC Dan Quinn expects OLB Odafe Oweh (calf strain) to return to practice next week, but stopped short of confirming he'll be ready to play against the Eagles in Week 1.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-02T15:47:15.000Z",
+    "collectedAt": "2026-09-02T15:58:20.355Z"
+  },
+  "social-7912f4293762": {
+    "id": "social-7912f4293762",
+    "url": "https://x.com/tashanreed/status/2095153464993067504",
+    "text": "#Commanders got OLB K'Lavon Chaisson (knee) is back at practice today. They're in pads for their last session of the week.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-02T14:14:46.000Z",
+    "collectedAt": "2026-09-02T15:58:20.355Z"
   }
 }
