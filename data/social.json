@@ -1,57 +1,4 @@
 {
-  "social-f33333b5aa99": {
-    "id": "social-f33333b5aa99",
-    "url": "https://x.com/Commanders/status/2091647419133923395",
-    "text": "Quan 🤝 picks at Ford Field",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-23T22:03:00.000Z",
-    "collectedAt": "2026-08-23T22:11:35.874Z"
-  },
-  "social-bed1d1e1670b": {
-    "id": "social-bed1d1e1670b",
-    "url": "https://x.com/JPFinlayNBCS/status/2091628435294585303",
-    "text": "I’m an Xfinity guy at home but this is my first real run w YouTube tv multiview and it’s dope",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/146/786/744/369/651/original/581dea71a5d988c4.jpg"
-    ],
-    "publishedAt": "2026-08-23T20:47:34.000Z",
-    "collectedAt": "2026-08-23T22:11:37.062Z"
-  },
-  "social-71005d492ee1": {
-    "id": "social-71005d492ee1",
-    "url": "https://x.com/JPFinlayNBCS/status/2091626258366972180",
-    "text": "It’s pretty wild to flip back between the PGA and LIV. Big names on both leaderboards but just feels so different watching",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/146/756/018/917/411/original/e9df383f3f1c0598.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/146/756/050/857/046/original/c619625a9bd39a11.jpg"
-    ],
-    "publishedAt": "2026-08-23T20:38:55.000Z",
-    "collectedAt": "2026-08-23T22:11:37.062Z"
-  },
-  "social-aba5bd2ffb5e": {
-    "id": "social-aba5bd2ffb5e",
-    "url": "https://x.com/john_keim/status/2091637181693489240",
-    "text": "For those waiting on any updates today: no presser. Instead, the Commanders added a practice Monday. Was going to be a walk/jog thru but instead a practice. Not something Quinn has done here before.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-23T21:22:19.000Z",
-    "collectedAt": "2026-08-23T22:11:38.529Z"
-  },
   "social-f2b22d4ed57d": {
     "id": "social-f2b22d4ed57d",
     "url": "https://x.com/Commanders/status/2091691970015989975",
@@ -7118,5 +7065,17 @@
     "images": [],
     "publishedAt": "2026-09-02T18:25:35.000Z",
     "collectedAt": "2026-09-02T19:18:56.104Z"
+  },
+  "social-cf9edd9f2e71": {
+    "id": "social-cf9edd9f2e71",
+    "url": "https://x.com/NickiJhabvala/status/2095248220658041029",
+    "text": "Holy moly. Five first-rounders. Sheesh!",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-02T20:31:18.000Z",
+    "collectedAt": "2026-09-02T22:05:12.242Z"
   }
 }
