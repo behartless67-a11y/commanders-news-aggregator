@@ -1,42 +1,4 @@
 {
-  "social-7dcec3370be4": {
-    "id": "social-7dcec3370be4",
-    "url": "https://x.com/john_keim/status/2091860868845732324",
-    "text": "He was released with an injury settlement. Had a hamstring injury. Was going to be difficult for him to make the roster even if healthy.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-24T12:11:10.000Z",
-    "collectedAt": "2026-08-24T12:26:26.836Z"
-  },
-  "social-42d07dcb6e8e": {
-    "id": "social-42d07dcb6e8e",
-    "url": "https://mastodon.social/@top_news/117150529864897221",
-    "text": "5 key stats from Detroit Lions’ preseason win over Washington Commanders Detroit’s defense stole the show. That and more in this week’s look at key stats from Lions-Commanders. ns-analysis/170384/5-key-stats-from-detroit-lions-preseason-win-over-washington-commanders #TopNews #News #Lions #Commanders #Detroit",
-    "handle": "top_news",
-    "author": "News",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/150/529/830/291/820/original/1983c6a3ac9773ea.jpg"
-    ],
-    "publishedAt": "2026-08-24T12:40:23.771Z",
-    "collectedAt": "2026-08-24T12:44:46.283Z"
-  },
-  "social-25cb18c07732": {
-    "id": "social-25cb18c07732",
-    "url": "https://x.com/john_keim/status/2091872576884600975",
-    "text": "Second thoughts on the Commanders thru two preseason games. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000785360645",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-24T12:57:42.000Z",
-    "collectedAt": "2026-08-24T14:32:30.734Z"
-  },
   "social-647303035c3b": {
     "id": "social-647303035c3b",
     "url": "https://x.com/john_keim/status/2091918021543559222",
@@ -7028,5 +6990,29 @@
     "images": [],
     "publishedAt": "2026-09-03T00:38:45.000Z",
     "collectedAt": "2026-09-03T02:02:17.091Z"
+  },
+  "social-8f939c56463c": {
+    "id": "social-8f939c56463c",
+    "url": "https://x.com/john_keim/status/2095489135691628935",
+    "text": "On video talking about the defense: where are they better or worse? How the scheme can help. How Luvu can bounce back. Ugly tackling numbers from 2025 that MUST improve. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-03T12:28:36.000Z",
+    "collectedAt": "2026-09-03T13:59:37.204Z"
+  },
+  "social-cc1321542abc": {
+    "id": "social-cc1321542abc",
+    "url": "https://x.com/tashanreed/status/2095497850234847455",
+    "text": "“I wanted to be great for myself,\" Sonny Styles told me. Raised by a Super Bowl champion, Styles’s NFL path seemed preordained. But it was his choice to follow it. My exclusive on the linebacker's journey to the #Commanders 🔗⤵️ /09/03/sonny-styless-nfl-path-seemed-preordained-it-was-his-choice-follow-it/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-03T13:03:14.000Z",
+    "collectedAt": "2026-09-03T13:59:40.102Z"
   }
 }
