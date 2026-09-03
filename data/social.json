@@ -6574,7 +6574,7 @@
     "text": "Honoring 9 and 51 at halftime of the home opener 💛 📰",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/197/336/722/591/820/original/5251ec006cd2ab97.jpg"
@@ -7014,5 +7014,29 @@
     "images": [],
     "publishedAt": "2026-09-03T13:03:14.000Z",
     "collectedAt": "2026-09-03T13:59:40.102Z"
+  },
+  "social-b72b7a737f02": {
+    "id": "social-b72b7a737f02",
+    "url": "https://x.com/JPFinlayNBCS/status/2095534663158673553",
+    "text": "If youre wondering about a bounce back team dont sleep on the Chiefs. They went 6-11 last year but still finished +34 in point differential. Lost 5 games by a combined 15 points",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-03T15:29:31.000Z",
+    "collectedAt": "2026-09-03T15:47:29.046Z"
+  },
+  "social-53ec2a188ec9": {
+    "id": "social-53ec2a188ec9",
+    "url": "https://x.com/BenStandig/status/2095526205566877741",
+    "text": "🎙 Positive injury updates and insight into how players see the shift from one offense to another. injury-list-shrinks/id1760952448?i=1000787549306",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-03T14:55:55.000Z",
+    "collectedAt": "2026-09-03T15:47:31.909Z"
   }
 }
