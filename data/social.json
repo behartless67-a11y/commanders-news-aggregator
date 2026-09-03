@@ -73,42 +73,6 @@
     "publishedAt": "2026-08-24T18:03:44.000Z",
     "collectedAt": "2026-08-24T18:25:05.491Z"
   },
-  "social-2f8e7181a1f2": {
-    "id": "social-2f8e7181a1f2",
-    "url": "https://x.com/JPFinlayNBCS/status/2091936733784879433",
-    "text": "Versatile O-linemen hits free agency. No track record at center though",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-24T17:12:38.000Z",
-    "collectedAt": "2026-08-24T18:25:05.491Z"
-  },
-  "social-3055e814df79": {
-    "id": "social-3055e814df79",
-    "url": "https://x.com/JPFinlayNBCS/status/2091934690210971983",
-    "text": "Talking w @danorlovsky7 about the Commanders offense: \"I love the addition from a football perspective of Stefon Diggs. Stef still wins, he can kill you on crossers...I think this offense will be way more deceptive.\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-24T17:04:31.000Z",
-    "collectedAt": "2026-08-24T18:25:05.491Z"
-  },
-  "social-2d0a30aedccb": {
-    "id": "social-2d0a30aedccb",
-    "url": "https://x.com/JPFinlayNBCS/status/2091933648744235203",
-    "text": "Excited to have @danorlovsky7 join us now on @BMitchandFinlay@twitter.com . Tune in",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-24T17:00:22.000Z",
-    "collectedAt": "2026-08-24T18:25:05.491Z"
-  },
   "social-0d77422793d2": {
     "id": "social-0d77422793d2",
     "url": "https://x.com/john_keim/status/2091953583121981555",
@@ -7026,5 +6990,57 @@
     "images": [],
     "publishedAt": "2026-09-03T14:55:55.000Z",
     "collectedAt": "2026-09-03T15:47:31.909Z"
+  },
+  "social-f470c343d4fc": {
+    "id": "social-f470c343d4fc",
+    "url": "https://x.com/JPFinlayNBCS/status/2095559224193364023",
+    "text": "Talking w @DZangaroNBCS about Eagles expectations: \"Defensively they're going to be really good. Offensively it's going to be a work in progress...They're implementing a lot of new things and have a lot of new pieces.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-03T17:07:07.000Z",
+    "collectedAt": "2026-09-03T17:34:58.566Z"
+  },
+  "social-b3f29bbe5507": {
+    "id": "social-b3f29bbe5507",
+    "url": "https://x.com/GrantPaulsen/status/2095523626111869273",
+    "text": "Tonight is our event with Adam Peters. Arlington Drafthouse. Deep diving into the roster. Should be a really fun night. Show starts at 7 PM. Tickets on sale at Arlington Drafthouse Dot Com.",
+    "handle": "GrantPaulsen",
+    "author": "Grant Paulsen",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/208/046/069/231/346/original/78a92e49dd07f24e.jpg"
+    ],
+    "publishedAt": "2026-09-03T14:45:40.000Z",
+    "collectedAt": "2026-09-03T17:35:01.580Z"
+  },
+  "social-a8f526fb0a5a": {
+    "id": "social-a8f526fb0a5a",
+    "url": "https://x.com/AdamSchefter/status/2095559681410253051",
+    "text": "National Football League Players Association (NFLPA) announced that Matt Taylor will join the organization as Chief Communications Officer, effective September 8. Taylor served as a Vice President at Heller, a leading strategic communications firm, where he advised clients navigating complex issues across a range of industries. Taylor also led football communications for the Miami Dolphins, and served in communications positions in the front offices of the Indianapolis Colts and Washington Commanders.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-09-03T17:08:56.000Z",
+    "collectedAt": "2026-09-03T17:35:06.054Z"
+  },
+  "social-04f0982be999": {
+    "id": "social-04f0982be999",
+    "url": "https://x.com/MikeGarafolo/status/2095558844747309156",
+    "text": "The @NFLPA@twitter.com today announced Matt Taylor will join the organization as chief communications officer. Previously the head of communications for the #Dolphins and also in similar roles for the #Colts and #Commanders , Taylor joins the players’ union.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/208/205/288/283/148/original/483ff3974ba7ee49.jpg"
+    ],
+    "publishedAt": "2026-09-03T17:05:36.000Z",
+    "collectedAt": "2026-09-03T17:35:09.310Z"
   }
 }
