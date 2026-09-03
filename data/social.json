@@ -1,42 +1,4 @@
 {
-  "social-f2b22d4ed57d": {
-    "id": "social-f2b22d4ed57d",
-    "url": "https://x.com/Commanders/status/2091691970015989975",
-    "text": "come for the catch, stay for the reactions",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-24T01:00:02.000Z",
-    "collectedAt": "2026-08-24T01:09:25.000Z"
-  },
-  "social-6995677a9074": {
-    "id": "social-6995677a9074",
-    "url": "https://x.com/JPFinlayNBCS/status/2091704124584624289",
-    "text": "Won’t be surprised if we see some roster moves before prax tomorrow. There’s some obvious (Tunsil) and some others prob in the works",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-24T01:48:19.000Z",
-    "collectedAt": "2026-08-24T02:55:43.470Z"
-  },
-  "social-c0e0346a868a": {
-    "id": "social-c0e0346a868a",
-    "url": "https://x.com/WashMystics/status/2091698740469912026",
-    "text": "WE'RE GOING TO THE PLAYOFFS!!!",
-    "handle": "WashMystics",
-    "author": "Washington Mystics",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/147/887/244/151/544/original/070d97a4c1880bdb.jpg"
-    ],
-    "publishedAt": "2026-08-24T01:26:56.000Z",
-    "collectedAt": "2026-08-24T02:55:43.470Z"
-  },
   "social-ac66e1a50f08": {
     "id": "social-ac66e1a50f08",
     "url": "https://x.com/BenStandig/status/2091714431839261056",
@@ -48,18 +10,6 @@
     "images": [],
     "publishedAt": "2026-08-24T02:29:17.000Z",
     "collectedAt": "2026-08-24T02:55:46.251Z"
-  },
-  "social-0587759ff55f": {
-    "id": "social-0587759ff55f",
-    "url": "https://x.com/tashanreed/status/2091695960434802844",
-    "text": "As a society we need to do a better job of ignoring lames",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-08-24T01:15:53.000Z",
-    "collectedAt": "2026-08-24T02:55:47.581Z"
   },
   "social-62466a8fe28a": {
     "id": "social-62466a8fe28a",
@@ -7104,5 +7054,43 @@
     "images": [],
     "publishedAt": "2026-09-02T23:47:25.000Z",
     "collectedAt": "2026-09-03T00:06:42.068Z"
+  },
+  "social-593eb37964d9": {
+    "id": "social-593eb37964d9",
+    "url": "https://x.com/YahooSports/status/2095328737768124484",
+    "text": "No. 11 Frances Tiafoe is off to the third round at the US Open after taking down Rei Sakamoto in straight sets 🔥",
+    "handle": "YahooSports",
+    "author": "Yahoo Sports",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/204/606/115/348/725/original/a9393e398c7fe3ed.jpg"
+    ],
+    "publishedAt": "2026-09-03T01:51:15.000Z",
+    "collectedAt": "2026-09-03T02:02:15.355Z"
+  },
+  "social-842565558667": {
+    "id": "social-842565558667",
+    "url": "https://x.com/JPFinlayNBCS/status/2095308250283417953",
+    "text": "All Ears live on YouTube tonight - come hang 4",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-03T00:29:50.000Z",
+    "collectedAt": "2026-09-03T02:02:15.355Z"
+  },
+  "social-667d1e576685": {
+    "id": "social-667d1e576685",
+    "url": "https://x.com/john_keim/status/2095310492323442747",
+    "text": "Talking about the defense. Where are they better on D? Worse at any spot? More. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000787525398",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-03T00:38:45.000Z",
+    "collectedAt": "2026-09-03T02:02:17.091Z"
   }
 }
