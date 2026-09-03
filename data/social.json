@@ -1,16 +1,4 @@
 {
-  "social-db7d948acda9": {
-    "id": "social-db7d948acda9",
-    "url": "https://x.com/Commanders/status/2091949287664210087",
-    "text": "LIVE: HC Dan Quinn speaks to the media before practice xL",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-24T18:02:31.000Z",
-    "collectedAt": "2026-08-24T18:25:03.781Z"
-  },
   "social-32c6a34c2a28": {
     "id": "social-32c6a34c2a28",
     "url": "https://x.com/JPFinlayNBCS/status/2091953645780598979",
@@ -57,20 +45,6 @@
     "sourceKey": "@JPFinlayNBCS",
     "images": [],
     "publishedAt": "2026-08-24T18:10:17.000Z",
-    "collectedAt": "2026-08-24T18:25:05.491Z"
-  },
-  "social-dcfe4133703b": {
-    "id": "social-dcfe4133703b",
-    "url": "https://x.com/JPFinlayNBCS/status/2091949593894293683",
-    "text": "Dan Quinn says Tim Settle and Rachaad White should be back on the field today. Seems like Nick Allegretti is not back",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/151/805/460/468/900/original/791da0401baf2886.jpg"
-    ],
-    "publishedAt": "2026-08-24T18:03:44.000Z",
     "collectedAt": "2026-08-24T18:25:05.491Z"
   },
   "social-0d77422793d2": {
@@ -145,18 +119,6 @@
     "publishedAt": "2026-08-24T18:07:01.000Z",
     "collectedAt": "2026-08-24T18:25:06.555Z"
   },
-  "social-418aade588f2": {
-    "id": "social-418aade588f2",
-    "url": "https://x.com/john_keim/status/2091945484059381984",
-    "text": "The Commanders are working out nine players. We’ll find out later today which players. Customary to work guys out of course.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-24T17:47:24.000Z",
-    "collectedAt": "2026-08-24T18:25:06.555Z"
-  },
   "social-210c156e6494": {
     "id": "social-210c156e6494",
     "url": "https://x.com/BenStandig/status/2091953342847021211",
@@ -191,18 +153,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-08-24T18:08:13.000Z",
-    "collectedAt": "2026-08-24T18:25:08.032Z"
-  },
-  "social-596eeb2f13a6": {
-    "id": "social-596eeb2f13a6",
-    "url": "https://x.com/BenStandig/status/2091949841358172451",
-    "text": "Dan Quinn time. Tim Settle (calf) is returning to practice today. Will also participate against the Ravens. RB Rachaad White (hamstring) will do individual drills today. All others out with injury remain out with the hope of practicing next week.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-24T18:04:43.000Z",
     "collectedAt": "2026-08-24T18:25:08.032Z"
   },
   "social-ece592d21913": {
