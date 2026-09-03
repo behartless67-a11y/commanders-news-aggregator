@@ -1,28 +1,4 @@
 {
-  "social-ece592d21913": {
-    "id": "social-ece592d21913",
-    "url": "https://x.com/JPFinlayNBCS/status/2091975055303442497",
-    "text": "Jeremy Reaves explains he was excited for the practice today and if you’re not excited for practice you’re in the wrong profession",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-24T19:44:54.000Z",
-    "collectedAt": "2026-08-24T20:18:26.117Z"
-  },
-  "social-dd96d895bbed": {
-    "id": "social-dd96d895bbed",
-    "url": "https://x.com/BenStandig/status/2091965383137702235",
-    "text": "Laremy Tunsil is elsewhere recovering from triceps surgery, but the food trucks he hired to feed his teammates and others are here. Very cool gesture.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-24T19:06:28.000Z",
-    "collectedAt": "2026-08-24T20:18:28.690Z"
-  },
   "social-083eeabf158e": {
     "id": "social-083eeabf158e",
     "url": "https://x.com/Commanders/status/2091990177572966620",
@@ -6765,5 +6741,17 @@
     ],
     "publishedAt": "2026-09-03T18:17:00.000Z",
     "collectedAt": "2026-09-03T19:05:37.066Z"
+  },
+  "social-7a316aeed620": {
+    "id": "social-7a316aeed620",
+    "url": "https://x.com/NickiJhabvala/status/2095602826617499967",
+    "text": "Digging more into the Commanders’ O-line, their player development and new kicker ...",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-03T20:00:22.000Z",
+    "collectedAt": "2026-09-03T20:05:10.322Z"
   }
 }
