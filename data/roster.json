@@ -1095,31 +1095,6 @@
     }
   },
   {
-    "slug": "drake-jackson",
-    "name": "Drake Jackson",
-    "jersey": "93",
-    "position": "DE",
-    "espnId": "4569511",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4569511.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "3"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "curtis-jacobs",
     "name": "Curtis Jacobs",
     "jersey": "57",
@@ -1252,15 +1227,6 @@
         }
       ]
     }
-  },
-  {
-    "slug": "malik-spencer",
-    "name": "Malik Spencer",
-    "jersey": "36",
-    "position": "S",
-    "espnId": "4782664",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4782664.png",
-    "stats": null
   },
   {
     "slug": "laremy-tunsil",
