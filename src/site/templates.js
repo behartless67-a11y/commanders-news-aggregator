@@ -118,13 +118,20 @@ function itemCard(item, index, rosterIndex) {
     ? `<p class="card-excerpt card-excerpt-full">${linkPlayers(item.excerpt, rosterIndex)}</p>
       <p class="card-excerpt card-excerpt-short">${linkPlayers(firstSentences(item.excerpt, 2), rosterIndex)}</p>`
     : '';
+  // Set by pinFreshBlogPosts() in build.js. Said out loud on the card because
+  // otherwise a post from this morning sitting above a headline from an hour
+  // ago just looks like the sort is broken.
+  const pinNote = item.pinned
+    ? '<p class="card-pin-note">Pinned for 24 hours, then it fends for itself</p>'
+    : '';
   return `
-    <article class="card${extra}">
+    <article class="card${extra}${item.pinned ? ' card-pinned' : ''}">
       <div class="card-top">
         <span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>${paywallPill}
         <span class="card-source">${escapeHtml(item.sourceName)}</span>
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
+      ${pinNote}
       <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ` target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}"`}>${escapeHtml(item.title)}</a></h3>
       ${excerptMarkup}
     </article>`;
@@ -987,13 +994,29 @@ ${sourceFooter}
 }
 
 /**
+ * Essay prose for originals and Monday posts. Ordinary paragraphs, except a
+ * line beginning with "## " which becomes a section subhead — long personal
+ * essays need somewhere for the eye to rest, and the inline marker keeps that
+ * inside paragraphs[] rather than adding a parallel field to the record shape.
+ */
+function essayParagraphs(paragraphs, rosterIndex) {
+  return paragraphs
+    .map((p) =>
+      p.startsWith('## ')
+        ? `<h3 class="digest-subhead">${escapeHtml(p.slice(3).trim())}</h3>`
+        : `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`,
+    )
+    .join('\n');
+}
+
+/**
  * Hand-written posts (src/digest/originals.js) — no threads, no citations,
  * no corpus; just paragraphs someone actually typed. The "Original" badge is
  * the one visible signal that separates this from the AI-generated recap
  * and preview posts sharing the same Blog archive.
  */
 function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
-  const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex);
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
   // like "go listen to the Music page" carry a real link instead of a bare
@@ -1019,7 +1042,7 @@ ${plug}
  * obvious just from reading the post the way it is for an original essay.
  */
 function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
-  const paragraphs = record.paragraphs.map((p) => `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`).join('\n');
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex);
   return `
     <article class="digest-post monday-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>

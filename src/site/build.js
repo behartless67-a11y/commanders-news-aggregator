@@ -47,6 +47,31 @@ const HEADING = {
   'national-coverage.html': 'National coverage',
 };
 
+/** How long a fresh Blog post holds the top of the river. */
+const PIN_WINDOW_MS = Number(process.env.BLOG_PIN_HOURS || 24) * 60 * 60 * 1000;
+
+/**
+ * Hoist Blog posts published within the pin window to the front of the river,
+ * then let them fall back into plain date order once it expires. A post takes
+ * real effort to write and the wire moves faster than that: six aggregated
+ * headlines on a busy morning would bury it before most readers arrive.
+ *
+ * `sorted` is already newest-first, so the pinned group keeps that order among
+ * itself, and the pin flag is set on a copy rather than the stored item so
+ * nothing about this presentation choice leaks back into data/items.json.
+ */
+function pinFreshBlogPosts(sorted, now) {
+  const pinned = [];
+  const rest = [];
+  for (const item of sorted) {
+    const fresh =
+      item.sourceId === 'blog' && item.publishedAt && now - Date.parse(item.publishedAt) < PIN_WINDOW_MS;
+    if (fresh) pinned.push({ ...item, pinned: true });
+    else rest.push(item);
+  }
+  return [...pinned, ...rest];
+}
+
 export async function buildSite() {
   const items = await loadItems();
 
@@ -71,7 +96,7 @@ export async function buildSite() {
   const liveItem = liveGameRiverItem(liveGame);
 
   // Published Blog posts compete for river placement on their own publish
-  // date, same as any other item — not pinned above or below real headlines.
+  // date, same as any other item, once their pin window (below) has expired.
   const blogItems = [
     ...blogRiverItems(publishedDigests, publishedPreviews, publishedOriginals, publishedMondays),
     ...(liveItem ? [liveItem] : []),
@@ -97,7 +122,10 @@ export async function buildSite() {
   // Each page is capped to its most recent N rather than rendering the full
   // backlog the store has accumulated since the last prune.
   const allSorted = sortedItems(itemsWithBlog);
-  const sorted = allSorted.slice(0, MAX_RIVER_ITEMS);
+  // Pin before capping, so a fresh post can't be cut by MAX_RIVER_ITEMS on the
+  // way to the top. allSorted stays in pure date order for the video rail and
+  // mention counts below, neither of which should see the pinned reordering.
+  const sorted = pinFreshBlogPosts(allSorted, Date.now()).slice(0, MAX_RIVER_ITEMS);
   const allSocial = sortedSocial(await loadSocial());
   const socialPosts = allSocial.slice(0, MAX_TICKER_POSTS);
   // Drawn from the whole store, not the capped river — the rail shouldn't empty

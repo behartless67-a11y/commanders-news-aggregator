@@ -913,6 +913,21 @@ main.layout{
   border-bottom: none;
 }
 
+/* A hand-written post holding the top of the river for its first 24 hours (see
+   pinFreshBlogPosts() in build.js). The gold rail marks it as deliberately
+   placed rather than the newest thing on the wire. */
+.card-pinned{
+  border-left: 3px solid var(--gold);
+  padding-left: 13px;
+}
+
+.card-pin-note{
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  margin: 0;
+}
+
 .card-top{
   display:flex;
   align-items:center;
@@ -1511,6 +1526,19 @@ main.layout{
   line-height: 1.65;
   margin: 0 0 18px;
 }
+
+/* Section breaks inside a long essay (see essayParagraphs() in templates.js).
+   A rest stop for the eye, not a new article, so it stays well under the post
+   title's size and leans on the gold rather than scale for emphasis. */
+.digest-subhead{
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 32px 0 14px;
+}
+
+.digest-subhead:first-child{ margin-top: 0; }
 
 /* A plug for another page (see record.plug in originalArticleBody()) reads
    as an aside, not the next beat of the essay — set off from the prose
