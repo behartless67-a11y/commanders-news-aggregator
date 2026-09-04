@@ -1,16 +1,4 @@
 {
-  "social-a4435c627f37": {
-    "id": "social-a4435c627f37",
-    "url": "https://x.com/Commanders/status/2092222006662230144",
-    "text": "LIVE: HC Dan Quinn speaks to the media before practice Gl",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-25T12:06:12.000Z",
-    "collectedAt": "2026-08-25T12:27:12.429Z"
-  },
   "social-da6a9ee9b113": {
     "id": "social-da6a9ee9b113",
     "url": "https://x.com/john_keim/status/2092224516852248609",
@@ -6639,5 +6627,31 @@
     "images": [],
     "publishedAt": "2026-09-04T00:55:40.000Z",
     "collectedAt": "2026-09-04T02:02:02.951Z"
+  },
+  "social-4f181718e326": {
+    "id": "social-4f181718e326",
+    "url": "https://x.com/john_keim/status/2095841978634166568",
+    "text": "On video talking national expectations for the Commanders. Hint: they’re not high. But: i looked at the last two years and the expectations entering the season. What we learned. Are they missing something this year? @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-04T11:50:41.000Z",
+    "collectedAt": "2026-09-04T12:06:40.185Z"
+  },
+  "social-67dca0fffb08": {
+    "id": "social-67dca0fffb08",
+    "url": "https://x.com/BenStandig/status/2095836700840788446",
+    "text": "Adam Peters just told us something about the Commanders’ future: “Bigger extensions” are coming. Jayden Daniels is the obvious one. But Peters said extensions — plural. On who else Washington could pay, the current $40M in cap space and more the GM. adam-peters-says-bigger-extensions",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/212/552/211/948/181/original/fdaae86c40aa81a1.jpg"
+    ],
+    "publishedAt": "2026-09-04T11:29:42.000Z",
+    "collectedAt": "2026-09-04T12:06:41.630Z"
   }
 }
