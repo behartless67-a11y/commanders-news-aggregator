@@ -11,54 +11,6 @@
     "publishedAt": "2026-08-26T00:13:00.000Z",
     "collectedAt": "2026-08-26T00:40:38.362Z"
   },
-  "social-5f6b983a90a7": {
-    "id": "social-5f6b983a90a7",
-    "url": "https://x.com/Commanders/status/2092394340458848667",
-    "text": "Dyami dialed in ☎️ @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-25T23:31:00.000Z",
-    "collectedAt": "2026-08-26T00:40:38.362Z"
-  },
-  "social-762884962f77": {
-    "id": "social-762884962f77",
-    "url": "https://x.com/Commanders/status/2092386547194826780",
-    "text": "GM Adam Peters accepted the ALS Ice Bucket Challenge today in honor of @ChrisJohnson28@twitter.com , @SteveGleason@twitter.com , O.J. Brigance and Dwight Clark 🤍",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-25T23:00:02.000Z",
-    "collectedAt": "2026-08-26T00:40:38.362Z"
-  },
-  "social-07391ae0a6dc": {
-    "id": "social-07391ae0a6dc",
-    "url": "https://x.com/Commanders/status/2092375466212790749",
-    "text": "Preseason prep 🤝 @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-25T22:16:00.000Z",
-    "collectedAt": "2026-08-26T00:40:38.362Z"
-  },
-  "social-b6f9f5d8099e": {
-    "id": "social-b6f9f5d8099e",
-    "url": "https://x.com/tashanreed/status/2092376099896328318",
-    "text": "The #Commanders ' roster is largely set, but a few spots remain up for grabs. Here are the areas to focus on throughout the final week of training camp 🔗⤵️ /08/25/third-string-qb-final-wideouts-more-commanders-roster-battles-watch/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-08-25T22:18:31.000Z",
-    "collectedAt": "2026-08-26T00:40:43.869Z"
-  },
   "social-a209ebc3afa0": {
     "id": "social-a209ebc3afa0",
     "url": "https://x.com/Commanders/status/2092411705032871993",
@@ -6180,5 +6132,19 @@
     ],
     "publishedAt": "2026-09-04T17:00:00.000Z",
     "collectedAt": "2026-09-04T17:15:57.544Z"
+  },
+  "social-e79b2d83fde7": {
+    "id": "social-e79b2d83fde7",
+    "url": "https://mastodon.social/@top_news/117215108415774001",
+    "text": "Jayden Daniels: I can't live off what I did in 2024 The discussion around Commanders quarterback Jayden Daniels this summer has been focused more on his jersey number at LSU than anything having to do with his current play, but that will change next weekend. alk/rumor-mill/news/jayden-daniels-i-cant-live-off-what-i-did-in-2024 #TopNews #News #Commanders #Daniels #JaydenDaniels",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/215/108/375/305/363/original/57f287deb00810b8.jpg"
+    ],
+    "publishedAt": "2026-09-04T22:23:34.329Z",
+    "collectedAt": "2026-09-04T23:33:55.623Z"
   }
 }
