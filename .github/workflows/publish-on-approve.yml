@@ -7,6 +7,14 @@ on:
       - 'data/digests/**'
       - 'data/previews/**'
       - 'data/mondays/**'
+      # A hand-written original is published the moment it's committed — there
+      # is no approval gate to fire this workflow later, so without this path
+      # the post sat unbuilt until nightly.yml's next 4-hour tick.
+      - 'data/originals/**'
+      # And a post is only as live as the templates that render it: shipping
+      # markup or CSS for a new post shape in one push and the post itself in
+      # another would deploy them hours apart.
+      - 'src/**'
   workflow_dispatch: {}
 
 # Shared with nightly.yml/social.yml/roster-stats.yml — same push race, same fix.
