@@ -1145,31 +1145,6 @@
     }
   },
   {
-    "slug": "t-j-maguranyanga",
-    "name": "T.J. Maguranyanga",
-    "jersey": "59",
-    "position": "DE",
-    "espnId": "5278092",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5278092.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "1"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "jeremy-mcnichols",
     "name": "Jeremy McNichols",
     "jersey": "26",
