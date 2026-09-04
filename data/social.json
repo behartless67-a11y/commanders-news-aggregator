@@ -1,18 +1,4 @@
 {
-  "social-32869014c0c1": {
-    "id": "social-32869014c0c1",
-    "url": "https://x.com/JPFinlayNBCS/status/2092054379838808313",
-    "text": "Dan Quinn is generally very deliberate in word choice and what he says. So when he described the Lions preseason game as “in disarray” I took notice. Full quote below.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/153/440/398/912/713/original/48b653a842630a8d.jpg"
-    ],
-    "publishedAt": "2026-08-25T01:00:07.000Z",
-    "collectedAt": "2026-08-25T01:07:50.784Z"
-  },
   "social-a4435c627f37": {
     "id": "social-a4435c627f37",
     "url": "https://x.com/Commanders/status/2092222006662230144",
@@ -6701,5 +6687,29 @@
     ],
     "publishedAt": "2026-09-03T23:25:56.000Z",
     "collectedAt": "2026-09-03T23:47:54.221Z"
+  },
+  "social-bb74d55c48fe": {
+    "id": "social-bb74d55c48fe",
+    "url": "https://x.com/BenStandig/status/2095667685925466423",
+    "text": "📹 Adam Peters is asked why Washington has legitimate salary cap space each year. One aspect of this cycle is due to “some of the bigger extensions we're going to be doing.” 👀 c-329233460?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-04T00:18:06.000Z",
+    "collectedAt": "2026-09-04T02:01:53.193Z"
+  },
+  "social-45ad3f0c3847": {
+    "id": "social-45ad3f0c3847",
+    "url": "https://x.com/pfrumors/status/2095677138741477848",
+    "text": "Minor moves from the #Panthers , #Chargers , #Dolphins , #Vikings , #Saints , #Jets , #49ers , #Seahawks , #Titans and #Commanders minor-nfl-transactions-9-3-26",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-04T00:55:40.000Z",
+    "collectedAt": "2026-09-04T02:02:02.951Z"
   }
 }
