@@ -1,6 +1,6 @@
 {
   "week": "2026-09-04",
-  "status": "draft",
+  "status": "published",
   "model": "anthropic.claude-sonnet-5",
   "generatedAt": "2026-09-04T18:02:04.858Z",
   "attempts": 1,
@@ -1627,5 +1627,6 @@
     "thread 6: name \"Rag\" appears in no source",
     "thread 7: name \"Standig\" appears in no source",
     "thread 7: name \"Rag\" appears in no source"
-  ]
+  ],
+  "reviewedAt": "2026-09-04T20:22:07.274Z"
 }
