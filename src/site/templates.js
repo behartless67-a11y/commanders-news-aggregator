@@ -761,6 +761,14 @@ function footer(sources, generatedAt) {
         </a>
       </div>
     </div>
+    <!-- Outside .footer-grid on purpose: the grid collapses behind the "More
+         about this site" toggle on phones, and this is the one footer link
+         that should never need a tap to find. -->
+    <a class="warpath-callout" href="https://thewarpath.net/" target="_blank" rel="noopener noreferrer" data-outbound="warpath">
+      <span class="warpath-eyebrow">Where this all started</span>
+      <span class="warpath-body"><strong>The Warpath</strong> is the message board where I found my closest friends more than twenty years ago, back when we were arguing over dial-up. We still talk every single day. If you want Commanders takes from actual people instead of an algorithm, go here.</span>
+      <span class="warpath-cta">thewarpath.net &rarr;</span>
+    </a>
     <div class="footer-bottom">
       <span>Headlines link to their original publishers. The Burgundy Wire is one fan's independent project, built and run solo, not an official team site and not affiliated with the Washington Commanders or the NFL, just deeply, unreasonably invested.</span>
       <span><a href="admin.html" class="footer-admin-link">Admin</a> &middot; &copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
