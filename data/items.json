@@ -4738,5 +4738,65 @@
     "excerpt": "Quarterback-turned-analyst Chase Daniel sees the Washington Commanders’ bold bet with David Blough unlocking a different Jayden Daniels.",
     "publishedAt": "2026-09-04T13:00:05.000Z",
     "collectedAt": "2026-09-04T14:06:34.007Z"
+  },
+  "hogs-haven-a497585ba27e": {
+    "id": "hogs-haven-a497585ba27e",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-podcasts/437409/washington-commanders-defense-odafe-oweh-klavon-chaisson-daron-payne-season-preview",
+    "title": "Washington’s front seven could be backbone of the 2026 Commanders",
+    "excerpt": "Washington’s defense has been the Commanders’ demise in Dan Quinn’s tenure two years in, but the 2026 unit should bring fans a different level of optimism. The front seven especially has a chance to be the backbone of the team, and according to Commanders staff and reporters at practice, injured players are beginning to return at the right time.\n\n Edge K’Lavon Chaisson, who suffered a knee injury during Washington’s joint practice with the Miami Dolphins, has returned to practice after being…",
+    "publishedAt": "2026-09-04T15:00:00.000Z",
+    "collectedAt": "2026-09-04T15:45:52.014Z"
+  },
+  "riggos-rag-3478b55cc0c3": {
+    "id": "riggos-rag-3478b55cc0c3",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-peters-reveals-looming-price-behind-commanders-cap-restraint",
+    "title": "Adam Peters reveals the looming price behind Commanders' cap restraint",
+    "excerpt": "Washington Commanders general manager Adam Peters revealed the looming price behind the team's offseason salary-cap restraint.",
+    "publishedAt": "2026-09-04T14:30:00.000Z",
+    "collectedAt": "2026-09-04T15:45:53.314Z"
+  },
+  "commanders-youtube-4f554ebd4b23": {
+    "id": "commanders-youtube-4f554ebd4b23",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=xK929c0NBZM",
+    "title": "Bill Croskey-Merritt is “Stronger & Faster” + Stephen Davis’ Unfinished Business 👀🔥 | Next Man Up",
+    "excerpt": "",
+    "publishedAt": "2026-09-04T14:00:04.000Z",
+    "collectedAt": "2026-09-04T15:45:55.157Z"
+  },
+  "cbs-nfl-727700363629": {
+    "id": "cbs-nfl-727700363629",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/predicting-last-place-finisher-for-each-nfl-division-in-2026",
+    "title": "Predicting last-place finisher for each NFL division in 2026: Browns, Raiders, Commanders among possible duds",
+    "excerpt": "Which teams are primed to finish last in their respective divisions in 2026?",
+    "publishedAt": "2026-09-04T13:56:17.000Z",
+    "collectedAt": "2026-09-04T15:45:58.154Z"
+  },
+  "yahoo-nfl-4f1f71494447": {
+    "id": "yahoo-nfl-4f1f71494447",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/why-washington-front-seven-could-150000886.html",
+    "title": "Why Washington’s front seven could be backbone of the 2026 Commanders",
+    "excerpt": "Washington’s defense has been the Commanders’ demise in Dan Quinn’s tenure two years in, but the 2026 unit should bring fans a different level of optimism. The front seven especially has a chance to be the backbone of the team, and according to Commanders staff and reporters at practice, injured players are beginning to return at the right time.\n Edge K’Lavon Chaisson, who suffered a knee injury during Washington’s joint practice with the Miami Dolphins, has returned to practice after being…",
+    "publishedAt": "2026-09-04T15:00:00.000Z",
+    "collectedAt": "2026-09-04T15:45:58.628Z"
   }
 }
