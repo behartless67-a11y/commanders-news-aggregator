@@ -1,16 +1,4 @@
 {
-  "social-906d16c3d492": {
-    "id": "social-906d16c3d492",
-    "url": "https://x.com/john_keim/status/2092297328866550163",
-    "text": "Every team's 53-man roster projection (turned in Sunday; ran Monday; things can change)... 41/2026-nfl-53-man-roster-projections-every-team-positions-cuts",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-25T17:05:30.000Z",
-    "collectedAt": "2026-08-25T18:24:02.237Z"
-  },
   "social-5f04d5e50dbe": {
     "id": "social-5f04d5e50dbe",
     "url": "https://x.com/BenStandig/status/2092303040556491094",
@@ -6399,5 +6387,22 @@
     "images": [],
     "publishedAt": "2026-09-04T15:47:49.000Z",
     "collectedAt": "2026-09-04T16:06:45.417Z"
+  },
+  "social-ca4fef02bc57": {
+    "id": "social-ca4fef02bc57",
+    "url": "https://x.com/Commanders/status/2095919821946851701",
+    "text": "More progress being made 🚜",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/459/163/939/original/c90ae9ec6fccaef2.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/497/867/555/original/b76358d81afff58d.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/566/504/310/original/96afbca1e27aec3d.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/599/691/558/original/cf39c974b3d81c0a.jpg"
+    ],
+    "publishedAt": "2026-09-04T17:00:00.000Z",
+    "collectedAt": "2026-09-04T17:15:57.544Z"
   }
 }
