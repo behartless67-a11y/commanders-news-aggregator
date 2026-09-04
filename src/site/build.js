@@ -349,6 +349,10 @@ export async function buildSite() {
     'icon-192.png',
     'icon-512.png',
     'site.webmanifest',
+    // A screenshot of the footer's Warpath callout, hosted here so the link
+    // shared on their forum lives on this domain rather than a third-party
+    // image host that can expire it.
+    'warpath-shoutout.png',
   ]) {
     await fs.copyFile(path.resolve('src/site/assets', asset), path.join(DIST_DIR, asset));
   }
