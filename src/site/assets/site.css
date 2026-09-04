@@ -3170,11 +3170,15 @@ main.layout.page-admin{
     align-items: start;
   }
   .card-top{ gap: 12px; }
+  /* Three columns, and the blurb is sized to clear the middle one on a single
+     line at this width rather than wrapping to two — a one-line strip reads as
+     a signpost, a two-line one starts competing with the source lists above. */
   .warpath-callout{
     grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     gap: 18px;
   }
+  .warpath-body{ font-size: 12px; }
 }
 
 /* Between tablet and desktop, five footer columns are too many. */

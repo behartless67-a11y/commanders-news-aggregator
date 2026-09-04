@@ -766,7 +766,7 @@ function footer(sources, generatedAt) {
          that should never need a tap to find. -->
     <a class="warpath-callout" href="https://thewarpath.net/" target="_blank" rel="noopener noreferrer" data-outbound="warpath">
       <span class="warpath-eyebrow">Where this all started</span>
-      <span class="warpath-body"><strong>The Warpath</strong> is the message board where I found my closest friends more than twenty years ago, back when we were arguing over dial-up. We still talk every single day. If you want Commanders takes from actual people instead of an algorithm, go here.</span>
+      <span class="warpath-body"><strong>The Warpath</strong> is where I found my closest friends over twenty years ago, and we still talk every day. Commanders takes from actual humans, not an algorithm.</span>
       <span class="warpath-cta">thewarpath.net &rarr;</span>
     </a>
     <div class="footer-bottom">
