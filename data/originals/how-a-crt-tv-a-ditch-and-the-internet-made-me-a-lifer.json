@@ -12,6 +12,62 @@
     "My wife has paid the toll for all of this. Game days are sacred in a way that borders on religious observance. I will not confirm or deny whether, over the course of our marriage, I have slowly and lovingly Jedi-mind-tricked her into caring about this team. What I will say is that she cheers now. Genuinely. Whether that's love, Stockholm syndrome, or just twenty-plus years of proximity to my nonsense, I've stopped asking questions and started being grateful.",
     "That's the fandom. Wood paneling to Slack, a ditch to a proposal, one dad's old CRT to whatever this website turns into. Thanks for being here for it."
   ],
+  "photos": {
+    "presidents-box-friends": {
+      "file": "presidents-box-friends.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "Four of us standing shoulder to shoulder in the president's box, a Cavaliers wordmark painted on the wall behind us.",
+      "caption": "Us and our closest friends in the box. Nicole is the reason any of us are standing there."
+    },
+    "go-hoos-marquee": {
+      "file": "go-hoos-marquee.jpg",
+      "w": 1200,
+      "h": 1124,
+      "alt": "Ben and Nicole in front of a giant lit-up HOOS marquee sign with orange and blue balloons.",
+      "caption": "There was a lit-up HOOS sign, so obviously we took a picture in front of it."
+    },
+    "accn-compound": {
+      "file": "accn-compound.jpg",
+      "w": 1060,
+      "h": 1200,
+      "alt": "Two men taking a selfie in front of the fenced-off ACC Network broadcast compound on the lawn.",
+      "caption": "The broadcast compound, being taken extremely seriously by two grown men."
+    },
+    "acc-huddle-set": {
+      "file": "acc-huddle-set.jpg",
+      "w": 1200,
+      "h": 1108,
+      "alt": "The ACC Huddle broadcast set, with every ACC team logo running along the top of the banner, including Florida State.",
+      "caption": "Look at the far left of that banner. Florida State, hanging on an ACC set, at a UVA game, in the city I moved to for my wife. Nobody warns you when you are being foreshadowed at."
+    },
+    "pregame-huddle": {
+      "file": "pregame-huddle.jpg",
+      "w": 1200,
+      "h": 1152,
+      "alt": "The Virginia team gathered in a tight huddle at midfield before kickoff, orange-clad crowd in the stands above.",
+      "caption": "Pregame at Scott Stadium, from a seat I did not earn."
+    },
+    "tailgate-beers": {
+      "file": "tailgate-beers.jpg",
+      "w": 900,
+      "h": 1200,
+      "alt": "Black and white photo of two men drinking beers in a parking lot with Scott Stadium behind them.",
+      "caption": "Black and white, because it was that kind of afternoon."
+    }
+  },
+  "slideshow": {
+    "heading": "Who I actually am, in pictures",
+    "intro": "These are Virginia Saturdays, not Sundays, which I recognize is a strange thing to hang at the bottom of a post about the Commanders. Same instinct as the ditch and the CRT. Better chairs.",
+    "keys": [
+      "presidents-box-friends",
+      "go-hoos-marquee",
+      "accn-compound",
+      "acc-huddle-set",
+      "pregame-huddle",
+      "tailgate-beers"
+    ]
+  },
   "status": "published",
   "publishedAt": "2026-08-24T16:00:00.000Z"
 }

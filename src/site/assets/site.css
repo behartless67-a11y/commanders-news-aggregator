@@ -1566,6 +1566,163 @@ main.layout{
   text-decoration-color: var(--gold);
 }
 
+/* ── Photos in a post ─────────────────────────────────────────────────────
+   See essayPhoto() in templates.js. Two callers, one look: an inline figure
+   dropped between paragraphs by a `!photo` marker, and a slide inside a
+   slideshow. Both keep width/height attributes on the img, so the browser
+   reserves the space and the prose below never jumps as photos arrive. */
+.essay-figure{
+  margin: 26px 0;
+}
+
+/* Both figure classes, since a slide is the same img element with a different
+   wrapper class and would otherwise miss the width:100% that lets the
+   width/height attributes act as a ratio instead of a fixed size. */
+.essay-figure img,
+.slideshow-slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+}
+
+.essay-figcaption{
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-faint);
+  margin-top: 9px;
+}
+
+/* ── Slideshow ────────────────────────────────────────────────────────────
+   A horizontal scroll-snap strip, which is the whole trick: with JavaScript
+   off, or before site.js has parsed, this is already a working swipeable
+   gallery. site.js only adds arrows, dots and auto-advance on top of it, so
+   there is no state here that the CSS depends on. */
+.slideshow{
+  margin: 26px 0;
+}
+
+/* Exists purely to give the arrows something to be absolute against that is
+   the track's height and not the whole widget's: anchoring them to .slideshow
+   would drag them down by the height of the dot row. */
+.slideshow-viewport{
+  position: relative;
+}
+
+.slideshow-track{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* The scrollbar is redundant once the dots exist and looks like a bug on
+     the ones that fit, so hide it in both engines and leave the dots and
+     arrows to do the signposting. */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slideshow-track::-webkit-scrollbar{ display: none; }
+
+.slideshow-slide{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+}
+
+/* contain, not cover: these are portrait and landscape mixed together, and
+   cropping to a common shape cuts people's heads off. A fixed aspect box on a
+   near-black backdrop keeps every slide the same height, so advancing does
+   not shove the page around, and the letterboxing on the portraits reads as
+   deliberate against the rest of the dark page. */
+.slideshow-slide img{
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #0d0d10;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Captions run different lengths and the track is as tall as its tallest
+   slide, so reserve room for two lines up front instead of letting the strip
+   resize itself when a long one scrolls into view. */
+.slideshow-slide .essay-figcaption{
+  min-height: 38px;
+  margin: 9px 4px 0;
+}
+
+/* Injected by site.js, so everything below only exists when the enhancement
+   ran. */
+.slideshow-arrow{
+  position: absolute;
+  /* Centred on the photo, not on the slide: the caption below it is 47px of
+     reserved space (min-height plus its margin) that the arrow should ignore. */
+  top: calc((100% - 47px) / 2);
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border-soft);
+  border-radius: 50%;
+  background: rgba(12,12,14,0.72);
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+}
+
+.slideshow-arrow:hover{
+  background: rgba(12,12,14,0.92);
+  border-color: var(--gold);
+}
+
+.slideshow-arrow[disabled]{
+  opacity: 0.28;
+  cursor: default;
+}
+
+.slideshow-arrow-prev{ left: 10px; }
+.slideshow-arrow-next{ right: 10px; }
+
+.slideshow-dots{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.slideshow-dot{
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--border-soft);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.slideshow-dot[aria-current="true"]{
+  background: var(--gold);
+  transform: scale(1.4);
+}
+
+/* Touch devices get the swipe, which is better than either control, and the
+   arrows only sit on top of the photo taking up room. */
+@media (hover: none){
+  .slideshow-arrow{ display: none; }
+}
+
+@media (max-width: 640px){
+  .slideshow-slide img{ aspect-ratio: 1 / 1; }
+}
+
+/* site.js already skips the auto-advance here; this is the other half, so that
+   a reader who does press an arrow gets a cut rather than a glide. */
+@media (prefers-reduced-motion: reduce){
+  .slideshow-track{ scroll-behavior: auto; }
+}
+
 /* Still used for the "Also noted" postscript, which is deliberately set off
    from the column above it with a divider, unlike the flowing paragraphs. */
 .digest-thread{

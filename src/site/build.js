@@ -361,6 +361,13 @@ export async function buildSite() {
   // subfolder rather than the single flat files handled above.
   await fs.cp(path.resolve('src/site/assets/music'), path.join(DIST_DIR, 'music'), { recursive: true });
 
+  // Ben's own photos, referenced as photos/<file> by the `photos` map on a
+  // Blog record. Same recursive copy as music/ for the same reason: it's a
+  // folder that grows, and listing each file above would mean a code edit
+  // every time a post gets a new picture. dimensions.json rides along
+  // harmlessly; it's the build-time record of what process-photos.sh emitted.
+  await fs.cp(path.resolve('src/site/assets/photos'), path.join(DIST_DIR, 'photos'), { recursive: true });
+
   log.ok(
     `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
       `${socialPosts.length} ticker post(s), ${videos.length} video(s), ${publishedDigests.length} weekly recap(s)`,

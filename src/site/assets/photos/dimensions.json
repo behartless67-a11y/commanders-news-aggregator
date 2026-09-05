@@ -1,0 +1,14 @@
+{
+  "tailgate-cavman": { "w": 1100, "h": 1200 },
+  "tailgate-beers": { "w": 900, "h": 1200 },
+  "tailgate-toast": { "w": 900, "h": 1200 },
+  "tailgate-wings": { "w": 900, "h": 1200 },
+  "presidents-box-friends": { "w": 1200, "h": 900 },
+  "presidents-box-field": { "w": 1200, "h": 900 },
+  "tailgate-selfie": { "w": 1200, "h": 900 },
+  "accn-compound": { "w": 1060, "h": 1200 },
+  "pregame-huddle": { "w": 1200, "h": 1152 },
+  "box-ncstate": { "w": 1200, "h": 900 },
+  "go-hoos-marquee": { "w": 1200, "h": 1124 },
+  "acc-huddle-set": { "w": 1200, "h": 1108 }
+}

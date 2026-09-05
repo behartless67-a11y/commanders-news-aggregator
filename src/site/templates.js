@@ -734,6 +734,14 @@ function footer(sources, generatedAt) {
         <h3>About this page</h3>
         <p class="footer-about-full">The Burgundy Wire pulls headlines from the Commanders' official site and national outlets into one running feed. Every link goes straight to the original publisher, and we host no articles ourselves.</p>
         <p class="footer-about-full">Rebuilt automatically every few hours.</p>
+        <!-- No Spanish edition yet, and pretending otherwise would be worse
+             than saying so. The feed itself is other publishers' headlines in
+             their own words, and every link lands on an English article, so
+             translating those here would misrepresent what's on the other end.
+             What this does is tell a Spanish-speaking reader, in Spanish, that
+             their browser can handle the rest. If a real /es/ ever ships, this
+             paragraph is what it replaces. -->
+        <p class="footer-about-full footer-lang-note" lang="es">¿Prefieres leer en español? Tu navegador puede traducir esta página. Los titulares enlazan a los artículos originales, que están en inglés.</p>
         <p class="footer-about-short">Commanders headlines from official and national sources, rebuilt every few hours.</p>
       </div>
       <div class="footer-col">
@@ -865,7 +873,7 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     category: 'original',
     url: `blog-original-${record.slug}.html`,
     title: record.title,
-    excerpt: firstSentences(record.paragraphs[0], 2),
+    excerpt: firstSentences(essayProse(record.paragraphs)[0], 2),
     publishedAt: record.publishedAt,
     internal: true,
   });
@@ -879,7 +887,7 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     category: 'monday',
     url: `blog-monday-${record.key}.html`,
     title: record.title,
-    excerpt: firstSentences(record.paragraphs[0], 2),
+    excerpt: firstSentences(essayProse(record.paragraphs)[0], 2),
     publishedAt: record.reviewedAt || record.generatedAt,
     internal: true,
   });
@@ -1002,19 +1010,104 @@ ${sourceFooter}
 }
 
 /**
- * Essay prose for originals and Monday posts. Ordinary paragraphs, except a
- * line beginning with "## " which becomes a section subhead — long personal
- * essays need somewhere for the eye to rest, and the inline marker keeps that
- * inside paragraphs[] rather than adding a parallel field to the record shape.
+ * One photo, sized from the record so the browser reserves its space before
+ * the file arrives. Everything here comes from `photos` in the post's own JSON
+ * (see scripts/process-photos.sh, which writes the real output dimensions).
+ *
+ * Always lazy, with no opt-out. Every photo on the site sits below the fold
+ * (the first slide of a slideshow included, since a slideshow is a coda placed
+ * after the prose), and blog.html renders every post in full, so an eager
+ * image there would be a guaranteed download of something the reader may never
+ * scroll to. Lazy is what keeps a twelve-photo page off the critical path.
  */
-function essayParagraphs(paragraphs, rosterIndex) {
+function essayPhoto(photo, { className = 'essay-figure' } = {}) {
+  const caption = photo.caption
+    ? `<figcaption class="essay-figcaption">${escapeHtml(photo.caption)}</figcaption>`
+    : '';
+  return `<figure class="${className}">
+        <img src="photos/${escapeHtml(photo.file)}" width="${photo.w}" height="${photo.h}" alt="${escapeHtml(photo.alt || '')}" loading="lazy" decoding="async" />
+        ${caption}
+      </figure>`;
+}
+
+/**
+ * Essay prose for originals and Monday posts. Ordinary paragraphs, plus two
+ * inline markers:
+ *
+ *   "## Heading"   → a section subhead. Long personal essays need somewhere
+ *                    for the eye to rest.
+ *   "!photo <key>" → the photo stored under that key in the record's `photos`
+ *                    map, dropped in at exactly this point in the prose.
+ *
+ * Both are markers inside paragraphs[] rather than parallel fields because
+ * position is the whole point: a subhead or a photo means nothing except in
+ * relation to the paragraph it sits next to, and a separate array would have
+ * to re-encode that ordering anyway. The photo *data* does live in its own
+ * `photos` map, since width/height/alt/caption is more than belongs in a
+ * marker string.
+ *
+ * An unknown key renders nothing rather than throwing. Losing one photo is a
+ * better failure than a build that dies over a typo in a caption file.
+ */
+function essayParagraphs(paragraphs, rosterIndex, photos = {}) {
   return paragraphs
-    .map((p) =>
-      p.startsWith('## ')
-        ? `<h3 class="digest-subhead">${escapeHtml(p.slice(3).trim())}</h3>`
-        : `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`,
-    )
+    .map((p) => {
+      if (p.startsWith('## ')) {
+        return `<h3 class="digest-subhead">${escapeHtml(p.slice(3).trim())}</h3>`;
+      }
+      if (p.startsWith('!photo ')) {
+        const photo = photos[p.slice(7).trim()];
+        return photo ? essayPhoto(photo) : '';
+      }
+      return `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`;
+    })
     .join('\n');
+}
+
+/**
+ * Just the prose lines of an essay, with the "## " and "!photo " markers
+ * dropped. For anywhere a post is reduced to plain text (river card excerpts,
+ * meta descriptions, the blog index) where a raw marker leaking through would
+ * read as "!photo tailgate-wings" in a Google result.
+ *
+ * Today's posts happen to open with prose, so nothing leaks; this is here so
+ * that stays true when someone leads a future post with a photo.
+ */
+function essayProse(paragraphs) {
+  return paragraphs.filter((p) => !p.startsWith('## ') && !p.startsWith('!photo '));
+}
+
+/**
+ * A horizontally scrolling photo strip, for a post that wants a run of images
+ * as a set rather than interleaved with the prose.
+ *
+ * Built on CSS scroll-snap, so the thing already works with no JavaScript at
+ * all: it's a scrollable row of figures, swipeable on a phone and scrollable
+ * with a trackpad. src/site/assets/site.js only adds the arrows, the dots and
+ * the auto-advance on top of that. Same reasoning as the rest of the site:
+ * the content shouldn't depend on the enhancement.
+ */
+function photoSlideshow(slideshow, photos) {
+  const slides = (slideshow.keys || [])
+    .map((key) => photos[key])
+    .filter(Boolean)
+    .map((photo) => essayPhoto(photo, { className: 'slideshow-slide' }));
+  if (!slides.length) return '';
+  const heading = slideshow.heading
+    ? `<h3 class="digest-subhead">${escapeHtml(slideshow.heading)}</h3>`
+    : '';
+  // Intro is trusted raw HTML, same rule as `plug` below: these records are
+  // hand-authored by the site owner, and it needs to carry a link.
+  const intro = slideshow.intro ? `<p class="digest-para">${slideshow.intro}</p>` : '';
+  return `${heading}
+${intro}
+      <div class="slideshow" data-slideshow aria-roledescription="carousel" aria-label="${escapeHtml(slideshow.heading || 'Photos')}">
+        <div class="slideshow-viewport">
+          <div class="slideshow-track" data-slideshow-track tabindex="0">
+${slides.join('\n')}
+          </div>
+        </div>
+      </div>`;
 }
 
 /**
@@ -1024,18 +1117,24 @@ function essayParagraphs(paragraphs, rosterIndex) {
  * and preview posts sharing the same Blog archive.
  */
 function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
-  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex);
+  const photos = record.photos || {};
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, photos);
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
   // like "go listen to the Music page" carry a real link instead of a bare
   // URL, without teaching every paragraph to parse markdown for one field.
   const plug = record.plug ? `<p class="digest-para original-plug">${record.plug}</p>` : '';
+  // After the prose and before the plug: a slideshow is a coda, not an
+  // interruption. A post using "!photo" markers instead gets its images inline
+  // above and no slideshow at all; nothing stops a post doing both.
+  const slideshow = record.slideshow ? photoSlideshow(record.slideshow, photos) : '';
   return `
     <article class="digest-post original-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
       <p class="digest-week">${escapeHtml(formatDate(record.publishedAt))}</p>
 ${paragraphs}
+${slideshow}
 ${plug}
     </article>`;
 }
@@ -1314,9 +1413,11 @@ ${footer(sources, generatedAt)}
 }
 
 export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
-  // The opening paragraph alone is only 2 sentences — pull the third from the
+  // The opening paragraph alone is only 2 sentences, so pull the third from the
   // paragraph after it rather than stopping short of the requested length.
-  const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
+  // essayProse() first, or a leading subhead or photo marker would end up in
+  // the search snippet and the link preview.
+  const excerpt = firstSentences(essayProse(record.paragraphs).slice(0, 2).join(' '), 3);
   const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
@@ -1365,7 +1466,7 @@ ${footer(sources, generatedAt)}
 
 /** Same shape as renderOriginalPost, using mondayArticleBody()/mondayDisclosure() instead — see those functions' own comments for why this is a distinct record shape. */
 export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
-  const excerpt = firstSentences(record.paragraphs.slice(0, 2).join(' '), 3);
+  const excerpt = firstSentences(essayProse(record.paragraphs).slice(0, 2).join(' '), 3);
   const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
@@ -2193,7 +2294,7 @@ export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
   // post's own text containing "</script>" would otherwise end the script
   // element early.
   const postsJson = JSON.stringify(posts.map((p) => ({ handle: p.handle, text: p.text }))).replace(/</g, '\\u003c');
-  const description = `${siteName} — full-screen display mode for a lobby or watch party.`;
+  const description = `${siteName}: full-screen display mode for a lobby or watch party.`;
 
   return `<!doctype html>
 <html lang="en">

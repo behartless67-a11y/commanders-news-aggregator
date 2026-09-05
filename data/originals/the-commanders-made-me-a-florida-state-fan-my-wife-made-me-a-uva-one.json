@@ -20,12 +20,18 @@
     "I will say this for that stretch, though. The Commanders came with us. That is the underrated part of carrying a team around for thirty years. You can move to a city where you know six people and still have somewhere to be on Sunday.",
     "## The part where UVA happened to me",
     "Fast forward a few years and a few job interviews, and Nicole now runs the president's suite at Scott Stadium.",
+    "!photo presidents-box-field",
     "Which means I have become a very particular kind of husband. I help out when I can. I haul things. I design lanyards. I have developed genuine opinions about lanyard font weight, which is not a sentence I ever expected to be true about myself. If there is a task and I am available, I am on the task. This is what love looks like at our age and I am completely at peace with it.",
     "Gameday has a choreography now, same as Sundays do. I drop her off. I hang around the tailgate a while. I head inside about an hour before kickoff.",
+    "!photo tailgate-selfie",
     "And that tailgate. When we first got here, honestly, it was not good. Was it COVID? Was it complacency? Was it a fanbase that had gotten a little too comfortable expecting nothing? Who knows. Whatever it was, it is gone. That tailgate is hot now. Genuinely hot. Something turned over the last couple of years and you can feel it in the lot before you ever feel it in the stadium.",
+    "!photo tailgate-toast",
     "The tradition is simple and I would not change a thing. We find our closest friends. I make something with a theme, because if I am going to cook I am going to commit to a bit. Last tailgate was tikka masala wings and POG wings, passionfruit orange guava, because apparently I decided the parking lot needed range. Next one is trending southern in my head, maybe smoked beef ribs and collards. I genuinely do not know yet. That is part of the fun.",
+    "!photo tailgate-wings",
     "We eat too much. We drink an amount I would describe as adjacent to reasonable. Then we all walk in together.",
+    "!photo tailgate-cavman",
     "And then, because my wife is very good at her job, I go sit somewhere with climate control.",
+    "!photo box-ncstate",
     "I want to be honest about how funny that is. The last time I sat in the elements at Scott Stadium, I was a kid in Seminoles gear who genuinely believed FSU and the Redskins were the same team. I have not been rained on at a UVA game since. Not once. That kid would not believe a word of this.",
     "## What Saturday cannot do",
     "Here is the tell, though. Here is how you know which team actually owns a person.",
@@ -42,14 +48,59 @@
     "There is something else in it, too. Watching a program climb like that is a genuinely different experience than what I am used to, and I do not think I understood how different until I lived it. UVA has been getting better on a schedule. The Commanders spent two decades getting worse in creative and unpredictable ways, and now we are finally in a stretch where up looks possible again, and I catch myself flinching at it. Because I am not used to good news arriving on time.",
     "Saturdays have been teaching me that sometimes it does.",
     "## The part that actually counts",
-    "So somewhere in the next couple of weeks I am going to get the first real one. A Saturday at Scott Stadium, and then a Sunday that counts, back to back, for the first time all year.",
-    "Saturday I will cook something with a theme. I will hand out lanyards. I will find our friends in the lot and I will go inside before kickoff and enjoy a football game like a normal, well adjusted adult.",
+    "So Friday the 11th is the one. Norfolk State at Scott Stadium, seven o'clock, under the lights. UVA already opened the season with a 34 to 8 win over NC State, so this is not technically the first anything, but the 11th is the first time I get a night at Scott Stadium and then a Sunday that actually counts, with one lonely Saturday sitting in between them doing nothing at all.",
+    "A Friday night kickoff is also a straight gift to a tailgate, and everybody in that lot knows it. Nobody has anywhere to be in the morning.",
+    "Friday I will cook something with a theme. I will hand out lanyards. I will find our friends in the lot and I will go inside before kickoff and enjoy a football game like a normal, well adjusted adult.",
     "Then Sunday the Eagles happen, and I will stop being that person entirely.",
     "September 13th is where the actual season starts for me. Jayden Daniels on the road in a building that has taken things from us before, an offensive line I am still nervous about, and a division rival I would very much like to see have a bad afternoon. That is the one I will lose sleep over. That is the one where I will be up at 6am for a 1pm kickoff with nothing to do but think about it.",
-    "Saturdays are real now. Saturdays matter. Saturdays are the opening act, and I mean that with total affection, because the opening act is where you get your beer and find your friends and remember why you came at all.",
+    "Saturdays are real now. Saturdays matter. Even when one of them turns up on a Friday, they matter. Saturdays are the opening act, and I mean that with total affection, because the opening act is where you get your beer and find your friends and remember why you came at all.",
     "But the headliner is still September 13th.",
     "The headliner is always going to be September 13th."
   ],
+  "photos": {
+    "presidents-box-field": {
+      "file": "presidents-box-field.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "Ben and Nicole in the president's box at Scott Stadium, a packed night crowd and the field behind them.",
+      "caption": "The president's box at Scott Stadium. Nicole built the whole operation. I am standing in it holding a drink."
+    },
+    "tailgate-selfie": {
+      "file": "tailgate-selfie.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "Three of us in sunglasses in the Scott Stadium parking lot under a bright blue sky.",
+      "caption": "The lot, early, before anything has gone wrong."
+    },
+    "tailgate-toast": {
+      "file": "tailgate-toast.jpg",
+      "w": 900,
+      "h": 1200,
+      "alt": "Six friends reaching in to clink beers and a red cup in a parking lot at sunset.",
+      "caption": "Golden hour in a parking lot is still golden hour."
+    },
+    "tailgate-wings": {
+      "file": "tailgate-wings.jpg",
+      "w": 900,
+      "h": 1200,
+      "alt": "A plate of charred grilled chicken wings covered in chopped chives on a tailgate table.",
+      "caption": "This is what a theme looks like. Grilled wings, chives, and no restraint of any kind."
+    },
+    "tailgate-cavman": {
+      "file": "tailgate-cavman.jpg",
+      "w": 1100,
+      "h": 1200,
+      "alt": "Our tailgate group posing with the Cavman mascot in the lot outside Scott Stadium.",
+      "caption": "And then we all walk in together, which some weeks includes Cavman."
+    },
+    "box-ncstate": {
+      "file": "box-ncstate.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "Selfie from inside the box at Scott Stadium, with the field and the crowd visible through the glass.",
+      "caption": "Reader, I went inside."
+    }
+  },
   "status": "published",
   "publishedAt": "2026-09-04T11:00:00.000Z"
 }

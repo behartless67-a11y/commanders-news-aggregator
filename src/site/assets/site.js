@@ -518,4 +518,145 @@
       });
     }, 3000);
   }());
+
+  /**
+   * Photo slideshows in a Blog post (see photoSlideshow() in templates.js).
+   *
+   * The markup is already a working gallery before this runs: a CSS
+   * scroll-snap strip you can swipe or trackpad through. Everything here is
+   * addition, never repair, so nothing below is allowed to hide a slide or
+   * take the track out of the scroll flow. If this function throws on some
+   * browser we have never heard of, a reader still sees every photo.
+   *
+   * querySelectorAll, not one lookup: blog.html renders every post in full, so
+   * that page carries one instance per post and each needs its own state.
+   */
+  (function () {
+    var shows = document.querySelectorAll('[data-slideshow]');
+    if (!shows.length) return;
+
+    // Advance on a timer only for readers who haven't asked us not to. Read
+    // once at setup; someone flipping the OS setting mid-article is not worth
+    // a listener.
+    var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var ADVANCE_MS = 6000;
+
+    function setup(show) {
+      var track = show.querySelector('[data-slideshow-track]');
+      var viewport = show.querySelector('.slideshow-viewport');
+      var slides = track ? track.children : [];
+      if (!track || !viewport || slides.length < 2) return;
+
+      var index = 0;
+      var timer = null;
+      // Per instance, not shared: blog.html has several of these on one page,
+      // and calling a halt to one shouldn't freeze the others.
+      var mayAutoplay = !REDUCED;
+
+      function arrow(dir, label, glyph) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'slideshow-arrow slideshow-arrow-' + dir;
+        b.setAttribute('aria-label', label);
+        b.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="' + glyph + '"/></svg>';
+        viewport.appendChild(b);
+        return b;
+      }
+
+      var prev = arrow('prev', 'Previous photo', 'M15 4l-8 8 8 8z');
+      var next = arrow('next', 'Next photo', 'M9 4l8 8-8 8z');
+
+      var dotRow = document.createElement('div');
+      dotRow.className = 'slideshow-dots';
+      var dots = [];
+      for (var i = 0; i < slides.length; i++) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'slideshow-dot';
+        dot.setAttribute('aria-label', 'Photo ' + (i + 1) + ' of ' + slides.length);
+        (function (n) {
+          dot.addEventListener('click', function () { stop(); go(n); });
+        }(i));
+        dotRow.appendChild(dot);
+        dots.push(dot);
+      }
+      show.appendChild(dotRow);
+
+      /** Scroll position is the single source of truth, so a swipe, a trackpad
+       *  flick and an arrow press all end up reported the same way. */
+      function sync() {
+        var width = slides[0].offsetWidth || 1;
+        index = Math.round(track.scrollLeft / width);
+        if (index < 0) index = 0;
+        if (index > slides.length - 1) index = slides.length - 1;
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].setAttribute('aria-current', i === index ? 'true' : 'false');
+        }
+        prev.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+      }
+
+      function go(n) {
+        if (n < 0 || n > slides.length - 1) return;
+        track.scrollLeft = slides[0].offsetWidth * n;
+      }
+
+      /** Autoplay is a one-way door: once the reader touches anything they are
+       *  driving, and we don't take the wheel back mid-read. */
+      function stop() {
+        if (timer) { clearInterval(timer); timer = null; }
+        mayAutoplay = false;
+      }
+
+      function start() {
+        if (!mayAutoplay || timer) return;
+        timer = setInterval(function () {
+          if (index >= slides.length - 1) { stop(); return; }
+          go(index + 1);
+        }, ADVANCE_MS);
+      }
+
+      prev.addEventListener('click', function () { stop(); go(index - 1); });
+      next.addEventListener('click', function () { stop(); go(index + 1); });
+
+      // A manual scroll is the reader taking over too, but scroll also fires
+      // for our own go() calls, so only treat a real pointer or wheel gesture
+      // as intent.
+      ['pointerdown', 'wheel', 'touchstart', 'keydown'].forEach(function (evt) {
+        track.addEventListener(evt, stop, { passive: true });
+      });
+
+      track.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+        else if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+      });
+
+      var queued = false;
+      track.addEventListener('scroll', function () {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(function () { queued = false; sync(); });
+      }, { passive: true });
+
+      show.addEventListener('mouseenter', function () { if (timer) { clearInterval(timer); timer = null; } });
+      show.addEventListener('mouseleave', start);
+      show.addEventListener('focusin', function () { if (timer) { clearInterval(timer); timer = null; } });
+
+      // Don't burn through the set while it's below the fold. Without an
+      // observer, just leave it parked until the reader does something.
+      if (typeof IntersectionObserver === 'function') {
+        new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) start();
+          else if (timer) { clearInterval(timer); timer = null; }
+        }, { threshold: 0.5 }).observe(show);
+      }
+
+      sync();
+      // Recompute on resize: slide width drives every position we set, and the
+      // aspect-ratio breakpoint at 640px changes it out from under us.
+      window.addEventListener('resize', sync);
+    }
+
+    for (var s = 0; s < shows.length; s++) setup(shows[s]);
+  }());
 })();
