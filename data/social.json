@@ -1,16 +1,4 @@
 {
-  "social-4a7b7462d2d2": {
-    "id": "social-4a7b7462d2d2",
-    "url": "https://x.com/john_keim/status/2092619973231255935",
-    "text": "G Sam Cosmi is sick and won’t participate in today’s joint practice vs the Ravens.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-26T14:27:35.000Z",
-    "collectedAt": "2026-08-26T14:34:58.110Z"
-  },
   "social-56d41f998845": {
     "id": "social-56d41f998845",
     "url": "https://x.com/john_keim/status/2092650493726105660",
@@ -69,32 +57,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-08-26T15:46:21.000Z",
-    "collectedAt": "2026-08-26T16:41:41.103Z"
-  },
-  "social-84d4ce7e86b5": {
-    "id": "social-84d4ce7e86b5",
-    "url": "https://x.com/BenStandig/status/2092621055432987021",
-    "text": "FYI - We are going by the Ravens rules today. They include no tweeting during practice, including (and especially) injury updates. After practice, get ready.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-26T14:31:53.000Z",
-    "collectedAt": "2026-08-26T16:41:41.103Z"
-  },
-  "social-b13016dfda35": {
-    "id": "social-b13016dfda35",
-    "url": "https://x.com/BenStandig/status/2092621857333645652",
-    "text": "RB Rachaad White (hamstring) warming up. Expected to participate in individual stills only",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/162/317/083/148/441/original/88209f8c2d4037b8.jpg"
-    ],
-    "publishedAt": "2026-08-26T14:35:04.000Z",
     "collectedAt": "2026-08-26T16:41:41.103Z"
   },
   "social-462fc2976d34": {
