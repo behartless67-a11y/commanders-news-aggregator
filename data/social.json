@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-27T01:17:00.000Z",
     "collectedAt": "2026-08-27T05:43:46.332Z"
   },
-  "social-65c7256fa07b": {
-    "id": "social-65c7256fa07b",
-    "url": "https://x.com/Commanders/status/2092752449962643705",
-    "text": "Tone one on one ☝️ @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-26T23:14:00.000Z",
-    "collectedAt": "2026-08-27T05:43:46.332Z"
-  },
   "social-88d7f845d6f5": {
     "id": "social-88d7f845d6f5",
     "url": "https://x.com/john_keim/status/2092813613295604021",
@@ -58,20 +46,6 @@
     "images": [],
     "publishedAt": "2026-08-27T01:09:33.000Z",
     "collectedAt": "2026-08-27T05:43:49.120Z"
-  },
-  "social-0ca72bae65c8": {
-    "id": "social-0ca72bae65c8",
-    "url": "https://mastodon.social/@top_news/117164369720846387",
-    "text": "Washington o-line 'inoperable' in joint practice The Athletic's Nicki Jhabvala said the Commanders offensive line was \"inoperable\" during a Wednesday joint practice with the Ravens. /player-news/2026-08-26/washington-o-line-inoperable-in-joint-practice #TopNews #News #Washington #Commanders #OTDJHumphries",
-    "handle": "top_news",
-    "author": "News",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/164/369/684/999/990/original/04dda729d26baef5.jpg"
-    ],
-    "publishedAt": "2026-08-26T23:20:03.221Z",
-    "collectedAt": "2026-08-27T05:44:01.868Z"
   },
   "social-0b5b7aabe12d": {
     "id": "social-0b5b7aabe12d",
@@ -5443,5 +5417,17 @@
     "images": [],
     "publishedAt": "2026-09-05T15:46:10.000Z",
     "collectedAt": "2026-09-05T16:05:47.700Z"
+  },
+  "social-45536581879e": {
+    "id": "social-45536581879e",
+    "url": "https://x.com/JPFinlayNBCS/status/2096370885527580735",
+    "text": "Watching Boise/Oregon after watching too much of Auburn/Baylor feels like time travel. We went from dial up to broadband.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-05T22:52:22.000Z",
+    "collectedAt": "2026-09-05T23:26:50.760Z"
   }
 }
