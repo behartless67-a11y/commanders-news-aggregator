@@ -1,54 +1,4 @@
 {
-  "social-432dc30583ba": {
-    "id": "social-432dc30583ba",
-    "url": "https://x.com/RapSheet/status/2092588361563144617",
-    "text": "The #Commanders signing FA OT DJ Humphries is now official.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-08-26T12:21:58.000Z",
-    "collectedAt": "2026-08-26T12:29:40.922Z"
-  },
-  "social-e8a90c18c0a7": {
-    "id": "social-e8a90c18c0a7",
-    "url": "https://x.com/Commanders/status/2092590384883089481",
-    "text": "NATIONAL DOG DAY!!!! 🐶 @Redwire@twitter.com | @WarriorCanineCn@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/161/821/276/109/823/original/00fa06e111d0e4b1.jpg"
-    ],
-    "publishedAt": "2026-08-26T12:30:00.000Z",
-    "collectedAt": "2026-08-26T12:47:37.760Z"
-  },
-  "social-8c512b5d3bcc": {
-    "id": "social-8c512b5d3bcc",
-    "url": "https://mas.to/@PrivacyDigest/117162031426347696",
-    "text": "Top #Commanders Told #Hegseth Not to Cut #CivilianProtection Program, Poll Showed. He Did It Anyway. -civilian-harm-mitigation-response-trump-defense-department",
-    "handle": "PrivacyDigest",
-    "author": "PrivacyDigest",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-08-26T13:25:23.000Z",
-    "collectedAt": "2026-08-26T13:41:29.155Z"
-  },
-  "social-8d65a081eca6": {
-    "id": "social-8d65a081eca6",
-    "url": "https://x.com/Commanders/status/2092612186657144975",
-    "text": "LIVE: HC Dan Quinn speaks to the media before Ravens joint practice xO",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-26T13:56:38.000Z",
-    "collectedAt": "2026-08-26T13:59:16.814Z"
-  },
   "social-325e839e5eea": {
     "id": "social-325e839e5eea",
     "url": "https://x.com/BenStandig/status/2092615485862895976",
@@ -60,30 +10,6 @@
     "images": [],
     "publishedAt": "2026-08-26T14:09:45.000Z",
     "collectedAt": "2026-08-26T14:25:38.513Z"
-  },
-  "social-7594c68a7817": {
-    "id": "social-7594c68a7817",
-    "url": "https://x.com/BenStandig/status/2092612720000463232",
-    "text": "Dan Quinn said RG Sam Cosmi (illness) is out today. Thin OL gets thinner. OT D. J. Humphries will be worked into the joint practice.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-26T13:58:45.000Z",
-    "collectedAt": "2026-08-26T14:25:38.513Z"
-  },
-  "social-8fdc82542c0a": {
-    "id": "social-8fdc82542c0a",
-    "url": "https://x.com/tashanreed/status/2092612446078816439",
-    "text": "#Commanders HC Dan Quinn said RG Sam Cosmi (illness) won't practice today.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-08-26T13:57:40.000Z",
-    "collectedAt": "2026-08-26T14:25:40.153Z"
   },
   "social-4a7b7462d2d2": {
     "id": "social-4a7b7462d2d2",
@@ -698,18 +624,6 @@
     "sourceKey": "@NickiJhabvala",
     "images": [],
     "publishedAt": "2026-08-26T15:21:34.000Z",
-    "collectedAt": "2026-08-27T14:10:46.688Z"
-  },
-  "social-dd4ab78d9414": {
-    "id": "social-dd4ab78d9414",
-    "url": "https://x.com/NickiJhabvala/status/2092612587892404287",
-    "text": "RG Sam Cosmi is sick and will not participate in the Commanders’ joint practice with the Ravens.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-08-26T13:58:14.000Z",
     "collectedAt": "2026-08-27T14:10:46.688Z"
   },
   "social-7601f94da109": {
