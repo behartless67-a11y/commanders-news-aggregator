@@ -1,28 +1,4 @@
 {
-  "social-ed8ad80757d6": {
-    "id": "social-ed8ad80757d6",
-    "url": "https://x.com/BenStandig/status/2093079069042893039",
-    "text": "Your time to vent or provide solace to those freaking out over the Commanders on the injury and performance fronts: 301-230-0980. I am here to listen. You gotta call, though.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-27T20:51:52.000Z",
-    "collectedAt": "2026-08-27T22:06:16.261Z"
-  },
-  "social-b3c685ed8011": {
-    "id": "social-b3c685ed8011",
-    "url": "https://x.com/pfrumors/status/2093074268489654393",
-    "text": "Laremy Tunsil has undergone surgery, and the #Commanders signed D.J. Humphries. But Brandon Coleman -- the team's primary 2024 left tackle starter -- remains on track to open the season on the blind side in Washington nfc-east-notes-humphries-commanders-coleman-reaves-durant-cowboys-schoen-giants",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [],
-    "publishedAt": "2026-08-27T20:32:47.000Z",
-    "collectedAt": "2026-08-27T22:06:25.989Z"
-  },
   "social-0cc4a9743d77": {
     "id": "social-0cc4a9743d77",
     "url": "https://x.com/Commanders/status/2093126415084638331",
@@ -5281,5 +5257,29 @@
     "images": [],
     "publishedAt": "2026-09-06T18:16:03.000Z",
     "collectedAt": "2026-09-06T19:45:04.980Z"
+  },
+  "social-0e5b543ec850": {
+    "id": "social-0e5b543ec850",
+    "url": "https://x.com/Commanders/status/2096696186358911253",
+    "text": "this time next week you will be watching Commanders football 🙂‍↕️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-06T20:25:00.000Z",
+    "collectedAt": "2026-09-06T21:50:23.509Z"
+  },
+  "social-fbc8765fd5ae": {
+    "id": "social-fbc8765fd5ae",
+    "url": "https://x.com/JPFinlayNBCS/status/2096714394818289981",
+    "text": "Let’s go Foe! What a close out to the second set. Wow",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-06T21:37:21.000Z",
+    "collectedAt": "2026-09-06T21:50:24.823Z"
   }
 }
