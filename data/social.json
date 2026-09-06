@@ -1,16 +1,4 @@
 {
-  "social-1f3d67720fce": {
-    "id": "social-1f3d67720fce",
-    "url": "https://x.com/BenStandig/status/2093059400382415053",
-    "text": "🚨 Back in the host chair on @team980@twitter.com . 4-7 today. Lots to get into from yesterday's Commanders ' joint practice. My first-hand account on what went down in Baltimore +: 430 - @marshallkramsky@twitter.com 530 - @jeffzrebiec 600 - @john_keim Preseason final preview, 53 and your calls!",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-27T19:33:42.000Z",
-    "collectedAt": "2026-08-27T20:06:19.312Z"
-  },
   "social-226b5ffd5c80": {
     "id": "social-226b5ffd5c80",
     "url": "https://x.com/BenStandig/status/2093066978017542457",
@@ -5295,5 +5283,17 @@
     ],
     "publishedAt": "2026-09-06T16:12:29.000Z",
     "collectedAt": "2026-09-06T17:52:35.291Z"
+  },
+  "social-7979eb8d01f7": {
+    "id": "social-7979eb8d01f7",
+    "url": "https://x.com/MonSportsNet/status/2096663738090697059",
+    "text": "The #RaiseHail roster is SET 🔒 Beltway Football breaks down the @Commanders ’ position rankings ⬇️ @JPFinlayNBCS | @Mitch_Tischler@twitter.com",
+    "handle": "MonSportsNet",
+    "author": "Monumental Sports Network",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-09-06T18:16:03.000Z",
+    "collectedAt": "2026-09-06T19:45:04.980Z"
   }
 }
