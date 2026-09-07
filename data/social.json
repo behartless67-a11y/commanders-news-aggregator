@@ -1,18 +1,4 @@
 {
-  "social-06d93befa030": {
-    "id": "social-06d93befa030",
-    "url": "https://x.com/JPFinlayNBCS/status/2093335778738741585",
-    "text": "Doing radio from M&T ahead of tonight’s Commanders/Ravens matchup. And people say I’m always running late",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/173/463/551/128/412/original/37a9960131235bb4.jpg"
-    ],
-    "publishedAt": "2026-08-28T13:51:56.000Z",
-    "collectedAt": "2026-08-28T14:06:17.976Z"
-  },
   "social-f6278df9902a": {
     "id": "social-f6278df9902a",
     "url": "https://x.com/Commanders/status/2093389415921987896",
@@ -5233,5 +5219,17 @@
     "images": [],
     "publishedAt": "2026-09-06T22:57:50.000Z",
     "collectedAt": "2026-09-07T13:47:31.187Z"
+  },
+  "social-26871a0d6e71": {
+    "id": "social-26871a0d6e71",
+    "url": "https://x.com/NickiJhabvala/status/2096936284757406115",
+    "text": "Taylor Heinicke will be the first football player to have his jersey retired by ODU.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-07T12:19:04.000Z",
+    "collectedAt": "2026-09-07T14:05:10.054Z"
   }
 }
