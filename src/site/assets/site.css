@@ -54,20 +54,21 @@ img, svg{ display:block; max-width:100%; }
 }
 
 /* ---------- Hero (header + ticker backdrop) ----------
-   Photo: "Atlanta Falcons at Washington Commanders 2024 16.jpg" by Dissident93,
-   Wikimedia Commons, CC0 (public domain — no attribution required, credited
-   here anyway). Hotlinked from Wikimedia's own CDN, never copied to our own
-   origin — the same policy the video rail follows for thumbnails, and for the
-   same reason: serving it from the source's CDN is defensible, copying it to
-   our origin is not. .site-header and .ticker keep their own burgundy washes,
-   which layer on top of the dark scrim below for a bit of color instead of
-   flat black. */
+   The actual background-image is NOT set here. It rotates through a small
+   pool (config/hero-images.js, all CC0, Wikimedia Commons, credited there),
+   picked once per build from the date, so every reader sees the same one on
+   a given day rather than a different photo per page or per visit. build.js
+   appends the real `.hero{ background-image: ... }` override to the end of
+   this file at build time; that later rule wins the cascade over the
+   fallback color below. Hotlinked from Wikimedia's own CDN either way, never
+   copied to our own origin, the same policy the video rail follows for
+   thumbnails, and for the same reason: serving it from the source's CDN is
+   defensible, copying it to our origin is not. .site-header and .ticker keep
+   their own burgundy washes, which layer on top of the dark scrim below for
+   a bit of color instead of flat black. */
 .hero{
   position: relative;
-  background:
-    url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg')
-    center 35% / cover no-repeat,
-    var(--bg);
+  background: var(--bg);
 }
 
 .hero::before{
