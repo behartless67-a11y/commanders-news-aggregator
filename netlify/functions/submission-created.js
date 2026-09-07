@@ -10,8 +10,10 @@ import crypto from 'node:crypto';
  * without a separate lookup, and useless to guess without the secret.
  */
 export default async (req) => {
-  const payload = await req.json().catch(() => ({}));
-  if (payload.form_name !== 'email-subscribe') return new Response('ok');
+  // Netlify wraps the legacy submission-created body as { payload: {...} };
+  // form_name and data live one level down, not on the parsed body itself.
+  const { payload } = await req.json().catch(() => ({}));
+  if (!payload || payload.form_name !== 'email-subscribe') return new Response('ok');
 
   const email = String(payload.data?.email || '').trim().toLowerCase();
   if (!email || !email.includes('@')) return new Response('ok');
