@@ -1,42 +1,4 @@
 {
-  "social-20bf3dd1691d": {
-    "id": "social-20bf3dd1691d",
-    "url": "https://x.com/Commanders/status/2093424048906670275",
-    "text": "Checking in for the preseason finale ✔️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-28T19:42:41.000Z",
-    "collectedAt": "2026-08-28T19:53:22.333Z"
-  },
-  "social-0fb1853aab29": {
-    "id": "social-0fb1853aab29",
-    "url": "https://x.com/Commanders/status/2093416508596634017",
-    "text": "While we wait for kickoff, please enjoy @JR1ERA@twitter.com mic'd up at joint practice 🎤 @NWFCU@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-08-28T19:12:44.000Z",
-    "collectedAt": "2026-08-28T19:53:22.334Z"
-  },
-  "social-47aa36d73ac3": {
-    "id": "social-47aa36d73ac3",
-    "url": "https://x.com/john_keim/status/2093428263351714161",
-    "text": "Tonight’s view for the preseason finale:",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/174/918/434/049/260/original/28ce5776333dd64b.jpg"
-    ],
-    "publishedAt": "2026-08-28T19:59:26.000Z",
-    "collectedAt": "2026-08-28T20:06:19.875Z"
-  },
   "social-7a311eec7f18": {
     "id": "social-7a311eec7f18",
     "url": "https://x.com/NickiJhabvala/status/2093440934432133480",
@@ -5343,5 +5305,29 @@
     "images": [],
     "publishedAt": "2026-09-07T18:18:54.000Z",
     "collectedAt": "2026-09-07T18:29:08.511Z"
+  },
+  "social-c790f6d3ce0a": {
+    "id": "social-c790f6d3ce0a",
+    "url": "https://x.com/NickiJhabvala/status/2097052271263584686",
+    "text": "Unlike past years, Dan Quinn had the team pick season-long captains this season. They are: Offense: Jayden Daniels, Terry McLaurin Defense: Frankie Luvu, Jeremy Reaves Special Teams: Tress Way",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-07T19:59:57.000Z",
+    "collectedAt": "2026-09-07T20:05:10.129Z"
+  },
+  "social-003e2d179a03": {
+    "id": "social-003e2d179a03",
+    "url": "https://x.com/NickiJhabvala/status/2097023808297185326",
+    "text": "The Commanders released TE Joshua Simon from the practice squad to clear a spot for Jefferson.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-07T18:06:51.000Z",
+    "collectedAt": "2026-09-07T20:05:10.129Z"
   }
 }
