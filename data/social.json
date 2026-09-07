@@ -5305,5 +5305,43 @@
     "images": [],
     "publishedAt": "2026-09-07T12:05:46.000Z",
     "collectedAt": "2026-09-07T18:05:55.977Z"
+  },
+  "social-7be7e42e7a74": {
+    "id": "social-7be7e42e7a74",
+    "url": "https://x.com/Commanders/status/2097024577771864169",
+    "text": "We have made the following roster moves: - Signed WR Van Jefferson to the practice squad - Released TE Joshua Simon from the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/231/104/340/792/312/original/aa14760bafaa51e6.jpg"
+    ],
+    "publishedAt": "2026-09-07T18:09:54.000Z",
+    "collectedAt": "2026-09-07T18:29:00.388Z"
+  },
+  "social-929d22adb604": {
+    "id": "social-929d22adb604",
+    "url": "https://x.com/BenStandig/status/2097024755098386792",
+    "text": "The Commanders released TE Joshua Simon from the PS.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-07T18:10:37.000Z",
+    "collectedAt": "2026-09-07T18:29:06.768Z"
+  },
+  "social-dbdf968caecb": {
+    "id": "social-dbdf968caecb",
+    "url": "https://x.com/tashanreed/status/2097026841202618634",
+    "text": "The #Commanders announced they've released TE Joshua Simon from the practice squad and signed WR Van Jefferson.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-07T18:18:54.000Z",
+    "collectedAt": "2026-09-07T18:29:08.511Z"
   }
 }
