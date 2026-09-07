@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T14:22:15.448Z",
+  "fetchedAt": "2026-09-07T17:03:59.488Z",
   "uva": {
     "lastGame": {
       "date": "2026-08-29T19:30Z",
@@ -32,6 +32,139 @@
           "abbr": "SJSU",
           "rank": null,
           "score": "26",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04T01:00Z",
+      "teams": [
+        {
+          "name": "Utah Utes",
+          "abbr": "UTAH",
+          "rank": 21,
+          "score": "66",
+          "winner": true
+        },
+        {
+          "name": "Idaho Vandals",
+          "abbr": "IDHO",
+          "rank": null,
+          "score": "14",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04T00:00Z",
+      "teams": [
+        {
+          "name": "Missouri Tigers",
+          "abbr": "MIZ",
+          "rank": 25,
+          "score": "54",
+          "winner": true
+        },
+        {
+          "name": "Arkansas-Pine Bluff Golden Lions",
+          "abbr": "UAPB",
+          "rank": null,
+          "score": "14",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05T01:00Z",
+      "teams": [
+        {
+          "name": "Stanford Cardinal",
+          "abbr": "STAN",
+          "rank": null,
+          "score": "6",
+          "winner": false
+        },
+        {
+          "name": "Miami Hurricanes",
+          "abbr": "MIA",
+          "rank": 7,
+          "score": "45",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05T00:00Z",
+      "teams": [
+        {
+          "name": "Oklahoma Sooners",
+          "abbr": "OU",
+          "rank": 10,
+          "score": "51",
+          "winner": true
+        },
+        {
+          "name": "UTEP Miners",
+          "abbr": "UTEP",
+          "rank": null,
+          "score": "0",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05T01:00Z",
+      "teams": [
+        {
+          "name": "USC Trojans",
+          "abbr": "USC",
+          "rank": 14,
+          "score": "39",
+          "winner": true
+        },
+        {
+          "name": "Fresno State Bulldogs",
+          "abbr": "FRES",
+          "rank": null,
+          "score": "0",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05T16:30Z",
+      "teams": [
+        {
+          "name": "Ohio State Buckeyes",
+          "abbr": "OSU",
+          "rank": 1,
+          "score": "56",
+          "winner": true
+        },
+        {
+          "name": "Ball State Cardinals",
+          "abbr": "BALL",
+          "rank": null,
+          "score": "3",
+          "winner": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05T19:30Z",
+      "teams": [
+        {
+          "name": "Oregon Ducks",
+          "abbr": "ORE",
+          "rank": 2,
+          "score": "34",
+          "winner": true
+        },
+        {
+          "name": "Boise State Broncos",
+          "abbr": "BOIS",
+          "rank": null,
+          "score": "27",
           "winner": false
         }
       ]
