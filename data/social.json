@@ -1,42 +1,4 @@
 {
-  "social-19a84454d086": {
-    "id": "social-19a84454d086",
-    "url": "https://x.com/Commanders/status/2093322718532014251",
-    "text": "Last one before it counts",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/173/263/526/393/368/original/4c95746f24e46c08.jpg"
-    ],
-    "publishedAt": "2026-08-28T13:00:02.000Z",
-    "collectedAt": "2026-08-28T13:32:10.742Z"
-  },
-  "social-1696edcfc443": {
-    "id": "social-1696edcfc443",
-    "url": "https://mysportgallery.com/@slessans2/117173295271543669",
-    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-08-28T13:09:56.000Z",
-    "collectedAt": "2026-08-28T13:32:30.122Z"
-  },
-  "social-e20741c36531": {
-    "id": "social-e20741c36531",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mu5gpoee7e2m",
-    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-08-28T13:09:56.790Z",
-    "collectedAt": "2026-08-28T13:32:30.122Z"
-  },
   "social-06d93befa030": {
     "id": "social-06d93befa030",
     "url": "https://x.com/JPFinlayNBCS/status/2093335778738741585",
@@ -5209,5 +5171,67 @@
     "images": [],
     "publishedAt": "2026-09-06T21:37:21.000Z",
     "collectedAt": "2026-09-06T21:50:24.823Z"
+  },
+  "social-ced594349d46": {
+    "id": "social-ced594349d46",
+    "url": "https://x.com/john_keim/status/2096940810096746666",
+    "text": "Enjoyed telling this story. Jones endured a lot to reach this point at age 47. What he was willing to go thru; how close he was to quitting (twice). Much more.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-07T12:37:03.000Z",
+    "collectedAt": "2026-09-07T13:47:29.445Z"
+  },
+  "social-ac2a293fc5de": {
+    "id": "social-ac2a293fc5de",
+    "url": "https://x.com/john_keim/status/2096940176974962881",
+    "text": "If it’s too early to look at this mug on video can listen to my discussion with @LoganPaulsenNFL@twitter.com here. On the OL; facing the Eagles, trying to assess how good a team is after camp and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000788295681",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-07T12:34:32.000Z",
+    "collectedAt": "2026-09-07T13:47:29.445Z"
+  },
+  "social-23ff5702a1b2": {
+    "id": "social-23ff5702a1b2",
+    "url": "https://x.com/john_keim/status/2096934550408507568",
+    "text": "On video with @LoganPaulsenNFL@twitter.com . On the OL: how the scheme can impact performance and help (great insight); why the Eagles are a good 1st opponent (maybe); on how hard it can be for players to gauge how good the team is. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-07T12:12:10.000Z",
+    "collectedAt": "2026-09-07T13:47:29.445Z"
+  },
+  "social-78cee4cd627b": {
+    "id": "social-78cee4cd627b",
+    "url": "https://x.com/BenStandig/status/2096939980958388304",
+    "text": "Enough doom scrolling about the Commanders. Yes, the concerns are real. We’ve covered them. Extensively. But Jayden Daniels is healthy, the defense has more juice — and there are legit reasons to feel good about this team. So let’s talk about those. enough-worrying-lets-talk-about-whats?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/229/783/814/174/605/original/ceb9e2e2959fac96.jpg"
+    ],
+    "publishedAt": "2026-09-07T12:33:45.000Z",
+    "collectedAt": "2026-09-07T13:47:31.187Z"
+  },
+  "social-5815c082a27e": {
+    "id": "social-5815c082a27e",
+    "url": "https://x.com/ESPNNBA/status/2096734651347849584",
+    "text": "AJ Dybantsa x Frances Tiafoe 🎾",
+    "handle": "ESPNNBA",
+    "author": "NBA on ESPN",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-06T22:57:50.000Z",
+    "collectedAt": "2026-09-07T13:47:31.187Z"
   }
 }
