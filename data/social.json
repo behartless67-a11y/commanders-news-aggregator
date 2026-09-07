@@ -5329,5 +5329,115 @@
     "images": [],
     "publishedAt": "2026-09-07T18:06:51.000Z",
     "collectedAt": "2026-09-07T20:05:10.129Z"
+  },
+  "social-f46881f5a431": {
+    "id": "social-f46881f5a431",
+    "url": "https://x.com/Commanders/status/2097052160173203472",
+    "text": "Leading the charge this season @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/231/544/428/005/317/original/589f2e7841166c01.jpg"
+    ],
+    "publishedAt": "2026-09-07T19:59:30.000Z",
+    "collectedAt": "2026-09-07T20:05:54.726Z"
+  },
+  "social-7bddfcb3ab8b": {
+    "id": "social-7bddfcb3ab8b",
+    "url": "https://x.com/Commanders/status/2097051921114972191",
+    "text": "LIVE: HC Dan Quinn speaks to the media to kick off Week 1 xB",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-07T19:58:33.000Z",
+    "collectedAt": "2026-09-07T20:05:54.728Z"
+  },
+  "social-19a57a689e0e": {
+    "id": "social-19a57a689e0e",
+    "url": "https://x.com/JPFinlayNBCS/status/2097053291972530384",
+    "text": "Dan Quinn: \"I like the energy of our team\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-07T20:04:00.000Z",
+    "collectedAt": "2026-09-07T20:05:56.238Z"
+  },
+  "social-69a468001503": {
+    "id": "social-69a468001503",
+    "url": "https://x.com/JPFinlayNBCS/status/2097052510884135278",
+    "text": "Odafe Oweh took part in Washington's walk through today",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-07T20:00:54.000Z",
+    "collectedAt": "2026-09-07T20:05:56.239Z"
+  },
+  "social-210ed01ed371": {
+    "id": "social-210ed01ed371",
+    "url": "https://x.com/JPFinlayNBCS/status/2097052149171585306",
+    "text": "Dan Quinn has named season long captains: Terry McLaurin, Jayden Daniels and Frankie Luvu and Jeremy Reaves. Tress Way is special teams captain.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-07T19:59:28.000Z",
+    "collectedAt": "2026-09-07T20:05:56.239Z"
+  },
+  "social-31d662e5dd8b": {
+    "id": "social-31d662e5dd8b",
+    "url": "https://x.com/john_keim/status/2097048757195948077",
+    "text": "TE Joshua Simon was released from the PS to make room.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-07T19:45:59.000Z",
+    "collectedAt": "2026-09-07T20:05:57.467Z"
+  },
+  "social-8cca511fa9a2": {
+    "id": "social-8cca511fa9a2",
+    "url": "https://x.com/BenStandig/status/2097053033276510365",
+    "text": "The Commanders are doing something new under Dan Quinn: Season-long captains. They voted for: - Jayden Daniels - Terry McLaurin - Frankie Luvu - Jeremy Reaves - Tress Way One more captain will named each Friday.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-07T20:02:59.000Z",
+    "collectedAt": "2026-09-07T20:05:58.980Z"
+  },
+  "social-0c72d7e40331": {
+    "id": "social-0c72d7e40331",
+    "url": "https://x.com/BenStandig/status/2097052512524341564",
+    "text": "No official injury report yet but Dan Quinn said \"everyone\" participated today including Odafe Oweh.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-07T20:00:54.000Z",
+    "collectedAt": "2026-09-07T20:05:58.980Z"
+  },
+  "social-b137e45cff78": {
+    "id": "social-b137e45cff78",
+    "url": "https://x.com/BenStandig/status/2097044657960263845",
+    "text": "One of the Cowboys' top OL is out for the Week 2 game against the Commanders.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-07T19:29:42.000Z",
+    "collectedAt": "2026-09-07T20:05:58.980Z"
   }
 }
