@@ -5231,5 +5231,31 @@
     "images": [],
     "publishedAt": "2026-09-07T12:19:04.000Z",
     "collectedAt": "2026-09-07T14:05:10.054Z"
+  },
+  "social-865967ec49b8": {
+    "id": "social-865967ec49b8",
+    "url": "https://x.com/Commanders/status/2096961685777231945",
+    "text": "we play football this week 🥹",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/230/122/933/656/672/original/b2c271d0d4f9698e.jpg"
+    ],
+    "publishedAt": "2026-09-07T14:00:00.000Z",
+    "collectedAt": "2026-09-07T14:05:49.549Z"
+  },
+  "social-3f9bb86e5dff": {
+    "id": "social-3f9bb86e5dff",
+    "url": "https://x.com/tashanreed/status/2096962123045753046",
+    "text": "I'm starting a #Commanders podcast. The Tashan Reed Show will air live every Tuesday on Substack and be available on all streaming platforms. I'll provide in-depth news, analysis, game previews and recaps. The first episode will be tomorrow 🔗⤵️ c-329720637?r=1gwknd&utm_medium=ios&utm_source=notes-share-action",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-07T14:01:44.000Z",
+    "collectedAt": "2026-09-07T14:05:55.168Z"
   }
 }
