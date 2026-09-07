@@ -2971,6 +2971,59 @@ main.layout{
   white-space: nowrap;
 }
 
+/* A one-off shoutout inside a post body (see partnerCallout() in
+   templates.js). Deliberately not a card, no border box, no fill, just two
+   hairline rules and the name itself set big enough to carry the weight,
+   the way a magazine breaks out a pull-quote rather than boxing it. */
+.partner-pull{
+  display: block;
+  margin: 32px 0;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255,182,18,0.35);
+  border-bottom: 1px solid rgba(255,182,18,0.35);
+  text-decoration: none;
+  color: inherit;
+}
+
+.partner-pull-eyebrow{
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+
+.partner-pull-name{
+  display: block;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  color: var(--gold);
+  margin-bottom: 12px;
+  transition: opacity 0.15s ease;
+}
+
+.partner-pull:hover .partner-pull-name{ opacity: 0.85; }
+
+.partner-pull-body{
+  display: block;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 640px;
+}
+
+.partner-pull-cta{
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
 .footer-bottom{
   border-top: 1px solid var(--border-soft);
   padding-top: 20px;

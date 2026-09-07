@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
+import { LOCAL_SPOTS } from '../../config/local-spots.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
@@ -18,7 +19,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -284,6 +285,12 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'cville.html'),
+    renderLocalSpotsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, spots: LOCAL_SPOTS }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'music.html'),
     renderMusicPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
@@ -321,7 +328,7 @@ export async function buildSite() {
     'index.html', 'team-sources.html', 'national-coverage.html',
     'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
     'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
-    'music.html', 'beat-writers.html',
+    'music.html', 'beat-writers.html', 'cville.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),
