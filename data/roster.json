@@ -1308,6 +1308,15 @@
     "stats": null
   },
   {
+    "slug": "van-jefferson",
+    "name": "Van Jefferson",
+    "jersey": "12",
+    "position": "WR",
+    "espnId": "3930066",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
+    "stats": null
+  },
+  {
     "slug": "d-j-johnson",
     "name": "D.J. Johnson",
     "jersey": "",
@@ -1416,15 +1425,6 @@
     "position": "OT",
     "espnId": "3123303",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
-    "stats": null
-  },
-  {
-    "slug": "joshua-simon",
-    "name": "Joshua Simon",
-    "jersey": "",
-    "position": "TE",
-    "espnId": "4430482",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430482.png",
     "stats": null
   },
   {
