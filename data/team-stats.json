@@ -1,86 +1,32 @@
 {
-  "season": "2025",
+  "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-08-27T16:27:53.337Z",
+  "fetchedAt": "2026-09-08T16:08:35.252Z",
   "offense": {
     "yardsPerGame": {
-      "value": "318.8",
-      "rank": 22,
-      "rankLabel": "22nd"
+      "value": "0.0",
+      "rank": 1,
+      "rankLabel": "Tied-1st"
     },
     "pointsPerGame": {
-      "value": "20.9",
-      "rank": 22,
-      "rankLabel": "22nd"
+      "value": "0.0",
+      "rank": 1,
+      "rankLabel": "Tied-1st"
     },
     "passYardsPerGame": {
-      "value": "184.1",
-      "rank": 24,
-      "rankLabel": "24th"
+      "value": "0.0",
+      "rank": 1,
+      "rankLabel": "Tied-1st"
     },
     "rushYardsPerGame": {
-      "value": "134.7",
-      "rank": 4,
-      "rankLabel": "4th"
+      "value": "0.0",
+      "rank": 1,
+      "rankLabel": "Tied-1st"
     }
   },
-  "defense": {
-    "games": 17,
-    "yardsPerGame": {
-      "value": "384.3",
-      "rank": null,
-      "rankLabel": null
-    },
-    "pointsPerGame": {
-      "value": "26.5",
-      "rank": null,
-      "rankLabel": null
-    },
-    "passYardsPerGame": {
-      "value": "242.5",
-      "rank": null,
-      "rankLabel": null
-    },
-    "rushYardsPerGame": {
-      "value": "141.8",
-      "rank": null,
-      "rankLabel": null
-    }
-  },
+  "defense": null,
   "leaders": {
-    "offense": [
-      {
-        "key": "Pass",
-        "name": "Marcus Mariota",
-        "value": "1,695"
-      },
-      {
-        "key": "Rush",
-        "name": "Jacory Croskey-Merritt",
-        "value": "805"
-      },
-      {
-        "key": "Recv",
-        "name": "Deebo Samuel Sr.",
-        "value": "727"
-      }
-    ],
-    "defense": [
-      {
-        "key": "Tckl",
-        "name": "Bobby Wagner",
-        "value": "162"
-      },
-      {
-        "key": "Sack",
-        "name": "Von Miller",
-        "value": "9"
-      },
-      {
-        "key": "Int",
-        "name": "Mike Sainristil",
-        "value": "4"
-      }
-    ]
+    "offense": [],
+    "defense": []
   }
 }

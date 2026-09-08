@@ -806,7 +806,23 @@
     "position": "CB",
     "espnId": "2971586",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2971586.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "17"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "charles-omenihu",
@@ -1024,7 +1040,23 @@
     "position": "DT",
     "espnId": "3886601",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3886601.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "15"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "tyler-ott",
@@ -1314,7 +1346,23 @@
     "position": "WR",
     "espnId": "3930066",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "29"
+        },
+        {
+          "label": "YDS",
+          "value": "350"
+        },
+        {
+          "label": "TD",
+          "value": "1"
+        }
+      ]
+    }
   },
   {
     "slug": "d-j-johnson",
@@ -1434,7 +1482,23 @@
     "position": "CB",
     "espnId": "4360935",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4360935.png",
-    "stats": null
+    "stats": {
+      "season": 2024,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "19"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "1"
+        }
+      ]
+    }
   },
   {
     "slug": "jack-westover",
@@ -1443,7 +1507,23 @@
     "position": "TE",
     "espnId": "4361100",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361100.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "1"
+        },
+        {
+          "label": "YDS",
+          "value": "0"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "isaac-yiadom",
@@ -1452,6 +1532,22 @@
     "position": "CB",
     "espnId": "3122797",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "26"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   }
 ]
