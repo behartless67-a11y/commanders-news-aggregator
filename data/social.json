@@ -1,16 +1,4 @@
 {
-  "social-f253ea080f19": {
-    "id": "social-f253ea080f19",
-    "url": "https://x.com/tashanreed/status/2093785862949458037",
-    "text": "One of the most obvious \"what the hell are they doing?\" picks ever",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-08-29T19:40:25.000Z",
-    "collectedAt": "2026-08-29T20:06:22.508Z"
-  },
   "social-c6d3a41d1b9a": {
     "id": "social-c6d3a41d1b9a",
     "url": "https://x.com/NickiJhabvala/status/2093821557231493130",
@@ -4694,5 +4682,17 @@
     "images": [],
     "publishedAt": "2026-09-08T18:24:57.000Z",
     "collectedAt": "2026-09-08T19:23:48.154Z"
+  },
+  "social-b3a4e0585191": {
+    "id": "social-b3a4e0585191",
+    "url": "https://x.com/NickiJhabvala/status/2097402273756295275",
+    "text": "The Commanders’ updated depth chart",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-08T19:10:44.000Z",
+    "collectedAt": "2026-09-08T20:05:09.925Z"
   }
 }
