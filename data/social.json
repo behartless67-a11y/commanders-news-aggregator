@@ -13,60 +13,6 @@
     "publishedAt": "2026-08-29T16:00:01.000Z",
     "collectedAt": "2026-08-29T16:06:16.624Z"
   },
-  "social-7434858c6be9": {
-    "id": "social-7434858c6be9",
-    "url": "https://x.com/BenStandig/status/2093707203567833199",
-    "text": "My Commanders 53-player projection (and a bit more) link: commanders-final-53-man-projection?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/179/271/227/922/336/original/89a4418ffc01e089.jpg"
-    ],
-    "publishedAt": "2026-08-29T14:27:51.000Z",
-    "collectedAt": "2026-08-29T16:06:20.895Z"
-  },
-  "social-0bb6a59b7f4a": {
-    "id": "social-0bb6a59b7f4a",
-    "url": "https://x.com/BenStandig/status/2093706656798408857",
-    "text": "Right or not, I guarantee this is the boldest Commanders roster projection you'll see. Injuries + a thud of a camp/preseason finish created uncertainty. So I took some educated swings — the 53, practice squad and what happens next. For LMS subscribers (link 👇):",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/179/271/184/863/713/original/02e9f9f6da546d9a.jpg"
-    ],
-    "publishedAt": "2026-08-29T14:25:40.000Z",
-    "collectedAt": "2026-08-29T16:06:20.895Z"
-  },
-  "social-ff46f3d56f51": {
-    "id": "social-ff46f3d56f51",
-    "url": "https://x.com/BenStandig/status/2093704492063625575",
-    "text": "🎙 2 for 1 🏈 On to the 53 after a woof of a showing in Baltimore on-to-the-53/id1760952448?i=1000786619216 🏈 Reality fantasy mix - @Fantasy_Guru@twitter.com on QB strategy; Bijan v. Jahmyr; offenses to target/avoid; ranking JD5, Chig, 17 and Bill among their positional peers. commanders-reality-and-football-fantasy/id1760952448?i=1000786374502",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-29T14:17:04.000Z",
-    "collectedAt": "2026-08-29T16:06:20.895Z"
-  },
-  "social-e3430533fcca": {
-    "id": "social-e3430533fcca",
-    "url": "https://x.com/BenStandig/status/2093701996763124045",
-    "text": "Right or not, I guarantee this is the boldest Commanders roster projection you'll see. Injuries + a thud of a camp/preseason finish created uncertainty. So I took some educated swings — the 53, practice squad and what happens next. For LMS subscribers: commanders-final-53-man-projection?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/179/185/962/795/357/original/a5290a76fcc6eeb5.jpg"
-    ],
-    "publishedAt": "2026-08-29T14:07:09.000Z",
-    "collectedAt": "2026-08-29T16:06:20.895Z"
-  },
   "social-39fe2469322a": {
     "id": "social-39fe2469322a",
     "url": "https://x.com/JPFinlayNBCS/status/2093757683429966283",
@@ -4716,5 +4662,31 @@
     "images": [],
     "publishedAt": "2026-09-08T13:57:31.000Z",
     "collectedAt": "2026-09-08T14:05:09.386Z"
+  },
+  "social-1958fedd1dd5": {
+    "id": "social-1958fedd1dd5",
+    "url": "https://x.com/JPFinlayNBCS/status/2097346092471886099",
+    "text": "This is pretty interesting - I was going thru notes on my comp and found these from February at the Combine. They certainly answered the first 2 questions. The Diggs addition helps the 4th.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/236/125/520/691/901/original/deca7c01a7793b9e.jpg"
+    ],
+    "publishedAt": "2026-09-08T15:27:29.000Z",
+    "collectedAt": "2026-09-08T15:59:21.204Z"
+  },
+  "social-f4e67185b891": {
+    "id": "social-f4e67185b891",
+    "url": "https://x.com/BenStandig/status/2097334231139524657",
+    "text": "My first fantasy football draft is tonight. I think I'm good on the local 53. Have done minimal prep otherwise. Sleepers and stay aways. Help.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-08T14:40:21.000Z",
+    "collectedAt": "2026-09-08T15:59:23.682Z"
   }
 }
