@@ -5422,5 +5422,53 @@
     "excerpt": "As the Commanders attempt to bounce back from a disappointing 2025 season, the franchise is still searching for more cornerstone players.",
     "publishedAt": "2026-09-08T12:01:02.000Z",
     "collectedAt": "2026-09-08T12:05:50.737Z"
+  },
+  "riggos-rag-8b1a504f45e4": {
+    "id": "riggos-rag-8b1a504f45e4",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-massive-week-2-boost-without-breaking-sweat-tyler-smith",
+    "title": "Commanders just got a massive Week 2 boost without breaking sweat",
+    "excerpt": "The Washington Commanders won't have to deal with Dallas Cowboys offensive lineman Tyler Smith when the two rivals clash in Week 2.",
+    "publishedAt": "2026-09-08T13:00:01.000Z",
+    "collectedAt": "2026-09-08T14:05:49.799Z"
+  },
+  "cbs-nfl-1432d4ec93ba": {
+    "id": "cbs-nfl-1432d4ec93ba",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/2026-nfl-coach-hot-seat-tiers-zac-taylor-dan-quinn",
+    "title": "2026 NFL coach hot seat tiers: Zac Taylor, Dan Quinn among those feeling the heat",
+    "excerpt": "Ahead of the season, we assess where every coach lands on the hot seat scale",
+    "publishedAt": "2026-09-08T12:09:00.000Z",
+    "collectedAt": "2026-09-08T14:05:56.712Z"
+  },
+  "yahoo-nfl-a7380e36be16": {
+    "id": "yahoo-nfl-a7380e36be16",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/optimism-rises-healthier-commanders-roster-120000724.html",
+    "title": "Optimism rises with healthier Commanders roster for Wk 1 road trip to Philly - Daily Slop",
+    "excerpt": "BALTIMORE, MARYLAND - AUGUST 28: Stefon Diggs #3 of the Washington Commanders walks on the field before the preseason game against the Baltimore Ravens at M&T Bank Stadium on August 28, 2026 in Baltimore, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Daily Slop – 8 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general,…",
+    "publishedAt": "2026-09-08T12:00:00.000Z",
+    "collectedAt": "2026-09-08T14:05:57.357Z"
+  },
+  "yahoo-nfl-a5a697cddbc4": {
+    "id": "yahoo-nfl-a5a697cddbc4",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-upset-eagles-philly-open-120000921.html",
+    "title": "Can the Commanders upset the Eagles in Philly to open the season and seize control of the NFC East?",
+    "excerpt": "Jan 4, 2026; Philadelphia, Pennsylvania, USA; Philadelphia Eagles safety Brandon Johnson (49) breaks up pass intended for Washington Commanders wide receiver Treylon Burks (13) at Lincoln Financial Field. Mandatory Credit: Eric Hartline-Imagn Images | Eric Hartline-Imagn Images Back in June and early July, HH veteran writer, Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games…",
+    "publishedAt": "2026-09-08T12:00:00.000Z",
+    "collectedAt": "2026-09-08T14:05:57.357Z"
   }
 }
