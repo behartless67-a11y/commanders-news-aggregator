@@ -12,10 +12,6 @@
           {
             "slug": "dyami-brown",
             "name": "Dyami Brown"
-          },
-          {
-            "slug": "van-jefferson",
-            "name": "Van Jefferson"
           }
         ]
       },
@@ -23,16 +19,12 @@
         "position": "LT",
         "tiers": [
           {
-            "slug": "laremy-tunsil",
-            "name": "Laremy Tunsil"
-          },
-          {
             "slug": "brandon-coleman",
             "name": "Brandon Coleman"
           },
           {
-            "slug": "andrew-wylie",
-            "name": "Andrew Wylie"
+            "slug": "d-j-humphries",
+            "name": "D.J. Humphries"
           }
         ]
       },
@@ -42,6 +34,10 @@
           {
             "slug": "chris-paul",
             "name": "Chris Paul"
+          },
+          {
+            "slug": "tanoa-togiai",
+            "name": "Tanoa Togiai"
           }
         ]
       },
@@ -51,10 +47,6 @@
           {
             "slug": "nick-allegretti",
             "name": "Nick Allegretti"
-          },
-          {
-            "slug": "julian-good-jones",
-            "name": "Julian Good-Jones"
           },
           {
             "slug": "matt-gulbin",
@@ -68,10 +60,6 @@
           {
             "slug": "sam-cosmi",
             "name": "Sam Cosmi"
-          },
-          {
-            "slug": "trent-scott",
-            "name": "Trent Scott"
           },
           {
             "slug": "tanoa-togiai",
@@ -122,16 +110,12 @@
         "position": "WR",
         "tiers": [
           {
-            "slug": "luke-mccaffrey",
-            "name": "Luke McCaffrey"
+            "slug": "stefon-diggs",
+            "name": "Stefon Diggs"
           },
           {
             "slug": "jaylin-lane",
             "name": "Jaylin Lane"
-          },
-          {
-            "slug": "jaden-bradley",
-            "name": "Jaden Bradley"
           }
         ]
       },
@@ -139,16 +123,16 @@
         "position": "WR",
         "tiers": [
           {
-            "slug": "stefon-diggs",
-            "name": "Stefon Diggs"
-          },
-          {
             "slug": "treylon-burks",
             "name": "Treylon Burks"
           },
           {
             "slug": "antonio-williams",
             "name": "Antonio Williams"
+          },
+          {
+            "slug": "luke-mccaffrey",
+            "name": "Luke McCaffrey"
           }
         ]
       },
@@ -162,10 +146,6 @@
           {
             "slug": "marcus-mariota",
             "name": "Marcus Mariota"
-          },
-          {
-            "slug": "sam-hartman",
-            "name": "Sam Hartman"
           },
           {
             "slug": "athan-kaliakmanis",
@@ -185,12 +165,8 @@
             "name": "Rachaad White"
           },
           {
-            "slug": "jeremy-mcnichols",
-            "name": "Jeremy McNichols"
-          },
-          {
-            "slug": "robert-henry-jr",
-            "name": "Robert Henry Jr."
+            "slug": "kaytron-allen",
+            "name": "Kaytron Allen"
           }
         ]
       }
@@ -207,12 +183,8 @@
             "name": "Daron Payne"
           },
           {
-            "slug": "deatrich-wise",
-            "name": "Deatrich Wise Jr."
-          },
-          {
-            "slug": "byron-cowart",
-            "name": "Byron Cowart"
+            "slug": "ricky-barber",
+            "name": "Ricky Barber"
           }
         ]
       },
@@ -224,16 +196,8 @@
             "name": "Tim Settle"
           },
           {
-            "slug": "jer-zhan-newton",
-            "name": "Jer'Zhan Newton"
-          },
-          {
             "slug": "shy-tuttle",
             "name": "Shy Tuttle"
-          },
-          {
-            "slug": "jeffrey-m-ba",
-            "name": "Jeffrey M'ba"
           }
         ]
       },
@@ -247,10 +211,6 @@
           {
             "slug": "charles-omenihu",
             "name": "Charles Omenihu"
-          },
-          {
-            "slug": "ricky-barber",
-            "name": "Ricky Barber"
           }
         ]
       },
@@ -264,10 +224,6 @@
           {
             "slug": "joshua-josephs",
             "name": "Joshua Josephs"
-          },
-          {
-            "slug": "javontae-jean-baptiste",
-            "name": "Javontae Jean-Baptiste"
           }
         ]
       },
@@ -281,10 +237,6 @@
           {
             "slug": "leo-chenal",
             "name": "Leo Chenal"
-          },
-          {
-            "slug": "ale-kaho",
-            "name": "Ale Kaho"
           }
         ]
       },
@@ -313,29 +265,8 @@
             "name": "K'Lavon Chaisson"
           },
           {
-            "slug": "dorance-armstrong",
-            "name": "Dorance Armstrong"
-          },
-          {
-            "slug": "d-j-johnson-2",
-            "name": "D.J. Johnson"
-          }
-        ]
-      },
-      {
-        "position": "CB",
-        "tiers": [
-          {
-            "slug": "trey-amos",
-            "name": "Trey Amos"
-          },
-          {
-            "slug": "rasul-douglas",
-            "name": "Rasul Douglas"
-          },
-          {
-            "slug": "fred-davis-ii",
-            "name": "Fred Davis II"
+            "slug": "javontae-jean-baptiste",
+            "name": "Javontae Jean-Baptiste"
           }
         ]
       },
@@ -345,6 +276,10 @@
           {
             "slug": "amik-robertson",
             "name": "Amik Robertson"
+          },
+          {
+            "slug": "rasul-douglas",
+            "name": "Rasul Douglas"
           }
         ]
       },
@@ -358,10 +293,6 @@
           {
             "slug": "fabian-moreau",
             "name": "Fabian Moreau"
-          },
-          {
-            "slug": "darius-rush",
-            "name": "Darius Rush"
           }
         ]
       },
@@ -467,10 +398,6 @@
           {
             "slug": "treylon-burks",
             "name": "Treylon Burks"
-          },
-          {
-            "slug": "antonio-williams",
-            "name": "Antonio Williams"
           }
         ]
       }
