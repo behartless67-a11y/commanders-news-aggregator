@@ -5398,5 +5398,29 @@
     "excerpt": "Which potential Washington Commanders cut candidates cannot afford to take a wrong step during the 2026 campaign?",
     "publishedAt": "2026-09-08T10:00:02.000Z",
     "collectedAt": "2026-09-08T10:05:45.441Z"
+  },
+  "riggos-rag-13a9eccb22fb": {
+    "id": "riggos-rag-13a9eccb22fb",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-peters-proves-commanders-roster-mastery-perfect-contingency-plan",
+    "title": "Adam Peters proves his Commanders roster mastery with perfect contingency plan",
+    "excerpt": "Washington Commanders general manager Adam Peters proved his roster mastery with the signing of wide receiver Van Jefferson Jr. to the practice squad.",
+    "publishedAt": "2026-09-08T11:30:00.000Z",
+    "collectedAt": "2026-09-08T12:05:49.347Z"
+  },
+  "athletic-jhabvala-65517bd0a19e": {
+    "id": "athletic-jhabvala-65517bd0a19e",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7574190/2026/09/08/washington-commanders-franchise-cornerstones-jayden-daniels",
+    "title": "The Commanders have their quarterback. Who are their other cornerstones?",
+    "excerpt": "As the Commanders attempt to bounce back from a disappointing 2025 season, the franchise is still searching for more cornerstone players.",
+    "publishedAt": "2026-09-08T12:01:02.000Z",
+    "collectedAt": "2026-09-08T12:05:50.737Z"
   }
 }
