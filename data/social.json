@@ -135,18 +135,6 @@
     "publishedAt": "2026-08-29T00:54:15.000Z",
     "collectedAt": "2026-08-29T02:06:20.644Z"
   },
-  "social-a6c5e612f294": {
-    "id": "social-a6c5e612f294",
-    "url": "https://x.com/JPFinlayNBCS/status/2093490277738557742",
-    "text": "Ravens are getting whatever they want and getting it easy. Majority of these dudes on the field arent gonna be on the team Monday but man this has been a bad week in Commanderland",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-29T00:05:52.000Z",
-    "collectedAt": "2026-08-29T02:06:20.644Z"
-  },
   "social-3f729ece0aad": {
     "id": "social-3f729ece0aad",
     "url": "https://x.com/john_keim/status/2093518433073746040",
@@ -4936,5 +4924,41 @@
     "images": [],
     "publishedAt": "2026-09-07T21:16:44.000Z",
     "collectedAt": "2026-09-07T22:05:55.667Z"
+  },
+  "social-8745fed817a8": {
+    "id": "social-8745fed817a8",
+    "url": "https://x.com/JPFinlayNBCS/status/2097100032172228922",
+    "text": "My 11 yr old daughter has her first ever fantasy draft tonight. Her only focus is drafting Jayden. I'm letting her run this thing so he might go 1.1. LFG",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-07T23:09:44.000Z",
+    "collectedAt": "2026-09-08T00:05:52.945Z"
+  },
+  "social-141a0474e512": {
+    "id": "social-141a0474e512",
+    "url": "https://x.com/BenStandig/status/2097102818767208458",
+    "text": "Zero questions today about the center is the appropriate amount after weeks of an inordinate number of questions.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-07T23:20:48.000Z",
+    "collectedAt": "2026-09-08T00:05:55.653Z"
+  },
+  "social-51eabc4cb99d": {
+    "id": "social-51eabc4cb99d",
+    "url": "https://x.com/pfrumors/status/2097112803790262405",
+    "text": "The #Browns , #Broncos , #Lions , #Raiders , #Chargers #Saints , #Buccaneers , #Titans and #Commanders make practice squad moves nfl-practice-squad-updates-9-7-26",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-08T00:00:29.000Z",
+    "collectedAt": "2026-09-08T00:06:05.387Z"
   }
 }
