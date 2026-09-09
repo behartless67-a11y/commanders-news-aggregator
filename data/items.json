@@ -5794,5 +5794,29 @@
     "excerpt": "The Washington Commanders made their stance on wide receiver Luke McCaffrey crystal clear before Week 1 against the Philadelphia Eagles.",
     "publishedAt": "2026-09-09T16:00:02.000Z",
     "collectedAt": "2026-09-09T16:05:54.144Z"
+  },
+  "riggos-rag-3b9140893555": {
+    "id": "riggos-rag-3b9140893555",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-new-defense-one-haunting-saquon-barkley-score-settle",
+    "title": "Commanders' new defense has one haunting Saquon Barkley score to settle",
+    "excerpt": "The Washington Commanders' new defense under Daronte Jones has one haunting score to settle with Philadelphia Eagles running back Saquon Barkley.",
+    "publishedAt": "2026-09-09T18:02:13.000Z",
+    "collectedAt": "2026-09-09T18:05:54.707Z"
+  },
+  "commanders-youtube-e7aa32a96457": {
+    "id": "commanders-youtube-e7aa32a96457",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=KMZVQ09Bh0A",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media Before The First Practice Of The Week | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-09T16:57:22.000Z",
+    "collectedAt": "2026-09-09T18:05:55.988Z"
   }
 }
