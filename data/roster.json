@@ -1127,56 +1127,6 @@
     }
   },
   {
-    "slug": "curtis-jacobs",
-    "name": "Curtis Jacobs",
-    "jersey": "57",
-    "position": "LB",
-    "espnId": "4429097",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429097.png",
-    "stats": {
-      "season": 2024,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "4"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "jacoby-jones",
-    "name": "Jacoby Jones",
-    "jersey": "84",
-    "position": "WR",
-    "espnId": "5083297",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5083297.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "1"
-        },
-        {
-          "label": "YDS",
-          "value": "25"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "jeremy-mcnichols",
     "name": "Jeremy McNichols",
     "jersey": "26",
@@ -1200,15 +1150,6 @@
         }
       ]
     }
-  },
-  {
-    "slug": "quentin-moore",
-    "name": "Quentin Moore",
-    "jersey": "40",
-    "position": "TE",
-    "espnId": "4875350",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4875350.png",
-    "stats": null
   },
   {
     "slug": "jer-zhan-newton",
