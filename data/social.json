@@ -191,18 +191,6 @@
     "publishedAt": "2026-08-30T19:16:13.000Z",
     "collectedAt": "2026-08-30T20:06:25.700Z"
   },
-  "social-64ad64c14ad8": {
-    "id": "social-64ad64c14ad8",
-    "url": "https://x.com/BenStandig/status/2094138020521795847",
-    "text": "Commanders cuts tracker and plenty of other 53-player notes just a click away. 0148ddb-6d17-4b84-9897-7dad87a5c5c0",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-30T18:59:45.000Z",
-    "collectedAt": "2026-08-30T20:06:25.700Z"
-  },
   "social-cacf66b4a2b3": {
     "id": "social-cacf66b4a2b3",
     "url": "https://x.com/tashanreed/status/2094143364157390878",
@@ -4279,5 +4267,43 @@
     "images": [],
     "publishedAt": "2026-09-09T16:33:01.000Z",
     "collectedAt": "2026-09-09T18:06:06.948Z"
+  },
+  "social-abb4a6645fb4": {
+    "id": "social-abb4a6645fb4",
+    "url": "https://x.com/Commanders/status/2097760830926528943",
+    "text": "LIVE: QB Jayden Daniels speaks to the media after practice JN",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-09T18:55:31.000Z",
+    "collectedAt": "2026-09-09T19:06:11.156Z"
+  },
+  "social-125e15afc90f": {
+    "id": "social-125e15afc90f",
+    "url": "https://x.com/JPFinlayNBCS/status/2097761146107293856",
+    "text": "Jayden Daniels says nothing but respect for the Eagles organization: “You got to be on your A Game.” Says he hopes to do “whatever it takes to win a football game”",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/242/613/378/285/902/original/d1f3e4fdce3f2070.jpg"
+    ],
+    "publishedAt": "2026-09-09T18:56:46.000Z",
+    "collectedAt": "2026-09-09T19:06:12.885Z"
+  },
+  "social-dc1c97359179": {
+    "id": "social-dc1c97359179",
+    "url": "https://x.com/JPFinlayNBCS/status/2097761409387855885",
+    "text": "Jayden says \"everybody has opinions\" but he's just focused on football and winning games for Washington. \"They're going to talk about you regardless, good or bad.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-09T18:57:49.000Z",
+    "collectedAt": "2026-09-09T19:06:12.885Z"
   }
 }
