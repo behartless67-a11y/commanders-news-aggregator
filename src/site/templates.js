@@ -598,13 +598,13 @@ function teamStatsWidget(teamStats) {
       statVal
         ? `<p class="ts-headline">${rankOf(rankData)} <span class="ts-line">${escapeHtml(statVal)} ${label}${suffix}</span></p>`
         : '';
+    // One grid for all four, not a div per visual row. See .ts-headline-grid
+    // in site.css for why sharing a single grid is what aligns the columns.
     return `
       <div class="ts-panel ts-panel-${side}">
-        <div class="ts-headline-row">
+        <div class="ts-headline-grid">
           ${headline(yds, 'yds/gm', data.yardsPerGame)}
           ${headline(pts, 'pts/gm', data.pointsPerGame)}
-        </div>
-        <div class="ts-headline-row">
           ${headline(rushYds, 'rush yds/gm', data.rushYardsPerGame)}
           ${headline(passYds, 'pass yds/gm', data.passYardsPerGame)}
         </div>
@@ -635,7 +635,7 @@ function teamStatsWidget(teamStats) {
   // anything at all, so its display must not hinge on :has() support.
   return `
     <div class="widget widget-teamstats${tabs ? '' : ' widget-teamstats-single'}">
-      <h2 id="team-stats-heading">Team Stats <span class="ts-season">${escapeHtml(String(teamStats.season || ''))}</span></h2>
+      <h2 id="team-stats-heading">Team Stats <span class="ts-season">${escapeHtml(String(teamStats.season || ''))}${teamStats.complete ? ' final' : ''}</span></h2>
 ${
   tabs
     ? `      <input type="radio" name="ts-tab" id="ts-off" class="ts-radio" checked />

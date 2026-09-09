@@ -158,11 +158,39 @@ async function fetchDefenseAllowed(season, seasonType) {
 }
 
 /**
+ * True when a season line exists but carries no actual football yet: every
+ * headline total is zero.
+ *
+ * ESPN publishes a complete, structurally valid statistics object for a season
+ * as soon as it exists on the calendar, months before week 1, with every value
+ * 0.0 and a rank of 1 ("Tied-1st") because all 32 teams are genuinely tied at
+ * nothing. That line passes every other check in this file. The categories are
+ * present and the ranks are inside 1-32, so it has to be recognized explicitly.
+ * Rendering it produced a widget reading "Tied-1st 0.0 yds/gm" four times with
+ * the defense half missing entirely (no completed box scores to derive it
+ * from), which is how this was found in production on 2026-09-09.
+ */
+function seasonHasNoPlay(offense) {
+  const totals = [
+    offense.yardsPerGame,
+    offense.pointsPerGame,
+    offense.passYardsPerGame,
+    offense.rushYardsPerGame,
+  ];
+  return totals.every((s) => s == null || Number(String(s.value).replace(/,/g, '')) === 0);
+}
+
+/**
  * Returns null on failure rather than throwing or writing a half-empty cache,
  * matching fetchInjuries()/fetchBettingLine() — the caller decides whether to
  * leave the previous cache in place.
+ *
+ * `allowFallback` guards a single step back to the previous season when the
+ * requested one hasn't been played yet (see seasonHasNoPlay). One step only:
+ * the recursive call passes false, so a genuinely empty run walks back exactly
+ * one year and stops rather than crawling backwards through ESPN's archive.
  */
-export async function fetchTeamStats({ season, seasonType = REGULAR_SEASON } = {}) {
+export async function fetchTeamStats({ season, seasonType = REGULAR_SEASON, allowFallback = true } = {}) {
   const year = season || new Date().getFullYear();
 
   const stats = await fetchJson(STATS_URL(year, seasonType), `team statistics ${year}`);
@@ -182,6 +210,16 @@ export async function fetchTeamStats({ season, seasonType = REGULAR_SEASON } = {
   if (!offense.yardsPerGame && !offense.pointsPerGame) {
     log.warn(`team-stats: ${year} statistics carried no usable offensive totals`);
     return null;
+  }
+
+  // Show last season's real numbers through the whole offseason and preseason
+  // instead of a wall of zeroes, and flag it so the widget can label the year
+  // as finished rather than implying it's current.
+  if (seasonHasNoPlay(offense) && allowFallback) {
+    log.info(`team-stats: ${year} has no games played yet, falling back to ${year - 1}`);
+    const prior = await fetchTeamStats({ season: year - 1, seasonType, allowFallback: false });
+    if (prior) return { ...prior, complete: true };
+    log.warn(`team-stats: ${year - 1} fallback failed, keeping the empty ${year} line`);
   }
 
   const defense = await fetchDefenseAllowed(year, seasonType);

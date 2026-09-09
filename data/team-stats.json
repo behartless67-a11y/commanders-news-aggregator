@@ -1,32 +1,87 @@
 {
-  "season": "2026",
+  "season": "2025",
   "seasonType": 2,
-  "fetchedAt": "2026-09-08T16:08:35.252Z",
+  "fetchedAt": "2026-09-09T11:43:20.009Z",
   "offense": {
     "yardsPerGame": {
-      "value": "0.0",
-      "rank": 1,
-      "rankLabel": "Tied-1st"
+      "value": "318.8",
+      "rank": 22,
+      "rankLabel": "22nd"
     },
     "pointsPerGame": {
-      "value": "0.0",
-      "rank": 1,
-      "rankLabel": "Tied-1st"
+      "value": "20.9",
+      "rank": 22,
+      "rankLabel": "22nd"
     },
     "passYardsPerGame": {
-      "value": "0.0",
-      "rank": 1,
-      "rankLabel": "Tied-1st"
+      "value": "184.1",
+      "rank": 24,
+      "rankLabel": "24th"
     },
     "rushYardsPerGame": {
-      "value": "0.0",
-      "rank": 1,
-      "rankLabel": "Tied-1st"
+      "value": "134.7",
+      "rank": 4,
+      "rankLabel": "4th"
     }
   },
-  "defense": null,
+  "defense": {
+    "games": 17,
+    "yardsPerGame": {
+      "value": "384.3",
+      "rank": null,
+      "rankLabel": null
+    },
+    "pointsPerGame": {
+      "value": "26.5",
+      "rank": null,
+      "rankLabel": null
+    },
+    "passYardsPerGame": {
+      "value": "242.5",
+      "rank": null,
+      "rankLabel": null
+    },
+    "rushYardsPerGame": {
+      "value": "141.8",
+      "rank": null,
+      "rankLabel": null
+    }
+  },
   "leaders": {
-    "offense": [],
-    "defense": []
-  }
+    "offense": [
+      {
+        "key": "Pass",
+        "name": "Marcus Mariota",
+        "value": "1,695"
+      },
+      {
+        "key": "Rush",
+        "name": "Jacory Croskey-Merritt",
+        "value": "805"
+      },
+      {
+        "key": "Recv",
+        "name": "Deebo Samuel Sr.",
+        "value": "727"
+      }
+    ],
+    "defense": [
+      {
+        "key": "Tckl",
+        "name": "Bobby Wagner",
+        "value": "162"
+      },
+      {
+        "key": "Sack",
+        "name": "Von Miller",
+        "value": "9"
+      },
+      {
+        "key": "Int",
+        "name": "Mike Sainristil",
+        "value": "4"
+      }
+    ]
+  },
+  "complete": true
 }

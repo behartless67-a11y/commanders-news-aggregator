@@ -1268,14 +1268,35 @@ main.layout{
    unsupported the widget would render completely blank. */
 .widget-teamstats-single .ts-panel{ display: block; }
 
-/* Yards and points side by side, not stacked — two separate rank numbers
-   read as one comparison at a glance this way instead of two disconnected
-   lines. */
-.ts-headline-row{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* All four stats in one grid, not two independent rows: two separate rank
+   numbers read as one comparison at a glance, and sharing a single grid is
+   what makes the second column start at the same x on both rows. Two flex
+   rows each sized their own cells, so a longer label in column one
+   ("rush yds/gm" vs "yds/gm") pushed column two right and the rank numbers
+   didn't line up between rows.
+
+   Columns are content-sized (auto) rather than an equal 1fr split, because
+   defense's labels carry an " allowed" suffix and an equal split is narrower
+   than "141.8 rush yds/gm allowed" needs. The sidebar was widened 320px to
+   360px at 1300px specifically so that line fits. minmax(0, auto) plus
+   wrappable values below means the worst case is a wrapped label rather than
+   text overflowing the widget. */
+.ts-headline-grid{
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, auto);
+  justify-content: start;
+  column-gap: 14px;
+  row-gap: 8px;
   margin: 0 0 8px;
+}
+
+/* Between 900px and 1300px the rail is 320px, not the 360px the two-column
+   layout needs once defense's " allowed" suffix is in play (two of those
+   labels side by side want ~370px). One stat per line there instead: taller,
+   but it can't overflow, and a single column is trivially aligned. Above
+   1300px and below 900px there's room for two. */
+@media (min-width: 900px) and (max-width: 1299px){
+  .ts-headline-grid{ grid-template-columns: minmax(0, auto); }
 }
 
 .ts-headline{
@@ -1307,7 +1328,11 @@ main.layout{
   letter-spacing: 0.06em;
 }
 
-.ts-line{ min-width: 0; white-space: nowrap; }
+/* Wraps as a last resort instead of nowrap. The grid above sizes columns to
+   content, so this normally stays on one line anyway; allowing a break means a
+   narrow rail wraps "rush yds/gm allowed" rather than pushing text past the
+   widget edge. */
+.ts-line{ min-width: 0; }
 
 .ts-leaders{
   list-style: none;
