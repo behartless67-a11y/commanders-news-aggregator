@@ -11,54 +11,6 @@
     "publishedAt": "2026-08-30T15:57:31.000Z",
     "collectedAt": "2026-08-30T16:03:03.581Z"
   },
-  "social-313f170b3645": {
-    "id": "social-313f170b3645",
-    "url": "https://x.com/JPFinlayNBCS/status/2094090495081209911",
-    "text": "Niners also having center depth issues",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-30T15:50:55.000Z",
-    "collectedAt": "2026-08-30T16:03:03.581Z"
-  },
-  "social-87f256cc8767": {
-    "id": "social-87f256cc8767",
-    "url": "https://x.com/john_keim/status/2094090099776459241",
-    "text": "Washington has released NT Jeffrey M'ba, per source. Definite practice squad candidate.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-30T15:49:20.000Z",
-    "collectedAt": "2026-08-30T16:03:05.166Z"
-  },
-  "social-e2dc12a47439": {
-    "id": "social-e2dc12a47439",
-    "url": "https://x.com/john_keim/status/2094089591506473271",
-    "text": "@Scott7news@twitter.com Also had to shoot outside because we had the temp at 74 and I was freezing! 😂",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-30T15:47:19.000Z",
-    "collectedAt": "2026-08-30T16:03:05.166Z"
-  },
-  "social-a6454ec26220": {
-    "id": "social-a6454ec26220",
-    "url": "https://x.com/BenStandig/status/2094091365806174302",
-    "text": "The Commanders have released RB Craig Reynolds, per source. Practice squad candidate. Especially if Jeremy McNichols (quad) is sidelined a bit longer.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-30T15:54:22.000Z",
-    "collectedAt": "2026-08-30T16:03:07.285Z"
-  },
   "social-106d7f5ec8ff": {
     "id": "social-106d7f5ec8ff",
     "url": "https://x.com/NickiJhabvala/status/2094093184808656934",
@@ -4496,5 +4448,31 @@
     "images": [],
     "publishedAt": "2026-09-09T07:38:03.000Z",
     "collectedAt": "2026-09-09T14:05:09.927Z"
+  },
+  "social-13279dcade70": {
+    "id": "social-13279dcade70",
+    "url": "https://x.com/JPFinlayNBCS/status/2097708227253129518",
+    "text": "2 stats for Week 1: - Jayden Daniels is 12-0 as starter when Washington gives up fewer than 24 points - Saquon Barkley has absolutely TORCHED Washington. In 12 career games: 1,222 rush yards and 9 TDs. Thru the air it's another 422 yards receiving and 4 TDs.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-09T15:26:29.000Z",
+    "collectedAt": "2026-09-09T15:56:01.137Z"
+  },
+  "social-88fa2446f33b": {
+    "id": "social-88fa2446f33b",
+    "url": "https://x.com/BenStandig/status/2097709512178159684",
+    "text": "NFL agents lie. Their words, not mine. For the 8th annual NFL Agent Survey, 24 agents dished on the best and worst-run teams, Jayden Daniels, Caleb Williams, Mike Vrabel, 18 games, the top GMs — and, yes, the lies agents tell recruits. Only on Last Man Standig:",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/241/815/845/218/347/original/324d0a0218e81038.jpg"
+    ],
+    "publishedAt": "2026-09-09T15:31:35.000Z",
+    "collectedAt": "2026-09-09T15:56:04.378Z"
   }
 }
