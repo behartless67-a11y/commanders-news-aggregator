@@ -5818,5 +5818,41 @@
     "excerpt": "",
     "publishedAt": "2026-09-09T16:57:22.000Z",
     "collectedAt": "2026-09-09T18:05:55.988Z"
+  },
+  "hogs-haven-d4bbee3d6eef": {
+    "id": "hogs-haven-d4bbee3d6eef",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/438404/commanders-dan-quinn-jayden-daniels-press-conference-philadelphia-eagles-week-1",
+    "title": "Commanders’ Dan Quinn, Jayden Daniels talk Eagles entering Week 1",
+    "excerpt": "The Commanders have entering a game week. It’s finally here, with Sunday’s regular-season opener against the host Philadelphia Eagles just days away. \n\n Washington head coach Dan Quinn started his Wednesday press conference by telling reporter there was a different “energy” in the Commanders training complex, with a game that counts on the immediate horizon. \n\n Quinn said the Commanders will have every active player available at practice (same as it was on Monday), and then quarterback Jayden…",
+    "publishedAt": "2026-09-09T19:12:36.000Z",
+    "collectedAt": "2026-09-09T20:05:53.917Z"
+  },
+  "riggos-rag-4ebdd06301f5": {
+    "id": "riggos-rag-4ebdd06301f5",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-breathes-easier-after-commanders-receive-timely-week-1-boost",
+    "title": "Dan Quinn breathes easier after Commanders receive timely Week 1 boost",
+    "excerpt": "The Washington Commanders welcomed back some of their big hitters to practice, which was a huge relief for head coach Dan Quinn.",
+    "publishedAt": "2026-09-09T20:04:07.000Z",
+    "collectedAt": "2026-09-09T20:05:54.290Z"
+  },
+  "commanders-youtube-d600aeb7677f": {
+    "id": "commanders-youtube-d600aeb7677f",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=DxOV6rX-lho",
+    "title": "LIVE: QB Jayden Daniels Speaks To The Media After Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-09T19:11:21.000Z",
+    "collectedAt": "2026-09-09T20:05:55.949Z"
   }
 }
