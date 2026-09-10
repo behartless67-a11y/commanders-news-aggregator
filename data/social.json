@@ -3849,5 +3849,47 @@
     ],
     "publishedAt": "2026-09-09T22:07:26.000Z",
     "collectedAt": "2026-09-09T22:16:41.364Z"
+  },
+  "social-a5bba59f3d3b": {
+    "id": "social-a5bba59f3d3b",
+    "url": "https://x.com/Commanders/status/2097837459421966498",
+    "text": "Wednesday means wallpapers 🙌 @SherwinWilliams@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/805/922/192/925/original/cbbeb9e5f194a1bf.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/805/969/404/510/original/8ccaa6c0f4aac8cc.png",
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/806/001/384/669/original/cae983f31e9f924e.jpg"
+    ],
+    "publishedAt": "2026-09-10T00:00:00.000Z",
+    "collectedAt": "2026-09-10T00:06:34.560Z"
+  },
+  "social-8778893aa674": {
+    "id": "social-8778893aa674",
+    "url": "https://x.com/JPFinlayNBCS/status/2097822162530762783",
+    "text": "Live from @MGMNatlHarbor@twitter.com Commanders season preview now on @nbcwashington@twitter.com",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/568/540/110/041/original/b5766d52d8224c5c.jpg"
+    ],
+    "publishedAt": "2026-09-09T22:59:13.000Z",
+    "collectedAt": "2026-09-10T00:06:35.846Z"
+  },
+  "social-0b9c0f8d025f": {
+    "id": "social-0b9c0f8d025f",
+    "url": "https://x.com/tashanreed/status/2097816130542825684",
+    "text": "Of note: Greenard practiced in a limited capacity for the Eagles. He missed all of camp.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-09T22:35:15.000Z",
+    "collectedAt": "2026-09-10T00:06:40.130Z"
   }
 }

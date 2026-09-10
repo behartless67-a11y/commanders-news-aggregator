@@ -1,12 +1,5 @@
 [
   {
-    "name": "Ben Sinnott",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Oblique",
-    "notes": null
-  },
-  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
@@ -42,13 +35,6 @@
     "notes": null
   },
   {
-    "name": "John Bates",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
     "name": "Jordan Magee",
     "position": "LB",
     "status": "Questionable",
@@ -61,13 +47,6 @@
     "status": "IR",
     "bodyPart": "Triceps",
     "notes": "Surgery"
-  },
-  {
-    "name": "Marcus Mariota",
-    "position": "QB",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
   },
   {
     "name": "Nick Allegretti",
