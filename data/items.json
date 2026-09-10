@@ -5926,5 +5926,29 @@
     "excerpt": "",
     "publishedAt": "2026-09-10T01:00:06.000Z",
     "collectedAt": "2026-09-10T08:05:55.859Z"
+  },
+  "riggos-rag-304aa02b32b2": {
+    "id": "riggos-rag-304aa02b32b2",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-washington-commanders-poised-catch-entire-nfl-off-guard-2026",
+    "title": "5 Commanders poised to catch the entire NFL off guard in 2026",
+    "excerpt": "Which Washington Commanders players have the potential to catch the entire NFL off guard during the 2026 campaign?",
+    "publishedAt": "2026-09-10T10:00:02.000Z",
+    "collectedAt": "2026-09-10T10:05:56.552Z"
+  },
+  "athletic-jhabvala-162cf37aaf3b": {
+    "id": "athletic-jhabvala-162cf37aaf3b",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7575012/2026/09/10/giants-eagles-cowboys-commanders-nfl-season-preview",
+    "title": "NFC East roundtable: Eagles, Cowboys, Commanders enter critical seasons; Giants seek new culture",
+    "excerpt": "Philadelphia and Dallas have dominated the division for a decade, but is there reason to think Washington or New York could shake things up?",
+    "publishedAt": "2026-09-10T10:00:54.000Z",
+    "collectedAt": "2026-09-10T10:05:58.906Z"
   }
 }
