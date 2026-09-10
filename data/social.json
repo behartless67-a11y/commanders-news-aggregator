@@ -3902,5 +3902,95 @@
     "images": [],
     "publishedAt": "2026-09-10T09:51:52.000Z",
     "collectedAt": "2026-09-10T10:06:07.221Z"
+  },
+  "social-bf668a123eab": {
+    "id": "social-bf668a123eab",
+    "url": "https://x.com/Commanders/status/2098018661370147079",
+    "text": "3. @budlight@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/246/640/466/572/143/original/001e79028d587d0c.jpg"
+    ],
+    "publishedAt": "2026-09-10T12:00:02.000Z",
+    "collectedAt": "2026-09-10T12:06:01.580Z"
+  },
+  "social-da6b1e09581d": {
+    "id": "social-da6b1e09581d",
+    "url": "https://x.com/JPFinlayNBCS/status/2098012625250517449",
+    "text": "Pats give away loss to Seahawks with the backup QB playing. After getting throttled in the Super Bowl. Granted it’s two games half a year apart but that’s a tough stretch for a team looking to prove it’s not a fraud against the best competition",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-10T11:36:03.000Z",
+    "collectedAt": "2026-09-10T12:06:03.320Z"
+  },
+  "social-4a30903c5ed2": {
+    "id": "social-4a30903c5ed2",
+    "url": "https://x.com/SharpFootball/status/2097895670514364561",
+    "text": "Drake Maye's last 5 games: 7 TD : 11 turnovers 7 INTs, 4 fumbles lost 24 sacks taken 143 yards lost on sacks 6.6 yds/att 5.6 net yards/att",
+    "handle": "SharpFootball",
+    "author": "Warren Sharp",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/244/711/148/355/236/original/761fda5473b8f671.jpg"
+    ],
+    "publishedAt": "2026-09-10T03:51:19.000Z",
+    "collectedAt": "2026-09-10T12:06:03.320Z"
+  },
+  "social-68062f7beb92": {
+    "id": "social-68062f7beb92",
+    "url": "https://x.com/john_keim/status/2098016550301077868",
+    "text": "Dan Quinn mentioned a stat he had read that McLaurin and Daniels had spent only 15 percent of the team's snaps together in 25. So here it is: They played 138 snaps together out of 990 total snaps. That equates to 13.9 percent. In 2024: 817 snaps out of 1,011; (80.8%)",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T11:51:39.000Z",
+    "collectedAt": "2026-09-10T12:06:04.407Z"
+  },
+  "social-ba5aa184c798": {
+    "id": "social-ba5aa184c798",
+    "url": "https://x.com/john_keim/status/2098010638966501456",
+    "text": "On video: health updates; Jayden Daniels; Stefon Diggs impact and the OL. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T11:28:10.000Z",
+    "collectedAt": "2026-09-10T12:06:04.407Z"
+  },
+  "social-44ae896741e9": {
+    "id": "social-44ae896741e9",
+    "url": "https://x.com/john_keim/status/2097999046874947882",
+    "text": "Quick video: Inside Jayden Daniels' mindset entering Year 3 486",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T10:42:06.000Z",
+    "collectedAt": "2026-09-10T12:06:04.408Z"
+  },
+  "social-db88ab80f7da": {
+    "id": "social-db88ab80f7da",
+    "url": "https://x.com/BenStandig/status/2098015019082330417",
+    "text": "How do NFL agents view the Cowboys? Several echoed the notion that \"making money and being in the headlines\" trumps pursuit of winning. But a negotiating approach costing them “millions and millions\" stood out. More from my 8th annual NFL Agent Survey: the-2026-nfl-agent-survey-best-gms?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/246/582/424/563/205/original/6a9ba8437417d4af.jpg"
+    ],
+    "publishedAt": "2026-09-10T11:45:34.000Z",
+    "collectedAt": "2026-09-10T12:06:05.806Z"
   }
 }

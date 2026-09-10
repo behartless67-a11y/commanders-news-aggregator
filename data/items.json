@@ -5950,5 +5950,29 @@
     "excerpt": "Philadelphia and Dallas have dominated the division for a decade, but is there reason to think Washington or New York could shake things up?",
     "publishedAt": "2026-09-10T10:00:54.000Z",
     "collectedAt": "2026-09-10T10:05:58.906Z"
+  },
+  "hogs-haven-f3bcdd2b2ea0": {
+    "id": "hogs-haven-f3bcdd2b2ea0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/438592/commanders-david-blough-daronte-jones-sean-mannion-eagles-nfl-week-1",
+    "title": "How will Commanders’ David Blough, Daronte Jones impact Eagles clash?",
+    "excerpt": "The season’s just starting and the Washington Commanders have a massive NFC East clash right out of the gate . There’s no easing into a crucial 2026 campaign, with a road game in Philadelphia to start us off. \n\n This longstanding rivalry is a passionate one, with little love for those on the other side. This Week 1 matchup is intriguing for all the mystery surrounding two teams that know each other well. \n\n Three of the four play callers are brand new, without a history in the job to draw from.…",
+    "publishedAt": "2026-09-10T11:00:00.000Z",
+    "collectedAt": "2026-09-10T12:05:53.249Z"
+  },
+  "riggos-rag-dd8295a72b7b": {
+    "id": "riggos-rag-dd8295a72b7b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/stefon-diggs-knows-what-will-make-break-commanders-offensive-surge",
+    "title": "Stefon Diggs knows what will make or break Commanders' offensive surge",
+    "excerpt": "Washington Commanders wide receiver Stefon Diggs already knows what will make or break the team's offensive surge under David Blough.",
+    "publishedAt": "2026-09-10T11:30:00.000Z",
+    "collectedAt": "2026-09-10T12:05:54.432Z"
   }
 }
