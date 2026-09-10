@@ -1,28 +1,4 @@
 {
-  "social-d64138b588c1": {
-    "id": "social-d64138b588c1",
-    "url": "https://x.com/john_keim/status/2094246971401777662",
-    "text": "A somewhat coherent look at the roster after cuts. On C, the interior and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000786886080",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-31T02:12:41.000Z",
-    "collectedAt": "2026-08-31T02:18:04.095Z"
-  },
-  "social-0f88efae511a": {
-    "id": "social-0f88efae511a",
-    "url": "https://x.com/JPFinlayNBCS/status/2094249965992218933",
-    "text": "All Ears roster cut special- what do we know? And what questions still need asked? 7Yo&list=PLhtx37kS4fpXLLuAmHi6eEiMF6QmTBaOJ&index=1&pp=iAQB&ra=m",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-08-31T02:24:35.000Z",
-    "collectedAt": "2026-08-31T03:40:15.437Z"
-  },
   "social-0416d1cc57da": {
     "id": "social-0416d1cc57da",
     "url": "https://x.com/BenStandig/status/2094263282320187539",
@@ -52,44 +28,6 @@
     ],
     "publishedAt": "2026-08-31T03:15:04.000Z",
     "collectedAt": "2026-08-31T03:40:18.590Z"
-  },
-  "social-8c7cafacea13": {
-    "id": "social-8c7cafacea13",
-    "url": "https://x.com/BenStandig/status/2094258294294561241",
-    "text": "Consume reaction to the Commanders' roster moves three different ways: ✍️Washington has its initial 53. Emphasis on initial. the-commanders-53-is-set-the-roster?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true 🎙️Solo and feisty on the \"Last Man Standig\" pod the-53-is-here-but-not-written-in-pen/id1760952448?i=1000786883053 💻Live chat with @Ethan_Cadeaux@twitter.com and LMS subscribers the-initial-53-live-with-ben-standig?r=5rru9i&utm_campaign=post&utm_medium=web",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-08-31T02:57:41.000Z",
-    "collectedAt": "2026-08-31T03:40:18.590Z"
-  },
-  "social-6c95833c0d8e": {
-    "id": "social-6c95833c0d8e",
-    "url": "https://x.com/BenStandig/status/2094256224426430550",
-    "text": "The Commanders have their initial 53. Emphasis on initial. Surprises, tough cuts, three cornerbacks (!), a shaky center situation. Also, where my projection hit/missed, what happens next, practice squad plan ... and a defense of Julian Good-Jones. the-commanders-53-is-set-the-roster?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/187/852/229/495/313/original/409b80cac1b29fd7.jpg"
-    ],
-    "publishedAt": "2026-08-31T02:49:27.000Z",
-    "collectedAt": "2026-08-31T03:40:18.590Z"
-  },
-  "social-6bb29c4e0f89": {
-    "id": "social-6bb29c4e0f89",
-    "url": "https://x.com/NickiJhabvala/status/2094255053196452212",
-    "text": "A closer look at the Commanders' initial 53 and potential changes ahead:",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-08-31T02:44:48.000Z",
-    "collectedAt": "2026-08-31T04:05:10.339Z"
   },
   "social-43891b58d776": {
     "id": "social-43891b58d776",
@@ -3958,5 +3896,29 @@
     ],
     "publishedAt": "2026-09-10T00:29:20.000Z",
     "collectedAt": "2026-09-10T02:04:07.633Z"
+  },
+  "social-cde3d4f21129": {
+    "id": "social-cde3d4f21129",
+    "url": "https://x.com/BenStandig/status/2097879110009729383",
+    "text": "🎙 Two episodes: 🏈 Injury updates (the good kind), Jayden Daniels stays level away-we-go/id1760952448?i=1000788779957 🏈 Previewing Week 1 with @FDuffyNFL@twitter.com . QB talk. Philly's defensive front against Washington’s OL. Small vs. small. flying-into-eagles-week/id1760952448?i=1000788567634",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-10T02:45:31.000Z",
+    "collectedAt": "2026-09-10T03:07:16.909Z"
+  },
+  "social-1cb8b573f99c": {
+    "id": "social-1cb8b573f99c",
+    "url": "https://x.com/BenStandig/status/2097877853219979412",
+    "text": "Listening to the game on the radio. Kevin Harlan and Kurt Warner keep praising the Pats for remaining conservative. Huh? Drake Maye forget how to throw?",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-10T02:40:31.000Z",
+    "collectedAt": "2026-09-10T03:07:16.909Z"
   }
 }
