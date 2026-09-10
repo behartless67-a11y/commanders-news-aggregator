@@ -143,18 +143,6 @@
     "publishedAt": "2026-08-31T17:32:18.000Z",
     "collectedAt": "2026-08-31T18:06:33.863Z"
   },
-  "social-e28bb902346d": {
-    "id": "social-e28bb902346d",
-    "url": "https://x.com/john_keim/status/2094458115303334021",
-    "text": "\"He was bobbing his head, singing the song and then he said 'hut' and made the play.\" As Daniels scooted around Chaisson, he yelled \"Got your ass!\" and threw the ball for a completion. 81/nfl-teams-using-gopro-cameras-quarterbacks",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-31T16:11:42.000Z",
-    "collectedAt": "2026-08-31T18:06:33.864Z"
-  },
   "social-b085554838cf": {
     "id": "social-b085554838cf",
     "url": "https://x.com/BenStandig/status/2094483293983093059",
@@ -4013,5 +4001,55 @@
     "images": [],
     "publishedAt": "2026-09-10T15:19:40.000Z",
     "collectedAt": "2026-09-10T16:05:09.243Z"
+  },
+  "social-8da66013369d": {
+    "id": "social-8da66013369d",
+    "url": "https://x.com/JPFinlayNBCS/status/2098087281147933162",
+    "text": "David Blough on Jayden Daniels: He's very internally motivated...He's done some incredible things and he knows there's places to get better too",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-10T16:32:43.000Z",
+    "collectedAt": "2026-09-10T17:26:34.314Z"
+  },
+  "social-ba8ee9ca4bda": {
+    "id": "social-ba8ee9ca4bda",
+    "url": "https://x.com/AdamSchefter/status/2098082585951752675",
+    "text": "Seahawks QB Sam Darnold underwent an MRI on his hip this morning that team doctors still are reviewing to determine how much time he will miss. It is expected to be some, but for now the team believes it, as one source described, “dodged a bullet.”",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/247/635/387/643/709/original/5d56fc3c1d1592ed.jpg"
+    ],
+    "publishedAt": "2026-09-10T16:14:03.000Z",
+    "collectedAt": "2026-09-10T17:26:35.605Z"
+  },
+  "social-b92bbb076273": {
+    "id": "social-b92bbb076273",
+    "url": "https://x.com/john_keim/status/2098085510522581430",
+    "text": "Dan Quinn and Daronte Jones:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T16:25:40.000Z",
+    "collectedAt": "2026-09-10T17:26:35.605Z"
+  },
+  "social-48753507de1c": {
+    "id": "social-48753507de1c",
+    "url": "https://x.com/RapSheet/status/2098087675630674316",
+    "text": "Sam Darnold is expected to miss next week's game, but he should be back sooner, rather than later, sources say. Could be just a few weeks. With 17 days from Wed. until their Week 3 game against the #Commanders , Darnold gets a schedule break, as well.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-09-10T16:34:17.000Z",
+    "collectedAt": "2026-09-10T17:26:42.592Z"
   }
 }
