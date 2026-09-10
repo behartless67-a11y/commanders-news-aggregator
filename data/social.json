@@ -1,42 +1,4 @@
 {
-  "social-3dc1983f2326": {
-    "id": "social-3dc1983f2326",
-    "url": "https://x.com/JPFinlayNBCS/status/2094238732832383062",
-    "text": "Debating drafting Travis Kelce in fantasy so did a quick search for some football news",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/187/575/299/838/192/original/0811e2179607de58.jpg"
-    ],
-    "publishedAt": "2026-08-31T01:39:57.000Z",
-    "collectedAt": "2026-08-31T02:06:28.241Z"
-  },
-  "social-ea6405fc9aec": {
-    "id": "social-ea6405fc9aec",
-    "url": "https://x.com/john_keim/status/2094233620206490072",
-    "text": "A big key for Luke McCaffrey: averaged 29.6 yards per KR last season. His 7 returns of 35-plus yards were tied for most in the NFL in only 9 games. Had a solid summer in practice but the ST work is important. Also covers kicks",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-31T01:19:38.000Z",
-    "collectedAt": "2026-08-31T02:06:29.804Z"
-  },
-  "social-e8d361e98d49": {
-    "id": "social-e8d361e98d49",
-    "url": "https://x.com/john_keim/status/2094231568550088837",
-    "text": "The hard part with Trey Amos’ absence, especially for the opener: they’re already down Dorance Armstrong and there’s uncertainty about Odafe Oweh. If going to play heavy zone, need a strong pass rush. Will impact corner play. Can survive a lot at CB with a strong rush.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-08-31T01:11:29.000Z",
-    "collectedAt": "2026-08-31T02:06:29.804Z"
-  },
   "social-d64138b588c1": {
     "id": "social-d64138b588c1",
     "url": "https://x.com/john_keim/status/2094246971401777662",
@@ -3891,5 +3853,110 @@
     "images": [],
     "publishedAt": "2026-09-09T22:35:15.000Z",
     "collectedAt": "2026-09-10T00:06:40.130Z"
+  },
+  "social-52674707abbc": {
+    "id": "social-52674707abbc",
+    "url": "https://x.com/Commanders/status/2097858847549309000",
+    "text": "*screams* @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-10T01:25:00.000Z",
+    "collectedAt": "2026-09-10T02:04:03.643Z"
+  },
+  "social-876b7a4e0370": {
+    "id": "social-876b7a4e0370",
+    "url": "https://x.com/Commanders/status/2097848781211316732",
+    "text": "highlight maxxing on the new iPhone",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/978/272/460/293/original/5f5cc8954393ab9f.jpg"
+    ],
+    "publishedAt": "2026-09-10T00:45:00.000Z",
+    "collectedAt": "2026-09-10T02:04:03.644Z"
+  },
+  "social-55f438b17d18": {
+    "id": "social-55f438b17d18",
+    "url": "https://x.com/john_keim/status/2097862177344336351",
+    "text": "Seattle visits Washington in Week 3.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T01:38:14.000Z",
+    "collectedAt": "2026-09-10T02:04:06.536Z"
+  },
+  "social-7b05b381b36f": {
+    "id": "social-7b05b381b36f",
+    "url": "https://x.com/Tim_McManus/status/2097768425120575951",
+    "text": "Jonathan Greenard warming up in the distance — a good sign for the Eagles as they begin preparations for the Commanders. Greenard missed all of training camp with a pec injury.",
+    "handle": "Tim_McManus",
+    "author": "Tim McManus",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-09T19:25:41.000Z",
+    "collectedAt": "2026-09-10T02:04:06.536Z"
+  },
+  "social-66e84640577b": {
+    "id": "social-66e84640577b",
+    "url": "https://x.com/Tim_McManus/status/2097839904390631785",
+    "text": "Eagles OLB Jonathan Greenard (pectoral) and TE Eli Stowers (hamstring) were both listed as limited today.",
+    "handle": "Tim_McManus",
+    "author": "Tim McManus",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T00:09:43.000Z",
+    "collectedAt": "2026-09-10T02:04:06.536Z"
+  },
+  "social-77ad3ac3ed4b": {
+    "id": "social-77ad3ac3ed4b",
+    "url": "https://x.com/john_keim/status/2097850923976446027",
+    "text": "Injury updates. On Jayden Daniels. 31st in the NFL?… Stefon Diggs and his value for a game like Sunday vs a top D. More. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000788769577",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-10T00:53:31.000Z",
+    "collectedAt": "2026-09-10T02:04:06.536Z"
+  },
+  "social-4f03c0e9eaf5": {
+    "id": "social-4f03c0e9eaf5",
+    "url": "https://x.com/BenStandig/status/2097846485232529548",
+    "text": "Stefon Diggs’ unlikely Washington connection: Norv, Kirk and now Jayden Daniels. It's the details that matter. what-norv-turner-and-kirk-cousins?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/946/965/517/386/original/cc091a011b77c3f1.jpg"
+    ],
+    "publishedAt": "2026-09-10T00:35:52.000Z",
+    "collectedAt": "2026-09-10T02:04:07.633Z"
+  },
+  "social-c99836373f84": {
+    "id": "social-c99836373f84",
+    "url": "https://x.com/BenStandig/status/2097844840457281704",
+    "text": "Before Mike Vrabel and the Patriots kicked off the season tonight in Seattle, NFL agents shared insight into the head coach's tumultuous offseason and what it might mean for the defending AFC champions. Much more in the 8th annual NFL agent survey: the-2026-nfl-agent-survey-best-gms",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/923/926/503/297/original/30ac367de6edd085.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/923/986/675/403/original/59072bf22a66e869.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/924/013/970/123/original/c5c9759db70b3a74.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/243/924/043/905/775/original/dee771162d0e0865.jpg"
+    ],
+    "publishedAt": "2026-09-10T00:29:20.000Z",
+    "collectedAt": "2026-09-10T02:04:07.633Z"
   }
 }
