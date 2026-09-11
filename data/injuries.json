@@ -1,12 +1,5 @@
 [
   {
-    "name": "Daron Payne",
-    "position": "DT",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
@@ -28,25 +21,11 @@
     "notes": null
   },
   {
-    "name": "K'Lavon Chaisson",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
     "bodyPart": "Triceps",
     "notes": "Surgery"
-  },
-  {
-    "name": "Odafe Oweh",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Undisclosed",
-    "notes": null
   },
   {
     "name": "Trey Amos",
