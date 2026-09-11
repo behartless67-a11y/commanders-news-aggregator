@@ -1,16 +1,4 @@
 {
-  "social-fd89749d2fee": {
-    "id": "social-fd89749d2fee",
-    "url": "https://x.com/JPFinlayNBCS/status/2094909101717307856",
-    "text": "Come hangout for Seahawks/Pats. Will do a live mailbag too. Gonna be a fun night",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-01T22:03:46.000Z",
-    "collectedAt": "2026-09-01T22:06:33.592Z"
-  },
   "social-48af63561d1e": {
     "id": "social-48af63561d1e",
     "url": "https://x.com/JPFinlayNBCS/status/2094954629138182597",
@@ -3433,5 +3421,17 @@
     ],
     "publishedAt": "2026-09-11T19:11:02.000Z",
     "collectedAt": "2026-09-11T20:06:20.998Z"
+  },
+  "social-2b8b6b15ba80": {
+    "id": "social-2b8b6b15ba80",
+    "url": "https://x.com/NickiJhabvala/status/2098507231738167741",
+    "text": "Commanders are full-go for Sunday",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-11T20:21:27.000Z",
+    "collectedAt": "2026-09-11T22:05:09.666Z"
   }
 }
