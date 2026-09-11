@@ -3473,5 +3473,33 @@
     ],
     "publishedAt": "2026-09-11T22:08:59.000Z",
     "collectedAt": "2026-09-11T22:15:42.871Z"
+  },
+  "social-1b8f4585bb0c": {
+    "id": "social-1b8f4585bb0c",
+    "url": "https://x.com/Commanders/status/2098554682373243052",
+    "text": "final preparations @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/398/419/633/original/5019742a9df5087f.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/432/715/507/original/9812bd82e7a10d05.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/467/042/499/original/6849c7bb5f290076.jpg"
+    ],
+    "publishedAt": "2026-09-11T23:30:00.000Z",
+    "collectedAt": "2026-09-11T23:41:19.186Z"
+  },
+  "social-952164f2b53d": {
+    "id": "social-952164f2b53d",
+    "url": "https://x.com/pfrumors/status/2098545867724607501",
+    "text": "Two weeks after signing T D.J. Humphries, the #Commanders have released the one-time Pro Bowler commanders-release-t-d-j-humphries",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-11T22:54:58.000Z",
+    "collectedAt": "2026-09-11T23:41:33.274Z"
   }
 }
