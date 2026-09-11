@@ -1,44 +1,4 @@
 {
-  "social-a5d7bc74226e": {
-    "id": "social-a5d7bc74226e",
-    "url": "https://x.com/BenStandig/status/2094594538568360446",
-    "text": "Turns out the Commanders released four players on Sunday with injury designations. Sharing for those scoring at home.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/193/136/801/054/577/original/a795a936d9630d77.jpg"
-    ],
-    "publishedAt": "2026-09-01T01:13:48.000Z",
-    "collectedAt": "2026-09-01T02:06:28.509Z"
-  },
-  "social-840f483d2ac2": {
-    "id": "social-840f483d2ac2",
-    "url": "https://x.com/JPFinlayNBCS/status/2094578134406279592",
-    "text": "Adam Peters knows some fans are nervous, but he's convinced this Commanders team is ready to roll. READ: eters-doesnt-care-if-youre",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/192/881/811/477/469/original/c78b993c9e5e2169.jpg"
-    ],
-    "publishedAt": "2026-09-01T00:08:37.000Z",
-    "collectedAt": "2026-09-01T02:06:28.509Z"
-  },
-  "social-3e074b06c96c": {
-    "id": "social-3e074b06c96c",
-    "url": "https://x.com/john_keim/status/2094592286575276523",
-    "text": "On the OL, improved health updates; the mystery of both coordinators, corner play and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000787081018",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-01T01:04:51.000Z",
-    "collectedAt": "2026-09-01T02:06:29.926Z"
-  },
   "social-8efc6e1fbe90": {
     "id": "social-8efc6e1fbe90",
     "url": "https://x.com/JPFinlayNBCS/status/2094614237075140926",
@@ -3339,5 +3299,65 @@
     "images": [],
     "publishedAt": "2026-09-10T22:15:00.000Z",
     "collectedAt": "2026-09-10T23:33:17.884Z"
+  },
+  "social-54e81e8d928d": {
+    "id": "social-54e81e8d928d",
+    "url": "https://x.com/JPFinlayNBCS/status/2098214328923021683",
+    "text": "This Niners defense is flying to the ball early",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-11T00:57:33.000Z",
+    "collectedAt": "2026-09-11T02:01:34.095Z"
+  },
+  "social-dd5c210558a2": {
+    "id": "social-dd5c210558a2",
+    "url": "https://x.com/JPFinlayNBCS/status/2098211573198114830",
+    "text": "It seems super bright in Australia",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-11T00:46:36.000Z",
+    "collectedAt": "2026-09-11T02:01:34.095Z"
+  },
+  "social-50356782b52a": {
+    "id": "social-50356782b52a",
+    "url": "https://x.com/john_keim/status/2098213902651711768",
+    "text": "Joined by ESPN Eagles reporter @Tim_McManus . Insight into the Commanders opening opponent. The transition for the O; how Hurts looked this summer. Quite a D and more. Also: Tress Way retiring at Seasons end. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000788960003",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-11T00:55:51.000Z",
+    "collectedAt": "2026-09-11T02:01:35.578Z"
+  },
+  "social-99adc22a8259": {
+    "id": "social-99adc22a8259",
+    "url": "https://x.com/john_keim/status/2098203986096472082",
+    "text": "Quick video on the offensive mentality by the Commanders' defense 472",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-11T00:16:27.000Z",
+    "collectedAt": "2026-09-11T02:01:35.578Z"
+  },
+  "social-e5a37a891f51": {
+    "id": "social-e5a37a891f51",
+    "url": "https://x.com/john_keim/status/2098203624551666067",
+    "text": "forgot to tweet this out earlier, but a story on Tress Way saying this is probably his last season.... 70/commanders-punter-tress-way-says-retire-season",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-11T00:15:01.000Z",
+    "collectedAt": "2026-09-11T02:01:35.578Z"
   }
 }
