@@ -1,28 +1,4 @@
 {
-  "social-577f4c1cdb95": {
-    "id": "social-577f4c1cdb95",
-    "url": "https://x.com/tashanreed/status/2094847715515539467",
-    "text": "Who lied and said summer ends in August? It's hot as hell out here 😂",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-01T17:59:50.000Z",
-    "collectedAt": "2026-09-01T18:06:42.191Z"
-  },
-  "social-9b3aadde0b2c": {
-    "id": "social-9b3aadde0b2c",
-    "url": "https://x.com/CircaSports/status/2094847762147717298",
-    "text": "All it takes is one play to determine your fate in this contest...🫣 Will 5 people be eliminated, or just 1? The #Commanders and #Cowboys put it all on the line. Tune in TOMORROW at 6 PM PST on @VSINLive@twitter.com 's YouTube to see how it all ends in the FINALE of Circa Survivor: The Quest for $18.7 Million. Catch up on the whole season now: xF7ZCH4ww",
-    "handle": "CircaSports",
-    "author": "Circa Sports",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-01T18:00:01.000Z",
-    "collectedAt": "2026-09-01T18:06:53.443Z"
-  },
   "social-a361f0c28d87": {
     "id": "social-a361f0c28d87",
     "url": "https://x.com/BenStandig/status/2094857692825133260",
@@ -3433,5 +3409,41 @@
     "images": [],
     "publishedAt": "2026-09-11T16:08:55.000Z",
     "collectedAt": "2026-09-11T17:27:27.296Z"
+  },
+  "social-7e2d514fb610": {
+    "id": "social-7e2d514fb610",
+    "url": "https://x.com/NickiJhabvala/status/2098452173948326277",
+    "text": "Can't overstate the significance of this for the Commanders and especially their D-line. Washington invested heavily in its defensive front and the group was playing really well together before injuries set in during camp.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-11T16:42:40.000Z",
+    "collectedAt": "2026-09-11T18:05:08.053Z"
+  },
+  "social-374aa9e1a553": {
+    "id": "social-374aa9e1a553",
+    "url": "https://x.com/NickiJhabvala/status/2098451662788526571",
+    "text": "Dan Quinn said everyone was medically cleared to play in Week 1 in Philly. Means Jacory \"Bill\" Croskey-Merritt (groin), Odafe Oweh (calf), K'Lavon Chaisson (knee), Daron Payne (knee) are full go.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-11T16:40:38.000Z",
+    "collectedAt": "2026-09-11T18:05:08.053Z"
+  },
+  "social-a6f45e88c91c": {
+    "id": "social-a6f45e88c91c",
+    "url": "https://x.com/NickiJhabvala/status/2098450433710620685",
+    "text": "Dan Quinn said RG Sam Cosmi will be the game captain for Week 1.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-11T16:35:45.000Z",
+    "collectedAt": "2026-09-11T18:05:08.053Z"
   }
 }
