@@ -11,18 +11,6 @@
     "publishedAt": "2026-09-01T14:00:41.000Z",
     "collectedAt": "2026-09-01T14:05:11.410Z"
   },
-  "social-839babe0410d": {
-    "id": "social-839babe0410d",
-    "url": "https://x.com/NickiJhabvala/status/2094763886327013805",
-    "text": "“This is Peters’ team. It is Quinn’s to coach. This is not a year to build. It is not a bridge to something in the future. It’s a year to produce.” Really good column by @barrysvrluga",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-01T12:26:43.000Z",
-    "collectedAt": "2026-09-01T14:05:11.410Z"
-  },
   "social-e626b8c94965": {
     "id": "social-e626b8c94965",
     "url": "https://x.com/Commanders/status/2094787444902330757",
@@ -48,48 +36,6 @@
     ],
     "publishedAt": "2026-09-01T14:00:00.000Z",
     "collectedAt": "2026-09-01T14:06:31.747Z"
-  },
-  "social-265363db080b": {
-    "id": "social-265363db080b",
-    "url": "https://x.com/JPFinlayNBCS/status/2094763453579718874",
-    "text": "Adam Peters knows some Commanders fans are concerned after a rough finish to preseason \"but there’s a lot of stuff that we’re doing here that maybe they don’t see.\" Confidence remains in Ashburn. READ: eters-doesnt-care-if-youre",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/195/775/236/421/714/original/4701081a22ddd944.jpg"
-    ],
-    "publishedAt": "2026-09-01T12:25:00.000Z",
-    "collectedAt": "2026-09-01T14:06:33.217Z"
-  },
-  "social-0c314bf08897": {
-    "id": "social-0c314bf08897",
-    "url": "https://x.com/BenStandig/status/2094766383254888702",
-    "text": "Link: commanders-say-theres-plenty-fans",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/195/817/001/400/645/original/11d9b6aa617d24b8.jpg"
-    ],
-    "publishedAt": "2026-09-01T12:36:39.000Z",
-    "collectedAt": "2026-09-01T14:06:35.977Z"
-  },
-  "social-ee2ef2e49466": {
-    "id": "social-ee2ef2e49466",
-    "url": "https://x.com/BenStandig/status/2094766044510409158",
-    "text": "The Commanders aren’t worried. A lot of their fans are. Adam Peters offered fair reasons for optimism after an ugly pre-season finish. But sometimes acknowledging the apprehension — and its roots — is more reassuring than explaining it away. Especially after 5-12. Link ⤵️",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/195/809/590/654/727/original/5afb2c17e89f5e40.jpg"
-    ],
-    "publishedAt": "2026-09-01T12:35:18.000Z",
-    "collectedAt": "2026-09-01T14:06:35.977Z"
   },
   "social-88adfb02b78d": {
     "id": "social-88adfb02b78d",
@@ -3335,5 +3281,31 @@
     "images": [],
     "publishedAt": "2026-09-11T11:06:04.000Z",
     "collectedAt": "2026-09-11T12:06:08.872Z"
+  },
+  "social-532e345afb7a": {
+    "id": "social-532e345afb7a",
+    "url": "https://x.com/JPFinlayNBCS/status/2098389911221031413",
+    "text": "For 13 years in Washington, Tress Way has been that constant. Tress was the same dude in awful seasons and in exciting seasons. He did his job, did it well, and fans loved him. READ: ute-to-tress-way-a-constant",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/252/436/666/700/665/original/cb264c95ca10e703.jpg"
+    ],
+    "publishedAt": "2026-09-11T12:35:15.000Z",
+    "collectedAt": "2026-09-11T13:44:22.457Z"
+  },
+  "social-1e39e3cdd5a8": {
+    "id": "social-1e39e3cdd5a8",
+    "url": "https://x.com/john_keim/status/2098383916658790445",
+    "text": "On video with @Tim_McManus ; insight into the Eagles and what to expect Sunday. Also: Tress Way retiring (after the season) and injury updates. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-11T12:11:26.000Z",
+    "collectedAt": "2026-09-11T13:44:23.804Z"
   }
 }
