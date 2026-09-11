@@ -1251,6 +1251,7 @@ function finalThoughtsBlock(finalThoughts, rosterIndex) {
 ${liveAwardCard('hero', finalThoughts.heroRecipient, finalThoughts.heroReason, rosterIndex)}
 ${liveAwardCard('goat', finalThoughts.goatRecipient, finalThoughts.goatReason, rosterIndex)}
         </div>
+        <p class="live-wiretaps-plug">Got a question after that one? <a href="wiretaps.html">Send it to Wire Taps</a>. Starting Friday, September 18, it's a regular weekly feature, so this is a good time to get your question in.</p>
       </div>`;
 }
 
