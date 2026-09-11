@@ -2479,6 +2479,77 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
+/**
+ * "Wire Taps" — reader mailbag. Its own Netlify Form (name="wiretaps"),
+ * deliberately separate from the contact form so a real question never gets
+ * lost in the same inbox as bug reports, and so the site owner can tell at a
+ * glance which submissions are actually mailbag material. No email field —
+ * unlike Contact, this isn't a 1:1 conversation, it's "answer this
+ * publicly," so there's nothing to reply to individually. Not yet linked
+ * from the main nav (2026-09-11, still being workshopped where it should
+ * live/how often it should be promoted) — reachable by direct URL only,
+ * which is exactly what a first Reddit-driven test needs.
+ */
+export function renderWireTapsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `Got a question about the Commanders? Ask it here, and it might get answered in an upcoming ${siteName} post.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wire Taps — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Wire Taps — ${siteName}`, description, siteUrl })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('wiretaps.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page">
+    <h1 class="podcasts-heading">Wire Taps</h1>
+    <p class="page-intro">The mailbag. Ask anything, Commanders or otherwise, and it might get answered in an upcoming post. Yes, anonymous is fine.</p>
+
+    <form name="wiretaps" method="POST" action="/wiretaps.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="wiretaps" />
+      <p class="contact-honeypot">
+        <label>Leave this field blank<input name="bot-field" /></label>
+      </p>
+      <label class="contact-field">
+        <span>Name or handle (optional, for credit)</span>
+        <input class="contact-input" type="text" name="name" autocomplete="name" />
+      </label>
+      <label class="contact-field">
+        <span>Your question</span>
+        <textarea class="contact-input contact-textarea" name="question" rows="6" required></textarea>
+      </label>
+      <button class="contact-submit" type="submit">Send it in</button>
+    </form>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
 export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
   const description = `${siteName} is a free, ad-free fan project. Chip in toward hosting if you'd like.`;
   return `<!doctype html>

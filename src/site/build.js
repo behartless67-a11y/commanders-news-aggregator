@@ -20,7 +20,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -279,6 +279,15 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'contact.html'),
     renderContactPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
+  // Not in PAGES/HEADING or any nav link yet (2026-09-11) — reachable by
+  // direct URL only, for an initial Reddit-driven test before it gets a
+  // permanent home in the nav/footer.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'wiretaps.html'),
+    renderWireTapsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
   );
 
