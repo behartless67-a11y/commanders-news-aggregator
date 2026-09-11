@@ -3276,7 +3276,7 @@
     "text": "Commanders offensive tackle Laremy Tunsil is the Week 1 NFLPA Community MVP for hosting a back-to-school event that supported 250 kids from low-income families in DC with school supplies, free haircuts, a styling suite, customized outfits and more.",
     "handle": "AdamSchefter",
     "author": "Adam Schefter",
-    "label": "ESPN",
+    "label": "",
     "sourceKey": "@AdamSchefter",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/253/344/212/902/163/original/431c5354f4ca3368.jpg"
@@ -3379,5 +3379,71 @@
     "images": [],
     "publishedAt": "2026-09-11T18:15:22.000Z",
     "collectedAt": "2026-09-11T18:58:43.743Z"
+  },
+  "social-033719363951": {
+    "id": "social-033719363951",
+    "url": "https://x.com/Commanders/status/2098496910151627090",
+    "text": "Transforming a day of remembrance into a day of service by helping contribute to 18 million meals for families in need @911day@twitter.com ❤️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/391/290/872/original/c775ab92a3ff46de.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/432/049/631/original/2b55fd1665790fcd.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/460/745/003/original/db6ad02200cfeb64.jpg"
+    ],
+    "publishedAt": "2026-09-11T19:40:26.000Z",
+    "collectedAt": "2026-09-11T20:06:06.157Z"
+  },
+  "social-7fc0c7d7dd60": {
+    "id": "social-7fc0c7d7dd60",
+    "url": "https://x.com/AdamSchefter/status/2098500413255258406",
+    "text": "RE: atuses/2098500254198894635 Jonathan Greenard ruled out for Sunday’s opener.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-11T19:54:21.000Z",
+    "collectedAt": "2026-09-11T20:06:09.531Z"
+  },
+  "social-34406fdea130": {
+    "id": "social-34406fdea130",
+    "url": "https://x.com/BenStandig/status/2098488339389182039",
+    "text": "I'll be on with Scott every Wednesday throughout the season.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-11T19:06:22.000Z",
+    "collectedAt": "2026-09-11T20:06:10.526Z"
+  },
+  "social-5ee091bdd0e7": {
+    "id": "social-5ee091bdd0e7",
+    "url": "https://x.com/tashanreed/status/2098501058066567603",
+    "text": "RE: atuses/2098500254198894635 The Eagles will be without Greenard",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-11T19:56:55.000Z",
+    "collectedAt": "2026-09-11T20:06:11.987Z"
+  },
+  "social-e25078624a5c": {
+    "id": "social-e25078624a5c",
+    "url": "https://x.com/pfrumors/status/2098489511164449078",
+    "text": "The #Commanders ' longest-tenured player plans to retire after the season commanders-p-tress-way-likely-to-retire-after-2026-season",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/253/995/085/104/998/original/d40cef535f765d74.jpg"
+    ],
+    "publishedAt": "2026-09-11T19:11:02.000Z",
+    "collectedAt": "2026-09-11T20:06:20.998Z"
   }
 }
