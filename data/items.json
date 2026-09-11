@@ -6226,5 +6226,29 @@
     "excerpt": "",
     "publishedAt": "2026-09-10T21:45:19.000Z",
     "collectedAt": "2026-09-10T22:05:56.008Z"
+  },
+  "commanders-youtube-3d89bed7c0af": {
+    "id": "commanders-youtube-3d89bed7c0af",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=3_IQxSdEajc",
+    "title": "Iron's Hot, Time To Strike | Washington Commanders 2026 Season Trailer | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-09-10T23:00:16.000Z",
+    "collectedAt": "2026-09-11T00:05:59.219Z"
+  },
+  "pft-54bd7a679072": {
+    "id": "pft-54bd7a679072",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-add-dt-daron-payne-to-injury-report",
+    "title": "Commanders add DT Daron Payne to injury report",
+    "excerpt": "The Commanders added defensive tackle Daron Payne to their injury report on Thursday. They list him as limited with a knee injury.\n That is not a good sign for the team ahead of Sunday's season opener against the Eagles.\n The Commanders also added defensive lineman Javon Kinlaw to Thursday's report, but he was a full participant with a back injury.\n Outside linebacker K’Lavon Chaisson (knee), running back Jacory Croskey-Merritt (groin) and outside linebacker Odafe Oweh (calf) remained limited a…",
+    "publishedAt": "2026-09-11T00:01:18.000Z",
+    "collectedAt": "2026-09-11T00:06:03.127Z"
   }
 }
