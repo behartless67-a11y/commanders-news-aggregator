@@ -6634,5 +6634,41 @@
     "excerpt": "Four years after replacing the line “Braves on the warpath!” with “fight for Our Commanders,” the team quietly brought the original back.",
     "publishedAt": "2026-09-12T10:00:04.000Z",
     "collectedAt": "2026-09-12T10:06:00.676Z"
+  },
+  "riggos-rag-df2294101321": {
+    "id": "riggos-rag-df2294101321",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-offensive-line-faces-daunting-credibility-test-against-eagles",
+    "title": "Commanders’ offensive line faces daunting credibility test against the Eagles",
+    "excerpt": "The Washington Commanders' offensive line faces a daunting credibility test against the vaunted Philadelphia Eagles defensive front in Week 1.",
+    "publishedAt": "2026-09-12T11:30:00.000Z",
+    "collectedAt": "2026-09-12T12:06:01.282Z"
+  },
+  "yahoo-nfl-9b93f25cc356": {
+    "id": "yahoo-nfl-9b93f25cc356",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-season-preview-stakes-high-100000272.html",
+    "title": "Commanders season preview: Stakes are high for Jayden Daniels, new coordinators",
+    "excerpt": "Editor’s note: After posting some insightful stories in The Feed, Hogs Haven’s ShogunofHarlem93 has put together his first story for the main site. He breaks down why this Commanders season is so important for Jayden Daniels, new coordinators David Blough and Daronte Jones (and those that hired them). \n Every season, I try to set realistic expectations for this Washington Commanders team. In 2024, my only hope was that Jayden Daniels would prove to be Washington’s franchise quarterback. And…",
+    "publishedAt": "2026-09-12T10:00:00.000Z",
+    "collectedAt": "2026-09-12T12:06:06.901Z"
+  },
+  "yahoo-nfl-bc6cba49b984": {
+    "id": "yahoo-nfl-bc6cba49b984",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-vs-commanders-predictions-week-070000968.html",
+    "title": "Eagles vs. Commanders predictions for Week 1 of 2026 NFL season",
+    "excerpt": "Eagles vs. Commanders predictions for Week 1 of 2026 NFL season originally appeared on NBC Sports Philadelphia \n The Eagles will kick off their 2026 season when they host the Washington Commanders at 4:25 p.m. on Sunday at the Linc.\n Here are our predictions:\n Reuben Frank (0-0) \n Nobody has been better on opening day lately than the Eagles, who are undefeated in Week 1 under Nick Sirianni and an NFL-best 16-3 in openers since 2008. With a win against Washington, Jalen Hurts will become the…",
+    "publishedAt": "2026-09-12T07:00:00.000Z",
+    "collectedAt": "2026-09-12T12:06:06.901Z"
   }
 }
