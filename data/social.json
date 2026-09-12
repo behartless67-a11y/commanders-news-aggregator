@@ -135,18 +135,6 @@
     "publishedAt": "2026-09-02T15:41:41.000Z",
     "collectedAt": "2026-09-02T16:05:12.972Z"
   },
-  "social-fe08b27cb489": {
-    "id": "social-fe08b27cb489",
-    "url": "https://x.com/PFTCommenter/status/2095136527193985501",
-    "text": "It would be absoluteley insane to forget about this guy but ppl are doing it every day",
-    "handle": "PFTCommenter",
-    "author": "PFT Commenter",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-02T13:07:28.000Z",
-    "collectedAt": "2026-09-02T17:30:30.916Z"
-  },
   "social-a69e4846fb8e": {
     "id": "social-a69e4846fb8e",
     "url": "https://x.com/JPFinlayNBCS/status/2095182072671252683",
@@ -3551,5 +3539,41 @@
     "images": [],
     "publishedAt": "2026-09-12T11:16:06.000Z",
     "collectedAt": "2026-09-12T12:06:11.312Z"
+  },
+  "social-c6e16013956e": {
+    "id": "social-c6e16013956e",
+    "url": "https://x.com/Commanders/status/2098758777969193286",
+    "text": "A new tradition begins at @NWStadium@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-12T13:01:00.000Z",
+    "collectedAt": "2026-09-12T13:14:31.801Z"
+  },
+  "social-6acf97590cc5": {
+    "id": "social-6acf97590cc5",
+    "url": "https://x.com/john_keim/status/2098746073237872903",
+    "text": "@avbanig@twitter.com (Used to always hear back in the day they were going to be more aggressive than the previous coordinator. They changed so often it would have made them the most aggressive team ever. Let’s see it on the field).",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-12T12:10:31.000Z",
+    "collectedAt": "2026-09-12T13:14:34.860Z"
+  },
+  "social-e8d7cacc6939": {
+    "id": "social-e8d7cacc6939",
+    "url": "https://x.com/tashanreed/status/2098759200616641004",
+    "text": "The #Commanders will debut a new pregame ceremony for their home opener in Week 3:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-12T13:02:41.000Z",
+    "collectedAt": "2026-09-12T13:14:37.606Z"
   }
 }
