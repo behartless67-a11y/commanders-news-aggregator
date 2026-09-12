@@ -6598,5 +6598,41 @@
     "excerpt": "",
     "publishedAt": "2026-09-12T04:00:24.000Z",
     "collectedAt": "2026-09-12T08:06:01.708Z"
+  },
+  "hogs-haven-dc6b6e6e9eaf": {
+    "id": "hogs-haven-dc6b6e6e9eaf",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/439039/commanders-season-preview-jayden-daniels-daronte-jones-david-blough",
+    "title": "Commanders season preview: Stakes are high for Washington, Jayden Daniels",
+    "excerpt": "Editor’s note: After posting some insightful stories in The Feed, Hogs Haven’s ShogunofHarlem93 has put together his first story for the main site. He breaks down why this Commanders season is so important for Jayden Daniels, new coordinators David Blough and Daronte Jones (and those that hired them). \n\n \n\n Every season, I try to set realistic expectations for this Washington Commanders team. In 2024, my only hope was that Jayden Daniels would prove to be Washington’s franchise quarterback. And…",
+    "publishedAt": "2026-09-12T10:00:00.000Z",
+    "collectedAt": "2026-09-12T10:05:58.974Z"
+  },
+  "riggos-rag-1829bdc95abc": {
+    "id": "riggos-rag-1829bdc95abc",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-bold-washington-commanders-predictions-crunch-week-1-showdown-eagles",
+    "title": "5 bold Commanders predictions for crunch Week 1 showdown against the Eagles",
+    "excerpt": "Bold predictions for the Washington Commanders as they go in search of a vital Week 1 road win against the Philadelphia Eagles.",
+    "publishedAt": "2026-09-12T10:00:00.000Z",
+    "collectedAt": "2026-09-12T10:05:59.505Z"
+  },
+  "athletic-jhabvala-aec5e404206c": {
+    "id": "athletic-jhabvala-aec5e404206c",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7586208/2026/09/12/commanders-fight-song-braves-warpath-redskins-name",
+    "title": "For the Commanders, fight song change renews complicated link to the past",
+    "excerpt": "Four years after replacing the line “Braves on the warpath!” with “fight for Our Commanders,” the team quietly brought the original back.",
+    "publishedAt": "2026-09-12T10:00:04.000Z",
+    "collectedAt": "2026-09-12T10:06:00.676Z"
   }
 }
