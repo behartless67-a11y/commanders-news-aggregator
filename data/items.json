@@ -6691,7 +6691,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-analysis/439215/terry-mclaurin-sonny-styles-commanders-philadelphia-eagles-nick-allegretti-chig-onkonkwo-klavon-chaisson",
     "title": "Terry McLaurin among five Commanders key to Week 1 clash vs. Eagles",
-    "excerpt": "We’ve got a game that counts on our hands Sunday afternoon, when the Commanders play the Eagles in Philadelphia. \n\n In a word: Finally. \n\n The 2026 NFL regular season is here, where we finally see what all those free-agent signings, NFL draft picks new play callers can do for a Commanders team looking to rebound from a 5-12 showing . \n\n Starting the season against host Philadelphia is no easy task. It will require quality and consistent execution from both sides of the football, winning tough…",
+    "excerpt": "We’ve got a game that counts on our hands Sunday afternoon, when the Commanders play the Eagles in Philadelphia. \n In a word: Finally. \n The 2026 NFL regular season is here, when we finally see what all those free-agent signings, NFL draft picks, and new play callers can do for a Commanders team looking to rebound from a 5-12 showing . \n Starting the season against host Philadelphia is no easy task. It will require quality and consistent execution from both sides of the football, winning tough…",
     "publishedAt": "2026-09-12T13:00:00.000Z",
     "collectedAt": "2026-09-12T14:06:01.216Z"
   },
@@ -6718,5 +6718,53 @@
     "excerpt": "There is positive league buzz building around Washington Commanders quarterback Jayden Daniels after an offseason of ridicule.",
     "publishedAt": "2026-09-12T14:30:00.000Z",
     "collectedAt": "2026-09-12T14:59:26.604Z"
+  },
+  "hogs-haven-3888e09bfc3d": {
+    "id": "hogs-haven-3888e09bfc3d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/439041/commanders-reacts-survey-high-confidence-despite-a-brutal-start",
+    "title": "Commanders survey results: High confidence despite brutal Sept schedule",
+    "excerpt": "BALTIMORE, MARYLAND - AUGUST 28: Stefon Diggs #3 of the Washington Commanders looks on before a preseason game against the Baltimore Ravens at M&T Bank Stadium on August 28, 2026 in Baltimore, Maryland. (Photo by G Fiume/Getty Images) | Getty Images \n \n This week’s Reacts survey conducted by Hogs Haven provides a snapshot of fan confidence in the week prior to the start of the 2026 regular season. We asked two questions in this week’s poll, and the results offer slightly different views that,…",
+    "publishedAt": "2026-09-12T16:00:00.000Z",
+    "collectedAt": "2026-09-12T16:06:00.085Z"
+  },
+  "hogs-haven-2c95069924c0": {
+    "id": "hogs-haven-2c95069924c0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/439203/stefon-diggs-over-romeo-doubs-looks-good-at-the-moment-sam-cosmi",
+    "title": "Commanders News: Stefon Diggs over Romeo Doubs looks good at the moment",
+    "excerpt": "ASHBURN, VA - AUGUST 12: Stefon Diggs #18 of the Washington Commanders participates in a drill during a joint practice at BigBear.ai Performance Center on August 12, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 12 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a…",
+    "publishedAt": "2026-09-12T15:00:00.000Z",
+    "collectedAt": "2026-09-12T16:06:00.085Z"
+  },
+  "riggos-rag-ffe22d77df61": {
+    "id": "riggos-rag-ffe22d77df61",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/growing-commanders-belief-means-antonio-williams-wont-stay-bit-part-player",
+    "title": "Growing Commanders belief means Antonio Williams won’t stay a bit-part player",
+    "excerpt": "Growing belief in Washington Commanders rookie wide receiver Antonio Williams means he won't stay a bit-part player for long.",
+    "publishedAt": "2026-09-12T16:00:00.000Z",
+    "collectedAt": "2026-09-12T16:06:01.048Z"
+  },
+  "yahoo-nfl-889273f75d7c": {
+    "id": "yahoo-nfl-889273f75d7c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-missing-romeo-doubs-signing-150000535.html",
+    "title": "Commanders missing on Romeo Doubs but signing Stefon Diggs looks good at the moment - Daily Slop",
+    "excerpt": "ASHBURN, VA - AUGUST 12: Stefon Diggs #18 of the Washington Commanders participates in a drill during a joint practice at BigBear.ai Performance Center on August 12, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images The Daily Slop – 12 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of…",
+    "publishedAt": "2026-09-12T15:00:00.000Z",
+    "collectedAt": "2026-09-12T16:06:06.357Z"
   }
 }
