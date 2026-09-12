@@ -3449,5 +3449,19 @@
     "images": [],
     "publishedAt": "2026-09-12T18:23:10.000Z",
     "collectedAt": "2026-09-12T20:05:09.433Z"
+  },
+  "social-45a5ce503a86": {
+    "id": "social-45a5ce503a86",
+    "url": "https://x.com/Commanders/status/2098864223023661224",
+    "text": "We have elevated C/G Julian Good-Jones from the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/259/851/570/890/411/original/4c882727436acabf.jpg"
+    ],
+    "publishedAt": "2026-09-12T20:00:00.000Z",
+    "collectedAt": "2026-09-12T20:06:09.049Z"
   }
 }
