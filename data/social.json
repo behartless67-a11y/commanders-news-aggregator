@@ -1,31 +1,4 @@
 {
-  "social-cf9edd9f2e71": {
-    "id": "social-cf9edd9f2e71",
-    "url": "https://x.com/NickiJhabvala/status/2095248220658041029",
-    "text": "Holy moly. Five first-rounders. Sheesh!",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-02T20:31:18.000Z",
-    "collectedAt": "2026-09-02T22:05:12.242Z"
-  },
-  "social-8bbe87cbe749": {
-    "id": "social-8bbe87cbe749",
-    "url": "https://x.com/Commanders/status/2095254126556832243",
-    "text": "mood bc next time we practice it will be WEEK 1 😁 @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/203/439/074/421/900/original/e98414aee3bafc7f.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/203/439/124/416/799/original/05d45c5945895dd3.jpg"
-    ],
-    "publishedAt": "2026-09-02T20:54:46.000Z",
-    "collectedAt": "2026-09-02T22:06:34.307Z"
-  },
   "social-90b2d461aab6": {
     "id": "social-90b2d461aab6",
     "url": "https://x.com/BenStandig/status/2095297575536431523",
@@ -3463,5 +3436,58 @@
     ],
     "publishedAt": "2026-09-12T20:00:00.000Z",
     "collectedAt": "2026-09-12T20:06:09.049Z"
+  },
+  "social-166f6031dc3f": {
+    "id": "social-166f6031dc3f",
+    "url": "https://x.com/Commanders/status/2098886646682808645",
+    "text": "First trip of the regular season @united@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/260/194/349/123/064/original/17978d5d23b12edb.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/260/194/378/590/153/original/09e8c5d21ebe5996.jpg"
+    ],
+    "publishedAt": "2026-09-12T21:29:06.000Z",
+    "collectedAt": "2026-09-12T21:48:36.259Z"
+  },
+  "social-f6b081dfd15a": {
+    "id": "social-f6b081dfd15a",
+    "url": "https://x.com/Commanders/status/2098870513502396723",
+    "text": "almost gameday ⏳ @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/259/953/493/377/334/original/ee5a25ced74638e4.jpg"
+    ],
+    "publishedAt": "2026-09-12T20:25:00.000Z",
+    "collectedAt": "2026-09-12T21:48:36.260Z"
+  },
+  "social-0405b0f6aa17": {
+    "id": "social-0405b0f6aa17",
+    "url": "https://x.com/BenStandig/status/2098865582196113735",
+    "text": "The Commanders elevated IOL Julian Good-Jones for Sunday's game.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-12T20:05:24.000Z",
+    "collectedAt": "2026-09-12T21:48:40.494Z"
+  },
+  "social-b78c350056d5": {
+    "id": "social-b78c350056d5",
+    "url": "https://x.com/tashanreed/status/2098866014117052455",
+    "text": "#Commanders ' available centers for tomorrow: Nick Allegretti, Matt Gulbin and Julian Good-Jones.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-12T20:07:07.000Z",
+    "collectedAt": "2026-09-12T21:48:42.762Z"
   }
 }
