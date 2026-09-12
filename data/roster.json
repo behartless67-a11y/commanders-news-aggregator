@@ -199,6 +199,15 @@
     }
   },
   {
+    "slug": "julian-good-jones",
+    "name": "Julian Good-Jones",
+    "jersey": "61",
+    "position": "G",
+    "espnId": "3917949",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3917949.png",
+    "stats": null
+  },
+  {
     "slug": "matt-gulbin",
     "name": "Matt Gulbin",
     "jersey": "66",
@@ -1242,15 +1251,6 @@
     "position": "CB",
     "espnId": "4686092",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4686092.png",
-    "stats": null
-  },
-  {
-    "slug": "julian-good-jones",
-    "name": "Julian Good-Jones",
-    "jersey": "61",
-    "position": "G",
-    "espnId": "3917949",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3917949.png",
     "stats": null
   },
   {
