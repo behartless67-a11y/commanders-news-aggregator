@@ -7054,5 +7054,29 @@
     "excerpt": "",
     "publishedAt": "2026-09-13T19:00:17.000Z",
     "collectedAt": "2026-09-13T20:06:11.136Z"
+  },
+  "pft-58be0cf2ea1d": {
+    "id": "pft-58be0cf2ea1d",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/eagles-lead-commanders-14-9-at-halftime",
+    "title": "Eagles lead Commanders 14-9 at halftime",
+    "excerpt": "The Eagles kicked off their bid for a third straight division title on Sunday and they are in the lead halfway through their home game against the Commanders. \n Jalen Hurts threw touchdown passes to tight end Dallas Goedert and wide receiver Dontayvion Wicks as the Eagles jumped out to a 14-3 lead. The Commanders got into the end zone for the first time late in the second quarter, but Jalen Carter blocked the extra point to send the Eagles into halftime with a 14-9 advantage. \n Big plays set up…",
+    "publishedAt": "2026-09-13T21:57:48.000Z",
+    "collectedAt": "2026-09-13T22:06:13.385Z"
+  },
+  "yahoo-nfl-486ded1dc175": {
+    "id": "yahoo-nfl-486ded1dc175",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-vs-commanders-week-1-192500854.html",
+    "title": "Eagles vs. Commanders Week 1: Scores, updates, and discussion",
+    "excerpt": "PHILADELPHIA, PENNSYLVANIA - MAY 6: A general view of Lincoln Financial Field ahead of the 2026 World Cup on May 6, 2026 in Philadelphia, Pennsylvania. The stadium will be known as Philadelphia Stadium for the World Cup games. (Photo by Emilee Chinn/Getty Images) | Getty Images The Philadelphia Eagles kick off their 2026 NFL season in an NFC East matchup against the Washington Commanders at Lincoln Financial Field.\n It has been the norm under head coach Nick Sirianni not to play starters in the…",
+    "publishedAt": "2026-09-13T21:47:39.000Z",
+    "collectedAt": "2026-09-13T22:06:14.052Z"
   }
 }
