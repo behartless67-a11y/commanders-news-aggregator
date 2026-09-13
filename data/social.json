@@ -1,28 +1,4 @@
 {
-  "social-8f939c56463c": {
-    "id": "social-8f939c56463c",
-    "url": "https://x.com/john_keim/status/2095489135691628935",
-    "text": "On video talking about the defense: where are they better or worse? How the scheme can help. How Luvu can bounce back. Ugly tackling numbers from 2025 that MUST improve. More. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-03T12:28:36.000Z",
-    "collectedAt": "2026-09-03T13:59:37.204Z"
-  },
-  "social-cc1321542abc": {
-    "id": "social-cc1321542abc",
-    "url": "https://x.com/tashanreed/status/2095497850234847455",
-    "text": "“I wanted to be great for myself,\" Sonny Styles told me. Raised by a Super Bowl champion, Styles’s NFL path seemed preordained. But it was his choice to follow it. My exclusive on the linebacker's journey to the #Commanders 🔗⤵️ /09/03/sonny-styless-nfl-path-seemed-preordained-it-was-his-choice-follow-it/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-03T13:03:14.000Z",
-    "collectedAt": "2026-09-03T13:59:40.102Z"
-  },
   "social-b72b7a737f02": {
     "id": "social-b72b7a737f02",
     "url": "https://x.com/JPFinlayNBCS/status/2095534663158673553",
@@ -3513,5 +3489,57 @@
     ],
     "publishedAt": "2026-09-13T09:35:00.000Z",
     "collectedAt": "2026-09-13T10:06:16.274Z"
+  },
+  "social-39eaecc7dc62": {
+    "id": "social-39eaecc7dc62",
+    "url": "https://x.com/Nationals/status/2099120985353961702",
+    "text": "raise hail @Commanders !!!",
+    "handle": "Nationals",
+    "author": "Washington Nationals",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/263/861/523/651/624/original/9e3e45912b8ae991.jpg"
+    ],
+    "publishedAt": "2026-09-13T13:00:17.000Z",
+    "collectedAt": "2026-09-13T13:58:13.210Z"
+  },
+  "social-9a086588d59b": {
+    "id": "social-9a086588d59b",
+    "url": "https://x.com/JPFinlayNBCS/status/2099119226560696739",
+    "text": "Game day at union station",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/263/830/835/976/796/original/b3ea3d784d5b1c84.jpg"
+    ],
+    "publishedAt": "2026-09-13T12:53:18.000Z",
+    "collectedAt": "2026-09-13T13:58:14.329Z"
+  },
+  "social-def357fa7472": {
+    "id": "social-def357fa7472",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvfnz6vq6u26",
+    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-13T13:07:01.841Z",
+    "collectedAt": "2026-09-13T13:58:30.275Z"
+  },
+  "social-a7bf365ebdd6": {
+    "id": "social-a7bf365ebdd6",
+    "url": "https://mysportgallery.com/@slessans2/117263880769913867",
+    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-13T13:07:01.000Z",
+    "collectedAt": "2026-09-13T13:58:30.275Z"
   }
 }
