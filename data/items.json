@@ -7018,5 +7018,41 @@
     "excerpt": "Bettors can use NFL sportsbook promos at the best NFL betting sites and NFL betting apps for Commanders vs. Eagles, Cowboys vs. Giants on Sunday",
     "publishedAt": "2026-09-13T15:30:49.000Z",
     "collectedAt": "2026-09-13T16:06:13.227Z"
+  },
+  "hogs-haven-2eeb0a1cd6ed": {
+    "id": "hogs-haven-2eeb0a1cd6ed",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/439384/nfl-week-1-washington-commanders-vs-philadelphia-eagles",
+    "title": "NFL Week 1: Washington Commanders vs Philadelphia Eagles",
+    "excerpt": "PHILADELPHIA, PENNSYLVANIA - NOVEMBER 14: Jayden Daniels #5 of the Washington Commanders throws a pass during an NFL Football game against the Philadelphia Eagles at Lincoln Financial Field on November 14, 2024 in Philadelphia, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images The Washington Commanders’ first game of the 2026 season is finally here and it’s a division road game against the Philadelphia Eagles. This is America’s Game of the Week and all eyes will be on Jayden…",
+    "publishedAt": "2026-09-13T19:30:00.000Z",
+    "collectedAt": "2026-09-13T20:06:08.138Z"
+  },
+  "hogs-haven-4741c42d36a0": {
+    "id": "hogs-haven-4741c42d36a0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/437034/washington-commanders-vs-philadelphia-eagles-inactives",
+    "title": "Washington Commanders vs Philadelphia Eagles Inactives",
+    "excerpt": "The Washington Commanders released their final injury report for Sunday afternoon’s game on Friday and then made one roster move yesterday . Backup C/G Julian Good-Jones was elevated from the practice squad and he will be active today over undrafted free agent rookie guard Tanoa Togiai. Good-Jones was the No. 2 center in training camp, in front of sixth-round rookie Matt Gulbin. Nick Allegretti’s calf injury on the second day of training camp changed that, and his extended absence gave…",
+    "publishedAt": "2026-09-13T19:11:49.000Z",
+    "collectedAt": "2026-09-13T20:06:08.138Z"
+  },
+  "commanders-youtube-e14bc0c68a8c": {
+    "id": "commanders-youtube-e14bc0c68a8c",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=wQe2vIXWh1o",
+    "title": "WELCOME TO THE SEASON OPENER! | Gameday LIVE: Commanders vs. Eagles",
+    "excerpt": "",
+    "publishedAt": "2026-09-13T19:00:17.000Z",
+    "collectedAt": "2026-09-13T20:06:11.136Z"
   }
 }

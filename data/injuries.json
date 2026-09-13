@@ -1,5 +1,12 @@
 [
   {
+    "name": "Athan Kaliakmanis",
+    "position": "QB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
@@ -28,10 +35,31 @@
     "notes": "Surgery"
   },
   {
+    "name": "Luke McCaffrey",
+    "position": "WR",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Ricky Barber",
+    "position": "DT",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Trey Amos",
     "position": "DB",
     "status": "IR",
     "bodyPart": "Ankle",
     "notes": "Sprain"
+  },
+  {
+    "name": "Treylon Burks",
+    "position": "WR",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
   }
 ]
