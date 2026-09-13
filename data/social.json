@@ -3541,5 +3541,19 @@
     "images": [],
     "publishedAt": "2026-09-13T13:07:01.000Z",
     "collectedAt": "2026-09-13T13:58:30.275Z"
+  },
+  "social-8771d6f69402": {
+    "id": "social-8771d6f69402",
+    "url": "https://x.com/Capitals/status/2099138026412855735",
+    "text": "Give 'em hail, @Commanders ! #ALLCAPS x #RaiseHail",
+    "handle": "Capitals",
+    "author": "Washington Capitals",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/264/122/806/302/716/original/7bc0660ed5fc7206.jpg"
+    ],
+    "publishedAt": "2026-09-13T14:08:00.000Z",
+    "collectedAt": "2026-09-13T14:11:45.315Z"
   }
 }
