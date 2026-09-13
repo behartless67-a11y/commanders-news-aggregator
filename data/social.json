@@ -3597,5 +3597,31 @@
     "images": [],
     "publishedAt": "2026-09-13T15:31:48.000Z",
     "collectedAt": "2026-09-13T16:05:11.625Z"
+  },
+  "social-6d8351c5909c": {
+    "id": "social-6d8351c5909c",
+    "url": "https://x.com/JPFinlayNBCS/status/2099166462774481372",
+    "text": "I’ve said a lot about Philly but I’ll say this too - no other NFL city is as locked in on their football team as these folks",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/264/575/838/701/150/original/9dc28ba91948c669.jpg"
+    ],
+    "publishedAt": "2026-09-13T16:01:00.000Z",
+    "collectedAt": "2026-09-13T16:06:16.479Z"
+  },
+  "social-b3272bfae00f": {
+    "id": "social-b3272bfae00f",
+    "url": "https://x.com/JPFinlayNBCS/status/2099160531969949774",
+    "text": "This is absolutely WILD - of more than 25k entries to @CircaSports Survivor Pool 31 of 32 NFL teams were selected. Every team. Except Washington. Like I said I like the spot.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-13T15:37:25.000Z",
+    "collectedAt": "2026-09-13T16:06:16.479Z"
   }
 }
