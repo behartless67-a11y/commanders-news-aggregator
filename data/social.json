@@ -1,19 +1,4 @@
 {
-  "social-8636b668dce6": {
-    "id": "social-8636b668dce6",
-    "url": "https://x.com/Commanders/status/2095576810557956192",
-    "text": "pov you're watching the montage in a coming-of-age movie",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/208/480/856/564/361/original/28d90a109622b6b4.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/208/480/888/197/640/original/cea95fdafee76ccb.jpg"
-    ],
-    "publishedAt": "2026-09-03T18:17:00.000Z",
-    "collectedAt": "2026-09-03T19:05:37.066Z"
-  },
   "social-7a316aeed620": {
     "id": "social-7a316aeed620",
     "url": "https://x.com/NickiJhabvala/status/2095602826617499967",
@@ -3679,5 +3664,65 @@
     ],
     "publishedAt": "2026-09-13T17:30:10.000Z",
     "collectedAt": "2026-09-13T18:06:46.517Z"
+  },
+  "social-0a235455aa95": {
+    "id": "social-0a235455aa95",
+    "url": "https://x.com/JPFinlayNBCS/status/2099202446622876011",
+    "text": "I’ve seen the Caps do this a hundred times but it’s funny to see football players do the soccer warm up",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-13T18:23:59.000Z",
+    "collectedAt": "2026-09-13T18:32:11.517Z"
+  },
+  "social-cf0b002a0564": {
+    "id": "social-cf0b002a0564",
+    "url": "https://x.com/john_keim/status/2099203639810158844",
+    "text": "The D will be helped tremendously by having Oweh, Chaisson today. Those two plus Styles have the speed to chase down Hurts. As he learns new O, his legs are a major weapon. Also: Oweh good vs. the run. Needed vs. Barkley.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-13T18:28:43.000Z",
+    "collectedAt": "2026-09-13T18:32:13.100Z"
+  },
+  "social-fa2f386358a2": {
+    "id": "social-fa2f386358a2",
+    "url": "https://x.com/john_keim/status/2099203412894044582",
+    "text": "But, yes, don't know how the OL will look. Comparable to 2024, but a very tough test for an opener vs. the Eagles. Won't just drop back with 7 step drops. Look at Chicago vs. PE last year as an example of how they'll go about it: boots; out zone runs; PA's.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-13T18:27:49.000Z",
+    "collectedAt": "2026-09-13T18:32:13.101Z"
+  },
+  "social-8d6b97145617": {
+    "id": "social-8d6b97145617",
+    "url": "https://x.com/john_keim/status/2099202969778397412",
+    "text": "Hard to fully know what to expect from Washington today. Jayden Daniels has had a strong camp -- better than his first two seasons. Needs to stay healthy -- true of any QB; one year started every game and one year only 7. But the O looked much better in camp compared to '25.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-13T18:26:03.000Z",
+    "collectedAt": "2026-09-13T18:32:13.101Z"
+  },
+  "social-d70eb00d5811": {
+    "id": "social-d70eb00d5811",
+    "url": "https://x.com/john_keim/status/2099202012302688422",
+    "text": "Jayden Daniels to… Sam Hartman. Daniels has been warming up and throwing passes to Hartman as part of his pre-game warmup. (Hartman did have a nice one-handed catch). Daniels Has thrown a lot of passes.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-13T18:22:15.000Z",
+    "collectedAt": "2026-09-13T18:32:13.101Z"
   }
 }
