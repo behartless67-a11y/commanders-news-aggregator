@@ -1023,15 +1023,59 @@ function essayPhoto(photo, { className = 'essay-figure' } = {}) {
 }
 
 /**
- * Essay prose for originals and Monday posts. Ordinary paragraphs, plus two
+ * A run of "thank you" in each language the site's readers actually come from
+ * (see the `thanks` field on a Blog record).
+ *
+ * The whole reason this is a template function instead of one more sentence
+ * typed into a paragraph: paragraph text goes through linkPlayers(), which
+ * HTML-escapes everything, so a paragraph physically cannot carry the `lang`
+ * attribute each of these words needs. Without `lang`, a screen reader
+ * pronounces Ευχαριστώ and 감사합니다 with an English voice, and a browser
+ * picks the wrong font for Chinese vs Japanese Han characters. Marking each
+ * word up properly is the difference between actually addressing an
+ * international reader and just decorating a page with their alphabet.
+ *
+ * `dir: 'rtl'` on the Arabic entry matters for the same class of reason: an
+ * inline element carrying its own dir gets bidi isolation, so the Latin
+ * punctuation and the romanization sitting next to it stop reordering
+ * themselves around the Arabic.
+ *
+ * A list, not a paragraph, because that's what it is.
+ */
+function thanksList(thanks) {
+  if (!Array.isArray(thanks) || !thanks.length) return '';
+  const items = thanks
+    .map((t) => {
+      if (!t?.word) return '';
+      const dir = t.dir ? ` dir="${escapeHtml(t.dir)}"` : '';
+      const roman = t.roman
+        ? ` <span class="thanks-roman">(${escapeHtml(t.roman)})</span>`
+        : '';
+      const where = t.where
+        ? `<span class="thanks-where">${escapeHtml(t.where)}</span>`
+        : '';
+      return `        <li class="thanks-item"><span class="thanks-word" lang="${escapeHtml(t.lang)}"${dir}>${escapeHtml(t.word)}</span>${roman}${where}</li>`;
+    })
+    .filter(Boolean)
+    .join('\n');
+  if (!items) return '';
+  return `      <ul class="thanks-list">
+${items}
+      </ul>`;
+}
+
+/**
+ * Essay prose for originals and Monday posts. Ordinary paragraphs, plus three
  * inline markers:
  *
  *   "## Heading"   → a section subhead. Long personal essays need somewhere
  *                    for the eye to rest.
  *   "!photo <key>" → the photo stored under that key in the record's `photos`
  *                    map, dropped in at exactly this point in the prose.
+ *   "!thanks"      → the record's `thanks` list (see thanksList). Takes no key
+ *                    because there's only ever one of these in a post.
  *
- * Both are markers inside paragraphs[] rather than parallel fields because
+ * All three are markers inside paragraphs[] rather than parallel fields because
  * position is the whole point: a subhead or a photo means nothing except in
  * relation to the paragraph it sits next to, and a separate array would have
  * to re-encode that ordering anyway. The photo *data* does live in its own
@@ -1041,7 +1085,7 @@ function essayPhoto(photo, { className = 'essay-figure' } = {}) {
  * An unknown key renders nothing rather than throwing. Losing one photo is a
  * better failure than a build that dies over a typo in a caption file.
  */
-function essayParagraphs(paragraphs, rosterIndex, photos = {}) {
+function essayParagraphs(paragraphs, rosterIndex, photos = {}, thanks = null) {
   return paragraphs
     .map((p) => {
       if (p.startsWith('## ')) {
@@ -1051,22 +1095,27 @@ function essayParagraphs(paragraphs, rosterIndex, photos = {}) {
         const photo = photos[p.slice(7).trim()];
         return photo ? essayPhoto(photo) : '';
       }
+      if (p.trim() === '!thanks') {
+        return thanksList(thanks);
+      }
       return `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`;
     })
     .join('\n');
 }
 
 /**
- * Just the prose lines of an essay, with the "## " and "!photo " markers
- * dropped. For anywhere a post is reduced to plain text (river card excerpts,
- * meta descriptions, the blog index) where a raw marker leaking through would
- * read as "!photo tailgate-wings" in a Google result.
+ * Just the prose lines of an essay, with the "## ", "!photo " and "!thanks"
+ * markers dropped. For anywhere a post is reduced to plain text (river card
+ * excerpts, meta descriptions, the blog index) where a raw marker leaking
+ * through would read as "!photo tailgate-wings" in a Google result.
  *
  * Today's posts happen to open with prose, so nothing leaks; this is here so
  * that stays true when someone leads a future post with a photo.
  */
 function essayProse(paragraphs) {
-  return paragraphs.filter((p) => !p.startsWith('## ') && !p.startsWith('!photo '));
+  return paragraphs.filter(
+    (p) => !p.startsWith('## ') && !p.startsWith('!photo ') && p.trim() !== '!thanks',
+  );
 }
 
 /**
@@ -1110,7 +1159,7 @@ ${slides.join('\n')}
  */
 function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
   const photos = record.photos || {};
-  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, photos);
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, photos, record.thanks);
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
   // like "go listen to the Music page" carry a real link instead of a bare

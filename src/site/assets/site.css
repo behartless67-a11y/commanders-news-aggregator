@@ -1620,6 +1620,50 @@ main.layout{
   margin-top: 9px;
 }
 
+/* The "thank you in every reader's language" list (see thanksList() in
+   templates.js). One row per language: the word itself carrying its own lang
+   attribute, an optional romanization, then the countries it covers. No
+   bullets, and a gold rule down the left, so it reads as a dedication rather
+   than a spec list. */
+.thanks-list{
+  list-style: none;
+  margin: 22px 0;
+  padding: 4px 0 4px 16px;
+  border-left: 2px solid rgba(255,182,18,0.35);
+}
+
+.thanks-item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin: 0 0 9px;
+}
+
+.thanks-item:last-child{ margin-bottom: 0; }
+
+/* Larger than the surrounding prose with a generous line-height: Greek, Thai,
+   Arabic and the CJK scripts carry taller glyphs and diacritics that the
+   14.5px body size crowds or clips. */
+.thanks-word{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--gold);
+}
+
+.thanks-roman{
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+.thanks-where{
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
 /* ── Slideshow ────────────────────────────────────────────────────────────
    A horizontal scroll-snap strip, which is the whole trick: with JavaScript
    off, or before site.js has parsed, this is already a working swipeable
