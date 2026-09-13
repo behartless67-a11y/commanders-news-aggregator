@@ -1,16 +1,4 @@
 {
-  "social-7a316aeed620": {
-    "id": "social-7a316aeed620",
-    "url": "https://x.com/NickiJhabvala/status/2095602826617499967",
-    "text": "Digging more into the Commanders’ O-line, their player development and new kicker ...",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-03T20:00:22.000Z",
-    "collectedAt": "2026-09-03T20:05:10.322Z"
-  },
   "social-0679b5a767bd": {
     "id": "social-0679b5a767bd",
     "url": "https://x.com/john_keim/status/2095606264159957061",
@@ -3923,5 +3911,53 @@
     ],
     "publishedAt": "2026-09-13T18:35:48.246Z",
     "collectedAt": "2026-09-13T19:59:56.540Z"
+  },
+  "social-7a3ae683cbf9": {
+    "id": "social-7a3ae683cbf9",
+    "url": "https://x.com/NickiJhabvala/status/2099227424508522953",
+    "text": "Here’s a fraction of Jayden Daniels’ warmup routine a couple hours before kickoff. Probably threw 50-70 passes to Sam Hartman.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-13T20:03:14.000Z",
+    "collectedAt": "2026-09-13T20:05:11.701Z"
+  },
+  "social-3f900b7e331a": {
+    "id": "social-3f900b7e331a",
+    "url": "https://x.com/NickiJhabvala/status/2099211358784852000",
+    "text": "Washington going with 5 WRs vs. Philly: Terry McLaurin, Stefon Diggs, Dyami Brown, Jaylin Lane, Antonio Williams. Would think this means Lane handles both punt and kick returns. Burks is a healthy scratch.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-13T18:59:24.000Z",
+    "collectedAt": "2026-09-13T20:05:11.701Z"
+  },
+  "social-d993f4bae975": {
+    "id": "social-d993f4bae975",
+    "url": "https://x.com/NickiJhabvala/status/2099210594867961871",
+    "text": "Commanders inactives: WR Luke McCaffrey WR Treylon Burks QB Athan Kaliakmanis DT Ricky Barber G Tanoa Togiai",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-13T18:56:21.000Z",
+    "collectedAt": "2026-09-13T20:05:11.701Z"
+  },
+  "social-df8c48c650b8": {
+    "id": "social-df8c48c650b8",
+    "url": "https://x.com/NickiJhabvala/status/2099208924415078650",
+    "text": "Sixers president of basketball operations Mike Gansey is over by the Commanders’ bench during warmups, talking to Lance Newmark",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-13T18:49:43.000Z",
+    "collectedAt": "2026-09-13T20:05:11.701Z"
   }
 }
