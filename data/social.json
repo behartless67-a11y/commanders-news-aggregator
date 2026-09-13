@@ -3665,5 +3665,19 @@
     "images": [],
     "publishedAt": "2026-09-13T17:05:26.000Z",
     "collectedAt": "2026-09-13T18:05:12.415Z"
+  },
+  "social-86d5cd64bc2f": {
+    "id": "social-86d5cd64bc2f",
+    "url": "https://x.com/JPFinlayNBCS/status/2099188902296690866",
+    "text": "New charger for Week 1. How long will it last?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/264/920/592/427/027/original/b38a3a97fca14e34.jpg"
+    ],
+    "publishedAt": "2026-09-13T17:30:10.000Z",
+    "collectedAt": "2026-09-13T18:06:46.517Z"
   }
 }
