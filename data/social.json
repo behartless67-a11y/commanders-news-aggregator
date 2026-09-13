@@ -1,42 +1,4 @@
 {
-  "social-f470c343d4fc": {
-    "id": "social-f470c343d4fc",
-    "url": "https://x.com/JPFinlayNBCS/status/2095559224193364023",
-    "text": "Talking w @DZangaroNBCS about Eagles expectations: \"Defensively they're going to be really good. Offensively it's going to be a work in progress...They're implementing a lot of new things and have a lot of new pieces.\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-03T17:07:07.000Z",
-    "collectedAt": "2026-09-03T17:34:58.566Z"
-  },
-  "social-a8f526fb0a5a": {
-    "id": "social-a8f526fb0a5a",
-    "url": "https://x.com/AdamSchefter/status/2095559681410253051",
-    "text": "National Football League Players Association (NFLPA) announced that Matt Taylor will join the organization as Chief Communications Officer, effective September 8. Taylor served as a Vice President at Heller, a leading strategic communications firm, where he advised clients navigating complex issues across a range of industries. Taylor also led football communications for the Miami Dolphins, and served in communications positions in the front offices of the Indianapolis Colts and Washington Commanders.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-09-03T17:08:56.000Z",
-    "collectedAt": "2026-09-03T17:35:06.054Z"
-  },
-  "social-04f0982be999": {
-    "id": "social-04f0982be999",
-    "url": "https://x.com/MikeGarafolo/status/2095558844747309156",
-    "text": "The @NFLPA@twitter.com today announced Matt Taylor will join the organization as chief communications officer. Previously the head of communications for the #Dolphins and also in similar roles for the #Colts and #Commanders , Taylor joins the players’ union.",
-    "handle": "MikeGarafolo",
-    "author": "Mike Garafolo",
-    "label": "",
-    "sourceKey": "@MikeGarafolo",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/208/205/288/283/148/original/483ff3974ba7ee49.jpg"
-    ],
-    "publishedAt": "2026-09-03T17:05:36.000Z",
-    "collectedAt": "2026-09-03T17:35:09.310Z"
-  },
   "social-8636b668dce6": {
     "id": "social-8636b668dce6",
     "url": "https://x.com/Commanders/status/2095576810557956192",
@@ -3623,5 +3585,73 @@
     "images": [],
     "publishedAt": "2026-09-13T15:37:25.000Z",
     "collectedAt": "2026-09-13T16:06:16.479Z"
+  },
+  "social-b5bf42b6c5d5": {
+    "id": "social-b5bf42b6c5d5",
+    "url": "https://x.com/Commanders/status/2099182066646810852",
+    "text": "52's regular season debut 😌 @sonnystyles_@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-13T17:03:00.000Z",
+    "collectedAt": "2026-09-13T17:15:27.789Z"
+  },
+  "social-f496a3998955": {
+    "id": "social-f496a3998955",
+    "url": "https://x.com/UFLDefenders/status/2099128465169482066",
+    "text": "The District is behind you 🛡️ Good luck, @Commanders !",
+    "handle": "UFLDefenders",
+    "author": "DC Defenders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/263/979/134/186/952/original/45c94a2301b5423c.jpg"
+    ],
+    "publishedAt": "2026-09-13T13:30:00.000Z",
+    "collectedAt": "2026-09-13T17:15:27.790Z"
+  },
+  "social-e32a9d590951": {
+    "id": "social-e32a9d590951",
+    "url": "https://x.com/JPFinlayNBCS/status/2099167642246381829",
+    "text": "In a sea of green at the original @MNFlagshipStore@twitter.com I found some burgundy and gold. Wasn’t expecting the Champ Bailey jersey though",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/264/590/537/723/596/original/5806a3e21964ecc3.jpg"
+    ],
+    "publishedAt": "2026-09-13T16:05:41.000Z",
+    "collectedAt": "2026-09-13T17:15:28.890Z"
+  },
+  "social-27b12b1014e9": {
+    "id": "social-27b12b1014e9",
+    "url": "https://mastodon.social/@atobsmith/117264629696215036",
+    "text": "It’s Game Day!! #NFL #WASvsPHI #WashingtonCommanders #Commanders #HTTC #RaiseHail",
+    "handle": "atobsmith",
+    "author": "Michael Smith",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/264/629/642/149/252/original/1f2e1e2c3958711f.jpg"
+    ],
+    "publishedAt": "2026-09-13T16:17:29.037Z",
+    "collectedAt": "2026-09-13T17:15:44.338Z"
+  },
+  "social-41131845ef0d": {
+    "id": "social-41131845ef0d",
+    "url": "https://mastodon.social/@liveimtv/117264676122535378",
+    "text": "#PHIvsWAS #FlyEaglesFly #HTTC #NFL #RTL #NFLGamePass #RTLPlus heute ab 22:25 Uhr: Philadelphia Eagles - Washington Commanders. Das letzte Aufeinandertreffen zwischen Philadelphia und Washington fand in der Rückrunde der letzten Saison am 4. ... adelphia-eagles-washington-commanders-62880.html?utm_source=dlvr.it&utm_medium=mastodon",
+    "handle": "liveimtv",
+    "author": "LiveimTV.de",
+    "label": "",
+    "sourceKey": "#HTTC",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/264/676/041/873/810/original/757a6cae5bda132a.jpeg"
+    ],
+    "publishedAt": "2026-09-13T16:29:17.463Z",
+    "collectedAt": "2026-09-13T17:15:45.948Z"
   }
 }
