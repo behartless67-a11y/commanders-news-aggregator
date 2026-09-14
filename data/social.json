@@ -1,21 +1,4 @@
 {
-  "social-ca4fef02bc57": {
-    "id": "social-ca4fef02bc57",
-    "url": "https://x.com/Commanders/status/2095919821946851701",
-    "text": "More progress being made 🚜",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/459/163/939/original/c90ae9ec6fccaef2.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/497/867/555/original/b76358d81afff58d.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/566/504/310/original/96afbca1e27aec3d.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/213/849/599/691/558/original/cf39c974b3d81c0a.jpg"
-    ],
-    "publishedAt": "2026-09-04T17:00:00.000Z",
-    "collectedAt": "2026-09-04T17:15:57.544Z"
-  },
   "social-e79b2d83fde7": {
     "id": "social-e79b2d83fde7",
     "url": "https://mastodon.social/@top_news/117215108415774001",
@@ -6602,5 +6585,107 @@
     "images": [],
     "publishedAt": "2026-09-14T13:49:30.000Z",
     "collectedAt": "2026-09-14T16:03:04.630Z"
+  },
+  "social-e51e2cbece16": {
+    "id": "social-e51e2cbece16",
+    "url": "https://x.com/Commanders/status/2099551249293336938",
+    "text": "special teams demon 😈 @tylerkowens@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/270/584/187/865/013/original/f8b48219021dd4f2.jpg"
+    ],
+    "publishedAt": "2026-09-14T17:30:00.000Z",
+    "collectedAt": "2026-09-14T17:42:29.110Z"
+  },
+  "social-8d563692a64d": {
+    "id": "social-8d563692a64d",
+    "url": "https://x.com/JPFinlayNBCS/status/2099550852654490044",
+    "text": "Pretty wild that Washington doubled up the Eagles on 1st downs, won time of possession and had 0 turnovers and still lost. Thats the power of giving up explosives.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/270/572/267/352/330/original/9d088bb2d1a072d4.jpg"
+    ],
+    "publishedAt": "2026-09-14T17:28:25.000Z",
+    "collectedAt": "2026-09-14T17:42:30.768Z"
+  },
+  "social-ba3bbab93577": {
+    "id": "social-ba3bbab93577",
+    "url": "https://x.com/JPFinlayNBCS/status/2099545217942589476",
+    "text": "Dan Quinn will speak to the media at 3pm. Expect some injury updates and probably some more questions about the failed 2pt conversion play from yesterday",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/270/485/589/164/939/original/bdf503ec207fe465.jpg"
+    ],
+    "publishedAt": "2026-09-14T17:06:02.000Z",
+    "collectedAt": "2026-09-14T17:42:30.768Z"
+  },
+  "social-717771de890a": {
+    "id": "social-717771de890a",
+    "url": "https://x.com/john_keim/status/2099541236310835647",
+    "text": "From under center: Jayden Daniels completed 2-4 passes for 19 yards. Out of gun: Daniels was 16-30 for 145 yards and 2 TDs play action: 3-5, 27 yards. Daniels was pressured on 19 of 38 dropbacks per @NextGenStats . 3-15 for 26 yards. Vs blitz he was 5-7, 47 yards, both TDs",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-14T16:50:12.000Z",
+    "collectedAt": "2026-09-14T17:42:31.875Z"
+  },
+  "social-a275fff8f4d3": {
+    "id": "social-a275fff8f4d3",
+    "url": "https://x.com/tashanreed/status/2099541600179265923",
+    "text": "#Commanders QB Jayden Daniels' presnap alignment against the Eagles, per NFL Pro: - Shotgun: 49 snaps - Under center: 18 snaps",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-14T16:51:39.000Z",
+    "collectedAt": "2026-09-14T17:42:34.702Z"
+  },
+  "social-affcfab3a750": {
+    "id": "social-affcfab3a750",
+    "url": "https://x.com/tashanreed/status/2099540096848392629",
+    "text": "Dallas will be without one of their safeties this week:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-14T16:45:41.000Z",
+    "collectedAt": "2026-09-14T17:42:34.702Z"
+  },
+  "social-90ad9a21ce34": {
+    "id": "social-90ad9a21ce34",
+    "url": "https://x.com/tashanreed/status/2099538142910914930",
+    "text": "According to NFL Pro, #Commanders LT Brandon Coleman allowed a team-high 9 pressures against the Eagles. Laremy Tunsil's season-high mark for a game last season was 4 pressures.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-14T16:37:55.000Z",
+    "collectedAt": "2026-09-14T17:42:34.702Z"
+  },
+  "social-abe4db0cae46": {
+    "id": "social-abe4db0cae46",
+    "url": "https://x.com/tashanreed/status/2099532703578149174",
+    "text": "Rewatching the game: This was a miscommunication between Sainristil and Nick Cross. It was a two-man route concept with Wicks and Goedert. Both of them went with Wicks, which left Goedert uncovered. That confusion led to both players freezing and leaving Wicks open.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-14T16:16:18.000Z",
+    "collectedAt": "2026-09-14T17:42:34.702Z"
   }
 }

@@ -7498,5 +7498,29 @@
     "excerpt": "Washington Commanders wide receiver Luke McCaffrey's fading role reached a worrying new low with a healthy scratch in Week 1.",
     "publishedAt": "2026-09-14T14:30:00.000Z",
     "collectedAt": "2026-09-14T16:06:18.215Z"
+  },
+  "riggos-rag-db109831342a": {
+    "id": "riggos-rag-db109831342a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/mike-sainristil-become-liability-washington-commanders-cannot-afford",
+    "title": "Mike Sainristil has become a liability the Commanders cannot afford",
+    "excerpt": "Washington Commanders cornerback Mike Sainristil has become a liability that Daronte Jones' defense cannot afford.",
+    "publishedAt": "2026-09-14T17:30:00.000Z",
+    "collectedAt": "2026-09-14T17:42:22.331Z"
+  },
+  "yahoo-nfl-b00b72427739": {
+    "id": "yahoo-nfl-b00b72427739",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/commanders-tyler-owens-draw-praise-after-exceptional-special-teams-play-one-of-the-greatest-football-plays-ive-ever-seen-160659323.html",
+    "title": "Commanders' Tyler Owens draw praise after exceptional special teams play: 'One of the greatest football plays I've ever seen'",
+    "excerpt": "Washington Commanders safety Tyler Owens proved one important thing with his Week 1 performance: Sometimes, the box score lies. \n If you look at Owens' stat line from Sunday, you'll note that he registered just two tackles in the team's 24-22 loss to the Philadelphia Eagles. But that doesn't tell the full story … far from it.\n Owens received massive praise for a phenomenal special teams tackle, one in which he aggressively fought off multiple blockers before driving the runner into the ground…",
+    "publishedAt": "2026-09-14T16:06:59.000Z",
+    "collectedAt": "2026-09-14T17:42:27.098Z"
   }
 }
