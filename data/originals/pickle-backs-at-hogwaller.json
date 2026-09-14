@@ -24,6 +24,13 @@
       "alt": "Ben and Nicole smiling in the Högwaller beer garden, with a metal roof, string lights and blue and white Oktoberfest bunting overhead.",
       "caption": "Us in the beer garden, taken before the fourth quarter happened to either of us."
     },
+    "hogwaller-evan": {
+      "file": "hogwaller-evan.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "Nicole, Ben and Evan shoulder to shoulder under the beer garden's blue and white Oktoberfest bunting, all three in Commanders gear.",
+      "caption": "Nicole, me, and Evan on the right, who I had known for about three hours at this point."
+    },
     "hogwaller-scary-terry": {
       "file": "hogwaller-scary-terry.jpg",
       "w": 900,
@@ -35,7 +42,7 @@
   "slideshow": {
     "heading": "Sunday on East High Street",
     "intro": "Charlottesville, late afternoon, roughly two hours before a blocked extra point became the defining event of my week.",
-    "keys": ["hogwaller-us", "hogwaller-scary-terry"]
+    "keys": ["hogwaller-us", "hogwaller-evan", "hogwaller-scary-terry"]
   },
   "status": "published",
   "publishedAt": "2026-09-14T00:30:00.000Z"
