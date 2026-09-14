@@ -16,6 +16,7 @@ mkdir -p "$OUT"
 
 UVA="C:/Users/Ben/Desktop/uva pics"
 GAME="C:/Users/Ben/Desktop/game"
+HOGWALLER="C:/Users/Ben/Desktop/commanders"
 
 # Long edge in px. Big enough to look sharp on a retina laptop at the widths
 # these are displayed at, small enough that a gallery of them is not a 6 MB
@@ -48,6 +49,12 @@ PHOTOS=(
   "box-ncstate|$GAME/3.jpg|-|contrast=1.06:saturation=1.06:gamma=1.01|-"
   "go-hoos-marquee|$GAME/4.jpg|-|contrast=1.06:saturation=1.08:gamma=1.02|100:140:602:636;106:196:452:766"
   "acc-huddle-set|$GAME/shaq.jpg|1950:1800:0:180|contrast=1.10:saturation=1.08:gamma=1.02|-"
+  # Week 1 at Högwaller. Shot in late-afternoon sun under a metal roof, so the
+  # two beer-garden frames get a slightly warmer, lighter touch than the UVA
+  # batch; the tube man is outside in full sun and needs the opposite.
+  "hogwaller-us|$HOGWALLER/commanders1.jpg|-|contrast=1.06:saturation=1.06:gamma=1.03|-"
+  "hogwaller-evan|$HOGWALLER/commanders2.jpg|-|contrast=1.06:saturation=1.08:gamma=1.02|-"
+  "hogwaller-scary-terry|$HOGWALLER/commanders3.jpg|-|contrast=1.08:saturation=1.10:gamma=0.99|-"
 )
 
 echo "{" > "$OUT/dimensions.json"
@@ -57,7 +64,28 @@ i=0
 for row in "${PHOTOS[@]}"; do
   i=$((i + 1))
   IFS='|' read -r name src crop eq blur <<< "$row"
-  [ -f "$src" ] || { echo "missing source: $src" >&2; exit 1; }
+
+  # A missing source is normal, not fatal. The sources live on a Desktop and get
+  # cleaned up; the outputs are committed and are what the site actually serves.
+  # So an already-processed photo whose original is gone is skipped, and its real
+  # dimensions are read back off the existing output so dimensions.json stays
+  # complete rather than silently shrinking every time this is re-run. Only a
+  # row with neither a source nor an output is a genuine error.
+  if [ ! -f "$src" ]; then
+    if [ -f "$OUT/$name.jpg" ]; then
+      dims=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height \
+        -of csv=s=x:p=0 "$OUT/$name.jpg")
+      w=${dims%x*}
+      h=${dims#*x}
+      comma=","
+      [ "$i" -eq "$count" ] && comma=""
+      printf '  "%s": { "w": %s, "h": %s }%s\n' "$name" "$w" "$h" "$comma" >> "$OUT/dimensions.json"
+      printf '%-24s %5sx%-5s %6s   (skipped, source gone)\n' "$name" "$w" "$h" ""
+      continue
+    fi
+    echo "missing source and no existing output: $src" >&2
+    exit 1
+  fi
 
   chain=""
   [ "$crop" != "-" ] && chain="crop=$crop,"
