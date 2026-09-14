@@ -1,40 +1,20 @@
 {
-  "fetchedAt": "2026-09-11T12:54:58.752Z",
+  "fetchedAt": "2026-09-14T17:27:05.413Z",
   "uva": {
     "lastGame": {
-      "date": "2026-08-29T19:30Z",
-      "uvaScore": "34",
-      "opponentScore": "8",
-      "opponent": "NC State Wolfpack",
+      "date": "2026-09-11T23:00Z",
+      "uvaScore": "59",
+      "opponentScore": "3",
+      "opponent": "Norfolk State Spartans",
       "isHome": true,
       "won": true,
       "venue": "Scott Stadium"
     },
     "nextGame": {
-      "date": "2026-09-11T23:00Z",
-      "opponent": "Norfolk State Spartans",
+      "date": "2026-09-19T23:30Z",
+      "opponent": "West Virginia Mountaineers",
       "isHome": true
     }
   },
-  "notable": [
-    {
-      "date": "2026-09-11T00:00Z",
-      "teams": [
-        {
-          "name": "Miami Hurricanes",
-          "abbr": "MIA",
-          "rank": 7,
-          "score": "77",
-          "winner": true
-        },
-        {
-          "name": "Florida A&M Rattlers",
-          "abbr": "FAMU",
-          "rank": null,
-          "score": "7",
-          "winner": false
-        }
-      ]
-    }
-  ]
+  "notable": []
 }
