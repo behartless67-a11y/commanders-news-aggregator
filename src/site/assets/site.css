@@ -1301,38 +1301,52 @@ main.layout{
 
 .ts-headline{
   margin: 0;
-  font-size: 10.5px;
+  font-size: 10px;
   color: var(--text-muted);
   display: flex;
   align-items: baseline;
-  gap: 5px;
+  gap: 4px;
   flex-wrap: nowrap;
   min-width: 0;
 }
 
 .ts-headline .ts-rank{
   color: var(--gold);
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: 800;
   line-height: 1;
   flex-shrink: 0;
 }
 
-/* Defense has no league rank to show. Reads as a stated absence rather than a
-   missing gold number, which would look like a rendering bug. */
-.ts-norank{
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-faint);
+/* Defense has no league rank to show (see teamstats.js). Stated once beneath
+   the numbers rather than as "rank n/a" on every row: four copies of the same
+   absence pushed the two columns into each other on a 360px rail, and one quiet
+   line reads better anyway. */
+/* "Allowed, per game" above the defense numbers, so the word doesn't have to
+   ride on all four labels (see the note in teamStatsWidget). Uppercase and
+   faint: it's a column heading, not a stat. */
+.ts-panel-eyebrow{
+  margin: 0 0 8px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  color: var(--text-faint);
 }
 
-/* Wraps as a last resort instead of nowrap. The grid above sizes columns to
-   content, so this normally stays on one line anyway; allowing a break means a
-   narrow rail wraps "rush yds/gm allowed" rather than pushing text past the
-   widget edge. */
-.ts-line{ min-width: 0; }
+.ts-norank-note{
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 1.45;
+  color: var(--text-faint);
+}
+
+/* nowrap, deliberately: a stat label broken across two lines ("132.0 rush" /
+   "yds/gm") is harder to read than a smaller one that stays whole, which is why
+   the sizes above are as small as they are. The grid sizes its columns to this
+   content, so keeping it unbreakable is what makes the columns come out wide
+   enough in the first place. */
+.ts-line{ min-width: 0; white-space: nowrap; }
 
 .ts-leaders{
   list-style: none;

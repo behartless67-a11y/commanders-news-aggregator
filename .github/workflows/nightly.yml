@@ -67,6 +67,15 @@ jobs:
       - run: npm run injuries
         continue-on-error: true
 
+      # Nothing called this on any schedule until now, so the NFC East widget
+      # sat on whatever it was told the last time someone ran it by hand: it
+      # was still showing all four teams at 0-0 the morning after Week 1,
+      # from a snapshot taken 2026-08-26, before the season existed. Records
+      # change every single week, so this belongs on the same cadence as the
+      # rest of the caches above.
+      - run: npm run standings
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}

@@ -1,48 +1,48 @@
 {
-  "season": "2025",
+  "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-09-09T11:43:20.009Z",
+  "fetchedAt": "2026-09-14T11:56:03.851Z",
   "offense": {
     "yardsPerGame": {
-      "value": "318.8",
-      "rank": 22,
-      "rankLabel": "22nd"
+      "value": "295.0",
+      "rank": 16,
+      "rankLabel": "16th"
     },
     "pointsPerGame": {
-      "value": "20.9",
-      "rank": 22,
-      "rankLabel": "22nd"
+      "value": "22.0",
+      "rank": 5,
+      "rankLabel": "Tied-5th"
     },
     "passYardsPerGame": {
-      "value": "184.1",
-      "rank": 24,
-      "rankLabel": "24th"
+      "value": "163.0",
+      "rank": 25,
+      "rankLabel": "25th"
     },
     "rushYardsPerGame": {
-      "value": "134.7",
-      "rank": 4,
-      "rankLabel": "4th"
+      "value": "132.0",
+      "rank": 5,
+      "rankLabel": "Tied-5th"
     }
   },
   "defense": {
-    "games": 17,
+    "games": 1,
     "yardsPerGame": {
-      "value": "384.3",
+      "value": "318.0",
       "rank": null,
       "rankLabel": null
     },
     "pointsPerGame": {
-      "value": "26.5",
+      "value": "24.0",
       "rank": null,
       "rankLabel": null
     },
     "passYardsPerGame": {
-      "value": "242.5",
+      "value": "182.0",
       "rank": null,
       "rankLabel": null
     },
     "rushYardsPerGame": {
-      "value": "141.8",
+      "value": "136.0",
       "rank": null,
       "rankLabel": null
     }
@@ -51,37 +51,31 @@
     "offense": [
       {
         "key": "Pass",
-        "name": "Marcus Mariota",
-        "value": "1,695"
+        "name": "Jayden Daniels",
+        "value": "164"
       },
       {
         "key": "Rush",
         "name": "Jacory Croskey-Merritt",
-        "value": "805"
+        "value": "63"
       },
       {
         "key": "Recv",
-        "name": "Deebo Samuel Sr.",
-        "value": "727"
+        "name": "Antonio Williams",
+        "value": "64"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
-        "name": "Bobby Wagner",
-        "value": "162"
+        "name": "Nick Cross",
+        "value": "8"
       },
       {
         "key": "Sack",
-        "name": "Von Miller",
-        "value": "9"
-      },
-      {
-        "key": "Int",
-        "name": "Mike Sainristil",
-        "value": "4"
+        "name": "Frankie Luvu",
+        "value": "1"
       }
     ]
-  },
-  "complete": true
+  }
 }

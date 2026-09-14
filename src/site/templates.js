@@ -537,16 +537,38 @@ function podcastEmbeds() {
 /**
  * The full season, preseason through the regular-season finale, not just
  * what's left to play. `betting` (from data/betting.json, see
- * src/lib/betting.js) is a single next-game snapshot, not a full odds
- * table — matched here to whichever row it belongs to (by opponent, on the
- * first not-yet-played meeting, so a division rival's later rematch never
- * wrongly inherits this week's line) rather than shown as its own widget,
- * so it reads as "the odds for this game" rather than a second, unrelated
- * feature competing for sidebar space.
+ * src/lib/betting.js) is a single next-game snapshot, not a full odds table,
+ * attached to the row it belongs to rather than shown as its own widget, so it
+ * reads as "the odds for this game" instead of a second unrelated feature
+ * competing for sidebar space.
+ *
+ * Matched on the line's own `gameDate`, not on the opponent. Matching by
+ * opponent picked "the first not-yet-played meeting", which quietly broke the
+ * moment a game was played: the day after the Week 1 loss in Philadelphia, the
+ * betting collector couldn't find a next game yet ("no upcoming Commanders game
+ * in the current scoreboard window") and left that line cached, Week 1 now had a
+ * result, and so the only unplayed Eagles game left was the Week 8 rematch,
+ * which inherited a spread from a game already in the books. Keying on the date
+ * means a stale line matches nothing and simply doesn't render, which is the
+ * right failure. The result check stays so odds never sit on a final score.
+ *
+ * A tolerance rather than an exact timestamp compare because the two sides come
+ * through different formats (ESPN's ISO `event.date` here, the schedule's
+ * "MM/DD/YYYY HH:mm:ss -04:00" there); hours of slack is still far tighter than
+ * the days between any two Commanders games.
  */
+const BETTING_MATCH_TOLERANCE_MS = 6 * 3600000;
+
 function scheduleWidget(games, betting = null) {
   if (!games?.length) return '';
-  const bettingGame = betting ? games.find((g) => !g.isBye && !g.result && g.opponentAbbr === betting.opponentAbbr) : null;
+  const lineKickoffMs = betting?.gameDate ? Date.parse(betting.gameDate) : NaN;
+  const bettingGame = Number.isFinite(lineKickoffMs)
+    ? games.find((g) => {
+        if (g.isBye || g.result) return false;
+        const iso = parseGameTime(g.gametime);
+        return iso && Math.abs(Date.parse(iso) - lineKickoffMs) <= BETTING_MATCH_TOLERANCE_MS;
+      }) || null
+    : null;
   // Straight from ESPN's own payload for whichever sportsbook is the
   // provider, not written here — see betting.js. Shown once for the widget,
   // not repeated per row.
@@ -579,10 +601,6 @@ function teamStatsWidget(teamStats) {
   if (!teamStats?.offense) return '';
 
   const stat = (s) => (s?.value != null ? s.value : null);
-  const rankOf = (s) =>
-    s?.rankLabel
-      ? `<strong class="ts-rank">${escapeHtml(s.rankLabel)}</strong>`
-      : '<span class="ts-norank">rank n/a</span>';
 
   const group = (side, data, leaders) => {
     if (!data) return '';
@@ -590,24 +608,45 @@ function teamStatsWidget(teamStats) {
     const pts = stat(data.pointsPerGame);
     const rushYds = stat(data.rushYardsPerGame);
     const passYds = stat(data.passYardsPerGame);
-    const suffix = side === 'def' ? ' allowed' : '';
-    // Each stat gets its own rank now, not just yards with points riding
-    // along as plain text beside it — a reader asking "where do we rank
-    // in points" shouldn't have to go find that number on a different page.
+    // "allowed" is stated once above the numbers rather than appended to all
+    // four labels. Repeating it made the longest label ("182.0 pass yds/gm
+    // allowed") 172px wide inside a 166px column, so with nowrap the two
+    // columns overflowed the rail by 6px. One eyebrow line is shorter, reads
+    // better, and leaves the type big enough to actually read.
+    const eyebrow =
+      side === 'def' ? '<p class="ts-panel-eyebrow">Allowed, per game</p>' : '';
+    // Each stat carries its own rank, not just yards with points riding along
+    // beside it: a reader asking "where do we rank in points" shouldn't have to
+    // go find that number on a different page.
+    //
+    // Defense has no rank to carry (see src/lib/teamstats.js), and it used to
+    // say "rank n/a" on all four rows. That was four copies of the same
+    // non-information, and with the " allowed" suffix on top it overflowed the
+    // rail badly enough that the two columns visibly overlapped. The absence is
+    // now stated once, under the numbers, which is both quieter and what makes
+    // these fit on one line.
+    const rank = (s) =>
+      s?.rankLabel ? `<strong class="ts-rank">${escapeHtml(s.rankLabel)}</strong> ` : '';
     const headline = (statVal, label, rankData) =>
       statVal
-        ? `<p class="ts-headline">${rankOf(rankData)} <span class="ts-line">${escapeHtml(statVal)} ${label}${suffix}</span></p>`
+        ? `<p class="ts-headline">${rank(rankData)}<span class="ts-line">${escapeHtml(statVal)} ${label}</span></p>`
+        : '';
+    const noRankNote =
+      side === 'def'
+        ? '<p class="ts-norank-note">No league rank: these are summed from this season\'s box scores.</p>'
         : '';
     // One grid for all four, not a div per visual row. See .ts-headline-grid
     // in site.css for why sharing a single grid is what aligns the columns.
     return `
       <div class="ts-panel ts-panel-${side}">
+        ${eyebrow}
         <div class="ts-headline-grid">
           ${headline(yds, 'yds/gm', data.yardsPerGame)}
           ${headline(pts, 'pts/gm', data.pointsPerGame)}
           ${headline(rushYds, 'rush yds/gm', data.rushYardsPerGame)}
           ${headline(passYds, 'pass yds/gm', data.passYardsPerGame)}
         </div>
+        ${noRankNote}
         ${leaders}
       </div>`;
   };
