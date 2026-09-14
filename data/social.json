@@ -6401,5 +6401,31 @@
     ],
     "publishedAt": "2026-09-14T04:35:45.248Z",
     "collectedAt": "2026-09-14T06:06:34.247Z"
+  },
+  "social-4d8511eb8a41": {
+    "id": "social-4d8511eb8a41",
+    "url": "https://mastodon.social/@top_news/117268302307093892",
+    "text": "Handing out 10 awards from the Eagles-Commanders game Jalen Hurts, Dallas Goedert, and Moro Ojomo were the stars of an opening Week 1 win that came down to the wire. -awards-eagles-commanders-game/ #TopNews #News #Eagles #Goedert #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/268/302/271/981/395/original/5ec457c79b56521f.jpg"
+    ],
+    "publishedAt": "2026-09-14T07:51:28.625Z",
+    "collectedAt": "2026-09-14T08:06:32.925Z"
+  },
+  "social-d18fb7e37107": {
+    "id": "social-d18fb7e37107",
+    "url": "https://mastodon.social/@kurtsh/117267963230853884",
+    "text": "Christalmighty, is it legal for the Commanders to have the Incredible Hulk on their roster? ommanders-tyler-owens-special-teams-tackle/f04b2852f9f4d2db473882db #nfl #commanders #tylerowens #hulksmash",
+    "handle": "kurtsh",
+    "author": "kurtsh",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-14T06:25:14.735Z",
+    "collectedAt": "2026-09-14T08:06:32.926Z"
   }
 }
