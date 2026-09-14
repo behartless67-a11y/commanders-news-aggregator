@@ -7,10 +7,24 @@
     "notes": null
   },
   {
+    "name": "Chig Okonkwo",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
+    "notes": null
+  },
+  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
     "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Frankie Luvu",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Groin",
     "notes": null
   },
   {
@@ -25,6 +39,13 @@
     "position": "RB",
     "status": "IR",
     "bodyPart": "Quadriceps",
+    "notes": null
+  },
+  {
+    "name": "Jordan Magee",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
     "notes": null
   },
   {
@@ -60,6 +81,13 @@
     "position": "WR",
     "status": "Out",
     "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Tyler Owens",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Ankle",
     "notes": null
   }
 ]

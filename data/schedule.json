@@ -40,6 +40,19 @@
   },
   {
     "season": "regular",
+    "week": "WEEK 1",
+    "gametime": "09/13/2026 16:25:00 -04:00",
+    "homeAway": "AT",
+    "opponentAbbr": "PHI",
+    "opponent": "Philadelphia Eagles",
+    "opponentShort": "Eagles",
+    "venue": "Lincoln Financial Field",
+    "result": "L",
+    "points": "22 - 24",
+    "isBye": false
+  },
+  {
+    "season": "regular",
     "week": "WEEK 2",
     "gametime": "09/20/2026 16:25:00 -04:00",
     "homeAway": "AT",
