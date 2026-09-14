@@ -1,30 +1,4 @@
 {
-  "social-4f181718e326": {
-    "id": "social-4f181718e326",
-    "url": "https://x.com/john_keim/status/2095841978634166568",
-    "text": "On video talking national expectations for the Commanders. Hint: they’re not high. But: i looked at the last two years and the expectations entering the season. What we learned. Are they missing something this year? @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-04T11:50:41.000Z",
-    "collectedAt": "2026-09-04T12:06:40.185Z"
-  },
-  "social-67dca0fffb08": {
-    "id": "social-67dca0fffb08",
-    "url": "https://x.com/BenStandig/status/2095836700840788446",
-    "text": "Adam Peters just told us something about the Commanders’ future: “Bigger extensions” are coming. Jayden Daniels is the obvious one. But Peters said extensions — plural. On who else Washington could pay, the current $40M in cap space and more the GM. adam-peters-says-bigger-extensions",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/212/552/211/948/181/original/fdaae86c40aa81a1.jpg"
-    ],
-    "publishedAt": "2026-09-04T11:29:42.000Z",
-    "collectedAt": "2026-09-04T12:06:41.630Z"
-  },
   "social-48a60cdbd4d5": {
     "id": "social-48a60cdbd4d5",
     "url": "https://x.com/JPFinlayNBCS/status/2095900724999696698",
@@ -6427,5 +6401,41 @@
     "images": [],
     "publishedAt": "2026-09-14T06:25:14.735Z",
     "collectedAt": "2026-09-14T08:06:32.926Z"
+  },
+  "social-23161bb3dc0c": {
+    "id": "social-23161bb3dc0c",
+    "url": "https://x.com/NickiJhabvala/status/2099461680681882073",
+    "text": "Tyler Owens had two incredible special-teams plays last night. The one that went viral was the second. Here's the first:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-14T11:34:05.000Z",
+    "collectedAt": "2026-09-14T12:05:10.372Z"
+  },
+  "social-4ec73499bbec": {
+    "id": "social-4ec73499bbec",
+    "url": "https://x.com/NickiJhabvala/status/2099455953976320424",
+    "text": "Commanders’ loss to Eagles revealed a new-look defense with an edge",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-14T11:11:20.000Z",
+    "collectedAt": "2026-09-14T12:05:10.372Z"
+  },
+  "social-a39b6e9d90f6": {
+    "id": "social-a39b6e9d90f6",
+    "url": "https://x.com/NickiJhabvala/status/2099443171079950767",
+    "text": "Commanders Wk. 1 snap counts: *70 total off. snaps ... only game with more last season was vs. DEN (OT) * McLaurin played all but 9 off. snaps * Oweh played all but 9 def. snaps * Reaves, Robertson only ones to play all 55 def. snaps",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-14T10:20:32.000Z",
+    "collectedAt": "2026-09-14T12:05:10.372Z"
   }
 }
