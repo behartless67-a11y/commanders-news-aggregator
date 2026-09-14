@@ -1,52 +1,4 @@
 {
-  "social-48a60cdbd4d5": {
-    "id": "social-48a60cdbd4d5",
-    "url": "https://x.com/JPFinlayNBCS/status/2095900724999696698",
-    "text": "Week 1 picks from @iamwesmoore@twitter.com : NCAA - Ole Miss, Notre Dame and LSU. \"Baton Rouge is going to be absolutely nuts.\" NFL - Seahawks & Rams. \"\"It's the height of arrogance what LA is doing with the time difference, but even with the time of difference, they're too good\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-04T15:44:07.000Z",
-    "collectedAt": "2026-09-04T15:46:01.911Z"
-  },
-  "social-8ca0f48f8268": {
-    "id": "social-8ca0f48f8268",
-    "url": "https://x.com/JPFinlayNBCS/status/2095890235389255832",
-    "text": "Allegretti missed almost all of training camp. That's a fact. But he played exactly 3 snaps less than Jayden/Cosmi/Diggs/Terry in the entire preseason. Also a fact. You think he's ready for Week 1?",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-04T15:02:26.000Z",
-    "collectedAt": "2026-09-04T15:46:01.911Z"
-  },
-  "social-97ea85c30abf": {
-    "id": "social-97ea85c30abf",
-    "url": "https://x.com/tashanreed/status/2095889912365011049",
-    "text": "One of the best in the business:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-04T15:01:09.000Z",
-    "collectedAt": "2026-09-04T15:46:07.398Z"
-  },
-  "social-a78bccb901db": {
-    "id": "social-a78bccb901db",
-    "url": "https://x.com/john_keim/status/2095901658358157612",
-    "text": "@JustUrAvgFlyGuy@twitter.com @JayDanielsMVP@twitter.com It’s also not just about blitzing. Simulated pressures; disguises etc. keep them guessing. Have to see it in action tho",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-04T15:47:49.000Z",
-    "collectedAt": "2026-09-04T16:06:45.417Z"
-  },
   "social-ca4fef02bc57": {
     "id": "social-ca4fef02bc57",
     "url": "https://x.com/Commanders/status/2095919821946851701",
@@ -6600,5 +6552,55 @@
     ],
     "publishedAt": "2026-09-14T13:03:12.140Z",
     "collectedAt": "2026-09-14T14:06:46.014Z"
+  },
+  "social-921cf24b4930": {
+    "id": "social-921cf24b4930",
+    "url": "https://x.com/JPFinlayNBCS/status/2099510949942079493",
+    "text": "Some context around the severity of a Week 1 loss from @RotoWireNFL@twitter.com . Washington losing is undeniably bad, but it’s not as bad as some might make it seem.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/269/950/208/614/061/original/425612ca3c2e7cb4.jpg"
+    ],
+    "publishedAt": "2026-09-14T14:49:52.000Z",
+    "collectedAt": "2026-09-14T16:03:03.273Z"
+  },
+  "social-ebbe4e926e34": {
+    "id": "social-ebbe4e926e34",
+    "url": "https://x.com/john_keim/status/2099526031166083429",
+    "text": "Talked about this on the podcast. Credit the Eagles for widening two ILBs with targets wide in the flat on both sides. Opened the middle.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-14T15:49:47.000Z",
+    "collectedAt": "2026-09-14T16:03:04.630Z"
+  },
+  "social-30f8383bc2b2": {
+    "id": "social-30f8383bc2b2",
+    "url": "https://x.com/geoffschwartz/status/2099484079330582760",
+    "text": "So maybe that preseason week 1 “film review” mocking Styles wasn’t indicative of how he might play in the regular season.",
+    "handle": "geoffschwartz",
+    "author": "Geoff Schwartz",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-14T13:03:05.000Z",
+    "collectedAt": "2026-09-14T16:03:04.630Z"
+  },
+  "social-07b839e0f413": {
+    "id": "social-07b839e0f413",
+    "url": "https://x.com/JJWatt/status/2099495761532567928",
+    "text": "Not just special teams. This is legitimately one of the greatest football plays I’ve ever seen. It doesn’t get much better than that right there. Every coach in America will be showing this rep to their team this week.",
+    "handle": "JJWatt",
+    "author": "JJ Watt",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-14T13:49:30.000Z",
+    "collectedAt": "2026-09-14T16:03:04.630Z"
   }
 }
