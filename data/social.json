@@ -6373,5 +6373,33 @@
     "images": [],
     "publishedAt": "2026-09-14T02:35:44.775Z",
     "collectedAt": "2026-09-14T03:24:29.101Z"
+  },
+  "social-0f9563d67b4d": {
+    "id": "social-0f9563d67b4d",
+    "url": "https://x.com/JPFinlayNBCS/status/2099353933009326450",
+    "text": "I’m still at the Linc and nobody else is and we’re doing a live show to wrap up the Commanders Week 1 loss so the least you can do is watch on @nbcwashington@twitter.com",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/267/496/633/449/760/original/aea0b5c53eb5955d.jpg"
+    ],
+    "publishedAt": "2026-09-14T04:25:56.000Z",
+    "collectedAt": "2026-09-14T06:06:18.951Z"
+  },
+  "social-3235f2478b14": {
+    "id": "social-3235f2478b14",
+    "url": "https://mastodon.social/@top_news/117267532692803514",
+    "text": "Instant reactions after Eagles hang on to beat Commanders in Week 1 Michael Barkann, Barrett Brooks, Jason Avant, and Reuben Frank break down the Eagles' Week 1 win over the Commanders.Instant reactions after Eagles hang on to beat Commanders in Week 1 originally appeared on NBC Sports Philadelphia t-reactions-eagles-hang-beat-035359746.html #TopNews #News #Commanders #Eagles #Goddard",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/267/532/655/218/099/original/7f4893b82e5d0bee.jpg"
+    ],
+    "publishedAt": "2026-09-14T04:35:45.248Z",
+    "collectedAt": "2026-09-14T06:06:34.247Z"
   }
 }
