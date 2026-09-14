@@ -7522,5 +7522,53 @@
     "excerpt": "Washington Commanders safety Tyler Owens proved one important thing with his Week 1 performance: Sometimes, the box score lies. \n If you look at Owens' stat line from Sunday, you'll note that he registered just two tackles in the team's 24-22 loss to the Philadelphia Eagles. But that doesn't tell the full story … far from it.\n Owens received massive praise for a phenomenal special teams tackle, one in which he aggressively fought off multiple blockers before driving the runner into the ground…",
     "publishedAt": "2026-09-14T16:06:59.000Z",
     "collectedAt": "2026-09-14T17:42:27.098Z"
+  },
+  "riggos-rag-e32c21c2d94c": {
+    "id": "riggos-rag-e32c21c2d94c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sonny-styles-antonio-williams-already-look-like-commanders-draft-breakthrough",
+    "title": "Sonny Styles and Antonio Williams already look like Commanders’ draft breakthrough",
+    "excerpt": "The Washington Commanders got some early encouraging signs from the rookie duo of Sonny Styles and Antonio Williams in Week 1.",
+    "publishedAt": "2026-09-14T19:00:03.000Z",
+    "collectedAt": "2026-09-14T20:06:15.141Z"
+  },
+  "commanders-youtube-a420034935be": {
+    "id": "commanders-youtube-a420034935be",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=pcWi3YT58r4",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media The Day After The Season Opener | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-14T19:23:38.000Z",
+    "collectedAt": "2026-09-14T20:06:15.994Z"
+  },
+  "commanders-youtube-01226890ee1c": {
+    "id": "commanders-youtube-01226890ee1c",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=D9JvNlAfvM4",
+    "title": "THE COMMANDERS ARE FOR REAL! Attacking Defense + One Play Away!!! | Booth Review | Washington | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-09-14T18:45:47.000Z",
+    "collectedAt": "2026-09-14T20:06:15.994Z"
+  },
+  "yahoo-nfl-3f893fb800f5": {
+    "id": "yahoo-nfl-3f893fb800f5",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/dan-quinn-talks-mike-sainristil-195302494.html",
+    "title": "Dan Quinn talks about Mike Sainristil, Nick Allegretti, and Sonny Styles",
+    "excerpt": "Dan Quinn spoke to reporters for his weekly “Tell the Truth Monday” press conference. The Commanders lost their season opener to the Philadelphia Eagles 24-22, and now prepare for another road division game against the Cowboys. Quinn liked some things he saw like an improved defense, but also noted areas that need to be improved like the OL, Mike Sainristil, and defending the seam like vs Dallas Goedert on his touchdown play.\n Four players left the game with injuries, and Quinn said the team…",
+    "publishedAt": "2026-09-14T19:53:02.000Z",
+    "collectedAt": "2026-09-14T20:06:19.498Z"
   }
 }
