@@ -1,28 +1,4 @@
 {
-  "social-bb74d55c48fe": {
-    "id": "social-bb74d55c48fe",
-    "url": "https://x.com/BenStandig/status/2095667685925466423",
-    "text": "📹 Adam Peters is asked why Washington has legitimate salary cap space each year. One aspect of this cycle is due to “some of the bigger extensions we're going to be doing.” 👀 c-329233460?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-04T00:18:06.000Z",
-    "collectedAt": "2026-09-04T02:01:53.193Z"
-  },
-  "social-45ad3f0c3847": {
-    "id": "social-45ad3f0c3847",
-    "url": "https://x.com/pfrumors/status/2095677138741477848",
-    "text": "Minor moves from the #Panthers , #Chargers , #Dolphins , #Vikings , #Saints , #Jets , #49ers , #Seahawks , #Titans and #Commanders minor-nfl-transactions-9-3-26",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [],
-    "publishedAt": "2026-09-04T00:55:40.000Z",
-    "collectedAt": "2026-09-04T02:02:02.951Z"
-  },
   "social-4f181718e326": {
     "id": "social-4f181718e326",
     "url": "https://x.com/john_keim/status/2095841978634166568",
@@ -83,18 +59,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-09-04T15:01:09.000Z",
-    "collectedAt": "2026-09-04T15:46:07.398Z"
-  },
-  "social-7bfa56d82c3d": {
-    "id": "social-7bfa56d82c3d",
-    "url": "https://x.com/krisrhim1/status/2095681526990295542",
-    "text": "Our SC Featured - Defining Daiyan tells the story of Chargers LB Daiyan Henley Henley’s life has always been complicated: conceived in prison, the son of a Crip, and now playing for a life-changing second NFL contract. But after his father’s arrest and his brother’s killing, Henley called this “the hardest year of my life.” Produced by Ellis Williams",
-    "handle": "krisrhim1",
-    "author": "Kris Rhim",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-04T01:13:06.000Z",
     "collectedAt": "2026-09-04T15:46:07.398Z"
   },
   "social-a78bccb901db": {
@@ -6145,5 +6109,29 @@
     "images": [],
     "publishedAt": "2026-09-13T23:36:22.000Z",
     "collectedAt": "2026-09-14T00:06:44.063Z"
+  },
+  "social-aa9e9dde6583": {
+    "id": "social-aa9e9dde6583",
+    "url": "https://x.com/NickiJhabvala/status/2099304013694980421",
+    "text": "It actually changed in 2014, the year before he was drafted. The Jimmy Graham Rule.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-14T01:07:34.000Z",
+    "collectedAt": "2026-09-14T02:05:10.596Z"
+  },
+  "social-f5f6323cedb6": {
+    "id": "social-f5f6323cedb6",
+    "url": "https://x.com/NickiJhabvala/status/2099298434184253603",
+    "text": "Dan Quinn said they would've gone for two after Stefon Diggs' fourth-quarter TD had he not been flagged for unsportsmanlike conduct. Quinn: \"Yeah, I did have a conversation with him about that. This is a real competitor. He knows better in that space, and he knows that.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-14T00:45:24.000Z",
+    "collectedAt": "2026-09-14T02:05:10.596Z"
   }
 }
