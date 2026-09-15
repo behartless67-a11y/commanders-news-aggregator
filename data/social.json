@@ -7161,5 +7161,31 @@
     "images": [],
     "publishedAt": "2026-09-15T15:41:50.000Z",
     "collectedAt": "2026-09-15T16:06:25.740Z"
+  },
+  "social-ed6d67ac998c": {
+    "id": "social-ed6d67ac998c",
+    "url": "https://x.com/Commanders/status/2099894007577104445",
+    "text": "RE: ses/2099873235890278585 it's that time of year again 🗳️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/275/938/654/859/207/original/fa93b6f9f5e27c76.jpg"
+    ],
+    "publishedAt": "2026-09-15T16:12:00.000Z",
+    "collectedAt": "2026-09-15T16:15:42.173Z"
+  },
+  "social-6b1e0a3a0beb": {
+    "id": "social-6b1e0a3a0beb",
+    "url": "https://x.com/JPFinlayNBCS/status/2099892630775640101",
+    "text": "Ojomo made an incredible play but I think Campbell makes the tackle before the goal line anyway",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-15T16:06:31.000Z",
+    "collectedAt": "2026-09-15T16:15:43.611Z"
   }
 }
