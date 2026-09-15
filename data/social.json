@@ -7001,5 +7001,43 @@
     "images": [],
     "publishedAt": "2026-09-14T21:11:22.000Z",
     "collectedAt": "2026-09-14T22:06:30.045Z"
+  },
+  "social-fd3f4a51af9d": {
+    "id": "social-fd3f4a51af9d",
+    "url": "https://x.com/BaldyNFL/status/2099606751314055466",
+    "text": ". @Commanders @Eagles @sonnystyles_@twitter.com it's simple PHYSICS....F=MA. Force = Mass X Acceleration. Sonny is going to blow a lot of plays up this season. #BaldysBreakdowns",
+    "handle": "BaldyNFL",
+    "author": "Brian Baldinger",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-14T21:10:32.000Z",
+    "collectedAt": "2026-09-15T00:04:53.709Z"
+  },
+  "social-264bc53f3fc4": {
+    "id": "social-264bc53f3fc4",
+    "url": "https://x.com/john_keim/status/2099640628543901784",
+    "text": "According to @NextGenStats B.Coleman allowed 9 pressures (faced a variety of pass rushers; allowed a pressure to 4 different players).",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-14T23:25:09.000Z",
+    "collectedAt": "2026-09-15T00:04:55.170Z"
+  },
+  "social-7ef01fc3f94c": {
+    "id": "social-7ef01fc3f94c",
+    "url": "https://x.com/AdamSchefter/status/2099633895985549680",
+    "text": "Eagles are placing three-time Pro Bowl G Landon Dickerson on injured reserve due to a knee injury and he now will miss at least the next four games, as @Jeff_McLane reported.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/271/873/142/118/865/original/5ff2a630c6ffeb0c.jpg"
+    ],
+    "publishedAt": "2026-09-14T22:58:24.000Z",
+    "collectedAt": "2026-09-15T00:04:55.170Z"
   }
 }
