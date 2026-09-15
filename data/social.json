@@ -7328,7 +7328,7 @@
     "text": "We released OLB D.J. Johnson and CB Darius Rush from the practice squad",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "Official",
+    "label": "",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/276/844/443/575/022/original/c940d47109bc15c6.jpg"
@@ -7434,5 +7434,57 @@
     "images": [],
     "publishedAt": "2026-09-15T22:00:15.000Z",
     "collectedAt": "2026-09-15T22:05:10.725Z"
+  },
+  "social-082c3c77538d": {
+    "id": "social-082c3c77538d",
+    "url": "https://x.com/Commanders/status/2099976551542747547",
+    "text": "reaching scary numbers @Gatorade@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/277/229/531/971/042/original/d8800a02a69c2507.jpg"
+    ],
+    "publishedAt": "2026-09-15T21:40:00.000Z",
+    "collectedAt": "2026-09-15T22:06:21.664Z"
+  },
+  "social-324d836bb89d": {
+    "id": "social-324d836bb89d",
+    "url": "https://x.com/BenStandig/status/2099967519281082412",
+    "text": "The Commanders today worked out the following players: Devin Culp TE Washington Rivaldo Fairweather TE Auburn Jahfari Harvey LB Southern Methodist Emany Johnson LB Nevada Marvin Jones LB Oklahoma Anfernee Orji LB Vanderbilt Benton Whitley DE Holy Cross",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-15T21:04:06.000Z",
+    "collectedAt": "2026-09-15T22:06:26.561Z"
+  },
+  "social-6731e103507a": {
+    "id": "social-6731e103507a",
+    "url": "https://x.com/tashanreed/status/2099966488073654402",
+    "text": "The Tashan Reed Show is livestreaming now on Substack. I'll be breaking down the #Commanders ' loss to the Eagles and previewing their matchup with the Cowboys this weekend. Join here: 363206?utm_source=live-stream-scheduled-upsell",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/277/073/062/210/681/original/5aa29ab074d5f438.jpg"
+    ],
+    "publishedAt": "2026-09-15T21:00:00.000Z",
+    "collectedAt": "2026-09-15T22:06:27.556Z"
+  },
+  "social-bd028e54f716": {
+    "id": "social-bd028e54f716",
+    "url": "https://x.com/AdamSchefter/status/2099966915556905173",
+    "text": "Commanders safety Tyler Owens was a special teams demon Sunday vs. the Eagles.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-09-15T21:01:42.000Z",
+    "collectedAt": "2026-09-15T22:06:30.620Z"
   }
 }
