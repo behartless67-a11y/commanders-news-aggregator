@@ -15,7 +15,23 @@
     "position": "RB",
     "espnId": "4685246",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4685246.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "4"
+        },
+        {
+          "label": "YDS",
+          "value": "16"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "john-bates",
@@ -25,19 +41,19 @@
     "espnId": "4048228",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4048228.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "11"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "103"
+          "value": "13"
         },
         {
           "label": "TD",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -50,19 +66,19 @@
     "espnId": "4361577",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361577.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "20"
+          "value": "0"
         },
         {
           "label": "YDS",
-          "value": "227"
+          "value": "0"
         },
         {
           "label": "TD",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -127,19 +143,19 @@
     "espnId": "4575131",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4575131.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "CAR",
-          "value": "175"
+          "value": "16"
         },
         {
           "label": "YDS",
-          "value": "805"
+          "value": "63"
         },
         {
           "label": "TD",
-          "value": "8"
+          "value": "1"
         }
       ]
     }
@@ -152,23 +168,23 @@
     "espnId": "4426348",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4426348.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "CMP/ATT",
-          "value": "114/188"
+          "value": "18/34"
         },
         {
           "label": "YDS",
-          "value": "1,262"
+          "value": "164"
         },
         {
           "label": "TD",
-          "value": "8"
+          "value": "2"
         },
         {
           "label": "INT",
-          "value": "3"
+          "value": "0"
         }
       ]
     }
@@ -181,19 +197,19 @@
     "espnId": "2976212",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "85"
+          "value": "4"
         },
         {
           "label": "YDS",
-          "value": "1,013"
+          "value": "55"
         },
         {
           "label": "TD",
-          "value": "4"
+          "value": "1"
         }
       ]
     }
@@ -233,15 +249,15 @@
     "espnId": "4602667",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4602667.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "16"
+          "value": "1"
         },
         {
           "label": "YDS",
-          "value": "225"
+          "value": "4"
         },
         {
           "label": "TD",
@@ -312,19 +328,19 @@
     "espnId": "3121422",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3121422.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "38"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "582"
+          "value": "14"
         },
         {
           "label": "TD",
-          "value": "3"
+          "value": "0"
         }
       ]
     }
@@ -337,19 +353,19 @@
     "espnId": "4360635",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4360635.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "56"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "560"
+          "value": "16"
         },
         {
           "label": "TD",
-          "value": "2"
+          "value": "0"
         }
       ]
     }
@@ -405,19 +421,19 @@
     "espnId": "4697815",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "CAR",
-          "value": "132"
+          "value": "7"
         },
         {
           "label": "YDS",
-          "value": "572"
+          "value": "22"
         },
         {
           "label": "TD",
-          "value": "4"
+          "value": "0"
         }
       ]
     }
@@ -429,7 +445,23 @@
     "position": "WR",
     "espnId": "5081432",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081432.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "4"
+        },
+        {
+          "label": "YDS",
+          "value": "64"
+        },
+        {
+          "label": "TD",
+          "value": "1"
+        }
+      ]
+    }
   },
   {
     "slug": "andrew-wylie",
@@ -573,19 +605,19 @@
     "espnId": "4426901",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4426901.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "58"
+          "value": "3"
         },
         {
           "label": "SACK",
-          "value": "2"
+          "value": "0"
         },
         {
           "label": "INT",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -598,19 +630,19 @@
     "espnId": "4426403",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4426403.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "120"
+          "value": "8"
         },
         {
           "label": "SACK",
-          "value": "2.5"
+          "value": "0"
         },
         {
           "label": "INT",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -623,19 +655,19 @@
     "espnId": "3943270",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3943270.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "62"
-        },
-        {
-          "label": "SACK",
           "value": "1"
         },
         {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
           "label": "INT",
-          "value": "2"
+          "value": "0"
         }
       ]
     }
@@ -648,15 +680,15 @@
     "espnId": "4361357",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361357.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "1"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -682,11 +714,11 @@
     "espnId": "4259491",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4259491.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "43"
+          "value": "2"
         },
         {
           "label": "SACK",
@@ -707,15 +739,15 @@
     "espnId": "3127273",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3127273.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "86"
+          "value": "4"
         },
         {
           "label": "SACK",
-          "value": "3"
+          "value": "1"
         },
         {
           "label": "INT",
@@ -732,11 +764,11 @@
     "espnId": "4568617",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4568617.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "54"
+          "value": "2"
         },
         {
           "label": "SACK",
@@ -757,11 +789,11 @@
     "espnId": "4360378",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4360378.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "99"
+          "value": "3"
         },
         {
           "label": "SACK",
@@ -782,11 +814,11 @@
     "espnId": "4427984",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4427984.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "1"
         },
         {
           "label": "SACK",
@@ -832,15 +864,15 @@
     "espnId": "3929865",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3929865.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "28"
+          "value": "0"
         },
         {
           "label": "SACK",
-          "value": "3.5"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -857,15 +889,15 @@
     "espnId": "4361422",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361422.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "38"
+          "value": "3"
         },
         {
           "label": "SACK",
-          "value": "7.5"
+          "value": "1"
         },
         {
           "label": "INT",
@@ -882,11 +914,11 @@
     "espnId": "4572460",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4572460.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "13"
+          "value": "2"
         },
         {
           "label": "SACK",
@@ -907,15 +939,15 @@
     "espnId": "3925354",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3925354.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "46"
+          "value": "1"
         },
         {
           "label": "SACK",
-          "value": "3"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -932,19 +964,19 @@
     "espnId": "3125248",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3125248.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "91"
+          "value": "5"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "0"
         },
         {
           "label": "INT",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -957,11 +989,11 @@
     "espnId": "4239694",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4239694.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "52"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -969,7 +1001,7 @@
         },
         {
           "label": "INT",
-          "value": "1"
+          "value": "0"
         }
       ]
     }
@@ -982,11 +1014,11 @@
     "espnId": "4428414",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428414.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "85"
+          "value": "5"
         },
         {
           "label": "SACK",
@@ -994,7 +1026,7 @@
         },
         {
           "label": "INT",
-          "value": "4"
+          "value": "0"
         }
       ]
     }
@@ -1007,15 +1039,15 @@
     "espnId": "3929956",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3929956.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "15"
+          "value": "3"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -1031,7 +1063,23 @@
     "position": "LB",
     "espnId": "5081807",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081807.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "4"
+        },
+        {
+          "label": "SACK",
+          "value": "1"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "shy-tuttle",
@@ -1041,11 +1089,11 @@
     "espnId": "3886601",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3886601.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "15"
+          "value": "1"
         },
         {
           "label": "SACK",
@@ -1074,7 +1122,19 @@
     "position": "PK",
     "espnId": "5081335",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081335.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "FG",
+          "value": "1-2"
+        },
+        {
+          "label": "XP",
+          "value": "1/2"
+        }
+      ]
+    }
   },
   {
     "slug": "tress-way",
@@ -1084,19 +1144,19 @@
     "espnId": "16166",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/16166.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "PUNTS",
-          "value": "56"
+          "value": "6"
         },
         {
           "label": "AVG",
-          "value": "47.3"
+          "value": "53.0"
         },
         {
           "label": "IN20",
-          "value": "29"
+          "value": "0"
         }
       ]
     }
