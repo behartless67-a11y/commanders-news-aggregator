@@ -7111,5 +7111,31 @@
     "images": [],
     "publishedAt": "2026-09-15T12:16:38.000Z",
     "collectedAt": "2026-09-15T12:59:23.511Z"
+  },
+  "social-0a7a172a9f39": {
+    "id": "social-0a7a172a9f39",
+    "url": "https://x.com/Commanders/status/2099849968831922214",
+    "text": "It's @TheTerry_25@twitter.com 's birthday!",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/275/246/513/619/317/original/daf0b081a8abdf28.jpg"
+    ],
+    "publishedAt": "2026-09-15T13:17:00.000Z",
+    "collectedAt": "2026-09-15T14:06:26.382Z"
+  },
+  "social-98fbbdf053cc": {
+    "id": "social-98fbbdf053cc",
+    "url": "https://x.com/tashanreed/status/2099858948366946421",
+    "text": "ICYMI: I'll be live on Substack talking #Commanders later today at 5 p.m. ET",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-15T13:52:41.000Z",
+    "collectedAt": "2026-09-15T14:06:33.043Z"
   }
 }
