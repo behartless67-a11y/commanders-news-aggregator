@@ -10,8 +10,8 @@
             "name": "Terry McLaurin"
           },
           {
-            "slug": "dyami-brown",
-            "name": "Dyami Brown"
+            "slug": "treylon-burks",
+            "name": "Treylon Burks"
           }
         ]
       },
@@ -21,6 +21,10 @@
           {
             "slug": "brandon-coleman",
             "name": "Brandon Coleman"
+          },
+          {
+            "slug": "andrew-wylie",
+            "name": "Andrew Wylie"
           }
         ]
       },
@@ -119,8 +123,8 @@
         "position": "WR",
         "tiers": [
           {
-            "slug": "treylon-burks",
-            "name": "Treylon Burks"
+            "slug": "dyami-brown",
+            "name": "Dyami Brown"
           },
           {
             "slug": "antonio-williams",
@@ -259,6 +263,10 @@
           {
             "slug": "k-lavon-chaisson",
             "name": "K'Lavon Chaisson"
+          },
+          {
+            "slug": "dorance-armstrong",
+            "name": "Dorance Armstrong"
           },
           {
             "slug": "javontae-jean-baptiste",
