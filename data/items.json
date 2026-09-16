@@ -8218,5 +8218,53 @@
     "excerpt": "LANDOVER, MARYLAND - DECEMBER 25: Jacory Croskey-Merritt #22 of the Washington Commanders runs the ball against the Dallas Cowboys in the third quarter of a game at Northwest Stadium on December 25, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Dallas Cowboys dropped their Week 1 game and are looking to bounce back. They don’t have to wait long for another NFC East opponent. After opening the season with a 28-20 loss to the New York Giants, Dallas returns…",
     "publishedAt": "2026-09-16T16:30:00.000Z",
     "collectedAt": "2026-09-16T18:06:28.452Z"
+  },
+  "riggos-rag-5b74e562df40": {
+    "id": "riggos-rag-5b74e562df40",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/treylon-burks-depth-chart-plunge-makes-commanders-stance-clear-before-week-2",
+    "title": "Treylon Burks depth chart plunge makes Commanders' stance clear before Week 2",
+    "excerpt": "Washington Commanders wide receiver Treylon Burks has dropped down the depth chart, which isn't what the pass-catcher had hoped for at the start of the season.",
+    "publishedAt": "2026-09-16T19:00:02.000Z",
+    "collectedAt": "2026-09-16T20:06:22.031Z"
+  },
+  "commanders-youtube-4f87cd619dda": {
+    "id": "commanders-youtube-4f87cd619dda",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=LUnChijybF4",
+    "title": "LIVE: QB Jayden Daniels Speaks To The Media After Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-16T19:04:23.000Z",
+    "collectedAt": "2026-09-16T20:06:23.749Z"
+  },
+  "yahoo-nfl-bbb11f6b800b": {
+    "id": "yahoo-nfl-bbb11f6b800b",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-matchups-watch-193000677.html",
+    "title": "Cowboys vs. Commanders: Matchups to watch in Week 2",
+    "excerpt": "After last week’s embarrassing performance against the New York Giants, the Dallas Cowboys return home this week to take on another division foe, the Washington Commanders. Hopefully playing in front of their hometown crowd will light the fire inside everyone that look to be lacking last week, because they can’t afford to start 0-2, especially with the division.\n To help secure the “W” this week the Cowboys would be wise to try to exploit certain matchups to help sway the game in their favor.…",
+    "publishedAt": "2026-09-16T19:30:00.000Z",
+    "collectedAt": "2026-09-16T20:06:27.479Z"
+  },
+  "yahoo-nfl-da9b65b42e91": {
+    "id": "yahoo-nfl-da9b65b42e91",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-vs-commanders-14-winners-183312380.html",
+    "title": "Eagles vs. Commanders: 14 winners, 5 losers, 5 IDKs",
+    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Jalen Hurts #1 of the Philadelphia Eagles celebrates after a touchdown against the Washington Commanders during an NFL football game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images The Philadelphia Eagles are 1-0 after beating the Washington Commanders to begin the 2026 season.\n It was a narrow win, yes, but it was an important one to avoid dropping a division game…",
+    "publishedAt": "2026-09-16T18:33:12.000Z",
+    "collectedAt": "2026-09-16T20:06:27.479Z"
   }
 }
