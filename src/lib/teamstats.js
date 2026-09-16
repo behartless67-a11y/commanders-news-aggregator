@@ -7,36 +7,49 @@ import { DATA_DIR } from './store.js';
 /**
  * Team-level offense and defense totals, for the sidebar's Team Stats widget.
  *
- * Offense comes straight from ESPN's season team-statistics endpoint, which
- * carries a league rank per stat alongside the value. Defense does not, and
- * that asymmetry drives the whole shape of this file:
+ * Two different ESPN endpoints, because each one only has half of it:
  *
- *   - `defensive.yardsAllowed` and `defensive.pointsAllowed` exist in that
- *     response but are always literally 0 with a rank of "Tied-1st" — ESPN
- *     does not populate the opponent side of a team's season line. Verified by
- *     hand against seasons/2025/types/2/teams/28/statistics before writing
- *     this, same policy as the feeds in config/sources.js.
- *   - There is no `/statistics/opponent` sibling (404) and no common/v3 team
- *     statistics route (404 for both `wsh` and `28`).
+ *   - Offense: the core-API season team-statistics route (STATS_URL), which
+ *     carries a league rank per stat.
+ *   - Defense: the site-API team-statistics route (OPPONENT_URL), whose
+ *     `results.opponent` split is what opponents have done *to* this team,
+ *     with real league ranks per stat.
  *
- * So the defensive side is derived instead: fetch the team's schedule, then
- * each completed game's box score, and sum what the opponent gained and
- * scored. That yields a real yards-allowed and points-allowed per game — but
- * NOT a league rank for either, because ranking those would mean deriving the
- * same figures for all 32 teams, which needs every game in the league (~272
- * box scores per season), not just this team's ~17. Defensive ranks are
- * therefore null on purpose, and the widget renders the number without one
- * rather than inventing it. Don't "fix" the nulls by reading ESPN's zeroes.
+ * The defensive half used to be derived by crawling every completed box score
+ * and summing what the opponent gained, with ranks hardcoded to null and a
+ * comment asserting ESPN simply does not publish them. That was half right, and
+ * the wrong half cost real accuracy, so it's worth being precise about:
+ *
+ *   - `defensive.yardsAllowed`/`pointsAllowed` on the *core* API really are
+ *     always 0 with a bogus rank of "Tied-1st". Re-confirmed 2026-09-15, after
+ *     a regular-season game had been played, so it isn't an offseason artifact.
+ *   - There really is no `/statistics/opponent` sibling and no common/v3 team
+ *     statistics route (both 404).
+ *   - But the site-API route below was never tried, and it has all of it. Ben
+ *     asked "ESPN shows a defensive rank, can you not see it?" and the answer
+ *     was that the code had been looking in the one place it isn't.
+ *
+ * Two things to know before touching this:
+ *
+ *   - `results.opponent` has no *net* total-yards stat. Its `totalYards` /
+ *     `yardsPerGame` add gross passing yards to rushing (203 + 136 = 339 in
+ *     Week 1 2026) where the offense's `netYardsPerGame` is net of sack
+ *     yardage (295, which is what the box score's own total says). So total
+ *     yards allowed is summed here from net passing + rushing to match the
+ *     offense's definition, and is the one defensive stat left without a rank:
+ *     the only rank ESPN offers for it belongs to the gross figure.
+ *   - The response's own `season.year` always reports the current season even
+ *     when `?season=` asks for an older one. The data honours the parameter
+ *     (2025 returns 17 games), the echo doesn't, so don't read the season back
+ *     off this response.
  */
 const TEAM_ID = '28'; // Washington Commanders — confirmed via seasons/2025/teams/28
 const TEAM_ABBR = 'wsh';
 
 const STATS_URL = (season, seasonType) =>
   `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/${season}/types/${seasonType}/teams/${TEAM_ID}/statistics`;
-const SCHEDULE_URL = (season, seasonType) =>
-  `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${TEAM_ABBR}/schedule?season=${season}&seasontype=${seasonType}`;
-const SUMMARY_URL = (eventId) =>
-  `https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${eventId}`;
+const OPPONENT_URL = (season, seasonType) =>
+  `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${TEAM_ABBR}/statistics?season=${season}&seasontype=${seasonType}`;
 const LEADERS_URL = (season, seasonType) =>
   `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/${season}/types/${seasonType}/teams/${TEAM_ID}/leaders`;
 
@@ -44,13 +57,6 @@ const CACHE_PATH = path.join(DATA_DIR, 'team-stats.json');
 
 /** ESPN's seasontype 2 is the regular season (1 preseason, 3 postseason). */
 const REGULAR_SEASON = 2;
-
-/**
- * Box scores are ~500KB each, so a season's worth is the single most expensive
- * fetch in this project. Capped so a bad season value can't turn into an
- * unbounded crawl; a full regular season is 17 games.
- */
-const MAX_GAMES = Number(process.env.TEAM_STATS_MAX_GAMES || 20);
 
 async function fetchJson(url, label) {
   const raw = await fetchText(url, { cache: false });
@@ -92,68 +98,57 @@ function readStat(categories, name) {
 }
 
 /**
- * Opponent yards and points per game, summed from this team's own completed
- * box scores. Returns null when no game could be read, so the caller can tell
- * "the defense fetch failed" apart from "the season hasn't started".
+ * What opponents have averaged against this team, with league ranks, read
+ * straight from the `results.opponent` split (see the note at the top).
+ *
+ * This replaced a crawl of every completed box score, which was the single most
+ * expensive fetch in the project (~500KB per game, so ~8MB by a full season's
+ * end) and produced no ranks. One request now, and three of the four stats
+ * arrive already ranked.
+ *
+ * Returns null when the split is missing or carries no games, so the caller can
+ * still tell "the fetch failed" apart from "this season hasn't started".
  */
 async function fetchDefenseAllowed(season, seasonType) {
-  const schedule = await fetchJson(SCHEDULE_URL(season, seasonType), 'team schedule');
-  if (!schedule) return null;
-
-  const completed = (schedule.events || [])
-    .filter((e) => e.competitions?.[0]?.status?.type?.completed)
-    .slice(0, MAX_GAMES);
-
-  if (!completed.length) {
-    log.warn(`team-stats: no completed games for ${season} seasontype ${seasonType}`);
+  const data = await fetchJson(OPPONENT_URL(season, seasonType), `opponent stats ${season}`);
+  const categories = data?.results?.opponent;
+  if (!categories?.length) {
+    log.warn(`team-stats: no opponent split for ${season} seasontype ${seasonType}`);
     return null;
   }
 
-  let games = 0;
-  let yards = 0;
-  let points = 0;
-  let passYards = 0;
-  let rushYards = 0;
-
-  for (const event of completed) {
-    const summary = await fetchJson(SUMMARY_URL(event.id), `box score ${event.id}`);
-    const teams = summary?.boxscore?.teams;
-    if (!teams || teams.length !== 2) continue;
-
-    // The opponent is whichever box-score entry isn't ours, matched on ESPN's
-    // own team id rather than the abbreviation, which it spells inconsistently
-    // across endpoints ("WSH" here, "wsh" in the schedule path).
-    const opponent = teams.find((t) => String(t.team?.id) !== TEAM_ID);
-    if (!opponent) continue;
-
-    const stat = (name) => (opponent.statistics || []).find((s) => s.name === name);
-    const totalYards = stat('totalYards');
-    const opponentScore = (summary.header?.competitions?.[0]?.competitors || []).find(
-      (c) => String(c.team?.id) !== TEAM_ID,
-    )?.score;
-
-    if (totalYards == null && opponentScore == null) continue;
-
-    const numOf = (s) => Number(String(s?.displayValue ?? 0).replace(/,/g, '')) || 0;
-    games += 1;
-    yards += numOf(totalYards);
-    points += Number(opponentScore ?? 0) || 0;
-    passYards += numOf(stat('netPassingYards'));
-    rushYards += numOf(stat('rushingYards'));
-  }
-
+  const games = Number(readStat(categories, 'gamesPlayed')?.value ?? 0);
   if (!games) {
-    log.warn('team-stats: no readable box scores — defense figures unavailable');
+    log.warn(`team-stats: opponent split for ${season} reports no games played`);
     return null;
   }
+
+  const pointsPerGame = readStat(categories, 'totalPointsPerGame');
+  const passYardsPerGame = readStat(categories, 'netPassingYardsPerGame');
+  const rushYardsPerGame = readStat(categories, 'rushingYardsPerGame');
+  if (!passYardsPerGame && !rushYardsPerGame && !pointsPerGame) {
+    log.warn(`team-stats: opponent split for ${season} carried no usable totals`);
+    return null;
+  }
+
+  // Net, to match the offense's `netYardsPerGame`, rather than ESPN's own
+  // opponent `yardsPerGame`, which adds *gross* passing yards to rushing and so
+  // reads ~20 yards a game higher than any box score's total. No rank: the only
+  // one ESPN publishes here belongs to that gross figure.
+  const num = (s) => (s?.value == null ? null : Number(String(s.value).replace(/,/g, '')));
+  const pass = num(passYardsPerGame);
+  const rush = num(rushYardsPerGame);
+  const netYards =
+    Number.isFinite(pass) && Number.isFinite(rush)
+      ? { value: (pass + rush).toFixed(1), rank: null, rankLabel: null }
+      : null;
 
   return {
     games,
-    // Ranks are null by design — see the note at the top of this file.
-    yardsPerGame: { value: (yards / games).toFixed(1), rank: null, rankLabel: null },
-    pointsPerGame: { value: (points / games).toFixed(1), rank: null, rankLabel: null },
-    passYardsPerGame: { value: (passYards / games).toFixed(1), rank: null, rankLabel: null },
-    rushYardsPerGame: { value: (rushYards / games).toFixed(1), rank: null, rankLabel: null },
+    yardsPerGame: netYards,
+    pointsPerGame,
+    passYardsPerGame,
+    rushYardsPerGame,
   };
 }
 

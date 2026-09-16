@@ -631,9 +631,13 @@ function teamStatsWidget(teamStats) {
       statVal
         ? `<p class="ts-headline">${rank(rankData)}<span class="ts-line">${escapeHtml(statVal)} ${label}</span></p>`
         : '';
+    // Only total yards lacks a rank now (see fetchDefenseAllowed): ESPN ranks a
+    // gross figure there and we show the net one, to match the offense and the
+    // box scores. Shown only when that's actually the case, so if ESPN ever
+    // starts ranking it the note disappears on its own instead of lying.
     const noRankNote =
-      side === 'def'
-        ? '<p class="ts-norank-note">No league rank: these are summed from this season\'s box scores.</p>'
+      side === 'def' && data.yardsPerGame?.value != null && !data.yardsPerGame?.rankLabel
+        ? '<p class="ts-norank-note">Yards allowed is net of sack yardage, the one figure ESPN doesn\'t rank.</p>'
         : '';
     // One grid for all four, not a div per visual row. See .ts-headline-grid
     // in site.css for why sharing a single grid is what aligns the columns.
