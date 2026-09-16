@@ -1,16 +1,4 @@
 {
-  "social-2d1a28efcd8a": {
-    "id": "social-2d1a28efcd8a",
-    "url": "https://x.com/BenStandig/status/2096586546304455150",
-    "text": "RE: tatuses/2096398420311245006 They captured @jeffzrebiec in the wild. 🔥",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-06T13:09:19.000Z",
-    "collectedAt": "2026-09-06T14:06:01.358Z"
-  },
   "social-06375f1cffbe": {
     "id": "social-06375f1cffbe",
     "url": "https://x.com/Commanders/status/2096657282536738838",
@@ -7615,5 +7603,17 @@
     "images": [],
     "publishedAt": "2026-09-16T11:21:10.000Z",
     "collectedAt": "2026-09-16T12:06:46.334Z"
+  },
+  "social-922b248af936": {
+    "id": "social-922b248af936",
+    "url": "https://x.com/NickiJhabvala/status/2100206067066060836",
+    "text": "The Commanders are signing OL Lucas Patrick to their active roster, source confirmed.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-16T12:52:00.000Z",
+    "collectedAt": "2026-09-16T14:05:11.205Z"
   }
 }
