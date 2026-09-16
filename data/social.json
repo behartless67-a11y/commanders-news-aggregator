@@ -7553,5 +7553,43 @@
     "images": [],
     "publishedAt": "2026-09-16T00:15:26.000Z",
     "collectedAt": "2026-09-16T02:05:10.964Z"
+  },
+  "social-b7c4d8451899": {
+    "id": "social-b7c4d8451899",
+    "url": "https://x.com/Commanders/status/2100023611495243817",
+    "text": "The mindset @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/277/960/497/908/955/original/0bcb006b2691fbd6.jpg"
+    ],
+    "publishedAt": "2026-09-16T00:47:00.000Z",
+    "collectedAt": "2026-09-16T02:06:21.914Z"
+  },
+  "social-c1b57c01576f": {
+    "id": "social-c1b57c01576f",
+    "url": "https://x.com/JFowlerESPN/status/2099997241771524595",
+    "text": "Commanders LB Frankie Luvu suffered a minor groin strain Sunday against Philadelphia, per sources. His status for this week remains uncertain, but this shouldn’t be a long-term issue and he’s expected to avoid IR.",
+    "handle": "JFowlerESPN",
+    "author": "Jeremy Fowler",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-15T23:02:13.000Z",
+    "collectedAt": "2026-09-16T02:06:23.227Z"
+  },
+  "social-440fdda98f82": {
+    "id": "social-440fdda98f82",
+    "url": "https://x.com/john_keim/status/2100016474651844840",
+    "text": "Cross made some big plays. Tossed aside Goedert on the screen. He’s the versatile safety piece for Jones.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-16T00:18:38.000Z",
+    "collectedAt": "2026-09-16T02:06:24.654Z"
   }
 }
