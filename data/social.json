@@ -1,16 +1,4 @@
 {
-  "social-7979eb8d01f7": {
-    "id": "social-7979eb8d01f7",
-    "url": "https://x.com/MonSportsNet/status/2096663738090697059",
-    "text": "The #RaiseHail roster is SET 🔒 Beltway Football breaks down the @Commanders ’ position rankings ⬇️ @JPFinlayNBCS | @Mitch_Tischler@twitter.com",
-    "handle": "MonSportsNet",
-    "author": "Monumental Sports Network",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-09-06T18:16:03.000Z",
-    "collectedAt": "2026-09-06T19:45:04.980Z"
-  },
   "social-0e5b543ec850": {
     "id": "social-0e5b543ec850",
     "url": "https://x.com/Commanders/status/2096696186358911253",
@@ -8026,5 +8014,29 @@
     "images": [],
     "publishedAt": "2026-09-16T16:31:37.000Z",
     "collectedAt": "2026-09-16T18:06:44.574Z"
+  },
+  "social-461bf7cbaccf": {
+    "id": "social-461bf7cbaccf",
+    "url": "https://x.com/JPFinlayNBCS/status/2100299858791784561",
+    "text": "Stefon Diggs says Jayden Daniels is “a special quarterback” and Diggs has to do more in the pass game. Knocks himself for the drops.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-16T19:04:42.000Z",
+    "collectedAt": "2026-09-16T19:12:07.449Z"
+  },
+  "social-d8e04adde790": {
+    "id": "social-d8e04adde790",
+    "url": "https://x.com/JPFinlayNBCS/status/2100296596608938179",
+    "text": "Jayden Daniels said it was good to find his groove late against the Eagles but knows it needs to happen sooner going forward",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-16T18:51:44.000Z",
+    "collectedAt": "2026-09-16T19:12:07.449Z"
   }
 }
