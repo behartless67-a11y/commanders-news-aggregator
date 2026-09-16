@@ -1434,31 +1434,6 @@
     }
   },
   {
-    "slug": "darius-rush",
-    "name": "Darius Rush",
-    "jersey": "29",
-    "position": "CB",
-    "espnId": "4362858",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362858.png",
-    "stats": {
-      "season": 2023,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "3"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "trent-scott",
     "name": "Trent Scott",
     "jersey": "73",
