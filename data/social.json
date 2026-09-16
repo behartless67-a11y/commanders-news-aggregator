@@ -1,30 +1,4 @@
 {
-  "social-06375f1cffbe": {
-    "id": "social-06375f1cffbe",
-    "url": "https://x.com/Commanders/status/2096657282536738838",
-    "text": "NFL playbook right off the rip",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-06T17:50:24.000Z",
-    "collectedAt": "2026-09-06T17:52:34.166Z"
-  },
-  "social-b2364067b61e": {
-    "id": "social-b2364067b61e",
-    "url": "https://x.com/JPFinlayNBCS/status/2096632641084608596",
-    "text": "@john_keim @ByKimberleyA happy Labor Day",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/224/975/274/982/040/original/aa0007e12aa9bd41.jpg"
-    ],
-    "publishedAt": "2026-09-06T16:12:29.000Z",
-    "collectedAt": "2026-09-06T17:52:35.291Z"
-  },
   "social-7979eb8d01f7": {
     "id": "social-7979eb8d01f7",
     "url": "https://x.com/MonSportsNet/status/2096663738090697059",
@@ -7806,5 +7780,29 @@
     ],
     "publishedAt": "2026-09-16T14:14:16.000Z",
     "collectedAt": "2026-09-16T16:06:40.893Z"
+  },
+  "social-8322cf6871d2": {
+    "id": "social-8322cf6871d2",
+    "url": "https://x.com/NickiJhabvala/status/2100261363943666063",
+    "text": "Dan Quinn said Tyler Owens (ankle) will be at practice today. Chig Okonkwo (hamstrong) and Frankie Luvu (groin) will not practice. Some uncertainty there, but Quinn said he'd know more later in the week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-16T16:31:44.000Z",
+    "collectedAt": "2026-09-16T18:05:12.048Z"
+  },
+  "social-0be1e110fe99": {
+    "id": "social-0be1e110fe99",
+    "url": "https://x.com/NickiJhabvala/status/2100257848802345059",
+    "text": "In addition to signing G Lucas Patrick, the Commanders also signed OLB Marvin Jones Jr. and LB Austin Keys to the practice squad, and placed LB Jordan Magee on IR. Magee left Sunday's game early with a hamstring injury.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-16T16:17:46.000Z",
+    "collectedAt": "2026-09-16T18:05:12.049Z"
   }
 }
