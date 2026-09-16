@@ -1,28 +1,4 @@
 {
-  "social-0e5b543ec850": {
-    "id": "social-0e5b543ec850",
-    "url": "https://x.com/Commanders/status/2096696186358911253",
-    "text": "this time next week you will be watching Commanders football 🙂‍↕️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-06T20:25:00.000Z",
-    "collectedAt": "2026-09-06T21:50:23.509Z"
-  },
-  "social-fbc8765fd5ae": {
-    "id": "social-fbc8765fd5ae",
-    "url": "https://x.com/JPFinlayNBCS/status/2096714394818289981",
-    "text": "Let’s go Foe! What a close out to the second set. Wow",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-06T21:37:21.000Z",
-    "collectedAt": "2026-09-06T21:50:24.823Z"
-  },
   "social-ced594349d46": {
     "id": "social-ced594349d46",
     "url": "https://x.com/john_keim/status/2096940810096746666",
@@ -8052,5 +8028,17 @@
     ],
     "publishedAt": "2026-09-16T20:02:20.000Z",
     "collectedAt": "2026-09-16T20:06:28.934Z"
+  },
+  "social-b485739db85e": {
+    "id": "social-b485739db85e",
+    "url": "https://x.com/NickiJhabvala/status/2100319193442791872",
+    "text": "Commanders Wednesday injury report",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-16T20:21:32.000Z",
+    "collectedAt": "2026-09-16T22:05:11.093Z"
   }
 }
