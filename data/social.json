@@ -8117,5 +8117,31 @@
     ],
     "publishedAt": "2026-09-16T23:27:39.000Z",
     "collectedAt": "2026-09-17T00:06:31.710Z"
+  },
+  "social-3770a4ae1e63": {
+    "id": "social-3770a4ae1e63",
+    "url": "https://x.com/JPFinlayNBCS/status/2100378080619397570",
+    "text": "Folks - for anybody sending me DMs I'm locked out and have been for a while. Life with the new twitter/X. So please know I'm not just not responding",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-17T00:15:32.000Z",
+    "collectedAt": "2026-09-17T02:06:29.384Z"
+  },
+  "social-b8614d328c29": {
+    "id": "social-b8614d328c29",
+    "url": "https://x.com/BenStandig/status/2100393552396140683",
+    "text": "I like sunsets. Bonus points for collaborating with the moon.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/283/741/293/559/261/original/1e77694def025214.jpg"
+    ],
+    "publishedAt": "2026-09-17T01:17:00.000Z",
+    "collectedAt": "2026-09-17T02:06:32.307Z"
   }
 }

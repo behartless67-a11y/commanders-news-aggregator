@@ -371,6 +371,15 @@
     }
   },
   {
+    "slug": "lucas-patrick",
+    "name": "Lucas Patrick",
+    "jersey": "62",
+    "position": "G",
+    "espnId": "2576736",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2576736.png",
+    "stats": null
+  },
+  {
     "slug": "chris-paul",
     "name": "Chris Paul",
     "jersey": "75",
@@ -748,31 +757,6 @@
         {
           "label": "SACK",
           "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "jordan-magee",
-    "name": "Jordan Magee",
-    "jersey": "58",
-    "position": "LB",
-    "espnId": "4568617",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4568617.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "2"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
         },
         {
           "label": "INT",
@@ -1187,6 +1171,31 @@
     }
   },
   {
+    "slug": "jordan-magee",
+    "name": "Jordan Magee",
+    "jersey": "58",
+    "position": "LB",
+    "espnId": "4568617",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4568617.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "2"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "jeremy-mcnichols",
     "name": "Jeremy McNichols",
     "jersey": "26",
@@ -1357,6 +1366,15 @@
     }
   },
   {
+    "slug": "marvin-jones-jr",
+    "name": "Marvin Jones Jr.",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4685425",
+    "photo": "https://a.espncdn.com/i/headshots/college-football/players/full/4685425.png",
+    "stats": null
+  },
+  {
     "slug": "ale-kaho",
     "name": "Ale Kaho",
     "jersey": "51",
@@ -1380,6 +1398,15 @@
         }
       ]
     }
+  },
+  {
+    "slug": "austin-keys",
+    "name": "Austin Keys",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4429185",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429185.png",
+    "stats": null
   },
   {
     "slug": "jeffrey-m-ba",
