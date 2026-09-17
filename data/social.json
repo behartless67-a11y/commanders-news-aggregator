@@ -1,42 +1,4 @@
 {
-  "social-7be7e42e7a74": {
-    "id": "social-7be7e42e7a74",
-    "url": "https://x.com/Commanders/status/2097024577771864169",
-    "text": "We have made the following roster moves: - Signed WR Van Jefferson to the practice squad - Released TE Joshua Simon from the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/231/104/340/792/312/original/aa14760bafaa51e6.jpg"
-    ],
-    "publishedAt": "2026-09-07T18:09:54.000Z",
-    "collectedAt": "2026-09-07T18:29:00.388Z"
-  },
-  "social-929d22adb604": {
-    "id": "social-929d22adb604",
-    "url": "https://x.com/BenStandig/status/2097024755098386792",
-    "text": "The Commanders released TE Joshua Simon from the PS.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-07T18:10:37.000Z",
-    "collectedAt": "2026-09-07T18:29:06.768Z"
-  },
-  "social-dbdf968caecb": {
-    "id": "social-dbdf968caecb",
-    "url": "https://x.com/tashanreed/status/2097026841202618634",
-    "text": "The #Commanders announced they've released TE Joshua Simon from the practice squad and signed WR Van Jefferson.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-07T18:18:54.000Z",
-    "collectedAt": "2026-09-07T18:29:08.511Z"
-  },
   "social-c790f6d3ce0a": {
     "id": "social-c790f6d3ce0a",
     "url": "https://x.com/NickiJhabvala/status/2097052271263584686",
@@ -47,18 +9,6 @@
     "sourceKey": "@NickiJhabvala",
     "images": [],
     "publishedAt": "2026-09-07T19:59:57.000Z",
-    "collectedAt": "2026-09-07T20:05:10.129Z"
-  },
-  "social-003e2d179a03": {
-    "id": "social-003e2d179a03",
-    "url": "https://x.com/NickiJhabvala/status/2097023808297185326",
-    "text": "The Commanders released TE Joshua Simon from the practice squad to clear a spot for Jefferson.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-07T18:06:51.000Z",
     "collectedAt": "2026-09-07T20:05:10.129Z"
   },
   "social-f46881f5a431": {
@@ -8399,5 +8349,29 @@
     "images": [],
     "publishedAt": "2026-09-17T16:24:15.000Z",
     "collectedAt": "2026-09-17T18:06:33.693Z"
+  },
+  "social-34fb52af553a": {
+    "id": "social-34fb52af553a",
+    "url": "https://x.com/JPFinlayNBCS/status/2100662091556253792",
+    "text": "Good answer from Terry McLaurin on Antonio Williams impact to the offense",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-17T19:04:05.000Z",
+    "collectedAt": "2026-09-17T19:24:30.432Z"
+  },
+  "social-b38634ffce06": {
+    "id": "social-b38634ffce06",
+    "url": "https://x.com/tashanreed/status/2100647668561179123",
+    "text": "The #Commanders ' secondary has been getting a lot of flak this week, but a positive from the Eagles' loss was the play of CB Amik Robertson. He was only targeted 3 times and gave up just 2 catches for 8 yards, according to Pro Football Reference.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-17T18:06:46.000Z",
+    "collectedAt": "2026-09-17T19:24:34.809Z"
   }
 }
