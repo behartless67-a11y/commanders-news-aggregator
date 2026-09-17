@@ -1,16 +1,4 @@
 {
-  "social-1fa5515a417c": {
-    "id": "social-1fa5515a417c",
-    "url": "https://x.com/JPFinlayNBCS/status/2097010144198410417",
-    "text": "Dan Quinn will speak with reporters at 4pm. For me the biggest question is readiness. After a strong start to camp it finished on a downturn. Then the NFL Labor Day break. Now it’s Week 1. Dial has to turn all the way up.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-07T17:12:33.000Z",
-    "collectedAt": "2026-09-07T17:15:38.848Z"
-  },
   "social-7be7e42e7a74": {
     "id": "social-7be7e42e7a74",
     "url": "https://x.com/Commanders/status/2097024577771864169",
@@ -8361,5 +8349,17 @@
     "images": [],
     "publishedAt": "2026-09-17T16:10:29.000Z",
     "collectedAt": "2026-09-17T16:15:07.363Z"
+  },
+  "social-688e62183e37": {
+    "id": "social-688e62183e37",
+    "url": "https://x.com/NickiJhabvala/status/2100621341464432805",
+    "text": "Don’t see LB Frankie Luvu (groin) or TE Chig Okonkwo (hamstring) out here during the media-viewing portion of practice.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-17T16:22:10.000Z",
+    "collectedAt": "2026-09-17T18:05:11.832Z"
   }
 }
