@@ -8141,5 +8141,19 @@
     "images": [],
     "publishedAt": "2026-09-17T12:39:20.000Z",
     "collectedAt": "2026-09-17T14:06:46.810Z"
+  },
+  "social-7f8313c354f9": {
+    "id": "social-7f8313c354f9",
+    "url": "https://x.com/Commanders/status/2100588110233096557",
+    "text": "🗓️ Week 2: #WASvsDAL 🏟️ AT&T Stadium 📺 4:25pm on FOX",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/286/784/455/299/208/original/38aa3cd2aed8edc1.jpg"
+    ],
+    "publishedAt": "2026-09-17T14:10:07.000Z",
+    "collectedAt": "2026-09-17T14:32:02.691Z"
   }
 }
