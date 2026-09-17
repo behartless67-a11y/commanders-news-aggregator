@@ -824,6 +824,14 @@ function footer(sources, generatedAt) {
           <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
           Cville Spots
         </a>
+        <!-- The mailbag. Built unlinked on purpose for a Reddit-driven test,
+             which is over: it's being promoted in a post now, and a page a
+             reader is invited to use needs a way back to it that isn't one
+             old post's hyperlink. -->
+        <a class="rss-link" href="wiretaps.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+          Wire Taps
+        </a>
       </div>
     </div>
     <!-- Outside .footer-grid on purpose: the grid collapses behind the "More
@@ -1114,7 +1122,7 @@ ${items}
 }
 
 /**
- * Essay prose for originals and Monday posts. Ordinary paragraphs, plus three
+ * Essay prose for originals and Monday posts. Ordinary paragraphs, plus four
  * inline markers:
  *
  *   "## Heading"   → a section subhead. Long personal essays need somewhere
@@ -1123,18 +1131,23 @@ ${items}
  *                    map, dropped in at exactly this point in the prose.
  *   "!thanks"      → the record's `thanks` list (see thanksList). Takes no key
  *                    because there's only ever one of these in a post.
+ *   "!callout"     → the record's `callout` (see partnerCallout), for a post
+ *                    that needs it inside a section rather than after the
+ *                    prose. A Monday record with a `callout` and no marker
+ *                    still gets it appended the old way, so nothing already
+ *                    published moves.
  *
- * All three are markers inside paragraphs[] rather than parallel fields because
+ * All four are markers inside paragraphs[] rather than parallel fields because
  * position is the whole point: a subhead or a photo means nothing except in
  * relation to the paragraph it sits next to, and a separate array would have
- * to re-encode that ordering anyway. The photo *data* does live in its own
- * `photos` map, since width/height/alt/caption is more than belongs in a
- * marker string.
+ * to re-encode that ordering anyway. The heavier *data* still lives in its own
+ * field, since width/height/alt/caption is more than belongs in a marker
+ * string.
  *
  * An unknown key renders nothing rather than throwing. Losing one photo is a
  * better failure than a build that dies over a typo in a caption file.
  */
-function essayParagraphs(paragraphs, rosterIndex, photos = {}, thanks = null) {
+function essayParagraphs(paragraphs, rosterIndex, { photos = {}, thanks = null, callout = null } = {}) {
   return paragraphs
     .map((p) => {
       if (p.startsWith('## ')) {
@@ -1146,6 +1159,9 @@ function essayParagraphs(paragraphs, rosterIndex, photos = {}, thanks = null) {
       }
       if (p.trim() === '!thanks') {
         return thanksList(thanks);
+      }
+      if (p.trim() === '!callout') {
+        return partnerCallout(callout);
       }
       return `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`;
     })
@@ -1163,7 +1179,11 @@ function essayParagraphs(paragraphs, rosterIndex, photos = {}, thanks = null) {
  */
 function essayProse(paragraphs) {
   return paragraphs.filter(
-    (p) => !p.startsWith('## ') && !p.startsWith('!photo ') && p.trim() !== '!thanks',
+    (p) =>
+      !p.startsWith('## ') &&
+      !p.startsWith('!photo ') &&
+      p.trim() !== '!thanks' &&
+      p.trim() !== '!callout',
   );
 }
 
@@ -1208,7 +1228,11 @@ ${slides.join('\n')}
  */
 function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
   const photos = record.photos || {};
-  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, photos, record.thanks);
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, {
+    photos,
+    thanks: record.thanks,
+    callout: record.callout,
+  });
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
   // like "go listen to the Music page" carry a real link instead of a bare
@@ -1241,7 +1265,16 @@ ${plug}
  */
 function partnerCallout(callout) {
   if (!callout) return '';
-  return `<a class="partner-pull" href="${escapeHtml(callout.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(callout.outboundId || 'partner')}">
+  // An internal target (no scheme, e.g. "wiretaps.html") gets neither a new tab
+  // nor the outbound beacon. A page on this site isn't a click-through to
+  // somebody else's writing, and counting one as outbound would quietly inflate
+  // the only number here that means "a reader went and read the source" (see
+  // the outbound handler in site.js).
+  const external = /^[a-z][a-z0-9+.-]*:/i.test(callout.url || '');
+  const attrs = external
+    ? ` target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(callout.outboundId || 'partner')}"`
+    : '';
+  return `<a class="partner-pull" href="${escapeHtml(callout.url)}"${attrs}>
       <span class="partner-pull-eyebrow">${escapeHtml(callout.eyebrow)}</span>
       <span class="partner-pull-name">${escapeHtml(callout.name)}</span>
       <span class="partner-pull-body">${escapeHtml(callout.body)}</span>
@@ -1257,8 +1290,12 @@ function partnerCallout(callout) {
  * monday-prompt.js).
  */
 function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
-  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex);
-  const callout = partnerCallout(record.callout);
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, { callout: record.callout });
+  // Appended only when the prose didn't place it with a "!callout" marker, so
+  // the already-published Monday post that predates the marker keeps its
+  // callout at the end and doesn't render it twice.
+  const usesMarker = record.paragraphs.some((p) => p.trim() === '!callout');
+  const callout = usesMarker ? '' : partnerCallout(record.callout);
   return `
     <article class="digest-post monday-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>

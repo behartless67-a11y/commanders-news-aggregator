@@ -351,7 +351,7 @@ export async function buildSite() {
     'index.html', 'team-sources.html', 'national-coverage.html',
     'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
     'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
-    'music.html', 'beat-writers.html', 'cville.html',
+    'music.html', 'beat-writers.html', 'cville.html', 'wiretaps.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),
