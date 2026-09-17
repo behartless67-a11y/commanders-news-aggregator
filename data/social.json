@@ -8293,5 +8293,84 @@
     "images": [],
     "publishedAt": "2026-09-17T21:15:15.000Z",
     "collectedAt": "2026-09-17T22:05:10.263Z"
+  },
+  "social-9cfd202c2a74": {
+    "id": "social-9cfd202c2a74",
+    "url": "https://x.com/Commanders/status/2100698812109209865",
+    "text": "rain or shine @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/288/516/966/392/765/original/4cb99b3b6a69c793.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/288/516/999/938/088/original/c3ae27f088a8a7ee.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/288/517/024/972/133/original/01c476c4bcba583b.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/288/517/063/362/654/original/6858659f8fd3226b.jpg"
+    ],
+    "publishedAt": "2026-09-17T21:30:00.000Z",
+    "collectedAt": "2026-09-17T22:06:29.717Z"
+  },
+  "social-d6273a01503a": {
+    "id": "social-d6273a01503a",
+    "url": "https://x.com/BenStandig/status/2100698892887277926",
+    "text": "Oh, no. Sweetney was an all-time Georgetown legend. What a scoring machine. RIP.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-17T21:30:19.000Z",
+    "collectedAt": "2026-09-17T22:06:33.965Z"
+  },
+  "social-e701e093835b": {
+    "id": "social-e701e093835b",
+    "url": "https://x.com/BenStandig/status/2100696555028144388",
+    "text": "Oh, no. Sweetness was an all-time Georgetown legend. What a scoring machine. RIP.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-17T21:21:02.000Z",
+    "collectedAt": "2026-09-17T22:06:33.965Z"
+  },
+  "social-0b855f803dea": {
+    "id": "social-0b855f803dea",
+    "url": "https://x.com/BenStandig/status/2100693029363613921",
+    "text": "Javon Kinlaw joined Frankie Luvu and Chig Okonkwo on Thursday's \"DNP\" list.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/288/419/733/562/510/original/9e7b482967095b30.jpg"
+    ],
+    "publishedAt": "2026-09-17T21:07:01.000Z",
+    "collectedAt": "2026-09-17T22:06:33.965Z"
+  },
+  "social-5e3bc852913d": {
+    "id": "social-5e3bc852913d",
+    "url": "https://x.com/tashanreed/status/2100699574566265311",
+    "text": "Kinlaw didn't practice today due to a back injury. Something to watch for the #Commanders ahead of Sunday.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-17T21:33:02.000Z",
+    "collectedAt": "2026-09-17T22:06:35.304Z"
+  },
+  "social-a651cc36851a": {
+    "id": "social-a651cc36851a",
+    "url": "https://x.com/tashanreed/status/2100684628348506469",
+    "text": "If Barber clears waivers, it's expected the #Commanders will re-sign him to their practice squad, per source.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-17T20:33:38.000Z",
+    "collectedAt": "2026-09-17T22:06:35.304Z"
   }
 }

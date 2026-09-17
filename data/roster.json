@@ -532,31 +532,6 @@
     }
   },
   {
-    "slug": "ricky-barber",
-    "name": "Ricky Barber",
-    "jersey": "50",
-    "position": "DT",
-    "espnId": "4428343",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428343.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "5"
-        },
-        {
-          "label": "SACK",
-          "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "percy-butler",
     "name": "Percy Butler",
     "jersey": "35",
@@ -1091,6 +1066,31 @@
     }
   },
   {
+    "slug": "isaac-yiadom",
+    "name": "Isaac Yiadom",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "3122797",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "26"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "tyler-ott",
     "name": "Tyler Ott",
     "jersey": "69",
@@ -1505,31 +1505,6 @@
         },
         {
           "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "isaac-yiadom",
-    "name": "Isaac Yiadom",
-    "jersey": "",
-    "position": "CB",
-    "espnId": "3122797",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "26"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
           "value": "0"
         }
       ]
