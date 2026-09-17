@@ -8361,5 +8361,43 @@
     "images": [],
     "publishedAt": "2026-09-17T16:22:10.000Z",
     "collectedAt": "2026-09-17T18:05:11.832Z"
+  },
+  "social-a541876bb810": {
+    "id": "social-a541876bb810",
+    "url": "https://x.com/Commanders/status/2100644704115118131",
+    "text": "bringing the pressure @awscloud@twitter.com x @NextGenStats",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/287/673/345/591/567/original/a9da9f39887d630f.jpg"
+    ],
+    "publishedAt": "2026-09-17T17:55:00.000Z",
+    "collectedAt": "2026-09-17T18:06:30.901Z"
+  },
+  "social-c1258328451c": {
+    "id": "social-c1258328451c",
+    "url": "https://x.com/JPFinlayNBCS/status/2100633579713691707",
+    "text": "Talking with @shawnemerriman@twitter.com about the Commanders defense: “I love Sonny Styles. He’s one of my favorite players to watch…He’s still a little raw but his athleticism allows to overcome. He’s going to be a problem.”",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-17T17:10:47.000Z",
+    "collectedAt": "2026-09-17T18:06:32.446Z"
+  },
+  "social-2c5d455230cd": {
+    "id": "social-2c5d455230cd",
+    "url": "https://x.com/john_keim/status/2100621866696077638",
+    "text": "Don’t see TE Chig Okonkwo (hamstring) or LB Frankie Luvu (groin) out here during the stretching portion.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-17T16:24:15.000Z",
+    "collectedAt": "2026-09-17T18:06:33.693Z"
   }
 }
