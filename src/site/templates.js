@@ -625,8 +625,14 @@ function teamStatsWidget(teamStats) {
     // rail badly enough that the two columns visibly overlapped. The absence is
     // now stated once, under the numbers, which is both quieter and what makes
     // these fit on one line.
+    // "Tied-5th" abbreviated to "T-5th": at the narrowest rail (about 169px a
+    // column, which is the 1400px breakpoint where the stats widget shares the
+    // row with the 280px video rail) the full word is the difference between
+    // "Tied-5th 132.0 rush yds/gm" fitting and overflowing by 6px.
     const rank = (s) =>
-      s?.rankLabel ? `<strong class="ts-rank">${escapeHtml(s.rankLabel)}</strong> ` : '';
+      s?.rankLabel
+        ? `<strong class="ts-rank">${escapeHtml(s.rankLabel.replace(/^Tied-/, 'T-'))}</strong> `
+        : '';
     const headline = (statVal, label, rankData) =>
       statVal
         ? `<p class="ts-headline">${rank(rankData)}<span class="ts-line">${escapeHtml(statVal)} ${label}</span></p>`

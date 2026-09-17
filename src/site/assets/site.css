@@ -1283,9 +1283,15 @@ main.layout{
    text overflowing the widget. */
 .ts-headline-grid{
   display: grid;
-  grid-template-columns: minmax(0, auto) minmax(0, auto);
-  justify-content: start;
-  column-gap: 14px;
+  /* Two equal columns, not content-sized. Content sizing let each column take
+     the width of its own widest label, so offense came out visibly lopsided
+     ("Tied-5th 132.0 rush yds/gm" in column one against a shorter column two)
+     while defense happened to look even. Equal halves line both panels up the
+     same way. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* Tight on purpose: at the 360px rail the longest offense label
+     ("Tied-5th 132.0 rush yds/gm") needs every pixel the gap isn't using. */
+  column-gap: 7px;
   row-gap: 8px;
   margin: 0 0 8px;
 }

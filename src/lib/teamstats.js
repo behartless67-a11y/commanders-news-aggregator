@@ -48,8 +48,18 @@ const TEAM_ABBR = 'wsh';
 
 const STATS_URL = (season, seasonType) =>
   `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/${season}/types/${seasonType}/teams/${TEAM_ID}/statistics`;
-const OPPONENT_URL = (season, seasonType) =>
-  `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${TEAM_ABBR}/statistics?season=${season}&seasontype=${seasonType}`;
+const OPPONENT_URL = (abbr, season, seasonType) =>
+  `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${abbr}/statistics?season=${season}&seasontype=${seasonType}`;
+const TEAMS_URL = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams';
+
+/**
+ * Floor for ranking net yards allowed across the league (see
+ * fetchNetYardsAllowedRank). Not 32: ESPN 404s a team that has no stats for the
+ * season at all, which was true of Denver and Kansas City through Week 1 of
+ * 2026, so its own published ranks are over the teams that do have data. This
+ * only guards against ranking off a handful of teams.
+ */
+const MIN_RANKED_TEAMS = Number(process.env.TEAM_STATS_MIN_RANKED || 24);
 const LEADERS_URL = (season, seasonType) =>
   `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/${season}/types/${seasonType}/teams/${TEAM_ID}/leaders`;
 
@@ -109,8 +119,95 @@ function readStat(categories, name) {
  * Returns null when the split is missing or carries no games, so the caller can
  * still tell "the fetch failed" apart from "this season hasn't started".
  */
+/** 1st, 2nd, 3rd, 4th ... 11th, 12th, 13th ... 21st. Matches ESPN's own rankDisplayValue style. */
+function ordinal(n) {
+  const mod100 = n % 100;
+  if (mod100 >= 11 && mod100 <= 13) return `${n}th`;
+  return `${n}${['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
+}
+
+/** Net yards allowed per game for one team, or null if it has no season stats. */
+function netYardsAllowedFrom(categories) {
+  const num = (name) => {
+    const s = readStat(categories, name);
+    const n = s?.value == null ? NaN : Number(String(s.value).replace(/,/g, ''));
+    return Number.isFinite(n) ? n : null;
+  };
+  const pass = num('netPassingYardsPerGame');
+  const rush = num('rushingYardsPerGame');
+  return pass == null || rush == null ? null : pass + rush;
+}
+
+/**
+ * A real league rank for *net* yards allowed, computed across every team ESPN
+ * has data for.
+ *
+ * Needed because ESPN publishes a rank only for its own opponent `yardsPerGame`,
+ * which adds gross passing yards to rushing, and that figure disagrees with the
+ * pass and rush numbers shown right beside it in the widget (182 + 136 = 318,
+ * not 339). Displaying its rank next to the net value would attach a rank to a
+ * number it doesn't describe, and displaying the gross value instead would make
+ * the panel fail to add up. So the ordering is derived here from the same net
+ * definition the widget shows.
+ *
+ * One request per team, ~75KB each. That's the cost of the rank, and it is still
+ * a fraction of the ~8MB box-score crawl this file used to do for numbers alone.
+ * Returns null rather than a shaky rank if too few teams report.
+ */
+async function fetchNetYardsAllowedRank(season, seasonType) {
+  const list = await fetchJson(TEAMS_URL, 'NFL team list');
+  const abbrs = (list?.sports?.[0]?.leagues?.[0]?.teams || [])
+    .map((t) => t.team?.abbreviation)
+    .filter(Boolean);
+  if (abbrs.length < MIN_RANKED_TEAMS) {
+    log.warn(`team-stats: only ${abbrs.length} teams listed, skipping the yards-allowed rank`);
+    return null;
+  }
+
+  const rows = [];
+  for (const abbr of abbrs) {
+    // A 404 here means "this team has no stats for this season yet" and is
+    // expected, so it's skipped quietly rather than warned about per team.
+    const raw = await fetchText(OPPONENT_URL(abbr, season, seasonType), { cache: false });
+    if (!raw) continue;
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      continue;
+    }
+    const categories = data?.results?.opponent;
+    if (!categories?.length) continue;
+    const net = netYardsAllowedFrom(categories);
+    if (net != null) rows.push({ abbr, net });
+  }
+
+  if (rows.length < MIN_RANKED_TEAMS) {
+    log.warn(`team-stats: only ${rows.length} teams had opponent totals, skipping the yards-allowed rank`);
+    return null;
+  }
+
+  const mine = rows.find((r) => r.abbr.toUpperCase() === TEAM_ABBR.toUpperCase());
+  if (!mine) {
+    log.warn('team-stats: own team missing from the yards-allowed ranking');
+    return null;
+  }
+
+  // Fewer allowed is better, so rank ascending. Teams on the same figure share
+  // the higher position and get ESPN's "Tied-" prefix, matching how every other
+  // rank in this file reads.
+  const better = rows.filter((r) => r.net < mine.net).length;
+  const tied = rows.filter((r) => r.net === mine.net).length;
+  const rank = better + 1;
+  return {
+    rank,
+    rankLabel: `${tied > 1 ? 'Tied-' : ''}${ordinal(rank)}`,
+    ranked: rows.length,
+  };
+}
+
 async function fetchDefenseAllowed(season, seasonType) {
-  const data = await fetchJson(OPPONENT_URL(season, seasonType), `opponent stats ${season}`);
+  const data = await fetchJson(OPPONENT_URL(TEAM_ABBR, season, seasonType), `opponent stats ${season}`);
   const categories = data?.results?.opponent;
   if (!categories?.length) {
     log.warn(`team-stats: no opponent split for ${season} seasontype ${seasonType}`);
@@ -133,15 +230,21 @@ async function fetchDefenseAllowed(season, seasonType) {
 
   // Net, to match the offense's `netYardsPerGame`, rather than ESPN's own
   // opponent `yardsPerGame`, which adds *gross* passing yards to rushing and so
-  // reads ~20 yards a game higher than any box score's total. No rank: the only
-  // one ESPN publishes here belongs to that gross figure.
-  const num = (s) => (s?.value == null ? null : Number(String(s.value).replace(/,/g, '')));
-  const pass = num(passYardsPerGame);
-  const rush = num(rushYardsPerGame);
+  // reads ~20 yards a game higher than any box score's total, and wouldn't add
+  // up against the pass and rush figures shown beside it.
+  const net = netYardsAllowedFrom(categories);
+  const netRank = net == null ? null : await fetchNetYardsAllowedRank(season, seasonType);
   const netYards =
-    Number.isFinite(pass) && Number.isFinite(rush)
-      ? { value: (pass + rush).toFixed(1), rank: null, rankLabel: null }
-      : null;
+    net == null
+      ? null
+      : {
+          value: net.toFixed(1),
+          rank: netRank?.rank ?? null,
+          rankLabel: netRank?.rankLabel ?? null,
+        };
+  if (netRank) {
+    log.info(`team-stats: net yards allowed ranked ${netRank.rankLabel} of ${netRank.ranked} teams with data`);
+  }
 
   return {
     games,
