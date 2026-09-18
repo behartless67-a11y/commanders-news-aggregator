@@ -1,30 +1,4 @@
 {
-  "social-1958fedd1dd5": {
-    "id": "social-1958fedd1dd5",
-    "url": "https://x.com/JPFinlayNBCS/status/2097346092471886099",
-    "text": "This is pretty interesting - I was going thru notes on my comp and found these from February at the Combine. They certainly answered the first 2 questions. The Diggs addition helps the 4th.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/236/125/520/691/901/original/deca7c01a7793b9e.jpg"
-    ],
-    "publishedAt": "2026-09-08T15:27:29.000Z",
-    "collectedAt": "2026-09-08T15:59:21.204Z"
-  },
-  "social-f4e67185b891": {
-    "id": "social-f4e67185b891",
-    "url": "https://x.com/BenStandig/status/2097334231139524657",
-    "text": "My first fantasy football draft is tonight. I think I'm good on the local 53. Have done minimal prep otherwise. Sleepers and stay aways. Help.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-08T14:40:21.000Z",
-    "collectedAt": "2026-09-08T15:59:23.682Z"
-  },
   "social-f9682b2f064c": {
     "id": "social-f9682b2f064c",
     "url": "https://x.com/john_keim/status/2097402121733787924",
@@ -8303,5 +8277,95 @@
     "images": [],
     "publishedAt": "2026-09-18T13:24:34.000Z",
     "collectedAt": "2026-09-18T14:05:10.027Z"
+  },
+  "social-2fd4085fab6f": {
+    "id": "social-2fd4085fab6f",
+    "url": "https://x.com/john_keim/status/2100971534928011635",
+    "text": "LB Frankie Luvu is out here but not in uniform. Headed to a side field. TE Chig Okonkwo is out here but not going through drills. Also now headed to a side field. DL Javon Kinlaw is going through drills during the portion open to the media.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-18T15:33:42.000Z",
+    "collectedAt": "2026-09-18T15:50:34.626Z"
+  },
+  "social-290d1ce65d58": {
+    "id": "social-290d1ce65d58",
+    "url": "https://x.com/john_keim/status/2100971039819714954",
+    "text": "LB Frankie Luvu is out here but not in uniform. Headed to a side field. Don’t see TE Chig Okonkwo. DL Javon Kinlaw is going through drills during the portion open to the media.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-18T15:31:44.000Z",
+    "collectedAt": "2026-09-18T15:50:34.626Z"
+  },
+  "social-8c88e5c3a097": {
+    "id": "social-8c88e5c3a097",
+    "url": "https://x.com/john_keim/status/2100967681788682243",
+    "text": "Deatrich Wise Jr and Trey Amos …",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/292/713/833/717/635/original/2645aa82bd7a4bc5.jpg"
+    ],
+    "publishedAt": "2026-09-18T15:18:24.000Z",
+    "collectedAt": "2026-09-18T15:50:34.626Z"
+  },
+  "social-09f8a92e8803": {
+    "id": "social-09f8a92e8803",
+    "url": "https://x.com/john_keim/status/2100967180883874260",
+    "text": "Back for a Friday session:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/292/708/271/504/477/original/a67d9f949dedffb1.jpg"
+    ],
+    "publishedAt": "2026-09-18T15:16:24.000Z",
+    "collectedAt": "2026-09-18T15:50:34.626Z"
+  },
+  "social-43c352c7dfae": {
+    "id": "social-43c352c7dfae",
+    "url": "https://x.com/BenStandig/status/2100974333858295819",
+    "text": "Injury watch at the start of open practice: * TE Chig Okonkwo (hamstring) is working on the side. * LB Frankie Luvu (groin) is participating in stretching, but not in football gear * Javon Kinlaw (back) is participating",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-18T15:44:50.000Z",
+    "collectedAt": "2026-09-18T15:50:40.045Z"
+  },
+  "social-667c5453148f": {
+    "id": "social-667c5453148f",
+    "url": "https://x.com/BenStandig/status/2100971378585350207",
+    "text": "Injury watch at the startof open practice: * TE Chig Okonkwo (hamstring) is working on the side. * LB Frankie Luvu (groin) is participating in stretching, but not in football gear * Javon Kinlaw (back) is participating",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-18T15:33:05.000Z",
+    "collectedAt": "2026-09-18T15:50:40.045Z"
+  },
+  "social-903f3d3650d1": {
+    "id": "social-903f3d3650d1",
+    "url": "https://x.com/BenStandig/status/2100950649231802639",
+    "text": "I asked Charles Omenihu about the nerdiest thing he’s into. “I watch a lot of film.” I was thinking Denzel Washington. Maybe “Wedding Crashers.” Nope. Football film. Q&A with the Commanders DL on his craft, ideal home temperatire setting, and more: off-script-charles-omenihu-watches?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/292/448/904/533/307/original/a5e9f1be992fff6a.jpg"
+    ],
+    "publishedAt": "2026-09-18T14:10:43.000Z",
+    "collectedAt": "2026-09-18T15:50:40.045Z"
   }
 }
