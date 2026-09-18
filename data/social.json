@@ -47,30 +47,6 @@
     "publishedAt": "2026-09-08T18:53:08.000Z",
     "collectedAt": "2026-09-08T19:23:48.154Z"
   },
-  "social-c7bf82728cf4": {
-    "id": "social-c7bf82728cf4",
-    "url": "https://x.com/tashanreed/status/2097393092647063964",
-    "text": "If you prefer to listen on Spotify 🔗⤵️ 0prSaCEuggl41JeiC?si=D6PtLQdlQjGN4__TjfzIDA&utm_source=copy-link",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-08T18:34:15.000Z",
-    "collectedAt": "2026-09-08T19:23:48.154Z"
-  },
-  "social-54e1092e2925": {
-    "id": "social-54e1092e2925",
-    "url": "https://x.com/tashanreed/status/2097390750791061734",
-    "text": "The first episode of The Tashan Reed Show is live. I laid out how the show came to be, highlighted the #Commanders ' biggest storylines going into 2026 and previewed their season opener against the Eagles. Watch here on Substack 🔗⤵️ p-214637417?r=1gwknd&utm_medium=ios&utm_source=notes-share-action",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-08T18:24:57.000Z",
-    "collectedAt": "2026-09-08T19:23:48.154Z"
-  },
   "social-b3a4e0585191": {
     "id": "social-b3a4e0585191",
     "url": "https://x.com/NickiJhabvala/status/2097402273756295275",
@@ -8568,5 +8544,17 @@
     "images": [],
     "publishedAt": "2026-09-18T18:00:01.000Z",
     "collectedAt": "2026-09-18T18:06:40.786Z"
+  },
+  "social-118411aa2003": {
+    "id": "social-118411aa2003",
+    "url": "https://x.com/WerderEdNFL/status/2101014768857305225",
+    "text": "The #Commanders have 13 straight games without positive turnover margin, per @ESPNInsights . Thats the longest active streak in the #NFL and one from tying franchise’s longest drought since 1933 when team turnovers were first tracked (14 straight spanning 2010-11 seasons).",
+    "handle": "WerderEdNFL",
+    "author": "Ed Werder",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-18T18:25:30.000Z",
+    "collectedAt": "2026-09-18T18:52:47.148Z"
   }
 }
