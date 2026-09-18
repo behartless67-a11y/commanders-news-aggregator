@@ -10,6 +10,7 @@
     "venue": "Northwest Stadium",
     "result": "W",
     "points": "20 - 7",
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -23,6 +24,7 @@
     "venue": "Ford Field",
     "result": "L",
     "points": "13 - 17",
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -36,6 +38,7 @@
     "venue": "M&T Bank Stadium",
     "result": "L",
     "points": "3 - 41",
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -49,6 +52,7 @@
     "venue": "Lincoln Financial Field",
     "result": "L",
     "points": "22 - 24",
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -62,6 +66,7 @@
     "venue": "AT&T Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -75,6 +80,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -88,6 +94,7 @@
     "venue": "Tottenham Hotspur Stadium",
     "result": null,
     "points": null,
+    "broadcast": "NFL NETWORK",
     "isBye": false
   },
   {
@@ -101,6 +108,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -114,6 +122,7 @@
     "venue": "Levi's® Stadium",
     "result": null,
     "points": null,
+    "broadcast": "ESPN • ABC • ESPN DEPORTES",
     "isBye": false
   },
   {
@@ -132,6 +141,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "NBC",
     "isBye": false
   },
   {
@@ -145,6 +155,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -158,6 +169,7 @@
     "venue": "MetLife Stadium",
     "result": null,
     "points": null,
+    "broadcast": "AMAZON PRIME",
     "isBye": false
   },
   {
@@ -171,6 +183,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "ESPN",
     "isBye": false
   },
   {
@@ -184,6 +197,7 @@
     "venue": "State Farm Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -197,6 +211,7 @@
     "venue": "Nissan Stadium",
     "result": null,
     "points": null,
+    "broadcast": "CBS",
     "isBye": false
   },
   {
@@ -210,6 +225,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "CBS",
     "isBye": false
   },
   {
@@ -223,6 +239,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": "FOX",
     "isBye": false
   },
   {
@@ -236,6 +253,7 @@
     "venue": "U.S. Bank Stadium",
     "result": null,
     "points": null,
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -249,6 +267,7 @@
     "venue": "EverBank Stadium",
     "result": null,
     "points": null,
+    "broadcast": null,
     "isBye": false
   },
   {
@@ -262,6 +281,7 @@
     "venue": "Northwest Stadium",
     "result": null,
     "points": null,
+    "broadcast": null,
     "isBye": false
   }
 ]

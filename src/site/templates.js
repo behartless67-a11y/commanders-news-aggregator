@@ -3,6 +3,7 @@ import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDat
 import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
+import { BROADCAST_URLS } from '../../config/broadcast-urls.js';
 
 // Every Blog-tab post type (digest, preview, original, Monday recap) shares
 // this one label/class — 'blog'/'original'/'monday' stay distinct as
@@ -467,6 +468,21 @@ function scheduleRow(game, odds = null) {
   const oddsLine = odds
     ? `<span class="schedule-odds">${escapeHtml(odds.spreadDetails || '')}${odds.overUnder != null ? ` &middot; O/U ${escapeHtml(String(odds.overUnder))}` : ''}${odds.moneyline ? ` &middot; ML ${escapeHtml(odds.moneyline)}` : ''}</span>`
     : '';
+  // Right below the odds, on the same row and under the same condition
+  // (it's the one game scheduleWidget has already decided is "next up"),
+  // rather than on every row: most weeks are TBD on network until close to
+  // kickoff, and repeating "Watch: TBD" seventeen times would be pure noise.
+  // The first listed network gets the link when a doubleheader/simulcast
+  // lists more than one (see config/broadcast-urls.js): every name still
+  // prints, just not every name links.
+  const watchLine = odds && game.broadcast
+    ? (() => {
+        const names = game.broadcast.split('•').map((n) => n.trim()).filter(Boolean);
+        const url = names.map((n) => BROADCAST_URLS[n]).find(Boolean);
+        const label = escapeHtml(names.join(' · '));
+        return `<span class="schedule-watch">Watch: ${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-outbound="broadcast">${label}</a>` : label}</span>`;
+      })()
+    : '';
 
   return `
         <li class="schedule-row">
@@ -475,6 +491,7 @@ function scheduleRow(game, odds = null) {
             <span class="schedule-matchup">${escapeHtml(prefix)} ${escapeHtml(game.opponentShort || game.opponent)}</span>
             <span class="schedule-date${resultClass}">${escapeHtml(weekLabelOf(game) || '')} · ${dateOrResult}</span>
             ${oddsLine}
+            ${watchLine}
           </span>
         </li>`;
 }
@@ -1498,6 +1515,11 @@ ${digestArticleBody(record, rosterIndex, 'h1')}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -1546,6 +1568,11 @@ ${previewArticleBody(record, rosterIndex, 'h1')}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -1599,6 +1626,11 @@ ${originalArticleBody(record, rosterIndex, 'h1')}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -1647,6 +1679,11 @@ ${mondayArticleBody(record, rosterIndex, 'h1')}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -1753,6 +1790,11 @@ ${header('blog.html', true, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -1858,6 +1900,11 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -2033,6 +2080,11 @@ ${header('roster.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -2130,6 +2182,11 @@ ${header('depth-chart.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -2218,6 +2275,11 @@ ${header('injury-report.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -2265,6 +2327,11 @@ ${header('podcasts.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -2318,6 +2385,11 @@ ${header('videos.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -2397,6 +2469,11 @@ ${header('music.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -2606,6 +2683,11 @@ ${header('contact.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -2677,6 +2759,9 @@ ${header('wiretaps.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<!-- No wire-taps-tab here on purpose: a reader is already on the mailbag,
+     pointing them at itself is the one page where the nudge is noise. -->
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -2725,6 +2810,11 @@ ${header('donate.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -2779,6 +2869,11 @@ ${header('cville.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -3322,6 +3417,11 @@ ${header('beat-writers.html', hasWeekly, isGameLive)}
 
 ${footer(sources, generatedAt)}
 
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
 </a>
@@ -3418,6 +3518,11 @@ ${header('social-feed.html', hasWeekly, isGameLive)}
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
@@ -3517,6 +3622,11 @@ ${cards || '<p class="river-empty">No items yet — run `npm run collect` first.
 </main>
 
 ${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
 
 <a class="to-top" href="#top" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>

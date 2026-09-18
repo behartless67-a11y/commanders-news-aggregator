@@ -21,6 +21,7 @@ function decodeEntities(s) {
     .replace(/&#xAE;/gi, '®')
     .replace(/&amp;/g, '&')
     .replace(/&middot;/g, '·')
+    .replace(/&bull;/g, '•')
     .replace(/&quot;/g, '"');
 }
 
@@ -63,6 +64,12 @@ function parseGame(chunk, season) {
   const venue = pick(/venue--location">\s*([^<]+?)\s*</, chunk);
   const result = pick(/score--result">([^<]+)</, chunk);
   const points = pick(/score--points">([^<]+)</, chunk);
+  // Only present on the pregame card variant: a played game's chunk swaps in
+  // a final-score card with no TV section at all, and a game with no network
+  // assigned yet (common late in the season) renders the span empty. Both are
+  // "no broadcast to show", not a parse failure, so this stays null either way
+  // rather than an empty string a caller would have to remember to check for.
+  const broadcast = pick(/media-tv--networks">\s*([^<]+?)\s*<\/span>/, chunk) || null;
 
   // `opponentAbbr` matching our own team is a real failure mode, not a real
   // game: caught 2026-08-22 when a fetch mid-game (a third markup variant
@@ -72,7 +79,20 @@ function parseGame(chunk, season) {
   // week label. A missing week is the same signal — better to skip the
   // chunk and retry on the next fetch than cache garbage.
   if (!opponent || !opponentAbbr || opponentAbbr === 'WAS' || !week) return null;
-  return { season, week, gametime, homeAway, opponentAbbr, opponent, opponentShort, venue, result, points, isBye: false };
+  return {
+    season,
+    week,
+    gametime,
+    homeAway,
+    opponentAbbr,
+    opponent,
+    opponentShort,
+    venue,
+    result,
+    points,
+    broadcast,
+    isBye: false,
+  };
 }
 
 export async function fetchSchedule() {

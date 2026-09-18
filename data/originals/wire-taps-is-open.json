@@ -2,7 +2,8 @@
   "slug": "wire-taps-is-open",
   "title": "Wire Taps Is Open, and My Weekend Is a Logistical Crime Scene",
   "paragraphs": [
-    "Let me tell you what the next 48 hours look like in the Burgundy Wire household, because I want you to understand the state of mind in which I am asking you for a favor.",
+    "Let me tell you what the next 48 hours look like in the Burgundy Wire household, because I want you to understand the state of mind in which I am asking you for a favor. The favor is at the top of this post instead of buried at the bottom, because I would rather you actually see it than scroll past it.",
+    "!callout",
     "Saturday, early, I get on a train in Charlottesville and go to Washington to see Garth Brooks. Saturday night, that happens, and I make a series of decisions whose consequences are Sunday's problem. Sunday, early, painfully early, I get on another train back to Charlottesville, running on fumes and pure enthusiasm. Sunday at 4:25, Commanders at Dallas, which is the load-bearing event of the entire weekend and the only reason the train home is early instead of sensible. Sunday night, immediately after, Mumford and Sons here in Charlottesville.",
     "Garth Brooks on Saturday and Mumford and Sons on Sunday is a genuinely deranged 24 hours of music. One night I am in an arena screaming about thunder rolling, the next I am watching men in waistcoats assault a banjo. Two trains, two concerts, one division game, and roughly one night of sleep to cover all of it. I am going to do every bit of it and I am going to feel it on Monday.",
     "A sincere apology to Högwaller Brewing: I am not making it in this weekend, and I am not making it next weekend either. The excuse for next weekend is a good one, though. I will be at Northwest Stadium, in person, for the Seahawks game. So it is not you, it is the calendar, and I will make it up in wings.",
@@ -20,7 +21,6 @@
     "I built a mailbag. It is called Wire Taps, it has been sitting quietly at the bottom of this website, and it currently contains zero questions, which is a lonely condition for a mailbag to be in.",
     "Ask me anything. Commanders or otherwise. The offensive line, the Owens clip, whether Jayden takes another step this year, what to order at Högwaller, how to survive Garth Brooks and Mumford and Sons on either side of a road game, or how one person ends up rooting for this many football teams at once. There is a name field if you want the credit, and you can leave it blank, because anonymous is completely fine.",
     "I will answer them in a post. If nobody sends anything, I will answer questions I invented myself, and we will both have to live with that.",
-    "!callout",
     "Two trains, two concerts, one road game. See you on the other side.",
     "Hail."
   ],
@@ -32,6 +32,7 @@
     "outboundId": "wiretaps",
     "cta": "Send in a question"
   },
+  "plug": "Direct link, no scrolling required: <a href=\"wiretaps.html\">theburgundywire.com/wiretaps</a>.",
   "status": "published",
   "publishedAt": "2026-09-17T11:40:00.000Z"
 }
