@@ -8508,5 +8508,43 @@
     "images": [],
     "publishedAt": "2026-09-18T20:04:22.000Z",
     "collectedAt": "2026-09-18T20:05:11.320Z"
+  },
+  "social-ff4eb1fda4a1": {
+    "id": "social-ff4eb1fda4a1",
+    "url": "https://x.com/john_keim/status/2101039001033437557",
+    "text": "Game status. Kinlaw questionable. Was limited Friday but definite optimism about Sunday for him.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/293/831/616/069/454/original/e82255ccff80da7d.jpg"
+    ],
+    "publishedAt": "2026-09-18T20:01:47.000Z",
+    "collectedAt": "2026-09-18T20:06:38.508Z"
+  },
+  "social-9418a17cae51": {
+    "id": "social-9418a17cae51",
+    "url": "https://x.com/toddarcher/status/2100977555843002490",
+    "text": "Rookie Jaishawn Barham will be the “green dot” Sunday vs. Washington with him replacing DeMarvion Overshown out. “He’s got great command of what we’re doing,” Brian Schottenheimer said.",
+    "handle": "toddarcher",
+    "author": "Todd Archer",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-18T15:57:38.000Z",
+    "collectedAt": "2026-09-18T20:06:38.508Z"
+  },
+  "social-a8a3260744d2": {
+    "id": "social-a8a3260744d2",
+    "url": "https://x.com/tashanreed/status/2101038657050181909",
+    "text": "Kinlaw's listed as questionable:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-18T20:00:25.000Z",
+    "collectedAt": "2026-09-18T20:06:44.524Z"
   }
 }
