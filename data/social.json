@@ -8541,5 +8541,32 @@
     "images": [],
     "publishedAt": "2026-09-18T16:33:34.000Z",
     "collectedAt": "2026-09-18T18:05:09.915Z"
+  },
+  "social-02ee46b6ef44": {
+    "id": "social-02ee46b6ef44",
+    "url": "https://x.com/Commanders/status/2101004575566364814",
+    "text": "biiiig belt guys over here @a_williams2022@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/293/298/900/316/805/original/96415cdc563115b9.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/293/298/948/589/151/original/d545d54c9b60a313.jpg"
+    ],
+    "publishedAt": "2026-09-18T17:45:00.000Z",
+    "collectedAt": "2026-09-18T18:06:34.112Z"
+  },
+  "social-5a27ba2d0c43": {
+    "id": "social-5a27ba2d0c43",
+    "url": "https://x.com/tashanreed/status/2101008355523256357",
+    "text": "“For everybody — except for us — the next step is always offensive coordinator as soon as your guy is successful,\" D.J. Williams said. Williams is one of just 5 QB coaches of color in the NFL. He believes it's more difficult for Black coaches to rise: /09/18/his-father-led-washington-super-bowl-now-he-coaches-commanders-star-qb/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-18T18:00:01.000Z",
+    "collectedAt": "2026-09-18T18:06:40.786Z"
   }
 }

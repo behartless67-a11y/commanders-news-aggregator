@@ -9,7 +9,7 @@
   {
     "name": "Chig Okonkwo",
     "position": "TE",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Hamstring",
     "notes": null
   },
@@ -30,9 +30,9 @@
   {
     "name": "Frankie Luvu",
     "position": "LB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Groin",
-    "notes": null
+    "notes": "Strain"
   },
   {
     "name": "Jaylin Lane",
