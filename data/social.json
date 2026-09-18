@@ -1,66 +1,4 @@
 {
-  "social-dee26d059cb2": {
-    "id": "social-dee26d059cb2",
-    "url": "https://x.com/Commanders/status/2097462231591981301",
-    "text": "LET’S GOOOOOO @FTiafoe@twitter.com ‼️‼️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-08T23:08:59.000Z",
-    "collectedAt": "2026-09-08T23:45:17.528Z"
-  },
-  "social-2aca7e9ceb5f": {
-    "id": "social-2aca7e9ceb5f",
-    "url": "https://x.com/JPFinlayNBCS/status/2097461865517310146",
-    "text": "Absolutely incredible comeback from Big Foe. Incredible.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-08T23:07:32.000Z",
-    "collectedAt": "2026-09-08T23:45:18.517Z"
-  },
-  "social-e78b23c6e51c": {
-    "id": "social-e78b23c6e51c",
-    "url": "https://x.com/JPFinlayNBCS/status/2097456799838290230",
-    "text": "This time tomorrow night at MGM. Show us 7-8 with a live mailbag segment. Gets on TV. Seahawks/Pats after. Maybe some blackjack. Gonna be an awesome evening. Be there",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/237/856/198/321/130/original/60c763f3e5ea9a3b.jpg"
-    ],
-    "publishedAt": "2026-09-08T22:47:24.000Z",
-    "collectedAt": "2026-09-08T23:45:18.518Z"
-  },
-  "social-4b7b79661e08": {
-    "id": "social-4b7b79661e08",
-    "url": "https://x.com/BenStandig/status/2097456395251499228",
-    "text": "Y'all rock. Gonna do my best to follow your lead, including drafting the right B. Robinson at No. 2.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-08T22:45:48.000Z",
-    "collectedAt": "2026-09-08T23:45:21.615Z"
-  },
-  "social-4fd420a078bc": {
-    "id": "social-4fd420a078bc",
-    "url": "https://x.com/AdamSchefter/status/2097470284211138607",
-    "text": "A plus for the Buccaneers getting Baker Mayfield’s deal done now is the looming reality of what should be a booming QB market next offseason, when Caleb Williams, Jayden Daniels, Drake Maye and Bo Nix all become extension-eligible for the first time.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-09-08T23:40:59.000Z",
-    "collectedAt": "2026-09-08T23:45:25.505Z"
-  },
   "social-f6b133b13c57": {
     "id": "social-f6b133b13c57",
     "url": "https://x.com/JPFinlayNBCS/status/2097501307221287287",
@@ -8548,5 +8486,31 @@
     ],
     "publishedAt": "2026-09-18T21:43:41.000Z",
     "collectedAt": "2026-09-18T22:06:37.034Z"
+  },
+  "social-f1dfc0d69d48": {
+    "id": "social-f1dfc0d69d48",
+    "url": "https://x.com/Commanders/status/2101091400108355627",
+    "text": "Another divisional battle",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/294/651/116/021/253/original/93373d0d1a2e8100.jpg"
+    ],
+    "publishedAt": "2026-09-18T23:30:00.000Z",
+    "collectedAt": "2026-09-18T23:44:30.223Z"
+  },
+  "social-e4cc378837fd": {
+    "id": "social-e4cc378837fd",
+    "url": "https://x.com/Commanders/status/2101081582966825089",
+    "text": "Level up every week 📈 @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-18T22:51:00.000Z",
+    "collectedAt": "2026-09-18T23:44:30.223Z"
   }
 }
