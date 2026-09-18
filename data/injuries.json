@@ -1,12 +1,5 @@
 [
   {
-    "name": "Charles Omenihu",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Ankle",
-    "notes": null
-  },
-  {
     "name": "Chig Okonkwo",
     "position": "TE",
     "status": "Out",
@@ -21,13 +14,6 @@
     "notes": null
   },
   {
-    "name": "Dorance Armstrong",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Frankie Luvu",
     "position": "LB",
     "status": "Out",
@@ -35,10 +21,10 @@
     "notes": "Strain"
   },
   {
-    "name": "Jaylin Lane",
-    "position": "WR",
+    "name": "Javon Kinlaw",
+    "position": "DT",
     "status": "Questionable",
-    "bodyPart": "Groin",
+    "bodyPart": "Back",
     "notes": null
   },
   {
@@ -63,25 +49,11 @@
     "notes": null
   },
   {
-    "name": "K'Lavon Chaisson",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
     "bodyPart": "Triceps",
     "notes": "Surgery"
-  },
-  {
-    "name": "Odafe Oweh",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Calf",
-    "notes": null
   },
   {
     "name": "Trey Amos",
