@@ -8282,5 +8282,82 @@
     "images": [],
     "publishedAt": "2026-09-19T20:01:31.000Z",
     "collectedAt": "2026-09-19T20:05:10.295Z"
+  },
+  "social-d309e7cf8d34": {
+    "id": "social-d309e7cf8d34",
+    "url": "https://x.com/Commanders/status/2101400938913104054",
+    "text": "We have made the following roster moves: - Signed DT Ricky Barber to the practice squad - Elevated DT Ricky Barber and LB Ale Kaho from the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/492/722/683/234/original/a26d8ab83a18c000.jpg"
+    ],
+    "publishedAt": "2026-09-19T20:00:00.000Z",
+    "collectedAt": "2026-09-19T20:06:44.979Z"
+  },
+  "social-e7dfb4f783f2": {
+    "id": "social-e7dfb4f783f2",
+    "url": "https://x.com/Commanders/status/2101388318890148221",
+    "text": "One step closer to gameday 🛫 @united@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/292/254/278/876/original/551d6a2dc1946d04.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/292/299/140/877/original/ae7875b162615940.jpg"
+    ],
+    "publishedAt": "2026-09-19T19:09:51.000Z",
+    "collectedAt": "2026-09-19T20:06:44.979Z"
+  },
+  "social-05a45244543d": {
+    "id": "social-05a45244543d",
+    "url": "https://x.com/john_keim/status/2101401471468093790",
+    "text": "The Commanders signed DT Ricky Barber to the practice squad and elevated him to the active roster along with LB Ale Kaho.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-19T20:02:07.000Z",
+    "collectedAt": "2026-09-19T20:06:47.906Z"
+  },
+  "social-72804c0b8c50": {
+    "id": "social-72804c0b8c50",
+    "url": "https://x.com/john_keim/status/2101380424609976739",
+    "text": "Quick video on the Commanders looking to slow Cowboys' passing attack 316",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-19T18:38:29.000Z",
+    "collectedAt": "2026-09-19T20:06:47.906Z"
+  },
+  "social-a2b2ad7a6e38": {
+    "id": "social-a2b2ad7a6e38",
+    "url": "https://x.com/BenStandig/status/2101401194316828936",
+    "text": "The Commanders are elevating LB Ale Kaho from the practice squad. Washingtpn also signed DT Ricky Barber to the practice squad and elevated him for Sunday.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-19T20:01:01.000Z",
+    "collectedAt": "2026-09-19T20:06:53.326Z"
+  },
+  "social-f86ce5de5d71": {
+    "id": "social-f86ce5de5d71",
+    "url": "https://x.com/tashanreed/status/2101401249165795415",
+    "text": "The #Commanders brought back Barber and elevated him to the roster for tomorrow. They also promoted Kaho to the active roster to account for the absences of Frankie Luvu and Jordan Magee:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-19T20:01:14.000Z",
+    "collectedAt": "2026-09-19T20:07:00.427Z"
   }
 }
