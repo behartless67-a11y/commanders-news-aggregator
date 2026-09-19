@@ -9142,5 +9142,29 @@
     "excerpt": "",
     "publishedAt": "2026-09-19T04:05:10.000Z",
     "collectedAt": "2026-09-19T08:06:30.317Z"
+  },
+  "riggos-rag-1d7388ac3cfd": {
+    "id": "riggos-rag-1d7388ac3cfd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/8-commanders-who-must-raise-their-game-against-cowboys-week-2",
+    "title": "8 Commanders who must raise their game against the Cowboys in Week 2",
+    "excerpt": "Which Washington Commanders players must raise their game in a crucial divisional clash against the Dallas Cowboys in Week 2?",
+    "publishedAt": "2026-09-19T10:00:03.000Z",
+    "collectedAt": "2026-09-19T12:06:29.952Z"
+  },
+  "pft-af16dbfb43a6": {
+    "id": "pft-af16dbfb43a6",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-sainristil-says-hell-stay-positive-after-dan-quinn-called-his-play-not-acceptable",
+    "title": "Mike Sainristil says he'll stay positive after Dan Quinn called his play \"not acceptable\"",
+    "excerpt": "When discussing the Week 1 loss to the Eagles, Commanders head coach Dan Quinn made a specific point of saying that cornerback Mike Sainristil didn't play well enough. Sainristil says he's staying positive.\n Quinn doesn't often call out players by name, but during his Monday press conference after Sunday's loss, he named Sainristil, whose coverage breakdown gave up an Eagles touchdown pass, as one of the players who needed to correct the way he played.\n \"We’ve definitely identified a few things…",
+    "publishedAt": "2026-09-19T10:31:51.000Z",
+    "collectedAt": "2026-09-19T12:06:34.845Z"
   }
 }
