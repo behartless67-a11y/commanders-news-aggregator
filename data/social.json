@@ -27,18 +27,6 @@
     "publishedAt": "2026-09-09T21:33:07.000Z",
     "collectedAt": "2026-09-09T22:06:09.706Z"
   },
-  "social-f68743c28e7b": {
-    "id": "social-f68743c28e7b",
-    "url": "https://x.com/john_keim/status/2097781116639801656",
-    "text": "How two former Redskins helped Stefon Diggs early in his career (coach Norv Turner and Kirk Cousins):",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-09T20:16:07.000Z",
-    "collectedAt": "2026-09-09T22:06:09.706Z"
-  },
   "social-a9b972beafde": {
     "id": "social-a9b972beafde",
     "url": "https://x.com/BenStandig/status/2097800458274279859",
@@ -8359,5 +8347,31 @@
     "images": [],
     "publishedAt": "2026-09-19T20:01:14.000Z",
     "collectedAt": "2026-09-19T20:07:00.427Z"
+  },
+  "social-47e4f2146fda": {
+    "id": "social-47e4f2146fda",
+    "url": "https://x.com/BenStandig/status/2101404051279597901",
+    "text": "Commanders WR Stefon Diggs was fined $14,926 for...",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/531/695/226/605/original/fc1b34a3554dc705.jpg"
+    ],
+    "publishedAt": "2026-09-19T20:12:22.000Z",
+    "collectedAt": "2026-09-19T20:19:42.667Z"
+  },
+  "social-1d2ddcb2b2d7": {
+    "id": "social-1d2ddcb2b2d7",
+    "url": "https://x.com/MikeGarafolo/status/2101402760012767274",
+    "text": "#Commanders WR Stefon Diggs was fined $14,926 for jumping on the goalpost.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [],
+    "publishedAt": "2026-09-19T20:07:14.000Z",
+    "collectedAt": "2026-09-19T20:20:05.049Z"
   }
 }
