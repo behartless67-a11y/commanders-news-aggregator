@@ -1,18 +1,4 @@
 {
-  "social-448e70bb00ed": {
-    "id": "social-448e70bb00ed",
-    "url": "https://x.com/Commanders/status/2097809129012174991",
-    "text": "Happy birthday @Theismann7@twitter.com ! 🙌",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/243/364/851/820/743/original/63d7abd4e9735ede.jpg"
-    ],
-    "publishedAt": "2026-09-09T22:07:26.000Z",
-    "collectedAt": "2026-09-09T22:16:41.364Z"
-  },
   "social-a5bba59f3d3b": {
     "id": "social-a5bba59f3d3b",
     "url": "https://x.com/Commanders/status/2097837459421966498",
@@ -28,32 +14,6 @@
     ],
     "publishedAt": "2026-09-10T00:00:00.000Z",
     "collectedAt": "2026-09-10T00:06:34.560Z"
-  },
-  "social-8778893aa674": {
-    "id": "social-8778893aa674",
-    "url": "https://x.com/JPFinlayNBCS/status/2097822162530762783",
-    "text": "Live from @MGMNatlHarbor@twitter.com Commanders season preview now on @nbcwashington@twitter.com",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/243/568/540/110/041/original/b5766d52d8224c5c.jpg"
-    ],
-    "publishedAt": "2026-09-09T22:59:13.000Z",
-    "collectedAt": "2026-09-10T00:06:35.846Z"
-  },
-  "social-0b9c0f8d025f": {
-    "id": "social-0b9c0f8d025f",
-    "url": "https://x.com/tashanreed/status/2097816130542825684",
-    "text": "Of note: Greenard practiced in a limited capacity for the Eagles. He missed all of camp.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-09T22:35:15.000Z",
-    "collectedAt": "2026-09-10T00:06:40.130Z"
   },
   "social-52674707abbc": {
     "id": "social-52674707abbc",
