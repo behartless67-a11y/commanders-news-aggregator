@@ -1,78 +1,4 @@
 {
-  "social-abb4a6645fb4": {
-    "id": "social-abb4a6645fb4",
-    "url": "https://x.com/Commanders/status/2097760830926528943",
-    "text": "LIVE: QB Jayden Daniels speaks to the media after practice JN",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-09T18:55:31.000Z",
-    "collectedAt": "2026-09-09T19:06:11.156Z"
-  },
-  "social-125e15afc90f": {
-    "id": "social-125e15afc90f",
-    "url": "https://x.com/JPFinlayNBCS/status/2097761146107293856",
-    "text": "Jayden Daniels says nothing but respect for the Eagles organization: “You got to be on your A Game.” Says he hopes to do “whatever it takes to win a football game”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/242/613/378/285/902/original/d1f3e4fdce3f2070.jpg"
-    ],
-    "publishedAt": "2026-09-09T18:56:46.000Z",
-    "collectedAt": "2026-09-09T19:06:12.885Z"
-  },
-  "social-dc1c97359179": {
-    "id": "social-dc1c97359179",
-    "url": "https://x.com/JPFinlayNBCS/status/2097761409387855885",
-    "text": "Jayden says \"everybody has opinions\" but he's just focused on football and winning games for Washington. \"They're going to talk about you regardless, good or bad.\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-09T18:57:49.000Z",
-    "collectedAt": "2026-09-09T19:06:12.885Z"
-  },
-  "social-33f1e80b894c": {
-    "id": "social-33f1e80b894c",
-    "url": "https://x.com/JPFinlayNBCS/status/2097770168118104414",
-    "text": "Great explanation from K’Lavon Chaisson about playing in Daronte Jones’ aggressive defensive scheme: “It’s very cool to play offense on defense”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-09T19:32:37.000Z",
-    "collectedAt": "2026-09-09T20:06:03.262Z"
-  },
-  "social-b483d352aa75": {
-    "id": "social-b483d352aa75",
-    "url": "https://x.com/john_keim/status/2097763568326185123",
-    "text": "Jayden Daniels: \"What I did year 1, what I did year 2 doesn't matter... Whatever happens on Sunday will be what is talked about more than year 2.\"",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-09T19:06:23.000Z",
-    "collectedAt": "2026-09-09T20:06:04.558Z"
-  },
-  "social-047bb4d7cbf7": {
-    "id": "social-047bb4d7cbf7",
-    "url": "https://x.com/tashanreed/status/2097764269467058655",
-    "text": "#Commanders QB Jayden Daniels on the criticism he's faced on and off the field this offseason: \"Everybody has an opinion, no matter whether it's good or bad. It's nothing I can really control. The only that matters to me is the the people inside the building, my family, helping the Washington Commanders win football games and being the best version of myself.\"",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-09T19:09:11.000Z",
-    "collectedAt": "2026-09-09T20:06:07.199Z"
-  },
   "social-a081d6d70f60": {
     "id": "social-a081d6d70f60",
     "url": "https://x.com/Commanders/status/2097799709502960023",
@@ -257,18 +183,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-10T01:38:14.000Z",
-    "collectedAt": "2026-09-10T02:04:06.536Z"
-  },
-  "social-7b05b381b36f": {
-    "id": "social-7b05b381b36f",
-    "url": "https://x.com/Tim_McManus/status/2097768425120575951",
-    "text": "Jonathan Greenard warming up in the distance — a good sign for the Eagles as they begin preparations for the Commanders. Greenard missed all of training camp with a pec injury.",
-    "handle": "Tim_McManus",
-    "author": "Tim McManus",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-09T19:25:41.000Z",
     "collectedAt": "2026-09-10T02:04:06.536Z"
   },
   "social-66e84640577b": {
@@ -8356,5 +8270,17 @@
     "images": [],
     "publishedAt": "2026-09-19T18:11:43.000Z",
     "collectedAt": "2026-09-19T18:25:16.889Z"
+  },
+  "social-e9f4f7c20369": {
+    "id": "social-e9f4f7c20369",
+    "url": "https://x.com/NickiJhabvala/status/2101401321735627042",
+    "text": "The Commanders re-signed DT Ricky Barber to the practice squad and elevated him and LB Ale Kaho for Sunday’s game in Dallas.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-19T20:01:31.000Z",
+    "collectedAt": "2026-09-19T20:05:10.295Z"
   }
 }
