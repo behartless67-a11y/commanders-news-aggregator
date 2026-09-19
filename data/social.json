@@ -8305,5 +8305,45 @@
     "images": [],
     "publishedAt": "2026-09-19T20:09:29.000Z",
     "collectedAt": "2026-09-19T22:05:10.240Z"
+  },
+  "social-5b037e681818": {
+    "id": "social-5b037e681818",
+    "url": "https://x.com/Commanders/status/2101407228620124399",
+    "text": "🔜🔜🔜 @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/580/168/171/328/original/fcc6ad2d521aa71e.jpg"
+    ],
+    "publishedAt": "2026-09-19T20:25:00.000Z",
+    "collectedAt": "2026-09-19T22:06:36.344Z"
+  },
+  "social-63c9570e530b": {
+    "id": "social-63c9570e530b",
+    "url": "https://x.com/JPFinlayNBCS/status/2101414873364091036",
+    "text": "Headed to Dallas. Pilot just came on and said Cowboys fans should get off because he’s going to play Hail to the Redskins for 2 hours. Vibes. And this dude at DCA had the Sean Taylor Pro Bowl jersey",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/299/706/502/661/532/original/afd6744b1259c9a6.jpg"
+    ],
+    "publishedAt": "2026-09-19T20:55:22.000Z",
+    "collectedAt": "2026-09-19T22:06:37.735Z"
+  },
+  "social-f0b096878edd": {
+    "id": "social-f0b096878edd",
+    "url": "https://x.com/john_keim/status/2101418593279717606",
+    "text": "With DT Javon Kinlaw (back) questionable it makes sense to have Barber as a possibility. Sense is more for insurance in case the back issue flares up Sunday morning. Kinlaw was quite active last week.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-19T21:10:09.000Z",
+    "collectedAt": "2026-09-19T22:06:39.543Z"
   }
 }
