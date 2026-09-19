@@ -310,6 +310,42 @@
   }
 
   /**
+   * Recompute every "3h ago" label against the reader's clock instead of the
+   * build's.
+   *
+   * These are rendered server-side by relativeLabel() in src/lib/dates.js, so
+   * they were only ever as accurate as the last deploy: a page built two hours
+   * ago still claimed "just now". That silently made deploy frequency the thing
+   * keeping the site looking alive, which is a bad reason to redeploy a static
+   * site every hour (and on a credits-priced account, an expensive one). The
+   * machine-readable timestamp is already in the <time datetime> attribute, so
+   * the freshness can come from the browser and the deploys can slow down.
+   *
+   * Deliberately mirrors relativeLabel()'s thresholds exactly. Anything a week
+   * or older is left as the server rendered it, since that's an absolute date
+   * already and needs no clock of its own.
+   */
+  var agoEls = document.querySelectorAll('time[datetime]');
+  for (var t = 0; t < agoEls.length; t++) {
+    var el = agoEls[t];
+    var when = new Date(el.getAttribute('datetime'));
+    if (isNaN(when.getTime())) continue;
+    var minutes = (Date.now() - when.getTime()) / 60000;
+    // A future timestamp means a post dated ahead of now (build.js warns about
+    // those); leave the server's text rather than printing a negative age.
+    if (minutes < 0) continue;
+    if (minutes < 1) {
+      el.textContent = 'just now';
+    } else if (minutes < 60) {
+      el.textContent = Math.floor(minutes) + 'm ago';
+    } else if (minutes < 1440) {
+      el.textContent = Math.floor(minutes / 60) + 'h ago';
+    } else if (minutes < 10080) {
+      el.textContent = Math.floor(minutes / 1440) + 'd ago';
+    }
+  }
+
+  /**
    * A random id naming this browser tab's session, so the track Function can
    * tell "the same reader loaded three pages" apart from "three different
    * readers loaded one page each" — otherwise every pageview looks identical

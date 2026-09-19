@@ -84,14 +84,26 @@ jobs:
       # new items, the same idempotency `collect` already guarantees
       # locally. Nothing to commit on a quiet night is not an error.
       - name: Commit updated data
+        id: commit
         run: |
           git config user.name "nightly-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet && echo "no data changes" || git commit -m "Nightly data update"
-          git push
+          if git diff --cached --quiet; then
+            echo "no data changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Nightly data update"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
+      # Nothing new collected means the build output is the same as the one
+      # already live, so there's nothing to republish. The relative timestamps
+      # that used to go stale between deploys are recomputed in the browser
+      # now (see site.js), so a skipped deploy costs the reader nothing.
       - name: Deploy to Netlify
+        if: steps.commit.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

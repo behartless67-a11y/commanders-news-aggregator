@@ -7,12 +7,19 @@ name: Social ticker refresh
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    # Every 4 hours, offset 2h from nightly's `0 */4` so the two never land on
+    # the same minute and queue behind each other on the concurrency group
+    # below. Was every 2 hours, which on a credits-priced Netlify account was
+    # paying for 12 production deploys a day to refresh a ticker that only
+    # actually changed about 5 times a day. The "X ago" labels that used to
+    # need a fresh build now recompute in the browser (see site.js), so the
+    # deploy cadence and how current the page looks are no longer the same
+    # question.
+    - cron: '0 2,6,10,14,18,22 * * *'
   workflow_dispatch: {}
 
-# Shares a group with nightly.yml: this tick and nightly's `0 */4 * * *` tick
-# land on the same minute every 4 hours, and both workflows commit data/ and
-# push. Without this they'd race on that push.
+# Shares a group with nightly.yml: both workflows commit data/ and push, so
+# without this a tick that overlaps nightly's would race on that push.
 concurrency:
   group: site-deploy
   cancel-in-progress: false
@@ -42,14 +49,25 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
 
       - name: Commit updated data
+        id: commit
         run: |
           git config user.name "social-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet && echo "no data changes" || git commit -m "Hourly social update"
-          git push
+          if git diff --cached --quiet; then
+            echo "no data changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Social ticker update"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
+      # Only when the ticker actually moved. This step used to run every tick
+      # regardless, so more than half of this workflow's production deploys
+      # republished byte-identical output.
       - name: Deploy to Netlify
+        if: steps.commit.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
