@@ -1,68 +1,4 @@
 {
-  "social-e54dbdd48891": {
-    "id": "social-e54dbdd48891",
-    "url": "https://x.com/JPFinlayNBCS/status/2098123282100740185",
-    "text": "Terry McLaurin ahead of Philly: “With Jayden we know he’s going to do a great job of protecting the football and spreading it around so everybody’s got to be ready to make plays.”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/268/736/250/816/original/2e0f9be02434843e.jpg"
-    ],
-    "publishedAt": "2026-09-10T18:55:46.000Z",
-    "collectedAt": "2026-09-10T18:56:50.187Z"
-  },
-  "social-2dc62f86b0b2": {
-    "id": "social-2dc62f86b0b2",
-    "url": "https://x.com/JPFinlayNBCS/status/2098118137057091649",
-    "text": "Awesome insight from Antonio Williams ahead of his NFL debut: “I love my job. I’m blessed to call this a job.” He adds of Week 1 “if you’re not a little nervous then you don’t care”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/189/483/914/355/original/92496464630e721b.jpg"
-    ],
-    "publishedAt": "2026-09-10T18:35:19.000Z",
-    "collectedAt": "2026-09-10T18:56:50.187Z"
-  },
-  "social-fd50bd82b62a": {
-    "id": "social-fd50bd82b62a",
-    "url": "https://x.com/NickiJhabvala/status/2098119909813219671",
-    "text": "Jeremy Reaves teared up when talking about Tress Way and his likely retirement.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-10T18:42:22.000Z",
-    "collectedAt": "2026-09-10T20:05:11.966Z"
-  },
-  "social-2bafdfbdf3d9": {
-    "id": "social-2bafdfbdf3d9",
-    "url": "https://x.com/john_keim/status/2098126340188696752",
-    "text": "Tress Way gets emotional about his journey here:",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-10T19:07:55.000Z",
-    "collectedAt": "2026-09-10T20:06:08.317Z"
-  },
-  "social-f5a25fc32a4c": {
-    "id": "social-f5a25fc32a4c",
-    "url": "https://x.com/tashanreed/status/2098124347051270625",
-    "text": "The #Commanders made a tape of each play in '25 where Jayden Daniels scrambled. They tasked him with deciphering when he could've avoided unnecessary hits. \"I don’t think he had that part of his game in order,\" Dan Quinn told the Post, \"and he does now.” /09/10/commanders-need-jayden-daniels-back-his-best-its-not-one-man-job/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-10T19:00:00.000Z",
-    "collectedAt": "2026-09-10T20:06:11.186Z"
-  },
   "social-0c86dbb7c5d0": {
     "id": "social-0c86dbb7c5d0",
     "url": "https://x.com/NickiJhabvala/status/2098162525569184033",
@@ -8030,5 +7966,41 @@
     "images": [],
     "publishedAt": "2026-09-20T18:17:21.000Z",
     "collectedAt": "2026-09-20T18:29:16.981Z"
+  },
+  "social-8c07c1b45c0c": {
+    "id": "social-8c07c1b45c0c",
+    "url": "https://x.com/NickiJhabvala/status/2101753560622858499",
+    "text": "Jeff Bezos talking to Jerry Jones and Commanders owners Mark Ein and Mitch Rales before the start of Commanders-Cowboys here in Dallas",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T19:21:12.000Z",
+    "collectedAt": "2026-09-20T20:05:11.836Z"
+  },
+  "social-09a9234b7b2d": {
+    "id": "social-09a9234b7b2d",
+    "url": "https://x.com/NickiJhabvala/status/2101748193075548236",
+    "text": "Stefon Diggs playing catch with fans pre-game",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T18:59:52.000Z",
+    "collectedAt": "2026-09-20T20:05:11.837Z"
+  },
+  "social-984c8169edaf": {
+    "id": "social-984c8169edaf",
+    "url": "https://x.com/NickiJhabvala/status/2101741413352235101",
+    "text": "Jayden Daniels warming up with Sam Hartman",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T18:32:56.000Z",
+    "collectedAt": "2026-09-20T20:05:11.837Z"
   }
 }
