@@ -1,82 +1,4 @@
 {
-  "social-0c86dbb7c5d0": {
-    "id": "social-0c86dbb7c5d0",
-    "url": "https://x.com/NickiJhabvala/status/2098162525569184033",
-    "text": "Daron Payne was added to the injury report with a knee injury. He was limited today.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-10T21:31:42.000Z",
-    "collectedAt": "2026-09-10T22:05:09.184Z"
-  },
-  "social-622228692197": {
-    "id": "social-622228692197",
-    "url": "https://x.com/Commanders/status/2098162096508674330",
-    "text": "Thursday injury report #WASvsPHI | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/879/216/718/301/original/33890b262004731c.jpg"
-    ],
-    "publishedAt": "2026-09-10T21:30:00.000Z",
-    "collectedAt": "2026-09-10T22:06:02.017Z"
-  },
-  "social-de6482f35502": {
-    "id": "social-de6482f35502",
-    "url": "https://x.com/john_keim/status/2098168635353120827",
-    "text": "Tress Way said one memory stands out: “You don’t ever root against anybody or any team, but how much the fans loved that I have more passing yards than Dak “ in championship games.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-10T21:55:59.000Z",
-    "collectedAt": "2026-09-10T22:06:04.768Z"
-  },
-  "social-6013fe1755fd": {
-    "id": "social-6013fe1755fd",
-    "url": "https://x.com/john_keim/status/2098164430315864253",
-    "text": "Daron Payne was limited today along with the three who were limited Wednesday:",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/919/928/571/758/original/279bdb8aa0125469.jpg"
-    ],
-    "publishedAt": "2026-09-10T21:39:16.000Z",
-    "collectedAt": "2026-09-10T22:06:04.768Z"
-  },
-  "social-566a75e01006": {
-    "id": "social-566a75e01006",
-    "url": "https://x.com/BenStandig/status/2098163105213935705",
-    "text": "Washington added Daron Payne to the injury report. Limited with a knee.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/893/372/860/545/original/f578ab94efdd4981.jpg"
-    ],
-    "publishedAt": "2026-09-10T21:34:00.000Z",
-    "collectedAt": "2026-09-10T22:06:06.151Z"
-  },
-  "social-4487aca3c444": {
-    "id": "social-4487aca3c444",
-    "url": "https://x.com/tashanreed/status/2098169779445956927",
-    "text": "Payne has been added to the injury report and was listed as limited today with a knee injury. There were no other changes for the #Commanders or Eagles.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-10T22:00:32.000Z",
-    "collectedAt": "2026-09-10T22:06:07.812Z"
-  },
   "social-71401e5f834d": {
     "id": "social-71401e5f834d",
     "url": "https://x.com/Commanders/status/2098184751966281871",
@@ -8940,5 +8862,185 @@
     "images": [],
     "publishedAt": "2026-09-20T20:38:25.293Z",
     "collectedAt": "2026-09-20T21:18:21.104Z"
+  },
+  "social-52a8544d8663": {
+    "id": "social-52a8544d8663",
+    "url": "https://x.com/NickiJhabvala/status/2101792842091729203",
+    "text": "Cart is coming out for Jayden Daniels.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:57:17.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-86af2b9d17be": {
+    "id": "social-86af2b9d17be",
+    "url": "https://x.com/NickiJhabvala/status/2101792480068780525",
+    "text": "Jayden Daniels is down on the field. Was grabbing his left arm, which was bent in a way that an arm should not be bent.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:55:51.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-8166fe654b54": {
+    "id": "social-8166fe654b54",
+    "url": "https://x.com/NickiJhabvala/status/2101789742119399752",
+    "text": "Jayden Daniels: 88 passing yards, 68 rushing yards.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:44:58.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-389fe75ef6bf": {
+    "id": "social-389fe75ef6bf",
+    "url": "https://x.com/NickiJhabvala/status/2101787896776663495",
+    "text": "Treylon Burks takes the field and nearly had a diving TD.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:37:38.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-6bb6dc6f616d": {
+    "id": "social-6bb6dc6f616d",
+    "url": "https://x.com/NickiJhabvala/status/2101785587791331705",
+    "text": "Stefon Diggs' first target is a 4-yard TD. He faked a goalpost jump afterward. Pretty funny.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:28:28.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-e1ed887e4780": {
+    "id": "social-e1ed887e4780",
+    "url": "https://x.com/NickiJhabvala/status/2101784887590019568",
+    "text": "Rachaad White has had a few really good runs on this drive.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:25:41.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-fbdf7f24fd25": {
+    "id": "social-fbdf7f24fd25",
+    "url": "https://x.com/NickiJhabvala/status/2101784153184219303",
+    "text": "McLaurin's TD overturned on review. Incomplete.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:22:46.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-d74e7b54fcde": {
+    "id": "social-d74e7b54fcde",
+    "url": "https://x.com/NickiJhabvala/status/2101783659275559267",
+    "text": "holy s*** what a throw. holy s*** what a catch.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:20:48.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-a8880342475b": {
+    "id": "social-a8880342475b",
+    "url": "https://x.com/NickiJhabvala/status/2101782731197751349",
+    "text": "Cowboys are averaging 7.3 yards per play. Three drives, three trips to the red zone.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:17:07.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-deb56c0a648b": {
+    "id": "social-deb56c0a648b",
+    "url": "https://x.com/NickiJhabvala/status/2101780932067823651",
+    "text": "Tom Brady on the Commanders' red-zone fumble: \"That was a little Ricky Vaughn - high and outside. Puts it on his left hand and the backs aren't typically going to make those. ... As as quarterback, you want to aim right at the belly button ...\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T21:09:58.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-8cb0d61bedeb": {
+    "id": "social-8cb0d61bedeb",
+    "url": "https://x.com/NickiJhabvala/status/2101778268307243272",
+    "text": "Jayden Daniels turned a 3rd-and-18 into a 24-yard completion to McLaurin, then picked up 18 yards on a scramble on 3rd-and-2.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T20:59:22.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-67b2ea751777": {
+    "id": "social-67b2ea751777",
+    "url": "https://x.com/NickiJhabvala/status/2101777400941969698",
+    "text": "I still don't get that OPI on McLaurin, but it didn't matter. With that catch, McLaurin (56) passed Bobby Mitchell (55) to move into a tie with Chris Cooley (56) for No. 6 all-time in franchise history in receptions against Dallas.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T20:55:56.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-912b219ff971": {
+    "id": "social-912b219ff971",
+    "url": "https://x.com/NickiJhabvala/status/2101776564933312529",
+    "text": "Jayden finds Terry on a slate, but Terry's called for OPI.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T20:52:36.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-88941055b9e5": {
+    "id": "social-88941055b9e5",
+    "url": "https://x.com/NickiJhabvala/status/2101775201117606004",
+    "text": "Commanders held up in the red zone to prevent a Cowboys TD. But they've still given up 10 points in 10 minutes. Tough way to start.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T20:47:11.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
+  },
+  "social-03dd6b300677": {
+    "id": "social-03dd6b300677",
+    "url": "https://x.com/NickiJhabvala/status/2101773434418082202",
+    "text": "CeeDee Lamb has 4 catches for 79 yards and a TD in the first 7 minutes.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-20T20:40:10.000Z",
+    "collectedAt": "2026-09-20T22:05:12.000Z"
   }
 }
