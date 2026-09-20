@@ -9430,5 +9430,29 @@
     "excerpt": "Despite starting the 2026 NFL season with a tough 24-22 loss to the Philadelphia Eagles, the mood around the Washington Commanders fan base is remarkably positive. While standard logic would suggest a divisional loss would cause panic, this week’s Hogs Haven Reacts survey reveals a fan base that is more optimistic than it was before the Week 1 kickoff.\n\n \n The 13% confidence surge \n\n As is true in every week of the season (until early December, at least), in each of the first two weeks, Hogs…",
     "publishedAt": "2026-09-20T09:00:00.000Z",
     "collectedAt": "2026-09-20T09:04:05.864Z"
+  },
+  "riggos-rag-03b4b32c2596": {
+    "id": "riggos-rag-03b4b32c2596",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-bold-predictions-washington-commanders-critical-week-2-game-dallas-cowboys",
+    "title": "5 bold predictions for Commanders' critical Week 2 game against the Cowboys",
+    "excerpt": "Bold predictions for the Washington Commanders during their crucial Week 2 divisional game against the Dallas Cowboys.",
+    "publishedAt": "2026-09-20T10:00:01.000Z",
+    "collectedAt": "2026-09-20T10:06:33.389Z"
+  },
+  "yahoo-nfl-0a3088613fb9": {
+    "id": "yahoo-nfl-0a3088613fb9",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-fans-shake-off-week-090000260.html",
+    "title": "Commanders fans shake off a Week 1 loss to focus on a massive division clash in Dallas - survey results",
+    "excerpt": "Despite starting the 2026 NFL season with a tough 24-22 loss to the Philadelphia Eagles, the mood around the Washington Commanders fan base is remarkably positive. While standard logic would suggest a divisional loss would cause panic, this week’s Hogs Haven Reacts survey reveals a fan base that is more optimistic than it was before the Week 1 kickoff.\n The 13% confidence surge \n As is true in every week of the season (until early December, at least), in each of the first two weeks, Hogs Haven…",
+    "publishedAt": "2026-09-20T09:00:00.000Z",
+    "collectedAt": "2026-09-20T10:06:38.649Z"
   }
 }
