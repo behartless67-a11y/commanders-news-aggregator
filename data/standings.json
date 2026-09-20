@@ -1,17 +1,17 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-09-20T18:29:25.839Z",
+  "fetchedAt": "2026-09-20T20:07:03.762Z",
   "teams": [
-    {
-      "abbr": "NYG",
-      "name": "New York Giants",
-      "overall": "1-0",
-      "streak": "W1",
-      "winPercent": 1
-    },
     {
       "abbr": "PHI",
       "name": "Philadelphia Eagles",
+      "overall": "2-0",
+      "streak": "W2",
+      "winPercent": 1
+    },
+    {
+      "abbr": "NYG",
+      "name": "New York Giants",
       "overall": "1-0",
       "streak": "W1",
       "winPercent": 1
