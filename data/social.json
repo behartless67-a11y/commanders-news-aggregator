@@ -1,18 +1,4 @@
 {
-  "social-4ef965cbfa05": {
-    "id": "social-4ef965cbfa05",
-    "url": "https://x.com/Commanders/status/2098110908937728454",
-    "text": "🗓️ Week 1: #WASvsPHI 🏟️ Lincoln Financial Field 📺 4:25pm on FOX",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/077/051/578/900/original/53d13a8149d54c36.jpg"
-    ],
-    "publishedAt": "2026-09-10T18:06:36.000Z",
-    "collectedAt": "2026-09-10T18:56:48.775Z"
-  },
   "social-e54dbdd48891": {
     "id": "social-e54dbdd48891",
     "url": "https://x.com/JPFinlayNBCS/status/2098123282100740185",
@@ -7990,5 +7976,69 @@
     "images": [],
     "publishedAt": "2026-09-20T16:48:14.000Z",
     "collectedAt": "2026-09-20T18:05:12.566Z"
+  },
+  "social-717e47a7bd49": {
+    "id": "social-717e47a7bd49",
+    "url": "https://x.com/john_keim/status/2101728589158715704",
+    "text": "Today is a big deal because: only 15.7 percent of teams that have started 0-2 have made the postseason since the playoffs expanded in 2020. But six teams have accomplished this the last two years combined.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/304/605/882/217/847/original/8db4f8695202b987.jpg"
+    ],
+    "publishedAt": "2026-09-20T17:41:58.000Z",
+    "collectedAt": "2026-09-20T18:06:47.463Z"
+  },
+  "social-55301d2c37de": {
+    "id": "social-55301d2c37de",
+    "url": "https://x.com/ESPNInsights/status/2101702504908013998",
+    "text": "The Packers, Cowboys and Buccaneers have the longest active streaks without losing their first two games of the season. After week one losses for all three, will one of the streaks end today? 🏈",
+    "handle": "ESPNInsights",
+    "author": "ESPN Insights",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/304/192/339/888/687/original/e75876cca7c07abf.jpg"
+    ],
+    "publishedAt": "2026-09-20T15:58:19.000Z",
+    "collectedAt": "2026-09-20T18:06:47.463Z"
+  },
+  "social-8e43ce37440e": {
+    "id": "social-8e43ce37440e",
+    "url": "https://x.com/BenStandig/status/2101732298467012864",
+    "text": "Death, taxes and Dan Quinn taking on stadium steps pre-game. Looks like he found a friend.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-20T17:56:42.000Z",
+    "collectedAt": "2026-09-20T18:06:48.602Z"
+  },
+  "social-bceb882523d8": {
+    "id": "social-bceb882523d8",
+    "url": "https://x.com/JosinaAnderson/status/2101732900672520608",
+    "text": "#Cowboys WR George Pickens in the building for #Commanders @ #DAL … 🔥🔥",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-20T17:59:06.000Z",
+    "collectedAt": "2026-09-20T18:06:57.239Z"
+  },
+  "social-1def670bd083": {
+    "id": "social-1def670bd083",
+    "url": "https://x.com/JosinaAnderson/status/2101730199524016599",
+    "text": "Jerry Jones arrives with a huge smile and greets BOTH #Cowboys and #Commanders fans in the tunnels of AT&T stadium…",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-20T17:48:22.000Z",
+    "collectedAt": "2026-09-20T18:06:57.239Z"
   }
 }
