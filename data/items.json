@@ -911,18 +911,6 @@
     "publishedAt": "2026-08-07T15:18:19.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-6240452b5167": {
-    "id": "wjla-commanders-6240452b5167",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/stefon-diggs-gives-the-commanders-a-proven-receiver-behind-terry-mclaurin",
-    "title": "Stefon Diggs gives the Commanders a proven receiver behind Terry McLaurin",
-    "excerpt": "ASHBURN, Va. (AP) — The Washington Commanders added needed depth at wide receiver with the signing of Stefon Diggs. They agreed Wednesday to the deal with Diggs",
-    "publishedAt": "2026-08-06T14:42:49.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -9586,5 +9574,65 @@
     "excerpt": "LANDOVER, MARYLAND - DECEMBER 25: Quan Martin #20 of the Washington Commanders tackles Malik Davis #43 of the Dallas Cowboys in the first quarter of a game at Northwest Stadium on December 25, 2025 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images The Dallas Cowboys will try to get back on track after a disappointing Week 1 in New York. They will host another NFC East rival, the Washington Commanders. The Commanders lost to the Philadelphia Eagles in Week 1.\n Both…",
     "publishedAt": "2026-09-20T12:00:00.000Z",
     "collectedAt": "2026-09-20T14:06:38.237Z"
+  },
+  "hogs-haven-c7b53ae04f28": {
+    "id": "hogs-haven-c7b53ae04f28",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/441609/game-day-washington-dallas-looking-for-first-win-of-2026-season-antonio-williams-daron-payne",
+    "title": "Commanders News: Game day! Two teams looking for first win of the season",
+    "excerpt": "The Daily Slop – 20 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n \n A classic rivalry @BankofAmerica | #RaiseHail pic.twitter.com/belR2V5vZQ \n&mdash; Washington Commanders (@Commanders) September 20, 2026 \n\n \n\n Articles\n\n Heavy.com \n\n Antonio Williams is already…",
+    "publishedAt": "2026-09-20T14:00:00.000Z",
+    "collectedAt": "2026-09-20T15:28:07.350Z"
+  },
+  "riggos-rag-c8b4b88ca365": {
+    "id": "riggos-rag-c8b4b88ca365",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-faith-sonny-styles-faces-first-real-reckoning-without-frankie-luvu",
+    "title": "Commanders’ faith in Sonny Styles faces first real reckoning without Frankie Luvu",
+    "excerpt": "The Washington Commanders’ faith in rookie linebacker Sonny Styles faces first real reckoning without Frankie Luvu against the Dallas Cowboys.",
+    "publishedAt": "2026-09-20T15:00:00.000Z",
+    "collectedAt": "2026-09-20T15:28:08.311Z"
+  },
+  "cbs-nfl-281400afd2b4": {
+    "id": "cbs-nfl-281400afd2b4",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-cowboys-commanders-chiefs-colts-sunday-nfl",
+    "title": "Use DraftKings promo code to get $200 in bonus bets by targeting Cowboys-Commanders, Chiefs-Colts, Sunday NFL",
+    "excerpt": "DraftKings offers $200 in bonus bets after your first $5 wager for NFL betting on Sunday",
+    "publishedAt": "2026-09-20T14:14:35.000Z",
+    "collectedAt": "2026-09-20T15:28:13.044Z"
+  },
+  "yahoo-nfl-8838b8f210b2": {
+    "id": "yahoo-nfl-8838b8f210b2",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-3-things-143000438.html",
+    "title": "Cowboys vs. Commanders: 3 things we want to see more of in Week 2",
+    "excerpt": "Sep 4, 2025; Philadelphia, Pennsylvania, USA; Dallas Cowboys quarterback Dak Prescott (4) hands the ball to running back Javonte Williams (33) against the Philadelphia Eagles at Lincoln Financial Field. Mandatory Credit: Eric Hartline-Imagn Images | Eric Hartline-Imagn Images If the Week 2 matchup with the Washington Commanders isn’t a must-win game for the Dallas Cowboys, it’s as close as it gets. Losing in back-to-back weeks against divisional opponents and dropping to 0-2 in the NFC East…",
+    "publishedAt": "2026-09-20T14:30:00.000Z",
+    "collectedAt": "2026-09-20T15:28:13.536Z"
+  },
+  "yahoo-nfl-2378021ff770": {
+    "id": "yahoo-nfl-2378021ff770",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/game-day-commanders-cowboys-both-140000339.html",
+    "title": "Game day! Commanders & Cowboys both looking for first win of the season - Daily Slop",
+    "excerpt": "The Daily Slop – 20 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n A classic rivalry @BankofAmerica | #RaiseHail pic.twitter.com/belR2V5vZQ \n— Washington Commanders (@Commanders) September 20, 2026 \n Articles\n Heavy.com \n Antonio Williams is already better than Jahan…",
+    "publishedAt": "2026-09-20T14:00:00.000Z",
+    "collectedAt": "2026-09-20T15:28:13.536Z"
   }
 }
