@@ -1,16 +1,4 @@
 {
-  "social-429d0130f950": {
-    "id": "social-429d0130f950",
-    "url": "https://x.com/tashanreed/status/2098022020357218543",
-    "text": "Jayden Daniels faced the most criticism of his NFL career — on and off the field — this offseason. How he responds will dictate the #Commanders ' fate. Inside his effort to bounce back and how the team has helped him along the way 🔗⤵️ /09/10/commanders-need-jayden-daniels-back-his-best-its-not-one-man-job/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-10T12:13:23.000Z",
-    "collectedAt": "2026-09-10T13:56:50.810Z"
-  },
   "social-b1b14e407a7b": {
     "id": "social-b1b14e407a7b",
     "url": "https://x.com/Commanders/status/2098063926600896516",
@@ -8070,5 +8058,69 @@
     "images": [],
     "publishedAt": "2026-09-20T00:00:00.000Z",
     "collectedAt": "2026-09-20T00:06:38.747Z"
+  },
+  "social-7a0da64d8f7d": {
+    "id": "social-7a0da64d8f7d",
+    "url": "https://x.com/Commanders/status/2101657632583127330",
+    "text": "IT'S OFFICIALLY GAMEDAY IN DALLAS",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/303/507/242/140/055/original/1c293bead24651db.jpg"
+    ],
+    "publishedAt": "2026-09-20T13:00:01.000Z",
+    "collectedAt": "2026-09-20T14:01:50.345Z"
+  },
+  "social-9354f62297af": {
+    "id": "social-9354f62297af",
+    "url": "https://x.com/BenStandig/status/2101648263816335455",
+    "text": "Dak Prescott is 13-2 against Washington with 32 TDP and five INTs. Job one for the Commanders in Dallas: Make him uncomfortable. Plus: — Inactives scoreboard — Terry McLaurin talks — The All-Q&A Question Team — Important Wk. 1 lie — Week 2 prediction commanders-notebook-slowing-down?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/303/343/748/083/278/original/c85aee436266a81d.jpg"
+    ],
+    "publishedAt": "2026-09-20T12:22:47.000Z",
+    "collectedAt": "2026-09-20T14:01:54.651Z"
+  },
+  "social-6be414deeeda": {
+    "id": "social-6be414deeeda",
+    "url": "https://x.com/BenStandig/status/2101645124384051702",
+    "text": "Not picking on Ox here, but I've seen others also make the false claim that a penalty for jumping on the goalpost base is new. Nope. Been on the books (since 2014, per the interwebs) as part of an overall anti-no-touching rule to avoid having the calibrated goalposts move.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-20T12:10:18.000Z",
+    "collectedAt": "2026-09-20T14:01:54.651Z"
+  },
+  "social-4a88f3c19fdc": {
+    "id": "social-4a88f3c19fdc",
+    "url": "https://mysportgallery.com/@slessans2/117303714528544689",
+    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T13:57:16.000Z",
+    "collectedAt": "2026-09-20T14:02:06.811Z"
+  },
+  "social-ba588b96a6ac": {
+    "id": "social-ba588b96a6ac",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvxe3ixwdf2r",
+    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T13:57:17.300Z",
+    "collectedAt": "2026-09-20T14:02:06.811Z"
   }
 }
