@@ -532,6 +532,15 @@
     }
   },
   {
+    "slug": "ricky-barber",
+    "name": "Ricky Barber",
+    "jersey": "50",
+    "position": "DT",
+    "espnId": "4428343",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428343.png",
+    "stats": null
+  },
+  {
     "slug": "percy-butler",
     "name": "Percy Butler",
     "jersey": "35",
@@ -689,6 +698,31 @@
     "espnId": "5081392",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081392.png",
     "stats": null
+  },
+  {
+    "slug": "ale-kaho",
+    "name": "Ale Kaho",
+    "jersey": "51",
+    "position": "LB",
+    "espnId": "4361090",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361090.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "4"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "javon-kinlaw",
@@ -1373,31 +1407,6 @@
     "espnId": "4685425",
     "photo": "https://a.espncdn.com/i/headshots/college-football/players/full/4685425.png",
     "stats": null
-  },
-  {
-    "slug": "ale-kaho",
-    "name": "Ale Kaho",
-    "jersey": "51",
-    "position": "LB",
-    "espnId": "4361090",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361090.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "4"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
   },
   {
     "slug": "austin-keys",
