@@ -12,12 +12,14 @@ import { buildSite } from './site/build.js';
 import { generateDigest } from './digest/generate.js';
 import { digestList, digestReview, digestSetStatus } from './digest/review.js';
 import { generatePreview, listPreviews, setPreviewStatus } from './digest/preview-generate.js';
-import { generateMonday, listMondays, setMondayStatus } from './digest/monday-generate.js';
+import { generateMonday, exportMondayPrompt, listMondays, setMondayStatus } from './digest/monday-generate.js';
+import { publishDueOriginals } from './digest/originals.js';
 import { fetchRoster, attachStats, saveRosterCache, loadRosterCache } from './lib/roster.js';
 import { fetchDepthChart, saveDepthChartCache } from './lib/depthchart.js';
 import { fetchSchedule, saveScheduleCache, loadScheduleCache } from './lib/schedule.js';
 import { fetchBettingLine, saveBettingCache } from './lib/betting.js';
 import { fetchNfcEastStandings, saveStandingsCache } from './lib/standings.js';
+import { fetchReddit, saveRedditCache } from './lib/reddit.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
 import { fetchCollegeFootball, saveCollegeFootballCache } from './lib/collegefootball.js';
@@ -42,6 +44,7 @@ Commanders headline river
   npm run schedule           refresh the cached commanders.com schedule
   npm run betting            refresh the cached next-game betting line (ESPN/DraftKings)
   npm run standings          refresh the cached NFC East standings (ESPN)
+  npm run reddit             accumulate r/Commanders posts + comments for the Monday post
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
   npm run college-football   refresh cached UVA result + notable ranked results (ESPN) for the Monday recap
@@ -316,6 +319,16 @@ async function main() {
       }
       break;
     }
+    case 'reddit': {
+      const reddit = await fetchReddit();
+      if (reddit) {
+        await saveRedditCache(reddit);
+        log.ok(`reddit: cached r/${reddit.subreddit} (${reddit.posts.length} post(s), ${reddit.comments.length} comment(s) in the window)`);
+      } else {
+        log.warn('reddit: both feeds failed — leaving the existing cache in place');
+      }
+      break;
+    }
     case 'injuries': {
       const entries = await fetchInjuries();
       if (entries) {
@@ -396,13 +409,23 @@ async function main() {
         else console.table(records.map((r) => ({ key: r.key, title: r.title, status: r.status })));
       } else if (sub === 'approve') await setMondayStatus(rest[1], 'published');
       else if (sub === 'reject') await setMondayStatus(rest[1], 'rejected');
-      else {
+      else if (sub === 'corpus') {
+        const now = flags.now ? new Date(flags.now) : undefined;
+        await exportMondayPrompt({ ...(now && { now }) });
+      } else {
         // --now/--force exist for testing only, same reasoning as preview's
         // own flags above.
         const now = flags.now ? new Date(flags.now) : undefined;
         const record = await generateMonday({ force: !!flags.force, ...(now && { now }) });
         if (!record) log.info('monday: nothing to do');
       }
+      break;
+    }
+    case 'publish-due': {
+      const now = flags.now ? new Date(flags.now) : undefined;
+      const slugs = await publishDueOriginals({ ...(now && { now }) });
+      if (!slugs.length) log.info('publish-due: nothing scheduled is due yet');
+      else log.ok(`publish-due: published ${slugs.length} post(s): ${slugs.join(', ')}`);
       break;
     }
     default:

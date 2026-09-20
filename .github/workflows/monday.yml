@@ -49,16 +49,17 @@ jobs:
       # path as the game-day preview, and the same reason (cheap per run,
       # and no local-only constraint since this excludes Hogs Haven and
       # ClutchPoints the same way the preview corpus does).
-      - name: Write this week's Monday recap draft
+      # There is no Bedrock account behind this project any more, so nothing
+      # writes the post automatically. This gathers the week instead: the
+      # numbered sources, the college football results and the r/Commanders
+      # fan reaction, all scoped to the weekend, written to
+      # data/mondays/<key>.prompt.md and committed. Monday morning the
+      # briefing is sitting in the repo and the only part left is the writing.
+      - name: Gather this week's Monday briefing
         run: >
-          node src/cli.js monday
-          ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+          node src/cli.js monday corpus
           ${{ github.event.inputs.now != '' && format('--now={0}', github.event.inputs.now) || '' }}
         continue-on-error: true
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
 
       - run: npm run build
         env:

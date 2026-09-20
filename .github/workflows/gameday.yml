@@ -47,14 +47,11 @@ jobs:
       # Cloud model call (Bedrock/Claude, see src/digest/cloud-provider.js) —
       # a bad call here must never take the ticker refresh down with it, so
       # this is continue-on-error the same way `social` is above.
-      - name: Write a quarter recap if one just ended
-        if: steps.check.outputs.live == 'true'
-        run: npm run live
-        continue-on-error: true
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
+      # The quarter-recap step that used to live here called Bedrock, and
+      # that account is gone. It is no loss in practice: GitHub throttled
+      # this */15 cron to 7 runs out of 96 on a game day, so a recap keyed to
+      # "a quarter just ended" never actually fired. The ticker refresh above
+      # is what this workflow is for now.
 
       - name: Build
         if: steps.check.outputs.live == 'true'

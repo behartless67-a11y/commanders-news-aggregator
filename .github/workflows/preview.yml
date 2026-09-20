@@ -8,9 +8,18 @@ name: Game-day preview
 # cron can't express "7am in whatever the US Eastern offset currently is"
 # directly, and an hour of drift on a handful of late-season games isn't
 # worth a second cron entry to fix.
+#
+# DISABLED as of 2026-09-19. The only thing this workflow did was call
+# Bedrock, and that account is gone. Without the generate step it would wake
+# up daily to rebuild and redeploy an unchanged site, which is exactly the
+# cost we cut last week. Game-day previews are hand-written now and scheduled
+# through data/originals/ + scheduled.yml instead.
+#
+# The schedule below is commented out rather than deleted: restoring it is
+# one line plus a credential if there is ever an API key behind this again.
 on:
-  schedule:
-    - cron: '0 11 * * *'
+  # schedule:
+  #   - cron: '0 11 * * *'
   workflow_dispatch:
     inputs:
       force:

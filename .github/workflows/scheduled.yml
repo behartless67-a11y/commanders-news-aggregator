@@ -1,0 +1,65 @@
+name: Publish scheduled posts
+
+on:
+  # Hourly, so a post can be scheduled for any hour rather than only the hours
+  # some other workflow happens to build on. GitHub runs scheduled workflows
+  # late under load (see gameday.yml's comment about a */15 cron that only
+  # fired 7 times out of 96), so treat the hour as "at or shortly after," not
+  # to the minute. An hourly tick is well inside what it reliably delivers.
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+# Shared with nightly.yml/social.yml/publish-on-approve.yml — same push race.
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # Flips any original whose publishedAt has passed from 'scheduled' to
+      # 'published'. Nothing else in the build changes, because a scheduled
+      # post was already invisible (only status 'published' reaches dist/).
+      - name: Publish anything now due
+        id: due
+        run: |
+          git config user.name "nightly-bot"
+          git config user.email "actions@users.noreply.github.com"
+          npm run publish-due
+          git add data/originals/
+          if git diff --cached --quiet; then
+            echo "nothing due"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Publish scheduled post"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Every other step is gated on something actually going live, so a
+      # quiet hour costs one runner minute and zero Netlify deploys. This
+      # workflow ticks 168 times a week and will publish a handful of times.
+      - run: npm run build
+        if: steps.due.outputs.changed == 'true'
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Deploy to Netlify
+        if: steps.due.outputs.changed == 'true'
+        run: npx netlify deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}

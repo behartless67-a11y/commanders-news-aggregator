@@ -76,6 +76,14 @@ jobs:
       - run: npm run standings
         continue-on-error: true
 
+      # r/Commanders, for the Monday post's fan-reaction section only (see
+      # src/lib/reddit.js). Nothing on the site renders this. It runs here
+      # rather than in monday.yml because each feed only returns the newest
+      # 25 entries, so a week of the sub has to be accumulated a few hours at
+      # a time; by Monday morning there is nothing left to catch up on.
+      - run: npm run reddit
+        continue-on-error: true
+
       - run: npm run build
         env:
           SITE_URL: ${{ vars.SITE_URL }}
@@ -93,9 +101,17 @@ jobs:
             echo "no data changes"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
+            # The reddit cache feeds the Monday post and nothing else, so it
+            # changes almost every run without changing a single rendered
+            # byte. Committing it is free; deploying for it is not.
+            if git diff --cached --quiet -- ':(exclude)data/reddit.json'; then
+              echo "only the reddit cache changed, which the site does not render"
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
             git commit -m "Nightly data update"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       # Nothing new collected means the build output is the same as the one
