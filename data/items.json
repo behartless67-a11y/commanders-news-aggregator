@@ -9454,5 +9454,53 @@
     "excerpt": "Despite starting the 2026 NFL season with a tough 24-22 loss to the Philadelphia Eagles, the mood around the Washington Commanders fan base is remarkably positive. While standard logic would suggest a divisional loss would cause panic, this week’s Hogs Haven Reacts survey reveals a fan base that is more optimistic than it was before the Week 1 kickoff.\n The 13% confidence surge \n As is true in every week of the season (until early December, at least), in each of the first two weeks, Hogs Haven…",
     "publishedAt": "2026-09-20T09:00:00.000Z",
     "collectedAt": "2026-09-20T10:06:38.649Z"
+  },
+  "riggos-rag-217c50734cfd": {
+    "id": "riggos-rag-217c50734cfd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jacory-croskey-merritt-can-punish-cowboys-again-commanders-restore-trust",
+    "title": "Jacory Croskey-Merritt can punish Cowboys again if Commanders restore trust",
+    "excerpt": "Jacory Croskey-Merritt is the most important player for the Washington Commanders in Week 2, somebody who's primed for a bounce-back game against the Dallas Cowboys.",
+    "publishedAt": "2026-09-20T12:00:01.000Z",
+    "collectedAt": "2026-09-20T12:06:36.355Z"
+  },
+  "riggos-rag-c8be7181a5c6": {
+    "id": "riggos-rag-c8be7181a5c6",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/nick-allegretti-secretly-holds-key-washington-commanders-beating-dallas-cowboys",
+    "title": "Nick Allegretti secretly holds the key to Commanders beating the Cowboys",
+    "excerpt": "Struggling starting center Nick Allegretti secretly holds the key to the Washington Commanders beating the Dallas Cowboys in Week 2.",
+    "publishedAt": "2026-09-20T11:00:05.000Z",
+    "collectedAt": "2026-09-20T12:06:36.355Z"
+  },
+  "yahoo-nfl-dcf02bf4246c": {
+    "id": "yahoo-nfl-dcf02bf4246c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/washington-commanders-vs-dallas-cowboys-how-to-watch-the-nfc-east-rivals-channel-streaming-info-and-more-103100168.html",
+    "title": "Washington Commanders vs. Dallas Cowboys: How to watch the NFC East rivals, channel, streaming info and more",
+    "excerpt": "The Washington Commanders and the Dallas Cowboys both ended NFL Week 1 with a loss, so this week, when the teams meet at AT&T Stadium, at least one of them can hope to even out their record. (Here's a look at where the two teams stand and see all of last week's results .) The NFC East rivals will play during Sunday's late window; kickoff is at 4:25 p.m. ET on FOX.\n Here's how you can watch this week's Commanders vs. Cowboys game on Sunday, and check out the full Week 2 schedule. \n How to watch…",
+    "publishedAt": "2026-09-20T10:31:00.000Z",
+    "collectedAt": "2026-09-20T12:06:40.978Z"
+  },
+  "yahoo-nfl-3196903620b9": {
+    "id": "yahoo-nfl-3196903620b9",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/channel-cowboys-vs-commanders-today-100201799.html",
+    "title": "What channel is Cowboys vs Commanders on today? Time, schedule to watch Week 2 game",
+    "excerpt": "The Dallas Cowboys and Washington Commanders both enter Week 2 looking to avoid an 0-2 start in the NFC East when they meet Sunday at AT&T Stadium.\n Dallas is coming off a disappointing 28-20 loss to the New York Giants in prime time, while Washington narrowly fell 24-22 to the Philadelphia Eagles in Week 1. With the division expected to be tightly contested, neither team can afford to dig deeper into an early hole.\n For the Cowboys, Week 2 is all about the response. Dallas struggled on both…",
+    "publishedAt": "2026-09-20T10:02:01.000Z",
+    "collectedAt": "2026-09-20T12:06:40.978Z"
   }
 }
