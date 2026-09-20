@@ -91,20 +91,6 @@
     "publishedAt": "2026-09-10T20:59:07.000Z",
     "collectedAt": "2026-09-10T22:06:06.151Z"
   },
-  "social-8cb6639e0db0": {
-    "id": "social-8cb6639e0db0",
-    "url": "https://x.com/BenStandig/status/2098146663072407723",
-    "text": "Previewing Sunday in Philly, Terry McLaurin draws a crowd.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/248/633/907/039/316/original/c0a1d136688eb2a2.jpg"
-    ],
-    "publishedAt": "2026-09-10T20:28:40.000Z",
-    "collectedAt": "2026-09-10T22:06:06.151Z"
-  },
   "social-4487aca3c444": {
     "id": "social-4487aca3c444",
     "url": "https://x.com/tashanreed/status/2098169779445956927",
@@ -8228,5 +8214,179 @@
     "images": [],
     "publishedAt": "2026-09-20T20:03:00.000Z",
     "collectedAt": "2026-09-20T20:06:58.269Z"
+  },
+  "social-281c428be7e0": {
+    "id": "social-281c428be7e0",
+    "url": "https://x.com/Commanders/status/2101769618280915190",
+    "text": "GAMETIME 📺 #WASvsDAL FOX",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T20:25:00.000Z",
+    "collectedAt": "2026-09-20T20:33:55.856Z"
+  },
+  "social-fc40c83f203e": {
+    "id": "social-fc40c83f203e",
+    "url": "https://x.com/JPFinlayNBCS/status/2101771054234431887",
+    "text": "Cowboys getting whatever they want on opening drive. At this point hold to FG would be a win",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-20T20:30:43.000Z",
+    "collectedAt": "2026-09-20T20:33:57.253Z"
+  },
+  "social-57f324fa9364": {
+    "id": "social-57f324fa9364",
+    "url": "https://x.com/JPFinlayNBCS/status/2101768872835588181",
+    "text": "No big flag but giant Jumbotron flag",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/305/229/720/188/980/original/95f1c03250869c16.jpg"
+    ],
+    "publishedAt": "2026-09-20T20:22:02.000Z",
+    "collectedAt": "2026-09-20T20:33:57.253Z"
+  },
+  "social-0e814a92877e": {
+    "id": "social-0e814a92877e",
+    "url": "https://x.com/john_keim/status/2101769594834682026",
+    "text": "Can't let Dallas hit those big plays early. Expecting them to be aggressive; they will give up some plays because... Dallas has terrific talent. But have to limit.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-20T20:24:55.000Z",
+    "collectedAt": "2026-09-20T20:33:58.602Z"
+  },
+  "social-9bdb913a0ab7": {
+    "id": "social-9bdb913a0ab7",
+    "url": "https://x.com/john_keim/status/2101769280387698809",
+    "text": "Washington wins the toss. Will defer. Giddy up.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-20T20:23:40.000Z",
+    "collectedAt": "2026-09-20T20:33:58.602Z"
+  },
+  "social-9d8f1d08ae95": {
+    "id": "social-9d8f1d08ae95",
+    "url": "https://x.com/BenStandig/status/2101769393155784803",
+    "text": "Coin toss. Tress Way calls heads He called correctly. Commanders deferred possession until the 2H.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-20T20:24:06.000Z",
+    "collectedAt": "2026-09-20T20:34:00.333Z"
+  },
+  "social-9724f1ff30f5": {
+    "id": "social-9724f1ff30f5",
+    "url": "https://x.com/tashanreed/status/2101771541323161698",
+    "text": "That was too easy for Dak Prescott and the Cowboys' passing offense. He picked apart the #Commanders secondary, completing 5-of-6 passes for 53 yards, and found CeeDee Lamb open for a TD to cap off the drive.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-20T20:32:39.000Z",
+    "collectedAt": "2026-09-20T20:34:01.515Z"
+  },
+  "social-60305f2bb8d2": {
+    "id": "social-60305f2bb8d2",
+    "url": "https://x.com/tashanreed/status/2101769945990267353",
+    "text": "OLB K'Lavon Chaisson gets the start for the #Commanders over Dorance Armstrong, who's making his season debut today.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-20T20:26:18.000Z",
+    "collectedAt": "2026-09-20T20:34:01.515Z"
+  },
+  "social-748d6e70e7b9": {
+    "id": "social-748d6e70e7b9",
+    "url": "https://mysportgallery.com/@slessans2/117305273558503104",
+    "text": "Welp, it’s going to be a long game. 😢 #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T20:33:45.000Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
+  },
+  "social-29b89f0c2392": {
+    "id": "social-29b89f0c2392",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvy2ahoei526",
+    "text": "Welp, it’s going to be a long game. 😢 #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T20:33:46.087Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
+  },
+  "social-03a6cc3ce43d": {
+    "id": "social-03a6cc3ce43d",
+    "url": "https://mstdn.social/@TechBean/117305272828173537",
+    "text": "Hey Commanders, you know that Cee Dee Lamb guy? You might want to cover him. #WASvsDAL #HTTC #TakeCommand #RaiseHail #Commanders #Cowboys #NFCEast #NFL #ShutUpBrady",
+    "handle": "TechBean",
+    "author": "Bean 🇺🇸🇻🇪",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T20:33:34.000Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
+  },
+  "social-df98a1098416": {
+    "id": "social-df98a1098416",
+    "url": "https://mstdn.social/@TechBean/117305261564609546",
+    "text": "Cee Dee Lamb can't be left that wide open #WASvsDAL #HTTC #TakeCommand #RaiseHail #Commanders #Cowboys #NFCEast #NFL #ShutUpBrady",
+    "handle": "TechBean",
+    "author": "Bean 🇺🇸🇻🇪",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-20T20:30:42.000Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
+  },
+  "social-d64f66e8bb5f": {
+    "id": "social-d64f66e8bb5f",
+    "url": "https://mysportgallery.com/@slessans2/117305234459387797",
+    "text": "I’m just going to get this out of the way now. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/305/234/697/090/329/original/c0fbf05aeb68b996.jpg"
+    ],
+    "publishedAt": "2026-09-20T20:23:48.000Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
+  },
+  "social-faff115d85c8": {
+    "id": "social-faff115d85c8",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvxzoo5bjm2z",
+    "text": "I’m just going to get this out of the way now. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/305/235/862/871/515/original/4c0dc1b1c590d685.jpeg"
+    ],
+    "publishedAt": "2026-09-20T20:23:48.914Z",
+    "collectedAt": "2026-09-20T20:34:12.493Z"
   }
 }
