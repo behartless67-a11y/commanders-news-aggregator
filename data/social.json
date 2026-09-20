@@ -27,42 +27,6 @@
     "publishedAt": "2026-09-10T18:35:19.000Z",
     "collectedAt": "2026-09-10T18:56:50.187Z"
   },
-  "social-11e032750f91": {
-    "id": "social-11e032750f91",
-    "url": "https://x.com/JPFinlayNBCS/status/2098115089026945374",
-    "text": "Tress Way says he thinks this will be his last season",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-10T18:23:12.000Z",
-    "collectedAt": "2026-09-10T18:56:50.187Z"
-  },
-  "social-62179d0bfa0a": {
-    "id": "social-62179d0bfa0a",
-    "url": "https://x.com/john_keim/status/2098114792133144935",
-    "text": "Tress Way: “I’m pretty sure this is going to be my last season.”",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-10T18:22:02.000Z",
-    "collectedAt": "2026-09-10T18:56:51.597Z"
-  },
-  "social-9ac19c0fb5f9": {
-    "id": "social-9ac19c0fb5f9",
-    "url": "https://x.com/BenStandig/status/2098115881855225905",
-    "text": "Commanders P Tress Way, the longest-tenured player on the team, says he’s “pretty sure” this will be his final season.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-10T18:26:21.000Z",
-    "collectedAt": "2026-09-10T18:56:53.013Z"
-  },
   "social-fd50bd82b62a": {
     "id": "social-fd50bd82b62a",
     "url": "https://x.com/NickiJhabvala/status/2098119909813219671",
@@ -73,18 +37,6 @@
     "sourceKey": "@NickiJhabvala",
     "images": [],
     "publishedAt": "2026-09-10T18:42:22.000Z",
-    "collectedAt": "2026-09-10T20:05:11.966Z"
-  },
-  "social-2475d4a7f6eb": {
-    "id": "social-2475d4a7f6eb",
-    "url": "https://x.com/NickiJhabvala/status/2098114990121050308",
-    "text": "Tress Way just told us he’s “pretty sure” this will be his last season.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-10T18:22:49.000Z",
     "collectedAt": "2026-09-10T20:05:11.966Z"
   },
   "social-2bafdfbdf3d9": {
@@ -8040,5 +7992,43 @@
     "images": [],
     "publishedAt": "2026-09-20T17:48:22.000Z",
     "collectedAt": "2026-09-20T18:06:57.239Z"
+  },
+  "social-077b66ce2422": {
+    "id": "social-077b66ce2422",
+    "url": "https://x.com/Commanders/status/2101737737430692155",
+    "text": "arriving in style 😮‍💨 @sonnystyles_@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/304/748/737/585/995/original/12919669c722ecf1.jpg"
+    ],
+    "publishedAt": "2026-09-20T18:18:19.000Z",
+    "collectedAt": "2026-09-20T18:29:04.003Z"
+  },
+  "social-e354a25517d9": {
+    "id": "social-e354a25517d9",
+    "url": "https://x.com/JosinaAnderson/status/2101739814382936125",
+    "text": "#Cowboys WR Cee Dee Lamb making an entrance to Aston Martin music at AT&T stadium for the #Commanders matchup… 🔥🔥🔥",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-20T18:26:34.000Z",
+    "collectedAt": "2026-09-20T18:29:16.981Z"
+  },
+  "social-4b843eb36012": {
+    "id": "social-4b843eb36012",
+    "url": "https://x.com/JosinaAnderson/status/2101737492332396947",
+    "text": "#Commanders QB1 Jayden Daniels & WR1 Terry McLaurin in Arlington, TX for the show vs the #Cowboys",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-20T18:17:21.000Z",
+    "collectedAt": "2026-09-20T18:29:16.981Z"
   }
 }
