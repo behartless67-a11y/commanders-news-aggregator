@@ -1,16 +1,4 @@
 {
-  "social-2b8b6b15ba80": {
-    "id": "social-2b8b6b15ba80",
-    "url": "https://x.com/NickiJhabvala/status/2098507231738167741",
-    "text": "Commanders are full-go for Sunday",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-11T20:21:27.000Z",
-    "collectedAt": "2026-09-11T22:05:09.666Z"
-  },
   "social-f2f2b8e7a806": {
     "id": "social-f2f2b8e7a806",
     "url": "https://x.com/Commanders/status/2098532285364789450",
@@ -22,20 +10,6 @@
     "images": [],
     "publishedAt": "2026-09-11T22:01:00.000Z",
     "collectedAt": "2026-09-11T22:06:06.582Z"
-  },
-  "social-fd1700feae51": {
-    "id": "social-fd1700feae51",
-    "url": "https://x.com/john_keim/status/2098505912449167656",
-    "text": "Game status. All good for Washington:",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/254/250/911/684/626/original/5ac6f026e4124e1b.jpg"
-    ],
-    "publishedAt": "2026-09-11T20:16:12.000Z",
-    "collectedAt": "2026-09-11T22:06:09.559Z"
   },
   "social-ce65e829795f": {
     "id": "social-ce65e829795f",
@@ -10814,5 +10788,101 @@
     ],
     "publishedAt": "2026-09-21T19:06:05.000Z",
     "collectedAt": "2026-09-21T20:07:13.941Z"
+  },
+  "social-5932cc4ebc32": {
+    "id": "social-5932cc4ebc32",
+    "url": "https://x.com/JPFinlayNBCS/status/2102148595684163952",
+    "text": "Marcus Mariota will start Sunday vs Seattle and per @RapSheet on IG: \"probably a start at least after that. The Commanders have a decision to make about whether or not to put Jayden Daniels on injured reserve...We simply don't know.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-21T21:30:55.000Z",
+    "collectedAt": "2026-09-21T21:50:48.970Z"
+  },
+  "social-1ef62d13cc4e": {
+    "id": "social-1ef62d13cc4e",
+    "url": "https://x.com/AdamSchefter/status/2102145123999944816",
+    "text": "Seahawks now have won 12 straight games, the longest win-streak in franchise history, breaking the tie they had with the 2005 Seattle team led by Matt Hasselbeck and Shaun Alexander.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-21T21:17:08.000Z",
+    "collectedAt": "2026-09-21T21:50:50.405Z"
+  },
+  "social-c6d4277b91a0": {
+    "id": "social-c6d4277b91a0",
+    "url": "https://x.com/tashanreed/status/2102143524162482402",
+    "text": "There's no timeline (yet) for Jayden Daniels potential return to action. All that's currently known is he won't play this week. As the #Commanders shift gears to the Seahawks, they do so with several starters on the mend: /09/21/jayden-daniels-remains-out-indefinitely-commanders-tap-marcus-mariota-face-seahawks/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-21T21:10:46.000Z",
+    "collectedAt": "2026-09-21T21:50:53.242Z"
+  },
+  "social-48bc4fa57ad2": {
+    "id": "social-48bc4fa57ad2",
+    "url": "https://x.com/tashanreed/status/2102140140403470786",
+    "text": "RE: tatuses/2102118099843428509 Kurt is crazy lmao",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-21T20:57:20.000Z",
+    "collectedAt": "2026-09-21T21:50:53.242Z"
+  },
+  "social-7305484074db": {
+    "id": "social-7305484074db",
+    "url": "https://mysportgallery.com/@slessans2/117311039849610412",
+    "text": "Live look at the Commanders injury list. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-21T21:00:11.000Z",
+    "collectedAt": "2026-09-21T21:51:04.316Z"
+  },
+  "social-e67a453c55d7": {
+    "id": "social-e67a453c55d7",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mw2m6rhfoh2j",
+    "text": "Live look at the Commanders injury list. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-21T21:00:16.116Z",
+    "collectedAt": "2026-09-21T21:51:04.316Z"
+  },
+  "social-85c05f4dae81": {
+    "id": "social-85c05f4dae81",
+    "url": "https://x.com/somos_FOX/status/2102135049319526546",
+    "text": "\"SIGO ESPERANDO COSAS MEJORES\" ¿Qué fue lo que hizo #DallasCowboys a la defensa contra #Commanders ? 🎙️ @mlctysonlopez@twitter.com lo analiza: #FOXNFLWeekly",
+    "handle": "somos_FOX",
+    "author": "FOX",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-21T20:37:06.000Z",
+    "collectedAt": "2026-09-21T21:51:04.316Z"
+  },
+  "social-f3a9fdc57b83": {
+    "id": "social-f3a9fdc57b83",
+    "url": "https://x.com/somos_FOX/status/2102132888015663363",
+    "text": "\"JUGADAS EXPLOSIVAS🧨\" @CarlosRosadoV@twitter.com analiza la ofensiva de Prescott y #DallasCowboys ante #Commanders . #FOXNFLWeekly",
+    "handle": "somos_FOX",
+    "author": "FOX",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-21T20:28:30.000Z",
+    "collectedAt": "2026-09-21T21:51:04.316Z"
   }
 }
