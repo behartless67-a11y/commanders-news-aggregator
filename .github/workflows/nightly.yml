@@ -122,6 +122,12 @@ jobs:
               echo "changed=true" >> "$GITHUB_OUTPUT"
             fi
             git commit -m "Nightly data update"
+            # Another commit can land between this job's checkout and its push:
+            # a parallel workflow, or a push from a laptop mid-run. Rebase onto
+            # whatever arrived and try once more instead of failing the run.
+            # -X theirs keeps this job's own freshly collected data when a cache
+            # file conflicts, which is right: it just fetched the newer copy.
+            git pull --rebase -X theirs -q origin master || true
             git push
           fi
 
