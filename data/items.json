@@ -899,18 +899,6 @@
     "publishedAt": "2026-08-08T15:32:12.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-27a13cb2bf04": {
-    "id": "wjla-commanders-27a13cb2bf04",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/stefon-diggs-nfl-football-jayden-daniels-terry-mclaurin-scary-wide-receiver-training-camp-day-7-interview-offense-center-of-attention",
-    "title": "Stefon Diggs is the center of attention at Commanders training camp",
-    "excerpt": "There was some extra juice on Friday at Washington Commanders team headquarters in Ashburn.The arrival of newly signed wide receiver Stefon Diggs was the talk o",
-    "publishedAt": "2026-08-07T15:18:19.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -10258,5 +10246,89 @@
     "excerpt": "The Dallas Cowboys are in the win column. It wasn’t pretty at times, and it was downright ugly at moments, but they got the job done beating the Washington Commanders 37-20. The game had a share of great plays, but also some that will leave us scratching our heads. We’ll take it, but we’re still not overly thrilled. Here are 10 thoughts on the Cowboys’ victory on Sunday.\n 1. A great start for the offense\n After starting last week with two straight punts and only having six possessions total, it…",
     "publishedAt": "2026-09-21T13:00:00.000Z",
     "collectedAt": "2026-09-21T14:06:45.857Z"
+  },
+  "hogs-haven-0a9bd8060ac4": {
+    "id": "hogs-haven-0a9bd8060ac4",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/441994/commanders-cowboys-game-studs-duds-winners-losers-jayden-daniels-marcus-mariota-leo-chenal",
+    "title": "Commanders vs. Cowboys (game one) – Studs and Duds",
+    "excerpt": "Heartbreak is not a foreign word to Commanders fans. The team has gone through so much in the last two decades that most newer fans take this to be the norm. \n Well, heartbreak hit again, this time at the hands of one of Washington’s fiercest rivals — the Dallas Cowboys. Washington couldn’t stop a toddler’s nosebleed, however quarterback Jayden Daniels was keeping the team within striking distance and it looked like Washington may pull out a score before the half, while getting the ball to open…",
+    "publishedAt": "2026-09-21T15:07:55.000Z",
+    "collectedAt": "2026-09-21T16:06:38.740Z"
+  },
+  "riggos-rag-8caac0af920b": {
+    "id": "riggos-rag-8caac0af920b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-repeat-elbow-injury-could-reshape-commanders-long-term-plans",
+    "title": "Jayden Daniels’ repeat elbow injury could reshape Commanders’ long-term plans",
+    "excerpt": "The injuries are no longer a coincidence.",
+    "publishedAt": "2026-09-21T16:00:03.000Z",
+    "collectedAt": "2026-09-21T16:06:39.072Z"
+  },
+  "riggos-rag-ff870f0804f8": {
+    "id": "riggos-rag-ff870f0804f8",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-schefter-flags-jayden-daniels-surgery-decision-commanders-cant-get-wrong",
+    "title": "Adam Schefter flags Jayden Daniels’ surgery decision Commanders can't get wrong",
+    "excerpt": "ESPN insider Adam Schefter flagged the potential for Washington Commanders quarterback Jayden Daniels to have surgery, depending on his upcoming tests.",
+    "publishedAt": "2026-09-21T14:30:00.000Z",
+    "collectedAt": "2026-09-21T16:06:39.072Z"
+  },
+  "cbs-nfl-dd3e4f545c7f": {
+    "id": "cbs-nfl-dd3e4f545c7f",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/caleb-williams-jayden-daniels-injured-week-2-outlook",
+    "title": "Caleb Williams, Jayden Daniels injured in Week 2: What's the outlook for Bears, Commanders signal callers?",
+    "excerpt": "Williams hurt his hamstring on a run; Daniels dislocated his elbow after an awkward fall",
+    "publishedAt": "2026-09-21T14:24:34.000Z",
+    "collectedAt": "2026-09-21T16:06:43.017Z"
+  },
+  "yahoo-nfl-1747f3558b50": {
+    "id": "yahoo-nfl-1747f3558b50",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/jayden-daniels-injury-commanders-coach-153753428.html",
+    "title": "Jayden Daniels injury update: Commanders coach Dan Quinn to speak today",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels is dealing with his latest setback from an injury , dislocating his left (non-throwing) elbow in the team's Sunday, Sept. 21, loss to the Dallas Cowboys . It’s the same elbow that cost Daniels, who had perhaps the greatest rookie season in league history in 2024, most of his second professional campaign.\n \"X-ray showed no fracture,” Commanders head coach Dan Quinn said Sunday evening. “More imaging tomorrow.\n \"Man, we're bummed for him. I thought…",
+    "publishedAt": "2026-09-21T15:37:53.000Z",
+    "collectedAt": "2026-09-21T16:06:43.615Z"
+  },
+  "yahoo-nfl-3746acec2128": {
+    "id": "yahoo-nfl-3746acec2128",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-good-bad-143000432.html",
+    "title": "Cowboys vs. Commanders: The good, bad, and ugly from Week 2",
+    "excerpt": "Compared to their embarrassing loss to the New York Giants last week inthe season opener, the Dallas Cowboys look like an entirely different team in their 37-20 victory over the Washington Commanders in Week 2. With a chance they could drop 0-2 in the NFC East division if they lost, the Cowboys came out and played with purpose in front of their hometown crowd and did what they needed to do in order to secure the “W”.\n Despite the much-needed victory, this was probably a closer game in the score…",
+    "publishedAt": "2026-09-21T14:30:00.000Z",
+    "collectedAt": "2026-09-21T16:06:43.615Z"
+  },
+  "yahoo-nfl-54e82b9996f1": {
+    "id": "yahoo-nfl-54e82b9996f1",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-odds-opening-140000767.html",
+    "title": "Seahawks vs. Commanders odds: Opening lines for Week 3 matchup",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 02: Tory Horton #15 of the Seattle Seahawks catches a pass for a touchdown against the Washington Commanders during the first quarter in the game at Northwest Stadium on November 02, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Seattle Seahawks, as expected, are a favorite to win versus the win-less Washington Commanders in their second straight road game.\n The Seahawks won versus the Patriots on opening day, and blew out the…",
+    "publishedAt": "2026-09-21T14:00:00.000Z",
+    "collectedAt": "2026-09-21T16:06:43.615Z"
   }
 }
