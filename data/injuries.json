@@ -7,6 +7,13 @@
     "notes": null
   },
   {
+    "name": "Brandon Coleman",
+    "position": "OL",
+    "status": "Questionable",
+    "bodyPart": "Finger",
+    "notes": null
+  },
+  {
     "name": "Chig Okonkwo",
     "position": "TE",
     "status": "Out",
@@ -37,7 +44,7 @@
   {
     "name": "Jayden Daniels",
     "position": "QB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Elbow",
     "notes": null
   },

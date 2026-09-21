@@ -57,6 +57,20 @@
   },
   {
     "season": "regular",
+    "week": "WEEK 2",
+    "gametime": "09/20/2026 16:25:00 -04:00",
+    "homeAway": "AT",
+    "opponentAbbr": "DAL",
+    "opponent": "Dallas Cowboys",
+    "opponentShort": "Cowboys",
+    "venue": "AT&T Stadium",
+    "result": "L",
+    "points": "20 - 37",
+    "broadcast": null,
+    "isBye": false
+  },
+  {
+    "season": "regular",
     "week": "WEEK 3",
     "gametime": "09/27/2026 13:00:00 -04:00",
     "homeAway": "VS",
