@@ -1,82 +1,4 @@
 {
-  "social-201a4fdd8ff8": {
-    "id": "social-201a4fdd8ff8",
-    "url": "https://x.com/BenStandig/status/2098475505062166905",
-    "text": "Sonny Styles heard the online criticisms about his initial preseason games. Said a similar scenario unfolded when he switched positions at Ohio State. Part of the deal. Things worked out there.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-11T18:15:22.000Z",
-    "collectedAt": "2026-09-11T18:58:43.743Z"
-  },
-  "social-033719363951": {
-    "id": "social-033719363951",
-    "url": "https://x.com/Commanders/status/2098496910151627090",
-    "text": "Transforming a day of remembrance into a day of service by helping contribute to 18 million meals for families in need @911day@twitter.com ❤️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/391/290/872/original/c775ab92a3ff46de.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/432/049/631/original/2b55fd1665790fcd.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/254/108/460/745/003/original/db6ad02200cfeb64.jpg"
-    ],
-    "publishedAt": "2026-09-11T19:40:26.000Z",
-    "collectedAt": "2026-09-11T20:06:06.157Z"
-  },
-  "social-7fc0c7d7dd60": {
-    "id": "social-7fc0c7d7dd60",
-    "url": "https://x.com/AdamSchefter/status/2098500413255258406",
-    "text": "RE: atuses/2098500254198894635 Jonathan Greenard ruled out for Sunday’s opener.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-11T19:54:21.000Z",
-    "collectedAt": "2026-09-11T20:06:09.531Z"
-  },
-  "social-34406fdea130": {
-    "id": "social-34406fdea130",
-    "url": "https://x.com/BenStandig/status/2098488339389182039",
-    "text": "I'll be on with Scott every Wednesday throughout the season.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-11T19:06:22.000Z",
-    "collectedAt": "2026-09-11T20:06:10.526Z"
-  },
-  "social-5ee091bdd0e7": {
-    "id": "social-5ee091bdd0e7",
-    "url": "https://x.com/tashanreed/status/2098501058066567603",
-    "text": "RE: atuses/2098500254198894635 The Eagles will be without Greenard",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-11T19:56:55.000Z",
-    "collectedAt": "2026-09-11T20:06:11.987Z"
-  },
-  "social-e25078624a5c": {
-    "id": "social-e25078624a5c",
-    "url": "https://x.com/pfrumors/status/2098489511164449078",
-    "text": "The #Commanders ' longest-tenured player plans to retire after the season commanders-p-tress-way-likely-to-retire-after-2026-season",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/253/995/085/104/998/original/d40cef535f765d74.jpg"
-    ],
-    "publishedAt": "2026-09-11T19:11:02.000Z",
-    "collectedAt": "2026-09-11T20:06:20.998Z"
-  },
   "social-2b8b6b15ba80": {
     "id": "social-2b8b6b15ba80",
     "url": "https://x.com/NickiJhabvala/status/2098507231738167741",
@@ -10585,5 +10507,65 @@
     "images": [],
     "publishedAt": "2026-09-21T11:59:45.000Z",
     "collectedAt": "2026-09-21T18:06:52.453Z"
+  },
+  "social-6371a2f28335": {
+    "id": "social-6371a2f28335",
+    "url": "https://x.com/NickiJhabvala/status/2102124721714102709",
+    "text": "The latest on Jayden Daniels and the other Commanders who suffered injuries last night.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T19:56:03.000Z",
+    "collectedAt": "2026-09-21T20:05:15.460Z"
+  },
+  "social-3fab325e7fb1": {
+    "id": "social-3fab325e7fb1",
+    "url": "https://x.com/NickiJhabvala/status/2102114298126303525",
+    "text": "Safety Nick Cross was hospitalized in Dallas after the game and evaluated for an internal injury, according to Quinn. He was discharged this morning and is traveling back to Virginia",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T19:14:38.000Z",
+    "collectedAt": "2026-09-21T20:05:15.460Z"
+  },
+  "social-7ece62b36711": {
+    "id": "social-7ece62b36711",
+    "url": "https://x.com/NickiJhabvala/status/2102114057297736118",
+    "text": "Marcus Mariota will start.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T19:13:41.000Z",
+    "collectedAt": "2026-09-21T20:05:15.460Z"
+  },
+  "social-1969ec2abd27": {
+    "id": "social-1969ec2abd27",
+    "url": "https://x.com/NickiJhabvala/status/2102114031246942386",
+    "text": "Dan Quinn said Jayden Daniels had imaging done today and will see specialists to figure out the plan.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T19:13:35.000Z",
+    "collectedAt": "2026-09-21T20:05:15.460Z"
+  },
+  "social-f793eed9a7fd": {
+    "id": "social-f793eed9a7fd",
+    "url": "https://x.com/NickiJhabvala/status/2102112874285937011",
+    "text": "Group text still going strong.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T19:08:59.000Z",
+    "collectedAt": "2026-09-21T20:05:15.460Z"
   }
 }
