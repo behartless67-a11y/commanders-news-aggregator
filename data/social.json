@@ -1,40 +1,4 @@
 {
-  "social-221672469ff5": {
-    "id": "social-221672469ff5",
-    "url": "https://x.com/JPFinlayNBCS/status/2098243414386995487",
-    "text": "So the Rams are fumbling bc of jet lag? Not sure I buy it",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-11T02:53:08.000Z",
-    "collectedAt": "2026-09-11T03:02:11.221Z"
-  },
-  "social-2af780d1735a": {
-    "id": "social-2af780d1735a",
-    "url": "https://x.com/JPFinlayNBCS/status/2098249793973756394",
-    "text": "Backup QB = Switching to tennis",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-11T03:18:29.000Z",
-    "collectedAt": "2026-09-11T04:06:03.687Z"
-  },
-  "social-5220d86e7297": {
-    "id": "social-5220d86e7297",
-    "url": "https://x.com/JPFinlayNBCS/status/2098245786966311001",
-    "text": "McLaurin said today that protecting the ball is paramount in Week 1. He explained nobody has been hit much and defenses are gunning for the ball. Seems clear tonight in Australia (?!)",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-11T03:02:33.000Z",
-    "collectedAt": "2026-09-11T04:06:03.687Z"
-  },
   "social-7c9762537c65": {
     "id": "social-7c9762537c65",
     "url": "https://x.com/tashanreed/status/2098367466183303288",
@@ -10724,5 +10688,43 @@
     "images": [],
     "publishedAt": "2026-09-21T00:09:12.000Z",
     "collectedAt": "2026-09-21T02:06:59.634Z"
+  },
+  "social-2efa84751f43": {
+    "id": "social-2efa84751f43",
+    "url": "https://x.com/JPFinlayNBCS/status/2101860927142281595",
+    "text": "I would have been fine kicking the FG. Just saying going for it was defensible",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-21T02:27:50.000Z",
+    "collectedAt": "2026-09-21T03:21:13.973Z"
+  },
+  "social-8ec48acb2b4d": {
+    "id": "social-8ec48acb2b4d",
+    "url": "https://x.com/JPFinlayNBCS/status/2101859977690312782",
+    "text": "People mad at Dan Quinn for going for the TD when Jayden got hurt is revisionist history. DQ wanted to win and his D was getting shredded. To win WSH needed TDs, not FGs. Nobody saw that disaster unfolding how it did. Now if you want to be mad the D was getting shredded? Quite Reasonable.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-21T02:24:04.000Z",
+    "collectedAt": "2026-09-21T03:21:13.974Z"
+  },
+  "social-93e3333fe72d": {
+    "id": "social-93e3333fe72d",
+    "url": "https://mastodon.social/@top_news/117306765570749991",
+    "text": "Jayden Daniels Injured, Latest on Commanders Star's Timeline to Return After Exiting vs. Cowboys Washington Commanders quarterback Jayden Daniels suffered another early-season injury in Sunday's game against the Dallas Cowboys and was ruled out of the game. 329562-jayden-daniels-injured-latest-commanders-stars-timeline-return-after-exiting-vs-cowboys #TopNews #News #Daniels #Commanders #theDallasCowboys",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/306/765/531/237/545/original/d5058a03df4f98f8.jpg"
+    ],
+    "publishedAt": "2026-09-21T02:53:11.452Z",
+    "collectedAt": "2026-09-21T03:21:29.002Z"
   }
 }
