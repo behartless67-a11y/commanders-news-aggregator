@@ -10186,5 +10186,29 @@
     "excerpt": "Who were the big winners and losers from the Washington Commanders' demoralizing defeat to the Dallas Cowboys in Week 2?",
     "publishedAt": "2026-09-21T10:00:03.000Z",
     "collectedAt": "2026-09-21T10:06:41.512Z"
+  },
+  "riggos-rag-cb3ec6baae3d": {
+    "id": "riggos-rag-cb3ec6baae3d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-elbow-dislocation-demands-commanders-put-his-future-first",
+    "title": "Jayden Daniels’ elbow dislocation demands Commanders put his future first",
+    "excerpt": "Another dislocated elbow injury for quarterback Jayden Daniels demands that the Washington Commanders put his future first.",
+    "publishedAt": "2026-09-21T11:30:00.000Z",
+    "collectedAt": "2026-09-21T11:44:44.042Z"
+  },
+  "yahoo-nfl-0312d4bffca5": {
+    "id": "yahoo-nfl-0312d4bffca5",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/cowboys-news-dak-prescott-sets-110000689.html",
+    "title": "Cowboys news: Dak Prescott sets franchise TD record in win over Commanders",
+    "excerpt": "After a dissapointing week one performance against the Giants, Dallas rebounded with a 37-20 victory over the Commanders. Dak Prescott in particular looked stellar, completing 84% of his passes on the road to setting the Cowboys franchise TD record. CeeDee Lamb and Jake Ferguson both caught two touchdowns, while Brandon Aubrey nailed a 60-yard field goal.\n On defense, Jaishawn Barham looked good wearing the green dot, and injuries in the secondary made the struggles against the pass more…",
+    "publishedAt": "2026-09-21T11:00:00.000Z",
+    "collectedAt": "2026-09-21T11:44:50.995Z"
   }
 }
