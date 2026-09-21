@@ -42,6 +42,13 @@
     "notes": null
   },
   {
+    "name": "Javon Kinlaw",
+    "position": "DT",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
+    "notes": null
+  },
+  {
     "name": "Jayden Daniels",
     "position": "QB",
     "status": "Out",
@@ -81,6 +88,13 @@
     "position": "WR",
     "status": "Out",
     "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Nick Cross",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Undisclosed",
     "notes": null
   },
   {
