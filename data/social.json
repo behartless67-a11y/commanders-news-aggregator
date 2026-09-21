@@ -13,18 +13,6 @@
     "publishedAt": "2026-09-11T12:35:15.000Z",
     "collectedAt": "2026-09-11T13:44:22.457Z"
   },
-  "social-1e39e3cdd5a8": {
-    "id": "social-1e39e3cdd5a8",
-    "url": "https://x.com/john_keim/status/2098383916658790445",
-    "text": "On video with @Tim_McManus ; insight into the Eagles and what to expect Sunday. Also: Tress Way retiring (after the season) and injury updates. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-11T12:11:26.000Z",
-    "collectedAt": "2026-09-11T13:44:23.804Z"
-  },
   "social-bc24f32df8c8": {
     "id": "social-bc24f32df8c8",
     "url": "https://x.com/Commanders/status/2098426674908152169",
@@ -10792,5 +10780,94 @@
     ],
     "publishedAt": "2026-09-21T06:31:24.498Z",
     "collectedAt": "2026-09-21T07:48:23.054Z"
+  },
+  "social-b16a5177c2e5": {
+    "id": "social-b16a5177c2e5",
+    "url": "https://x.com/john_keim/status/2102008318805815543",
+    "text": "Welp. On video talking about a disaster of a day. Jayden Daniels. Need a bedrock on this team: the D didn’t help at all. No turnovers again. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-21T12:13:31.000Z",
+    "collectedAt": "2026-09-21T12:28:01.374Z"
+  },
+  "social-9660737cc486": {
+    "id": "social-9660737cc486",
+    "url": "https://x.com/BenStandig/status/2101997052347462101",
+    "text": "We’ve seen enough Jayden Daniels ads to know he’s no natural actor. That’s why you notice when something he says feels especially real. Last week, he talked about having football taken away. Sunday, cruelly, it happened again. jayden-daniels-had-football-taken",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/308/795/738/862/701/original/bf95244c0442fa20.jpg"
+    ],
+    "publishedAt": "2026-09-21T11:28:45.000Z",
+    "collectedAt": "2026-09-21T12:28:02.657Z"
+  },
+  "social-0ecb52928c4d": {
+    "id": "social-0ecb52928c4d",
+    "url": "https://x.com/BenStandig/status/2101994580182761773",
+    "text": "Commanders Week 2 snaps. Lots of interesting data here: 🏈 Offense 71, Defense 55 🏈 WRs - McLaurin 50 (70%), Brown 39, Diggs 36, Williams 35, Burks 21, Lane 13 🏈 RB - White 37 (52%), JCM 26, Allen 6 🏈 TE - Sinnott 48 (68%), Bates 22, Yankoff 21 🏈 Styles, Cross, Robertson played every D-snap 🏈 CBs - Sainristil 48, Douglas 34 🏈ED - Chaisson 36 (65%), Oweh 35, Armstrong 24, JJB 13, Josephs 7 🏈 NT - Settle,Tuttle both play 17 snaps 🏈 Zero D-snaps for Tyler Owens",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/308/756/020/723/578/original/3dfd654c79246092.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/308/756/058/208/274/original/2f75a1a3095cbc11.jpg"
+    ],
+    "publishedAt": "2026-09-21T11:18:55.000Z",
+    "collectedAt": "2026-09-21T12:28:02.657Z"
+  },
+  "social-792c9e882170": {
+    "id": "social-792c9e882170",
+    "url": "https://x.com/BenStandig/status/2101990414135816684",
+    "text": "🎙 Reacting to the latest Jayden Daniels injury, more pass-coverage issues, the Commanders falling to 0-2, postgame locker-room vibes and what comes next with @10zJohnson@twitter.com . not-again/id1760952448?i=1000790871971",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-21T11:02:22.000Z",
+    "collectedAt": "2026-09-21T12:28:02.657Z"
+  },
+  "social-3d2c54254c4e": {
+    "id": "social-3d2c54254c4e",
+    "url": "https://x.com/RapSheet/status/2102011089911222635",
+    "text": "From @gmfb@twitter.com : The latest on what today holds for injuries to #Bears QB Caleb Williams and #Commanders QB Jayden Daniels.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-09-21T12:24:31.000Z",
+    "collectedAt": "2026-09-21T12:28:08.918Z"
+  },
+  "social-47de92891ea1": {
+    "id": "social-47de92891ea1",
+    "url": "https://x.com/RapSheet/status/2101995731573678255",
+    "text": "Headlines: — Jayden Daniels dislocated his elbow 22/commanders-qb-jayden-daniels-suffers-elbow-injury-cowboys — Caleb Williams is out with a hamstring 29/bears-caleb-williams-leaves-cart-falling-scramble — “It’s fun for me.” 23/kenneth-walker-iii-helping-revitalize-chiefs-offense-2-0-start-ot-win-vs-colts — Hurts “had to finish it” 71/hurts-taunts-titans-eagles-win — Dak owns TD record 93/dak-prescott-breaks-tony-romo-cowboys-passing-tds-record",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "NFL Network",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-09-21T11:23:30.000Z",
+    "collectedAt": "2026-09-21T12:28:08.919Z"
+  },
+  "social-d0c1410a0567": {
+    "id": "social-d0c1410a0567",
+    "url": "https://x.com/JosinaAnderson/status/2102010571268800837",
+    "text": "NEW: 1on1 #Cowboys WR CeeDee Lamb On trash talk w/ #Commanders CB Amik Robertson & then racking 153ry; 2TDs: \"Little rivalry banter ain’t hurt nobody. He keeps it interesting. I’m happy to have him in this division. Can’t wait to see him again” FULL VID:",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-21T12:22:28.000Z",
+    "collectedAt": "2026-09-21T12:28:11.423Z"
   }
 }
