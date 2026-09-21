@@ -10752,5 +10752,43 @@
     ],
     "publishedAt": "2026-09-21T03:41:50.000Z",
     "collectedAt": "2026-09-21T04:06:46.793Z"
+  },
+  "social-a2f6c72eed45": {
+    "id": "social-a2f6c72eed45",
+    "url": "https://x.com/JPFinlayNBCS/status/2101885767605702822",
+    "text": "I know it’s late but we have a full All Ears coming from Dallas on @nbcwashington@twitter.com . Bad night for the burgundy and gold",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-21T04:06:32.000Z",
+    "collectedAt": "2026-09-21T06:06:41.771Z"
+  },
+  "social-0a78b86546f1": {
+    "id": "social-0a78b86546f1",
+    "url": "https://x.com/JosinaAnderson/status/2101887248778043719",
+    "text": "Don’t like the optics of this…. #Commanders #JaydenDaniels",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-09-21T04:12:25.000Z",
+    "collectedAt": "2026-09-21T06:06:53.139Z"
+  },
+  "social-aff233dc0453": {
+    "id": "social-aff233dc0453",
+    "url": "https://mastodon.social/@top_news/117307079683490432",
+    "text": "Commanders’ Dan Quinn Provides Important Update on Jayden Daniels’ Injury The Washington Commanders fell 37-20 to the Dallas Cowboys on Sunday evening to drop to 0-2 on the season.And while the loss is obviously significant, the main concern among Commanders fans surrounds star quarterback Jayden Daniels, who sustained a pretty gruesome elbow injury at the end o.. anders-dan-quinn-provides-important-034034934.html #TopNews #News #ImportantUpdate #Commanders #DanQuinn",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/307/079/642/553/129/original/4b86141a7e188150.jpg"
+    ],
+    "publishedAt": "2026-09-21T04:13:04.435Z",
+    "collectedAt": "2026-09-21T06:06:57.131Z"
   }
 }
