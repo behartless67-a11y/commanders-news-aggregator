@@ -10222,5 +10222,41 @@
     "excerpt": "Our second NFL Sunday of the year is in the books, and it had plenty to offer leading into Monday night's showdown between the New York Giants and LA Rams.\n Unfortunately, injuries dominated the headlines in Week 2. An injury to Chicago Bears quarterback Caleb Williams headlined that news cycle after going down in the fourth quarter with an apparent non-contact injury . He was carted off before the team ruled him out with a hamstring injury . Later, another quarterback went down as Washington…",
     "publishedAt": "2026-09-21T12:10:07.000Z",
     "collectedAt": "2026-09-21T12:27:56.978Z"
+  },
+  "riggos-rag-d8cabdc4bde8": {
+    "id": "riggos-rag-d8cabdc4bde8",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-injury-puts-adam-peters-biggest-commanders-mistake-on-trial",
+    "title": "Jayden Daniels injury puts Adam Peters’ biggest Commanders mistake on trial",
+    "excerpt": "We tried to warn him.",
+    "publishedAt": "2026-09-21T13:00:01.000Z",
+    "collectedAt": "2026-09-21T14:06:40.170Z"
+  },
+  "cbs-nfl-9e1f65aa38b9": {
+    "id": "cbs-nfl-9e1f65aa38b9",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/bears-commanders-await-severity-of-qb-injuries-ole-miss-passes-lsu-in-cfp-race",
+    "title": "Bears, Commanders await severity of QB injuries; Ole Miss passes LSU in CFP race",
+    "excerpt": "Plus MLB Power Rankings entering the regular season's final week",
+    "publishedAt": "2026-09-21T12:50:39.000Z",
+    "collectedAt": "2026-09-21T14:06:45.514Z"
+  },
+  "yahoo-nfl-d2af8cd54738": {
+    "id": "yahoo-nfl-d2af8cd54738",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/10-thoughts-cowboys-37-20-130000270.html",
+    "title": "10 thoughts on the Cowboys 37-20 win over the Commanders",
+    "excerpt": "The Dallas Cowboys are in the win column. It wasn’t pretty at times, and it was downright ugly at moments, but they got the job done beating the Washington Commanders 37-20. The game had a share of great plays, but also some that will leave us scratching our heads. We’ll take it, but we’re still not overly thrilled. Here are 10 thoughts on the Cowboys’ victory on Sunday.\n 1. A great start for the offense\n After starting last week with two straight punts and only having six possessions total, it…",
+    "publishedAt": "2026-09-21T13:00:00.000Z",
+    "collectedAt": "2026-09-21T14:06:45.857Z"
   }
 }
