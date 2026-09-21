@@ -76,6 +76,17 @@ jobs:
       - run: npm run standings
         continue-on-error: true
 
+      # Offense/defense totals and ranks for the Team Stats widget. This was
+      # on roster-stats.yml's weekly Tuesday cron, which meant that after a
+      # Sunday game the front page kept showing last week's numbers all the
+      # way through Monday: on the morning the recap published, the widget
+      # still had the defense at 24 points allowed per game when the real
+      # figure after Week 2 was 30.5. It only sat on a weekly cadence because
+      # the old defense derivation crawled every box score; that is one
+      # endpoint now, so it belongs here with every other cache refresh.
+      - run: npm run team-stats
+        continue-on-error: true
+
       # r/Commanders, for the Monday post's fan-reaction section only (see
       # src/lib/reddit.js). Nothing on the site renders this. It runs here
       # rather than in monday.yml because each feed only returns the newest

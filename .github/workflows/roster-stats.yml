@@ -32,17 +32,14 @@ jobs:
 
       - run: npm run roster-stats
 
-      # Refreshes the current season's team offense/defense totals and ranks
-      # for the sidebar's Team Stats widget (see src/lib/teamstats.js). Its
-      # own defense derivation re-fetches every completed box score each run
-      # rather than just the newest one, so this is the most expensive single
-      # step here — still cheap enough weekly, but not something to move to a
-      # more frequent cadence without also teaching it to fetch incrementally.
-      # continue-on-error, same as every other cache refresh in this repo: a
-      # bad week here should leave last week's cache in place, not fail the
-      # build.
-      - run: npm run team-stats
-        continue-on-error: true
+      # `npm run team-stats` used to live here, on this weekly Tuesday cron,
+      # because its defense numbers were derived by re-fetching every
+      # completed box score on every run. That made it the most expensive
+      # step in the repo and too costly to run often. It now reads a single
+      # opponent-stats endpoint instead, so it moved to nightly.yml: leaving
+      # it weekly meant the front page showed Week N-1 numbers all through
+      # Monday, which is the day the recap goes up and the most-read day of
+      # the week.
 
       - run: npm run build
         env:

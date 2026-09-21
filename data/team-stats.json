@@ -1,50 +1,50 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-09-16T21:02:45.860Z",
+  "fetchedAt": "2026-09-21T12:23:58.046Z",
   "offense": {
     "yardsPerGame": {
-      "value": "295.0",
-      "rank": 17,
-      "rankLabel": "17th"
+      "value": "342.0",
+      "rank": 11,
+      "rankLabel": "11th"
     },
     "pointsPerGame": {
-      "value": "22.0",
-      "rank": 5,
-      "rankLabel": "Tied-5th"
+      "value": "21.0",
+      "rank": 19,
+      "rankLabel": "Tied-19th"
     },
     "passYardsPerGame": {
-      "value": "163.0",
-      "rank": 26,
-      "rankLabel": "26th"
+      "value": "185.0",
+      "rank": 21,
+      "rankLabel": "Tied-21st"
     },
     "rushYardsPerGame": {
-      "value": "132.0",
-      "rank": 5,
-      "rankLabel": "Tied-5th"
+      "value": "157.0",
+      "rank": 4,
+      "rankLabel": "4th"
     }
   },
   "defense": {
-    "games": 1,
+    "games": 2,
     "yardsPerGame": {
-      "value": "318.0",
-      "rank": 16,
-      "rankLabel": "16th"
+      "value": "325.0",
+      "rank": 15,
+      "rankLabel": "15th"
     },
     "pointsPerGame": {
-      "value": "24.0",
-      "rank": 17,
-      "rankLabel": "17th"
+      "value": "30.5",
+      "rank": 27,
+      "rankLabel": "27th"
     },
     "passYardsPerGame": {
-      "value": "182.0",
-      "rank": 21,
-      "rankLabel": "21st"
+      "value": "224.0",
+      "rank": 13,
+      "rankLabel": "13th"
     },
     "rushYardsPerGame": {
-      "value": "136.0",
-      "rank": 8,
-      "rankLabel": "8th"
+      "value": "101.0",
+      "rank": 17,
+      "rankLabel": "17th"
     }
   },
   "leaders": {
@@ -52,24 +52,24 @@
       {
         "key": "Pass",
         "name": "Jayden Daniels",
-        "value": "164"
+        "value": "260"
       },
       {
         "key": "Rush",
         "name": "Jacory Croskey-Merritt",
-        "value": "63"
+        "value": "106"
       },
       {
         "key": "Recv",
-        "name": "Antonio Williams",
-        "value": "64"
+        "name": "Stefon Diggs",
+        "value": "102"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
-        "name": "Nick Cross",
-        "value": "8"
+        "name": "Leo Chenal",
+        "value": "15"
       },
       {
         "key": "Sack",
