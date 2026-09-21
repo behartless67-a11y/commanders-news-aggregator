@@ -209,9 +209,17 @@ function header(activeFile, hasWeekly = false, isGameLive = false) {
 </header>`;
 }
 
+/**
+ * `data-at` carries the machine-readable timestamp so site.js can merge live
+ * posts into this set rather than replacing it. That matters because the
+ * live endpoint (netlify/functions/ticker.js) only covers the beat accounts,
+ * so a wholesale replacement would silently drop the national insiders that
+ * only the scheduled collection sees.
+ */
 function tickerPost(post) {
   const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
-  return `<a class="ticker-post" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+  const at = post.publishedAt ? ` data-at="${escapeHtml(post.publishedAt)}"` : '';
+  return `<a class="ticker-post" href="${escapeHtml(post.url)}"${at} target="_blank" rel="noopener noreferrer">
         <span class="ticker-handle">@${escapeHtml(post.handle)}</span>
         <span class="ticker-text">${escapeHtml(post.text)}</span>
         ${when ? `<span class="ticker-time">${escapeHtml(when)}</span>` : ''}
@@ -2981,6 +2989,11 @@ ${header('admin.html', false, false)}
       </section>
 
       <section class="admin-section">
+        <h2>Wire Taps mailbag</h2>
+        <div id="admin-wiretaps"><p class="page-intro">Loading…</p></div>
+      </section>
+
+      <section class="admin-section">
         <h2>Newsletter</h2>
         <div id="admin-newsletter"><p class="page-intro">Loading…</p></div>
       </section>
@@ -3006,13 +3019,45 @@ ${footer(sources, generatedAt)}
   }
 
   var newsletterEl = document.getElementById('admin-newsletter');
+  var wiretapsEl = document.getElementById('admin-wiretaps');
 
   function showDashboard() {
     form.hidden = true;
     dashboard.hidden = false;
     loadStats();
     loadDrafts();
+    loadWireTaps();
     loadNewsletter();
+  }
+
+  // Reader questions from the mailbag form. Until now these reached Netlify
+  // and stopped there, because submission-created.js only knew about the
+  // newsletter form, so there was no way to read one without logging into
+  // Netlify itself.
+  function loadWireTaps() {
+    fetch('/.netlify/functions/wiretaps-list', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        if (!data.count) {
+          wiretapsEl.innerHTML = '<p class="page-intro">No questions yet.</p>';
+          return;
+        }
+        var items = data.questions.map(function (q) {
+          var when = new Date(q.submittedAt);
+          var stamp = isNaN(when.getTime()) ? '' : when.toLocaleString();
+          var who = q.name ? esc(q.name) : 'Anonymous';
+          return '<li style="margin-bottom:14px">' +
+            '<div style="color:var(--gold);font-weight:600">' + who + '</div>' +
+            '<div style="white-space:pre-wrap">' + esc(q.question) + '</div>' +
+            '<div class="page-intro" style="font-size:12px;margin:2px 0 0">' + esc(stamp) + '</div>' +
+            '</li>';
+        }).join('');
+        wiretapsEl.innerHTML = '<p class="page-intro"><strong style="color:var(--gold)">' + data.count + '</strong> question' + (data.count === 1 ? '' : 's') + '</p>' +
+          '<ul class="admin-path-list" style="margin:8px 0 0;list-style:none;padding:0">' + items + '</ul>';
+      })
+      .catch(function () {
+        wiretapsEl.innerHTML = '<p class="page-intro">Could not load the mailbag.</p>';
+      });
   }
 
   function loadNewsletter() {

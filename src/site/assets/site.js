@@ -325,25 +325,152 @@
    * or older is left as the server rendered it, since that's an absolute date
    * already and needs no clock of its own.
    */
+  /**
+   * Returns null where the server's own text should stand: an unparseable
+   * date, a future timestamp (build.js warns about those, and a negative age
+   * reads as nonsense), or anything a week or older, which relativeLabel()
+   * renders as an absolute date that needs no clock.
+   *
+   * Shared with the live ticker below, so the thresholds exist once here and
+   * once in relativeLabel(). Two copies is already one too many; three would
+   * be asking for them to drift.
+   */
+  function relativeAgo(when) {
+    if (isNaN(when.getTime())) return null;
+    var minutes = (Date.now() - when.getTime()) / 60000;
+    if (minutes < 0) return null;
+    if (minutes < 1) return 'just now';
+    if (minutes < 60) return Math.floor(minutes) + 'm ago';
+    if (minutes < 1440) return Math.floor(minutes / 60) + 'h ago';
+    if (minutes < 10080) return Math.floor(minutes / 1440) + 'd ago';
+    return null;
+  }
+
   var agoEls = document.querySelectorAll('time[datetime]');
   for (var t = 0; t < agoEls.length; t++) {
-    var el = agoEls[t];
-    var when = new Date(el.getAttribute('datetime'));
-    if (isNaN(when.getTime())) continue;
-    var minutes = (Date.now() - when.getTime()) / 60000;
-    // A future timestamp means a post dated ahead of now (build.js warns about
-    // those); leave the server's text rather than printing a negative age.
-    if (minutes < 0) continue;
-    if (minutes < 1) {
-      el.textContent = 'just now';
-    } else if (minutes < 60) {
-      el.textContent = Math.floor(minutes) + 'm ago';
-    } else if (minutes < 1440) {
-      el.textContent = Math.floor(minutes / 60) + 'h ago';
-    } else if (minutes < 10080) {
-      el.textContent = Math.floor(minutes / 1440) + 'd ago';
-    }
+    var agoLabel = relativeAgo(new Date(agoEls[t].getAttribute('datetime')));
+    if (agoLabel) agoEls[t].textContent = agoLabel;
   }
+
+  /**
+   * Live ticker refresh.
+   *
+   * A reader wrote in to say the beat-reporter ticker is stale exactly when
+   * it matters, during a game, because this is a static site that only
+   * changes when a build deploys. Same problem the timestamps above had, and
+   * the same answer: let the browser do it, so freshness stops being a
+   * reason to redeploy.
+   *
+   * Merges rather than replaces. /api/ticker only covers the seven beat
+   * accounts (see netlify/functions/ticker.js for why), while the built page
+   * also carries national insiders from the scheduled collection, so
+   * overwriting the rail would quietly throw half of it away.
+   *
+   * Every failure path leaves the built-in ticker untouched: no endpoint, a
+   * 503, a parse error, an empty list, or no JS at all.
+   */
+  (function () {
+    var section = document.querySelector('.ticker');
+    if (!section || typeof window.fetch !== 'function') return;
+    var track = section.querySelector('.ticker-track');
+    var groups = section.querySelectorAll('.ticker-group');
+    if (!track || groups.length !== 2) return;
+
+    var POLL_MS = 120000;
+    var MAX_POSTS = 30;
+    // Mirrors TICKER_CHARS_PER_SEC in templates.js — the marquee has to keep
+    // a constant reading speed as the track's width changes under it.
+    var CHARS_PER_SEC = 8.6;
+    var signature = '';
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function textOf(node, selector) {
+      var found = node.querySelector(selector);
+      return found ? found.textContent : '';
+    }
+
+    /** The posts the build put on the page, read back out of the DOM. */
+    function existing() {
+      var out = [];
+      var nodes = groups[0].querySelectorAll('.ticker-post');
+      for (var i = 0; i < nodes.length; i++) {
+        var url = nodes[i].getAttribute('href');
+        if (!url) continue;
+        out.push({
+          url: url,
+          handle: textOf(nodes[i], '.ticker-handle').replace(/^@/, ''),
+          text: textOf(nodes[i], '.ticker-text'),
+          publishedAt: nodes[i].getAttribute('data-at') || null
+        });
+      }
+      return out;
+    }
+
+    function postHtml(post) {
+      var when = post.publishedAt ? relativeAgo(new Date(post.publishedAt)) : null;
+      var at = post.publishedAt ? ' data-at="' + esc(post.publishedAt) + '"' : '';
+      return '<a class="ticker-post" href="' + esc(post.url) + '"' + at +
+        ' target="_blank" rel="noopener noreferrer">' +
+        '<span class="ticker-handle">@' + esc(post.handle) + '</span>' +
+        '<span class="ticker-text">' + esc(post.text) + '</span>' +
+        (when ? '<span class="ticker-time">' + esc(when) + '</span>' : '') +
+        '</a>';
+    }
+
+    function render(posts) {
+      var html = posts.map(postHtml).join('\n');
+      var chars = posts.reduce(function (total, p) {
+        return total + p.text.length + p.handle.length + 12;
+      }, 0);
+      groups[0].innerHTML = html;
+      groups[1].innerHTML = html;
+      track.style.animationDuration = Math.max(60, Math.round(chars / CHARS_PER_SEC)) + 's';
+    }
+
+    function merge(fresh) {
+      var byUrl = {};
+      var all = existing().concat(fresh);
+      for (var i = 0; i < all.length; i++) {
+        if (all[i] && all[i].url) byUrl[all[i].url] = all[i];
+      }
+      return Object.keys(byUrl)
+        .map(function (k) { return byUrl[k]; })
+        .sort(function (a, b) {
+          return Date.parse(b.publishedAt || 0) - Date.parse(a.publishedAt || 0);
+        })
+        .slice(0, MAX_POSTS);
+    }
+
+    function refresh() {
+      if (document.visibilityState === 'hidden') return;
+      fetch('/api/ticker', { credentials: 'omit' })
+        .then(function (r) { if (!r.ok) throw new Error('ticker ' + r.status); return r.json(); })
+        .then(function (data) {
+          if (!data || !data.posts || !data.posts.length) return;
+          var merged = merge(data.posts);
+          // Re-rendering restarts the CSS marquee from the left, so only do
+          // it when the set actually changed. On a quiet afternoon that means
+          // the rail is never interrupted at all.
+          var next = merged.map(function (p) { return p.url; }).join('|');
+          if (next === signature) return;
+          signature = next;
+          render(merged);
+        })
+        .catch(function () { /* leave whatever the build rendered */ });
+    }
+
+    signature = existing().map(function (p) { return p.url; }).join('|');
+    refresh();
+    setInterval(refresh, POLL_MS);
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'visible') refresh();
+    });
+  }());
 
   /**
    * A random id naming this browser tab's session, so the track Function can
