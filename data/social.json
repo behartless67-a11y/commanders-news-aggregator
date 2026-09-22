@@ -10974,5 +10974,19 @@
     "images": [],
     "publishedAt": "2026-09-22T04:02:11.000Z",
     "collectedAt": "2026-09-22T07:31:26.877Z"
+  },
+  "social-a2a273a90120": {
+    "id": "social-a2a273a90120",
+    "url": "https://mastodon.social/@top_news/117313567979753055",
+    "text": "Commanders provide injury updates on multiple starters The Commanders lost several starters to injury in Sunday's game against the Cowboys. What's the latest? anders-injury-updates-multiple-starters-070048428.html #TopNews #News #Daniels #Commanders #Dallas",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/313/567/944/134/024/original/fd926b9287d40a3c.jpg"
+    ],
+    "publishedAt": "2026-09-22T07:43:07.979Z",
+    "collectedAt": "2026-09-22T09:01:11.690Z"
   }
 }
