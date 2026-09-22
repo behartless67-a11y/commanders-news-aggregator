@@ -23,7 +23,13 @@ export default async (req) => {
   // turn a single dashboard load into dozens of round trips back to back
   // instead of all of them in flight together.
   const now = Date.now();
-  const dayDates = Array.from({ length: 14 }, (_, i) => new Date(now - (13 - i) * 86400000).toISOString().slice(0, 10));
+  // 15 days read, 14 charted. The extra one exists so the week-over-week
+  // comparison can use two *complete* 7-day windows: today is still being
+  // counted, so including it would measure a partial day against a full one
+  // and report a fake decline every morning. Index 14 is today (charted,
+  // never compared), 7-13 is the last complete week, 0-6 the week before.
+  const DAY_WINDOW = 15;
+  const dayDates = Array.from({ length: DAY_WINDOW }, (_, i) => new Date(now - (DAY_WINDOW - 1 - i) * 86400000).toISOString().slice(0, 10));
   // Anchored to the 1st of the target month before formatting, not computed
   // by subtracting months from "now" directly — subtracting from a day above
   // 28 can overflow into the wrong month (Aug 31 minus 6 months lands on the
@@ -66,6 +72,7 @@ export default async (req) => {
     topLanguages,
     topCountries,
     topStates,
+    recent,
   ] = await Promise.all([
     text('total'),
     text('outboundTotal'),
@@ -85,9 +92,24 @@ export default async (req) => {
     topN('lang:', 'language'),
     topN('country:', 'country'),
     topN('state:', 'state'),
+    // Written newest-first by track.js, so no sort here. Capped again on
+    // read: the stored log is the last 200 pageviews, but the panel only
+    // renders a screenful and there's no reason to ship the rest.
+    store.get('recent', { type: 'json' }).then((v) => (Array.isArray(v) ? v.slice(0, 60) : [])).catch(() => []),
   ]);
 
-  const days = dayDates.map((date, i) => ({ date, count: dayCounts[i], uniques: dayUniques[i] }));
+  // Chart keeps its original 14-day shape; only the comparison below uses
+  // the 15th day, so the extra read never changes what the bars show.
+  const days = dayDates.slice(1).map((date, i) => ({ date, count: dayCounts[i + 1], uniques: dayUniques[i + 1] }));
+
+  const sum = (arr, from, to) => arr.slice(from, to).reduce((a, b) => a + b, 0);
+  const trend = {
+    views: sum(dayCounts, 7, 14),
+    viewsPrev: sum(dayCounts, 0, 7),
+    uniques: sum(dayUniques, 7, 14),
+    uniquesPrev: sum(dayUniques, 0, 7),
+  };
+
   const months = monthKeys.map((month, i) => ({ month, count: monthCounts[i] }));
   const hours = Array.from({ length: 24 }, (_, h) => ({ hour: String(h).padStart(2, '0'), count: hourCounts[h] }));
   const weekdays = WEEKDAYS.map((weekday, i) => ({ weekday, count: weekdayCounts[i] }));
@@ -98,6 +120,7 @@ export default async (req) => {
       total,
       outboundTotal,
       visitors: { new: visitorNew, returning: visitorReturn },
+      trend,
       days,
       months,
       hours,
@@ -111,6 +134,7 @@ export default async (req) => {
       topLanguages,
       topCountries,
       topStates,
+      recent,
     }),
     { headers: { 'Content-Type': 'application/json' } },
   );

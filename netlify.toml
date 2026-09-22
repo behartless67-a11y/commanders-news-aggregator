@@ -5,6 +5,9 @@
 [functions."admin-drafts"]
   included_files = ["data/digests/*.json", "data/previews/*.json", "data/mondays/*.json"]
 
+[functions."admin-pipeline"]
+  included_files = ["data/state.json"]
+
 # Security headers applied to every response from the CDN.
 # None of these break the site — they only restrict what external parties
 # can do with it (embed it in iframes, inject scripts, etc.).

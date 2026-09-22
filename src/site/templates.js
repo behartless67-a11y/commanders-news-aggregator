@@ -2977,9 +2977,14 @@ ${header('admin.html', false, false)}
 
       <section class="admin-section">
         <div class="admin-section-head">
-          <h2>Traffic</h2>
+          <h2>Pipeline</h2>
           <button id="admin-logout" class="roster-more" type="button">Log out</button>
         </div>
+        <div id="admin-pipeline"><p class="page-intro">Loading…</p></div>
+      </section>
+
+      <section class="admin-section">
+        <h2>Traffic</h2>
         <div id="admin-stats"><p class="page-intro">Loading…</p></div>
       </section>
 
@@ -3018,16 +3023,78 @@ ${footer(sources, generatedAt)}
     });
   }
 
+  // site.js has one of these too, but it lives inside that file's own IIFE
+  // and this page's script can't see it. Same thresholds as relativeLabel()
+  // in src/lib/dates.js, minus the older-than-a-week branch: the activity
+  // feed only ever holds the last couple hundred pageviews.
+  function relativeAgo(when) {
+    if (isNaN(when.getTime())) return null;
+    var minutes = (Date.now() - when.getTime()) / 60000;
+    if (minutes < 0) return null;
+    if (minutes < 1) return 'just now';
+    if (minutes < 60) return Math.floor(minutes) + 'm ago';
+    if (minutes < 1440) return Math.floor(minutes / 60) + 'h ago';
+    return Math.floor(minutes / 1440) + 'd ago';
+  }
+
   var newsletterEl = document.getElementById('admin-newsletter');
   var wiretapsEl = document.getElementById('admin-wiretaps');
+
+  var pipelineEl = document.getElementById('admin-pipeline');
 
   function showDashboard() {
     form.hidden = true;
     dashboard.hidden = false;
+    loadPipeline();
     loadStats();
     loadDrafts();
     loadWireTaps();
     loadNewsletter();
+  }
+
+  // Collector health, from data/state.json (see admin-pipeline.js). Sits above
+  // Traffic deliberately: if the collectors have stopped, every number below
+  // is describing a site that isn't updating, and that's the thing to know
+  // first.
+  function loadPipeline() {
+    fetch('/.netlify/functions/admin-pipeline', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        if (!data.stages.length) {
+          pipelineEl.innerHTML = '<p class="page-intro">No run history recorded yet.</p>';
+          return;
+        }
+        var rows = data.stages.map(function (s) {
+          var age = s.ageHours == null
+            ? 'never'
+            : (s.ageHours < 1 ? Math.round(s.ageHours * 60) + 'm ago' : s.ageHours.toFixed(1) + 'h ago');
+          var colour = s.stale ? '#d14343' : 'var(--gold)';
+          var note = s.stale
+            ? 'No run in over ' + s.staleAfterHours + 'h (usually every ' + (s.cadenceHours || '?') + 'h)'
+            : s.recentAdded + ' added over last ' + s.recentRuns + ' runs';
+          // A live-but-empty collector is its own warning: the cron is fine,
+          // the feed behind it isn't.
+          if (!s.stale && s.recentRuns >= 5 && s.recentAdded === 0) {
+            note = 'Running, but nothing added in ' + s.recentRuns + ' runs';
+            colour = '#d9a441';
+          }
+          if (s.sessionExpired) note += ' &middot; session expired';
+          return '<li style="display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid var(--border)">' +
+            '<span><strong style="color:' + colour + '">' + esc(s.stage) + '</strong>' +
+            '<span style="display:block;font-size:12px;opacity:.75">' + note + '</span></span>' +
+            '<span style="white-space:nowrap;color:' + colour + '">' + esc(age) + '</span>' +
+            '</li>';
+        }).join('');
+        var banner = data.anyStale
+          ? '<p class="page-intro" style="color:#d14343;margin:0 0 8px"><strong>A collector has stopped running.</strong> The site is serving whatever it last picked up.</p>'
+          : '<p class="page-intro" style="margin:0 0 8px">All collectors reporting on schedule.</p>';
+        pipelineEl.innerHTML = banner +
+          '<ul class="admin-path-list" style="list-style:none;padding:0;margin:0">' + rows + '</ul>' +
+          '<p class="admin-chart-caption">Read from the deploy bundle, so these age if the pipeline stops redeploying.</p>';
+      })
+      .catch(function () {
+        pipelineEl.innerHTML = '<p class="page-intro">Could not load pipeline status.</p>';
+      });
   }
 
   // Reader questions from the mailbag form. Until now these reached Netlify
@@ -3079,55 +3146,42 @@ ${footer(sources, generatedAt)}
           '</div>' +
           '<p id="nl-result" class="page-intro" hidden style="color:var(--gold);margin-top:8px"></p>';
 
-        document.getElementById('nl-send').addEventListener('click', function () {
-          var subject = document.getElementById('nl-subject').value.trim();
-          var body = document.getElementById('nl-body').value.trim();
-          var result = document.getElementById('nl-result');
-          if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
-        document.getElementById('nl-test').addEventListener('click', function () {
-          var subject = document.getElementById('nl-subject').value.trim();
-          var body = document.getElementById('nl-body').value.trim();
-          var result = document.getElementById('nl-result');
-          if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
-          var btn = document.getElementById('nl-test');
-          btn.disabled = true; btn.textContent = 'Sending…';
-          fetch('/.netlify/functions/newsletter-send', {
-            method: 'POST', credentials: 'same-origin',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ subject: subject, body: body, testOnly: true }),
-          })
-            .then(function (r) { return r.json(); })
-            .then(function (d) {
-              result.textContent = d.sent ? 'Test sent to bh4hb@virginia.edu!' : (d.error || 'Something went wrong.');
-              result.hidden = false;
-              btn.disabled = false; btn.textContent = 'Send test to me';
+        // Both buttons read the same two inputs and write the same result
+        // line, so they share one handler factory rather than two nearly
+        // identical listeners. The testOnly flag is the only thing that
+        // differs, and it's what newsletter-send.js branches on to mail just
+        // the owner instead of the whole subscriber list.
+        function wireSend(btnId, testOnly, idleLabel) {
+          document.getElementById(btnId).addEventListener('click', function () {
+            var subject = document.getElementById('nl-subject').value.trim();
+            var body = document.getElementById('nl-body').value.trim();
+            var result = document.getElementById('nl-result');
+            if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
+            var btn = document.getElementById(btnId);
+            btn.disabled = true; btn.textContent = 'Sending…';
+            fetch('/.netlify/functions/newsletter-send', {
+              method: 'POST', credentials: 'same-origin',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ subject: subject, body: body, testOnly: testOnly }),
             })
-            .catch(function () {
-              result.textContent = 'Something went wrong.';
-              result.hidden = false;
-              btn.disabled = false; btn.textContent = 'Send test to me';
-            });
-        });
+              .then(function (r) { return r.json(); })
+              .then(function (d) {
+                result.textContent = testOnly
+                  ? (d.sent ? 'Test sent to bh4hb@virginia.edu!' : (d.error || 'Something went wrong.'))
+                  : 'Sent ' + d.sent + (d.failed ? ', ' + d.failed + ' failed.' : '.');
+                result.hidden = false;
+                btn.disabled = false; btn.textContent = idleLabel;
+              })
+              .catch(function () {
+                result.textContent = 'Something went wrong.';
+                result.hidden = false;
+                btn.disabled = false; btn.textContent = idleLabel;
+              });
+          });
+        }
 
-          var btn = document.getElementById('nl-send');
-          btn.disabled = true; btn.textContent = 'Sending…';
-          fetch('/.netlify/functions/newsletter-send', {
-            method: 'POST', credentials: 'same-origin',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ subject: subject, body: body }),
-          })
-            .then(function (r) { return r.json(); })
-            .then(function (d) {
-              result.textContent = 'Sent ' + d.sent + (d.failed ? ', ' + d.failed + ' failed.' : '.');
-              result.hidden = false;
-              btn.disabled = false; btn.textContent = 'Send to all subscribers';
-            })
-            .catch(function () {
-              result.textContent = 'Something went wrong.';
-              result.hidden = false;
-              btn.disabled = false; btn.textContent = 'Send to all subscribers';
-            });
-        });
+        wireSend('nl-test', true, 'Send test to me');
+        wireSend('nl-send', false, 'Send to all subscribers');
       })
       .catch(function () { newsletterEl.innerHTML = '<p class="page-intro">Could not load subscribers.</p>'; });
   }
@@ -3190,6 +3244,25 @@ ${footer(sources, generatedAt)}
     return '<div class="admin-tile' + (wide ? ' admin-tile-wide' : '') + '"><h3>' + esc(title) + '</h3>' + bodyHtml + '</div>';
   }
 
+  // A raw count answers "how many," which on its own is unreadable — 1,240
+  // views is either very good or very bad depending entirely on last week.
+  // Both windows are complete 7-day periods (admin-stats.js excludes today),
+  // so this is a like-for-like comparison and not a partial day dragging the
+  // number down every morning.
+  function delta(cur, prev) {
+    if (!prev) {
+      // No baseline to compare against: the first two weeks of a counter's
+      // life, or a metric that genuinely had zero. "New" is honest; a
+      // "+100%" or a divide-by-zero "Infinity%" would not be.
+      return cur ? '<span style="color:var(--gold);font-size:12px">new</span>' : '';
+    }
+    var pct = Math.round(((cur - prev) / prev) * 100);
+    if (pct === 0) return '<span style="font-size:12px;opacity:.7">flat</span>';
+    var up = pct > 0;
+    return '<span style="color:' + (up ? '#4a9d5f' : '#d14343') + ';font-size:12px">' +
+      (up ? '▲' : '▼') + ' ' + Math.abs(pct) + '%</span>';
+  }
+
   function loadStats() {
     fetch('/.netlify/functions/admin-stats', { credentials: 'same-origin' })
       .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
@@ -3206,12 +3279,54 @@ ${footer(sources, generatedAt)}
 
         var tiles = [];
 
+        // Week over week sits at the top of the overview because it's the
+        // only thing here that says whether the site is growing. Everything
+        // under it is a level; this is the direction.
+        var t = data.trend || { views: 0, viewsPrev: 0, uniques: 0, uniquesPrev: 0 };
         tiles.push(tile('Overview',
+          '<p class="admin-total"><strong>' + t.views + '</strong> views, last 7 days ' + delta(t.views, t.viewsPrev) + '</p>' +
+          '<p class="admin-total"><strong>' + t.uniques + '</strong> visitors, last 7 days ' + delta(t.uniques, t.uniquesPrev) + '</p>' +
           '<p class="admin-total"><strong>' + data.total + '</strong> total pageviews</p>' +
           '<p class="admin-total"><strong>' + data.outboundTotal + '</strong> outbound clicks</p>' +
           '<p class="admin-total"><strong>' + returnPct + '%</strong> returning visitors (all-time)</p>' +
-          '<p class="admin-total"><strong>' + perVisit + '</strong> pages per visit (last 14 days)</p>'
+          '<p class="admin-total"><strong>' + perVisit + '</strong> pages per visit (last 14 days)</p>' +
+          '<p class="admin-chart-caption">Change compares the last complete 7 days with the 7 before it. Today is excluded so a half-finished day never reads as a drop.</p>'
         ));
+
+        // The one view here that isn't an aggregate. Every other tile answers
+        // "how many," which can't tell you that somebody in Sweden opened the
+        // Monday post four minutes ago. Arrival order is the whole point, so
+        // this sits directly under the overview rather than at the bottom
+        // with the breakdowns.
+        tiles.push(tile('Recent activity', (function () {
+          var rows = data.recent || [];
+          if (!rows.length) {
+            return '<p class="page-intro">No pageviews logged yet. This fills in as readers arrive.</p>';
+          }
+          return '<ul class="admin-path-list" style="list-style:none;padding:0;margin:0">' +
+            rows.map(function (r) {
+              var when = new Date(r.at);
+              var clock = isNaN(when.getTime())
+                ? ''
+                : when.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+              var ago = isNaN(when.getTime()) ? null : relativeAgo(when);
+              // Country is absent on requests Netlify couldn't geolocate
+              // (some in-app browsers, VPNs, local testing), so the row
+              // degrades to just a place-less arrival rather than printing
+              // a confident "Unknown, Unknown".
+              var place = r.state && r.country ? r.state + ', ' + r.country : (r.country || null);
+              var bits = [r.referrer, place, r.device, r.returning ? 'returning' : 'new']
+                .filter(Boolean).map(esc).join(' &middot; ');
+              return '<li style="display:flex;gap:10px;padding:4px 0;border-bottom:1px solid var(--border)">' +
+                '<span style="color:var(--gold);white-space:nowrap;font-variant-numeric:tabular-nums">' + esc(clock) + '</span>' +
+                '<span style="min-width:0">' +
+                  '<span style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(r.path || '/') + '</span>' +
+                  '<span style="display:block;font-size:12px;opacity:.75">' + bits + (ago ? ' &middot; ' + esc(ago) : '') + '</span>' +
+                '</span>' +
+                '</li>';
+            }).join('') +
+            '</ul>';
+        }()), true));
 
         // Uniques ride along in the tooltip rather than as a second bar — a
         // two-series chart needs a legend and twice the width to stay

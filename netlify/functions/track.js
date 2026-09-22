@@ -29,6 +29,15 @@ import { TZ } from '../../src/lib/dates.js';
 const MAX_LEN = 200;
 
 /**
+ * How many pageviews the activity feed keeps. Deliberately small: it answers
+ * "who is on the site right now and where are they from," which is a
+ * question about the last hour or two, not a log to mine later. It's also
+ * one blob rewritten on every pageview, so the cap is what stops that write
+ * growing without bound.
+ */
+const RECENT_MAX = 200;
+
+/**
  * Recognizable referring sites get a friendly label instead of their raw
  * hostname, matched on the registrable domain so a mobile subdomain
  * (m.facebook.com) or a link-shortener host (t.co) still lands in the right
@@ -286,6 +295,35 @@ export default async (req, context) => {
       tasks.push(store.setJSON(visitorsKey, seen), bump(`day:${day}:uniques`));
     }
   }
+
+  // A rolling log of the last RECENT_MAX pageviews, for the admin panel's
+  // activity feed. Everything above this point is a counter, which can say
+  // how many readers came from Sweden but never that one arrived four
+  // minutes ago and went straight to the Monday post. That ordering is the
+  // whole point of the feed.
+  //
+  // Each entry holds only fields this file already aggregates: the same
+  // referrer, country/state, and device buckets, plus the path and a
+  // timestamp. No sid, no IP, no city. The sid in particular is deliberately
+  // left out even though it's right there in scope — it's a per-tab value,
+  // so writing it next to a timestamp would turn a list of independent
+  // arrivals into a browsable per-visitor session history, which is a
+  // different and much more identifying thing than this set out to be.
+  const recent = (await store.get('recent', { type: 'json' }).catch(() => null)) || [];
+  recent.unshift({
+    at: now.toISOString(),
+    path,
+    // `bucket` is null when the referrer is this same site (see
+    // referrerBucket). That's excluded from the traffic-source counters
+    // because it isn't a source, but in a feed it's worth seeing: it's a
+    // reader moving from the river into a post.
+    referrer: bucket || 'On-site link',
+    country: geo?.country?.name || null,
+    state: geo?.subdivision?.name || null,
+    device,
+    returning: !!body.returning,
+  });
+  tasks.push(store.setJSON('recent', recent.slice(0, RECENT_MAX)));
 
   await Promise.all(tasks);
   return new Response(null, { status: 204 });
