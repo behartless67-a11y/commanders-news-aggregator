@@ -10938,5 +10938,55 @@
     "images": [],
     "publishedAt": "2026-09-21T22:20:19.000Z",
     "collectedAt": "2026-09-22T14:05:12.000Z"
+  },
+  "social-4623c1b00d6b": {
+    "id": "social-4623c1b00d6b",
+    "url": "https://x.com/john_keim/status/2102361599415828987",
+    "text": "On video with some second thoughts: on Jayden Daniels, the coverage mishaps and more. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T11:37:19.000Z",
+    "collectedAt": "2026-09-22T14:06:01.160Z"
+  },
+  "social-4c9c800eb7f6": {
+    "id": "social-4c9c800eb7f6",
+    "url": "https://x.com/BenStandig/status/2102360597220250096",
+    "text": "When it comes to rounding out the starting five, the Wizards no longer need a wing and a prayer. @GregFinberg@twitter.com set up the topics, and I entered to make a ruling on a series of lineup and rotation questions. when-it-comes-to-rounding-out-the",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/314/483/456/832/168/original/2b964794054659d9.jpg"
+    ],
+    "publishedAt": "2026-09-22T11:33:21.000Z",
+    "collectedAt": "2026-09-22T14:06:02.728Z"
+  },
+  "social-2aa9f0281217": {
+    "id": "social-2aa9f0281217",
+    "url": "https://x.com/tashanreed/status/2102377856663990498",
+    "text": "Reminder that we'll be live at 3pm ET today:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-22T12:41:55.000Z",
+    "collectedAt": "2026-09-22T14:06:04.007Z"
+  },
+  "social-5c6911dcfeb9": {
+    "id": "social-5c6911dcfeb9",
+    "url": "https://x.com/RapSheet/status/2102232155514401128",
+    "text": "Awful injury night for the #Giants .",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-22T03:02:58.000Z",
+    "collectedAt": "2026-09-22T14:06:04.007Z"
   }
 }
