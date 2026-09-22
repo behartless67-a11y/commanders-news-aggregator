@@ -1,66 +1,4 @@
 {
-  "social-5410b5395b42": {
-    "id": "social-5410b5395b42",
-    "url": "https://x.com/Commanders/status/2098744685095206918",
-    "text": "Quick trip 🧳 @EASTERNMOTORS@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/257/977/823/223/312/original/d61de416c23af3ad.jpg"
-    ],
-    "publishedAt": "2026-09-12T12:05:00.000Z",
-    "collectedAt": "2026-09-12T12:06:08.359Z"
-  },
-  "social-f58c41c345e3": {
-    "id": "social-f58c41c345e3",
-    "url": "https://x.com/john_keim/status/2098732378252312996",
-    "text": "Quick video on the OL going into the opener. 983",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-12T11:16:06.000Z",
-    "collectedAt": "2026-09-12T12:06:11.312Z"
-  },
-  "social-c6e16013956e": {
-    "id": "social-c6e16013956e",
-    "url": "https://x.com/Commanders/status/2098758777969193286",
-    "text": "A new tradition begins at @NWStadium@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-12T13:01:00.000Z",
-    "collectedAt": "2026-09-12T13:14:31.801Z"
-  },
-  "social-6acf97590cc5": {
-    "id": "social-6acf97590cc5",
-    "url": "https://x.com/john_keim/status/2098746073237872903",
-    "text": "@avbanig@twitter.com (Used to always hear back in the day they were going to be more aggressive than the previous coordinator. They changed so often it would have made them the most aggressive team ever. Let’s see it on the field).",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-12T12:10:31.000Z",
-    "collectedAt": "2026-09-12T13:14:34.860Z"
-  },
-  "social-e8d7cacc6939": {
-    "id": "social-e8d7cacc6939",
-    "url": "https://x.com/tashanreed/status/2098759200616641004",
-    "text": "The #Commanders will debut a new pregame ceremony for their home opener in Week 3:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-12T13:02:41.000Z",
-    "collectedAt": "2026-09-12T13:14:37.606Z"
-  },
   "social-24951d03b175": {
     "id": "social-24951d03b175",
     "url": "https://x.com/john_keim/status/2098779983879499936",
@@ -10988,5 +10926,17 @@
     ],
     "publishedAt": "2026-09-22T07:43:07.979Z",
     "collectedAt": "2026-09-22T09:01:11.690Z"
+  },
+  "social-5468812dc403": {
+    "id": "social-5468812dc403",
+    "url": "https://x.com/NickiJhabvala/status/2102161026334462147",
+    "text": "Pro Bowl TE Zach Ertz is signing to Philadelphia’s practice squad, a source confirmed.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-21T22:20:19.000Z",
+    "collectedAt": "2026-09-22T14:05:12.000Z"
   }
 }
