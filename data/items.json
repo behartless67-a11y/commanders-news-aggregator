@@ -887,18 +887,6 @@
     "publishedAt": "2026-08-09T02:02:36.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-114ec2d10529": {
-    "id": "wjla-commanders-114ec2d10529",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/antonio-williams-standing-out-as-a-rookie-at-commanders-training-camp",
-    "title": "Antonio Williams standing out as a rookie at Commanders training camp",
-    "excerpt": "When you catch the eye of a veteran NFL wide receiver, you must be doing something right.",
-    "publishedAt": "2026-08-08T15:32:12.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -10702,5 +10690,77 @@
     "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders catches a touchdown against Markquese Bell #14 and Caleb Downs #13 of the Dallas Cowboys in the fourth quarter of a game at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images Week 2 of the NFL season concluded with 12 Maryland football alumni seeing the field. \n Washington Commanders wide receiver Stefon Diggs recorded his best game with the team against the…",
     "publishedAt": "2026-09-22T10:50:00.000Z",
     "collectedAt": "2026-09-22T14:05:50.054Z"
+  },
+  "hogs-haven-b16331622c45": {
+    "id": "hogs-haven-b16331622c45",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/442230/commanders-news-its-marcus-mariota-timeagain",
+    "title": "Commanders News: It’s Marcus Mariota time…again",
+    "excerpt": "The Daily Slop – 22 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Bullock’s Film Room (subscription)\n\n Commanders Film Review: Coverage Issues vs Cowboys\n\n [The play discussed in this excerpt is the same one shown in video clip in tweet below] \n\n There were…",
+    "publishedAt": "2026-09-22T16:00:00.000Z",
+    "collectedAt": "2026-09-22T16:05:43.924Z"
+  },
+  "hogs-haven-10b486177006": {
+    "id": "hogs-haven-10b486177006",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/442011/is-commanders-qb-jayden-daniels-2026-season-finished-survey",
+    "title": "Is Commanders QB Jayden Daniels’ 2026 season finished? – survey",
+    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Jayden Daniels #5 of the Washington Commanders reacts after sustaining an injury against the Dallas Cowboys in the second quarter of a game at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images \n \n Welcome to SB Nation Reacts, a survey of fans across the NFL. Throughout the year we ask questions of the most plugged-in Commanders fans and fans across the country. \n\n Sign up here to participate in the weekly…",
+    "publishedAt": "2026-09-22T15:10:33.000Z",
+    "collectedAt": "2026-09-22T16:05:43.924Z"
+  },
+  "riggos-rag-58ba856b466e": {
+    "id": "riggos-rag-58ba856b466e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-elbow-injury-washington-commanders-setback-not-franchise-concern",
+    "title": "Jayden Daniels’ elbow injury is a Commanders setback, not a franchise concern",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels’ dislocated elbow injury is short-term setback, but it shouldn't be a long-term concern.",
+    "publishedAt": "2026-09-22T16:00:02.000Z",
+    "collectedAt": "2026-09-22T16:05:45.283Z"
+  },
+  "riggos-rag-b0d434199cb0": {
+    "id": "riggos-rag-b0d434199cb0",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/david-blough-progress-charts-washington-commanders-path-without-jayden-daniels",
+    "title": "David Blough’s progress charts Commanders’ path without Jayden Daniels",
+    "excerpt": "Offensive coordinator David Blough's encouraging progress in Week 2 charts the Washington Commanders' path without quarterback Jayden Daniels.",
+    "publishedAt": "2026-09-22T14:30:00.000Z",
+    "collectedAt": "2026-09-22T16:05:45.283Z"
+  },
+  "commanders-youtube-0eeaf9b0b2d6": {
+    "id": "commanders-youtube-0eeaf9b0b2d6",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=sj4TjngMoKw",
+    "title": "Seahawks Preview, Fred Therapy & Dallas Debrief | Get Loud | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-22T14:00:00.000Z",
+    "collectedAt": "2026-09-22T16:05:47.531Z"
+  },
+  "cbs-nfl-7ae187d90d46": {
+    "id": "cbs-nfl-7ae187d90d46",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels",
+    "title": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
+    "excerpt": "Projecting the outlook for some of the league's biggest Week 2 injuries",
+    "publishedAt": "2026-09-22T14:27:32.000Z",
+    "collectedAt": "2026-09-22T16:05:50.618Z"
   }
 }
