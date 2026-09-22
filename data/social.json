@@ -1,44 +1,4 @@
 {
-  "social-1b8f4585bb0c": {
-    "id": "social-1b8f4585bb0c",
-    "url": "https://x.com/Commanders/status/2098554682373243052",
-    "text": "final preparations @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/398/419/633/original/5019742a9df5087f.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/432/715/507/original/9812bd82e7a10d05.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/255/013/467/042/499/original/6849c7bb5f290076.jpg"
-    ],
-    "publishedAt": "2026-09-11T23:30:00.000Z",
-    "collectedAt": "2026-09-11T23:41:19.186Z"
-  },
-  "social-20ea17c52d86": {
-    "id": "social-20ea17c52d86",
-    "url": "https://x.com/Commanders/status/2098568523660369932",
-    "text": "83 yards to the house @darrellgreen28@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-12T00:25:00.000Z",
-    "collectedAt": "2026-09-12T02:06:04.410Z"
-  },
-  "social-51b326a7e74c": {
-    "id": "social-51b326a7e74c",
-    "url": "https://x.com/Commanders/status/2098557783574458624",
-    "text": "Good luck @FTiafoe@twitter.com ! 👏",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-11T23:42:19.000Z",
-    "collectedAt": "2026-09-12T02:06:04.411Z"
-  },
   "social-d148485389c6": {
     "id": "social-d148485389c6",
     "url": "https://x.com/john_keim/status/2098583979108552844",
@@ -10908,5 +10868,85 @@
     ],
     "publishedAt": "2026-09-21T22:40:50.165Z",
     "collectedAt": "2026-09-21T22:59:59.203Z"
+  },
+  "social-45619a54322a": {
+    "id": "social-45619a54322a",
+    "url": "https://x.com/RapSheet/status/2102192408511320237",
+    "text": "#Colts star WR Alec Pierce, who aggravated a heel injury that was surgically repaired, will attempt to rehab the ailment rather than have surgery, sources say. Pierce is slated to be out several weeks while he heals, but if all goes well, he could return midseason.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/311/850/385/555/241/original/5a7dcf9130c64050.jpg"
+    ],
+    "publishedAt": "2026-09-22T00:25:01.000Z",
+    "collectedAt": "2026-09-22T00:39:56.818Z"
+  },
+  "social-17cdf4dfc252": {
+    "id": "social-17cdf4dfc252",
+    "url": "https://x.com/tashanreed/status/2102175411853553706",
+    "text": "I'm from St. Louis, no one appreciates Kurt more than me, but he's trippin 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-21T23:17:29.000Z",
+    "collectedAt": "2026-09-22T00:39:59.797Z"
+  },
+  "social-350aa93ab392": {
+    "id": "social-350aa93ab392",
+    "url": "https://x.com/tashanreed/status/2102173739748139363",
+    "text": "There wasn't any when he dislocated his elbow last year. No one who doesn't have Daniels' medical records knows whether there is this time.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-21T23:10:50.000Z",
+    "collectedAt": "2026-09-22T00:39:59.797Z"
+  },
+  "social-4ade0b8a1e7e": {
+    "id": "social-4ade0b8a1e7e",
+    "url": "https://mastodon.social/@top_news/117311843943785041",
+    "text": "Commanders, Browns Get Intriguing Trade Idea After Jayden Daniels’ Injury The Washington Commanders are 0-2, and their season is hanging by a thread heading into Week 3 against the Seattle Seahawks. Moreover, to make matters worse, they lost Jayden Daniels to a gruesome elbow injury in the Week 2 loss to the Dallas Cowboys. Washington will go with Marcus Mariota.. anders-browns-intriguing-trade-idea-234656978.html #TopNews #News #Sanders #MarcusMariota #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/311/843/901/563/184/original/dff1d1c9e54d2dde.jpg"
+    ],
+    "publishedAt": "2026-09-22T00:24:41.278Z",
+    "collectedAt": "2026-09-22T00:40:10.819Z"
+  },
+  "social-2209da0e3092": {
+    "id": "social-2209da0e3092",
+    "url": "https://mastodon.social/@top_news/117311798627465024",
+    "text": "Commanders QB Jayden Daniels Gets Unfortunate Update After Latest Tests The news didn't get any better for the Washington Commanders on Monday after QB Jayden Daniels underwent more testing on his elbow. The post Commanders QB Jayden Daniels Gets Unfortunate Update After Latest Tests appeared first on HEAVY. anders-qb-jayden-daniels-gets-232418431.html #TopNews #News #Mariota #Commanders #QB",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/311/798/578/695/029/original/3735d02208f33c4a.jpg"
+    ],
+    "publishedAt": "2026-09-22T00:13:09.802Z",
+    "collectedAt": "2026-09-22T00:40:10.819Z"
+  },
+  "social-ecc8b6f3c4fb": {
+    "id": "social-ecc8b6f3c4fb",
+    "url": "https://mastodon.social/@top_news/117311527742489015",
+    "text": "Encouraging Jayden Daniels injury update comes from very unlikely source Washington Commanders quarterback Jayden Daniels is in good spirits, according to a Basketball Hall of Famer. uraging-jayden-daniels-injury-comes-223934861.html #TopNews #News #Daniels #JaydenDaniels #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/311/527/718/764/442/original/6f13d122d64355c4.jpg"
+    ],
+    "publishedAt": "2026-09-21T23:04:16.424Z",
+    "collectedAt": "2026-09-22T00:40:10.819Z"
   }
 }
