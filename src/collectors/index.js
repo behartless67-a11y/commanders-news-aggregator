@@ -214,6 +214,10 @@ export async function collectSocialBrowser() {
   // shows a failed "Last Run Result" — that native history is the failsafe,
   // not a bespoke alert — see docs/x-browser-scraping.md.
   let sessionExpired = false;
+  // Distinct from sessionExpired: the page loaded and simply had no posts on
+  // it. Same "a human has to look at this" outcome, different cause, and
+  // worth keeping apart so the run history says which one happened.
+  let emptyPage = false;
 
   for (const account of SOCIAL_BROWSER_ACCOUNTS) {
     let posts = [];
@@ -221,6 +225,7 @@ export async function collectSocialBrowser() {
       const result = await collectXProfile(account);
       posts = result.posts;
       if (result.sessionExpired) sessionExpired = true;
+      if (result.emptyPage) emptyPage = true;
     } catch (err) {
       log.error(`x-browser @${account.handle}: ${err.message}`);
       perAccount[`@${account.handle}`] = { error: err.message };
@@ -236,7 +241,7 @@ export async function collectSocialBrowser() {
 
   const removed = pruneSocial(store);
   await saveSocial(store);
-  await recordRun({ stage: 'social-browser', added: totalAdded, pruned: removed, sessionExpired });
+  await recordRun({ stage: 'social-browser', added: totalAdded, pruned: removed, sessionExpired, emptyPage });
   log.ok(`x-scrape done — ${totalAdded} new post(s), ${removed} pruned`);
-  return { totalAdded, perAccount, sessionExpired };
+  return { totalAdded, perAccount, sessionExpired, emptyPage };
 }

@@ -97,6 +97,7 @@ export default async (req) => {
         pruned: run.pruned ?? null,
         sources: run.sources ?? null,
         sessionExpired: run.sessionExpired === true,
+        emptyPage: run.emptyPage === true,
       };
     })
     .sort((a, b) => a.stage.localeCompare(b.stage));

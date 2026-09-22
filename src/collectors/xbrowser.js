@@ -112,15 +112,20 @@ function normalize(post, account) {
 }
 
 /**
- * Returns { posts, sessionExpired }. A Chrome launch failure or an empty
- * dump is a transient hiccup — logged, posts: [], sessionExpired: false —
- * indistinguishable from "she just didn't post," which is correct: it'll
- * clear up on its own next cycle. A detected logged-out page is different:
- * it won't clear up on its own, so it's flagged separately rather than
- * folded into the same silent-empty-result bucket. The caller (see
- * collectSocialBrowser in collectors/index.js) turns that flag into a
- * failed exit code, so a scheduled task's own run history — not a bespoke
- * notification system — is the failsafe.
+ * Returns { posts, sessionExpired, emptyPage }, which is three outcomes, not
+ * two, because they need different responses:
+ *
+ *   - A Chrome launch failure is a transient hiccup. Logged, both flags
+ *     false, and it clears up on its own next cycle.
+ *   - `sessionExpired` is a recognised logged-out page. It will never clear
+ *     up on its own; somebody has to log in again.
+ *   - `emptyPage` is a page that loaded and carried no posts at all. Also
+ *     needs a human, but for a different reason: most likely this machine
+ *     was never logged in, possibly X changed its markup.
+ *
+ * The caller (collectSocialBrowser in collectors/index.js) turns either of
+ * the last two into a failed exit code, so a scheduled task's own run
+ * history — not a bespoke notification system — is the failsafe.
  */
 export async function collectXProfile(account) {
   let dom;
@@ -128,14 +133,29 @@ export async function collectXProfile(account) {
     dom = await dumpProfileDom(account.handle);
   } catch (err) {
     log.error(`x-browser @${account.handle}: ${err.message}`);
-    return { posts: [], sessionExpired: false };
+    return { posts: [], sessionExpired: false, emptyPage: false };
   }
 
-  if (/Sign in to X|Log in|Access to x\.com was denied/i.test(dom) && !/data-testid="tweetText"/.test(dom)) {
-    log.warn(`x-browser @${account.handle}: looks logged out — session may have expired, log in again in the scraper profile`);
-    return { posts: [], sessionExpired: true };
+  // The alarm is the absence of tweets, not the presence of any particular
+  // phrase. A profile page for an account that posts regularly always
+  // carries at least one tweet, even on a week they said nothing new, so no
+  // tweet markup anywhere in the dump means this isn't a normal profile
+  // page. The strings below only pick which cause to name in the log.
+  //
+  // Matching on those strings alone missed a real case: a Chrome profile
+  // that had never been logged in on this machine returned a shell page
+  // containing none of them, so the run was reported as a clean "0 fetched"
+  // — indistinguishable from "she didn't post," when in fact nothing would
+  // ever be collected until somebody logged in.
+  if (!/data-testid="tweetText"/.test(dom)) {
+    if (/Sign in to X|Log in|Access to x\.com was denied|\/i\/flow\/login/i.test(dom)) {
+      log.warn(`x-browser @${account.handle}: looks logged out — log in again in the scraper profile`);
+      return { posts: [], sessionExpired: true, emptyPage: false };
+    }
+    log.warn(`x-browser @${account.handle}: page carried no posts at all — either this machine was never logged in, or X changed its markup`);
+    return { posts: [], sessionExpired: false, emptyPage: true };
   }
 
   const posts = extractArticles(dom, account.handle).slice(0, PER_ACCOUNT);
-  return { posts: posts.map((p) => normalize(p, account)).filter(Boolean), sessionExpired: false };
+  return { posts: posts.map((p) => normalize(p, account)).filter(Boolean), sessionExpired: false, emptyPage: false };
 }

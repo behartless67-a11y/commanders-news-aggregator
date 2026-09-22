@@ -203,6 +203,9 @@ async function main() {
       if (result.sessionExpired) {
         log.error('x-scrape: session expired — log in again in the scraper Chrome profile');
         process.exitCode = 1;
+      } else if (result.emptyPage) {
+        log.error('x-scrape: the profile page had no posts on it — this machine has probably never been logged in (see docs/x-browser-scraping.md), or X changed its markup');
+        process.exitCode = 1;
       }
       break;
     }
