@@ -11011,5 +11011,31 @@
     "images": [],
     "publishedAt": "2026-09-22T21:07:46.000Z",
     "collectedAt": "2026-09-22T22:06:02.519Z"
+  },
+  "social-3841d82a5ac5": {
+    "id": "social-3841d82a5ac5",
+    "url": "https://x.com/john_keim/status/2102470494171677155",
+    "text": "With @RealBramW@twitter.com on the livestream. Another new time: 7 pm. ET. On Daniels, the roster and more. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/317/108/309/538/121/original/9355fb51ffd0c0d8.jpg"
+    ],
+    "publishedAt": "2026-09-22T18:50:02.000Z",
+    "collectedAt": "2026-09-22T22:44:03.227Z"
+  },
+  "social-07e6b527229a": {
+    "id": "social-07e6b527229a",
+    "url": "https://x.com/BradyHenderson/status/2102194123453448378",
+    "text": "The latest on Sam Darnold: 87/seahawks-plan-sam-darnold-back-practice-wednesday",
+    "handle": "BradyHenderson",
+    "author": "Brady Henderson",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T00:31:50.000Z",
+    "collectedAt": "2026-09-22T22:44:03.228Z"
   }
 }
