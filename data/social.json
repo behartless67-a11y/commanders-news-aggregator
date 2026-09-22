@@ -1,52 +1,4 @@
 {
-  "social-d148485389c6": {
-    "id": "social-d148485389c6",
-    "url": "https://x.com/john_keim/status/2098583979108552844",
-    "text": "Five thoughts ahead of the season opener: on the OL — no more constant 2 minute O; Coleman/allegretti. Big moment for Jones as a DC; looking at the matchup on O and D. More. @ESPNRichmond@twitter.com . john-keim-report/id1455645619?i=1000789113305",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-12T01:26:25.000Z",
-    "collectedAt": "2026-09-12T02:06:08.420Z"
-  },
-  "social-b02edba66db7": {
-    "id": "social-b02edba66db7",
-    "url": "https://x.com/JPFinlayNBCS/status/2098608775770845221",
-    "text": "I will be rooting for Shelton. I want an American to win. But damn I love Tiafoe. What an incredible story. So much to be proud of and Francis please know the DMV loves you.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-12T03:04:57.000Z",
-    "collectedAt": "2026-09-12T03:08:58.810Z"
-  },
-  "social-b1632fc34ada": {
-    "id": "social-b1632fc34ada",
-    "url": "https://x.com/JPFinlayNBCS/status/2098607679606337607",
-    "text": "Ugh that’s a terrible way to lose it",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-12T03:00:35.000Z",
-    "collectedAt": "2026-09-12T03:08:58.810Z"
-  },
-  "social-5a2a32e7adbf": {
-    "id": "social-5a2a32e7adbf",
-    "url": "https://x.com/BenStandig/status/2098608684746055896",
-    "text": "Respect to the local kid, Foe. Another great run. Shelton is that dude. Have said before that he's the first American male I've believed could win a major in at least a decade.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-12T03:04:35.000Z",
-    "collectedAt": "2026-09-12T03:09:01.663Z"
-  },
   "social-5410b5395b42": {
     "id": "social-5410b5395b42",
     "url": "https://x.com/Commanders/status/2098744685095206918",
@@ -10948,5 +10900,67 @@
     ],
     "publishedAt": "2026-09-21T23:04:16.424Z",
     "collectedAt": "2026-09-22T00:40:10.819Z"
+  },
+  "social-08bf0ea3baac": {
+    "id": "social-08bf0ea3baac",
+    "url": "https://x.com/john_keim/status/2102197185861255501",
+    "text": "Second thoughts: on Jayden Daniels (updates and more); coverage mishaps plaguing the Commanders. Mostly mental errors. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000791021394",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T00:44:00.000Z",
+    "collectedAt": "2026-09-22T03:20:33.151Z"
+  },
+  "social-94121d4c487e": {
+    "id": "social-94121d4c487e",
+    "url": "https://x.com/MikeGarafolo/status/2102215707203342837",
+    "text": "The #Giants have now ruled QB Jaxson Dart (knee) out for the rest of the game.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/312/217/003/905/213/original/619fe53a641c6a7d.jpg"
+    ],
+    "publishedAt": "2026-09-22T01:57:36.000Z",
+    "collectedAt": "2026-09-22T03:20:34.520Z"
+  },
+  "social-9b2d9392a9ac": {
+    "id": "social-9b2d9392a9ac",
+    "url": "https://x.com/BenStandig/status/2102210365773824091",
+    "text": "🎙 Brace yourself - Reacting to Jayden Daniels elbow injury updates, and the short- and long-term implications. Plus, Nick Cross was hospitalized Sunday night (he returned to Virginia on Monday), updates on Cosmi, Kinlaw, Coleman, another round of coverage breakdowns. brace-yourself/id1760952448?i=1000791023803",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-22T01:36:23.000Z",
+    "collectedAt": "2026-09-22T03:20:34.520Z"
+  },
+  "social-30ed2c8d367a": {
+    "id": "social-30ed2c8d367a",
+    "url": "https://x.com/tashanreed/status/2102234322027900945",
+    "text": "Significant NFC East news:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-22T03:11:34.000Z",
+    "collectedAt": "2026-09-22T03:20:35.920Z"
+  },
+  "social-d0fc35a7c926": {
+    "id": "social-d0fc35a7c926",
+    "url": "https://x.com/pfrumors/status/2102232117296153046",
+    "text": "After a three-injury 2025 wrapped after a dislocated elbow, Jayden Daniels will miss Week 3 and likely more time after that due to his latest elbow issue. An IR stint for the #Commanders QB is not yet certain, however multiple-marcus-mariota-starts-likely-for-commanders-jayden-daniels-ir-stint-not-certain",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-22T03:02:49.000Z",
+    "collectedAt": "2026-09-22T03:20:44.340Z"
   }
 }
