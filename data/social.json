@@ -28,18 +28,6 @@
     "publishedAt": "2026-09-12T20:25:00.000Z",
     "collectedAt": "2026-09-12T21:48:36.260Z"
   },
-  "social-0405b0f6aa17": {
-    "id": "social-0405b0f6aa17",
-    "url": "https://x.com/BenStandig/status/2098865582196113735",
-    "text": "The Commanders elevated IOL Julian Good-Jones for Sunday's game.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-12T20:05:24.000Z",
-    "collectedAt": "2026-09-12T21:48:40.494Z"
-  },
   "social-b78c350056d5": {
     "id": "social-b78c350056d5",
     "url": "https://x.com/tashanreed/status/2098866014117052455",
@@ -10914,5 +10902,79 @@
     "images": [],
     "publishedAt": "2026-09-22T16:54:40.000Z",
     "collectedAt": "2026-09-22T18:06:24.089Z"
+  },
+  "social-ee2357e60b82": {
+    "id": "social-ee2357e60b82",
+    "url": "https://x.com/john_keim/status/2102483996248838508",
+    "text": "It can help some but definitely doesn’t sound foolproof by any means. Still a risk. But the key is what the specialists who examine him determine. Without knowing what they see/feel it’s so hard to know much or speak with any conviction.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T19:43:41.000Z",
+    "collectedAt": "2026-09-22T20:05:54.186Z"
+  },
+  "social-716dcb0c04cb": {
+    "id": "social-716dcb0c04cb",
+    "url": "https://x.com/john_keim/status/2102481653515817380",
+    "text": "To update this: in talking to multiple experts in this field, always some level of a tear in a dislocation. Question is whether surgery is needed. One expert (Dr Marc Kowalsky, an ortho surgeon who specializes in elbow trauma) said they usually will opt to not perform surgery on a 1st one. Why? Only a 2 percent chance to recur). in general the more it happens the higher the risk to recur",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T19:34:23.000Z",
+    "collectedAt": "2026-09-22T20:05:54.186Z"
+  },
+  "social-f423f2b497e7": {
+    "id": "social-f423f2b497e7",
+    "url": "https://x.com/AdamSchefter/status/2102467323315560526",
+    "text": "Breaking: Further testing today revealed Giants QB Jaxson Dart’s knee injury is worse than initially thought, and the team and Dart now are facing the possibility of season-ending knee surgery, sources tell ESPN. Of all the QB injuries suffered in Week 2, Dart’s is turning out to easily be the most significant.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/316/150/150/987/161/original/f2be5bc26b82f8f2.jpg"
+    ],
+    "publishedAt": "2026-09-22T18:37:26.000Z",
+    "collectedAt": "2026-09-22T20:05:54.186Z"
+  },
+  "social-4ee5298495ba": {
+    "id": "social-4ee5298495ba",
+    "url": "https://x.com/john_keim/status/2102468004172702129",
+    "text": "@auntieposey@twitter.com @ESPNRichmond@twitter.com Looking at it I don’t see many OL but I know some came back over. Before he was carted away I saw a few OL walking back to the locker room.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-22T18:40:08.000Z",
+    "collectedAt": "2026-09-22T20:05:54.186Z"
+  },
+  "social-4a6d42e4bf28": {
+    "id": "social-4a6d42e4bf28",
+    "url": "https://x.com/tashanreed/status/2102473002650665038",
+    "text": "We're live! Join here: 374408",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-22T19:00:00.000Z",
+    "collectedAt": "2026-09-22T20:05:57.843Z"
+  },
+  "social-a64b9a00e658": {
+    "id": "social-a64b9a00e658",
+    "url": "https://x.com/AdamSchefter/status/2102468367546560955",
+    "text": "QB injuries through 2 weeks have included: 🏈Sam Darnold 🏈Caleb Williams 🏈Jaxson Dart 🏈Jayden Daniels 🏈Kyler Murray 🏈Tua Tagovailoa",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-09-22T18:41:35.000Z",
+    "collectedAt": "2026-09-22T20:06:00.395Z"
   }
 }
