@@ -11,20 +11,6 @@
     "publishedAt": "2026-09-13T17:03:00.000Z",
     "collectedAt": "2026-09-13T17:15:27.789Z"
   },
-  "social-e32a9d590951": {
-    "id": "social-e32a9d590951",
-    "url": "https://x.com/JPFinlayNBCS/status/2099167642246381829",
-    "text": "In a sea of green at the original @MNFlagshipStore@twitter.com I found some burgundy and gold. Wasn’t expecting the Champ Bailey jersey though",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/264/590/537/723/596/original/5806a3e21964ecc3.jpg"
-    ],
-    "publishedAt": "2026-09-13T16:05:41.000Z",
-    "collectedAt": "2026-09-13T17:15:28.890Z"
-  },
   "social-27b12b1014e9": {
     "id": "social-27b12b1014e9",
     "url": "https://mastodon.social/@atobsmith/117264629696215036",
@@ -10911,5 +10897,53 @@
     "images": [],
     "publishedAt": "2026-09-23T14:38:30.000Z",
     "collectedAt": "2026-09-23T16:05:11.035Z"
+  },
+  "social-90904619ea5e": {
+    "id": "social-90904619ea5e",
+    "url": "https://x.com/JPFinlayNBCS/status/2102776944391524833",
+    "text": "Thru 2 games the Commanders tight ends have 6 catches for 49 yards. Need more productivity from that position",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-23T15:07:45.000Z",
+    "collectedAt": "2026-09-23T16:05:56.981Z"
+  },
+  "social-ec4db5a5b0b0": {
+    "id": "social-ec4db5a5b0b0",
+    "url": "https://x.com/AdamSchefter/status/2102789958612475915",
+    "text": "Jaxson Dart suffered damage to his MCL, PCL and meniscus, per sources. The meniscus is the main issue.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-23T15:59:28.000Z",
+    "collectedAt": "2026-09-23T16:05:59.615Z"
+  },
+  "social-a54ca9629751": {
+    "id": "social-a54ca9629751",
+    "url": "https://x.com/john_keim/status/2102777564473290863",
+    "text": "One note: we were talking about what to expect to hear today. Wouldn’t expect much because Daniels will visit another specialist today (as they had stated he would do Monday)",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-23T15:10:13.000Z",
+    "collectedAt": "2026-09-23T16:05:59.615Z"
+  },
+  "social-68ea46f3588a": {
+    "id": "social-68ea46f3588a",
+    "url": "https://x.com/MikeGarafolo/status/2102733564756332703",
+    "text": "From @gmfb@twitter.com : Medical evaluations and consultations continue on #Giants QB Jaxson Dart’s knee. It’s not a torn ACL but it’s a significant injury with a season-ending timeline on the table.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-23T12:15:23.000Z",
+    "collectedAt": "2026-09-23T16:05:59.615Z"
   }
 }
