@@ -1,18 +1,4 @@
 {
-  "social-8771d6f69402": {
-    "id": "social-8771d6f69402",
-    "url": "https://x.com/Capitals/status/2099138026412855735",
-    "text": "Give 'em hail, @Commanders ! #ALLCAPS x #RaiseHail",
-    "handle": "Capitals",
-    "author": "Washington Capitals",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/264/122/806/302/716/original/7bc0660ed5fc7206.jpg"
-    ],
-    "publishedAt": "2026-09-13T14:08:00.000Z",
-    "collectedAt": "2026-09-13T14:11:45.315Z"
-  },
   "social-cb226043d04d": {
     "id": "social-cb226043d04d",
     "url": "https://x.com/JPFinlayNBCS/status/2099149483963507122",
@@ -23,20 +9,6 @@
     "sourceKey": "@JPFinlayNBCS",
     "images": [],
     "publishedAt": "2026-09-13T14:53:31.000Z",
-    "collectedAt": "2026-09-13T15:37:25.756Z"
-  },
-  "social-b41753d42036": {
-    "id": "social-b41753d42036",
-    "url": "https://x.com/JPFinlayNBCS/status/2099143204717142116",
-    "text": "So the line finally jumped but most of the action and cash remains on Philly. Said it before I’ll say it again I like the spot for the skins",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/264/213/022/014/390/original/5140944d29dd9d5b.jpg"
-    ],
-    "publishedAt": "2026-09-13T14:28:34.000Z",
     "collectedAt": "2026-09-13T15:37:25.756Z"
   },
   "social-909e43b02d25": {
