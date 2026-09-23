@@ -1,12 +1,5 @@
 [
   {
-    "name": "Athan Kaliakmanis",
-    "position": "QB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
     "name": "Brandon Coleman",
     "position": "OL",
     "status": "Questionable",
@@ -16,7 +9,7 @@
   {
     "name": "Chig Okonkwo",
     "position": "TE",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   },
@@ -30,16 +23,9 @@
   {
     "name": "Frankie Luvu",
     "position": "LB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Groin",
     "notes": "Strain"
-  },
-  {
-    "name": "Isaac Yiadom",
-    "position": "CB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
   },
   {
     "name": "Javon Kinlaw",
@@ -51,9 +37,9 @@
   {
     "name": "Jayden Daniels",
     "position": "QB",
-    "status": "Out",
+    "status": "Doubtful",
     "bodyPart": "Elbow",
-    "notes": null
+    "notes": "Dislocated"
   },
   {
     "name": "Jer'Zhan Newton",
@@ -84,24 +70,10 @@
     "notes": "Surgery"
   },
   {
-    "name": "Luke McCaffrey",
-    "position": "WR",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Questionable",
     "bodyPart": "Undisclosed",
-    "notes": null
-  },
-  {
-    "name": "Ricky Barber",
-    "position": "DT",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
