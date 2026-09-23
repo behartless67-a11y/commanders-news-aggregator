@@ -1,70 +1,4 @@
 {
-  "social-b5bf42b6c5d5": {
-    "id": "social-b5bf42b6c5d5",
-    "url": "https://x.com/Commanders/status/2099182066646810852",
-    "text": "52's regular season debut 😌 @sonnystyles_@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-13T17:03:00.000Z",
-    "collectedAt": "2026-09-13T17:15:27.789Z"
-  },
-  "social-27b12b1014e9": {
-    "id": "social-27b12b1014e9",
-    "url": "https://mastodon.social/@atobsmith/117264629696215036",
-    "text": "It’s Game Day!! #NFL #WASvsPHI #WashingtonCommanders #Commanders #HTTC #RaiseHail",
-    "handle": "atobsmith",
-    "author": "Michael Smith",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/264/629/642/149/252/original/1f2e1e2c3958711f.jpg"
-    ],
-    "publishedAt": "2026-09-13T16:17:29.037Z",
-    "collectedAt": "2026-09-13T17:15:44.338Z"
-  },
-  "social-41131845ef0d": {
-    "id": "social-41131845ef0d",
-    "url": "https://mastodon.social/@liveimtv/117264676122535378",
-    "text": "#PHIvsWAS #FlyEaglesFly #HTTC #NFL #RTL #NFLGamePass #RTLPlus heute ab 22:25 Uhr: Philadelphia Eagles - Washington Commanders. Das letzte Aufeinandertreffen zwischen Philadelphia und Washington fand in der Rückrunde der letzten Saison am 4. ... adelphia-eagles-washington-commanders-62880.html?utm_source=dlvr.it&utm_medium=mastodon",
-    "handle": "liveimtv",
-    "author": "LiveimTV.de",
-    "label": "",
-    "sourceKey": "#HTTC",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/264/676/041/873/810/original/757a6cae5bda132a.jpeg"
-    ],
-    "publishedAt": "2026-09-13T16:29:17.463Z",
-    "collectedAt": "2026-09-13T17:15:45.948Z"
-  },
-  "social-64d762220685": {
-    "id": "social-64d762220685",
-    "url": "https://x.com/NickiJhabvala/status/2099182681275703462",
-    "text": "Jayden Daniels has arrived",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-13T17:05:26.000Z",
-    "collectedAt": "2026-09-13T18:05:12.415Z"
-  },
-  "social-86d5cd64bc2f": {
-    "id": "social-86d5cd64bc2f",
-    "url": "https://x.com/JPFinlayNBCS/status/2099188902296690866",
-    "text": "New charger for Week 1. How long will it last?",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/264/920/592/427/027/original/b38a3a97fca14e34.jpg"
-    ],
-    "publishedAt": "2026-09-13T17:30:10.000Z",
-    "collectedAt": "2026-09-13T18:06:46.517Z"
-  },
   "social-0a235455aa95": {
     "id": "social-0a235455aa95",
     "url": "https://x.com/JPFinlayNBCS/status/2099202446622876011",
@@ -10945,5 +10879,53 @@
     "images": [],
     "publishedAt": "2026-09-23T12:15:23.000Z",
     "collectedAt": "2026-09-23T16:09:20.677Z"
+  },
+  "social-4b68512be482": {
+    "id": "social-4b68512be482",
+    "url": "https://x.com/NickiJhabvala/status/2102818757139656816",
+    "text": "Dan Quinn said S Nick Cross will be ruled out aginst the Seahawks after he was hospitalized overnight in Dallas for an \"internal\" injury.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-23T17:53:54.000Z",
+    "collectedAt": "2026-09-23T18:05:11.904Z"
+  },
+  "social-a956ac4af83e": {
+    "id": "social-a956ac4af83e",
+    "url": "https://x.com/NickiJhabvala/status/2102800314894299552",
+    "text": "Dan Quinn said Javon Kinlaw (shoulder) will be working off to the side during practice and then they'll begin the ramp-up process with him.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-23T16:40:37.000Z",
+    "collectedAt": "2026-09-23T18:05:11.904Z"
+  },
+  "social-bb315a58159c": {
+    "id": "social-bb315a58159c",
+    "url": "https://x.com/NickiJhabvala/status/2102799785648398844",
+    "text": "Dan Quinn addressed the narrative about players appearing to leave the field without any regard to Jayden Daniels' injury. \"It's just the opposite — they were gutted. They love the guy.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-23T16:38:31.000Z",
+    "collectedAt": "2026-09-23T18:05:11.904Z"
+  },
+  "social-d0dd02bd4068": {
+    "id": "social-d0dd02bd4068",
+    "url": "https://x.com/NickiJhabvala/status/2102798708823777443",
+    "text": "Dan Quinn said Jayden Daniels is seeing another specialist today so he won't provide more details about his status until they know everything.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-23T16:34:14.000Z",
+    "collectedAt": "2026-09-23T18:05:11.904Z"
   }
 }
