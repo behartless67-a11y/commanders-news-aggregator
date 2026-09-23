@@ -1,16 +1,4 @@
 {
-  "social-57de6312c269": {
-    "id": "social-57de6312c269",
-    "url": "https://x.com/BenStandig/status/2098963299551334520",
-    "text": "HAIL NATION! 🏈 Want the chance to win free game tickets, attend exclusive events, merch discounts + the AAA benefits you already know and love? Become a AAA Commanders MVP Member TODAY! Convert for FREE or sign up at .",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-13T02:33:42.000Z",
-    "collectedAt": "2026-09-13T03:11:06.635Z"
-  },
   "social-18d89d246efb": {
     "id": "social-18d89d246efb",
     "url": "https://x.com/Commanders/status/2098985021423964545",
@@ -11025,5 +11013,31 @@
     "images": [],
     "publishedAt": "2026-09-23T01:58:23.000Z",
     "collectedAt": "2026-09-23T02:05:53.235Z"
+  },
+  "social-2986d1c1ca2d": {
+    "id": "social-2986d1c1ca2d",
+    "url": "https://x.com/BenStandig/status/2102589522638766532",
+    "text": "🎙️Discussed potential medical/surgical paths for Jayden Daniels' dislocated elbow with Dr. Annu Navani. Also, Terry McLaurin postgame; criticism of players going into the halftime locker room with Daniels hurt; safety tryouts next-steps-224",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-23T02:43:01.000Z",
+    "collectedAt": "2026-09-23T03:21:23.684Z"
+  },
+  "social-c73d391417d1": {
+    "id": "social-c73d391417d1",
+    "url": "https://mastodon.social/@steamandepic/117318117423768018",
+    "text": "Diablo has taken Sanctuary again, Diablo 5 got officially announced at BlizzCon 😈 The story spans three time eras: the past, the moment of invasion, and the present wasteland where almost no people are left. The standout feature is \"terror forming\", Dread Commanders visually reshape biomes to match their power. Plus procedural generation: come back to a location and it's a WHOLE different place depending on who controls it. L... #SteamAndEpic #Diablo #Commanders #Sanctuary #BlizzCon #Launch",
+    "handle": "steamandepic",
+    "author": "Steam & Epic Games | Daily",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/318/117/386/575/916/original/36aa7e68b5f1f693.jpg"
+    ],
+    "publishedAt": "2026-09-23T03:00:06.981Z",
+    "collectedAt": "2026-09-23T03:21:35.597Z"
   }
 }
