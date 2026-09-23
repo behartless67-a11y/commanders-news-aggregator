@@ -1,56 +1,4 @@
 {
-  "social-39eaecc7dc62": {
-    "id": "social-39eaecc7dc62",
-    "url": "https://x.com/Nationals/status/2099120985353961702",
-    "text": "raise hail @Commanders !!!",
-    "handle": "Nationals",
-    "author": "Washington Nationals",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/263/861/523/651/624/original/9e3e45912b8ae991.jpg"
-    ],
-    "publishedAt": "2026-09-13T13:00:17.000Z",
-    "collectedAt": "2026-09-13T13:58:13.210Z"
-  },
-  "social-9a086588d59b": {
-    "id": "social-9a086588d59b",
-    "url": "https://x.com/JPFinlayNBCS/status/2099119226560696739",
-    "text": "Game day at union station",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/263/830/835/976/796/original/b3ea3d784d5b1c84.jpg"
-    ],
-    "publishedAt": "2026-09-13T12:53:18.000Z",
-    "collectedAt": "2026-09-13T13:58:14.329Z"
-  },
-  "social-def357fa7472": {
-    "id": "social-def357fa7472",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvfnz6vq6u26",
-    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-13T13:07:01.841Z",
-    "collectedAt": "2026-09-13T13:58:30.275Z"
-  },
-  "social-a7bf365ebdd6": {
-    "id": "social-a7bf365ebdd6",
-    "url": "https://mysportgallery.com/@slessans2/117263880769913867",
-    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-13T13:07:01.000Z",
-    "collectedAt": "2026-09-13T13:58:30.275Z"
-  },
   "social-8771d6f69402": {
     "id": "social-8771d6f69402",
     "url": "https://x.com/Capitals/status/2099138026412855735",
@@ -182,20 +130,6 @@
     "images": [],
     "publishedAt": "2026-09-13T17:03:00.000Z",
     "collectedAt": "2026-09-13T17:15:27.789Z"
-  },
-  "social-f496a3998955": {
-    "id": "social-f496a3998955",
-    "url": "https://x.com/UFLDefenders/status/2099128465169482066",
-    "text": "The District is behind you 🛡️ Good luck, @Commanders !",
-    "handle": "UFLDefenders",
-    "author": "DC Defenders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/263/979/134/186/952/original/45c94a2301b5423c.jpg"
-    ],
-    "publishedAt": "2026-09-13T13:30:00.000Z",
-    "collectedAt": "2026-09-13T17:15:27.790Z"
   },
   "social-e32a9d590951": {
     "id": "social-e32a9d590951",
