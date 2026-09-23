@@ -37,7 +37,7 @@
   {
     "name": "Jayden Daniels",
     "position": "QB",
-    "status": "Doubtful",
+    "status": "Out",
     "bodyPart": "Elbow",
     "notes": "Dislocated"
   },
@@ -72,7 +72,7 @@
   {
     "name": "Nick Cross",
     "position": "DB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Undisclosed",
     "notes": null
   },
