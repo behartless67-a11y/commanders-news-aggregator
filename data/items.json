@@ -875,18 +875,6 @@
     "publishedAt": "2026-08-10T15:32:46.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-d653f98a7da8": {
-    "id": "wjla-commanders-d653f98a7da8",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-laremy-tunsil-torn-triceps-practice-scott-abraham-7news-left-tackle-injury-pass-rush-drill-regular-season-five-time-pro-bowler-contract-extension-615-million-guaranteed-nfl-offensive-lineman-30-million-per-year",
-    "title": "Tunsil tears triceps, will miss significant portion of Commanders season",
-    "excerpt": "Commanders left tackle Laremy Tunsil suffered a torn triceps Saturday and is expected to miss a significant portion of the regular season.",
-    "publishedAt": "2026-08-09T02:02:36.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -10834,5 +10822,17 @@
     "excerpt": "Jayden Daniels is hurt. We know that to be true. \n\n His dislocated elbow will keep him out for a stretch still technically yet to be determined, as he seeks medical opinions on the best course of what happens next. \n\n There’s some uncertainty there. We know, however, without a shadow of a doubt, that Marcus Mariota will start a now pivotal Week 3 home game against the Seattle Seahawks. \n\n He’ll probably play a bit beyond that, but we’re only dealing with aboslutes right now. \n\n We know No. 8 is…",
     "publishedAt": "2026-09-22T22:05:56.000Z",
     "collectedAt": "2026-09-22T22:43:51.752Z"
+  },
+  "pft-a2007f8c91ba": {
+    "id": "pft-a2007f8c91ba",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-cowboys-delivers-27-3-million-in-late-sunday-window",
+    "title": "Commanders-Cowboys delivers 27.3 million in late Sunday window",
+    "excerpt": "A whole lot of people heard Tom Brady say \" oh shit \" and \" piss missile \" on Sunday afternoon. (Hey, if smoking weed on the air is fair game, anything goes.)\n Fox's broadcast of Commanders-Cowboys in the late-afternoon window of the second Sunday of the 2026 season attracted 27.4 million viewers .\n It was the most-watched NFL telecast of the season to date. And it had everything to do with the presence of the Cowboys.\n Especially since the Commanders lost their starting quarterback, Jayden…",
+    "publishedAt": "2026-09-23T00:39:16.000Z",
+    "collectedAt": "2026-09-23T02:05:45.993Z"
   }
 }
