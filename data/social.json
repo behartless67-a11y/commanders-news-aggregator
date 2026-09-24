@@ -7890,7 +7890,7 @@
     "text": "Seahawks HC Mike Macdonald said quarterback Sam Darnold is “on a good track” to play Sunday against the Washington Commanders after missing most of the first two games with a glute injury. Story via @BradyHenderson : 34/seahawks-macdonald-apologizes-broncos-payton-comments",
     "handle": "AdamSchefter",
     "author": "Adam Schefter",
-    "label": "ESPN",
+    "label": "",
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-24T10:00:01.000Z",
@@ -8199,5 +8199,81 @@
     "images": [],
     "publishedAt": "2026-09-24T19:25:39.000Z",
     "collectedAt": "2026-09-24T20:05:12.240Z"
+  },
+  "social-c3a4077b3ad5": {
+    "id": "social-c3a4077b3ad5",
+    "url": "https://x.com/Commanders/status/2103208070989881420",
+    "text": "🤝 @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/327/718/792/658/451/original/b50bae8615c2dcb7.jpg"
+    ],
+    "publishedAt": "2026-09-24T19:40:54.000Z",
+    "collectedAt": "2026-09-24T20:05:48.579Z"
+  },
+  "social-c97d58c535f3": {
+    "id": "social-c97d58c535f3",
+    "url": "https://x.com/JPFinlayNBCS/status/2103208943812260313",
+    "text": "Terry McLaurin says it doesn’t feel like deja vu for the Commanders. The team is confident in Mariota and confident Jayden will be back",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-24T19:44:22.000Z",
+    "collectedAt": "2026-09-24T20:05:50.048Z"
+  },
+  "social-6b7a9d224a92": {
+    "id": "social-6b7a9d224a92",
+    "url": "https://x.com/JPFinlayNBCS/status/2103193362744463831",
+    "text": "Athan Kaliakmanis on preparing for the backup role",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-24T18:42:27.000Z",
+    "collectedAt": "2026-09-24T20:05:50.048Z"
+  },
+  "social-43c5ed935ec7": {
+    "id": "social-43c5ed935ec7",
+    "url": "https://x.com/john_keim/status/2103203154493841721",
+    "text": "Terry McLaurin: “we know that Jayden will be back.”",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-24T19:21:22.000Z",
+    "collectedAt": "2026-09-24T20:05:51.510Z"
+  },
+  "social-a6a1f6784bd5": {
+    "id": "social-a6a1f6784bd5",
+    "url": "https://x.com/BenStandig/status/2103206309382246742",
+    "text": "The eyes of @marshallkramsky@twitter.com say plenty here.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-24T19:33:54.000Z",
+    "collectedAt": "2026-09-24T20:05:52.890Z"
+  },
+  "social-b537153c8628": {
+    "id": "social-b537153c8628",
+    "url": "https://x.com/BenStandig/status/2103205645608722640",
+    "text": "Odafe Oweh paints, reads Steinbeck, and is known as one of the quiet guys. He also cursed out his HS basketball coach, “blacked out,” and got kicked off the team — all of which began his NFL path. Q&A on his unlikely journey — and the person he is now. off-script-odafe-owehs-path-to-the?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/327/682/942/142/516/original/7eb5242695548e8f.jpg"
+    ],
+    "publishedAt": "2026-09-24T19:31:16.000Z",
+    "collectedAt": "2026-09-24T20:05:52.890Z"
   }
 }
