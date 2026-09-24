@@ -11,20 +11,6 @@
     "publishedAt": "2026-09-14T23:25:09.000Z",
     "collectedAt": "2026-09-15T00:04:55.170Z"
   },
-  "social-7ef01fc3f94c": {
-    "id": "social-7ef01fc3f94c",
-    "url": "https://x.com/AdamSchefter/status/2099633895985549680",
-    "text": "Eagles are placing three-time Pro Bowl G Landon Dickerson on injured reserve due to a knee injury and he now will miss at least the next four games, as @Jeff_McLane reported.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/271/873/142/118/865/original/5ff2a630c6ffeb0c.jpg"
-    ],
-    "publishedAt": "2026-09-14T22:58:24.000Z",
-    "collectedAt": "2026-09-15T00:04:55.170Z"
-  },
   "social-8c051377f6b4": {
     "id": "social-8c051377f6b4",
     "url": "https://x.com/john_keim/status/2099658024981868584",
@@ -8211,5 +8197,19 @@
     "images": [],
     "publishedAt": "2026-09-24T21:47:28.000Z",
     "collectedAt": "2026-09-24T22:05:43.979Z"
+  },
+  "social-f61e0a0801ff": {
+    "id": "social-f61e0a0801ff",
+    "url": "https://x.com/Commanders/status/2103250625462989024",
+    "text": "Thursday work @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/328/385/800/094/882/original/0c3429b5b17164ad.jpg"
+    ],
+    "publishedAt": "2026-09-24T22:30:00.000Z",
+    "collectedAt": "2026-09-24T23:00:06.624Z"
   }
 }
