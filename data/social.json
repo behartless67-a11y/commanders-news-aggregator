@@ -1,30 +1,4 @@
 {
-  "social-921cf24b4930": {
-    "id": "social-921cf24b4930",
-    "url": "https://x.com/JPFinlayNBCS/status/2099510949942079493",
-    "text": "Some context around the severity of a Week 1 loss from @RotoWireNFL@twitter.com . Washington losing is undeniably bad, but it’s not as bad as some might make it seem.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/269/950/208/614/061/original/425612ca3c2e7cb4.jpg"
-    ],
-    "publishedAt": "2026-09-14T14:49:52.000Z",
-    "collectedAt": "2026-09-14T16:03:03.273Z"
-  },
-  "social-ebbe4e926e34": {
-    "id": "social-ebbe4e926e34",
-    "url": "https://x.com/john_keim/status/2099526031166083429",
-    "text": "Talked about this on the podcast. Credit the Eagles for widening two ILBs with targets wide in the flat on both sides. Opened the middle.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-14T15:49:47.000Z",
-    "collectedAt": "2026-09-14T16:03:04.630Z"
-  },
   "social-e51e2cbece16": {
     "id": "social-e51e2cbece16",
     "url": "https://x.com/Commanders/status/2099551249293336938",
@@ -8373,5 +8347,17 @@
     "images": [],
     "publishedAt": "2026-09-24T14:06:19.000Z",
     "collectedAt": "2026-09-24T14:45:46.379Z"
+  },
+  "social-9818179e2614": {
+    "id": "social-9818179e2614",
+    "url": "https://x.com/NickiJhabvala/status/2103138671960408140",
+    "text": "Daronte Jones has repeatedly brought up the Commanders' communication breakdowns on defense. Asked if such issues are commonplace for a team still learning his system, he said: \"We have high standards. In the mindset of our standards, it's out of the ordinary.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-24T15:05:08.000Z",
+    "collectedAt": "2026-09-24T16:05:11.525Z"
   }
 }
