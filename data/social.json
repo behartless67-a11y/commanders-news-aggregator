@@ -8401,5 +8401,43 @@
     "images": [],
     "publishedAt": "2026-09-24T16:26:50.000Z",
     "collectedAt": "2026-09-24T18:05:10.516Z"
+  },
+  "social-2b8d7c866b58": {
+    "id": "social-2b8d7c866b58",
+    "url": "https://x.com/JPFinlayNBCS/status/2103162783517073878",
+    "text": "Jaxon Smith-Njigba leads the NFL with 277 yards and 4 TDs. Daronte Jones on JSN: \"He has a way to catch the ball all over the field. He can obviously take the top of the defense...You've got to know where this guy is at all times, everyone not just the secondary.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/327/014/427/313/738/original/97bce6343b397059.jpg"
+    ],
+    "publishedAt": "2026-09-24T16:40:57.000Z",
+    "collectedAt": "2026-09-24T18:05:52.114Z"
+  },
+  "social-d381af3c0782": {
+    "id": "social-d381af3c0782",
+    "url": "https://x.com/john_keim/status/2103161532351672501",
+    "text": "Some individual drills by the OL. Lucas Patrick is No 63.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-24T16:35:58.000Z",
+    "collectedAt": "2026-09-24T18:05:54.122Z"
+  },
+  "social-0767c6641414": {
+    "id": "social-0767c6641414",
+    "url": "https://x.com/BenStandig/status/2103162052822868434",
+    "text": "Didn't see Sam Cosmi (concussion), TE Chig Okonkwo (hamstring) or LB Frankie Luvu (groin) for stretching. DT Javon Kinlaw (back/shoulder) on the field.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-24T16:38:02.000Z",
+    "collectedAt": "2026-09-24T18:05:55.222Z"
   }
 }
