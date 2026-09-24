@@ -1,16 +1,4 @@
 {
-  "social-bf7cb270fccc": {
-    "id": "social-bf7cb270fccc",
-    "url": "https://x.com/tashanreed/status/2099617068958031924",
-    "text": "Allegretti and Coleman seemed to be the ones having the most issues up front",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-14T21:51:32.000Z",
-    "collectedAt": "2026-09-14T22:06:30.045Z"
-  },
   "social-264bc53f3fc4": {
     "id": "social-264bc53f3fc4",
     "url": "https://x.com/john_keim/status/2099640628543901784",
@@ -36,18 +24,6 @@
     ],
     "publishedAt": "2026-09-14T22:58:24.000Z",
     "collectedAt": "2026-09-15T00:04:55.170Z"
-  },
-  "social-4c12b441dce4": {
-    "id": "social-4c12b441dce4",
-    "url": "https://x.com/BaldyNFL/status/2099609956592783803",
-    "text": ". @Commanders @Eagles Special Team Commander STC; Tyler Owens unleashed the beast. #BaldysBreakdowns",
-    "handle": "BaldyNFL",
-    "author": "Brian Baldinger",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-14T21:23:17.000Z",
-    "collectedAt": "2026-09-15T02:06:35.881Z"
   },
   "social-8c051377f6b4": {
     "id": "social-8c051377f6b4",
@@ -8211,5 +8187,17 @@
     "images": [],
     "publishedAt": "2026-09-24T20:48:29.000Z",
     "collectedAt": "2026-09-24T21:20:27.568Z"
+  },
+  "social-8b62a09db0fd": {
+    "id": "social-8b62a09db0fd",
+    "url": "https://x.com/NickiJhabvala/status/2103242906483986637",
+    "text": "Mayor Bowser and the D.C. Office of Planning submitted the final RFK Campus Master Plan to the D.C. Council. The Council will hold a public hearing on Sept. 30 for the plan and proposed legislation to update the site’s land uses. Here’s the full 188-page plan:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-24T21:59:19.000Z",
+    "collectedAt": "2026-09-24T22:05:10.423Z"
   }
 }
