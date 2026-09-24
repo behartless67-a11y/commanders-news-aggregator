@@ -863,18 +863,6 @@
     "publishedAt": "2026-08-11T15:28:09.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-57b4b97ce015": {
-    "id": "wjla-commanders-57b4b97ce015",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/sam-cosmi-becoming-the-anchor-of-the-commanders-offensive-line",
-    "title": "Sam Cosmi becoming anchor of Commanders' offensive line",
-    "excerpt": "Going into the new season, the Washington Commanders offensive line was going to be one of the strengths of the team.First pracitce of training camp, Nick Alleg",
-    "publishedAt": "2026-08-10T15:32:46.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -11302,5 +11290,89 @@
     "excerpt": "Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games during the regular season, Hogs Haven will revisit each of these previews with John Portis adding additional thoughts and updates as we go inside the matchup to get you ready for every opponent the Commanders face in 2026. \n From John Portis:\n Bill-in-Bangkok was certainly right back…",
     "publishedAt": "2026-09-24T11:00:00.000Z",
     "collectedAt": "2026-09-24T14:05:40.645Z"
+  },
+  "hogs-haven-2d73cc622b8c": {
+    "id": "hogs-haven-2d73cc622b8c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/443087/stats-and-snaps-2026-week-2-commanders-cowboys",
+    "title": "What advanced stats tell us about Commanders loss to Cowboys — Stats and Snaps",
+    "excerpt": "The Commanders were always going to go as far as Jayden Daniels took them this season. On the final play of the first half, Daniels aggravated the elbow dislocation he suffered last season. At the time of this story’s Thursday publication, the prognosis is unknown. He could miss anywhere from three weeks to the rest of the season.\n\n The speed of Daniels’ recovery and return to play will likely set the limit on the Commanders’ season outlook. That is all up in the air right now.\n\n While Daniels’…",
+    "publishedAt": "2026-09-24T15:59:54.000Z",
+    "collectedAt": "2026-09-24T16:05:33.411Z"
+  },
+  "hogs-haven-1bacf25e85d3": {
+    "id": "hogs-haven-1bacf25e85d3",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/442964/should-fans-give-up-because-of-losses-in-2-nfce-road-games-marcus-mariota",
+    "title": "Commanders: Should fans give up because of losses in 2 NFCE road games?",
+    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders looks on prior to a game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images \n \n The Daily Slop – 24 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of…",
+    "publishedAt": "2026-09-24T15:00:00.000Z",
+    "collectedAt": "2026-09-24T16:05:33.411Z"
+  },
+  "riggos-rag-f09908d8099e": {
+    "id": "riggos-rag-f09908d8099e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/stefon-diggs-just-shed-old-reputation-washington-commanders-needed-most",
+    "title": "Stefon Diggs just shed his old reputation when Commanders needed it most",
+    "excerpt": "Washington Commanders wide receiver Stefon Diggs has shed his old reputation to become the leader this locker room needs right now.",
+    "publishedAt": "2026-09-24T16:00:03.000Z",
+    "collectedAt": "2026-09-24T16:05:34.231Z"
+  },
+  "riggos-rag-599bcbdd15d9": {
+    "id": "riggos-rag-599bcbdd15d9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/javon-kinlaw-injury-interrupts-strong-commanders-start-adam-peters-needed",
+    "title": "Javon Kinlaw injury interrupts the strong Commanders start Adam Peters needed",
+    "excerpt": "Washington Commanders defensive lineman Javon Kinlaw has gained a new lease of life in Daronte Jones' defensive shift.",
+    "publishedAt": "2026-09-24T14:30:00.000Z",
+    "collectedAt": "2026-09-24T16:05:34.231Z"
+  },
+  "commanders-youtube-34778549cf8c": {
+    "id": "commanders-youtube-34778549cf8c",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=h0xBVwYsdG4",
+    "title": "LIVE: DC Daronte Jones Speaks To The Media Before Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-24T15:16:15.000Z",
+    "collectedAt": "2026-09-24T16:05:36.085Z"
+  },
+  "commanders-youtube-0f2b303c12d4": {
+    "id": "commanders-youtube-0f2b303c12d4",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=OrLYMfrtCz8",
+    "title": "LIVE: OC David Blough Speaks To The Media Before Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-09-24T14:56:22.000Z",
+    "collectedAt": "2026-09-24T16:05:36.085Z"
+  },
+  "yahoo-nfl-b83ca0037f25": {
+    "id": "yahoo-nfl-b83ca0037f25",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-fans-because-losses-2-150000200.html",
+    "title": "Should Commanders fans give up because of losses in 2 NFC East road games? - Daily Slop",
+    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders looks on prior to a game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images The Daily Slop – 24 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other…",
+    "publishedAt": "2026-09-24T15:00:00.000Z",
+    "collectedAt": "2026-09-24T16:05:39.657Z"
   }
 }
