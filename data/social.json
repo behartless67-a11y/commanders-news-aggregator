@@ -1,56 +1,4 @@
 {
-  "social-6c5d4ede1105": {
-    "id": "social-6c5d4ede1105",
-    "url": "https://x.com/Commanders/status/2099602084089725215",
-    "text": "welcome to the league, @sonnystyles_@twitter.com 👏",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/271/377/095/747/147/original/0783eef776325590.jpg"
-    ],
-    "publishedAt": "2026-09-14T20:52:00.000Z",
-    "collectedAt": "2026-09-14T21:10:26.020Z"
-  },
-  "social-7941b36f3403": {
-    "id": "social-7941b36f3403",
-    "url": "https://x.com/john_keim/status/2099602329926332756",
-    "text": "@GarwellJohn@twitter.com And Reaves as clearly dropping deep half not middle of the field. It can be an issue with disguising that sometimes your drop is off a little and it is the difference between 6 points and a pass breakup",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-14T20:52:58.000Z",
-    "collectedAt": "2026-09-14T21:10:28.553Z"
-  },
-  "social-9ca7ffdafe02": {
-    "id": "social-9ca7ffdafe02",
-    "url": "https://x.com/BenStandig/status/2099600741958652267",
-    "text": "I asked Dan Quinn about what he saw with Mike Sainristil's coverage on the 9-yard TD and 64-yarder, both caught by Wicks. On the TD: \"To have that type of play and just not have the right focus at right time, completely not acceptable.\"",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-14T20:46:40.000Z",
-    "collectedAt": "2026-09-14T21:10:30.188Z"
-  },
-  "social-6c1ae94aa19e": {
-    "id": "social-6c1ae94aa19e",
-    "url": "https://mastodon.social/@top_news/117271218295276480",
-    "text": "Jalen Hurts carves up Commanders in season debut Jalen Hurts made the most of limited opportunities, throwing for three TDs in a Week 1 win over Washington. n-hurts-carves-commanders-season-192436851.html #TopNews #News #Commanders #JalenHurts #PhiladelphiaEaglesQBJalenHurts",
-    "handle": "top_news",
-    "author": "News",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/271/218/244/364/734/original/a1454ecccaa828da.jpg"
-    ],
-    "publishedAt": "2026-09-14T20:13:03.090Z",
-    "collectedAt": "2026-09-14T21:10:42.612Z"
-  },
   "social-bf7cb270fccc": {
     "id": "social-bf7cb270fccc",
     "url": "https://x.com/tashanreed/status/2099617068958031924",
@@ -62,30 +10,6 @@
     "images": [],
     "publishedAt": "2026-09-14T21:51:32.000Z",
     "collectedAt": "2026-09-14T22:06:30.045Z"
-  },
-  "social-b9253b5f67b6": {
-    "id": "social-b9253b5f67b6",
-    "url": "https://x.com/tashanreed/status/2099606958458151044",
-    "text": "Among #Commanders who had double digit pass rush snaps, DT Daron Payne was the most effective. He led the team with a pressure rate of 21.1% on 19 pass rush snaps. OLB K'Lavon Chaisson was the next closest at 14.3%.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-14T21:11:22.000Z",
-    "collectedAt": "2026-09-14T22:06:30.045Z"
-  },
-  "social-fd3f4a51af9d": {
-    "id": "social-fd3f4a51af9d",
-    "url": "https://x.com/BaldyNFL/status/2099606751314055466",
-    "text": ". @Commanders @Eagles @sonnystyles_@twitter.com it's simple PHYSICS....F=MA. Force = Mass X Acceleration. Sonny is going to blow a lot of plays up this season. #BaldysBreakdowns",
-    "handle": "BaldyNFL",
-    "author": "Brian Baldinger",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-14T21:10:32.000Z",
-    "collectedAt": "2026-09-15T00:04:53.709Z"
   },
   "social-264bc53f3fc4": {
     "id": "social-264bc53f3fc4",
@@ -8275,5 +8199,17 @@
     ],
     "publishedAt": "2026-09-24T19:31:16.000Z",
     "collectedAt": "2026-09-24T20:05:52.890Z"
+  },
+  "social-63867978dd93": {
+    "id": "social-63867978dd93",
+    "url": "https://x.com/tashanreed/status/2103225079056249002",
+    "text": "While we wait for more details on Jayden Daniels, I analyzed the other X-factors for the #Commanders against the Seahawks: /09/24/marcus-mariota-gets-another-shot-starting-quarterback-commanders/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-24T20:48:29.000Z",
+    "collectedAt": "2026-09-24T21:20:27.568Z"
   }
 }
