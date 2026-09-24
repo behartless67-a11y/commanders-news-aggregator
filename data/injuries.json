@@ -1,9 +1,9 @@
 [
   {
-    "name": "Brandon Coleman",
-    "position": "OL",
+    "name": "Charles Omenihu",
+    "position": "DE",
     "status": "Questionable",
-    "bodyPart": "Finger",
+    "bodyPart": "Ankle",
     "notes": null
   },
   {
@@ -18,6 +18,13 @@
     "position": "DE",
     "status": "PUP",
     "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Dorance Armstrong",
+    "position": "DE",
+    "status": "Questionable",
+    "bodyPart": "Knee",
     "notes": null
   },
   {
@@ -42,6 +49,13 @@
     "notes": "Dislocated"
   },
   {
+    "name": "Jaylin Lane",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Groin",
+    "notes": null
+  },
+  {
     "name": "Jer'Zhan Newton",
     "position": "DL",
     "status": "IR",
@@ -56,10 +70,24 @@
     "notes": null
   },
   {
+    "name": "Jeremy Reaves",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
     "name": "Jordan Magee",
     "position": "LB",
     "status": "IR",
     "bodyPart": "Hamstring",
+    "notes": null
+  },
+  {
+    "name": "Kaytron Allen",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Hip",
     "notes": null
   },
   {
@@ -70,10 +98,24 @@
     "notes": "Surgery"
   },
   {
+    "name": "Leo Chenal",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Chest",
+    "notes": null
+  },
+  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Out",
     "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Percy Butler",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Groin",
     "notes": null
   },
   {
@@ -89,5 +131,12 @@
     "status": "IR",
     "bodyPart": "Ankle",
     "notes": "Sprain"
+  },
+  {
+    "name": "Tyler Owens",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
+    "notes": null
   }
 ]
