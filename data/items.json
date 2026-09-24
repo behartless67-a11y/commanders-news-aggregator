@@ -11011,7 +11011,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-analysis/442762/film-session-commanders-run-defense-has-improved-but-pass-problems-remain-the-same",
     "title": "Commanders film session: Washington run defense improved, pass problems remain",
-    "excerpt": "Washington’s defense has been one of the biggest storylines through the first two weeks of the season, but not necessarily for the reasons the team wanted. The pass defense continues to give up too many explosive plays, and the defense has yet to create a turnover under new defensive coordinator Daronte Jones. One area that deserves more attention, however, is the dramatic improvement against the run. \n\n Improving the run defense was a major priority for general manager Adam Peters this…",
+    "excerpt": "Washington’s defense has been one of the biggest storylines through the first two weeks of the season, but not necessarily for the reasons the team wanted. The pass defense continues to give up too many explosive plays, and the defense has yet to create a turnover under new coordinator Daronte Jones. One area that deserves more attention, however, is the dramatic improvement against the run.\n\n Improving the run defense was a major priority for general manager Adam Peters this offseason, and…",
     "publishedAt": "2026-09-23T17:30:00.000Z",
     "collectedAt": "2026-09-23T18:05:46.355Z"
   },
@@ -11242,5 +11242,65 @@
     "excerpt": "Hall of Fame quarterback Kurt Warner says Commanders quarterback Jayden Daniels could play through the left elbow injury he suffered on Sunday.\n Warner, who now appears on ESPN , described suffering the same injury in 2007 and not missing a game.\n “I suffered the exact same injury back in ’07, and I played the next week,\" Warner said. \"I braced it up, obviously a couple shots along the way, I had to hand the football off with my right hand in both directions, but this to me is something,…",
     "publishedAt": "2026-09-24T08:35:55.000Z",
     "collectedAt": "2026-09-24T08:59:56.538Z"
+  },
+  "hogs-haven-bcbd8bc2dcc1": {
+    "id": "hogs-haven-bcbd8bc2dcc1",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/the-5-oclock-club/441757/washington-commanders-home-opener-vs-seahawks-week-3-inside-matchup",
+    "title": "Washington Commanders vs. Seahawks in Week 3: Inside the Matchup",
+    "excerpt": "Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games during the regular season, Hogs Haven will revisit each of these previews with John Portis adding additional thoughts and updates as we go inside the matchup to get you ready for every opponent the Commanders face in 2026. \n\n From John Portis:\n\n Bill-in-Bangkok was certainly right…",
+    "publishedAt": "2026-09-24T11:00:00.000Z",
+    "collectedAt": "2026-09-24T14:05:33.998Z"
+  },
+  "riggos-rag-a9769e69e441": {
+    "id": "riggos-rag-a9769e69e441",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/proposed-shedeur-sanders-trade-would-make-commanders-qb-crisis-even-worse",
+    "title": "Proposed Shedeur Sanders trade would make Commanders’ QB crisis even worse",
+    "excerpt": "A proposed trade that would send Shedeur Sanders to the Washington Commanders would make their quarterback crisis even worse.",
+    "publishedAt": "2026-09-24T13:00:04.000Z",
+    "collectedAt": "2026-09-24T14:05:34.766Z"
+  },
+  "riggos-rag-e8a7f9b212d1": {
+    "id": "riggos-rag-e8a7f9b212d1",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-investment-audit-stefon-diggs-rises-leo-chenal-sinks",
+    "title": "Commanders Investment Audit: Stefon Diggs rises as Leo Chenal sinks",
+    "excerpt": "How are the Washington Commanders' offseason investments working out through two weeks of the 2026 campaign?",
+    "publishedAt": "2026-09-24T11:30:00.000Z",
+    "collectedAt": "2026-09-24T14:05:34.766Z"
+  },
+  "riggos-rag-980e52ba2d88": {
+    "id": "riggos-rag-980e52ba2d88",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/3-likely-paths-jayden-daniels-washington-commanders-recovery-decision-looming",
+    "title": "3 likely paths for Jayden Daniels with Commanders’ recovery decision looming",
+    "excerpt": "Examining some realistic scenarios for quarterback Jayden Daniels as the Washington Commanders put together a recovery plan.",
+    "publishedAt": "2026-09-24T10:00:02.000Z",
+    "collectedAt": "2026-09-24T14:05:34.766Z"
+  },
+  "yahoo-nfl-9cec7f88cf9a": {
+    "id": "yahoo-nfl-9cec7f88cf9a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/inside-matchup-commanders-defy-odds-110000949.html",
+    "title": "Inside the matchup: How Commanders can defy odds, best the Seahawks in Week 3",
+    "excerpt": "Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games during the regular season, Hogs Haven will revisit each of these previews with John Portis adding additional thoughts and updates as we go inside the matchup to get you ready for every opponent the Commanders face in 2026. \n From John Portis:\n Bill-in-Bangkok was certainly right back…",
+    "publishedAt": "2026-09-24T11:00:00.000Z",
+    "collectedAt": "2026-09-24T14:05:40.645Z"
   }
 }
