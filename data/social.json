@@ -89,18 +89,6 @@
     "publishedAt": "2026-09-14T16:37:55.000Z",
     "collectedAt": "2026-09-14T17:42:34.702Z"
   },
-  "social-abe4db0cae46": {
-    "id": "social-abe4db0cae46",
-    "url": "https://x.com/tashanreed/status/2099532703578149174",
-    "text": "Rewatching the game: This was a miscommunication between Sainristil and Nick Cross. It was a two-man route concept with Wicks and Goedert. Both of them went with Wicks, which left Goedert uncovered. That confusion led to both players freezing and leaving Wicks open.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-14T16:16:18.000Z",
-    "collectedAt": "2026-09-14T17:42:34.702Z"
-  },
   "social-a676c63292f7": {
     "id": "social-a676c63292f7",
     "url": "https://x.com/NickiJhabvala/status/2099576313065439550",
@@ -8443,5 +8431,53 @@
     "images": [],
     "publishedAt": "2026-09-24T15:04:22.000Z",
     "collectedAt": "2026-09-24T16:05:47.433Z"
+  },
+  "social-d21b2608b106": {
+    "id": "social-d21b2608b106",
+    "url": "https://x.com/john_keim/status/2103158709178314897",
+    "text": "DL Javon Kinlaw is out here during the stretching period. He’s in uniform.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-24T16:24:45.000Z",
+    "collectedAt": "2026-09-24T16:30:52.052Z"
+  },
+  "social-03abbb61305c": {
+    "id": "social-03abbb61305c",
+    "url": "https://x.com/BenStandig/status/2103157146497991133",
+    "text": "Week 3 approach: One step at a time.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-24T16:18:33.000Z",
+    "collectedAt": "2026-09-24T16:30:54.954Z"
+  },
+  "social-b450666c98eb": {
+    "id": "social-b450666c98eb",
+    "url": "https://x.com/tashanreed/status/2103159572957724953",
+    "text": "Still no RG Sam Cosmi (concussion), TE Chig Okonkwo (hamstring) or LB Frankie Luvu (groin) for the #Commanders",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-24T16:28:11.000Z",
+    "collectedAt": "2026-09-24T16:30:56.254Z"
+  },
+  "social-a466b1655a30": {
+    "id": "social-a466b1655a30",
+    "url": "https://x.com/tashanreed/status/2103156941715538122",
+    "text": "#Commanders DT Javon Kinlaw (shoulder) is practicing",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-24T16:17:44.000Z",
+    "collectedAt": "2026-09-24T16:30:56.254Z"
   }
 }
