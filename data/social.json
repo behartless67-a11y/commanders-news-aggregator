@@ -1,16 +1,4 @@
 {
-  "social-264bc53f3fc4": {
-    "id": "social-264bc53f3fc4",
-    "url": "https://x.com/john_keim/status/2099640628543901784",
-    "text": "According to @NextGenStats B.Coleman allowed 9 pressures (faced a variety of pass rushers; allowed a pressure to 4 different players).",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-14T23:25:09.000Z",
-    "collectedAt": "2026-09-15T00:04:55.170Z"
-  },
   "social-8c051377f6b4": {
     "id": "social-8c051377f6b4",
     "url": "https://x.com/john_keim/status/2099658024981868584",
@@ -8211,5 +8199,17 @@
     ],
     "publishedAt": "2026-09-24T22:30:00.000Z",
     "collectedAt": "2026-09-24T23:00:06.624Z"
+  },
+  "social-a4ac2d487aa3": {
+    "id": "social-a4ac2d487aa3",
+    "url": "https://x.com/NickiJhabvala/status/2103258560373346751",
+    "text": "Commanders injury report:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-24T23:01:32.000Z",
+    "collectedAt": "2026-09-25T00:05:10.317Z"
   }
 }
