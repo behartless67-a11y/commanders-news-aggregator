@@ -8547,5 +8547,91 @@
     "images": [],
     "publishedAt": "2026-09-25T14:24:34.000Z",
     "collectedAt": "2026-09-25T16:05:10.498Z"
+  },
+  "social-ba6ecef884ba": {
+    "id": "social-ba6ecef884ba",
+    "url": "https://x.com/JPFinlayNBCS/status/2103509895588843546",
+    "text": "Seattle hasn't lost since 11/16/2025. Sheesh",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-25T15:40:15.000Z",
+    "collectedAt": "2026-09-25T16:05:44.329Z"
+  },
+  "social-00c83d923fa3": {
+    "id": "social-00c83d923fa3",
+    "url": "https://x.com/JPFinlayNBCS/status/2103501875232579711",
+    "text": "Looks like Washington will miss Bosa Week 6 in San Fran",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-25T15:08:22.000Z",
+    "collectedAt": "2026-09-25T16:05:44.330Z"
+  },
+  "social-2ba77bf688af": {
+    "id": "social-2ba77bf688af",
+    "url": "https://x.com/john_keim/status/2103508830219100600",
+    "text": "DL Javon Kinlaw is going through individual drills. TE Chig Okonkwo and LB Frankie Luvu not practicing again today.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-25T15:36:01.000Z",
+    "collectedAt": "2026-09-25T16:05:45.727Z"
+  },
+  "social-0c38092d7b27": {
+    "id": "social-0c38092d7b27",
+    "url": "https://x.com/john_keim/status/2103507012164407572",
+    "text": "The early scene. The sun has returned to Ashburn:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-25T15:28:47.000Z",
+    "collectedAt": "2026-09-25T16:05:45.727Z"
+  },
+  "social-f7f5cf3edc37": {
+    "id": "social-f7f5cf3edc37",
+    "url": "https://x.com/BenStandig/status/2103506006118379683",
+    "text": "No rain, no IR, no problem",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/332/375/802/847/519/original/5b60628ee0a78ed4.jpg"
+    ],
+    "publishedAt": "2026-09-25T15:24:47.000Z",
+    "collectedAt": "2026-09-25T16:05:47.129Z"
+  },
+  "social-3fd11a4eec9a": {
+    "id": "social-3fd11a4eec9a",
+    "url": "https://x.com/tashanreed/status/2103510303476433271",
+    "text": "As expected, these three aren't practicing today. #Commanders will be without this trio plus others against the Seahawks:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-25T15:41:52.000Z",
+    "collectedAt": "2026-09-25T16:05:48.529Z"
+  },
+  "social-6540b563c258": {
+    "id": "social-6540b563c258",
+    "url": "https://x.com/tashanreed/status/2103504249820725663",
+    "text": "As expected, these three aren't practicing today. #Commanders will be without this trio plus the following against the Seahawks:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-25T15:17:49.000Z",
+    "collectedAt": "2026-09-25T16:05:48.529Z"
   }
 }
