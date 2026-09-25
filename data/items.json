@@ -11947,7 +11947,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/pressers/443505/dan-quinn-jayden-daniels-week-to-week-marcus-mariota-sam-cosmi",
     "title": "Dan Quinn: Jayden Daniels week-to-week; Marcus Mariota named captain",
-    "excerpt": "Dan Quinn spoke to reporters after Friday’s practice and confirmed several things that general manager Adam Peters said earlier today in an interview with the Junkies on 106.7-FM The Fan in Washington . Jayden Daniels isn’t getting surgery and he won’t be placed on injured reserve. He’s considered week-to-week, and the team is happy with the positive signs they’ve seen. \n\n Quinn wouldn’t commit to the prospect any future surgery, and said the team’s record wouldn’t play into that decision. He…",
+    "excerpt": "Dan Quinn spoke to reporters after Friday’s practice and confirmed several things that general manager Adam Peters said earlier today in an interview with the Junkies on 106.7-FM The Fan in Washington . Jayden Daniels isn’t getting surgery and he won’t be placed on injured reserve. He’s considered week-to-week, and the team is happy with the positive signs they’ve seen. \n Quinn wouldn’t commit to the prospect of any future surgery, and said the team’s record wouldn’t play into that decision. He…",
     "publishedAt": "2026-09-25T17:22:55.000Z",
     "collectedAt": "2026-09-25T18:05:34.192Z"
   },
@@ -12022,5 +12022,53 @@
     "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Javon Kinlaw #99 of the Washington Commanders reacts to a sack during a game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images The Daily Slop – 25 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling…",
     "publishedAt": "2026-09-25T16:32:00.000Z",
     "collectedAt": "2026-09-25T18:05:41.736Z"
+  },
+  "hogs-haven-ed94fac54da8": {
+    "id": "hogs-haven-ed94fac54da8",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/443424/commanders-seahawks-injury-report-frankie-luvu-chig-okonkwo-sam-cosmi-jayden-daniels-nick-cross",
+    "title": "Commanders vs. Seahawks Friday injury report: Sam Cosmi among those expected out",
+    "excerpt": "The Commanders ruled safety Nick Cross (internal/illness) and quarterback Jayden Daniels (elbow) out of Sunday’s game against the Seattle Seahawks almost a week ago now. \n\n There was at least some hope that more key players could recover in time to face the Super Bowl champs. It’s now a virtual certainty that linebacker Frankie Luvu (groin), tight end Chig Okonkwo (hamstring) and right guard Sam Cosmi (concussion) won’t be available. \n\n General manager Adam Peters said in Friday morning…",
+    "publishedAt": "2026-09-25T18:00:49.000Z",
+    "collectedAt": "2026-09-25T20:05:32.174Z"
+  },
+  "riggos-rag-c7509392e408": {
+    "id": "riggos-rag-c7509392e408",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/marcus-mariota-inherits-season-saving-task-washington-commanders-fight-stay-afloat",
+    "title": "Marcus Mariota inherits season-saving task as Commanders fight to stay afloat",
+    "excerpt": "Marcus Mariota has inherited a season-saving task as the Washington Commanders fight to stay afloat without quarterback Jayden Daniels.",
+    "publishedAt": "2026-09-25T19:00:00.000Z",
+    "collectedAt": "2026-09-25T20:05:32.784Z"
+  },
+  "yahoo-nfl-dbe29856dcbc": {
+    "id": "yahoo-nfl-dbe29856dcbc",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/elbow-surgery-not-on-the-table-for-qb-jayden-daniels-right-now-commanders-gm-adam-peters-says-190331996.html",
+    "title": "Elbow surgery 'not on the table' for QB Jayden Daniels right now, Commanders GM Adam Peters says",
+    "excerpt": "Elbow surgery is \"not on the table\" at the moment for Jayden Daniels, and the Washington Commanders haven't discussed placing the third-year quarterback on injured reserve, general manager Adam Peters said Friday morning during an appearance on 106.7 The Fan in Washington. \n Daniels was carted off at the end of the first half during a Week 2 loss to the Dallas Cowboys after dislocating his left elbow again . The gruesome injury elicited a profane reaction from Fox Sports analyst Tom Brady and…",
+    "publishedAt": "2026-09-25T19:03:31.000Z",
+    "collectedAt": "2026-09-25T20:05:38.942Z"
+  },
+  "yahoo-nfl-8333bb6170c4": {
+    "id": "yahoo-nfl-8333bb6170c4",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/jayden-daniels-injury-commanders-announce-190947934.html",
+    "title": "Jayden Daniels injury update as Commanders announce positive news",
+    "excerpt": "After a disastrous start to a so far winless season − one exacerbated by the re-injury of quarterback Jayden Daniels' left (non-throwing) elbow, Washington Commanders fans got some much needed positive news.\n Head coach Dan Quinn announced Friday, Sept. 25, that his franchise quarterback, who led the team to the NFC title game to cap his Offensive Rookie of the Year campaign in 2024, will not be placed on injured reserve despite the elbow dislocation he suffered in the team's Week 2 loss at…",
+    "publishedAt": "2026-09-25T19:09:47.000Z",
+    "collectedAt": "2026-09-25T20:05:38.942Z"
   }
 }
