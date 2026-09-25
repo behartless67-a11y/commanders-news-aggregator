@@ -1,15 +1,8 @@
 [
   {
-    "name": "Charles Omenihu",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Ankle",
-    "notes": null
-  },
-  {
     "name": "Chig Okonkwo",
     "position": "TE",
-    "status": "Doubtful",
+    "status": "Out",
     "bodyPart": "Hamstring",
     "notes": null
   },
@@ -21,25 +14,11 @@
     "notes": null
   },
   {
-    "name": "Dorance Armstrong",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Frankie Luvu",
     "position": "LB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Groin",
     "notes": "Strain"
-  },
-  {
-    "name": "Javon Kinlaw",
-    "position": "DT",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
   },
   {
     "name": "Jayden Daniels",
@@ -47,13 +26,6 @@
     "status": "Out",
     "bodyPart": "Elbow",
     "notes": "Dislocated"
-  },
-  {
-    "name": "Jaylin Lane",
-    "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Groin",
-    "notes": null
   },
   {
     "name": "Jer'Zhan Newton",
@@ -84,13 +56,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "Leo Chenal",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Chest",
-    "notes": null
-  },
-  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Out",
@@ -98,16 +63,9 @@
     "notes": null
   },
   {
-    "name": "Percy Butler",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Groin",
-    "notes": null
-  },
-  {
     "name": "Sam Cosmi",
     "position": "OL",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Concussion",
     "notes": null
   },
