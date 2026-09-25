@@ -1,102 +1,4 @@
 {
-  "social-592a17264523": {
-    "id": "social-592a17264523",
-    "url": "https://x.com/Commanders/status/2099913939244958085",
-    "text": "Celebrating Hispanic Heritage Month!",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/276/247/677/277/647/original/dd28948fe8849afd.jpg"
-    ],
-    "publishedAt": "2026-09-15T17:31:12.000Z",
-    "collectedAt": "2026-09-15T17:49:49.216Z"
-  },
-  "social-4c44de774041": {
-    "id": "social-4c44de774041",
-    "url": "https://x.com/john_keim/status/2099914240328950264",
-    "text": "Agree. He was there also. Failed execution.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T17:32:24.000Z",
-    "collectedAt": "2026-09-15T17:49:52.888Z"
-  },
-  "social-faeba1f46969": {
-    "id": "social-faeba1f46969",
-    "url": "https://x.com/john_keim/status/2099907374106460269",
-    "text": "There was another play in which Davis beat him but Eagles flagged for a penalty. So it didn’t show up on the individual page as a snap (a no play). But wasn’t a good rep. But considering the DTs, about what you could expect no?",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T17:05:07.000Z",
-    "collectedAt": "2026-09-15T17:49:52.888Z"
-  },
-  "social-7b01b4e8f407": {
-    "id": "social-7b01b4e8f407",
-    "url": "https://x.com/john_keim/status/2099903944860270847",
-    "text": "Yes, got beat on the 2 point conversion (you might have heard about that) with the Ojomo spin move. 1st game action after missing all but 2 days of camp. See where it goes from here.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T16:51:29.000Z",
-    "collectedAt": "2026-09-15T17:49:52.888Z"
-  },
-  "social-9ba09274a5bd": {
-    "id": "social-9ba09274a5bd",
-    "url": "https://x.com/john_keim/status/2099903644028051677",
-    "text": "Looked at all 38 pass block snaps by C Nick Allegretti. uncovered at the snap on 32 of those. Eagles got him with a stunt on 1 for a sack (Ojomo). Carter pressured on another. Mostly, helped out the guards -- yes, helped Cosmi on multiple reps vs. Carter; helped Paul a few times",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T16:50:17.000Z",
-    "collectedAt": "2026-09-15T17:49:52.888Z"
-  },
-  "social-e94dae52b0d2": {
-    "id": "social-e94dae52b0d2",
-    "url": "https://x.com/PatMcAfeeShow/status/2099901491259621627",
-    "text": "\"Sam Darnold isn't gonna play this week.. The Commanders game in week 3 is 17 days from when the Seahawks played.. There's at least a chance that he plays in that game\" ~ @RapSheet #PMSLive",
-    "handle": "PatMcAfeeShow",
-    "author": "Pat McAfee",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-09-15T16:41:44.000Z",
-    "collectedAt": "2026-09-15T17:50:00.521Z"
-  },
-  "social-587ef4484340": {
-    "id": "social-587ef4484340",
-    "url": "https://x.com/NickiJhabvala/status/2099913335873384677",
-    "text": "Commanders S/special-teamer Tyler Owens was asked about his ankle while on @gmfb",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-15T17:28:48.000Z",
-    "collectedAt": "2026-09-15T18:05:14.478Z"
-  },
-  "social-88133348ef63": {
-    "id": "social-88133348ef63",
-    "url": "https://x.com/john_keim/status/2099921684056694927",
-    "text": "He def has a chance to play Sunday. Will learn more about the others tomorrow but soft tissue injuries trickier.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T18:01:58.000Z",
-    "collectedAt": "2026-09-15T18:06:33.107Z"
-  },
   "social-6fa396d51681": {
     "id": "social-6fa396d51681",
     "url": "https://x.com/NickiJhabvala/status/2099952208074686467",
@@ -8607,5 +8509,41 @@
     "images": [],
     "publishedAt": "2026-09-25T16:07:06.000Z",
     "collectedAt": "2026-09-25T16:33:03.485Z"
+  },
+  "social-c808aaeb0318": {
+    "id": "social-c808aaeb0318",
+    "url": "https://x.com/NickiJhabvala/status/2103525279532814368",
+    "text": "Quinn also reiterated that Sam Cosmi, Frankie Luvu and Chig Okonkwo are unlikely to play Sunday.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T16:41:22.000Z",
+    "collectedAt": "2026-09-25T18:05:08.557Z"
+  },
+  "social-54d5e10013d4": {
+    "id": "social-54d5e10013d4",
+    "url": "https://x.com/NickiJhabvala/status/2103525073264996474",
+    "text": "The Commanders decided to make Marcus Mariota their sixth captain.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T16:40:33.000Z",
+    "collectedAt": "2026-09-25T18:05:08.557Z"
+  },
+  "social-1a75bcc8e260": {
+    "id": "social-1a75bcc8e260",
+    "url": "https://x.com/NickiJhabvala/status/2103524984782201032",
+    "text": "Dan Quinn: \"Jayden won't be placed on IR and is week to week. And that is great news.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T16:40:12.000Z",
+    "collectedAt": "2026-09-25T18:05:08.557Z"
   }
 }
