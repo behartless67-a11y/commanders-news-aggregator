@@ -1,42 +1,4 @@
 {
-  "social-e3fc8bae5943": {
-    "id": "social-e3fc8bae5943",
-    "url": "https://x.com/john_keim/status/2099834775078834297",
-    "text": "In video with some second thoughts after re-watching the Commanders loss. Lots of impact from newcomers. Lapses by Sainristil. OL protection. Lots to build on; some areas remain uncertain. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T12:16:38.000Z",
-    "collectedAt": "2026-09-15T12:59:23.511Z"
-  },
-  "social-0a7a172a9f39": {
-    "id": "social-0a7a172a9f39",
-    "url": "https://x.com/Commanders/status/2099849968831922214",
-    "text": "It's @TheTerry_25@twitter.com 's birthday!",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/275/246/513/619/317/original/daf0b081a8abdf28.jpg"
-    ],
-    "publishedAt": "2026-09-15T13:17:00.000Z",
-    "collectedAt": "2026-09-15T14:06:26.382Z"
-  },
-  "social-98fbbdf053cc": {
-    "id": "social-98fbbdf053cc",
-    "url": "https://x.com/tashanreed/status/2099858948366946421",
-    "text": "ICYMI: I'll be live on Substack talking #Commanders later today at 5 p.m. ET",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-15T13:52:41.000Z",
-    "collectedAt": "2026-09-15T14:06:33.043Z"
-  },
   "social-b3699bf3028c": {
     "id": "social-b3699bf3028c",
     "url": "https://x.com/Commanders/status/2099884696360632506",
@@ -8265,5 +8227,41 @@
     "images": [],
     "publishedAt": "2026-09-25T11:15:26.000Z",
     "collectedAt": "2026-09-25T12:05:40.602Z"
+  },
+  "social-230bdff8c31c": {
+    "id": "social-230bdff8c31c",
+    "url": "https://x.com/NickiJhabvala/status/2103483007667720668",
+    "text": "Week-to-week is implied when a player sustains an injury but does not go on IR. And week-to-week implies that Daniels has at least a chance to travel with the team.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T13:53:24.000Z",
+    "collectedAt": "2026-09-25T14:05:10.397Z"
+  },
+  "social-d6b9f0e05d76": {
+    "id": "social-d6b9f0e05d76",
+    "url": "https://x.com/NickiJhabvala/status/2103476249356279875",
+    "text": "Jayden Daniels not expected to have surgery or go on IR, Commanders GM Adam Peters says",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T13:26:33.000Z",
+    "collectedAt": "2026-09-25T14:05:10.397Z"
+  },
+  "social-842dc5133620": {
+    "id": "social-842dc5133620",
+    "url": "https://x.com/NickiJhabvala/status/2103464680131846646",
+    "text": "Commanders GM to @JunksRadio",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-25T12:40:34.000Z",
+    "collectedAt": "2026-09-25T14:05:10.397Z"
   }
 }
