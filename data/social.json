@@ -1,16 +1,4 @@
 {
-  "social-76a01f4cda25": {
-    "id": "social-76a01f4cda25",
-    "url": "https://x.com/JPFinlayNBCS/status/2099691532307611774",
-    "text": "BTA in Arrowhead. Chiefs seem very ready for 2026",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-15T02:47:26.000Z",
-    "collectedAt": "2026-09-15T03:25:39.939Z"
-  },
   "social-93011a34fd3a": {
     "id": "social-93011a34fd3a",
     "url": "https://x.com/BenStandig/status/2099824950479630568",
@@ -8241,5 +8229,41 @@
     "images": [],
     "publishedAt": "2026-09-25T01:35:12.000Z",
     "collectedAt": "2026-09-25T02:05:53.170Z"
+  },
+  "social-c28221c6b1a6": {
+    "id": "social-c28221c6b1a6",
+    "url": "https://x.com/BradyHenderson/status/2103203673505771926",
+    "text": "Sam Darnold, speaking to reporters now, when asked if he thinks he'll play Sunday at Washington: \"I'm really striving for that. But like I said, I'm just taking it day by day. I also don't want to jinx anything.\"",
+    "handle": "BradyHenderson",
+    "author": "Brady Henderson",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-24T19:23:26.000Z",
+    "collectedAt": "2026-09-25T03:27:51.877Z"
+  },
+  "social-1eb822d751a0": {
+    "id": "social-1eb822d751a0",
+    "url": "https://x.com/john_keim/status/2103306595623129487",
+    "text": "Jayden Daniels is expected back at the facility Friday after visiting another specialist. So he’s now wrapped up with seeing the specialists.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-25T02:12:24.000Z",
+    "collectedAt": "2026-09-25T03:27:51.877Z"
+  },
+  "social-043b6a19f668": {
+    "id": "social-043b6a19f668",
+    "url": "https://x.com/BenStandig/status/2103314878563791050",
+    "text": "🎙 Coverage \"communication\" issues, Marcus Mariota upside, Jayden Daniels, the QB depth chart conversation, and more with @ByLiamGriffin@twitter.com . p-217330101?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-25T02:45:19.000Z",
+    "collectedAt": "2026-09-25T03:27:53.317Z"
   }
 }
