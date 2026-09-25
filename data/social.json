@@ -1,28 +1,4 @@
 {
-  "social-c2e6c1fea38c": {
-    "id": "social-c2e6c1fea38c",
-    "url": "https://x.com/john_keim/status/2099953193891279000",
-    "text": "Tress Way will once again be the Commanders’ player rep. Has been in this role since 2020.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-15T20:07:11.000Z",
-    "collectedAt": "2026-09-15T20:38:23.110Z"
-  },
-  "social-e073cf69d0b1": {
-    "id": "social-e073cf69d0b1",
-    "url": "https://x.com/BenStandig/status/2099953337114542154",
-    "text": "The Commanders voted on their NFLPA reps: Voting Representative: Tress Way First Alternate: Deatrich Wise Jr. Second Alternate: Jeremy Reaves Third Alternate: Nick Allegretti",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-15T20:07:45.000Z",
-    "collectedAt": "2026-09-15T20:38:24.429Z"
-  },
   "social-d94c39cc7e19": {
     "id": "social-d94c39cc7e19",
     "url": "https://x.com/NickiJhabvala/status/2099981647235961264",
@@ -48,44 +24,6 @@
     ],
     "publishedAt": "2026-09-15T21:40:00.000Z",
     "collectedAt": "2026-09-15T22:06:21.664Z"
-  },
-  "social-324d836bb89d": {
-    "id": "social-324d836bb89d",
-    "url": "https://x.com/BenStandig/status/2099967519281082412",
-    "text": "The Commanders today worked out the following players: Devin Culp TE Washington Rivaldo Fairweather TE Auburn Jahfari Harvey LB Southern Methodist Emany Johnson LB Nevada Marvin Jones LB Oklahoma Anfernee Orji LB Vanderbilt Benton Whitley DE Holy Cross",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-15T21:04:06.000Z",
-    "collectedAt": "2026-09-15T22:06:26.561Z"
-  },
-  "social-6731e103507a": {
-    "id": "social-6731e103507a",
-    "url": "https://x.com/tashanreed/status/2099966488073654402",
-    "text": "The Tashan Reed Show is livestreaming now on Substack. I'll be breaking down the #Commanders ' loss to the Eagles and previewing their matchup with the Cowboys this weekend. Join here: 363206?utm_source=live-stream-scheduled-upsell",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/277/073/062/210/681/original/5aa29ab074d5f438.jpg"
-    ],
-    "publishedAt": "2026-09-15T21:00:00.000Z",
-    "collectedAt": "2026-09-15T22:06:27.556Z"
-  },
-  "social-bd028e54f716": {
-    "id": "social-bd028e54f716",
-    "url": "https://x.com/AdamSchefter/status/2099966915556905173",
-    "text": "Commanders safety Tyler Owens was a special teams demon Sunday vs. the Eagles.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-09-15T21:01:42.000Z",
-    "collectedAt": "2026-09-15T22:06:30.620Z"
   },
   "social-8e42ca507fe7": {
     "id": "social-8e42ca507fe7",
@@ -8640,5 +8578,129 @@
     "images": [],
     "publishedAt": "2026-09-25T18:27:10.000Z",
     "collectedAt": "2026-09-25T20:05:57.263Z"
+  },
+  "social-d4b9a27aaf20": {
+    "id": "social-d4b9a27aaf20",
+    "url": "https://x.com/john_keim/status/2103585836898164890",
+    "text": "As expected: Okonkwo, Luvu, Cosmi out along with Daniels and Cross",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/333/624/214/254/848/original/da809459980d6611.jpg"
+    ],
+    "publishedAt": "2026-09-25T20:42:00.000Z",
+    "collectedAt": "2026-09-25T21:19:21.772Z"
+  },
+  "social-ffcdf7421252": {
+    "id": "social-ffcdf7421252",
+    "url": "https://x.com/john_keim/status/2103581592384123152",
+    "text": "These are key losses for Seattle. Front 7 keys their D and will make it tough regardless",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-25T20:25:08.000Z",
+    "collectedAt": "2026-09-25T21:19:21.772Z"
+  },
+  "social-f9d723eee89a": {
+    "id": "social-f9d723eee89a",
+    "url": "https://x.com/BenStandig/status/2103591758269391137",
+    "text": "No surprises with the Commanders. Five is one of five players ruled out for Sunday. Sam Darnold appears set to play for the Seahawks, though Seattle will be thin at safety.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/333/720/749/356/182/original/31f0c41ebdd81fe1.jpg"
+    ],
+    "publishedAt": "2026-09-25T21:05:32.000Z",
+    "collectedAt": "2026-09-25T21:19:23.283Z"
+  },
+  "social-b93fb496f6ce": {
+    "id": "social-b93fb496f6ce",
+    "url": "https://x.com/AdamSchefter/status/2103581847972438130",
+    "text": "Seahawks QB Sam Darnold is off the injury report for Sunday’s game at Washington and is good to go.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-25T20:26:09.000Z",
+    "collectedAt": "2026-09-25T21:19:23.283Z"
+  },
+  "social-61dd4517e82c": {
+    "id": "social-61dd4517e82c",
+    "url": "https://x.com/BradyHenderson/status/2103581293619601717",
+    "text": "The Seahawks will be without two of their top three safeties Sunday at Washington as Julian Love and Ty Okada have both been ruled out. Defensive tackle Brandon Pili is questionable.",
+    "handle": "BradyHenderson",
+    "author": "Brady Henderson",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-25T20:23:57.000Z",
+    "collectedAt": "2026-09-25T21:19:24.547Z"
+  },
+  "social-96cff2687324": {
+    "id": "social-96cff2687324",
+    "url": "https://x.com/tashanreed/status/2103586489431171137",
+    "text": "#Commanders DT Javon Kinlaw has been cleared to play Sunday. Daniels, Cosmi, Okonkwo, Luvu and Cross are out.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-25T20:44:36.000Z",
+    "collectedAt": "2026-09-25T21:19:24.547Z"
+  },
+  "social-b97b46783a9f": {
+    "id": "social-b97b46783a9f",
+    "url": "https://x.com/tashanreed/status/2103582204509249561",
+    "text": "Sam Darnold is cleared to play against the #Commanders on Sunday. Tough to see how they win this one, but anything's possible in the NFL.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-25T20:27:34.000Z",
+    "collectedAt": "2026-09-25T21:19:24.547Z"
+  },
+  "social-5b463abfb0b1": {
+    "id": "social-5b463abfb0b1",
+    "url": "https://x.com/AdamSchefter/status/2103585634007036136",
+    "text": "Commanders officially ruled out QB Jayden Daniels for Sunday’s game.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-09-25T20:41:12.000Z",
+    "collectedAt": "2026-09-25T21:19:27.323Z"
+  },
+  "social-58ef3d56f3e0": {
+    "id": "social-58ef3d56f3e0",
+    "url": "https://x.com/RapSheet/status/2103582272205295757",
+    "text": "#Seahawks QB Sam Darnold (glute) is off the injury report and will play against the #Commanders .",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-09-25T20:27:51.000Z",
+    "collectedAt": "2026-09-25T21:19:29.242Z"
+  },
+  "social-c4b3d222bf09": {
+    "id": "social-c4b3d222bf09",
+    "url": "https://x.com/pfrumors/status/2103582991629103507",
+    "text": "The #Seahawks will have their starting quarterback in place when they face the Commanders in Week 3. Sam Darnold is off Seattle's injury report seahawks-sam-darnold-to-return-in-week-3",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "PFR",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-25T20:30:42.000Z",
+    "collectedAt": "2026-09-25T21:19:33.588Z"
   }
 }
