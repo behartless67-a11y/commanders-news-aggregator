@@ -11782,5 +11782,65 @@
     "excerpt": "Terry McLaurin fueled hope around Jayden Daniels' potential return before the Washington Commanders reveal the next step.",
     "publishedAt": "2026-09-25T11:30:00.000Z",
     "collectedAt": "2026-09-25T12:05:31.113Z"
+  },
+  "hogs-haven-1dfb0817a7be": {
+    "id": "hogs-haven-1dfb0817a7be",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/443423/commanders-adam-peters-jayden-daniels-injury-update-radio-1067",
+    "title": "Commanders GM Adam Peters provides Jayden Daniels injury update",
+    "excerpt": "Commanders quarterback Jayden Daniels has traveled around the country seeing specialists for how to best treat a left elbow dislocation that occurred at the end of the first half of a Week 2 loss at Dallas . \n\n Daniels got back late on Thursday and the team was still sitting down to decide on the best course of action moving forward. \n\n General manager Adam Peters didn’t have definitive answers about Daniels’ rehab process, but he did say that surgery is not on the table and that the team isn’t…",
+    "publishedAt": "2026-09-25T12:59:32.000Z",
+    "collectedAt": "2026-09-25T14:05:32.381Z"
+  },
+  "riggos-rag-0b8634807b6a": {
+    "id": "riggos-rag-0b8634807b6a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-avoids-surgery-washington-commanders-confront-repeat-injury-risk",
+    "title": "Jayden Daniels avoids surgery as Commanders confront repeat-injury risk",
+    "excerpt": "Washington Commanders general manager Adam Peters confirmed that quarterback Jayden Daniels won't have surgery, nor will he be going to injured reserve.",
+    "publishedAt": "2026-09-25T13:03:56.000Z",
+    "collectedAt": "2026-09-25T14:05:32.885Z"
+  },
+  "athletic-jhabvala-ec05bb96769e": {
+    "id": "athletic-jhabvala-ec05bb96769e",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7626823/2026/09/25/jayden-daniels-injury-update-surgery-ir",
+    "title": "Jayden Daniels not expected to have surgery or go on IR, Commanders GM Adam Peters says",
+    "excerpt": "Daniels dislocated his elbow for the second time in 10 months during Washington's Week 2 loss to the Dallas Cowboys.",
+    "publishedAt": "2026-09-25T13:21:20.000Z",
+    "collectedAt": "2026-09-25T14:05:34.571Z"
+  },
+  "commanders-youtube-469609ef416f": {
+    "id": "commanders-youtube-469609ef416f",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=MYlnvocDju8",
+    "title": "Quan Martin On Growth, Marcus Mariota & The Seahawks + Anthony Armstrong’s NFL Journey | Next Man Up",
+    "excerpt": "",
+    "publishedAt": "2026-09-25T14:00:32.000Z",
+    "collectedAt": "2026-09-25T14:05:34.938Z"
+  },
+  "pft-056ab928a553": {
+    "id": "pft-056ab928a553",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/surgery-not-on-table-for-jayden-daniels-commanders-havent-discussed-ir",
+    "title": "Surgery not on table for Jayden Daniels, Commanders haven't discussed IR",
+    "excerpt": "Commanders head coach Dan Quinn said on Wednesday that he didn't have an update on quarterback Jayden Daniels's outlook for the coming weeks because he was still meeting with specialists about his dislocated left elbow, but General Manager Adam Peters had more to offer on Friday morning. \n Daniels will not play against the Seahawks this Sunday, but Peters indicated that the Commanders expect to have the quarterback in the lineup in the near future. \n “He met with doctors all over the country,\"…",
+    "publishedAt": "2026-09-25T13:00:50.000Z",
+    "collectedAt": "2026-09-25T14:05:38.489Z"
   }
 }
