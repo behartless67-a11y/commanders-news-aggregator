@@ -8211,5 +8211,33 @@
     "images": [],
     "publishedAt": "2026-09-24T23:01:32.000Z",
     "collectedAt": "2026-09-25T00:05:10.317Z"
+  },
+  "social-8643413c45ac": {
+    "id": "social-8643413c45ac",
+    "url": "https://x.com/Commanders/status/2103258182730858503",
+    "text": "Thursday injury report #SEAvsWAS | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/328/506/396/152/799/original/62b32bb805a12583.jpg"
+    ],
+    "publishedAt": "2026-09-24T23:00:02.000Z",
+    "collectedAt": "2026-09-25T00:05:38.406Z"
+  },
+  "social-94901fdbea13": {
+    "id": "social-94901fdbea13",
+    "url": "https://x.com/BenStandig/status/2103258620976648460",
+    "text": "Down to five DNPs -- Kinlaw off that list -- and six \"limited\" -- and onto this list.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/328/512/666/888/177/original/d577993333b08c40.jpg"
+    ],
+    "publishedAt": "2026-09-24T23:01:46.000Z",
+    "collectedAt": "2026-09-25T00:05:42.537Z"
   }
 }
