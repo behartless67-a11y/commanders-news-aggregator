@@ -1,18 +1,4 @@
 {
-  "social-8e42ca507fe7": {
-    "id": "social-8e42ca507fe7",
-    "url": "https://x.com/tashanreed/status/2099984069748498592",
-    "text": "For those who didn't make the live recording, here's the latest episode of the Tashan Reed Show discussing everything #Commanders 🔗⤵️ tashan-reed-show-recapping-the?r=1gwknd&utm_medium=ios",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/277/347/862/841/907/original/56566b8b1c1e9eca.jpg"
-    ],
-    "publishedAt": "2026-09-15T22:09:52.000Z",
-    "collectedAt": "2026-09-15T22:43:00.679Z"
-  },
   "social-99242b4e0751": {
     "id": "social-99242b4e0751",
     "url": "https://x.com/Commanders/status/2100000458932982107",
@@ -91,18 +77,6 @@
     ],
     "publishedAt": "2026-09-16T00:47:00.000Z",
     "collectedAt": "2026-09-16T02:06:21.914Z"
-  },
-  "social-c1b57c01576f": {
-    "id": "social-c1b57c01576f",
-    "url": "https://x.com/JFowlerESPN/status/2099997241771524595",
-    "text": "Commanders LB Frankie Luvu suffered a minor groin strain Sunday against Philadelphia, per sources. His status for this week remains uncertain, but this shouldn’t be a long-term issue and he’s expected to avoid IR.",
-    "handle": "JFowlerESPN",
-    "author": "Jeremy Fowler",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-15T23:02:13.000Z",
-    "collectedAt": "2026-09-16T02:06:23.227Z"
   },
   "social-440fdda98f82": {
     "id": "social-440fdda98f82",
@@ -8688,5 +8662,17 @@
     "images": [],
     "publishedAt": "2026-09-25T20:43:33.000Z",
     "collectedAt": "2026-09-25T22:05:10.176Z"
+  },
+  "social-61b9160461df": {
+    "id": "social-61b9160461df",
+    "url": "https://x.com/Commanders/status/2103609238681534834",
+    "text": "feel like some of these are still up for debate 🤣 @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-25T22:15:00.000Z",
+    "collectedAt": "2026-09-25T23:04:51.412Z"
   }
 }
