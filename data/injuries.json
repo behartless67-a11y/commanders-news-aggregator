@@ -70,24 +70,10 @@
     "notes": null
   },
   {
-    "name": "Jeremy Reaves",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
     "name": "Jordan Magee",
     "position": "LB",
     "status": "IR",
     "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
-    "name": "Kaytron Allen",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Hip",
     "notes": null
   },
   {
@@ -131,12 +117,5 @@
     "status": "IR",
     "bodyPart": "Ankle",
     "notes": "Sprain"
-  },
-  {
-    "name": "Tyler Owens",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
   }
 ]
