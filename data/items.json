@@ -12202,5 +12202,29 @@
     "excerpt": "Washington Commanders cornerback Amik Robertson stands alone in the fight to stop Seattle Seahawks wide receiver Jaxon Smith-Njigba this weekend.",
     "publishedAt": "2026-09-26T11:30:00.000Z",
     "collectedAt": "2026-09-26T12:05:34.742Z"
+  },
+  "riggos-rag-46f6f376ec0c": {
+    "id": "riggos-rag-46f6f376ec0c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-return-may-hinge-whether-commanders-can-save-their-season",
+    "title": "Jayden Daniels’ return may hinge on whether Commanders can save their season",
+    "excerpt": "Quarterback Jayden Daniels' return from a dislocated elbow could hinge on whether the Washington Commanders can save their season in the coming weeks.",
+    "publishedAt": "2026-09-26T13:02:20.000Z",
+    "collectedAt": "2026-09-26T14:05:33.726Z"
+  },
+  "yahoo-nfl-6eba1420a6ed": {
+    "id": "yahoo-nfl-6eba1420a6ed",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/outlining-plan-address-washington-commanders-120000642.html",
+    "title": "Outlining a plan to address the Washington Commanders’ secondary issues",
+    "excerpt": "Things have not gone according to plan for the Washington Commanders and their secondary through the first two weeks of the season. The idea of frequent and disguised pressures shouldering the bulk of the burden for the defensive backs is not sustainable if teams can slow the pressure and exploit coverage lapses, and there have been plenty to exploit. As many fans will tell you, the ship has sailed on any significant personnel additions at this point in the season, but in this article I will…",
+    "publishedAt": "2026-09-26T12:00:00.000Z",
+    "collectedAt": "2026-09-26T14:05:39.001Z"
   }
 }
