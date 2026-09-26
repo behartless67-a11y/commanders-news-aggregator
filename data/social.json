@@ -8687,5 +8687,31 @@
     "images": [],
     "publishedAt": "2026-09-26T02:05:29.000Z",
     "collectedAt": "2026-09-26T03:33:44.146Z"
+  },
+  "social-8007f4f2d934": {
+    "id": "social-8007f4f2d934",
+    "url": "https://x.com/calvinwatkins/status/2103543987713818972",
+    "text": "Jake Ferguson was fined for mimicking shotgunning a beer. Cowboys backdrop for news conference in Rio is MillerLite.",
+    "handle": "calvinwatkins",
+    "author": "Calvin Watkins",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/332/969/331/073/957/original/cc6658735f1580fb.jpg"
+    ],
+    "publishedAt": "2026-09-25T17:55:43.000Z",
+    "collectedAt": "2026-09-26T04:05:42.786Z"
+  },
+  "social-01cf29761dea": {
+    "id": "social-01cf29761dea",
+    "url": "https://x.com/JasonLaCanfora/status/2103690091264708980",
+    "text": "The #Commanders have set up Dan Quinn to fail with a front office that has come up short on many levels. But somebody is going to have to wear it and people around the league have a pretty good idea who that will be :",
+    "handle": "JasonLaCanfora",
+    "author": "Jason La Canfora",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-26T03:36:17.000Z",
+    "collectedAt": "2026-09-26T04:05:54.984Z"
   }
 }
