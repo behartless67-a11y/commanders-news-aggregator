@@ -1,16 +1,4 @@
 {
-  "social-b485739db85e": {
-    "id": "social-b485739db85e",
-    "url": "https://x.com/NickiJhabvala/status/2100319193442791872",
-    "text": "Commanders Wednesday injury report",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-16T20:21:32.000Z",
-    "collectedAt": "2026-09-16T22:05:11.093Z"
-  },
   "social-b3f47ba559c9": {
     "id": "social-b3f47ba559c9",
     "url": "https://x.com/Commanders/status/2100333654123700315",
@@ -25,18 +13,6 @@
     ],
     "publishedAt": "2026-09-16T21:19:00.000Z",
     "collectedAt": "2026-09-16T22:06:30.371Z"
-  },
-  "social-8e328d89ac8c": {
-    "id": "social-8e328d89ac8c",
-    "url": "https://x.com/john_keim/status/2100315981356671061",
-    "text": "Stefon Diggs said Antonio Williams has some savviness to his game and understands how he must work. Diggs said “Young guy but he’s a baller.”",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-16T20:08:46.000Z",
-    "collectedAt": "2026-09-16T22:06:33.057Z"
   },
   "social-ffe95918d962": {
     "id": "social-ffe95918d962",
@@ -8365,5 +8341,29 @@
     "images": [],
     "publishedAt": "2026-09-26T20:00:27.000Z",
     "collectedAt": "2026-09-26T20:05:48.687Z"
+  },
+  "social-7a01179082c2": {
+    "id": "social-7a01179082c2",
+    "url": "https://x.com/john_keim/status/2103939705704431618",
+    "text": "The NFL fined LB Odafe Oweh $12,537 for striking/kicking/tripping/kneeing and they fined S Jeremy Reaves $10,277 for a hit on a defenseless player.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-26T20:08:09.000Z",
+    "collectedAt": "2026-09-26T20:51:49.375Z"
+  },
+  "social-e17b632d7e24": {
+    "id": "social-e17b632d7e24",
+    "url": "https://x.com/BenStandig/status/2103939833827905824",
+    "text": "The NFL fined: ED Odafe Oweh forUnnecessary Roughness Striking/kicking/tripping/kneeing.$12,537 S Jeremy ReavesforUnnecessary Roughness. Hit on a defenseless player. $10,277",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-26T20:08:40.000Z",
+    "collectedAt": "2026-09-26T20:51:50.799Z"
   }
 }
