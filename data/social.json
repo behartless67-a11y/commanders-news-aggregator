@@ -52,20 +52,6 @@
     "publishedAt": "2026-09-16T14:31:12.000Z",
     "collectedAt": "2026-09-16T16:06:38.352Z"
   },
-  "social-88a57b0e66a8": {
-    "id": "social-88a57b0e66a8",
-    "url": "https://x.com/AdamSchefter/status/2100226769441693894",
-    "text": "A look at the Commanders’ new stadium scheduled to open in 2030:",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/281/137/490/638/364/original/af7f066ccc8789fc.jpg"
-    ],
-    "publishedAt": "2026-09-16T14:14:16.000Z",
-    "collectedAt": "2026-09-16T16:06:40.893Z"
-  },
   "social-8322cf6871d2": {
     "id": "social-8322cf6871d2",
     "url": "https://x.com/NickiJhabvala/status/2100261363943666063",
@@ -8603,5 +8589,20 @@
     "images": [],
     "publishedAt": "2026-09-26T13:14:12.000Z",
     "collectedAt": "2026-09-26T14:05:46.505Z"
+  },
+  "social-250e1a081e7b": {
+    "id": "social-250e1a081e7b",
+    "url": "https://x.com/BenStandig/status/2103850190742417856",
+    "text": "off-script-odafe-owehs-path-to-the?utm_source=share&utm_medium=android&selection=65ee3d5b-873a-4024-aafa-365f7ac5b8cc&r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/337/753/763/536/548/original/12b5c73d93b2a313.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/337/753/808/488/160/original/25bd081f22043d88.jpg"
+    ],
+    "publishedAt": "2026-09-26T14:12:27.000Z",
+    "collectedAt": "2026-09-26T14:15:30.522Z"
   }
 }
