@@ -2543,18 +2543,6 @@
     "publishedAt": "2026-08-14T17:34:37.000Z",
     "collectedAt": "2026-08-26T16:50:37.463Z"
   },
-  "atoz-sports-a827c5ff4847": {
-    "id": "atoz-sports-a827c5ff4847",
-    "sourceId": "atoz-sports",
-    "sourceName": "A to Z Sports",
-    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
-    "category": "team",
-    "url": "https://atozsports.com/nfl/washington-commanders-news/how-to-watch-and-stream-commanders-vs-dolphins-in-preseason-week-1-with-kickoff-time-viewing-options-and-more",
-    "title": "How to watch and stream Commanders vs. Dolphins in Preseason Week 1 with kickoff time, viewing options, and more",
-    "excerpt": "Dec 7, 2025; Minneapolis, Minnesota, USA; Washington Commanders quarterback Jayden Daniels (5) drops back to pass against the Minnesota Vikings during the first half at U.S. Bank Stadium. Mandatory Credit: Jeffrey Becker-Imagn Images \n \n\n The Commanders host the Dolphins in Week 1 of the preseason. Here’s all the info you need to know in order to keep up with the action.\n\n The Washington Commanders host the Miami Dolphins in Week 1 of the preseason, almost a year after the two squads faced off…",
-    "publishedAt": "2026-08-12T14:12:37.000Z",
-    "collectedAt": "2026-08-26T16:50:37.463Z"
-  },
   "commanders-youtube-d98f7760bfad": {
     "id": "commanders-youtube-d98f7760bfad",
     "sourceId": "commanders-youtube",
@@ -12226,5 +12214,65 @@
     "excerpt": "Things have not gone according to plan for the Washington Commanders and their secondary through the first two weeks of the season. The idea of frequent and disguised pressures shouldering the bulk of the burden for the defensive backs is not sustainable if teams can slow the pressure and exploit coverage lapses, and there have been plenty to exploit. As many fans will tell you, the ship has sailed on any significant personnel additions at this point in the season, but in this article I will…",
     "publishedAt": "2026-09-26T12:00:00.000Z",
     "collectedAt": "2026-09-26T14:05:39.001Z"
+  },
+  "hogs-haven-475e788d1eda": {
+    "id": "hogs-haven-475e788d1eda",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/443471/could-washington-home-opener-be-a-trap-game-for-seahawks-marcus-mariota",
+    "title": "Commanders: Could Washington home opener be a ‘trap game’ for Seahawks?",
+    "excerpt": "ASHBURN, VA - AUGUST 12: Terry McLaurin #17 of the Washington Commanders shares a laugh during a joint practice at BigBear.ai Performance Center on August 12, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 26 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of…",
+    "publishedAt": "2026-09-26T14:00:00.000Z",
+    "collectedAt": "2026-09-26T15:47:05.605Z"
+  },
+  "hogs-haven-770cf2e54474": {
+    "id": "hogs-haven-770cf2e54474",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/442576/washington-commanders-secondary-daronte-jones-nick-cross-mike-sainristil-tyler-owens",
+    "title": "Outlining a plan to address the Washington Commanders secondary",
+    "excerpt": "Things have not gone according to plan for the Washington Commanders and their secondary through the first two weeks of the season. The idea of frequent and disguised pressures shouldering the bulk of the burden for the defensive backs is not sustainable if teams can slow the pressure and exploit coverage lapses, and there have been plenty to exploit. As many fans will tell you, the ship has sailed on any significant personnel additions at this point in the season, but in this article I will…",
+    "publishedAt": "2026-09-26T12:00:00.000Z",
+    "collectedAt": "2026-09-26T15:47:05.605Z"
+  },
+  "yahoo-nfl-66c83b2b1045": {
+    "id": "yahoo-nfl-66c83b2b1045",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-week-3-150000248.html",
+    "title": "Seahawks vs. Commanders, Week 3 preview: Another Seahawks blowout win in Landover?",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 02: Elijah Arroyo #18 of the Seattle Seahawks catches a pass for a touchdown against Tyler Owens #18 of the Washington Commanders during the second quarter in the game at Northwest Stadium on November 02, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Seattle Seahawks head to Washington on Sunday with Sam Darnold back and a chance to move to 3-0 for the second time under Mike Macdonald. The Washington Commanders, meanwhile, are…",
+    "publishedAt": "2026-09-26T15:00:00.000Z",
+    "collectedAt": "2026-09-26T15:47:12.514Z"
+  },
+  "yahoo-nfl-e998f45f68f2": {
+    "id": "yahoo-nfl-e998f45f68f2",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-nfl-week-140000796.html",
+    "title": "Seahawks vs. Commanders NFL Week 3 TV coverage maps and FOX commentators",
+    "excerpt": "The Seattle Seahawks go on the road to wrap up September, going all the way from Washington state to, uh, close to Washington, DC. Landover, Maryland, to be exact. It’s the reigning Super Bowl champions against the win-less Washington Commanders in what is the home opener for Dan Quinn’s beleaguered side.\n Last season, Seahawks at Commanders was deemed worthy of Sunday Night Football . That ain’t happening this year, as FOX will be airing this game as a regional 10 am PT kickoff. Based on the…",
+    "publishedAt": "2026-09-26T14:00:00.000Z",
+    "collectedAt": "2026-09-26T15:47:12.514Z"
+  },
+  "yahoo-nfl-0560663dd232": {
+    "id": "yahoo-nfl-0560663dd232",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/could-commanders-home-opener-trap-140000164.html",
+    "title": "Could Commanders home opener be a ‘trap game’ for the Seahawks? - Daily Slop",
+    "excerpt": "ASHBURN, VA - AUGUST 12: Terry McLaurin #17 of the Washington Commanders shares a laugh during a joint practice at BigBear.ai Performance Center on August 12, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images The Daily Slop – 26 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other…",
+    "publishedAt": "2026-09-26T14:00:00.000Z",
+    "collectedAt": "2026-09-26T15:47:12.514Z"
   }
 }
