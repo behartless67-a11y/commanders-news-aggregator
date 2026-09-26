@@ -7783,7 +7783,7 @@
     "text": "Dan Quinn said LB Frankie Luvu, RG Sam Cosmi and TE Chig Okonkwo are unlikelty to play Sunday.",
     "handle": "john_keim",
     "author": "John Keim",
-    "label": "ESPN",
+    "label": "",
     "sourceKey": "@JPFinlayNBCS",
     "images": [],
     "publishedAt": "2026-09-25T16:41:20.000Z",
@@ -8315,5 +8315,55 @@
     "images": [],
     "publishedAt": "2026-09-26T20:01:36.000Z",
     "collectedAt": "2026-09-26T20:05:10.397Z"
+  },
+  "social-b11136a87dbc": {
+    "id": "social-b11136a87dbc",
+    "url": "https://x.com/Commanders/status/2103937657135157554",
+    "text": "We have elevated LB Ale Kaho from the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/339/124/312/149/395/original/f21393e4c60a3866.jpg"
+    ],
+    "publishedAt": "2026-09-26T20:00:01.000Z",
+    "collectedAt": "2026-09-26T20:05:44.843Z"
+  },
+  "social-4dc70273014d": {
+    "id": "social-4dc70273014d",
+    "url": "https://x.com/john_keim/status/2103937860843999565",
+    "text": "Washington has elevated LB Ale Kaho from the practice squad. Need ST play and also more depth with Magee and Luvu down.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-26T20:00:49.000Z",
+    "collectedAt": "2026-09-26T20:05:47.254Z"
+  },
+  "social-156c32bef535": {
+    "id": "social-156c32bef535",
+    "url": "https://x.com/john_keim/status/2103925787690975652",
+    "text": "Quick video on Jayden Daniels addressing his teammates about his elbow. And the reaction was… kind of telling 771",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-26T19:12:51.000Z",
+    "collectedAt": "2026-09-26T20:05:47.254Z"
+  },
+  "social-f95049630147": {
+    "id": "social-f95049630147",
+    "url": "https://x.com/BenStandig/status/2103937765159080334",
+    "text": "The Commanders elevated LB Ale Kaho from the practice squad. LB depth without Frankie Luvu and Jordan Magee.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-26T20:00:27.000Z",
+    "collectedAt": "2026-09-26T20:05:48.687Z"
   }
 }
