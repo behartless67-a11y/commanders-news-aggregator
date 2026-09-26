@@ -1,30 +1,4 @@
 {
-  "social-461bf7cbaccf": {
-    "id": "social-461bf7cbaccf",
-    "url": "https://x.com/JPFinlayNBCS/status/2100299858791784561",
-    "text": "Stefon Diggs says Jayden Daniels is “a special quarterback” and Diggs has to do more in the pass game. Knocks himself for the drops.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-16T19:04:42.000Z",
-    "collectedAt": "2026-09-16T19:12:07.449Z"
-  },
-  "social-38183337ed97": {
-    "id": "social-38183337ed97",
-    "url": "https://x.com/Commanders/status/2100314362498236504",
-    "text": "Wednesday injury report #WASvsDAL | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/282/506/681/426/468/original/37f8991c0f1ebce9.jpg"
-    ],
-    "publishedAt": "2026-09-16T20:02:20.000Z",
-    "collectedAt": "2026-09-16T20:06:28.934Z"
-  },
   "social-b485739db85e": {
     "id": "social-b485739db85e",
     "url": "https://x.com/NickiJhabvala/status/2100319193442791872",
@@ -8329,5 +8303,17 @@
     "images": [],
     "publishedAt": "2026-09-26T16:55:49.000Z",
     "collectedAt": "2026-09-26T18:05:54.995Z"
+  },
+  "social-835fbe1e2e30": {
+    "id": "social-835fbe1e2e30",
+    "url": "https://x.com/NickiJhabvala/status/2103938054876696814",
+    "text": "The Commanders elevated LB Ale Kaho from the practice squad for Sunday’s game vs. Seattle.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-26T20:01:36.000Z",
+    "collectedAt": "2026-09-26T20:05:10.397Z"
   }
 }
