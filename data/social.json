@@ -164,20 +164,6 @@
     "publishedAt": "2026-09-17T01:17:00.000Z",
     "collectedAt": "2026-09-17T02:06:32.307Z"
   },
-  "social-103d9a518aad": {
-    "id": "social-103d9a518aad",
-    "url": "https://x.com/BenStandig/status/2100284890784706939",
-    "text": "One game doesn't even qualify as a small sample size. Still, considering all the schematic and personnel changes, there's merit in exploring the data from David Blough's and Daronte Jones' play-calling debuts. For Last Man Standig subscribers: commanders-schematic-trends-what?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/283/946/097/664/006/original/9b4eda51542ce952.jpg"
-    ],
-    "publishedAt": "2026-09-16T18:05:14.000Z",
-    "collectedAt": "2026-09-17T02:23:31.595Z"
-  },
   "social-50a477bab555": {
     "id": "social-50a477bab555",
     "url": "https://x.com/john_keim/status/2100551605191868530",
@@ -8317,5 +8303,43 @@
     "images": [],
     "publishedAt": "2026-09-26T15:01:29.000Z",
     "collectedAt": "2026-09-26T15:47:14.063Z"
+  },
+  "social-2ed0d4fc3e02": {
+    "id": "social-2ed0d4fc3e02",
+    "url": "https://x.com/Commanders/status/2103892359305908719",
+    "text": "24 hours until we're back at home ‼️ @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/338/414/390/790/852/original/15c00d2ac75e85c7.jpg"
+    ],
+    "publishedAt": "2026-09-26T17:00:01.000Z",
+    "collectedAt": "2026-09-26T18:05:38.704Z"
+  },
+  "social-728378b275f5": {
+    "id": "social-728378b275f5",
+    "url": "https://x.com/pfrumors/status/2103906896730267747",
+    "text": "#Commanders quarterback Jayden Daniels could return to practice as soon as next week – albeit with a bulky brace on his left elbow. commanders-qb-jayden-daniels-could-return-sooner-than-expected",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-09-26T17:57:47.000Z",
+    "collectedAt": "2026-09-26T18:05:52.711Z"
+  },
+  "social-6d0b8aaa04c3": {
+    "id": "social-6d0b8aaa04c3",
+    "url": "https://x.com/JasonLaCanfora/status/2103891303230521447",
+    "text": "Will the #Commanders be the first job that opens up in NFL? Is there a potential interim on the staff? What's the buzz in NFL front offices :",
+    "handle": "JasonLaCanfora",
+    "author": "Jason La Canfora",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-09-26T16:55:49.000Z",
+    "collectedAt": "2026-09-26T18:05:54.995Z"
   }
 }
