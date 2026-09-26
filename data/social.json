@@ -8362,5 +8362,31 @@
     "images": [],
     "publishedAt": "2026-09-26T20:07:28.000Z",
     "collectedAt": "2026-09-26T22:05:10.567Z"
+  },
+  "social-448aa71bdd26": {
+    "id": "social-448aa71bdd26",
+    "url": "https://x.com/Commanders/status/2103950234963329263",
+    "text": "2005 OT winner at home 🙌",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-26T20:50:00.000Z",
+    "collectedAt": "2026-09-26T22:05:43.392Z"
+  },
+  "social-1dccb6895152": {
+    "id": "social-1dccb6895152",
+    "url": "https://x.com/JPFinlayNBCS/status/2103962713349132723",
+    "text": "Kaho up from p squad. Didn’t seem Luvu was playing anyway but this about seals it",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/339/511/361/309/339/original/33ccf73f290d5d69.jpg"
+    ],
+    "publishedAt": "2026-09-26T21:39:35.000Z",
+    "collectedAt": "2026-09-26T22:05:44.869Z"
   }
 }

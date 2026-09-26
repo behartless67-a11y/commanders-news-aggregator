@@ -839,18 +839,6 @@
     "publishedAt": "2026-08-13T20:30:56.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-defa43c2adfe": {
-    "id": "wjla-commanders-defa43c2adfe",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-jayden-daniels-shines-in-joint-practice-vs-dolphins",
-    "title": "Commanders' Jayden Daniels shines in joint practice vs. Dolphins",
-    "excerpt": "ASHBURN, Va. (AP) — Jayden Daniels' injury-ridden second NFL season ended in December when the Washington Commanders opted to sit their franchise quarterback fo",
-    "publishedAt": "2026-08-12T21:58:13.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -1749,18 +1737,6 @@
     "title": "Jayden Daniels sends cease-and-desist letter to LSU over NIL rights",
     "excerpt": "The dispute was prompted by LSU issuing the number Daniels wore at the school to another player, a family spokesperson told ESPN.",
     "publishedAt": "2026-08-13T15:57:08.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
-  "athletic-jhabvala-2b9ed477015f": {
-    "id": "athletic-jhabvala-2b9ed477015f",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7508987/2026/08/12/commanders-dolphins-joint-practice-jayden-daniels-pass-rush",
-    "title": "Jayden Daniels sparkles and Washington's D shines: Commanders-Dolphins joint practice report",
-    "excerpt": "The Commanders hosted Miami for a joint practice, and Washington's defense was in attack mode against the rebuilding Dolphins.",
-    "publishedAt": "2026-08-12T20:50:38.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
   "yahoo-nfl-d85ba480cd53": {
@@ -12298,5 +12274,65 @@
     "excerpt": "",
     "publishedAt": "2026-09-26T18:00:24.000Z",
     "collectedAt": "2026-09-26T18:05:33.089Z"
+  },
+  "hogs-haven-08ab88611ae6": {
+    "id": "hogs-haven-08ab88611ae6",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/443729/washington-commanders-players-seahawks-klavon-chaisson-rachaad-white-terry-mclaurin-quan-martin",
+    "title": "Five Washington players crucial to Commanders upsetting Seahawks",
+    "excerpt": "The Commanders are missing a bunch of key pieces for Sunday’s home opener against the Seattle Seahawks. They ruled five players out. All of them are every-down players or significant contributors. All of them you’d consider starters. \n\n That creates a situation where Washington needs replacements to capitalize on extra playing time or healthy top players to dominate in order to compete with the reigning Super Bowl champs. \n\n This isn’t an easy opponent and Seattle arrives in Washington…",
+    "publishedAt": "2026-09-26T21:30:00.000Z",
+    "collectedAt": "2026-09-26T22:05:33.081Z"
+  },
+  "hogs-haven-f6b65582b73d": {
+    "id": "hogs-haven-f6b65582b73d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-roster/442774/commanders-roster-moves-seahawks-practice-squad-elevation-ale-kaho",
+    "title": "Commanders roster moves: Linebacker elevated from practice squad",
+    "excerpt": "The Washington Commanders announced they are elevating one players for Sunday’s home opener against the Seattle Seahawks.\n\n The team designated Ale Kaho as a standard practice-squad elevation on Saturday. That makes sense considering their lack of depth at linebacker, considering Frankie Luvu’s out with a groin injury and Jordan Magee’s on injured reserve. \n\n Sonny Styles and Leo Chenal should play most every snap on the interior, with Kain Medrano and Kaho in reserve. That also helps bolster…",
+    "publishedAt": "2026-09-26T20:08:21.000Z",
+    "collectedAt": "2026-09-26T22:05:33.081Z"
+  },
+  "clutchpoints-7d815faf97ba": {
+    "id": "clutchpoints-7d815faf97ba",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/seattle-seahawks/seahawks-week-3-injury-report-vs-commanders-what-it-means-for-fantasy-football",
+    "title": "Seahawks Week 3 injury report vs. Commanders: What it means for fantasy football",
+    "excerpt": "Sam Darnold returns to Seattle’s lineup , while Jadarian Price and Cooper Kupp are cleared for a favorable Week 3 fantasy setup\n\n The Seattle Seahawks enter Sunday’s road game with encouraging offensive news. Quarterback Sam Darnold is back after missing Seattle’s Week 2 victory with a glute injury, restoring the starter for an offense that has opened the season with consecutive wins.\n\n Darnold was limited Wednesday before practicing fully Thursday and Friday. He received no final game…",
+    "publishedAt": "2026-09-26T21:35:07.000Z",
+    "collectedAt": "2026-09-26T22:05:35.525Z"
+  },
+  "yahoo-nfl-c3defacdaadf": {
+    "id": "yahoo-nfl-c3defacdaadf",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/k-lavon-chaisson-among-five-213000803.html",
+    "title": "K’Lavon Chaisson among five Washington players crucial to Commanders upsetting Seahawks",
+    "excerpt": "The Commanders are missing a bunch of key pieces for Sunday’s home opener against the Seattle Seahawks. They ruled five players out. All of them are every-down players or significant contributors. All of them you’d consider starters. \n That creates a situation where Washington needs replacements to capitalize on extra playing time or healthy top players to dominate in order to compete with the reigning Super Bowl champs. \n This isn’t an easy opponent and Seattle arrives in Washington ill-timed…",
+    "publishedAt": "2026-09-26T21:30:00.000Z",
+    "collectedAt": "2026-09-26T22:05:42.030Z"
+  },
+  "yahoo-nfl-0dc4343fff5e": {
+    "id": "yahoo-nfl-0dc4343fff5e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-turn-practice-squad-both-202214305.html",
+    "title": "Seahawks turn to practice squad with both starting safeties out against Commanders",
+    "excerpt": "NASHVILLE, TENNESSEE - AUGUST 23: Michael Dansby #37 and Maxen Hook #43 of the Seattle Seahawks break up a pass intended for Bryce Oliver #80 of the Tennessee Titans during the second half of Week 2 of the preseason game at Nissan Stadium on August 23, 2026 in Nashville, Tennessee. (Photo by Johnnie Izquierdo/Getty Images) | Getty Images The Seattle Seahawks are on the road in Week 3, set to take on the Washington Commanders in the first 10am Pacific Time start of the year for the Hawks.…",
+    "publishedAt": "2026-09-26T20:22:14.000Z",
+    "collectedAt": "2026-09-26T22:05:42.030Z"
   }
 }
