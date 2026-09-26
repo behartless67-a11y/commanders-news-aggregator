@@ -8622,5 +8622,46 @@
     "images": [],
     "publishedAt": "2026-09-25T23:25:43.000Z",
     "collectedAt": "2026-09-26T00:05:48.094Z"
+  },
+  "social-68f20f2ae7d8": {
+    "id": "social-68f20f2ae7d8",
+    "url": "https://x.com/JPFinlayNBCS/status/2103650129668419756",
+    "text": "This is an outrageous dirty late hit and the guy is hurt. No flag. @RGIII@twitter.com dead on calling this out.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-26T00:57:29.000Z",
+    "collectedAt": "2026-09-26T02:05:39.048Z"
+  },
+  "social-dec7c63b51a6": {
+    "id": "social-dec7c63b51a6",
+    "url": "https://x.com/BenStandig/status/2103645593767657616",
+    "text": "The Commanders will honor the late Sonny Jurgensen (9) and Monte Coleman (51) at Sunday’s home opener.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/334/563/065/787/968/original/d48cdf866ed7a80e.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/334/563/089/557/881/original/90f902b3a86e9ced.jpg"
+    ],
+    "publishedAt": "2026-09-26T00:39:28.000Z",
+    "collectedAt": "2026-09-26T02:05:41.877Z"
+  },
+  "social-7bff0aeb3d2d": {
+    "id": "social-7bff0aeb3d2d",
+    "url": "https://x.com/AdamSchefter/status/2103655605479129489",
+    "text": "Players ruled out for Sunday include Devin Lloyd (pictured), Andre Iosivas, Rico Dowdle, Jadeveon Clowney, Nico Collins, Ed Ingram, Alec Pierce, Josh Simmons, Caleb Douglas, Treydan Stukes, Barion Brown, Charlie Kolar, T.J. Sanders, Rueben Bain, Josiah Trotter, Minkah Fitzpatrick, Ben Bartch, Julian Love, Ty Okada, Sam Cosmi, Nick Cross, Jayden Daniels, Frankie Luvu, Chigoziem Okonkwo, Nick Bosa, Romello Height, Demarcus Robinson, James Thompson, Ronnie Stanley, Cobie Durant, Malik Hooker, DeMarvion Overshown, Jonah Coleman.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/334/718/991/126/850/original/79248522711c8d61.jpg"
+    ],
+    "publishedAt": "2026-09-26T01:19:15.000Z",
+    "collectedAt": "2026-09-26T02:05:46.057Z"
   }
 }
