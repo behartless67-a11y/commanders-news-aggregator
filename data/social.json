@@ -1,31 +1,4 @@
 {
-  "social-b3f47ba559c9": {
-    "id": "social-b3f47ba559c9",
-    "url": "https://x.com/Commanders/status/2100333654123700315",
-    "text": "🤝 @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/282/804/771/037/410/original/5813b12fc8f4dc27.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/282/804/799/799/526/original/3fcb1956b9eb0772.jpg"
-    ],
-    "publishedAt": "2026-09-16T21:19:00.000Z",
-    "collectedAt": "2026-09-16T22:06:30.371Z"
-  },
-  "social-ffe95918d962": {
-    "id": "social-ffe95918d962",
-    "url": "https://x.com/tashanreed/status/2100343756088025413",
-    "text": "If they can’t bounce back against the Cowboys, the #Commanders will have a lot of making up to do in the NFC East. Here are five key factors for Washington on Sunday: /09/16/jayden-daniels-looks-find-his-rhythm-commanders-prepare-cowboys/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-16T21:59:08.000Z",
-    "collectedAt": "2026-09-16T22:06:36.419Z"
-  },
   "social-616dd9ac5114": {
     "id": "social-616dd9ac5114",
     "url": "https://x.com/Commanders/status/2100348502354063837",
@@ -8365,5 +8338,29 @@
     "images": [],
     "publishedAt": "2026-09-26T20:08:40.000Z",
     "collectedAt": "2026-09-26T20:51:50.799Z"
+  },
+  "social-20544b7cb67c": {
+    "id": "social-20544b7cb67c",
+    "url": "https://x.com/NickiJhabvala/status/2103945855916970367",
+    "text": "Here are the plays that resulted in fines for Oweh and Reaves:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-26T20:32:36.000Z",
+    "collectedAt": "2026-09-26T22:05:10.567Z"
+  },
+  "social-a44ae3a089ef": {
+    "id": "social-a44ae3a089ef",
+    "url": "https://x.com/NickiJhabvala/status/2103939532269961693",
+    "text": "The NFL fined Commanders OLB Odafe Oweh and S Jeremy Reaves $12,537 and $10,277, respectively, for unnecessary roughness in their Week 2 loss to the Cowboys.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-26T20:07:28.000Z",
+    "collectedAt": "2026-09-26T22:05:10.567Z"
   }
 }
