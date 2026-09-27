@@ -10945,5 +10945,43 @@
     "images": [],
     "publishedAt": "2026-09-27T21:09:55.000Z",
     "collectedAt": "2026-09-27T22:05:58.860Z"
+  },
+  "social-c4d82db2a8e9": {
+    "id": "social-c4d82db2a8e9",
+    "url": "https://x.com/Commanders/status/2104338152651673813",
+    "text": "\"that's brotherhood right there\" 🙂‍↕️ @budlight@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-27T22:31:26.000Z",
+    "collectedAt": "2026-09-27T22:49:02.278Z"
+  },
+  "social-7436b0f4224a": {
+    "id": "social-7436b0f4224a",
+    "url": "https://x.com/Commanders/status/2104331357401031146",
+    "text": "you are our (Son)shine 🌞",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/345/287/757/904/516/original/189e40215ccff045.jpg"
+    ],
+    "publishedAt": "2026-09-27T22:04:26.000Z",
+    "collectedAt": "2026-09-27T22:49:02.278Z"
+  },
+  "social-333b92f8f91a": {
+    "id": "social-333b92f8f91a",
+    "url": "https://x.com/BradyHenderson/status/2104329201587462515",
+    "text": "A couple thoughts on the Seahawks' 33-31 loss to Washington, plus what @john_keim wrote about the Commanders' side of things: 08/week-3-sunday-games-takeaways-questions-2026#seawsh",
+    "handle": "BradyHenderson",
+    "author": "Brady Henderson",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-27T21:55:52.000Z",
+    "collectedAt": "2026-09-27T22:49:05.092Z"
   }
 }

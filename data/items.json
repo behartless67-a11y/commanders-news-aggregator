@@ -12766,5 +12766,53 @@
     "excerpt": "The Seattle Seahawks (2-1), for whatever reason, cannot solve Marcus Mariota regardless of which team he’s playing for. Mariota is now 3-0 lifetime as a starter against Seattle, with his other wins coming as a member of the Tennessee Titans and Atlanta Falcons.\n In the most disappointing loss arguably of the entire Mike Macdonald era, three turnovers led to 21 Washington Commanders points, and Dan Quinn was able to get the better of his former team in a 33-31 upset victory. Sam Darnold threw…",
     "publishedAt": "2026-09-27T20:33:08.000Z",
     "collectedAt": "2026-09-27T22:05:41.016Z"
+  },
+  "riggos-rag-7ce14fbaa3e7": {
+    "id": "riggos-rag-7ce14fbaa3e7",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/kain-medrano-came-from-nowhere-deliver-commanders-season-saving-moment",
+    "title": "Kain Medrano came from nowhere to deliver Commanders’ season-saving moment",
+    "excerpt": "Washington Commanders linebacker Kain Medrano came from nowhere to deliver a season-saving moment against the Seattle Seahawks.",
+    "publishedAt": "2026-09-27T22:22:05.000Z",
+    "collectedAt": "2026-09-27T22:48:55.126Z"
+  },
+  "riggos-rag-2f7ae808faf2": {
+    "id": "riggos-rag-2f7ae808faf2",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-next-man-up-response-gives-their-season-renewed-belief",
+    "title": "Commanders’ next-man-up response gives their season renewed belief",
+    "excerpt": "The Washington Commanders rediscovered their fight when their season needed it most against the Seattle Seahawks.",
+    "publishedAt": "2026-09-27T22:05:53.000Z",
+    "collectedAt": "2026-09-27T22:48:55.126Z"
+  },
+  "clutchpoints-afb18833f358": {
+    "id": "clutchpoints-afb18833f358",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-save-season-breaking-seahawks-winning-streak-despite-jayden-daniels-absence",
+    "title": "Commanders save season by breaking Seahawks’ winning streak despite Jayden Daniels’ absence",
+    "excerpt": "The Washington Commanders entered Week 3 fearing a nightmare scenario. Washington lost Jayden Daniels to another elbow injury in Week 2, knocking the young QB out for multiple weeks. The odds looked stacked against them going up against the defending Super Bowl champions . But the Commanders showed that they are no pushovers.\n\n Washington got a huge upset win against Seattle in Week 3 with the score of 33-31. The Commanders improved to 1-2 on the season.\n\n The game-winning play took place on a…",
+    "publishedAt": "2026-09-27T21:11:10.000Z",
+    "collectedAt": "2026-09-27T22:48:55.398Z"
+  },
+  "cbs-nfl-1160495cd709": {
+    "id": "cbs-nfl-1160495cd709",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles",
+    "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Drake Maye's miserable start continues",
+    "excerpt": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
+    "publishedAt": "2026-09-27T22:18:59.000Z",
+    "collectedAt": "2026-09-27T22:49:00.658Z"
   }
 }
