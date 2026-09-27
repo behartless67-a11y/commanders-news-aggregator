@@ -1727,18 +1727,6 @@
     "publishedAt": "2026-08-15T11:45:12.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
-  "athletic-jhabvala-e32b28ead631": {
-    "id": "athletic-jhabvala-e32b28ead631",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7510678/2026/08/13/jayden-daniels-lsu-football-jersey-nil-joe-burrow",
-    "title": "Jayden Daniels sends cease-and-desist letter to LSU over NIL rights",
-    "excerpt": "The dispute was prompted by LSU issuing the number Daniels wore at the school to another player, a family spokesperson told ESPN.",
-    "publishedAt": "2026-08-13T15:57:08.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
     "sourceId": "yahoo-nfl",
@@ -12490,5 +12478,101 @@
     "excerpt": "20 Sep 1998: Guard Pete Kendall #66 of the Seattle Seahawks in action against defensive tackle Dana Stubblefield #94 of the Washington Redskins during the game at the Kingdome in Seattle, Washington. The Seahawks defeated the Redskins 24-14. Mandatory Cr | Getty Images Facing an injured team in a bit of disarray, our Seattle Seahawks have an opportunity to soundly whoop the Washington Commanders this afternoon. Things that may get in the way of that: our squad is also injured (and/or…",
     "publishedAt": "2026-09-27T13:00:00.000Z",
     "collectedAt": "2026-09-27T14:05:38.355Z"
+  },
+  "hogs-haven-3b0030a18c13": {
+    "id": "hogs-haven-3b0030a18c13",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/443709/nfl-week-3-washington-commanders-vs-seattle-seahawks",
+    "title": "Washington Commanders vs Seattle Seahawks: NFL Week 3 game chat and live discussion",
+    "excerpt": "SEATTLE, WASHINGTON - NOVEMBER 12:Terry McLaurin #17 of the Washington Commanders is tackled by Devon Witherspoon #21 of the Seattle Seahawks at Lumen Field on November 12, 2023 in Seattle, Washington. (Photo by Tom Hauck/Getty Images) | Getty Images \n \n The Washington Commanders are home for their first regular season game at Northwest Stadium this season. They are hosting the Seattle Seahawks and they’re big underdogs with QB Jayden Daniels sidelined with an elbow injury.\n\n The Commanders…",
+    "publishedAt": "2026-09-27T16:00:00.000Z",
+    "collectedAt": "2026-09-27T16:05:32.970Z"
+  },
+  "hogs-haven-1237d97cd98f": {
+    "id": "hogs-haven-1237d97cd98f",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/443819/commanders-qb-jayden-daniels-injury-update-elbow-marcus-mariota-giants",
+    "title": "Commanders QB Jayden Daniels reportedly back ‘within three weeks’",
+    "excerpt": "The Commanders got some good news regarding Jayden Daniels health earlier this week. General manager Adam Peters said in an interview with 106.7-FM The Fan that surgery wasn’t on the table and that injured reserve wasn’t being considered after Daniels dislocated his left (non-throwing) elbow in a Week 2 loss to Dallas. \n\n NFL Network reporter Ian Rapoport provided more of a timeline for a return to play on Sunday morning. He said that Daniels is expect back “within three weeks.“\n\n \n From…",
+    "publishedAt": "2026-09-27T15:53:17.000Z",
+    "collectedAt": "2026-09-27T16:05:32.970Z"
+  },
+  "hogs-haven-ff1bbd2a4104": {
+    "id": "hogs-haven-ff1bbd2a4104",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/442764/washington-commanders-vs-seattle-seahawks-inactives-luke-mccaffrey-7-active-wrs",
+    "title": "Washington Commanders vs Seattle Seahawks Inactives: Luke McCaffrey one of 7 active WRs",
+    "excerpt": "KANSAS CITY, MISSOURI - OCTOBER 27: Luke McCaffrey #11 of the Washington Commanders runs with the ball during the game against the Kansas City Chiefs at Arrowhead Stadium on October 27, 2025 in Kansas City, Missouri. (Photo by Brooke Sutton/Getty Images) | Getty Images The Washington Commanders released their final injury report for Sunday afternoon’s game on Friday and then made one roster move yesterday . LB Ale Kaho was elevated last week, but only played on special teams. He could see more…",
+    "publishedAt": "2026-09-27T15:45:00.000Z",
+    "collectedAt": "2026-09-27T16:05:32.970Z"
+  },
+  "riggos-rag-8fb343c1d8a9": {
+    "id": "riggos-rag-8fb343c1d8a9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/luke-mccaffrey-gets-another-commanders-chance-prove-still-belongs",
+    "title": "Luke McCaffrey gets another Commanders chance to prove he still belongs",
+    "excerpt": "Washington Commanders wide receiver Luke McCaffrey got another chance to prove he still belongs against the Seattle Seahawks.",
+    "publishedAt": "2026-09-27T15:41:17.000Z",
+    "collectedAt": "2026-09-27T16:05:33.518Z"
+  },
+  "commanders-youtube-3791ea16c421": {
+    "id": "commanders-youtube-3791ea16c421",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=BgySg5rAIhk",
+    "title": "GOOD TO BE HOME! Gameday LIVE: Seahawks vs. Commanders | NFL Week 3",
+    "excerpt": "",
+    "publishedAt": "2026-09-27T15:58:05.000Z",
+    "collectedAt": "2026-09-27T16:05:34.604Z"
+  },
+  "cbs-nfl-ab75405672b7": {
+    "id": "cbs-nfl-ab75405672b7",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/commanders-qb-jayden-daniels-expected-back-within-three-weeks",
+    "title": "Commanders' Jayden Daniels expected back within three weeks, per report",
+    "excerpt": "Daniels could miss less time than initially thought",
+    "publishedAt": "2026-09-27T14:52:53.000Z",
+    "collectedAt": "2026-09-27T16:05:37.756Z"
+  },
+  "yahoo-nfl-007a27442d32": {
+    "id": "yahoo-nfl-007a27442d32",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/rapoport-commanders-qb-jayden-daniels-155317152.html",
+    "title": "Rapoport: Commanders QB Jayden Daniels back ‘within three weeks’",
+    "excerpt": "The Commanders got some good news regarding Jayden Daniels health earlier this week. General manager Adam Peters said in an interview with 106.7-FM The Fan that surgery wasn’t on the table and that injured reserve wasn’t being considered after Daniels dislocated his left (non-throwing) elbow in a Week 2 loss to Dallas. \n NFL Network reporter Ian Rapoport provided more of a timeline for a return to play on Sunday morning. He said that Daniels is expect back “within three weeks.“\n From…",
+    "publishedAt": "2026-09-27T15:53:17.000Z",
+    "collectedAt": "2026-09-27T16:05:38.408Z"
+  },
+  "yahoo-nfl-08ac42b05776": {
+    "id": "yahoo-nfl-08ac42b05776",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-expected-back-in-3-weeks-or-sooner-despite-dislocated-elbow-150034204.html",
+    "title": "Jayden Daniels expected back in 3 weeks or sooner despite dislocated elbow",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels received positive news after meeting with specialists. Daniels, who sustained a dislocated left elbow in Week 2, should be back in three weeks or sooner, according to NFL Network's Ian Rapoport.\n Daniels will reportedly play with a brace on his elbow once he's back.\n From @NFLGameDay Morning: #Commanders QB Jayden Daniels should be back within 3 weeks; #Bears QB Caleb Williams has a Grade 2 hamstring strain; The #Vikings start Kyler Murray today.…",
+    "publishedAt": "2026-09-27T15:00:34.000Z",
+    "collectedAt": "2026-09-27T16:05:38.408Z"
   }
 }
