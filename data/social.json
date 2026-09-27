@@ -1,142 +1,4 @@
 {
-  "social-34fb52af553a": {
-    "id": "social-34fb52af553a",
-    "url": "https://x.com/JPFinlayNBCS/status/2100662091556253792",
-    "text": "Good answer from Terry McLaurin on Antonio Williams impact to the offense",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-17T19:04:05.000Z",
-    "collectedAt": "2026-09-17T19:24:30.432Z"
-  },
-  "social-b38634ffce06": {
-    "id": "social-b38634ffce06",
-    "url": "https://x.com/tashanreed/status/2100647668561179123",
-    "text": "The #Commanders ' secondary has been getting a lot of flak this week, but a positive from the Eagles' loss was the play of CB Amik Robertson. He was only targeted 3 times and gave up just 2 catches for 8 yards, according to Pro Football Reference.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-17T18:06:46.000Z",
-    "collectedAt": "2026-09-17T19:24:34.809Z"
-  },
-  "social-c18be1449c99": {
-    "id": "social-c18be1449c99",
-    "url": "https://x.com/NickiJhabvala/status/2100672532139409447",
-    "text": "The Commanders released DT Ricky Barber and signed CB Isaac Yiadom from the practice squad.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-17T19:45:34.000Z",
-    "collectedAt": "2026-09-17T20:05:12.269Z"
-  },
-  "social-e6b146ee4c9f": {
-    "id": "social-e6b146ee4c9f",
-    "url": "https://x.com/Commanders/status/2100676165925233013",
-    "text": "Thursday injury report #WASvsDAL | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/162/062/749/006/original/3bf5f0839e98862c.jpg"
-    ],
-    "publishedAt": "2026-09-17T20:00:01.000Z",
-    "collectedAt": "2026-09-17T20:06:35.298Z"
-  },
-  "social-88856ae0e6c4": {
-    "id": "social-88856ae0e6c4",
-    "url": "https://x.com/Commanders/status/2100672386395930686",
-    "text": "We have made the following roster moves: - Released DT Ricky Barber - Signed CB Isaac Yiadom from the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/108/903/948/830/original/498309fdd17d2afc.jpg"
-    ],
-    "publishedAt": "2026-09-17T19:45:00.000Z",
-    "collectedAt": "2026-09-17T20:06:35.299Z"
-  },
-  "social-85eaf29b89d0": {
-    "id": "social-85eaf29b89d0",
-    "url": "https://x.com/john_keim/status/2100676740313915540",
-    "text": "The injury report. Kinlaw was a DNP today along with Okonkwo and Luvu.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/169/984/207/748/original/7d4c412df4003066.jpg"
-    ],
-    "publishedAt": "2026-09-17T20:02:18.000Z",
-    "collectedAt": "2026-09-17T20:06:38.252Z"
-  },
-  "social-a3d815934ebc": {
-    "id": "social-a3d815934ebc",
-    "url": "https://x.com/john_keim/status/2100673294781301233",
-    "text": "Watch at the top how Douglas handles Smith and gives Cross time to get depth.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-17T19:48:36.000Z",
-    "collectedAt": "2026-09-17T20:06:38.252Z"
-  },
-  "social-7fd4fa065caa": {
-    "id": "social-7fd4fa065caa",
-    "url": "https://x.com/john_keim/status/2100672550170742945",
-    "text": "Washington has released DT Ricky Barber and signed CB Isaac Yiadom off the practice squad.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-17T19:45:39.000Z",
-    "collectedAt": "2026-09-17T20:06:38.252Z"
-  },
-  "social-1cb2b329cae7": {
-    "id": "social-1cb2b329cae7",
-    "url": "https://x.com/john_keim/status/2100670296533454929",
-    "text": "Quick video On what it means to have e LB Dorance Armstrong back vs. Dallas 656",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-17T19:36:41.000Z",
-    "collectedAt": "2026-09-17T20:06:38.253Z"
-  },
-  "social-f9f0c0dd3457": {
-    "id": "social-f9f0c0dd3457",
-    "url": "https://x.com/BenStandig/status/2100674272930754894",
-    "text": "The Commanders have released DT Ricky Barber and signed CB Isaac Yiadom from the practice squad.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-17T19:52:29.000Z",
-    "collectedAt": "2026-09-17T20:06:39.534Z"
-  },
-  "social-9d7f74d497d4": {
-    "id": "social-9d7f74d497d4",
-    "url": "https://x.com/tashanreed/status/2100672684103221656",
-    "text": "The #Commanders released Barber to make roster room for Yiadom",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-17T19:46:11.000Z",
-    "collectedAt": "2026-09-17T20:06:41.147Z"
-  },
   "social-35a80737e0f3": {
     "id": "social-35a80737e0f3",
     "url": "https://x.com/NickiJhabvala/status/2100695098623234473",
@@ -9469,5 +9331,173 @@
     "images": [],
     "publishedAt": "2026-09-27T17:51:52.599Z",
     "collectedAt": "2026-09-27T18:05:57.621Z"
+  },
+  "social-eaa8f2c2d6d8": {
+    "id": "social-eaa8f2c2d6d8",
+    "url": "https://x.com/NickiJhabvala/status/2104301040501973432",
+    "text": "Marcus Mariota just went back to the locker room.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T20:03:58.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-62e6b38f03d4": {
+    "id": "social-62e6b38f03d4",
+    "url": "https://x.com/NickiJhabvala/status/2104299699603677694",
+    "text": "Terry McLaurin on a slant.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:58:39.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-fd89d7df9994": {
+    "id": "social-fd89d7df9994",
+    "url": "https://x.com/NickiJhabvala/status/2104290275635908884",
+    "text": "FOX's Pam Oliver reported that Leo Chenal has feeling in all extremities and was talking to his family. He's headed to the hospital as a precaution. Chenal was ruled out shortly after being carted off the field with a neck injury in the second quarter.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:21:12.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-145091370075": {
+    "id": "social-145091370075",
+    "url": "https://x.com/NickiJhabvala/status/2104288276240593002",
+    "text": "The Commanders look pretty f'in operable.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:13:15.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-b680e7b52ec4": {
+    "id": "social-b680e7b52ec4",
+    "url": "https://x.com/NickiJhabvala/status/2104288144086405438",
+    "text": "Tim Settle had the tip, Sonny Styles picked it off and Terry McLaurin followed with the holy shit TD catch.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:12:43.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-2ce831475333": {
+    "id": "social-2ce831475333",
+    "url": "https://x.com/NickiJhabvala/status/2104286543468990490",
+    "text": "Rachaad White just ran back out from the locker room.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:06:22.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-ce2917e31e5d": {
+    "id": "social-ce2917e31e5d",
+    "url": "https://x.com/NickiJhabvala/status/2104286016786071798",
+    "text": "That was a beauty from Mariota tho",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:04:16.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-50caf238e79c": {
+    "id": "social-50caf238e79c",
+    "url": "https://x.com/NickiJhabvala/status/2104285766515851320",
+    "text": "Rachaad White is questionable with a shoulder injury.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:03:17.000Z",
+    "collectedAt": "2026-09-27T20:05:12.114Z"
+  },
+  "social-103006aa5915": {
+    "id": "social-103006aa5915",
+    "url": "https://x.com/NickiJhabvala/status/2104285645048832215",
+    "text": "Lucas Patrick is back out there at center and Allegretti is back at right guard.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:02:48.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
+  },
+  "social-53285c515026": {
+    "id": "social-53285c515026",
+    "url": "https://x.com/NickiJhabvala/status/2104285431323844917",
+    "text": "Didn't see Rachaad White come back out of the locker room for the second half.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T19:01:57.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
+  },
+  "social-7b4140f4cacf": {
+    "id": "social-7b4140f4cacf",
+    "url": "https://x.com/NickiJhabvala/status/2104284877831197131",
+    "text": "Drew Stevens' 57-yard field goal is the longest ever recorded by a Washington kicker in their rookie season. The only other Washington kicker to have a FG of 50+ yards in their rookie season was K James Tuthill (53) in 2002.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T18:59:45.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
+  },
+  "social-4f1126cb1a74": {
+    "id": "social-4f1126cb1a74",
+    "url": "https://x.com/NickiJhabvala/status/2104282179601899933",
+    "text": "Rachaad White came off the field shaken up after his run on 3rd-and-4. Athletic trainers were tending to him on the bench before the team went to the locker room.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T18:49:01.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
+  },
+  "social-34fd7d22981b": {
+    "id": "social-34fd7d22981b",
+    "url": "https://x.com/NickiJhabvala/status/2104281870997299335",
+    "text": "Lucas Patrick has an ankle injury is questionable to return.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T18:47:48.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
+  },
+  "social-f41f87314d99": {
+    "id": "social-f41f87314d99",
+    "url": "https://x.com/NickiJhabvala/status/2104281829734047899",
+    "text": "Drew Stevens nails a 57-yard kick to make it 17-10 at the break.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T18:47:38.000Z",
+    "collectedAt": "2026-09-27T20:05:12.115Z"
   }
 }
