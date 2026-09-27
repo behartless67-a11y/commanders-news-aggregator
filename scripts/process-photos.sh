@@ -17,6 +17,8 @@ mkdir -p "$OUT"
 UVA="C:/Users/Ben/Desktop/uva pics"
 GAME="C:/Users/Ben/Desktop/game"
 HOGWALLER="C:/Users/Ben/Desktop/commanders"
+# Later one-offs land loose on the Desktop rather than in a batch folder.
+DESKTOP="C:/Users/Ben/Desktop"
 
 # Long edge in px. Big enough to look sharp on a retina laptop at the widths
 # these are displayed at, small enough that a gallery of them is not a 6 MB
@@ -55,6 +57,14 @@ PHOTOS=(
   "hogwaller-us|$HOGWALLER/commanders1.jpg|-|contrast=1.06:saturation=1.06:gamma=1.03|-"
   "hogwaller-evan|$HOGWALLER/commanders2.jpg|-|contrast=1.06:saturation=1.08:gamma=1.02|-"
   "hogwaller-scary-terry|$HOGWALLER/commanders3.jpg|-|contrast=1.08:saturation=1.10:gamma=0.99|-"
+  # Delaware tailgate, 2026-09-26, outside Scott Stadium. Shot in hard
+  # mid-afternoon sun, so it needs less lifting than the suite photos above.
+  # The crop pulls in from the left and right: as framed there was an empty
+  # stretch of lot on both sides, and the bottom cannot come up at all
+  # without taking the baby's feet with it. Four credentials on lanyards
+  # here, and unlike most of this set the headshots on them survived the
+  # downscale legibly, so all four get smeared.
+  "first-tailgate|$DESKTOP/friends.jpg|5085:4004:350:280|contrast=1.09:saturation=1.12:gamma=1.02|46:64:409:690;44:66:565:650;40:60:615:585;38:66:735:639"
 )
 
 echo "{" > "$OUT/dimensions.json"
