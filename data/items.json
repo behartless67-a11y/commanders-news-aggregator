@@ -12394,5 +12394,65 @@
     "excerpt": "Bold predictions for the Washington Commanders during their daunting Week 3 home game against the Seattle Seahawks.",
     "publishedAt": "2026-09-27T10:00:01.000Z",
     "collectedAt": "2026-09-27T10:05:31.467Z"
+  },
+  "hogs-haven-7224e63a54a8": {
+    "id": "hogs-haven-7224e63a54a8",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/443753/game-day-home-opener-vs-seahawks-kicks-off-1pm-antonio-williams",
+    "title": "Commanders News: Game Day!! Home opener vs Seahawks kicks off at 1:00",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 02: Jaylin Lane #83 of the Washington Commanders is tackled by Ernest Jones #13 of the Seattle Seahawks during the second quarter in the game at Northwest Stadium on November 02, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images \n \n The Daily Slop – 27 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the…",
+    "publishedAt": "2026-09-27T11:00:00.000Z",
+    "collectedAt": "2026-09-27T12:05:28.987Z"
+  },
+  "riggos-rag-41e10e33a1b9": {
+    "id": "riggos-rag-41e10e33a1b9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-need-odafe-oweh-disruptive-best-upset-seahawks",
+    "title": "Commanders need Odafe Oweh at his disruptive best to upset Seahawks",
+    "excerpt": "The Washington Commanders need edge rusher Odafe Oweh at his disruptive best to upset the Seattle Seahawks in Week 3.",
+    "publishedAt": "2026-09-27T12:00:02.000Z",
+    "collectedAt": "2026-09-27T12:05:29.542Z"
+  },
+  "riggos-rag-a5a56dbc9d50": {
+    "id": "riggos-rag-a5a56dbc9d50",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/week-3-weather-forecast-could-work-washington-commanders-favor-against-seahawks",
+    "title": "Week 3 weather forecast could work in Commanders' favor against the Seahawks",
+    "excerpt": "The Week 3 weather forecast could work in the Washington Commanders' favor when they take on the Seattle Seahawks at Northwest Stadium.",
+    "publishedAt": "2026-09-27T11:00:00.000Z",
+    "collectedAt": "2026-09-27T12:05:29.542Z"
+  },
+  "yahoo-nfl-843312e325fc": {
+    "id": "yahoo-nfl-843312e325fc",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/watch-seahawks-vs-commanders-tv-110000323.html",
+    "title": "How to watch Seahawks vs. Commanders: TV network, live stream, kickoff time",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 02: Jaxon Smith-Njigba #11 of the Seattle Seahawks runs after a catch against Bobby Wagner #54 of the Washington Commanders during the first quarter in the game at Northwest Stadium on November 02, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Seattle Seahawks (2-0) wrap up their opening month of the 2026 regular season with a road game against a team in desperate need of something positive to happen. If the Seahawks are flying,…",
+    "publishedAt": "2026-09-27T11:00:00.000Z",
+    "collectedAt": "2026-09-27T12:05:34.503Z"
+  },
+  "yahoo-nfl-89627adb1ee4": {
+    "id": "yahoo-nfl-89627adb1ee4",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-home-opener-vs-seahawks-110000906.html",
+    "title": "Commanders home opener vs Seahawks kicks off at 1:00 - Daily Slop",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 02: Jaylin Lane #83 of the Washington Commanders is tackled by Ernest Jones #13 of the Seattle Seahawks during the second quarter in the game at Northwest Stadium on November 02, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Daily Slop – 27 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and…",
+    "publishedAt": "2026-09-27T11:00:00.000Z",
+    "collectedAt": "2026-09-27T12:05:34.503Z"
   }
 }
