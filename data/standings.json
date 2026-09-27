@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-09-27T20:06:05.568Z",
+  "fetchedAt": "2026-09-27T22:06:04.381Z",
   "teams": [
     {
       "abbr": "PHI",
@@ -26,9 +26,9 @@
     {
       "abbr": "WAS",
       "name": "Washington Commanders",
-      "overall": "0-2",
-      "streak": "L2",
-      "winPercent": 0
+      "overall": "1-2",
+      "streak": "W1",
+      "winPercent": 0.33333334
     }
   ]
 }

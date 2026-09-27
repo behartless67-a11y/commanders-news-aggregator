@@ -71,6 +71,20 @@
   },
   {
     "season": "regular",
+    "week": "WEEK 3",
+    "gametime": "09/27/2026 13:00:00 -04:00",
+    "homeAway": "VS",
+    "opponentAbbr": "SEA",
+    "opponent": "Seattle Seahawks",
+    "opponentShort": "Seahawks",
+    "venue": "Northwest Stadium",
+    "result": "W",
+    "points": "33 - 31",
+    "broadcast": null,
+    "isBye": false
+  },
+  {
+    "season": "regular",
     "week": "WEEK 4",
     "gametime": "10/04/2026 09:30:00 -04:00",
     "homeAway": "VS",

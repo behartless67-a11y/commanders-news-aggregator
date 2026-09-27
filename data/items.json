@@ -827,18 +827,6 @@
     "publishedAt": "2026-08-14T16:25:51.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-014227fe4baa": {
-    "id": "wjla-commanders-014227fe4baa",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/daniels-sends-lsu-cease-and-desist-letter-regarding-decision-to-give-no-5-jersey-to-curre",
-    "title": "Jayden Daniels sends LSU cease-and-desist letter over jersey dispute",
-    "excerpt": "BATON ROUGE, La. (AP) — A representative for Washington Commanders quarterback Jayden Daniels has told LSU it can no longer use the 2023 Heisman Trophy winner's",
-    "publishedAt": "2026-08-13T20:30:56.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -12634,5 +12622,149 @@
     "excerpt": "In a scary moment, Washington Commanders linebacker Leo Chenal was carted off of the field in Sunday's game against the Seattle Seahawks. The Commanders later ruled him out with a neck injury.\n Chenal appeared to take a knee to the head during the second quarter, leading to him going down. He was tended to by staff for a while, before being loaded onto a backboard and carted off into the locker room. The entire team gathered around him while he was on the ground.\n As Chenal was taken into the…",
     "publishedAt": "2026-09-27T18:47:27.000Z",
     "collectedAt": "2026-09-27T20:05:42.535Z"
+  },
+  "hogs-haven-09f0d5b57093": {
+    "id": "hogs-haven-09f0d5b57093",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/442763/dan-quinn-marcus-mariota-kain-medrano-talk-about-upset-win-over-seahawks",
+    "title": "Dan Quinn and Marcus Mariota talk about upset win over Seahawks",
+    "excerpt": "The Washington Commanders shocked the Seattle Seahawks at Northwest Stadium and came away with the 33-31 win in their home opener. The team lost back-to-back division games to start the season, and also lost starting QB Jayden Daniels for a few weeks due to a dislocated elbow. Marcus Mariota led the team to victory today, and said it was an unbelievable win that the team needed. He said the team came together through adversity and they didn’t blink when last season’s Super Bowl champions came…",
+    "publishedAt": "2026-09-27T21:05:35.000Z",
+    "collectedAt": "2026-09-27T22:05:35.467Z"
+  },
+  "hogs-haven-eb2f0e039747": {
+    "id": "hogs-haven-eb2f0e039747",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/443836/takeaways-washington-commanders-seattle-seahawks-week-3-marcus-mariota-sam-darnold",
+    "title": "Key takeaways from Washington Commanders Week 3 win over Seattle Seahawks",
+    "excerpt": "BOX SCORE \n\n News has been kind to the Washington Commanders in the aftermath of Jayden Daniels’ dislocated left elbow. All things considered, anyway. \n\n We first heard that surgery wasn’t on the table and that injured reserve wasn’t being considered. Then came a more definitive timeline, with NFL Network reporting that Daniels could be back within three weeks . \n\n While those are pluses, the Commanders are still 0-2 and must survive a little while without Daniels. \n\n Veteran backup Marcus…",
+    "publishedAt": "2026-09-27T20:30:02.000Z",
+    "collectedAt": "2026-09-27T22:05:35.467Z"
+  },
+  "riggos-rag-ba609ca4864e": {
+    "id": "riggos-rag-ba609ca4864e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/grading-marcus-mariota-heroic-performance-commanders-stun-seahawks",
+    "title": "Grading Marcus Mariota's heroic performance as Commanders stun Seahawks",
+    "excerpt": "Grading Washington Commanders quarterback Marcus Mariota's performance during a sensational win over the Seattle Seahawks.",
+    "publishedAt": "2026-09-27T21:06:51.000Z",
+    "collectedAt": "2026-09-27T22:05:36.211Z"
+  },
+  "riggos-rag-92c20510e945": {
+    "id": "riggos-rag-92c20510e945",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/11-instant-reactions-from-commanders-stunning-upset-over-seahawks",
+    "title": "11 instant reactions from Commanders' stunning upset over the Seahawks",
+    "excerpt": "Instant reactions from the Washington Commanders' stunning upset win over the Seattle Seahawks in Week 3.",
+    "publishedAt": "2026-09-27T20:31:17.000Z",
+    "collectedAt": "2026-09-27T22:05:36.211Z"
+  },
+  "clutchpoints-d7ededf00c05": {
+    "id": "clutchpoints-d7ededf00c05",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-marcus-mariota-pulls-off-feat-vs-seahawks-not-done-since-sam-darnold",
+    "title": "Commanders’ Marcus Mariota pulls off feat vs. Seahawks not done since Sam Darnold",
+    "excerpt": "The Washington Commanders started Marcus Mariota at quarterback on Sunday with Jayden Daniels out with a dislocated left elbow. It’s been an impressive outing for Mariota on Sunday, as he’s playing rather well against a tough Seattle Seahawks defense. His play has been so good, in fact, that he accomplished an impressive feat against Seattle not seen since Sam Darnold.\n\n When Darnold was playing for the Minnesota Vikings, he threw two touchdowns in the first half during a game against the…",
+    "publishedAt": "2026-09-27T19:11:20.000Z",
+    "collectedAt": "2026-09-27T22:05:36.316Z"
+  },
+  "athletic-jhabvala-486f1f00b82f": {
+    "id": "athletic-jhabvala-486f1f00b82f",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7636370/2026/09/27/commanders-seahawks-result-takeaways-week-3-nfl",
+    "title": "How Marcus Mariota and Commanders stunned Seahawks, spoiled Sam Darnold's return",
+    "excerpt": "Washington, without starting QB Jayden Daniels, upset the reigning Super Bowl champions, 33-31.",
+    "publishedAt": "2026-09-27T20:39:20.000Z",
+    "collectedAt": "2026-09-27T22:05:37.892Z"
+  },
+  "commanders-youtube-6dbb8d65cc03": {
+    "id": "commanders-youtube-6dbb8d65cc03",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=KzxJC6FmWew",
+    "title": "COMMANDERS KNOCK OFF SEAHAWKS! | Breaking Down The Win On Gameday LIVE | NFL Week 3",
+    "excerpt": "",
+    "publishedAt": "2026-09-27T21:57:31.000Z",
+    "collectedAt": "2026-09-27T22:05:38.107Z"
+  },
+  "dc-sports-king-a221d3a01ddb": {
+    "id": "dc-sports-king-a221d3a01ddb",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/commanders-shock-undefeated-seahawks-in-thrilling-33-31-upset-behind-marcus-mariota",
+    "title": "Commanders Shock Undefeated Seahawks in Thrilling 33-31 Upset Behind Marcus Mariota",
+    "excerpt": "No one gave the Washington Commanders much of a chance in Week 3, and honestly, it was hard to blame the skeptics. Coming off the devastating loss of rookie sensation Jayden Daniels to an elbow injury just a week ago , Washington faced a daunting matchup against a Seattle Seahawks team that hadn’t lost a game since last November. Yet, in a 33-31 thriller that defied every script, the Commanders didn’t just survive—they made a massive statement.\n\n Marcus Mariota Stepped Up to Right the Ship…",
+    "publishedAt": "2026-09-27T21:41:05.000Z",
+    "collectedAt": "2026-09-27T22:05:39.682Z"
+  },
+  "wjla-commanders-1c38bbbb6228": {
+    "id": "wjla-commanders-1c38bbbb6228",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-snap-seattles-12-game-winning-streak-beat-the-seahawks-33-31",
+    "title": "Commanders snap Seattle's 12-game winning streak, beat the Seahawks 33-31",
+    "excerpt": "LANDOVER, Md. (AP) — Marcus Mariota threw three touchdown passes, and Kain Medrano returned an interception 50 yards for a touchdown to help the Washington Comm",
+    "publishedAt": "2026-09-27T21:20:08.000Z",
+    "collectedAt": "2026-09-27T22:05:40.554Z"
+  },
+  "pft-5a7df399efdf": {
+    "id": "pft-5a7df399efdf",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/marcus-mariota-and-the-commanders-stun-the-seahawks-33-31",
+    "title": "Marcus Mariota and the Commanders stun the Seahawks 33-31",
+    "excerpt": "No Jayden Daniels? No problem for the Commanders today, as backup quarterback Marcus Mariota turned in an incredible effort against the stout Seahawks' defense, leading Washington to a 33-31 win.\n Mariota sealed the Commanders' win with a nine-yard run on third-and-7 with 1:15 remaining, and that was just the last of a number of spectacular plays by Mariota, who played very well against this Seahawks defense that has shut down so many quarterbacks over the last two years.\n The 32-year-old…",
+    "publishedAt": "2026-09-27T20:31:49.000Z",
+    "collectedAt": "2026-09-27T22:05:40.725Z"
+  },
+  "yahoo-nfl-f5d9d1a81234": {
+    "id": "yahoo-nfl-f5d9d1a81234",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/marcus-mariota-leads-commanders-past-sam-darnold-seahawks-in-first-start-after-jayden-daniels-injury-202718720.html",
+    "title": "Marcus Mariota leads Commanders past Sam Darnold, Seahawks in first start after Jayden Daniels' injury",
+    "excerpt": "Marcus Mariota had no problem filling in for Jayden Daniels.\n Mariota led the Washington Commanders to a huge 33-31 upset win over Sam Darnold and the Seattle Seahawks at Northwest Stadium on Sunday afternoon. The win marked the team's first of the season, and stopped what would have been its worst start to a campaign since 2019. It was also Mariota's first start since taking over for Daniels, who went down last week with a gruesome elbow injury.\n The win was made possible only after Seahawks…",
+    "publishedAt": "2026-09-27T20:27:18.000Z",
+    "collectedAt": "2026-09-27T22:05:41.016Z"
+  },
+  "yahoo-nfl-72277532c63d": {
+    "id": "yahoo-nfl-72277532c63d",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-fall-commanders-stunning-turnover-203308342.html",
+    "title": "Seahawks fall to Commanders in stunning, turnover-fueled loss",
+    "excerpt": "The Seattle Seahawks (2-1), for whatever reason, cannot solve Marcus Mariota regardless of which team he’s playing for. Mariota is now 3-0 lifetime as a starter against Seattle, with his other wins coming as a member of the Tennessee Titans and Atlanta Falcons.\n In the most disappointing loss arguably of the entire Mike Macdonald era, three turnovers led to 21 Washington Commanders points, and Dan Quinn was able to get the better of his former team in a 33-31 upset victory. Sam Darnold threw…",
+    "publishedAt": "2026-09-27T20:33:08.000Z",
+    "collectedAt": "2026-09-27T22:05:41.016Z"
   }
 }
