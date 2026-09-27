@@ -63,10 +63,24 @@
     "notes": "Surgery"
   },
   {
+    "name": "Leo Chenal",
+    "position": "LB",
+    "status": "Out",
+    "bodyPart": "Neck",
+    "notes": null
+  },
+  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Out",
     "bodyPart": "Undisclosed",
+    "notes": null
+  },
+  {
+    "name": "Rachaad White",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
     "notes": null
   },
   {
