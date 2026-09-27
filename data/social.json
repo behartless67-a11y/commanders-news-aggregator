@@ -1,69 +1,4 @@
 {
-  "social-35a80737e0f3": {
-    "id": "social-35a80737e0f3",
-    "url": "https://x.com/NickiJhabvala/status/2100695098623234473",
-    "text": "Javon Kinlaw added to the injury report with a back injury.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-17T21:15:15.000Z",
-    "collectedAt": "2026-09-17T22:05:10.263Z"
-  },
-  "social-9cfd202c2a74": {
-    "id": "social-9cfd202c2a74",
-    "url": "https://x.com/Commanders/status/2100698812109209865",
-    "text": "rain or shine @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/516/966/392/765/original/4cb99b3b6a69c793.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/516/999/938/088/original/c3ae27f088a8a7ee.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/517/024/972/133/original/01c476c4bcba583b.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/288/517/063/362/654/original/6858659f8fd3226b.jpg"
-    ],
-    "publishedAt": "2026-09-17T21:30:00.000Z",
-    "collectedAt": "2026-09-17T22:06:29.717Z"
-  },
-  "social-d6273a01503a": {
-    "id": "social-d6273a01503a",
-    "url": "https://x.com/BenStandig/status/2100698892887277926",
-    "text": "Oh, no. Sweetney was an all-time Georgetown legend. What a scoring machine. RIP.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-17T21:30:19.000Z",
-    "collectedAt": "2026-09-17T22:06:33.965Z"
-  },
-  "social-e701e093835b": {
-    "id": "social-e701e093835b",
-    "url": "https://x.com/BenStandig/status/2100696555028144388",
-    "text": "Oh, no. Sweetness was an all-time Georgetown legend. What a scoring machine. RIP.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-17T21:21:02.000Z",
-    "collectedAt": "2026-09-17T22:06:33.965Z"
-  },
-  "social-5e3bc852913d": {
-    "id": "social-5e3bc852913d",
-    "url": "https://x.com/tashanreed/status/2100699574566265311",
-    "text": "Kinlaw didn't practice today due to a back injury. Something to watch for the #Commanders ahead of Sunday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-17T21:33:02.000Z",
-    "collectedAt": "2026-09-17T22:06:35.304Z"
-  },
   "social-675a22548151": {
     "id": "social-675a22548151",
     "url": "https://x.com/john_keim/status/2100720694015213894",
@@ -10780,5 +10715,89 @@
     "images": [],
     "publishedAt": "2026-09-27T20:28:34.000Z",
     "collectedAt": "2026-09-27T21:08:21.400Z"
+  },
+  "social-ee70063353ab": {
+    "id": "social-ee70063353ab",
+    "url": "https://x.com/NickiJhabvala/status/2104326837245771977",
+    "text": "Gonna try this again because I'm dumb and numbers are hard: What a massive season-saving win for Washington. They now head to London 1-2, knowing their starting QB will be back sometime soon. Carry on.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T21:46:29.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-be96c9316677": {
+    "id": "social-be96c9316677",
+    "url": "https://x.com/NickiJhabvala/status/2104322829403464159",
+    "text": "Dan Quinn: “It wasn’t perfect by any stretch … but I think it shows some of the resolve. … For the guys that are stepping in and being able to deliver, that’s a big deal.”",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T21:30:33.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-efa3ce05f88e": {
+    "id": "social-efa3ce05f88e",
+    "url": "https://x.com/NickiJhabvala/status/2104321981009011049",
+    "text": "Quinn confirmed Pam Oliver’s earlier report about Leo Chenal — he can move all extremities and was taken to the hospital. Quinn also said Percy Butler is in the concussion protocol. He went to the locker room late in the fourth quarter.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T21:27:11.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-dbd28978689a": {
+    "id": "social-dbd28978689a",
+    "url": "https://x.com/NickiJhabvala/status/2104321593736318991",
+    "text": "Dan Quinn said Kain Medrano and Marcus Mariota were both awarded game balls after the win.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T21:25:39.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-8cf4597b3c77": {
+    "id": "social-8cf4597b3c77",
+    "url": "https://x.com/NickiJhabvala/status/2104311128499311002",
+    "text": "Marcus Mariota said he went to the locker room in the fourth quarter to get an IV. “My workload hasn’t been like this in a while.”",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T20:44:03.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-80c22684b773": {
+    "id": "social-80c22684b773",
+    "url": "https://x.com/NickiJhabvala/status/2104303061422293198",
+    "text": "Marcus Mariota just jogged back out.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T20:12:00.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
+  },
+  "social-26ee64b18744": {
+    "id": "social-26ee64b18744",
+    "url": "https://x.com/NickiJhabvala/status/2104302381777486170",
+    "text": "Kain Medrano, ladies and gentlemen.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-27T20:09:18.000Z",
+    "collectedAt": "2026-09-27T22:05:11.413Z"
   }
 }
