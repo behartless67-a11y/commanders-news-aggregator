@@ -1702,6 +1702,30 @@ main.layout{
   border: 1px solid var(--border-soft);
 }
 
+/* A phone clip is portrait, so at full column width it would stand about
+   1300px tall and push the whole post off the screen. Capped and centred
+   instead: the caption below it still spans the column, which keeps it
+   reading as part of the prose rather than as an embed dropped in. */
+.essay-figure-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.essay-video{
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  background: #000;
+}
+
+.essay-figure-video .essay-figcaption{
+  max-width: 420px;
+}
+
 .essay-figcaption{
   font-size: 12.5px;
   line-height: 1.5;

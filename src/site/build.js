@@ -413,6 +413,15 @@ export async function buildSite() {
   // harmlessly; it's the build-time record of what process-photos.sh emitted.
   await fs.cp(path.resolve('src/site/assets/photos'), path.join(DIST_DIR, 'photos'), { recursive: true });
 
+  // Same again for the occasional video clip (scripts/process-videos.sh).
+  // The directory only exists once something has been encoded into it, so a
+  // checkout that has never run that script must not fail the build here.
+  await fs
+    .cp(path.resolve('src/site/assets/videos'), path.join(DIST_DIR, 'videos'), { recursive: true })
+    .catch((err) => {
+      if (err.code !== 'ENOENT') throw err;
+    });
+
   log.ok(
     `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
       `${socialPosts.length} ticker post(s), ${videos.length} video(s), ${publishedDigests.length} weekly recap(s)`,

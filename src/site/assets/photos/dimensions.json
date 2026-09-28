@@ -14,5 +14,18 @@
   "hogwaller-us": { "w": 900, "h": 1200 },
   "hogwaller-evan": { "w": 1200, "h": 900 },
   "hogwaller-scary-terry": { "w": 900, "h": 1200 },
-  "first-tailgate": { "w": 1200, "h": 946 }
+  "first-tailgate": { "w": 1200, "h": 946 },
+  "gameday-spread": { "w": 900, "h": 1200 },
+  "gameday-tent": { "w": 1200, "h": 900 },
+  "gameday-crew": { "w": 1200, "h": 900 },
+  "gameday-set": { "w": 900, "h": 1200 },
+  "gameday-three": { "w": 900, "h": 1200 },
+  "gameday-bowl": { "w": 900, "h": 1200 },
+  "gameday-huddle": { "w": 900, "h": 1200 },
+  "gameday-hoods": { "w": 900, "h": 1200 },
+  "gameday-highlife": { "w": 1200, "h": 900 },
+  "gameday-forty": { "w": 900, "h": 1200 },
+  "gameday-mariota-sign": { "w": 900, "h": 1200 },
+  "gameday-coverage": { "w": 900, "h": 1200 },
+  "gameday-selfie": { "w": 900, "h": 1200 }
 }

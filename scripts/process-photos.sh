@@ -19,6 +19,7 @@ GAME="C:/Users/Ben/Desktop/game"
 HOGWALLER="C:/Users/Ben/Desktop/commanders"
 # Later one-offs land loose on the Desktop rather than in a batch folder.
 DESKTOP="C:/Users/Ben/Desktop"
+GAMEDAY="C:/Users/Ben/Desktop/gameday"
 
 # Long edge in px. Big enough to look sharp on a retina laptop at the widths
 # these are displayed at, small enough that a gallery of them is not a 6 MB
@@ -65,6 +66,24 @@ PHOTOS=(
   # here, and unlike most of this set the headshots on them survived the
   # downscale legibly, so all four get smeared.
   "first-tailgate|$DESKTOP/friends.jpg|5085:4004:350:280|contrast=1.09:saturation=1.12:gamma=1.02|46:64:409:690;44:66:565:650;40:60:615:585;38:66:735:639"
+  # Week 3 vs Seattle, the home opener, 2026-09-27. Shot in overcast drizzle
+  # all day, so this batch gets a heavier lift than the sunny sets above:
+  # flat grey light needs contrast and saturation or everything reads as a
+  # photograph of a car park. The .HEIC files are from a second phone and
+  # ffmpeg reads the JPEG preview inside them without complaint.
+  "gameday-spread|$GAMEDAY/IMG_8868.JPG|-|contrast=1.12:saturation=1.14:gamma=1.03|-"
+  "gameday-tent|$GAMEDAY/IMG_8877.JPG|-|contrast=1.12:saturation=1.12:gamma=1.04|-"
+  "gameday-crew|$GAMEDAY/IMG_8892.JPG|-|contrast=1.12:saturation=1.15:gamma=1.03|-"
+  "gameday-set|$GAMEDAY/IMG_8901.JPG|-|contrast=1.10:saturation=1.10:gamma=1.06|-"
+  "gameday-three|$GAMEDAY/IMG_8907.JPG|-|contrast=1.10:saturation=1.12:gamma=1.03|-"
+  "gameday-bowl|$GAMEDAY/IMG_8914.JPG|-|contrast=1.14:saturation=1.16:gamma=1.02|-"
+  "gameday-huddle|$GAMEDAY/IMG_8959.JPG|-|contrast=1.12:saturation=1.14:gamma=1.02|-"
+  "gameday-hoods|$GAMEDAY/IMG_8999.JPG|-|contrast=1.10:saturation=1.12:gamma=1.03|-"
+  "gameday-highlife|$GAMEDAY/IMG_1651.HEIC|-|contrast=1.10:saturation=1.10:gamma=1.02|-"
+  "gameday-forty|$GAMEDAY/IMG_1652.HEIC|-|contrast=1.12:saturation=1.12:gamma=1.03|-"
+  "gameday-mariota-sign|$GAMEDAY/IMG_1658.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.03|-"
+  "gameday-coverage|$GAMEDAY/IMG_1666.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.02|-"
+  "gameday-selfie|$GAMEDAY/IMG_1674.HEIC|-|contrast=1.10:saturation=1.12:gamma=1.03|-"
 )
 
 echo "{" > "$OUT/dimensions.json"
@@ -120,7 +139,12 @@ for row in "${PHOTOS[@]}"; do
     done
   fi
 
-  ffmpeg -y -loglevel error -i "$src" -vf "$chain" -q:v 5 "$OUT/$name.jpg"
+  # -frames:v 1 because a HEIC is a container, not a single picture: the ones
+  # off an iPhone carry the full-size image plus extra embedded frames, and
+  # without this ffmpeg decodes all of them and dies trying to write several
+  # files to one name ("Cannot write more than one file with the same name").
+  # Harmless on an ordinary JPEG, which only has the one frame to take.
+  ffmpeg -y -loglevel error -i "$src" -vf "$chain" -frames:v 1 -q:v 5 "$OUT/$name.jpg"
 
   dims=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height \
     -of csv=s=x:p=0 "$OUT/$name.jpg")

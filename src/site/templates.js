@@ -1121,6 +1121,42 @@ function essayPhoto(photo, { className = 'essay-figure' } = {}) {
 }
 
 /**
+ * A phone clip from a game, for the rare post where something moved.
+ *
+ * preload="none" is the entire reason a video is allowed on this site at
+ * all. Without it every reader downloads two megabytes whether or not they
+ * ever press play, on a host billed by the deploy and a page that otherwise
+ * weighs a couple hundred kilobytes. With it the browser fetches the poster
+ * JPEG and nothing else until someone actually asks, so a clip nobody
+ * watches costs the same as one more photograph.
+ *
+ * No autoplay and no muted-loop treatment: these have crowd noise, which is
+ * most of why they are worth watching, and a video that starts shouting at a
+ * reader who came for a blog post is a bad houseguest. width/height are the
+ * real encoded dimensions (see scripts/process-videos.sh) so the page
+ * reserves the space and nothing jumps when it loads.
+ */
+function essayVideo(video) {
+  const caption = video.caption
+    ? `<figcaption class="essay-figcaption">${escapeHtml(video.caption)}</figcaption>`
+    : '';
+  return `<figure class="essay-figure essay-figure-video">
+        <video
+          class="essay-video"
+          controls
+          preload="none"
+          playsinline
+          poster="videos/${escapeHtml(video.poster)}"
+          width="${video.w}"
+          height="${video.h}">
+          <source src="videos/${escapeHtml(video.file)}" type="video/mp4" />
+          ${escapeHtml(video.alt || 'A video clip from the game.')}
+        </video>
+        ${caption}
+      </figure>`;
+}
+
+/**
  * A run of "thank you" in each language the site's readers actually come from
  * (see the `thanks` field on a Blog record).
  *
@@ -1188,7 +1224,7 @@ ${items}
  * An unknown key renders nothing rather than throwing. Losing one photo is a
  * better failure than a build that dies over a typo in a caption file.
  */
-function essayParagraphs(paragraphs, rosterIndex, { photos = {}, thanks = null, callout = null } = {}) {
+function essayParagraphs(paragraphs, rosterIndex, { photos = {}, videos = {}, thanks = null, callout = null, slideshow = null } = {}) {
   return paragraphs
     .map((p) => {
       if (p.startsWith('## ')) {
@@ -1204,6 +1240,13 @@ function essayParagraphs(paragraphs, rosterIndex, { photos = {}, thanks = null, 
       if (p.trim() === '!callout') {
         return partnerCallout(callout);
       }
+      if (p.trim() === '!slideshow') {
+        return slideshow ? photoSlideshow(slideshow, photos) : '';
+      }
+      if (p.startsWith('!video ')) {
+        const video = videos[p.slice(7).trim()];
+        return video ? essayVideo(video) : '';
+      }
       return `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`;
     })
     .join('\n');
@@ -1211,7 +1254,7 @@ function essayParagraphs(paragraphs, rosterIndex, { photos = {}, thanks = null, 
 
 /**
  * Just the prose lines of an essay, with the "## ", "!photo " and "!thanks"
- * markers dropped. For anywhere a post is reduced to plain text (river card
+ * markers dropped ("!callout" and "!slideshow" too). For anywhere a post is reduced to plain text (river card
  * excerpts, meta descriptions, the blog index) where a raw marker leaking
  * through would read as "!photo tailgate-wings" in a Google result.
  *
@@ -1223,8 +1266,10 @@ function essayProse(paragraphs) {
     (p) =>
       !p.startsWith('## ') &&
       !p.startsWith('!photo ') &&
+      !p.startsWith('!video ') &&
       p.trim() !== '!thanks' &&
-      p.trim() !== '!callout',
+      p.trim() !== '!callout' &&
+      p.trim() !== '!slideshow',
   );
 }
 
@@ -1271,18 +1316,24 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
   const photos = record.photos || {};
   const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, {
     photos,
+    videos: record.videos || {},
     thanks: record.thanks,
     callout: record.callout,
+    slideshow: record.slideshow,
   });
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
   // like "go listen to the Music page" carry a real link instead of a bare
   // URL, without teaching every paragraph to parse markdown for one field.
   const plug = record.plug ? `<p class="digest-para original-plug">${record.plug}</p>` : '';
-  // After the prose and before the plug: a slideshow is a coda, not an
-  // interruption. A post using "!photo" markers instead gets its images inline
-  // above and no slideshow at all; nothing stops a post doing both.
-  const slideshow = record.slideshow ? photoSlideshow(record.slideshow, photos) : '';
+  // After the prose and before the plug: a slideshow is a coda by default,
+  // not an interruption. A post using "!photo" markers instead gets its
+  // images inline above and no slideshow at all; nothing stops a post doing
+  // both. A post that would rather lead with the pictures than end on them
+  // places a "!slideshow" marker itself, and then it must not also be
+  // appended here or it would render twice. Same rule as "!callout" above.
+  const usesSlideshowMarker = record.paragraphs.some((p) => p.trim() === '!slideshow');
+  const slideshow = record.slideshow && !usesSlideshowMarker ? photoSlideshow(record.slideshow, photos) : '';
   return `
     <article class="digest-post original-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
@@ -1339,8 +1390,10 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
   // saying why.
   const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, {
     photos: record.photos || {},
+    videos: record.videos || {},
     thanks: record.thanks,
     callout: record.callout,
+    slideshow: record.slideshow,
   });
   // Appended only when the prose didn't place it with a "!callout" marker, so
   // the already-published Monday post that predates the marker keeps its
