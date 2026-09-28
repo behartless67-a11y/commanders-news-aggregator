@@ -11218,5 +11218,31 @@
     ],
     "publishedAt": "2026-09-28T04:17:17.277Z",
     "collectedAt": "2026-09-28T06:05:53.237Z"
+  },
+  "social-6057c7802b98": {
+    "id": "social-6057c7802b98",
+    "url": "https://x.com/john_keim/status/2104511159927738725",
+    "text": "Ekeler was a valuable player in the pass game the last two seasons when healthy. Also need to note that Rachaad White injured his shoulder Sunday on the last play from scrimmage in the first half but did return for the second half.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-28T09:58:55.000Z",
+    "collectedAt": "2026-09-28T10:05:42.008Z"
+  },
+  "social-11b0adb00e59": {
+    "id": "social-11b0adb00e59",
+    "url": "https://x.com/RapSheet/status/2104497843579048132",
+    "text": "Reunion: The #Commanders are expected to sign FA RB Austin Ekeler to their 53-man roster pending physical, sources tell me and @MikeGarafolo . Ekeler, who is healed from an Achilles tear and worked out for the #Panthers last week, lands back in a familiar place.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@AdamSchefter",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/347/874/310/404/313/original/6292f6abaaa83dfe.jpg"
+    ],
+    "publishedAt": "2026-09-28T09:06:00.000Z",
+    "collectedAt": "2026-09-28T10:05:47.644Z"
   }
 }
