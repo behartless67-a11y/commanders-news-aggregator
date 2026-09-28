@@ -1,42 +1,4 @@
 {
-  "social-8de57228f583": {
-    "id": "social-8de57228f583",
-    "url": "https://x.com/NickiJhabvala/status/2101039651117023416",
-    "text": "Commanders list DT Javon Kinlaw as questionable vs. Cowboys",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-18T20:04:22.000Z",
-    "collectedAt": "2026-09-18T20:05:11.320Z"
-  },
-  "social-ff4eb1fda4a1": {
-    "id": "social-ff4eb1fda4a1",
-    "url": "https://x.com/john_keim/status/2101039001033437557",
-    "text": "Game status. Kinlaw questionable. Was limited Friday but definite optimism about Sunday for him.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/293/831/616/069/454/original/e82255ccff80da7d.jpg"
-    ],
-    "publishedAt": "2026-09-18T20:01:47.000Z",
-    "collectedAt": "2026-09-18T20:06:38.508Z"
-  },
-  "social-a8a3260744d2": {
-    "id": "social-a8a3260744d2",
-    "url": "https://x.com/tashanreed/status/2101038657050181909",
-    "text": "Kinlaw's listed as questionable:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-18T20:00:25.000Z",
-    "collectedAt": "2026-09-18T20:06:44.524Z"
-  },
   "social-b037d7bb22f7": {
     "id": "social-b037d7bb22f7",
     "url": "https://x.com/BenStandig/status/2101064643070624072",
@@ -11231,5 +11193,53 @@
     "images": [],
     "publishedAt": "2026-09-28T16:03:35.000Z",
     "collectedAt": "2026-09-28T18:01:30.920Z"
+  },
+  "social-26d30a109888": {
+    "id": "social-26d30a109888",
+    "url": "https://x.com/NickiJhabvala/status/2104654190207230381",
+    "text": "Quinn said they’re encouraged by where Luvu (groin) is at in his recovery and if they feel they need reinforcement at LB, they’ll look to their practice squad: Ale Kaho.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-28T19:27:16.000Z",
+    "collectedAt": "2026-09-28T20:05:10.441Z"
+  },
+  "social-50f2ced711e3": {
+    "id": "social-50f2ced711e3",
+    "url": "https://x.com/NickiJhabvala/status/2104651254127645096",
+    "text": "Dan Quinn said Austin Ekeler will travel with the Commanders to London. They'll see how the week goes as he learns the system and gets back into practice before deciding on Sunday.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-28T19:15:36.000Z",
+    "collectedAt": "2026-09-28T20:05:10.441Z"
+  },
+  "social-06e74b19f49d": {
+    "id": "social-06e74b19f49d",
+    "url": "https://x.com/NickiJhabvala/status/2104647340451906012",
+    "text": "Dan Quinn said Jayden Daniels, Frankie Luvu and Chig Okonkwo will all travel to London and practice with the team in some capacity this week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-28T19:00:03.000Z",
+    "collectedAt": "2026-09-28T20:05:10.441Z"
+  },
+  "social-bc13cadfa486": {
+    "id": "social-bc13cadfa486",
+    "url": "https://x.com/NickiJhabvala/status/2104647206276071740",
+    "text": "Dan Quinn said Leo Chenal's neck surgery went well this morning.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-28T18:59:31.000Z",
+    "collectedAt": "2026-09-28T20:05:10.441Z"
   }
 }
