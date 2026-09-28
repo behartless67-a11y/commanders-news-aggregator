@@ -13126,5 +13126,41 @@
     "excerpt": "The Commanders are reportedly reuniting with an old friend.\n Washington is poised to sign running back Austin Ekeler, NFL Network’s Ian Rapoport and Mike Garafolo reported on Monday morning . The pact, the report states, is pending a physical. \n Ekeler suffered a torn Achilles’ tendon during a Week 2 loss to Green Bay, a non-contact injury that ended his season. He worked out for the Carolina Panthers last week, per the NFL transaction wire. \n Reunion: The #Commanders are expected to sign FA RB…",
     "publishedAt": "2026-09-28T12:39:02.000Z",
     "collectedAt": "2026-09-28T14:05:50.192Z"
+  },
+  "riggos-rag-5d3706a63a74": {
+    "id": "riggos-rag-5d3706a63a74",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sonny-styles-breakout-gave-commanders-glimpse-their-next-great-linebacker",
+    "title": "Sonny Styles’ breakout gave Commanders a glimpse of their next great linebacker",
+    "excerpt": "Rookie first-rounder Sonny Styles’ breakout in Week 3 gave the Washington Commanders a glimpse of their next great linebacker.",
+    "publishedAt": "2026-09-28T16:00:03.000Z",
+    "collectedAt": "2026-09-28T16:05:35.119Z"
+  },
+  "riggos-rag-88fd90a903c5": {
+    "id": "riggos-rag-88fd90a903c5",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/leo-chenal-neck-surgery-could-push-commanders-straight-back-bobby-wagner",
+    "title": "Leo Chenal neck surgery could push Commanders straight back to Bobby Wagner",
+    "excerpt": "Leo Chenal is out for the season with a fractured neck, which could push the Washington Commanders back to veteran Bobby Wagner.",
+    "publishedAt": "2026-09-28T14:30:00.000Z",
+    "collectedAt": "2026-09-28T16:05:35.119Z"
+  },
+  "athletic-jhabvala-6eadb58fd157": {
+    "id": "athletic-jhabvala-6eadb58fd157",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7639933/2026/09/28/leo-chenal-injury-commanders-seahawks",
+    "title": "Commanders LB Leo Chenal to have season-ending neck surgery: Source",
+    "excerpt": "Chenal, who signed with the Commanders this offseason, was injured in the second quarter of their upset win over the Seattle Seahawks.",
+    "publishedAt": "2026-09-28T14:27:17.000Z",
+    "collectedAt": "2026-09-28T16:05:39.078Z"
   }
 }
