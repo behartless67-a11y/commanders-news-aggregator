@@ -12991,7 +12991,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-injuries/444356/commanders-injury-update-leo-chenal-neck-surgery-seahawks",
     "title": "Commanders injury update: Leo Chenal to have season-ending surgery",
-    "excerpt": "Commanders linebacker Leo Chenal suffered a scary neck injury during Sunday’s win over Seattle that will end his season. \n\n He incurred a neck fracture that will be surgically repaired on Monday, according to multiple reports. \n\n Jordan Schultz was first to report the news. \n\n \n #Commanders LB Leo Chenal, who was taken off the field with a scary-looking injury on Sunday, will undergo season-ending surgery this morning for a fracture in his neck, per sources.\n\nMost importantly, Chenal has…",
+    "excerpt": "UPDATE: Commanders head coach Dan Quinn said on Monday afternoon that Leo Chenal had successful surgery to repair a fracture in his neck, following an injury suffered the day before that led to him getting carted off the field.\n\n \n HC Dan Quinn confirmed that LB Leo Chenal underwent neck surgery this morning\n\nThinking of you, @lchenal54 🙏 pic.twitter.com/WilcyyQv5O \n&mdash; Washington Commanders (@Commanders) September 28, 2026 \n\n \n\n \n\n Commanders linebacker Leo Chenal suffered a scary neck…",
     "publishedAt": "2026-09-28T13:25:37.000Z",
     "collectedAt": "2026-09-28T14:05:45.155Z"
   },
@@ -13222,5 +13222,53 @@
     "excerpt": "",
     "publishedAt": "2026-09-28T19:03:59.000Z",
     "collectedAt": "2026-09-28T19:14:48.511Z"
+  },
+  "hogs-haven-e9f68dba970f": {
+    "id": "hogs-haven-e9f68dba970f",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/444419/dan-quinn-felt-team-win-against-seahawks",
+    "title": "Dan Quinn: “Felt like a team win” against the Seahawks",
+    "excerpt": "DETROIT,MICHIGAN-AUGUST 22: Washington Commanders head coach Dan Quinn gestures after a call during the first half of an NFL preseason football game between the Washington Commanders and the Detroit Lions in Detroit, Michigan USA, on Saturday, August 22, 2026 (Photo by Amy Lemus/NurPhoto via Getty Images) | NurPhoto via Getty Images \n \n The Washington Commanders got their first win of the season yesterday, defeating the Seattle Seahawks 33-31 in front of a raucous home crowd. Marcus Mariota led…",
+    "publishedAt": "2026-09-28T19:24:28.000Z",
+    "collectedAt": "2026-09-28T20:05:34.158Z"
+  },
+  "athletic-jhabvala-c23f2294326b": {
+    "id": "athletic-jhabvala-c23f2294326b",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7640720/2026/09/28/jayden-daniels-commanders-week-4-london-colts",
+    "title": "Commanders QB Jayden Daniels expected to travel, practice in London",
+    "excerpt": "Daniels’ availability for Washington's Week 4 game against the Indianapolis Colts will be determined later in the week.",
+    "publishedAt": "2026-09-28T19:21:04.000Z",
+    "collectedAt": "2026-09-28T20:05:37.044Z"
+  },
+  "pft-4c6b926c70c9": {
+    "id": "pft-4c6b926c70c9",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-will-travel-to-london-practice-this-week",
+    "title": "Jayden Daniels will travel to London, practice this week",
+    "excerpt": "Could Jayden Daniels be back as soon as Sunday? \n It's not off the table. \n Via multiple reporters, head coach Dan Quinn said in his Monday press conference that Daniels will practice this week as he comes back from a dislocated left elbow. \n It doesn't necessarily sound like Daniels is on track to start, but the quarterback will travel to London with the team and get on the practice field before the Week 4 matchup against the Colts at Tottenham Hotspur Stadium. \n The Commanders are set to…",
+    "publishedAt": "2026-09-28T19:34:33.000Z",
+    "collectedAt": "2026-09-28T20:05:40.343Z"
+  },
+  "yahoo-nfl-585233c180df": {
+    "id": "yahoo-nfl-585233c180df",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-expect-injured-qb-jayden-daniels-to-fly-with-team-to-london-practice-ahead-of-colts-game-sunday-191952976.html",
+    "title": "Commanders expect injured QB Jayden Daniels to fly with team to London, practice ahead of Colts game Sunday",
+    "excerpt": "Injured quarterback Jayden Daniels is traveling with the Washington Commanders to London and will practice with the team \"in some form or fashion\" this week.\n That’s according to head coach Dan Quinn, who revealed the news to reporters Monday. The Commanders will play the Indianapolis Colts in London on Sunday.\n Linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) are also expected to travel and practice this week after being sidelined with injuries. \n Could Daniels return to…",
+    "publishedAt": "2026-09-28T19:19:52.000Z",
+    "collectedAt": "2026-09-28T20:05:40.532Z"
   }
 }
