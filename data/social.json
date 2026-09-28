@@ -1,28 +1,4 @@
 {
-  "social-280dfc382971": {
-    "id": "social-280dfc382971",
-    "url": "https://x.com/NickiJhabvala/status/2100940271533908414",
-    "text": "The optimism around rookie receiver Antonio Williams goes beyond his performance in Week 1 …",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-18T13:29:28.000Z",
-    "collectedAt": "2026-09-18T14:05:10.027Z"
-  },
-  "social-b8258867e333": {
-    "id": "social-b8258867e333",
-    "url": "https://x.com/NickiJhabvala/status/2100939037863272628",
-    "text": "From earlier in the week … the Commanders released the first renderings of the interior of their new stadium",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-18T13:24:34.000Z",
-    "collectedAt": "2026-09-18T14:05:10.027Z"
-  },
   "social-2fd4085fab6f": {
     "id": "social-2fd4085fab6f",
     "url": "https://x.com/john_keim/status/2100971534928011635",
@@ -375,18 +351,6 @@
     "images": [],
     "publishedAt": "2026-09-18T20:00:25.000Z",
     "collectedAt": "2026-09-18T20:06:44.524Z"
-  },
-  "social-02b13a58a52d": {
-    "id": "social-02b13a58a52d",
-    "url": "https://x.com/bepryor/status/2100948238320718263",
-    "text": "The Steelers brought Joey Porter Jr. home when they drafted him in 2023. Three years later, the relationship may be fractured beyond repair. \"I don't know if he ever puts on a Steelers uniform again\" How we got here and what's next (with @JFowlerESPN ) 82/pittsburgh-steelers-cornerback-joey-porter-jr-future-extension-deal-trade-buzz",
-    "handle": "bepryor",
-    "author": "Brooke Pryor",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-18T14:01:08.000Z",
-    "collectedAt": "2026-09-18T22:06:35.612Z"
   },
   "social-b037d7bb22f7": {
     "id": "social-b037d7bb22f7",
@@ -11304,5 +11268,17 @@
     "images": [],
     "publishedAt": "2026-09-28T10:44:47.000Z",
     "collectedAt": "2026-09-28T12:05:49.551Z"
+  },
+  "social-bbe32efe5f7c": {
+    "id": "social-bbe32efe5f7c",
+    "url": "https://x.com/NickiJhabvala/status/2104560098647437664",
+    "text": "Commanders LB Leo Chenal will undergo season-ending neck surgery, a source confirmed. Tough news after a very scary injury yesterday.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-28T13:13:23.000Z",
+    "collectedAt": "2026-09-28T14:05:10.229Z"
   }
 }
