@@ -1315,7 +1315,17 @@ function partnerCallout(callout) {
  * monday-prompt.js).
  */
 function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
-  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, { callout: record.callout });
+  // photos and thanks are passed for parity with originalArticleBody. They
+  // were missing here only because Monday posts predate both markers, and
+  // the omission failed silently in the worst way: essayParagraphs resolves
+  // an unknown "!photo key" to an empty string, so a Monday post with photos
+  // in it would publish with the pictures simply absent and nothing anywhere
+  // saying why.
+  const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, {
+    photos: record.photos || {},
+    thanks: record.thanks,
+    callout: record.callout,
+  });
   // Appended only when the prose didn't place it with a "!callout" marker, so
   // the already-published Monday post that predates the marker keeps its
   // callout at the end and doesn't render it twice.
