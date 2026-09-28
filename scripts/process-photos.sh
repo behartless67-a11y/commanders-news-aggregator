@@ -29,7 +29,7 @@ LONG=1200
 
 # name|source|crop (ffmpeg crop=w:h:x:y, or "-")|extra eq/filter tweaks (or "-")|badge regions to blur (or "-")
 #
-# Crops only where there is dead space actually hurting the frame. Colour is a
+# Crops only where there is dead space actually hurting the frame. Color is a
 # light global lift plus per-photo nudges for the ones shot into the sun or
 # under stadium lights, not a look.
 #
@@ -68,7 +68,7 @@ PHOTOS=(
   "first-tailgate|$DESKTOP/friends.jpg|5085:4004:350:280|contrast=1.09:saturation=1.12:gamma=1.02|46:64:409:690;44:66:565:650;40:60:615:585;38:66:735:639"
   # Week 3 vs Seattle, the home opener, 2026-09-27. Shot in overcast drizzle
   # all day, so this batch gets a heavier lift than the sunny sets above:
-  # flat grey light needs contrast and saturation or everything reads as a
+  # flat gray light needs contrast and saturation or everything reads as a
   # photograph of a car park. The .HEIC files are from a second phone and
   # ffmpeg reads the JPEG preview inside them without complaint.
   "gameday-spread|$GAMEDAY/IMG_8868.JPG|-|contrast=1.12:saturation=1.14:gamma=1.03|-"

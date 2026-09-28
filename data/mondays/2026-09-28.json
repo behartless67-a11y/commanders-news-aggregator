@@ -31,21 +31,21 @@
       "file": "gameday-spread.jpg",
       "w": 900,
       "h": 1200,
-      "alt": "A foil tray of wings and a bowl of macaroni salad on a folding table in a car park, with a bottle of bourbon and an orange cooler behind them.",
+      "alt": "A foil tray of wings and a bowl of macaroni salad on a folding table in a parking lot, with a bottle of bourbon and an orange cooler behind them.",
       "caption": "Four pounds of meat and cheese, forty-five minutes, three men, zero regrets. The bourbon was not strictly necessary at that hour and was therefore mandatory."
     },
     "gameday-tent": {
       "file": "gameday-tent.jpg",
       "w": 1200,
       "h": 900,
-      "alt": "A blue pop-up tent in a wet stadium car park with people in Commanders jerseys setting up food on tables underneath it.",
+      "alt": "A blue pop-up tent in a wet stadium parking lot with people in Commanders jerseys setting up food on tables underneath it.",
       "caption": "The twelve-by-twelve tent, fully erected, photographed as evidence. Total assembly time: classified. Consultants: YouTube."
     },
     "gameday-crew": {
       "file": "gameday-crew.jpg",
       "w": 1200,
       "h": 900,
-      "alt": "A group of seven people in Commanders jerseys standing shoulder to shoulder in a wet car park in front of a blue tent.",
+      "alt": "A group of seven people in Commanders jerseys standing shoulder to shoulder in a wet parking lot in front of a blue tent.",
       "caption": "Josh's crew, who broke this entire operation down in roughly four minutes. I have chosen not to ask how. The answer is that they are younger than me."
     },
     "gameday-set": {
@@ -53,13 +53,13 @@
       "w": 900,
       "h": 1200,
       "alt": "A Gameday Live broadcast position inside the stadium, with presenters at a counter and the stands visible behind.",
-      "caption": "Gameday Live, doing broadcast things, while the rest of us stood in a car park holding beers. Different jobs, same building."
+      "caption": "Gameday Live, doing broadcast things, while the rest of us stood in a parking lot holding beers. Different jobs, same building."
     },
     "gameday-three": {
       "file": "gameday-three.jpg",
       "w": 900,
       "h": 1200,
-      "alt": "Three men leaning into the camera inside the stadium concourse, one in a Commanders jersey and cap, one older in a grey jacket, one in glasses.",
+      "alt": "Three men leaning into the camera inside the stadium concourse, one in a Commanders jersey and cap, one older in a gray jacket, one in glasses.",
       "caption": "Dad in the middle, where he belongs."
     },
     "gameday-bowl": {
@@ -94,8 +94,8 @@
       "file": "gameday-forty.jpg",
       "w": 900,
       "h": 1200,
-      "alt": "A man in a burgundy cap and sunglasses drinking from a large bottle of beer under the tent in the car park.",
-      "caption": "A forty of High Life, consumed in honour of my buddy John, who could not make it. John and I have a long and distinguished history with the format. He was there in spirit, and in volume."
+      "alt": "A man in a burgundy cap and sunglasses drinking from a large bottle of beer under the tent in the parking lot.",
+      "caption": "A forty of High Life, consumed in honor of my buddy John, who could not make it. John and I have a long and distinguished history with the format. He was there in spirit, and in volume."
     },
     "gameday-mariota-sign": {
       "file": "gameday-mariota-sign.jpg",
@@ -131,7 +131,7 @@
   },
   "slideshow": {
     "heading": "The Red Lot, and everything after",
-    "intro": "Sunday, from a wet car park in Landover to a stadium that spent the fourth quarter shouting.",
+    "intro": "Sunday, from a wet parking lot in Landover to a stadium that spent the fourth quarter shouting.",
     "keys": [
       "gameday-spread",
       "gameday-tent",
