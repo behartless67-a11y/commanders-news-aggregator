@@ -815,18 +815,6 @@
     "publishedAt": "2026-08-15T02:51:26.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-625203574ce8": {
-    "id": "wjla-commanders-625203574ce8",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/lane-kiffin-stands-by-dj-pickett-wearing-the-no-5-of-former-lsu-qb-jayden-daniels",
-    "title": "Lane Kiffin stands by D.J. Pickett wearing the No. 5 of former LSU QB Jayden Daniels",
-    "excerpt": "LSU coach Lane Kiffin said Thursday that he is standing by his initial stance on allowing cornerback D.J. Pickett to wear the No. 5 jersey previously worn by 20",
-    "publishedAt": "2026-08-14T16:25:51.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -2481,18 +2469,6 @@
     "title": "Robert Henry Jr. tops the list of 6 winners and 3 losers from the Washington Commanders’ preseason win over the Miami Dolphins",
     "excerpt": "Aug 14, 2026; Landover, Maryland, USA; Washington Commanders running back Robert Henry Jr. (30) carries the ball to score a touchdown against the Miami Dolphins during the first half at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images \n \n\n The Commanders won their first preseason game of the year against the Dolphins and several guys stood out in positive and negative fashion.\n\n The Washington Commanders kicked off the 2026 preseason with a dominant 20-7 win over the Miami…",
     "publishedAt": "2026-08-15T14:26:43.000Z",
-    "collectedAt": "2026-08-26T16:50:37.463Z"
-  },
-  "atoz-sports-7a02d8c77720": {
-    "id": "atoz-sports-7a02d8c77720",
-    "sourceId": "atoz-sports",
-    "sourceName": "A to Z Sports",
-    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
-    "category": "team",
-    "url": "https://atozsports.com/nfl/washington-commanders-news/commanders-53-man-roster-projection-stefon-diggs-bumps-former-first-rounder-off-the-team-a-stacked-lb-room-plus-more",
-    "title": "Commanders 53-man roster projection: Stefon Diggs bumps former first-rounder off the team, a 2026 draft pick gets cut, and more",
-    "excerpt": "Dec 20, 2025; Landover, Maryland, USA; Washington Commanders wide receiver Treylon Burks (13) sits on the field after a play against the Philadelphia Eagles during the second half at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images \n \n\n The Commanders open the preseason against the Dolphins on Friday night. So, let’s take a poke at predicting what the 53-man roster looks like when cuts roll around at the end of the month.\n\n The Washington Commanders kick off the preseason Friday…",
-    "publishedAt": "2026-08-14T17:34:37.000Z",
     "collectedAt": "2026-08-26T16:50:37.463Z"
   },
   "commanders-youtube-d98f7760bfad": {
@@ -13162,5 +13138,29 @@
     "excerpt": "Chenal, who signed with the Commanders this offseason, was injured in the second quarter of their upset win over the Seattle Seahawks.",
     "publishedAt": "2026-09-28T14:27:17.000Z",
     "collectedAt": "2026-09-28T16:05:39.078Z"
+  },
+  "hogs-haven-a3b3c69d7d8d": {
+    "id": "hogs-haven-a3b3c69d7d8d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/443866/washington-commanders-seahawks-studs-duds-winners-losers-marcus-mariota-terry-mclaurin-sonny-styles",
+    "title": "Commanders Vs. Seahawks – Studs and Duds",
+    "excerpt": "The Commanders entered their first game at Northwest Stadium this season as home underdogs against the defending Super Bowl champions. But, through a gritty performance that saw them secure three turnovers, they pulled off a STUNNING 33-31 victory .\n\n Now 1-2 on the young season , and with a little momentum going their way, they head overseas to London to take on the 1-2 Colts before coming back home to face the Giants. These next two games will likely define their season, so all hands need to…",
+    "publishedAt": "2026-09-28T16:17:10.000Z",
+    "collectedAt": "2026-09-28T18:05:35.885Z"
+  },
+  "riggos-rag-249de8db54b3": {
+    "id": "riggos-rag-249de8db54b3",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-likely-london-trip-keeps-early-commanders-return-play",
+    "title": "Jayden Daniels’ likely London trip keeps early Commanders return in play",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels will likely travel with the team to London, putting a potential Week 4 return in play.",
+    "publishedAt": "2026-09-28T17:32:04.000Z",
+    "collectedAt": "2026-09-28T18:05:37.099Z"
   }
 }
