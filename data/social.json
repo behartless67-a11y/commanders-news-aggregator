@@ -11106,5 +11106,91 @@
     "images": [],
     "publishedAt": "2026-09-28T00:29:38.000Z",
     "collectedAt": "2026-09-28T02:05:56.552Z"
+  },
+  "social-2bbbfc87fe2a": {
+    "id": "social-2bbbfc87fe2a",
+    "url": "https://x.com/JPFinlayNBCS/status/2104413954113970265",
+    "text": "Was that the first ever 2 min warning without a commercial? Am I crazy?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-28T03:32:39.000Z",
+    "collectedAt": "2026-09-28T03:40:59.887Z"
+  },
+  "social-7c2d563a32e2": {
+    "id": "social-7c2d563a32e2",
+    "url": "https://x.com/BaldyNFL/status/2104391465220669455",
+    "text": ". @Seahawks @Commanders @Kain_05@twitter.com the unlikeliest of stars ; but like the cliche says....Next Man Up...Never know when you will be the GUY. #BaldysBreakdowns",
+    "handle": "BaldyNFL",
+    "author": "Brian Baldinger",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-28T02:03:17.000Z",
+    "collectedAt": "2026-09-28T03:40:59.887Z"
+  },
+  "social-9d2738ab6c85": {
+    "id": "social-9d2738ab6c85",
+    "url": "https://x.com/JPFinlayNBCS/status/2104407352694956492",
+    "text": "AWESOME call from my dude Mo @MlinaresDC@twitter.com",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-28T03:06:25.000Z",
+    "collectedAt": "2026-09-28T03:40:59.887Z"
+  },
+  "social-424abcbe9034": {
+    "id": "social-424abcbe9034",
+    "url": "https://x.com/JPFinlayNBCS/status/2104407148335898955",
+    "text": "What a great blitz from Hufanga",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-28T03:05:36.000Z",
+    "collectedAt": "2026-09-28T03:40:59.887Z"
+  },
+  "social-afdbfb5503fe": {
+    "id": "social-afdbfb5503fe",
+    "url": "https://x.com/john_keim/status/2104402056664785283",
+    "text": "Talking about a huge win by the Commanders. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000791939121",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-28T02:45:22.000Z",
+    "collectedAt": "2026-09-28T03:41:01.230Z"
+  },
+  "social-c12ebfde893e": {
+    "id": "social-c12ebfde893e",
+    "url": "https://x.com/john_keim/status/2104399655656386692",
+    "text": "Mariota stands out against NFLs top D, leads a necessary and huge win. 17/marcus-mariota-hurt-jayden-daniels-leads-commanders",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-28T02:35:50.000Z",
+    "collectedAt": "2026-09-28T03:41:01.230Z"
+  },
+  "social-4b4f1a8cfdca": {
+    "id": "social-4b4f1a8cfdca",
+    "url": "https://x.com/BenStandig/status/2104400064613417143",
+    "text": "🎙 Dove headfirst into Washington's stunning 33-31 home winning over the Seahawks with @ByLiamGriffin@twitter.com . Marcus Mariota thrives. The defense generates three turnovers. Big plays in big moments. Looking ahead to London. thats-why-they-play-the-game-3b2?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/346/348/036/416/096/original/937580152435a1a2.jpg"
+    ],
+    "publishedAt": "2026-09-28T02:37:27.000Z",
+    "collectedAt": "2026-09-28T03:41:02.581Z"
   }
 }
