@@ -1,7 +1,7 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-09-28T04:06:33.437Z",
+  "fetchedAt": "2026-09-28T06:06:25.646Z",
   "offense": {
     "yardsPerGame": {
       "value": "342.0",
@@ -51,29 +51,34 @@
     "offense": [
       {
         "key": "Pass",
-        "name": "Jayden Daniels",
-        "value": "260"
+        "name": "Marcus Mariota",
+        "value": "294"
       },
       {
         "key": "Rush",
         "name": "Jacory Croskey-Merritt",
-        "value": "106"
+        "value": "142"
       },
       {
         "key": "Recv",
-        "name": "Stefon Diggs",
-        "value": "102"
+        "name": "Terry McLaurin",
+        "value": "141"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
-        "name": "Leo Chenal",
-        "value": "15"
+        "name": "Jeremy Reaves",
+        "value": "20"
       },
       {
         "key": "Sack",
         "name": "Frankie Luvu",
+        "value": "1"
+      },
+      {
+        "key": "Int",
+        "name": "Kain Medrano",
         "value": "1"
       }
     ]
