@@ -80,7 +80,11 @@ function pinFreshBlogPosts(sorted, now) {
   const rest = [];
   for (const item of sorted) {
     const fresh =
-      item.sourceId === 'blog' && item.publishedAt && now - Date.parse(item.publishedAt) < PIN_WINDOW_MS;
+      item.sourceId === 'blog' && item.publishedAt
+      // A post can ask to stay up longer than the default. Used sparingly:
+      // a win over the reigning champions is worth more than a day at the
+      // top, a routine recap is not.
+      && now - Date.parse(item.publishedAt) < (Number(item.pinHours) > 0 ? item.pinHours * 3600000 : PIN_WINDOW_MS);
     if (fresh) pinned.push({ ...item, pinned: true });
     else rest.push(item);
   }

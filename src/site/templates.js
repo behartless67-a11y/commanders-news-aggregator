@@ -122,8 +122,12 @@ function itemCard(item, index, rosterIndex) {
   // Set by pinFreshBlogPosts() in build.js. Said out loud on the card because
   // otherwise a post from this morning sitting above a headline from an hour
   // ago just looks like the sort is broken.
+  // The hardcoded "24 hours" was fine until a post could ask to stay up
+  // longer (pinHours, see pinFreshBlogPosts in build.js); the note would
+  // then have been confidently wrong on exactly the posts that matter most.
+  const pinDays = Number(item.pinHours) > 24 ? Math.round(Number(item.pinHours) / 24) : 0;
   const pinNote = item.pinned
-    ? '<p class="card-pin-note">Pinned for 24 hours, then it fends for itself</p>'
+    ? `<p class="card-pin-note">Pinned for ${pinDays ? `${pinDays} days` : '24 hours'}, then it fends for itself</p>`
     : '';
   return `
     <article class="card${extra}${item.pinned ? ' card-pinned' : ''}">
@@ -924,6 +928,9 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     title: record.digest.headline,
     excerpt: firstSentences(stripInlineCites(record.digest.lede), 2),
     publishedAt: record.reviewedAt || record.generatedAt,
+    // Optional per-post override for how long it stays pinned; see
+    // pinFreshBlogPosts in build.js. Undefined means the normal window.
+    pinHours: record.pinHours,
     internal: true,
   });
   const fromPreview = (record) => ({
@@ -935,6 +942,9 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     title: record.digest.headline,
     excerpt: firstSentences(stripInlineCites(record.digest.lede), 2),
     publishedAt: record.reviewedAt || record.generatedAt,
+    // Optional per-post override for how long it stays pinned; see
+    // pinFreshBlogPosts in build.js. Undefined means the normal window.
+    pinHours: record.pinHours,
     internal: true,
   });
   // category: 'original' rather than 'blog' — same page placement (see
@@ -949,6 +959,9 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     title: record.title,
     excerpt: firstSentences(essayProse(record.paragraphs)[0], 2),
     publishedAt: record.publishedAt,
+    // Optional per-post override for how long it stays pinned; see
+    // pinFreshBlogPosts in build.js. Undefined means the normal window.
+    pinHours: record.pinHours,
     internal: true,
   });
   // Same reasoning as fromOriginal above: its own category so the river
@@ -963,6 +976,9 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     title: record.title,
     excerpt: firstSentences(essayProse(record.paragraphs)[0], 2),
     publishedAt: record.reviewedAt || record.generatedAt,
+    // Optional per-post override for how long it stays pinned; see
+    // pinFreshBlogPosts in build.js. Undefined means the normal window.
+    pinHours: record.pinHours,
     internal: true,
   });
   return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal), ...mondays.map(fromMonday)];
