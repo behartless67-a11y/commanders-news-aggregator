@@ -27,5 +27,9 @@
   "gameday-forty": { "w": 900, "h": 1200 },
   "gameday-mariota-sign": { "w": 900, "h": 1200 },
   "gameday-coverage": { "w": 900, "h": 1200 },
-  "gameday-selfie": { "w": 900, "h": 1200 }
+  "gameday-selfie": { "w": 900, "h": 1200 },
+  "hero-bowl": { "w": 1536, "h": 512 },
+  "hero-endzone": { "w": 1536, "h": 512 },
+  "hero-rain-crowd": { "w": 1536, "h": 512 },
+  "hero-red-lot": { "w": 1920, "h": 640 }
 }

@@ -380,7 +380,10 @@ export async function buildSite() {
   const heroUrl = heroImageForDate(HERO_IMAGES, new Date(generatedAt));
   await fs.writeFile(
     path.join(DIST_DIR, 'site.css'),
-    `${heroCss}\n.hero{ background: url('${heroUrl}') center 35% / cover no-repeat, var(--bg); }\n`,
+    // Targets ::before, the photo layer, not .hero itself: the photo lives on
+    // its own layer now so it can drift under the scrim (see .hero in
+    // site.css).
+    `${heroCss}\n.hero::before{ background-image: url('${heroUrl}'); }\n`,
     'utf8',
   );
 

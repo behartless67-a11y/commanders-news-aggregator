@@ -2,19 +2,24 @@
  * The header/ticker backdrop photo (see .hero in site.css) rotates through
  * this pool, one per build day (see heroImageForDate() in build.js), rather
  * than showing the same single photo forever or a different one on every
- * page load. All seven are from the same source and license so a future
- * addition doesn't need a fresh licensing check: "Atlanta Falcons at
- * Washington Commanders (December 29, 2024)" by Dissident93, Wikimedia
- * Commons, CC0 (public domain, no attribution required, credited here
- * anyway). Hotlinked from Wikimedia's own CDN, never copied to this site's
- * origin, same as the single photo this replaced.
+ * page load.
+ *
+ * These are Ben's own photos from the Week 3 home opener against Seattle,
+ * 2026-09-27, cut to a wide band by scripts/process-photos.sh. They replaced
+ * a pool of CC0 stock photos from Wikimedia Commons, which were hotlinked
+ * from Wikimedia's CDN on purpose: with someone else's photo, serving it from
+ * the source is the defensible choice and copying it to this site is not.
+ * These are Ben's, so the reverse holds, and they are served from this
+ * site's own origin like every other photo in a post.
+ *
+ * Chosen for atmosphere rather than faces, since the header sits under a
+ * heavy dark scrim and appears at the top of every page for a whole day.
+ * Root-relative paths, because build.js drops the chosen one into site.css
+ * and a stylesheet resolves relative URLs against its own location.
  */
 export const HERO_IMAGES = [
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Atlanta_Falcons_at_Washington_Commanders_2024_01.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_01.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Atlanta_Falcons_at_Washington_Commanders_2024_02.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_02.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Atlanta_Falcons_at_Washington_Commanders_2024_04.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_04.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Atlanta_Falcons_at_Washington_Commanders_2024_07.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_07.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Atlanta_Falcons_at_Washington_Commanders_2024_09.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_09.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_16.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Atlanta_Falcons_at_Washington_Commanders_2024_21.jpg/1920px-Atlanta_Falcons_at_Washington_Commanders_2024_21.jpg',
+  '/photos/hero-bowl.jpg',
+  '/photos/hero-endzone.jpg',
+  '/photos/hero-rain-crowd.jpg',
+  '/photos/hero-red-lot.jpg',
 ];

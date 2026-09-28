@@ -27,7 +27,7 @@ GAMEDAY="C:/Users/Ben/Desktop/gameday"
 # legible: they are simply too few pixels to read at this scale.
 LONG=1200
 
-# name|source|crop (ffmpeg crop=w:h:x:y, or "-")|extra eq/filter tweaks (or "-")|badge regions to blur (or "-")
+# name|source|crop (ffmpeg crop=w:h:x:y, or "-")|extra eq/filter tweaks (or "-")|badge regions to blur (or "-")|long edge override (optional, default $LONG)
 #
 # Crops only where there is dead space actually hurting the frame. Color is a
 # light global lift plus per-photo nudges for the ones shot into the sun or
@@ -84,6 +84,19 @@ PHOTOS=(
   "gameday-mariota-sign|$GAMEDAY/IMG_1658.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.03|-"
   "gameday-coverage|$GAMEDAY/IMG_1666.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.02|-"
   "gameday-selfie|$GAMEDAY/IMG_1674.HEIC|-|contrast=1.10:saturation=1.12:gamma=1.03|-"
+  # Header backdrops (config/hero-images.js), replacing the stock photos. The
+  # header is a very wide, short band, about 5:1 on a desktop, so each is cut
+  # to a 3:1 strip: wide enough to fill it, with vertical room left over for
+  # the slow drift in site.css to travel through. They get the long-edge
+  # override because this is the one image every page loads first and at
+  # full width; 1200px would come out visibly soft across a 1440px screen.
+  # Chosen for atmosphere over faces: the stadium, the end zone wall and the
+  # rain crowd read well under the header's dark scrim, and a close-up of
+  # friends at the top of every page for a day is a lot to ask of anyone.
+  "hero-bowl|$GAMEDAY/IMG_8914.JPG|1536:512:0:400|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
+  "hero-endzone|$GAMEDAY/IMG_1666.HEIC|1536:512:0:358|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
+  "hero-rain-crowd|$GAMEDAY/IMG_8959.JPG|1536:512:0:665|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
+  "hero-red-lot|$GAMEDAY/IMG_8877.JPG|2048:682:0:211|contrast=1.10:saturation=1.10:gamma=1.03|-|1920"
 )
 
 echo "{" > "$OUT/dimensions.json"
@@ -92,7 +105,8 @@ i=0
 
 for row in "${PHOTOS[@]}"; do
   i=$((i + 1))
-  IFS='|' read -r name src crop eq blur <<< "$row"
+  IFS='|' read -r name src crop eq blur long <<< "$row"
+  L=${long:-$LONG}
 
   # A missing source is normal, not fatal. The sources live on a Desktop and get
   # cleaned up; the outputs are committed and are what the site actually serves.
@@ -120,7 +134,7 @@ for row in "${PHOTOS[@]}"; do
   [ "$crop" != "-" ] && chain="crop=$crop,"
   # scale to the long edge whichever way the photo is oriented, keeping even
   # dimensions (-2) so the JPEG encoder is happy.
-  chain="${chain}scale='if(gt(iw,ih),$LONG,-2)':'if(gt(iw,ih),-2,$LONG)':flags=lanczos"
+  chain="${chain}scale='if(gt(iw,ih),$L,-2)':'if(gt(iw,ih),-2,$L)':flags=lanczos"
   [ "$eq" != "-" ] && chain="$chain,eq=$eq"
   # A downscale this aggressive always softens; put a little of it back.
   chain="$chain,unsharp=5:5:0.6"

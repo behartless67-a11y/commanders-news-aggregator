@@ -55,23 +55,73 @@ img, svg{ display:block; max-width:100%; }
 
 /* ---------- Hero (header + ticker backdrop) ----------
    The actual background-image is NOT set here. It rotates through a small
-   pool (config/hero-images.js, all CC0, Wikimedia Commons, credited there),
-   picked once per build from the date, so every reader sees the same one on
-   a given day rather than a different photo per page or per visit. build.js
-   appends the real `.hero{ background-image: ... }` override to the end of
-   this file at build time; that later rule wins the cascade over the
-   fallback color below. Hotlinked from Wikimedia's own CDN either way, never
-   copied to our own origin, the same policy the video rail follows for
-   thumbnails, and for the same reason: serving it from the source's CDN is
-   defensible, copying it to our origin is not. .site-header and .ticker keep
-   their own burgundy washes, which layer on top of the dark scrim below for
-   a bit of color instead of flat black. */
+   pool of Ben's own photos (config/hero-images.js), picked once per build
+   from the date, so every reader sees the same one on a given day rather
+   than a different photo per page or per visit. build.js appends the real
+   `.hero::before{ background-image: ... }` rule to the end of this file at
+   build time. .site-header and .ticker keep their own burgundy washes, which
+   layer on top of the dark scrim below for a bit of color instead of flat
+   black.
+
+   Three layers, bottom to top: the photo (::before), the scrim (::after),
+   then the actual header content (the `> *` rule below, z-index 1). The
+   pseudo-elements are ordered that way on purpose. Both are positioned with
+   no z-index, so they paint in tree order, and ::before comes first; putting
+   the photo there lets it sit under the scrim without a negative z-index,
+   which would have needed .hero to become a stacking context of its own.
+
+   overflow: hidden clips the photo, which is scaled past its box so it can
+   drift without an edge showing. That was checked before it went in:
+   nothing inside the header is sticky or fixed (clipping would break
+   stickiness), and nothing extends outside it (clipping would cut it off).
+
+   The one to watch is the phone menu, .nav-mobile-toggle. It is a label
+   driving a checkbox, not a button, and today it opens in the normal flow,
+   so the header grows taller to hold it (239px to 388px on a phone) rather
+   than the menu hanging below. If it is ever restyled to drop down over the
+   page with position: absolute, this overflow will clip it, and the fix is
+   to move the clipping onto a dedicated wrapper around the photo instead. */
 .hero{
   position: relative;
   background: var(--bg);
+  overflow: hidden;
 }
 
+/* The photo. A slow Ken Burns drift, zooming and panning over a minute and
+   then back, so the header has some life without anything that reads as
+   video. Animated with transform rather than background-position because a
+   transform runs on the compositor: the browser moves an already-painted
+   layer instead of repainting the whole header every frame, which matters
+   on a phone that is also trying to scroll the page.
+
+   The margins are what keep an edge from ever showing. Scaled by s, the
+   layer overhangs each side by (s - 1) / 2 of its size, so every keyframe's
+   translate stays inside that: 1.5% against 3% at the start, and 1.74%
+   (1.5% after scaling) against 8% at the end. */
 .hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: center / cover no-repeat;
+  animation: hero-drift 60s ease-in-out infinite alternate;
+  will-change: transform;
+  pointer-events: none;
+}
+
+@keyframes hero-drift{
+  from{ transform: scale(1.06) translate(-1.5%, -1%); }
+  to{ transform: scale(1.16) translate(1.5%, 1.5%); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero::before{
+    animation: none;
+    transform: none;
+  }
+}
+
+/* The scrim, above the photo. */
+.hero::after{
   content: "";
   position: absolute;
   inset: 0;
@@ -3801,7 +3851,7 @@ body.tv-page{
     var(--bg);
 }
 
-/* Darker and flatter than .hero::before's own scrim — that one fades to the
+/* Darker and flatter than .hero::after's own scrim. That one fades to the
    plain page background at the bottom because real content (the ticker,
    headlines) takes over from there; here the photo is the entire
    background for the whole screen, so the scrim has to carry contrast
