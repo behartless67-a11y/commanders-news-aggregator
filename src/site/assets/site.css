@@ -648,7 +648,16 @@ main.layout{
   margin: 0 auto;
   padding: 22px 24px 44px;
   display:grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, ...) and not a bare 1fr, which is really minmax(auto, 1fr):
+     "never narrower than the content's natural width." A slideshow is a row
+     of slides laid end to end, so its natural width is roughly the sum of
+     all of them. Three slides fit on a phone; the ten in the Week 3 Monday
+     post did not, and the column blew open to 726px on a 390px screen. The
+     browser then zoomed the whole page out to fit, so every phone reader got
+     the post at half size, text included. The desktop rules further down
+     already said minmax(0, 1fr); this base rule, the one phones use, was the
+     one that never got it. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 28px;
 }
 

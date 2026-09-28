@@ -15,6 +15,14 @@ on:
       # markup or CSS for a new post shape in one push and the post itself in
       # another would deploy them hours apart.
       - 'src/**'
+      # Netlify Functions ship in the same deploy as the site, so a change to
+      # one is not live until something redeploys. These were missing, and it
+      # only went unnoticed because every function change so far happened to
+      # travel in a commit that also touched src/. A fix to the newsletter
+      # template alone would have sat undeployed, and the next test send would
+      # have looked exactly like the broken one it was meant to replace.
+      - 'netlify/**'
+      - 'netlify.toml'
   workflow_dispatch: {}
 
 # Shared with nightly.yml/social.yml/roster-stats.yml — same push race, same fix.
