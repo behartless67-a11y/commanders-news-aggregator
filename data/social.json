@@ -11685,5 +11685,73 @@
     "images": [],
     "publishedAt": "2026-09-29T20:01:11.000Z",
     "collectedAt": "2026-09-29T20:05:10.043Z"
+  },
+  "social-dd3edfb52564": {
+    "id": "social-dd3edfb52564",
+    "url": "https://x.com/Commanders/status/2105025067876835636",
+    "text": "We have signed RB Austin Ekeler",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/356/113/517/876/347/original/c3beba351cee8f7c.jpg"
+    ],
+    "publishedAt": "2026-09-29T20:01:00.000Z",
+    "collectedAt": "2026-09-29T20:05:44.567Z"
+  },
+  "social-0b3db15eb376": {
+    "id": "social-0b3db15eb376",
+    "url": "https://x.com/Commanders/status/2105024822061527187",
+    "text": "We have made the following roster moves: - Placed LB Leo Chenal on the Reserve/Injured List - Placed OLB Marvin Jones Jr. on Practice Squad; Injured",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/356/112/268/925/342/original/ea1ef0d8e6abfa1f.jpg"
+    ],
+    "publishedAt": "2026-09-29T20:00:01.000Z",
+    "collectedAt": "2026-09-29T20:05:44.568Z"
+  },
+  "social-4e19833e5b8e": {
+    "id": "social-4e19833e5b8e",
+    "url": "https://x.com/Commanders/status/2105015551332651307",
+    "text": ". @joshuaconerlyjr@twitter.com doing work in the trenches 😤 @awscloud@twitter.com x @NextGenStats",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/355/959/304/642/090/original/d8b6f62ecf8decf9.jpg"
+    ],
+    "publishedAt": "2026-09-29T19:23:11.000Z",
+    "collectedAt": "2026-09-29T20:05:44.568Z"
+  },
+  "social-f25ca495d718": {
+    "id": "social-f25ca495d718",
+    "url": "https://x.com/BenStandig/status/2105025045403959446",
+    "text": "The Commanders placed LB Leo Chenal on the Reserve/Injured List They also placed OLB Marvin Jones Jr. on Practice Squad; Injured.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-29T20:00:54.000Z",
+    "collectedAt": "2026-09-29T20:05:49.005Z"
+  },
+  "social-109f9dbab5e9": {
+    "id": "social-109f9dbab5e9",
+    "url": "https://x.com/BenStandig/status/2105010846866768247",
+    "text": "The Wizards have entered “The Tyson Zone.” The latest rumor: Alex Sarr and stuff for Jalen Duren. Yeah, about that… I asked around. You can keep your Sarr jersey. For subscribers: the-latest-trade-rumor-puts-the-wizards",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/355/906/620/415/510/original/565488ae4aa34dda.jpg"
+    ],
+    "publishedAt": "2026-09-29T19:04:29.000Z",
+    "collectedAt": "2026-09-29T20:05:49.005Z"
   }
 }

@@ -13534,5 +13534,53 @@
     "excerpt": "",
     "publishedAt": "2026-09-29T17:49:10.000Z",
     "collectedAt": "2026-09-29T18:05:35.617Z"
+  },
+  "hogs-haven-e245e340c065": {
+    "id": "hogs-haven-e245e340c065",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/444800/washington-commanders-terry-mclaurin-advanced-stats-seahawks",
+    "title": "Washington Commanders can be scary when WR Terry McLaurin goes off",
+    "excerpt": "Commanders offensive coordinator David Blough made a bold proclamation back in the spring , that Terry McLaurin should get 10 targets per game. \n\n That was in a pre-Stefon-Diggs-world, when the Commanders clear No. 1 receiver was even more front-and-center. \n\n Blough’s intent was clear in that early statement and again in real time, with McLaurin a focal point in the early going. \n\n I can already hear you combating that, with McLaurin getting two catches on four targets in the season opener.…",
+    "publishedAt": "2026-09-29T19:47:43.000Z",
+    "collectedAt": "2026-09-29T20:05:36.168Z"
+  },
+  "riggos-rag-c58b7719d536": {
+    "id": "riggos-rag-c58b7719d536",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-hot-seat-meter-commanders-upset-proves-locker-room-never-wavered",
+    "title": "Dan Quinn Hot Seat Meter: Commanders’ upset proves locker room never wavered",
+    "excerpt": "The Washington Commanders locker room never wavered on head coach Dan Quinn, and their Week 3 upset over the Seattle Seahawks proved it.",
+    "publishedAt": "2026-09-29T19:44:03.000Z",
+    "collectedAt": "2026-09-29T20:05:36.641Z"
+  },
+  "wjla-commanders-c9de367bc5a2": {
+    "id": "wjla-commanders-c9de367bc5a2",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-bram-weinstein-seattle-seahawks-london-indianapolis-colts-jayden-daniels-marcus-mariota-dan-quinn-adam-peters-megan-clarke-nfl-football-injuries-quarterback-practice-resilience-victory",
+    "title": "Commanders broadcaster sees renewed hope after injury-depleted team beats Seattle",
+    "excerpt": "Bram Weinstein says the Commanders’ Seattle upset could be a turning point as they head to London and await Jayden Daniels’ return.",
+    "publishedAt": "2026-09-29T19:58:52.000Z",
+    "collectedAt": "2026-09-29T20:05:42.239Z"
+  },
+  "cbs-nfl-60c52395f7a7": {
+    "id": "cbs-nfl-60c52395f7a7",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/commanders-jayden-daniels-elbow-surgery-later-date",
+    "title": "Commanders' Jayden Daniels opting against elbow surgery until after season, per report",
+    "excerpt": "Washington's star quarterback is reportedly delaying a procedure on his dislocated left elbow until the offseason",
+    "publishedAt": "2026-09-29T18:40:31.000Z",
+    "collectedAt": "2026-09-29T20:05:42.545Z"
   }
 }
