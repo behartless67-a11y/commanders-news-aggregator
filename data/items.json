@@ -13459,7 +13459,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-power-rankings/442723/nfl-power-rankings-commanders-rise-after-big-win-over-seahawks",
     "title": "NFL Power Rankings: Commanders rise after big win over Seahawks",
-    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images \n \n The Washington Commanders are 1-2 after pulling off the 33-31 upset win off against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced…",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images \n \n The Washington Commanders are 1-2 after pulling off the 33-31 upset win against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced against…",
     "publishedAt": "2026-09-29T17:00:17.000Z",
     "collectedAt": "2026-09-29T17:38:31.826Z"
   },
@@ -13510,5 +13510,29 @@
     "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images The Washington Commanders are 1-2 after pulling off the 33-31 upset win off against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced against…",
     "publishedAt": "2026-09-29T17:00:17.000Z",
     "collectedAt": "2026-09-29T17:38:40.743Z"
+  },
+  "commanders-youtube-4b4d30dd7293": {
+    "id": "commanders-youtube-4b4d30dd7293",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=IsHfnM2dGCo",
+    "title": "Washington Commanders Highlights vs. Seattle Seahawks | 2026 NFL Regular Season Week 3",
+    "excerpt": "",
+    "publishedAt": "2026-09-29T17:50:22.000Z",
+    "collectedAt": "2026-09-29T18:05:35.617Z"
+  },
+  "commanders-youtube-9cc8d44a9bb4": {
+    "id": "commanders-youtube-9cc8d44a9bb4",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=Oz07LON_P4o",
+    "title": "Marcus Mariota's Best Plays From 3-TD Commanders Win vs. Seahawks | NFL Week 3",
+    "excerpt": "",
+    "publishedAt": "2026-09-29T17:49:10.000Z",
+    "collectedAt": "2026-09-29T18:05:35.617Z"
   }
 }
