@@ -45,11 +45,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "2"
+          "value": "3"
         },
         {
           "label": "YDS",
-          "value": "13"
+          "value": "22"
         },
         {
           "label": "TD",
@@ -95,15 +95,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "0"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "0"
+          "value": "13"
         },
         {
           "label": "TD",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -147,11 +147,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "28"
+          "value": "47"
         },
         {
           "label": "YDS",
-          "value": "106"
+          "value": "142"
         },
         {
           "label": "TD",
@@ -201,11 +201,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "9"
+          "value": "13"
         },
         {
           "label": "YDS",
-          "value": "102"
+          "value": "135"
         },
         {
           "label": "TD",
@@ -253,11 +253,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "4"
+          "value": "25"
         },
         {
           "label": "TD",
@@ -278,15 +278,15 @@
       "fields": [
         {
           "label": "CMP/ATT",
-          "value": "11/16"
+          "value": "30/47"
         },
         {
           "label": "YDS",
-          "value": "111"
+          "value": "294"
         },
         {
           "label": "TD",
-          "value": "1"
+          "value": "4"
         },
         {
           "label": "INT",
@@ -332,15 +332,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "4"
+          "value": "10"
         },
         {
           "label": "YDS",
-          "value": "64"
+          "value": "141"
         },
         {
           "label": "TD",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -434,11 +434,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "14"
+          "value": "22"
         },
         {
           "label": "YDS",
-          "value": "65"
+          "value": "100"
         },
         {
           "label": "TD",
@@ -459,11 +459,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "7"
+          "value": "9"
         },
         {
           "label": "YDS",
-          "value": "88"
+          "value": "103"
         },
         {
           "label": "TD",
@@ -493,11 +493,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "YDS",
-          "value": "14"
+          "value": "16"
         },
         {
           "label": "TD",
@@ -518,7 +518,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -564,11 +564,11 @@
     "espnId": "4363097",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4363097.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "14"
+          "value": "4"
         },
         {
           "label": "SACK",
@@ -593,7 +593,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "3"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -618,7 +618,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "15"
+          "value": "18"
         },
         {
           "label": "SACK",
@@ -668,7 +668,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "7"
         },
         {
           "label": "SACK",
@@ -713,7 +713,23 @@
     "position": "LB",
     "espnId": "5081392",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081392.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "6"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "ale-kaho",
@@ -727,7 +743,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "2"
+          "value": "7"
         },
         {
           "label": "SACK",
@@ -752,7 +768,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -802,7 +818,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "10"
         },
         {
           "label": "SACK",
@@ -827,7 +843,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "1"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -835,7 +851,7 @@
         },
         {
           "label": "INT",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -877,7 +893,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "0"
+          "value": "1"
         },
         {
           "label": "SACK",
@@ -902,7 +918,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "10"
         },
         {
           "label": "SACK",
@@ -927,7 +943,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "2"
+          "value": "4"
         },
         {
           "label": "SACK",
@@ -952,7 +968,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "3"
+          "value": "4"
         },
         {
           "label": "SACK",
@@ -977,7 +993,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "13"
+          "value": "20"
         },
         {
           "label": "SACK",
@@ -1002,7 +1018,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "11"
+          "value": "17"
         },
         {
           "label": "SACK",
@@ -1027,7 +1043,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "9"
+          "value": "11"
         },
         {
           "label": "SACK",
@@ -1052,7 +1068,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -1077,7 +1093,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "7"
+          "value": "12"
         },
         {
           "label": "SACK",
@@ -1085,7 +1101,7 @@
         },
         {
           "label": "INT",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -1102,7 +1118,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "SACK",
@@ -1161,11 +1177,11 @@
       "fields": [
         {
           "label": "FG",
-          "value": "3-5"
+          "value": "5-7"
         },
         {
           "label": "XP",
-          "value": "3/4"
+          "value": "6/8"
         }
       ]
     }
@@ -1182,15 +1198,15 @@
       "fields": [
         {
           "label": "PUNTS",
-          "value": "7"
+          "value": "14"
         },
         {
           "label": "AVG",
-          "value": "52.1"
+          "value": "50.6"
         },
         {
           "label": "IN20",
-          "value": "0"
+          "value": "3"
         }
       ]
     }
