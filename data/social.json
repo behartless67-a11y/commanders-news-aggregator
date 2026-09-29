@@ -11700,5 +11700,57 @@
     ],
     "publishedAt": "2026-09-29T12:15:21.000Z",
     "collectedAt": "2026-09-29T14:05:46.081Z"
+  },
+  "social-49ae70614028": {
+    "id": "social-49ae70614028",
+    "url": "https://x.com/Commanders/status/2104948024623403303",
+    "text": "RE: ses/2104940499161264619 Sonny Styles: 5 total tackles, 2 passes defensed, 1 forced fumble, 1 interception 🥱",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/354/919/940/476/776/original/c5f5379abced8eb0.jpg"
+    ],
+    "publishedAt": "2026-09-29T14:54:51.000Z",
+    "collectedAt": "2026-09-29T16:05:44.068Z"
+  },
+  "social-8370c0347004": {
+    "id": "social-8370c0347004",
+    "url": "https://x.com/JPFinlayNBCS/status/2104946508856512699",
+    "text": "When do you think Jayden will return for Washington?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-29T14:48:50.000Z",
+    "collectedAt": "2026-09-29T16:05:45.192Z"
+  },
+  "social-7ce6a8f55c84": {
+    "id": "social-7ce6a8f55c84",
+    "url": "https://x.com/tashanreed/status/2104949242519277716",
+    "text": "The latest episode of The Tashan Reed Show is out now. I discussed Jayden Daniels' return to practice and the #Commanders ' huge win over the Seahawks before previewing their matchup with the Colts in London: tashan-reed-show-jayden-daniels?r=1gwknd&utm_campaign=post&utm_medium=web&timestamp=2.1",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/354/922/052/586/225/original/ab34dc1c3eb3d2d0.jpg"
+    ],
+    "publishedAt": "2026-09-29T14:59:42.000Z",
+    "collectedAt": "2026-09-29T16:05:49.328Z"
+  },
+  "social-21beca9c23ef": {
+    "id": "social-21beca9c23ef",
+    "url": "https://x.com/AdamSchefter/status/2104963902266311121",
+    "text": "Commanders QB Jayden Daniels avoided surgery on his dislocated left elbow for now, but it still is very much in play for after this season. cc: @tyschmit@twitter.com 🎧",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-09-29T15:57:57.000Z",
+    "collectedAt": "2026-09-29T16:05:52.085Z"
   }
 }
