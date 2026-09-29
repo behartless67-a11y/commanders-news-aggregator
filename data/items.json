@@ -1679,18 +1679,6 @@
     "publishedAt": "2026-08-16T15:26:19.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
-  "athletic-jhabvala-8c1190d29b12": {
-    "id": "athletic-jhabvala-8c1190d29b12",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7514810/2026/08/15/commanders-dolphins-preseason-marcus-mariota-kaytron-allen",
-    "title": "What we learned from the Commanders' preseason win over the Dolphins",
-    "excerpt": "Backup quarterback Marcus Mariota was injured, but there was plenty to like in Washington's first preseason game.",
-    "publishedAt": "2026-08-15T11:45:12.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
     "sourceId": "yahoo-nfl",
@@ -13378,5 +13366,17 @@
     "excerpt": "How is the Washington Commanders' 2026 rookie class shaping up after three games of the season?",
     "publishedAt": "2026-09-29T10:00:00.000Z",
     "collectedAt": "2026-09-29T10:05:35.242Z"
+  },
+  "riggos-rag-435e275c561e": {
+    "id": "riggos-rag-435e275c561e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-return-push-leaves-commanders-facing-offseason-surgery-decision",
+    "title": "Jayden Daniels’ return push leaves Commanders facing offseason surgery decision",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels' push to return from a dislocated elbow hasn't taken offseason surgery off the table.",
+    "publishedAt": "2026-09-29T11:30:00.000Z",
+    "collectedAt": "2026-09-29T12:05:37.508Z"
   }
 }

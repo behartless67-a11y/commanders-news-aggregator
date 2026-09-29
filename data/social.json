@@ -11643,5 +11643,31 @@
     "images": [],
     "publishedAt": "2026-09-28T14:57:23.000Z",
     "collectedAt": "2026-09-29T10:05:46.354Z"
+  },
+  "social-7b87fa0590fa": {
+    "id": "social-7b87fa0590fa",
+    "url": "https://x.com/BaldyNFL/status/2104682072157688135",
+    "text": ". @Seahawks @Commanders @_YoungTruth7@twitter.com was the best defensive back in this matchup and the Commanders don't shock the World Champs without his plays all day long. #BaldysBreakdowns",
+    "handle": "BaldyNFL",
+    "author": "Brian Baldinger",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-28T21:18:03.000Z",
+    "collectedAt": "2026-09-29T12:05:46.046Z"
+  },
+  "social-76d1332ffe1c": {
+    "id": "social-76d1332ffe1c",
+    "url": "https://x.com/tashanreed/status/2104901923707199666",
+    "text": "I'll be going live from London to record The Tashan Reed Show at 10 a.m. ET today. I'll discuss the latest on Jayden Daniels, the #Commanders ' upset win over the Seahawks and the clash with the Colts across the pond. Join here: 388017?utm_source=live-stream-scheduled-upsell",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/354/188/934/135/894/original/2de15e2ec2fb6c84.jpg"
+    ],
+    "publishedAt": "2026-09-29T11:51:40.000Z",
+    "collectedAt": "2026-09-29T12:05:50.484Z"
   }
 }
