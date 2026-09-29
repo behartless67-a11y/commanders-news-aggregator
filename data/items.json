@@ -803,18 +803,6 @@
     "publishedAt": "2026-08-16T21:42:29.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-34ad7fd008fb": {
-    "id": "wjla-commanders-34ad7fd008fb",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/dolphins-commanders-malik-miami-quarterback-preseason-friday-night-preseason-opener-washington-sideline",
-    "title": "Dolphins' Malik Willis has impressive start, Marcus Mariota injured as Commanders win 20-7",
-    "excerpt": "Malik Willis got off to an impressive start as Miami's new quarterback, leading a 14-play, 93-yard touchdown drive as the Dolphins lost 20-7 to the Washington C",
-    "publishedAt": "2026-08-15T02:51:26.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -13330,5 +13318,17 @@
     "excerpt": "The Washington Commanders operated without star quarterback Jayden Daniels Sunday. But stunned the defending Super Bowl champion Seattle Seahawks 33-31 . Daniels’ health amid his NFL Injury remained a major topic Monday before facing the Indianapolis Colts.\n\n Now this update via Commanders insider Nicki Jhabvala points to Daniels returning sooner than expected. \n\n “Dan Quinn said Jayden Daniels, Frankie Luvu and Chig Okonkwo will all travel to London and practice with the team in some capacity…",
     "publishedAt": "2026-09-28T19:16:33.000Z",
     "collectedAt": "2026-09-29T00:11:09.761Z"
+  },
+  "hogs-haven-225bbe85f49c": {
+    "id": "hogs-haven-225bbe85f49c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/444532/you-can-vote-for-marcus-mariota-as-fedex-air-ground-player-of-the-week",
+    "title": "You can vote for Marcus Mariota as FedEx Air & Ground Player of the Week",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Marcus Mariota #8 of the Washington Commanders passes the ball against the Seattle Seahawks during the third quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n When Jayden Daniels was ruled out ahead of Sunday’s matchup against the Seattle Seahawks, I was personally confident in Mariota and the Commanders offense despite the fact that, usually, facing an opportunistic defense with…",
+    "publishedAt": "2026-09-29T03:47:29.000Z",
+    "collectedAt": "2026-09-29T04:05:30.065Z"
   }
 }
