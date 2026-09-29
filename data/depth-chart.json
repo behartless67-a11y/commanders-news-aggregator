@@ -165,6 +165,10 @@
             "name": "Rachaad White"
           },
           {
+            "slug": "austin-ekeler",
+            "name": "Austin Ekeler"
+          },
+          {
             "slug": "kaytron-allen",
             "name": "Kaytron Allen"
           }
@@ -235,8 +239,8 @@
             "name": "Sonny Styles"
           },
           {
-            "slug": "leo-chenal",
-            "name": "Leo Chenal"
+            "slug": "kain-medrano",
+            "name": "Kain Medrano"
           }
         ]
       },
