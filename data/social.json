@@ -1,18 +1,4 @@
 {
-  "social-e671e18c3894": {
-    "id": "social-e671e18c3894",
-    "url": "https://x.com/Commanders/status/2101348089915134212",
-    "text": "DFW bound @EASTERNMOTORS@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/298/662/184/360/473/original/ba15c06a12ad4f9d.jpg"
-    ],
-    "publishedAt": "2026-09-19T16:30:00.000Z",
-    "collectedAt": "2026-09-19T17:05:34.756Z"
-  },
   "social-7c7df63c2702": {
     "id": "social-7c7df63c2702",
     "url": "https://x.com/AdamSchefter/status/2101373687265960230",
@@ -11752,5 +11738,41 @@
     "images": [],
     "publishedAt": "2026-09-29T15:57:57.000Z",
     "collectedAt": "2026-09-29T16:05:52.085Z"
+  },
+  "social-f8b480fce852": {
+    "id": "social-f8b480fce852",
+    "url": "https://x.com/JPFinlayNBCS/status/2104988535526674453",
+    "text": "This sucks for people that have already bought tickets. Procrastination pays off in this case",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-29T17:35:50.000Z",
+    "collectedAt": "2026-09-29T17:38:44.618Z"
+  },
+  "social-54541fb4ccc7": {
+    "id": "social-54541fb4ccc7",
+    "url": "https://x.com/JPFinlayNBCS/status/2104986404694753685",
+    "text": "MLB World Series pick: Brewers over Red Sox in 6",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-29T17:27:22.000Z",
+    "collectedAt": "2026-09-29T17:38:44.618Z"
+  },
+  "social-3cf79ac5f5f3": {
+    "id": "social-3cf79ac5f5f3",
+    "url": "https://x.com/john_keim/status/2104986041002450988",
+    "text": "A quick video (before a haircut!) on Mariota's impact going beyond the stat sheet. Also: he earned a nice $$ bonus for the W 707",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-29T17:25:55.000Z",
+    "collectedAt": "2026-09-29T17:38:45.734Z"
   }
 }

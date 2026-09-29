@@ -671,18 +671,6 @@
     "publishedAt": "2026-08-16T19:01:58.000Z",
     "collectedAt": "2026-08-20T13:31:54.367Z"
   },
-  "dc-sports-king-790ff7664d3a": {
-    "id": "dc-sports-king-790ff7664d3a",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/marcus-mariota-injury-threatens-commanders-qb-depth",
-    "title": "Marcus Mariota Injury Threatens Commanders QB Depth",
-    "excerpt": "Washington’s 20-7 preseason victory over the Miami Dolphins on Friday night brought some much-needed on-field momentum, but the mood in the locker room shifted after just four snaps. Veteran backup Marcus Mariota exited the game in the first quarter with an apparent right knee injury, casting a cloud over what should have been a routine preseason evaluation.\n\n If you are finalizing your WordPress Gutenberg layouts for the weekend, hold some space above the fold. The upcoming official update…",
-    "publishedAt": "2026-08-15T17:10:19.000Z",
-    "collectedAt": "2026-08-20T13:31:54.367Z"
-  },
   "clutchpoints-a6ef2c4ede26": {
     "id": "clutchpoints-a6ef2c4ede26",
     "sourceId": "clutchpoints",
@@ -13450,5 +13438,77 @@
     "excerpt": "",
     "publishedAt": "2026-09-29T14:00:29.000Z",
     "collectedAt": "2026-09-29T16:05:35.393Z"
+  },
+  "hogs-haven-6e7f9af89cd9": {
+    "id": "hogs-haven-6e7f9af89cd9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-power-rankings/444762/nfl-power-rankings-commanders-rise-after-big-win-over-seahawks",
+    "title": "NFL Power Rankings: Commanders rise after big win over Seahawks",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images \n \n The Washington Commanders are 1-2 after pulling off the 33-31 upset win against the Seattle Seahawks in Washington’s home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced…",
+    "publishedAt": "2026-09-29T17:21:34.000Z",
+    "collectedAt": "2026-09-29T17:38:31.826Z"
+  },
+  "hogs-haven-28777fda2b61": {
+    "id": "hogs-haven-28777fda2b61",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-power-rankings/442723/nfl-power-rankings-commanders-rise-after-big-win-over-seahawks",
+    "title": "NFL Power Rankings: Commanders rise after big win over Seahawks",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images \n \n The Washington Commanders are 1-2 after pulling off the 33-31 upset win off against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced…",
+    "publishedAt": "2026-09-29T17:00:17.000Z",
+    "collectedAt": "2026-09-29T17:38:31.826Z"
+  },
+  "riggos-rag-6bafbfd2c8db": {
+    "id": "riggos-rag-6bafbfd2c8db",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/frankie-luvu-return-gives-commanders-reason-resist-rushed-linebacker-move",
+    "title": "Frankie Luvu’s return gives Commanders reason to resist a rushed linebacker move",
+    "excerpt": "Frankie Luvu’s return to practice gives the Washington Commanders every reason to resist a rushed linebacker move after Leo Chenal's injury.",
+    "publishedAt": "2026-09-29T17:30:00.000Z",
+    "collectedAt": "2026-09-29T17:38:32.961Z"
+  },
+  "pft-00dedd44956d": {
+    "id": "pft-00dedd44956d",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-cuts-colts-commanders-ticket-prices-in-london-due-to-slow-sales",
+    "title": "NFL cuts Colts-Commanders ticket prices in London due to slow sales",
+    "excerpt": "The NFL returns to London on Sunday. The enthusiasm isn't the same as it has been.\n The first of three straight games happens at Tottenham Hotspur Stadium, between the Colts and the Commanders. Via Ken Maguire of the Associated Press, the NFL has slashed prices for remaining tickets in the hopes of generating a sellout.\n With some tickets going for up to $325, they have fallen to as low as $105.\n Fans who paid the higher prices aren't happy — including 2025 NFL international fan of the year and…",
+    "publishedAt": "2026-09-29T17:26:07.000Z",
+    "collectedAt": "2026-09-29T17:38:40.407Z"
+  },
+  "yahoo-nfl-036460270adc": {
+    "id": "yahoo-nfl-036460270adc",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/nfl-power-rankings-jayden-daniels-172134420.html",
+    "title": "NFL Power Rankings: Jayden Daniels’ injury sinks Washington Commanders",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images The Washington Commanders are 1-2 after pulling off the 33-31 upset win against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced against last…",
+    "publishedAt": "2026-09-29T17:21:34.000Z",
+    "collectedAt": "2026-09-29T17:38:40.743Z"
+  },
+  "yahoo-nfl-12f6985eacf5": {
+    "id": "yahoo-nfl-12f6985eacf5",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/nfl-power-rankings-jayden-daniels-170017636.html",
+    "title": "NFL Power Rankings: Jayden Daniels’ injury sinks Washington Commanders",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Marcus Mariota #8 of the Washington Commanders looks on from the field during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images The Washington Commanders are 1-2 after pulling off the 33-31 upset win off against the Seattle Seahawks in their home opener. Marcus Mariota led the team, and took full advantage of the three turnovers the defense forced against…",
+    "publishedAt": "2026-09-29T17:00:17.000Z",
+    "collectedAt": "2026-09-29T17:38:40.743Z"
   }
 }
