@@ -1,16 +1,4 @@
 {
-  "social-d699ea813e73": {
-    "id": "social-d699ea813e73",
-    "url": "https://x.com/Commanders/status/2101461334973972486",
-    "text": "A classic rivalry @BankofAmerica@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-20T00:00:00.000Z",
-    "collectedAt": "2026-09-20T00:06:38.747Z"
-  },
   "social-7a0da64d8f7d": {
     "id": "social-7a0da64d8f7d",
     "url": "https://x.com/Commanders/status/2101657632583127330",
@@ -11845,5 +11833,29 @@
     "images": [],
     "publishedAt": "2026-09-29T23:07:49.000Z",
     "collectedAt": "2026-09-29T23:26:34.465Z"
+  },
+  "social-d87faf273891": {
+    "id": "social-d87faf273891",
+    "url": "https://x.com/NickiJhabvala/status/2105072035349291232",
+    "text": "As expected, G Sam Cosmi (concussion/throat) and S Nick Cross (internal injury) will not travel with the Commanders to London tonight and have been ruled out for Sunday’s game.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-29T23:07:38.000Z",
+    "collectedAt": "2026-09-30T00:05:09.739Z"
+  },
+  "social-cbb2d6d6d797": {
+    "id": "social-cbb2d6d6d797",
+    "url": "https://x.com/NickiJhabvala/status/2105058345870901442",
+    "text": "Snowden’s a Silver Spring native. Went to St. Albans in DC and then UVa. Signed with the Bears as a UDFA in ‘21 and has been with the Bucs, Raiders and Cowboys since. Suspended for first 3 games this season for violating NFL’s personal conduct policy (DUI in 2024).",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-29T22:13:14.000Z",
+    "collectedAt": "2026-09-30T00:05:09.739Z"
   }
 }
