@@ -11857,5 +11857,34 @@
     "images": [],
     "publishedAt": "2026-09-29T22:13:14.000Z",
     "collectedAt": "2026-09-30T00:05:09.739Z"
+  },
+  "social-148779a00ba7": {
+    "id": "social-148779a00ba7",
+    "url": "https://x.com/Commanders/status/2105085124278657310",
+    "text": "Next stop: London 🇬🇧 @united@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/357/053/801/592/727/original/55921e8c7b8fe18e.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/357/053/840/872/817/original/98437e25ab973e30.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/357/053/886/256/638/original/e3638355e991f9ce.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/357/053/951/104/072/original/4c94947c7cf4e35f.jpg"
+    ],
+    "publishedAt": "2026-09-29T23:59:38.000Z",
+    "collectedAt": "2026-09-30T00:05:39.380Z"
+  },
+  "social-28809bbbbbf4": {
+    "id": "social-28809bbbbbf4",
+    "url": "https://x.com/tashanreed/status/2105077961632440435",
+    "text": "Cosmi and Cross will be out for another week:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-29T23:31:11.000Z",
+    "collectedAt": "2026-09-30T00:05:45.063Z"
   }
 }
