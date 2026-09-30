@@ -12016,5 +12016,45 @@
     "images": [],
     "publishedAt": "2026-09-30T16:56:07.000Z",
     "collectedAt": "2026-09-30T18:06:05.037Z"
+  },
+  "social-edfa06915ea6": {
+    "id": "social-edfa06915ea6",
+    "url": "https://x.com/Commanders/status/2105387726690505012",
+    "text": "Wednesday injury report #INDvsWAS | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/361/782/026/481/833/original/b534d935c2233479.jpg"
+    ],
+    "publishedAt": "2026-09-30T20:02:04.000Z",
+    "collectedAt": "2026-09-30T20:05:45.876Z"
+  },
+  "social-59e6cf493370": {
+    "id": "social-59e6cf493370",
+    "url": "https://x.com/Commanders/status/2105362219198226805",
+    "text": "Beautiful day on the pitch 🏈",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-09-30T18:20:43.000Z",
+    "collectedAt": "2026-09-30T20:05:45.877Z"
+  },
+  "social-88a3be1d6334": {
+    "id": "social-88a3be1d6334",
+    "url": "https://x.com/JPFinlayNBCS/status/2105358741227102318",
+    "text": "NFL is everywhere over here",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/361/326/942/031/324/original/3456ce3ea13074cf.jpg"
+    ],
+    "publishedAt": "2026-09-30T18:06:54.000Z",
+    "collectedAt": "2026-09-30T20:05:47.082Z"
   }
 }

@@ -659,30 +659,6 @@
     "publishedAt": "2026-08-19T05:11:18.000Z",
     "collectedAt": "2026-08-20T13:31:54.367Z"
   },
-  "dc-sports-king-f7232412df79": {
-    "id": "dc-sports-king-f7232412df79",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/sonny-styles-tough-debut-is-part-of-the-commanders-process",
-    "title": "Sonny Styles Tough Debut is Part of the Commanders Process",
-    "excerpt": "The anticipation leading up to Friday night at Northwest Stadium was palpable. For Washington Commanders fans, the preseason opener against the Miami Dolphins wasn’t just about knocking off the rust. It was the grand unveiling of the 2026 NFL Draft’s 7th overall pick, linebacker Sonny Styles.\n\n While the Commanders ultimately walked away with a 20-7 victory, the real story of the night was the much-hyped rookie. And if we’re being completely honest? Styles did not have an ideal debut. But…",
-    "publishedAt": "2026-08-16T19:01:58.000Z",
-    "collectedAt": "2026-08-20T13:31:54.367Z"
-  },
-  "clutchpoints-a6ef2c4ede26": {
-    "id": "clutchpoints-a6ef2c4ede26",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-dan-quinn-jayden-daniels-lsu-drama-expert-deflection",
-    "title": "Commanders’ Dan Quinn breaks silence on Jayden Daniels-LSU drama with expert deflection",
-    "excerpt": "Recently, the Washington Commanders have been getting all kinds of negative press surrounding quarterback Jayden Daniels and his fiasco with the LSU Tigers football program. Daniels sent a cease-and-desist letter to LSU…",
-    "publishedAt": "2026-08-16T18:34:17.000Z",
-    "collectedAt": "2026-08-20T13:33:45.028Z"
-  },
   "hogs-haven-8470a1158349": {
     "id": "hogs-haven-8470a1158349",
     "sourceId": "hogs-haven",
@@ -14014,5 +13990,53 @@
     "excerpt": "Commanders rookie Sonny Styles earned NFC Defensive Player of the Week after an interception and forced fumble in Washington’s win over Seattle.",
     "publishedAt": "2026-09-30T17:30:16.000Z",
     "collectedAt": "2026-09-30T18:05:45.055Z"
+  },
+  "hogs-haven-3926224b35c0": {
+    "id": "hogs-haven-3926224b35c0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/445209/sonny-styles-named-nfc-defensive-player-of-the-week",
+    "title": "Sonny Styles named NFC Defensive Player of the Week",
+    "excerpt": "Washington Commanders rookie linebacker Sonny Styles has officially arrived on the national NFL radar. The league announced on Wednesday that Styles was named the NFC Defensive Player of the Week for his game-wrecking performance in Sunday’s 33-31 upset win over the previously unbeaten Seattle Seahawks.\n\n Curiously, while Styles was recognized by the NFL as the absolute best defensive player in the entire conference in Week 3, he was not among the nominees for the Pepsi Zero Sugar Rookie of the…",
+    "publishedAt": "2026-09-30T19:24:36.000Z",
+    "collectedAt": "2026-09-30T20:05:37.584Z"
+  },
+  "riggos-rag-5c9ee962ff1a": {
+    "id": "riggos-rag-5c9ee962ff1a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sonny-styles-joins-exclusive-commanders-club-rookie-rise-accelerates",
+    "title": "Sonny Styles joins exclusive Commanders club as rookie rise accelerates",
+    "excerpt": "Washington Commanders linebacker Sonny Styles joined an exclusive club by winning NFC Defensive Player of the Week in only his third regular-season game.",
+    "publishedAt": "2026-09-30T19:00:00.000Z",
+    "collectedAt": "2026-09-30T20:05:38.191Z"
+  },
+  "athletic-jhabvala-e5662c72c57e": {
+    "id": "athletic-jhabvala-e5662c72c57e",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7646904/2026/09/30/jayden-daniels-commanders-colts-week-4-limited-practice",
+    "title": "Jayden Daniels returns to practice, but status vs. Colts remains uncertain",
+    "excerpt": "The Washington quarterback took part in the Commanders' non-padded workout held outside the team’s hotel Wednesday afternoon.",
+    "publishedAt": "2026-09-30T19:30:31.000Z",
+    "collectedAt": "2026-09-30T20:05:39.774Z"
+  },
+  "yahoo-nfl-9329d419f758": {
+    "id": "yahoo-nfl-9329d419f758",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-qb-jayden-daniels-to-practice-wednesday-after-flying-to-london-with-team-still-a-chance-he-plays-vs-colts-142805619.html",
+    "title": "Commanders QB Jayden Daniels to practice Wednesday after flying to London with team, still 'a chance' he plays vs. Colts",
+    "excerpt": "Injured quarterback Jayden Daniels traveled with the Washington Commanders to London and is set to participate in a \"jog-through\" in a limited capacity, head coach Dan Quinn shared with reporters Wednesday.\n The Commanders will play the Indianapolis Colts in London on Sunday, just two weeks after Daniels suffered an elbow injury for the second time over the past two seasons.\n Linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) were also expected to travel and practice this…",
+    "publishedAt": "2026-09-30T14:28:05.000Z",
+    "collectedAt": "2026-09-30T20:05:44.145Z"
   }
 }
