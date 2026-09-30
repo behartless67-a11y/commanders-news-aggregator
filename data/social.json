@@ -1,60 +1,4 @@
 {
-  "social-cf31e257ce8e": {
-    "id": "social-cf31e257ce8e",
-    "url": "https://x.com/JPFinlayNBCS/status/2101691381861212216",
-    "text": "Old school MNF logo t shirt for the home Opener. As much as these individual game shirts are silly this one is good. cc: @michaelpinRVA@twitter.com",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/304/022/275/641/198/original/3d5b446423e60cf1.jpg"
-    ],
-    "publishedAt": "2026-09-20T15:14:07.000Z",
-    "collectedAt": "2026-09-20T15:28:16.326Z"
-  },
-  "social-ae626e326935": {
-    "id": "social-ae626e326935",
-    "url": "https://mastodon.social/@atobsmith/117303979455221338",
-    "text": "It’s Game Day! Let’s Beat Dallas!! #WashingtonCommanders #Commanders #HTTC #RaiseHail #NFL #WASvsDAL",
-    "handle": "atobsmith",
-    "author": "Michael Smith",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/303/979/400/341/501/original/406ee077e8e5335c.jpg"
-    ],
-    "publishedAt": "2026-09-20T15:04:38.705Z",
-    "collectedAt": "2026-09-20T15:28:31.885Z"
-  },
-  "social-e42eae022a2e": {
-    "id": "social-e42eae022a2e",
-    "url": "https://x.com/BenStandig/status/2101698935475618251",
-    "text": "One game doesn't even qualify as a small sample size. Still, considering all the schematic and personnel changes, there's merit in exploring the data from David Blough's and Daronte Jones' play-calling debuts. For Last Man Standig subscribers: commanders-schematic-trends-what?utm_source=share&utm_medium=android&r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/304/150/691/950/527/original/76cc49ff11f91783.jpg"
-    ],
-    "publishedAt": "2026-09-20T15:44:08.000Z",
-    "collectedAt": "2026-09-20T16:06:49.847Z"
-  },
-  "social-29892f216dab": {
-    "id": "social-29892f216dab",
-    "url": "https://x.com/BenStandig/status/2101698506511585314",
-    "text": "Dan Quinn typically keeps criticism of his players behind closed doors. So when he publicly called Mike Sainristil’s focus on an Eagles TD catch “not acceptable,” it carried weight. On the rare callout and the secondary headed into Week 2. dan-quinn-rarely-calls-out-players?utm_source=share&utm_medium=android&r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/304/130/892/599/423/original/a474854fcb4b2eaa.jpg"
-    ],
-    "publishedAt": "2026-09-20T15:42:26.000Z",
-    "collectedAt": "2026-09-20T16:06:49.847Z"
-  },
   "social-9ec212d58d20": {
     "id": "social-9ec212d58d20",
     "url": "https://x.com/NickiJhabvala/status/2101715065833435278",
@@ -79,20 +23,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/304/605/882/217/847/original/8db4f8695202b987.jpg"
     ],
     "publishedAt": "2026-09-20T17:41:58.000Z",
-    "collectedAt": "2026-09-20T18:06:47.463Z"
-  },
-  "social-55301d2c37de": {
-    "id": "social-55301d2c37de",
-    "url": "https://x.com/ESPNInsights/status/2101702504908013998",
-    "text": "The Packers, Cowboys and Buccaneers have the longest active streaks without losing their first two games of the season. After week one losses for all three, will one of the streaks end today? 🏈",
-    "handle": "ESPNInsights",
-    "author": "ESPN Insights",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/304/192/339/888/687/original/e75876cca7c07abf.jpg"
-    ],
-    "publishedAt": "2026-09-20T15:58:19.000Z",
     "collectedAt": "2026-09-20T18:06:47.463Z"
   },
   "social-8e43ce37440e": {
@@ -12212,5 +12142,29 @@
     "images": [],
     "publishedAt": "2026-09-30T14:04:53.000Z",
     "collectedAt": "2026-09-30T14:36:57.501Z"
+  },
+  "social-b7e4e7cfab5c": {
+    "id": "social-b7e4e7cfab5c",
+    "url": "https://x.com/NickiJhabvala/status/2105320808692285497",
+    "text": "More Jayden Daniels in London:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T15:36:10.000Z",
+    "collectedAt": "2026-09-30T16:11:05.167Z"
+  },
+  "social-71ec9350a812": {
+    "id": "social-71ec9350a812",
+    "url": "https://x.com/NickiJhabvala/status/2105313516898910423",
+    "text": "Jayden Daniels and the brace in London.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T15:07:11.000Z",
+    "collectedAt": "2026-09-30T16:11:05.167Z"
   }
 }
