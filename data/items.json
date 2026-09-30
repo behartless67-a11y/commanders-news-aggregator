@@ -731,18 +731,6 @@
     "publishedAt": "2026-08-17T20:22:12.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-6e94e819d0ab": {
-    "id": "wjla-commanders-6e94e819d0ab",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-qb-marcus-mariota-has-a-sprained-mcl-in-his-right-knee",
-    "title": "Commanders QB Marcus Mariota has a sprained MCL in his right knee",
-    "excerpt": "Washington Commanders backup quarterback Marcus Mariota has a sprained medial collateral ligament in his right knee, coach Dan Quinn confirmed on Sunday.Mariota",
-    "publishedAt": "2026-08-16T21:42:29.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -14050,5 +14038,53 @@
     "excerpt": "Commanders quarterback Jayden Daniels was limited in Wednesday's practice, the injury report confirmed.\n Coach Dan Quinn said before practice that Daniels would not participate in team work.\n Daniels' dislocated left elbow kept him out of the Week 3 win over the Seahawks, and his status for Sunday's game in London against the Colts is still in question. \n \"We won't put him out there before he’s ready ,\" Quinn said, via John Keim of ESPN. \"That's why it's important to trust the process. But him…",
     "publishedAt": "2026-09-30T20:20:00.000Z",
     "collectedAt": "2026-09-30T20:32:21.566Z"
+  },
+  "hogs-haven-a2369f8fb3e9": {
+    "id": "hogs-haven-a2369f8fb3e9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/443786/commanders-vs-colts-wednesday-injury-report-rachaad-white-only-player-london-not-practicing",
+    "title": "Commanders vs. Colts Wednesday injury report: Rachaad White only player in London not practicing",
+    "excerpt": "ARLINGTON, TX - SEPTEMBER 20: Rachaad White #1 of the Washington Commanders runs the ball during an NFL football game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images \n \n The Commanders already ruled out two players before flying to London. Sam Cosmi is still in the concussion protocol, and Nick Cross is recovering from the internal injury/illness that hospitalized him after the Week 2 game vs the Cowboys.…",
+    "publishedAt": "2026-09-30T21:17:25.000Z",
+    "collectedAt": "2026-09-30T22:05:36.652Z"
+  },
+  "dc-sports-king-101c0848cde2": {
+    "id": "dc-sports-king-101c0848cde2",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/jayden-daniels-battles-severe-injury-looming-surgery-to-join-the-commanders-in-london",
+    "title": "Jayden Daniels Battles Severe Injury, Looming Surgery To Join The Commanders In London",
+    "excerpt": "The Washington Commanders have touched down in London for their Week 4 showdown against the Indianapolis Colts, and all eyes are squarely on their star signal-caller. Jayden Daniels made the trip across the pond, bringing a wave of cautious optimism to the Burgundy and Gold faithful.\n\n After suffering a gruesome dislocated left elbow right before halftime against the Dallas Cowboys in Week 2, Daniels has been on an evaluation rollercoaster. Here is the latest on his practice status, the…",
+    "publishedAt": "2026-09-30T21:21:56.000Z",
+    "collectedAt": "2026-09-30T22:05:40.779Z"
+  },
+  "dc-sports-king-4e9a13ccd812": {
+    "id": "dc-sports-king-4e9a13ccd812",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/hometown-edge-rusher-charles-snowden-could-supercharge-the-washington-commanders-defense",
+    "title": "Hometown Edge Rusher Charles Snowden Could Supercharge the Washington Commanders Defense",
+    "excerpt": "The Washington Commanders made a quiet but highly strategic roster move this week, signing outside linebacker Charles Snowden to their practice squad. For the DMV region, it is a homecoming: Snowden is a Silver Spring native and a St. Albans School alum who initially planned to play college basketball before pivoting back to the gridiron during his high school junior year.\n\n After a successful collegiate stint at Virginia and several stops around the NFL, Snowden brings a unique physical…",
+    "publishedAt": "2026-09-30T20:43:54.000Z",
+    "collectedAt": "2026-09-30T22:05:40.779Z"
+  },
+  "yahoo-nfl-fefbfe36fddb": {
+    "id": "yahoo-nfl-fefbfe36fddb",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-22-review-rookies-frustrating-212745340.html",
+    "title": "Seahawks All-22 review of the rookies in frustrating loss to Commanders",
+    "excerpt": "After two weeks of seeing Seattle Seahawks rookies gradually take on larger roles, Week 3 was a much different story. Jadarian Price remained the rookie with the biggest opportunity, but a costly fumble limited him to just 19 snaps, while Beau Stephens continued to rotate at right guard and played another 27 snaps. Julian Neal did not play a defensive snap, while Bud Clark remains on injured reserve and Avery Smith was inactive.\n That makes this week’s rookie review a little shorter than the…",
+    "publishedAt": "2026-09-30T21:27:45.000Z",
+    "collectedAt": "2026-09-30T22:05:43.044Z"
   }
 }
