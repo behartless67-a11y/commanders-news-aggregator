@@ -13978,5 +13978,41 @@
     "excerpt": "Entering Week 3, the Seattle Seahawks were widely considered the best team in the NFL . However, when you are on top of the mountain, there is only one way to go; down. After losing to the Washington Commanders last week, the Seahawks will very likely slip down the national media power rankings this week. However, how far will they slip? Let’s take a look at five national media sites (NFL.com, CBS Sports, Bleacher Report (B/R), Pro Football Talk (PFT), and ESPN) to see where they rank Seattle.…",
     "publishedAt": "2026-09-30T15:00:00.000Z",
     "collectedAt": "2026-09-30T16:11:47.440Z"
+  },
+  "riggos-rag-56f22e95a2d4": {
+    "id": "riggos-rag-56f22e95a2d4",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/bobby-wagner-backward-step-linebacker-needy-washington-commanders",
+    "title": "Bobby Wagner would be a backward step for linebacker-needy Commanders",
+    "excerpt": "Bringing back veteran linebacker Bobby Wagner would be a backward step for the Washington Commanders after the injury to Leo Chenal.",
+    "publishedAt": "2026-09-30T17:30:00.000Z",
+    "collectedAt": "2026-09-30T18:05:37.554Z"
+  },
+  "commanders-youtube-f1772ea8fc4c": {
+    "id": "commanders-youtube-f1772ea8fc4c",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=hrlem1lGRT0",
+    "title": "LIVE: QB Marcus Mariota Speaks To The Media After The First Practice In London",
+    "excerpt": "",
+    "publishedAt": "2026-09-30T16:39:41.000Z",
+    "collectedAt": "2026-09-30T18:05:39.021Z"
+  },
+  "wjla-commanders-8f461b57d57d": {
+    "id": "wjla-commanders-8f461b57d57d",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-sonny-styles-nfc-defensive-player-of-the-week-nfl-rookie-linebacker-seattle-seahawks-interception-forced-fumble-tackles-quarterback-hit-passes-defended-ryan-kerrigan-keenan-robinson-champ-bailey-chris-horton-brian-orakpo-award",
+    "title": "Commanders rookie Sonny Styles named NFC Defensive Player of the Week after Seahawks win",
+    "excerpt": "Commanders rookie Sonny Styles earned NFC Defensive Player of the Week after an interception and forced fumble in Washington’s win over Seattle.",
+    "publishedAt": "2026-09-30T17:30:16.000Z",
+    "collectedAt": "2026-09-30T18:05:45.055Z"
   }
 }
