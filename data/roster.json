@@ -215,6 +215,15 @@
     }
   },
   {
+    "slug": "austin-ekeler",
+    "name": "Austin Ekeler",
+    "jersey": "30",
+    "position": "RB",
+    "espnId": "3068267",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3068267.png",
+    "stats": null
+  },
+  {
     "slug": "julian-good-jones",
     "name": "Julian Good-Jones",
     "jersey": "61",
@@ -598,31 +607,6 @@
         {
           "label": "SACK",
           "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "leo-chenal",
-    "name": "Leo Chenal",
-    "jersey": "54",
-    "position": "LB",
-    "espnId": "4426901",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4426901.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "18"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
         },
         {
           "label": "INT",
@@ -1237,6 +1221,31 @@
     }
   },
   {
+    "slug": "leo-chenal",
+    "name": "Leo Chenal",
+    "jersey": "54",
+    "position": "LB",
+    "espnId": "4426901",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4426901.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "18"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "jordan-magee",
     "name": "Jordan Magee",
     "jersey": "58",
@@ -1541,6 +1550,15 @@
         }
       ]
     }
+  },
+  {
+    "slug": "charles-snowden",
+    "name": "Charles Snowden",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4240849",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4240849.png",
+    "stats": null
   },
   {
     "slug": "jack-westover",
