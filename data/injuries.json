@@ -2,7 +2,7 @@
   {
     "name": "Chig Okonkwo",
     "position": "TE",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   },
@@ -16,21 +16,14 @@
   {
     "name": "Frankie Luvu",
     "position": "LB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Groin",
     "notes": "Strain"
   },
   {
-    "name": "Javontae Jean-Baptiste",
-    "position": "DL",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
     "name": "Jayden Daniels",
     "position": "QB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Elbow",
     "notes": "Dislocated"
   },
@@ -81,13 +74,6 @@
     "position": "DB",
     "status": "Questionable",
     "bodyPart": "Concussion",
-    "notes": null
-  },
-  {
-    "name": "Rachaad White",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
     "notes": null
   },
   {
