@@ -1,5 +1,26 @@
 [
   {
+    "name": "Amik Robertson",
+    "position": "CB",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
+    "name": "Ben Sinnott",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Ribs",
+    "notes": null
+  },
+  {
+    "name": "Charles Omenihu",
+    "position": "DE",
+    "status": "Questionable",
+    "bodyPart": "Ankle",
+    "notes": null
+  },
+  {
     "name": "Chig Okonkwo",
     "position": "TE",
     "status": "Questionable",
@@ -19,6 +40,13 @@
     "status": "Questionable",
     "bodyPart": "Groin",
     "notes": "Strain"
+  },
+  {
+    "name": "Javon Kinlaw",
+    "position": "DT",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
+    "notes": null
   },
   {
     "name": "Jayden Daniels",
@@ -61,6 +89,20 @@
     "status": "IR",
     "bodyPart": "Neck",
     "notes": "Surgery"
+  },
+  {
+    "name": "Lucas Patrick",
+    "position": "G",
+    "status": "Questionable",
+    "bodyPart": "Foot",
+    "notes": null
+  },
+  {
+    "name": "Nick Allegretti",
+    "position": "G",
+    "status": "Questionable",
+    "bodyPart": "Hip",
+    "notes": null
   },
   {
     "name": "Nick Cross",

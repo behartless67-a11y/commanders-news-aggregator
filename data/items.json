@@ -563,18 +563,6 @@
     "publishedAt": "2026-08-17T12:42:26.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
-  "clutchpoints-7125c23944c8": {
-    "id": "clutchpoints-7125c23944c8",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-injury-lead-qb-move-dan-quinn-reveals-plan",
-    "title": "Will Commanders’ Marcus Mariota injury lead to QB move? Dan Quinn reveals plan",
-    "excerpt": "The Washington Commanders will be without Marcus Mariota for the remainder of the preseason after the quarterback suffered a right knee MCL sprain against the Miami Dolphins. That has led to some people wondering if the…",
-    "publishedAt": "2026-08-16T20:32:15.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
   "commanders-youtube-100a3c1fe1c7": {
     "id": "commanders-youtube-100a3c1fe1c7",
     "sourceId": "commanders-youtube",
@@ -14038,5 +14026,29 @@
     "excerpt": "Injured quarterback Jayden Daniels traveled with the Washington Commanders to London and is set to participate in a \"jog-through\" in a limited capacity, head coach Dan Quinn shared with reporters Wednesday.\n The Commanders will play the Indianapolis Colts in London on Sunday, just two weeks after Daniels suffered an elbow injury for the second time over the past two seasons.\n Linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) were also expected to travel and practice this…",
     "publishedAt": "2026-09-30T14:28:05.000Z",
     "collectedAt": "2026-09-30T20:05:44.145Z"
+  },
+  "clutchpoints-824ca41dcd62": {
+    "id": "clutchpoints-824ca41dcd62",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-said-jayden-daniels-possibly-playing-week-4",
+    "title": "What Commanders’ Marcus Mariota said about Jayden Daniels possibly playing Week 4 after practice return",
+    "excerpt": "The Washington Commanders are currently gearing up for their upcoming matchup against the Indianapolis Colts, which will take place on Sunday. The Commanders are coming off a surprising home win over the Seattle Seahawks, with Marcus Mariota turning back the clock as he started in place of the injured Jayden Daniels. \n\n Daniels has since returned to practice after suffering an ugly dislocated elbow injury vs the Dallas Cowboys, and could return as soon as Sunday.\n\n Now, Mariota has weighed in…",
+    "publishedAt": "2026-09-30T17:30:12.000Z",
+    "collectedAt": "2026-09-30T20:32:17.483Z"
+  },
+  "pft-f86a85789a66": {
+    "id": "pft-f86a85789a66",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-is-one-of-10-commanders-limited-in-wednesdays-practice",
+    "title": "Jayden Daniels is one of 10 Commanders limited in Wednesday's practice",
+    "excerpt": "Commanders quarterback Jayden Daniels was limited in Wednesday's practice, the injury report confirmed.\n Coach Dan Quinn said before practice that Daniels would not participate in team work.\n Daniels' dislocated left elbow kept him out of the Week 3 win over the Seahawks, and his status for Sunday's game in London against the Colts is still in question. \n \"We won't put him out there before he’s ready ,\" Quinn said, via John Keim of ESPN. \"That's why it's important to trust the process. But him…",
+    "publishedAt": "2026-09-30T20:20:00.000Z",
+    "collectedAt": "2026-09-30T20:32:21.566Z"
   }
 }
