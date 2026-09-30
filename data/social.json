@@ -1,68 +1,4 @@
 {
-  "social-7a0da64d8f7d": {
-    "id": "social-7a0da64d8f7d",
-    "url": "https://x.com/Commanders/status/2101657632583127330",
-    "text": "IT'S OFFICIALLY GAMEDAY IN DALLAS",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/303/507/242/140/055/original/1c293bead24651db.jpg"
-    ],
-    "publishedAt": "2026-09-20T13:00:01.000Z",
-    "collectedAt": "2026-09-20T14:01:50.345Z"
-  },
-  "social-9354f62297af": {
-    "id": "social-9354f62297af",
-    "url": "https://x.com/BenStandig/status/2101648263816335455",
-    "text": "Dak Prescott is 13-2 against Washington with 32 TDP and five INTs. Job one for the Commanders in Dallas: Make him uncomfortable. Plus: — Inactives scoreboard — Terry McLaurin talks — The All-Q&A Question Team — Important Wk. 1 lie — Week 2 prediction commanders-notebook-slowing-down?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/303/343/748/083/278/original/c85aee436266a81d.jpg"
-    ],
-    "publishedAt": "2026-09-20T12:22:47.000Z",
-    "collectedAt": "2026-09-20T14:01:54.651Z"
-  },
-  "social-6be414deeeda": {
-    "id": "social-6be414deeeda",
-    "url": "https://x.com/BenStandig/status/2101645124384051702",
-    "text": "Not picking on Ox here, but I've seen others also make the false claim that a penalty for jumping on the goalpost base is new. Nope. Been on the books (since 2014, per the interwebs) as part of an overall anti-no-touching rule to avoid having the calibrated goalposts move.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-20T12:10:18.000Z",
-    "collectedAt": "2026-09-20T14:01:54.651Z"
-  },
-  "social-4a88f3c19fdc": {
-    "id": "social-4a88f3c19fdc",
-    "url": "https://mysportgallery.com/@slessans2/117303714528544689",
-    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-20T13:57:16.000Z",
-    "collectedAt": "2026-09-20T14:02:06.811Z"
-  },
-  "social-ba588b96a6ac": {
-    "id": "social-ba588b96a6ac",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mvxe3ixwdf2r",
-    "text": "Happy Gameday to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-20T13:57:17.300Z",
-    "collectedAt": "2026-09-20T14:02:06.811Z"
-  },
   "social-cf31e257ce8e": {
     "id": "social-cf31e257ce8e",
     "url": "https://x.com/JPFinlayNBCS/status/2101691381861212216",
@@ -11994,5 +11930,77 @@
     "images": [],
     "publishedAt": "2026-09-30T11:20:15.000Z",
     "collectedAt": "2026-09-30T12:05:46.902Z"
+  },
+  "social-218ae5cfac27": {
+    "id": "social-218ae5cfac27",
+    "url": "https://x.com/NickiJhabvala/status/2105297284367802554",
+    "text": "Dan Quinn said they waited an extra day to travel (they flew to Madrid the day after their loss to the Lions last year) to allow coaches another day to game plan.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T14:02:41.000Z",
+    "collectedAt": "2026-09-30T14:05:10.440Z"
+  },
+  "social-b0775db32b31": {
+    "id": "social-b0775db32b31",
+    "url": "https://x.com/NickiJhabvala/status/2105296092866756858",
+    "text": "Quinn on Daniels: \"We're not going to put him out there before he's ready. But him being back on the field, man, that's a good step for us. And we'll take it from there.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T13:57:57.000Z",
+    "collectedAt": "2026-09-30T14:05:10.440Z"
+  },
+  "social-d7138656169a": {
+    "id": "social-d7138656169a",
+    "url": "https://x.com/NickiJhabvala/status/2105295915263426635",
+    "text": "Dan Quinn said they want to see how Jayden Daniels looks in practice this week before making a QB decision for Sunday. So, he still has a chance to play against the Colts.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T13:57:15.000Z",
+    "collectedAt": "2026-09-30T14:05:10.440Z"
+  },
+  "social-969ec744fa0f": {
+    "id": "social-969ec744fa0f",
+    "url": "https://x.com/NickiJhabvala/status/2105295670227689734",
+    "text": "Dan Quinn said they'll continue to use both Rasul Douglas and Fabian Moreau outside at corner, and Mike Sainristil at nickel. \"I think that's the best thing for right now,\" Quinn said.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T13:56:16.000Z",
+    "collectedAt": "2026-09-30T14:05:10.440Z"
+  },
+  "social-bc74c19bdec2": {
+    "id": "social-bc74c19bdec2",
+    "url": "https://x.com/NickiJhabvala/status/2105294232994914540",
+    "text": "Dan Quinn said Jayden Daniels will practice. Today will be more of a jog-through. Quinn said if it were a normal practice, Daniels would be limited.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T13:50:34.000Z",
+    "collectedAt": "2026-09-30T14:05:10.440Z"
+  },
+  "social-751a2fda1bfe": {
+    "id": "social-751a2fda1bfe",
+    "url": "https://x.com/NickiJhabvala/status/2105287627918229560",
+    "text": "Glad someone answered my questions.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-09-30T13:24:19.000Z",
+    "collectedAt": "2026-09-30T14:05:10.441Z"
   }
 }
