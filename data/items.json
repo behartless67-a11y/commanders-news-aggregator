@@ -1643,18 +1643,6 @@
     "publishedAt": "2026-08-17T18:45:57.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
-  "athletic-jhabvala-2679140b9922": {
-    "id": "athletic-jhabvala-2679140b9922",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7516760/2026/08/16/marcus-mariota-commanders-mcl-injury-update",
-    "title": "Commanders QB Marcus Mariota sprains MCL, will likely miss rest of preseason: Sources",
-    "excerpt": "Mariota was injured in the first quarter of Washington's preseason win over the Miami Dolphins on Friday.",
-    "publishedAt": "2026-08-16T15:26:19.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
     "sourceId": "yahoo-nfl",
@@ -13906,5 +13894,89 @@
     "excerpt": "Injured quarterback Jayden Daniels traveled with the Washington Commanders to London and is set to participate in a “jog-through” in a limited capacity, head coach Dan Quinn shared with reporters Wednesday.\n The Commanders will play the Indianapolis Colts in London on Sunday, just two weeks after Daniels suffered an elbow injury for the second time over the past two seasons.\n Linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) were also expected to travel and practice this…",
     "publishedAt": "2026-09-30T14:28:05.000Z",
     "collectedAt": "2026-09-30T14:36:50.373Z"
+  },
+  "hogs-haven-8d1f6ffb3751": {
+    "id": "hogs-haven-8d1f6ffb3751",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/444916/no-suprise-film-study-says-sonny-styles-is-very-good-jayden-daniels-brace-austin-ekeler",
+    "title": "Commanders News: No suprise – film study says Sonny Styles is very good",
+    "excerpt": "The Daily Slop – 30 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n \n The scene in England pic.twitter.com/ABBORI2bB7 \n&mdash; John Keim (@john_keim) September 30, 2026 \n\n \n\n \n Jayden Daniels and the brace in London. pic.twitter.com/UdMaCYHVIe \n&mdash; Nicki Jhabvala…",
+    "publishedAt": "2026-09-30T15:30:00.000Z",
+    "collectedAt": "2026-09-30T16:11:32.426Z"
+  },
+  "riggos-rag-4cca02b5f946": {
+    "id": "riggos-rag-4cca02b5f946",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-returns-practice-decisive-washington-commanders-test-still-awaits",
+    "title": "Jayden Daniels returns to practice but decisive Commanders test still awaits",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels returned to the practice field in London, but his more decisive test still awaits.",
+    "publishedAt": "2026-09-30T16:00:03.000Z",
+    "collectedAt": "2026-09-30T16:11:32.945Z"
+  },
+  "riggos-rag-48f7465ae671": {
+    "id": "riggos-rag-48f7465ae671",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/ranking-every-nfl-team-s-2026-uniform-options-from-worst-to-best-01m3sex33wkn",
+    "title": "Ranking every NFL team's 2026 uniform options from worst to best",
+    "excerpt": "The Buffalo Bills' new alternate uniform has them plummetting in the rankings of the best and worst uniforms in the NFL.",
+    "publishedAt": "2026-09-30T15:30:07.000Z",
+    "collectedAt": "2026-09-30T16:11:32.945Z"
+  },
+  "clutchpoints-b444468b1b97": {
+    "id": "clutchpoints-b444468b1b97",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-dan-quinn-hasnt-ruled-out-jayden-daniels-for-week-4-vs-colts",
+    "title": "Commanders’ Dan Quinn hasn’t ruled out Jayden Daniels for Week 4 vs. Colts",
+    "excerpt": "Veteran backup Marcus Mariota stepped into the starting lineup for the Washington franchise during a challenging period and recently led the team to a dramatic victory. He showcased his skills by throwing three touchdown passes and sealing the win with a tough scramble that kept the chains moving. During an analytical breakdown shared on X, NFL on CBS analysts Kyle Long and Russell Wilson highlighted the “luxury” that Mariota provides the Washington offense. His physical profile and skill set…",
+    "publishedAt": "2026-09-30T14:48:58.000Z",
+    "collectedAt": "2026-09-30T16:11:33.816Z"
+  },
+  "wjla-commanders-f2267ee681a4": {
+    "id": "wjla-commanders-f2267ee681a4",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/daniels-has-chance-to-start-for-commanders-vs-colts-in-london-despite-elbow-injury",
+    "title": "Daniels has chance to start for Commanders vs. Colts in London despite elbow injury",
+    "excerpt": "WATFORD, England (AP) — Commanders quarterback Jayden Daniels has a shot to start Sunday against the Indianapolis Colts and would wear a brace on his injured le",
+    "publishedAt": "2026-09-30T15:37:26.000Z",
+    "collectedAt": "2026-09-30T16:11:46.373Z"
+  },
+  "yahoo-nfl-0736f5d40bfe": {
+    "id": "yahoo-nfl-0736f5d40bfe",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/sonny-styles-stepped-commanders-both-153000364.html",
+    "title": "Sonny Styles has stepped up for Commanders with both play and on-field leadership - Daily Slop",
+    "excerpt": "The Daily Slop – 30 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n The scene in England pic.twitter.com/ABBORI2bB7 \n— John Keim (@john_keim) September 30, 2026 \n Jayden Daniels and the brace in London. pic.twitter.com/UdMaCYHVIe \n— Nicki Jhabvala (@NickiJhabvala)…",
+    "publishedAt": "2026-09-30T15:30:00.000Z",
+    "collectedAt": "2026-09-30T16:11:47.440Z"
+  },
+  "yahoo-nfl-de4c2c8c50ec": {
+    "id": "yahoo-nfl-de4c2c8c50ec",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-week-4-power-rankings-150000261.html",
+    "title": "Seahawks Week 4 power rankings: A fall from the top after surprise loss to Commanders",
+    "excerpt": "Entering Week 3, the Seattle Seahawks were widely considered the best team in the NFL . However, when you are on top of the mountain, there is only one way to go; down. After losing to the Washington Commanders last week, the Seahawks will very likely slip down the national media power rankings this week. However, how far will they slip? Let’s take a look at five national media sites (NFL.com, CBS Sports, Bleacher Report (B/R), Pro Football Talk (PFT), and ESPN) to see where they rank Seattle.…",
+    "publishedAt": "2026-09-30T15:00:00.000Z",
+    "collectedAt": "2026-09-30T16:11:47.440Z"
   }
 }
