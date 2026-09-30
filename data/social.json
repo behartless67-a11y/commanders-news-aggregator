@@ -12150,5 +12150,67 @@
     "images": [],
     "publishedAt": "2026-09-30T12:25:49.000Z",
     "collectedAt": "2026-09-30T14:05:45.851Z"
+  },
+  "social-3ec7f7fb0ce0": {
+    "id": "social-3ec7f7fb0ce0",
+    "url": "https://x.com/JPFinlayNBCS/status/2105301419624743065",
+    "text": "What percentage of fans is higher:",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-09-30T14:19:07.000Z",
+    "collectedAt": "2026-09-30T14:36:53.700Z"
+  },
+  "social-a07925808c32": {
+    "id": "social-a07925808c32",
+    "url": "https://x.com/john_keim/status/2105301609316004182",
+    "text": "Jayden Daniels warming up with a brace on his left elbow (which he’ll wear the rest of the season of course):",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-09-30T14:19:52.000Z",
+    "collectedAt": "2026-09-30T14:36:54.624Z"
+  },
+  "social-01501d279dcc": {
+    "id": "social-01501d279dcc",
+    "url": "https://x.com/BenStandig/status/2105297517432733851",
+    "text": "Dan Quinn in London on Jayden Daniels: The QB will practice. However, if a normal session - today is more like a jog-through - he would be “limited.” Said there is a chance Daniels plays on Sunday. “We're not going to put him out there before he's ready.” I remain skeptical about 5 facing the Colts. Skepticism is part of my charm",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-09-30T14:03:37.000Z",
+    "collectedAt": "2026-09-30T14:36:56.155Z"
+  },
+  "social-dae499cbf779": {
+    "id": "social-dae499cbf779",
+    "url": "https://x.com/tashanreed/status/2105301889923350973",
+    "text": "QB Jayden Daniels and the rest of the #Commanders are just in T-shirts today. They just landed this morning, so they're doing a light walkthrough. They'll do real practices Thursday and Friday.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/360/433/081/256/191/original/9fcc01df48db6c12.jpg"
+    ],
+    "publishedAt": "2026-09-30T14:20:59.000Z",
+    "collectedAt": "2026-09-30T14:36:57.501Z"
+  },
+  "social-2174c5b7edd4": {
+    "id": "social-2174c5b7edd4",
+    "url": "https://x.com/tashanreed/status/2105297836417982853",
+    "text": "They'll decide Friday whether Daniels is going to play.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-09-30T14:04:53.000Z",
+    "collectedAt": "2026-09-30T14:36:57.501Z"
   }
 }
