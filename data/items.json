@@ -683,18 +683,6 @@
     "publishedAt": "2026-08-18T15:52:55.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
-  "wjla-commanders-bdeaa44ec4e8": {
-    "id": "wjla-commanders-bdeaa44ec4e8",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/kicker-jake-moody-release-training-camp-kicking-competition-sources-washington-dc-sports-ashburn",
-    "title": "Washington Commanders are releasing kicker Jake Moody, AP source says",
-    "excerpt": "The Washington Commanders are releasing kicker Jake Moody, according to a person with knowledge of the decision.The person spoke to The Associated Press on cond",
-    "publishedAt": "2026-08-17T20:22:12.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
   "riggos-rag-efbf5c50dff3": {
     "id": "riggos-rag-efbf5c50dff3",
     "sourceId": "riggos-rag",
@@ -14362,5 +14350,53 @@
     "excerpt": "Washington Commanders quarterback Jayden Daniels was a limited participant for a second straight practice as he begins working his way toward a return to the field after dislocating his left elbow in Week 2 .\n Daniels will sport a brace on his left arm for the rest of the season that will see his elbow bent slightly in order to avoid another dislocation. The third-year signal-caller said he is not concerned about reinjury once he's back on the field.\n \"That's what the brace is for,\" Daniels…",
     "publishedAt": "2026-10-01T18:40:57.000Z",
     "collectedAt": "2026-10-01T20:05:39.637Z"
+  },
+  "hogs-haven-96472f06828d": {
+    "id": "hogs-haven-96472f06828d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/445274/commanders-vs-colts-thursday-injury-report-chig-okonkwo-frankie-luvu-rachaad-white",
+    "title": "Commanders vs. Colts Thursday injury report: Chig Okonkwo nearing return",
+    "excerpt": "A pair of key Commanders are inching ever closer to a return to action after Week 1 injuries. Tight end Chig Okonkwo (hamstring) and linebacker Frankie Luvu (groin) were limited for a second straight day on Thursday, which was also set to be the most physical session of the week. \n\n That would be huge in both instances, especially at linebacker. The Commanders have lost Leo Chenal for the season and Jordan Magee is on injured reserve.\n\n Running back Rachaad White (shoulder) missed practice for…",
+    "publishedAt": "2026-10-01T20:05:53.000Z",
+    "collectedAt": "2026-10-01T20:47:45.885Z"
+  },
+  "clutchpoints-03d7cd0dcb14": {
+    "id": "clutchpoints-03d7cd0dcb14",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-stays-cryptic-week-4-injury-status-london",
+    "title": "Commanders QB Jayden Daniels stays cryptic on Week 4 injury status in London",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels remained cryptic about his availability for Week 4 as the team prepares to face the Indianapolis Colts in London .\n\n Daniels took another step toward a potential return Thursday, with The Athletic’s Nicki Jhabvala sharing a video on X, formerly known as Twitter, of the quarterback getting throwing reps during practice.\n\n Speaking to Pro Football Talk’s Josh Alper, the 25-year-old offered a brief update on his recovery.\n\n “I feel good, feel good…",
+    "publishedAt": "2026-10-01T16:17:29.000Z",
+    "collectedAt": "2026-10-01T20:47:47.793Z"
+  },
+  "athletic-jhabvala-e861b32f77b3": {
+    "id": "athletic-jhabvala-e861b32f77b3",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7650129/2026/10/01/jayden-daniels-elbow-brace-injury-risk-commanders",
+    "title": "Jayden Daniels not concerned about reinjury risk: 'That's what the brace is for'",
+    "excerpt": "Daniels has returned to practice ahead of Week 4, appearing much like he did pre-injury, except with a large new brace on his left arm.",
+    "publishedAt": "2026-10-01T20:06:51.000Z",
+    "collectedAt": "2026-10-01T20:47:51.221Z"
+  },
+  "commanders-youtube-d64502c7d430": {
+    "id": "commanders-youtube-d64502c7d430",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=R6wTf_Bxogo",
+    "title": "Colts and Commanders: A Throw Down from London Town | Command Center (edited)",
+    "excerpt": "",
+    "publishedAt": "2026-10-01T20:00:24.000Z",
+    "collectedAt": "2026-10-01T20:47:51.414Z"
   }
 }

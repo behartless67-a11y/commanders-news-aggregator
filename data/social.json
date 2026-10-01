@@ -71,30 +71,6 @@
     "publishedAt": "2026-09-21T21:00:16.116Z",
     "collectedAt": "2026-09-21T21:51:04.316Z"
   },
-  "social-85c05f4dae81": {
-    "id": "social-85c05f4dae81",
-    "url": "https://x.com/somos_FOX/status/2102135049319526546",
-    "text": "\"SIGO ESPERANDO COSAS MEJORES\" ¿Qué fue lo que hizo #DallasCowboys a la defensa contra #Commanders ? 🎙️ @mlctysonlopez@twitter.com lo analiza: #FOXNFLWeekly",
-    "handle": "somos_FOX",
-    "author": "FOX",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-21T20:37:06.000Z",
-    "collectedAt": "2026-09-21T21:51:04.316Z"
-  },
-  "social-f3a9fdc57b83": {
-    "id": "social-f3a9fdc57b83",
-    "url": "https://x.com/somos_FOX/status/2102132888015663363",
-    "text": "\"JUGADAS EXPLOSIVAS🧨\" @CarlosRosadoV@twitter.com analiza la ofensiva de Prescott y #DallasCowboys ante #Commanders . #FOXNFLWeekly",
-    "handle": "somos_FOX",
-    "author": "FOX",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-21T20:28:30.000Z",
-    "collectedAt": "2026-09-21T21:51:04.316Z"
-  },
   "social-2b59bf599cbc": {
     "id": "social-2b59bf599cbc",
     "url": "https://x.com/BenStandig/status/2102162055503794557",
@@ -9519,5 +9495,35 @@
     "images": [],
     "publishedAt": "2026-10-01T19:55:23.000Z",
     "collectedAt": "2026-10-01T20:05:58.616Z"
+  },
+  "social-08f866572a2a": {
+    "id": "social-08f866572a2a",
+    "url": "https://x.com/Commanders/status/2105757142842028167",
+    "text": "Growing the game in the UK! @CPFC | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/552/469/814/317/original/af6f55e70fc3947e.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/552/514/618/182/original/6b4aa72958f48e97.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/552/536/673/322/original/762fcc800fd2af03.jpg"
+    ],
+    "publishedAt": "2026-10-01T20:30:00.000Z",
+    "collectedAt": "2026-10-01T20:47:56.067Z"
+  },
+  "social-d4828b636f78": {
+    "id": "social-d4828b636f78",
+    "url": "https://x.com/BenStandig/status/2105753464769044979",
+    "text": "Jayden Daniels \"limited\" in practice.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/496/724/324/342/original/68a472e6c5b3088a.jpg"
+    ],
+    "publishedAt": "2026-10-01T20:15:23.000Z",
+    "collectedAt": "2026-10-01T20:48:00.395Z"
   }
 }
