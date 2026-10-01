@@ -1,28 +1,4 @@
 {
-  "social-7165c158f847": {
-    "id": "social-7165c158f847",
-    "url": "https://x.com/JPFinlayNBCS/status/2102078335127814652",
-    "text": "RE: tatuses/2102077941081686487 Seattle D held Arizona to same amount of punts as points. And they're headed to DC next weekend",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-21T16:51:44.000Z",
-    "collectedAt": "2026-09-21T17:52:35.690Z"
-  },
-  "social-c9ab1fca15c9": {
-    "id": "social-c9ab1fca15c9",
-    "url": "https://x.com/JPFinlayNBCS/status/2102070218088419479",
-    "text": "Wild considering his reaction. Like Paul Pierce in the wheelchair",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-21T16:19:29.000Z",
-    "collectedAt": "2026-09-21T17:52:35.690Z"
-  },
   "social-a71642330109": {
     "id": "social-a71642330109",
     "url": "https://x.com/RichEisenShow/status/2102086949456445648",
@@ -9680,5 +9656,29 @@
     "images": [],
     "publishedAt": "2026-10-01T15:04:51.000Z",
     "collectedAt": "2026-10-01T16:05:45.201Z"
+  },
+  "social-0a003cee9e20": {
+    "id": "social-0a003cee9e20",
+    "url": "https://x.com/JPFinlayNBCS/status/2105695820192575867",
+    "text": "Live All Ears tonight from London. At a pub. Should be a fun one s=iT1fhSNKwBiXeurF",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-01T16:26:20.000Z",
+    "collectedAt": "2026-10-01T16:56:51.341Z"
+  },
+  "social-c07ee4b286b2": {
+    "id": "social-c07ee4b286b2",
+    "url": "https://x.com/FantasyProsNFL/status/2105695068300423456",
+    "text": "Jayden Daniels (elbow) taking recovery day-to-day 4/jayden-daniels-elbow-taking-recovery-day-to-day.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @koslow_ari@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-01T16:23:20.000Z",
+    "collectedAt": "2026-10-01T16:57:06.909Z"
   }
 }
