@@ -1547,18 +1547,6 @@
     "publishedAt": "2026-08-18T11:00:34.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
-  "athletic-jhabvala-b2480a6baf59": {
-    "id": "athletic-jhabvala-b2480a6baf59",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7519481/2026/08/17/commanders-kicker-jake-moody-release",
-    "title": "Commanders to release K Jake Moody, give starting job to rookie Drew Stevens",
-    "excerpt": "Moody was 36 of 47 in camp practices while Stevens has gone 43 of 48.",
-    "publishedAt": "2026-08-17T18:45:57.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
     "sourceId": "yahoo-nfl",
@@ -14326,5 +14314,53 @@
     "excerpt": "WATFORD, England (AP) — Washington Commanders quarterback Jayden Daniels said Thursday he has no concerns about re-injuring his left elbow and is \"taking it day",
     "publishedAt": "2026-10-01T16:46:05.000Z",
     "collectedAt": "2026-10-01T18:05:40.821Z"
+  },
+  "riggos-rag-fcc193265e59": {
+    "id": "riggos-rag-fcc193265e59",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-puts-commanders-on-spot-with-determined-week-4-push",
+    "title": "Jayden Daniels puts Commanders on the spot with determined Week 4 push",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels seems confident he can start in Week 4 against the Indianapolis Colts.",
+    "publishedAt": "2026-10-01T19:04:20.000Z",
+    "collectedAt": "2026-10-01T20:05:34.210Z"
+  },
+  "riggos-rag-a2e1247792a6": {
+    "id": "riggos-rag-a2e1247792a6",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-keeps-mike-sainristil-margins-commanders-future-fades",
+    "title": "Dan Quinn keeps Mike Sainristil on the margins as Commanders future fades",
+    "excerpt": "Washington Commanders head coach Dan Quinn plans to keep Mike Sainristil in a reduced role after his poor start to the campaign.",
+    "publishedAt": "2026-10-01T18:08:26.000Z",
+    "collectedAt": "2026-10-01T20:05:34.210Z"
+  },
+  "pft-945e47f1cf1d": {
+    "id": "pft-945e47f1cf1d",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-was-a-limited-participant-in-practice-again-on-thursday",
+    "title": "Jayden Daniels was a limited participant in practice again on Thursday",
+    "excerpt": "Commanders quarterback Jayden Daniels said on Thursday that he's taking things day by day in his return from a dislocated left elbow and his status on the team's injury report remained the same as it was on Wednesday. \n Daniels was a limited participant for the second straight day. Daniels will wear a brace on his left arm and said on Thursday that it has no negative impact on his ability to play. He also said it gave him confidence that he can avoid the kind of repeat injury that helped sink…",
+    "publishedAt": "2026-10-01T20:01:18.000Z",
+    "collectedAt": "2026-10-01T20:05:39.425Z"
+  },
+  "yahoo-nfl-205ce0a09af8": {
+    "id": "yahoo-nfl-205ce0a09af8",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-returns-to-commanders-practice-not-concerned-about-potentially-reinjuring-elbow-184057810.html",
+    "title": "Jayden Daniels returns to Commanders' practice, not concerned about potentially reinjuring elbow",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels was a limited participant for a second straight practice as he begins working his way toward a return to the field after dislocating his left elbow in Week 2 .\n Daniels will sport a brace on his left arm for the rest of the season that will see his elbow bent slightly in order to avoid another dislocation. The third-year signal-caller said he is not concerned about reinjury once he's back on the field.\n \"That's what the brace is for,\" Daniels…",
+    "publishedAt": "2026-10-01T18:40:57.000Z",
+    "collectedAt": "2026-10-01T20:05:39.637Z"
   }
 }

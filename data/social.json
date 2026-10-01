@@ -9414,5 +9414,110 @@
     "images": [],
     "publishedAt": "2026-10-01T19:51:55.000Z",
     "collectedAt": "2026-10-01T20:05:10.092Z"
+  },
+  "social-5f61e071312a": {
+    "id": "social-5f61e071312a",
+    "url": "https://x.com/Commanders/status/2105747074822074771",
+    "text": "Thursday injury report #INDvsWAS | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/390/680/969/819/original/e81aa99075fe19a1.jpg"
+    ],
+    "publishedAt": "2026-10-01T19:50:00.000Z",
+    "collectedAt": "2026-10-01T20:05:41.070Z"
+  },
+  "social-5bae62c05837": {
+    "id": "social-5bae62c05837",
+    "url": "https://x.com/Commanders/status/2105743978469412999",
+    "text": "Another day across the pond 🇬🇧",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-01T19:37:41.000Z",
+    "collectedAt": "2026-10-01T20:05:41.071Z"
+  },
+  "social-30a44734af57": {
+    "id": "social-30a44734af57",
+    "url": "https://x.com/Commanders/status/2105721912823611442",
+    "text": "cheers to Thursday practice ✅ @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/998/214/552/535/original/337a9c2e6cec95f4.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/998/297/671/811/original/9e3ad8236a4f4242.jpg"
+    ],
+    "publishedAt": "2026-10-01T18:10:01.000Z",
+    "collectedAt": "2026-10-01T20:05:41.071Z"
+  },
+  "social-20c89baf4c0c": {
+    "id": "social-20c89baf4c0c",
+    "url": "https://x.com/john_keim/status/2105748609413300574",
+    "text": "Jayden Daniels was a limited participant Rachaad White with a second DNP",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/367/419/899/982/897/original/7ed8fcb28785bafb.jpg"
+    ],
+    "publishedAt": "2026-10-01T19:56:06.000Z",
+    "collectedAt": "2026-10-01T20:05:43.803Z"
+  },
+  "social-fa222a4c2609": {
+    "id": "social-fa222a4c2609",
+    "url": "https://x.com/tashanreed/status/2105748655043141633",
+    "text": "No changes today for Daniels. He was limited again.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-01T19:56:16.000Z",
+    "collectedAt": "2026-10-01T20:05:46.607Z"
+  },
+  "social-eb234516413f": {
+    "id": "social-eb234516413f",
+    "url": "https://x.com/tashanreed/status/2105748012341297386",
+    "text": "No changes today. Daniels was limited again.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-01T19:53:43.000Z",
+    "collectedAt": "2026-10-01T20:05:46.607Z"
+  },
+  "social-4055d62cd2d4": {
+    "id": "social-4055d62cd2d4",
+    "url": "https://x.com/Matt_Fortuna/status/2105689516795433274",
+    "text": "Programming note: I am pleased to announce that I am joining Sports Business Journal as its new college sports insider! @SBJ has been the go-to source for so many of us in this business for years, and I am pumped to join the outlet’s deep and talented roster.",
+    "handle": "Matt_Fortuna",
+    "author": "Matt Fortuna",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/521/439/474/202/original/6a21b2dfcd376dc4.jpg"
+    ],
+    "publishedAt": "2026-10-01T16:01:17.000Z",
+    "collectedAt": "2026-10-01T20:05:46.607Z"
+  },
+  "social-03f901ad52e5": {
+    "id": "social-03f901ad52e5",
+    "url": "https://x.com/FantasyProsNFL/status/2105748430014366157",
+    "text": "Jayden Daniels (elbow) limited again Thursday 2/jayden-daniels-elbow-limited-again-thursday.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @leo_sells@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-01T19:55:23.000Z",
+    "collectedAt": "2026-10-01T20:05:58.616Z"
   }
 }
