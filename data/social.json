@@ -1,52 +1,4 @@
 {
-  "social-b16a5177c2e5": {
-    "id": "social-b16a5177c2e5",
-    "url": "https://x.com/john_keim/status/2102008318805815543",
-    "text": "Welp. On video talking about a disaster of a day. Jayden Daniels. Need a bedrock on this team: the D didn’t help at all. No turnovers again. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-21T12:13:31.000Z",
-    "collectedAt": "2026-09-21T12:28:01.374Z"
-  },
-  "social-3d2c54254c4e": {
-    "id": "social-3d2c54254c4e",
-    "url": "https://x.com/RapSheet/status/2102011089911222635",
-    "text": "From @gmfb@twitter.com : The latest on what today holds for injuries to #Bears QB Caleb Williams and #Commanders QB Jayden Daniels.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-09-21T12:24:31.000Z",
-    "collectedAt": "2026-09-21T12:28:08.918Z"
-  },
-  "social-d0c1410a0567": {
-    "id": "social-d0c1410a0567",
-    "url": "https://x.com/JosinaAnderson/status/2102010571268800837",
-    "text": "NEW: 1on1 #Cowboys WR CeeDee Lamb On trash talk w/ #Commanders CB Amik Robertson & then racking 153ry; 2TDs: \"Little rivalry banter ain’t hurt nobody. He keeps it interesting. I’m happy to have him in this division. Can’t wait to see him again” FULL VID:",
-    "handle": "JosinaAnderson",
-    "author": "Josina Anderson",
-    "label": "",
-    "sourceKey": "@JosinaAnderson",
-    "images": [],
-    "publishedAt": "2026-09-21T12:22:28.000Z",
-    "collectedAt": "2026-09-21T12:28:11.423Z"
-  },
-  "social-438cdb6d2e1b": {
-    "id": "social-438cdb6d2e1b",
-    "url": "https://x.com/tashanreed/status/2102032196752007203",
-    "text": "With Jayden Daniels injured again, where do the #Commanders go from here? /09/21/jayden-daniels-is-injured-again-where-do-commanders-go-here/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-21T13:48:24.000Z",
-    "collectedAt": "2026-09-21T14:07:42.367Z"
-  },
   "social-f39418ffefa8": {
     "id": "social-f39418ffefa8",
     "url": "https://x.com/john_keim/status/2102044495155953945",
@@ -9434,5 +9386,29 @@
     "images": [],
     "publishedAt": "2026-10-01T11:54:05.000Z",
     "collectedAt": "2026-10-01T12:05:44.369Z"
+  },
+  "social-bc397caa2236": {
+    "id": "social-bc397caa2236",
+    "url": "https://x.com/NickiJhabvala/status/2105651933721550897",
+    "text": "Ben Sinnott (rib) is wearing a no-contact jersey.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-01T13:31:56.000Z",
+    "collectedAt": "2026-10-01T14:05:10.198Z"
+  },
+  "social-a43f6d968122": {
+    "id": "social-a43f6d968122",
+    "url": "https://x.com/NickiJhabvala/status/2105648061339111753",
+    "text": "Commanders are practicing in the rain at a golf resort about an hour north of London. Normal week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-01T13:16:33.000Z",
+    "collectedAt": "2026-10-01T14:05:10.198Z"
   }
 }
