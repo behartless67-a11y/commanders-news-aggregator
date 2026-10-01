@@ -1,42 +1,4 @@
 {
-  "social-f39418ffefa8": {
-    "id": "social-f39418ffefa8",
-    "url": "https://x.com/john_keim/status/2102044495155953945",
-    "text": "In the first two games, when quarterbacks aren't considered under duresss, Washington ranks 31st in completion percentage allowed and last in yards per attempt.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-21T14:37:16.000Z",
-    "collectedAt": "2026-09-21T16:07:06.275Z"
-  },
-  "social-a53262bba6ca": {
-    "id": "social-a53262bba6ca",
-    "url": "https://x.com/tashanreed/status/2102042653374185635",
-    "text": "I'll be livestreaming The Tashan Reed Show at 3 p.m. ET on Tuesday. We'll break down Jayden Daniels' dislocated elbow and how everything went wrong against Dallas. Then I'll welcome my first guest — the great @MikeDugar@twitter.com — to preview the Seahawks game: 374408?utm_source=live-stream-scheduled-upsell",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/309/512/303/488/421/original/6957a677ef8b3156.jpg"
-    ],
-    "publishedAt": "2026-09-21T14:29:57.000Z",
-    "collectedAt": "2026-09-21T16:07:08.852Z"
-  },
-  "social-4a0d3356be92": {
-    "id": "social-4a0d3356be92",
-    "url": "https://x.com/JosinaAnderson/status/2102049423199015091",
-    "text": "NEW: 1-on-1 with #Cowboys RB Javonte Williams: Williams reacts to the win, discusses CeeDee Lamb big day, status of the run game, smiles when I bring up Commanders CB Amik Robertson's name, discuses Jayden Daniels' injury and somehow is the only person on Earth who thought Carolina Football won Saturday until Sam Howell had to tell him their alma mater lost-- even though Javonte was at Sam's house watching the same game at the time... Ha. Full Interview: , Watch, Support: :",
-    "handle": "JosinaAnderson",
-    "author": "Josina Anderson",
-    "label": "Insider",
-    "sourceKey": "@JosinaAnderson",
-    "images": [],
-    "publishedAt": "2026-09-21T14:56:51.000Z",
-    "collectedAt": "2026-09-21T16:07:16.046Z"
-  },
   "social-7165c158f847": {
     "id": "social-7165c158f847",
     "url": "https://x.com/JPFinlayNBCS/status/2102078335127814652",
@@ -9582,5 +9544,17 @@
     "images": [],
     "publishedAt": "2026-10-01T12:29:19.000Z",
     "collectedAt": "2026-10-01T14:05:52.072Z"
+  },
+  "social-e58e13b1d41f": {
+    "id": "social-e58e13b1d41f",
+    "url": "https://x.com/JPFinlayNBCS/status/2105673556432666779",
+    "text": "Thru 3 games the Colts D is 29th in points allowed and dead last in yards allowed. Got shredded Week 1 by the Ravens (506) & Week 2 vs Chiefs (523), much better last week vs Houston (223).",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-01T14:57:52.000Z",
+    "collectedAt": "2026-10-01T15:05:29.200Z"
   }
 }

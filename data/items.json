@@ -539,18 +539,6 @@
     "publishedAt": "2026-08-17T17:30:24.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
-  "clutchpoints-368fcf1ef03c": {
-    "id": "clutchpoints-368fcf1ef03c",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-add-ex-lions-rb-amid-injury-concerns",
-    "title": "Commanders add ex-Lions RB amid injury concerns",
-    "excerpt": "The Washington Commanders were without Jeremy McNichols in their preseason opener against the Miami Dolphins as he deals with a quadriceps injury, and there is a chance he misses the coming weeks. That led the Commanders to go out and add another running back to the roster, and he’s a former Detroit Lion, according to ESPN’s John Keim.\n\n “The Commanders are signing RB Craig Reynolds, per source. He worked out for the team Sunday. With Jeremy McNichols out a bit with a quad injury, needed…",
-    "publishedAt": "2026-08-17T14:29:50.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
   "commanders-youtube-100a3c1fe1c7": {
     "id": "commanders-youtube-100a3c1fe1c7",
     "sourceId": "commanders-youtube",
@@ -14242,5 +14230,41 @@
     "excerpt": "",
     "publishedAt": "2026-10-01T12:16:30.000Z",
     "collectedAt": "2026-10-01T14:05:36.240Z"
+  },
+  "hogs-haven-01f4e25566b2": {
+    "id": "hogs-haven-01f4e25566b2",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/general/444773/one-month-heres-how-youre-using-new-sbnation-app",
+    "title": "Our first month with an app broke our commenting records",
+    "excerpt": "(Photo by Jonathan Newton/The Washington Post via Getty Images) \n \n A month ago we announced the release of our new app, which you can find here or by searching SB Nation in your neighborhood app store. Quite a few of you have downloaded it over the past month and have been using it. \n\n The goal with this app was to make it easier to join the community, and specifically comment, read the comments, and make your own posts, as well as keeping all the community posts – articles on the front page,…",
+    "publishedAt": "2026-10-01T14:00:00.000Z",
+    "collectedAt": "2026-10-01T15:05:20.455Z"
+  },
+  "riggos-rag-17dea6ee3266": {
+    "id": "riggos-rag-17dea6ee3266",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/david-blough-early-head-coach-buzz-gives-commanders-best-possible-problem",
+    "title": "David Blough’s early head coach buzz gives Commanders the best possible problem",
+    "excerpt": "Washington Commanders offensive coordinator David Blough is gaining early head coaching buzz after just three games in the role.",
+    "publishedAt": "2026-10-01T14:30:00.000Z",
+    "collectedAt": "2026-10-01T15:05:20.923Z"
+  },
+  "commanders-youtube-a5172e6c58aa": {
+    "id": "commanders-youtube-a5172e6c58aa",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=BX9MJvIhb6c",
+    "title": "LIVE: QB Jayden Daniels Speaks To The Media After Practice In London",
+    "excerpt": "",
+    "publishedAt": "2026-10-01T15:04:26.000Z",
+    "collectedAt": "2026-10-01T15:05:22.670Z"
   }
 }
