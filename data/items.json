@@ -14266,5 +14266,41 @@
     "excerpt": "",
     "publishedAt": "2026-10-01T15:04:26.000Z",
     "collectedAt": "2026-10-01T15:05:22.670Z"
+  },
+  "riggos-rag-6f0b72b745c4": {
+    "id": "riggos-rag-6f0b72b745c4",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-could-unlock-joshua-josephs-daring-switch-inside-linebacker",
+    "title": "Commanders could unlock Joshua Josephs with daring switch to inside linebacker",
+    "excerpt": "The Washington Commanders could unlock fifth-round rookie Joshua Josephs with a daring switch to inside linebacker.",
+    "publishedAt": "2026-10-01T16:00:02.000Z",
+    "collectedAt": "2026-10-01T16:05:33.116Z"
+  },
+  "pft-7e356ede6a7e": {
+    "id": "pft-7e356ede6a7e",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-on-return-from-dislocated-elbow-just-taking-it-day-by-day",
+    "title": "Jayden Daniels on return from dislocated elbow: Just taking it day by day",
+    "excerpt": "Commanders quarterback Jayden Daniels returned to practice on Wednesday for the first time since dislocating his left elbow in the team's Week 2 loss to the Cowboys and he his return to game action was a chief topic at his press conference on Thursday. \n Daniels has not been ruled out of Sunday's game against the Colts in London and he was asked if he thinks he'll be able to play this weekend. Daniels said that he's taking things one day at a time. \n \"I feel good, feel good to be back. Just…",
+    "publishedAt": "2026-10-01T15:46:58.000Z",
+    "collectedAt": "2026-10-01T16:05:37.948Z"
+  },
+  "yahoo-nfl-47a24bdd2364": {
+    "id": "yahoo-nfl-47a24bdd2364",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/22-film-review-good-bad-150000696.html",
+    "title": "All-22 film review: The good and bad from the Seahawks loss to the Commanders",
+    "excerpt": "The Seattle Seahawks entered Week 3 after two wins to open the season, but the Washington Commanders exposed some of the problems that had been hidden during those first two weeks.\n The Seahawks still moved the ball well (only in the air), finishing with 437 total yards and 28 first downs while averaging 6.8 yards per play. Sam Darnold threw for 379 yards and four touchdowns, while Jaxon Smith-Njigba continued his ridiculous start to the season with 10 catches for 128 yards and two touchdowns.…",
+    "publishedAt": "2026-10-01T15:00:00.000Z",
+    "collectedAt": "2026-10-01T16:05:38.323Z"
   }
 }
