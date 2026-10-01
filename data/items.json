@@ -551,18 +551,6 @@
     "publishedAt": "2026-08-17T14:29:50.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
-  "clutchpoints-ddd746041f94": {
-    "id": "clutchpoints-ddd746041f94",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-trolled-by-mls-team",
-    "title": "Commanders’ Jayden Daniels is even getting trolled by an MLS team",
-    "excerpt": "In the wild, wild world of internet troll culture, Jayden Daniels has been an unfortunate recipient. Since the Washington Commanders quarterback opened up a scathing dispute with LSU football, social media trolling has…",
-    "publishedAt": "2026-08-17T12:42:26.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
   "commanders-youtube-100a3c1fe1c7": {
     "id": "commanders-youtube-100a3c1fe1c7",
     "sourceId": "commanders-youtube",
@@ -14206,5 +14194,53 @@
     "excerpt": "INDIANAPOLIS, IN - OCTOBER 30: Washington Commanders wide receiver Terry McLaurin (17) makes a catch for 33 yards as Indianapolis Colts cornerback Stephon Gilmore (5) defends late in the fourth quarter of the game at Lucas Oil Stadium on October 30, 2022. (Photo by John McDonnell/The Washington Post via Getty Images) Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026.…",
     "publishedAt": "2026-10-01T11:00:00.000Z",
     "collectedAt": "2026-10-01T12:05:37.303Z"
+  },
+  "hogs-haven-1a7da7de7e19": {
+    "id": "hogs-haven-1a7da7de7e19",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/445351/javon-kinlaw-huge-factor-in-2026-elite-run-defense-klavon-chaisson-joshua-josephs",
+    "title": "Commanders News: Javon Kinlaw, a huge factor in 2026 elite run defense",
+    "excerpt": "The Daily Slop – 1 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Washington Post (paywall)\n\n Jayden Daniels returns to Commanders practice with left arm brace \n\n View Link \n\n Commanders quarterback Jayden Daniels practices Wednesday in Watford, England.…",
+    "publishedAt": "2026-10-01T12:44:30.000Z",
+    "collectedAt": "2026-10-01T14:05:34.492Z"
+  },
+  "hogs-haven-491ff59f3c0a": {
+    "id": "hogs-haven-491ff59f3c0a",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/445396/david-blough-qb-situation-fluid-jayden-daniels-return-practice",
+    "title": "David Blough: QB situation is fluid with Jayden Daniels’ return to practice",
+    "excerpt": "The Washington Commanders are in London for a “home” game against the Indianapolis Colts. This is the first time that new coordinators David Blough and Daronte Jones have been in their positions for an international game, and everyone is adjusting their schedules. Jayden Daniels dislocated his left elbow in Week 2, and didn’t play against the Seahawks, but did travel to London. Head coach Dan Quinn has left open the possibility that Daniels could play on Sunday, but if he can’t go Marcus…",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "collectedAt": "2026-10-01T14:05:34.492Z"
+  },
+  "riggos-rag-69f19cdacb2e": {
+    "id": "riggos-rag-69f19cdacb2e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-must-answer-cowboys-joey-porter-jr-trade-before-costs-them",
+    "title": "Commanders must answer Cowboys’ Joey Porter Jr. trade before it costs them",
+    "excerpt": "The Washington Commanders must answer the Dallas Cowboys’ trade for cornerback Joey Porter Jr. before it costs them.",
+    "publishedAt": "2026-10-01T13:00:01.000Z",
+    "collectedAt": "2026-10-01T14:05:35.049Z"
+  },
+  "commanders-youtube-4a7400f38d73": {
+    "id": "commanders-youtube-4a7400f38d73",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=fhLYfGRnmdc",
+    "title": "LIVE: DC Daronte Jones Speaks To The Media Before Practice In London",
+    "excerpt": "",
+    "publishedAt": "2026-10-01T12:16:30.000Z",
+    "collectedAt": "2026-10-01T14:05:36.240Z"
   }
 }
