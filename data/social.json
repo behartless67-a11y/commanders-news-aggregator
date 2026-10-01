@@ -9668,5 +9668,46 @@
     "images": [],
     "publishedAt": "2026-10-01T16:23:20.000Z",
     "collectedAt": "2026-10-01T16:57:06.909Z"
+  },
+  "social-e54b8175efd2": {
+    "id": "social-e54b8175efd2",
+    "url": "https://x.com/Commanders/status/2105708067891380582",
+    "text": "We had a wonderful morning at the Macmillan Cancer Center visiting patients and staff 💛",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/799/972/837/013/original/da8956e73a944c02.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/800/031/245/507/original/72715c202b392181.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/800/076/912/954/original/6f203ed66a157a1c.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/366/800/157/385/322/original/79ef98d3ce39907a.jpg"
+    ],
+    "publishedAt": "2026-10-01T17:15:00.000Z",
+    "collectedAt": "2026-10-01T18:05:43.309Z"
+  },
+  "social-763a21049492": {
+    "id": "social-763a21049492",
+    "url": "https://x.com/john_keim/status/2105719786747396156",
+    "text": "Jayden Daniels: on the brace, his elbow (not concerned); why no surgery and will he need it. And more. 36/commanders-jayden-daniels-says-taking-injury-day-day",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-01T18:01:34.000Z",
+    "collectedAt": "2026-10-01T18:05:46.270Z"
+  },
+  "social-350c2228d258": {
+    "id": "social-350c2228d258",
+    "url": "https://x.com/tashanreed/status/2105703356933280051",
+    "text": "\"I got through this once,\" Jayden Daniels said. “I can get through it again.\" The #Commanders QB was frustrated after dislocating his left elbow again, but he quickly turned the page to how he'd respond. He's eager to put that on display: /10/01/commanders-quarterback-jayden-daniels-is-confident-despite-elbow-injury/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-01T16:56:17.000Z",
+    "collectedAt": "2026-10-01T18:05:48.691Z"
   }
 }

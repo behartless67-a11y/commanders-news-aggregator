@@ -527,18 +527,6 @@
     "publishedAt": "2026-08-17T21:05:04.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
-  "clutchpoints-5d4101631442": {
-    "id": "clutchpoints-5d4101631442",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-cuts-jake-moody-training-camp",
-    "title": "Commanders cut Jake Moody after training camp kicker battle",
-    "excerpt": "In March, the Washington Commanders announced the return of kicker Jake Moody . Six months later, Moody will not be present.\n\n On Monday, the Commanders made it official that they were releasing Moody, per Jordan Schultz of The Schultz Report. In training camp, Moody struggled. According to Patrick Holloway of Niners Nation, Moody had missed 11 kicks over the course of four practices. Additionally, he also went 2-for-6 in field goal attempts during practice.\n\n At the same time, Moody, 26, was…",
-    "publishedAt": "2026-08-17T17:30:24.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
   "commanders-youtube-100a3c1fe1c7": {
     "id": "commanders-youtube-100a3c1fe1c7",
     "sourceId": "commanders-youtube",
@@ -14302,5 +14290,41 @@
     "excerpt": "The Seattle Seahawks entered Week 3 after two wins to open the season, but the Washington Commanders exposed some of the problems that had been hidden during those first two weeks.\n The Seahawks still moved the ball well (only in the air), finishing with 437 total yards and 28 first downs while averaging 6.8 yards per play. Sam Darnold threw for 379 yards and four touchdowns, while Jaxon Smith-Njigba continued his ridiculous start to the season with 10 catches for 128 yards and two touchdowns.…",
     "publishedAt": "2026-10-01T15:00:00.000Z",
     "collectedAt": "2026-10-01T16:05:38.323Z"
+  },
+  "hogs-haven-8756d8569f7b": {
+    "id": "hogs-haven-8756d8569f7b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/445482/commanders-qb-jayden-daniels-elbow-injury-update-colts-week-4-london",
+    "title": "What Commanders QB Jayden Daniels said about quick return from elbow injury",
+    "excerpt": "Jayden Daniels has been practicing this week with a large brace on his left arm , something he’ll wear all season to avoid yet another elbow dislocation that he suffered last year and again in a Week 2 loss at Dallas. \n\n His return to practice and eventually play has been faster than it was last time, after talking with medical professionals about the prospect of having surgery versus not. \n\n Daniels opted against (at least for now) having surgery during the season. His reasoning for it was…",
+    "publishedAt": "2026-10-01T16:54:48.000Z",
+    "collectedAt": "2026-10-01T18:05:35.252Z"
+  },
+  "atoz-sports-8a08cd73c081": {
+    "id": "atoz-sports-8a08cd73c081",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/commanders-dont-need-to-rush-jayden-daniels-back-for-a-colts-team-this-bad",
+    "title": "Commanders don’t need to rush Jayden Daniels back for a Colts team this bad",
+    "excerpt": "Sep 27, 2026; Landover, Maryland, USA; Washington Commanders quarterback Jayden Daniels (5) on the sideline before the game at Northwest Stadium. Mandatory Credit: Geoff Burke-Imagn Images \n \n\n Marcus Mariota showed enough against Seattle, and Indianapolis has given every opponent whatever they want on both sides of the ball.\n\n Dan Quinn met with media in London ahead of the Washington Commanders’ Week 4 matchup against the Indianapolis Colts, and the biggest question coming out of it isn’t…",
+    "publishedAt": "2026-10-01T17:33:33.000Z",
+    "collectedAt": "2026-10-01T18:05:35.938Z"
+  },
+  "wjla-commanders-ac6250f7e0aa": {
+    "id": "wjla-commanders-ac6250f7e0aa",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/jayden-daniels-shrugs-off-elbow-fears-as-commanders-weigh-colts-start-in-london",
+    "title": "Jayden Daniels shrugs off elbow fears as Commanders weigh Colts start in London",
+    "excerpt": "WATFORD, England (AP) — Washington Commanders quarterback Jayden Daniels said Thursday he has no concerns about re-injuring his left elbow and is \"taking it day",
+    "publishedAt": "2026-10-01T16:46:05.000Z",
+    "collectedAt": "2026-10-01T18:05:40.821Z"
   }
 }
