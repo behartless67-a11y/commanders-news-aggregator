@@ -9409,5 +9409,31 @@
     "images": [],
     "publishedAt": "2026-09-30T22:12:12.000Z",
     "collectedAt": "2026-10-01T00:05:09.458Z"
+  },
+  "social-a7c7d425bc10": {
+    "id": "social-a7c7d425bc10",
+    "url": "https://x.com/BenStandig/status/2105474863565611270",
+    "text": "Trip off to a promising start.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/363/136/390/228/045/original/8694ab4cc5871fb9.jpg"
+    ],
+    "publishedAt": "2026-10-01T01:48:19.000Z",
+    "collectedAt": "2026-10-01T02:05:41.309Z"
+  },
+  "social-c1e8d370f930": {
+    "id": "social-c1e8d370f930",
+    "url": "https://x.com/BenStandig/status/2105458187939770473",
+    "text": "From yesterday. Only refuted a Pistons-Sarr rumor fepm ESPN since that was all that was reported...",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-01T00:42:04.000Z",
+    "collectedAt": "2026-10-01T02:05:41.309Z"
   }
 }
