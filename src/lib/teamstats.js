@@ -12,8 +12,9 @@ import { DATA_DIR } from './store.js';
  *   - Offense: the core-API season team-statistics route (STATS_URL), which
  *     carries a league rank per stat.
  *   - Defense: the site-API team-statistics route (OPPONENT_URL), whose
- *     `results.opponent` split is what opponents have done *to* this team,
- *     with real league ranks per stat.
+ *     `results.opponent` split is what opponents have done *to* this team.
+ *     Its values are right but its ranks aren't trustworthy, so the defensive
+ *     ranks are computed here instead (see fetchLeagueDefenseRanks).
  *
  * The defensive half used to be derived by crawling every completed box score
  * and summing what the opponent gained, with ranks hardcoded to null and a
@@ -36,8 +37,14 @@ import { DATA_DIR } from './store.js';
  *     Week 1 2026) where the offense's `netYardsPerGame` is net of sack
  *     yardage (295, which is what the box score's own total says). So total
  *     yards allowed is summed here from net passing + rushing to match the
- *     offense's definition, and is the one defensive stat left without a rank:
- *     the only rank ESPN offers for it belongs to the gross figure.
+ *     offense's definition.
+ *   - The split's ranks don't share a direction. On 2026-10-02 it ranked
+ *     Washington's 280.3 net passing yards allowed "2nd", which is 2nd *most*:
+ *     ESPN's own league defense table puts it 31st. Rushing (82.0, "3rd") and
+ *     points (30.7, "31st") were ranked fewest-first, correctly. Ben spotted it
+ *     on the widget. Rather than trust a direction per stat that ESPN could
+ *     flip again, all four defensive ranks are computed from the same
+ *     league-wide pull, fewest allowed first.
  *   - The response's own `season.year` always reports the current season even
  *     when `?season=` asks for an older one. The data honours the parameter
  *     (2025 returns 17 games), the echo doesn't, so don't read the season back
@@ -53,8 +60,8 @@ const OPPONENT_URL = (abbr, season, seasonType) =>
 const TEAMS_URL = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams';
 
 /**
- * Floor for ranking net yards allowed across the league (see
- * fetchNetYardsAllowedRank). Not 32: ESPN 404s a team that has no stats for the
+ * Floor for ranking defense across the league (see
+ * fetchLeagueDefenseRanks). Not 32: ESPN 404s a team that has no stats for the
  * season at all, which was true of Denver and Kansas City through Week 1 of
  * 2026, so its own published ranks are over the teams that do have data. This
  * only guards against ranking off a handful of teams.
@@ -126,41 +133,55 @@ function ordinal(n) {
   return `${n}${['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
 }
 
+/** A stat's numeric value from the opponent split, or null if it's missing. */
+function numberFrom(categories, name) {
+  const s = readStat(categories, name);
+  const n = s?.value == null ? NaN : Number(String(s.value).replace(/,/g, ''));
+  return Number.isFinite(n) ? n : null;
+}
+
 /** Net yards allowed per game for one team, or null if it has no season stats. */
 function netYardsAllowedFrom(categories) {
-  const num = (name) => {
-    const s = readStat(categories, name);
-    const n = s?.value == null ? NaN : Number(String(s.value).replace(/,/g, ''));
-    return Number.isFinite(n) ? n : null;
-  };
-  const pass = num('netPassingYardsPerGame');
-  const rush = num('rushingYardsPerGame');
+  const pass = numberFrom(categories, 'netPassingYardsPerGame');
+  const rush = numberFrom(categories, 'rushingYardsPerGame');
   return pass == null || rush == null ? null : pass + rush;
 }
 
+/** The four per-game figures the defense panel shows, for one team. */
+function defenseFiguresFrom(categories) {
+  return {
+    yards: netYardsAllowedFrom(categories),
+    points: numberFrom(categories, 'totalPointsPerGame'),
+    pass: numberFrom(categories, 'netPassingYardsPerGame'),
+    rush: numberFrom(categories, 'rushingYardsPerGame'),
+  };
+}
+
 /**
- * A real league rank for *net* yards allowed, computed across every team ESPN
- * has data for.
+ * League ranks for all four defensive figures, computed across every team ESPN
+ * has data for, fewest allowed first.
  *
- * Needed because ESPN publishes a rank only for its own opponent `yardsPerGame`,
- * which adds gross passing yards to rushing, and that figure disagrees with the
- * pass and rush numbers shown right beside it in the widget (182 + 136 = 318,
- * not 339). Displaying its rank next to the net value would attach a rank to a
- * number it doesn't describe, and displaying the gross value instead would make
- * the panel fail to add up. So the ordering is derived here from the same net
- * definition the widget shows.
+ * Computed rather than read off the opponent split for two reasons (see the
+ * note at the top of this file):
  *
- * One request per team, ~75KB each. That's the cost of the rank, and it is still
- * a fraction of the ~8MB box-score crawl this file used to do for numbers alone.
- * Returns null rather than a shaky rank if too few teams report.
+ *   - Total yards: ESPN only ranks its own opponent `yardsPerGame`, which adds
+ *     gross passing yards to rushing and disagrees with the pass and rush
+ *     numbers shown beside it (182 + 136 = 318, not 339). The ordering has to
+ *     come from the same net definition the widget shows.
+ *   - Passing, rushing and points: the split's ranks don't share a direction.
+ *     Passing came back ranked most-allowed-first ("2nd" for what was 31st).
+ *
+ * One request per team, ~75KB each, the same pull that used to rank total
+ * yards alone, so ranking the other three costs nothing extra. Returns null
+ * rather than shaky ranks if too few teams report.
  */
-async function fetchNetYardsAllowedRank(season, seasonType) {
+async function fetchLeagueDefenseRanks(season, seasonType) {
   const list = await fetchJson(TEAMS_URL, 'NFL team list');
   const abbrs = (list?.sports?.[0]?.leagues?.[0]?.teams || [])
     .map((t) => t.team?.abbreviation)
     .filter(Boolean);
   if (abbrs.length < MIN_RANKED_TEAMS) {
-    log.warn(`team-stats: only ${abbrs.length} teams listed, skipping the yards-allowed rank`);
+    log.warn(`team-stats: only ${abbrs.length} teams listed, skipping the defensive ranks`);
     return null;
   }
 
@@ -178,30 +199,38 @@ async function fetchNetYardsAllowedRank(season, seasonType) {
     }
     const categories = data?.results?.opponent;
     if (!categories?.length) continue;
-    const net = netYardsAllowedFrom(categories);
-    if (net != null) rows.push({ abbr, net });
+    rows.push({ abbr, ...defenseFiguresFrom(categories) });
   }
 
   if (rows.length < MIN_RANKED_TEAMS) {
-    log.warn(`team-stats: only ${rows.length} teams had opponent totals, skipping the yards-allowed rank`);
+    log.warn(`team-stats: only ${rows.length} teams had opponent totals, skipping the defensive ranks`);
     return null;
   }
 
   const mine = rows.find((r) => r.abbr.toUpperCase() === TEAM_ABBR.toUpperCase());
   if (!mine) {
-    log.warn('team-stats: own team missing from the yards-allowed ranking');
+    log.warn('team-stats: own team missing from the defensive ranking');
     return null;
   }
 
   // Fewer allowed is better, so rank ascending. Teams on the same figure share
   // the higher position and get ESPN's "Tied-" prefix, matching how every other
-  // rank in this file reads.
-  const better = rows.filter((r) => r.net < mine.net).length;
-  const tied = rows.filter((r) => r.net === mine.net).length;
-  const rank = better + 1;
+  // rank in this file reads. Each stat is ranked over the teams that have it.
+  const rankOf = (key) => {
+    if (mine[key] == null) return null;
+    const pool = rows.filter((r) => r[key] != null);
+    if (pool.length < MIN_RANKED_TEAMS) return null;
+    const better = pool.filter((r) => r[key] < mine[key]).length;
+    const tied = pool.filter((r) => r[key] === mine[key]).length;
+    const rank = better + 1;
+    return { rank, rankLabel: `${tied > 1 ? 'Tied-' : ''}${ordinal(rank)}` };
+  };
+
   return {
-    rank,
-    rankLabel: `${tied > 1 ? 'Tied-' : ''}${ordinal(rank)}`,
+    yards: rankOf('yards'),
+    points: rankOf('points'),
+    pass: rankOf('pass'),
+    rush: rankOf('rush'),
     ranked: rows.length,
   };
 }
@@ -220,38 +249,35 @@ async function fetchDefenseAllowed(season, seasonType) {
     return null;
   }
 
-  const pointsPerGame = readStat(categories, 'totalPointsPerGame');
-  const passYardsPerGame = readStat(categories, 'netPassingYardsPerGame');
-  const rushYardsPerGame = readStat(categories, 'rushingYardsPerGame');
-  if (!passYardsPerGame && !rushYardsPerGame && !pointsPerGame) {
+  const figures = defenseFiguresFrom(categories);
+  if (figures.pass == null && figures.rush == null && figures.points == null) {
     log.warn(`team-stats: opponent split for ${season} carried no usable totals`);
     return null;
   }
 
-  // Net, to match the offense's `netYardsPerGame`, rather than ESPN's own
+  // ESPN's own ranks on this split are never used (see fetchLeagueDefenseRanks),
+  // so if the league pull fails the panel shows its numbers without ranks rather
+  // than with a rank that might be upside down.
+  const ranks = await fetchLeagueDefenseRanks(season, seasonType);
+  if (ranks) {
+    log.info(`team-stats: defensive ranks computed over ${ranks.ranked} teams with data`);
+  }
+
+  // Net yards, to match the offense's `netYardsPerGame`, rather than ESPN's own
   // opponent `yardsPerGame`, which adds *gross* passing yards to rushing and so
   // reads ~20 yards a game higher than any box score's total, and wouldn't add
   // up against the pass and rush figures shown beside it.
-  const net = netYardsAllowedFrom(categories);
-  const netRank = net == null ? null : await fetchNetYardsAllowedRank(season, seasonType);
-  const netYards =
-    net == null
+  const withRank = (value, rank) =>
+    value == null
       ? null
-      : {
-          value: net.toFixed(1),
-          rank: netRank?.rank ?? null,
-          rankLabel: netRank?.rankLabel ?? null,
-        };
-  if (netRank) {
-    log.info(`team-stats: net yards allowed ranked ${netRank.rankLabel} of ${netRank.ranked} teams with data`);
-  }
+      : { value: value.toFixed(1), rank: rank?.rank ?? null, rankLabel: rank?.rankLabel ?? null };
 
   return {
     games,
-    yardsPerGame: netYards,
-    pointsPerGame,
-    passYardsPerGame,
-    rushYardsPerGame,
+    yardsPerGame: withRank(figures.yards, ranks?.yards),
+    pointsPerGame: withRank(figures.points, ranks?.points),
+    passYardsPerGame: withRank(figures.pass, ranks?.pass),
+    rushYardsPerGame: withRank(figures.rush, ranks?.rush),
   };
 }
 

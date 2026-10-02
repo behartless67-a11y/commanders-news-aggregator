@@ -1433,14 +1433,32 @@ main.layout{
   .ts-headline-grid{ grid-template-columns: minmax(0, auto); }
 }
 
+/* Two lines per stat: its name, then rank and number. See the headline note in
+   teamStatsWidget for why the name moved off the number's line. */
 .ts-headline{
   margin: 0;
   font-size: 10px;
   color: var(--text-muted);
   display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+/* Same treatment as the eyebrow, a size smaller: a caption, not a stat. */
+.ts-stat-label{
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.ts-stat-value{
+  display: flex;
   align-items: baseline;
   gap: 4px;
-  flex-wrap: nowrap;
   min-width: 0;
 }
 
@@ -1452,26 +1470,15 @@ main.layout{
   flex-shrink: 0;
 }
 
-/* Defense has no league rank to show (see teamstats.js). Stated once beneath
-   the numbers rather than as "rank n/a" on every row: four copies of the same
-   absence pushed the two columns into each other on a 360px rail, and one quiet
-   line reads better anyway. */
-/* "Allowed, per game" above the defense numbers, so the word doesn't have to
-   ride on all four labels (see the note in teamStatsWidget). Uppercase and
-   faint: it's a column heading, not a stat. */
+/* "Per game" / "Allowed, per game" above the numbers, so neither has to ride
+   on all four labels (see the note in teamStatsWidget). Uppercase and faint:
+   it's a column heading, not a stat. */
 .ts-panel-eyebrow{
   margin: 0 0 8px;
   font-size: 9.5px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-faint);
-}
-
-.ts-norank-note{
-  margin: 2px 0 0;
-  font-size: 10px;
-  line-height: 1.45;
   color: var(--text-faint);
 }
 

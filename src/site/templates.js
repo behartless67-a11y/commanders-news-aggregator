@@ -619,12 +619,10 @@ function scheduleWidget(games, betting = null) {
  * approach as the phone nav dropdown (see .nav-toggle-checkbox), so the widget
  * works with JavaScript off and costs the page nothing.
  *
- * The two halves are deliberately not symmetrical, and that's a data limit
- * rather than a design choice: ESPN publishes a league rank for a team's own
- * offensive output but returns zeroes for every opponent field, so the
- * defensive figures are derived from box scores and have no rank to show. See
- * src/lib/teamstats.js. Defense renders its number with no rank instead of
- * borrowing offense's or inventing one.
+ * Offense ranks come straight from ESPN; defense ranks are computed across the
+ * league in src/lib/teamstats.js, because ESPN's own defensive ranks don't all
+ * point the same way. If that league pull fails, defense shows its numbers
+ * with no ranks rather than borrowing offense's or inventing one.
  */
 function teamStatsWidget(teamStats) {
   if (!teamStats?.offense) return '';
@@ -642,37 +640,32 @@ function teamStatsWidget(teamStats) {
     // allowed") 172px wide inside a 166px column, so with nowrap the two
     // columns overflowed the rail by 6px. One eyebrow line is shorter, reads
     // better, and leaves the type big enough to actually read.
-    const eyebrow =
-      side === 'def' ? '<p class="ts-panel-eyebrow">Allowed, per game</p>' : '';
+    //
+    // Offense gets one too. With the stat names moved onto their own label line
+    // (see headline below), "per game" is the only thing left to say, and saying
+    // it once for each side keeps the two panels shaped the same.
+    const eyebrow = `<p class="ts-panel-eyebrow">${side === 'def' ? 'Allowed, per game' : 'Per game'}</p>`;
     // Each stat carries its own rank, not just yards with points riding along
     // beside it: a reader asking "where do we rank in points" shouldn't have to
     // go find that number on a different page.
     //
-    // Defense has no rank to carry (see src/lib/teamstats.js), and it used to
-    // say "rank n/a" on all four rows. That was four copies of the same
-    // non-information, and with the " allowed" suffix on top it overflowed the
-    // rail badly enough that the two columns visibly overlapped. The absence is
-    // now stated once, under the numbers, which is both quieter and what makes
-    // these fit on one line.
     // "Tied-5th" abbreviated to "T-5th": at the narrowest rail (about 169px a
     // column, which is the 1400px breakpoint where the stats widget shares the
-    // row with the 280px video rail) the full word is the difference between
-    // "Tied-5th 132.0 rush yds/gm" fitting and overflowing by 6px.
+    // row with the 280px video rail) the full word was the difference between
+    // fitting and overflowing back when the unit rode on the same line.
     const rank = (s) =>
       s?.rankLabel
         ? `<strong class="ts-rank">${escapeHtml(s.rankLabel.replace(/^Tied-/, 'T-'))}</strong> `
         : '';
+    // Each stat names itself on a small line above its number. It used to be
+    // "27th 362.3 yds/gm" with the unit as the only clue, and Ben pointed out
+    // that four of those side by side don't say which is total yards, which is
+    // points, or that "yds/gm" on its own means total. A name per stat fixes
+    // that, and dropping the unit (the eyebrow says "per game") makes every line
+    // shorter than any of the old ones, so nothing here is near overflowing.
     const headline = (statVal, label, rankData) =>
       statVal
-        ? `<p class="ts-headline">${rank(rankData)}<span class="ts-line">${escapeHtml(statVal)} ${label}</span></p>`
-        : '';
-    // Only total yards lacks a rank now (see fetchDefenseAllowed): ESPN ranks a
-    // gross figure there and we show the net one, to match the offense and the
-    // box scores. Shown only when that's actually the case, so if ESPN ever
-    // starts ranking it the note disappears on its own instead of lying.
-    const noRankNote =
-      side === 'def' && data.yardsPerGame?.value != null && !data.yardsPerGame?.rankLabel
-        ? '<p class="ts-norank-note">Yards allowed is net of sack yardage, the one figure ESPN doesn\'t rank.</p>'
+        ? `<p class="ts-headline"><span class="ts-stat-label">${label}</span><span class="ts-stat-value">${rank(rankData)}<span class="ts-line">${escapeHtml(statVal)}</span></span></p>`
         : '';
     // One grid for all four, not a div per visual row. See .ts-headline-grid
     // in site.css for why sharing a single grid is what aligns the columns.
@@ -680,12 +673,11 @@ function teamStatsWidget(teamStats) {
       <div class="ts-panel ts-panel-${side}">
         ${eyebrow}
         <div class="ts-headline-grid">
-          ${headline(yds, 'yds/gm', data.yardsPerGame)}
-          ${headline(pts, 'pts/gm', data.pointsPerGame)}
-          ${headline(rushYds, 'rush yds/gm', data.rushYardsPerGame)}
-          ${headline(passYds, 'pass yds/gm', data.passYardsPerGame)}
+          ${headline(yds, 'Total yards', data.yardsPerGame)}
+          ${headline(pts, 'Points', data.pointsPerGame)}
+          ${headline(rushYds, 'Rushing yards', data.rushYardsPerGame)}
+          ${headline(passYds, 'Passing yards', data.passYardsPerGame)}
         </div>
-        ${noRankNote}
         ${leaders}
       </div>`;
   };
