@@ -1,16 +1,4 @@
 {
-  "social-52d3fd8247d9": {
-    "id": "social-52d3fd8247d9",
-    "url": "https://x.com/RapSheet/status/2102441461136408804",
-    "text": "Whether or not Jayden Daniels is placed on IR is the next big decision.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "NFL Network",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-09-22T16:54:40.000Z",
-    "collectedAt": "2026-09-22T18:06:24.089Z"
-  },
   "social-ee2357e60b82": {
     "id": "social-ee2357e60b82",
     "url": "https://x.com/john_keim/status/2102483996248838508",
@@ -9617,5 +9605,17 @@
     "images": [],
     "publishedAt": "2026-10-02T15:49:13.000Z",
     "collectedAt": "2026-10-02T16:06:03.836Z"
+  },
+  "social-52f743dc1b15": {
+    "id": "social-52f743dc1b15",
+    "url": "https://x.com/NickiJhabvala/status/2106067078536966395",
+    "text": "Terry McLaurin was added to the injury report with a hamstring issue and is QUESTIONABLE for Sunday's game in London.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-02T17:01:35.000Z",
+    "collectedAt": "2026-10-02T18:05:08.923Z"
   }
 }
