@@ -1,16 +1,4 @@
 {
-  "social-2aa9f0281217": {
-    "id": "social-2aa9f0281217",
-    "url": "https://x.com/tashanreed/status/2102377856663990498",
-    "text": "Reminder that we'll be live at 3pm ET today:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-22T12:41:55.000Z",
-    "collectedAt": "2026-09-22T14:06:04.007Z"
-  },
   "social-e97acacd6647": {
     "id": "social-e97acacd6647",
     "url": "https://x.com/NickiJhabvala/status/2102425412508774643",
@@ -9287,5 +9275,41 @@
     "images": [],
     "publishedAt": "2026-10-02T12:00:45.000Z",
     "collectedAt": "2026-10-02T12:06:25.366Z"
+  },
+  "social-7e84c231f4ba": {
+    "id": "social-7e84c231f4ba",
+    "url": "https://x.com/NickiJhabvala/status/2106018356381818963",
+    "text": "To be clear, this means Jayden Daniels will not be the emergency 3rd QB on Sunday. He will be OUT out.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-02T13:47:58.000Z",
+    "collectedAt": "2026-10-02T14:05:09.792Z"
+  },
+  "social-324131bd5c14": {
+    "id": "social-324131bd5c14",
+    "url": "https://x.com/NickiJhabvala/status/2106014626647622021",
+    "text": "Quinn noted that it was \"a huge step\" for Daniels to practice on a limited basis throughout the week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-02T13:33:09.000Z",
+    "collectedAt": "2026-10-02T14:05:09.792Z"
+  },
+  "social-443c548adbad": {
+    "id": "social-443c548adbad",
+    "url": "https://x.com/NickiJhabvala/status/2106014517063028834",
+    "text": "Dan Quinn said Jayden Daniels will be OUT on Sunday. Marcus Mariota will start again.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-02T13:32:43.000Z",
+    "collectedAt": "2026-10-02T14:05:09.792Z"
   }
 }
