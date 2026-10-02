@@ -1,6 +1,8 @@
 {
   "slug": "three-thousand",
   "title": "Three Thousand",
+  "summary": "The Burgundy Wire passed 3,000 pageviews in 25 days. What that number really means, 22 countries, 466 clicks out to real Commanders reporting, and a thank-you.",
+  "share": { "background": "bowl" },
   "paragraphs": [
     "Sometime yesterday, while I was refreshing an injury report for the fourth time, this site quietly rolled past three thousand pageviews. I launched it on August 19th. That is twenty five days. By internet standards this is not a number. Nobody is writing a case study about three thousand of anything. I have been looking at it like a hospital photo.",
     "Let me be honest about what that number is, because I built the analytics myself and I know exactly how the sausage gets made. Three thousand pageviews is not three thousand people. Some of it is Nicole, loyally clicking whatever I ask her to look at. Some of it is my dad, checking whether I fixed the thing he mentioned on the phone. Plenty of it is somebody who landed here once, went huh, and left forever, which is completely fair. But more than seventeen hundred of those came from somebody who had already been here before. That is the number I actually care about. That is not traffic. That is people coming back.",

@@ -24,23 +24,47 @@ const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) 
  * needs an absolute URL, not "logo.png", since the client fetching the
  * preview has no page context to resolve a relative one against.
  */
-function socialMetaTags({ title, description, siteUrl }) {
+function socialMetaTags({ title, description, siteUrl, path = '', image = null, publishedAt = null }) {
   // Not logo.png directly — that's a transparent PNG meant to sit on the
   // hero photo, so a client with no page context to render it against (a
   // Slack/iMessage/Twitter preview card) showed it on whatever background
   // that client defaults to, usually white. og-image.png is the same logo
   // pre-composited onto the site's own near-black background (--bg,
   // #14100f) at the standard 1200x630 social-card size instead.
-  const image = `${siteUrl}/og-image.png`;
-  return `<meta property="og:title" content="${escapeHtml(title)}">
+  //
+  // Ben's own posts pass `image`, their card from scripts/make-share-cards.mjs,
+  // so a shared post shows its photo and headline instead of the same logo as
+  // every other link (on X, which shows only the image, every post used to
+  // look identical).
+  const card = image || { file: 'og-image.png', w: 1200, h: 630, alt: 'The Burgundy Wire logo' };
+  const imageUrl = `${siteUrl}/${card.file}`;
+  // og:url is the page's own address. It was the homepage on every page, and
+  // Facebook treats og:url as the canonical link, so a shared post was a share
+  // of the homepage: its title and image could be swapped for the homepage's,
+  // and its likes counted there. `path` is the file build.js writes.
+  const url = path && path !== 'index.html' ? `${siteUrl}/${path}` : `${siteUrl}/`;
+  const article = Boolean(publishedAt);
+  return `<link rel="canonical" href="${escapeHtml(url)}">
+<meta property="og:site_name" content="The Burgundy Wire">
+<meta property="og:title" content="${escapeHtml(title)}">
 <meta property="og:description" content="${escapeHtml(description)}">
-<meta property="og:image" content="${escapeHtml(image)}">
-<meta property="og:url" content="${escapeHtml(siteUrl)}">
-<meta property="og:type" content="website">
+<meta property="og:image" content="${escapeHtml(imageUrl)}">
+<meta property="og:image:width" content="${card.w}">
+<meta property="og:image:height" content="${card.h}">
+<meta property="og:image:alt" content="${escapeHtml(card.alt)}">
+<meta property="og:url" content="${escapeHtml(url)}">
+<meta property="og:type" content="${article ? 'article' : 'website'}">${
+    article
+      ? `
+<meta property="article:published_time" content="${escapeHtml(publishedAt)}">
+<meta name="robots" content="max-image-preview:large">`
+      : ''
+  }
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${escapeHtml(title)}">
 <meta name="twitter:description" content="${escapeHtml(description)}">
-<meta name="twitter:image" content="${escapeHtml(image)}">`;
+<meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+<meta name="twitter:image:alt" content="${escapeHtml(card.alt)}">`;
 }
 
 const PAGES = [
@@ -1566,7 +1590,7 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
-${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl })}
+${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl, path: `blog-${record.week}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1620,7 +1644,7 @@ export function renderPreviewPost(record, { siteName, siteUrl, sources, generate
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
-${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl })}
+${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl, path: `blog-preview-${record.gameKey}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1662,12 +1686,17 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, shareImage = null }) {
   // The opening paragraph alone is only 2 sentences, so pull the third from the
   // paragraph after it rather than stopping short of the requested length.
   // essayProse() first, or a leading subhead or photo marker would end up in
   // the search snippet and the link preview.
   const excerpt = firstSentences(essayProse(record.paragraphs).slice(0, 2).join(' '), 3);
+  // A post's own one-line `summary`, when it has one, for search results and
+  // link previews: it says what the post is about (opponent, topic), where the
+  // opening line is usually a joke that needs the rest of the post. The river
+  // card keeps the opening line, since that's where the voice is.
+  const description = record.summary || excerpt;
   const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
@@ -1676,8 +1705,8 @@ export function renderOriginalPost(record, { siteName, siteUrl, sources, generat
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
-<meta name="description" content="${escapeHtml(excerpt)}">
-${socialMetaTags({ title: `${record.title} — ${siteName}`, description: excerpt, siteUrl })}
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `${record.title} — ${siteName}`, description, siteUrl, path: `blog-original-${record.slug}.html`, image: shareImage, publishedAt: record.publishedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1720,8 +1749,10 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderOriginalPost, using mondayArticleBody() instead; see those functions' own comments for why this is a distinct record shape. */
-export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, shareImage = null }) {
   const excerpt = firstSentences(essayProse(record.paragraphs).slice(0, 2).join(' '), 3);
+  // See renderOriginalPost.
+  const description = record.summary || excerpt;
   const rail = sidebar(videos, games, betting, teamStats, standings);
 
   return `<!doctype html>
@@ -1730,8 +1761,8 @@ export function renderMondayPost(record, { siteName, siteUrl, sources, generated
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
-<meta name="description" content="${escapeHtml(excerpt)}">
-${socialMetaTags({ title: `${record.title} — ${siteName}`, description: excerpt, siteUrl })}
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `${record.title} — ${siteName}`, description, siteUrl, path: `blog-monday-${record.key}.html`, image: shareImage, publishedAt: record.reviewedAt || record.generatedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1826,7 +1857,7 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blog — ${escapeHtml(siteName)}</title>
 <meta name="description" content="AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.">
-${socialMetaTags({ title: `Blog — ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl })}
+${socialMetaTags({ title: `Blog — ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl, path: 'blog.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1892,7 +1923,7 @@ export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How It Works — ${escapeHtml(siteName)}</title>
 <meta name="description" content="A mostly-honest, occasionally unhinged explanation of the robots that run this site.">
-${socialMetaTags({ title: `How It Works — ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl })}
+${socialMetaTags({ title: `How It Works — ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl, path: 'how-it-works.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2107,7 +2138,7 @@ export function renderRosterPage({
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roster — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Roster — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Roster — ${siteName}`, description, siteUrl, path: 'roster.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2233,7 +2264,7 @@ export function renderDepthChartPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Depth Chart — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Depth Chart — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Depth Chart — ${siteName}`, description, siteUrl, path: 'depth-chart.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2326,7 +2357,7 @@ export function renderInjuryReportPage({ siteName, siteUrl, sources, generatedAt
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Injury Tracker — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Injury Tracker — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Injury Tracker — ${siteName}`, description, siteUrl, path: 'injury-report.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2377,7 +2408,7 @@ export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, ha
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Podcasts — ${escapeHtml(siteName)}</title>
 <meta name="description" content="Commanders podcasts worth your time, embedded to stream right from ${escapeHtml(siteName)}.">
-${socialMetaTags({ title: `Podcasts — ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl })}
+${socialMetaTags({ title: `Podcasts — ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl, path: 'podcasts.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2438,7 +2469,7 @@ export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasW
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Videos — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Videos — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Videos — ${siteName}`, description, siteUrl, path: 'videos.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2517,7 +2548,7 @@ export function renderMusicPage({ siteName, siteUrl, sources, generatedAt, hasWe
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Music — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Music — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Music — ${siteName}`, description, siteUrl, path: 'music.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2716,7 +2747,7 @@ export function renderContactPage({ siteName, siteUrl, sources, generatedAt, has
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Contact — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Contact — ${siteName}`, description, siteUrl, path: 'contact.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2796,7 +2827,7 @@ export function renderWireTapsPage({ siteName, siteUrl, sources, generatedAt, ha
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wire Taps — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Wire Taps — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Wire Taps — ${siteName}`, description, siteUrl, path: 'wiretaps.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2859,7 +2890,7 @@ export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasW
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Donate — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Donate — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Donate — ${siteName}`, description, siteUrl, path: 'donate.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2922,7 +2953,7 @@ export function renderLocalSpotsPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cville Spots — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Cville Spots — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Cville Spots — ${siteName}`, description, siteUrl, path: 'cville.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2985,7 +3016,7 @@ export function renderAdminPage({ siteName, siteUrl, sources, generatedAt }) {
 <title>Admin — ${escapeHtml(siteName)}</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl, path: 'admin.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -3613,7 +3644,7 @@ export function renderBeatWritersPage({ siteName, siteUrl, sources, generatedAt,
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Beat Writers — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Beat Writers — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Beat Writers — ${siteName}`, description, siteUrl, path: 'beat-writers.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -3710,7 +3741,7 @@ export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Social Feed — ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Social Feed — ${siteName}`, description, siteUrl })}
+${socialMetaTags({ title: `Social Feed — ${siteName}`, description, siteUrl, path: 'social-feed.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -3807,7 +3838,7 @@ export function renderPage(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(siteName)} — Washington Commanders News</title>
 <meta name="description" content="The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.">
-${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl })}
+${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl, path: activeFile })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3928,11 +3959,13 @@ export function renderRss(items, { siteName, siteUrl, generatedAt }) {
  * missing lastmod as "unknown", never as an error.
  */
 export function renderSitemap(entries, { siteUrl }) {
+  // The homepage as "/", matching its canonical link (see socialMetaTags), so
+  // Google isn't handed two addresses for the same page.
   const urls = entries
     .map(
       (e) => `
   <url>
-    <loc>${escapeHtml(`${siteUrl}/${e.path}`)}</loc>
+    <loc>${escapeHtml(e.path === 'index.html' ? `${siteUrl}/` : `${siteUrl}/${e.path}`)}</loc>
     ${e.lastmod ? `<lastmod>${escapeHtml(e.lastmod.slice(0, 10))}</lastmod>` : ''}
   </url>`,
     )

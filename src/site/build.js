@@ -65,6 +65,23 @@ function heroImageForDate(pool, date) {
   return pool[dayOfYear % pool.length];
 }
 
+/** Where scripts/make-share-cards.mjs writes the cards and their manifest. */
+const SHARE_DIR = 'src/site/assets/share';
+
+/**
+ * The share-card manifest ({ "original-<slug>": { file, w, h, alt } }), or an
+ * empty map when no card has been made yet. Every post then shares with the
+ * site's logo card, exactly as before cards existed.
+ */
+async function loadShareCards() {
+  try {
+    return JSON.parse(await fs.readFile(path.resolve(SHARE_DIR, 'cards.json'), 'utf8'));
+  } catch (err) {
+    if (err.code !== 'ENOENT') log.warn(`share cards: could not read cards.json: ${err.message}`);
+    return {};
+  }
+}
+
 /**
  * Hoist Blog posts published within the pin window to the front of the river,
  * then let them fall back into plain date order once it expires. A post takes
@@ -222,11 +239,17 @@ export async function buildSite() {
     for (const record of publishedPreviews) {
       await fs.writeFile(path.join(DIST_DIR, `blog-preview-${record.gameKey}.html`), renderPreviewPost(record, opts), 'utf8');
     }
+    // Link-preview cards from scripts/make-share-cards.mjs, keyed by post. A
+    // post without one (published before the script was run for it) shares
+    // with the site's logo card instead, so a missing card never breaks a page.
+    const shareCards = await loadShareCards();
     for (const record of publishedOriginals) {
-      await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, opts), 'utf8');
+      const shareImage = shareCards[`original-${record.slug}`] || null;
+      await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, { ...opts, shareImage }), 'utf8');
     }
     for (const record of publishedMondays) {
-      await fs.writeFile(path.join(DIST_DIR, `blog-monday-${record.key}.html`), renderMondayPost(record, opts), 'utf8');
+      const shareImage = shareCards[`monday-${record.key}`] || null;
+      await fs.writeFile(path.join(DIST_DIR, `blog-monday-${record.key}.html`), renderMondayPost(record, { ...opts, shareImage }), 'utf8');
     }
   }
 
@@ -415,6 +438,18 @@ export async function buildSite() {
   // every time a post gets a new picture. dimensions.json rides along
   // harmlessly; it's the build-time record of what process-photos.sh emitted.
   await fs.cp(path.resolve('src/site/assets/photos'), path.join(DIST_DIR, 'photos'), { recursive: true });
+
+  // The share cards themselves. bg/ (the stock backgrounds the script draws
+  // on) and cards.json (read above) are build inputs, not things a reader
+  // ever fetches, so they stay out of dist/.
+  await fs
+    .cp(path.resolve(SHARE_DIR), path.join(DIST_DIR, 'share'), {
+      recursive: true,
+      filter: (src) => path.basename(src) !== 'bg' && path.basename(src) !== 'cards.json',
+    })
+    .catch((err) => {
+      if (err.code !== 'ENOENT') throw err;
+    });
 
   // Same again for the occasional video clip (scripts/process-videos.sh).
   // The directory only exists once something has been encoded into it, so a

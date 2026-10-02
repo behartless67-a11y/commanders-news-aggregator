@@ -85,6 +85,16 @@ Paragraphs support four inline markers, positioned where you want them in the `p
 
 **Paragraph text is HTML-escaped.** If you need real markup — a link, a `lang="sv"` span for a non-English line — it goes in the `plug` field, which is raw trusted HTML and renders as the closing paragraph.
 
+### Link previews: `summary` and the share card
+
+What a post looks like when it's pasted into X, Facebook, iMessage, Slack or a Google result. Both apply to originals and Mondays.
+
+- **`summary`**: one plain line, about 150 characters, saying what the post is actually about (the opponent, the topic). It becomes the search snippet and the preview text. The opening line stays on the river card, since that's where the voice is, but it's usually a joke that needs the rest of the post, which makes it a weak search snippet. No summary means the opening lines get used instead.
+- **Share card**: a 1200x630 image with the post's photo, the logo and the headline. After publishing (or retitling) a post, run `npm run share-cards <slug-or-date>` and commit what it writes to `src/site/assets/share/`. It needs ffmpeg, so it runs on your machine, not in GitHub Actions. A post with no card still shares, just with the plain logo image.
+- **Choosing the photo**: `"share": { "background": "<photo key>" }` picks one of the post's own photos. Otherwise it uses the post's first photo, and if the post has none, one of three stadium shots (`bowl`, `huddle`, `pregame`). `"focusY"` (0 top, 1 bottom) moves the crop, so faces sit above the headline.
+
+After a deploy, Facebook may still show an old preview it cached. Paste the link into the [Sharing Debugger](https://developers.facebook.com/tools/debug/) and hit "Scrape Again".
+
 ### Scheduling a post
 
 Set `status: "scheduled"` and a future `publishedAt`. Nothing renders a non-published record, so it stays invisible until `scheduled.yml` picks it up on the hour and publishes it. Posts pin to the top of the river for 24 hours from their `publishedAt`, so a post scheduled for 7am pins from 7am, not from whenever the workflow fired.
@@ -238,6 +248,7 @@ npm run serve          # preview locally on :8080
 npm run monday:corpus  # write this week's Monday briefing
 npm run monday:list    # see all Monday posts and their status
 npm run publish-due    # publish any scheduled post whose time has passed
+npm run share-cards    # make link-preview cards (add a slug or date for one post)
 npm run collect        # fetch news now
 npm run team-stats     # refresh the Team Stats widget
 npm run reddit         # top up the r/Commanders cache

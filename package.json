@@ -38,6 +38,7 @@
     "preview:approve": "node src/cli.js preview approve",
     "preview:reject": "node src/cli.js preview reject",
     "publish-due": "node src/cli.js publish-due",
+    "share-cards": "node scripts/make-share-cards.mjs",
     "monday": "node src/cli.js monday",
     "monday:corpus": "node src/cli.js monday corpus",
     "monday:list": "node src/cli.js monday list",
