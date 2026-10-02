@@ -9536,7 +9536,7 @@
     "text": "Terry McLaurin added to the list with a hamstring issue. Was limited today",
     "handle": "john_keim",
     "author": "John Keim",
-    "label": "",
+    "label": "ESPN",
     "sourceKey": "@john_keim",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/372/411/400/044/743/original/c54c38ba7d359f61.jpg"
@@ -9617,5 +9617,45 @@
     "images": [],
     "publishedAt": "2026-10-02T17:24:42.000Z",
     "collectedAt": "2026-10-02T18:05:58.953Z"
+  },
+  "social-ac9edbefa7b0": {
+    "id": "social-ac9edbefa7b0",
+    "url": "https://x.com/JPFinlayNBCS/status/2106094810537111968",
+    "text": "Tower Bridge in London. Beautiful. But are those colts colors? Or is it always blue and white?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/372/825/558/268/489/original/5568fb1180f2dcec.jpg"
+    ],
+    "publishedAt": "2026-10-02T18:51:46.000Z",
+    "collectedAt": "2026-10-02T20:05:43.539Z"
+  },
+  "social-3593e23386b8": {
+    "id": "social-3593e23386b8",
+    "url": "https://x.com/BenStandig/status/2106089947744604223",
+    "text": "About to talk Commanders on LMS from London including what I know about Terry McLaurin popping up on the injury report. Swing by. I got Bub Carrington/Wizards intel as well.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-02T18:32:27.000Z",
+    "collectedAt": "2026-10-02T20:05:46.142Z"
+  },
+  "social-7fcbd552845e": {
+    "id": "social-7fcbd552845e",
+    "url": "https://mastodon.social/@top_news/117372851378476634",
+    "text": "Commanders' Jayden Daniels (elbow) ruled out for London game; QB Marcus Mariota to start vs. Colts Jayden Daniels will be a bystander in London on Sunday. Washington Commanders coach Dan Quinn ruled out Daniels for Week 4’s tilt against the Indianapolis Colts. ft-elbow-out-london-game-qb-marcus-mariota-start-colts #TopNews #News #Daniels #Mariota #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/372/851/351/340/982/original/be3db60d15e0b28f.jpg"
+    ],
+    "publishedAt": "2026-10-02T18:59:40.852Z",
+    "collectedAt": "2026-10-02T20:05:58.623Z"
   }
 }

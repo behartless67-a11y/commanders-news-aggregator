@@ -323,18 +323,6 @@
     "publishedAt": "2026-08-19T10:00:02.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-350e5c47e845": {
-    "id": "riggos-rag-350e5c47e845",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-roll-dice-former-draft-darling-facing-his-last-stand",
-    "title": "Commanders roll the dice on former draft darling facing his last stand",
-    "excerpt": "The Washington Commanders have rolled the dice on former draft darling Tre' McKitty, which could be the tight end's final chance to prove himself.",
-    "publishedAt": "2026-08-18T19:35:08.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -14542,5 +14530,53 @@
     "excerpt": "The Washington Commanders have officially ruled out injured quarterback Jayden Daniels for Week 4's international game against the Indianapolis Colts, head coach Dan Quinn confirmed to reporters Friday. Backup Marcus Mariota will start in his place.\n Daniels traveled with the team to London and practiced in a limited fashion this week after suffering a dislocated elbow in his non-throwing arm in Week 2. The injury is to the same elbow that Daniels dislocated and reinjured just last season.…",
     "publishedAt": "2026-10-02T14:19:29.000Z",
     "collectedAt": "2026-10-02T18:05:39.399Z"
+  },
+  "hogs-haven-050e284a5e25": {
+    "id": "hogs-haven-050e284a5e25",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/445830/commanders-washington-colts-jonathan-taylor-marcus-mariota-jayden-daniels-croskey-merritt",
+    "title": "Commanders Q+A: Can Washington win second straight without Jayden Daniels?",
+    "excerpt": "It’s crazy how much different this week fells now that the Commanders have a win. Doom and gloom dominated last week’s narrative, with Washington reeling after a second straight NFC East loss and Jayden Daniels dislocated his elbow . \n\n Beating the reigning Super Bowl champs will put some pep in your step. Doing so with a backup quarterback in Marcus Mariota only served to validate the effort, which featured some excellent run defense and performance under pressure. \n\n Daniels is back and…",
+    "publishedAt": "2026-10-02T20:00:00.000Z",
+    "collectedAt": "2026-10-02T20:05:34.237Z"
+  },
+  "riggos-rag-fe7a7a8c3eff": {
+    "id": "riggos-rag-fe7a7a8c3eff",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/terry-mclaurin-late-hamstring-concern-gives-commanders-london-headache",
+    "title": "Terry McLaurin’s late hamstring concern gives Commanders a London headache",
+    "excerpt": "Pro Bowl wide receiver Terry McLaurin’s late hamstring concern gives the Washington Commanders a London headache.",
+    "publishedAt": "2026-10-02T19:00:01.000Z",
+    "collectedAt": "2026-10-02T20:05:34.886Z"
+  },
+  "clutchpoints-aaa998a15028": {
+    "id": "clutchpoints-aaa998a15028",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-ian-rapoport-jayden-daniels-week-4-injury-prediction",
+    "title": "Ian Rapoport fuels Jayden Daniels Week 5 elbow injury return optimism",
+    "excerpt": "The Washington Commanders will look to build on their morale-boosting win in Week 3 as they battle the Indianapolis Colts in London on Sunday.\n\n The Commanders, in their first game without Jayden Daniels due to an elbow injury, upset the Seattle Seahawks, 33-31. Marcus Mariota filled in admirably for Daniels, throwing 19-of-31 for 183 yards, three touchdowns, and zero interceptions to lead Washington to its first win.\n\n While the 25-year-old Daniels has been ruled out against the Colts , NFL…",
+    "publishedAt": "2026-10-02T14:09:30.000Z",
+    "collectedAt": "2026-10-02T20:05:35.060Z"
+  },
+  "yahoo-nfl-2fee4a1de94d": {
+    "id": "yahoo-nfl-2fee4a1de94d",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/fantasy/live/nfl-injury-tracker-week-4-latest-news-fantasy-implications-as-puka-nacua-hip-to-play-justin-jefferson-ankle-and-jayden-daniels-elbow-ruled-out-151829331.html",
+    "title": "NFL injury tracker Week 4: Latest news, fantasy implications as Puka Nacua (hip) to play, Justin Jefferson (ankle) and Jayden Daniels (elbow) ruled out",
+    "excerpt": "Week 4 is underway, and we're tracking all the injuries heading into the weekend.\n Jump to a team:\n AFC East: Bills | Dolphins | Patriots | Jets \n AFC North: Ravens | Bengals | Browns (played Thurs.) | Steelers (played Thurs.)\n AFC South: Texans | Colts | Jaguars | Titans \n AFC West: Broncos | Chiefs | Raiders | Chargers \n NFC East: Cowboys | Giants | Eagles | Commanders \n NFC North: Bears | Lions | Packers | Vikings \n NFC South: Falcons | Panthers | Saints | Buccaneers \n NFC West: Cardinals |…",
+    "publishedAt": "2026-09-28T15:18:29.000Z",
+    "collectedAt": "2026-10-02T20:05:40.517Z"
   }
 }
