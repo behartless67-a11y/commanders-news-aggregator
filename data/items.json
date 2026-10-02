@@ -95,18 +95,6 @@
     "publishedAt": "2026-08-18T21:37:49.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "cbs-nfl-add3ddad65d2": {
-    "id": "cbs-nfl-add3ddad65d2",
-    "sourceId": "cbs-nfl",
-    "sourceName": "CBS Sports",
-    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
-    "category": "league",
-    "url": "https://www.cbssports.com/nfl/news/commanders-stefon-diggs-jayden-daniels",
-    "title": "How Stefon Diggs' history with young QBs could shape Jayden Daniels, Commanders' season",
-    "excerpt": "Diggs has a long history of joining offenses led by young quarterbacks, and Washington is hoping he can provide the same boost for Jayden Daniels",
-    "publishedAt": "2026-08-18T18:04:16.000Z",
-    "collectedAt": "2026-08-19T18:27:13.284Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -347,18 +335,6 @@
     "publishedAt": "2026-08-18T19:35:08.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-884b8236dbad": {
-    "id": "riggos-rag-884b8236dbad",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-lack-answers-trey-amos-fueling-their-worst-fear",
-    "title": "Commanders' lack of answers on Trey Amos is fueling their worst fear",
-    "excerpt": "The Washington Commanders' lack of clarity on cornerback Trey Amos' injury status is causing some real concern among fans and reporters.",
-    "publishedAt": "2026-08-18T17:30:00.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -405,18 +381,6 @@
     "title": "Commanders laundry list of injuries features concerning Johnny Newton revelation",
     "excerpt": "The Washington Commanders had a letdown of a season last year, and it mostly came from injuries. Before this season can even get rolling, they’re already dealing with several injuries to some of their defensive players, and head coach Dan Quinn offered an update on all fronts.\n\n “Dan Quinn updates on multiple Commanders injuries: OLB K’Lavon Chaisson: injured his knee. DL Johnny Newton: injured his pec … seeing specialist in NY today … could be long-term but will know more after today. OLB…",
     "publishedAt": "2026-08-19T15:10:50.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
-  "clutchpoints-60a0cbe26659": {
-    "id": "clutchpoints-60a0cbe26659",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/3-surprise-commanders-2026-preseason-roster-cuts-watch-week-1",
-    "title": "3 surprise Commanders 2026 preseason roster cuts to watch out for before Week 1",
-    "excerpt": "The Washington Commanders likely won’t consider ChatGPT when they make their roster decisions. They’ve already made one key special teams move . But here are three surprise preseason Commanders roster cuts to watch before Week 1 of the 2026 NFL season.\n\n Things have already gone astray this summer for the Commanders. Stud left tackle Laremy Tunsil is gone, possibly for the whole season. And starting cornerback Trey Amos has dealt with a lingering injury.\n\n But the Commanders have to make the…",
-    "publishedAt": "2026-08-18T16:49:46.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
   "commanders-youtube-100a3c1fe1c7": {
@@ -477,18 +441,6 @@
     "title": "HC Dan Quinn Speaks To The Media Before Practice | Washington Commanders",
     "excerpt": "",
     "publishedAt": "2026-08-19T12:17:42.000Z",
-    "collectedAt": "2026-08-20T13:31:52.804Z"
-  },
-  "commanders-youtube-614d7b4f2571": {
-    "id": "commanders-youtube-614d7b4f2571",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=e_l-XHftK8U",
-    "title": "C Nick Allegretti Speaks To The Media After Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-18T17:01:03.000Z",
     "collectedAt": "2026-08-20T13:31:52.804Z"
   },
   "dc-sports-king-6db71ea0a872": {
@@ -14542,5 +14494,53 @@
     "excerpt": "Week 4 is underway, and we're tracking all the injuries heading into the weekend.\n Jump to a team:\n AFC East: Bills | Dolphins | Patriots | Jets \n AFC North: Ravens | Bengals | Browns (played Thurs.) | Steelers (played Thurs.)\n AFC South: Texans | Colts | Jaguars | Titans \n AFC West: Broncos | Chiefs | Raiders | Chargers \n NFC East: Cowboys | Giants | Eagles | Commanders \n NFC North: Bears | Lions | Packers | Vikings \n NFC South: Falcons | Panthers | Saints | Buccaneers \n NFC West: Cardinals |…",
     "publishedAt": "2026-09-28T15:18:29.000Z",
     "collectedAt": "2026-10-02T16:05:45.985Z"
+  },
+  "hogs-haven-ba35b5b13e8b": {
+    "id": "hogs-haven-ba35b5b13e8b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/445819/commanders-colts-injury-report-terry-mclaurin-chig-okonkwo-frankie-luvu-jayden-daniels-rachaad-white",
+    "title": "Commanders vs. Colts injury report: Terry McLaurin questionable",
+    "excerpt": "The Commanders didn’t even wait for their formal injury report to announce the return of some key starters. Head coach Dan Quinn said that linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) will play on Sunday against the Indianapolis Colts at Tottenham Hotspur Stadium in London. \n\n That’s a huge win for Washington, getting two primary starters back in the lineup. \n\n Not everything in the Commanders official injury report was positive. Star receiver Terry McLaurin was…",
+    "publishedAt": "2026-10-02T17:10:48.000Z",
+    "collectedAt": "2026-10-02T18:05:33.882Z"
+  },
+  "riggos-rag-8e8de24569ef": {
+    "id": "riggos-rag-8e8de24569ef",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sauce-gardner-terry-mclaurin-focus-could-set-stefon-diggs-loose-commanders",
+    "title": "Sauce Gardner’s Terry McLaurin focus could set Stefon Diggs loose for Commanders",
+    "excerpt": "Washington Commanders wide receiver Stefon Diggs could be set loose against the Indianapolis Colts in Week 4.",
+    "publishedAt": "2026-10-02T17:30:01.000Z",
+    "collectedAt": "2026-10-02T18:05:34.728Z"
+  },
+  "pft-c001d455b82b": {
+    "id": "pft-c001d455b82b",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/terry-mclaurin-added-to-injury-report-listed-as-questionable-for-sunday",
+    "title": "Terry McLaurin added to injury report, listed as questionable for Sunday",
+    "excerpt": "The Commanders made a late addition to their injury report for Sunday's game against the Colts in London. \n Wide receiver Terry McLaurin is listed as questionable to play in that contest. McLaurin was not on the injury report until Friday and he was limited by a hamstring injury. \n Injuries that pop up late in the week can often lead to absences from the lineup, so the Commanders may need to try for their second straight win with Stefon Diggs at the top of their receiver group. \n Running back…",
+    "publishedAt": "2026-10-02T17:10:52.000Z",
+    "collectedAt": "2026-10-02T18:05:39.089Z"
+  },
+  "yahoo-nfl-590e2a1bdf8c": {
+    "id": "yahoo-nfl-590e2a1bdf8c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-rule-out-jayden-daniels-confirm-marcus-mariota-will-start-vs-colts-london-week-4-141929614.html",
+    "title": "Commanders rule out Jayden Daniels, confirm Marcus Mariota will start vs. Colts in London Week 4",
+    "excerpt": "The Washington Commanders have officially ruled out injured quarterback Jayden Daniels for Week 4's international game against the Indianapolis Colts, head coach Dan Quinn confirmed to reporters Friday. Backup Marcus Mariota will start in his place.\n Daniels traveled with the team to London and practiced in a limited fashion this week after suffering a dislocated elbow in his non-throwing arm in Week 2. The injury is to the same elbow that Daniels dislocated and reinjured just last season.…",
+    "publishedAt": "2026-10-02T14:19:29.000Z",
+    "collectedAt": "2026-10-02T18:05:39.399Z"
   }
 }

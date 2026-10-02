@@ -1,44 +1,9 @@
 [
   {
-    "name": "Ben Sinnott",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Ribs",
-    "notes": null
-  },
-  {
-    "name": "Charles Omenihu",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Ankle",
-    "notes": null
-  },
-  {
-    "name": "Chig Okonkwo",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
     "bodyPart": "Undisclosed",
-    "notes": null
-  },
-  {
-    "name": "Frankie Luvu",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Groin",
-    "notes": "Strain"
-  },
-  {
-    "name": "Javon Kinlaw",
-    "position": "DT",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
     "notes": null
   },
   {
@@ -84,20 +49,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "Lucas Patrick",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Foot",
-    "notes": null
-  },
-  {
-    "name": "Nick Allegretti",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Hip",
-    "notes": null
-  },
-  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Out",
@@ -114,7 +65,7 @@
   {
     "name": "Rachaad White",
     "position": "RB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Shoulder",
     "notes": null
   },
@@ -123,6 +74,13 @@
     "position": "OL",
     "status": "Out",
     "bodyPart": "Concussion",
+    "notes": null
+  },
+  {
+    "name": "Terry McLaurin",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
     "notes": null
   },
   {

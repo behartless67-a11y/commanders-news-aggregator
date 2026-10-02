@@ -9617,5 +9617,93 @@
     "images": [],
     "publishedAt": "2026-10-02T17:01:35.000Z",
     "collectedAt": "2026-10-02T18:05:08.923Z"
+  },
+  "social-21ae76eafe5a": {
+    "id": "social-21ae76eafe5a",
+    "url": "https://x.com/john_keim/status/2106068404373221490",
+    "text": "Terry McLaurin added to the list with a hamstring issue. Was limited today",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/372/411/400/044/743/original/c54c38ba7d359f61.jpg"
+    ],
+    "publishedAt": "2026-10-02T17:06:51.000Z",
+    "collectedAt": "2026-10-02T18:05:43.652Z"
+  },
+  "social-715b6afe4fec": {
+    "id": "social-715b6afe4fec",
+    "url": "https://x.com/BenStandig/status/2106067235915567269",
+    "text": "The injury report has Terry McLaurin added as \"questionable\" with a hamstring Rachaad White is out.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/372/396/177/807/357/original/525096466d64ff5b.jpg"
+    ],
+    "publishedAt": "2026-10-02T17:02:12.000Z",
+    "collectedAt": "2026-10-02T18:05:45.079Z"
+  },
+  "social-68dbfbf08028": {
+    "id": "social-68dbfbf08028",
+    "url": "https://x.com/tashanreed/status/2106081784228434389",
+    "text": "Through Week 3, there weren't many cornerbacks playing better than Amik Robertson. He allowed just 5.2 yards per target (13th among CBs who were targeted at least 10 times) and had six pass breakups (third). How the #Commanders CB became an impact player: /10/02/amik-robertson-nearly-gave-up-nfl-commanders-are-glad-he-didnt/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-02T18:00:01.000Z",
+    "collectedAt": "2026-10-02T18:05:47.497Z"
+  },
+  "social-e375155ca8a9": {
+    "id": "social-e375155ca8a9",
+    "url": "https://x.com/tashanreed/status/2106067298238828689",
+    "text": "#Commanders WR Terry McLaurin suffered a hamstring injury in practice Friday and is listed as questionable to play Sunday.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-02T17:02:27.000Z",
+    "collectedAt": "2026-10-02T18:05:47.497Z"
+  },
+  "social-15c960424282": {
+    "id": "social-15c960424282",
+    "url": "https://x.com/tashanreed/status/2106066829353308247",
+    "text": "White, who didn't practice this week, is ruled out as expected:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-02T17:00:35.000Z",
+    "collectedAt": "2026-10-02T18:05:47.497Z"
+  },
+  "social-aa7b6f1f25e3": {
+    "id": "social-aa7b6f1f25e3",
+    "url": "https://x.com/Schultz_Report/status/2106069174300848582",
+    "text": "I asked #Commanders WR Terry McLaurin about the #Cowboys trading for Joey Porter Jr.",
+    "handle": "Schultz_Report",
+    "author": "Jordan Schultz",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-02T17:09:54.000Z",
+    "collectedAt": "2026-10-02T18:05:58.081Z"
+  },
+  "social-b1f4af118c6e": {
+    "id": "social-b1f4af118c6e",
+    "url": "https://x.com/FantasyProsNFL/status/2106072896623771778",
+    "text": "Terry McLaurin (hamstring) listed questionable Sunday 8/terry-mclaurin-hamstring-listed-questionable-sunday.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @koslow_ari@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-02T17:24:42.000Z",
+    "collectedAt": "2026-10-02T18:05:58.953Z"
   }
 }
