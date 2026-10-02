@@ -1475,18 +1475,6 @@
     "publishedAt": "2026-08-19T15:31:45.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
-  "athletic-jhabvala-0aed4c7c37d2": {
-    "id": "athletic-jhabvala-0aed4c7c37d2",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7520817/2026/08/18/commanders-roster-battles-robert-henry-luke-mccaffrey",
-    "title": "Which Commanders have the most at stake in the rest of preseason and camp?",
-    "excerpt": "Some positional battles have already been decided. But Washington faces tough roster choices at receiver, safety and elsewhere.",
-    "publishedAt": "2026-08-18T11:00:34.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
     "sourceId": "yahoo-nfl",
@@ -14398,5 +14386,29 @@
     "excerpt": "KANSAS CITY, MISSOURI - SEPTEMBER 20: Tyquan Thornton #2 of the Kansas City Chiefs catches a pass during overtime of an NFL football game against the Indianapolis Colts at Arrowhead Stadium on September 20, 2026 in Kansas City, Missouri. (Photo by Kevin Sabitus/Getty Images) | Getty Images All aTwitter – 2 October 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL,…",
     "publishedAt": "2026-10-02T04:00:00.000Z",
     "collectedAt": "2026-10-02T10:10:51.534Z"
+  },
+  "hogs-haven-fa085a939d2f": {
+    "id": "hogs-haven-fa085a939d2f",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/445356/washington-commanders-vs-indianapolis-colts-week-4-five-questions-stampede-blue",
+    "title": "Washington Commanders vs Indianapolis Colts Week 4: Five Questions with Stampede Blue",
+    "excerpt": "It’s week 4 of the NFL season, and the 1-2 Washington Commanders will be facing a 1-2 Indianapolis Colts team at Tottenham Hotspur Stadium in London, England Sunday at 9:30 a.m. ET. The Colts are in a bit of a similar situation as the Commanders. The Colts also started the season 0-2, losing to the Ravens in week 1 and the Chiefs in week 2, before winning an upset victory in week 3 against their division-rivals, the Houston Texans. The Colts coaching staff also find themselves on the hotseat…",
+    "publishedAt": "2026-10-02T11:00:00.000Z",
+    "collectedAt": "2026-10-02T12:06:08.973Z"
+  },
+  "riggos-rag-e3fa7cdca309": {
+    "id": "riggos-rag-e3fa7cdca309",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-gives-commanders-compelling-reason-approve-his-risky-return",
+    "title": "Jayden Daniels gives Commanders compelling reason to approve his risky return",
+    "excerpt": "Washington Commanders quarterback JJayden Daniels stated a strong case to play in Week 4 against the Indianapolis Colts.",
+    "publishedAt": "2026-10-02T11:30:01.000Z",
+    "collectedAt": "2026-10-02T12:06:09.708Z"
   }
 }
