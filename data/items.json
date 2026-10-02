@@ -95,18 +95,6 @@
     "publishedAt": "2026-08-18T21:37:49.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-da2f3a66cb2e": {
-    "id": "hogs-haven-da2f3a66cb2e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/nfl-training-camp/432691/commanders-camp-talk-decision-jayden-daniels-playing-preseason",
-    "title": "Commanders Camp Talk: Dan Quinn, Nick Allegretti and Drew Stevens",
-    "excerpt": "The Washington Commanders training camp rolls on for Day 12 in Ashburn, VA. This is their first real practice since before they hosted the Dolphins on Friday night.\n\n Head coach Dan Quinn spoke to reporters before the…",
-    "publishedAt": "2026-08-18T14:10:07.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "cbs-nfl-add3ddad65d2": {
     "id": "cbs-nfl-add3ddad65d2",
     "sourceId": "cbs-nfl",
@@ -14494,5 +14482,65 @@
     "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Jacory Croskey-Merritt #22 of the Washington Commanders runs with the ball during the first quarter of an NFL football game against the Seattle Seahawks at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Kevin Sabitus/Getty Images) | Getty Images The Daily Slop 2 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC…",
     "publishedAt": "2026-10-02T13:30:00.000Z",
     "collectedAt": "2026-10-02T14:05:40.500Z"
+  },
+  "clutchpoints-591adb819194": {
+    "id": "clutchpoints-591adb819194",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-officially-ruled-out-week-4-despite-optimism",
+    "title": "Commanders’ Jayden Daniels officially ruled out for Week 4 despite optimism",
+    "excerpt": "The Washington Commanders will be facing the Indianapolis Colts, and all eyes have been on the status of Jayden Daniels as he tries to come back from his elbow injury. Though he did some stuff with the team at practice this week, it doesn’t look like he’s quite there yet, and head coach Dan Quinn has ruled him out for the game, according to Ian Rapoport of NFL Network.\n\n “Commanders coach Dan Quinn made it official, as Marcus Mariota will start once again. He’ll face the Colts , with Jayden…",
+    "publishedAt": "2026-10-02T13:53:33.000Z",
+    "collectedAt": "2026-10-02T14:26:55.370Z"
+  },
+  "athletic-jhabvala-39bc71713db2": {
+    "id": "athletic-jhabvala-39bc71713db2",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7652610/2026/10/02/jayden-daniels-commanders-out-marcus-mariota",
+    "title": "Commanders QB Jayden Daniels ruled out vs. Colts; Marcus Mariota to start again",
+    "excerpt": "Daniels returned to practice in a limited capacity this week as he recovers from a dislocated elbow in his left (non-throwing) arm.",
+    "publishedAt": "2026-10-02T14:22:34.000Z",
+    "collectedAt": "2026-10-02T14:26:55.905Z"
+  },
+  "commanders-youtube-1635d0de3020": {
+    "id": "commanders-youtube-1635d0de3020",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=XDf1Yy1tib0",
+    "title": "Kain Medrano Is Prepared For This Moment + The Legends Take Over London 🇬🇧 | Next Man Up",
+    "excerpt": "",
+    "publishedAt": "2026-10-02T14:00:06.000Z",
+    "collectedAt": "2026-10-02T14:26:55.972Z"
+  },
+  "wjla-commanders-83a17735f6d4": {
+    "id": "wjla-commanders-83a17735f6d4",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/marcus-mariota-to-start-for-commanders-against-colts-in-london-with-jayden-daniels-out",
+    "title": "Marcus Mariota to start for Commanders against Colts in London with Jayden Daniels out",
+    "excerpt": "Commanders quarterback Marcus Mariota will get his second straight start in place of the injured Jayden Daniels on Sunday when Washington faces the Indianapolis",
+    "publishedAt": "2026-10-02T14:20:57.000Z",
+    "collectedAt": "2026-10-02T14:26:58.989Z"
+  },
+  "yahoo-nfl-31cf45d80463": {
+    "id": "yahoo-nfl-31cf45d80463",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-rule-out-jayden-daniels-confirm-marcus-mariota-will-start-vs-colts-in-london-week-4-141929614.html",
+    "title": "Commanders rule out Jayden Daniels, confirm Marcus Mariota will start vs. Colts in London Week 4",
+    "excerpt": "The Washington Commanders have officially ruled out injured quarterback Jayden Daniels for Week 4’s international game against the Indianapolis Colts, head coach Dan Quinn confirmed to reporters Friday. Backup Marcus Mariota will start in his place.\n Daniels traveled with the team to London and practiced in a limited fashion this week after suffering a dislocated elbow in his non-throwing arm in Week 2. The injury is to the same elbow that Daniels dislocated and reinjured just last season.…",
+    "publishedAt": "2026-10-02T14:19:29.000Z",
+    "collectedAt": "2026-10-02T14:26:59.724Z"
   }
 }
