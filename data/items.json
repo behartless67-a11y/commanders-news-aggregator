@@ -359,30 +359,6 @@
     "publishedAt": "2026-08-18T17:30:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-0c01d72280a1": {
-    "id": "riggos-rag-0c01d72280a1",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jerome-ford-fading-commanders-roster-hopes-suffer-crushing-final-blow",
-    "title": "Jerome Ford's fading Commanders roster hopes suffer crushing final blow",
-    "excerpt": "Washington Commanders running back Jerome Ford's fading roster hoeps were dealt another hammer blow with two weeks until final cuts.",
-    "publishedAt": "2026-08-18T16:00:01.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
-  "riggos-rag-e5c9a207aa37": {
-    "id": "riggos-rag-e5c9a207aa37",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/buccaneers-hand-commanders-castoff-surprise-lifeline-days-after-rejection",
-    "title": "Buccaneers hand Commanders castoff surprise lifeline days after rejection",
-    "excerpt": "The Tampa Bay Buccaneers handed defensive back Robert McDaniel a surprise lifeline just days after he was waived by the Washington Commanders.",
-    "publishedAt": "2026-08-18T14:30:00.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -585,18 +561,6 @@
     "title": "Happy Homecoming: Nick Cross excited to shine with the Commanders",
     "excerpt": "There's no place like home.The football journey is a winding road for many players. But for Nick Cross, it didn't take long to find his way back home.In 2022, C",
     "publishedAt": "2026-08-19T15:42:27.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
-  "wjla-commanders-9491e9593de3": {
-    "id": "wjla-commanders-9491e9593de3",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/bill-gets-bigger-jacory-croskey-merritt-ready-to-go-for-his-second-season-with-washington",
-    "title": "Bill gets bigger: Jacory Croskey-Merritt ready to go for his second season with Washington",
-    "excerpt": "During the offseason, the Washington Commanders reworked their running back room.Jacory Croskey-Merritt though remains a constant in the backfield and is focuse",
-    "publishedAt": "2026-08-18T15:52:55.000Z",
     "collectedAt": "2026-08-20T16:42:44.239Z"
   },
   "riggos-rag-efbf5c50dff3": {
@@ -14371,7 +14335,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/pressers/445716/dan-quinn-jayden-daniels-out-marcus-mariota-starts-vs-colts-london",
     "title": "Dan Quinn: Jayden Daniels OUT, Marcus Mariota to start vs Colts",
-    "excerpt": "Washington Commanders head coach Dan Quinn announced that Jayden Daniels won’t play on Sunday, and Marcus Mariota will get the start in London against the Indianapolis Colts. Daniels will miss his second game after dislocating his left elbow in Week 2 vs the Cowboys. He traveled with the team, but has been limited in practice all week as he adjusts to a new brace.\n \n Jayden Daniels OUT vs Colts:\n Jayden Daniels will not play Sunday, via Dan Quinn just now. pic.twitter.com/BCvZxLJ2td \n— Grant…",
+    "excerpt": "Washington Commanders head coach Dan Quinn announced that Jayden Daniels won’t play on Sunday, and Marcus Mariota will get the start in London against the Indianapolis Colts. Daniels will miss his second game after dislocating his left elbow in Week 2 vs the Cowboys. He traveled with the team, but has been limited in practice all week as he adjusts to a new brace.\n\n While the Commanders want Daniels back as soon as possible, they’ve got a plan for his return to play. Part of that was the work…",
     "publishedAt": "2026-10-02T13:47:02.000Z",
     "collectedAt": "2026-10-02T14:05:34.513Z"
   },
@@ -14542,5 +14506,41 @@
     "excerpt": "The Washington Commanders have officially ruled out injured quarterback Jayden Daniels for Week 4’s international game against the Indianapolis Colts, head coach Dan Quinn confirmed to reporters Friday. Backup Marcus Mariota will start in his place.\n Daniels traveled with the team to London and practiced in a limited fashion this week after suffering a dislocated elbow in his non-throwing arm in Week 2. The injury is to the same elbow that Daniels dislocated and reinjured just last season.…",
     "publishedAt": "2026-10-02T14:19:29.000Z",
     "collectedAt": "2026-10-02T14:26:59.724Z"
+  },
+  "hogs-haven-df1ab376535e": {
+    "id": "hogs-haven-df1ab376535e",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/445819/commanders-colts-injury-report-chig-okonkwo-frankie-luvu-jayden-daniels-rachaad-white",
+    "title": "Commanders vs. Colts injury report: Chig Okonkwo, Frankie Luvu will play",
+    "excerpt": "The Commanders didn’t even wait for their formal injury report to announce the return of some key starters. Head coach Dan Quinn said that linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) will play on Sunday against the Indianapolis Colts at Tottenham Hotspur Stadium in London. \n That’s a huge win for Washington, getting two primary starters back in the lineup. \n Quinn also announced the quarterback Jayden Daniels was ruled out of Sunday contest after returning to practice…",
+    "publishedAt": "2026-10-02T14:38:43.000Z",
+    "collectedAt": "2026-10-02T16:05:37.326Z"
+  },
+  "riggos-rag-162932afa46e": {
+    "id": "riggos-rag-162932afa46e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-sets-final-practice-hurdle-jayden-daniels-commanders-return-nears",
+    "title": "Dan Quinn sets final practice hurdle as Jayden Daniels’ Commanders return nears",
+    "excerpt": "Washington Commanders head coach Dan Quinn outlined what quarterback Jayden Daniels must do in his quest to return soon.",
+    "publishedAt": "2026-10-02T16:00:00.000Z",
+    "collectedAt": "2026-10-02T16:05:38.479Z"
+  },
+  "yahoo-nfl-5c4567877e73": {
+    "id": "yahoo-nfl-5c4567877e73",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/fantasy/live/nfl-injury-tracker-week-4-latest-news-fantasy-implications-as-puka-nacua-hip-is-expected-to-return-justin-jefferson-ankle-misses-practice-jayden-daniels-elbow-ruled-out-151829331.html",
+    "title": "NFL injury tracker Week 4: Latest news, fantasy implications as Puka Nacua (hip) is expected to return, Justin Jefferson (ankle) misses practice, Jayden Daniels (elbow) ruled out",
+    "excerpt": "Week 4 is underway, and we're tracking all the injuries heading into the weekend.\n Jump to a team:\n AFC East: Bills | Dolphins | Patriots | Jets \n AFC North: Ravens | Bengals | Browns (played Thurs.) | Steelers (played Thurs.)\n AFC South: Texans | Colts | Jaguars | Titans \n AFC West: Broncos | Chiefs | Raiders | Chargers \n NFC East: Cowboys | Giants | Eagles | Commanders \n NFC North: Bears | Lions | Packers | Vikings \n NFC South: Falcons | Panthers | Saints | Buccaneers \n NFC West: Cardinals |…",
+    "publishedAt": "2026-09-28T15:18:29.000Z",
+    "collectedAt": "2026-10-02T16:05:45.985Z"
   }
 }
