@@ -90,13 +90,29 @@ PHOTOS=(
   # the slow drift in site.css to travel through. They get the long-edge
   # override because this is the one image every page loads first and at
   # full width; 1200px would come out visibly soft across a 1440px screen.
-  # Chosen for atmosphere over faces: the stadium, the end zone wall and the
-  # rain crowd read well under the header's dark scrim, and a close-up of
-  # friends at the top of every page for a day is a lot to ask of anyone.
+  #
+  # Ben asked for faces first ("crop to see more of our faces"), then crowd
+  # and other Commanders shots, so that's the mix. The logo sits dead center
+  # of the header, which means on a group shot the middle person is behind
+  # it; the crops put faces in the vertical middle of the strip and rely on
+  # the people on either side of center to carry it.
+  #
+  # Faces. Group shots taken from a few feet away, not selfies: a face that
+  # fills a phone frame is taller than this whole strip, so a close-up only
+  # ever showed a slice of it (the rain-hood selfie came out as a row of
+  # eyes). These were also picked so Ben, his dad and his brother Josh land
+  # either side of the centered logo rather than behind it. The one
+  # exception is the rail shot, kept for the stadium bowl behind them.
+  "hero-crew|$GAMEDAY/IMG_8892.JPG|2048:682:0:242|contrast=1.10:saturation=1.12:gamma=1.03|-|1920"
+  "hero-six-in-lot|$GAMEDAY/IMG_8891.JPG|1536:512:0:500|contrast=1.10:saturation=1.12:gamma=1.03|-|1536"
+  "hero-rail-bowl|$GAMEDAY/IMG_8910.JPG|2048:682:0:340|contrast=1.10:saturation=1.12:gamma=1.03|-|1920"
+  # Crowd
+  "hero-rain-crowd|$GAMEDAY/IMG_8959.JPG|1536:512:0:665|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
+  "hero-pregame|$GAMEDAY/IMG_8933.JPG|1536:512:0:460|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
+  # Commanders
   "hero-bowl|$GAMEDAY/IMG_8914.JPG|1536:512:0:400|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
   "hero-endzone|$GAMEDAY/IMG_1666.HEIC|1536:512:0:358|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
-  "hero-rain-crowd|$GAMEDAY/IMG_8959.JPG|1536:512:0:665|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
-  "hero-red-lot|$GAMEDAY/IMG_8877.JPG|2048:682:0:211|contrast=1.10:saturation=1.10:gamma=1.03|-|1920"
+  "hero-mariota-sign|$GAMEDAY/IMG_1658.HEIC|1536:512:0:235|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
 )
 
 echo "{" > "$OUT/dimensions.json"

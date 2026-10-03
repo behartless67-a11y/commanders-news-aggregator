@@ -28,8 +28,13 @@
   "gameday-mariota-sign": { "w": 900, "h": 1200 },
   "gameday-coverage": { "w": 900, "h": 1200 },
   "gameday-selfie": { "w": 900, "h": 1200 },
+  "hero-crew": { "w": 1920, "h": 640 },
+  "hero-six-in-lot": { "w": 1536, "h": 512 },
+  "hero-rail-bowl": { "w": 1920, "h": 640 },
+  "hero-red-lot": { "w": 1920, "h": 640 },
+  "hero-rain-crowd": { "w": 1536, "h": 512 },
+  "hero-pregame": { "w": 1536, "h": 512 },
   "hero-bowl": { "w": 1536, "h": 512 },
   "hero-endzone": { "w": 1536, "h": 512 },
-  "hero-rain-crowd": { "w": 1536, "h": 512 },
-  "hero-red-lot": { "w": 1920, "h": 640 }
+  "hero-mariota-sign": { "w": 1536, "h": 512 }
 }

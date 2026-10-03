@@ -120,12 +120,21 @@ img, svg{ display:block; max-width:100%; }
   }
 }
 
-/* The scrim, above the photo. */
+/* The scrim, above the photo. Lighter than it used to be (0.72 and 0.82,
+   down to 0.48 and 0.64). The old values were tuned for stock photos, where
+   the photo was only ever texture and burying it was the point; with Ben's
+   own photos of his family and friends in the header, the whole reason they
+   are there is to be seen, and at the old values the faces came out murky.
+   Checked on the busiest photo in the pool, the rain crowd: the logo (which
+   carries its own drop shadow) and the gold tagline stay fully legible, and
+   the nav sits where the gradient has already reached solid background. The
+   small "Sports · News · DC" kicker is the element with the least margin, so
+   that is the one to check if this ever comes down further. */
 .hero::after{
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,8,7,0.72) 0%, rgba(10,8,7,0.82) 60%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgba(10,8,7,0.48) 0%, rgba(10,8,7,0.64) 60%, var(--bg) 100%);
   pointer-events: none;
 }
 

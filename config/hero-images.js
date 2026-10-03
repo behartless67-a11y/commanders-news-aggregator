@@ -12,14 +12,22 @@
  * These are Ben's, so the reverse holds, and they are served from this
  * site's own origin like every other photo in a post.
  *
- * Chosen for atmosphere rather than faces, since the header sits under a
- * heavy dark scrim and appears at the top of every page for a whole day.
+ * Ben asked for faces first, then crowd and other Commanders shots. The
+ * order below matters: heroImageForDate() takes day-of-year modulo the pool
+ * size, so neighbors in this list run on neighboring days. It alternates a
+ * shot with people in it and a stadium or crowd shot, so the header never
+ * shows faces two days running. Add new photos with that in mind.
+ *
  * Root-relative paths, because build.js drops the chosen one into site.css
  * and a stylesheet resolves relative URLs against its own location.
  */
 export const HERO_IMAGES = [
   '/photos/hero-bowl.jpg',
+  '/photos/hero-crew.jpg',
   '/photos/hero-endzone.jpg',
+  '/photos/hero-six-in-lot.jpg',
   '/photos/hero-rain-crowd.jpg',
-  '/photos/hero-red-lot.jpg',
+  '/photos/hero-rail-bowl.jpg',
+  '/photos/hero-mariota-sign.jpg',
+  '/photos/hero-pregame.jpg',
 ];
