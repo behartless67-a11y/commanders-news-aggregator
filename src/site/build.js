@@ -8,6 +8,7 @@ import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.j
 import { loadRosterCache } from '../lib/roster.js';
 import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
+import { parseGameTime } from '../lib/dates.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
@@ -20,7 +21,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -90,6 +91,21 @@ function newsletterPostsFor(originals, mondays, shareCards) {
     .sort((a, b) => String(b.date).localeCompare(String(a.date)))
     .slice(0, 10)
     .map(({ date, ...rest }) => rest);
+}
+
+/**
+ * The next game still to be played, for abroad.html's "kickoff where you are"
+ * line: { iso, opponent } or null in the offseason or between builds after the
+ * last game. abroad.js hides the line itself once the kickoff has passed.
+ */
+function nextGameFor(games) {
+  const now = Date.now();
+  for (const g of games || []) {
+    if (g.isBye || g.result) continue;
+    const iso = parseGameTime(g.gametime);
+    if (iso && Date.parse(iso) > now) return { iso, opponent: g.opponentShort || g.opponent || '' };
+  }
+  return null;
 }
 
 /** Where scripts/make-share-cards.mjs writes the cards and their manifest. */
@@ -358,6 +374,12 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'abroad.html'),
+    renderAbroadPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, nextGame: nextGameFor(games) }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'hail-mail.html'),
     renderHailMailPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, shareImage: shareCards['page-hail-mail'] || null }),
     'utf8',
@@ -448,6 +470,9 @@ export async function buildSite() {
 
   for (const asset of [
     'site.js',
+    // Translations and the survey for readers outside the US. site.js loads
+    // it only for them; abroad.html includes it directly.
+    'abroad.js',
     'logo.png',
     'og-image.png',
     'apple-touch-icon.png',

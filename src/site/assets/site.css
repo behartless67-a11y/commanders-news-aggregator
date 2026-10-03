@@ -4249,6 +4249,157 @@ body.tv-page{
   text-underline-offset: 2px;
 }
 
+/* ---------- Hello from far away (assets/abroad.js) ----------
+   The note under the header for readers outside the US. A strip between two
+   rules rather than a popup or a floating card: it's a greeting, it sits in
+   the page, and it goes away for good with the ×. */
+.abroad-invite{
+  position: relative;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 12px 56px 12px 24px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(90,20,20,0.28);
+}
+.abroad-invite-text{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.abroad-invite-hello{
+  color: var(--gold);
+  font-weight: 800;
+}
+.abroad-invite-link{
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.abroad-invite-close{
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: none;
+  color: var(--text-muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.abroad-invite-close:hover,
+.abroad-invite-close:focus-visible{ color: var(--gold); }
+@media (max-width: 640px){
+  .abroad-invite{ padding: 12px 44px 12px 16px; }
+  .abroad-invite-link{ white-space: normal; }
+}
+
+/* abroad.html: the contact form's bones, but the questions are sentences, so
+   they're set as sentences (no uppercase tracking), and the page is a little
+   wider to hold them. */
+.abroad-page{
+  max-width: 600px;
+  text-align: left;
+}
+.abroad-page .podcasts-heading,
+.abroad-page > .page-intro{ text-align: left; }
+.abroad-lang-row{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.abroad-lang-row .contact-input{ padding: 6px 10px; font-size: 14px; }
+.abroad-kickoff{
+  margin: 4px 0 20px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 15px;
+}
+.abroad-form{ gap: 26px; }
+/* 16px so iOS doesn't zoom the page in when a field is tapped. */
+.abroad-page .contact-input{ font-size: 16px; }
+.abroad-q{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.abroad-q legend,
+.abroad-q-title{
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.abroad-q.contact-field{ gap: 8px; }
+.abroad-hint{
+  margin-top: -4px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.abroad-pair{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 520px){
+  .abroad-pair{ grid-template-columns: 1fr; }
+}
+.abroad-options{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.abroad-option{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--text);
+  cursor: pointer;
+}
+.abroad-option input{
+  width: 18px;
+  height: 18px;
+  accent-color: var(--gold);
+  flex-shrink: 0;
+}
+.abroad-q .abroad-option + .contact-field{ margin-top: 12px; }
+.abroad-privacy{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+.abroad-thanks{
+  margin: 24px 0;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
 /* Visible to screen readers, not on screen: the signup input's label, where
    the placeholder already says "your@email.com" to sighted readers. */
 .visually-hidden{

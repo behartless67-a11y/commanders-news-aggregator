@@ -2988,6 +2988,141 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
+/**
+ * abroad.html: the page the "hello from far away" note links to (see
+ * assets/abroad.js). Written out in English so it works without JavaScript and
+ * so Netlify can see the form at deploy; every string carries a data-i18n key
+ * that abroad.js swaps for the reader's language. Field names and the radio
+ * values stay English whatever the language, so the answers read the same in
+ * the admin panel.
+ *
+ * `nextGame` ({ iso, opponent }) feeds the "kickoff where you are" line, which
+ * abroad.js formats in the reader's own time zone and hides once it's past.
+ */
+export function renderAbroadPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, nextGame = null }) {
+  const description = `Reading ${siteName} from outside the US? Say hello. A few optional questions from one Washington fan in Charlottesville, in your language.`;
+  const watch = [
+    ['w_gamepass', 'NFL Game Pass / DAZN'],
+    ['w_tv', 'On local TV'],
+    ['w_stream', "A stream I won't ask about"],
+    ['w_highlights', 'Highlights the next morning'],
+    ['w_scores', 'Live score updates and quiet suffering'],
+    ['w_other', 'Some other way'],
+  ];
+  const kickoff = nextGame
+    ? `<p class="abroad-kickoff" data-kickoff="${escapeHtml(nextGame.iso)}" data-opponent="${escapeHtml(nextGame.opponent)}" hidden></p>`
+    : '';
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello from Charlottesville | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Hello from Charlottesville | ${siteName}`, description, siteUrl, path: 'abroad.html' })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('abroad.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page abroad-page" id="abroad-survey">
+    <p class="abroad-lang-row" hidden>
+      <label for="abroad-lang" data-i18n="language">Language</label>
+      <select id="abroad-lang" class="contact-input"></select>
+    </p>
+    <h1 class="podcasts-heading" data-i18n="page_title">Hello from Charlottesville</h1>
+    <p class="page-intro" data-i18n-intro>I'm Ben. I run this site from Charlottesville, Virginia, and it still blows my mind that anyone reads it from so far away.</p>
+    <p class="page-intro" data-i18n="intro2">Honestly, just visiting is plenty, and I appreciate it. But if you feel like writing in, it would make me really happy. Every question is optional, and you can answer in any language.</p>
+    ${kickoff}
+
+    <form name="abroad" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form abroad-form">
+      <input type="hidden" name="form-name" value="abroad" />
+      <input type="hidden" name="country_code" value="" />
+      <input type="hidden" name="lang" value="en" />
+      <p class="contact-honeypot"><label>Leave this field blank<input name="bot-field" /></label></p>
+
+      <fieldset class="abroad-q">
+        <legend data-i18n="q_where">Where are you reading from?</legend>
+        <div class="abroad-pair">
+          <label class="contact-field"><span data-i18n="country_label">Country</span>
+            <input class="contact-input" type="text" name="country" autocomplete="country-name" maxlength="80" /></label>
+          <label class="contact-field"><span data-i18n="city_label">City (optional)</span>
+            <input class="contact-input" type="text" name="city" autocomplete="address-level2" maxlength="80" /></label>
+        </div>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title" data-i18n="q_story">How did you end up a Washington fan?</span>
+        <span class="abroad-hint" data-i18n="story_hint">Everyone has a story. Mine involves a ditch.</span>
+        <textarea class="contact-input contact-textarea" name="story" rows="5" maxlength="4000"></textarea>
+      </label>
+
+      <fieldset class="abroad-q">
+        <legend data-i18n="q_watch">How do you usually watch the games?</legend>
+        <div class="abroad-options">
+${watch.map(([key, value]) => `          <label class="abroad-option"><input type="radio" name="watch" value="${escapeHtml(value)}" /> <span data-i18n="${key}">${escapeHtml(value)}</span></label>`).join('\n')}
+        </div>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title" data-i18n="q_kickoff">What's the worst kickoff time you've stayed up (or woken up) for?</span>
+        <input class="contact-input" type="text" name="worst_kickoff" maxlength="200" />
+      </label>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title" data-i18n="q_player">Favorite player, past or present?</span>
+        <input class="contact-input" type="text" name="favorite_player" maxlength="200" />
+      </label>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title" data-i18n="q_write">Anything you want me to write about?</span>
+        <textarea class="contact-input contact-textarea" name="write_about" rows="3" maxlength="2000"></textarea>
+      </label>
+
+      <fieldset class="abroad-q">
+        <legend data-i18n="q_mention">Can I mention you in a post?</legend>
+        <label class="abroad-option"><input type="checkbox" name="mention_ok" value="yes" /> <span data-i18n="mention_yes">Yes, you can mention me</span></label>
+        <label class="contact-field"><span data-i18n="mention_name">Name to use (first name and city is perfect)</span>
+          <input class="contact-input" type="text" name="mention_name" maxlength="120" /></label>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title" data-i18n="q_email">Email (only if you'd like a reply)</span>
+        <input class="contact-input" type="email" name="email" autocomplete="email" maxlength="200" />
+      </label>
+
+      <button class="contact-submit" type="submit" data-i18n="submit">Send it to Charlottesville</button>
+      <p class="abroad-privacy" data-i18n="privacy">I only see what you type here. Your country comes from your connection, roughly, the way every website sees it, and nothing is saved unless you hit send.</p>
+    </form>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<!-- abroad.js first, so window.bwAbroad exists by the time site.js hears the
+     country back from the track beacon and hands it over. -->
+<script src="abroad.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
 export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
   const description = `${siteName} is a free, ad-free fan project. Chip in toward hosting if you'd like.`;
   return `<!doctype html>
@@ -3211,6 +3346,11 @@ ${header('admin.html', false, false)}
       </section>
 
       <section class="admin-section">
+        <h2>Readers abroad</h2>
+        <div id="admin-abroad"><p class="page-intro">Loading…</p></div>
+      </section>
+
+      <section class="admin-section">
         <h2>Newsletter</h2>
         <div id="admin-newsletter"><p class="page-intro">Loading…</p></div>
       </section>
@@ -3253,6 +3393,7 @@ ${footer(sources, generatedAt)}
 
   var newsletterEl = document.getElementById('admin-newsletter');
   var wiretapsEl = document.getElementById('admin-wiretaps');
+  var abroadEl = document.getElementById('admin-abroad');
 
   var pipelineEl = document.getElementById('admin-pipeline');
 
@@ -3263,6 +3404,7 @@ ${footer(sources, generatedAt)}
     loadStats();
     loadDrafts();
     loadWireTaps();
+    loadAbroad();
     loadNewsletter();
   }
 
@@ -3338,6 +3480,44 @@ ${footer(sources, generatedAt)}
       })
       .catch(function () {
         wiretapsEl.innerHTML = '<p class="page-intro">Could not load the mailbag.</p>';
+      });
+  }
+
+  // "Hello from far away" survey answers (abroad.html). Answers can be in any
+  // language; the lang field says which version of the survey they saw.
+  function loadAbroad() {
+    fetch('/.netlify/functions/abroad-list', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        if (!data.count) {
+          abroadEl.innerHTML = '<p class="page-intro">No one has written in from abroad yet. The note is out there.</p>';
+          return;
+        }
+        var rows = [
+          ['story', 'How they became a fan'], ['watch', 'Watches via'], ['worst_kickoff', 'Worst kickoff'],
+          ['favorite_player', 'Favorite player'], ['write_about', 'Write about'], ['email', 'Email'],
+        ];
+        var items = data.entries.map(function (e) {
+          var when = new Date(e.submittedAt);
+          var stamp = isNaN(when.getTime()) ? '' : when.toLocaleString();
+          var place = [e.city, e.country || e.country_code].filter(Boolean).join(', ') || 'Somewhere out there';
+          var mention = e.mention_ok === 'yes'
+            ? '<div style="color:var(--gold);font-size:13px">OK to mention' + (e.mention_name ? ' as ' + esc(e.mention_name) : '') + '</div>'
+            : '<div class="page-intro" style="font-size:13px;margin:0">Not for mentioning</div>';
+          var body = rows.filter(function (r) { return e[r[0]]; }).map(function (r) {
+            return '<div style="margin-top:4px"><span class="page-intro" style="font-size:12px;margin:0">' + r[1] + ':</span> <span style="white-space:pre-wrap">' + esc(e[r[0]]) + '</span></div>';
+          }).join('');
+          return '<li style="margin-bottom:18px">' +
+            '<div style="color:var(--gold);font-weight:600">' + esc(place) + (e.lang && e.lang !== 'en' ? ' <span class="page-intro" style="font-size:12px;margin:0">(' + esc(e.lang) + ')</span>' : '') + '</div>' +
+            body + mention +
+            '<div class="page-intro" style="font-size:12px;margin:2px 0 0">' + esc(stamp) + '</div>' +
+            '</li>';
+        }).join('');
+        abroadEl.innerHTML = '<p class="page-intro"><strong style="color:var(--gold)">' + data.count + '</strong> reader' + (data.count === 1 ? '' : 's') + ' abroad wrote in</p>' +
+          '<ul class="admin-path-list" style="margin:8px 0 0;list-style:none;padding:0">' + items + '</ul>';
+      })
+      .catch(function () {
+        abroadEl.innerHTML = '<p class="page-intro">Could not load the survey answers.</p>';
       });
   }
 

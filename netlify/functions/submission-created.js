@@ -20,6 +20,7 @@ export default async (req) => {
 
   if (payload.form_name === 'email-subscribe') return captureSubscriber(payload);
   if (payload.form_name === 'wiretaps') return captureWireTap(payload);
+  if (payload.form_name === 'abroad') return captureAbroad(payload);
   return new Response('ok');
 };
 
@@ -64,6 +65,32 @@ async function captureSubscriber(payload) {
  * fine" is a promise the page makes, so an empty name is stored as empty
  * rather than backfilled from anything else in the payload.
  */
+/**
+ * "Hello from far away" survey answers (abroad.html, see assets/abroad.js), for
+ * the admin panel's Readers abroad section. Every field is optional, so an
+ * entry is kept as long as anything at all was filled in. Same key scheme as
+ * the mailbag, so a listing comes back in order.
+ */
+const ABROAD_FIELDS = [
+  'country', 'country_code', 'city', 'lang', 'story', 'watch', 'worst_kickoff',
+  'favorite_player', 'write_about', 'mention_ok', 'mention_name', 'email',
+];
+
+async function captureAbroad(payload) {
+  const entry = {};
+  for (const field of ABROAD_FIELDS) {
+    entry[field] = String(payload.data?.[field] || '').trim().slice(0, 4000);
+  }
+  const answered = ['country', 'city', 'story', 'watch', 'worst_kickoff', 'favorite_player', 'write_about', 'mention_name', 'email']
+    .some((f) => entry[f]);
+  if (!answered) return new Response('ok');
+
+  const at = new Date().toISOString();
+  const id = crypto.randomBytes(4).toString('hex');
+  await getStore('abroad').set(`a:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
+  return new Response('ok');
+}
+
 async function captureWireTap(payload) {
   const question = String(payload.data?.question || '').trim();
   if (!question) return new Response('ok');

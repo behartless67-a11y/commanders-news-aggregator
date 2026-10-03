@@ -544,6 +544,26 @@
    * The cookie itself is verified server-side; checking for its existence
    * here is enough to suppress the beacon without exposing anything.
    */
+  /**
+   * Readers outside the US get a hello in their own language and an
+   * invitation to write in (see assets/abroad.js). That file, with all its
+   * translations, only loads for them; US readers never download it. The
+   * country comes back from the track beacon below. `?country=DE` in the URL
+   * forces it, for previewing what a reader there sees.
+   */
+  function sayHelloAbroad(country) {
+    if (!country || country === 'US') return;
+    window.__bwCountry = country;
+    if (window.bwAbroad) { window.bwAbroad.start(country); return; }
+    var s = document.createElement('script');
+    s.src = 'abroad.js';
+    s.defer = true;
+    s.onload = function () { if (window.bwAbroad) window.bwAbroad.start(country); };
+    document.head.appendChild(s);
+  }
+  var forcedCountry = (new URLSearchParams(window.location.search).get('country') || '').toUpperCase();
+  if (/^[A-Z]{2}$/.test(forcedCountry)) sayHelloAbroad(forcedCountry);
+
   if (document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); })) {
     // admin browsing — don't count this
   } else
@@ -561,7 +581,10 @@
       // reach the server.
       viewportWidth: window.innerWidth,
     }),
-  }).catch(function () {});
+  })
+    .then(function (r) { return r.status === 200 ? r.json() : null; })
+    .then(function (d) { if (d && !forcedCountry) sayHelloAbroad(d.country); })
+    .catch(function () {});
 
   /**
    * A second, separate beacon for outbound clicks — river cards mark their

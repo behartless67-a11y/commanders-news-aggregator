@@ -326,5 +326,12 @@ export default async (req, context) => {
   tasks.push(store.setJSON('recent', recent.slice(0, RECENT_MAX)));
 
   await Promise.all(tasks);
-  return new Response(null, { status: 204 });
+  // The country code goes back to the page that asked, and nowhere else: it's
+  // what lets site.js say hello to a reader outside the US in their own
+  // language (see assets/abroad.js). It was already derived above for the
+  // counters; returning it stores nothing new.
+  return new Response(JSON.stringify({ country: geo?.country?.code || null }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+  });
 };
