@@ -35,18 +35,6 @@
     "publishedAt": "2026-09-23T19:19:29.000Z",
     "collectedAt": "2026-09-23T20:05:56.432Z"
   },
-  "social-c4c53e05c977": {
-    "id": "social-c4c53e05c977",
-    "url": "https://x.com/BenStandig/status/2102823635669090788",
-    "text": "This, imo, would be the OL plan if Sam Cosmi sits. Meaning Patrick starts. (Let me amend: Wylie would be my call at RG. I just don't know they will go there. Let me ponder further...)",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-23T18:13:17.000Z",
-    "collectedAt": "2026-09-23T20:05:59.220Z"
-  },
   "social-cbd6aa1fd4ea": {
     "id": "social-cbd6aa1fd4ea",
     "url": "https://x.com/Commanders/status/2102860554809360572",
@@ -9623,5 +9611,46 @@
     "images": [],
     "publishedAt": "2026-10-03T15:02:23.000Z",
     "collectedAt": "2026-10-03T18:05:47.930Z"
+  },
+  "social-a2f53fa2160c": {
+    "id": "social-a2f53fa2160c",
+    "url": "https://x.com/john_keim/status/2106453925037518865",
+    "text": "And this is what it looked like at the rally:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/754/956/039/original/909061edce421483.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/815/269/273/original/8190a2874baf7952.jpg"
+    ],
+    "publishedAt": "2026-10-03T18:38:46.000Z",
+    "collectedAt": "2026-10-03T19:00:10.707Z"
+  },
+  "social-779b49dd82f2": {
+    "id": "social-779b49dd82f2",
+    "url": "https://x.com/john_keim/status/2106453817139011649",
+    "text": "So the “Washington Road Warrior” was at the rally. Asked his real name: “Road”.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/648/631/586/original/378e49de7c2b5c98.jpg"
+    ],
+    "publishedAt": "2026-10-03T18:38:20.000Z",
+    "collectedAt": "2026-10-03T19:00:10.707Z"
+  },
+  "social-1541729fa105": {
+    "id": "social-1541729fa105",
+    "url": "https://x.com/john_keim/status/2106451259255620003",
+    "text": "Josh Harris asked by @NickiJhabvala@twitter.com about the logo/spear (and then @JPFinlayNBCS ).",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-03T18:28:10.000Z",
+    "collectedAt": "2026-10-03T19:00:10.707Z"
   }
 }
