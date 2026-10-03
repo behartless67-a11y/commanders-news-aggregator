@@ -1171,8 +1171,15 @@ function essayPhoto(photo, { className = 'essay-figure' } = {}) {
   const caption = photo.caption
     ? `<figcaption class="essay-figcaption">${escapeHtml(photo.caption)}</figcaption>`
     : '';
+  // Inline portrait photos are capped at 720px tall (see .essay-figure > img).
+  // The cap is a width, from the photo's own ratio, so the browser can still
+  // reserve the box from the width/height attributes before the image loads.
+  const portraitCap =
+    className === 'essay-figure' && Number(photo.h) > Number(photo.w)
+      ? ` style="max-width:${Math.round((720 * Number(photo.w)) / Number(photo.h))}px"`
+      : '';
   return `<figure class="${className}">
-        <img src="photos/${escapeHtml(photo.file)}" width="${photo.w}" height="${photo.h}" alt="${escapeHtml(photo.alt || '')}" loading="lazy" decoding="async" />
+        <img src="photos/${escapeHtml(photo.file)}" width="${photo.w}" height="${photo.h}" alt="${escapeHtml(photo.alt || '')}" loading="lazy" decoding="async"${portraitCap} />
         ${caption}
       </figure>`;
 }
@@ -1281,11 +1288,13 @@ ${items}
  * An unknown key renders nothing rather than throwing. Losing one photo is a
  * better failure than a build that dies over a typo in a caption file.
  */
-function essayParagraphs(paragraphs, rosterIndex, { photos = {}, videos = {}, thanks = null, callout = null, slideshow = null } = {}) {
+function essayParagraphs(paragraphs, rosterIndex, { photos = {}, videos = {}, thanks = null, callout = null, slideshow = null, subheadTag = 'h3' } = {}) {
   return paragraphs
     .map((p) => {
       if (p.startsWith('## ')) {
-        return `<h3 class="digest-subhead">${escapeHtml(p.slice(3).trim())}</h3>`;
+        // One level under the post title: h2 on a post's own page (title is
+        // h1), h3 on blog.html, where the title is an h2.
+        return `<${subheadTag} class="digest-subhead">${escapeHtml(p.slice(3).trim())}</${subheadTag}>`;
       }
       if (p.startsWith('!photo ')) {
         const photo = photos[p.slice(7).trim()];
@@ -1377,6 +1386,7 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
     thanks: record.thanks,
     callout: record.callout,
     slideshow: record.slideshow,
+    subheadTag: headingTag === 'h1' ? 'h2' : 'h3',
   });
   // Raw HTML, not escaped like the paragraphs above — trusted because these
   // records are hand-authored by the site owner, not user input. Lets a plug
@@ -1451,6 +1461,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
     thanks: record.thanks,
     callout: record.callout,
     slideshow: record.slideshow,
+    subheadTag: headingTag === 'h1' ? 'h2' : 'h3',
   });
   // Appended only when the prose didn't place it with a "!callout" marker, so
   // the already-published Monday post that predates the marker keeps its

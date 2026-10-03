@@ -16,8 +16,16 @@
   --border-soft: rgba(255,255,255,0.07);
   --text: #efe9e4;
   --text-muted: #a89f9b;
-  --text-faint: #7c7370;
+  /* Was #7c7370, which measured 4.09:1 on --bg and 3.78:1 on --surface, under
+     the WCAG AA 4.5:1 for normal text, on the 57 places it's used (timestamps,
+     captions, "Last updated", schedule labels). #908784 clears 4.5 on every
+     background it sits on (5.39 on --bg, 4.98 on --surface, 4.76 on
+     --surface-2) and still reads a step quieter than --text-muted. */
+  --text-faint: #908784;
   --radius: 10px;
+  /* Dark-only site: tells the browser to draw form fields, scrollbars and
+     autofill in their dark styles instead of glaring white ones. */
+  color-scheme: dark;
   /* Wide on purpose. The river is the point of the page, so it gets the room;
      .card-excerpt keeps its own max-width so body text never runs to a
      comically long line on a big monitor. */
@@ -1294,10 +1302,19 @@ main.layout{
 .digest-disclosure a{ color: var(--text-muted); font-weight: 600; }
 .digest-disclosure a:hover{ color: var(--gold); }
 
+/* A reading column, not the full width of the main grid track. Without a cap
+   the post ran up to ~1200px wide at 1400px+ screens, 95 to 160 characters a
+   line. ~44rem keeps 18px Inter around 70 to 80, about where Defector (720px
+   column) and Hogs Haven sit. Left-aligned to the column like everything else. */
+.digest-post{
+  max-width: 44rem;
+}
+
 .digest-post h1{
-  font-size: clamp(22px, 3vw, 30px);
-  line-height: 1.25;
-  margin: 0 0 6px;
+  font-size: clamp(26px, 3.4vw, 38px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
 }
 
 .digest-week{
@@ -1710,22 +1727,30 @@ main.layout{
 
 /* One continuous column, not boxed sections — see digestThread() in
    templates.js. Ordinary paragraph spacing, no dividers between them. */
+/* 18px, up from 14.5: the size readers actually settle into for long posts
+   (Hogs Haven 18px, Defector 20px and Bleacher Nation 21px in serifs, which run
+   smaller than Inter). Long-form is the one place on the site that's read
+   rather than scanned. */
 .digest-para{
-  font-size: 14.5px;
+  font-size: 18px;
   color: var(--text);
-  line-height: 1.65;
-  margin: 0 0 18px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 640px){
+  .digest-para{ font-size: 17px; }
 }
 
 /* Section breaks inside a long essay (see essayParagraphs() in templates.js).
    A rest stop for the eye, not a new article, so it stays well under the post
    title's size and leans on the gold rather than scale for emphasis. */
 .digest-subhead{
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
-  margin: 32px 0 14px;
+  margin: 36px 0 14px;
 }
 
 .digest-subhead:first-child{ margin-top: 0; }
@@ -1801,11 +1826,24 @@ main.layout{
   max-width: 420px;
 }
 
+/* A portrait phone photo at full column width stood ~940px tall, a screen and
+   a half on a laptop. essayPhoto() gives a portrait photo a max-width worked
+   out from its own dimensions so it tops out at 720px tall; this centres it.
+   Doing it with max-width rather than max-height keeps width:100% plus the
+   width/height attributes in charge of the box, so the space is reserved
+   before the image loads and the prose never jumps. Inline figures only: a
+   slideshow needs every slide at full track width. */
+.essay-figure > img{
+  margin-inline: auto;
+}
+
+/* Ben's captions are some of the funniest lines in a post, so they're set to
+   be read (15px, --text-muted) rather than as fine print. */
 .essay-figcaption{
-  font-size: 12.5px;
+  font-size: 15px;
   line-height: 1.5;
-  color: var(--text-faint);
-  margin-top: 9px;
+  color: var(--text-muted);
+  margin-top: 10px;
 }
 
 /* The "thank you in every reader's language" list (see thanksList() in
