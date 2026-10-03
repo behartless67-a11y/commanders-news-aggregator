@@ -9620,5 +9620,33 @@
     "images": [],
     "publishedAt": "2026-10-02T22:00:00.000Z",
     "collectedAt": "2026-10-02T22:05:41.337Z"
+  },
+  "social-dc17c1b04781": {
+    "id": "social-dc17c1b04781",
+    "url": "https://x.com/Commanders/status/2106164829333647737",
+    "text": "Making plays 🤫 @Redwire@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/373/926/362/791/936/original/2be488dd82b4cc4b.jpg"
+    ],
+    "publishedAt": "2026-10-02T23:30:00.000Z",
+    "collectedAt": "2026-10-03T00:05:38.313Z"
+  },
+  "social-d7f2b7835e4e": {
+    "id": "social-d7f2b7835e4e",
+    "url": "https://x.com/AdamSchefter/status/2106158863653237083",
+    "text": "Players out for Sunday include Jayden Daniels, Rachaad White, Caleb Williams, Breece Hall, Adonai Mitchell, DeVonta Smith, Dallas Goedert, Zach Baun, Terrance Ferguson, Aaron Donald, Azeez Al-Shaair, Cobie Durant, DeMarvion Overshown, Aaron Banks, Rueben Bain, Baker Mayfield, Justin Jefferson, Jadarian Price, Nick Bosa, Mykel Williams, Josh Simmons, Xavier Legette, Damien Lewis.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/373/831/369/020/247/original/538f5a7ccd0146f9.jpg"
+    ],
+    "publishedAt": "2026-10-02T23:06:18.000Z",
+    "collectedAt": "2026-10-03T00:05:46.794Z"
   }
 }
