@@ -35,18 +35,6 @@
     "publishedAt": "2026-08-19T16:00:00.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-718346a31ecb": {
-    "id": "hogs-haven-718346a31ecb",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-injuries/433690/commanders-injury-news-johnny-newton-klavon-chaisson-odafe-oweh-jordan-magee",
-    "title": "Commanders injury news: Johnny Newton (pectoral) to see specialist",
-    "excerpt": "The Commanders front seven has been hit hard by injuries recently, with head coach Dan Quinn reporting four new issues for that part of his defense. \n\n Interior defensive lineman Johnny Newton’s dealing with the most…",
-    "publishedAt": "2026-08-19T13:33:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -239,18 +227,6 @@
     "publishedAt": "2026-08-19T14:30:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-f4d9dfad746a": {
-    "id": "riggos-rag-f4d9dfad746a",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/johnny-newton-troubling-commanders-trajectory-took-agonizing-turn",
-    "title": "Johnny Newton's troubling Commanders trajectory just took an agonizing turn",
-    "excerpt": "The Washington Commanders could be without defensive lineman Johnny Newton after he suffered a pectoral injury.",
-    "publishedAt": "2026-08-19T13:12:52.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -333,30 +309,6 @@
     "title": "RT Josh Conerly Jr. Speaks To The Media After Practice | Washington Commanders",
     "excerpt": "",
     "publishedAt": "2026-08-19T15:16:13.000Z",
-    "collectedAt": "2026-08-20T13:31:52.804Z"
-  },
-  "commanders-youtube-c7438020655a": {
-    "id": "commanders-youtube-c7438020655a",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=-c7KD5qedpc",
-    "title": "Sonny Styles is GENERATIONAL + Running Backs Stand Out | Podcast | Washington Commanders | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-08-19T14:00:04.000Z",
-    "collectedAt": "2026-08-20T13:31:52.804Z"
-  },
-  "commanders-youtube-4957160206bf": {
-    "id": "commanders-youtube-4957160206bf",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=I1OlxcgmLPw",
-    "title": "HC Dan Quinn Speaks To The Media Before Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-19T12:17:42.000Z",
     "collectedAt": "2026-08-20T13:31:52.804Z"
   },
   "hogs-haven-8470a1158349": {
@@ -14626,5 +14578,29 @@
     "excerpt": "Veteran quarterback Marcus Mariota made the Washington Commanders’ cautious Jayden Daniels call an easy one to make.",
     "publishedAt": "2026-10-03T11:30:00.000Z",
     "collectedAt": "2026-10-03T12:05:32.535Z"
+  },
+  "riggos-rag-bdaf9e1afe03": {
+    "id": "riggos-rag-bdaf9e1afe03",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/chig-okonkwo-return-gives-commanders-counter-colts-star-tyler-warren",
+    "title": "Chig Okonkwo’s return gives Commanders a counter to Colts star Tyler Warren",
+    "excerpt": "Chig Okonkwo’s return gives the Washington Commanders a counter to Indianapolis Colts star tight end Tyler Warren.",
+    "publishedAt": "2026-10-03T13:00:00.000Z",
+    "collectedAt": "2026-10-03T14:05:31.695Z"
+  },
+  "yahoo-nfl-94df04c47671": {
+    "id": "yahoo-nfl-94df04c47671",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/5-questions-hogs-haven-tea-133000183.html",
+    "title": "5 Questions with Hogs Haven: The Tea on Colts vs. Commanders in London",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Sonny Styles #52 of the Washington Commanders celebrates his play against the Seattle Seahawks during the second quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images In Week 4 of 2026 our Indianapolis Colts will travel to London to take on the Washington Commanders. Knowing the party was crossing the Atlantic I sat down with Andrew York (eboracum) of Hogs Haven , SB Nation’s Washington…",
+    "publishedAt": "2026-10-03T13:30:00.000Z",
+    "collectedAt": "2026-10-03T14:05:38.042Z"
   }
 }

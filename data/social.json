@@ -9603,5 +9603,103 @@
     "images": [],
     "publishedAt": "2026-10-03T12:07:34.000Z",
     "collectedAt": "2026-10-03T14:05:10.655Z"
+  },
+  "social-5c9c426dfb47": {
+    "id": "social-5c9c426dfb47",
+    "url": "https://x.com/Commanders/status/2106376225283297446",
+    "text": "clock's ticking ⏱️ @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/227/509/160/886/original/7af1609362de13c0.jpg"
+    ],
+    "publishedAt": "2026-10-03T13:30:01.000Z",
+    "collectedAt": "2026-10-03T14:05:39.448Z"
+  },
+  "social-b02ce4b32449": {
+    "id": "social-b02ce4b32449",
+    "url": "https://x.com/Commanders/status/2106372690495852804",
+    "text": "Next round on Josh Harris! 🍻",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-03T13:15:58.000Z",
+    "collectedAt": "2026-10-03T14:05:39.449Z"
+  },
+  "social-95ab15de94c8": {
+    "id": "social-95ab15de94c8",
+    "url": "https://x.com/JPFinlayNBCS/status/2106372601341677588",
+    "text": "Chaos at the Commanders rally",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-03T13:15:37.000Z",
+    "collectedAt": "2026-10-03T14:05:40.770Z"
+  },
+  "social-4d21ba63129a": {
+    "id": "social-4d21ba63129a",
+    "url": "https://x.com/john_keim/status/2106377264074002754",
+    "text": "And Mark Clouse spending more of Josh Harris’ money: another round on the house. (The place holds 2,000. A line of around 400 outside to get in. Fingers crossed this does not hurt Harris’ account):",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-03T13:34:09.000Z",
+    "collectedAt": "2026-10-03T14:05:42.138Z"
+  },
+  "social-806a380d7d0a": {
+    "id": "social-806a380d7d0a",
+    "url": "https://x.com/john_keim/status/2106368860181905812",
+    "text": "Josh Harris bought a round for all the fans at today’s rally in London.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-03T13:00:45.000Z",
+    "collectedAt": "2026-10-03T14:05:42.138Z"
+  },
+  "social-11ca84eb72e1": {
+    "id": "social-11ca84eb72e1",
+    "url": "https://x.com/BenStandig/status/2106366698769055826",
+    "text": "Ok, this Commanders fan event is nuts. Line out the door. All the fans are here in gear and jacked up. That was true before Josh Harris stood on topmost a bar and bought the house a round.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-03T12:52:10.000Z",
+    "collectedAt": "2026-10-03T14:05:43.517Z"
+  },
+  "social-ca7e55101027": {
+    "id": "social-ca7e55101027",
+    "url": "https://x.com/tashanreed/status/2106379871412961742",
+    "text": "At a fan rally in London, #Commanders owner Josh Harris explained why he's optimistic about the state of the team:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-03T13:44:30.000Z",
+    "collectedAt": "2026-10-03T14:05:45.034Z"
+  },
+  "social-a9fe66cb7d62": {
+    "id": "social-a9fe66cb7d62",
+    "url": "https://x.com/tashanreed/status/2106374178576495036",
+    "text": "#Commanders ' owner Josh Harris on QB Jayden Daniels: \"He's an incredibly important part of our franchise going forward. ... He's a warrior. We just want to make sure he's OK.\"",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-03T13:21:53.000Z",
+    "collectedAt": "2026-10-03T14:05:45.034Z"
   }
 }
