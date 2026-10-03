@@ -9701,5 +9701,31 @@
     "images": [],
     "publishedAt": "2026-10-03T13:21:53.000Z",
     "collectedAt": "2026-10-03T14:05:45.034Z"
+  },
+  "social-5736c3dd4d96": {
+    "id": "social-5736c3dd4d96",
+    "url": "https://x.com/BenStandig/status/2106388474891051034",
+    "text": "Sources: Terry McLaurin is still expected to play in London despite showing up on the final injury report. He apparently tweaked his hamstring against the Seahawks and, after the Wednesday and Thursday practices, the plan leaned toward precaution. More: hope-dashed-jayden-daniels-ruled?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/412/158/166/055/original/714507b5da60b294.jpg"
+    ],
+    "publishedAt": "2026-10-03T14:18:41.000Z",
+    "collectedAt": "2026-10-03T14:36:30.432Z"
+  },
+  "social-023f678313ef": {
+    "id": "social-023f678313ef",
+    "url": "https://x.com/AdamSchefter/status/2106392288989716776",
+    "text": "Colts downgraded WR Keenan Allen to out for Sunday’s game in London against the Commanders due to his groin injury.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-03T14:33:51.000Z",
+    "collectedAt": "2026-10-03T14:36:35.026Z"
   }
 }
