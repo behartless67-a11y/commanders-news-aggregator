@@ -5,7 +5,7 @@
  * the logo up top and the headline across the bottom.
  *
  *   node scripts/make-share-cards.mjs              every published post
- *   node scripts/make-share-cards.mjs <slug|key>   just that one
+ *   node scripts/make-share-cards.mjs <slug|key>   just that one (or a PAGE_CARDS ref, e.g. hail-mail)
  *
  * Run it when a post is published or its title changes, then commit what it
  * writes. Like process-photos.sh it is deliberately not part of `npm run
@@ -30,7 +30,8 @@
  * from IMG_8959.JPG, pregame from IMG_8933.JPG, each a 1536x806 band scaled to
  * 1200x630 with the same color pass as process-photos.sh.
  *
- * Covers published and scheduled posts (not drafts).
+ * Covers published and scheduled posts (not drafts), plus the pages in
+ * PAGE_CARDS.
  *
  * Writes src/site/assets/share/<id>.jpg and src/site/assets/share/cards.json,
  * which build.js reads to point each post's og:image at its card.
@@ -71,8 +72,22 @@ function loadPosts() {
   return [
     ...read('data/originals', 'original', (r) => r.slug),
     ...read('data/mondays', 'monday', (r) => r.key),
+    ...PAGE_CARDS,
   ];
 }
+
+/**
+ * Site pages that get shared on their own, so they get a card like a post.
+ * Same shape as a post entry; `ref` is what you pass to make just that one.
+ */
+const PAGE_CARDS = [
+  {
+    kind: 'page',
+    id: 'page-hail-mail',
+    ref: 'hail-mail',
+    record: { title: 'Hail Mail: The Commanders Email for Fans Who Feel Too Much', share: { background: 'bowl' } },
+  },
+];
 
 /** Stable small hash, so a post's stock background doesn't move between runs. */
 function hash(s) {

@@ -4129,6 +4129,111 @@ body.tv-page{
 }
 .subscribe-modal-submit:hover{ background: var(--gold-dim); }
 
+/* The thank-you any Hail Mail form turns into once it's submitted (site.js). */
+.subscribe-done{
+  margin: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Hail Mail signup in the page: the end of every post, and hail-mail.html.
+   A rule across the top rather than a bordered card, so it reads as part of
+   the page and not a widget dropped onto it. */
+.hail-mail-box{
+  max-width: 640px;
+  margin: 36px 0 8px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+.hail-mail-box-eyebrow{
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hail-mail-box-heading{
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+}
+.hail-mail-box-body{
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.hail-mail-box-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+/* 16px, not the modal's 14px: under 16px, iOS zooms the page in on focus. */
+.hail-mail-box-input{
+  flex: 1 1 220px;
+  min-width: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: var(--text);
+}
+.hail-mail-box-input:focus{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.hail-mail-box-submit{
+  background: var(--gold);
+  color: #0a0807;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.hail-mail-box-submit:hover{ background: var(--gold-dim); }
+.hail-mail-box-submit:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.hail-mail-box-fine{
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+/* On hail-mail.html the form is the point of the page, so it sits in the
+   flow of the intro copy instead of after a post. */
+.hail-mail-page .hail-mail-box{ margin: 24px 0 28px; }
+/* .page-intro links inherit its gray, which made "here's everything I've
+   written" look like plain text. */
+.hail-mail-page .page-intro a{
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Visible to screen readers, not on screen: the signup input's label, where
+   the placeholder already says "your@email.com" to sighted readers. */
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .subscribe-modal-skip{
   background: none;
   border: none;

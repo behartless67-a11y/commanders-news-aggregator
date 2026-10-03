@@ -20,7 +20,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -63,6 +63,33 @@ function heroImageForDate(pool, date) {
   const start = Date.UTC(date.getUTCFullYear(), 0, 0);
   const dayOfYear = Math.floor((date.getTime() - start) / 86400000);
   return pool[dayOfYear % pool.length];
+}
+
+/**
+ * The ten newest of Ben's own posts, for the admin newsletter panel's "Start
+ * from a post" picker: everything a Hail Mail email about the post needs,
+ * with absolute URLs, since an email has no page to resolve a relative one
+ * against.
+ */
+function newsletterPostsFor(originals, mondays, shareCards) {
+  const entry = (record, file, cardKey, date) => {
+    const card = shareCards[cardKey];
+    return {
+      title: record.title,
+      url: `${SITE_URL}/${file}`,
+      summary: record.summary || '',
+      image: `${SITE_URL}/${card ? card.file : 'og-image.png'}`,
+      alt: card ? card.alt : record.title,
+      date,
+    };
+  };
+  return [
+    ...originals.map((r) => entry(r, `blog-original-${r.slug}.html`, `original-${r.slug}`, r.publishedAt)),
+    ...mondays.map((r) => entry(r, `blog-monday-${r.key}.html`, `monday-${r.key}`, r.reviewedAt || r.generatedAt)),
+  ]
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    .slice(0, 10)
+    .map(({ date, ...rest }) => rest);
 }
 
 /** Where scripts/make-share-cards.mjs writes the cards and their manifest. */
@@ -222,6 +249,12 @@ export async function buildSite() {
     await fs.writeFile(path.join(DIST_DIR, page.file), html, 'utf8');
   }
 
+  // Link-preview cards from scripts/make-share-cards.mjs, keyed by post (and
+  // hail-mail.html). A page without one (a post published before the script
+  // was run for it) shares with the site's logo card instead, so a missing
+  // card never breaks a page.
+  const shareCards = await loadShareCards();
+
   if (hasWeekly) {
     // "Blog" is the reader-facing name and URL only — the underlying digest
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
@@ -239,10 +272,6 @@ export async function buildSite() {
     for (const record of publishedPreviews) {
       await fs.writeFile(path.join(DIST_DIR, `blog-preview-${record.gameKey}.html`), renderPreviewPost(record, opts), 'utf8');
     }
-    // Link-preview cards from scripts/make-share-cards.mjs, keyed by post. A
-    // post without one (published before the script was run for it) shares
-    // with the site's logo card instead, so a missing card never breaks a page.
-    const shareCards = await loadShareCards();
     for (const record of publishedOriginals) {
       const shareImage = shareCards[`original-${record.slug}`] || null;
       await fs.writeFile(path.join(DIST_DIR, `blog-original-${record.slug}.html`), renderOriginalPost(record, { ...opts, shareImage }), 'utf8');
@@ -329,6 +358,12 @@ export async function buildSite() {
   );
 
   await fs.writeFile(
+    path.join(DIST_DIR, 'hail-mail.html'),
+    renderHailMailPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, shareImage: shareCards['page-hail-mail'] || null }),
+    'utf8',
+  );
+
+  await fs.writeFile(
     path.join(DIST_DIR, 'donate.html'),
     renderDonatePage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
@@ -348,7 +383,7 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'admin.html'),
-    renderAdminPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt }),
+    renderAdminPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, newsletterPosts: newsletterPostsFor(publishedOriginals, publishedMondays, shareCards) }),
     'utf8',
   );
 
@@ -379,6 +414,7 @@ export async function buildSite() {
     'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
     'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
     'music.html', 'beat-writers.html', 'cville.html', 'wiretaps.html',
+    'hail-mail.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),

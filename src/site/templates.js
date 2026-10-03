@@ -848,6 +848,10 @@ function footer(sources, generatedAt) {
       </div>
       <div class="footer-col footer-links-col">
         <h3>Subscribe</h3>
+        <a class="rss-link" href="hail-mail.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+          Hail Mail (email)
+        </a>
         <a class="rss-link" href="feed.xml">
           <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9h-2.5a6.5 6.5 0 0 0-6.5-6.5V11zm0-6a15 15 0 0 1 15 15h-2.5A12.5 12.5 0 0 0 4 7.5V5zm2 12.5A1.75 1.75 0 1 1 6 21a1.75 1.75 0 0 1 0-3.5z"/></svg>
           RSS Feed
@@ -909,6 +913,43 @@ function weekLabel(record) {
  */
 function originalDisclosure() {
   return `<p class="digest-disclosure">These are my thoughts. AI just made them pretty. <a href="blog.html">All posts</a></p>`;
+}
+
+/**
+ * The Hail Mail signup, as a block in the page rather than a popup: at the end
+ * of every one of Ben's posts, and as the whole point of hail-mail.html.
+ *
+ * Posts had no way to subscribe at all. The bar and the modal only exist on
+ * the river pages, and a post is where a reader arriving from a shared link
+ * lands, right after finishing the thing that might make them want more.
+ *
+ * Same Netlify form as the modal ("email-subscribe"), so a signup from here
+ * lands in the same list; site.js submits it in place. With JavaScript off it
+ * posts normally and the reader gets Netlify's own thank-you page.
+ */
+function hailMailSignup({ eyebrow = 'Hail Mail', heading, body, idSuffix = 'post' }) {
+  const inputId = `hail-mail-email-${idSuffix}`;
+  return `<aside class="hail-mail-box" aria-label="Sign up for Hail Mail">
+      <p class="hail-mail-box-eyebrow">${escapeHtml(eyebrow)}</p>
+      ${heading ? `<h2 class="hail-mail-box-heading">${escapeHtml(heading)}</h2>` : ''}
+      <p class="hail-mail-box-body">${escapeHtml(body)}</p>
+      <form class="hail-mail-box-form" name="email-subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="email-subscribe" />
+        <input type="hidden" name="bot-field" />
+        <label class="visually-hidden" for="${inputId}">Email address</label>
+        <input class="hail-mail-box-input" id="${inputId}" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+        <button class="hail-mail-box-submit" type="submit">Put me on the list</button>
+      </form>
+      <p class="hail-mail-box-fine">No spam, no ads, nobody else gets your address. One click to unsubscribe.</p>
+    </aside>`;
+}
+
+/** The end-of-post version: short, because the reader just finished a whole post. */
+function postHailMailSignup() {
+  return hailMailSignup({
+    heading: 'Get the next one in your inbox',
+    body: 'Hail Mail is my email for Commanders fans who feel too much. About once a week, usually right before the game.',
+  });
 }
 
 /**
@@ -1727,6 +1768,7 @@ ${header('blog.html', true, isGameLive)}
   <div>
 ${originalArticleBody(record, rosterIndex, 'h1')}
     ${originalDisclosure()}
+    ${postHailMailSignup()}
   </div>
 
   ${rail}
@@ -1783,6 +1825,7 @@ ${header('blog.html', true, isGameLive)}
   <div>
 ${mondayArticleBody(record, rosterIndex, 'h1')}
     ${originalDisclosure()}
+    ${postHailMailSignup()}
   </div>
 
   ${rail}
@@ -2881,6 +2924,59 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
+/**
+ * hail-mail.html: one link Ben can text to the bar crew or put behind a QR
+ * code, where the only thing to do is sign up. Before it, the only way in was
+ * a modal that opens on every 10th visit, which is no way to hand somebody
+ * an invitation.
+ */
+export function renderHailMailPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, shareImage = null }) {
+  const description = `Hail Mail is ${siteName}'s email for Washington Commanders fans who feel too much: about once a week, usually right before the game, from one lifelong fan.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hail Mail — ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `Hail Mail — ${siteName}`, description, siteUrl, path: 'hail-mail.html', image: shareImage })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('hail-mail.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page hail-mail-page">
+    <h1 class="podcasts-heading">Hail Mail</h1>
+    <p class="page-intro">If you're here because I texted you this link: hi. Thanks for humoring me.</p>
+    <p class="page-intro">Hail Mail is the email version of this site. One Commanders fan (me), about once a week, usually right before the game: what I think is going to happen, what's keeping me up at night, and whatever went down at the tailgate. Think of it as the group chat, if the whole list got accidentally CC'd.</p>
+    ${hailMailSignup({ eyebrow: 'Sign up', body: 'Your email, and that is the whole form.', idSuffix: 'page' })}
+    <p class="page-intro">Want a taste first? <a href="blog.html">Here's everything I've written so far.</a></p>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
 export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
   const description = `${siteName} is a free, ad-free fan project. Chip in toward hosting if you'd like.`;
   return `<!doctype html>
@@ -3006,8 +3102,11 @@ ${footer(sources, generatedAt)}
  * entirely so that file stays true to its own "only JS on the site" claim
  * for every reader-facing page.
  */
-export function renderAdminPage({ siteName, siteUrl, sources, generatedAt }) {
+export function renderAdminPage({ siteName, siteUrl, sources, generatedAt, newsletterPosts = [] }) {
   const description = `${siteName} admin.`;
+  // Recent posts for the newsletter panel's "Start from a post" picker. JSON in
+  // a <script>, so every "<" is escaped: a title can't close the tag early.
+  const postsJson = JSON.stringify(newsletterPosts).replace(/</g, '\\u003c');
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -3113,6 +3212,8 @@ ${footer(sources, generatedAt)}
 <script>
 (function () {
   'use strict';
+  var NL_POSTS = ${postsJson};
+  var NL_PLACEHOLDER = '[Your opening line or two goes here.]';
   var form = document.getElementById('admin-login-form');
   var error = document.getElementById('admin-login-error');
   var dashboard = document.getElementById('admin-dashboard');
@@ -3238,6 +3339,12 @@ ${footer(sources, generatedAt)}
           : '<p class="page-intro" style="margin:8px 0 16px">No subscribers yet.</p>';
         newsletterEl.innerHTML = '<p class="page-intro"><strong style="color:var(--gold)">' + data.count + '</strong> subscriber' + (data.count === 1 ? '' : 's') + '</p>' +
           emailList +
+          (NL_POSTS.length
+            ? '<select id="nl-post" class="contact-input" style="width:100%;box-sizing:border-box;margin-bottom:8px">' +
+              '<option value="">Start from a post (optional)</option>' +
+              NL_POSTS.map(function (p, i) { return '<option value="' + i + '">' + esc(p.title) + '</option>'; }).join('') +
+              '</select>'
+            : '') +
           '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">' +
           '<input id="nl-subject" class="contact-input" type="text" placeholder="Email subject line" style="flex:1;min-width:200px" />' +
           '</div>' +
@@ -3259,6 +3366,14 @@ ${footer(sources, generatedAt)}
             var body = document.getElementById('nl-body').value.trim();
             var result = document.getElementById('nl-result');
             if (!subject || !body) { result.textContent = 'Subject and body are required.'; result.hidden = false; return; }
+            // The "Start from a post" template opens with a bracketed line for
+            // Ben to replace. A test send with it still in is fine; the real
+            // one would mail the instructions to every subscriber.
+            if (!testOnly && body.indexOf(NL_PLACEHOLDER) !== -1) {
+              result.textContent = 'Swap out the placeholder line at the top first.';
+              result.hidden = false;
+              return;
+            }
             var btn = document.getElementById(btnId);
             btn.disabled = true; btn.textContent = 'Sending…';
             fetch('/.netlify/functions/newsletter-send', {
@@ -3284,6 +3399,28 @@ ${footer(sources, generatedAt)}
 
         wireSend('nl-test', true, 'Send test to me');
         wireSend('nl-send', false, 'Send to all subscribers');
+
+        // "Start from a post": fills the subject with the post's title and the
+        // body with its share card, its one-line summary and a button to it,
+        // under a placeholder for the part only Ben can write. Hail Mail's
+        // voice is looser than the site's, so the opening line stays his.
+        var picker = document.getElementById('nl-post');
+        if (picker) {
+          picker.addEventListener('change', function () {
+            var p = NL_POSTS[Number(picker.value)];
+            if (!picker.value || !p) return;
+            var bodyEl = document.getElementById('nl-body');
+            if (bodyEl.value.trim() && !window.confirm('Replace what is already in the body?')) { picker.value = ''; return; }
+            document.getElementById('nl-subject').value = p.title;
+            bodyEl.value = [
+              '<p>' + NL_PLACEHOLDER + '</p>',
+              '<p><a href="' + p.url + '"><img src="' + p.image + '" width="616" alt="' + esc(p.alt) + '" style="display:block;width:100%;max-width:616px;height:auto;border:0;border-radius:6px;" /></a></p>',
+              p.summary ? '<p>' + esc(p.summary) + '</p>' : '',
+              '<p><a class="cta" href="' + p.url + '">Read it on the site</a></p>',
+            ].filter(Boolean).join('\\n');
+            bodyEl.rows = 10;
+          });
+        }
       })
       .catch(function () { newsletterEl.innerHTML = '<p class="page-intro">Could not load subscribers.</p>'; });
   }

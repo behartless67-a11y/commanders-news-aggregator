@@ -111,6 +111,16 @@ Only originals can be scheduled. Digests and Mondays have review gates, and a po
 
 **To send:** admin panel → Newsletter → paste subject and body HTML → "Send test to me" first, then "Send to all subscribers."
 
+**Sending a post (the Friday pregame send):** in the Newsletter panel, pick it from "Start from a post." That fills the subject with the title and the body with the post's share card, its summary and a "Read it on the site" button, under a bracketed placeholder line at the top. Replace that line with whatever you want to say (it's the part that's you), send a test, then send for real. The real send refuses to go out while the placeholder is still there.
+
+**Where people sign up:**
+- **theburgundywire.com/hail-mail.html**: the link to text people (the bar crew, the tailgate group) and the target for any QR code. Signing up is the only thing on it.
+- **The end of every post**: a short signup box under each original and Monday post, since that's where someone landing from a shared link finishes reading.
+- **The homepage**: the floating bar, and the popup on every 10th visit.
+- **The footer**: "Hail Mail (email)" under Subscribe, on every page.
+
+All of them feed the same list.
+
 **From:** newsletter@theburgundywire.com (domain verified in Resend). **Unsubscribes** are automatic via one-click links. **If UVA email blocks it:** ask recipients to whitelist the address. Gmail is fine.
 
 ---

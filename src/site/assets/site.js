@@ -615,28 +615,67 @@
   }());
 
   /**
-   * Email subscribe modal. Shows to roughly 1 in 10 page loads, but never:
+   * Every Hail Mail signup form on the page: the homepage modal, the box at
+   * the end of each post, and the one on hail-mail.html. All are the same
+   * Netlify form ("email-subscribe"), so one handler posts them in place and
+   * swaps the form for a thank-you instead of leaving the page for Netlify's
+   * generic success screen. A subscribe from any of them sets bw_sub, which
+   * retires the modal and the bar on this browser.
+   */
+  var SUB_KEY = 'bw_sub';
+  function markSeen() {
+    try { localStorage.setItem(SUB_KEY, '1'); } catch {}
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('form[name="email-subscribe"]'), function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var done = function () {
+        form.innerHTML = '<p class="subscribe-done">You\'re on the list. Hail.</p>';
+        markSeen();
+        form.dispatchEvent(new CustomEvent('subscribed', { bubbles: true }));
+      };
+      // A failed request still says thanks: Netlify keeps every submission it
+      // receives, and a network blip reading as "you're not on the list" would
+      // just get the same address typed in twice.
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString() })
+        .then(done, done);
+    });
+  });
+
+  /**
+   * Email subscribe modal. Opens on its own on every 10th visit, but never:
    *   - if the visitor has already dismissed or submitted (bw_sub key set)
    *   - if the admin session cookie is present (site owner browsing)
-   *   - on the admin page itself
-   * The form submits to Netlify Forms; on success we set the key so it
-   * never shows again on this browser.
+   * The Hail Mail bar's "Sign me up" also opens it, on any visit.
+   *
+   * The close buttons are wired up on every load, not just the 10th. They used
+   * to be attached only when the modal opened itself, so on nine visits out of
+   * ten, opening it from the bar gave a modal that couldn't be closed.
    */
   (function () {
     var modal = document.getElementById('subscribe-modal');
     if (!modal) return;
 
-    var SUB_KEY = 'bw_sub';
-
     function alreadySeen() {
       try { return Boolean(localStorage.getItem(SUB_KEY)); } catch { return true; }
     }
-    function markSeen() {
-      try { localStorage.setItem(SUB_KEY, '1'); } catch {}
+    function close() {
+      modal.hidden = true;
+      markSeen();
     }
     function isAdmin() {
       return document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); });
     }
+
+    modal.querySelector('#subscribe-dismiss').addEventListener('click', close);
+    modal.querySelector('#subscribe-skip').addEventListener('click', close);
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) close();
+    });
+    modal.addEventListener('subscribed', function () {
+      setTimeout(function () { modal.hidden = true; }, 2000);
+    });
 
     if (alreadySeen() || isAdmin()) return;
 
@@ -648,38 +687,7 @@
     if (visits % 10 !== 0) return;
 
     // Small delay so the page content loads first
-    setTimeout(function () {
-      modal.hidden = false;
-      modal.querySelector('#subscribe-dismiss').addEventListener('click', function () {
-        modal.hidden = true;
-        markSeen();
-      });
-      modal.querySelector('#subscribe-skip').addEventListener('click', function () {
-        modal.hidden = true;
-        markSeen();
-      });
-      // Close on backdrop click
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal) { modal.hidden = true; markSeen(); }
-      });
-      // Handle form submit
-      var form = modal.querySelector('.subscribe-modal-form');
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var data = new FormData(form);
-        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(data).toString() })
-          .then(function () {
-            form.innerHTML = '<p style="color:var(--gold);font-weight:700;text-align:center;margin:0">You\'re on the list. Hail.</p>';
-            setTimeout(function () { modal.hidden = true; }, 2000);
-            markSeen();
-          }).catch(function () {
-            form.innerHTML = '<p style="color:var(--gold);font-weight:700;text-align:center;margin:0">You\'re on the list. Hail.</p>';
-            setTimeout(function () { modal.hidden = true; }, 2000);
-            markSeen();
-          });
-      });
-    }, 3000);
+    setTimeout(function () { modal.hidden = false; }, 3000);
   }());
 
   /**
