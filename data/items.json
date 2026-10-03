@@ -11,18 +11,6 @@
     "publishedAt": "2026-08-19T18:21:00.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-f914dc6a4808": {
-    "id": "hogs-haven-f914dc6a4808",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-podcasts/433728/johnny-newton-faces-critical-crossroads-year-3",
-    "title": "Johnny Newton Faces a Critical Crossroads in Year 3",
-    "excerpt": "LANDOVER, MD - AUGUST 14: Jer'zhan Newton #95 of the Washington Commanders looks on from the sideline during the second half of a preseason game Miami Dolphins at Northwest Stadium on August 14, 2026 in Landover,…",
-    "publishedAt": "2026-08-19T18:00:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -179,18 +167,6 @@
     "publishedAt": "2026-08-19T19:00:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-b29860de03bc": {
-    "id": "riggos-rag-b29860de03bc",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/daronte-jones-ambitious-commanders-vision-threatened-injury-bug-bites-back",
-    "title": "Daronte Jones' ambitious Commanders vision threatened as injury bug bites back",
-    "excerpt": "Defensive coordinator Daronte Jones' ambitious Washington Commanders vision is being threatened as the dreaded injury bug bites back.",
-    "publishedAt": "2026-08-19T17:30:00.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -237,18 +213,6 @@
     "title": "LIVE: HC Dan Quinn Speaks To The Media Before Practice | Washington Commanders",
     "excerpt": "",
     "publishedAt": "2026-08-20T12:14:51.000Z",
-    "collectedAt": "2026-08-20T13:31:52.804Z"
-  },
-  "commanders-youtube-a53798bcf08b": {
-    "id": "commanders-youtube-a53798bcf08b",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=UFjZd0selOg",
-    "title": "LB Sonny Styles Speaks To The Media After Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-19T18:02:49.000Z",
     "collectedAt": "2026-08-20T13:31:52.804Z"
   },
   "hogs-haven-8470a1158349": {
@@ -14590,5 +14554,65 @@
     "excerpt": "Daron Payne’s contract-year surge exposes the flaw in ongoing rumors around the Washington Commanders trading him before the deadline.",
     "publishedAt": "2026-10-03T16:00:03.000Z",
     "collectedAt": "2026-10-03T16:05:33.924Z"
+  },
+  "riggos-rag-78f35655d01b": {
+    "id": "riggos-rag-78f35655d01b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/austin-ekeler-commanders-return-gains-urgency-after-rachaad-white-setback",
+    "title": "Austin Ekeler’s Commanders return gains urgency after Rachaad White setback",
+    "excerpt": "The Washington Commanders need something from running back Austin Ekeler immediately after Rachaad White's shoulder injury.",
+    "publishedAt": "2026-10-03T17:30:00.000Z",
+    "collectedAt": "2026-10-03T18:05:35.063Z"
+  },
+  "clutchpoints-a1555aa765db": {
+    "id": "clutchpoints-a1555aa765db",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-gets-major-injury-update-with-inspiring-return-timeline",
+    "title": "Commanders QB Jayden Daniels gets major injury update with inspiring return timeline",
+    "excerpt": "Washington Commanders starting quarterback Jayden Daniels could return in Week 5 against the New York Giants after making progress from his elbow injury, The Ringer’s Tom Pelissero reported early Saturday.\n\n Daniels dislocated his left elbow during the first half of Washington’s 37-20 Week 2 loss to the Dallas Cowboys. The injury occurred in the same elbow he dislocated last season, when it caused him to miss seven of the final eight games.\n\n The 25-year-old quarterback returned to practice…",
+    "publishedAt": "2026-10-03T15:18:06.000Z",
+    "collectedAt": "2026-10-03T18:05:35.324Z"
+  },
+  "commanders-youtube-860c220e3c54": {
+    "id": "commanders-youtube-860c220e3c54",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=m6EWQWAMu2o",
+    "title": "Commanders fans SHOWED OUT! Command Center London Special | Command Center | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-10-03T16:00:17.000Z",
+    "collectedAt": "2026-10-03T18:05:38.019Z"
+  },
+  "cbs-nfl-259a7e7f97f1": {
+    "id": "cbs-nfl-259a7e7f97f1",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/commanders-vs-colts-where-to-watch-pick-odds-prediction",
+    "title": "Commanders vs. Colts: Jonathan Taylor, Marcus Mariota lead teams into London",
+    "excerpt": "Both teams head to London after earning their first wins, but two of the NFL's worst defenses could allow this matchup to turn into a high-scoring battle",
+    "publishedAt": "2026-10-03T16:00:25.000Z",
+    "collectedAt": "2026-10-03T18:05:41.565Z"
+  },
+  "yahoo-nfl-89f18e1264bd": {
+    "id": "yahoo-nfl-89f18e1264bd",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/colts-vs-commanders-in-london-how-to-watch-the-nfl-international-game-start-time-where-to-stream-and-more-160500153.html",
+    "title": "Colts vs. Commanders in London: How to watch the NFL international game, start time, where to stream and more",
+    "excerpt": "The Indianapolis Colts and the Washington Commanders are headed across the pond this weekend to play inside London's Tottenham Hotspur Stadium for another NFL international game. So far this season, both the Colts and Commanders are 1-2. Which team will leave the U.K. with a win? You'll have to tune in on the earlier side Sunday morning to find out.\n Here's everything else you need to know to watch the Commanders vs. Colts London game (and every other Week 4 matchup).\n How to watch the…",
+    "publishedAt": "2026-10-03T16:05:00.000Z",
+    "collectedAt": "2026-10-03T18:05:42.104Z"
   }
 }
