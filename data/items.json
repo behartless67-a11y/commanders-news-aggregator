@@ -47,30 +47,6 @@
     "publishedAt": "2026-08-19T13:33:00.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-9b0e686255d7": {
-    "id": "hogs-haven-9b0e686255d7",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-training-camp/433478/washington-commanders-news-sights-sounds-from-training-camp-day-13",
-    "title": "Washington Commanders News: Sights and Sounds from Training Camp Day 13",
-    "excerpt": "ASHBURN, VA - AUGUST 01: Terry McLaurin #17 of the Washington Commanders warms up during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) |…",
-    "publishedAt": "2026-08-19T11:30:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
-  "hogs-haven-4a78ac8e8ed9": {
-    "id": "hogs-haven-4a78ac8e8ed9",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/433294/debate-jayden-daniels-playing-lions-preseason-allegretti-john-bates-tre-amos",
-    "title": "Commanders News: Debate continues over Jayden Daniels playing vs Lions",
-    "excerpt": "DETROIT, MICHIGAN - JANUARY 18: Jayden Daniels #5 of the Washington Commanders scrambles with the ball as Brian Branch #32 of the Detroit Lions dives to apply pressure during the third quarter in the NFC Divisional…",
-    "publishedAt": "2026-08-19T10:30:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -273,18 +249,6 @@
     "title": "Johnny Newton's troubling Commanders trajectory just took an agonizing turn",
     "excerpt": "The Washington Commanders could be without defensive lineman Johnny Newton after he suffered a pectoral injury.",
     "publishedAt": "2026-08-19T13:12:52.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
-  "riggos-rag-7e2aa5b5ce09": {
-    "id": "riggos-rag-7e2aa5b5ce09",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/stefon-diggs-already-shattering-narrative-followed-him-commanders",
-    "title": "Stefon Diggs is already shattering the narrative that followed him to Commanders",
-    "excerpt": "Washington Commanders wide receiver Stefon Diggs has made a smooth transition to the franchise after his long-awaited homecoming was confirmed.",
-    "publishedAt": "2026-08-19T11:30:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
   "clutchpoints-d27a4c1a7a42": {
@@ -14650,5 +14614,17 @@
     "excerpt": "The Washington Commanders' warning signs are becoming clearer, and general manager Adam Peters has a full complement of 2027 draft picks to solve them.",
     "publishedAt": "2026-10-03T10:00:04.000Z",
     "collectedAt": "2026-10-03T10:05:30.800Z"
+  },
+  "riggos-rag-32b591e1c349": {
+    "id": "riggos-rag-32b591e1c349",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/marcus-mariota-makes-commanders-cautious-jayden-daniels-call-easy-one",
+    "title": "Marcus Mariota makes Commanders’ cautious Jayden Daniels call an easy one",
+    "excerpt": "Veteran quarterback Marcus Mariota made the Washington Commanders’ cautious Jayden Daniels call an easy one to make.",
+    "publishedAt": "2026-10-03T11:30:00.000Z",
+    "collectedAt": "2026-10-03T12:05:32.535Z"
   }
 }
