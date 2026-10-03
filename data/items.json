@@ -419,18 +419,6 @@
     "publishedAt": "2026-08-19T12:17:42.000Z",
     "collectedAt": "2026-08-20T13:31:52.804Z"
   },
-  "dc-sports-king-6db71ea0a872": {
-    "id": "dc-sports-king-6db71ea0a872",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/commanders-rb-injuries-have-bust-door-open-for-two-rookies",
-    "title": "Commanders RB Injuries Have Bust Door Open for Two Rookies",
-    "excerpt": "The Washington Commanders’ running back room just went through a massive reshuffle, and the ripple effects will be felt all the way to final cutdowns. What started as a crowded, veteran-heavy backfield has rapidly thinned out due to the injury bug, dramatically altering the landscape behind roster locks Jacory Croskey-Merritt and Rachaad White.\n\n Here is a breakdown of how a devastating week for the veterans has put two hungry rookies squarely in the driver’s seat.\n\n The Injury Toll: Ford and…",
-    "publishedAt": "2026-08-19T05:11:18.000Z",
-    "collectedAt": "2026-08-20T13:31:54.367Z"
-  },
   "hogs-haven-8470a1158349": {
     "id": "hogs-haven-8470a1158349",
     "sourceId": "hogs-haven",
@@ -14626,5 +14614,17 @@
     "excerpt": "Washington Commanders receiver Terry McLaurin popped up on the injury report causing fans to wonder whether he can go against the Colts on October 4. McLaurin’s rough start has him in a “not too pressed” mood as he continues to prioritize his health.\n\n McLaurin spoke to Jordan Schulz of the Schultz Report during which he shared his excited thoughts on a new matchup possibility in the NFC East.\n\n “I think Joey Porter is a great corner, I don’t think he’s had enough time to really show the upward…",
     "publishedAt": "2026-10-02T23:07:40.000Z",
     "collectedAt": "2026-10-03T00:05:31.596Z"
+  },
+  "hogs-haven-53b6ba7c0562": {
+    "id": "hogs-haven-53b6ba7c0562",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/445867/commanders-will-sport-new-logo-in-2027-season-report-all-atwitter",
+    "title": "Commanders will sport new logo in 2027 season – report – All aTwitter",
+    "excerpt": "All aTwitter – 3 October 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along with a smattering of other things. \n Click here for Washington Commanders Beat Writers Twitter Feed \n Click here for NFL News, Rumors & Reports Twitter Feed \n Tip: If a tweet isn’t fully visible on your screen, clicking on the date at the bottom of the tweet will…",
+    "publishedAt": "2026-10-03T04:00:00.000Z",
+    "collectedAt": "2026-10-03T06:05:29.899Z"
   }
 }
