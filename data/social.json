@@ -1,40 +1,4 @@
 {
-  "social-8f13541f6057": {
-    "id": "social-8f13541f6057",
-    "url": "https://x.com/Commanders/status/2102838352416571394",
-    "text": "LIVE: QB Marcus Mariota speaks to the media after practice JL",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-23T19:11:46.000Z",
-    "collectedAt": "2026-09-23T20:05:55.130Z"
-  },
-  "social-0e30f1691d6a": {
-    "id": "social-0e30f1691d6a",
-    "url": "https://x.com/rotoworld_fb/status/2102841974378398011",
-    "text": "Darnold (glute) will resume practicing on Wed.",
-    "handle": "rotoworld_fb",
-    "author": "Rotoworld Football",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-23T19:26:10.000Z",
-    "collectedAt": "2026-09-23T20:05:56.432Z"
-  },
-  "social-3038b91334b0": {
-    "id": "social-3038b91334b0",
-    "url": "https://x.com/JPFinlayNBCS/status/2102840294165053608",
-    "text": "Marcus Mariota says he likes to be the point guard, get the ball out fast. He jokes “they tackle the guy with the ball so I’m happy not to be tackled”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-23T19:19:29.000Z",
-    "collectedAt": "2026-09-23T20:05:56.432Z"
-  },
   "social-cbd6aa1fd4ea": {
     "id": "social-cbd6aa1fd4ea",
     "url": "https://x.com/Commanders/status/2102860554809360572",
@@ -74,18 +38,6 @@
     "images": [],
     "publishedAt": "2026-09-23T20:45:35.000Z",
     "collectedAt": "2026-09-23T21:19:20.386Z"
-  },
-  "social-eea61afa49d4": {
-    "id": "social-eea61afa49d4",
-    "url": "https://x.com/tashanreed/status/2102840948149702732",
-    "text": "Darnold is practicing again. Something to watch for the #Commanders :",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-23T19:22:05.000Z",
-    "collectedAt": "2026-09-23T21:19:23.312Z"
   },
   "social-1b45c01d635c": {
     "id": "social-1b45c01d635c",
@@ -236,20 +188,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-09-24T13:35:02.000Z",
-    "collectedAt": "2026-09-24T14:05:46.469Z"
-  },
-  "social-6bf11a7f70ee": {
-    "id": "social-6bf11a7f70ee",
-    "url": "https://x.com/BenStandig/status/2102848891880435916",
-    "text": "\"... most of the shit that they got, we gave it to them, bro. And I get tired of saying the same thing. But we got to look in the mirror and have an understanding of who we want to be when we go out there.” jayden-daniels-had-football-taken?utm_source=share&utm_medium=android&r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/326/129/095/069/349/original/0d51f15be9079850.jpg"
-    ],
-    "publishedAt": "2026-09-23T19:53:39.000Z",
     "collectedAt": "2026-09-24T14:05:46.469Z"
   },
   "social-fc8338d9009a": {
@@ -9652,5 +9590,17 @@
     "images": [],
     "publishedAt": "2026-10-03T18:28:10.000Z",
     "collectedAt": "2026-10-03T19:00:10.707Z"
+  },
+  "social-f2986531109d": {
+    "id": "social-f2986531109d",
+    "url": "https://x.com/NickiJhabvala/status/2106463784076284280",
+    "text": "Things that happened at the Commanders' fan rally today: *Roughly 2,000 fans showed up *Josh Harris got on the bar *Tuddy danced on the bar *Harris bought 2 rounds of beer for everyone *A couple got engaged *Fans got lit when the DJ played \"Ice Ice Baby\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-03T19:17:56.000Z",
+    "collectedAt": "2026-10-03T20:05:10.949Z"
   }
 }
