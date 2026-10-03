@@ -135,6 +135,18 @@ Worth knowing: Netlify keeps its own copy of every form submission regardless of
 
 ---
 
+## Readers Abroad (the international hello)
+
+Readers outside the US get a short note under the header, in their own language, thanking them for visiting and inviting them to write in. It links to **abroad.html**, a survey translated into 15 languages (with a switcher), their country filled in and this week's kickoff shown in their own time zone. Answers show up in the admin panel under **Readers abroad**.
+
+- **How it knows:** the visit tracker already gets each reader's country from Netlify; it now just sends the country code back to the page. Nothing new is stored. US readers never see the note or download the translations (`src/site/assets/abroad.js`).
+- **Language:** the reader's browser language first, then their country, then English.
+- **One and done:** the × hides it for good on that browser, and so does sending the survey.
+- **To see it yourself:** add `?country=DE&lang=de` (or `?country=MX&lang=es`, `?country=JP&lang=ja`) to any page URL.
+- **Editing the copy:** all the text, in every language, lives in `STRINGS` at the top of `abroad.js`. No em dashes in any language.
+
+---
+
 ## The Email Popup (Subscribe Modal)
 
 - Shows on the 10th, 20th, 30th... visit for a given browser
