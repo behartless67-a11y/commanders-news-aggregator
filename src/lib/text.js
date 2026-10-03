@@ -64,6 +64,65 @@ export function cleanTitle(value) {
   return stripHtml(value).replace(/\s+/g, ' ').trim();
 }
 
+/**
+ * Photo credits and series boilerplate that some feeds put ahead of the actual
+ * story. Hogs Haven's do it on about one excerpt in five: the lead photo's
+ * caption ("ASHBURN, VA - AUGUST 01: ... (Photo by .../Getty Images) | Getty
+ * Images", or the Imagn/USA TODAY form ending "Mandatory Credit: ..."), then
+ * for its recurring posts a standing intro ("All aTwitter – 15 September 2026
+ * / We follow Twitter so you don't have to", "The Daily Slop ... Editor's
+ * note: Each day, Hogs Haven compiles ...").
+ */
+const PHOTO_CREDIT = /\(Photo by [^)]*\)|Mandatory Credit:|Getty Images|Imagn Images|via Reuters Con|USA TODAY Sports|\(AP Photo[^)]*\)/i;
+// Where a credit *ends*. A caption sometimes runs straight into the story on
+// the same line ("... Mandatory Credit: Junfu Han-USA TODAY Sports The Detroit
+// Lions hit the midway point ..."), so the cut goes to the end of the last of
+// these, not the end of the line.
+const CREDIT_END = /\(Photo by [^)]*\)|\(AP Photo[^)]*\)|(?:USA TODAY Sports|IMAGN IMAGES|Imagn Images|Getty Images)(?: via Reuters Con(?:nect)?)?/gi;
+const SERIES_BOILERPLATE = [
+  /^All aTwitter\b/i,
+  /^We follow Twitter so you don.t have to/i,
+  /^The goal of All aTwitter\b/i,
+  /^The Daily Slop\b/i,
+  /^Editor.s note: Each day, Hogs Haven compiles\b/i,
+  /^Editor.s note:\s*…?$/i, // the same intro, truncated to nothing
+  /^Click here for .*Twitter Feed/i, // All aTwitter's link block
+  /^Tip: If a tweet isn.t fully visible\b/i,
+];
+
+/**
+ * An excerpt with leading photo-credit lines and series boilerplate removed,
+ * flattened to one line. Empty when nothing but those was there, in which
+ * case the card shows the headline alone rather than a photo caption posing
+ * as the story. Only *leading* credit lines go: one mid-excerpt is part of
+ * whatever the writer was saying.
+ */
+export function cleanExcerpt(text) {
+  const lines = String(text || '')
+    // One feed sends its whitespace as literal "\n" and "\t" text.
+    .replace(/\\[ntr]/g, '\n')
+    .split(/\n+/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  while (lines.length && PHOTO_CREDIT.test(lines[0])) {
+    const ends = [...lines[0].matchAll(CREDIT_END)];
+    const last = ends[ends.length - 1];
+    const rest = last ? lines[0].slice(last.index + last[0].length).replace(/^[\s|…]+/, '') : '';
+    if (rest) {
+      lines[0] = rest;
+      break;
+    }
+    lines.shift();
+  }
+  const out = lines
+    .filter((l) => !SERIES_BOILERPLATE.some((re) => re.test(l)))
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // Nothing left but a truncation ellipsis or a stray pipe.
+  return /^[\s…|.]*$/.test(out) ? '' : out;
+}
+
 /** Trim a feed's body/summary down to a short river excerpt. */
 export function excerpt(text, max = 500) {
   const clean = stripHtml(text);

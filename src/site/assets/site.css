@@ -1092,44 +1092,39 @@ main.layout{
   white-space: nowrap;
 }
 
-.badge-team{
-  background: rgba(90,20,20,0.35);
-  border-color: rgba(255,182,18,0.3);
-  color: var(--gold);
-}
-
-/* Solid white with burgundy text — the team-source pill already claims
-   burgundy-bg/gold-text, so this is deliberately its inverse rather than
-   another dark, low-contrast variant that disappears against the page. */
-.badge-national{
-  background: #fff;
-  border-color: #fff;
-  color: var(--burgundy);
-}
-
-/* Third combination in the same two-color palette (gold-bg/burgundy-text) —
-   our own Blog content, not an aggregated source, gets a visually distinct
-   treatment from either of the above rather than reusing one of them. */
+/* The "Blog" pill at the top of a post page (originalArticleBody(),
+   mondayArticleBody()). River cards no longer use pills; see .card-label. */
 .badge-blog{
   background: var(--gold);
   border-color: var(--gold);
   color: var(--burgundy);
 }
 
-/* Informational, not a category — deliberately quieter than the team/
-   national pills so it reads as a secondary note, not a third badge type. */
-.badge-paywall{
-  background: transparent;
-  border-color: var(--border);
-  color: var(--text-faint);
-  margin-left: 6px;
+/* The site's own posts in the river: "Blog" in gold text ahead of the source,
+   no pill. Aggregated headlines carry no label at all, so this one stands out
+   by being the only one rather than by being loud. */
+.card-label{
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
-
 
 .card-source{
   font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
+}
+
+/* A note, not a category: same quiet text as the timestamp, set off by a dot. */
+.card-paywall{
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.card-paywall::before{
+  content: "·";
+  margin-right: 10px;
 }
 
 .card-time{
@@ -1138,19 +1133,25 @@ main.layout{
   color: var(--text-faint);
 }
 
+/* Flush left with the source line. It used to hang 12px in under a category
+   pill that marked the card; with no pill there's nothing to hang from. */
 .card-headline{
   font-size: clamp(15.5px, 1.4vw, 17px);
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.005em;
-  /* Offset from the badge row above it — a hanging-indent feel, badge and
-     source flush left, headline/excerpt indented under it, so the pill
-     reads as the marker for the whole card instead of just another line. */
-  margin: 0 0 0 12px;
+  margin: 0;
 }
 
 .card-headline a{
   color: var(--text);
+}
+
+/* Already-read headlines go grey, the way Hacker News and NewsNow fade them,
+   so a regular can see at a glance what's new since they last looked. No
+   account or storage involved: it's the browser's own history. */
+.card-headline a:visited{
+  color: var(--text-muted);
 }
 
 .card-headline a:hover{
@@ -1161,15 +1162,8 @@ main.layout{
   font-size: 13.5px;
   color: var(--text-muted);
   line-height: 1.5;
-  max-width: 105ch;
-  margin: 0 0 0 12px;
-}
-
-/* Full excerpt by default; the phone-only two-sentence version (see
-   firstSentences() in templates.js) swaps in at the mobile breakpoint
-   below, cutting how far each card scrolls on a small screen. */
-.card-excerpt-short{
-  display: none;
+  max-width: 70ch;
+  margin: 0;
 }
 
 /* ---------- Video rail ----------
@@ -3121,14 +3115,6 @@ main.layout{
   padding: 28px 0 20px;
 }
 
-/* On burgundy the team badge's own burgundy tint disappears — darken instead.
-   The national badge is solid white now, which already contrasts fine
-   against burgundy on its own and needs no override here. */
-.site-footer .badge-team{
-  background: rgba(0,0,0,0.3);
-  border-color: rgba(255,182,18,0.45);
-}
-
 .site-footer .source-list a,
 .site-footer .footer-col p{
   color: #e2d9d5;
@@ -3839,10 +3825,6 @@ main.layout.page-admin{
      row, which is where most of the height actually comes back. */
   .filter-tabs a{ padding: 5px 8px; font-size: 11px; letter-spacing: 0.03em; }
 
-  /* Two sentences instead of the full excerpt — see firstSentences() in
-     templates.js. */
-  .card-excerpt-full{ display: none; }
-  .card-excerpt-short{ display: block; }
   /* The auto margin that separates it from the filter tabs on desktop only
      makes sense in a single unwrapped row — on a wrapped, centered mobile
      row it would just shove it to a line of its own. The between-link

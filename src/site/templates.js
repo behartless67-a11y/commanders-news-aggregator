@@ -1,4 +1,4 @@
-import { escapeHtml } from '../lib/text.js';
+import { escapeHtml, cleanExcerpt } from '../lib/text.js';
 import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
@@ -113,8 +113,8 @@ const SOCIAL_FEED_BATCH = Number(process.env.SOCIAL_FEED_BATCH || 20);
  * can't nest a second `<a>` inside it.
  */
 /**
- * First `n` sentences of an excerpt, for the mobile-only short version below
- * (see .card-excerpt-full/.card-excerpt-short) — a plain punctuation split is
+ * First `n` sentences of an excerpt, for the river cards and link previews
+ * (see itemCard() below) — a plain punctuation split is
  * good enough for a decorative truncation, not a citation boundary, so the
  * rare miss on an abbreviation like "Jr." is an acceptable trade for staying
  * dependency-free.
@@ -126,23 +126,24 @@ function firstSentences(text, n) {
 }
 
 function itemCard(item, index, rosterIndex) {
-  const badgeClass = CATEGORY_BADGE_CLASS[item.category] || 'badge-national';
-  const badgeLabel = CATEGORY_LABEL[item.category] || item.category;
-  const paywallPill = PAYWALLED_SOURCE_IDS.has(item.sourceId)
-    ? '<span class="badge badge-paywall">Paywall</span>'
-    : '';
+  // No category pill on aggregated headlines. Every card used to lead with
+  // "Team Source" or "National Coverage", which made the solid white national
+  // pill the brightest thing in the feed and was wrong for half the "team"
+  // sources (Hogs Haven, ClutchPoints). The outlet's own name is what a reader
+  // wants and it was already on the card. The site's own posts keep a label,
+  // set in gold text, so it means something by being the only one.
+  const isOwnPost = CATEGORY_BADGE_CLASS[item.category] === 'badge-blog';
+  const ownLabel = isOwnPost ? `<span class="card-label">${escapeHtml(CATEGORY_LABEL[item.category])}</span>` : '';
+  const paywall = PAYWALLED_SOURCE_IDS.has(item.sourceId) ? '<span class="card-paywall">Paywall</span>' : '';
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
   const extra = index >= RIVER_INITIAL ? ' card-extra' : '';
-  // Two separate elements, not one truncated by CSS line-clamp — a line
-  // count varies with viewport width and font size, but "two sentences" is
-  // an exact, meaningful unit a reader can expect consistently on a phone.
-  // Always both, even when identical (a short excerpt has nothing to trim),
-  // so the mobile CSS swap below never has to guess whether a short version
-  // exists.
-  const excerptMarkup = item.excerpt
-    ? `<p class="card-excerpt card-excerpt-full">${linkPlayers(item.excerpt, rosterIndex)}</p>
-      <p class="card-excerpt card-excerpt-short">${linkPlayers(firstSentences(item.excerpt, 2), rosterIndex)}</p>`
-    : '';
+  // Two sentences, everywhere: a full 500-character excerpt on every card made
+  // the feed a wall of uniform grey blocks. "Two sentences" rather than a CSS
+  // line clamp because it's a unit a reader can rely on at any width.
+  // cleanExcerpt() drops the photo credits and series boilerplate some feeds
+  // lead with; when that's all there was, the card is just the headline.
+  const text = cleanExcerpt(item.excerpt);
+  const excerptMarkup = text ? `<p class="card-excerpt">${linkPlayers(firstSentences(text, 2), rosterIndex)}</p>` : '';
   // Set by pinFreshBlogPosts() in build.js. Said out loud on the card because
   // otherwise a post from this morning sitting above a headline from an hour
   // ago just looks like the sort is broken.
@@ -156,8 +157,7 @@ function itemCard(item, index, rosterIndex) {
   return `
     <article class="card${extra}${item.pinned ? ' card-pinned' : ''}">
       <div class="card-top">
-        <span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>${paywallPill}
-        <span class="card-source">${escapeHtml(item.sourceName)}</span>
+        ${ownLabel}<span class="card-source">${escapeHtml(item.sourceName)}</span>${paywall}
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
       ${pinNote}
