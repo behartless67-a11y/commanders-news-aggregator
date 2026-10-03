@@ -1,19 +1,4 @@
 {
-  "social-1b45c01d635c": {
-    "id": "social-1b45c01d635c",
-    "url": "https://x.com/Commanders/status/2102879429395403092",
-    "text": "working towards the home opener 💪 @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/322/582/511/847/965/original/d5d0f3847b1bd86c.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/322/582/537/011/412/original/427b2c10fb6f5c89.jpg"
-    ],
-    "publishedAt": "2026-09-23T21:55:00.000Z",
-    "collectedAt": "2026-09-23T22:40:54.858Z"
-  },
   "social-3c9838ca3203": {
     "id": "social-3c9838ca3203",
     "url": "https://x.com/john_keim/status/2102885520057790765",
@@ -9603,5 +9588,17 @@
     "images": [],
     "publishedAt": "2026-10-03T20:21:58.000Z",
     "collectedAt": "2026-10-03T20:49:12.134Z"
+  },
+  "social-20ca1b585da7": {
+    "id": "social-20ca1b585da7",
+    "url": "https://x.com/NickiJhabvala/status/2106501195049374146",
+    "text": "Josh Harris on the Commanders' new stadium: \"Everything is on track. More over budget than ever. .. But that's my problem. ... We're still pushing to break ground in the second quarter (of 2027).\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-03T21:46:36.000Z",
+    "collectedAt": "2026-10-03T22:05:11.067Z"
   }
 }
