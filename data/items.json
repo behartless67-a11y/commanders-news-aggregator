@@ -35,18 +35,6 @@
     "publishedAt": "2026-08-20T01:25:48.000Z",
     "collectedAt": "2026-08-20T13:18:17.806Z"
   },
-  "hogs-haven-732a67f0e1db": {
-    "id": "hogs-haven-732a67f0e1db",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/433911/come-join-the-nfc-east-mixtape",
-    "title": "Come join the NFC East Mixtape!",
-    "excerpt": "SB Nation’s coverage of the Commanders is expanding. \n\n Hogs Haven will remain your primary source for Commanders news, analysis and commentary, with a new place for discussing how Washington fits into the NFC East. \n\n Introducing the NFC East Mixtape, a unique part of The Feed featuring news and insight from the Eagles, Giants, Cowboys and (of course) your Commanders and how these longstanding rivals intersect. There are some fun features in the works, so make sure you’re following the Feed…",
-    "publishedAt": "2026-08-19T22:00:00.000Z",
-    "collectedAt": "2026-08-20T13:18:17.806Z"
-  },
   "pft-6bd1cd594fe9": {
     "id": "pft-6bd1cd594fe9",
     "sourceId": "pft",
@@ -131,18 +119,6 @@
     "publishedAt": "2026-08-20T10:00:02.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-05a27bdcc46c": {
-    "id": "riggos-rag-05a27bdcc46c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-close-book-trevon-diggs-after-months-empty-noise",
-    "title": "Commanders close the book on Trevon Diggs after months of empty noise",
-    "excerpt": "Trevon Diggs is reportedly signing for the Seattle Seahawks, ending months of empty noise for the Washington Commanders.",
-    "publishedAt": "2026-08-19T21:00:03.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "clutchpoints-d27a4c1a7a42": {
     "id": "clutchpoints-d27a4c1a7a42",
     "sourceId": "clutchpoints",
@@ -165,18 +141,6 @@
     "title": "Commanders’ Johnny Newton to miss ‘significant time’ after surgery on torn pectoral",
     "excerpt": "The Washington Commanders will not have the services of defensive tackle Johnny Newton for an extended period of time. Newton suffered an upper-body injury during last Friday’s NFL preseason game against the Miami Dolphins at Northwest Stadium in Landover, and later went under the knife to address the issue , according to NFL insider Jordan Schultz.\n\n “Sources: Commanders DT Johnny Newton underwent surgery for a torn pectoral muscle and is expected to miss significant time. The former Illinois…",
     "publishedAt": "2026-08-20T01:30:43.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
-  "clutchpoints-152d9fd6c2d8": {
-    "id": "clutchpoints-152d9fd6c2d8",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/seattle-seahawks/seahawks-news-seattle-trevon-diggs-signing-creates-full-circle-moment-with-commanders-stefon-diggs",
-    "title": "Seahawks’ Trevon Diggs signing creates full-circle moment with Commanders’ Stefon Diggs",
-    "excerpt": "The Seattle Seahawks’ addition of Trevon Diggs will create a full-circle moment when the veteran cornerback gets an opportunity to face his brother, Washington Commanders wide receiver Stefon Diggs, during the 2026 NFL season.\n\n Following news Wednesday that Seattle is signing the two-time Pro Bowl cornerback, NFL Network’s Jordan Schultz highlighted the brothers’ upcoming Week 3 matchup in the DMV, where both grew up.\n\n “This is pretty cool: the #Seahawks play at the #Commanders Week 3, as…",
-    "publishedAt": "2026-08-19T20:16:19.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
   "commanders-youtube-100a3c1fe1c7": {
@@ -14626,5 +14590,41 @@
     "excerpt": "“Everyone is enjoying what we're doing, which is embracing the past as much as we can in a respectful way,” owner Josh Harris said.",
     "publishedAt": "2026-10-03T19:14:51.000Z",
     "collectedAt": "2026-10-03T20:05:35.546Z"
+  },
+  "clutchpoints-aa31515cfc0b": {
+    "id": "clutchpoints-aa31515cfc0b",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-terry-mclaurin-latest-injury-update-spells-trouble-vs-colts",
+    "title": "Terry McLaurin’s latest injury update spells trouble for Commanders vs. Colts",
+    "excerpt": "As they prepare for a challenging matchup, the Washington Commanders received concerning news when veteran wide receiver Terry McLaurin appeared on the injury report . NFL reporter Tom Pelissero revealed that a newly developed hamstring issue has left McLaurin officially questionable for Sunday’s game against the Indianapolis Colts in London.\n\n The offensive unit is already adjusting to quarterback changes as Jayden Daniels recovers from a left elbow dislocation. Losing their primary weapon…",
+    "publishedAt": "2026-10-03T16:05:59.000Z",
+    "collectedAt": "2026-10-03T22:05:38.397Z"
+  },
+  "pft-58281fa0b0b3": {
+    "id": "pft-58281fa0b0b3",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/josh-harris-doesnt-rule-out-a-permanent-return-of-the-spear-to-the-commanders-helmet",
+    "title": "Josh Harris doesn't rule out a permanent return of the spear to the Commanders helmet",
+    "excerpt": "The Commanders have an alternate helmet that adds a spear to the W. Speaking to reporters on Saturday in London, Commanders owner Josh Harris didn't rule out making the spear a permanent part of the helmet.\n \"Obviously, everyone is enjoying what we're doing, it's just embracing the past as much as we can in a respectful way, and we're gonna keep looking at, you know, how we keep doing that,\" Harris said, via John Keim of ESPN.\n \"I like the spear. I mean, what can I say? You know, it brings…",
+    "publishedAt": "2026-10-03T20:03:00.000Z",
+    "collectedAt": "2026-10-03T22:05:44.755Z"
+  },
+  "yahoo-nfl-6d59955e2853": {
+    "id": "yahoo-nfl-6d59955e2853",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/bill-croskey-merritt-among-five-200000605.html",
+    "title": "Bill Croskey-Merritt among five Washington Commanders players vital to beating Colts in London",
+    "excerpt": "The Commanders are battling to even their early-season record after the first four weeks, needing to do so in a home game across the Atlantic Ocean and while starting a backup quarterback. \n That’s not quite as bad as it sounds, considering what has been a solid Commanders travel plan and the fact Marcus Mariota is the next man up. \n Washington remains an underdog even against a fellow 1-2 Indianapolis Colts team that has also dealt with daunting schedule. \n This is a winnable matchup, with…",
+    "publishedAt": "2026-10-03T20:00:00.000Z",
+    "collectedAt": "2026-10-03T22:05:44.927Z"
   }
 }

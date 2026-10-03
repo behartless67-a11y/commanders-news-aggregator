@@ -9355,7 +9355,7 @@
     "text": "Sources: Despite intial hope he would play through a hamstring injury, Washington Commanders WR Terry McLaurin is now likely to miss Sunday’s game in London against the Indianapolis Colts, multiple sources tell Last Man Standig. More: sources-terry-mclaurin-likely-to?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
     "handle": "BenStandig",
     "author": "Ben Standig",
-    "label": "Last Man Standig",
+    "label": "",
     "sourceKey": "@BenStandig",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/377/491/584/380/526/original/fa12f122e0a154fb.jpg"
@@ -9600,5 +9600,73 @@
     "images": [],
     "publishedAt": "2026-10-03T21:46:36.000Z",
     "collectedAt": "2026-10-03T22:05:11.067Z"
+  },
+  "social-facf1a77d207": {
+    "id": "social-facf1a77d207",
+    "url": "https://x.com/Commanders/status/2106504721879945265",
+    "text": "London takeover @TheEventsDC@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/379/232/127/806/249/original/8c0be28fabea1d88.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/379/232/193/156/959/original/a69ac2238b9606c3.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/379/232/227/260/469/original/2736a822f1b63189.jpg"
+    ],
+    "publishedAt": "2026-10-03T22:00:37.000Z",
+    "collectedAt": "2026-10-03T22:05:46.291Z"
+  },
+  "social-a0d4d0c150c6": {
+    "id": "social-a0d4d0c150c6",
+    "url": "https://x.com/Commanders/status/2106490725588517243",
+    "text": "really leaning into the local vernacular",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-03T21:05:00.000Z",
+    "collectedAt": "2026-10-03T22:05:46.292Z"
+  },
+  "social-b3cd48865f06": {
+    "id": "social-b3cd48865f06",
+    "url": "https://x.com/BenStandig/status/2106504295176638908",
+    "text": "Link: commanders-roster-math-15-offensive?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/379/222/869/984/358/original/e80042ca9bcf8904.jpg"
+    ],
+    "publishedAt": "2026-10-03T21:58:55.000Z",
+    "collectedAt": "2026-10-03T22:05:50.559Z"
+  },
+  "social-ed14da446de6": {
+    "id": "social-ed14da446de6",
+    "url": "https://x.com/BenStandig/status/2106504074447188166",
+    "text": "The Austin Ekeler signing got me wondering. The Commanders now have tons of RBs, WRs, & TEs on the 53. The most, in fact. Why so many? Does it matter? Plus: Behind the scenes of the McLaurin reporting whiplash in London. Josh Harris speaks. Predictions. The Playbook ⤵️:",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/379/222/653/734/221/original/0c53b7e08a9c55c2.jpg"
+    ],
+    "publishedAt": "2026-10-03T21:58:02.000Z",
+    "collectedAt": "2026-10-03T22:05:50.559Z"
+  },
+  "social-5ca7228d1981": {
+    "id": "social-5ca7228d1981",
+    "url": "https://x.com/pfrumors/status/2106500876227502440",
+    "text": "#Commanders QB Jayden Daniels has a chance to return in Week 5. The Commanders could also go without No. 1 WR Terry McLaurin on Sunday commanders-qb-jayden-daniels-working-to-return-in-week-5-wr-terry-mclaurin-could-miss-week-4",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-03T21:45:20.000Z",
+    "collectedAt": "2026-10-03T22:06:00.278Z"
   }
 }
