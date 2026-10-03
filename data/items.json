@@ -71,18 +71,6 @@
     "publishedAt": "2026-08-19T10:30:00.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-65082e04954c": {
-    "id": "hogs-haven-65082e04954c",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-preseason/433181/washington-commanders-2026-robert-henry-athan-kaliakmanis-drew-stevens-jaden-bradley",
-    "title": "Commanders 2026 Mason/Brennan Preseason Hype! Power Rankings – Week 2",
-    "excerpt": "The annual Mason/Brennan Preseason Hype! Award competition is now well underway following the Commanders’ 20-7 beatdown of the Miami Dolphins. \n\n Each week of the preseason, I will be publishing my own Bris Vegas…",
-    "publishedAt": "2026-08-19T09:00:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -14638,5 +14626,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-03T04:05:28.000Z",
     "collectedAt": "2026-10-03T08:05:31.884Z"
+  },
+  "hogs-haven-6b7d71e123b6": {
+    "id": "hogs-haven-6b7d71e123b6",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/445385/who-gets-credit-for-commanders-upset-of-seahawks-survey-results",
+    "title": "Who gets credit for Commanders upset of Seahawks? – survey results",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Players of the Washington Commanders pose for a photo during the second half against the Seattle Seahawks at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n Sunday’s 33-31 upset over the Seattle Seahawks did a lot more than just put a mark in the win column. It gave Commanders fans a collective sigh of relief and brought back an energy that seemed completely sapped just seven days…",
+    "publishedAt": "2026-10-03T09:00:00.000Z",
+    "collectedAt": "2026-10-03T09:40:14.469Z"
+  },
+  "yahoo-nfl-ea884e6d94bc": {
+    "id": "yahoo-nfl-ea884e6d94bc",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/did-offense-defense-dan-quinn-090000169.html",
+    "title": "Did the offense, defense, or Dan Quinn win it for Washington? Fans weigh in after the Seattle upset - survey results",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Players of the Washington Commanders pose for a photo during the second half against the Seattle Seahawks at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images Sunday’s 33-31 upset over the Seattle Seahawks did a lot more than just put a mark in the win column. It gave Commanders fans a collective sigh of relief and brought back an energy that seemed completely sapped just seven days earlier.\n In…",
+    "publishedAt": "2026-10-03T09:00:00.000Z",
+    "collectedAt": "2026-10-03T09:40:21.345Z"
   }
 }
