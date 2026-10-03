@@ -23,30 +23,6 @@
     "publishedAt": "2026-09-23T15:47:09.000Z",
     "collectedAt": "2026-09-23T16:05:11.035Z"
   },
-  "social-cfa05a6b1e02": {
-    "id": "social-cfa05a6b1e02",
-    "url": "https://x.com/NickiJhabvala/status/2102769582247477613",
-    "text": "Discussing Jayden Daniels’ injury and the state of the Commanders with @barrysvrluga",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-23T14:38:30.000Z",
-    "collectedAt": "2026-09-23T16:05:11.035Z"
-  },
-  "social-90904619ea5e": {
-    "id": "social-90904619ea5e",
-    "url": "https://x.com/JPFinlayNBCS/status/2102776944391524833",
-    "text": "Thru 2 games the Commanders tight ends have 6 catches for 49 yards. Need more productivity from that position",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-23T15:07:45.000Z",
-    "collectedAt": "2026-09-23T16:09:19.194Z"
-  },
   "social-ec4db5a5b0b0": {
     "id": "social-ec4db5a5b0b0",
     "url": "https://x.com/AdamSchefter/status/2102789958612475915",
@@ -57,18 +33,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-23T15:59:28.000Z",
-    "collectedAt": "2026-09-23T16:09:20.677Z"
-  },
-  "social-a54ca9629751": {
-    "id": "social-a54ca9629751",
-    "url": "https://x.com/john_keim/status/2102777564473290863",
-    "text": "One note: we were talking about what to expect to hear today. Wouldn’t expect much because Daniels will visit another specialist today (as they had stated he would do Monday)",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-23T15:10:13.000Z",
     "collectedAt": "2026-09-23T16:09:20.677Z"
   },
   "social-4b68512be482": {
@@ -9727,5 +9691,145 @@
     "images": [],
     "publishedAt": "2026-10-03T14:33:51.000Z",
     "collectedAt": "2026-10-03T14:36:35.026Z"
+  },
+  "social-39514ef28f98": {
+    "id": "social-39514ef28f98",
+    "url": "https://x.com/Commanders/status/2106398921283035482",
+    "text": "We have elevated RB Craig Reynolds and LB Ale Kaho from the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/592/773/061/474/original/8b05a6079c26bdc4.jpg"
+    ],
+    "publishedAt": "2026-10-03T15:00:12.000Z",
+    "collectedAt": "2026-10-03T15:43:36.530Z"
+  },
+  "social-eb88ed89213d": {
+    "id": "social-eb88ed89213d",
+    "url": "https://x.com/john_keim/status/2106399517146784006",
+    "text": "Washington has elevated LB Ale Kaho and RB Craig Reynolds. Kaho has been elevated three times this season (the max amount allowed for a player).",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-03T15:02:34.000Z",
+    "collectedAt": "2026-10-03T15:43:39.197Z"
+  },
+  "social-0c836bdf163b": {
+    "id": "social-0c836bdf163b",
+    "url": "https://x.com/john_keim/status/2106397946526700031",
+    "text": "Yes, per source WR Terry McLaurin is very much in question for Sunday because of the hamstring. Those are tricky situations. No final decision until Sunday but certainly leaning the wrong way. questionable. Find out Sunday morning.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-03T14:56:20.000Z",
+    "collectedAt": "2026-10-03T15:43:39.197Z"
+  },
+  "social-cfe4e531c4e2": {
+    "id": "social-cfe4e531c4e2",
+    "url": "https://x.com/BenStandig/status/2106406643777061228",
+    "text": "This was the line 90 minutes later. The youngest fan took the anchor position.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/698/290/503/583/original/65c401414a5d728c.jpg"
+    ],
+    "publishedAt": "2026-10-03T15:30:53.000Z",
+    "collectedAt": "2026-10-03T15:43:40.992Z"
+  },
+  "social-b7fa9c51a2fd": {
+    "id": "social-b7fa9c51a2fd",
+    "url": "https://x.com/BenStandig/status/2106405270305796201",
+    "text": "I found a few more. Now there's enough to hold a Minyan.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/680/246/051/846/original/21a5947bc0d4977e.jpg"
+    ],
+    "publishedAt": "2026-10-03T15:25:26.000Z",
+    "collectedAt": "2026-10-03T15:43:40.992Z"
+  },
+  "social-8329c03d2d40": {
+    "id": "social-8329c03d2d40",
+    "url": "https://x.com/BenStandig/status/2106405191558013213",
+    "text": "I found a few more. Now there's enough to hold a Minyan.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-03T15:25:07.000Z",
+    "collectedAt": "2026-10-03T15:43:40.992Z"
+  },
+  "social-f1662c5d1f75": {
+    "id": "social-f1662c5d1f75",
+    "url": "https://x.com/BenStandig/status/2106397059725320492",
+    "text": "Yep, just experienced some newsy whiplash. Precaution with a tricky injury has now taken taken the lead, though no final decision has been made. All went down while being a tourist in front of Westminster Abbey. Weird.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-03T14:52:48.000Z",
+    "collectedAt": "2026-10-03T15:43:40.992Z"
+  },
+  "social-7078a559a81e": {
+    "id": "social-7078a559a81e",
+    "url": "https://x.com/BenStandig/status/2106393295073198313",
+    "text": "Sources: Despite intial hope he would play through a hamstring injury, Washington Commanders WR Terry McLaurin is now likely to miss Sunday’s game in London against the Indianapolis Colts, multiple sources tell Last Man Standig. More: sources-terry-mclaurin-likely-to?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/377/491/584/380/526/original/fa12f122e0a154fb.jpg"
+    ],
+    "publishedAt": "2026-10-03T14:37:51.000Z",
+    "collectedAt": "2026-10-03T15:43:40.992Z"
+  },
+  "social-c4606d99ac85": {
+    "id": "social-c4606d99ac85",
+    "url": "https://x.com/tashanreed/status/2106399870101991929",
+    "text": "Helps the #Commanders account for the absences of White/Magee this week:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-03T15:03:58.000Z",
+    "collectedAt": "2026-10-03T15:43:42.039Z"
+  },
+  "social-b9a7a6dca9c2": {
+    "id": "social-b9a7a6dca9c2",
+    "url": "https://x.com/RapSheet/status/2106392834450305085",
+    "text": "#Colts WR Keenan Allen (groin) has been downgraded to out against the #Commanders .",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-10-03T14:36:01.000Z",
+    "collectedAt": "2026-10-03T15:43:46.331Z"
+  },
+  "social-641cedc8db65": {
+    "id": "social-641cedc8db65",
+    "url": "https://x.com/FantasyProsNFL/status/2106401927801995492",
+    "text": "Terry McLaurin (hamstring) not expected to play Sunday 8/terry-mclaurin-hamstring-not-expected-to-play-sunday.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @ArmchairNate@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-03T15:12:09.000Z",
+    "collectedAt": "2026-10-03T15:43:53.507Z"
   }
 }
