@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-19T18:00:00.000Z",
     "collectedAt": "2026-08-19T18:27:13.167Z"
   },
-  "hogs-haven-43b81ada2bcb": {
-    "id": "hogs-haven-43b81ada2bcb",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/nfl-training-camp/431297/commanders-camp-talk-dan-quinn-sonny-styles-and-josh-conerly-jr",
-    "title": "Commanders Camp Talk: Dan Quinn, Sonny Styles, and Josh Conerly Jr.",
-    "excerpt": "The Washington Commanders training camp rolls on for Day 13 in Ashburn, VA. The team was back in pads today, and this was the last practice in front of fans.\n\n Head coach Dan Quinn spoke to reporters before the start of…",
-    "publishedAt": "2026-08-19T16:00:00.000Z",
-    "collectedAt": "2026-08-19T18:27:13.167Z"
-  },
   "hogs-haven-35864a1394e9": {
     "id": "hogs-haven-35864a1394e9",
     "sourceId": "hogs-haven",
@@ -201,18 +189,6 @@
     "title": "Daronte Jones' ambitious Commanders vision threatened as injury bug bites back",
     "excerpt": "Defensive coordinator Daronte Jones' ambitious Washington Commanders vision is being threatened as the dreaded injury bug bites back.",
     "publishedAt": "2026-08-19T17:30:00.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
-  "riggos-rag-f063331f4925": {
-    "id": "riggos-rag-f063331f4925",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/kaytron-allen-must-prove-commanders-preseason-debut-didnt-expose-his-ceiling",
-    "title": "Kaytron Allen must prove Commanders preseason debut didn't expose his ceiling",
-    "excerpt": "Sixth-round rookie running back Kaytron Allen must prove his Washington Commanders preseason debut didn't expose his ceiling.",
-    "publishedAt": "2026-08-19T16:00:01.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
   "clutchpoints-d27a4c1a7a42": {
@@ -14590,5 +14566,29 @@
     "excerpt": "KANSAS CITY, MISSOURI - SEPTEMBER 20: Tyler Warren #84 of the Indianapolis Colts is tackled by George Karlaftis #56 of the Kansas City Chiefs during the fourth quarter at Arrowhead Stadium on September 20, 2026 in Kansas City, Missouri. (Photo by Jamie Squire/Getty Images) | Getty Images The Daily Slop – 3 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and…",
     "publishedAt": "2026-10-03T15:19:35.000Z",
     "collectedAt": "2026-10-03T15:43:34.824Z"
+  },
+  "hogs-haven-162cd25f8b9b": {
+    "id": "hogs-haven-162cd25f8b9b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446026/commanders-roster-moves-washington-elevates-two-from-practice-squad-vs-colts",
+    "title": "Commanders roster moves: Washington elevates two from practice squad vs. Colts",
+    "excerpt": "The Commanders have elevated running back Craig Reynolds and linebacker Ale Kaho from the practice squad for Sunday’s Week 4 contest against the Indianapolis Colts at Tottenham Hotspur Stadium in London, the team announced on Saturday. \n We have elevated RB Craig Reynolds and LB Ale Kaho from the practice squad pic.twitter.com/g0uLb5rXxB \n— Washington Commanders (@Commanders) October 3, 2026 \n These two will provide key depth at areas depleted by injury. While the Commanders linebacker corps is…",
+    "publishedAt": "2026-10-03T15:49:08.000Z",
+    "collectedAt": "2026-10-03T16:05:33.308Z"
+  },
+  "riggos-rag-ac1435d6d685": {
+    "id": "riggos-rag-ac1435d6d685",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/daron-payne-contract-year-surge-exposes-flaw-washington-commanders-trade-talk",
+    "title": "Daron Payne’s contract-year surge exposes the flaw in Commanders trade talk",
+    "excerpt": "Daron Payne’s contract-year surge exposes the flaw in ongoing rumors around the Washington Commanders trading him before the deadline.",
+    "publishedAt": "2026-10-03T16:00:03.000Z",
+    "collectedAt": "2026-10-03T16:05:33.924Z"
   }
 }
