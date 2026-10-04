@@ -85,20 +85,6 @@
   },
   {
     "season": "regular",
-    "week": "WEEK 4",
-    "gametime": "10/04/2026 09:30:00 -04:00",
-    "homeAway": "VS",
-    "opponentAbbr": "IND",
-    "opponent": "Indianapolis Colts",
-    "opponentShort": "Colts",
-    "venue": "Tottenham Hotspur Stadium",
-    "result": null,
-    "points": null,
-    "broadcast": "NFL NETWORK",
-    "isBye": false
-  },
-  {
-    "season": "regular",
     "week": "WEEK 5",
     "gametime": "10/11/2026 13:00:00 -04:00",
     "homeAway": "VS",

@@ -7,6 +7,13 @@
     "notes": null
   },
   {
+    "name": "Javontae Jean-Baptiste",
+    "position": "DL",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Jayden Daniels",
     "position": "QB",
     "status": "Out",
@@ -49,17 +56,17 @@
     "notes": "Surgery"
   },
   {
+    "name": "Luke McCaffrey",
+    "position": "WR",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Nick Cross",
     "position": "DB",
     "status": "Out",
     "bodyPart": "Undisclosed",
-    "notes": null
-  },
-  {
-    "name": "Percy Butler",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Concussion",
     "notes": null
   },
   {
@@ -79,7 +86,7 @@
   {
     "name": "Terry McLaurin",
     "position": "WR",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Hamstring",
     "notes": null
   },
