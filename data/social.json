@@ -1,44 +1,4 @@
 {
-  "social-5ec471fd3ca8": {
-    "id": "social-5ec471fd3ca8",
-    "url": "https://x.com/Commanders/status/2102907363367825596",
-    "text": "Next man up mentality @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-23T23:46:00.000Z",
-    "collectedAt": "2026-09-24T00:19:09.028Z"
-  },
-  "social-4b32e22b9e49": {
-    "id": "social-4b32e22b9e49",
-    "url": "https://x.com/Commanders/status/2102892012819108079",
-    "text": "Wednesday injury report #SEAvsWAS | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/322/787/259/641/303/original/242868b6a11dc497.jpg"
-    ],
-    "publishedAt": "2026-09-23T22:45:00.000Z",
-    "collectedAt": "2026-09-24T00:19:09.029Z"
-  },
-  "social-89176f15a2bf": {
-    "id": "social-89176f15a2bf",
-    "url": "https://x.com/BenStandig/status/2102895817774235966",
-    "text": "Six DNPs and eight \"limited\" participants today.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/322/843/329/456/729/original/e6e9a563464af1fe.jpg"
-    ],
-    "publishedAt": "2026-09-23T23:00:07.000Z",
-    "collectedAt": "2026-09-24T00:19:13.134Z"
-  },
   "social-2701678a1a03": {
     "id": "social-2701678a1a03",
     "url": "https://x.com/BenStandig/status/2102951817634021781",
@@ -74,18 +34,6 @@
     "images": [],
     "publishedAt": "2026-09-24T00:31:24.000Z",
     "collectedAt": "2026-09-24T03:11:06.651Z"
-  },
-  "social-0f0d5e0673fc": {
-    "id": "social-0f0d5e0673fc",
-    "url": "https://x.com/NickiJhabvala/status/2102896379870028022",
-    "text": "Commanders injury report:",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-23T23:02:21.000Z",
-    "collectedAt": "2026-09-24T14:05:11.100Z"
   },
   "social-75e50297110f": {
     "id": "social-75e50297110f",
