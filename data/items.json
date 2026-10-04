@@ -1,28 +1,4 @@
 {
-  "riggos-rag-b0892f69f418": {
-    "id": "riggos-rag-b0892f69f418",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-watching-their-quiet-tyler-owens-plan-become-visible-camp",
-    "title": "Commanders are watching their quiet Tyler Owens plan become visible at camp",
-    "excerpt": "Washington Commanders defensive coordinator Daronte Jones might have the key to unlocking defensive back Tyler Owens' true potential.",
-    "publishedAt": "2026-08-20T17:30:00.000Z",
-    "collectedAt": "2026-08-20T17:46:34.651Z"
-  },
-  "pft-66a4b3d224fc": {
-    "id": "pft-66a4b3d224fc",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-will-start-joshua-dobbs-at-qb-on-saturday-vs-commanders",
-    "title": "Lions will start Joshua Dobbs at QB on Saturday vs. Commanders",
-    "excerpt": "Quarterback Joshua Dobbs will get an opportunity to go ahead in Detroit’s backup competition this weekend.\n Head coach Dan Campbell told reporters in his Thursday press conference that Dobbs will start for the Lions…",
-    "publishedAt": "2026-08-20T17:35:31.000Z",
-    "collectedAt": "2026-08-20T17:46:38.442Z"
-  },
   "hogs-haven-32fc2b86af68": {
     "id": "hogs-haven-32fc2b86af68",
     "sourceId": "hogs-haven",
@@ -33,18 +9,6 @@
     "title": "Joshua Josephs among top Commanders storylines as training camp continues",
     "excerpt": "The Washington Commanders conducted more back-to-back sessions of training camp this week. Several players were out with injuries sustained during the team’s first preseason game versus the Miami Dolphins or the joint practice before it, while others returned from extended absences. \n\n Receiver River Cracraft and running back Jerome Ford went on the team’s injured reserve list while quarterback Marcus Mariota, defensive lineman Johnny Newton and linebackers Jordan Magee and Ale Kaho all sat out…",
     "publishedAt": "2026-08-20T21:00:07.000Z",
-    "collectedAt": "2026-08-21T08:37:58.365Z"
-  },
-  "hogs-haven-65add2e4f703": {
-    "id": "hogs-haven-65add2e4f703",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/433648/washington-commanders-laremy-tunsil-injury-left-tackle-brandon-coleman-taylor-decker",
-    "title": "Washington Commanders have good options to fill in for Laremy Tunsil",
-    "excerpt": "Rising optimism for the Commanders’ season was dealt a setback when Laremy Tunsil suffered a torn triceps in training-camp one-on-ones against edge rusher Odafe Oweh. The injury required surgery and is expected to sideline the team’s franchise left tackle for a large portion of the season.\n\n The announcement that Brandon Coleman would take Tunsil’s place during the rehab was met with mixed reactions within the fanbase. Many welcomed the opportunity for a young player who has shown growth in his…",
-    "publishedAt": "2026-08-20T18:00:00.000Z",
     "collectedAt": "2026-08-21T08:37:58.365Z"
   },
   "riggos-rag-40199d0ac796": {
@@ -14842,5 +14806,149 @@
     "excerpt": "Washington Commanders quarterback Marcus Mariota exited the team's game in London against the Indianapolis Colts after suffering a knee injury on the team's second offensive series.\n Mariota, in his second start replacing the injured Jayden Daniels , got his right leg caught underneath a Colts lineman as he was sacked. He left with a right knee injury.\n Rookie Athan Kaliakmanis has replaced Mariota at quarterback.\n Marcus Mariota is heading to the medical tent after taking a hit from Laiatu…",
     "publishedAt": "2026-10-04T14:11:00.000Z",
     "collectedAt": "2026-10-04T16:05:37.879Z"
+  },
+  "hogs-haven-696528bda8d6": {
+    "id": "hogs-haven-696528bda8d6",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/446154/washington-commanders-indianapolis-colts-week-4-marcus-mariota-athan-kaliakmanis",
+    "title": "Key takeaways from Washington Commanders loss to Indianapolis Colts",
+    "excerpt": "BOX SCORE \n\n The Commanders had to deal with some adversity trying to reach an even record during Sunday morning’s game against the Indianapolis Colts. \n\n Jayden Daniels practiced some this week and then wasn’t able to go, as expected after a dislocated left elbow suffered in Week 2. Washington felt super comfortable with Marcus Mariota calling offensive signals and could hold a similar game plan with mobile quarterbacks capable of making all the pre-snaps checks required of David Blough’s…",
+    "publishedAt": "2026-10-04T16:40:44.000Z",
+    "collectedAt": "2026-10-04T18:05:34.348Z"
+  },
+  "riggos-rag-82155cf2e290": {
+    "id": "riggos-rag-82155cf2e290",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/grading-athan-kaliakmanis-nfl-debut-commanders-glimpse-promise-limits",
+    "title": "Grading Athan Kaliakmanis’ NFL debut as Commanders glimpse promise and limits",
+    "excerpt": "Grading rookie quarterback Athan Kaliakmanis’ NFL debut as the Washington Commanders glimpse promise and limits.",
+    "publishedAt": "2026-10-04T17:30:29.000Z",
+    "collectedAt": "2026-10-04T18:05:34.789Z"
+  },
+  "riggos-rag-d77de4aa752c": {
+    "id": "riggos-rag-d77de4aa752c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/11-instant-reactions-washington-commanders-crushing-loss-against-colts",
+    "title": "11 instant reactions from Commanders' crushing loss against the Colts",
+    "excerpt": "Instant reactions from the Washington Commanders' crushing loss to the Indianapolis Colts in London.",
+    "publishedAt": "2026-10-04T16:40:28.000Z",
+    "collectedAt": "2026-10-04T18:05:34.789Z"
+  },
+  "clutchpoints-ff04c5307e55": {
+    "id": "clutchpoints-ff04c5307e55",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-injury-forces-washington-turn-qb3-vs-colts-in-london",
+    "title": "Commanders quarterback Marcus Mariota injury forces Washington to turn to QB3 vs. Colts in London",
+    "excerpt": "The Washington Commanders are in London, facing off against the Indianapolis Colts. The Commanders were already without Terry McLaurin for the game, who is inactive with a hamstring injury.\n\n Now, the Commanders are dealing with another major injury , as Marcus Mariota left the game against the Colts, per Adam Schefter of ESPN.\n\n “Commanders say Marcus Mariota has a knee injury,” Schefter posted on X, formerly Twitter. He left the field and went to the locker room.\n\n Mariota was starting for a…",
+    "publishedAt": "2026-10-04T14:13:47.000Z",
+    "collectedAt": "2026-10-04T18:05:35.006Z"
+  },
+  "athletic-jhabvala-edb1c726c0c1": {
+    "id": "athletic-jhabvala-edb1c726c0c1",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7658540/2026/10/04/colts-commanders-nfl-2026-score-result-takeaways",
+    "title": "Colts beat Commanders in London, as Mariota injury creates QB uncertainty for Washington",
+    "excerpt": "Indianapolis improved to 2-2 after Marcus Mariota's knee injury forced rookie Athan Kaliakmanis in at quarterback for Washington.",
+    "publishedAt": "2026-10-04T16:47:09.000Z",
+    "collectedAt": "2026-10-04T18:05:37.153Z"
+  },
+  "commanders-youtube-4ce36cedf670": {
+    "id": "commanders-youtube-4ce36cedf670",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=ONJo7gOV9go",
+    "title": "Postgame LIVE: Hear From HC Dan Quinn & More After Colts vs. Commanders in London | NFL Week 4",
+    "excerpt": "",
+    "publishedAt": "2026-10-04T18:00:48.000Z",
+    "collectedAt": "2026-10-04T18:05:37.333Z"
+  },
+  "dc-sports-king-8e9640bb82db": {
+    "id": "dc-sports-king-8e9640bb82db",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/brutal-mariota-injury-forcing-commanders-3rd-string-rookie-on-field",
+    "title": "Brutal Mariota Injury Forcing Commanders 3rd-String Rookie on Field",
+    "excerpt": "What should have been a straightforward Week 4 transatlantic trip for the Washington Commanders has quickly turned into a quarterback crisis.\n\n Already entering their London matchup against the Indianapolis Colts and navigating a depleted quarterback room, the Commanders were forced to hand the offense over to third-string rookie Athan Kaliakmanis midway through the first quarter after Marcus Mariota suffered a right knee injury.\n\n The Domino Effect with Marcus Mariota Injured\n\n The chaos under…",
+    "publishedAt": "2026-10-04T16:40:33.000Z",
+    "collectedAt": "2026-10-04T18:05:39.197Z"
+  },
+  "pft-2aec55b54184": {
+    "id": "pft-2aec55b54184",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jonathan-taylor-and-the-colts-top-athan-kaliakmanis-and-the-commanders-in-london",
+    "title": "Jonathan Taylor and the Colts top Athan Kaliakmanis and the Commanders in London",
+    "excerpt": "The Commanders were down to their third-string quarterback today in London, and although rookie Athan Kaliakmanis showed some arm strength, it was the Colts' running game that controlled the game.\n Jonathan Taylor ran for two touchdowns, Daniel Jones ran for another, and the Colts beat the Commanders 30-13.\n With first-string quarterback Jayden Daniels out because of an elbow injury, backup Marcus Mariota started for the Commanders. But Mariota had to leave in the first quarter with a knee…",
+    "publishedAt": "2026-10-04T16:40:19.000Z",
+    "collectedAt": "2026-10-04T18:05:40.266Z"
+  },
+  "yahoo-nfl-a854676b53e6": {
+    "id": "yahoo-nfl-a854676b53e6",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-jonathan-taylor-goes-off-commanders-lose-marcus-mariota-in-first-london-game-of-2026-180439383.html",
+    "title": "Fantasy Football: Jonathan Taylor goes off, Commanders lose Marcus Mariota in first London game of 2026",
+    "excerpt": "The Sunday slate in Week 4 kicked off in London. We got a matchup between the Colts and Commanders, and while Indianapolis’ 30-13 win wasn't the prettiest game, there were a few things to note for fantasy football. Let's dive in. \n JT turns in RB1 performance\n In the least surprising storyline of the game, Jonathan Taylor bounced back after a down Week 3. The Colts offense was a bit stagnant in the first half with just 10 points, but Taylor scored one of his two TDs in that frame, finishing the…",
+    "publishedAt": "2026-10-04T18:04:39.000Z",
+    "collectedAt": "2026-10-04T18:05:40.677Z"
+  },
+  "yahoo-nfl-d3c555259e7a": {
+    "id": "yahoo-nfl-d3c555259e7a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/marcus-mariota-played-2-drives-171121323.html",
+    "title": "Marcus Mariota played 2 drives against Colts and led Commanders in rushing",
+    "excerpt": "(Photo by Alex Pantling/Getty Images) | Getty Images This week’s trip to London to take on the Indianapolis Colts at Tottenham Hotspur Stadium ended with a loss for the Washington Commanders.\n But one statistic highlighted just how tough it was for the Commanders’ offense on Sunday.\n With starting quarterback Jayden Daniels still sidelined after dislocating his left elbow against the Dallas Cowboys — the second season in a row Daniels has suffered that particular injury — veteran Marcus Mariota…",
+    "publishedAt": "2026-10-04T17:11:21.000Z",
+    "collectedAt": "2026-10-04T18:05:40.677Z"
+  },
+  "yahoo-nfl-d5e3ec99c422": {
+    "id": "yahoo-nfl-d5e3ec99c422",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/colts-win-ugly-london-overcome-170359461.html",
+    "title": "Colts win ugly in London, as overcome sloppy start vs. Commanders and eventually settle in",
+    "excerpt": "LONDON, ENGLAND - OCTOBER 04: Jonathan Taylor of the Indianapolis Colts celebrates a touchdown during the NFL match between Indianapolis Colts and Washington Commanders as part of the London NFL Series 2026 at Tottenham Hotspur Stadium on October 04, 2026 in London, England. (Photo by Alex Pantling/Getty Images) | Getty Images The Indianapolis Colts (2-2) overcame a sloppy start to beat the Washington Commanders (1-3), 30-13, in London in Tottenham Hotspur Stadium, to begin playing .500…",
+    "publishedAt": "2026-10-04T17:03:59.000Z",
+    "collectedAt": "2026-10-04T18:05:40.677Z"
+  },
+  "yahoo-nfl-029b0a4a9721": {
+    "id": "yahoo-nfl-029b0a4a9721",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/colts-roll-victory-over-commanders-170117243.html",
+    "title": "Colts roll to victory over Commanders. Winners and losers of NFL London game",
+    "excerpt": "London was calling, and the Indianapolis Colts and Washington Commanders answered.\n The NFL went back to London for the first of three games in the capital of the United Kingdom on Sunday, Oct. 4.\n A week after the Colts won their first matchup since their Week 10 win in Berlin last November, Indianapolis proved its dominance overseas once again. They took down the Commanders in a 30-13 victory at Tottenham Hostpur Stadium as Washington lost backup quarterback Marcus Mariota to a knee injury.…",
+    "publishedAt": "2026-10-04T17:01:17.000Z",
+    "collectedAt": "2026-10-04T18:05:40.677Z"
   }
 }

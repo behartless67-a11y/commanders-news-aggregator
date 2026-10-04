@@ -30,8 +30,8 @@
   {
     "name": "Jaylin Lane",
     "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Leg",
+    "status": "Out",
+    "bodyPart": "Ankle",
     "notes": null
   },
   {
@@ -46,6 +46,13 @@
     "position": "RB",
     "status": "IR",
     "bodyPart": "Quadriceps",
+    "notes": null
+  },
+  {
+    "name": "Jeremy Reaves",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Finger",
     "notes": null
   },
   {
@@ -117,5 +124,12 @@
     "status": "IR",
     "bodyPart": "Ankle",
     "notes": "Sprain"
+  },
+  {
+    "name": "Tyler Owens",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Hamstring",
+    "notes": null
   }
 ]
