@@ -398,6 +398,31 @@
     "stats": null
   },
   {
+    "slug": "craig-reynolds",
+    "name": "Craig Reynolds",
+    "jersey": "24",
+    "position": "RB",
+    "espnId": "4421446",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4421446.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "3"
+        },
+        {
+          "label": "YDS",
+          "value": "4"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "ben-sinnott",
     "name": "Ben Sinnott",
     "jersey": "82",
@@ -1482,31 +1507,6 @@
     "espnId": "5153070",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5153070.png",
     "stats": null
-  },
-  {
-    "slug": "craig-reynolds",
-    "name": "Craig Reynolds",
-    "jersey": "24",
-    "position": "RB",
-    "espnId": "4421446",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4421446.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "CAR",
-          "value": "3"
-        },
-        {
-          "label": "YDS",
-          "value": "4"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
   },
   {
     "slug": "trent-scott",
