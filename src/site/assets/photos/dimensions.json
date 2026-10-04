@@ -36,5 +36,6 @@
   "hero-pregame": { "w": 1536, "h": 512 },
   "hero-bowl": { "w": 1536, "h": 512 },
   "hero-endzone": { "w": 1536, "h": 512 },
-  "hero-mariota-sign": { "w": 1536, "h": 512 }
+  "hero-mariota-sign": { "w": 1536, "h": 512 },
+  "brunch-crew": { "w": 1200, "h": 900 }
 }
