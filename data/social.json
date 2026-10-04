@@ -1,102 +1,4 @@
 {
-  "social-d21b2608b106": {
-    "id": "social-d21b2608b106",
-    "url": "https://x.com/john_keim/status/2103158709178314897",
-    "text": "DL Javon Kinlaw is out here during the stretching period. He’s in uniform.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-24T16:24:45.000Z",
-    "collectedAt": "2026-09-24T16:30:52.052Z"
-  },
-  "social-03abbb61305c": {
-    "id": "social-03abbb61305c",
-    "url": "https://x.com/BenStandig/status/2103157146497991133",
-    "text": "Week 3 approach: One step at a time.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-24T16:18:33.000Z",
-    "collectedAt": "2026-09-24T16:30:54.954Z"
-  },
-  "social-b450666c98eb": {
-    "id": "social-b450666c98eb",
-    "url": "https://x.com/tashanreed/status/2103159572957724953",
-    "text": "Still no RG Sam Cosmi (concussion), TE Chig Okonkwo (hamstring) or LB Frankie Luvu (groin) for the #Commanders",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-24T16:28:11.000Z",
-    "collectedAt": "2026-09-24T16:30:56.254Z"
-  },
-  "social-a466b1655a30": {
-    "id": "social-a466b1655a30",
-    "url": "https://x.com/tashanreed/status/2103156941715538122",
-    "text": "#Commanders DT Javon Kinlaw (shoulder) is practicing",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-24T16:17:44.000Z",
-    "collectedAt": "2026-09-24T16:30:56.254Z"
-  },
-  "social-ecc5a01be7b1": {
-    "id": "social-ecc5a01be7b1",
-    "url": "https://x.com/NickiJhabvala/status/2103159232401203212",
-    "text": "LB Frankie Luvu (groin) and TE Chig Okonkwo (hamstring) are both working on the side field with trainers. DT Javon Kinlaw (shoulder/back) is out here going through team stretch. Don’t see Sam Cosmi (concussion).",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-24T16:26:50.000Z",
-    "collectedAt": "2026-09-24T18:05:10.516Z"
-  },
-  "social-2b8d7c866b58": {
-    "id": "social-2b8d7c866b58",
-    "url": "https://x.com/JPFinlayNBCS/status/2103162783517073878",
-    "text": "Jaxon Smith-Njigba leads the NFL with 277 yards and 4 TDs. Daronte Jones on JSN: \"He has a way to catch the ball all over the field. He can obviously take the top of the defense...You've got to know where this guy is at all times, everyone not just the secondary.\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/327/014/427/313/738/original/97bce6343b397059.jpg"
-    ],
-    "publishedAt": "2026-09-24T16:40:57.000Z",
-    "collectedAt": "2026-09-24T18:05:52.114Z"
-  },
-  "social-d381af3c0782": {
-    "id": "social-d381af3c0782",
-    "url": "https://x.com/john_keim/status/2103161532351672501",
-    "text": "Some individual drills by the OL. Lucas Patrick is No 63.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-24T16:35:58.000Z",
-    "collectedAt": "2026-09-24T18:05:54.122Z"
-  },
-  "social-0767c6641414": {
-    "id": "social-0767c6641414",
-    "url": "https://x.com/BenStandig/status/2103162052822868434",
-    "text": "Didn't see Sam Cosmi (concussion), TE Chig Okonkwo (hamstring) or LB Frankie Luvu (groin) for stretching. DT Javon Kinlaw (back/shoulder) on the field.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-24T16:38:02.000Z",
-    "collectedAt": "2026-09-24T18:05:55.222Z"
-  },
   "social-95be32a4aa54": {
     "id": "social-95be32a4aa54",
     "url": "https://x.com/NickiJhabvala/status/2103204235206648280",
@@ -12577,5 +12479,53 @@
     "images": [],
     "publishedAt": "2026-10-04T15:14:27.707Z",
     "collectedAt": "2026-10-04T16:05:56.095Z"
+  },
+  "social-404079a0869b": {
+    "id": "social-404079a0869b",
+    "url": "https://x.com/NickiJhabvala/status/2106805838249935034",
+    "text": "All we know right now is Marcus Mariota hurt his MCL. Quinn said they'll learn the extent of it when he undergoes additional scans back in Ashburn.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T17:57:09.000Z",
+    "collectedAt": "2026-10-04T18:05:10.725Z"
+  },
+  "social-aa9375a92a68": {
+    "id": "social-aa9375a92a68",
+    "url": "https://x.com/NickiJhabvala/status/2106799524429840648",
+    "text": "Dan Quinn on Mariota: “The team thinks it’s an MCL injury, and when we get the scans tomorrow, we’ll have a better sense of what’s ahead.”",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T17:32:03.000Z",
+    "collectedAt": "2026-10-04T18:05:10.725Z"
+  },
+  "social-a72472ba27f0": {
+    "id": "social-a72472ba27f0",
+    "url": "https://x.com/NickiJhabvala/status/2106786320328577239",
+    "text": "Welp. The good news is Jayden Daniels probably comes back next week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T16:39:35.000Z",
+    "collectedAt": "2026-10-04T18:05:10.725Z"
+  },
+  "social-9302e810c424": {
+    "id": "social-9302e810c424",
+    "url": "https://x.com/NickiJhabvala/status/2106778570597052567",
+    "text": "Commanders fans headed for the exits at Tottenham.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T16:08:47.000Z",
+    "collectedAt": "2026-10-04T18:05:10.725Z"
   }
 }
