@@ -11,18 +11,6 @@
     "publishedAt": "2026-09-24T11:43:55.000Z",
     "collectedAt": "2026-09-24T14:05:44.004Z"
   },
-  "social-79a3fbc8f5ab": {
-    "id": "social-79a3fbc8f5ab",
-    "url": "https://x.com/AdamSchefter/status/2103061886808064356",
-    "text": "Seahawks HC Mike Macdonald said quarterback Sam Darnold is “on a good track” to play Sunday against the Washington Commanders after missing most of the first two games with a glute injury. Story via @BradyHenderson : 34/seahawks-macdonald-apologizes-broncos-payton-comments",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-24T10:00:01.000Z",
-    "collectedAt": "2026-09-24T14:05:45.065Z"
-  },
   "social-e560cb0226ea": {
     "id": "social-e560cb0226ea",
     "url": "https://x.com/BenStandig/status/2103115998379282764",
@@ -9616,5 +9604,29 @@
     "images": [],
     "publishedAt": "2026-10-04T00:30:00.000Z",
     "collectedAt": "2026-10-04T02:05:38.973Z"
+  },
+  "social-d4f9a194410f": {
+    "id": "social-d4f9a194410f",
+    "url": "https://x.com/NickiJhabvala/status/2106677576437788719",
+    "text": "From yesterday … Commanders hope to make the spear “W” their primary logo, possibly as soon as 2027, sources confirmed (1st by @ZachCohenFB",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T09:27:29.000Z",
+    "collectedAt": "2026-10-04T10:05:10.531Z"
+  },
+  "social-a528b7753669": {
+    "id": "social-a528b7753669",
+    "url": "https://x.com/NickiJhabvala/status/2106676900190212268",
+    "text": "Update: Some 3,000 fans showed up to the Commanders’ fan rally in London yesterday. Josh Harris bought 2 rounds for everyone, so you can do the math … avg. $8 a beer … that’s close to $50,000.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T09:24:47.000Z",
+    "collectedAt": "2026-10-04T10:05:10.531Z"
   }
 }
