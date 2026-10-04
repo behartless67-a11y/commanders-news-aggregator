@@ -264,7 +264,7 @@ Recurring material regular readers are in on. Use it, extend it, and add to this
 | **The ditch** | CRT essay | The origin story. Use sparingly, it's the good china. |
 | **Two things in two days** | Two concerts, then two stadiums | Ended for now, since UVA's away. Revive when it's true again. |
 | **The receipt** | 4:38 A.M. into I Told You So | Pregame prediction, Monday payoff. Set it up on purpose. |
-| **The LAW** | 4:38 A.M. | Sarah and Daniel's son. Never his real name. |
+| **The LAW** | 4:38 A.M. | Sarah and Daniel's son. Never his real name, and just call him the LAW: no "still not saying his name" asides, which make a nickname sound like a secret. Sarah and Daniel are Browns fans. |
 | **Cornholio** | I Told You So | Pre-game caffeine state. |
 | **Filing a complaint** | 4:38 A.M. | Bureaucratic dismissal of the other team. |
 | **The fanbase in grief** | Monday posts | The subreddit working through all five stages. Quote it, never name anyone. |
