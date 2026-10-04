@@ -37,18 +37,6 @@
     "publishedAt": "2026-09-24T19:44:22.000Z",
     "collectedAt": "2026-09-24T20:05:50.048Z"
   },
-  "social-6b7a9d224a92": {
-    "id": "social-6b7a9d224a92",
-    "url": "https://x.com/JPFinlayNBCS/status/2103193362744463831",
-    "text": "Athan Kaliakmanis on preparing for the backup role",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-24T18:42:27.000Z",
-    "collectedAt": "2026-09-24T20:05:50.048Z"
-  },
   "social-43c5ed935ec7": {
     "id": "social-43c5ed935ec7",
     "url": "https://x.com/john_keim/status/2103203154493841721",
@@ -13145,5 +13133,29 @@
     "images": [],
     "publishedAt": "2026-10-04T16:41:52.000Z",
     "collectedAt": "2026-10-04T18:06:01.364Z"
+  },
+  "social-8c6adf97b0be": {
+    "id": "social-8c6adf97b0be",
+    "url": "https://mysportgallery.com/@slessans2/117383975413300826",
+    "text": "If the Eagles win, DQ should absolutely be fired. #NFL | #HTTC | #Commanders | #RaiseHail #FireDanQuinn",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-04T18:08:40.000Z",
+    "collectedAt": "2026-10-04T19:11:21.706Z"
+  },
+  "social-e55d7afa5f6f": {
+    "id": "social-e55d7afa5f6f",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mx2ynvnq5j2a",
+    "text": "If the Eagles win, DQ should absolutely be fired. #NFL | #HTTC | #Commanders | #RaiseHail #FireDanQuinn",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-04T18:08:40.354Z",
+    "collectedAt": "2026-10-04T19:11:21.706Z"
   }
 }
