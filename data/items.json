@@ -35,18 +35,6 @@
     "publishedAt": "2026-08-20T22:00:23.000Z",
     "collectedAt": "2026-08-21T08:37:59.023Z"
   },
-  "commanders-youtube-a1cc55e168b1": {
-    "id": "commanders-youtube-a1cc55e168b1",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=-pzgzA0YV2I",
-    "title": "EXCLUSIVE Defensive Debrief, Detroit Lions Preview & Command Center Cup Championship",
-    "excerpt": "",
-    "publishedAt": "2026-08-20T20:00:01.000Z",
-    "collectedAt": "2026-08-21T08:37:59.023Z"
-  },
   "hogs-haven-7c4cc026ab4e": {
     "id": "hogs-haven-7c4cc026ab4e",
     "sourceId": "hogs-haven",
@@ -15022,5 +15010,53 @@
     "excerpt": "LONDON, ENGLAND - OCTOBER 04: Jonathan Taylor of the Indianapolis Colts is tackled by Nick Cross of the Washington Commanders during the NFL match between Indianapolis Colts and Washington Commanders as part of the London NFL Series 2026 at Tottenham Hotspur Stadium on October 04, 2026 in London, England. (Photo by Justin Setterfield/Getty Images) | Getty Images The Indianapolis Colts found their rhythm Sunday morning in London, overcoming an early deficit to cruise to a commanding 30-13…",
     "publishedAt": "2026-10-04T18:00:10.000Z",
     "collectedAt": "2026-10-04T19:10:58.862Z"
+  },
+  "hogs-haven-883b3f0f9d5c": {
+    "id": "hogs-haven-883b3f0f9d5c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/446197/athan-kaliakmanis-washington-commanders-loss-indianapolis-colts-marcus-mariota",
+    "title": "How Athan Kaliakmanis fared in Washington Commanders loss to Colts",
+    "excerpt": "The Commanders drafted Athan Kaliamanis with the expectation that he wouldn’t play a meaningful snap this season. There wasn’t even a guarantee the seventh-round selection would even make the 53-man roster, a position he earned with a solid preseason despite competition from the well-liked Sam Hartman. \n\n The Rutgers product was and should’ve been viewed as a developmental prospect in 2026 and beyond, with his career seemingly mapped out to be a trusted backup throughout his rookie contract.…",
+    "publishedAt": "2026-10-04T19:15:59.000Z",
+    "collectedAt": "2026-10-04T20:05:36.425Z"
+  },
+  "hogs-haven-9fd03e661ff7": {
+    "id": "hogs-haven-9fd03e661ff7",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/444616/dan-quinn-goal-have-jayden-daniels-start-vs-giants",
+    "title": "Dan Quinn: The goal is to have Jayden Daniels start vs the Giants",
+    "excerpt": "The Washington Commanders jumped out to a 6-0 lead over the Indianapolis Colts, taking advantage of some early turnovers. The game quickly turned when QB Marcus Mariota left the game with a knee injury. Dan Quinn told Molly McGrath during the broadcast that the team believes Mariota re-injured the MCL he had injured during the preseason, and they didn’t have a timetable for his return. Quinn said he’ gutted for Mariota after the work he put in to replace the injured Jayden Daniels. The team…",
+    "publishedAt": "2026-10-04T19:00:00.000Z",
+    "collectedAt": "2026-10-04T20:05:36.425Z"
+  },
+  "riggos-rag-76a6bf7fea46": {
+    "id": "riggos-rag-76a6bf7fea46",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/marcus-mariota-injury-means-commanders-can-no-longer-wait-for-jayden-daniels",
+    "title": "Marcus Mariota injury means Commanders can no longer wait for Jayden Daniels",
+    "excerpt": "Marcus Mariota's NCL injury means the Washington Commanders have no choice but to rush star quarterback Jayden Daniels back into the lineup.",
+    "publishedAt": "2026-10-04T19:30:00.000Z",
+    "collectedAt": "2026-10-04T20:05:37.762Z"
+  },
+  "yahoo-nfl-b4f8248aaf6e": {
+    "id": "yahoo-nfl-b4f8248aaf6e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/good-bad-athan-kaliakmanis-fared-191559182.html",
+    "title": "The good and bad of how Athan Kaliakmanis fared in Washington Commanders loss to Colts",
+    "excerpt": "The Commanders drafted Athan Kaliamanis with the expectation that he wouldn’t play a meaningful snap this season. There wasn’t even a guarantee the seventh-round selection would even make the 53-man roster, a position he earned with a solid preseason despite competition from the well-liked Sam Hartman. \n The Rutgers product was and should’ve been viewed as a developmental prospect in 2026 and beyond, with his career seemingly mapped out to be a trusted backup throughout his rookie contract.…",
+    "publishedAt": "2026-10-04T19:15:59.000Z",
+    "collectedAt": "2026-10-04T20:05:44.321Z"
   }
 }
