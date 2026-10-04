@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-20T11:30:00.000Z",
     "collectedAt": "2026-08-20T13:18:17.806Z"
   },
-  "hogs-haven-e96712a522bc": {
-    "id": "hogs-haven-e96712a522bc",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-injuries/433927/washington-commanders-johnny-newton-surgery-torn-pectoral-muscle-injury",
-    "title": "Commanders injury news: Johnny Newton reportedly has surgery on torn pec",
-    "excerpt": "Commanders defensive lineman Johnny Newton had surgery on a torn pectoral muscle in New York on Wednesday, according to The Athletic’s Nicki Jhabvala. \n\n He is expected to be out a significant stretch, meaning months of the 2026 regular season at least. \n\n \n Commanders DT Johnny Newton underwent surgery in New York today for a torn pectoral muscle and is expected to miss significant time, per source.\n&mdash; Nicki Jhabvala (@NickiJhabvala) August 20, 2026 \n\n \n\n Head coach Dan Quinn said on…",
-    "publishedAt": "2026-08-20T01:25:48.000Z",
-    "collectedAt": "2026-08-20T13:18:17.806Z"
-  },
   "pft-6bd1cd594fe9": {
     "id": "pft-6bd1cd594fe9",
     "sourceId": "pft",
@@ -129,18 +117,6 @@
     "title": "Real reason for Commanders RB Rachaad White’s absence revealed",
     "excerpt": "The Washington Commanders have been without running back Rachaad White at practice over the past few days with an undisclosed injury.\n\n NFL Media’s Mike Garafolo reported Wednesday that White tweaked his hamstring during Washington’s joint practice with the Miami Dolphins. Despite the injury, Garafolo reported that the issue is not considered serious or expected to keep White out for an extended period, as he did work out before Friday’s preseason matchup against the Dolphins.\n\n The revelation…",
     "publishedAt": "2026-08-20T04:15:02.000Z",
-    "collectedAt": "2026-08-20T13:31:52.637Z"
-  },
-  "clutchpoints-fb79614d998c": {
-    "id": "clutchpoints-fb79614d998c",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-johnny-newton-miss-significant-time-surgery-torn-pectoral",
-    "title": "Commanders’ Johnny Newton to miss ‘significant time’ after surgery on torn pectoral",
-    "excerpt": "The Washington Commanders will not have the services of defensive tackle Johnny Newton for an extended period of time. Newton suffered an upper-body injury during last Friday’s NFL preseason game against the Miami Dolphins at Northwest Stadium in Landover, and later went under the knife to address the issue , according to NFL insider Jordan Schultz.\n\n “Sources: Commanders DT Johnny Newton underwent surgery for a torn pectoral muscle and is expected to miss significant time. The former Illinois…",
-    "publishedAt": "2026-08-20T01:30:43.000Z",
     "collectedAt": "2026-08-20T13:31:52.637Z"
   },
   "commanders-youtube-100a3c1fe1c7": {
@@ -14650,5 +14626,17 @@
     "excerpt": "Staying up to date on NFL injury news is of the utmost importance for fantasy football success. The article below tracks all fantasy-relevant players currently listed on their team's injury report and provides fantasy managers with actionable recommendations as new information rolls in.\n \n Check back for updates from Tuesday through Saturday.\n \n Don’t forget: Check out the Rotoworld player news feed for all the latest news, notes, and transactions around the league. \n **UPDATED AS OF SATURDAY,…",
     "publishedAt": "2026-10-03T22:52:00.000Z",
     "collectedAt": "2026-10-04T00:05:35.854Z"
+  },
+  "wjla-commanders-f9420cfa12a2": {
+    "id": "wjla-commanders-f9420cfa12a2",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-terry-mclaurin-hamstring-injury-questionable-rachaad-white-shoulder-indianapolis-colts-london-sunday-nfl-football-seattle-seahawks-receptions-touchdown-rushing-practice",
+    "title": "Terry McLaurin listed as doubtful for Colts matchup",
+    "excerpt": "Terry McLaurin’s status is uncertain with a hamstring injury, while Rachaad White is out for the Commanders’ game against the Colts in London.",
+    "publishedAt": "2026-10-04T01:20:31.000Z",
+    "collectedAt": "2026-10-04T02:05:36.619Z"
   }
 }
