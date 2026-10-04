@@ -1,16 +1,4 @@
 {
-  "social-75e50297110f": {
-    "id": "social-75e50297110f",
-    "url": "https://x.com/JPFinlayNBCS/status/2103088032270233715",
-    "text": "Mariota is confident going into Seattle and so are his teammates. Speaking of teammates, they all make clear they support Jayden. New All Ears s=y-Qk97Hih52tWNbM",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-24T11:43:55.000Z",
-    "collectedAt": "2026-09-24T14:05:44.004Z"
-  },
   "social-e560cb0226ea": {
     "id": "social-e560cb0226ea",
     "url": "https://x.com/BenStandig/status/2103115998379282764",
@@ -22,18 +10,6 @@
     "images": [],
     "publishedAt": "2026-09-24T13:35:02.000Z",
     "collectedAt": "2026-09-24T14:05:46.469Z"
-  },
-  "social-fc8338d9009a": {
-    "id": "social-fc8338d9009a",
-    "url": "https://x.com/tashanreed/status/2103079086268547509",
-    "text": "An already tough matchup gets tougher for the #Commanders :",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-24T11:08:22.000Z",
-    "collectedAt": "2026-09-24T14:05:47.878Z"
   },
   "social-89f6575c9b1b": {
     "id": "social-89f6575c9b1b",
@@ -9656,5 +9632,29 @@
     ],
     "publishedAt": "2026-10-04T09:32:19.756Z",
     "collectedAt": "2026-10-04T10:05:55.780Z"
+  },
+  "social-3bd792147a35": {
+    "id": "social-3bd792147a35",
+    "url": "https://x.com/NickiJhabvala/status/2106716904018854322",
+    "text": "No Terry McLaurin today. Inactives for Washington: RB Rachaad White QB Jayden Daniels WR Luke McCaffrey WR Terry McLaurin S Nick Cross OLB Javontae Jean-Baptiste G Sam Cosmi",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T12:03:45.000Z",
+    "collectedAt": "2026-10-04T12:05:10.490Z"
+  },
+  "social-32e3ffd2d204": {
+    "id": "social-32e3ffd2d204",
+    "url": "https://x.com/NickiJhabvala/status/2106687442153566434",
+    "text": "Didn’t feel like updating from 2016 I guess?",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-04T10:06:41.000Z",
+    "collectedAt": "2026-10-04T12:05:10.490Z"
   }
 }
