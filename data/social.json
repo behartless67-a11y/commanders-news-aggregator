@@ -9656,5 +9656,234 @@
     "images": [],
     "publishedAt": "2026-10-04T10:06:41.000Z",
     "collectedAt": "2026-10-04T12:05:10.490Z"
+  },
+  "social-5ff79b100740": {
+    "id": "social-5ff79b100740",
+    "url": "https://x.com/JPFinlayNBCS/status/2106716604125806641",
+    "text": "Terry McLaurin OUT for Commanders/Colts",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-04T12:02:33.000Z",
+    "collectedAt": "2026-10-04T12:05:42.908Z"
+  },
+  "social-b45e07da2143": {
+    "id": "social-b45e07da2143",
+    "url": "https://x.com/JPFinlayNBCS/status/2106711626250682580",
+    "text": "A lot of players out on the field warming up. No sign of 17",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/460/940/297/193/original/869974c2a93c39cb.jpg"
+    ],
+    "publishedAt": "2026-10-04T11:42:47.000Z",
+    "collectedAt": "2026-10-04T12:05:42.908Z"
+  },
+  "social-cf49ce8c6c32": {
+    "id": "social-cf49ce8c6c32",
+    "url": "https://x.com/JPFinlayNBCS/status/2106709166685397339",
+    "text": "Brain trust about 2 hours before game time",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/421/053/332/880/original/556fb698c4a59e42.jpg"
+    ],
+    "publishedAt": "2026-10-04T11:33:00.000Z",
+    "collectedAt": "2026-10-04T12:05:42.908Z"
+  },
+  "social-da98fff5e9c4": {
+    "id": "social-da98fff5e9c4",
+    "url": "https://x.com/john_keim/status/2106710805429502435",
+    "text": "Have not seen Terry McLaurin yet. Not a good sign at all. Inactives will be out in about 20 minutes.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-04T11:39:31.000Z",
+    "collectedAt": "2026-10-04T12:05:44.160Z"
+  },
+  "social-abeefc3ffbc5": {
+    "id": "social-abeefc3ffbc5",
+    "url": "https://x.com/john_keim/status/2106703054255104455",
+    "text": "Austin Ekeler getting ready for a game for the first time since Week 2 last season",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-04T11:08:43.000Z",
+    "collectedAt": "2026-10-04T12:05:44.160Z"
+  },
+  "social-f03f51053dd2": {
+    "id": "social-f03f51053dd2",
+    "url": "https://x.com/BenStandig/status/2106716576992940052",
+    "text": "Terry McLaurin is officially OUT for Week 4.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-04T12:02:27.000Z",
+    "collectedAt": "2026-10-04T12:05:45.780Z"
+  },
+  "social-66387bd48959": {
+    "id": "social-66387bd48959",
+    "url": "https://x.com/BenStandig/status/2106715728397123838",
+    "text": "K'Lavon Chaisson. Pass rusher.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-04T11:59:05.000Z",
+    "collectedAt": "2026-10-04T12:05:45.780Z"
+  },
+  "social-0ba6fb79699e": {
+    "id": "social-0ba6fb79699e",
+    "url": "https://x.com/BenStandig/status/2106702595498643607",
+    "text": "Charles Omenihu. He starts this drill on his other side in the states.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-04T11:06:54.000Z",
+    "collectedAt": "2026-10-04T12:05:45.780Z"
+  },
+  "social-9bbe68d92ee7": {
+    "id": "social-9bbe68d92ee7",
+    "url": "https://x.com/BenStandig/status/2106702243869184204",
+    "text": "Austin Ekeler in the house.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-04T11:05:30.000Z",
+    "collectedAt": "2026-10-04T12:05:45.780Z"
+  },
+  "social-4dac5c77ae45": {
+    "id": "social-4dac5c77ae45",
+    "url": "https://x.com/BenStandig/status/2106692012862771495",
+    "text": "Let's check out the press box... oh, my.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-04T10:24:50.000Z",
+    "collectedAt": "2026-10-04T12:05:45.781Z"
+  },
+  "social-67461c5fbe27": {
+    "id": "social-67461c5fbe27",
+    "url": "https://x.com/BenStandig/status/2106688951066955956",
+    "text": "Someone didn't get (or ignored) the memo.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/108/005/663/776/original/84a5c3685902b7db.jpg"
+    ],
+    "publishedAt": "2026-10-04T10:12:40.000Z",
+    "collectedAt": "2026-10-04T12:05:45.781Z"
+  },
+  "social-8ccb8691f693": {
+    "id": "social-8ccb8691f693",
+    "url": "https://x.com/tashanreed/status/2106716854916137404",
+    "text": "QB Jayden Daniels (elbow), RB Rachaad White (shoulder), RG Sam Cosmi (concussion) and S Nick Cross (internal) are also inactive as expected. WR Luke McCaffrey and OLB Javontae Jean-Baptiste are healthy scratches.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-04T12:03:33.000Z",
+    "collectedAt": "2026-10-04T12:05:47.191Z"
+  },
+  "social-60d792bcb8bf": {
+    "id": "social-60d792bcb8bf",
+    "url": "https://x.com/tashanreed/status/2106716586161868947",
+    "text": "#Commanders WR Terry McLaurin (hamstring) is officially inactive against the Colts.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-04T12:02:29.000Z",
+    "collectedAt": "2026-10-04T12:05:47.191Z"
+  },
+  "social-eb4f95d843bb": {
+    "id": "social-eb4f95d843bb",
+    "url": "https://x.com/tashanreed/status/2106696147234345315",
+    "text": "The view from the #Commanders ' endzone",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-04T10:41:16.000Z",
+    "collectedAt": "2026-10-04T12:05:47.191Z"
+  },
+  "social-1683e63b7652": {
+    "id": "social-1683e63b7652",
+    "url": "https://x.com/tashanreed/status/2106692155276423505",
+    "text": "Top of the mornin' from Tottenham",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/157/203/054/836/original/6f1bcb1d9d632c82.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/157/243/012/449/original/651475e9e45b314a.jpg"
+    ],
+    "publishedAt": "2026-10-04T10:25:24.000Z",
+    "collectedAt": "2026-10-04T12:05:47.191Z"
+  },
+  "social-a141455843b6": {
+    "id": "social-a141455843b6",
+    "url": "https://x.com/AdamSchefter/status/2106716786225733859",
+    "text": "Commanders WR Terry McLaurin, dealing with a hamstring injury, officially is inactive today in London vs. the Colts.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/543/549/956/314/original/acf2c0d9edb652e2.jpg"
+    ],
+    "publishedAt": "2026-10-04T12:03:17.000Z",
+    "collectedAt": "2026-10-04T12:05:50.013Z"
+  },
+  "social-1b939b270ce3": {
+    "id": "social-1b939b270ce3",
+    "url": "https://x.com/RapSheet/status/2106716470181077018",
+    "text": "#Commanders star WR Terry McLaurin is officially out for today’s game in London against the #Colts . He suffered a hamstring injury late this week in practice.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/382/543/281/702/795/original/45c044c3dd8a675a.jpg"
+    ],
+    "publishedAt": "2026-10-04T12:02:02.000Z",
+    "collectedAt": "2026-10-04T12:05:51.415Z"
+  },
+  "social-8c15fd58e4c7": {
+    "id": "social-8c15fd58e4c7",
+    "url": "https://x.com/MikeGarafolo/status/2106716680592511130",
+    "text": "#Commanders WR Terry McLaurin is officially inactive.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [],
+    "publishedAt": "2026-10-04T12:02:52.000Z",
+    "collectedAt": "2026-10-04T12:05:53.037Z"
   }
 }

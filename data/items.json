@@ -1,28 +1,4 @@
 {
-  "hogs-haven-35864a1394e9": {
-    "id": "hogs-haven-35864a1394e9",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-training-camp/433479/washington-commanders-news-sights-sounds-from-training-camp-day-14",
-    "title": "Washington Commanders News: Sights and Sounds from Training Camp Day 14",
-    "excerpt": "ASHBURN, VA - AUGUST 01: Josh Conerly Jr. #72 and Sam Cosmi #76 of the Washington Commanders participate in a drill during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Washington Commanders are back on the practice fields of Ashburn for Day 14 of training camp. Yesterday was the last day with fans in attendance, and the Commanders are preparing to visit the Detroit Lions on Saturday. \n\n The…",
-    "publishedAt": "2026-08-20T12:00:00.000Z",
-    "collectedAt": "2026-08-20T13:18:17.806Z"
-  },
-  "hogs-haven-a7ea71c03d1e": {
-    "id": "hogs-haven-a7ea71c03d1e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/433866/injury-concerns-pile-up-heading-into-lions-preseason-game-johnny-newton-odafe-oweh",
-    "title": "Commanders News: Injury concerns pile up heading into 2nd preseason game",
-    "excerpt": "The Daily Slop – 20 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Sports Illustrated \n\n Albert Breer Empties His Commanders Notebook From Training Camp \n\n Dan Quinn is very much trying to instill a hard edge into his team after he felt like it lost a little…",
-    "publishedAt": "2026-08-20T11:30:00.000Z",
-    "collectedAt": "2026-08-20T13:18:17.806Z"
-  },
   "pft-6bd1cd594fe9": {
     "id": "pft-6bd1cd594fe9",
     "sourceId": "pft",
@@ -47,18 +23,6 @@
     "publishedAt": "2026-08-20T12:25:12.000Z",
     "collectedAt": "2026-08-20T13:18:17.948Z"
   },
-  "yahoo-nfl-33eb039da636": {
-    "id": "yahoo-nfl-33eb039da636",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-injury-concerns-pile-heading-113000850.html",
-    "title": "Commanders injury concerns pile up heading into second preseason game - Daily Slop",
-    "excerpt": "The Daily Slop – 20 August 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in…",
-    "publishedAt": "2026-08-20T11:30:00.000Z",
-    "collectedAt": "2026-08-20T13:18:18.158Z"
-  },
   "riggos-rag-6c7162219700": {
     "id": "riggos-rag-6c7162219700",
     "sourceId": "riggos-rag",
@@ -69,18 +33,6 @@
     "title": "Johnny Newton's worst fears come true as Commanders future turns murky",
     "excerpt": "The future of Washington Commanders defensive lineman Johnny Newton is murkier than ever after another devastating injury setback.",
     "publishedAt": "2026-08-20T13:00:00.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
-  "riggos-rag-d9f66024bbd2": {
-    "id": "riggos-rag-d9f66024bbd2",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/fresh-nick-allegretti-concern-leaves-commanders-staring-problem-they-created",
-    "title": "Fresh Nick Allegretti concern leaves Commanders staring at a problem they created",
-    "excerpt": "A fresh injury concern around projected sttarting center Nick Allegretti leaves the Washington Commanders staring at a problem they created.",
-    "publishedAt": "2026-08-20T11:30:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
   "commanders-youtube-100a3c1fe1c7": {
@@ -14662,5 +14614,77 @@
     "excerpt": "For the third time this season, the NFL is headed abroad.\n The Washington Commanders and Indianapolis Colts land in London, England for a Week 4 matchup. It will be the first NFL game this season in Europe – the San Francisco 49ers met the Los Angeles Rams in Melbourne, Australia in Week 1 and the Baltimore Ravens and Dallas Cowboys faced off in Rio De Janeiro, Brazil in Week 3\n Both teams are 1-2 and coming off a Week 3 win.\n The Colts took down the Houston Texans in Week 3 to get in the win…",
     "publishedAt": "2026-10-04T09:30:57.000Z",
     "collectedAt": "2026-10-04T10:05:36.608Z"
+  },
+  "hogs-haven-69258f7624fd": {
+    "id": "hogs-haven-69258f7624fd",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446067/colts-without-wrs-pierce-allen-in-london-game-today-sonny-styles-marcus-mariota-terry-mclaurin",
+    "title": "Commanders News: Colts without WRs Pierce & Allen in London game today",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Amik Robertson #2 of the Washington Commanders celebrates his play against the Seattle Seahawks during the second quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 4 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports…",
+    "publishedAt": "2026-10-04T10:00:00.000Z",
+    "collectedAt": "2026-10-04T12:05:33.627Z"
+  },
+  "riggos-rag-9c86c6eb283c": {
+    "id": "riggos-rag-9c86c6eb283c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/javon-kinlaw-become-commanders-unlikely-linchpin-before-jonathan-taylor-test",
+    "title": "Javon Kinlaw has become Commanders’ unlikely linchpin before Jonathan Taylor test",
+    "excerpt": "Veteran $45 million defensive lineman Javon Kinlaw's resurgence for the Washington Commanders will be tested by Jonathan Taylor.",
+    "publishedAt": "2026-10-04T10:33:23.000Z",
+    "collectedAt": "2026-10-04T12:05:34.311Z"
+  },
+  "riggos-rag-d82243f79fe6": {
+    "id": "riggos-rag-d82243f79fe6",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/chris-paul-deforest-buckner-test-could-dictate-commanders-london-offense",
+    "title": "Chris Paul’s DeForest Buckner test could dictate Commanders’ London offense",
+    "excerpt": "Washington Commanders' offensive lineman Chris Paul faces the linchpin of the Indianapolis Colts' defense at London's Tottenham Hotspur Stadium in Week 4.",
+    "publishedAt": "2026-10-04T10:14:07.000Z",
+    "collectedAt": "2026-10-04T12:05:34.311Z"
+  },
+  "yahoo-nfl-be2af4f715d7": {
+    "id": "yahoo-nfl-be2af4f715d7",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/jayden-daniels-injury-latest-commanders-110304107.html",
+    "title": "Jayden Daniels injury update: Latest on Commanders QB's status for today's game",
+    "excerpt": "Jayden Daniels ' season seemed in jeopardy. Until it wasn't.\n The Washington Commanders quarterback dislocated his elbow for a second straight season in the team's Week 2 loss to the Dallas Cowboys. Things looked bleak in the immediate aftermath, with surgery being on the table for one of the league's young stars.\n After an injury-riddled second season, that was the last thing that the 25-year-old needed. Yet surgery is on the back burner for now, and the elbow brace has come to the front, in…",
+    "publishedAt": "2026-10-04T11:03:04.000Z",
+    "collectedAt": "2026-10-04T12:05:39.976Z"
+  },
+  "yahoo-nfl-f5c6286c02a1": {
+    "id": "yahoo-nfl-f5c6286c02a1",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/channel-commanders-vs-colts-london-100340125.html",
+    "title": "What channel is the Commanders vs Colts London game today? Start time, schedule, streaming",
+    "excerpt": "On Sunday morning, the NFL goes international for the third time during the 2026 season.\n The Indianapolis Colts (1-2) and Washington Commanders (2-1) will represent the league as they open Sunday's Week 4 of the 2026 NFL regular season from London, England.\n Both teams enter Week 4 with some momentum after earning their first wins of the 2026 season. Now, the 1-2 teams will take their battle across the pond for an early-morning matchup in London, with plenty at stake as both look to build on…",
+    "publishedAt": "2026-10-04T10:03:40.000Z",
+    "collectedAt": "2026-10-04T12:05:39.976Z"
+  },
+  "yahoo-nfl-ad9e2347f781": {
+    "id": "yahoo-nfl-ad9e2347f781",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/where-watch-colts-commanders-clash-100000883.html",
+    "title": "Where to Watch: Colts and Commanders clash in London for Week 4",
+    "excerpt": "INDIANAPOLIS, INDIANA - OCTOBER 30: Jonathan Taylor #28 of the Indianapolis Colts rushes for yards as Rachad Wildgoose #37 of the Washington Commanders looks to tackle him in the third quarter at Lucas Oil Stadium on October 30, 2022 in Indianapolis, Indiana. (Photo by Dylan Buell/Getty Images) | Getty Images The Indianapolis Colts (1-2) take on the Washington Commanders (1-2) in London at Tottenham Hotspur Stadium at 9:30 AM EDT for those who didn’t make the trip to ‘The Big Smoke.’ \n For…",
+    "publishedAt": "2026-10-04T10:00:00.000Z",
+    "collectedAt": "2026-10-04T12:05:39.976Z"
   }
 }
