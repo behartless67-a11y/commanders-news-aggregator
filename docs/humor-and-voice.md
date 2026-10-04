@@ -260,18 +260,59 @@ Recurring material regular readers are in on. Use it, extend it, and add to this
 | Bit | Where it started | Notes |
 |---|---|---|
 | **The President's Box** | Monday posts | Nicole's job, catered seats you "did nothing to earn." Only works at home games. |
-| **"I help out"** | 4:38 A.M. | You help out; Nicole does the actual work. |
+| **"I help out"** | 4:38 A.M. | You help out; Nicole does the actual work. Extended in London Calling: the Weird Al parking pass, ending in Nicole's "fine...ill just do everything." |
 | **The ditch** | CRT essay | The origin story. Use sparingly, it's the good china. |
-| **Two things in two days** | Two concerts, then two stadiums | Ended for now, since UVA's away. Revive when it's true again. |
-| **The receipt** | 4:38 A.M. into I Told You So | Pregame prediction, Monday payoff. Set it up on purpose. |
+| **Two things in two days** | Two concerts, then two stadiums | Revived as **"three things in four days"** (Weird Al Thursday, Syracuse Saturday night, Giants Sunday, the week of Oct 8). Used in both London Calling and Just Quieter, so it's spent for that week. |
+| **The receipt** | 4:38 A.M. into I Told You So | Pregame prediction, Monday payoff. Set it up on purpose. Second round: London Calling called **20-17**, wrong; Just Quieter paid it off "just quieter," as promised ("If I'm wrong, you'll also hear about it Monday, just quieter"). **Open setup:** Just Quieter promised a Giants number "at full volume." |
 | **The LAW** | 4:38 A.M. | Sarah and Daniel's son. Never his real name, and just call him the LAW: no "still not saying his name" asides, which make a nickname sound like a secret. Sarah and Daniel are Browns fans. |
 | **Cornholio** | I Told You So | Pre-game caffeine state. |
 | **Filing a complaint** | 4:38 A.M. | Bureaucratic dismissal of the other team. |
 | **The fanbase in grief** | Monday posts | The subreddit working through all five stages. Quote it, never name anyone. |
 | **The 40 for John** | I Told You So | A forty of High Life in honor of an absent friend. |
 | **Who wasn't there** | I Told You So | Nathan, Jacob, Nicole, John. Handle with care, it isn't really a bit. |
-| **Florida State** | FSU post, Sept 4 | Loved them as a kid because the logo looked like the Redskins. **Already told**, so call back to it in a line; never re-tell it. (The I Told You So post originally promised this as a future post, which was wrong, since it was three weeks old. Fixed.) |
+| **Florida State** | FSU post, Sept 4 | Loved them as a kid because the logo looked like the Redskins. **Already told**, so call back to it in a line; never re-tell it. (The I Told You So post originally promised this as a future post, which was wrong, since it was three weeks old. Fixed.) Callbacks used so far: "a lovely little footnote in my life" (London Calling) and, after FSU beat UVA 38-7, "Florida State, it turns out, has feelings about us" (Just Quieter). |
 | **The offensive line** | Throughout | Real and earned, which is exactly why it's easy to overuse. Once per post, then move on. |
+| **"Entered into the record"** | London Calling, Just Quieter | Legal register for small mercies: the NFL scheduling a 9:30 kickoff, then a 6-0 London lead "next to the last one." Used twice in a row; rest it. |
+| **Tickmaster** | London Calling | Typed "tickmaster" into a browser looking for the Weird Al parking pass. Told. |
+| **The meatbag** | London Calling | Ben pasting Claude's answers to Nicole unread, typo and all: "I am a meatbag now. I provide nothing of value." Told. Never attribute the line to anyone (it was Mark's; Mark stays out of posts). |
+| **The copycat Taco Bell meat** | London Calling | Ground beef boiled and mashed with a potato masher to drive-thru texture. Told. |
+| **The 9:30 a.m. PBR** | London Calling | "A question for people whose team has won something recently." |
+| **The nap** | London Calling (promised), Just Quieter (delivered) | Early kickoff, then a nap while the friends see themselves out. Just Quieter added the Longest Yard, a card-based drinking game, as why everyone was "feeling a little bit special." |
+| **The casserole** | Just Quieter | The brunch was a sausage casserole with "enough cheese to concern Wilford Brimley" (softened from Ben's "kill"). Told. |
+| **Athan** | Just Quieter | Rookie third-string QB Athan Kaliakmanis, whose last name Ben refuses to fight the keyboard over, so he's just **Athan**. "A lovely backup job waiting for him somewhere in this league," the highest compliment for a quarterback. Keep calling him Athan. |
+| **The salt-and-pepper fox** | Just Quieter | Ben's name for Marcus Mariota. MCL injury in London; handle with warmth. |
+| **Ten to one** | Just Quieter | Penalties 10 for 84 vs. 1 for 5. "Ten to one is a cocktail recipe, not a football game," "a fanbase gets one paragraph. This was mine," then "I know I said one paragraph." The ref rant is spent; don't re-run it unless it happens again. |
+| **The three of us are undefeated** | Just Quieter | Ben, his dad and his brother Josh in the building together: 1-0 (Seattle). Apart: lost in London. "I'm not saying it isn't" their fault. Update the record when they go again. |
+| **Jason's Buckeyes** | Just Quieter | Jason is an Ohio State fan; "the one guy having a nice weekend is the one guy who'll remind us about it." |
+| **The group chat** | Just Quieter | Jason and Chris, the other two-thirds of Ben's Commanders Slack (#redskinsbaby). First names only. The blog gets the clean version; the Ditch Report gets the rest. Pregame picks for London: Jason said loss (and "mental jujitsu"), Chris said win ("it'll be a home game"), then blamed Daniel "Mike Vick when he plays the Redskins" Jones three minutes in. **Open setup:** Jason is on record as "pretty confident we beat NYG." |
+| **The owls** | Just Quieter | Chris's YouTube rabbit hole ("why doesn't any culture eat owls?"), the best-bird debate, Jason's backyard-pond story (an eagle jumps a bird for its fish, the fish goes back in the pond, "so everyone won"), and Chris for the fish: "Honey, you would not believe my day." Ben and Nicole read it at 4 a.m. Jason: we should've become the Owls. **Told.** "Washington Owls" is fair game as a one-line callback. |
+| **Andrew Luck in a Scooby-Doo costume** | Just Quieter | Chris on the Colts' head coach. Told; save any callback for the next Colts game. |
+| **"Game gay!"** | Group chat only | Chris's "game day" typo the night before London, which the whole chat adopted. **Never in a post.** Out of context it reads badly. |
+| **Friends' allegiances** | Just Quieter | Gators friends, the Browns friends (Sarah, Daniel and the LAW), Jason's Buckeyes. Good for a rough-weekend roundup, which Just Quieter already did once. |
+| **The Giants' quarterbacks** | Season preview, London Calling | Jaxson Dart's punchable face (preview); then, after his season-ending knee injury, "I wanted him healthy so I could keep doing it. Get well, young man." The Giants bought J.J. McCarthy "to play us": "desperate or dangerous, and with the Giants it has always been both." |
+
+### Posts so far
+
+Check this before pitching an angle, so a new post doesn't retread an old one.
+
+| Date | Post | What it covered |
+|---|---|---|
+| Aug 24 | How a CRT TV, a Ditch, and the Internet Made Me a Lifer | Origin story: dad, Super Bowl XXVI, Nicole's 50-yard-line date, the ditch, the Warpath |
+| Aug 26 | The Burgundy Wire's Completely Unqualified 2026 Season Preview | Game-by-game picks, 10-7 |
+| Aug 31 | A Case of the Mondays: Emphasis on Initial | Cut day, 41-3 preseason loss, cornerbacks, center |
+| Sep 1 | Two Weeks Out, One Massive Injury, and a PBR I Haven't Earned Yet | Tunsil injury, worry for Jayden, the RG3 cycle, gameday ritual |
+| Sep 4 | The Commanders Made Me a Florida State Fan. My Wife Made Me a UVA One. | FSU logo origin, moving to Charlottesville, the President's Box, the tailgate |
+| Sep 7 | A Case of the Mondays: Sick, Optimistic, and Booked Solid | Summer cold, BWW trivia wings, Quinn job chatter, O-line nerves |
+| Sep 11 | Crab Cakes, a Censored Head Coach, and the Week Everyone's Cold Finally Left the Building | Week 1 eve, Quinn's quote, Payne's knee, crab cakes |
+| Sep 13 | Three Thousand | 3,000 pageviews, 22 countries, thank-yous |
+| Sep 13 | Pickle Backs at Högwaller | Meeting Evan at Högwaller on opening weekend; Nicole bought the table pickle backs |
+| Sep 17 | Wire Taps Is Open, and My Weekend Is a Logistical Crime Scene | The mailbag launch, Garth plus Mumford plus Dallas |
+| Sep 20 | Friends in Low Places, Enemies in Dallas | The Garth Amtrak trip, then Dallas |
+| Sep 21 | A Case of the Mondays: Much Too Young to Feel This Damn Old | 37-20 at Dallas, Jayden's elbow, two concerts, two naps |
+| Sep 27 | 4:38 A.M., Sonny Jurgensen, and Pure Mojo | Home opener with dad and Josh, the LAW's first tailgate, Jurgensen honored, Mariota starts |
+| Sep 28 | A Case of the Mondays: I Told You So | 33-31 over Seattle, the Red Lot tailgate, dad |
+| Oct 2 | London Calling: The Commanders, a Biscuit, and a Mandatory Nap | Tickmaster, the meatbag, the 9:30 kickoff, brunch plans, 20-17, Chenal, the Giants' McCarthy |
+| Oct 4 | Just Quieter: The Commanders Lose in London, and It Felt Like a Win | 30-13 in London, Mariota's knee, Athan, ten to one, the casserole, the group chat's owls, the college beatdowns, dad and Josh |
 
 ---
 
