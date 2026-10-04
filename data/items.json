@@ -1,52 +1,4 @@
 {
-  "hogs-haven-8470a1158349": {
-    "id": "hogs-haven-8470a1158349",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/nfl-training-camp/433476/commanders-camp-talk-dan-quinn-gives-updates-injuries-jayden-daniels-vs-lions",
-    "title": "Commanders Camp Talk: Dan Quinn gives updates on injuries, Jayden Daniels vs Lions",
-    "excerpt": "The Washington Commanders training camp rolls on for Day 14 in Ashburn, VA.\n\n Head coach Dan Quinn spoke to reporters before the start of today’s practice and provided updates on the growing list of injured players. CB Trey Amos suffered an ankle sprain when he returned to practice from last year’s broken fibula. The new ankle injury is on the same leg he had been rehabbing.\n\n Projected starting center Nick Allegretti was also quickly sidelined after returning to practice. He suffered a calf…",
-    "publishedAt": "2026-08-20T15:00:00.000Z",
-    "collectedAt": "2026-08-20T15:40:01.336Z"
-  },
-  "riggos-rag-db8dee1ede4c": {
-    "id": "riggos-rag-db8dee1ede4c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/mike-garafolo-uncovers-commanders-truth-after-wild-rachaad-white-injury-claim",
-    "title": "Mike Garafolo uncovers Commanders truth after wild Rachaad White injury claim",
-    "excerpt": "NFL Network insider Mike Garafolo uncovered the truth after a wild injury claim around Washington Commanders running back Rachaad White.",
-    "publishedAt": "2026-08-20T14:30:00.000Z",
-    "collectedAt": "2026-08-20T15:40:01.751Z"
-  },
-  "wjla-commanders-1d1566346f02": {
-    "id": "wjla-commanders-1d1566346f02",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-rookie-sonny-styles-ready-to-prove-that-he-belongs-in-the-nfl",
-    "title": "Commanders rookie Sonny Styles ready to prove that he belongs in the NFL",
-    "excerpt": "Usually in NFL circles, top 10 draft picks are expected to make an impact during their rookie season.",
-    "publishedAt": "2026-08-20T15:21:23.000Z",
-    "collectedAt": "2026-08-20T16:42:44.239Z"
-  },
-  "riggos-rag-efbf5c50dff3": {
-    "id": "riggos-rag-efbf5c50dff3",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-jordan-magee-drifting-toward-roster-fate-that-feels-all-wrong",
-    "title": "Commanders' Jordan Magee drifting toward a roster fate that feels all wrong",
-    "excerpt": "Washington Commanders linebacker Jordan Magee was projected for the chopping block during final cuts, which would be a massive shock.",
-    "publishedAt": "2026-08-20T16:00:00.000Z",
-    "collectedAt": "2026-08-20T16:47:13.784Z"
-  },
   "riggos-rag-b0892f69f418": {
     "id": "riggos-rag-b0892f69f418",
     "sourceId": "riggos-rag",
@@ -466,18 +418,6 @@
     "excerpt": "Commanders quarterback Jayden Daniels is set for his first action of the preseason. \n The team released a list of 15 inactive players for Saturday's game against the Lions and Daniels is not on it. Commanders head coach Dan Quinn said earlier this week that a good amount of the team's starters would see action in the team's second game of the preseason, but that he was unsure if Daniels would be among them. \n Wide receiver Stefon Diggs is also set to see his first game action since signing with…",
     "publishedAt": "2026-08-22T14:13:39.000Z",
     "collectedAt": "2026-08-22T16:20:55.267Z"
-  },
-  "yahoo-nfl-8855c15a3b84": {
-    "id": "yahoo-nfl-8855c15a3b84",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-preseason-week-2-schedule-whos-playing-starters-143714619.html",
-    "title": "NFL news, live updates: Shedeur Sanders, Jayden Daniels set to see action in Week 2 of preseason",
-    "excerpt": "Week 2 of the preseason continued Saturday with 10 more games. Some big names saw the field as position battles continue around the league. \n Jayden Daniels, Terry McLaurin and Stefon Diggs saw limited action for the Washington Commanders, while the Cleveland Browns started Shedeur Sanders against the Buffalo Bills . Deshaun Watson also saw playing time, which didn’t get a good reception from Browns fans that the veteran QB took personally . \n On Friday, Denver Broncos QB Bo Nix put on a show…",
-    "publishedAt": "2026-08-20T14:37:14.000Z",
-    "collectedAt": "2026-08-22T16:20:55.517Z"
   },
   "yahoo-nfl-3202b6d1ad45": {
     "id": "yahoo-nfl-3202b6d1ad45",
@@ -14782,5 +14722,125 @@
     "excerpt": "The Washington Commanders came into Week 4 dealing with multiple significant injuries on offense. Early in the contest, they were dealt another one, as quarterback Marcus Mariota was forced to leave the game after a first-quarter sack.\n The play occurred on Washington’s second drive of the game. With the team deep in Indianapolis Colts’ territory, Mariota was sacked on a third-and-goal. The Commanders were forced to kick a field goal at the end of the drive, taking a 6-0 lead.\n The Commanders…",
     "publishedAt": "2026-10-04T13:58:42.000Z",
     "collectedAt": "2026-10-04T14:05:41.682Z"
+  },
+  "atoz-sports-afe8985a1bc7": {
+    "id": "atoz-sports-afe8985a1bc7",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/who-is-commanders-emergency-qb-colston-yankoff",
+    "title": "Who is the Commanders emergency QB? Marcus Mariota’s injury forces a potential plan no Washington fan wants to see",
+    "excerpt": "Nov 16, 2025; Madrid, Spain; Washington Commanders tight end Colson Yankoff (80) carries the ball defended by Miami Dolphins safety Minkah Fitzpatrick (29) in the first quarterduring the 2025 NFL Madrid Game at Santiago Bernabeu Stadium. Mandatory Credit: Kirby Lee-Imagn Images \n \n\n Washington’s quarterback room was already thin entering the Colts game, & one more hit could force a scenario nobody in Burgundy & Gold wants.\n\n The Washington Commanders are down to their third quarterback against…",
+    "publishedAt": "2026-10-04T14:59:06.000Z",
+    "collectedAt": "2026-10-04T16:05:32.136Z"
+  },
+  "athletic-jhabvala-b222bf6fe2e4": {
+    "id": "athletic-jhabvala-b222bf6fe2e4",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7658897/2026/10/04/marcus-mariota-injury-commanders-colts",
+    "title": "Commanders QB Marcus Mariota out vs. Colts, replaced by Athan Kaliakmanis",
+    "excerpt": "Mariota was replaced by Kaliakmanis, a rookie seventh-round pick out of Rutgers.",
+    "publishedAt": "2026-10-04T15:07:45.000Z",
+    "collectedAt": "2026-10-04T16:05:33.503Z"
+  },
+  "wjla-commanders-16d761e9b2c9": {
+    "id": "wjla-commanders-16d761e9b2c9",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/marcus-mariota-knee-injury-colts-london-quarterback-commanders-nfl-washington-dc-super-bowl",
+    "title": "Marcus Mariota leaves game with knee injury",
+    "excerpt": "Washington Commanders quarterback Marcus Mariota left the Colts game with an apparent right knee injury.The play occurred in the first quarter as the Commanders",
+    "publishedAt": "2026-10-04T15:17:49.000Z",
+    "collectedAt": "2026-10-04T16:05:37.064Z"
+  },
+  "pft-ca3f83c247aa": {
+    "id": "pft-ca3f83c247aa",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-lead-as-commanders-offense-sputters-behind-third-string-qb-athan-kaliakmanis",
+    "title": "Colts lead as Commanders' offense sputters behind third-string QB Athan Kaliakmanis",
+    "excerpt": "The Commanders' offense is down to its third-string quarterback, and it shows.\n Rookie Athan Kaliakmanis is now running Washington's offense after Marcus Mariota exited today's game with a knee injury. Starter Jayden Daniels is not active today because of an elbow injury. The Colts lead 10-6 at halftime.\n The offense, which was moving the ball well with Mariota, has sputtered with Kaliakmanis. It hasn't been all his fault; there have been major protection breakdowns that have had Kaliakmanis…",
+    "publishedAt": "2026-10-04T14:59:07.000Z",
+    "collectedAt": "2026-10-04T16:05:37.220Z"
+  },
+  "pft-7aaba75658e8": {
+    "id": "pft-7aaba75658e8",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/marcus-mariota-injured-third-string-quarterback-athan-kaliakmanis-in-for-commanders",
+    "title": "Marcus Mariota injured, third-string quarterback Athan Kaliakmanis in for Commanders",
+    "excerpt": "The Commanders are down to their third-string quarterback.\n Second-string quarterback Marcus Mariota started today against the Colts in London because Jayden Daniels has an elbow injury, but in the first quarter Mariota was injured and walked to the locker room, replaced by third-stringer Athan Kaliakmanis.\n The Commanders said Mariota is questionable to return with a right knee injury, which he suffered when Colts defensive lineman Laiatu Latu landed on Mariota's lower right leg and bent it…",
+    "publishedAt": "2026-10-04T13:59:57.000Z",
+    "collectedAt": "2026-10-04T16:05:37.220Z"
+  },
+  "cbs-nfl-76f4d470e491": {
+    "id": "cbs-nfl-76f4d470e491",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/marcus-mariota-hurts-right-knee-questionable-commanders",
+    "title": "Marcus Mariota hurts right knee, will not return; Commanders turn to rookie Athan Kaliakmanis",
+    "excerpt": "The Commanders are already without Jayden Daniels",
+    "publishedAt": "2026-10-04T15:17:16.000Z",
+    "collectedAt": "2026-10-04T16:05:37.295Z"
+  },
+  "yahoo-nfl-d6a678888790": {
+    "id": "yahoo-nfl-d6a678888790",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/live/commanders-colts-score-live-updates-london-marcus-maritoa-injury-news-stats-where-to-watch-week-4-120549288.html",
+    "title": "Colts vs. Commanders score, live updates: Marcus Mariota ruled out with knee injury, QB3 Athan Kaliakmanis in for Washington",
+    "excerpt": "The NFL heads back to London in Week 4 to play the third international game of the season, featuring the Indianapolis Colts and Washington Commanders at Tottenham Hotspur Stadium to serve up fans a healthy dose of the NFL along with their morning coffee.\n Follow along with Yahoo Sports for live updates, highlights and more as the Colts and Commanders travel to London for an international matchup in Week 4. \n How to watch Colts-Commanders in London Week 4 \n Colts-Commanders start time: 9:30 a.m.…",
+    "publishedAt": "2026-10-04T12:05:49.000Z",
+    "collectedAt": "2026-10-04T16:05:37.879Z"
+  },
+  "yahoo-nfl-c98c7f0caeca": {
+    "id": "yahoo-nfl-c98c7f0caeca",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/marcus-mariota-injury-commanders-qb-140542122.html",
+    "title": "Marcus Mariota injury: Commanders QB leaves Colts game due to knee injury",
+    "excerpt": "(Photo by Alex Pantling/Getty Images) | Getty Images Update: Marcus Mariota has now been ruled out by the Washington Commanders:\n The Washington Commanders are facing a mounting injury situation at quarterback.\n With Jayden Daniels sidelined after dislocating his left elbow, Marcus Mariota earned his second consecutive start on Sunday against the Indianapolis Colts in London. But now the backup is headed to the locker room after an awkward sack, and having suffered an apparent knee injury.…",
+    "publishedAt": "2026-10-04T15:14:08.000Z",
+    "collectedAt": "2026-10-04T16:05:37.879Z"
+  },
+  "yahoo-nfl-3a596d46c72b": {
+    "id": "yahoo-nfl-3a596d46c72b",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/colts-vs-commanders-in-london-how-to-watch-the-nfl-international-game-today-start-time-where-to-stream-and-more-160500153.html",
+    "title": "Colts vs. Commanders in London: How to watch the NFL international game today, start time, where to stream and more",
+    "excerpt": "The Indianapolis Colts and the Washington Commanders are headed across the pond this weekend to play inside London's Tottenham Hotspur Stadium for another NFL international game. So far this season, both the Colts and Commanders are 1-2. Which team will leave the U.K. with a win? You'll have to tune in on the earlier side Sunday morning to find out.\n Here's everything else you need to know to watch the Commanders vs. Colts London game (and every other Week 4 matchup).\n How to watch the…",
+    "publishedAt": "2026-10-03T16:05:00.000Z",
+    "collectedAt": "2026-10-04T16:05:37.879Z"
+  },
+  "yahoo-nfl-1845442f4083": {
+    "id": "yahoo-nfl-1845442f4083",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/marcus-mariota-injury-commanders-qb-141100979.html",
+    "title": "Marcus Mariota injury update as Commanders QB exits London game",
+    "excerpt": "Washington Commanders quarterback Marcus Mariota exited the team's game in London against the Indianapolis Colts after suffering a knee injury on the team's second offensive series.\n Mariota, in his second start replacing the injured Jayden Daniels , got his right leg caught underneath a Colts lineman as he was sacked. He left with a right knee injury.\n Rookie Athan Kaliakmanis has replaced Mariota at quarterback.\n Marcus Mariota is heading to the medical tent after taking a hit from Laiatu…",
+    "publishedAt": "2026-10-04T14:11:00.000Z",
+    "collectedAt": "2026-10-04T16:05:37.879Z"
   }
 }

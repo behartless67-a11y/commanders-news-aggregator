@@ -1,5 +1,12 @@
 [
   {
+    "name": "Charles Omenihu",
+    "position": "DE",
+    "status": "Questionable",
+    "bodyPart": "Groin",
+    "notes": null
+  },
+  {
     "name": "Deatrich Wise",
     "position": "DE",
     "status": "PUP",
@@ -19,6 +26,13 @@
     "status": "Out",
     "bodyPart": "Elbow",
     "notes": "Dislocated"
+  },
+  {
+    "name": "Jaylin Lane",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Leg",
+    "notes": null
   },
   {
     "name": "Jer'Zhan Newton",
@@ -60,6 +74,13 @@
     "position": "WR",
     "status": "Out",
     "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Marcus Mariota",
+    "position": "QB",
+    "status": "Out",
+    "bodyPart": "Knee",
     "notes": null
   },
   {
