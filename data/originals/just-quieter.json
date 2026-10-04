@@ -1,16 +1,21 @@
 {
-  "key": "2026-10-05",
-  "status": "published",
-  "model": "hand-written",
-  "generatedAt": "2026-10-04T21:13:56.000Z",
-  "title": "A Case of the Mondays: Just Quieter",
+  "slug": "just-quieter",
+  "title": "Just Quieter: The Commanders Lose in London, and It Felt Like a Win",
   "summary": "Colts 30, Commanders 13 in London: Mariota's knee, a third-string rookie's 47-yard TD, ten flags to one, a sausage casserole, and a brutal college weekend.",
   "share": {
     "background": "bowl"
   },
-  "reviewedAt": "2026-10-04T21:13:56.000Z",
+  "photos": {
+    "brunch-crew": {
+      "file": "brunch-crew.jpg",
+      "w": 1200,
+      "h": 900,
+      "alt": "A selfie of four smiling friends in a living room. The man in front wears a burgundy Commanders polo and cap, and a football game is on the big TV behind them. Two of them hold drinks with small gold football-player figures clipped to the rims of their glasses.",
+      "caption": "The brunch crew, mid-Longest Yard, with London on the TV behind us. Yes, those are tiny gold football players hanging off the glasses. No, I will not be taking questions."
+    }
+  },
   "paragraphs": [
-    "On Friday I wrote it down: Commanders 20, Colts 17. I also promised that if I was wrong, you'd hear about it Monday, just quieter. So here it is, at a respectable indoor volume: Colts 30, Commanders 13. And here's a sentence I never expected to type about a 17-point loss on another continent before lunch: it kind of felt like a win.",
+    "On Friday I wrote it down: Commanders 20, Colts 17. I also promised that if I was wrong, you'd hear about it Monday, just quieter. It's still Sunday. I couldn't wait. So here it is, at a respectable indoor volume: Colts 30, Commanders 13. And here's a sentence I never expected to type about a 17-point loss on another continent before lunch: it kind of felt like a win.",
     "The morning went exactly as planned, which almost never happens in this house. It rained. Friends came over. The \"something fatty involving eggs, sausage, and biscuits\" turned out to be a casserole, a fantastic one, with sausage and enough cheese to concern Wilford Brimley. And for the first stretch of the game, the Commanders were winning in London, 6-0. I'd like that entered into the record next to the last one.",
     "!photo brunch-crew",
     "## Next Man Up, and Then the Next One",
@@ -28,13 +33,6 @@
     "## And Then, Next Week",
     "Three things in four days: Weird Al on Thursday, Syracuse under the lights on Saturday, the Giants and their brand-new J.J. McCarthy at home on Sunday. We're 1-3, the quarterback room is held together with tape and casserole, and I'm weirdly optimistic. Twenty to seventeen was wrong. I'll have a new number for the Giants, and you'll hear it at full volume. Hail."
   ],
-  "photos": {
-    "brunch-crew": {
-      "file": "brunch-crew.jpg",
-      "w": 1200,
-      "h": 900,
-      "alt": "A selfie of four smiling friends in a living room. The man in front wears a burgundy Commanders polo and cap, and a football game is on the big TV behind them. Two of them hold drinks with small gold football-player figures clipped to the rims of their glasses.",
-      "caption": "The brunch crew, mid-Longest Yard, with London on the TV behind us. Yes, those are tiny gold football players hanging off the glasses. No, I will not be taking questions."
-    }
-  }
+  "status": "published",
+  "publishedAt": "2026-10-04T21:13:56.000Z"
 }

@@ -8,6 +8,19 @@
 [functions."admin-pipeline"]
   included_files = ["data/state.json"]
 
+# "Just Quieter" went up on a Sunday night as a Monday post, then moved to
+# an original once Ben pointed out it was still Sunday. Its first address
+# was live for a few minutes, so it forwards rather than 404s.
+[[redirects]]
+  from = "/blog-monday-2026-10-05.html"
+  to = "/blog-original-just-quieter.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog-monday-2026-10-05"
+  to = "/blog-original-just-quieter"
+  status = 301
+
 # Security headers applied to every response from the CDN.
 # None of these break the site — they only restrict what external parties
 # can do with it (embed it in iframes, inject scripts, etc.).

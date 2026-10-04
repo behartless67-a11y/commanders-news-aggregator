@@ -23,12 +23,6 @@
     "h": 630,
     "alt": "The headline \"A Case of the Mondays: I Told You So\" over a photo, with The Burgundy Wire logo."
   },
-  "monday-2026-10-05": {
-    "file": "share/monday-2026-10-05.jpg",
-    "w": 1200,
-    "h": 630,
-    "alt": "The headline \"A Case of the Mondays: Just Quieter\" over a photo, with The Burgundy Wire logo."
-  },
   "original-4-38-am-sonny-jurgensen-and-pure-mojo": {
     "file": "share/original-4-38-am-sonny-jurgensen-and-pure-mojo.jpg",
     "w": 1200,
@@ -58,6 +52,12 @@
     "w": 1200,
     "h": 630,
     "alt": "The headline \"How a CRT TV, a Ditch, and the Internet Made Me a Lifer\" over a photo, with The Burgundy Wire logo."
+  },
+  "original-just-quieter": {
+    "file": "share/original-just-quieter.jpg",
+    "w": 1200,
+    "h": 630,
+    "alt": "The headline \"Just Quieter: The Commanders Lose in London, and It Felt Like a Win\" over a photo, with The Burgundy Wire logo."
   },
   "original-london-calling-the-commanders-a-biscuit-and-a-mandatory-nap": {
     "file": "share/original-london-calling-the-commanders-a-biscuit-and-a-mandatory-nap.jpg",
