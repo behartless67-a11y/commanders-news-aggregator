@@ -8,7 +8,8 @@ import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.j
 import { loadRosterCache } from '../lib/roster.js';
 import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
-import { parseGameTime } from '../lib/dates.js';
+import { parseGameTime } from '../lib/dates.js';
+import { clusterItems } from '../lib/cluster.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
@@ -243,8 +244,13 @@ export async function buildSite() {
 
   await fs.mkdir(DIST_DIR, { recursive: true });
 
+  // Each page's river folds duplicate coverage of a story into one card (see
+  // src/lib/cluster.js), drawn from a wider pool than it shows so that folding
+  // makes room for more stories instead of a shorter page. RSS below keeps one
+  // entry per article.
+  const riverPool = pinFreshBlogPosts(allSorted, Date.now()).slice(0, MAX_RIVER_ITEMS * 2);
   for (const page of PAGES) {
-    const filtered = sorted.filter(page.match);
+    const filtered = clusterItems(riverPool.filter(page.match), { players: rosterPlayers }).slice(0, MAX_RIVER_ITEMS);
     const html = renderPage(filtered, {
       siteName: SITE_NAME,
       siteUrl: SITE_URL,

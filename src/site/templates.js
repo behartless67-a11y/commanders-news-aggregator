@@ -144,6 +144,27 @@ function itemCard(item, index, rosterIndex) {
   // lead with; when that's all there was, the card is just the headline.
   const text = cleanExcerpt(item.excerpt);
   const excerptMarkup = text ? `<p class="card-excerpt">${linkPlayers(firstSentences(text, 2), rosterIndex)}</p>` : '';
+  // Other outlets' coverage of the same story, folded in by clusterItems()
+  // (src/lib/cluster.js). One line naming who else has it, Techmeme-style,
+  // that opens into their headlines. A native <details>, so it works with no
+  // JavaScript and announces itself as expandable.
+  const related = item.related || [];
+  let moreMarkup = '';
+  if (related.length) {
+    const outlets = [...new Set(related.map((r) => r.sourceName))];
+    const shown = outlets.slice(0, 4).map(escapeHtml).join(' · ');
+    const extraOutlets = outlets.length > 4 ? ` +${outlets.length - 4}` : '';
+    const list = related
+      .map((r) => {
+        const rWhen = r.publishedAt ? relativeLabel(r.publishedAt) : '';
+        return `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(r.sourceId)}">${escapeHtml(r.title)}</a> <span class="card-more-meta">${escapeHtml(r.sourceName)}${rWhen ? ` · ${escapeHtml(rWhen)}` : ''}</span></li>`;
+      })
+      .join('');
+    moreMarkup = `<details class="card-more">
+        <summary>More coverage (${related.length}): ${shown}${extraOutlets}</summary>
+        <ul class="card-more-list">${list}</ul>
+      </details>`;
+  }
   // Set by pinFreshBlogPosts() in build.js. Said out loud on the card because
   // otherwise a post from this morning sitting above a headline from an hour
   // ago just looks like the sort is broken.
@@ -163,6 +184,7 @@ function itemCard(item, index, rosterIndex) {
       ${pinNote}
       <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ` target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}"`}>${escapeHtml(item.title)}</a></h3>
       ${excerptMarkup}
+      ${moreMarkup}
     </article>`;
 }
 

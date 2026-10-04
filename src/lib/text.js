@@ -99,8 +99,11 @@ const SERIES_BOILERPLATE = [
  */
 export function cleanExcerpt(text) {
   const lines = String(text || '')
-    // One feed sends its whitespace as literal "\n" and "\t" text.
+    // One feed sends its whitespace as literal "\n" and "\t" text, and a few
+    // send punctuation as HTML entity text that would print as "&mdash;".
     .replace(/\\[ntr]/g, '\n')
+    .replace(/&(mdash|ndash|nbsp|amp|quot|rsquo|lsquo|rdquo|ldquo|hellip|#39|#8217|#8216|#8220|#8221);/g, (m, e) =>
+      ({ mdash: '—', ndash: '–', nbsp: ' ', amp: '&', quot: '"', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', hellip: '…', '#39': "'", '#8217': '’', '#8216': '‘', '#8220': '“', '#8221': '”' })[e])
     .split(/\n+/)
     .map((l) => l.trim())
     .filter(Boolean);
@@ -117,6 +120,12 @@ export function cleanExcerpt(text) {
   const out = lines
     .filter((l) => !SERIES_BOILERPLATE.some((re) => re.test(l)))
     .join(' ')
+    // An embedded tweet's footer, "pic.twitter.com/abc — Washington
+    // Commanders (@Commanders) October 3, 2026", and any bare t.co links.
+    // Left in, its dots also fooled the two-sentence cut into showing
+    // "com/g0uLb5rXxB — Washington Commanders..." as a sentence.
+    .replace(/(?:https?:\/\/)?(?:pic\.twitter\.com|t\.co|x\.com|twitter\.com)\/\S+/g, ' ')
+    .replace(/\s*[—–-]\s*[^()]{1,80}\(@\w+\)\s+[A-Z][a-z]+ \d{1,2}, \d{4}/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
   // Nothing left but a truncation ellipsis or a stray pipe.

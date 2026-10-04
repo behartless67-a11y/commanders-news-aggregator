@@ -1166,6 +1166,59 @@ main.layout{
   margin: 0;
 }
 
+/* Other outlets on the same story (see clusterItems() in src/lib/cluster.js
+   and itemCard()). Quiet by default, a single line in the source-name style,
+   opening into a plain list of their headlines. */
+.card-more{
+  max-width: 70ch;
+  font-size: 13px;
+}
+.card-more summary{
+  cursor: pointer;
+  color: var(--text-muted);
+  font-weight: 600;
+  list-style: none;
+}
+.card-more summary::-webkit-details-marker{ display: none; }
+.card-more summary::before{
+  content: "+";
+  display: inline-block;
+  width: 1em;
+  color: var(--gold);
+  font-weight: 800;
+}
+.card-more[open] summary::before{ content: "\2212"; }
+.card-more summary:hover{ color: var(--text); }
+.card-more summary:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.card-more-list{
+  list-style: none;
+  margin: 8px 0 2px;
+  padding: 0 0 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-left: 1px solid var(--border);
+  margin-left: 0.3em;
+}
+.card-more-list li{
+  padding-left: 10px;
+  line-height: 1.4;
+}
+.card-more-list a{
+  color: var(--text);
+  font-weight: 600;
+}
+.card-more-list a:visited{ color: var(--text-muted); }
+.card-more-list a:hover{ color: var(--gold); }
+.card-more-meta{
+  color: var(--text-faint);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 /* ---------- Video rail ----------
    Thumbnails are hotlinked from YouTube's own image CDN and each card is a plain
    link until clicked; site.js swaps in the embedded player on demand. Do not
