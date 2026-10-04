@@ -83,18 +83,6 @@
     "publishedAt": "2026-08-20T11:30:00.000Z",
     "collectedAt": "2026-08-20T13:31:52.560Z"
   },
-  "riggos-rag-7c3a63c9a36d": {
-    "id": "riggos-rag-7c3a63c9a36d",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/7-supreme-standouts-washington-commanders-2026-training-camp-day-13",
-    "title": "7 supreme standouts from Commanders 2026 training camp Day 13",
-    "excerpt": "Who were the big standouts from Day 13 of Washington Commanders training camp, which was the final session with fans in atttendance?",
-    "publishedAt": "2026-08-20T10:00:02.000Z",
-    "collectedAt": "2026-08-20T13:31:52.560Z"
-  },
   "commanders-youtube-100a3c1fe1c7": {
     "id": "commanders-youtube-100a3c1fe1c7",
     "sourceId": "commanders-youtube",
@@ -14626,5 +14614,53 @@
     "excerpt": "",
     "publishedAt": "2026-10-04T04:00:08.000Z",
     "collectedAt": "2026-10-04T08:05:33.085Z"
+  },
+  "hogs-haven-a7191bffb85f": {
+    "id": "hogs-haven-a7191bffb85f",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446067/colts-without-wrs-pearce-allen-in-london-game-today-sonny-styles-marcus-mariota-terry-mclaurin",
+    "title": "Commanders News: Colts without WRs Pearce & Allen in London game today",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Amik Robertson #2 of the Washington Commanders celebrates his play against the Seattle Seahawks during the second quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 4 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports…",
+    "publishedAt": "2026-10-04T10:00:00.000Z",
+    "collectedAt": "2026-10-04T10:05:29.950Z"
+  },
+  "riggos-rag-10034aa5425d": {
+    "id": "riggos-rag-10034aa5425d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/is-terry-mclaurin-playing-today-vs-colts-latest-updates-commanders-wr-week-4",
+    "title": "Is Terry McLaurin playing today vs. Colts? Latest updates for Commanders WR in Week 4",
+    "excerpt": "Latest updates for Washington Commanders wide receiver Terry McLaurin, whose status for Week 4 is in real doubt.",
+    "publishedAt": "2026-10-04T09:36:34.000Z",
+    "collectedAt": "2026-10-04T10:05:31.169Z"
+  },
+  "riggos-rag-cc8c35a7a5e4": {
+    "id": "riggos-rag-cc8c35a7a5e4",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/4-bold-washington-commanders-predictions-international-showdown-against-colts",
+    "title": "4 bold Commanders predictions for international showdown against the Colts",
+    "excerpt": "Bold predictions for the Washington Commanders during their international clash against the Indianapolis Colts.",
+    "publishedAt": "2026-10-04T09:00:00.000Z",
+    "collectedAt": "2026-10-04T10:05:31.169Z"
+  },
+  "yahoo-nfl-2982c4ec567e": {
+    "id": "yahoo-nfl-2982c4ec567e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/time-does-nfl-london-game-093057680.html",
+    "title": "What time does NFL London game start? Commanders vs. Colts Week 4 matchup",
+    "excerpt": "For the third time this season, the NFL is headed abroad.\n The Washington Commanders and Indianapolis Colts land in London, England for a Week 4 matchup. It will be the first NFL game this season in Europe – the San Francisco 49ers met the Los Angeles Rams in Melbourne, Australia in Week 1 and the Baltimore Ravens and Dallas Cowboys faced off in Rio De Janeiro, Brazil in Week 3\n Both teams are 1-2 and coming off a Week 3 win.\n The Colts took down the Houston Texans in Week 3 to get in the win…",
+    "publishedAt": "2026-10-04T09:30:57.000Z",
+    "collectedAt": "2026-10-04T10:05:36.608Z"
   }
 }
