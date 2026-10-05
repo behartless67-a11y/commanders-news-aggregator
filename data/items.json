@@ -59,18 +59,6 @@
     "publishedAt": "2026-08-21T13:00:03.000Z",
     "collectedAt": "2026-08-21T16:58:37.100Z"
   },
-  "riggos-rag-a3d3d450f1f4": {
-    "id": "riggos-rag-a3d3d450f1f4",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-may-have-compelling-trade-solution-center-concern",
-    "title": "Commanders may have a compelling trade solution for their center concern",
-    "excerpt": "The Washington Commanders have a clear concern brewing at center, and there is an intriguing potential trade for general manager Adam Peters to consider.",
-    "publishedAt": "2026-08-21T11:36:14.000Z",
-    "collectedAt": "2026-08-21T16:58:37.100Z"
-  },
   "clutchpoints-7c42b54f7c8a": {
     "id": "clutchpoints-7c42b54f7c8a",
     "sourceId": "clutchpoints",
@@ -669,18 +657,6 @@
     "title": "Jayden Daniels played just 3 snaps in Commanders' preseason loss. They revealed a concern",
     "excerpt": "Washington's defense made an impact in a preseason loss to the Lions, but the Commanders need more help on the O-line.",
     "publishedAt": "2026-08-22T21:13:59.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
-  },
-  "athletic-jhabvala-fca7c606a8cf": {
-    "id": "athletic-jhabvala-fca7c606a8cf",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7527634/2026/08/21/commanders-injuries-training-camp-preseason",
-    "title": "Commanders camp takeaways: Injury list grows, the plan for Detroit and more",
-    "excerpt": "At least 15 Commanders players are confirmed to be recovering from or still working their way back from injuries.",
-    "publishedAt": "2026-08-21T10:39:33.000Z",
     "collectedAt": "2026-08-24T11:38:09.876Z"
   },
   "yahoo-nfl-d85ba480cd53": {
@@ -15166,5 +15142,17 @@
     "excerpt": "Who were the big winners and losers from the Washington Commanders' dismal defeat to the Indianapolis Colts in Week 4?",
     "publishedAt": "2026-10-05T10:00:01.000Z",
     "collectedAt": "2026-10-05T10:05:32.903Z"
+  },
+  "riggos-rag-296c9514d8ec": {
+    "id": "riggos-rag-296c9514d8ec",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-season-now-hinges-jayden-daniels-surviving-early-return",
+    "title": "Commanders’ season now hinges on Jayden Daniels surviving an early return",
+    "excerpt": "The Washington Commanders’ season now hinges on star quarterback Jayden Daniels surviving an early return from his dislocated elbow.",
+    "publishedAt": "2026-10-05T11:30:00.000Z",
+    "collectedAt": "2026-10-05T12:05:37.656Z"
   }
 }
