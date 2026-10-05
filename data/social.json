@@ -1,40 +1,4 @@
 {
-  "social-6b846b8ba2c3": {
-    "id": "social-6b846b8ba2c3",
-    "url": "https://x.com/Commanders/status/2103545277172842985",
-    "text": "Introducing the Commanders Junior Academy 🙌",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-25T18:00:50.000Z",
-    "collectedAt": "2026-09-25T18:05:43.184Z"
-  },
-  "social-bed76ab6a6da": {
-    "id": "social-bed76ab6a6da",
-    "url": "https://x.com/john_keim/status/2103527766226309215",
-    "text": "Quinn on Trey Amos and when he might come off IR: \"no updates yet. But I can say the speed and on field work that to me is encouraging.\"",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-25T16:51:15.000Z",
-    "collectedAt": "2026-09-25T18:05:46.490Z"
-  },
-  "social-cfecc7e14e55": {
-    "id": "social-cfecc7e14e55",
-    "url": "https://x.com/tashanreed/status/2103527075546013728",
-    "text": "Quinn said the #Commanders ' 0-2 record didn't factor into Daniels' decision to forgo surgery.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-25T16:48:31.000Z",
-    "collectedAt": "2026-09-25T18:05:49.584Z"
-  },
   "social-42f19d7c5306": {
     "id": "social-42f19d7c5306",
     "url": "https://x.com/BenStandig/status/2103575291410997338",
@@ -322,20 +286,6 @@
     "images": [],
     "publishedAt": "2026-09-26T02:05:29.000Z",
     "collectedAt": "2026-09-26T03:33:44.146Z"
-  },
-  "social-8007f4f2d934": {
-    "id": "social-8007f4f2d934",
-    "url": "https://x.com/calvinwatkins/status/2103543987713818972",
-    "text": "Jake Ferguson was fined for mimicking shotgunning a beer. Cowboys backdrop for news conference in Rio is MillerLite.",
-    "handle": "calvinwatkins",
-    "author": "Calvin Watkins",
-    "label": "",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/332/969/331/073/957/original/cc6658735f1580fb.jpg"
-    ],
-    "publishedAt": "2026-09-25T17:55:43.000Z",
-    "collectedAt": "2026-09-26T04:05:42.786Z"
   },
   "social-01cf29761dea": {
     "id": "social-01cf29761dea",
@@ -12763,5 +12713,17 @@
     "images": [],
     "publishedAt": "2026-10-05T16:29:25.000Z",
     "collectedAt": "2026-10-05T16:47:51.804Z"
+  },
+  "social-231683b99074": {
+    "id": "social-231683b99074",
+    "url": "https://x.com/NickiJhabvala/status/2107151654479106470",
+    "text": "Commanders QB Marcus Mariota did sprain his MCL in Sunday's game vs. the Colts, per source. It's the second time he's sprained it this year; first time was in the preseason opener against Miami.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-05T16:51:18.000Z",
+    "collectedAt": "2026-10-05T18:05:11.506Z"
   }
 }
