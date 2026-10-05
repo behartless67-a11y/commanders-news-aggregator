@@ -1,28 +1,4 @@
 {
-  "riggos-rag-7a0a9c77b15a": {
-    "id": "riggos-rag-7a0a9c77b15a",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/sonny-styles-has-powerful-weapon-against-premature-commanders-doubt",
-    "title": "Sonny Styles has a powerful weapon against premature Commanders doubt",
-    "excerpt": "Washington Commanders rookie linebacker Sonny Styles has a power weapon to counteract the premature doubt following his preseason debut.",
-    "publishedAt": "2026-08-21T19:00:01.000Z",
-    "collectedAt": "2026-08-21T20:23:23.531Z"
-  },
-  "commanders-youtube-8dea79351762": {
-    "id": "commanders-youtube-8dea79351762",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/shorts/hPK7tWm9Vx8",
-    "title": "\"we all want to eat\" 😤",
-    "excerpt": "",
-    "publishedAt": "2026-08-21T18:17:10.000Z",
-    "collectedAt": "2026-08-21T20:23:23.940Z"
-  },
   "hogs-haven-5b025e07bda2": {
     "id": "hogs-haven-5b025e07bda2",
     "sourceId": "hogs-haven",
@@ -15190,5 +15166,41 @@
     "excerpt": "When you’re already missing your starting quarterback, the last thing you should do is experiment with the offensive line. Yet that’s exactly what the Commanders did in their 30-13 loss to the Colts in London, and it cost them dearly.\n\n The decision to bench veteran right guard Nick Allegretti for sixth-round rookie Matt Gulbin backfired right out of the gate. While Gulbin might develop into a solid player down the road, throwing him in against a heavy-hitting Colts defensive front was a…",
     "publishedAt": "2026-10-05T17:11:46.000Z",
     "collectedAt": "2026-10-05T18:05:42.554Z"
+  },
+  "riggos-rag-31ef52d0b53e": {
+    "id": "riggos-rag-31ef52d0b53e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-special-teams-failures-against-colts-expose-deeper-dysfunction",
+    "title": "Commanders’ special teams failures against Colts expose deeper dysfunction",
+    "excerpt": "Poor coaching, more injuries, and big-name talent not living up to the billing continued to undermine the Washington Commanders' special teams against the Indianapolis Colts.",
+    "publishedAt": "2026-10-05T19:00:01.000Z",
+    "collectedAt": "2026-10-05T20:22:11.646Z"
+  },
+  "yahoo-nfl-f260b5f9590e": {
+    "id": "yahoo-nfl-f260b5f9590e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/washington-commanders-whiteboard-notes-observations-195425511.html",
+    "title": "Washington Commanders Whiteboard: Notes and observations from Week 4",
+    "excerpt": "Before the advent of media devices, football coaches at all levels used simple whiteboards to outline plays, map out player positions and explain schemes in real time. Nowadays digital playbooks and tablets have taken over, but coaches still use whiteboards on occasion to impart information quickly and effectively. The following are some quick notes and observations from the Washington Commanders’ 13-30 loss to the Indianapolis Colts in London. \n Personnel decisions are still a problem\n After…",
+    "publishedAt": "2026-10-05T19:54:25.000Z",
+    "collectedAt": "2026-10-05T20:22:16.567Z"
+  },
+  "yahoo-nfl-1a4030eb708a": {
+    "id": "yahoo-nfl-1a4030eb708a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/colts-monday-morning-awards-week-180009921.html",
+    "title": "Colts Monday Morning Awards: Week 4 vs Commanders (London)",
+    "excerpt": "London, United Kingdom - October 4: Robert Henry Jr. of Washington Commanders is tackled by Indianapolis Colts linebacker Jaylon Carlies during the Indianapolis Colts and Washington Commanders match at Tottenham Hotspur Stadium on October 4, 2026 in London, United Kingdom. (Photo by Vince Mignott/DeFodi Images/DeFodi via Getty Images) | DeFodi Images via Getty Images The Colts shook off an ugly first quarter and leaned on their run game to walk out of Tottenham Hotspur Stadium with a convincing…",
+    "publishedAt": "2026-10-05T18:00:09.000Z",
+    "collectedAt": "2026-10-05T20:22:16.567Z"
   }
 }
