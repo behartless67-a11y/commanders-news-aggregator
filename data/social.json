@@ -1,16 +1,4 @@
 {
-  "social-42f19d7c5306": {
-    "id": "social-42f19d7c5306",
-    "url": "https://x.com/BenStandig/status/2103575291410997338",
-    "text": "My reaction upon seeing No. 1",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-25T20:00:06.000Z",
-    "collectedAt": "2026-09-25T20:05:44.739Z"
-  },
   "social-d4b9a27aaf20": {
     "id": "social-d4b9a27aaf20",
     "url": "https://x.com/john_keim/status/2103585836898164890",
@@ -12713,5 +12701,17 @@
     "images": [],
     "publishedAt": "2026-10-05T19:01:09.000Z",
     "collectedAt": "2026-10-05T19:09:09.765Z"
+  },
+  "social-ad78400fc361": {
+    "id": "social-ad78400fc361",
+    "url": "https://x.com/NickiJhabvala/status/2107195170966089765",
+    "text": "The Commanders have a lot of really bad injuries and, sure, there were some questionable calls Sunday. But many teams are dealing with brutal injuries and there were plenty of questionable calls around the league. Washington has won 6 of its last 21 games. At some point, you",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-05T19:44:13.000Z",
+    "collectedAt": "2026-10-05T20:05:10.612Z"
   }
 }
