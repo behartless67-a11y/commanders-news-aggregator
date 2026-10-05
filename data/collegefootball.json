@@ -1,19 +1,19 @@
 {
-  "fetchedAt": "2026-09-28T19:07:26.850Z",
+  "fetchedAt": "2026-10-05T20:10:22.956Z",
   "uva": {
     "lastGame": {
-      "date": "2026-09-26T22:00Z",
-      "uvaScore": "42",
-      "opponentScore": "3",
-      "opponent": "Delaware Blue Hens",
-      "isHome": true,
-      "won": true,
-      "venue": "Scott Stadium"
+      "date": "2026-10-03T19:30Z",
+      "uvaScore": "7",
+      "opponentScore": "38",
+      "opponent": "Florida State Seminoles",
+      "isHome": false,
+      "won": false,
+      "venue": "Doak Campbell Stadium"
     },
     "nextGame": {
-      "date": "2026-10-03T19:30Z",
-      "opponent": "Florida State Seminoles",
-      "isHome": false
+      "date": "2026-10-10T23:30Z",
+      "opponent": "Syracuse Orange",
+      "isHome": true
     }
   },
   "notable": []
