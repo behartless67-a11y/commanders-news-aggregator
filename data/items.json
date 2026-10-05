@@ -1,28 +1,4 @@
 {
-  "hogs-haven-5b025e07bda2": {
-    "id": "hogs-haven-5b025e07bda2",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-game-information/432695/commanders-vs-lions-preseason-week-2-schedule-tv-radio-streaming-odds",
-    "title": "Commanders vs. Lions Preseason Week 2: Schedule, TV, Radio, Streaming, Odds",
-    "excerpt": "Jan 18, 2025; Detroit, Michigan, USA; Washington Commanders quarterback Jayden Daniels (5) looks to pass defended by Detroit Lions defensive back Brian Branch (32) during the second half at Ford Field. Mandatory Credit: David Reginek-Imagn Images | USA TODAY Sports via Reuters Con \n \n The Washington Commanders hosted the Miami Dolphins at Northwest Stadium last Friday and got their first win of the (pre)season. Jayden Daniels didn’t play last week, but could play a series vs the Detroit Lions…",
-    "publishedAt": "2026-08-21T22:00:00.000Z",
-    "collectedAt": "2026-08-22T01:06:09.677Z"
-  },
-  "riggos-rag-3613fd06136e": {
-    "id": "riggos-rag-3613fd06136e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jacoby-jones-making-commanders-looming-roster-decision-dangerously-risky",
-    "title": "Jacoby Jones is making Commanders' looming roster decision dangerously risky",
-    "excerpt": "Washington Commanders wide receiver Jacoby Jones is standing out this summer, which presents general manager Adam Peters with a dilemma.",
-    "publishedAt": "2026-08-21T21:00:00.000Z",
-    "collectedAt": "2026-08-22T01:06:09.969Z"
-  },
   "hogs-haven-0458400d4d42": {
     "id": "hogs-haven-0458400d4d42",
     "sourceId": "hogs-haven",
@@ -14719,7 +14695,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-news/446176/commanders-injury-update-marcus-mariota-knee-colts-jayden-daniels",
     "title": "Commanders injury update: Marcus Mariota dealing with knee injury",
-    "excerpt": "Jayden Daniels was formally ruled out of Sunday’s game against the Indianapolis Colts, yet they felt good about their quarterback situation. \n\n That was due to veteran backup, Marcus Mariota, a proven commodity capable of winning games at this level. We saw proof of that last week, when he was darn near perfect in a Week 3 victory over the Seahawks. \n\n He validated that point over the first few drives, until he went down awkwardly during a quarterback sack. \n\n \n Here’s the play that Marcus…",
+    "excerpt": "UPDATE: Mutliple reports have confirmed what Dan Quinn stated after Sunday’s loss to the Colts, that Marcus Mariota suffered an MCL injury to the same knee that got hurt during the preseason. He missed roughly a month with the last ailment, and it’s fair to expect he’ll miss the same amount of time this time around. \n\n \n Commanders QB Marcus Mariota suffered an MCL sprain Sunday in London, per source. This is his second MCL sprain, the first coming in the preseason. pic.twitter.com/GHYVOTApqP…",
     "publishedAt": "2026-10-04T18:13:03.000Z",
     "collectedAt": "2026-10-04T19:10:53.948Z"
   },
@@ -15187,7 +15163,7 @@
     "category": "league",
     "url": "https://sports.yahoo.com/articles/washington-commanders-whiteboard-notes-observations-195425511.html",
     "title": "Washington Commanders Whiteboard: Notes and observations from Week 4",
-    "excerpt": "Before the advent of media devices, football coaches at all levels used simple whiteboards to outline plays, map out player positions and explain schemes in real time. Nowadays digital playbooks and tablets have taken over, but coaches still use whiteboards on occasion to impart information quickly and effectively. The following are some quick notes and observations from the Washington Commanders’ 13-30 loss to the Indianapolis Colts in London. \n Personnel decisions are still a problem\n After…",
+    "excerpt": "Before the advent of media devices, football coaches at all levels used simple whiteboards to outline plays, map out player positions and explain schemes in real time. Nowadays digital playbooks and tablets have taken over, but coaches still use whiteboards on occasion to impart information quickly and effectively. The following are some quick notes and observations from the Washington Commanders’ 13-30 loss to the Indianapolis Colts in London. \n\n Personnel decisions are still a problem\n\n After…",
     "publishedAt": "2026-10-05T19:54:25.000Z",
     "collectedAt": "2026-10-05T20:22:16.567Z"
   },
@@ -15202,5 +15178,53 @@
     "excerpt": "London, United Kingdom - October 4: Robert Henry Jr. of Washington Commanders is tackled by Indianapolis Colts linebacker Jaylon Carlies during the Indianapolis Colts and Washington Commanders match at Tottenham Hotspur Stadium on October 4, 2026 in London, United Kingdom. (Photo by Vince Mignott/DeFodi Images/DeFodi via Getty Images) | DeFodi Images via Getty Images The Colts shook off an ugly first quarter and leaned on their run game to walk out of Tottenham Hotspur Stadium with a convincing…",
     "publishedAt": "2026-10-05T18:00:09.000Z",
     "collectedAt": "2026-10-05T20:22:16.567Z"
+  },
+  "atoz-sports-beb446ad5801": {
+    "id": "atoz-sports-beb446ad5801",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/commanders-winners-losers-colts-nfl-week-4",
+    "title": "Commanders winners and losers from Colts loss show who stepped up without Jayden Daniels and who disappeared",
+    "excerpt": "Football – NFL – Indianapolis Colts v Washington Commanders – Tottenham Hotspur Stadium, London, Britain – October 4, 2026 Washington Commanders’ Athan Kaliakmanis in action with Robert Henry Jr. Action Images via Reuters/Peter Cziborra \n \n\n Sunday’s loss to Indianapolis was skewed by circumstance from the first quarter on, so the performances that cut through it deserve a closer look.\n\n The Washington Commanders lost to the Indianapolis Colts on Sunday with a third-string rookie quarterback…",
+    "publishedAt": "2026-10-05T21:00:33.000Z",
+    "collectedAt": "2026-10-05T22:05:37.672Z"
+  },
+  "commanders-youtube-28258686d905": {
+    "id": "commanders-youtube-28258686d905",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=C78vc0vEIJM",
+    "title": "Live: HC Dan Quinn Speaks To The Media | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-05T21:59:40.000Z",
+    "collectedAt": "2026-10-05T22:05:39.450Z"
+  },
+  "wjla-commanders-5a4ebbafd099": {
+    "id": "wjla-commanders-5a4ebbafd099",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-receiver-jaylin-lane-has-a-fractured-and-dislocated-left-ankle-ap-source-says",
+    "title": "Commanders receiver Jaylin Lane has a fractured and dislocated left ankle, AP source says",
+    "excerpt": "Washington Commanders receiver Jaylin Lane has a fractured and dislocated left ankle, according to a person familiar with the situation, after getting hurt in t",
+    "publishedAt": "2026-10-05T21:36:43.000Z",
+    "collectedAt": "2026-10-05T22:05:42.132Z"
+  },
+  "pft-30e41e70be3e": {
+    "id": "pft-30e41e70be3e",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-fans-dominated-in-london-game-vs-colts",
+    "title": "Commanders fans dominated in London game vs. Colts",
+    "excerpt": "The Commanders' loss in London to the Colts had nothing to do with a lack of fan support.\n Via Nathan Brown of the Indianapolis Star, the neutral-site game for which the Commanders were the designated home team was dominated by Commanders fans .\n \"I think out of all the teams I've played overseas, [the Commanders] is the fanbase that traveled the best that I've seen,\" Colts safety Camryn Bynum said. \"Maybe that's because they're on the east coast, and so it's a closer flight?\n \"But it is still…",
+    "publishedAt": "2026-10-05T20:57:35.000Z",
+    "collectedAt": "2026-10-05T22:05:42.367Z"
   }
 }

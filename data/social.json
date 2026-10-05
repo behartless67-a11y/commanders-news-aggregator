@@ -12601,5 +12601,93 @@
     "images": [],
     "publishedAt": "2026-10-05T22:02:05.000Z",
     "collectedAt": "2026-10-05T22:05:11.444Z"
+  },
+  "social-dcb7d9c24627": {
+    "id": "social-dcb7d9c24627",
+    "url": "https://x.com/Commanders/status/2107229728377585867",
+    "text": "HC Dan Quinn confirmed that WR Jaylin Lane suffered a season-ending injury in yesterday’s game Wishing you a healthy recovery, @j_lane_2@twitter.com 🙏",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/390/565/625/516/252/original/47a443ff1356e577.jpg"
+    ],
+    "publishedAt": "2026-10-05T22:01:32.000Z",
+    "collectedAt": "2026-10-05T22:05:44.084Z"
+  },
+  "social-e3abae6405e4": {
+    "id": "social-e3abae6405e4",
+    "url": "https://x.com/Commanders/status/2107229269663613104",
+    "text": "LIVE: HC Dan Quinn speaks to the media Gy",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-05T21:59:42.000Z",
+    "collectedAt": "2026-10-05T22:05:44.085Z"
+  },
+  "social-751d3b1129e3": {
+    "id": "social-751d3b1129e3",
+    "url": "https://x.com/JPFinlayNBCS/status/2107229930002006244",
+    "text": "Dan Quinn: We’re frustrated and pissed. Ready to be back home and playing the NFC East leading Giants",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/390/561/838/437/663/original/750539a80294a251.jpg"
+    ],
+    "publishedAt": "2026-10-05T22:02:20.000Z",
+    "collectedAt": "2026-10-05T22:05:45.489Z"
+  },
+  "social-28c991a4cef1": {
+    "id": "social-28c991a4cef1",
+    "url": "https://x.com/ProFootballTalk/status/2107213883429859660",
+    "text": "The Commanders didn't lose to the Colts on Sunday due to lack of fan support; their fans dominated the neutral-site game in London. alk/rumor-mill/news/commanders-fans-dominated-in-london-game-vs-colts",
+    "handle": "ProFootballTalk",
+    "author": "ProFootballTalk",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-05T20:58:34.000Z",
+    "collectedAt": "2026-10-05T22:05:45.490Z"
+  },
+  "social-854a3a115f45": {
+    "id": "social-854a3a115f45",
+    "url": "https://x.com/BenStandig/status/2107230014739554479",
+    "text": "Dan Quinn: \"We are all frustrated and pissed.\" Adds his belief in the team is unwavering.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-05T22:02:40.000Z",
+    "collectedAt": "2026-10-05T22:05:48.368Z"
+  },
+  "social-5f0be427f3ed": {
+    "id": "social-5f0be427f3ed",
+    "url": "https://x.com/BenStandig/status/2107229673184731382",
+    "text": "Marcus Mariota suffered a sprained MCL. Timeline tbd.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-05T22:01:19.000Z",
+    "collectedAt": "2026-10-05T22:05:48.368Z"
+  },
+  "social-5589ad369364": {
+    "id": "social-5589ad369364",
+    "url": "https://x.com/tashanreed/status/2107230100693356780",
+    "text": "Quinn said he still needs testing results for DE Charles Omenihu (groin)",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-05T22:03:01.000Z",
+    "collectedAt": "2026-10-05T22:05:49.863Z"
   }
 }
