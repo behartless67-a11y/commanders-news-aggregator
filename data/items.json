@@ -1,16 +1,4 @@
 {
-  "clutchpoints-c6f10d4d32f2": {
-    "id": "clutchpoints-c6f10d4d32f2",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-did-jayden-daniels-troll-himself-viral-5-moment-with-fan",
-    "title": "Did Commanders’ Jayden Daniels troll himself in viral ‘5’ moment with fan?",
-    "excerpt": "Roasting Jayden Daniels has become one of the more fascinating crazes in the recent cultural zeitgeist. Several leagues and companies have mocked the Washington Commanders quarterback for his LSU jersey controversy. Following endless jokes and criticism, the player himself may even be joining in on the fun.\n\n A fan who attended Commanders practice on Thursday asked Daniels to choose the order of his fantasy football draft, something backup QB Sam Hartman had done about a week earlier. The 2024…",
-    "publishedAt": "2026-08-21T03:44:59.000Z",
-    "collectedAt": "2026-08-21T08:37:58.752Z"
-  },
   "hogs-haven-7c4cc026ab4e": {
     "id": "hogs-haven-7c4cc026ab4e",
     "sourceId": "hogs-haven",
@@ -15142,5 +15130,29 @@
     "excerpt": "The Washington Commanders’ 30-13 loss to the Indianapolis Colts in Week 4 was compounded by injuries, penalties and missed opportunities, leaving starting left tackle Brandon Coleman openly frustrated after the game .\n\n Washington committed 10 penalties for 84 yards, while Indianapolis was flagged only once for five yards.\n\n “I mean, we say the same thing every week, like, we gotta fix it,” said Coleman. “But it’s just bulls**t. There’s stuff that we know we gotta do and there’s stuff that we…",
     "publishedAt": "2026-10-05T00:03:50.000Z",
     "collectedAt": "2026-10-05T02:05:33.551Z"
+  },
+  "pft-3586952fd62f": {
+    "id": "pft-3586952fd62f",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ability-to-practice-will-determine-jayden-danielss-potential-return-next-week",
+    "title": "Ability to practice will determine Jayden Daniels's potential return next week",
+    "excerpt": "Commanders quarterback Marcus Mariota is believed to have an MCL sprain. That increases the urgency to get starter Jayden Daniels back from a dislocated elbow.\n The Commanders are hopeful, we're told, that Daniels will be able to play next weekend against the Giants.\n One key factor will be Daniels's ability to fully participate in practice. He got some team reps this week, when he was limited in practice on Wednesday, Thursday, and Friday.\n If neither Daniels nor Mariota can go, seventh-round…",
+    "publishedAt": "2026-10-05T03:07:47.000Z",
+    "collectedAt": "2026-10-05T04:05:13.639Z"
+  },
+  "yahoo-nfl-b43ea3a4de50": {
+    "id": "yahoo-nfl-b43ea3a4de50",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/giants-vs-commanders-odds-opening-030000265.html",
+    "title": "Giants vs. Commanders odds: Opening lines for Week 5 matchup",
+    "excerpt": "The New York Giants’ defense lines up against the Washington Commanders. | Getty Images The leading New York Giants enter their Week 5 match-up as 3.5-point underdogs on the road against the Washington Commanders, per Fanduel .\n The Giants come into the game with a 3-1 record and sole possession of first place in the NFC East, while the Commanders are carrying a 1-3 record as the last place team in the division. The Commanders are coming off of a 30-13 drubbing at the hands of the Indianapolis…",
+    "publishedAt": "2026-10-05T03:00:00.000Z",
+    "collectedAt": "2026-10-05T04:05:13.870Z"
   }
 }
