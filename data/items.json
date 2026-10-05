@@ -11,18 +11,6 @@
     "publishedAt": "2026-08-21T15:17:21.000Z",
     "collectedAt": "2026-08-21T16:58:36.529Z"
   },
-  "hogs-haven-b87572b0dcad": {
-    "id": "hogs-haven-b87572b0dcad",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/434066/athan-kaliakmanis-all-22-16-injuries-jocory-croskey-merrittrap-song",
-    "title": "Commanders News: Athan Kaliakmanis all-22, 16 injuries & Bill’s rap song",
-    "excerpt": "Aug 14, 2026; Landover, Maryland, USA; Washington Commanders quarterback Athan Kaliakmanis (16) prepares to throw the ball against the Miami Dolphins during the second half at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images | IMAGN IMAGES via Reuters Connect \n \n The Daily Slop – 21 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in…",
-    "publishedAt": "2026-08-21T12:30:00.000Z",
-    "collectedAt": "2026-08-21T16:58:36.529Z"
-  },
   "riggos-rag-b30e32a151bf": {
     "id": "riggos-rag-b30e32a151bf",
     "sourceId": "riggos-rag",
@@ -47,18 +35,6 @@
     "publishedAt": "2026-08-21T14:30:00.000Z",
     "collectedAt": "2026-08-21T16:58:37.100Z"
   },
-  "riggos-rag-96b3d6357ca3": {
-    "id": "riggos-rag-96b3d6357ca3",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/3-position-battles-commanders-fans-should-watch-closely-preseason-duel-lions",
-    "title": "3 position battles Commanders fans should watch closely in preseason duel vs. Lions",
-    "excerpt": "These three Washington Commanders storylines are worth monitoring in the team's tune-up game against the Detroit Lions.",
-    "publishedAt": "2026-08-21T13:00:03.000Z",
-    "collectedAt": "2026-08-21T16:58:37.100Z"
-  },
   "clutchpoints-7c42b54f7c8a": {
     "id": "clutchpoints-7c42b54f7c8a",
     "sourceId": "clutchpoints",
@@ -70,18 +46,6 @@
     "excerpt": "If you glance at the Washington Commanders roster, you might miss it. And, yes, a big injury has contributed to this situation . But the Commanders’ entire season rests on the skinny legs of quarterback Jayden Daniels.\n\n First, this isn’t a knock on Daniels’ slender frame. He’s listed as 6-foot-4 and 210 pounds. That doesn’t sound all that thin. But on an NFL field it sure looks like it. And who knows if the 210 is generous?\n\n The reference is more about whether he can avoid injury. Last season…",
     "publishedAt": "2026-08-21T14:48:30.000Z",
     "collectedAt": "2026-08-21T16:58:37.277Z"
-  },
-  "commanders-youtube-21bb06c7d7e6": {
-    "id": "commanders-youtube-21bb06c7d7e6",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=T9-LeAHgr00",
-    "title": "Terry McLaurin Talks Jayden Daniels, Stefon Diggs & Commanders vs. Lions | Next Man Up | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-08-21T13:00:22.000Z",
-    "collectedAt": "2026-08-21T16:58:37.759Z"
   },
   "yahoo-nfl-e398d22c81c0": {
     "id": "yahoo-nfl-e398d22c81c0",
@@ -15154,5 +15118,53 @@
     "excerpt": "The Washington Commanders’ season now hinges on star quarterback Jayden Daniels surviving an early return from his dislocated elbow.",
     "publishedAt": "2026-10-05T11:30:00.000Z",
     "collectedAt": "2026-10-05T12:05:37.656Z"
+  },
+  "hogs-haven-b2d28fdca138": {
+    "id": "hogs-haven-b2d28fdca138",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446376/odafe-oweh-bright-light-in-dark-season-athan-kaliakmanis-marcus-mariota",
+    "title": "Commanders News: Odafe Oweh – bright light in a (so far) dark season",
+    "excerpt": "The Daily Slop – 5 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n NFL.com \n\n Commanders QB Marcus Mariota suffers knee injury in loss to Colts\n\n Mariota suffered the knee injury on a third-down sack midway through the first quarter when Indy defensive end…",
+    "publishedAt": "2026-10-05T12:05:33.000Z",
+    "collectedAt": "2026-10-05T14:05:31.279Z"
+  },
+  "riggos-rag-ce9d3cd74e89": {
+    "id": "riggos-rag-ce9d3cd74e89",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-indiscipline-questionable-officiating-fuel-london-unraveling",
+    "title": "Commanders’ indiscipline and questionable officiating fuel London unraveling",
+    "excerpt": "Indiscipline and questionable officiating marred the Washington Commanders' international defeat to the Indianapolis Colts in Week 4.",
+    "publishedAt": "2026-10-05T13:00:01.000Z",
+    "collectedAt": "2026-10-05T14:05:32.199Z"
+  },
+  "dc-sports-king-30395e5934bd": {
+    "id": "dc-sports-king-30395e5934bd",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/jayden-daniels-now-faces-immense-pressure-to-return-just-weeks-after-injury",
+    "title": "Jayden Daniels Now Faces Immense Pressure to Return Just Weeks after Injury",
+    "excerpt": "The Washington Commanders’ 30-13 loss to the Indianapolis Colts in London on Sunday did more than drop the team to a 1-3 record. In the first quarter, starting quarterback Marcus Mariota reaggravated an MCL injury on a sack by Laiatu Latu and was ruled out, leaving the offense in the hands of third-string rookie Athan Kaliakmanis. \n\n When Commanders turned to Mariota, the vision was clear: provide a steady, experienced insurance policy while their third-year franchise quarterback need time to…",
+    "publishedAt": "2026-10-05T12:30:00.000Z",
+    "collectedAt": "2026-10-05T14:05:35.112Z"
+  },
+  "yahoo-nfl-6b0dcb544497": {
+    "id": "yahoo-nfl-6b0dcb544497",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-dl-odafe-oweh-bright-120533918.html",
+    "title": "Commanders DL Odafe Oweh has been a bright light in a (so far) dark season - Daily Slop",
+    "excerpt": "The Daily Slop – 5 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n NFL.com \n Commanders QB Marcus Mariota suffers knee injury in loss to Colts\n Mariota suffered the knee injury on a third-down sack midway through the first quarter when Indy defensive end Laiatu…",
+    "publishedAt": "2026-10-05T12:05:33.000Z",
+    "collectedAt": "2026-10-05T14:05:36.806Z"
   }
 }
