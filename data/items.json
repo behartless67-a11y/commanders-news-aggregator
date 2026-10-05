@@ -1,64 +1,4 @@
 {
-  "hogs-haven-7c4cc026ab4e": {
-    "id": "hogs-haven-7c4cc026ab4e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/434333/commanders-preseason-frankie-luvu-sonny-styles-jayden-daniels-sonny-styles-antonio-williams-detroit-lions",
-    "title": "Commanders preseason: Frankie Luvu among players to watch vs. Lions",
-    "excerpt": "The Commanders will play their second preseason game on Saturday in Detroit. If there was ever a time to get frontline players some game reps, this is it. \n\n Generally speaking, it didn’t happen in the preseason opener versus Miami. \n\n That third exhibition game’s a bit too close to the regular season to create injury risk. Plus, that game in Baltimore comes right after a joint practice. Starters will get work there and then look towards games that count. \n\n That leaves Saturday as the best…",
-    "publishedAt": "2026-08-21T15:17:21.000Z",
-    "collectedAt": "2026-08-21T16:58:36.529Z"
-  },
-  "riggos-rag-b30e32a151bf": {
-    "id": "riggos-rag-b30e32a151bf",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/johnny-newton-injury-seals-commanders-draft-mistake-they-cant-undo",
-    "title": "Johnny Newton injury seals a Commanders draft mistake they can't undo",
-    "excerpt": "Another devastating injury setback to defensive lineman Johnny Newton seals a major Washington Commanders draft mistake they can't undo.",
-    "publishedAt": "2026-08-21T16:00:00.000Z",
-    "collectedAt": "2026-08-21T16:58:37.100Z"
-  },
-  "riggos-rag-9b4e28feca7b": {
-    "id": "riggos-rag-9b4e28feca7b",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/striking-out-tyler-linderbaum-wasnt-commanders-real-center-mistake",
-    "title": "Striking out on Tyler Linderbaum wasn't the Commanders' real center mistake",
-    "excerpt": "The Washington Commanders' decision not to break the bank for Tyler Linderbaum wasn't the team's real mistake at center this offseason.",
-    "publishedAt": "2026-08-21T14:30:00.000Z",
-    "collectedAt": "2026-08-21T16:58:37.100Z"
-  },
-  "clutchpoints-7c42b54f7c8a": {
-    "id": "clutchpoints-7c42b54f7c8a",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-entire-season-rests-jayden-daniels-skinny-legs",
-    "title": "Commanders’ entire season rests on Jayden Daniels’ skinny legs",
-    "excerpt": "If you glance at the Washington Commanders roster, you might miss it. And, yes, a big injury has contributed to this situation . But the Commanders’ entire season rests on the skinny legs of quarterback Jayden Daniels.\n\n First, this isn’t a knock on Daniels’ slender frame. He’s listed as 6-foot-4 and 210 pounds. That doesn’t sound all that thin. But on an NFL field it sure looks like it. And who knows if the 210 is generous?\n\n The reference is more about whether he can avoid injury. Last season…",
-    "publishedAt": "2026-08-21T14:48:30.000Z",
-    "collectedAt": "2026-08-21T16:58:37.277Z"
-  },
-  "yahoo-nfl-e398d22c81c0": {
-    "id": "yahoo-nfl-e398d22c81c0",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-preseason-frankie-luvu-among-151721366.html",
-    "title": "Commanders preseason: Frankie Luvu among 10 players to watch vs. Lions",
-    "excerpt": "The Commanders will play their second preseason game on Saturday in Detroit. If there was ever a time to get frontline players some game reps, this is it. \n Generally speaking, it didn’t happen in the preseason opener…",
-    "publishedAt": "2026-08-21T15:17:21.000Z",
-    "collectedAt": "2026-08-21T16:58:41.342Z"
-  },
   "riggos-rag-7a0a9c77b15a": {
     "id": "riggos-rag-7a0a9c77b15a",
     "sourceId": "riggos-rag",
@@ -15166,5 +15106,53 @@
     "excerpt": "The Daily Slop – 5 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n NFL.com \n Commanders QB Marcus Mariota suffers knee injury in loss to Colts\n Mariota suffered the knee injury on a third-down sack midway through the first quarter when Indy defensive end Laiatu…",
     "publishedAt": "2026-10-05T12:05:33.000Z",
     "collectedAt": "2026-10-05T14:05:36.806Z"
+  },
+  "riggos-rag-da905476b990": {
+    "id": "riggos-rag-da905476b990",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jaylin-lane-injury-opens-one-final-commanders-door-luke-mccaffrey",
+    "title": "Jaylin Lane injury opens one final Commanders door for Luke McCaffrey",
+    "excerpt": "A serious ankle injury for Jaylin Lane could give Washington Commanders wide receiver Luke McCaffrey one final chance to prove his worth.",
+    "publishedAt": "2026-10-05T16:00:01.000Z",
+    "collectedAt": "2026-10-05T16:05:36.741Z"
+  },
+  "riggos-rag-0d10571ed683": {
+    "id": "riggos-rag-0d10571ed683",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/marcus-mariota-injury-may-force-commanders-call-familiar-quarterback",
+    "title": "Marcus Mariota injury may force Commanders to call on a familiar quarterback",
+    "excerpt": "Another MCL injury to Marcus Mariota may force the Washington Commanders to call on a familiar quarterback to fill the void.",
+    "publishedAt": "2026-10-05T14:30:00.000Z",
+    "collectedAt": "2026-10-05T16:05:36.741Z"
+  },
+  "commanders-youtube-2e6757e05fff": {
+    "id": "commanders-youtube-2e6757e05fff",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=QydF4_YJASI",
+    "title": "🇬🇧 LONDON SHOWDOWN: Commanders Fall to Colts 30-13 | Booth Review | Washington Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-10-05T14:00:00.000Z",
+    "collectedAt": "2026-10-05T16:05:38.418Z"
+  },
+  "pft-e8c43c0c9ccb": {
+    "id": "pft-e8c43c0c9ccb",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-commanders-wr-jaylin-lane-fractured-dislocated-ankle-on-sunday",
+    "title": "Report: Commanders WR Jaylin Lane fractured, dislocated ankle on Sunday",
+    "excerpt": "The ankle injury that knocked Commanders wide receiver Jaylin Lane out of Sunday's loss to the Colts in Europe is reportedly just as severe as it appeared to be on the field. \n Lane was carted off the field and ruled out almost immediately after being injured while returning a punt in the third quarter. Lane remained in London on Sunday night for further evaluation and Ian Rapoport of NFL Media reports that he sustained both a fracture and a dislocation. \n Those injuries have been stabilized…",
+    "publishedAt": "2026-10-05T15:31:19.000Z",
+    "collectedAt": "2026-10-05T16:05:41.507Z"
   }
 }
