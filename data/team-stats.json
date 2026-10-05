@@ -1,25 +1,25 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-10-05T04:09:10.165Z",
+  "fetchedAt": "2026-10-05T06:06:31.472Z",
   "offense": {
     "yardsPerGame": {
-      "value": "314.0",
+      "value": "314.8",
       "rank": 19,
       "rankLabel": "19th"
     },
     "pointsPerGame": {
-      "value": "25.0",
+      "value": "22.0",
       "rank": 13,
       "rankLabel": "Tied-13th"
     },
     "passYardsPerGame": {
-      "value": "182.0",
-      "rank": 28,
-      "rankLabel": "28th"
+      "value": "190.8",
+      "rank": 23,
+      "rankLabel": "23rd"
     },
     "rushYardsPerGame": {
-      "value": "132.0",
+      "value": "124.0",
       "rank": 8,
       "rankLabel": "8th"
     }
@@ -52,33 +52,33 @@
       {
         "key": "Pass",
         "name": "Marcus Mariota",
-        "value": "294"
+        "value": "340"
       },
       {
         "key": "Rush",
         "name": "Jacory Croskey-Merritt",
-        "value": "142"
+        "value": "157"
       },
       {
         "key": "Recv",
-        "name": "Terry McLaurin",
-        "value": "141"
+        "name": "Stefon Diggs",
+        "value": "170"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
         "name": "Jeremy Reaves",
-        "value": "20"
+        "value": "29"
       },
       {
         "key": "Sack",
-        "name": "Frankie Luvu",
-        "value": "1"
+        "name": "Odafe Oweh",
+        "value": "2"
       },
       {
         "key": "Int",
-        "name": "Kain Medrano",
+        "name": "Rasul Douglas",
         "value": "1"
       }
     ]
