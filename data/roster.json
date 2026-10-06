@@ -20,11 +20,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "9"
+          "value": "12"
         },
         {
           "label": "YDS",
-          "value": "40"
+          "value": "41"
         },
         {
           "label": "TD",
@@ -70,11 +70,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "4"
+          "value": "7"
         },
         {
           "label": "YDS",
-          "value": "21"
+          "value": "86"
         },
         {
           "label": "TD",
@@ -95,15 +95,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "2"
+          "value": "3"
         },
         {
           "label": "YDS",
-          "value": "13"
+          "value": "60"
         },
         {
           "label": "TD",
-          "value": "1"
+          "value": "2"
         }
       ]
     }
@@ -147,11 +147,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "47"
+          "value": "56"
         },
         {
           "label": "YDS",
-          "value": "142"
+          "value": "157"
         },
         {
           "label": "TD",
@@ -201,11 +201,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "13"
+          "value": "18"
         },
         {
           "label": "YDS",
-          "value": "135"
+          "value": "170"
         },
         {
           "label": "TD",
@@ -221,7 +221,23 @@
     "position": "RB",
     "espnId": "3068267",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3068267.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "4"
+        },
+        {
+          "label": "YDS",
+          "value": "29"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "julian-good-jones",
@@ -248,7 +264,27 @@
     "position": "QB",
     "espnId": "4432722",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4432722.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "CMP/ATT",
+          "value": "15/33"
+        },
+        {
+          "label": "YDS",
+          "value": "186"
+        },
+        {
+          "label": "TD",
+          "value": "1"
+        },
+        {
+          "label": "INT",
+          "value": "1"
+        }
+      ]
+    }
   },
   {
     "slug": "jaylin-lane",
@@ -287,11 +323,11 @@
       "fields": [
         {
           "label": "CMP/ATT",
-          "value": "30/47"
+          "value": "33/51"
         },
         {
           "label": "YDS",
-          "value": "294"
+          "value": "340"
         },
         {
           "label": "TD",
@@ -366,11 +402,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "2"
+          "value": "4"
         },
         {
           "label": "YDS",
-          "value": "16"
+          "value": "21"
         },
         {
           "label": "TD",
@@ -405,11 +441,11 @@
     "espnId": "4421446",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4421446.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "CAR",
-          "value": "3"
+          "value": "2"
         },
         {
           "label": "YDS",
@@ -493,11 +529,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "9"
+          "value": "12"
         },
         {
           "label": "YDS",
-          "value": "103"
+          "value": "124"
         },
         {
           "label": "TD",
@@ -602,7 +638,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "9"
         },
         {
           "label": "SACK",
@@ -627,11 +663,11 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "10"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "1.5"
         },
         {
           "label": "INT",
@@ -677,7 +713,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "7"
+          "value": "13"
         },
         {
           "label": "SACK",
@@ -685,7 +721,7 @@
         },
         {
           "label": "INT",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -727,7 +763,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "7"
         },
         {
           "label": "SACK",
@@ -777,7 +813,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "9"
         },
         {
           "label": "SACK",
@@ -802,7 +838,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "9"
         },
         {
           "label": "SACK",
@@ -827,7 +863,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "10"
+          "value": "15"
         },
         {
           "label": "SACK",
@@ -852,7 +888,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "8"
         },
         {
           "label": "SACK",
@@ -877,7 +913,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "SACK",
@@ -927,11 +963,11 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "10"
+          "value": "11"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "INT",
@@ -952,7 +988,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "7"
         },
         {
           "label": "SACK",
@@ -977,7 +1013,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "8"
         },
         {
           "label": "SACK",
@@ -1002,7 +1038,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "20"
+          "value": "29"
         },
         {
           "label": "SACK",
@@ -1027,7 +1063,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "17"
+          "value": "26"
         },
         {
           "label": "SACK",
@@ -1077,11 +1113,11 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "8"
         },
         {
           "label": "SACK",
-          "value": "0"
+          "value": "0.5"
         },
         {
           "label": "INT",
@@ -1102,7 +1138,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "12"
+          "value": "20"
         },
         {
           "label": "SACK",
@@ -1186,11 +1222,11 @@
       "fields": [
         {
           "label": "FG",
-          "value": "5-7"
+          "value": "7-9"
         },
         {
           "label": "XP",
-          "value": "6/8"
+          "value": "7/9"
         }
       ]
     }
@@ -1207,15 +1243,15 @@
       "fields": [
         {
           "label": "PUNTS",
-          "value": "14"
+          "value": "19"
         },
         {
           "label": "AVG",
-          "value": "50.6"
+          "value": "47.2"
         },
         {
           "label": "IN20",
-          "value": "3"
+          "value": "6"
         }
       ]
     }
@@ -1549,7 +1585,23 @@
     "position": "LB",
     "espnId": "4240849",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4240849.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "28"
+        },
+        {
+          "label": "SACK",
+          "value": "3"
+        },
+        {
+          "label": "INT",
+          "value": "1"
+        }
+      ]
+    }
   },
   {
     "slug": "jack-westover",
