@@ -1,40 +1,4 @@
 {
-  "riggos-rag-2a775a2ce74b": {
-    "id": "riggos-rag-2a775a2ce74b",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-may-be-watching-their-offseason-plan-grow-teeth-camp",
-    "title": "Commanders may be watching their offseason plan grow teeth at camp",
-    "excerpt": "The Washington Commanders may be watching their offseason plan at the tight end position grow some teeth at training camp.",
-    "publishedAt": "2026-08-22T12:00:01.000Z",
-    "collectedAt": "2026-08-22T12:33:51.969Z"
-  },
-  "yahoo-nfl-5c72fb90e649": {
-    "id": "yahoo-nfl-5c72fb90e649",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/detroit-lions-updated-depth-chart-120000373.html",
-    "title": "Detroit Lions updated depth chart: Preseason Game 2 vs. Commanders",
-    "excerpt": "Detroit Lions wide receiver Amon-Ra St. Brown (14), center right, practices during training camp at Meijer Performance Center in Allen Park on Monday, August 10, 2026. | USA TODAY Network via Reuters Co Ahead of every Detroit Lions game in 2026, we will provide readers with an updated depth chart of the team’s roster based on what we are seeing at practices, with this installment representing where we believe the Lions roster sits heading into preseason Game 2 against the Washington…",
-    "publishedAt": "2026-08-22T12:00:00.000Z",
-    "collectedAt": "2026-08-22T12:33:55.737Z"
-  },
-  "yahoo-nfl-ad81d5aaa0fb": {
-    "id": "yahoo-nfl-ad81d5aaa0fb",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/watch-lions-vs-commanders-preseason-111020171.html",
-    "title": "How to watch Lions vs. Commanders preseason: TV, time, online streaming",
-    "excerpt": "Sep 18, 2022; Detroit, Michigan, USA; Detroit Lions defensive end Aidan Hutchinson (97) celebrates a sack against Washington Commanders quarterback Carson Wentz (11) during the first half at Ford Field. Mandatory Credit: Junfu Han-USA TODAY Sports The Detroit Lions hit the midway point in the preseason on Saturday morning with their second of three preseason games. The Washington Commanders are in town for the first time since REDACTED. \n The stakes will be much lower than that previous…",
-    "publishedAt": "2026-08-22T11:10:20.000Z",
-    "collectedAt": "2026-08-22T12:33:55.737Z"
-  },
   "hogs-haven-202abd95f9b7": {
     "id": "hogs-haven-202abd95f9b7",
     "sourceId": "hogs-haven",
@@ -15286,5 +15250,17 @@
     "excerpt": "Which Washington Commanders players are dangerously approaching unplayable status after the first four games of the 2026 season.",
     "publishedAt": "2026-10-06T10:00:00.000Z",
     "collectedAt": "2026-10-06T11:00:39.404Z"
+  },
+  "riggos-rag-45c56eed4ca9": {
+    "id": "riggos-rag-45c56eed4ca9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/robert-henry-jr-gets-seahawks-chance-that-could-embarrass-commanders",
+    "title": "Robert Henry Jr. gets Seahawks chance that could embarrass Commanders",
+    "excerpt": "The Seahawks have signed Robert Henry Jr. off the Washington Commanders practice squad, which is his chance to prove Adam Peters wrong.",
+    "publishedAt": "2026-10-06T11:30:06.000Z",
+    "collectedAt": "2026-10-06T12:05:32.409Z"
   }
 }
