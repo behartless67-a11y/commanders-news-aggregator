@@ -1,18 +1,4 @@
 {
-  "social-6cb949335ac4": {
-    "id": "social-6cb949335ac4",
-    "url": "https://x.com/Commanders/status/2103976659330478557",
-    "text": "Defend what’s ours. Sold out. Be loud. Raise Hail.",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/339/728/837/520/987/original/d3ebba1e483f0cd0.jpg"
-    ],
-    "publishedAt": "2026-09-26T22:35:00.000Z",
-    "collectedAt": "2026-09-27T00:05:35.711Z"
-  },
   "social-5f2bac0cf4e8": {
     "id": "social-5f2bac0cf4e8",
     "url": "https://x.com/Commanders/status/2104005600455872977",
@@ -12839,5 +12825,29 @@
     ],
     "publishedAt": "2026-10-06T20:39:21.000Z",
     "collectedAt": "2026-10-06T22:05:48.728Z"
+  },
+  "social-239e4450b360": {
+    "id": "social-239e4450b360",
+    "url": "https://x.com/Commanders/status/2107599282769391838",
+    "text": "what we mean by Baklava Bomber",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-06T22:30:00.000Z",
+    "collectedAt": "2026-10-06T23:33:42.389Z"
+  },
+  "social-ea475ac85a9b": {
+    "id": "social-ea475ac85a9b",
+    "url": "https://x.com/john_keim/status/2107611392618766677",
+    "text": "Will be joined by @BenStandig .",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-06T23:18:08.000Z",
+    "collectedAt": "2026-10-06T23:33:45.354Z"
   }
 }
