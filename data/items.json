@@ -11,18 +11,6 @@
     "publishedAt": "2026-08-22T14:06:48.000Z",
     "collectedAt": "2026-08-22T16:20:51.844Z"
   },
-  "hogs-haven-55d3da5ee795": {
-    "id": "hogs-haven-55d3da5ee795",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-preseason/434384/nfl-preseason-week-2-washington-commanders-vs-detroit-lions",
-    "title": "NFL Preseason Week 2: Washington Commanders vs Detroit Lions",
-    "excerpt": "DETROIT, MICHIGAN - JANUARY 18: Jayden Daniels #5 of the Washington Commanders runs the ball for a first down against Terrion Arnold #0 of the Detroit Lions during the fourth quarter in the NFC Divisional Playoff at Ford Field on January 18, 2025 in Detroit, Michigan. (Photo by Nic Antaya/Getty Images) | Getty Images The Washington Commanders hosted the Miami Dolphins at Northwest Stadium last Friday and got their first win of the (pre)season. Jayden Daniels didn’t play last week, but will play…",
-    "publishedAt": "2026-08-22T14:00:00.000Z",
-    "collectedAt": "2026-08-22T16:20:51.844Z"
-  },
   "pft-63584872afea": {
     "id": "pft-63584872afea",
     "sourceId": "pft",
@@ -34,18 +22,6 @@
     "excerpt": "Commanders quarterback Jayden Daniels is set for his first action of the preseason. \n The team released a list of 15 inactive players for Saturday's game against the Lions and Daniels is not on it. Commanders head coach Dan Quinn said earlier this week that a good amount of the team's starters would see action in the team's second game of the preseason, but that he was unsure if Daniels would be among them. \n Wide receiver Stefon Diggs is also set to see his first game action since signing with…",
     "publishedAt": "2026-08-22T14:13:39.000Z",
     "collectedAt": "2026-08-22T16:20:55.267Z"
-  },
-  "yahoo-nfl-3202b6d1ad45": {
-    "id": "yahoo-nfl-3202b6d1ad45",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-jayden-daniels-jj-mccarthy-shedeur-sanders-among-those-expected-to-play-saturday-134104395.html",
-    "title": "NFL preseason Week 2: Jayden Daniels, J.J. McCarthy, Shedeur Sanders among those expected to play Saturday",
-    "excerpt": "Week 2 of NFL preseason continues on Saturday with a 10-game slate. As we inch closer to the opening of the regular season, teams are using their second game of the summer in different ways. Many will continue to give their starting units some game time, while others are sitting them in hopes of avoiding injuries.\n This could also potentially be the final action any starters playing today will see until Week 1. Many NFL teams like to use the final preseason tilt as a deciding factor in specific…",
-    "publishedAt": "2026-08-22T13:41:04.000Z",
-    "collectedAt": "2026-08-22T16:20:55.517Z"
   },
   "riggos-rag-2ea3186af129": {
     "id": "riggos-rag-2ea3186af129",
@@ -15262,5 +15238,29 @@
     "excerpt": "The Seahawks have signed Robert Henry Jr. off the Washington Commanders practice squad, which is his chance to prove Adam Peters wrong.",
     "publishedAt": "2026-10-06T11:30:06.000Z",
     "collectedAt": "2026-10-06T12:05:32.409Z"
+  },
+  "hogs-haven-fcb8dcd422f8": {
+    "id": "hogs-haven-fcb8dcd422f8",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446599/commanders-news-austin-ekeler-croskey-merritt-jayden-daniels-athan-kaliakmanis",
+    "title": "Commanders news: Did Austin Ekeler highlight Croskey-Merritt’s under performance?",
+    "excerpt": "The Daily Slop – 6 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n ESPN \n\n MCL sprain sidelines Mariota; Daniels preps for full practice \n\n Washington Commanders quarterback Marcus Mariota suffered a sprained MCL of his right knee, but the timetable for his…",
+    "publishedAt": "2026-10-06T13:00:00.000Z",
+    "collectedAt": "2026-10-06T14:05:33.437Z"
+  },
+  "riggos-rag-bca5d93f09cb": {
+    "id": "riggos-rag-bca5d93f09cb",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-defends-terry-mclaurin-call-commanders-backlash-misses-point",
+    "title": "Dan Quinn defends Terry McLaurin call as Commanders backlash misses the point",
+    "excerpt": "Washington Commanders head coach Dan Quinn defended his decision to rule out wide receiver Terry McLaurin amid fan backlash.",
+    "publishedAt": "2026-10-06T13:00:05.000Z",
+    "collectedAt": "2026-10-06T14:05:34.298Z"
   }
 }

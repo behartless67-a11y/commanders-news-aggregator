@@ -12757,5 +12757,48 @@
     "images": [],
     "publishedAt": "2026-10-06T12:37:41.000Z",
     "collectedAt": "2026-10-06T13:04:37.687Z"
+  },
+  "social-5bd95f38720d": {
+    "id": "social-5bd95f38720d",
+    "url": "https://x.com/BenStandig/status/2107463517871767962",
+    "text": "Week 4 snaps: Mike Sainristil's workload slide continues, Antonio Williams WR1 (in terms of snaps), Austin Ekeler's usage",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/394/215/421/384/211/original/e64feac5f306f62c.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/394/215/468/789/570/original/3def50603828ffda.jpg"
+    ],
+    "publishedAt": "2026-10-06T13:30:32.000Z",
+    "collectedAt": "2026-10-06T14:05:45.605Z"
+  },
+  "social-2243b98ea163": {
+    "id": "social-2243b98ea163",
+    "url": "https://x.com/BenStandig/status/2107460644152783240",
+    "text": "Commanders notebook: Jayden Daniels’ return target, mounting injuries, snaps, travelogue and post-London frustration commanders-notebook-jayden-daniels-dcf",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/394/162/736/693/496/original/33b21c53de2a5b39.jpg"
+    ],
+    "publishedAt": "2026-10-06T13:19:06.000Z",
+    "collectedAt": "2026-10-06T14:05:45.605Z"
+  },
+  "social-695c50003cf8": {
+    "id": "social-695c50003cf8",
+    "url": "https://x.com/tashanreed/status/2107455815384711425",
+    "text": "ICYMI: HC Dan Quinn said QB Jayden Daniels is in line to come back against the Giants. The rest of the #Commanders ' roster? We'll see: /10/05/daniels-nears-return-mariota-is-sidelined-with-another-mcl-sprain/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/394/105/706/581/617/original/f12538740f61706d.jpg"
+    ],
+    "publishedAt": "2026-10-06T12:59:55.000Z",
+    "collectedAt": "2026-10-06T14:05:49.694Z"
   }
 }
