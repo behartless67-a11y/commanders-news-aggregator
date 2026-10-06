@@ -1,18 +1,4 @@
 {
-  "social-2ed0d4fc3e02": {
-    "id": "social-2ed0d4fc3e02",
-    "url": "https://x.com/Commanders/status/2103892359305908719",
-    "text": "24 hours until we're back at home ‼️ @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/338/414/390/790/852/original/15c00d2ac75e85c7.jpg"
-    ],
-    "publishedAt": "2026-09-26T17:00:01.000Z",
-    "collectedAt": "2026-09-26T18:05:38.704Z"
-  },
   "social-728378b275f5": {
     "id": "social-728378b275f5",
     "url": "https://x.com/pfrumors/status/2103906896730267747",
@@ -24,18 +10,6 @@
     "images": [],
     "publishedAt": "2026-09-26T17:57:47.000Z",
     "collectedAt": "2026-09-26T18:05:52.711Z"
-  },
-  "social-6d0b8aaa04c3": {
-    "id": "social-6d0b8aaa04c3",
-    "url": "https://x.com/JasonLaCanfora/status/2103891303230521447",
-    "text": "Will the #Commanders be the first job that opens up in NFL? Is there a potential interim on the staff? What's the buzz in NFL front offices :",
-    "handle": "JasonLaCanfora",
-    "author": "Jason La Canfora",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-26T16:55:49.000Z",
-    "collectedAt": "2026-09-26T18:05:54.995Z"
   },
   "social-835fbe1e2e30": {
     "id": "social-835fbe1e2e30",
@@ -12823,5 +12797,31 @@
     "images": [],
     "publishedAt": "2026-10-06T14:52:31.000Z",
     "collectedAt": "2026-10-06T16:05:51.334Z"
+  },
+  "social-7ca5026e4bfa": {
+    "id": "social-7ca5026e4bfa",
+    "url": "https://x.com/JPFinlayNBCS/status/2107519870976115038",
+    "text": "I want an Ovi statue and I want it now",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-06T17:14:27.000Z",
+    "collectedAt": "2026-10-06T17:56:31.322Z"
+  },
+  "social-071b62b7d18f": {
+    "id": "social-071b62b7d18f",
+    "url": "https://x.com/JPFinlayNBCS/status/2107507885181947942",
+    "text": "8 different NFL tight ends have over 200+ receiving yards through 4 games. The Commanders tight ends combined have 10 catches for 65 yards in 4 games.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/394/906/529/446/000/original/95b128f929b05277.jpg"
+    ],
+    "publishedAt": "2026-10-06T16:26:50.000Z",
+    "collectedAt": "2026-10-06T17:56:31.322Z"
   }
 }
