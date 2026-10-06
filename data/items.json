@@ -1,16 +1,4 @@
 {
-  "hogs-haven-0458400d4d42": {
-    "id": "hogs-haven-0458400d4d42",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/434375/jayden-daniels-will-he-play-vs-lions-sonny-styles-stefon-diggs-nick-allegretti",
-    "title": "Commanders News: Jayden Daniels, will he or won’t he?",
-    "excerpt": "Jan 18, 2025; Detroit, Michigan, USA; Washington Commanders quarterback Jayden Daniels (5) looks to pass defended by Detroit Lions defensive back Brian Branch (32) during the second half at Ford Field. Mandatory Credit: David Reginek-Imagn Images | USA TODAY Sports via Reuters Con \n \n The Daily Slop – 22 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and…",
-    "publishedAt": "2026-08-22T11:00:00.000Z",
-    "collectedAt": "2026-08-22T12:33:51.780Z"
-  },
   "riggos-rag-2a775a2ce74b": {
     "id": "riggos-rag-2a775a2ce74b",
     "sourceId": "riggos-rag",
@@ -45,18 +33,6 @@
     "title": "How to watch Lions vs. Commanders preseason: TV, time, online streaming",
     "excerpt": "Sep 18, 2022; Detroit, Michigan, USA; Detroit Lions defensive end Aidan Hutchinson (97) celebrates a sack against Washington Commanders quarterback Carson Wentz (11) during the first half at Ford Field. Mandatory Credit: Junfu Han-USA TODAY Sports The Detroit Lions hit the midway point in the preseason on Saturday morning with their second of three preseason games. The Washington Commanders are in town for the first time since REDACTED. \n The stakes will be much lower than that previous…",
     "publishedAt": "2026-08-22T11:10:20.000Z",
-    "collectedAt": "2026-08-22T12:33:55.737Z"
-  },
-  "yahoo-nfl-b874c6024e22": {
-    "id": "yahoo-nfl-b874c6024e22",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/jayden-daniels-won-t-daily-110000642.html",
-    "title": "Jayden Daniels, will he or won’t he? - Daily Slop",
-    "excerpt": "Jan 18, 2025; Detroit, Michigan, USA; Washington Commanders quarterback Jayden Daniels (5) looks to pass defended by Detroit Lions defensive back Brian Branch (32) during the second half at Ford Field. Mandatory Credit: David Reginek-Imagn Images | USA TODAY Sports via Reuters Con The Daily Slop – 22 August 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports…",
-    "publishedAt": "2026-08-22T11:00:00.000Z",
     "collectedAt": "2026-08-22T12:33:55.737Z"
   },
   "hogs-haven-202abd95f9b7": {
@@ -15298,5 +15274,17 @@
     "excerpt": "At least the Giants will not be blindsided, as far as who they are facing at quarterback this weekend. \n They are expecting Jayden Daniels. \n “We’re gonna have to prepare for Jayden. Until they say he’s not playing, we’re assuming he’s playing and we’re preparing for all the things he does as if he was 100 percent healthy,’’ head coach John Harbaugh said Monday. “They’re not gonna put him out there if he’s not ready to play. That’s the way we’ll approach it.’’ \n Washington Commanders…",
     "publishedAt": "2026-10-06T02:22:07.000Z",
     "collectedAt": "2026-10-06T08:05:35.791Z"
+  },
+  "riggos-rag-a5cb7728b16b": {
+    "id": "riggos-rag-a5cb7728b16b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-commanders-dangerously-approaching-unplayable-status-after-four-games",
+    "title": "5 Commanders dangerously approaching unplayable status after four games",
+    "excerpt": "Which Washington Commanders players are dangerously approaching unplayable status after the first four games of the 2026 season.",
+    "publishedAt": "2026-10-06T10:00:00.000Z",
+    "collectedAt": "2026-10-06T11:00:39.404Z"
   }
 }
