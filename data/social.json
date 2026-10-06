@@ -1,55 +1,4 @@
 {
-  "social-61b9160461df": {
-    "id": "social-61b9160461df",
-    "url": "https://x.com/Commanders/status/2103609238681534834",
-    "text": "feel like some of these are still up for debate 🤣 @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-25T22:15:00.000Z",
-    "collectedAt": "2026-09-25T23:04:51.412Z"
-  },
-  "social-aa3d7872c377": {
-    "id": "social-aa3d7872c377",
-    "url": "https://x.com/Commanders/status/2103634403960484344",
-    "text": "Remembering Monte Coleman and Sonny Jurgensen 💛",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/334/380/946/557/174/original/6e1553de6a6ebfa0.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/334/380/981/917/901/original/c4b0122420c04e92.jpg"
-    ],
-    "publishedAt": "2026-09-25T23:55:00.000Z",
-    "collectedAt": "2026-09-26T00:05:38.116Z"
-  },
-  "social-dde21f6804bf": {
-    "id": "social-dde21f6804bf",
-    "url": "https://x.com/john_keim/status/2103631293028434427",
-    "text": "Five thoughts. On Jayden Daniels, slooooow starts, Odafe Oweh on needing to rush as a unit, Jaylin Lane on what happened in Dallas on KO’s and a look at Seattle. What im anticipating on the OL @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000791688070",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-25T23:42:38.000Z",
-    "collectedAt": "2026-09-26T00:05:40.932Z"
-  },
-  "social-489089072a4a": {
-    "id": "social-489089072a4a",
-    "url": "https://x.com/RapSheet/status/2103627037114261681",
-    "text": "From The Insiders on @nflnetwork : The #Commanders got good news on Jayden Daniels, though Marcus Mariota starts this week.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-09-25T23:25:43.000Z",
-    "collectedAt": "2026-09-26T00:05:48.094Z"
-  },
   "social-68f20f2ae7d8": {
     "id": "social-68f20f2ae7d8",
     "url": "https://x.com/JPFinlayNBCS/status/2103650129668419756",
@@ -12689,5 +12638,29 @@
     "images": [],
     "publishedAt": "2026-10-05T22:03:01.000Z",
     "collectedAt": "2026-10-05T22:05:49.863Z"
+  },
+  "social-7817668590a5": {
+    "id": "social-7817668590a5",
+    "url": "https://x.com/NickiJhabvala/status/2107233748676661568",
+    "text": "Expected to practice this week: QB Jayden Daniels (elbow) S Nick Cross (internal injury) RG Sam Cosmi (concussion) RB Rachaad White (shoulder) Timetable unclear: QB Marcus Mariota (MCL) WR Terry McLaurin (hamstring) DE Charles Omenihu (groin) Eligible, but unsure of IR return:",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-05T22:17:30.000Z",
+    "collectedAt": "2026-10-06T00:05:11.011Z"
+  },
+  "social-8c67c83789a4": {
+    "id": "social-8c67c83789a4",
+    "url": "https://x.com/NickiJhabvala/status/2107231019191718353",
+    "text": "Dan Quinn said S Nick Cross will likely return to practice this week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-05T22:06:40.000Z",
+    "collectedAt": "2026-10-06T00:05:11.011Z"
   }
 }
