@@ -37,18 +37,6 @@
     "publishedAt": "2026-09-26T20:00:49.000Z",
     "collectedAt": "2026-09-26T20:05:47.254Z"
   },
-  "social-156c32bef535": {
-    "id": "social-156c32bef535",
-    "url": "https://x.com/john_keim/status/2103925787690975652",
-    "text": "Quick video on Jayden Daniels addressing his teammates about his elbow. And the reaction was… kind of telling 771",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-26T19:12:51.000Z",
-    "collectedAt": "2026-09-26T20:05:47.254Z"
-  },
   "social-f95049630147": {
     "id": "social-f95049630147",
     "url": "https://x.com/BenStandig/status/2103937765159080334",
@@ -12811,5 +12799,53 @@
     ],
     "publishedAt": "2026-10-06T16:26:50.000Z",
     "collectedAt": "2026-10-06T17:56:31.322Z"
+  },
+  "social-abb65eb9509d": {
+    "id": "social-abb65eb9509d",
+    "url": "https://x.com/john_keim/status/2107544348917187044",
+    "text": "Washington's defense is tied for last in second-half scoring, allowing 17.8 ppg after halftime. The Commanders rank 22nd in the first half at 12.8",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-06T18:51:43.000Z",
+    "collectedAt": "2026-10-06T19:21:48.631Z"
+  },
+  "social-aa16fb3b116b": {
+    "id": "social-aa16fb3b116b",
+    "url": "https://x.com/john_keim/status/2107543851288416623",
+    "text": "Washington ranks 26th in the NFL in QB snaps from under center with 27 (7 more than last season).Thought there would be more; not sure how injuries/score has impacted that number",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-06T18:49:45.000Z",
+    "collectedAt": "2026-10-06T19:21:48.631Z"
+  },
+  "social-93e863255c7b": {
+    "id": "social-93e863255c7b",
+    "url": "https://x.com/john_keim/status/2107539819337273636",
+    "text": "This is supposed to be a TE Friendly offense. Didn't help that Okonkwo missed two games. But the group also will need more PA to help. So far, Washington ranks 19th in PA pass attempts. Okonkwo's strength is playing off that action (or misdirection). Ertz, for example, got open with terrific footwork. No one here runs routes like him; the O has to help more. (i thought Chig was going to have a bigger game with MM at QB b/c Indy more susceptible to PA.)",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-06T18:33:43.000Z",
+    "collectedAt": "2026-10-06T19:21:48.631Z"
+  },
+  "social-e95ac9e8dac0": {
+    "id": "social-e95ac9e8dac0",
+    "url": "https://x.com/BenStandig/status/2107535565155357076",
+    "text": "The Commanders' TE production through four weeks (via @TruMediaSports@twitter.com ): Receptions — 10 (Tied for 31st/last) Targets — 17 (tied for 31st) Yards — 65 (32nd*) Rec. TDs — Zero (one of four teams without a TD) Air yards per target — 2.30 (28th) YAC — 42 (31st)",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-06T18:16:49.000Z",
+    "collectedAt": "2026-10-06T19:21:50.144Z"
   }
 }
