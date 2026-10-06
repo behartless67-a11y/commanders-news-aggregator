@@ -1,28 +1,4 @@
 {
-  "hogs-haven-76a243d49e02": {
-    "id": "hogs-haven-76a243d49e02",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-preseason/434574/why-commanders-qb-jayden-daniels-found-value-in-preseason-cameo-vs-lions",
-    "title": "Why Commanders QB Jayden Daniels found value in preseason cameo vs. Lions",
-    "excerpt": "Jayden Daniels got some preseason action in Saturday’s game at Detroit. \n\n Keyword: Some. \n\n The Commanders went three-and-out on their opening offensive series, with an incomplete check down pass, a sack on playaction and a handoff on third-and-a-country-mile. \n\n The drive was lightning quick, but it didn’t prompt head coach Dan Quinn to trot his quarterback out there for another series. \n\n Going into it, I knew that, if it was going to be 10 plays or three plays, that’s how we were going to…",
-    "publishedAt": "2026-08-22T21:13:40.000Z",
-    "collectedAt": "2026-08-23T01:11:33.708Z"
-  },
-  "wjla-commanders-1c505ff91e2b": {
-    "id": "wjla-commanders-1c505ff91e2b",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-offense-sputters-defense-creates-turnovers-in-17-13-loss-to-lions",
-    "title": "Commanders offense sputters, defense creates turnovers in 17-13 loss to Lions",
-    "excerpt": "DETROIT (AP) — Joshua Dobbs ran for a 50-yard touchdown and the Detroit Lions held on for a 17-13 preseason win against the Washington Commanders on Saturday.Do",
-    "publishedAt": "2026-08-22T21:30:16.000Z",
-    "collectedAt": "2026-08-23T01:11:37.742Z"
-  },
   "riggos-rag-3e9de394f998": {
     "id": "riggos-rag-3e9de394f998",
     "sourceId": "riggos-rag",
@@ -262,18 +238,6 @@
     "excerpt": "Which Washington Commanders players may have booked roster spots or landed in serious trouble against the Detroit Lions?",
     "publishedAt": "2026-08-24T10:00:01.000Z",
     "collectedAt": "2026-08-24T11:38:08.456Z"
-  },
-  "athletic-jhabvala-48975fb6a3c2": {
-    "id": "athletic-jhabvala-48975fb6a3c2",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7531744/2026/08/22/commanders-preseason-lions-jayden-daniels-offensive-line",
-    "title": "Jayden Daniels played just 3 snaps in Commanders' preseason loss. They revealed a concern",
-    "excerpt": "Washington's defense made an impact in a preseason loss to the Lions, but the Commanders need more help on the O-line.",
-    "publishedAt": "2026-08-22T21:13:59.000Z",
-    "collectedAt": "2026-08-24T11:38:09.876Z"
   },
   "yahoo-nfl-d85ba480cd53": {
     "id": "yahoo-nfl-d85ba480cd53",
@@ -981,18 +945,6 @@
     "title": "How to watch and stream Commanders at Ravens in Preseason Week 3 with kickoff time, viewing options, and more",
     "excerpt": "Aug 22, 2026; Detroit, Michigan, USA; Detroit Lions head coach Dan Campbell on the sidelines against the Detroit Lions in the second quarter at Ford Field. Mandatory Credit: Lon Horwedel-Imagn Images \n \n\n The Commanders hit the road to Baltimore in hopes of finishing with a winning record in the preseason. We have all the information you need on how to watch the game.\n\n The Washington Commanders are 1-1 after a 17-13 loss to the Detroit Lions, but still have one more game to finish out the…",
     "publishedAt": "2026-08-24T17:06:48.000Z",
-    "collectedAt": "2026-08-26T16:50:37.463Z"
-  },
-  "atoz-sports-fee14ff5fe48": {
-    "id": "atoz-sports-fee14ff5fe48",
-    "sourceId": "atoz-sports",
-    "sourceName": "A to Z Sports",
-    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
-    "category": "team",
-    "url": "https://atozsports.com/nfl/washington-commanders-news/washington-commanders-preseason-week-2-loss-to-detroit-lions-brings-more-questions-than-panic",
-    "title": "Washington Commanders’ preseason Week 2 loss to Detroit Lions brings more questions than panic",
-    "excerpt": "Aug 22, 2026; Detroit, Michigan, USA; Washington Commanders running back Kaytron Allen (31) runs the ball against the Detroit Lions in the first quarter at Ford Field. Mandatory Credit: Lon Horwedel-Imagn Images \n \n\n The Commanders’ loss to the Lions in Week 3 of the preseason isn’t anything to worry about, but it does raise plenty of questions about the team’s 2026 projection.\n\n The Washington Commanders dropped the latest game to the Detroit Lions, falling to 1-1 in the preseason slate, but…",
-    "publishedAt": "2026-08-22T22:00:00.000Z",
     "collectedAt": "2026-08-26T16:50:37.463Z"
   },
   "commanders-youtube-d98f7760bfad": {
@@ -15286,5 +15238,41 @@
     "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 07: Jayden Daniels #5 of the Washington Commanders runs for a first down against the New York Giants during the fourth quarter of the NFL 2025 game at Northwest Stadium on September 07, 2025 in Landover, Maryland. (Photo by Jess Rapfogel/Getty Images) | Getty Images The Washington Commanders are 1-3 and the high from a win over last season’s Super Bowl winners quickly faded when Marcus Mariota went down with a knee injury that ended his London game in the 1st…",
     "publishedAt": "2026-10-06T18:30:00.000Z",
     "collectedAt": "2026-10-06T20:05:48.462Z"
+  },
+  "pft-6c3b1183d1c7": {
+    "id": "pft-6c3b1183d1c7",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-sign-cb-terrell-smith-off-of-commanders-practice-squad",
+    "title": "Steelers sign CB Terrell Smith off of Commanders practice squad",
+    "excerpt": "The Steelers made an addition to their 53-man roster on Tuesday. \n They announced that they have signed cornerback Terrell Smith off of the Commanders' practice squad. They had an open roster spot after making other moves on Monday, so there was no need to make a corresponding drop from the active roster. \n Smith was a Bears fifth-round pick in 2023 and he played in 26 games over his first two seasons. He tore his patellar tendon last year and was signed by Washington after being cut in Chicago…",
+    "publishedAt": "2026-10-06T21:20:29.000Z",
+    "collectedAt": "2026-10-06T22:05:42.645Z"
+  },
+  "pft-2e3a83e405de": {
+    "id": "pft-2e3a83e405de",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/seahawks-sign-rb-robert-henry-off-commanders-practice-squad",
+    "title": "Seahawks sign RB Robert Henry off Commanders practice squad",
+    "excerpt": "Joe Mixon may not be joining the Seahawks, but the club is still adding a running back. \n Seattle announced on Tuesday that Robert Henry has joined the 53-man roster off of Washington's practice squad. \n An undrafted rookie out of UTSA, Henry has not yet appeared in a regular season game.\n As a corresponding move, the Seahawks have waived safety AJ Finley.\n Additionally, Seattle announced running back Jacardia Wright has been placed on practice squad injured reserve.\n The Seahawks needed some…",
+    "publishedAt": "2026-10-06T20:13:37.000Z",
+    "collectedAt": "2026-10-06T22:05:42.645Z"
+  },
+  "yahoo-nfl-4f95d3120b62": {
+    "id": "yahoo-nfl-4f95d3120b62",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/cause-concern-commanders-rb-jacory-204713379.html",
+    "title": "Is there cause for concern with Commanders RB Jacory Croskey-Merritt?",
+    "excerpt": "The Commanders run game is a quandary. \n The commitment to it is fine. Offensive coordinator David Blough continues to call for runs at an appropriate rate. The numbers look just sort of okay. \n You take away the quarterback runs, though, and an eybrow gets raised. \n We aren’t talking about a nuclear winter, here. We’re just making folks aware that the bedrock of this offensive system isn’t hitting on all cylinders. The bottom line stats, as we’ve mentioned, can also be skewed by mobile…",
+    "publishedAt": "2026-10-06T20:47:13.000Z",
+    "collectedAt": "2026-10-06T22:05:43.100Z"
   }
 }
