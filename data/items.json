@@ -1,28 +1,4 @@
 {
-  "hogs-haven-202abd95f9b7": {
-    "id": "hogs-haven-202abd95f9b7",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/434338/commanders-preseason-jayden-daniels-quarterback-detroit-lions",
-    "title": "Commanders preseason: Jayden Daniels will play vs. Detroit Lions",
-    "excerpt": "The Commanders have a new offensive scheme run by new coordinator David Blough, with new requirements for quarterback Jayden Daniels. \n\n While the third-year pro has proven proficient executing this system in practice, the Commanders would like to see him work (at least a little bit) in live action.\n\n Daniels was not on a list of 15 players ruled out of Saturday’s preseason game vs. the Detroit Lions. He will play.\n\n \n Jayden Daniels plays football today pic.twitter.com/PG89g5bKcL \n&mdash;…",
-    "publishedAt": "2026-08-22T14:06:48.000Z",
-    "collectedAt": "2026-08-22T16:20:51.844Z"
-  },
-  "pft-63584872afea": {
-    "id": "pft-63584872afea",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-is-active-for-the-commanders-on-saturday",
-    "title": "Jayden Daniels is active for the Commanders on Saturday",
-    "excerpt": "Commanders quarterback Jayden Daniels is set for his first action of the preseason. \n The team released a list of 15 inactive players for Saturday's game against the Lions and Daniels is not on it. Commanders head coach Dan Quinn said earlier this week that a good amount of the team's starters would see action in the team's second game of the preseason, but that he was unsure if Daniels would be among them. \n Wide receiver Stefon Diggs is also set to see his first game action since signing with…",
-    "publishedAt": "2026-08-22T14:13:39.000Z",
-    "collectedAt": "2026-08-22T16:20:55.267Z"
-  },
   "riggos-rag-2ea3186af129": {
     "id": "riggos-rag-2ea3186af129",
     "sourceId": "riggos-rag",
@@ -34,18 +10,6 @@
     "excerpt": "Some instant reactions from the Washington Commanders' preseason clash against the Detroit Lions at Ford Field.",
     "publishedAt": "2026-08-22T19:00:08.000Z",
     "collectedAt": "2026-08-22T20:19:51.425Z"
-  },
-  "clutchpoints-e98e38d36d1d": {
-    "id": "clutchpoints-e98e38d36d1d",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-terry-mclaurin-stefon-diggs-play-lions",
-    "title": "Commanders stars Jayden Daniels, Terry McLaurin, Stefon Diggs will play vs. Lions",
-    "excerpt": "The Washington Commanders are going to give their starters some snaps during the team’s preseason game with the Detroit Lions on Saturday. Commanders quarterback Jayden Daniels will play, as will wideouts Stefon Diggs and Terry McLaurin.\n\n The news was reported by NFL Network’s Ian Rapoport. Washington added Diggs this offseason, to give Daniels another weapon in the passing offense.\n\n Washington has high hopes for this offense, heading into the 2026 NFL season. The Commanders struggled in…",
-    "publishedAt": "2026-08-22T15:04:10.000Z",
-    "collectedAt": "2026-08-22T20:19:51.673Z"
   },
   "commanders-youtube-32aac484a484": {
     "id": "commanders-youtube-32aac484a484",
@@ -15262,5 +15226,41 @@
     "excerpt": "Washington Commanders head coach Dan Quinn defended his decision to rule out wide receiver Terry McLaurin amid fan backlash.",
     "publishedAt": "2026-10-06T13:00:05.000Z",
     "collectedAt": "2026-10-06T14:05:34.298Z"
+  },
+  "riggos-rag-dea17d554bf9": {
+    "id": "riggos-rag-dea17d554bf9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-face-trey-amos-decision-dan-quinn-deepens-injury-mystery",
+    "title": "Commanders face Trey Amos decision as Dan Quinn deepens injury mystery",
+    "excerpt": "The Washington Commanders can now trigger cornerback Trey Amos' 21-day return window, but head coach Dan Quinn isn't yet ready to commit.",
+    "publishedAt": "2026-10-06T16:00:00.000Z",
+    "collectedAt": "2026-10-06T16:05:37.092Z"
+  },
+  "riggos-rag-3da67d670d9c": {
+    "id": "riggos-rag-3da67d670d9c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/ben-sinnott-empty-production-leaves-commanders-breakout-talk-tatters",
+    "title": "Ben Sinnott’s empty production leaves Commanders breakout talk in tatters",
+    "excerpt": "Washington Commanders tight end Ben Sinnott was expecting bigger things this season, but his early production has been underwhelming.",
+    "publishedAt": "2026-10-06T14:30:00.000Z",
+    "collectedAt": "2026-10-06T16:05:37.092Z"
+  },
+  "clutchpoints-5b9e541cb29c": {
+    "id": "clutchpoints-5b9e541cb29c",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-mike-garafolo-jayden-daniels-injury-prediction-marcus-mariota-down-for-count",
+    "title": "Mike Garafolo makes Jayden Daniels injury prediction with Marcus Mariota down for count",
+    "excerpt": "The Washington Commanders could use a boost at the quarterback position. Marcus Mariota went down with an injury in London , forcing Athan Kaliakmanis into action. Will the Commanders be forced to play Kaliakmanis again in Week 5? Or will Jayden Daniels finally return and save the day?\n\n NFL Network’s Mike Garafolo gave an injury update on Daniels that should have fans excited for this week of practice.\n\n “Marcus Mariota had an MCL injury that he suffered the other day. Testing revealed that is…",
+    "publishedAt": "2026-10-06T13:10:48.000Z",
+    "collectedAt": "2026-10-06T16:05:37.502Z"
   }
 }
