@@ -1,31 +1,4 @@
 {
-  "social-68f20f2ae7d8": {
-    "id": "social-68f20f2ae7d8",
-    "url": "https://x.com/JPFinlayNBCS/status/2103650129668419756",
-    "text": "This is an outrageous dirty late hit and the guy is hurt. No flag. @RGIII@twitter.com dead on calling this out.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-26T00:57:29.000Z",
-    "collectedAt": "2026-09-26T02:05:39.048Z"
-  },
-  "social-dec7c63b51a6": {
-    "id": "social-dec7c63b51a6",
-    "url": "https://x.com/BenStandig/status/2103645593767657616",
-    "text": "The Commanders will honor the late Sonny Jurgensen (9) and Monte Coleman (51) at Sunday’s home opener.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/334/563/065/787/968/original/d48cdf866ed7a80e.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/334/563/089/557/881/original/90f902b3a86e9ced.jpg"
-    ],
-    "publishedAt": "2026-09-26T00:39:28.000Z",
-    "collectedAt": "2026-09-26T02:05:41.877Z"
-  },
   "social-7bff0aeb3d2d": {
     "id": "social-7bff0aeb3d2d",
     "url": "https://x.com/AdamSchefter/status/2103655605479129489",
@@ -12784,5 +12757,69 @@
     "images": [],
     "publishedAt": "2026-10-05T23:33:40.000Z",
     "collectedAt": "2026-10-06T00:05:56.263Z"
+  },
+  "social-48968e6b5e34": {
+    "id": "social-48968e6b5e34",
+    "url": "https://x.com/SharpFootball/status/2107203117465108740",
+    "text": "if you watched the NFL and thought something didn't feel right, you're not alone: #1 most flags in over a decade thru 4 weeks, refs are impacting the most CRITICAL moments of games most: #1 most red zone penalties per game by offenses in history #1 most penalties on 3rd/4th downs in the second half of games in history and 17 touchdowns nullified by penalty! (vs only 5 in 2025 & 4 in 2024) Refs are impacting the most important moments of games unlike we've ever seen before in the NFL, and even some of the coaches are speaking up full analysis and historical data: ysis/nfl-penalties-2026/",
+    "handle": "SharpFootball",
+    "author": "Warren Sharp",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-05T20:15:47.000Z",
+    "collectedAt": "2026-10-06T01:06:57.602Z"
+  },
+  "social-5c1ef4635efb": {
+    "id": "social-5c1ef4635efb",
+    "url": "https://x.com/BenStandig/status/2107275030518239308",
+    "text": "RB Robert Henry Jr. is being signed off the Commanders' practice squad by Seattle, source confirms. Had a fun summer here, for sure.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-06T01:01:33.000Z",
+    "collectedAt": "2026-10-06T01:07:00.516Z"
+  },
+  "social-fae68634fbd3": {
+    "id": "social-fae68634fbd3",
+    "url": "https://x.com/BenStandig/status/2107260808371531959",
+    "text": "Dan Quinn mostly ended up discussing injuries with reporters today. One player not mentioned provide his own updates. Yikes. @JR1ERA@twitter.com",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/391/042/505/958/344/original/b8171b2f9b11b583.jpg"
+    ],
+    "publishedAt": "2026-10-06T00:05:02.000Z",
+    "collectedAt": "2026-10-06T01:07:00.516Z"
+  },
+  "social-5641257cda05": {
+    "id": "social-5641257cda05",
+    "url": "https://x.com/tashanreed/status/2107270133810864632",
+    "text": "Just as Jayden Daniels is set to make his return, the #Commanders have another quarterback on the mend. My update on Marcus Mariota, plus many other injured players for Washington: /10/05/daniels-nears-return-mariota-is-sidelined-with-another-mcl-sprain/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-06T00:42:05.000Z",
+    "collectedAt": "2026-10-06T01:07:01.641Z"
+  },
+  "social-6efd2a2ad73c": {
+    "id": "social-6efd2a2ad73c",
+    "url": "https://x.com/Schultz_Report/status/2107274150028992961",
+    "text": "Sources: The #Seahawks are signing RB Robert Henry Jr. to their active roster off the #Commanders practice squad. Henry was a UDFA out of UTSA this past spring, where he earned First-Team All-American Conference honors. The deal was confirmed by @eliteloyaltysp@twitter.com .",
+    "handle": "Schultz_Report",
+    "author": "Jordan Schultz",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/391/249/420/095/973/original/c3820ef13441e012.jpg"
+    ],
+    "publishedAt": "2026-10-06T00:58:03.000Z",
+    "collectedAt": "2026-10-06T01:07:12.369Z"
   }
 }
