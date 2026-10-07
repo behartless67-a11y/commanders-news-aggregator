@@ -1468,15 +1468,6 @@
     "stats": null
   },
   {
-    "slug": "robert-henry-jr",
-    "name": "Robert Henry Jr.",
-    "jersey": "30",
-    "position": "RB",
-    "espnId": "5151317",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5151317.png",
-    "stats": null
-  },
-  {
     "slug": "van-jefferson",
     "name": "Van Jefferson",
     "jersey": "12",
@@ -1552,31 +1543,6 @@
     "espnId": "3123303",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
     "stats": null
-  },
-  {
-    "slug": "terell-smith",
-    "name": "Terell Smith",
-    "jersey": "",
-    "position": "CB",
-    "espnId": "4360935",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4360935.png",
-    "stats": {
-      "season": 2024,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "19"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "1"
-        }
-      ]
-    }
   },
   {
     "slug": "charles-snowden",
