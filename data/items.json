@@ -11,18 +11,6 @@
     "publishedAt": "2026-08-23T11:30:00.000Z",
     "collectedAt": "2026-08-23T12:35:23.583Z"
   },
-  "riggos-rag-7fac58abd487": {
-    "id": "riggos-rag-7fac58abd487",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/5-winners-3-losers-washington-commanders-preseason-defeat-lions",
-    "title": "5 winners (and 3 losers) from Commanders' preseason defeat to the Lions",
-    "excerpt": "Who were the big winners and losers from the Washington Commanders' preseason defeat to the Detroit Lions at Ford Field?",
-    "publishedAt": "2026-08-23T10:00:01.000Z",
-    "collectedAt": "2026-08-23T12:35:23.583Z"
-  },
   "yahoo-nfl-f5445aab4367": {
     "id": "yahoo-nfl-f5445aab4367",
     "sourceId": "yahoo-nfl",
@@ -15706,5 +15694,29 @@
     "excerpt": "New York Giants linebacker Arvell Reese (52) celebrates with cornerback Greg Newsome II (20) after intercepting the ball during the second quarter of a game against the Arizona Cardinals in East Rutherford, N.J., Sunday, Oct. 4, 2026. John Harbaugh might need to get his T-shirt designer on the phone again. \n Maybe the same person who created the “1-0” shirts that were all the rage around the Giants last week can create a red shirt with a “U” across the front and a blue cape in time for all the…",
     "publishedAt": "2026-10-07T01:06:27.000Z",
     "collectedAt": "2026-10-07T06:05:35.031Z"
+  },
+  "riggos-rag-c3f353ef2ab4": {
+    "id": "riggos-rag-c3f353ef2ab4",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/predicting-washington-commanders-next-five-games-after-costly-colts-loss-london",
+    "title": "Predicting the Commanders' next five games after costly Colts loss in London",
+    "excerpt": "Predicting the Washington Commanders' next five games after their costly loss to the Indianapolis Colts in London.",
+    "publishedAt": "2026-10-07T10:00:00.000Z",
+    "collectedAt": "2026-10-07T10:05:30.891Z"
+  },
+  "athletic-commanders-84c82ef9d8dd": {
+    "id": "athletic-commanders-84c82ef9d8dd",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7649613/2026/10/07/giants-eagles-cowboys-commanders-jj-mccarthy-joey-porter",
+    "title": "NFC East roundtable: QB chaos, trades and a shock retirement. Wait, it's only Week 5?!",
+    "excerpt": "The Giants lead the East but could soon turn to a third starting QB. Which of their foes can work out their own issues and catch them?",
+    "publishedAt": "2026-10-07T09:30:20.000Z",
+    "collectedAt": "2026-10-07T10:05:33.454Z"
   }
 }
