@@ -26,6 +26,7 @@
     "standings": "node src/cli.js standings",
     "reddit": "node src/cli.js reddit",
     "team-stats": "node src/cli.js team-stats",
+    "ref-crew": "node src/cli.js ref-crew",
     "college-football": "node src/cli.js college-football",
     "live": "node src/cli.js live",
     "digest": "node src/cli.js digest",

@@ -147,6 +147,38 @@ Readers outside the US get a short note under the header, in their own language,
 
 ---
 
+## The game-week sidebar (Film Room, ref card, Call your shot)
+
+Three boxes added in October 2026, all ideas that came from reading r/Commanders.
+
+### Film Room (top of the video column)
+
+The newest breakdowns, because a fan on the sub asked where any real analysis of the London game was and got told the national shows ignore Washington. Up to four items from the last 10 days, at most three from any one source.
+
+- **Who's in it:** any source with `filmRoom` set in `config/sources.js`. Right now that's Mark Bullock's film reviews (everything except his game threads) and Beltway Football's postgame show. `filmRoomLabel` is the small line under each item.
+- **Adding someone:** give their source `filmRoom: true` (every item) or a pattern their titles have to match.
+
+### The ref card (top of the stats column)
+
+Who has the next game and how many flags his crews throw, plus our last game's flags and our season rate.
+
+- **The assignment** comes from Football Zebras, which posts every week's referees on **Tuesday**. Before that the card just says the crew is announced Tuesday.
+- **The numbers** come from ESPN: every finished game's referee and both teams' accepted penalties, this season and last. Each game is fetched once and kept in `data/refcrew.json`, so after the first big backfill a nightly run only reads that week's games.
+- **Ranks** only include referees with 5 or more games, so a new ref shows his numbers with "too few to rank him yet."
+- **Refresh by hand:** `npm run ref-crew`. It's in the nightly job, after team stats.
+
+### Call your shot (the reader score poll)
+
+Readers pick the score of the next game. After they vote they see their pick and the crowd's: the typical score (a median, so one 99-0 joker can't move it), the share picking a win, and how many picks are in.
+
+- **Opens and closes on its own:** always the next game, and the form disappears at kickoff. After kickoff the card shows the locked-in crowd pick until the final score lands in the schedule.
+- **Your number:** add it to `config/predictions.js` when your pregame post goes up, like `'2026-10-11-NYG': { commanders: 24, opponent: 17 }`. Until then the card says your number drops in the pregame post. The key is the kickoff date and the opponent's abbreviation.
+- **Where picks go:** the `predictions` blob store. Each pick is one blob whose name is the pick (`2026-10-11-NYG/24-17/<id>`), so adding up a game is a single listing. `netlify/functions/predictions.js` serves the totals, cached for a minute.
+- **One per browser:** remembered in the reader's browser, the same way the newsletter popup remembers a signup. The server only accepts picks for the game that's open, before kickoff.
+- **Can't test it locally:** the dev server has no Netlify Functions, so locally you only see the form and "Your call." The crowd numbers only show up on the live site.
+
+---
+
 ## The Email Popup (Subscribe Modal)
 
 - Shows on the 10th, 20th, 30th... visit for a given browser
@@ -216,6 +248,8 @@ Updates once daily at 1am Eastern. No AI blog, no newsletter, no live blog — j
 
 **Team sources** (always relevant, every post shown): Commanders.com, Hogs Haven, Riggo's Rag, ClutchPoints, DC Sports King, WJLA, Commanders YouTube, Nicki Jhabvala (The Athletic, via custom scraper)
 
+**Added October 2026, from what r/Commanders reads:** The Athletic's whole Commanders section (filtered, since it carries league-wide power rankings too; Nicki's own pieces keep her byline because her feed is listed first), Bullock's Film Room (Mark Bullock's Substack film reviews), and Beltway Football (JP Finlay and Mitch Tischler's Monumental Sports Network show, each new episode).
+
 **National sources** (filtered to Commanders-relevant only): Pro Football Talk, ESPN, Yahoo Sports, CBS Sports
 
 **Social/ticker** (beat reporters via a Mastodon bridge, because X has no usable free read API): JP Finlay, Ben Standig, John Keim, Tashan Reed, Scott Abraham, Nicki Jhabvala, and the team account
@@ -243,6 +277,10 @@ To run it on a second machine, do the one-time setup in `docs/x-browser-scraping
 | `config/local-spots.js` | Cville bars and spots for the local page |
 | `config/hero-images.js` | Rotating hero images |
 | `config/broadcast-urls.js` | Hand-verified network → watch-live URLs |
+| `config/predictions.js` | Your own score for each game, shown under the reader poll |
+| `src/lib/refcrew.js` | Ref crew card: Football Zebras assignment + ESPN flag counts |
+| `src/lib/predictions.js` | Reader poll: which game is open, the pick format, the crowd math |
+| `netlify/functions/predictions.js` | The crowd's pick for a game, for the poll card |
 | `src/site/templates.js` | Every page's markup, including the admin panel |
 | `src/site/assets/site.js` | All client-side JS: relative timestamps, live ticker, reveals |
 | `src/lib/reddit.js` | r/Commanders collector (Monday post only) |
@@ -273,6 +311,7 @@ npm run publish-due    # publish any scheduled post whose time has passed
 npm run share-cards    # make link-preview cards (add a slug or date for one post)
 npm run collect        # fetch news now
 npm run team-stats     # refresh the Team Stats widget
+npm run ref-crew       # refresh the ref card (next game's referee + flag counts)
 npm run reddit         # top up the r/Commanders cache
 npm run doctor         # check source health
 ```

@@ -31,6 +31,12 @@
  *   paywalled      optional; true shows a "Paywall" pill on that source's
  *                  cards — the excerpt here is always free, but the link-out
  *                  to read the full piece is not
+ *   filmRoom       optional; puts the source's items in the sidebar's Film
+ *                  Room box as well as the river. true for every item, or a
+ *                  RegExp a title has to match (a daily show whose postgame
+ *                  episode is the breakdown and the rest are news)
+ *   filmRoomLabel  optional; the line the Film Room shows under each item
+ *                  (defaults to the source name)
  *   enabled        set false to park a source without deleting its config
  */
 
@@ -117,6 +123,62 @@ export const SOURCES = [
     paywalled: true,
     enabled: true,
     url: 'https://www.nytimes.com/athletic/rss/author/nicki-jhabvala/',
+  },
+  {
+    // The Athletic's whole Commanders section, so Svrluga, Aldridge and the
+    // rest of their staff reach the river and not only Nicki. Listed after her
+    // feed on purpose: her pieces come through both, and mergeItems() keeps
+    // whichever source saw an article first, so her byline wins. The section
+    // also carries league-wide pieces (power rankings, picks), hence filtered.
+    // Confirmed 2026-10-06: same-day items, 200 in the feed.
+    id: 'athletic-commanders',
+    name: 'The Athletic',
+    homepage: 'https://www.nytimes.com/athletic/nfl/team/commanders/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: false,
+    paywalled: true,
+    enabled: true,
+    url: 'https://www.nytimes.com/athletic/rss/nfl/commanders/',
+  },
+  {
+    // Mark Bullock's film reviews, the breakdowns r/Commanders reposts most
+    // (2026-10-06: "Athan Kaliakmanis vs Colts" the morning after a fan asked
+    // where any real analysis of the London game was). Substack, so a real
+    // feed with the free portion of each post. A few posts keep a section for
+    // subscribers, not enough to call the source paywalled. Filtered, because
+    // "The District Film Room" pieces cover more than one DC team. Everything
+    // but his game-day open thread counts as a breakdown, and the reviews
+    // don't all say "film" in the title, so the Film Room match is "not a
+    // game thread" rather than a word to look for.
+    id: 'bullock-film-room',
+    name: "Bullock's Film Room",
+    homepage: 'https://markbullock.substack.com/',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: false,
+    filmRoom: /^(?!.*\bgame thread\b)/i,
+    filmRoomLabel: 'Mark Bullock, film review',
+    enabled: true,
+    url: 'https://markbullock.substack.com/feed',
+  },
+  {
+    // Monumental Sports Network's Commanders show with JP Finlay and Mitch
+    // Tischler. The podcasts page already embeds it; this puts each new
+    // episode in front of readers too. Every episode is about the team, and
+    // the postgame one (filmed at the stadium, up about two hours after the
+    // final whistle) is the breakdown, so it alone goes in the Film Room.
+    // Feed found through Apple's podcast directory, confirmed 2026-10-06.
+    id: 'beltway-football',
+    name: 'Beltway Football',
+    homepage: 'https://art19.com/shows/beltway-football',
+    category: 'team',
+    collector: 'rss',
+    alwaysRelevant: true,
+    filmRoom: /postgame/i,
+    filmRoomLabel: 'Beltway Football postgame show',
+    enabled: true,
+    url: 'https://rss.art19.com/beltway-football',
   },
   {
     // The team's own YouTube uploads — press conferences, camp clips. Worth

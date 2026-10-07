@@ -126,6 +126,9 @@ export function cleanExcerpt(text) {
     // "com/g0uLb5rXxB — Washington Commanders..." as a sentence.
     .replace(/(?:https?:\/\/)?(?:pic\.twitter\.com|t\.co|x\.com|twitter\.com)\/\S+/g, ' ')
     .replace(/\s*[—–-]\s*[^()]{1,80}\(@\w+\)\s+[A-Z][a-z]+ \d{1,2}, \d{4}/g, ' ')
+    // The host's legal line, appended to every Art19 podcast episode
+    // (Beltway Football), on the same line as the episode's real description.
+    .replace(/\s*See Privacy Policy at https:\/\/art19\.com\S*.*$/i, ' ')
     .replace(/\s+/g, ' ')
     .trim();
   // Nothing left but a truncation ellipsis or a stray pipe.

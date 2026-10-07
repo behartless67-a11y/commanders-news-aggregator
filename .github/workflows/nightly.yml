@@ -87,6 +87,14 @@ jobs:
       - run: npm run team-stats
         continue-on-error: true
 
+      # The sidebar's ref crew card: Football Zebras' assignment for the next
+      # game (posted Tuesdays) and every finished game's referee and flags
+      # from ESPN. Finished games are cached in data/refcrew.json and never
+      # fetched twice, so after the one-time backfill a run only reads the
+      # week's new games. See src/lib/refcrew.js.
+      - run: npm run ref-crew
+        continue-on-error: true
+
       # r/Commanders, for the Monday post's fan-reaction section only (see
       # src/lib/reddit.js). Nothing on the site renders this. It runs here
       # rather than in monday.yml because each feed only returns the newest

@@ -2148,6 +2148,223 @@ main.layout{
   min-width: 0;
 }
 
+/* The Film Room and the video rail under it, wrapped for the same reason as
+   .sidebar-stack: above 1400px the rail goes two-across, and this keeps the
+   pair together as one of the two columns instead of three. */
+.sidebar-watch{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* Phone-only jump links to the game-week boxes (gameWeekJump() in
+   templates.js). Below 900px the sidebar sits under every headline, so this
+   row under the river heading is how a phone reader finds them. One line that
+   scrolls sideways rather than wrapping, so it never costs more than a row. */
+.gameweek-jump{ display: none; }
+@media (max-width: 899px){
+  .gameweek-jump{
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin: 0 0 12px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .gameweek-jump::-webkit-scrollbar{ display: none; }
+  .gameweek-jump a{
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid rgba(255,182,18,0.45);
+    border-radius: 999px;
+    padding: 7px 12px;
+  }
+  .gameweek-jump a:active{ background: rgba(255,182,18,0.12); }
+}
+/* A jump lands with the box's heading clear of the screen edge, not flush. */
+#call-your-shot, #ref-crew, #film-room{ scroll-margin-top: 12px; }
+
+/* ---------- Film Room (top of the video column) ---------- */
+.widget .filmroom-intro{
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text-muted);
+  margin: 0 0 6px;
+}
+.filmroom-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.filmroom-item + .filmroom-item{ border-top: 1px solid var(--border-soft); }
+.filmroom-item a{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 9px 0;
+  color: var(--text);
+  text-decoration: none;
+}
+.filmroom-item a:hover .filmroom-title{ color: var(--gold); }
+.filmroom-title{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.filmroom-meta{
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
+/* ---------- Ref crew card (top of the stats column) ---------- */
+.widget .ref-name{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+  margin: 0 0 2px;
+}
+.widget .ref-game{
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
+.ref-figure{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 10px;
+}
+.ref-num{
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+.ref-num-label{
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+.widget .ref-line{
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+.ref-line strong{ color: var(--gold); }
+.widget .ref-last{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-soft);
+}
+.widget .ref-note{
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-faint);
+  margin: 10px 0 0;
+}
+.ref-note a{
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.ref-note a:hover{ color: var(--gold); }
+
+/* ---------- Call your shot (reader score poll) ---------- */
+.widget .poll-question{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+.poll-scores{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+.poll-score{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+/* 16px or more, same as .hail-mail-box-input: under 16px, iOS zooms the page in on focus. */
+.poll-score input{
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.poll-score input:focus{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.poll-submit{
+  width: 100%;
+  background: var(--gold);
+  color: #0a0807;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.poll-submit:hover{ background: var(--gold-dim); }
+.poll-submit:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.poll-results[hidden]{ display: none; }
+.widget .poll-mine{
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+.widget .poll-crowd{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+.poll-crowd-label{
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+}
+.poll-crowd strong{ color: var(--gold); }
+.widget .poll-meta{
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 4px;
+}
+.widget .poll-ben{
+  font-size: 12px;
+  color: var(--text-faint);
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-soft);
+}
+
 .widget{
   background: var(--bg-alt);
   border: 1px solid var(--border-soft);
@@ -3804,7 +4021,7 @@ main.layout.page-admin{
      sidebar-stack (flex: 1 1 0 below) needs to keep Team Stats' rush/pass
      row on one line at this breakpoint too, matching the 320 -> 360 sidebar
      widening at 1300px above. */
-  .widget-videos{ flex: 0 0 280px; }
+  .sidebar-watch{ flex: 0 0 280px; }
   /* The stats+schedule column takes the reclaimed width, not the schedule
      alone — see sidebar() in templates.js for why they're nested. */
   .sidebar-stack{ flex: 1 1 0; min-width: 0; }

@@ -1,5 +1,8 @@
 import { getStore } from '@netlify/blobs';
 import crypto from 'node:crypto';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { pollGame, parseScore } from '../../src/lib/predictions.js';
 
 /**
  * Netlify calls this function automatically whenever ANY Netlify Form on the
@@ -21,8 +24,40 @@ export default async (req) => {
   if (payload.form_name === 'email-subscribe') return captureSubscriber(payload);
   if (payload.form_name === 'wiretaps') return captureWireTap(payload);
   if (payload.form_name === 'abroad') return captureAbroad(payload);
+  if (payload.form_name === 'prediction') return capturePrediction(payload);
   return new Response('ok');
 };
+
+/**
+ * A reader's score for the next game, from the sidebar's "Call your shot"
+ * card. The pick is the blob key itself (see src/lib/predictions.js), so the
+ * value is empty.
+ *
+ * The game has to be the one the poll is open for, checked against the
+ * schedule this deploy shipped with (netlify.toml includes it), and kickoff
+ * can't have passed. The form only ever offers that game, so a pick for any
+ * other one, or one sent after kickoff, came from somewhere other than the
+ * form and isn't counted.
+ */
+async function capturePrediction(payload) {
+  const game = String(payload.data?.game || '');
+  const us = parseScore(payload.data?.commanders);
+  const them = parseScore(payload.data?.opponent);
+  if (us == null || them == null) return new Response('ok');
+
+  let schedule = [];
+  try {
+    schedule = JSON.parse(await fs.readFile(path.resolve('data/schedule.json'), 'utf8'));
+  } catch {
+    return new Response('ok');
+  }
+  const open = pollGame(schedule);
+  if (!open || open.key !== game || Date.now() >= Date.parse(open.iso)) return new Response('ok');
+
+  const id = crypto.randomBytes(6).toString('hex');
+  await getStore('predictions').set(`${game}/${us}-${them}/${id}`, '');
+  return new Response('ok');
+}
 
 /**
  * The unsubscribe token is HMAC-SHA256(email, RESEND_API_KEY) — verifiable

@@ -803,13 +803,165 @@ function standingsWidget(standings) {
     </div>`;
 }
 
+const FILM_ROOM_LABEL = Object.fromEntries(SOURCES.filter((s) => s.filmRoom).map((s) => [s.id, s.filmRoomLabel || s.name]));
+
+/**
+ * The newest breakdowns, from the sources flagged filmRoom in
+ * config/sources.js (build.js picks the items). Added after a fan on
+ * r/Commanders asked where any real analysis of the London game was and got
+ * told the national shows don't cover Washington: this is the answer to that
+ * question, at the top of the video column, where a reader who wants more
+ * than the highlights is already looking. Returns empty string with nothing
+ * recent.
+ */
+function filmRoomWidget(items) {
+  if (!items?.length) return '';
+  const rows = items
+    .map((item) => {
+      const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
+      return `
+        <li class="filmroom-item">
+          <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-outbound="filmroom">
+            <span class="filmroom-title">${escapeHtml(item.title)}</span>
+            <span class="filmroom-meta">${escapeHtml(FILM_ROOM_LABEL[item.sourceId] || item.sourceName)}${when ? ` &middot; <time datetime="${escapeHtml(item.publishedAt)}">${escapeHtml(when)}</time>` : ''}</span>
+          </a>
+        </li>`;
+    })
+    .join('');
+  return `
+    <div class="widget widget-filmroom" id="film-room">
+      <h2>Film Room</h2>
+      <p class="filmroom-intro">The real breakdown, from people who watched the tape twice.</p>
+      <ul class="filmroom-list">${rows}
+      </ul>
+    </div>`;
+}
+
+const flagsWord = (n) => `${n} flag${n === 1 ? '' : 's'}`;
+
+/**
+ * Who has the next game, and how flag-happy his crews are. See
+ * src/lib/refcrew.js for where every number comes from and what refCrewCard()
+ * hands over. Before Football Zebras posts the week's assignments (Tuesdays)
+ * the card still shows the last game's flags and the team's season rate,
+ * which are worth having on their own after a ten-to-one Sunday.
+ */
+function refCrewWidget(card) {
+  if (!card) return '';
+  const { assignment, ref, withUs, lastGame, commanders } = card;
+  const lines = [];
+
+  if (assignment) {
+    lines.push(`<p class="ref-name">${escapeHtml(assignment.referee)}</p>`);
+    lines.push(`<p class="ref-game">${escapeHtml(assignment.game)} &middot; Week ${escapeHtml(String(assignment.week))}</p>`);
+    if (ref?.rank) {
+      lines.push(`
+        <div class="ref-figure">
+          <span class="ref-num">${escapeHtml(String(ref.flagsPerGame))}</span>
+          <span class="ref-num-label">flags a game from his crews<br />League average: ${escapeHtml(String(card.leagueFlagsPerGame))}</span>
+        </div>`);
+      lines.push(`<p class="ref-line">${escapeHtml(ordinalOf(ref.rank))} most of ${ref.rankedRefs} referees, over ${ref.games} games in ${card.season - 1} and ${card.season}.</p>`);
+      lines.push(`<p class="ref-line">Home teams draw ${escapeHtml(String(ref.homeFlagsPerGame))} a game, road teams ${escapeHtml(String(ref.awayFlagsPerGame))}.</p>`);
+    } else if (ref) {
+      lines.push(`<p class="ref-line">${ref.games} game${ref.games === 1 ? '' : 's'} so far, ${escapeHtml(String(ref.flagsPerGame))} flags a game. Too few to rank him yet.</p>`);
+    }
+    if (withUs?.length) {
+      const g = withUs[0];
+      lines.push(`<p class="ref-line">Last time he had us: ${g.season} Week ${g.week} vs. the ${escapeHtml(g.opponent)}, ${flagsWord(g.ourFlags)} on us and ${g.theirFlags} on them.</p>`);
+    }
+  } else if (card.nextWeek) {
+    lines.push(`<p class="ref-line">The Week ${card.nextWeek} crew is announced Tuesday.</p>`);
+  }
+
+  if (lastGame) {
+    const crew = lastGame.referee ? ` (${escapeHtml(lastGame.referee)})` : '';
+    lines.push(`<p class="ref-line ref-last"><strong>Last game</strong>${crew}: ${flagsWord(lastGame.ourFlags)} on us, ${lastGame.theirFlags} on the ${escapeHtml(lastGame.opponent)}.</p>`);
+  }
+  if (commanders) {
+    lines.push(`<p class="ref-line"><strong>Us this season:</strong> ${escapeHtml(String(commanders.flagsPerGame))} flags a game, ${escapeHtml(ordinalOf(commanders.rank))} most in the NFL.</p>`);
+  }
+
+  const heading = assignment && card.nextDay ? `${card.nextDay}'s ref` : 'Ref watch';
+  return `
+    <div class="widget widget-refcrew" id="ref-crew">
+      <h2>${escapeHtml(heading)}</h2>
+      ${lines.join('\n      ')}
+      <p class="ref-note">Assignment from <a href="${escapeHtml(assignment?.url || 'https://www.footballzebras.com/category/assignments/')}" target="_blank" rel="noopener noreferrer">Football Zebras</a>. Flags are accepted penalties on both teams, from ESPN box scores.</p>
+    </div>`;
+}
+
+/** 1 -> "1st", 22 -> "22nd": ranks here run past the four the standings widget needs. */
+function ordinalOf(n) {
+  const tens = n % 100;
+  if (tens >= 11 && tens <= 13) return `${n}th`;
+  return `${n}${['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
+}
+
+/**
+ * Reader score poll for the next game, open until kickoff. A plain Netlify
+ * form, so it submits with JavaScript off too; site.js posts it in place and
+ * swaps in the crowd's numbers from the predictions function. See
+ * src/lib/predictions.js for the key, the median and why the pick lives in
+ * the blob key. Ben's own number shows once it's in config/predictions.js.
+ */
+function predictionWidget(poll) {
+  if (!poll) return '';
+  const them = poll.opponent;
+  const ben = poll.benPick
+    ? `Ben's number: Commanders ${poll.benPick.commanders}, ${escapeHtml(them)} ${poll.benPick.opponent}.`
+    : "Ben's number drops in the pregame post.";
+  return `
+    <div class="widget widget-poll" id="call-your-shot" data-poll-key="${escapeHtml(poll.key)}" data-kickoff="${escapeHtml(poll.iso)}" data-opponent="${escapeHtml(them)}">
+      <h2>Call your shot</h2>
+      <p class="poll-question">What's your number for the ${escapeHtml(them)}?</p>
+      <form class="poll-form" name="prediction" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="prediction" />
+        <input type="hidden" name="game" value="${escapeHtml(poll.key)}" />
+        <p class="visually-hidden"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <div class="poll-scores">
+          <label class="poll-score"><span>Commanders</span><input type="number" name="commanders" min="0" max="99" step="1" inputmode="numeric" required /></label>
+          <label class="poll-score"><span>${escapeHtml(them)}</span><input type="number" name="opponent" min="0" max="99" step="1" inputmode="numeric" required /></label>
+        </div>
+        <button type="submit" class="poll-submit">Lock it in</button>
+      </form>
+      <div class="poll-results" aria-live="polite" hidden></div>
+      <p class="poll-ben">${ben}</p>
+    </div>`;
+}
+
+/**
+ * Phone-only shortcuts to the game-week boxes, under the river heading. Below
+ * 900px the sidebar stacks under every headline, about 3,400px down a phone,
+ * which is where the poll and the ref card would otherwise sit unseen all
+ * week. Moving the boxes themselves up would push the headlines down instead,
+ * so this is a row of links that jump to them. Hidden at 900px and up, where
+ * the boxes are already on screen beside the river.
+ */
+function gameWeekJump(gameWeek) {
+  const links = [];
+  if (gameWeek?.poll) links.push(['call-your-shot', `Call your shot: ${gameWeek.poll.opponent}`]);
+  const card = gameWeek?.refCrew;
+  if (card) {
+    links.push(['ref-crew', card.assignment && card.nextDay ? `${card.nextDay}'s ref: ${card.assignment.referee}` : 'Ref watch']);
+  }
+  if (gameWeek?.filmRoom?.length) links.push(['film-room', 'Film Room']);
+  if (!links.length) return '';
+  return `
+    <nav class="gameweek-jump" aria-label="This week">
+      ${links.map(([id, label]) => `<a href="#${id}">${escapeHtml(label)}</a>`).join('\n      ')}
+    </nav>`;
+}
+
 /** Returns empty string with nothing to show in any widget, and renderPage then widens the river to the full page rather than leaving a dead column. */
-function sidebar(videos, games, betting = null, teamStats = null, standings = null) {
+function sidebar(videos, games, betting = null, teamStats = null, standings = null, gameWeek = null) {
   const video = videoWidget(videos);
+  const film = filmRoomWidget(gameWeek?.filmRoom);
+  const poll = predictionWidget(gameWeek?.poll);
+  const refs = refCrewWidget(gameWeek?.refCrew);
   const stats = teamStatsWidget(teamStats);
   const standingsBlock = standingsWidget(standings);
   const schedule = scheduleWidget(games, betting);
-  if (!video && !schedule && !stats && !standingsBlock) return '';
+  if (!video && !film && !schedule && !stats && !standingsBlock && !poll && !refs) return '';
   // Stats, then standings, then schedule, all deliberately — the schedule
   // runs a full season of rows, so anything placed under it is effectively
   // unreachable without a long scroll. Standings sits directly above the
@@ -824,9 +976,19 @@ function sidebar(videos, games, betting = null, teamStats = null, standings = nu
   // became a third column *beside* the schedule instead of above it. Nesting
   // keeps this same top-to-bottom order true at every width. Below 1400px the
   // wrapper is a no-op: one column inside one column.
-  const stack = [stats, standingsBlock, schedule].filter(Boolean).join('\n');
+  //
+  // The poll and the ref card go on top of that column: both are about the
+  // next game, which is the first row of the schedule at the bottom of it,
+  // and both are only worth anything in the days before kickoff.
+  //
+  // The Film Room shares a column with the videos, for the same two-across
+  // reason, and sits above them: six team uploads put anything underneath
+  // about 1,700px down the page, and the breakdowns are the part of that
+  // column nobody else's site gives a reader.
+  const stack = [poll, refs, stats, standingsBlock, schedule].filter(Boolean).join('\n');
+  const watch = [film, video].filter(Boolean).join('\n');
   return `<aside class="sidebar" aria-labelledby="video-rail-heading">
-${video}
+${watch ? `    <div class="sidebar-watch">\n${watch}\n    </div>` : ''}
 ${stack ? `    <div class="sidebar-stack">\n${stack}\n    </div>` : ''}
   </aside>`;
 }
@@ -1653,9 +1815,9 @@ ${entries}
     </article>`;
 }
 
-export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+export function renderWeeklyPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
 
   return `<!doctype html>
 <html lang="en">
@@ -1707,9 +1869,9 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderWeeklyPost, using previewArticleBody() instead of digestArticleBody() — see that function's own comment for why. */
-export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+export function renderPreviewPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
   const { digest } = record;
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
 
   return `<!doctype html>
 <html lang="en">
@@ -1760,7 +1922,7 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, shareImage = null }) {
+export function renderOriginalPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false, shareImage = null }) {
   // The opening paragraph alone is only 2 sentences, so pull the third from the
   // paragraph after it rather than stopping short of the requested length.
   // essayProse() first, or a leading subhead or photo marker would end up in
@@ -1771,7 +1933,7 @@ export function renderOriginalPost(record, { siteName, siteUrl, sources, generat
   // opening line is usually a joke that needs the rest of the post. The river
   // card keeps the opening line, since that's where the voice is.
   const description = record.summary || excerpt;
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
 
   return `<!doctype html>
 <html lang="en">
@@ -1824,11 +1986,11 @@ ${footer(sources, generatedAt)}
 }
 
 /** Same shape as renderOriginalPost, using mondayArticleBody() instead; see those functions' own comments for why this is a distinct record shape. */
-export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, shareImage = null }) {
+export function renderMondayPost(record, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false, shareImage = null }) {
   const excerpt = firstSentences(essayProse(record.paragraphs).slice(0, 2).join(' '), 3);
   // See renderOriginalPost.
   const description = record.summary || excerpt;
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
 
   return `<!doctype html>
 <html lang="en">
@@ -1880,8 +2042,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [], mondayRecords = [] }) {
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generatedAt, rosterIndex = null, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false, liveGame = null, previewRecords = [], originalRecords = [], mondayRecords = [] }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
   const livePost = liveGamePost(liveGame, rosterIndex);
   // Weekly digests, previews, originals, and the live game post are four
   // different record shapes sharing one reverse-chronological stream, keyed on
@@ -1990,8 +2152,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -2168,12 +2330,12 @@ export function renderRosterPage({
   videos = [],
   games = [],
   betting = null,
-  teamStats = null, standings = null,
+  teamStats = null, standings = null, gameWeek = null,
   isGameLive = false,
   rosterPlayers = [],
   mentionCounts = new Map(),
 }) {
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
   // Most-talked-about first — the entire point of this page over just
   // linking to commanders.com's own roster. Ties (usually both at zero)
   // fall back to alphabetical so the order is at least stable build to build.
@@ -2475,8 +2637,8 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -2535,7 +2697,7 @@ ${footer(sources, generatedAt)}
  * this page is never linked to there; it still renders and works if visited
  * directly, same as any other page.
  */
-export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, isGameLive = false }) {
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
   const widget = videoWidget(videos);
   const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
   return `<!doctype html>
@@ -4070,8 +4232,8 @@ function socialFeedPost(post, extra) {
       </li>`;
 }
 
-export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null, standings = null }) {
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null }) {
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
   const collapsed = socialPosts.length > SOCIAL_FEED_INITIAL;
   const items = socialPosts.map((p, i) => socialFeedPost(p, i >= SOCIAL_FEED_INITIAL)).join('');
   const nextBatch = Math.min(SOCIAL_FEED_BATCH, socialPosts.length - SOCIAL_FEED_INITIAL);
@@ -4158,7 +4320,7 @@ export function renderPage(
     videos = [],
     games = [],
     betting = null,
-    teamStats = null, standings = null,
+    teamStats = null, standings = null, gameWeek = null,
     hasWeekly = false,
     isGameLive = false,
     rosterIndex = null,
@@ -4167,7 +4329,7 @@ export function renderPage(
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
   const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games, betting, teamStats, standings);
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.
@@ -4227,6 +4389,7 @@ ${ticker(socialPosts)}
       </div>
       <div class="river-updated"><span class="dot" aria-hidden="true"></span><strong>Last updated:</strong> ${escapeHtml(formatDateTime(generatedAt))}</div>
     </div>
+${rail ? gameWeekJump(gameWeek) : ''}
 ${cards || '<p class="river-empty">No items yet — run `npm run collect` first.</p>'}${moreButton}
   </section>
 

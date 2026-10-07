@@ -667,6 +667,86 @@
   });
 
   /**
+   * "Call your shot", the reader score poll in the sidebar (predictionWidget()
+   * in templates.js). Posts in place like the Hail Mail forms above, then
+   * swaps the form for the crowd's pick from the predictions function. One
+   * pick per game per browser, remembered in localStorage, so a reader who
+   * comes back sees their call and the crowd's instead of a blank form. Once
+   * kickoff passes the form goes for everyone and the card just shows what
+   * readers called.
+   *
+   * The crowd numbers are cached for about a minute (see predictions.js), and
+   * a pick is filed a moment after it's sent, so a brand-new pick can take a
+   * minute to show up in them. The reader's own line shows straight away.
+   */
+  Array.prototype.forEach.call(document.querySelectorAll('.widget-poll'), function (card) {
+    var key = card.getAttribute('data-poll-key');
+    var opponent = card.getAttribute('data-opponent');
+    var kickoff = Date.parse(card.getAttribute('data-kickoff'));
+    var form = card.querySelector('.poll-form');
+    var results = card.querySelector('.poll-results');
+    var storeKey = 'bw_pick_' + key;
+    var mine = null;
+    try { mine = JSON.parse(localStorage.getItem(storeKey) || 'null'); } catch (e) { mine = null; }
+
+    function line(className, text) {
+      var p = document.createElement('p');
+      p.className = className;
+      p.textContent = text;
+      results.appendChild(p);
+      return p;
+    }
+    function show(summary, note) {
+      results.textContent = '';
+      if (mine) line('poll-mine', 'Your call: Commanders ' + mine.us + ', ' + opponent + ' ' + mine.them + '.');
+      if (summary && summary.count) {
+        var crowd = line('poll-crowd', '');
+        var label = document.createElement('span');
+        label.className = 'poll-crowd-label';
+        label.textContent = 'Readers say';
+        var score = document.createElement('strong');
+        score.textContent = 'Commanders ' + summary.commanders + ', ' + opponent + ' ' + summary.opponent;
+        crowd.appendChild(label);
+        crowd.appendChild(score);
+        line('poll-meta', summary.winPct + '% have us winning · ' + summary.count + (summary.count === 1 ? ' pick' : ' picks'));
+      } else if (summary && mine) {
+        line('poll-meta', 'Yours is the first pick in. Bold.');
+      }
+      if (note) line('poll-meta', note);
+      results.hidden = false;
+    }
+    function load(note) {
+      fetch('/.netlify/functions/predictions?game=' + encodeURIComponent(key), { credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (s) { show(s, note); }, function () { show(null, note); });
+    }
+
+    if (Date.now() >= kickoff) {
+      if (form) form.remove();
+      load('Picks locked at kickoff.');
+      return;
+    }
+    if (mine) {
+      if (form) form.remove();
+      load();
+      return;
+    }
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      mine = { us: Number(data.get('commanders')), them: Number(data.get('opponent')) };
+      try { localStorage.setItem(storeKey, JSON.stringify(mine)); } catch (err) {}
+      // Same as the Hail Mail forms: a failed request still moves on, since
+      // Netlify keeps whatever it received and a retry would only double it.
+      var done = function () { form.remove(); load(); };
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString() })
+        .then(done, done);
+    });
+  });
+
+  /**
    * Email subscribe modal. Opens on its own on every 10th visit, but never:
    *   - if the visitor has already dismissed or submitted (bw_sub key set)
    *   - if the admin session cookie is present (site owner browsing)

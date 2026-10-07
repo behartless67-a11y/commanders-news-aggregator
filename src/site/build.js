@@ -8,12 +8,15 @@ import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.j
 import { loadRosterCache } from '../lib/roster.js';
 import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
-import { parseGameTime } from '../lib/dates.js';
+import { parseGameTime, daysAgo } from '../lib/dates.js';
 import { clusterItems } from '../lib/cluster.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
 import { loadStandingsCache } from '../lib/standings.js';
+import { loadRefCrewCache, refCrewCard } from '../lib/refcrew.js';
+import { pollGame } from '../lib/predictions.js';
+import { BEN_PICKS } from '../../config/predictions.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -44,6 +47,34 @@ const MAX_VIDEOS = Number(process.env.MAX_VIDEOS || 6);
  * edit, not a code edit.
  */
 const VIDEO_SOURCE_IDS = new Set(SOURCES.filter((s) => s.media === 'video').map((s) => s.id));
+
+/** Each Film Room source's rule from config/sources.js: true, or a RegExp its titles have to match. */
+const FILM_ROOM_RULES = new Map(SOURCES.filter((s) => s.filmRoom).map((s) => [s.id, s.filmRoom]));
+const MAX_FILM_ROOM = 4;
+/**
+ * Mark Bullock posts a review most mornings and Beltway Football does one
+ * postgame show a week, so without a per-source cap a single week of his
+ * reviews would push the postgame show out of the box entirely.
+ */
+const MAX_FILM_ROOM_PER_SOURCE = 3;
+/** A breakdown of a game two weeks gone isn't what anyone opening the box is after. */
+const FILM_ROOM_MAX_AGE_DAYS = 10;
+
+function filmRoomItems(sorted) {
+  const perSource = new Map();
+  const picked = [];
+  for (const item of sorted) {
+    const rule = FILM_ROOM_RULES.get(item.sourceId);
+    if (!rule || (rule !== true && !rule.test(item.title))) continue;
+    if (!item.publishedAt || daysAgo(item.publishedAt) > FILM_ROOM_MAX_AGE_DAYS) continue;
+    const n = perSource.get(item.sourceId) || 0;
+    if (n >= MAX_FILM_ROOM_PER_SOURCE) continue;
+    perSource.set(item.sourceId, n + 1);
+    picked.push(item);
+    if (picked.length === MAX_FILM_ROOM) break;
+  }
+  return picked;
+}
 
 const HEADING = {
   'index.html': 'Latest headlines',
@@ -234,6 +265,16 @@ export async function buildSite() {
   // shell rule as teamStats above.
   const standings = await loadStandingsCache();
   const isGameLive = isGameWindowActive(games);
+  // The sidebar's next-game boxes and the Film Room (see sidebar() in
+  // templates.js), bundled so every page passes one more thing rather than
+  // three. Each part is null or empty when it has nothing to say, and its box
+  // then doesn't render.
+  const nextPoll = pollGame(games);
+  const gameWeek = {
+    filmRoom: filmRoomItems(allSorted),
+    refCrew: refCrewCard(await loadRefCrewCache(), games),
+    poll: nextPoll ? { ...nextPoll, benPick: BEN_PICKS[nextPoll.key] || null } : null,
+  };
   // liveGame already loaded above for river item inclusion.
 
   // The Blog tab/page exist if there's a weekly recap, a preview, an
@@ -264,6 +305,8 @@ export async function buildSite() {
       betting,
       teamStats,
       standings,
+
+      gameWeek,
       hasWeekly,
       isGameLive,
       rosterIndex,
@@ -282,7 +325,7 @@ export async function buildSite() {
     // pipeline, `npm run digest`, and `data/digests/<week>.json` are still
     // "weekly" internally, since posts may cover a single game day now but
     // generation/review/approve didn't change.
-    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, standings, isGameLive, liveGame };
+    const opts = { siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, rosterIndex, videos, games, betting, teamStats, standings, gameWeek, isGameLive, liveGame };
     await fs.writeFile(
       path.join(DIST_DIR, 'blog.html'),
       renderWeeklyIndex(publishedDigests, { ...opts, previewRecords: publishedPreviews, originalRecords: publishedOriginals, mondayRecords: publishedMondays }),
@@ -306,19 +349,19 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'podcasts.html'),
-    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
+    renderPodcastsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings, gameWeek }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'videos.html'),
-    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings, gameWeek }),
     'utf8',
   );
 
   await fs.writeFile(
     path.join(DIST_DIR, 'how-it-works.html'),
-    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings }),
+    renderHowItWorksPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings, gameWeek }),
     'utf8',
   );
 
@@ -336,6 +379,8 @@ export async function buildSite() {
       betting,
       teamStats,
       standings,
+
+      gameWeek,
       rosterPlayers,
       mentionCounts,
     }),
@@ -427,7 +472,7 @@ export async function buildSite() {
   // the exact spot readers asked for it.
   await fs.writeFile(
     path.join(DIST_DIR, 'social-feed.html'),
-    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats, standings }),
+    renderSocialFeedPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, socialPosts: allSocial, videos, games, betting, teamStats, standings, gameWeek }),
     'utf8',
   );
 

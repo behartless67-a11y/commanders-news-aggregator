@@ -22,6 +22,7 @@ import { fetchNfcEastStandings, saveStandingsCache } from './lib/standings.js';
 import { fetchReddit, saveRedditCache } from './lib/reddit.js';
 import { fetchInjuries, saveInjuriesCache } from './lib/injuries.js';
 import { fetchTeamStats, saveTeamStatsCache } from './lib/teamstats.js';
+import { fetchRefCrew, saveRefCrewCache } from './lib/refcrew.js';
 import { fetchCollegeFootball, saveCollegeFootballCache } from './lib/collegefootball.js';
 import { updateLiveGame } from './digest/live-generate.js';
 import { isGameWindowActive } from './lib/gamewindow.js';
@@ -47,6 +48,7 @@ Commanders headline river
   npm run reddit             accumulate r/Commanders posts + comments for the Monday post
   npm run injuries           refresh the cached injury report (Sleeper's public players API)
   npm run team-stats         refresh cached team offense/defense totals (ESPN; --season=YYYY)
+  npm run ref-crew           refresh the next game's referee (Football Zebras) and every crew's flags (ESPN)
   npm run college-football   refresh cached UVA result + notable ranked results (ESPN) for the Monday recap
   npm run live               check for a live game and write a quarter recap if one just ended (Bedrock/Claude)
   node src/cli.js gamecheck  print true/false: is a Commanders game in its live window right now
@@ -360,6 +362,16 @@ async function main() {
       } else {
         log.warn('team-stats: fetch failed — leaving the existing cache in place');
       }
+      break;
+    }
+    case 'ref-crew': {
+      const { result, added } = await fetchRefCrew({ season: flags.season ? Number(flags.season) : undefined });
+      await saveRefCrewCache(result);
+      const a = result.assignment;
+      log.ok(
+        `ref-crew: ${Object.keys(result.games).length} game(s) cached (${added} new)` +
+          (a ? `, week ${a.week} ${a.game}: ${a.referee}` : ', no assignment posted yet'),
+      );
       break;
     }
     case 'college-football': {
