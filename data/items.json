@@ -1,28 +1,4 @@
 {
-  "hogs-haven-e14bdd759a28": {
-    "id": "hogs-haven-e14bdd759a28",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/434754/commanders-detroit-lions-preseason-winners-losers-athan-kaliakmanis-robert-henry-jaden-bradley-antonio-williama",
-    "title": "Commanders vs. Lions preseason Week 2: Mark Tyler’s Studs and Duds",
-    "excerpt": "Washington traveled to Detroit for a preseason clash against the Lions at noon on Saturday. While the game was a snooze-fest, it did give fans a chance to see some of the starters in a bit more action.\n\n The Commanders first-team defense made a big play where they scored a touchdown, while the first-team offense looked COMPLETELY out of sync. Overall, the team was able to head home after a 17-13 loss without any significant injuries – so in that respect, this was a win.\n\n Below are my Studs and…",
-    "publishedAt": "2026-08-23T17:30:13.000Z",
-    "collectedAt": "2026-08-23T20:19:44.303Z"
-  },
-  "riggos-rag-2826e47bc9a6": {
-    "id": "riggos-rag-2826e47bc9a6",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-rookie-antonio-williams-becoming-much-harder-keep-hidden",
-    "title": "Commanders rookie Antonio Williams is becoming much harder to keep hidden",
-    "excerpt": "Washington Commanders rookie wide receiver Antonio Williams is getting harder to keep hidden after his preseason performance against the Detroit Lions.",
-    "publishedAt": "2026-08-23T17:30:00.000Z",
-    "collectedAt": "2026-08-23T20:19:44.510Z"
-  },
   "pft-ba6eb28fd3dd": {
     "id": "pft-ba6eb28fd3dd",
     "sourceId": "pft",
@@ -15682,5 +15658,113 @@
     "excerpt": "",
     "publishedAt": "2026-10-07T14:00:29.000Z",
     "collectedAt": "2026-10-07T16:05:37.709Z"
+  },
+  "hogs-haven-c65a47881087": {
+    "id": "hogs-haven-c65a47881087",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/447080/dan-quinn-marcus-mariotas-return-expected-sooner-than-later-need-ir",
+    "title": "Dan Quinn: Marcus Mariota’s return expected sooner than later, no need for IR",
+    "excerpt": "The Washington Commanders are home from their international game in London against the Indianapolis Colts. They lost the game, and injuries to Marcus Mariota (MCL) and Jaylin Lane (ankle/IR) deflated the team. Dan Quinn has said they plan on having Jayden Daniels back as a full participant with the expectation he can start this week at home vs the Giants. Daniels will be wearing a brace when he plays, and Quinn said they’ve talked about protecting the elbow. He traveled with the team and was…",
+    "publishedAt": "2026-10-07T17:20:16.000Z",
+    "collectedAt": "2026-10-07T18:05:36.039Z"
+  },
+  "hogs-haven-ca6e998f23b8": {
+    "id": "hogs-haven-ca6e998f23b8",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/447089/trey-amos-deatrich-wise-jeremy-mcnichols-injured-reserve-pup-comanders-news",
+    "title": "Trey Amos among three Washington Commanders opening practice windows",
+    "excerpt": "Commanders reinforcements are starting to come in. Cornerback Trey Amos, defensive lineman Deatrich Wise Jr. and running back Jeremy McNichols have had their 21-day practice window opened to return off of PUP and injured reserve.\n\n Washington made those announcements on Wednesday afternoon. \n\n Wise (quad) is on the physically unable to perform list while Amos (ankle) and McNichols (quad) are on injured reserve with a designation to return that was made way back when the original 53-man roster…",
+    "publishedAt": "2026-10-07T16:56:22.000Z",
+    "collectedAt": "2026-10-07T18:05:36.039Z"
+  },
+  "hogs-haven-d9bd1292e92d": {
+    "id": "hogs-haven-d9bd1292e92d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-roster/447074/commanders-roster-news-two-signed-to-practice-squad-qb-gets-workout",
+    "title": "Commanders roster news: Two signed to practice squad; QB gets workout",
+    "excerpt": "CHARLOTTE, NORTH CAROLINA - AUGUST 21: Jack Plummer #16 of the Carolina Panthers runs the ball during a NFL Preseason 2025 game against the Pittsburgh Steelers at Bank of America Stadium on August 21, 2025 in Charlotte, North Carolina. (Photo by Logan Bowles/Getty Images) | Getty Images The Washington Commanders had two players from their practice squad poached this week. Unrafted free agent RB Robert Henry Jr. signed with the Seahawks, and veteran CB Terell Smith was signed by the Steelers.…",
+    "publishedAt": "2026-10-07T16:06:15.000Z",
+    "collectedAt": "2026-10-07T18:05:36.039Z"
+  },
+  "riggos-rag-e197181668fe": {
+    "id": "riggos-rag-e197181668fe",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-open-three-return-windows-welcome-roster-squeeze-takes-shape",
+    "title": "Commanders open three return windows as welcome roster squeeze takes shape",
+    "excerpt": "The Washington Commanders have opened the return window of Trey Amos, Deatrich Wise Jr., and Jeremy McNichols, whis could leave some on the outside looking in.",
+    "publishedAt": "2026-10-07T17:44:57.000Z",
+    "collectedAt": "2026-10-07T18:05:36.956Z"
+  },
+  "riggos-rag-991859a769fa": {
+    "id": "riggos-rag-991859a769fa",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-make-risky-quarterback-call-with-everything-riding-jayden-daniels",
+    "title": "Commanders make risky quarterback call with everything riding on Jayden Daniels",
+    "excerpt": "The Washington Commanders are standing pat with their quarterback options, which means everything is riding on Jayden Daniels' return.",
+    "publishedAt": "2026-10-07T16:00:01.000Z",
+    "collectedAt": "2026-10-07T18:05:36.956Z"
+  },
+  "commanders-youtube-651b8d11d721": {
+    "id": "commanders-youtube-651b8d11d721",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=PEv1iZAUfTo",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media Before Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-07T16:48:02.000Z",
+    "collectedAt": "2026-10-07T18:05:40.173Z"
+  },
+  "dc-sports-king-89e9cbd5b72b": {
+    "id": "dc-sports-king-89e9cbd5b72b",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/seahawks-poach-preseason-standout-rb-robert-henry-from-commanders-after-joe-mixon-deal-fails",
+    "title": "Seahawks Poach Preseason Standout RB Robert Henry from Commanders after Joe Mixon Deal Fails",
+    "excerpt": "The Seattle Seahawks’ running back room has been a revolving door of injuries and “almosts” this week. But after a high-profile signing fell through at the finish line, the front office quickly pivoted to inject some young, explosive talent into the backfield.\n\n On Tuesday, the Seahawks officially signed undrafted rookie running back Robert Henry Jr. off the Washington Commanders’ practice squad to their 53-man roster. The move comes after a frantic 24 hours that saw veteran Joe Mixon work out…",
+    "publishedAt": "2026-10-07T17:10:08.000Z",
+    "collectedAt": "2026-10-07T18:05:42.176Z"
+  },
+  "pft-61518ef97291": {
+    "id": "pft-61518ef97291",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-designate-cb-trey-amos-de-deatrich-wise-rb-jeremy-mcnichols-for-return",
+    "title": "Commanders designate CB Trey Amos, DE Deatrich Wise, RB Jeremy McNichols for return",
+    "excerpt": "The Commanders have started the process of bringing a few players back from their injury lists. \n They announced that they have designated cornerback Trey Amos, defensive end Deatrich Wise, and running back Jeremy McNichols for return. Amos and McNichols are on injured reserve while Wise is on the physically unable to perform list. \n All three players will be able to return to practice Wednesday and they will have 21 days to work with the team before they have to be activated or shut down for…",
+    "publishedAt": "2026-10-07T16:34:12.000Z",
+    "collectedAt": "2026-10-07T18:05:43.493Z"
+  },
+  "yahoo-nfl-eb9df8a67dca": {
+    "id": "yahoo-nfl-eb9df8a67dca",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-expected-to-practice-in-full-ahead-of-possible-week-5-return-172615563.html",
+    "title": "Jayden Daniels expected to practice in full ahead of possible Week 5 return",
+    "excerpt": "Washington Commanders fans experienced horrible déjà vu in Week 2 upon seeing quarterback Jayden Daniels go down with another dislocated elbow . But their fears may have been overblown, as the quarterback appears on schedule to return to action in Week 5.\n Daniels was spotted throwing Wednesday and is expected to be listed as a full participant in practice ahead of a possible return against the New York Giants on Sunday.\n Jayden Daniels throwing again today. Expected to be a full participant in…",
+    "publishedAt": "2026-10-07T17:26:15.000Z",
+    "collectedAt": "2026-10-07T18:05:44.003Z"
   }
 }

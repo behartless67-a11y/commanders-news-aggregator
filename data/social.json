@@ -11171,7 +11171,7 @@
     "text": "We have placed WR Jaylin Lane on the Reserve/Injured List",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/395/752/865/616/171/original/64ccd803de7fe3ef.jpg"
@@ -11836,5 +11836,89 @@
     "images": [],
     "publishedAt": "2026-10-07T16:25:22.000Z",
     "collectedAt": "2026-10-07T18:05:12.546Z"
+  },
+  "social-2834b9182ff0": {
+    "id": "social-2834b9182ff0",
+    "url": "https://x.com/Commanders/status/2107886753893818512",
+    "text": "The fans brought the energy in the UK",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-07T17:32:19.000Z",
+    "collectedAt": "2026-10-07T18:05:48.869Z"
+  },
+  "social-28050b145d66": {
+    "id": "social-28050b145d66",
+    "url": "https://x.com/JPFinlayNBCS/status/2107892750628933839",
+    "text": "New All Ears tonight previewing the Giants game. Hit me with mailbag questions s=GVkaGf19T4QkiI3U",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-07T17:56:09.000Z",
+    "collectedAt": "2026-10-07T18:05:52.430Z"
+  },
+  "social-93f06d35a23d": {
+    "id": "social-93f06d35a23d",
+    "url": "https://x.com/john_keim/status/2107894390215557390",
+    "text": "Jayden Daniels taking a “snap” and with a little pitch. Going first in drills again; Quinn said he would be a full participant in practice this week.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-07T18:02:40.000Z",
+    "collectedAt": "2026-10-07T18:05:54.986Z"
+  },
+  "social-82e915bc958c": {
+    "id": "social-82e915bc958c",
+    "url": "https://x.com/john_keim/status/2107886066988425293",
+    "text": "WR Stefon Diggs was not on the practice field during the portion open to the media. Not sure why at this point.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-07T17:29:35.000Z",
+    "collectedAt": "2026-10-07T18:05:54.986Z"
+  },
+  "social-b1d52bcfa85c": {
+    "id": "social-b1d52bcfa85c",
+    "url": "https://x.com/BenStandig/status/2107888227671539947",
+    "text": "Given that I ranked all the draft picks during the Adam Peters era, which of these four from the 2024 class do you think has the best chance of becoming a viable starter in Washington? Link: i-ranked-every-commanders-draft-investment?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-07T17:38:10.000Z",
+    "collectedAt": "2026-10-07T18:05:56.210Z"
+  },
+  "social-ebccc64255a5": {
+    "id": "social-ebccc64255a5",
+    "url": "https://x.com/tashanreed/status/2107884424608317696",
+    "text": "Also didn't see S Tyler Owens (hamstring)",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-07T17:23:04.000Z",
+    "collectedAt": "2026-10-07T18:06:00.808Z"
+  },
+  "social-2700b025fce9": {
+    "id": "social-2700b025fce9",
+    "url": "https://x.com/FantasyProsNFL/status/2107893032842371294",
+    "text": "Terry McLaurin (hamstring) practicing off to side Wednesday 0/terry-mclaurin-hamstring-practicing-off-to-side-wednesday.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @koslow_ari@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-07T17:57:16.000Z",
+    "collectedAt": "2026-10-07T18:06:14.202Z"
   }
 }
