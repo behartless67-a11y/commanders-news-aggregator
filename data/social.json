@@ -1,16 +1,4 @@
 {
-  "social-c4d82db2a8e9": {
-    "id": "social-c4d82db2a8e9",
-    "url": "https://x.com/Commanders/status/2104338152651673813",
-    "text": "\"that's brotherhood right there\" 🙂‍↕️ @budlight@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-27T22:31:26.000Z",
-    "collectedAt": "2026-09-27T22:49:02.278Z"
-  },
   "social-41b19a5eb9c4": {
     "id": "social-41b19a5eb9c4",
     "url": "https://x.com/NickiJhabvala/status/2104359049777311962",
@@ -34,30 +22,6 @@
     "images": [],
     "publishedAt": "2026-09-27T23:41:46.000Z",
     "collectedAt": "2026-09-28T00:05:12.202Z"
-  },
-  "social-111495c4a809": {
-    "id": "social-111495c4a809",
-    "url": "https://x.com/NickiJhabvala/status/2104337230974026076",
-    "text": "The Commanders converted 20 points from turnovers vs. Seattle. The last time they scored 20 or more points off turnovers was in Week 17 of the 2005 season.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-27T22:27:47.000Z",
-    "collectedAt": "2026-09-28T00:05:12.202Z"
-  },
-  "social-1d77eae49939": {
-    "id": "social-1d77eae49939",
-    "url": "https://x.com/danorlovsky7/status/2104338691812466907",
-    "text": "What an incredible call by Blough for @Commanders",
-    "handle": "danorlovsky7",
-    "author": "Dan Orlovsky",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-27T22:33:35.000Z",
-    "collectedAt": "2026-09-28T00:26:05.366Z"
   },
   "social-7a159eba5174": {
     "id": "social-7a159eba5174",
@@ -10427,5 +10391,31 @@
     "images": [],
     "publishedAt": "2026-10-07T20:34:16.000Z",
     "collectedAt": "2026-10-07T21:00:08.732Z"
+  },
+  "social-ff9484e20028": {
+    "id": "social-ff9484e20028",
+    "url": "https://x.com/Commanders/status/2107958647552884982",
+    "text": "🗓️ Week 5: #NYGvsWAS 🏟️ Northwest Stadium 📺 1pm on FOX",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/401/948/763/460/612/original/53d676528821f0d4.jpg"
+    ],
+    "publishedAt": "2026-10-07T22:18:00.000Z",
+    "collectedAt": "2026-10-07T22:55:25.449Z"
+  },
+  "social-ed267d4c9774": {
+    "id": "social-ed267d4c9774",
+    "url": "https://x.com/BenStandig/status/2107964617247052156",
+    "text": "Commanders rookie K Drew Stevens drilled a 70-yard field goal in practice today with a 10 mph tailwind.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-07T22:41:43.000Z",
+    "collectedAt": "2026-10-07T22:55:31.315Z"
   }
 }
