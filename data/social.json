@@ -12849,5 +12849,45 @@
     "images": [],
     "publishedAt": "2026-10-07T13:02:08.000Z",
     "collectedAt": "2026-10-07T14:05:12.542Z"
+  },
+  "social-fe5dcd8e25e5": {
+    "id": "social-fe5dcd8e25e5",
+    "url": "https://x.com/Commanders/status/2107818661511925917",
+    "text": "We have signed S Darren Hall and OLB T.J. Maguranyanga to the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/399/764/822/704/563/original/0ac6f5f49c19c011.jpg"
+    ],
+    "publishedAt": "2026-10-07T13:01:44.000Z",
+    "collectedAt": "2026-10-07T14:05:45.741Z"
+  },
+  "social-63c8c961e22f": {
+    "id": "social-63c8c961e22f",
+    "url": "https://x.com/BenStandig/status/2107818950415323226",
+    "text": "The Commanders signed S Darren Hall and OLB T.J. Maguranyanga to the practice squad",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-07T13:02:53.000Z",
+    "collectedAt": "2026-10-07T14:05:50.270Z"
+  },
+  "social-00db53aaf2b5": {
+    "id": "social-00db53aaf2b5",
+    "url": "https://x.com/MikeGarafolo/status/2107825188868092283",
+    "text": "The #Commanders worked out QB Jack Plummer this morning. The former #Panthers QB and UFL MVP with the @UFLStorm@twitter.com threw well and could be a consideration down the line. But Marcus Mariota isn’t going on IR right now so Washington will keep rolling with their four in-house QBs.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/399/864/448/329/168/original/5e491be0cbf2612a.jpg"
+    ],
+    "publishedAt": "2026-10-07T13:27:41.000Z",
+    "collectedAt": "2026-10-07T14:05:56.906Z"
   }
 }

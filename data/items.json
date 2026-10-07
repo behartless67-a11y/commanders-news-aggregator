@@ -47,18 +47,6 @@
     "publishedAt": "2026-08-23T14:30:00.000Z",
     "collectedAt": "2026-08-23T16:21:57.374Z"
   },
-  "riggos-rag-73e07478bf7c": {
-    "id": "riggos-rag-73e07478bf7c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-undrafted-roster-hopeful-becoming-impossible-leave-behind",
-    "title": "Commanders' undrafted roster hopeful is becoming impossible to leave behind",
-    "excerpt": "Washington Commanders undrafted free agent wide receiver Jaden Bradley is making a strong case to make the 53-man roster.",
-    "publishedAt": "2026-08-23T13:00:02.000Z",
-    "collectedAt": "2026-08-23T16:21:57.374Z"
-  },
   "clutchpoints-a90a8b977b83": {
     "id": "clutchpoints-a90a8b977b83",
     "sourceId": "clutchpoints",
@@ -81,18 +69,6 @@
     "title": "Dan Quinn news flash: We’ve “got to figure out center” - Daily Slop",
     "excerpt": "DETROIT,MICHIGAN-AUGUST 22: Quarterback Jayden Daniels #5 of the Washington Commanders gets sacked by cornerback Avonte Maddox #29 of the Detroit Lions during the first half of an NFL preseason football game between the Washington Commanders and the Detroit Lions in Detroit, Michigan USA, on Saturday, August 22, 2026 (Photo by Jorge Lemus/NurPhoto via Getty Images) | NurPhoto via Getty Images The Daily Slop – 23 August 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles,…",
     "publishedAt": "2026-08-23T14:12:51.000Z",
-    "collectedAt": "2026-08-23T16:22:01.626Z"
-  },
-  "yahoo-nfl-76107dd3d7b0": {
-    "id": "yahoo-nfl-76107dd3d7b0",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/detroit-lions-stock-report-risers-133540167.html",
-    "title": "Detroit Lions stock report: Risers, fallers at every position vs. Commanders",
-    "excerpt": "DETROIT,MICHIGAN-AUGUST 22: Detroit Lions wide receiver Jackson Meeks (13) lines up before a play during the second half of an NFL preseason football game between the Washington Commanders and the Detroit Lions in Detroit, Michigan USA, on Saturday, August 22, 2026 (Photo by Amy Lemus/NurPhoto via Getty Images) | NurPhoto via Getty Images The Detroit Lions’ second preseason game of the 2026 season is in the books, and it’s time to check in on the players who helped or hurt their stock against…",
-    "publishedAt": "2026-08-23T13:35:40.000Z",
     "collectedAt": "2026-08-23T16:22:01.626Z"
   },
   "hogs-haven-e14bdd759a28": {
@@ -15682,5 +15658,65 @@
     "excerpt": "Breaking down the Washington Commanders' failures on Day 2 of the 2024 NFL Draft and where the blame lies.",
     "publishedAt": "2026-10-07T11:30:01.000Z",
     "collectedAt": "2026-10-07T12:05:35.234Z"
+  },
+  "hogs-haven-4d06a2461725": {
+    "id": "hogs-haven-4d06a2461725",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/446771/does-washington-have-enough-healthy-qbs-on-roster-sonny-styles-jayden-daniels",
+    "title": "Commanders News: Does Washington have enough [healthy] QBs on the roster?",
+    "excerpt": "ASHBURN, VA - AUGUST 01: Jayden Daniels #5 and Athan Kaliakmanis #16 of the Washington Commanders share a laugh during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 7 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a…",
+    "publishedAt": "2026-10-07T13:00:00.000Z",
+    "collectedAt": "2026-10-07T14:05:36.277Z"
+  },
+  "riggos-rag-ce64d8095ab9": {
+    "id": "riggos-rag-ce64d8095ab9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/giants-looming-jj-mccarthy-call-could-play-straight-into-commanders-hands",
+    "title": "Giants’ looming J.J. McCarthy call could play straight into Commanders’ hands",
+    "excerpt": "The New York Giants are thinking about J.J. McCarthy starting in Week 5, which would play straight into the Washington Commanders' hands.",
+    "publishedAt": "2026-10-07T13:00:01.000Z",
+    "collectedAt": "2026-10-07T14:05:36.925Z"
+  },
+  "pft-f73dd397cfcb": {
+    "id": "pft-f73dd397cfcb",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-worked-out-qb-jack-plummer",
+    "title": "Commanders worked out QB Jack Plummer",
+    "excerpt": "The Commanders are keeping an eye on the quarterback market. \n Per Mike Garafolo of NFL Network, Washington worked out free-agent quarterback Jack Plummer on Wednesday morning. \n Garafolo reports Plummer threw well, but the Commanders do not plan to sign him at this time. He could be a consideration down the road, as the team currently doesn't plan to place Marcus Mariota on injured reserve.\n Plummer, 26, was most recently with the UFL’s Orlando Storm, where he earned the league’s MVP award.…",
+    "publishedAt": "2026-10-07T13:46:05.000Z",
+    "collectedAt": "2026-10-07T14:05:43.788Z"
+  },
+  "yahoo-nfl-93a5ec04f05e": {
+    "id": "yahoo-nfl-93a5ec04f05e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-enough-healthy-qbs-roster-130000548.html",
+    "title": "Do Commanders have enough [healthy] QBs on the roster? - Daily Slop",
+    "excerpt": "ASHBURN, VA - AUGUST 01: Jayden Daniels #5 and Athan Kaliakmanis #16 of the Washington Commanders share a laugh during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images The Daily Slop – 7 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a…",
+    "publishedAt": "2026-10-07T13:00:00.000Z",
+    "collectedAt": "2026-10-07T14:05:44.234Z"
+  },
+  "yahoo-nfl-77328cdca48b": {
+    "id": "yahoo-nfl-77328cdca48b",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/6-storylines-giants-commanders-week-120000405.html",
+    "title": "6 storylines for Giants-Commanders in Week 5: Prepping for Jayden Daniels",
+    "excerpt": "Jayden Daniels | Getty Images The NFC-East leading New York Giants (3-1) travel to Landover, Md. Sunday to face the 1-3 Washington Commanders. What are the storylines to watch this week, beyond the Giants trying to defend a solo grip on first place for the first time since November of 2015?\n Let’s take a look.\n Jayden Daniels: ‘Looks like we’re going to get him’\n Washington quarterback Jayden Daniels has not played since dislocating his left, non-throwing, elbow in Week 2 against the…",
+    "publishedAt": "2026-10-07T12:00:00.000Z",
+    "collectedAt": "2026-10-07T14:05:44.234Z"
   }
 }
