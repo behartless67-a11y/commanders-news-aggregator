@@ -14,16 +14,9 @@
     "notes": null
   },
   {
-    "name": "Javontae Jean-Baptiste",
-    "position": "DL",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
     "name": "Jayden Daniels",
     "position": "QB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Elbow",
     "notes": "Dislocated"
   },
@@ -77,44 +70,37 @@
     "notes": "Surgery"
   },
   {
-    "name": "Luke McCaffrey",
-    "position": "WR",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
     "name": "Marcus Mariota",
     "position": "QB",
-    "status": "Out",
-    "bodyPart": "Knee",
-    "notes": null
+    "status": "Doubtful",
+    "bodyPart": "Knee - MCL",
+    "notes": "Sprain"
   },
   {
     "name": "Nick Cross",
     "position": "DB",
-    "status": "Out",
-    "bodyPart": "Undisclosed",
+    "status": "Questionable",
+    "bodyPart": "Illness",
     "notes": null
   },
   {
     "name": "Rachaad White",
     "position": "RB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Shoulder",
     "notes": null
   },
   {
     "name": "Sam Cosmi",
     "position": "OL",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Concussion",
     "notes": null
   },
   {
     "name": "Terry McLaurin",
     "position": "WR",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   },
