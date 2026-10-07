@@ -1,66 +1,4 @@
 {
-  "social-b22f8b838cbc": {
-    "id": "social-b22f8b838cbc",
-    "url": "https://x.com/NickiJhabvala/status/2104191868234010997",
-    "text": "Rise and grind, @john_keim",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-27T12:50:10.000Z",
-    "collectedAt": "2026-09-27T14:05:10.544Z"
-  },
-  "social-64ffe3d73f8d": {
-    "id": "social-64ffe3d73f8d",
-    "url": "https://x.com/tashanreed/status/2104181673101316294",
-    "text": "I'm traveling to London on Tuesday, so I'll be recording The Tashan Reed Show at 4 p.m. ET on Monday this upcoming week. We'll recap #Commanders -Seahawks and preview the Colts game across the pond: 383793",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/342/935/663/787/092/original/b3cdfb86d68ab3bc.jpg"
-    ],
-    "publishedAt": "2026-09-27T12:09:39.000Z",
-    "collectedAt": "2026-09-27T14:05:45.432Z"
-  },
-  "social-92413c56aa06": {
-    "id": "social-92413c56aa06",
-    "url": "https://x.com/AdamSchefter/status/2104201697396769230",
-    "text": "By the end of Week 3, six NFL teams will have started multiple QBs: the Commanders, Seahawks, Giants, Bears, Falcons and Vikings. That’s the most through three weeks since 2019.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-09-27T13:29:13.000Z",
-    "collectedAt": "2026-09-27T14:05:48.112Z"
-  },
-  "social-df643997ab5c": {
-    "id": "social-df643997ab5c",
-    "url": "https://x.com/RapSheet/status/2104197912393593190",
-    "text": "From @NFLGameDay@twitter.com Morning: #Commanders QB Jayden Daniels should be back within 3 weeks; #Bears QB Caleb Williams has a Grade 2 hamstring strain; The #Vikings start Kyler Murray today.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-09-27T13:14:11.000Z",
-    "collectedAt": "2026-09-27T14:05:49.647Z"
-  },
-  "social-6754e1cc49c0": {
-    "id": "social-6754e1cc49c0",
-    "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:tzol5vvi72sqpbrxub4lmv5v/post/3mwiuydq4zkkq",
-    "text": "Let's see. The #Commanders are at home today: - in an open-air stadium - in constant rain and wind - are 0-2 - playing the Super Bowl champs So...maybe 10 people in attendance? A few less?",
-    "handle": "reiddossinger.com",
-    "author": "Reid Dossinger",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-27T13:15:00.437Z",
-    "collectedAt": "2026-09-27T14:05:56.262Z"
-  },
   "social-0a09a3b02211": {
     "id": "social-0a09a3b02211",
     "url": "https://x.com/john_keim/status/2104211820613378362",
@@ -12899,5 +12837,17 @@
     ],
     "publishedAt": "2026-10-07T11:39:49.000Z",
     "collectedAt": "2026-10-07T12:05:47.770Z"
+  },
+  "social-49b62f2cb924": {
+    "id": "social-49b62f2cb924",
+    "url": "https://x.com/NickiJhabvala/status/2107818762326224978",
+    "text": "The Commanders signed S Darren Hall and OLB T.J. Maguranyanga to the practice squad.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-07T13:02:08.000Z",
+    "collectedAt": "2026-10-07T14:05:12.542Z"
   }
 }
