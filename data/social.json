@@ -12849,5 +12849,31 @@
     "images": [],
     "publishedAt": "2026-10-07T00:55:44.000Z",
     "collectedAt": "2026-10-07T02:05:10.584Z"
+  },
+  "social-898739c59ece": {
+    "id": "social-898739c59ece",
+    "url": "https://x.com/JPFinlayNBCS/status/2107647344330387556",
+    "text": "This team was a freaking wagon and doesn’t get the all-time respect it deserves.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-07T01:40:59.000Z",
+    "collectedAt": "2026-10-07T02:05:43.353Z"
+  },
+  "social-3df12bfb2eb1": {
+    "id": "social-3df12bfb2eb1",
+    "url": "https://x.com/tashanreed/status/2107642975790727279",
+    "text": "The latest episode of The Tashan Reed Show is out now! The rundown: - How the offense dropped the ball in the Colts loss - Jayden Daniels' return - All the other injuries - Why the Giants game is a must win for the #Commanders Watch here: p-219185194?r=1gwknd&utm_medium=ios&utm_source=notes-share-action",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/397/018/603/764/214/original/9b17e1e36e670a96.jpg"
+    ],
+    "publishedAt": "2026-10-07T01:23:38.000Z",
+    "collectedAt": "2026-10-07T02:05:47.935Z"
   }
 }
