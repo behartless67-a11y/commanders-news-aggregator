@@ -12649,5 +12649,67 @@
     "images": [],
     "publishedAt": "2026-10-07T15:18:41.000Z",
     "collectedAt": "2026-10-07T16:05:11.544Z"
+  },
+  "social-2136acaab307": {
+    "id": "social-2136acaab307",
+    "url": "https://x.com/Commanders/status/2107844252755750959",
+    "text": "Airing it out 🚀 @NextGenStats x @awscloud@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/400/163/861/790/369/original/3d7bb432725a8018.jpg"
+    ],
+    "publishedAt": "2026-10-07T14:43:26.000Z",
+    "collectedAt": "2026-10-07T16:05:43.832Z"
+  },
+  "social-3257a7b70240": {
+    "id": "social-3257a7b70240",
+    "url": "https://x.com/john_keim/status/2107854078420377805",
+    "text": "With Lane on IR , get another player at the position. Played college ball at 3 local schools: Maryland, Richmond and JMU. Cut by New England this summer.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-07T15:22:28.000Z",
+    "collectedAt": "2026-10-07T16:05:49.199Z"
+  },
+  "social-0c5e97a17f4a": {
+    "id": "social-0c5e97a17f4a",
+    "url": "https://x.com/BenStandig/status/2107853286199951839",
+    "text": "The Commanders are signing WR Nick DeGennaro to the PS, source confirms ( @JFowlerESPN 1st). 🐢",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-07T15:19:20.000Z",
+    "collectedAt": "2026-10-07T16:05:50.451Z"
+  },
+  "social-45888b774f8a": {
+    "id": "social-45888b774f8a",
+    "url": "https://x.com/tashanreed/status/2107848584108384766",
+    "text": "How many times is this story gonna get rehashed, man? 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-07T15:00:39.000Z",
+    "collectedAt": "2026-10-07T16:05:51.839Z"
+  },
+  "social-da65d3ce13b1": {
+    "id": "social-da65d3ce13b1",
+    "url": "https://x.com/pfrumors/status/2107863390831989044",
+    "text": "#Commanders starting QB Jayden Daniels is on track to return after a two-game absence, but with backup Marcus Mariota dealing with an MCL sprain, the team worked out UFL MVP Jack Plummer on Wednesday: jayden-daniels-on-track-to-return-in-week-5-marcus-mariota-sprains-mcl",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-07T15:59:29.000Z",
+    "collectedAt": "2026-10-07T16:06:05.547Z"
   }
 }
