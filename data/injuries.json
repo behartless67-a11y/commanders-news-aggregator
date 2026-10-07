@@ -28,6 +28,13 @@
     "notes": null
   },
   {
+    "name": "Frankie Luvu",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Groin",
+    "notes": null
+  },
+  {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
     "status": "Questionable",
@@ -53,13 +60,6 @@
     "position": "RB",
     "status": "IR",
     "bodyPart": "Quadriceps",
-    "notes": null
-  },
-  {
-    "name": "Jeremy Reaves",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Finger",
     "notes": null
   },
   {
@@ -91,10 +91,17 @@
     "notes": "Sprain"
   },
   {
-    "name": "Nick Cross",
+    "name": "Nick Allegretti",
+    "position": "G",
+    "status": "Questionable",
+    "bodyPart": "Hip",
+    "notes": null
+  },
+  {
+    "name": "Percy Butler",
     "position": "DB",
     "status": "Questionable",
-    "bodyPart": "Illness",
+    "bodyPart": "Hamstring",
     "notes": null
   },
   {
@@ -109,6 +116,13 @@
     "position": "OL",
     "status": "Questionable",
     "bodyPart": "Concussion",
+    "notes": null
+  },
+  {
+    "name": "Sonny Styles",
+    "position": "LB",
+    "status": "Questionable",
+    "bodyPart": "Groin",
     "notes": null
   },
   {
