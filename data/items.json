@@ -11,18 +11,6 @@
     "publishedAt": "2026-08-24T11:00:00.000Z",
     "collectedAt": "2026-08-24T11:38:07.967Z"
   },
-  "hogs-haven-23fa35073100": {
-    "id": "hogs-haven-23fa35073100",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/the-5-oclock-club/434864/playing-commanders-gm-keep-or-cut-you-make-the-call-5-oclock-club",
-    "title": "Playing Commanders GM — KEEP or CUT, you make the call – 5 O’Clock Club",
-    "excerpt": "ASHBURN, VA - AUGUST 01: Jaden Bradley #86 of the Washington Commanders warms up during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n It’s 5 o’clock somewhere…\n\n The 5 o’clock club aims to provide a forum for reader-driven discussion at a time of day when there isn’t much NFL news being published. Feel free to introduce topics that interest you in the comments below. \n\n The Commanders have had…",
-    "publishedAt": "2026-08-24T09:00:00.000Z",
-    "collectedAt": "2026-08-24T11:38:07.967Z"
-  },
   "riggos-rag-7fedd0e71c0a": {
     "id": "riggos-rag-7fedd0e71c0a",
     "sourceId": "riggos-rag",
@@ -33,18 +21,6 @@
     "title": "Dan Quinn's sudden Commanders switch sent a message nobody could miss",
     "excerpt": "Washington Commanders head coach Dan Quinn's sudden switch to start another week of preparations for the new season sent a stern message nobody could miss.",
     "publishedAt": "2026-08-24T11:30:00.000Z",
-    "collectedAt": "2026-08-24T11:38:08.456Z"
-  },
-  "riggos-rag-711bc6903204": {
-    "id": "riggos-rag-711bc6903204",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/4-commanders-booked-roster-spots-preseason-week-2-3-thin-ice",
-    "title": "4 Commanders who booked roster spots in preseason Week 2 and 3 on thin ice",
-    "excerpt": "Which Washington Commanders players may have booked roster spots or landed in serious trouble against the Detroit Lions?",
-    "publishedAt": "2026-08-24T10:00:01.000Z",
     "collectedAt": "2026-08-24T11:38:08.456Z"
   },
   "yahoo-nfl-d85ba480cd53": {
@@ -93,18 +69,6 @@
     "title": "Mark Tyler’s Washington Commanders 53-man roster projection",
     "excerpt": "With just one remaining preseason game left to play, coaches are going to have some tough decisions to make as to who will round out the Commanders 53-man roster.\n\n There are still some very tight position battles going on, including QB3, WR5-6, RB3-4, center, safety and the final cornerbacks.\n\n There may be plenty to glean from this week’s joint practice with the Ravens , so that may be even bigger than the game itself in determining the final roster.\n\n Below is my 53-man roster projections…",
     "publishedAt": "2026-08-24T15:40:03.000Z",
-    "collectedAt": "2026-08-24T16:34:38.292Z"
-  },
-  "hogs-haven-a3cf4f58010a": {
-    "id": "hogs-haven-a3cf4f58010a",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/the-5-oclock-club/434864/playing-commanders-gm-keep-cut-you-make-call-5-oclock-club",
-    "title": "Playing Commanders GM: KEEP or CUT, you make the call – 5 O’Clock Club",
-    "excerpt": "It’s 5 o’clock somewhere…\n\n The 5 o’clock club aims to provide a forum for reader-driven discussion at a time of day when there isn’t much NFL news being published. Feel free to introduce topics that interest you in the comments below. \n\n \n\n The Commanders have had surprising play from some players this offseason, both good and bad. We all know that, come Sunday, finalizing the roster is a numbers game. Around 1,200 players league-wide will get their walking papers at the end of the week.…",
-    "publishedAt": "2026-08-24T09:00:00.000Z",
     "collectedAt": "2026-08-24T16:34:38.292Z"
   },
   "riggos-rag-99cdc88d03de": {
@@ -16030,5 +15994,17 @@
     "excerpt": "The Washington Commanders’ dream wide receiver tandem is currently grounded, and the timing couldn’t be worse.\n\n Washington’s Week 5 injury report reads like a CVS receipt —spanning a staggering 23 players in total—but the two names sitting at the very top are what have fans sweating ahead of Sunday’s divisional clash with the New York Giants. Both Terry McLaurin and Stefon Diggs did not participate in Wednesday’s practice, sidelined by matching hamstring issues that threaten to derail the…",
     "publishedAt": "2026-10-08T06:32:42.000Z",
     "collectedAt": "2026-10-08T08:10:50.394Z"
+  },
+  "riggos-rag-0a0cd54e1947": {
+    "id": "riggos-rag-0a0cd54e1947",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-commanders-players-facing-roster-uncertainty-injured-stars-return",
+    "title": "5 Commanders players facing roster uncertainty as injured stars return",
+    "excerpt": "These Washington Commanders players are facing roster uncertainty as the team's injury crisis eases before Week 5.",
+    "publishedAt": "2026-10-08T10:00:03.000Z",
+    "collectedAt": "2026-10-08T10:05:38.655Z"
   }
 }
