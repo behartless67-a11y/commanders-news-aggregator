@@ -1,28 +1,4 @@
 {
-  "social-727a98692f91": {
-    "id": "social-727a98692f91",
-    "url": "https://x.com/tashanreed/status/2104601263778513177",
-    "text": "The #Commanders defense has been ultra aggressive this year. They've blitzed on 42.2% of their opponent's drop backs (5th highest rate in the NFL) according to NFL Pro. Despite that, their pass rush has been relatively average. They have a pressure rate of 37.9% (13th).",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-28T15:56:57.000Z",
-    "collectedAt": "2026-09-28T16:05:49.477Z"
-  },
-  "social-e7561ca77bda": {
-    "id": "social-e7561ca77bda",
-    "url": "https://x.com/tashanreed/status/2104593559425102323",
-    "text": "Coleman is tied for the second-most allowed pressures in the NFL with 13, according to TruMedia. While it'd be unrealistic to expect him to play to Laremy Tunsil's level, the #Commanders need him to be better than that in pass pro.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-28T15:26:20.000Z",
-    "collectedAt": "2026-09-28T16:05:49.477Z"
-  },
   "social-b8ca4dd13ebe": {
     "id": "social-b8ca4dd13ebe",
     "url": "https://x.com/tashanreed/status/2104607694174961678",
@@ -34,18 +10,6 @@
     "images": [],
     "publishedAt": "2026-09-28T16:22:30.000Z",
     "collectedAt": "2026-09-28T18:01:19.032Z"
-  },
-  "social-fe197be0447d": {
-    "id": "social-fe197be0447d",
-    "url": "https://x.com/Commanders/status/2104602932670824912",
-    "text": "picks are in Style(s) this fall @sonnystyles_@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-09-28T16:03:35.000Z",
-    "collectedAt": "2026-09-28T18:01:30.920Z"
   },
   "social-26d30a109888": {
     "id": "social-26d30a109888",
@@ -473,18 +437,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-28T16:19:19.000Z",
-    "collectedAt": "2026-09-29T10:05:45.003Z"
-  },
-  "social-d2c602d5e473": {
-    "id": "social-d2c602d5e473",
-    "url": "https://x.com/john_keim/status/2104595774906708286",
-    "text": "Of the 64 runs vs. Washington this season, 27 have been for 1 yard or less. Seven teams have recorded more... However, Wash has done so on 42 percent of opponent runs. None of the other 7 have done it more than 37.5 percent of the time.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-28T15:35:08.000Z",
     "collectedAt": "2026-09-29T10:05:45.003Z"
   },
   "social-fceb1bc2d886": {
@@ -9973,5 +9925,41 @@
     "images": [],
     "publishedAt": "2026-10-08T14:48:48.000Z",
     "collectedAt": "2026-10-08T15:12:55.636Z"
+  },
+  "social-e29965060c94": {
+    "id": "social-e29965060c94",
+    "url": "https://x.com/NickiJhabvala/status/2108224237966147596",
+    "text": "No, this isn’t about Tress. The Commanders hold a punter workout every week. Rivers gives their returns a chance to catch punts from a righty punter. Other punter workouts this season: Jack Stonehouse - Sept. 10 Aidan Laros - Sept. 17 Jack Browning - Sept. 24",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-08T15:53:21.000Z",
+    "collectedAt": "2026-10-08T16:05:09.724Z"
+  },
+  "social-91a776ca41f9": {
+    "id": "social-91a776ca41f9",
+    "url": "https://x.com/NickiJhabvala/status/2108219745002819631",
+    "text": "(I think at this point it'd be news only if Jayden Daniels WEREN'T full go ... )",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-08T15:35:30.000Z",
+    "collectedAt": "2026-10-08T16:05:09.724Z"
+  },
+  "social-b3d1a6a1c5c2": {
+    "id": "social-b3d1a6a1c5c2",
+    "url": "https://x.com/NickiJhabvala/status/2108211096544792588",
+    "text": "Daronte Jones on Dan Quinn and how he's handled rough stretches: \"He doesn't let the ebbs and flows of the season and each game affect how he approaches each day. ... Some guys, you've been in this business, you don't know what you're going to get day to day. He's not that, and I",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-08T15:01:08.000Z",
+    "collectedAt": "2026-10-08T16:05:09.724Z"
   }
 }
