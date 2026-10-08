@@ -11,30 +11,6 @@
     "publishedAt": "2026-08-24T16:19:47.000Z",
     "collectedAt": "2026-08-24T16:34:38.292Z"
   },
-  "hogs-haven-248dac163d25": {
-    "id": "hogs-haven-248dac163d25",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-roster/434813/commanders-53-man-roster-projection-2026-season-will-harris-athan-kaliakmanis-stefon-diggs",
-    "title": "Mark Tyler’s Washington Commanders 53-man roster projection",
-    "excerpt": "With just one remaining preseason game left to play, coaches are going to have some tough decisions to make as to who will round out the Commanders 53-man roster.\n\n There are still some very tight position battles going on, including QB3, WR5-6, RB3-4, center, safety and the final cornerbacks.\n\n There may be plenty to glean from this week’s joint practice with the Ravens , so that may be even bigger than the game itself in determining the final roster.\n\n Below is my 53-man roster projections…",
-    "publishedAt": "2026-08-24T15:40:03.000Z",
-    "collectedAt": "2026-08-24T16:34:38.292Z"
-  },
-  "riggos-rag-99cdc88d03de": {
-    "id": "riggos-rag-99cdc88d03de",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/laremy-tunsil-intel-leaves-commanders-bracing-outcome-they-feared",
-    "title": "Laremy Tunsil intel leaves Commanders bracing for the outcome they feared",
-    "excerpt": "The Washington Commanders are reportedly working on the premise that left tackle Laremy Tunsil will not play during the 2026 season.",
-    "publishedAt": "2026-08-24T16:00:04.000Z",
-    "collectedAt": "2026-08-24T16:34:38.560Z"
-  },
   "hogs-haven-8ec8c313f932": {
     "id": "hogs-haven-8ec8c313f932",
     "sourceId": "hogs-haven",
@@ -16090,5 +16066,41 @@
     "excerpt": "",
     "publishedAt": "2026-10-08T14:59:08.000Z",
     "collectedAt": "2026-10-08T15:12:49.010Z"
+  },
+  "riggos-rag-55693b26d04e": {
+    "id": "riggos-rag-55693b26d04e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-should-think-twice-about-mike-tomlin-any-post-dan-quinn-era",
+    "title": "Commanders should think twice about Mike Tomlin in any post-Dan Quinn era",
+    "excerpt": "The Washington Commanders should think twice about hiring Mike Tomlin in any post-Dan Quinn era beyond 2026.",
+    "publishedAt": "2026-10-08T16:00:03.000Z",
+    "collectedAt": "2026-10-08T16:05:33.450Z"
+  },
+  "pft-38b99b7d6cf2": {
+    "id": "pft-38b99b7d6cf2",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/david-blough-jayden-daniels-is-full-go-looking-forward-to-having-him-back-sunday",
+    "title": "David Blough: Jayden Daniels is full go, looking forward to having him back Sunday",
+    "excerpt": "Commanders quarterback Jayden Daniels is good to go for Sunday's game against the Giants.\n That's the word from Commanders offensive coordinator David Blough, who said there are no challenges or limitations with what Daniels will be able to do on Sunday.\n \"He's full go, man. We're looking forward to having him back.\"\n Daniels was a full participant in practice yesterday, his first full practice since suffering a dislocated left elbow in Week 2. Marcus Mariota played fairly well in place of…",
+    "publishedAt": "2026-10-08T15:16:19.000Z",
+    "collectedAt": "2026-10-08T16:05:38.971Z"
+  },
+  "yahoo-nfl-2cceb17ad53c": {
+    "id": "yahoo-nfl-2cceb17ad53c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-practices-in-full-ahead-of-week-5-considered-full-go-to-return-151223785.html",
+    "title": "Jayden Daniels practices in full ahead of Week 5, considered 'full go' to return",
+    "excerpt": "Washington Commanders fans experienced horrible déjà vu in Week 2 upon seeing quarterback Jayden Daniels go down with another dislocated elbow . But their fears may have been overblown, as the quarterback is ready to return to action in Week 5.\n Daniels was spotted throwing Wednesday and was listed as a full participant in practice ahead of the team’s game against the New York Giants on Sunday.\n On Thursday, team offensive coordinator David Blough said Daniels was “full go” for the contest,…",
+    "publishedAt": "2026-10-07T17:26:15.000Z",
+    "collectedAt": "2026-10-08T16:05:39.839Z"
   }
 }
