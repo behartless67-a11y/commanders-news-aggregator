@@ -9981,5 +9981,81 @@
     "images": [],
     "publishedAt": "2026-10-08T20:03:42.000Z",
     "collectedAt": "2026-10-08T20:05:11.200Z"
+  },
+  "social-3798de5a6ae4": {
+    "id": "social-3798de5a6ae4",
+    "url": "https://x.com/Commanders/status/2108286595329827292",
+    "text": "Thursday injury report #NYGvsWAS | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/080/344/105/382/original/8a2998c7701f542a.jpg"
+    ],
+    "publishedAt": "2026-10-08T20:01:09.000Z",
+    "collectedAt": "2026-10-08T20:05:49.455Z"
+  },
+  "social-e1239c4bbf8d": {
+    "id": "social-e1239c4bbf8d",
+    "url": "https://x.com/BenStandig/status/2108287130376208688",
+    "text": "The list remains loooooong. Now Allegretti joins the DNP group.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/081/976/033/265/original/b3c1b95aa4a7abea.jpg"
+    ],
+    "publishedAt": "2026-10-08T20:03:16.000Z",
+    "collectedAt": "2026-10-08T20:05:54.051Z"
+  },
+  "social-ee7213741481": {
+    "id": "social-ee7213741481",
+    "url": "https://x.com/tashanreed/status/2108286838859501618",
+    "text": "Diggs was working off to the side after warmups today, so that's why he's listed as DNP. He was in full uniform.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T20:02:07.000Z",
+    "collectedAt": "2026-10-08T20:05:55.577Z"
+  },
+  "social-4742aef217b1": {
+    "id": "social-4742aef217b1",
+    "url": "https://x.com/tashanreed/status/2108286688753807737",
+    "text": "Allegretti didn't practice today:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T20:01:31.000Z",
+    "collectedAt": "2026-10-08T20:05:55.577Z"
+  },
+  "social-8e35809bfa61": {
+    "id": "social-8e35809bfa61",
+    "url": "https://x.com/tashanreed/status/2108267787596726724",
+    "text": "Cosmi suffered a season-ending concussion last year. Washington has been cautious with his return to play.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T18:46:24.000Z",
+    "collectedAt": "2026-10-08T20:05:55.577Z"
+  },
+  "social-c3c11576b139": {
+    "id": "social-c3c11576b139",
+    "url": "https://x.com/tashanreed/status/2108264485878194377",
+    "text": "#Commanders RG Sam Cosmi on his latest concussion: \"It's a little scary, for sure.\" Nonetheless, he said he feels good and ready. Seems likely to play against the Giants on Sunday",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T18:33:17.000Z",
+    "collectedAt": "2026-10-08T20:05:55.577Z"
   }
 }
