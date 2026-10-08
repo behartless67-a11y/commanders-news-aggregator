@@ -35,18 +35,6 @@
     "publishedAt": "2026-08-24T16:00:04.000Z",
     "collectedAt": "2026-08-24T16:34:38.560Z"
   },
-  "riggos-rag-a3d9bf4afd85": {
-    "id": "riggos-rag-a3d9bf4afd85",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/joshua-josephs-quickly-validating-what-commanders-saw-draft-day",
-    "title": "Joshua Josephs is quickly validating what the Commanders saw on draft day",
-    "excerpt": "Rookie fifth-round edge rusher Joshua Josephs is quickly validating what the Washington Commanders saw in the player on draft day.",
-    "publishedAt": "2026-08-24T14:30:00.000Z",
-    "collectedAt": "2026-08-24T16:34:38.560Z"
-  },
   "hogs-haven-8ec8c313f932": {
     "id": "hogs-haven-8ec8c313f932",
     "sourceId": "hogs-haven",
@@ -16042,5 +16030,65 @@
     "excerpt": "Jayden Daniels' game-week confidence has given the Washington Commanders a massive lift before his crucial return.",
     "publishedAt": "2026-10-08T13:00:00.000Z",
     "collectedAt": "2026-10-08T14:05:32.789Z"
+  },
+  "atoz-sports-89369cb124cd": {
+    "id": "atoz-sports-89369cb124cd",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/will-commanders-qb-jayden-daniels-play-against-giants-week-5",
+    "title": "Commanders QB Jayden Daniels is a ‘full go’ ahead of week 5 matchup vs Giants",
+    "excerpt": "Oct 4, 2026; Tottenham, ENG; Washington Commanders quarterback Jayden Daniels (5) walks off the field during warmups before the game against the Indianapolis Colts at Tottenham Hotspur Stadium. Mandatory Credit: Geoff Burke-Imagn Images \n \n\n Jayden Daniels logged a full practice Wednesday, and his answer to a pointed question about injury risk says plenty about his mindset heading into a big matchup against the Giants.\n\n Jayden Daniels is back on the practice field in full capacity, and the…",
+    "publishedAt": "2026-10-08T15:10:59.000Z",
+    "collectedAt": "2026-10-08T15:12:45.403Z"
+  },
+  "riggos-rag-94e1e2037cfb": {
+    "id": "riggos-rag-94e1e2037cfb",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-wrong-bench-nick-allegretti-despite-risk",
+    "title": "Commanders were wrong to bench Nick Allegretti despite the risk",
+    "excerpt": "The Washington Commanders were wrong to bench offensive lineman Nick Allegretti, despite the obvious risks attached.",
+    "publishedAt": "2026-10-08T14:30:00.000Z",
+    "collectedAt": "2026-10-08T15:12:46.323Z"
+  },
+  "athletic-commanders-a302b0ec3f1a": {
+    "id": "athletic-commanders-a302b0ec3f1a",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7670768/2026/10/08/commanders-roster-injuries-front-office",
+    "title": "Another Commanders season is unraveling. How did they get here?",
+    "excerpt": "The Commanders have won six of their 21 games since an NFC Championship Game appearance. How did they get here?",
+    "publishedAt": "2026-10-08T11:16:31.000Z",
+    "collectedAt": "2026-10-08T15:12:48.335Z"
+  },
+  "commanders-youtube-1afa9ace8e7f": {
+    "id": "commanders-youtube-1afa9ace8e7f",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=Z2eIGU_AXSk",
+    "title": "LIVE: DC Daronte Jones Speaks To The Media Before Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-08T15:12:07.000Z",
+    "collectedAt": "2026-10-08T15:12:49.010Z"
+  },
+  "commanders-youtube-e599aedb4dab": {
+    "id": "commanders-youtube-e599aedb4dab",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=ObBEPBEi_Qc",
+    "title": "LIVE: OC David Blough Speaks To The Media Before Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-08T14:59:08.000Z",
+    "collectedAt": "2026-10-08T15:12:49.010Z"
   }
 }
