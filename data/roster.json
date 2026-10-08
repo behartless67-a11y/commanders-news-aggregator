@@ -1459,6 +1459,24 @@
     "stats": null
   },
   {
+    "slug": "nick-degennaro",
+    "name": "Nick DeGennaro",
+    "jersey": "",
+    "position": "WR",
+    "espnId": "4692796",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4692796.png",
+    "stats": null
+  },
+  {
+    "slug": "darren-hall",
+    "name": "Darren Hall",
+    "jersey": "36",
+    "position": "S",
+    "espnId": "4261606",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4261606.png",
+    "stats": null
+  },
+  {
     "slug": "sam-hartman",
     "name": "Sam Hartman",
     "jersey": "15",
@@ -1518,12 +1536,12 @@
     }
   },
   {
-    "slug": "jeffrey-m-ba",
-    "name": "Jeffrey M'ba",
-    "jersey": "60",
-    "position": "DT",
-    "espnId": "5081056",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5081056.png",
+    "slug": "t-j-maguranyanga",
+    "name": "T.J. Maguranyanga",
+    "jersey": "59",
+    "position": "DE",
+    "espnId": "5278092",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5278092.png",
     "stats": null
   },
   {

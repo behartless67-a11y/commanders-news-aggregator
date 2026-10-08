@@ -1,16 +1,4 @@
 {
-  "pft-ba6eb28fd3dd": {
-    "id": "pft-ba6eb28fd3dd",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/three-years-since-selling-commanders-daniel-synder-has-become-invisible",
-    "title": "Three years since selling Commanders, Daniel Synder has become \"invisible\"",
-    "excerpt": "Daniel Snyder is the perfect example of a fundamental truth: The only thing better than being rich and famous is being rich.\n Snyder had become rich and notorious until the NFL forced him out of Club Oligarch. While many owners were believed to be inclined to keep him around despite allegations of misconduct and mistreatment of employees, the tipping point arrived when the other owners had reason to believe Snyder may have been picking their pockets, by allegedly diverting ticket revenue from…",
-    "publishedAt": "2026-08-23T22:55:36.000Z",
-    "collectedAt": "2026-08-24T01:09:22.971Z"
-  },
   "hogs-haven-e598b5615e82": {
     "id": "hogs-haven-e598b5615e82",
     "sourceId": "hogs-haven",
@@ -15922,5 +15910,41 @@
     "excerpt": "Several injuries from last weekend have NFL fans on notice for Week 5, headlined by Baltimore Ravens quarterback Lamar Jackson, who suffered an ankle sprain in Sunday's win over the Tennessee Titans, now with an \"outside\" chance of playing in Week 5 .\n Also worth monitoring: running back Saquon Barkley exited Week 4 with a hamstring injury and is reportedly considered \"week-to-week ,\" while the Cincinnati Bengals saw both Ja'Marr Chase (concussion) and Tee Higgins (adductor) suffer injuries…",
     "publishedAt": "2026-10-05T12:02:06.000Z",
     "collectedAt": "2026-10-07T22:05:43.636Z"
+  },
+  "atoz-sports-8568fd1bd8a9": {
+    "id": "atoz-sports-8568fd1bd8a9",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/dan-quinn-injury-update-injured-reserve-nfl-week-5",
+    "title": "Dan Quinn confirms 3 times the good news the Commanders needed on the injury front ahead of Week 5 action",
+    "excerpt": "Aug 6, 2025; Foxborough, MA, USA; Washington Commanders cornerback Trey Amos (23) makes a catch at training camp at Gillette Stadium. Mandatory Credit: Eric Canha-Imagn Images \n \n\n Washington’s secondary, defensive front, and backfield are all getting reinforcements back on the practice field, and Dan Quinn is in no rush to set a timeline on a return to game action. \n\n Washington Commanders coach Dan Quinn confirmed Wednesday that cornerback Trey Amos, defensive end Deatrich Wise Jr., and…",
+    "publishedAt": "2026-10-07T23:15:40.000Z",
+    "collectedAt": "2026-10-08T00:05:33.113Z"
+  },
+  "clutchpoints-2573d64989cc": {
+    "id": "clutchpoints-2573d64989cc",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/giants-news-malik-nabers-cryptic-injury-update-week-5-vs-commanders",
+    "title": "Giants’ Malik Nabers provides cryptic injury update for Week 5 vs. Commanders",
+    "excerpt": "The New York Giants are currently gearing up for their Week 5 game against the Washington Commanders on the road. The Giants improbably sit at 3-1 so far this year despite not playing very well overall, having recently knocked off the Arizona Cardinals at home.\n\n Injuries have been a major issue for New York this year, headlined by starting quarterback Jaxson Dart, and now, the team has gotten a cryptic injury update regarding star wide receiver Malik Nabers.\n\n “Malik Nabers says he’s ‘sore.’…",
+    "publishedAt": "2026-10-07T21:05:49.000Z",
+    "collectedAt": "2026-10-08T00:05:34.188Z"
+  },
+  "yahoo-nfl-6638dfed5cbb": {
+    "id": "yahoo-nfl-6638dfed5cbb",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-5-latest-news-updates-on-lamar-jackson-jayden-daniels-for-fantasy-football-233159209.html",
+    "title": "NFL Injury Report, Week 5: Latest news, updates on Lamar Jackson, Jayden Daniels for fantasy football",
+    "excerpt": "Can somebody ask the NFL injury gods to give us a break? Just one week would be nice. Alas, we're into Week 5 of the 2026 season and the injury list continues to be longer than anyone would like. Below is a full list of all the notable injuries with some fantasy football analysis.\n Quarterback\n Player\n Injury\n Status\n Notes\n \n Lamar Jackson, BAL\n Ankle\n TBD\n Missed practice Wednesday\n \n Marcus Mariota, WAS\n Knee\n TBD\n Expected to miss time\n \n Caleb Williams, CHI\n Hamstring\n Out\n Week-to-week…",
+    "publishedAt": "2026-10-05T18:21:57.000Z",
+    "collectedAt": "2026-10-08T00:05:41.503Z"
   }
 }

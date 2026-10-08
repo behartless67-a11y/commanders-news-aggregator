@@ -10393,5 +10393,34 @@
     "images": [],
     "publishedAt": "2026-10-07T22:41:43.000Z",
     "collectedAt": "2026-10-07T22:55:31.315Z"
+  },
+  "social-f9e92ac8b24e": {
+    "id": "social-f9e92ac8b24e",
+    "url": "https://x.com/Commanders/status/2107969217299616128",
+    "text": "the last couple of times the Giants came to town ⬇️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/402/115/999/343/353/original/54ebcbdfed790896.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/037/951/050/original/17f1b51ceda3285d.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/097/144/989/original/d6b3d0b9b00c8d22.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/125/256/495/original/782d845c286c6b3f.jpg"
+    ],
+    "publishedAt": "2026-10-07T23:00:00.000Z",
+    "collectedAt": "2026-10-08T00:05:43.116Z"
+  },
+  "social-318f858af048": {
+    "id": "social-318f858af048",
+    "url": "https://x.com/tashanreed/status/2107968037987229811",
+    "text": "The #Commanders ' collective backs are against the wall headed into a must-win game against the Giants. My X-factors to watch in their matchup: /10/07/an-offensive-line-flux-more-x-factors-commanders-vs-giants/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-07T22:55:19.000Z",
+    "collectedAt": "2026-10-08T00:05:48.644Z"
   }
 }
