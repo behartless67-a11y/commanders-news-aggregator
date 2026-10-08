@@ -47,18 +47,6 @@
     "publishedAt": "2026-08-24T14:30:00.000Z",
     "collectedAt": "2026-08-24T16:34:38.560Z"
   },
-  "riggos-rag-2db568129f1d": {
-    "id": "riggos-rag-2db568129f1d",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-can-weaponize-wr-surplus-repair-their-glaring-roster-mistake",
-    "title": "Commanders can weaponize WR surplus to repair their glaring roster mistake",
-    "excerpt": "The Washington Commanders have a problem at center and a surplus at wide receiver, which could provide an opportunity for general manager Adam Peters.",
-    "publishedAt": "2026-08-24T13:00:04.000Z",
-    "collectedAt": "2026-08-24T16:34:38.560Z"
-  },
   "hogs-haven-8ec8c313f932": {
     "id": "hogs-haven-8ec8c313f932",
     "sourceId": "hogs-haven",
@@ -16030,5 +16018,29 @@
     "excerpt": "Good morning, New York Giants fans! Here are the stories as the Big Blue gets set to face their conference rivals, the Washington Commanders.\n Baldy: Reese next great Giants linebacker\n . @AZCardinals @Giants @arvxll You Giant Fans know…you know…what a great LBer looks like…The next great one wears #52 and he is just 21 years old…Can't wait to watch on Sunday v @Commanders #BaldysBreakdowns pic.twitter.com/wtiTBRdvpO \n— Brian Baldinger (@BaldyNFL) October 7, 2026 \n John Harbaugh: Giants are…",
     "publishedAt": "2026-10-08T10:47:11.000Z",
     "collectedAt": "2026-10-08T12:05:45.262Z"
+  },
+  "hogs-haven-e42b32a8a4a8": {
+    "id": "hogs-haven-e42b32a8a4a8",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/447136/demise-of-nick-sirianni-era-may-be-exaggerated-jayden-daniels-sonny-styles-josh-conerly",
+    "title": "Commanders News: The demise of the Nick Sirianni era may be exaggerated",
+    "excerpt": "CHICAGO, ILLINOIS - SEPTEMBER 28: Head coach Nick Sirianni of the Philadelphia Eagles looks on prior to the game against the Chicago Bears at Soldier Field on September 28, 2026 in Chicago, Illinois. (Photo by Michael Reaves/Getty Images) | Getty Images \n \n The Daily Slop – 8 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a…",
+    "publishedAt": "2026-10-08T13:00:00.000Z",
+    "collectedAt": "2026-10-08T14:05:31.442Z"
+  },
+  "riggos-rag-6ed565abfc82": {
+    "id": "riggos-rag-6ed565abfc82",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-game-week-confidence-lifts-commanders-before-crucial-return",
+    "title": "Jayden Daniels' game-week confidence lifts Commanders before crucial return",
+    "excerpt": "Jayden Daniels' game-week confidence has given the Washington Commanders a massive lift before his crucial return.",
+    "publishedAt": "2026-10-08T13:00:00.000Z",
+    "collectedAt": "2026-10-08T14:05:32.789Z"
   }
 }
