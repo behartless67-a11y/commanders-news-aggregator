@@ -1,18 +1,4 @@
 {
-  "social-add5704bc5da": {
-    "id": "social-add5704bc5da",
-    "url": "https://x.com/Schultz_Report/status/2104696021871706480",
-    "text": "#Commanders rookie LB Sonny Styles has been exceptional to begin his career, showcasing the rare athleticism, instincts and intelligence that made him such a coveted draft choice. While the stats are impressive, he’s even more impressive when you watch him on Sundays. 🪖🔒",
-    "handle": "Schultz_Report",
-    "author": "Jordan Schultz",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/350/968/914/143/237/original/dc87752da3cbbb72.jpg"
-    ],
-    "publishedAt": "2026-09-28T22:13:29.000Z",
-    "collectedAt": "2026-09-29T00:11:32.737Z"
-  },
   "social-41f794a5faee": {
     "id": "social-41f794a5faee",
     "url": "https://x.com/tashanreed/status/2104745982319530307",
@@ -23,18 +9,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-09-29T01:32:01.000Z",
-    "collectedAt": "2026-09-29T01:38:34.525Z"
-  },
-  "social-14188a53451f": {
-    "id": "social-14188a53451f",
-    "url": "https://x.com/tashanreed/status/2104707818922397781",
-    "text": "Heads up: I had an issue with recording today's episode of The Tashan Reed Show. It looks like the audio on the livestream was fine, but didn't translate to the recording that was published on Substack, Spotify and Apple. Working to address the problem now!",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-28T23:00:22.000Z",
     "collectedAt": "2026-09-29T01:38:34.525Z"
   },
   "social-fa9aa15adc15": {
@@ -83,18 +57,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-29T00:45:01.000Z",
-    "collectedAt": "2026-09-29T10:05:45.003Z"
-  },
-  "social-7cc8cb338159": {
-    "id": "social-7cc8cb338159",
-    "url": "https://x.com/john_keim/status/2104701236998197696",
-    "text": "Quick video on Kain Medrano; shines in win over Seahawks. Left the locker room with gifts under each arm. 074",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-28T22:34:13.000Z",
     "collectedAt": "2026-09-29T10:05:45.003Z"
   },
   "social-fceb1bc2d886": {
@@ -10158,5 +10120,19 @@
     ],
     "publishedAt": "2026-10-08T20:59:45.000Z",
     "collectedAt": "2026-10-08T22:05:48.148Z"
+  },
+  "social-a03741677fa2": {
+    "id": "social-a03741677fa2",
+    "url": "https://x.com/Commanders/status/2108323803667599679",
+    "text": "SUUUUUL 💪 @RasulEra@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/652/066/079/312/original/57ea5d2258224154.jpg"
+    ],
+    "publishedAt": "2026-10-08T22:29:00.000Z",
+    "collectedAt": "2026-10-08T23:07:41.591Z"
   }
 }
