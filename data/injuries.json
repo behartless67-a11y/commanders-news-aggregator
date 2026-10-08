@@ -91,6 +91,13 @@
     "notes": null
   },
   {
+    "name": "Nick Cross",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Illness",
+    "notes": null
+  },
+  {
     "name": "Percy Butler",
     "position": "DB",
     "status": "Questionable",
@@ -109,13 +116,6 @@
     "position": "OL",
     "status": "Questionable",
     "bodyPart": "Concussion",
-    "notes": null
-  },
-  {
-    "name": "Sonny Styles",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Groin",
     "notes": null
   },
   {
