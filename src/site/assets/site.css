@@ -3593,6 +3593,20 @@ main.layout{
   color: var(--gold);
 }
 
+/* A post's closing question (wireTapsAsk() in templates.js). The partner
+   pull-quote above, with a question where the name goes: smaller than a
+   name, since a question runs a sentence long, but still the loudest line. */
+.wiretaps-ask-question{
+  display: block;
+  font-size: clamp(21px, 3.4vw, 27px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--gold);
+  margin-bottom: 12px;
+  transition: opacity 0.15s ease;
+}
+.wiretaps-ask:hover .wiretaps-ask-question{ opacity: 0.85; }
+
 .footer-bottom{
   border-top: 1px solid var(--border-soft);
   padding-top: 20px;

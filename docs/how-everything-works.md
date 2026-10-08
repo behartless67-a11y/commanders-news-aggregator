@@ -85,6 +85,10 @@ Paragraphs support four inline markers, positioned where you want them in the `p
 
 **Paragraph text is HTML-escaped.** If you need real markup — a link, a `lang="sv"` span for a non-English line — it goes in the `plug` field, which is raw trusted HTML and renders as the closing paragraph.
 
+**End on a question.** Give the post a `"wireTaps"` field with one specific question (Full Volume's was "Of everyone on that injury report, who's the one guy you'd bring back first?"). It renders at the very end as a big gold "Your turn" block that links to Wire Taps. Works on originals and Mondays. A specific question gets answers where "ask me anything" doesn't, so make it one a reader can answer in a sentence.
+
+**Keeping a name together on the share card:** put a no-break space (` ` in the JSON) between the words, like `"Weird Al"`. The card's line wrapping won't split there, and on the site it looks like a normal space.
+
 ### Link previews: `summary` and the share card
 
 What a post looks like when it's pasted into X, Facebook, iMessage, Slack or a Google result. Both apply to originals and Mondays.

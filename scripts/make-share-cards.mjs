@@ -113,11 +113,16 @@ function backgroundFor({ id, record }) {
   return stockFile(STOCK[hash(id) % STOCK.length]);
 }
 
-/** Greedy word wrap at a character budget per line. */
+/**
+ * Greedy word wrap at a character budget per line. Splits on ordinary spaces
+ * only, not /\s/ (which in JavaScript includes the no-break space), so a title
+ * can glue a name together with U+00A0: "Weird Al" never breaks into
+ * "Weird" at the end of one line and "Al," alone at the start of the next.
+ */
 function greedy(title, perLine) {
   const lines = [];
   let line = '';
-  for (const word of title.split(/\s+/)) {
+  for (const word of title.split(/[ \t\r\n]+/)) {
     const next = line ? `${line} ${word}` : word;
     if (next.length > perLine && line) {
       lines.push(line);

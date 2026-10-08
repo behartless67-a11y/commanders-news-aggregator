@@ -17,6 +17,17 @@ Read from the sub's top posts that week plus nine days of its posts and comments
 
 ---
 
+## Getting Wire Taps questions (October 7, 2026)
+
+No real questions in the first month. Built: every post can end on a specific question (`wireTaps` field; Full Volume was the first). Still to try:
+
+- **Ask right after a reader votes** in "Call your shot": "Got a hot take on Sunday? Send it to Wire Taps."
+- **Ask in Hail Mail**: a "send me your questions" line in every email, and check whether replies to the email reach you.
+- **Answer the first one yourself**: Ethan's contact-form question about the beat-writer tweets not updating during games (since fixed) would make a good first Wire Taps post. Ask Ethan before naming him.
+- Delete the September pipeline test question when convenient.
+
+---
+
 ## Design report follow-ups (October 2026)
 
 Done: contrast, readable posts, quieter feed, grouped duplicate stories. Still open:

@@ -1593,6 +1593,7 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
 ${paragraphs}
 ${slideshow}
 ${plug}
+${wireTapsAsk(record.wireTaps)}
     </article>`;
 }
 
@@ -1622,6 +1623,26 @@ function partnerCallout(callout) {
       <span class="partner-pull-name">${escapeHtml(callout.name)}</span>
       <span class="partner-pull-body">${escapeHtml(callout.body)}</span>
       <span class="partner-pull-cta">${escapeHtml(callout.cta)} &rarr;</span>
+    </a>`;
+}
+
+/**
+ * The question a post ends on, and the way to answer it. Added after Wire
+ * Taps went its whole first month without a real question: the only way in
+ * was a footer button and an open "ask me anything," which gets nothing. A
+ * specific question, at the end of a post, put to someone who just read all
+ * of it, is the easiest one there is to answer. `record.wireTaps` is that
+ * question, written per post; a post without one ends the way it always has.
+ * The same pull-quote treatment as partnerCallout() above, one link, so the
+ * whole block is the tap target on a phone.
+ */
+function wireTapsAsk(question) {
+  if (!question) return '';
+  return `<a class="partner-pull wiretaps-ask" href="wiretaps.html">
+      <span class="partner-pull-eyebrow">Your turn</span>
+      <span class="wiretaps-ask-question">${escapeHtml(question)}</span>
+      <span class="partner-pull-body">Answer it, argue with me, or ask me anything else. Anonymous is fine.</span>
+      <span class="partner-pull-cta">Send it to Wire Taps &rarr;</span>
     </a>`;
 }
 
@@ -1658,6 +1679,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
 ${paragraphs}
 ${callout}
+${wireTapsAsk(record.wireTaps)}
     </article>`;
 }
 
