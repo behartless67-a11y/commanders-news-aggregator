@@ -1,16 +1,4 @@
 {
-  "social-123849c1e197": {
-    "id": "social-123849c1e197",
-    "url": "https://x.com/pfrumors/status/2104673584585036079",
-    "text": "Austin Ekeler is set to play a 10th NFL season. The UDFA success story is heading back to Washington, reaching a deal to join the #Commanders ' 53-man roster once again commanders-to-sign-rb-austin-ekeler-2",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [],
-    "publishedAt": "2026-09-28T20:44:20.000Z",
-    "collectedAt": "2026-09-29T00:05:51.519Z"
-  },
   "social-0a70198cf858": {
     "id": "social-0a70198cf858",
     "url": "https://x.com/Commanders/status/2104681805919981846",
@@ -21,18 +9,6 @@
     "sourceKey": "#RaiseHail",
     "images": [],
     "publishedAt": "2026-09-28T21:17:00.000Z",
-    "collectedAt": "2026-09-29T00:05:54.456Z"
-  },
-  "social-aa22c9c7dbaa": {
-    "id": "social-aa22c9c7dbaa",
-    "url": "https://x.com/FantasyProsNFL/status/2104669888266535382",
-    "text": "Jayden Daniels (elbow) to practice this week 2/jayden-daniels-elbow-to-practice-this-week.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @koslow_ari@twitter.com #RaiseHail",
-    "handle": "FantasyProsNFL",
-    "author": "FantasyPros",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-09-28T20:29:38.000Z",
     "collectedAt": "2026-09-29T00:05:54.456Z"
   },
   "social-add5704bc5da": {
@@ -61,18 +37,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/350/717/614/993/471/original/476f5dc2dcf7f735.jpg"
     ],
     "publishedAt": "2026-09-28T21:08:13.000Z",
-    "collectedAt": "2026-09-29T00:11:32.737Z"
-  },
-  "social-715e52ef58cd": {
-    "id": "social-715e52ef58cd",
-    "url": "https://x.com/tashanreed/status/2104674899973566893",
-    "text": "Jayden Daniels will travel with the #Commanders to London and is expected to return to practice later this week. Whether or not he plays against the Colts, it represents a major step in his recovery from his second left elbow dislocation: /09/28/commanders-expect-jayden-daniels-practice-this-week-london-after-elbow-injury/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-28T20:49:33.000Z",
     "collectedAt": "2026-09-29T00:11:32.737Z"
   },
   "social-41f794a5faee": {
@@ -10057,5 +10021,155 @@
     "images": [],
     "publishedAt": "2026-10-08T18:33:17.000Z",
     "collectedAt": "2026-10-08T20:05:55.577Z"
+  },
+  "social-696589140005": {
+    "id": "social-696589140005",
+    "url": "https://x.com/Commanders/status/2108288823134138563",
+    "text": "We have released RB Kaytron Allen",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/104/461/619/814/original/7ef8ed458584d8b9.jpg"
+    ],
+    "publishedAt": "2026-10-08T20:10:00.000Z",
+    "collectedAt": "2026-10-08T21:01:44.419Z"
+  },
+  "social-fbe873f1d5d4": {
+    "id": "social-fbe873f1d5d4",
+    "url": "https://x.com/JPFinlayNBCS/status/2108292294721814577",
+    "text": "Tough business move for Kaytron Allen and the team probably wants him back to practice squad. But McNichols definitely helps this team more now than Fatman. And maybe a wake up call for other draft picks on thin ice.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-08T20:23:47.000Z",
+    "collectedAt": "2026-10-08T21:01:45.487Z"
+  },
+  "social-96835acea3aa": {
+    "id": "social-96835acea3aa",
+    "url": "https://x.com/john_keim/status/2108288842390548862",
+    "text": "Another lengthy injury report. 7 DNPs. Allegretti a new one. Diggs and McLaurin both DNP but Diggs was working on a side field. Never saw McLaurin.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/120/242/852/025/original/9fed2c49e6f6114d.jpg"
+    ],
+    "publishedAt": "2026-10-08T20:10:04.000Z",
+    "collectedAt": "2026-10-08T21:01:47.310Z"
+  },
+  "social-2f32847c9708": {
+    "id": "social-2f32847c9708",
+    "url": "https://x.com/john_keim/status/2108287285955604955",
+    "text": "The goal/hope is that they can get Kaytron Allen back on the practice squad.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-08T20:03:53.000Z",
+    "collectedAt": "2026-10-08T21:01:47.310Z"
+  },
+  "social-bc65f234e132": {
+    "id": "social-bc65f234e132",
+    "url": "https://x.com/john_keim/status/2108286901463466395",
+    "text": "With Jeremy McNichols possibly back, a move needed to be made. Still a surprise",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-08T20:02:22.000Z",
+    "collectedAt": "2026-10-08T21:01:47.310Z"
+  },
+  "social-7f06ffc8c5d9": {
+    "id": "social-7f06ffc8c5d9",
+    "url": "https://x.com/BenStandig/status/2108298163056423125",
+    "text": "There is a radio caller on air now suggesting that there should be people fired because the Commanders released a sixth-round RB.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-08T20:47:07.000Z",
+    "collectedAt": "2026-10-08T21:01:48.538Z"
+  },
+  "social-27a2326e7905": {
+    "id": "social-27a2326e7905",
+    "url": "https://x.com/BenStandig/status/2108293307520495814",
+    "text": "Wrote about the pending RB logjam this morning:",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/407/176/053/197/419/original/d1b00c8d0e138fd1.jpg"
+    ],
+    "publishedAt": "2026-10-08T20:27:49.000Z",
+    "collectedAt": "2026-10-08T21:01:48.538Z"
+  },
+  "social-cb31013071ec": {
+    "id": "social-cb31013071ec",
+    "url": "https://x.com/BenStandig/status/2108291240794128731",
+    "text": "The Commanders released RB Kaytron Allen. Sixth-round pick this year. Suggests Jeremy McNichols will be up this week.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-08T20:19:36.000Z",
+    "collectedAt": "2026-10-08T21:01:48.538Z"
+  },
+  "social-869a6a5df812": {
+    "id": "social-869a6a5df812",
+    "url": "https://x.com/tashanreed/status/2108288998607380595",
+    "text": "With Jeremy McNichols back in the mix, the #Commanders released Allen. If he clears waivers, they could sign him back to the practice squad.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T20:10:42.000Z",
+    "collectedAt": "2026-10-08T21:01:51.633Z"
+  },
+  "social-6bd16eccbdc5": {
+    "id": "social-6bd16eccbdc5",
+    "url": "https://x.com/AdamSchefter/status/2108286679534485682",
+    "text": "A surprise: Commanders waived sixth-round pick, running back Kaytron Allen.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-08T20:01:29.000Z",
+    "collectedAt": "2026-10-08T21:01:55.739Z"
+  },
+  "social-b36bd2ebb975": {
+    "id": "social-b36bd2ebb975",
+    "url": "https://x.com/JasonLaCanfora/status/2108294727275819179",
+    "text": "Are the #Commanders committing fully enough to keeping Jayden Daniels healthy above all else? Through their approach to personnel and the run game and schematics and overarching philosophies? It's being talked about quite a bit around the NFL insider-talks-commanders--injury-concerns-ahead-of-week-5-10961",
+    "handle": "JasonLaCanfora",
+    "author": "Jason La Canfora",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-08T20:33:27.000Z",
+    "collectedAt": "2026-10-08T21:02:03.257Z"
+  },
+  "social-1613b03fee26": {
+    "id": "social-1613b03fee26",
+    "url": "https://x.com/FantasyProsNFL/status/2108295309373681745",
+    "text": "Terry McLaurin (hamstring) officially doesn't practice Thursday 5/terry-mclaurin-hamstring-officially-doesnt-practice-thursday.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @leo_sells@twitter.com #RaiseHail",
+    "handle": "FantasyProsNFL",
+    "author": "FantasyPros",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-08T20:35:46.000Z",
+    "collectedAt": "2026-10-08T21:02:03.944Z"
   }
 }
