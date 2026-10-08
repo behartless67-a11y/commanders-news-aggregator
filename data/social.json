@@ -1,16 +1,4 @@
 {
-  "social-0a70198cf858": {
-    "id": "social-0a70198cf858",
-    "url": "https://x.com/Commanders/status/2104681805919981846",
-    "text": "things got pretty scary yesterday 🫣 @TheTerry_25@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-09-28T21:17:00.000Z",
-    "collectedAt": "2026-09-29T00:05:54.456Z"
-  },
   "social-add5704bc5da": {
     "id": "social-add5704bc5da",
     "url": "https://x.com/Schultz_Report/status/2104696021871706480",
@@ -23,20 +11,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/350/968/914/143/237/original/dc87752da3cbbb72.jpg"
     ],
     "publishedAt": "2026-09-28T22:13:29.000Z",
-    "collectedAt": "2026-09-29T00:11:32.737Z"
-  },
-  "social-dfd9071545d8": {
-    "id": "social-dfd9071545d8",
-    "url": "https://x.com/tashanreed/status/2104679597165969682",
-    "text": "On today's episode of The Tashan Reed Show, we discussed Jayden Daniels’ looming return to practice and his potential to play this week. We also recapped the #Commanders ’ upset win over the Seahawks before previewing their matchup with the Colts in London: tashan-reed-show-jayden-daniels?r",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/350/717/614/993/471/original/476f5dc2dcf7f735.jpg"
-    ],
-    "publishedAt": "2026-09-28T21:08:13.000Z",
     "collectedAt": "2026-09-29T00:11:32.737Z"
   },
   "social-41f794a5faee": {
@@ -63,18 +37,6 @@
     "publishedAt": "2026-09-28T23:00:22.000Z",
     "collectedAt": "2026-09-29T01:38:34.525Z"
   },
-  "social-f9a13cbc438f": {
-    "id": "social-f9a13cbc438f",
-    "url": "https://x.com/BaldyNFL/status/2104689224624861189",
-    "text": ". @Seahawks @Commanders @sonnystyles_@twitter.com filling up the stat sheet is one thing....doing it and getting the W is a whole ' other feeling. #BaldysBreakdowns",
-    "handle": "BaldyNFL",
-    "author": "Brian Baldinger",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-28T21:46:29.000Z",
-    "collectedAt": "2026-09-29T06:05:43.880Z"
-  },
   "social-fa9aa15adc15": {
     "id": "social-fa9aa15adc15",
     "url": "https://x.com/Commanders/status/2104749250072777151",
@@ -86,20 +48,6 @@
     "images": [],
     "publishedAt": "2026-09-29T01:45:00.000Z",
     "collectedAt": "2026-09-29T10:05:42.177Z"
-  },
-  "social-f1c94e80d6ea": {
-    "id": "social-f1c94e80d6ea",
-    "url": "https://x.com/Commanders/status/2104692879343976620",
-    "text": ". @_YoungTruth7@twitter.com was all over the field",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/350/920/847/548/492/original/888d550c37dc38bc.jpg"
-    ],
-    "publishedAt": "2026-09-28T22:01:00.000Z",
-    "collectedAt": "2026-09-29T10:05:42.178Z"
   },
   "social-aee3c87a949b": {
     "id": "social-aee3c87a949b",
@@ -174,18 +122,6 @@
     "images": [],
     "publishedAt": "2026-09-29T00:39:51.000Z",
     "collectedAt": "2026-09-29T10:05:46.354Z"
-  },
-  "social-7b87fa0590fa": {
-    "id": "social-7b87fa0590fa",
-    "url": "https://x.com/BaldyNFL/status/2104682072157688135",
-    "text": ". @Seahawks @Commanders @_YoungTruth7@twitter.com was the best defensive back in this matchup and the Commanders don't shock the World Champs without his plays all day long. #BaldysBreakdowns",
-    "handle": "BaldyNFL",
-    "author": "Brian Baldinger",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-28T21:18:03.000Z",
-    "collectedAt": "2026-09-29T12:05:46.046Z"
   },
   "social-76d1332ffe1c": {
     "id": "social-76d1332ffe1c",
@@ -10171,5 +10107,17 @@
     "images": [],
     "publishedAt": "2026-10-08T20:35:46.000Z",
     "collectedAt": "2026-10-08T21:02:03.944Z"
+  },
+  "social-df2de8d905ee": {
+    "id": "social-df2de8d905ee",
+    "url": "https://x.com/NickiJhabvala/status/2108289118882955613",
+    "text": "The Commanders released RB Kaytron Allen, a sixth-round pick this year.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-08T20:11:10.000Z",
+    "collectedAt": "2026-10-08T22:05:10.354Z"
   }
 }
