@@ -1,16 +1,4 @@
 {
-  "social-b8ca4dd13ebe": {
-    "id": "social-b8ca4dd13ebe",
-    "url": "https://x.com/tashanreed/status/2104607694174961678",
-    "text": "#Commanders LB Sonny Styles has been reliable in coverage this year. He's only been targeted 8 times across 86 coverage snaps according to NFL Pro. He's given up 5 catches for 74 yards and 1 TD, but also has a pick and two pass breakups.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-09-28T16:22:30.000Z",
-    "collectedAt": "2026-09-28T18:01:19.032Z"
-  },
   "social-26d30a109888": {
     "id": "social-26d30a109888",
     "url": "https://x.com/NickiJhabvala/status/2104654190207230381",
@@ -279,18 +267,6 @@
     "publishedAt": "2026-09-28T18:59:45.000Z",
     "collectedAt": "2026-09-29T06:05:43.880Z"
   },
-  "social-720336406f15": {
-    "id": "social-720336406f15",
-    "url": "https://x.com/JPFinlayNBCS/status/2104620709943124362",
-    "text": "Most impressive player from Sunday's Washington win:",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-28T17:14:13.000Z",
-    "collectedAt": "2026-09-29T06:05:43.880Z"
-  },
   "social-fa9aa15adc15": {
     "id": "social-fa9aa15adc15",
     "url": "https://x.com/Commanders/status/2104749250072777151",
@@ -425,18 +401,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-09-28T19:01:54.000Z",
-    "collectedAt": "2026-09-29T10:05:45.003Z"
-  },
-  "social-b33390653281": {
-    "id": "social-b33390653281",
-    "url": "https://x.com/john_keim/status/2104606892328690156",
-    "text": "Kain Medrano missed a couple tackles. Also showed speed to the gap that made a difference. Helps when the DL is playing as it has vs. the run. All across the board: Settle, Kinlaw, Payne et al. Edges being set by the OLBs. Sound gap discipline and defeating blocks.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-28T16:19:19.000Z",
     "collectedAt": "2026-09-29T10:05:45.003Z"
   },
   "social-fceb1bc2d886": {
@@ -10099,5 +10063,129 @@
     "images": [],
     "publishedAt": "2026-10-08T15:15:28.000Z",
     "collectedAt": "2026-10-08T16:05:58.974Z"
+  },
+  "social-38f36c69bb13": {
+    "id": "social-38f36c69bb13",
+    "url": "https://x.com/JPFinlayNBCS/status/2108235465543266734",
+    "text": "Major news for Washington here. Cosmi can stabilize this O-Line in a big way",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-08T16:37:58.000Z",
+    "collectedAt": "2026-10-08T17:17:39.056Z"
+  },
+  "social-50b66393acc6": {
+    "id": "social-50b66393acc6",
+    "url": "https://x.com/JPFinlayNBCS/status/2108230147656626513",
+    "text": "In 3 career games against the Giants, Jayden Daniels is 3-0 with 670 yards passing on 70 percent completions and 3 TDs with another 150 yards rushing. No turnovers.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-08T16:16:50.000Z",
+    "collectedAt": "2026-10-08T17:17:39.056Z"
+  },
+  "social-730366e226c8": {
+    "id": "social-730366e226c8",
+    "url": "https://x.com/john_keim/status/2108235247972466874",
+    "text": "Sam Cosmi back out here. Not in a non-contact jersey.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/406/267/587/949/306/original/e08549d0d0fe3bd3.jpg"
+    ],
+    "publishedAt": "2026-10-08T16:37:06.000Z",
+    "collectedAt": "2026-10-08T17:17:40.396Z"
+  },
+  "social-519e8dd1b2a1": {
+    "id": "social-519e8dd1b2a1",
+    "url": "https://x.com/john_keim/status/2108234151002308621",
+    "text": "WR Terry McLaurin is not out here during the portion open to the media.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-08T16:32:45.000Z",
+    "collectedAt": "2026-10-08T17:17:40.396Z"
+  },
+  "social-ba780139989e": {
+    "id": "social-ba780139989e",
+    "url": "https://x.com/john_keim/status/2108232142345875867",
+    "text": "WR Stefon Diggs is out here during stretching but now headed to workout with the athletic trainers off to the side",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-08T16:24:46.000Z",
+    "collectedAt": "2026-10-08T17:17:40.396Z"
+  },
+  "social-cc9dd68baf6a": {
+    "id": "social-cc9dd68baf6a",
+    "url": "https://x.com/BenStandig/status/2108232943382540749",
+    "text": "Lovely day in Ashburn. All I got for you right now.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/406/234/953/096/598/original/a2b798df29bbe91d.jpg"
+    ],
+    "publishedAt": "2026-10-08T16:27:57.000Z",
+    "collectedAt": "2026-10-08T17:17:42.105Z"
+  },
+  "social-0f69ba1d1d14": {
+    "id": "social-0f69ba1d1d14",
+    "url": "https://x.com/tashanreed/status/2108235075817210103",
+    "text": "It's been a frustrating last couple years for McLaurin. He missed 7 games — and never looked like himself — after the quad injury last year. Now, he may miss his second straight game due to a hamstring.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T16:36:25.000Z",
+    "collectedAt": "2026-10-08T17:17:43.194Z"
+  },
+  "social-700d50b3aa44": {
+    "id": "social-700d50b3aa44",
+    "url": "https://x.com/tashanreed/status/2108231589805330792",
+    "text": "Also didn't see #Commanders DE Charles Omenihu (groin) for the second straight practice.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T16:22:34.000Z",
+    "collectedAt": "2026-10-08T17:17:43.194Z"
+  },
+  "social-ebc3d251e00a": {
+    "id": "social-ebc3d251e00a",
+    "url": "https://x.com/tashanreed/status/2108231368773640317",
+    "text": "#Commanders WR Terry McLaurin (hamstring) isn't out here during warmups. He also missed practice yesterday.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T16:21:42.000Z",
+    "collectedAt": "2026-10-08T17:17:43.194Z"
+  },
+  "social-2d0c5af84140": {
+    "id": "social-2d0c5af84140",
+    "url": "https://x.com/tashanreed/status/2108230334970032247",
+    "text": "#Commanders WR Stefon Diggs (hamstring) is back at practice today.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-08T16:17:35.000Z",
+    "collectedAt": "2026-10-08T17:17:43.194Z"
   }
 }
