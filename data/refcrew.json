@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-09T02:06:42.013Z",
+  "fetchedAt": "2026-10-09T04:06:39.198Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5383,6 +5383,22 @@
         "abbr": "ATL",
         "flags": 8,
         "yards": 70
+      }
+    },
+    "401872980": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-09T00:15Z",
+      "referee": "Alex Moore",
+      "home": {
+        "abbr": "DAL",
+        "flags": 7,
+        "yards": 57
+      },
+      "away": {
+        "abbr": "TB",
+        "flags": 14,
+        "yards": 92
       }
     }
   }

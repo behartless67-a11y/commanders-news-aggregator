@@ -1,16 +1,4 @@
 {
-  "clutchpoints-e650608f8641": {
-    "id": "clutchpoints-e650608f8641",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-did-cfp-troll-jayden-daniels-amid-viral-no-5-issue",
-    "title": "Did CFP just troll Commanders’ Jayden Daniels amid viral No. 5 issue?",
-    "excerpt": "Jayden Daniels has turned into a meme basically overnight. After the Washington Commanders star took action against his alma mater LSU over their use of his #5 jersey, Daniels has been clowned endlessly on social media. The current running joke around Daniels is mockingly not using the number five as a form of “respect” for the star.\n\n It’s interesting, then, that the College Football Playoff page on X seemingly made a reference to this meme… without overtly talking about Daniels. The CFP’s…",
-    "publishedAt": "2026-08-25T03:46:22.000Z",
-    "collectedAt": "2026-08-25T04:36:37.501Z"
-  },
   "hogs-haven-2aec5ec62d2a": {
     "id": "hogs-haven-2aec5ec62d2a",
     "sourceId": "hogs-haven",
@@ -16150,5 +16138,41 @@
     "excerpt": "Aug 22, 2026; Detroit, Michigan, USA; Washington Commanders running back Kaytron Allen (31) runs the ball against the Detroit Lions in the first quarter at Ford Field. Mandatory Credit: Lon Horwedel-Imagn Images \n \n\n A sixth-round pick out of Penn State lasted four games in Washington, and the running back room he leaves behind is telling a story.\n\n In a shocking move, the Washington Commanders have waived rookie running back Kaytron Allen . Allen was a sixth-round pick out of Penn State , and…",
     "publishedAt": "2026-10-09T01:01:12.000Z",
     "collectedAt": "2026-10-09T02:05:34.317Z"
+  },
+  "hogs-haven-23c60ca5bb4b": {
+    "id": "hogs-haven-23c60ca5bb4b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/447446/cowboys-got-boatraced-by-0-4-buccaneers-on-thursday-night-all-atwitter",
+    "title": "Cowboys got boatraced by 0-4 Buccaneers on Thursday night – All aTwitter",
+    "excerpt": "ARLINGTON, TEXAS - OCTOBER 08: Dak Prescott #4 of the Dallas Cowboys walks off the field after being defeated by the Tampa Bay Buccaneers in the game at AT&T Stadium on October 08, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images \n \n All aTwitter – 9 October 2026\n\n We follow Twitter so you don’t have to\n\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along…",
+    "publishedAt": "2026-10-09T04:01:40.000Z",
+    "collectedAt": "2026-10-09T04:05:31.591Z"
+  },
+  "clutchpoints-01fda3568ff4": {
+    "id": "clutchpoints-01fda3568ff4",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-surprisingly-waives-running-back-ahead-of-giants-clash",
+    "title": "Commanders surprisingly waive running back ahead of Giants clash",
+    "excerpt": "The Washington Commanders on Thursday waived rookie running back Kaytron Allen ahead of their upcoming clash with the New York Giants in Week 5 .\n\n Washington selected the former Penn State standout with the 187th overall pick in the sixth round of the 2026 NFL Draft, who entered the NFL following a record-setting college career. However, Allen’s opportunities with the Commanders remained limited, with the 23-year-old recording 41 rushing yards on 12 carries across his first four appearances.…",
+    "publishedAt": "2026-10-08T21:56:46.000Z",
+    "collectedAt": "2026-10-09T04:05:32.457Z"
+  },
+  "pft-d9f4560e9c3d": {
+    "id": "pft-d9f4560e9c3d",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-commanders-on-sunday-morning-had-less-than-five-million-viewers",
+    "title": "Colts-Commanders on Sunday morning had less than five million viewers",
+    "excerpt": "The European games have created a new NFL viewing window on Sunday mornings. And while the numbers aren't shabby, they're nothing close to what NFL games do in the more traditional windows.\n Via Nielsen, the Week 4 Colts-Commanders game from London averaged 4.987 million viewers on NFL Network.\n In 2025, the six Sunday morning international games on NFLN averaged 6.2 million viewers .\n That next chance to improve the international performance comes on Sunday, when the Eagles face the Jaguars at…",
+    "publishedAt": "2026-10-09T02:59:39.000Z",
+    "collectedAt": "2026-10-09T04:05:41.415Z"
   }
 }

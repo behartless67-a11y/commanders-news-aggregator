@@ -9,31 +9,6 @@
     "stats": null
   },
   {
-    "slug": "kaytron-allen",
-    "name": "Kaytron Allen",
-    "jersey": "31",
-    "position": "RB",
-    "espnId": "4685246",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4685246.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "CAR",
-          "value": "12"
-        },
-        {
-          "label": "YDS",
-          "value": "41"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "john-bates",
     "name": "John Bates",
     "jersey": "87",
