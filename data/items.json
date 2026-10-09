@@ -1,16 +1,4 @@
 {
-  "riggos-rag-6af758e9ac63": {
-    "id": "riggos-rag-6af758e9ac63",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/mike-mccarthy-admission-gives-commanders-reason-track-joey-porter-jr",
-    "title": "Mike McCarthy admission gives Commanders reason to track Joey Porter Jr.",
-    "excerpt": "The Pittsburgh Steelers and stud cornerback Joey Porter Jr. remain at an impasse regarding a new deal, and the Washington Commanders should monitor the situation closely.",
-    "publishedAt": "2026-08-25T16:00:00.000Z",
-    "collectedAt": "2026-08-25T16:34:37.004Z"
-  },
   "hogs-haven-460362f7dec5": {
     "id": "hogs-haven-460362f7dec5",
     "sourceId": "hogs-haven",
@@ -16138,5 +16126,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-09T14:00:16.000Z",
     "collectedAt": "2026-10-09T14:58:05.660Z"
+  },
+  "riggos-rag-5cad83ced3cb": {
+    "id": "riggos-rag-5cad83ced3cb",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-injuries-could-open-door-treylon-burks-pivotal-audition",
+    "title": "Commanders injuries could open the door to Treylon Burks’ pivotal audition",
+    "excerpt": "Injury concerns around Stefon Diggs and Terry McLaurin could open the door to Washington Commanders wide receiver Treylon Burks' pivotal audition.",
+    "publishedAt": "2026-10-09T16:00:02.000Z",
+    "collectedAt": "2026-10-09T16:05:34.194Z"
+  },
+  "yahoo-nfl-1ccbdd9b4a98": {
+    "id": "yahoo-nfl-1ccbdd9b4a98",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/giants-commanders-matchup-giants-football-151009467.html",
+    "title": "Giants-Commanders matchup: When the Giants have the football",
+    "excerpt": "Malik Nabers | Icon Sportswire via Getty Images The 3-1 Giants travel to Washington to play the 1-3 Commanders, who will receive starting quarterback Jayden Daniels back. The 2024 Rookie of the Year is returning from a dislocated left elbow. Washington is favored by three-and-a-half points, and the Over/Under is set at 43.5 points. \n The Commanders are returning from London, where the Indianapolis Colts defeated them 30-13; Washington had to play rookie third-stringer Athan Kaliakmanis at…",
+    "publishedAt": "2026-10-09T15:10:09.000Z",
+    "collectedAt": "2026-10-09T16:05:41.201Z"
   }
 }
