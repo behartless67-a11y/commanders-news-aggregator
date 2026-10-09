@@ -1,40 +1,4 @@
 {
-  "social-f8b480fce852": {
-    "id": "social-f8b480fce852",
-    "url": "https://x.com/JPFinlayNBCS/status/2104988535526674453",
-    "text": "This sucks for people that have already bought tickets. Procrastination pays off in this case",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-29T17:35:50.000Z",
-    "collectedAt": "2026-09-29T17:38:44.618Z"
-  },
-  "social-54541fb4ccc7": {
-    "id": "social-54541fb4ccc7",
-    "url": "https://x.com/JPFinlayNBCS/status/2104986404694753685",
-    "text": "MLB World Series pick: Brewers over Red Sox in 6",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-29T17:27:22.000Z",
-    "collectedAt": "2026-09-29T17:38:44.618Z"
-  },
-  "social-3cf79ac5f5f3": {
-    "id": "social-3cf79ac5f5f3",
-    "url": "https://x.com/john_keim/status/2104986041002450988",
-    "text": "A quick video (before a haircut!) on Mariota's impact going beyond the stat sheet. Also: he earned a nice $$ bonus for the W 707",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-29T17:25:55.000Z",
-    "collectedAt": "2026-09-29T17:38:45.734Z"
-  },
   "social-74c37d5eb0b3": {
     "id": "social-74c37d5eb0b3",
     "url": "https://x.com/NickiJhabvala/status/2105025114945585584",
@@ -373,18 +337,6 @@
     "images": [],
     "publishedAt": "2026-09-30T00:05:46.000Z",
     "collectedAt": "2026-09-30T02:05:42.924Z"
-  },
-  "social-282b8c11958a": {
-    "id": "social-282b8c11958a",
-    "url": "https://x.com/ProFootballTalk/status/2104986352823750943",
-    "text": "NFL cuts Colts-Commanders ticket prices for Sunday at Tottenham Hotspur Stadium due to slow sales. alk/rumor-mill/news/nfl-cuts-colts-commanders-ticket-prices-in-london-due-to-slow-sales",
-    "handle": "ProFootballTalk",
-    "author": "ProFootballTalk",
-    "label": "",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-29T17:27:09.000Z",
-    "collectedAt": "2026-09-30T02:05:44.296Z"
   },
   "social-30ce8d7c4d29": {
     "id": "social-30ce8d7c4d29",
@@ -10601,5 +10553,65 @@
     "images": [],
     "publishedAt": "2026-10-09T16:39:18.000Z",
     "collectedAt": "2026-10-09T16:53:34.043Z"
+  },
+  "social-e9d3e2c4865c": {
+    "id": "social-e9d3e2c4865c",
+    "url": "https://x.com/NickiJhabvala/status/2108619560622723244",
+    "text": "Mike Sainristil was benched and takes a lot of heat on social media and elsewhere. But he makes himself available to reporters every single day. Major props for that.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T18:04:14.000Z",
+    "collectedAt": "2026-10-09T18:05:09.680Z"
+  },
+  "social-ecdc272a4c8b": {
+    "id": "social-ecdc272a4c8b",
+    "url": "https://x.com/NickiJhabvala/status/2108619169360957787",
+    "text": "Dan Quinn was asked about the team's myriad injuries and if he thinks players' conditioning was/is at all a factor. \"Frustrating, yes. Looking into as hard as we can, yes,\" Quinn said of the injuries. \"... But they were in excellent shape, so that's one we can rule out.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T18:02:40.000Z",
+    "collectedAt": "2026-10-09T18:05:09.680Z"
+  },
+  "social-0281175796c3": {
+    "id": "social-0281175796c3",
+    "url": "https://x.com/NickiJhabvala/status/2108599745719783834",
+    "text": "C Lucas Patrick is the Commanders' starter going forward.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T16:45:29.000Z",
+    "collectedAt": "2026-10-09T18:05:09.680Z"
+  },
+  "social-6ae8676b77f5": {
+    "id": "social-6ae8676b77f5",
+    "url": "https://x.com/NickiJhabvala/status/2108598191751077955",
+    "text": "Jayden Daniels, Sam Cosmi and Rachaad White are all good to go for Sunday. Stefon Diggs is OUT for Sunday. Terry McLaurin is TBD.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T16:39:19.000Z",
+    "collectedAt": "2026-10-09T18:05:09.680Z"
+  },
+  "social-85ab77106e79": {
+    "id": "social-85ab77106e79",
+    "url": "https://x.com/NickiJhabvala/status/2108596305786220649",
+    "text": "Going back to the Colts ... I think the illegal shift penalty was legit. Illegal shift = multiple offensive players fail to come to a stop for a full second before the snap. And you can see the WRs moving within a second of the snap. The 2nd penalty — holding by Dyami —",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T16:31:49.000Z",
+    "collectedAt": "2026-10-09T18:05:09.680Z"
   }
 }
