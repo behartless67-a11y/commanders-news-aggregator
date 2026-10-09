@@ -35,18 +35,6 @@
     "publishedAt": "2026-09-29T23:07:59.000Z",
     "collectedAt": "2026-09-29T23:26:30.227Z"
   },
-  "social-c0897804359f": {
-    "id": "social-c0897804359f",
-    "url": "https://x.com/BenStandig/status/2105060897370579425",
-    "text": "S Percy Butler will travel to London for Sunday's game, per sources. He entered the concussion protocol during the win over Seattle.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-09-29T22:23:22.000Z",
-    "collectedAt": "2026-09-29T23:26:30.227Z"
-  },
   "social-97c41df73920": {
     "id": "social-97c41df73920",
     "url": "https://x.com/AdamSchefter/status/2105072248533258467",
@@ -81,18 +69,6 @@
     "sourceKey": "@NickiJhabvala",
     "images": [],
     "publishedAt": "2026-09-29T23:07:38.000Z",
-    "collectedAt": "2026-09-30T00:05:09.739Z"
-  },
-  "social-cbb2d6d6d797": {
-    "id": "social-cbb2d6d6d797",
-    "url": "https://x.com/NickiJhabvala/status/2105058345870901442",
-    "text": "Snowden’s a Silver Spring native. Went to St. Albans in DC and then UVa. Signed with the Bears as a UDFA in ‘21 and has been with the Bucs, Raiders and Cowboys since. Suspended for first 3 games this season for violating NFL’s personal conduct policy (DUI in 2024).",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-29T22:13:14.000Z",
     "collectedAt": "2026-09-30T00:05:09.739Z"
   },
   "social-148779a00ba7": {
@@ -10809,5 +10785,20 @@
     ],
     "publishedAt": "2026-10-09T21:19:08.000Z",
     "collectedAt": "2026-10-09T22:06:05.305Z"
+  },
+  "social-8655585995b7": {
+    "id": "social-8655585995b7",
+    "url": "https://x.com/Commanders/status/2108681410001444999",
+    "text": "all eyes on Sunday @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/413/242/425/605/176/original/a955adb0e2f9d785.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/413/242/616/259/497/original/9a8b5cb20618fb1c.jpg"
+    ],
+    "publishedAt": "2026-10-09T22:10:00.000Z",
+    "collectedAt": "2026-10-09T22:27:22.984Z"
   }
 }
