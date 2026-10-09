@@ -1,16 +1,4 @@
 {
-  "riggos-rag-2d79e619335f": {
-    "id": "riggos-rag-2d79e619335f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/dan-quinn-faces-troubling-commanders-pattern-that-excuses-wont-fix",
-    "title": "Dan Quinn faces a troubling Commanders pattern that excuses won't fix",
-    "excerpt": "Washington Commanders head coach Dan Quinn is already seeing worrying signs, and he's letting his players know about it.",
-    "publishedAt": "2026-08-25T19:00:03.000Z",
-    "collectedAt": "2026-08-25T19:43:39.873Z"
-  },
   "hogs-haven-7c9259128a41": {
     "id": "hogs-haven-7c9259128a41",
     "sourceId": "hogs-haven",
@@ -16210,5 +16198,41 @@
     "excerpt": "The New York Giants defense | Getty Images The New York Giants travel down I-95 this weekend to take on the Washington Commanders.\n The Giants are carrying a 3-1 record and are currently in sole possession of first place in the division, while the Commanders are 1-3 and in last place. Despite that, the Commanders are 3.5-point favorites over the Giants at home. \n Both of these teams are already beat up and have lost core players to injury. However, one significant difference is that Jayden…",
     "publishedAt": "2026-10-09T17:00:00.000Z",
     "collectedAt": "2026-10-09T18:05:44.658Z"
+  },
+  "riggos-rag-219d3f6c9ce8": {
+    "id": "riggos-rag-219d3f6c9ce8",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-peters-defends-kaytron-allen-decision-more-commanders-moves-loom",
+    "title": "Adam Peters defends Kaytron Allen decision as more Commanders moves loom",
+    "excerpt": "Washington Commanders general manager Adam Peters defended his decision to waive running back Kaytron Allen decision as more moves loom.",
+    "publishedAt": "2026-10-09T19:00:02.000Z",
+    "collectedAt": "2026-10-09T20:05:36.601Z"
+  },
+  "clutchpoints-6c147ee34bac": {
+    "id": "clutchpoints-6c147ee34bac",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-stefon-diggs-terry-mclaurin-get-mixed-bag-injury-updates",
+    "title": "Commanders’ Stefon Diggs, Terry McLaurin get mixed bag injury updates after Jayden Daniels’ return",
+    "excerpt": "The Washington Commanders desperately need a win, and Jayden Daniels’ return could not come at a better time. However, Washington will be without Stefon Diggs against the New York Giants, leaving the offense with some mixed injury news heading into Sunday’s matchup.\n\n According to Mike Garafolo, head coach Dan Quinn confirmed that Diggs will miss Sunday’s game. There was better news regarding Washington’s other key offensive pieces, as Daniels is good to go and Terry McLaurin looked good during…",
+    "publishedAt": "2026-10-09T17:24:17.000Z",
+    "collectedAt": "2026-10-09T20:05:36.767Z"
+  },
+  "clutchpoints-6c438c63f227": {
+    "id": "clutchpoints-6c438c63f227",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-gets-green-light-return-injury-will-play-giants",
+    "title": "Commanders’ Jayden Daniels gets green light to return from injury, will play vs. Giants",
+    "excerpt": "The Washington Commanders will be facing off against the New York Giants this week, and it looks like they’ll be getting back their starting quarterback. After missing the last two weeks with an elbow injury , Jayden Daniels has done everything he needed to get back on the field, and head coach Dan Quinn says that he will start against the Giants .\n\n “HC Dan Quinn confirmed that Jayden Daniels will start on Sunday,” the Commanders wrote on X, formerly Twitter.\n\n This is great news for the…",
+    "publishedAt": "2026-10-09T16:50:26.000Z",
+    "collectedAt": "2026-10-09T20:05:36.767Z"
   }
 }

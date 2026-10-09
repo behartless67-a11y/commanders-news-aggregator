@@ -10134,7 +10134,7 @@
     "text": "Terry McLaurin is out here today. Stefon Diggs is not",
     "handle": "john_keim",
     "author": "John Keim",
-    "label": "",
+    "label": "ESPN",
     "sourceKey": "@john_keim",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/411/670/831/840/213/original/9992ad6703eebef9.jpg"
@@ -10605,5 +10605,109 @@
     "images": [],
     "publishedAt": "2026-10-09T17:05:31.000Z",
     "collectedAt": "2026-10-09T18:06:03.557Z"
+  },
+  "social-4c470951a579": {
+    "id": "social-4c470951a579",
+    "url": "https://x.com/Commanders/status/2108637708088230010",
+    "text": "Sunday's show 🏟️ Excited to be back home at a sold-out @NWStadium@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-09T19:16:20.000Z",
+    "collectedAt": "2026-10-09T20:05:45.113Z"
+  },
+  "social-3ead220f91cd": {
+    "id": "social-3ead220f91cd",
+    "url": "https://x.com/john_keim/status/2108645508881490335",
+    "text": "@micunninghamvo@twitter.com And yes there were other calls they didn’t like Sunday they still don’t like. This is not one of those calls. It just isn’t",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T19:47:20.000Z",
+    "collectedAt": "2026-10-09T20:05:47.922Z"
+  },
+  "social-5b911842f516": {
+    "id": "social-5b911842f516",
+    "url": "https://x.com/john_keim/status/2108629104048078867",
+    "text": "Might seem like a little thing but it’s not. Players don’t always want to talk about this topic. Sainristil spoke multiple times about it this week and has all season. Doesn’t mean he’ll suddenly play better. Does mean he’s not ducking anything.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T18:42:09.000Z",
+    "collectedAt": "2026-10-09T20:05:47.922Z"
+  },
+  "social-af8dcf3226e2": {
+    "id": "social-af8dcf3226e2",
+    "url": "https://x.com/BenStandig/status/2108645467596652986",
+    "text": "Taking a closer look at why the Commanders released 6th-round RB Kaytron Allen, the chances he clears waivers and joins the practice squad. who-gets-kaytron-allen?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/412/676/522/667/075/original/9295b199fda9a068.jpg"
+    ],
+    "publishedAt": "2026-10-09T19:47:10.000Z",
+    "collectedAt": "2026-10-09T20:05:49.251Z"
+  },
+  "social-1fbc8e365da8": {
+    "id": "social-1fbc8e365da8",
+    "url": "https://x.com/BenStandig/status/2108640159654703296",
+    "text": "📹 Quick video on what league sources think of the Commanders' decision to release RB Kaytron Allen and why the notion that this sixth-round pick clears waivers and joins the PS is hardly a lock. Plus, injury talk. who-gets-kaytron-allen?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/412/599/346/865/711/original/f1b91cd4935ac751.jpg"
+    ],
+    "publishedAt": "2026-10-09T19:26:05.000Z",
+    "collectedAt": "2026-10-09T20:05:49.251Z"
+  },
+  "social-b60d7f205cea": {
+    "id": "social-b60d7f205cea",
+    "url": "https://x.com/AdamSchefter/status/2108629822419394800",
+    "text": "Commanders QB Jayden Daniels will start Sunday vs. the Giants, but WR Stefon Diggs will be out due to a hamstring injury.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/412/437/036/570/092/original/6e7c216f5299ea32.jpg"
+    ],
+    "publishedAt": "2026-10-09T18:45:00.000Z",
+    "collectedAt": "2026-10-09T20:05:53.544Z"
+  },
+  "social-45a79ca0140b": {
+    "id": "social-45a79ca0140b",
+    "url": "https://x.com/pfrumors/status/2108641549462741256",
+    "text": "Jayden Daniels missed three games after his initial elbow dislocation last year. The #Commanders starter will end up missing only two this season; he is starting in Week 5 jayden-daniels-on-track-to-return-in-week-5-marcus-mariota-sprains-mcl",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-09T19:31:36.000Z",
+    "collectedAt": "2026-10-09T20:05:59.401Z"
+  },
+  "social-bb91a0eec582": {
+    "id": "social-bb91a0eec582",
+    "url": "https://x.com/MundoNFL/status/2108645197462859876",
+    "text": "REGRESA JAYDEN DANIELS 🚨🔝 El QB de los Commanders estará listo para el juego divisional frente a Giants. #MundoNFL | #RaiseHail",
+    "handle": "MundoNFL",
+    "author": "Mundo NFL",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/412/679/633/522/513/original/80c6449c04b9c960.jpg"
+    ],
+    "publishedAt": "2026-10-09T19:46:06.000Z",
+    "collectedAt": "2026-10-09T20:06:03.639Z"
   }
 }
