@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-25T11:30:00.000Z",
     "collectedAt": "2026-08-25T12:42:29.947Z"
   },
-  "hogs-haven-8ecebd981577": {
-    "id": "hogs-haven-8ecebd981577",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/434967/sonny-styles-fantastic-preseason-daronte-jones-athan-kaliakmanis",
-    "title": "Commanders News: “Sonny Styles is looking fantastic this preseason”",
-    "excerpt": "The Daily Slop – 25 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Cover 4 Quarters \n\n Sonny Styles is already proving the hype in Washington is real \n\n This play from Styles drew the ire of fans everywhere, who immediately clamored, “Bust!” “Played like a…",
-    "publishedAt": "2026-08-25T10:00:00.000Z",
-    "collectedAt": "2026-08-25T12:42:29.947Z"
-  },
   "riggos-rag-d39df9b5ab71": {
     "id": "riggos-rag-d39df9b5ab71",
     "sourceId": "riggos-rag",
@@ -45,18 +33,6 @@
     "title": "Graham Glasgow opens the door to rescue Commanders from center turmoil",
     "excerpt": "Veteran offensive lineman Graham Glasgow would consider a move to the Washington Commanders if general manager Adam Peters came calling.",
     "publishedAt": "2026-08-25T11:30:00.000Z",
-    "collectedAt": "2026-08-25T12:42:30.373Z"
-  },
-  "riggos-rag-5b3bee8753f6": {
-    "id": "riggos-rag-5b3bee8753f6",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/6-commanders-could-become-trade-bait-adam-peters-roster-purge",
-    "title": "6 Commanders who could become trade bait in Adam Peters' roster purge",
-    "excerpt": "Which Washington Commanders players could potentially become trade bait when general manager Adam Peters trims his roster to 53?",
-    "publishedAt": "2026-08-25T10:00:02.000Z",
     "collectedAt": "2026-08-25T12:42:30.373Z"
   },
   "athletic-jhabvala-6c4ecb686165": {
@@ -16198,5 +16174,29 @@
     "excerpt": "Washington Commanders quarterback Jayden Daniels (5) looks to pass against the Dallas Cowboys during the first half of an NFL football game in Arlington, Texas, Sunday, Sept. 20, 2026. Jayden Daniels will be back on the gridiron for Sunday’s game against the Giants.\n When asked about Daniels’ availability, offensive coordinator David Blough said that Washington quarterback is “full go” ahead of the Week 5 matchup.\n “We’re looking forward to having him back,” Blough added, according to ESPN .…",
     "publishedAt": "2026-10-09T01:38:59.000Z",
     "collectedAt": "2026-10-09T06:05:38.242Z"
+  },
+  "riggos-rag-72df1e6f696f": {
+    "id": "riggos-rag-72df1e6f696f",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-winners-3-losers-from-washington-commanders-first-four-games-2026",
+    "title": "5 winners (and 3 losers) from Commanders' first four games of 2026",
+    "excerpt": "Who were the big winners and losers from the Washington Commanders' first four games of the 2026 season?",
+    "publishedAt": "2026-10-09T10:00:01.000Z",
+    "collectedAt": "2026-10-09T10:05:32.477Z"
+  },
+  "athletic-commanders-bb0b9cc69443": {
+    "id": "athletic-commanders-bb0b9cc69443",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7673003/2026/10/09/dan-quinn-commanders-slogans-mottos",
+    "title": "The Commanders have the slogans and the brotherhood, but they could use some wins",
+    "excerpt": "Dan Quinn's Commanders culture is built on mantras in which he and his players believe. In tough times, they start to ring hollow.",
+    "publishedAt": "2026-10-09T10:00:28.000Z",
+    "collectedAt": "2026-10-09T10:05:34.646Z"
   }
 }
