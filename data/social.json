@@ -10096,5 +10096,55 @@
     "images": [],
     "publishedAt": "2026-10-08T23:32:40.000Z",
     "collectedAt": "2026-10-09T00:11:39.269Z"
+  },
+  "social-d23ab31b951a": {
+    "id": "social-d23ab31b951a",
+    "url": "https://x.com/Commanders/status/2108359287370084824",
+    "text": "back in white this weekend",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/408/209/553/173/083/original/26099e1fb86391ff.jpg"
+    ],
+    "publishedAt": "2026-10-09T00:50:00.000Z",
+    "collectedAt": "2026-10-09T02:05:47.816Z"
+  },
+  "social-9520431a7ea2": {
+    "id": "social-9520431a7ea2",
+    "url": "https://x.com/JPFinlayNBCS/status/2108374390748688489",
+    "text": "Great first half for Tampa. Give credit to Kevin Carrberry, Bucs OLine coach. Giving rookie QB time and run lanes. Dallas O dangerous in 2nd half though",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-09T01:50:01.000Z",
+    "collectedAt": "2026-10-09T02:05:49.119Z"
+  },
+  "social-5606f0400a8e": {
+    "id": "social-5606f0400a8e",
+    "url": "https://x.com/JPFinlayNBCS/status/2108355521270944153",
+    "text": "That’s the killer rookie mistake. Can’t take the sack. Bailed out by the flag though.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-09T00:35:02.000Z",
+    "collectedAt": "2026-10-09T02:05:49.119Z"
+  },
+  "social-42fcb7152080": {
+    "id": "social-42fcb7152080",
+    "url": "https://x.com/pfrumors/status/2108359868239237194",
+    "text": "Rather than a Jeremy McNichols IR activation moving the #Commanders ' RB room to five, they will subtract from that group by cutting rookie Kaytron Allen. The team hopes he can land on the practice squad commanders-waive-rb-kaytron-allen",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-09T00:52:18.000Z",
+    "collectedAt": "2026-10-09T02:06:01.680Z"
   }
 }
