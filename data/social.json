@@ -13,18 +13,6 @@
     "publishedAt": "2026-09-29T22:00:01.000Z",
     "collectedAt": "2026-09-29T22:03:35.378Z"
   },
-  "social-c9dfb276895c": {
-    "id": "social-c9dfb276895c",
-    "url": "https://x.com/john_keim/status/2105027511570649132",
-    "text": "Washington signed RB Austin Ekeler and placed LB Leo Chenal on injured reserve. They also placed OLB Marvin Jones Jr. on Practice Squad; Injured",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-29T20:10:42.000Z",
-    "collectedAt": "2026-09-29T22:03:38.241Z"
-  },
   "social-72c2e377f834": {
     "id": "social-72c2e377f834",
     "url": "https://x.com/BenStandig/status/2105055296041189815",
@@ -10709,5 +10697,115 @@
     ],
     "publishedAt": "2026-10-09T19:46:06.000Z",
     "collectedAt": "2026-10-09T20:06:03.639Z"
+  },
+  "social-661dcbe8b58c": {
+    "id": "social-661dcbe8b58c",
+    "url": "https://x.com/AdamSchefter/status/2108650513923293300",
+    "text": "Source: Former Commanders RB Kaytron Allen was claimed today on waivers by the Miami Dolphins.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/412/758/147/384/210/original/5013d97ac3f38d0c.jpg"
+    ],
+    "publishedAt": "2026-10-09T20:07:14.000Z",
+    "collectedAt": "2026-10-09T20:33:09.221Z"
+  },
+  "social-0a95d16c8c2b": {
+    "id": "social-0a95d16c8c2b",
+    "url": "https://x.com/john_keim/status/2108650978639855997",
+    "text": "Ruled out for Sunday: WR Stefon Diggs, DE Charles Omenihu, S Nick Cross, QB Marcus Mariota, S Percy Butler, S Tyler Owens.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T20:09:04.000Z",
+    "collectedAt": "2026-10-09T20:33:09.221Z"
+  },
+  "social-edcd215fd2ae": {
+    "id": "social-edcd215fd2ae",
+    "url": "https://x.com/BenStandig/status/2108652014766788790",
+    "text": "The Commanders for Week 6 have ruled out: QB Marcus Mariota WR Stefon Diggs DE Charles Omenihu S Nick Cross S Tyler Owens S Percy Butler Questionable: WR Terry McLaurin RB Jeremy McNichols CB Trey Amos DE Deatrch Wise",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T20:13:11.000Z",
+    "collectedAt": "2026-10-09T20:33:10.632Z"
+  },
+  "social-e1d2a67625dc": {
+    "id": "social-e1d2a67625dc",
+    "url": "https://x.com/BenStandig/status/2108651258999427386",
+    "text": "Sources: RB Kaytron Allen was claimed off waivers by the Dolphins Commanders released the sixth-round rookie yesterday after four games.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T20:10:11.000Z",
+    "collectedAt": "2026-10-09T20:33:10.632Z"
+  },
+  "social-0ccd2100caa3": {
+    "id": "social-0ccd2100caa3",
+    "url": "https://x.com/BenStandig/status/2108650575571419203",
+    "text": "Source: RB Kaytron Allen was claimed off waivers. Commanders released the sixth-round rookie yesterday after four games.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T20:07:28.000Z",
+    "collectedAt": "2026-10-09T20:33:10.632Z"
+  },
+  "social-e8274be78020": {
+    "id": "social-e8274be78020",
+    "url": "https://x.com/tashanreed/status/2108652276420431931",
+    "text": "#Commanders will be really shorthanded at safety. Jeremy Reaves and Quan Martin are currently the only ones on the active roster. Darren Hall is on the practice squad.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T20:14:14.000Z",
+    "collectedAt": "2026-10-09T20:33:12.010Z"
+  },
+  "social-76aef93abebe": {
+    "id": "social-76aef93abebe",
+    "url": "https://x.com/tashanreed/status/2108651785946554509",
+    "text": "Fatman is headed to Miami:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T20:12:17.000Z",
+    "collectedAt": "2026-10-09T20:33:12.010Z"
+  },
+  "social-8d7a5b032f45": {
+    "id": "social-8d7a5b032f45",
+    "url": "https://x.com/tashanreed/status/2108651360581247332",
+    "text": "Cross, Omenihu, Diggs, Mariota, Owens and Butler have been ruled out. McLaurin, Amos, McNichols and Wise are questionable.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T20:10:35.000Z",
+    "collectedAt": "2026-10-09T20:33:12.010Z"
+  },
+  "social-8f915024b45f": {
+    "id": "social-8f915024b45f",
+    "url": "https://x.com/pfrumors/status/2108651666127908933",
+    "text": "#Commanders hopes at stashing Kaytron Allen on their practice squad did not advance too far. The #Dolphins used their high waiver priority to claim the rookie sixth-round RB dolphins-claim-rb-kaytron-allen",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-09T20:11:48.000Z",
+    "collectedAt": "2026-10-09T20:33:20.847Z"
   }
 }
