@@ -2,15 +2,8 @@
   {
     "name": "Charles Omenihu",
     "position": "DE",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Groin",
-    "notes": null
-  },
-  {
-    "name": "Chig Okonkwo",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
     "notes": null
   },
   {
@@ -18,20 +11,6 @@
     "position": "DE",
     "status": "PUP",
     "bodyPart": "Undisclosed",
-    "notes": null
-  },
-  {
-    "name": "Frankie Luvu",
-    "position": "LB",
-    "status": "Questionable",
-    "bodyPart": "Groin",
-    "notes": null
-  },
-  {
-    "name": "Jacory Croskey-Merritt",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Groin",
     "notes": null
   },
   {
@@ -79,43 +58,22 @@
   {
     "name": "Marcus Mariota",
     "position": "QB",
-    "status": "Doubtful",
+    "status": "Out",
     "bodyPart": "Knee - MCL",
     "notes": "Sprain"
   },
   {
-    "name": "Nick Allegretti",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Hip",
-    "notes": null
-  },
-  {
     "name": "Nick Cross",
     "position": "DB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Illness",
     "notes": null
   },
   {
     "name": "Percy Butler",
     "position": "DB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
-    "name": "Rachaad White",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
-  },
-  {
-    "name": "Sam Cosmi",
-    "position": "OL",
-    "status": "Questionable",
-    "bodyPart": "Concussion",
     "notes": null
   },
   {
@@ -142,7 +100,7 @@
   {
     "name": "Tyler Owens",
     "position": "DB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Hamstring",
     "notes": null
   }
