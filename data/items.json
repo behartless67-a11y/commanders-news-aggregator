@@ -11,30 +11,6 @@
     "publishedAt": "2026-08-25T16:00:00.000Z",
     "collectedAt": "2026-08-25T16:34:37.004Z"
   },
-  "riggos-rag-c14c24ef4a6f": {
-    "id": "riggos-rag-c14c24ef4a6f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/surprise-cut-turns-commanders-disputed-decision-into-undeniable-mistake",
-    "title": "Surprise cut turns Commanders' disputed decision into an undeniable mistake",
-    "excerpt": "The Washington Commanders have released veteran safety Will Harris after his preseason blunder against the Detroit Lions.",
-    "publishedAt": "2026-08-25T14:30:00.000Z",
-    "collectedAt": "2026-08-25T16:34:37.004Z"
-  },
-  "wjla-commanders-c4ed68ca1bdc": {
-    "id": "wjla-commanders-c4ed68ca1bdc",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-release-safety-will-harris-washington-dan-quinn-nick-cross-jeremy-reaves-quan-martin",
-    "title": "Washington Commanders release safety Will Harris",
-    "excerpt": "The Washington Commanders are starting to trim their roster. The team has to get to 53 players by Sunday at 6:00 pm.Tuesday morning the Commanders released vete",
-    "publishedAt": "2026-08-25T14:15:18.000Z",
-    "collectedAt": "2026-08-25T16:34:41.591Z"
-  },
   "hogs-haven-460362f7dec5": {
     "id": "hogs-haven-460362f7dec5",
     "sourceId": "hogs-haven",
@@ -16126,5 +16102,41 @@
     "excerpt": "Nobody would claim that the 2026 season has gone to plan for the Giants , who lost their starting quarterback and best defensive player to season-ending injuries. However, after four games, they find themselves on top of the NFC East with a chance to improve to 4-1 against the Washington Commanders. \n Here are the key storylines to watch as the Giants look to keep the momentum going… \n How long is Jameis Winston 's leash? \n After two disappointing games following Jaxson Dart 's season-ending…",
     "publishedAt": "2026-10-09T12:45:00.000Z",
     "collectedAt": "2026-10-09T14:05:47.978Z"
+  },
+  "hogs-haven-4d71aa19fbc9": {
+    "id": "hogs-haven-4d71aa19fbc9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/447692/commanders-gm-adam-peters-talks-kaytron-allen-austin-ekeler-nick-cross",
+    "title": "Commanders GM Adam Peters talks Kaytron Allen, Austin Ekeler, Nick Cross",
+    "excerpt": "General manager Adam Peters held his weekly Friday interview with The Junkies on 106.7-FM The Fan and clearly wasn’t ready to break news during it, as he did with Jayden Daniels a few weeks back. \n\n He did offer some insight on several decisions over the last week, including the Kaytron Allen cut , receivers Terry McLaurin and Stefon Diggs and safety Nick Cross. Let’s get right to some highlights from the interview: \n\n The Kaytron Allen cut \n\n “We’re not down on Kaytron at all. We really like…",
+    "publishedAt": "2026-10-09T14:18:21.000Z",
+    "collectedAt": "2026-10-09T14:58:03.234Z"
+  },
+  "riggos-rag-e9d6014182df": {
+    "id": "riggos-rag-e9d6014182df",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/cowboys-finding-out-what-washington-commanders-already-knew-about-von-miller",
+    "title": "Cowboys finding out what the Commanders already knew about Von Miller",
+    "excerpt": "The Dallas Cowboys are quickly finding out what the Washington Commanders already knew about Von Miller's regression.",
+    "publishedAt": "2026-10-09T14:30:00.000Z",
+    "collectedAt": "2026-10-09T14:58:03.752Z"
+  },
+  "commanders-youtube-6e2e71e5e22a": {
+    "id": "commanders-youtube-6e2e71e5e22a",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=4OMORY3m5uI",
+    "title": "Athan Kaliakmanis On His First NFL Game + Taylor Heinicke Is BACK 🔥 | Next Man Up | Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-09T14:00:16.000Z",
+    "collectedAt": "2026-10-09T14:58:05.660Z"
   }
 }
