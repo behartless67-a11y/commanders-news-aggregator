@@ -9970,7 +9970,7 @@
     "text": "back in white this weekend",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/408/209/553/173/083/original/26099e1fb86391ff.jpg"
@@ -10393,5 +10393,213 @@
     "images": [],
     "publishedAt": "2026-10-09T15:33:44.000Z",
     "collectedAt": "2026-10-09T16:05:59.729Z"
+  },
+  "social-96e3ec43f7f2": {
+    "id": "social-96e3ec43f7f2",
+    "url": "https://x.com/Commanders/status/2108598000436277274",
+    "text": "HC Dan Quinn confirmed that Jayden Daniels will start on Sunday",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/411/936/082/642/597/original/2d56a629941e38fb.jpg"
+    ],
+    "publishedAt": "2026-10-09T16:38:33.000Z",
+    "collectedAt": "2026-10-09T16:53:22.963Z"
+  },
+  "social-e524c78b9953": {
+    "id": "social-e524c78b9953",
+    "url": "https://x.com/Commanders/status/2108597827689730462",
+    "text": "LIVE: HC Dan Quinn speaks to the media after practice xR",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-09T16:37:52.000Z",
+    "collectedAt": "2026-10-09T16:53:22.964Z"
+  },
+  "social-9d40b8b4ec1c": {
+    "id": "social-9d40b8b4ec1c",
+    "url": "https://x.com/JPFinlayNBCS/status/2108600916375134304",
+    "text": "Stef Diggs has been Washington's leading WR through 4 games: 31 targets, 18 catches, 170 yards and 3 TDs. Not insignificant loss.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-09T16:50:09.000Z",
+    "collectedAt": "2026-10-09T16:53:24.196Z"
+  },
+  "social-07a18aa0882e": {
+    "id": "social-07a18aa0882e",
+    "url": "https://x.com/JPFinlayNBCS/status/2108596022708507062",
+    "text": "The world lost a legend in Mike Ditka. Got to spend a little time with him at the 2015 @DCTouchdownClub@twitter.com dinner and he was everything I wanted him to be. Safe home Iron Mike.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/411/902/902/316/406/original/ba7937cf4fbf4013.jpg"
+    ],
+    "publishedAt": "2026-10-09T16:30:42.000Z",
+    "collectedAt": "2026-10-09T16:53:24.197Z"
+  },
+  "social-4964b30f7df6": {
+    "id": "social-4964b30f7df6",
+    "url": "https://x.com/JPFinlayNBCS/status/2108594781316104454",
+    "text": "Week 5 picks from @iamwesmoore@twitter.com (136-88 all time): Jags - \"Eagles holes are finally starting to show\" Rams, Ravens Seahawks - \"Seattle might have the best coach in the NFL\" Commanders - \"It's a must win matchup and they've got Jayden back\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-09T16:25:46.000Z",
+    "collectedAt": "2026-10-09T16:53:24.197Z"
+  },
+  "social-8848f48361c2": {
+    "id": "social-8848f48361c2",
+    "url": "https://x.com/john_keim/status/2108599673434837206",
+    "text": "Quinn said C Lucas Patrick will be the starter at this position going forward.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T16:45:12.000Z",
+    "collectedAt": "2026-10-09T16:53:25.804Z"
+  },
+  "social-b21e09c5ef6c": {
+    "id": "social-b21e09c5ef6c",
+    "url": "https://x.com/john_keim/status/2108598428779630685",
+    "text": "Dan Quinn said Jayden Daniels, G Sam Cosmi, RB Rachaad White are all good to go. Quinn said Stefon Diggs won't play. Quinn said he thought Terry McLaurin \"looked really good today.\" But he didn't say if McLaurin would play for sure.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T16:40:15.000Z",
+    "collectedAt": "2026-10-09T16:53:25.804Z"
+  },
+  "social-67c01010b9fd": {
+    "id": "social-67c01010b9fd",
+    "url": "https://x.com/john_keim/status/2108597039294800198",
+    "text": "A good look at why this was a penalty. Don’t believe this is even one the team had issue with ( the hold on Dyami? Yep). Unfortunate but legit. Others? Have at it.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-09T16:34:44.000Z",
+    "collectedAt": "2026-10-09T16:53:25.804Z"
+  },
+  "social-ccb3cd293b0b": {
+    "id": "social-ccb3cd293b0b",
+    "url": "https://x.com/BenStandig/status/2108600970725019679",
+    "text": "We know GM Adam Peters has the final say over the 53 at cutdown day. What about during the regular season? Dan Quinn says that, yes, Peters still has the final say (even though game planning is involved).",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T16:50:21.000Z",
+    "collectedAt": "2026-10-09T16:53:26.969Z"
+  },
+  "social-05546ccf1671": {
+    "id": "social-05546ccf1671",
+    "url": "https://x.com/BenStandig/status/2108600166563668260",
+    "text": "Dan Quinn on releasing Kaytron Allen. He said it was a \"difficult\" decision, and they hope to \"work with him again,\" meaning he clears waivers and signs with the PS. After checking with league sources, I think some team will claim Allen. Multiple teams could place a claim.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T16:47:10.000Z",
+    "collectedAt": "2026-10-09T16:53:26.969Z"
+  },
+  "social-e4d1871f7a1f": {
+    "id": "social-e4d1871f7a1f",
+    "url": "https://x.com/BenStandig/status/2108598166786625791",
+    "text": "Dan Quinn time. Injuries: Jayden Daniels, Sam Cosmi and Rachaad White are IN for Sunday. Sounds like Terry McLaurin is also set to face the Giants. Stefon Diggs is OUT.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-09T16:39:13.000Z",
+    "collectedAt": "2026-10-09T16:53:26.969Z"
+  },
+  "social-178a92422bdf": {
+    "id": "social-178a92422bdf",
+    "url": "https://x.com/tashanreed/status/2108600950495797381",
+    "text": "Patrick has allowed a pressure rate of just 2.7% this season (35th among offensive linemen who've played at least 50 pass blocking snaps) according to TruMedia.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T16:50:17.000Z",
+    "collectedAt": "2026-10-09T16:53:28.492Z"
+  },
+  "social-fadcc4d7e9cd": {
+    "id": "social-fadcc4d7e9cd",
+    "url": "https://x.com/tashanreed/status/2108599649850581478",
+    "text": "Quinn said Lucas Patrick will start at center for the #Commanders this Sunday. It'll be his third start in a row.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T16:45:07.000Z",
+    "collectedAt": "2026-10-09T16:53:28.492Z"
+  },
+  "social-790fff587a34": {
+    "id": "social-790fff587a34",
+    "url": "https://x.com/tashanreed/status/2108599330995392635",
+    "text": "Quinn attributed the release of RB Kaytron Allen to roster management. He said he hopes they get to work together again.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T16:43:51.000Z",
+    "collectedAt": "2026-10-09T16:53:28.492Z"
+  },
+  "social-5d966eaf91c2": {
+    "id": "social-5d966eaf91c2",
+    "url": "https://x.com/tashanreed/status/2108597985785315786",
+    "text": "Injury updates from #Commanders HC Dan Quinn: Jayden Daniels, Sam Cosmi and Rachaad White will play. Stefon Diggs won't play. Terry McLaurin is TBD.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-09T16:38:30.000Z",
+    "collectedAt": "2026-10-09T16:53:28.492Z"
+  },
+  "social-e976ace7248b": {
+    "id": "social-e976ace7248b",
+    "url": "https://x.com/RapSheet/status/2108599090640757082",
+    "text": "#Commanders coach Dan Quinn tells reporters that WR Stefon Diggs is out Sunday vs the #Giants . Jayden Daniels is good to go, while WR Terry McLaurin is headed in a good direction.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-10-09T16:42:53.000Z",
+    "collectedAt": "2026-10-09T16:53:32.660Z"
+  },
+  "social-fd5b9f4ef24c": {
+    "id": "social-fd5b9f4ef24c",
+    "url": "https://x.com/MikeGarafolo/status/2108598189880176704",
+    "text": "#Commanders HC Dan Quinn says WR Stefon Diggs is out Sunday against the #Giants . Jayden Daniels is good to go and WR Terry McLaurin looked good today.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [],
+    "publishedAt": "2026-10-09T16:39:18.000Z",
+    "collectedAt": "2026-10-09T16:53:34.043Z"
   }
 }
