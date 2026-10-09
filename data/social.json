@@ -1,30 +1,4 @@
 {
-  "social-7ce6a8f55c84": {
-    "id": "social-7ce6a8f55c84",
-    "url": "https://x.com/tashanreed/status/2104949242519277716",
-    "text": "The latest episode of The Tashan Reed Show is out now. I discussed Jayden Daniels' return to practice and the #Commanders ' huge win over the Seahawks before previewing their matchup with the Colts in London: tashan-reed-show-jayden-daniels?r=1gwknd&utm_campaign=post&utm_medium=web&timestamp=2.1",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/354/922/052/586/225/original/ab34dc1c3eb3d2d0.jpg"
-    ],
-    "publishedAt": "2026-09-29T14:59:42.000Z",
-    "collectedAt": "2026-09-29T16:05:49.328Z"
-  },
-  "social-21beca9c23ef": {
-    "id": "social-21beca9c23ef",
-    "url": "https://x.com/AdamSchefter/status/2104963902266311121",
-    "text": "Commanders QB Jayden Daniels avoided surgery on his dislocated left elbow for now, but it still is very much in play for after this season. cc: @tyschmit@twitter.com 🎧",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-09-29T15:57:57.000Z",
-    "collectedAt": "2026-09-29T16:05:52.085Z"
-  },
   "social-f8b480fce852": {
     "id": "social-f8b480fce852",
     "url": "https://x.com/JPFinlayNBCS/status/2104988535526674453",
@@ -10245,5 +10219,41 @@
     "images": [],
     "publishedAt": "2026-10-09T14:36:08.000Z",
     "collectedAt": "2026-10-09T14:58:15.186Z"
+  },
+  "social-d5012eadbcb4": {
+    "id": "social-d5012eadbcb4",
+    "url": "https://x.com/NickiJhabvala/status/2108584584732442694",
+    "text": "Maybe notable distinction that Adam Peters sort of mentioned on @JunksRadio",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T15:45:15.000Z",
+    "collectedAt": "2026-10-09T16:05:09.751Z"
+  },
+  "social-219d59e3fa6b": {
+    "id": "social-219d59e3fa6b",
+    "url": "https://x.com/NickiJhabvala/status/2108580331414749544",
+    "text": "Terry McLaurin (hamstring) is out here. Stefon Diggs (hamstring) is not out here.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T15:28:21.000Z",
+    "collectedAt": "2026-10-09T16:05:09.751Z"
+  },
+  "social-3a4063f05ef9": {
+    "id": "social-3a4063f05ef9",
+    "url": "https://x.com/NickiJhabvala/status/2108570739884322965",
+    "text": "Adam Peters explained this on @JunksRadio",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-09T14:50:14.000Z",
+    "collectedAt": "2026-10-09T16:05:09.751Z"
   }
 }
