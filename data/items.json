@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-26T11:30:00.000Z",
     "collectedAt": "2026-08-26T12:47:29.880Z"
   },
-  "riggos-rag-7566e66d8840": {
-    "id": "riggos-rag-7566e66d8840",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/grading-latest-8-commanders-moves-that-matter-most-final-cuts-loom",
-    "title": "Grading the latest 8 Commanders moves that matter most as final cuts loom",
-    "excerpt": "Grading the latest eight Washington Commanders moves that matter most as general manager Adam Peters gears up for final cuts.",
-    "publishedAt": "2026-08-26T10:00:00.000Z",
-    "collectedAt": "2026-08-26T12:47:29.880Z"
-  },
   "pft-16c18a5d8ae1": {
     "id": "pft-16c18a5d8ae1",
     "sourceId": "pft",
@@ -16234,5 +16222,17 @@
     "excerpt": "",
     "publishedAt": "2026-10-10T04:05:32.000Z",
     "collectedAt": "2026-10-10T08:05:37.061Z"
+  },
+  "riggos-rag-69fc7724eb6f": {
+    "id": "riggos-rag-69fc7724eb6f",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/7-commanders-players-under-pressure-deliver-before-season-slips-away",
+    "title": "7 Commanders players under pressure to deliver before the season slips away",
+    "excerpt": "These Washington Commanders are under pressure to perform in Week 5 against the New York Giants to avoid the season slipping away.",
+    "publishedAt": "2026-10-10T10:00:03.000Z",
+    "collectedAt": "2026-10-10T10:05:34.707Z"
   }
 }
