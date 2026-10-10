@@ -10303,5 +10303,67 @@
     "images": [],
     "publishedAt": "2026-10-10T20:02:16.000Z",
     "collectedAt": "2026-10-10T20:05:10.406Z"
+  },
+  "social-e381b5c61134": {
+    "id": "social-e381b5c61134",
+    "url": "https://x.com/Commanders/status/2109011086892478629",
+    "text": "We have made the following roster moves: - Activated DE Deatrich Wise Jr. off the Reserve/Physically Unable to Perform List and removed him from the injury report - Signed LB Austin Keys from the practice squad - Elevated S Darren Hall and WR Van Jefferson from the practice squad CB Trey Amos (ankle) and RB Jeremy McNichols (quad) have been downgraded to out",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/418/398/508/207/668/original/eb8d36758b2522af.jpg"
+    ],
+    "publishedAt": "2026-10-10T20:00:01.000Z",
+    "collectedAt": "2026-10-10T20:05:43.589Z"
+  },
+  "social-d91bbf1e8f5d": {
+    "id": "social-d91bbf1e8f5d",
+    "url": "https://x.com/john_keim/status/2109011525453180950",
+    "text": "Today’s moves: … DE Deatrich Wise Jr. activated off IR and removed him from the injury report … Signed LB Austin Keys from the practice squad … elevated S Darren Hall and WR Van Jefferson from the practice squad … CB Trey Amos (ankle) and RB Jeremy McNichols (quad) ruled out",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-10T20:01:45.000Z",
+    "collectedAt": "2026-10-10T20:05:46.238Z"
+  },
+  "social-61f09fd016a1": {
+    "id": "social-61f09fd016a1",
+    "url": "https://x.com/BenStandig/status/2109011665316438117",
+    "text": "Pleasant surprise: The Commanders activated DE Deatrich Wise Jr. off the Reserve/Physically Unable to Perform List and removed him from the injury report. Wise has not played since tearing his quad in Week 2 last season. Washington signed LB Austin Keys from the practice squad, and elevated S Darren Hall and WR Van Jefferson from the practice squad CB Trey Amos (ankle) and RB Jeremy McNichols (quad) have been downgraded to out.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-10T20:02:19.000Z",
+    "collectedAt": "2026-10-10T20:05:47.492Z"
+  },
+  "social-da45c40b3d59": {
+    "id": "social-da45c40b3d59",
+    "url": "https://x.com/AdamSchefter/status/2109011412529926585",
+    "text": "Commanders ruled out CB Trey Amos (ankle) and RB Jeremy McNichols (quad) for Sunday’s game against the Giants.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-10T20:01:18.000Z",
+    "collectedAt": "2026-10-10T20:05:52.955Z"
+  },
+  "social-a76ca77e616d": {
+    "id": "social-a76ca77e616d",
+    "url": "https://x.com/RapSheet/status/2109011761844421051",
+    "text": "The #Commanders activated DE Deatrich Wise Jr. off PUP and elevated S Darren Hall and WR Van Jefferson from the practice squad. In addition, CB Trey Amos (ankle) and RB Jeremy McNichols (quad) are out.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-10-10T20:02:42.000Z",
+    "collectedAt": "2026-10-10T20:05:55.198Z"
   }
 }
