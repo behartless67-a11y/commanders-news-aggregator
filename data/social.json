@@ -13,18 +13,6 @@
     "publishedAt": "2026-09-30T16:09:19.000Z",
     "collectedAt": "2026-09-30T16:11:51.791Z"
   },
-  "social-b36a7b87dae5": {
-    "id": "social-b36a7b87dae5",
-    "url": "https://x.com/john_keim/status/2105328121150914797",
-    "text": "Bill Croskey-Merritt asked if there was anything he wanted to see in London: \"Not really; just want to win, win and go home.\"",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-30T16:05:13.000Z",
-    "collectedAt": "2026-09-30T16:11:51.791Z"
-  },
   "social-4e9ef2c7edb9": {
     "id": "social-4e9ef2c7edb9",
     "url": "https://x.com/NickiJhabvala/status/2105338800130195549",
@@ -10391,5 +10379,17 @@
     "images": [],
     "publishedAt": "2026-10-10T15:14:55.000Z",
     "collectedAt": "2026-10-10T15:47:37.040Z"
+  },
+  "social-ded6cede2937": {
+    "id": "social-ded6cede2937",
+    "url": "https://x.com/BenStandig/status/2108947110863270088",
+    "text": "Source: The Dolphins and Colts put in claims on Kaytron Allen. The rookie RB's best showing was probably PSG1 against Miami. His most recent game (12 snaps) was against Indy.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-10T15:45:48.000Z",
+    "collectedAt": "2026-10-10T16:05:48.664Z"
   }
 }
