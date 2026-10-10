@@ -1,40 +1,4 @@
 {
-  "pft-16c18a5d8ae1": {
-    "id": "pft-16c18a5d8ae1",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-announce-d-j-humphries-signing",
-    "title": "Commanders announce D.J. Humphries signing",
-    "excerpt": "Veteran tackle D.J. Humphries is officially a member of the Commanders. \n Reports on Tuesday indicated that Humphries would be signing with the team after working out for them earlier in the day and the Commanders announced the move on Wednesday morning. \n Humphries will join the group of players in the mix to replace Laremy Tunsil at left tackle in Washington. Tunsil tore his triceps and will miss much if not all of the regular season. \n Humphries has made 101 career starts, including all 98…",
-    "publishedAt": "2026-08-26T12:25:36.000Z",
-    "collectedAt": "2026-08-26T12:47:34.864Z"
-  },
-  "hogs-haven-de01a4177b5d": {
-    "id": "hogs-haven-de01a4177b5d",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-training-camp/435509/washington-commanders-news-sights-sounds-ravens-joint-practice",
-    "title": "Washington Commanders News: Sights, Sounds from Ravens joint practice",
-    "excerpt": "Washington Commanders training camp is just about over, but the team isn’t in Ashburn, VA. Today we get to cover joint practice with the Ravens as the two teams prepare for the preseason finale in Baltimore Friday night.\n\n Hogs Haven will be covering everything over the next two weeks as we prepare for the new season!\n\n Today’s schedule:\n\n \n Today’s sked:\n😎☀️: upper 70s in Owings Mill today \n\n🎤: Dan Quinn before practice. \n\n🏈: 10:30 am joint practice vs Baltimore. \n\n🎤: players off the field…",
-    "publishedAt": "2026-08-26T13:30:00.000Z",
-    "collectedAt": "2026-08-26T13:41:01.384Z"
-  },
-  "riggos-rag-02a74893aa0e": {
-    "id": "riggos-rag-02a74893aa0e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-emergency-signing-comes-with-hidden-offensive-line-bonus",
-    "title": "Commanders' emergency signing comes with a hidden offensive line bonus",
-    "excerpt": "The Washington Commanders' decision to sign veteran offensive tackle D.J. Humphries might come with a hidden bonus.",
-    "publishedAt": "2026-08-26T13:00:00.000Z",
-    "collectedAt": "2026-08-26T13:41:02.160Z"
-  },
   "commanders-youtube-4934d58f7a3d": {
     "id": "commanders-youtube-4934d58f7a3d",
     "sourceId": "commanders-youtube",
@@ -45,18 +9,6 @@
     "title": "LIVE: HC Dan Quinn Speaks To The Media Before Ravens Joint Practice | Washington Commanders",
     "excerpt": "",
     "publishedAt": "2026-08-26T14:10:10.000Z",
-    "collectedAt": "2026-08-26T14:25:27.436Z"
-  },
-  "commanders-youtube-8ebc373b2838": {
-    "id": "commanders-youtube-8ebc373b2838",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=NrcT7eoDbrY",
-    "title": "A Sonny Styles Deep Dive With NFL Pros + Taking It To The Ravens | Podcast | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-26T14:00:28.000Z",
     "collectedAt": "2026-08-26T14:25:27.436Z"
   },
   "riggos-rag-e6831a1191a9": {
@@ -16234,5 +16186,53 @@
     "excerpt": "Washington got off to a disappointing start, but with quarterback Jayden Daniels returning, the first-place Giants offer a big opportunity.",
     "publishedAt": "2026-10-10T10:30:31.000Z",
     "collectedAt": "2026-10-10T12:05:33.467Z"
+  },
+  "hogs-haven-b1105815b30a": {
+    "id": "hogs-haven-b1105815b30a",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/447824/bad-weather-6-players-out-jayden-daniels-back-must-win-game-giants-nfc-east",
+    "title": "Commanders: Bad weather; 6 players out; JD5 back for ‘must win’ game",
+    "excerpt": "LANDOVER MD - OCTOBER 29: Redskins fans in the rain in the final minutes of the 4th quarter as the game got out hand as the Washington Redskins lost to the Dallas Cowboys at FedEx Field in Landover MD, on October 29, 2017. (Photo by John McDonnell/The Washington Post via Getty Images) \n \n The Daily Slop\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in…",
+    "publishedAt": "2026-10-10T14:00:00.000Z",
+    "collectedAt": "2026-10-10T14:05:32.504Z"
+  },
+  "hogs-haven-0a1826f012fe": {
+    "id": "hogs-haven-0a1826f012fe",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/446995/commanders-fans-colts-giants-poll-results-nfc-east",
+    "title": "Commanders fans brace for rough stretch after London – poll results",
+    "excerpt": "The emotional whiplash of following the Washington Commanders football team hasn’t relented in the first quarter of the season. Just when the Week 3 gritty home upset win against Seattle appeared to stabilize the ship and reignite optimism, a dreary, injury-filled and mistake-prone Sunday game in London last week against Daniel Jones and the Colts sent fan confidence careening back down the hill.\n\n In this week’s Reacts survey , we asked, as we do every week, about fan confidence, and we looked…",
+    "publishedAt": "2026-10-10T13:00:00.000Z",
+    "collectedAt": "2026-10-10T14:05:32.504Z"
+  },
+  "riggos-rag-a70a12c3df4d": {
+    "id": "riggos-rag-a70a12c3df4d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/kaytron-allen-leaves-adam-peters-red-faced-after-commanders-misread",
+    "title": "Kaytron Allen leaves Adam Peters red-faced after Commanders misread",
+    "excerpt": "The Miami Dolphins claiming running back Kaytron Allen off waivers leaves Washington Commanders general manager Adam Peters looking foolish.",
+    "publishedAt": "2026-10-10T14:00:02.000Z",
+    "collectedAt": "2026-10-10T14:05:33.154Z"
+  },
+  "riggos-rag-fe89fa33b297": {
+    "id": "riggos-rag-fe89fa33b297",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sam-cosmi-welcome-return-abruptly-ends-commanders-flawed-experiment",
+    "title": "Sam Cosmi's welcome return abruptly ends Commanders' flawed experiment",
+    "excerpt": "Prolific right guard Sam Cosmi's welcome return to the lineup abruptly ends the Washington Commanders' flawed experiment on their protection.",
+    "publishedAt": "2026-10-10T12:43:44.000Z",
+    "collectedAt": "2026-10-10T14:05:33.154Z"
   }
 }
