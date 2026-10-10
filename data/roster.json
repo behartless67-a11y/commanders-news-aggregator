@@ -233,6 +233,31 @@
     "stats": null
   },
   {
+    "slug": "van-jefferson",
+    "name": "Van Jefferson",
+    "jersey": "12",
+    "position": "WR",
+    "espnId": "3930066",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "29"
+        },
+        {
+          "label": "YDS",
+          "value": "350"
+        },
+        {
+          "label": "TD",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  {
     "slug": "athan-kaliakmanis",
     "name": "Athan Kaliakmanis",
     "jersey": "16",
@@ -702,6 +727,15 @@
     }
   },
   {
+    "slug": "darren-hall",
+    "name": "Darren Hall",
+    "jersey": "36",
+    "position": "S",
+    "espnId": "4261606",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4261606.png",
+    "stats": null
+  },
+  {
     "slug": "javontae-jean-baptiste",
     "name": "Javontae Jean-Baptiste",
     "jersey": "41",
@@ -768,6 +802,31 @@
         {
           "label": "SACK",
           "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "austin-keys",
+    "name": "Austin Keys",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4429185",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429185.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "7"
+        },
+        {
+          "label": "SACK",
+          "value": "1"
         },
         {
           "label": "INT",
@@ -1152,6 +1211,31 @@
     }
   },
   {
+    "slug": "deatrich-wise-jr",
+    "name": "Deatrich Wise Jr.",
+    "jersey": "91",
+    "position": "DE",
+    "espnId": "2980080",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2980080.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "4"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "isaac-yiadom",
     "name": "Isaac Yiadom",
     "jersey": "37",
@@ -1366,31 +1450,6 @@
     "stats": null
   },
   {
-    "slug": "deatrich-wise-jr",
-    "name": "Deatrich Wise Jr.",
-    "jersey": "91",
-    "position": "DE",
-    "espnId": "2980080",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2980080.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "4"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "jaden-bradley",
     "name": "Jaden Bradley",
     "jersey": "86",
@@ -1443,15 +1502,6 @@
     "stats": null
   },
   {
-    "slug": "darren-hall",
-    "name": "Darren Hall",
-    "jersey": "36",
-    "position": "S",
-    "espnId": "4261606",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4261606.png",
-    "stats": null
-  },
-  {
     "slug": "sam-hartman",
     "name": "Sam Hartman",
     "jersey": "15",
@@ -1459,56 +1509,6 @@
     "espnId": "4361994",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361994.png",
     "stats": null
-  },
-  {
-    "slug": "van-jefferson",
-    "name": "Van Jefferson",
-    "jersey": "12",
-    "position": "WR",
-    "espnId": "3930066",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "29"
-        },
-        {
-          "label": "YDS",
-          "value": "350"
-        },
-        {
-          "label": "TD",
-          "value": "1"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "austin-keys",
-    "name": "Austin Keys",
-    "jersey": "",
-    "position": "LB",
-    "espnId": "4429185",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4429185.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "7"
-        },
-        {
-          "label": "SACK",
-          "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
   },
   {
     "slug": "t-j-maguranyanga",

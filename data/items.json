@@ -1,28 +1,4 @@
 {
-  "hogs-haven-c2cb612a9b6e": {
-    "id": "hogs-haven-c2cb612a9b6e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/nfl-training-camp/435652/adam-peters-center-washington-commanders-nick-allegretti-matt-gulbin-julian-good-jones-roster-cuts",
-    "title": "Adam Peters must be aggressive fixing Commanders center situation",
-    "excerpt": "Commanders general manager Adam Peters had a plan for the center position entering the 2026 campaign. It obviously wasn’t good enough. \n\n We’ve seen that play out painfully over the course of this summer, with presumptive starter Nick Allegretti out most of training camp with a calf strain. \n\n Allegretti suffered the injury during Washington’s first training camp practice, way back on July 29 . He returned on Aug. 18, following nearly three weeks on the shelf. Allegretti aggravated the issue a…",
-    "publishedAt": "2026-08-26T20:12:30.000Z",
-    "collectedAt": "2026-08-26T22:42:47.625Z"
-  },
-  "wjla-commanders-611694c8076b": {
-    "id": "wjla-commanders-611694c8076b",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/ravens-baltimore-commanders-washington-owning-mills-maryland-football-nfl",
-    "title": "Ravens, Commanders square off in joint practice in Owings Mills",
-    "excerpt": "Regional rivals colliding on the football field. That's what happened on Wednesday morning in Owings Mills, Maryland.",
-    "publishedAt": "2026-08-26T21:19:53.000Z",
-    "collectedAt": "2026-08-26T22:42:53.030Z"
-  },
   "cbs-nfl-f2333e0083ca": {
     "id": "cbs-nfl-f2333e0083ca",
     "sourceId": "cbs-nfl",
@@ -16150,5 +16126,41 @@
     "excerpt": "The Washington Commanders need struggling lead running back Jacory Croskey-Merritt to enjoy another breakout against the New York Giants in Week 5.",
     "publishedAt": "2026-10-10T18:00:02.000Z",
     "collectedAt": "2026-10-10T18:05:31.212Z"
+  },
+  "hogs-haven-09c8e81e39bc": {
+    "id": "hogs-haven-09c8e81e39bc",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-game-information/446981/how-to-watch-commanders-vs-giants-tv-radio-streaming-injury-report",
+    "title": "How to watch Commanders vs Giants: TV, radio, streaming, injury report",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 07: Jayden Daniels #5 of the Washington Commanders runs with the ball during the second quarter against the New York Giants at Northwest Stadium on September 07, 2025 in Landover, Maryland. (Photo by Jess Rapfogel/Getty Images) | Getty Images \n \n The Washington Commanders return home to Northwest Stadium this week after a trip across the pond didn’t bring them a win. They’re hosting the New York Giants for their third division game in three weeks. The first two…",
+    "publishedAt": "2026-10-10T22:00:00.000Z",
+    "collectedAt": "2026-10-10T22:05:32.391Z"
+  },
+  "hogs-haven-e40894286f5b": {
+    "id": "hogs-haven-e40894286f5b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/447528/washington-commanders-tight-ends-chig-okonkwo-ben-sinnott-john-bates",
+    "title": "Where in the world are the Washington Commanders’ tight ends?",
+    "excerpt": "In December of 2024, I wrote a Hogs Haven fanpost investigating Ben Sinnott’s lack of production during his rookie season. In the article, I referenced the classic edutainment game Where in the World is Carmen Sandiego? and analyzed the statistics and circumstances surrounding the second-round tight end ’s exclusion from the offense. At the conclusion of the investigation, the mystery remained unsolved. Fast forward to the present, where an even greater conundrum now presents itself for the ACE…",
+    "publishedAt": "2026-10-10T21:00:00.000Z",
+    "collectedAt": "2026-10-10T22:05:32.391Z"
+  },
+  "hogs-haven-8b30c1351d23": {
+    "id": "hogs-haven-8b30c1351d23",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-roster/443789/washington-commanders-roster-moves-giants-deatrich-wise-van-jefferson",
+    "title": "Washington Commanders make several roster moves before Giants game",
+    "excerpt": "The Washington Commanders announced a few roster moves before they host the New York Giants tomorrow. Three players had their 21-day practice windows opened this week, but only one of them has been activated. DE Deatrich Wise Jr. has been on the Physically Unable to Perform list due to a quad injury from last season. He has been activated and added to the Commanders 53-man roster. He can be active this week, and could be needed due to injuries to other players, including Charles Omenihu. \n\n LB…",
+    "publishedAt": "2026-10-10T20:11:02.000Z",
+    "collectedAt": "2026-10-10T22:05:32.391Z"
   }
 }
