@@ -1,18 +1,4 @@
 {
-  "social-edfa06915ea6": {
-    "id": "social-edfa06915ea6",
-    "url": "https://x.com/Commanders/status/2105387726690505012",
-    "text": "Wednesday injury report #INDvsWAS | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/361/782/026/481/833/original/b534d935c2233479.jpg"
-    ],
-    "publishedAt": "2026-09-30T20:02:04.000Z",
-    "collectedAt": "2026-09-30T20:05:45.876Z"
-  },
   "social-c3de3a2927bb": {
     "id": "social-c3de3a2927bb",
     "url": "https://x.com/Commanders/status/2105402303033557260",
@@ -10305,5 +10291,17 @@
     "images": [],
     "publishedAt": "2026-10-10T19:17:54.000Z",
     "collectedAt": "2026-10-10T19:45:29.259Z"
+  },
+  "social-067064dd4de0": {
+    "id": "social-067064dd4de0",
+    "url": "https://x.com/NickiJhabvala/status/2109011654319206403",
+    "text": "The Commanders’ many roster moves: -Activated DE Deatrich Wise Jr. off PUP list and removed him from the injury report -Signed LB Austin Keys from the practice squad - Elevated S Darren Hall and WR Van Jefferson from the practice squad Downgraded CB Trey Amos (ankle) and RB",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-10T20:02:16.000Z",
+    "collectedAt": "2026-10-10T20:05:10.406Z"
   }
 }
