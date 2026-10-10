@@ -10281,5 +10281,31 @@
     "images": [],
     "publishedAt": "2026-10-10T15:45:48.000Z",
     "collectedAt": "2026-10-10T16:05:48.664Z"
+  },
+  "social-146d7512329d": {
+    "id": "social-146d7512329d",
+    "url": "https://x.com/Commanders/status/2108965785448088047",
+    "text": "Sunday matinee @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/417/687/220/944/051/original/1840f6003423873d.jpg"
+    ],
+    "publishedAt": "2026-10-10T17:00:00.000Z",
+    "collectedAt": "2026-10-10T18:05:40.633Z"
+  },
+  "social-73e97918123e": {
+    "id": "social-73e97918123e",
+    "url": "https://x.com/JPFinlayNBCS/status/2108950909464224221",
+    "text": "This Marvin Harrison situation is bizarre",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-10T16:00:53.000Z",
+    "collectedAt": "2026-10-10T18:05:42.202Z"
   }
 }
