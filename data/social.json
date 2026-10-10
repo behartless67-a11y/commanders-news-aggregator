@@ -10737,5 +10737,19 @@
     "images": [],
     "publishedAt": "2026-10-10T00:51:17.000Z",
     "collectedAt": "2026-10-10T02:05:53.915Z"
+  },
+  "social-01c4882ec4ad": {
+    "id": "social-01c4882ec4ad",
+    "url": "https://x.com/BenStandig/status/2108750780333178912",
+    "text": "🎙 Next man (to the next man to the next man) up next-man-to-the-next-man-to-the-next-783",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/414/321/167/020/357/original/bbb31910eb3ee41a.jpg"
+    ],
+    "publishedAt": "2026-10-10T02:45:39.000Z",
+    "collectedAt": "2026-10-10T04:05:42.913Z"
   }
 }
