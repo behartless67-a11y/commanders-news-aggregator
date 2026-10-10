@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-4934d58f7a3d": {
-    "id": "commanders-youtube-4934d58f7a3d",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=ld6oQLQ-Zjo",
-    "title": "LIVE: HC Dan Quinn Speaks To The Media Before Ravens Joint Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-26T14:10:10.000Z",
-    "collectedAt": "2026-08-26T14:25:27.436Z"
-  },
   "riggos-rag-e6831a1191a9": {
     "id": "riggos-rag-e6831a1191a9",
     "sourceId": "riggos-rag",
@@ -16234,5 +16222,17 @@
     "excerpt": "Prolific right guard Sam Cosmi's welcome return to the lineup abruptly ends the Washington Commanders' flawed experiment on their protection.",
     "publishedAt": "2026-10-10T12:43:44.000Z",
     "collectedAt": "2026-10-10T14:05:33.154Z"
+  },
+  "yahoo-nfl-85859b4895af": {
+    "id": "yahoo-nfl-85859b4895af",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/bad-weather-6-players-jayden-140000777.html",
+    "title": "Bad weather; 6 players out; Jayden Daniels back for ‘must win’ game vs division-leading Giants - Daily Slop",
+    "excerpt": "LANDOVER MD - OCTOBER 29: Redskins fans in the rain in the final minutes of the 4th quarter as the game got out hand as the Washington Redskins lost to the Dallas Cowboys at FedEx Field in Landover MD, on October 29, 2017. (Photo by John McDonnell/The Washington Post via Getty Images) The Daily Slop\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general,…",
+    "publishedAt": "2026-10-10T14:00:00.000Z",
+    "collectedAt": "2026-10-10T14:13:18.922Z"
   }
 }
