@@ -1,19 +1,4 @@
 {
-  "social-c3de3a2927bb": {
-    "id": "social-c3de3a2927bb",
-    "url": "https://x.com/Commanders/status/2105402303033557260",
-    "text": "first UK reps @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/362/006/751/118/549/original/39f2323cf6dbd392.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/362/006/821/831/593/original/980d04f33db93c7b.jpg"
-    ],
-    "publishedAt": "2026-09-30T21:00:00.000Z",
-    "collectedAt": "2026-09-30T22:02:46.223Z"
-  },
   "social-1789445cce37": {
     "id": "social-1789445cce37",
     "url": "https://x.com/tashanreed/status/2105413070533378123",
@@ -10365,5 +10350,53 @@
     "images": [],
     "publishedAt": "2026-10-10T20:02:42.000Z",
     "collectedAt": "2026-10-10T20:05:55.198Z"
+  },
+  "social-0113d9d66fd8": {
+    "id": "social-0113d9d66fd8",
+    "url": "https://x.com/BenStandig/status/2109016788683858034",
+    "text": "The NFL fined CB Amik Robertson $11,941 for unnecessary roughness against the Colts.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-10T20:22:40.000Z",
+    "collectedAt": "2026-10-10T21:23:13.717Z"
+  },
+  "social-af5da5ad9811": {
+    "id": "social-af5da5ad9811",
+    "url": "https://x.com/tashanreed/status/2109012958793568764",
+    "text": "The #Commanders get Wise back, but Amos and McNichols aren't ready yet.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-10T20:07:27.000Z",
+    "collectedAt": "2026-10-10T21:23:15.559Z"
+  },
+  "social-01798f0fa5b1": {
+    "id": "social-01798f0fa5b1",
+    "url": "https://x.com/MikeGarafolo/status/2109013274788298789",
+    "text": "Van Jefferson up for the #Commanders with WR Stefon Diggs out and Terry McLaurin questionable.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [],
+    "publishedAt": "2026-10-10T20:08:42.000Z",
+    "collectedAt": "2026-10-10T21:23:22.214Z"
+  },
+  "social-4668435947c0": {
+    "id": "social-4668435947c0",
+    "url": "https://x.com/pfrumors/status/2109022470481350736",
+    "text": "The #Commanders opened three practice windows this week, and while they will get to activate DE Deatrich Wise for Week 5, CB Trey Amos and RB Jeremy McNichols remain out: commanders-cb-trey-amos-rb-jeremy-mcnichols-de-deatrich-wise-return-to-practice",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-10T20:45:15.000Z",
+    "collectedAt": "2026-10-10T21:23:24.616Z"
   }
 }
