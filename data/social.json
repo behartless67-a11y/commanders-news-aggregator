@@ -11,18 +11,6 @@
     "publishedAt": "2026-09-30T01:11:35.000Z",
     "collectedAt": "2026-09-30T02:05:39.992Z"
   },
-  "social-afdc6b6d8e23": {
-    "id": "social-afdc6b6d8e23",
-    "url": "https://x.com/john_keim/status/2105086667841585188",
-    "text": "Story on Nick Cross And Sam Cosmi being ruled out. They were considered longshots... 28/guard-sam-cosmi-safety-nick-cross-london-game-vs-colts",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-30T00:05:46.000Z",
-    "collectedAt": "2026-09-30T02:05:42.924Z"
-  },
   "social-30ce8d7c4d29": {
     "id": "social-30ce8d7c4d29",
     "url": "https://x.com/BenStandig/status/2105130958374457801",
@@ -10699,5 +10687,31 @@
     ],
     "publishedAt": "2026-10-09T22:10:00.000Z",
     "collectedAt": "2026-10-09T22:27:22.984Z"
+  },
+  "social-7d4d5e2b492d": {
+    "id": "social-7d4d5e2b492d",
+    "url": "https://x.com/Commanders/status/2108701545156026787",
+    "text": "👏👏👏 @Gatorade@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/413/558/435/310/145/original/3f055ee8be44687d.jpg"
+    ],
+    "publishedAt": "2026-10-09T23:30:00.000Z",
+    "collectedAt": "2026-10-10T00:05:41.383Z"
+  },
+  "social-fc431d2f6d42": {
+    "id": "social-fc431d2f6d42",
+    "url": "https://x.com/RapSheet/status/2108704677974127086",
+    "text": "From The Insiders on @nflnetwork : The #Commanders get Jayden Daniels back.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-10-09T23:42:27.000Z",
+    "collectedAt": "2026-10-10T00:05:51.453Z"
   }
 }
