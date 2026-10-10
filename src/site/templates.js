@@ -3142,6 +3142,110 @@ ${footer(sources, generatedAt)}
 }
 
 /**
+ * five-thousand.html: where the reader behind the site's 5,000th pageview
+ * gets to say hi. Reached from the "you're visit #5,000" welcome that
+ * site.js shows on the pageview track.js says claimed the mark, and from the
+ * reminder bar after it, so it's unlisted: not in the nav, the sitemap or a
+ * search engine. Anyone who does land here can still write in; site.js only
+ * changes the eyebrow for the reader who actually won. Every field is
+ * optional except the one that makes it worth sending, and submissions are
+ * emailed straight to Ben (see captureMilestone() in submission-created.js).
+ */
+export function renderFiveThousandPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `The 5,000th visit to ${siteName}. Ben would love to know who you are.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit #5,000 | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('five-thousand.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page milestone-page">
+    <p class="milestone-eyebrow" id="milestone-eyebrow">Say hi</p>
+    <h1 class="podcasts-heading">Visit <span class="milestone-mark">#5,000</span></h1>
+    <p class="page-intro">Somebody out there was the <span class="milestone-ordinal">5,000th</span> visit to ${escapeHtml(siteName)}. If you got here from the little celebration that popped up on your screen, that somebody is you.</p>
+    <p class="page-intro">I'm Ben. I'm a lifelong Washington fan writing this thing from Charlottesville, and I would genuinely love to know who you are. Two minutes. Answer whatever you want and skip the rest.</p>
+    <p class="page-intro milestone-sticker" id="milestone-sticker" hidden>And as a thank-you, I'll mail you one of the very first Burgundy Wire stickers. Leave your email at the bottom and I'll get your address from there.</p>
+    <p class="page-intro milestone-sticker" id="milestone-abroad-bonus" hidden></p>
+
+    <form name="milestone" method="POST" action="/five-thousand.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form milestone-form">
+      <input type="hidden" name="form-name" value="milestone" />
+      <input type="hidden" name="winner" value="" />
+      <input type="hidden" name="country" value="" />
+      <p class="contact-honeypot">
+        <label>Leave this field blank<input name="bot-field" /></label>
+      </p>
+      <label class="contact-field">
+        <span>What should I call you?</span>
+        <input class="contact-input" type="text" name="name" autocomplete="given-name" />
+      </label>
+      <label class="contact-field">
+        <span>Where are you reading from?</span>
+        <input class="contact-input" type="text" name="where" autocomplete="address-level2" />
+      </label>
+      <label class="contact-field">
+        <span>How'd you find The Burgundy Wire?</span>
+        <input class="contact-input" type="text" name="how_found" />
+      </label>
+      <label class="contact-field">
+        <span>Why do you read The Burgundy Wire?</span>
+        <textarea class="contact-input contact-textarea milestone-short" name="why_read" rows="3"></textarea>
+      </label>
+      <label class="contact-field">
+        <span>How long have you been riding with this team?</span>
+        <input class="contact-input" type="text" name="fan_since" />
+      </label>
+      <label class="contact-field">
+        <span>What should I write about next?</span>
+        <input class="contact-input" type="text" name="write_about" />
+      </label>
+      <label class="contact-field">
+        <span>Anything else? Seriously, anything.</span>
+        <textarea class="contact-input contact-textarea" name="message" rows="5"></textarea>
+      </label>
+      <label class="milestone-check">
+        <input type="checkbox" name="shoutout_ok" value="yes" />
+        <span>It's OK to give me a shout-out in a post (first name and where I'm from).</span>
+      </label>
+      <label class="contact-field">
+        <span>Your email, so I can write back (and send your sticker). It goes to me and nobody else, and it doesn't sign you up for anything.</span>
+        <input class="contact-input" type="email" name="email" autocomplete="email" />
+      </label>
+      <button class="contact-submit" type="submit">Send it to Ben</button>
+    </form>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
  * hail-mail.html: one link Ben can text to the bar crew or put behind a QR
  * code, where the only thing to do is sign up. Before it, the only way in was
  * a modal that opens on every 10th visit, which is no way to hand somebody

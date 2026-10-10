@@ -170,6 +170,33 @@ function hourAndWeekday(date) {
   return { hour, weekday };
 }
 
+/**
+ * Pageview counts Ben wants to meet the reader behind. Whoever's pageview
+ * first reaches one gets a "you're visit #5,000" hello and an invitation to
+ * write in (celebrateMilestone() in site.js, five-thousand.html). Only marks
+ * still ahead of the counter belong here: a mark already passed would be
+ * claimed by the next random pageview and congratulate the wrong person.
+ */
+const MILESTONES = [5000, 10000, 25000];
+
+/**
+ * The mark this pageview claims, or null. "First pageview at or past the
+ * mark," not "exactly the mark," because bump() is read-then-write and two
+ * concurrent pageviews can land on the same count or skip one. The claim
+ * blob is what makes it once-only. Same race as bump() itself: two
+ * simultaneous claims could both win, which at worst means two readers get
+ * thanked.
+ */
+async function claimMilestone(store, total, detail) {
+  const mark = MILESTONES.filter((m) => total >= m).pop();
+  if (!mark) return null;
+  const key = `milestone:${mark}`;
+  const already = await store.get(key, { type: 'json' }).catch(() => null);
+  if (already) return null;
+  await store.setJSON(key, { mark, total, claimedAt: new Date().toISOString(), ...detail });
+  return mark;
+}
+
 export default async (req, context) => {
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
 
@@ -205,6 +232,7 @@ export default async (req, context) => {
   const bump = async (key) => {
     const current = Number((await store.get(key, { type: 'text' })) || '0');
     await store.set(key, String(current + 1));
+    return current + 1;
   };
 
   if (body.type === 'outbound') {
@@ -325,12 +353,15 @@ export default async (req, context) => {
   });
   tasks.push(store.setJSON('recent', recent.slice(0, RECENT_MAX)));
 
-  await Promise.all(tasks);
+  const [newTotal] = await Promise.all(tasks);
+  const milestone = await claimMilestone(store, newTotal, { path, country: geo?.country?.name || null });
   // The country code goes back to the page that asked, and nowhere else: it's
   // what lets site.js say hello to a reader outside the US in their own
   // language (see assets/abroad.js). It was already derived above for the
-  // counters; returning it stores nothing new.
-  return new Response(JSON.stringify({ country: geo?.country?.code || null }), {
+  // counters; returning it stores nothing new. `milestone` is set on exactly
+  // one pageview per mark (see claimMilestone() below), and site.js greets
+  // that reader.
+  return new Response(JSON.stringify({ country: geo?.country?.code || null, milestone }), {
     status: 200,
     headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
   });

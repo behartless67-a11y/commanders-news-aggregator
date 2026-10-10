@@ -8,7 +8,7 @@ import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.j
 import { loadRosterCache } from '../lib/roster.js';
 import { loadDepthChartCache } from '../lib/depthchart.js';
 import { loadScheduleCache } from '../lib/schedule.js';
-import { parseGameTime, daysAgo } from '../lib/dates.js';
+import { parseGameTime, daysAgo } from '../lib/dates.js';
 import { clusterItems } from '../lib/cluster.js';
 import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
@@ -25,7 +25,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderFiveThousandPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -430,6 +430,15 @@ export async function buildSite() {
     'utf8',
   );
 
+  // Unlisted, like tv.html: only the reader behind the 5,000th pageview gets
+  // sent here (see claimMilestone() in netlify/functions/track.js), so it's
+  // left out of the sitemap below and disallowed in robots.txt.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'five-thousand.html'),
+    renderFiveThousandPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
   await fs.writeFile(
     path.join(DIST_DIR, 'hail-mail.html'),
     renderHailMailPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, shareImage: shareCards['page-hail-mail'] || null }),
@@ -500,7 +509,7 @@ export async function buildSite() {
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), renderSitemap(sitemapEntries, { siteUrl: SITE_URL }), 'utf8');
   await fs.writeFile(
     path.join(DIST_DIR, 'robots.txt'),
-    `User-agent: *\nDisallow: /admin.html\nDisallow: /tv.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+    `User-agent: *\nDisallow: /admin.html\nDisallow: /tv.html\nDisallow: /five-thousand.html\nSitemap: ${SITE_URL}/sitemap.xml\n`,
     'utf8',
   );
 

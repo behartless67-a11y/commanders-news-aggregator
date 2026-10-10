@@ -151,6 +151,20 @@ Readers outside the US get a short note under the header, in their own language,
 
 ---
 
+## The 5,000th reader
+
+Whoever's pageview takes the site to 5,000 (and later 10,000 and 25,000) gets a one-time "You're visit #5,000" popup with a "Say hi to Ben" button. It goes to **five-thousand.html**, a short survey: name, where they're reading from, how they found the site, why they read it, how long they've been a fan, what to write about next, anything else, an OK-to-shout-you-out checkbox, and an optional email.
+
+- **The thank-you:** one of the first Burgundy Wire stickers, mailed by you. Readers outside the US get **two, plus a shout-out in the next post** if they tick the box. Only the actual winner sees the sticker offer; anyone else who finds the page can still say hi. Preview the international version with `?milestone=5000&country=DE`.
+
+- **You get an email the moment they send it**, at `ADMIN_TEST_EMAIL` (the same address newsletter tests go to). If they left an email, it's the Reply-To, so you just hit reply. Answers are also kept in the `milestone` blob store and in Netlify's Forms tab.
+- **Once only:** the first pageview at or past the mark claims it (`claimMilestone()` in `track.js`), saved as `milestone:5000` in the stats store. Your own visits never count, so it can't be you.
+- **If they close the popup,** a slim "You were visit #5,000! Say hi →" bar follows them around the site until they write in or close the bar too.
+- **To see it yourself:** add `?milestone=5000` to any page URL. It shows the popup without remembering anything.
+- The survey page isn't in the nav, the sitemap or search engines.
+
+---
+
 ## The game-week sidebar (Film Room, ref card, Call your shot)
 
 Three boxes added in October 2026, all ideas that came from reading r/Commanders.

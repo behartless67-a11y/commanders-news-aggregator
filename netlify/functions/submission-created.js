@@ -25,8 +25,62 @@ export default async (req) => {
   if (payload.form_name === 'wiretaps') return captureWireTap(payload);
   if (payload.form_name === 'abroad') return captureAbroad(payload);
   if (payload.form_name === 'prediction') return capturePrediction(payload);
+  if (payload.form_name === 'milestone') return captureMilestone(payload);
   return new Response('ok');
 };
+
+/**
+ * The 5,000th reader saying hi (five-thousand.html). Kept in the `milestone`
+ * blob store like the other surveys, and emailed to Ben on arrival, because
+ * the whole point is talking to this person and a survey nobody looks at for
+ * a week isn't a conversation. Reply-To is the reader's own address when they
+ * leave one, so answering them is just hitting reply.
+ */
+const MILESTONE_FIELDS = [
+  ['winner', 'Visit'],
+  ['country', 'Country (from the visit)'],
+  ['name', 'Name'],
+  ['where', 'Reading from'],
+  ['how_found', 'Found the site'],
+  ['why_read', 'Why they read it'],
+  ['fan_since', 'Fan since'],
+  ['write_about', 'Write about next'],
+  ['message', 'Anything else'],
+  ['shoutout_ok', 'OK to shout them out'],
+  ['email', 'Email'],
+];
+
+async function captureMilestone(payload) {
+  const entry = {};
+  for (const [field] of MILESTONE_FIELDS) entry[field] = String(payload.data?.[field] || '').trim().slice(0, 4000);
+  const answered = MILESTONE_FIELDS.some(([field]) => !['winner', 'country'].includes(field) && entry[field]);
+  if (!answered) return new Response('ok');
+
+  const at = new Date().toISOString();
+  const id = crypto.randomBytes(4).toString('hex');
+  await getStore('milestone').set(`m:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
+
+  if (process.env.RESEND_API_KEY) {
+    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const rows = MILESTONE_FIELDS
+      .filter(([field]) => entry[field])
+      .map(([field, label]) => `<p style="margin:0 0 14px"><strong>${label}</strong><br>${esc(entry[field]).replace(/\n/g, '<br>')}</p>`)
+      .join('');
+    const replyTo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(entry.email) ? entry.email : undefined;
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
+        to: process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu',
+        ...(replyTo ? { reply_to: replyTo } : {}),
+        subject: `Your ${entry.winner ? entry.winner.replace(/^yes, visit /, '') : 'milestone'} reader wrote in${entry.name ? `: ${entry.name}` : ''}`,
+        html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows}<p style="color:#888;font-size:12px">${replyTo ? `Hit reply to write back, and ask for their mailing address for the sticker${entry.country && entry.country !== 'US' ? 's (two, they\'re reading from abroad)' : ''}.` : 'No email left, so this one is one-way, and there\'s nowhere to send the sticker.'}</p></div>`,
+      }),
+    }).catch(() => {});
+  }
+  return new Response('ok');
+}
 
 /**
  * A reader's score for the next game, from the sidebar's "Call your shot"

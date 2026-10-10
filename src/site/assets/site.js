@@ -564,6 +564,128 @@
   var forcedCountry = (new URLSearchParams(window.location.search).get('country') || '').toUpperCase();
   if (/^[A-Z]{2}$/.test(forcedCountry)) sayHelloAbroad(forcedCountry);
 
+  /**
+   * The reader behind a milestone pageview (5,000 first; see claimMilestone()
+   * in track.js) gets a one-time "you're visit #5,000" hello and an invitation
+   * to write in on five-thousand.html, because Ben would love to meet them.
+   * Remembered in localStorage, so a reader who closes the popup still gets a
+   * small reminder bar on later pages until they send the survey or close the
+   * bar too. The winner gets a sticker, and two plus a shout-out if they're
+   * reading from outside the US. `?milestone=5000` shows the popup without
+   * remembering anything, for previewing what that reader sees.
+   */
+  var MILESTONE_KEY = 'bw_milestone';
+  function milestoneState() {
+    try { return JSON.parse(localStorage.getItem(MILESTONE_KEY) || 'null'); } catch (e) { return null; }
+  }
+  function saveMilestone(state) {
+    try { localStorage.setItem(MILESTONE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function markLabel(mark) { return '#' + Number(mark).toLocaleString('en-US'); }
+
+  // Readers outside the US get a bonus on top of the sticker: Ben wants to
+  // know who's reading from abroad most of all (same spirit as abroad.js).
+  var ABROAD_BONUS = 'Reading from outside the US? You get two stickers instead of one, and a shout-out in the next post if you\'re up for it.';
+  function isAbroad(country) { return !!country && country !== 'US'; }
+
+  function celebrateMilestone(mark, preview, country) {
+    if (!preview) saveMilestone({ mark: mark, status: 'won', country: country || null });
+    if (document.querySelector('.milestone-modal')) return;
+    var reminder = document.querySelector('.milestone-reminder');
+    if (reminder) reminder.remove();
+    var modal = document.createElement('div');
+    modal.className = 'subscribe-modal milestone-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-labelledby', 'milestone-heading');
+    modal.innerHTML =
+      '<div class="subscribe-modal-card">' +
+        '<button class="subscribe-modal-close" type="button" aria-label="Close">&times;</button>' +
+        '<img class="subscribe-modal-logo" src="logo.png" alt="The Burgundy Wire" />' +
+        '<p class="subscribe-modal-eyebrow">Hold on a second</p>' +
+        '<h2 class="subscribe-modal-heading" id="milestone-heading"></h2>' +
+        '<p class="subscribe-modal-body milestone-modal-lead"></p>' +
+        '<p class="subscribe-modal-body">Got two minutes? Tell me where you\'re reading from and what brought you here, and I\'ll send you one of the very first Burgundy Wire stickers, on me. I read every word.</p>' +
+        (isAbroad(country) ? '<p class="subscribe-modal-body milestone-bonus"></p>' : '') +
+        '<a class="subscribe-modal-submit milestone-modal-cta" href="five-thousand.html">Say hi to Ben</a>' +
+        '<button class="subscribe-modal-skip" type="button">Maybe later</button>' +
+      '</div>';
+    modal.querySelector('#milestone-heading').textContent = 'You\'re visit ' + markLabel(mark) + '.';
+    modal.querySelector('.milestone-modal-lead').textContent =
+      'Out of ' + Number(mark).toLocaleString('en-US') + ' visits to The Burgundy Wire, this one is yours. ' +
+      'I\'m Ben, a lifelong Washington fan writing this thing from Charlottesville, and I would genuinely love to know who you are.';
+    var bonus = modal.querySelector('.milestone-bonus');
+    if (bonus) bonus.textContent = ABROAD_BONUS;
+    var close = function () { modal.remove(); document.removeEventListener('keydown', onKey); };
+    var onKey = function (e) { if (e.key === 'Escape') close(); };
+    modal.querySelector('.subscribe-modal-close').addEventListener('click', close);
+    modal.querySelector('.subscribe-modal-skip').addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', onKey);
+    document.body.appendChild(modal);
+    modal.querySelector('.milestone-modal-cta').focus();
+  }
+
+  // Later pages, for a reader who closed the popup without writing in.
+  (function () {
+    var state = milestoneState();
+    if (!state || state.status !== 'won' || document.querySelector('form[name="milestone"]')) return;
+    var bar = document.createElement('aside');
+    bar.className = 'abroad-invite milestone-reminder';
+    bar.setAttribute('aria-label', 'You were visit ' + markLabel(state.mark));
+    bar.innerHTML =
+      '<p class="abroad-invite-text"><strong class="abroad-invite-hello"></strong> ' +
+      '<span class="abroad-invite-line">Ben would love to hear from you (and send you a sticker).</span> ' +
+      '<a class="abroad-invite-link" href="five-thousand.html">Say hi &rarr;</a></p>' +
+      '<button class="abroad-invite-close" type="button" aria-label="Close">&times;</button>';
+    bar.querySelector('.abroad-invite-hello').textContent = 'You were visit ' + markLabel(state.mark) + '!';
+    bar.querySelector('.abroad-invite-close').addEventListener('click', function () {
+      bar.remove();
+      saveMilestone({ mark: state.mark, status: 'closed' });
+    });
+    var hero = document.querySelector('.hero');
+    if (hero) hero.insertAdjacentElement('afterend', bar);
+    else document.body.insertAdjacentElement('afterbegin', bar);
+  })();
+
+  // five-thousand.html itself: tell the winner it's them, and post the survey
+  // in place like the other forms on the site.
+  (function () {
+    var form = document.querySelector('form[name="milestone"]');
+    if (!form) return;
+    var state = milestoneState();
+    if (state && state.mark) {
+      var eyebrow = document.getElementById('milestone-eyebrow');
+      if (eyebrow) eyebrow.textContent = state.status === 'sent' ? 'Thanks again' : 'That\'s you.';
+      // The sticker is the winner's thank-you, so only the winner is told
+      // about it. Anyone else who finds this unlisted page can still say hi.
+      var sticker = document.getElementById('milestone-sticker');
+      if (sticker) sticker.hidden = false;
+      var abroadBonus = document.getElementById('milestone-abroad-bonus');
+      if (abroadBonus && isAbroad(state.country)) { abroadBonus.textContent = ABROAD_BONUS; abroadBonus.hidden = false; }
+      form.querySelector('input[name="country"]').value = state.country || '';
+      // The page is written for 5,000; a later mark (10,000, 25,000) swaps in
+      // its own number rather than needing a page of its own.
+      Array.prototype.forEach.call(document.querySelectorAll('.milestone-mark'), function (el) { el.textContent = markLabel(state.mark); });
+      Array.prototype.forEach.call(document.querySelectorAll('.milestone-ordinal'), function (el) { el.textContent = Number(state.mark).toLocaleString('en-US') + 'th'; });
+      form.querySelector('input[name="winner"]').value = 'yes, visit ' + markLabel(state.mark);
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var done = function () {
+        form.innerHTML = '<p class="subscribe-done">Got it. I\'ll read every word, and if you left an email, you\'ll hear from me about your sticker. Hail.</p>';
+        if (state && state.mark) saveMilestone({ mark: state.mark, status: 'sent' });
+      };
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString() })
+        .then(done, done);
+    });
+  })();
+
+  var forcedMilestone = Number(new URLSearchParams(window.location.search).get('milestone'));
+  // Add ?country=DE to preview the version a reader outside the US gets.
+  if (forcedMilestone > 0) celebrateMilestone(forcedMilestone, true, forcedCountry || null);
+
   if (document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); })) {
     // admin browsing — don't count this
   } else
@@ -583,7 +705,10 @@
     }),
   })
     .then(function (r) { return r.status === 200 ? r.json() : null; })
-    .then(function (d) { if (d && !forcedCountry) sayHelloAbroad(d.country); })
+    .then(function (d) {
+      if (d && !forcedCountry) sayHelloAbroad(d.country);
+      if (d && d.milestone) celebrateMilestone(d.milestone, false, d.country);
+    })
     .catch(function () {});
 
   /**
