@@ -1,28 +1,4 @@
 {
-  "hogs-haven-65c024084084": {
-    "id": "hogs-haven-65c024084084",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/435307/nicki-jhabvala-projected-7-wins-too-high-redskins-van-jefferson-antonio-williams-sonny-styles",
-    "title": "Commanders News – Nicki Jhabvala: projected 7.6 wins is “too high”",
-    "excerpt": "The Daily Slop – 26 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Redskins merch returns\n\n \n NEW: Commanders selling merch with the retired Redskins name and logo — and team says the reason is trademark law.\n\n“We are required to maintain the marks in commercial usage so…",
-    "publishedAt": "2026-08-26T11:05:00.000Z",
-    "collectedAt": "2026-08-26T12:47:29.075Z"
-  },
-  "riggos-rag-2d7452936695": {
-    "id": "riggos-rag-2d7452936695",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/perfect-johnny-newton-replacement-washington-commanders-gervon-dexter",
-    "title": "Perfect Johnny Newton replacement just dropped into the Commanders' lap",
-    "excerpt": "The Washington Commanders could trade for defensive lineman Gervon Dexter Sr. as the perfect replacement for Johnny Newton.",
-    "publishedAt": "2026-08-26T11:30:00.000Z",
-    "collectedAt": "2026-08-26T12:47:29.880Z"
-  },
   "pft-16c18a5d8ae1": {
     "id": "pft-16c18a5d8ae1",
     "sourceId": "pft",
@@ -16234,5 +16210,29 @@
     "excerpt": "These Washington Commanders are under pressure to perform in Week 5 against the New York Giants to avoid the season slipping away.",
     "publishedAt": "2026-10-10T10:00:03.000Z",
     "collectedAt": "2026-10-10T10:05:34.707Z"
+  },
+  "commanders-official-132d239dffab": {
+    "id": "commanders-official-132d239dffab",
+    "sourceId": "commanders-official",
+    "sourceName": "Commanders.com",
+    "sourceHomepage": "https://www.commanders.com/news/",
+    "category": "team",
+    "url": "https://www.commanders.com/news/all-you-want-to-do-is-be-there-for-them-commanders-players-open-up-about-personal-connections-to-cancer-in-lead-up-to-crucial-catch-game",
+    "title": "'All you want to do is be there for them': Commanders players open up about personal connections to cancer in lead up to Crucial Catch game",
+    "excerpt": "The Commanders’ Week 5 game against the Giants will put a spotlight on the fight against cancer, recognizing those affected by the disease and emphasizing the importance of early detection",
+    "publishedAt": "2026-10-10T11:54:58.000Z",
+    "collectedAt": "2026-10-10T12:05:30.599Z"
+  },
+  "athletic-jhabvala-3dd45b3388ff": {
+    "id": "athletic-jhabvala-3dd45b3388ff",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7675666/2026/10/10/washington-commanders-nfc-east-jayden-daniels",
+    "title": "The Cowboys just opened the door for the Commanders, but Washington must make it count",
+    "excerpt": "Washington got off to a disappointing start, but with quarterback Jayden Daniels returning, the first-place Giants offer a big opportunity.",
+    "publishedAt": "2026-10-10T10:30:31.000Z",
+    "collectedAt": "2026-10-10T12:05:33.467Z"
   }
 }
