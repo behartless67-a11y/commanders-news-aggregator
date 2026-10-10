@@ -1,66 +1,4 @@
 {
-  "social-3ec7f7fb0ce0": {
-    "id": "social-3ec7f7fb0ce0",
-    "url": "https://x.com/JPFinlayNBCS/status/2105301419624743065",
-    "text": "What percentage of fans is higher:",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-09-30T14:19:07.000Z",
-    "collectedAt": "2026-09-30T14:36:53.700Z"
-  },
-  "social-a07925808c32": {
-    "id": "social-a07925808c32",
-    "url": "https://x.com/john_keim/status/2105301609316004182",
-    "text": "Jayden Daniels warming up with a brace on his left elbow (which he’ll wear the rest of the season of course):",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-30T14:19:52.000Z",
-    "collectedAt": "2026-09-30T14:36:54.624Z"
-  },
-  "social-dae499cbf779": {
-    "id": "social-dae499cbf779",
-    "url": "https://x.com/tashanreed/status/2105301889923350973",
-    "text": "QB Jayden Daniels and the rest of the #Commanders are just in T-shirts today. They just landed this morning, so they're doing a light walkthrough. They'll do real practices Thursday and Friday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/360/433/081/256/191/original/9fcc01df48db6c12.jpg"
-    ],
-    "publishedAt": "2026-09-30T14:20:59.000Z",
-    "collectedAt": "2026-09-30T14:36:57.501Z"
-  },
-  "social-b7e4e7cfab5c": {
-    "id": "social-b7e4e7cfab5c",
-    "url": "https://x.com/NickiJhabvala/status/2105320808692285497",
-    "text": "More Jayden Daniels in London:",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-30T15:36:10.000Z",
-    "collectedAt": "2026-09-30T16:11:05.167Z"
-  },
-  "social-71ec9350a812": {
-    "id": "social-71ec9350a812",
-    "url": "https://x.com/NickiJhabvala/status/2105313516898910423",
-    "text": "Jayden Daniels and the brace in London.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-09-30T15:07:11.000Z",
-    "collectedAt": "2026-09-30T16:11:05.167Z"
-  },
   "social-4e427d1c5427": {
     "id": "social-4e427d1c5427",
     "url": "https://x.com/Commanders/status/2105326870078300614",
@@ -74,18 +12,6 @@
     ],
     "publishedAt": "2026-09-30T16:00:15.000Z",
     "collectedAt": "2026-09-30T16:11:49.009Z"
-  },
-  "social-9e56a913eadb": {
-    "id": "social-9e56a913eadb",
-    "url": "https://x.com/Commanders/status/2105312165225807898",
-    "text": "headed to work... London edition",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-09-30T15:01:49.000Z",
-    "collectedAt": "2026-09-30T16:11:49.010Z"
   },
   "social-89940bda4bac": {
     "id": "social-89940bda4bac",
@@ -125,18 +51,6 @@
     "publishedAt": "2026-09-30T15:53:30.000Z",
     "collectedAt": "2026-09-30T16:11:51.791Z"
   },
-  "social-712cff8e84a9": {
-    "id": "social-712cff8e84a9",
-    "url": "https://x.com/john_keim/status/2105316595136360652",
-    "text": "On Jayden Daniels. An update. 47/commanders-jayden-daniels-limited-practice-status-air",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-09-30T15:19:25.000Z",
-    "collectedAt": "2026-09-30T16:11:51.791Z"
-  },
   "social-7d31b4a3119d": {
     "id": "social-7d31b4a3119d",
     "url": "https://x.com/NFL/status/2105326815996948564",
@@ -152,30 +66,6 @@
     ],
     "publishedAt": "2026-09-30T16:00:02.000Z",
     "collectedAt": "2026-09-30T16:11:54.678Z"
-  },
-  "social-2295ca76447c": {
-    "id": "social-2295ca76447c",
-    "url": "https://mysportgallery.com/@slessans2/117360717816328124",
-    "text": "Jayden Daniels has been working out in London, but I wouldn’t rush him back to the field. But it is reassuring to see him working out. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-30T15:33:57.000Z",
-    "collectedAt": "2026-09-30T16:12:05.424Z"
-  },
-  "social-270689fce822": {
-    "id": "social-270689fce822",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mwqo5l5h7t2p",
-    "text": "Jayden Daniels has been working out in London, but I wouldn’t rush him back to the field. But it is reassuring to see him working out. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-09-30T15:33:57.631Z",
-    "collectedAt": "2026-09-30T16:12:05.424Z"
   },
   "social-4e9ef2c7edb9": {
     "id": "social-4e9ef2c7edb9",
@@ -10519,5 +10409,29 @@
     "images": [],
     "publishedAt": "2026-10-10T11:47:14.000Z",
     "collectedAt": "2026-10-10T12:05:55.784Z"
+  },
+  "social-c07895c0e311": {
+    "id": "social-c07895c0e311",
+    "url": "https://x.com/BenStandig/status/2108937867242148182",
+    "text": "Raiders? Would be an excellent fit. But quite the risk-reward scenario. Chiefs? Would be scary to think what this looks like if Mahomes/Reid unlock MHJR.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-10T15:09:04.000Z",
+    "collectedAt": "2026-10-10T15:47:35.411Z"
+  },
+  "social-942ef2dcd13c": {
+    "id": "social-942ef2dcd13c",
+    "url": "https://x.com/tashanreed/status/2108939340462362916",
+    "text": "Who's trading for Marvin Jr.? Find out next time on Dragonball Z.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-10T15:14:55.000Z",
+    "collectedAt": "2026-10-10T15:47:37.040Z"
   }
 }
