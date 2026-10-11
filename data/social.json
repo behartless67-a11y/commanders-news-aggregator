@@ -10235,5 +10235,44 @@
     "images": [],
     "publishedAt": "2026-10-11T13:24:07.000Z",
     "collectedAt": "2026-10-11T14:05:57.243Z"
+  },
+  "social-c865b28d72f7": {
+    "id": "social-c865b28d72f7",
+    "url": "https://mysportgallery.com/@slessans2/117422752139822736",
+    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-11T14:30:06.000Z",
+    "collectedAt": "2026-10-11T14:38:21.888Z"
+  },
+  "social-5970e31d18df": {
+    "id": "social-5970e31d18df",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mxm7pk3geg25",
+    "text": "Happy Game Day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-11T14:30:07.068Z",
+    "collectedAt": "2026-10-11T14:38:21.888Z"
+  },
+  "social-cbd93d00b3f1": {
+    "id": "social-cbd93d00b3f1",
+    "url": "https://x.com/rydunleavy/status/2109285667713024162",
+    "text": "Whats the weather like for #Giants vs #Commanders ?",
+    "handle": "rydunleavy",
+    "author": "Ryan Dunleavy",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/422/683/703/572/835/original/ee651430219f5f7e.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/422/683/758/574/898/original/c0a24583d078a795.jpg"
+    ],
+    "publishedAt": "2026-10-11T14:11:06.000Z",
+    "collectedAt": "2026-10-11T14:38:21.888Z"
   }
 }
