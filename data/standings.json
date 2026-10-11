@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-10-11T16:06:09.155Z",
+  "fetchedAt": "2026-10-11T18:06:05.788Z",
   "teams": [
     {
       "abbr": "NYG",
@@ -12,9 +12,9 @@
     {
       "abbr": "PHI",
       "name": "Philadelphia Eagles",
-      "overall": "2-2",
-      "streak": "L2",
-      "winPercent": 0.5
+      "overall": "2-3",
+      "streak": "L3",
+      "winPercent": 0.4
     },
     {
       "abbr": "DAL",

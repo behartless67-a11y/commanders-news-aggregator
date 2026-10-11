@@ -99,20 +99,6 @@
   },
   {
     "season": "regular",
-    "week": "WEEK 5",
-    "gametime": "10/11/2026 13:00:00 -04:00",
-    "homeAway": "VS",
-    "opponentAbbr": "NYG",
-    "opponent": "New York Giants",
-    "opponentShort": "Giants",
-    "venue": "Northwest Stadium",
-    "result": null,
-    "points": null,
-    "broadcast": "FOX",
-    "isBye": false
-  },
-  {
-    "season": "regular",
     "week": "WEEK 6",
     "gametime": "10/19/2026 20:15:00 -04:00",
     "homeAway": "AT",

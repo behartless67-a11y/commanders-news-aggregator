@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T16:06:41.318Z",
+  "fetchedAt": "2026-10-11T18:06:40.004Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5399,6 +5399,22 @@
         "abbr": "TB",
         "flags": 14,
         "yards": 92
+      }
+    },
+    "401872981": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T13:30Z",
+      "referee": "Ronald Torbert",
+      "home": {
+        "abbr": "JAX",
+        "flags": 13,
+        "yards": 100
+      },
+      "away": {
+        "abbr": "PHI",
+        "flags": 7,
+        "yards": 43
       }
     }
   }
