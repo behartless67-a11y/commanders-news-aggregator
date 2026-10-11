@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T19:55:51.925Z",
+  "fetchedAt": "2026-10-11T20:06:39.131Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5431,6 +5431,22 @@
         "abbr": "HOU",
         "flags": 11,
         "yards": 95
+      }
+    },
+    "401872986": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "NE",
+        "flags": 12,
+        "yards": 116
+      },
+      "away": {
+        "abbr": "LV",
+        "flags": 8,
+        "yards": 101
       }
     },
     "401872987": {

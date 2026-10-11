@@ -11575,7 +11575,7 @@
     "text": "Amik Robertson is a dog! #Commanders",
     "handle": "JosinaAnderson",
     "author": "Josina Anderson",
-    "label": "",
+    "label": "Insider",
     "sourceKey": "@JosinaAnderson",
     "images": [],
     "publishedAt": "2026-10-11T19:16:54.000Z",
@@ -11587,7 +11587,7 @@
     "text": "Well will you look at that: Jayden Daniels calls his own number in this long rushing TD, AND his elbow suffered no additional injury…… #Commanders lead 19-6.",
     "handle": "JosinaAnderson",
     "author": "Josina Anderson",
-    "label": "",
+    "label": "Insider",
     "sourceKey": "@JosinaAnderson",
     "images": [],
     "publishedAt": "2026-10-11T19:07:26.000Z",
@@ -11596,7 +11596,7 @@
   "social-6feb7c15b10d": {
     "id": "social-6feb7c15b10d",
     "url": "https://masto.ai/@venitamathias/117424023217371161",
-    "text": "#commanders #NFL Challenge. That was not a TD",
+    "text": "#commanders #NFL Challenge. That was not a TD. OK, replay shows it was.",
     "handle": "venitamathias",
     "author": "Venita",
     "label": "",
@@ -11976,5 +11976,93 @@
     "images": [],
     "publishedAt": "2026-10-11T18:08:14.000Z",
     "collectedAt": "2026-10-11T20:05:12.075Z"
+  },
+  "social-8050ebe66e46": {
+    "id": "social-8050ebe66e46",
+    "url": "https://x.com/JPFinlayNBCS/status/2109373353953808710",
+    "text": "Jameis is just slippery enough to go with the size and strength. Gets out of a lot of sacks even if it looks slow",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-11T19:59:32.000Z",
+    "collectedAt": "2026-10-11T20:05:46.435Z"
+  },
+  "social-874d89d2f85c": {
+    "id": "social-874d89d2f85c",
+    "url": "https://x.com/JosinaAnderson/status/2109363421267255416",
+    "text": "As I was just saying…but bullshit call by the refs here on Amik Robertson..",
+    "handle": "JosinaAnderson",
+    "author": "JosinaAnderson",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-11T19:20:04.000Z",
+    "collectedAt": "2026-10-11T20:05:46.435Z"
+  },
+  "social-c35c219a6142": {
+    "id": "social-c35c219a6142",
+    "url": "https://x.com/JPFinlayNBCS/status/2109372623469822458",
+    "text": "Jayden sacked on a big 3rd down brings out the punt team. Would be a great time for that 2nd Jameis turnover",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-11T19:56:38.000Z",
+    "collectedAt": "2026-10-11T20:05:46.435Z"
+  },
+  "social-d0ecc525fde0": {
+    "id": "social-d0ecc525fde0",
+    "url": "https://x.com/tashanreed/status/2109372616821920041",
+    "text": "The #Commanders with an untimely three-and-out. Daniels was sacked on 3rd down. Dru Phillips blitzed and wasn't picked up.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-11T19:56:36.000Z",
+    "collectedAt": "2026-10-11T20:05:50.276Z"
+  },
+  "social-d8603262e36f": {
+    "id": "social-d8603262e36f",
+    "url": "https://x.com/JosinaAnderson/status/2109373257686327656",
+    "text": "THE CLOSE CALL: Here’s a look at the Isaiah Likely score that got knocked loose. Refs called it touchdown #Giants vs the #Commanders . They got this one right!! NFC East battle, scrapping to the end.",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-10-11T19:59:09.000Z",
+    "collectedAt": "2026-10-11T20:05:57.457Z"
+  },
+  "social-e4ac708c3570": {
+    "id": "social-e4ac708c3570",
+    "url": "https://mysportgallery.com/@slessans2/117424070769309501",
+    "text": "Might as well get this over with… #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/424/070/993/960/656/original/cbb13da62d91311b.jpg"
+    ],
+    "publishedAt": "2026-10-11T20:05:26.000Z",
+    "collectedAt": "2026-10-11T20:06:00.943Z"
+  },
+  "social-6b9841885c83": {
+    "id": "social-6b9841885c83",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mxmsh5vgc72w",
+    "text": "Might as well get this over with… #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/424/071/910/054/835/original/b9a12986e4b007c0.jpeg"
+    ],
+    "publishedAt": "2026-10-11T20:05:26.966Z",
+    "collectedAt": "2026-10-11T20:06:00.943Z"
   }
 }
