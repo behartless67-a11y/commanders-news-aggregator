@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T22:07:02.303Z",
+  "fetchedAt": "2026-10-11T23:27:41.991Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5527,6 +5527,22 @@
         "abbr": "NYG",
         "flags": 7,
         "yards": 35
+      }
+    },
+    "401872989": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T20:05Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "LAC",
+        "flags": 9,
+        "yards": 93
+      },
+      "away": {
+        "abbr": "DEN",
+        "flags": 7,
+        "yards": 40
       }
     },
     "401872990": {
