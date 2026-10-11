@@ -71,30 +71,6 @@
     "publishedAt": "2026-08-27T11:30:00.000Z",
     "collectedAt": "2026-08-27T14:57:34.276Z"
   },
-  "riggos-rag-cc4910d17d02": {
-    "id": "riggos-rag-cc4910d17d02",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/3-winners-4-losers-washington-commanders-joint-practice-ravens",
-    "title": "3 winners (and 4 losers) from Commanders' joint practice with the Ravens",
-    "excerpt": "Who were the big winners and losers from the Washington Commanders' joint practice against the Baltimore Ravens?",
-    "publishedAt": "2026-08-27T10:00:02.000Z",
-    "collectedAt": "2026-08-27T14:57:34.276Z"
-  },
-  "athletic-jhabvala-8fc01d757800": {
-    "id": "athletic-jhabvala-8fc01d757800",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7542023/2026/08/27/commanders-training-camp-takeaways-analysis-jayden-daniels",
-    "title": "What we learned at Commanders training camp about the defense, O-line and Jayden Daniels",
-    "excerpt": "The last month provided plenty of insight about Washington's defensive plan, its biggest shortcomings and its toughest roster battles.",
-    "publishedAt": "2026-08-27T10:00:48.000Z",
-    "collectedAt": "2026-08-27T14:57:37.393Z"
-  },
   "pft-59ba9e359597": {
     "id": "pft-59ba9e359597",
     "sourceId": "pft",
@@ -16150,5 +16126,17 @@
     "excerpt": "",
     "publishedAt": "2026-10-11T04:00:28.000Z",
     "collectedAt": "2026-10-11T08:05:33.458Z"
+  },
+  "riggos-rag-c05bc0879688": {
+    "id": "riggos-rag-c05bc0879688",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/4-bold-washington-commanders-predictions-week-5-new-york-giants",
+    "title": "4 bold Commanders predictions for pivotal Week 5 game against the Giants",
+    "excerpt": "Bold predictions for the Washington Commmanders during their pivotal Week 5 divisional game against the New York Giants.",
+    "publishedAt": "2026-10-11T10:00:00.000Z",
+    "collectedAt": "2026-10-11T10:05:31.089Z"
   }
 }
