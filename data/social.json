@@ -13,18 +13,6 @@
     "publishedAt": "2026-10-01T01:48:19.000Z",
     "collectedAt": "2026-10-01T02:05:41.309Z"
   },
-  "social-c1e8d370f930": {
-    "id": "social-c1e8d370f930",
-    "url": "https://x.com/BenStandig/status/2105458187939770473",
-    "text": "From yesterday. Only refuted a Pistons-Sarr rumor fepm ESPN since that was all that was reported...",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-01T00:42:04.000Z",
-    "collectedAt": "2026-10-01T02:05:41.309Z"
-  },
   "social-b77374b628e9": {
     "id": "social-b77374b628e9",
     "url": "https://mysportgallery.com/@slessans2/117363701625079753",
@@ -10476,5 +10464,44 @@
     ],
     "publishedAt": "2026-10-10T22:14:10.000Z",
     "collectedAt": "2026-10-10T23:13:55.551Z"
+  },
+  "social-5333a0f9b878": {
+    "id": "social-5333a0f9b878",
+    "url": "https://x.com/john_keim/status/2109077847524454644",
+    "text": "WR Terry McLaurin remains a gametime decision (hence: questionable). At this point a slight lean to him playing, but it’s just slight per source.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-11T00:25:18.000Z",
+    "collectedAt": "2026-10-11T00:44:55.420Z"
+  },
+  "social-05b531cdae45": {
+    "id": "social-05b531cdae45",
+    "url": "https://x.com/BenStandig/status/2109079704871301218",
+    "text": "From earlier. The Terry McLaurin updates. Hammy responded well after practice, per source. GTD and all, but his status is trending up as of this afternoon.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/419/462/365/008/855/original/00bf0704703f405b.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/419/462/489/072/385/original/8d61dfaa5251e4d3.jpg"
+    ],
+    "publishedAt": "2026-10-11T00:32:41.000Z",
+    "collectedAt": "2026-10-11T00:44:56.847Z"
+  },
+  "social-f86fb87ce51b": {
+    "id": "social-f86fb87ce51b",
+    "url": "https://x.com/WashWizards/status/2109072384451805515",
+    "text": "AND 1 💪 @AJ_Dybantsa@twitter.com",
+    "handle": "WashWizards",
+    "author": "Washington Wizards",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-11T00:03:35.000Z",
+    "collectedAt": "2026-10-11T00:44:56.847Z"
   }
 }
