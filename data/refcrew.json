@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T20:06:39.131Z",
+  "fetchedAt": "2026-10-11T22:07:02.303Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5417,6 +5417,38 @@
         "yards": 43
       }
     },
+    "401872982": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Brad Rogers",
+      "home": {
+        "abbr": "MIA",
+        "flags": 7,
+        "yards": 30
+      },
+      "away": {
+        "abbr": "CIN",
+        "flags": 4,
+        "yards": 39
+      }
+    },
+    "401872983": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Bill Vinovich",
+      "home": {
+        "abbr": "NYJ",
+        "flags": 10,
+        "yards": 102
+      },
+      "away": {
+        "abbr": "CLE",
+        "flags": 6,
+        "yards": 30
+      }
+    },
     "401872984": {
       "season": 2026,
       "week": 5,
@@ -5431,6 +5463,22 @@
         "abbr": "HOU",
         "flags": 11,
         "yards": 95
+      }
+    },
+    "401872985": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "PIT",
+        "flags": 6,
+        "yards": 50
+      },
+      "away": {
+        "abbr": "IND",
+        "flags": 9,
+        "yards": 59
       }
     },
     "401872986": {
@@ -5463,6 +5511,38 @@
         "abbr": "MIN",
         "flags": 4,
         "yards": 30
+      }
+    },
+    "401872988": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "WSH",
+        "flags": 9,
+        "yards": 69
+      },
+      "away": {
+        "abbr": "NYG",
+        "flags": 7,
+        "yards": 35
+      }
+    },
+    "401872990": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "GB",
+        "flags": 4,
+        "yards": 25
+      },
+      "away": {
+        "abbr": "CHI",
+        "flags": 3,
+        "yards": 20
       }
     }
   }
