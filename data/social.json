@@ -121,18 +121,6 @@
     "publishedAt": "2026-10-01T12:08:04.000Z",
     "collectedAt": "2026-10-01T14:05:45.370Z"
   },
-  "social-e42b0beb1fbb": {
-    "id": "social-e42b0beb1fbb",
-    "url": "https://x.com/john_keim/status/2105630134804070857",
-    "text": "Asked about something Sonny Styles does that doesn't show up in stats, Daronte Jones said, \"His game prep. He's constantly in our office, constantly watching tape... Just his communication.\"",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-01T12:05:19.000Z",
-    "collectedAt": "2026-10-01T14:05:45.370Z"
-  },
   "social-037fe01085d8": {
     "id": "social-037fe01085d8",
     "url": "https://x.com/BenStandig/status/2105652397670588682",
@@ -10307,5 +10295,45 @@
     "images": [],
     "publishedAt": "2026-10-11T02:34:00.000Z",
     "collectedAt": "2026-10-11T04:02:19.209Z"
+  },
+  "social-cc14f2d40834": {
+    "id": "social-cc14f2d40834",
+    "url": "https://x.com/Commanders/status/2109252682166755636",
+    "text": "Another battle awaits @BIG100Radio@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/422/172/351/708/965/original/47194217d0b55be4.jpg"
+    ],
+    "publishedAt": "2026-10-11T12:00:02.000Z",
+    "collectedAt": "2026-10-11T12:05:41.186Z"
+  },
+  "social-f090a61754c7": {
+    "id": "social-f090a61754c7",
+    "url": "https://x.com/AdamSchefter/status/2109243881984594094",
+    "text": "There are doctors around the NFL who believe it's a matter of when, not if, Washington Commanders quarterback Jayden Daniels hurts his left elbow again. 03/doctors-fear-risk-further-jayden-daniels-elbow-injury",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-11T11:25:03.000Z",
+    "collectedAt": "2026-10-11T12:05:49.500Z"
+  },
+  "social-c7c17b88a980": {
+    "id": "social-c7c17b88a980",
+    "url": "https://x.com/MikeGarafolo/status/2109241923990925413",
+    "text": "#Commanders WR Terry McLaurin is a true game-time decision. Even if he does play today, expect his snaps to be limited. Dan Quinn said the wet field and rainy conditions won’t be a factor in the decision. Colleague @john_keim says slight lean to playing. Will update.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/421/994/941/767/737/original/2aad2c12bfe85486.jpg"
+    ],
+    "publishedAt": "2026-10-11T11:17:17.000Z",
+    "collectedAt": "2026-10-11T12:05:50.857Z"
   }
 }

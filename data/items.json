@@ -23,18 +23,6 @@
     "publishedAt": "2026-08-27T12:30:00.000Z",
     "collectedAt": "2026-08-27T14:57:33.607Z"
   },
-  "hogs-haven-f1ce03fd475f": {
-    "id": "hogs-haven-f1ce03fd475f",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/nfl-preseason/435524/washington-commanders-2026-mason-brennan-preseason-hype-power-rankings-week-3",
-    "title": "Washington Commanders Mason/Brennan Preseason Hype! Power Rankings: Week 3",
-    "excerpt": "DETROIT, MICHIGAN - AUGUST 22: Kaytron Allen #31 of the Washington Commanders runs with the ball during the first quarter of a preseason game against the Detroit Lions at Ford Field on August 22, 2026 in Detroit, Michigan. (Photo by Nic Antaya/Getty Images) | Getty Images \n \n Heading into the final preseason game, there has been a massive shakeup of the Mason/Brennan Preseason Hype! Award power rankings, compared to where they stood just one week ago .\n\n Last week’s leader, Drew Stevens now…",
-    "publishedAt": "2026-08-27T11:30:00.000Z",
-    "collectedAt": "2026-08-27T14:57:33.607Z"
-  },
   "riggos-rag-eb014797178d": {
     "id": "riggos-rag-eb014797178d",
     "sourceId": "riggos-rag",
@@ -57,18 +45,6 @@
     "title": "Antonio Williams defies the chaos in Commanders' joint practice disaster",
     "excerpt": "Washington Commanders rookie wide receiver Antonio Williams was among the few shining lights to emerge from joint practice with the Baltimore Ravens.",
     "publishedAt": "2026-08-27T13:00:03.000Z",
-    "collectedAt": "2026-08-27T14:57:34.276Z"
-  },
-  "riggos-rag-9eb2a8923634": {
-    "id": "riggos-rag-9eb2a8923634",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-debacle-ravens-joint-practice-puts-adam-peters-notice",
-    "title": "Commanders' debacle at Ravens joint practice puts Adam Peters on notice",
-    "excerpt": "The Washington Commanders' joint practice with the Baltimore Ravens further exposed a costly offseason gamble by general manager Adam Peters.",
-    "publishedAt": "2026-08-27T11:30:00.000Z",
     "collectedAt": "2026-08-27T14:57:34.276Z"
   },
   "pft-59ba9e359597": {
@@ -16138,5 +16114,77 @@
     "excerpt": "Bold predictions for the Washington Commmanders during their pivotal Week 5 divisional game against the New York Giants.",
     "publishedAt": "2026-10-11T10:00:00.000Z",
     "collectedAt": "2026-10-11T10:05:31.089Z"
+  },
+  "hogs-haven-32b14656670d": {
+    "id": "hogs-haven-32b14656670d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/447996/how-key-is-croskey-merritt-to-washington-success-now-terry-mclaurin-jayeden-daniels-dan-quinn",
+    "title": "Commanders News: How key is Croskey-Merritt to team success right now?",
+    "excerpt": "LANDOVER, MD - SEPTEMBER 07: Jacory Croskey-Merritt #22 of the Washington Commanders carries the ball against the New York Giants during the second half of the NFL 2025 game at Northwest Stadium on September 7, 2025 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 11 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the…",
+    "publishedAt": "2026-10-11T10:30:00.000Z",
+    "collectedAt": "2026-10-11T12:05:31.914Z"
+  },
+  "atoz-sports-334524b5677b": {
+    "id": "atoz-sports-334524b5677b",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/will-commanders-wr-terry-mclaurin-play-against-giants",
+    "title": "Latest Terry McLaurin update is a mixed bag of news that leaves more questions than answers heading into Giants game",
+    "excerpt": "Sep 27, 2026; Landover, Maryland, USA; Washington Commanders wide receiver Terry McLaurin (17) reacts after making a touchdown catch against the Seattle Seahawks in the second half at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images \n \n\n The Commanders are hoping to get star wide receiver Terry McLaurin back for a crucial matchup against the Giants, but it sounds like his chances of playing are still very much up in the air.\n\n The Washington Commanders head into a crucial Week 5…",
+    "publishedAt": "2026-10-11T11:42:19.000Z",
+    "collectedAt": "2026-10-11T12:05:32.063Z"
+  },
+  "riggos-rag-0f437fc62007": {
+    "id": "riggos-rag-0f437fc62007",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-need-david-blough-unleash-chig-okonkwo-against-giants",
+    "title": "Commanders need David Blough to unleash Chig Okonkwo against the Giants",
+    "excerpt": "The Washington Commanders must make underutilized tight end Chig Okonkwo a sneaky part of both phases of their offense against the New York Giants in Week 5.",
+    "publishedAt": "2026-10-11T12:00:00.000Z",
+    "collectedAt": "2026-10-11T12:05:32.561Z"
+  },
+  "riggos-rag-f6d553b33b1d": {
+    "id": "riggos-rag-f6d553b33b1d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/terry-mclaurin-playing-today-giants-latest-updates-washington-commanders-wr-week-5",
+    "title": "Is Terry McLaurin playing today vs. Giants? Latest updates for Commanders WR in Week 5",
+    "excerpt": "Washington Commanders wide receiver Terry McLaurin is a legitimate game-time decision in Week 5 against the New York Giants.",
+    "publishedAt": "2026-10-11T11:00:01.000Z",
+    "collectedAt": "2026-10-11T12:05:32.561Z"
+  },
+  "clutchpoints-4179a59cfadd": {
+    "id": "clutchpoints-4179a59cfadd",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-rumors-terry-mclaurin-a-slight-lean-towards-playing-in-week-5-vs-giants",
+    "title": "Commanders rumors: Terry McLaurin a ‘slight lean’ towards playing in Week 5 vs. Giants",
+    "excerpt": "Washington Commanders wide receiver Terry McLaurin is trending toward returning for Sunday’s matchup against the New York Giants , although his availability remains uncertain because of a hamstring injury.\n\n The 31-year-old is expected to be a true game-time decision , ESPN’s John Keim reported Saturday. Keim added that there is a “slight lean” toward McLaurin playing, but he stressed that it was “just slight.”\n\n McLaurin missed Washington’s Week 4 game versus the Indianapolis Colts after being…",
+    "publishedAt": "2026-10-11T11:02:37.000Z",
+    "collectedAt": "2026-10-11T12:05:32.723Z"
+  },
+  "yahoo-nfl-34a2aecf72f0": {
+    "id": "yahoo-nfl-34a2aecf72f0",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/live/nfl-week-5-scores-news-live-updates-schedule-highlights-stats-where-to-watch-120000942.html",
+    "title": "Week 5 NFL live updates, news, schedule: Jayden Daniels returns from elbow injury; Ja'Marr Chase, Tee Higgins questionable",
+    "excerpt": "We’ve got another action-packed NFL game slate for Week 5, albeit a slate short of two teams — the Kansas City Chiefs and Carolina Panthers, which are both on bye. Per usual, fantasy football managers and NFL fans have a number of injuries to monitor ahead of kickoff. \n Among those questionable for Week 5 : Bengals WRs Ja’Marr Chase (concussion) and Tee Higgins (adductor/neck), Chargers WR Ladd McConkey (foot), Vikings WR Justin Jefferson (ankle), Bears QB Caleb Williams (hamstring) and Raiders…",
+    "publishedAt": "2026-10-11T12:00:00.000Z",
+    "collectedAt": "2026-10-11T12:05:39.745Z"
   }
 }
