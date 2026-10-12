@@ -1,55 +1,4 @@
 {
-  "social-ba3042760d4c": {
-    "id": "social-ba3042760d4c",
-    "url": "https://x.com/Commanders/status/2106127086918267054",
-    "text": "locked in (in London) @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/373/334/816/964/415/original/bd49884e2520f8d7.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/373/334/848/428/411/original/6734d325fb2b393a.jpg"
-    ],
-    "publishedAt": "2026-10-02T21:00:02.000Z",
-    "collectedAt": "2026-10-02T22:00:33.266Z"
-  },
-  "social-81463cffb804": {
-    "id": "social-81463cffb804",
-    "url": "https://x.com/john_keim/status/2106125554638303620",
-    "text": "Quick video with Dan Quinn on the value of Marcus Mariota ahead of start vs. Colts 652",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-02T20:53:56.000Z",
-    "collectedAt": "2026-10-02T22:00:36.087Z"
-  },
-  "social-d0fa5739228b": {
-    "id": "social-d0fa5739228b",
-    "url": "https://x.com/BenStandig/status/2106125734150279610",
-    "text": "Updated the story to include details on why Terry McLaurin landed on Friday's injury report and why you can exhale a bit if you hope to see him face his hometown team. ⤵️",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-02T20:54:39.000Z",
-    "collectedAt": "2026-10-02T22:00:37.263Z"
-  },
-  "social-73b72ccefefc": {
-    "id": "social-73b72ccefefc",
-    "url": "https://x.com/Commanders/status/2106142178254958804",
-    "text": "really got 'em with these",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-02T22:00:00.000Z",
-    "collectedAt": "2026-10-02T22:05:41.337Z"
-  },
   "social-dc17c1b04781": {
     "id": "social-dc17c1b04781",
     "url": "https://x.com/Commanders/status/2106164829333647737",
@@ -13536,5 +13485,29 @@
     "images": [],
     "publishedAt": "2026-10-12T19:39:44.000Z",
     "collectedAt": "2026-10-12T20:06:04.954Z"
+  },
+  "social-6e897eee8f37": {
+    "id": "social-6e897eee8f37",
+    "url": "https://x.com/NickiJhabvala/status/2109760855885685099",
+    "text": "Dan Quinn ‘furious’ about Commanders’ OT gaffe, says responsibility ‘starts with me’",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-12T21:39:20.000Z",
+    "collectedAt": "2026-10-12T22:05:12.189Z"
+  },
+  "social-83ef9fb18b99": {
+    "id": "social-83ef9fb18b99",
+    "url": "https://x.com/NickiJhabvala/status/2109757885353754959",
+    "text": "Dan Quinn, when asked about his job security and if he's had a conversation with ownership after last night: “Josh (Harris) and I talk regularly before games, after games, after good games, after tough games. That's a normal process for us. And trust me, no one is pleased with",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-12T21:27:31.000Z",
+    "collectedAt": "2026-10-12T22:05:12.189Z"
   }
 }
