@@ -12241,7 +12241,7 @@
     "text": "#Commanders QB Jayden Daniels on the sequence to end the game: \"It's on me.\" When asked if they knew they were out of timeouts, he said the offense should've done a better job of communicating that.",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "",
+    "label": "The Washington Post",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-11T21:15:20.000Z",
@@ -13156,5 +13156,19 @@
     "images": [],
     "publishedAt": "2026-10-12T04:24:09.000Z",
     "collectedAt": "2026-10-12T06:05:56.519Z"
+  },
+  "social-08fe4e8a2946": {
+    "id": "social-08fe4e8a2946",
+    "url": "https://mastodon.social/@Woodsie111/117427236622793443",
+    "text": "A self imposed international break from socials is now over. Glad to be back watching live sport instead. Can now catch up on world events and sport again. #NFL #Commanders",
+    "handle": "Woodsie111",
+    "author": "Woodsie",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/427/231/222/336/068/original/2413ffb9e5a594e2.jpg"
+    ],
+    "publishedAt": "2026-10-12T09:30:33.820Z",
+    "collectedAt": "2026-10-12T10:06:03.643Z"
   }
 }
