@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T23:27:41.991Z",
+  "fetchedAt": "2026-10-12T00:06:38.656Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5559,6 +5559,38 @@
         "abbr": "CHI",
         "flags": 3,
         "yards": 20
+      }
+    },
+    "401872991": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "referee": "Carl Cheffers",
+      "home": {
+        "abbr": "ARI",
+        "flags": 5,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "DET",
+        "flags": 4,
+        "yards": 31
+      }
+    },
+    "401872992": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "SEA",
+        "flags": 5,
+        "yards": 46
+      },
+      "away": {
+        "abbr": "SF",
+        "flags": 8,
+        "yards": 70
       }
     }
   }
