@@ -1,28 +1,4 @@
 {
-  "hogs-haven-c42ac9c432d7": {
-    "id": "hogs-haven-c42ac9c432d7",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-preseason/435920/nfl-preseason-week-3-washington-commanders-vs-baltimore-ravens",
-    "title": "NFL Preseason Week 3: Washington Commanders vs Baltimore Ravens",
-    "excerpt": "LANDOVER, MARYLAND - AUGUST 23: Colson Yankoff #41 of the Washington Commanders runs with the ball after making a catch in the second quarter of the NFL Preseason 2025 game against the Baltimore Ravens at Northwest Stadium on August 23, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images The Washington Commanders had a joint practice in Baltimore with the Ravens on Wednesday, and will close out the preseason against them Friday night. The two teams had a long practice…",
-    "publishedAt": "2026-08-28T20:30:00.000Z",
-    "collectedAt": "2026-08-28T22:06:07.315Z"
-  },
-  "yahoo-nfl-70497b344c61": {
-    "id": "yahoo-nfl-70497b344c61",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/ravens-commanders-discussion-final-push-203000832.html",
-    "title": "Ravens-Commanders discussion: final push for Baltimore’s 53-man roster",
-    "excerpt": "MINNEAPOLIS, MN - AUGUST 22: Baltimore Ravens quarterback Tyler Huntley (5) lines up behind guard Jovaughn Gwyn (54) during the NFL preseason game between the Baltimore Ravens and the Minnesota Vikings on August 22nd, 2026, at U.S. Bank in Minneapolis, MN. (Photo by Bailey Hillesheim/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images The Baltimore Ravens are just one more game away from the 2026 regular season. Jesse Minter has won his first two preseason games as head coach;…",
-    "publishedAt": "2026-08-28T20:51:51.000Z",
-    "collectedAt": "2026-08-28T22:06:14.413Z"
-  },
   "hogs-haven-fc9ab4761323": {
     "id": "hogs-haven-fc9ab4761323",
     "sourceId": "hogs-haven",
@@ -16762,5 +16738,125 @@
     "excerpt": "",
     "publishedAt": "2026-10-12T19:24:33.000Z",
     "collectedAt": "2026-10-12T20:05:41.355Z"
+  },
+  "hogs-haven-c4665a5c61cc": {
+    "id": "hogs-haven-c4665a5c61cc",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/448191/washington-commanders-whiteboard-notes-observations-week-5",
+    "title": "Washington Commanders Whiteboard: Notes and observations from Week 5",
+    "excerpt": "LANDOVER, MARYLAND - OCTOBER 11: Jayden Daniels #5 of the Washington Commanders runs for a touchdown in front of Kayvon Thibodeaux #5 of the New York Giants during the second half of the NFL game at Northwest Stadium on October 11, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n Before the advent of media devices, football coaches at all levels used simple whiteboards to outline plays, map out player positions and explain schemes in real time. Nowadays…",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "collectedAt": "2026-10-12T22:05:39.081Z"
+  },
+  "clutchpoints-2ec94b100c32": {
+    "id": "clutchpoints-2ec94b100c32",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-furious-dan-quinn-still-hasnt-cooled-down-after-botching-end-giants-tie",
+    "title": "‘Furious’ Commanders’ Dan Quinn still hasn’t cooled down after botching end of Giants tie",
+    "excerpt": "Following a chaotic conclusion to Week 5, the Washington Commanders ended their game against the New York Giants in a frustrating 27-27 tie. The team failed to spike the ball or stop the clock while within field goal range, leading to intense scrutiny of head coach Dan Quinn’s future . A report by Mark Maske shared on X indicated that although the Commanders were not inclined to fire Quinn immediately as of Monday morning, the costly clock mismanagement made his eventual exit seem increasingly…",
+    "publishedAt": "2026-10-12T19:19:01.000Z",
+    "collectedAt": "2026-10-12T22:05:40.441Z"
+  },
+  "clutchpoints-15cab26b9a1e": {
+    "id": "clutchpoints-15cab26b9a1e",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-rumors-washington-firing-dan-quinn-matter-when-not-after-ot-debacle-giants",
+    "title": "Commanders rumors: Washington firing Dan Quinn a matter of when, not if after OT debacle vs. Giants",
+    "excerpt": "Following a chaotic conclusion to Week 5, the Washington Commanders found themselves in a frustrating 27-27 tie with the New York Giants after failing to spike the ball or stop the clock while in field goal range. In his postgame press conference, head coach Dan Quinn took full responsibility for the catastrophic blunder , expressing to reporters, via JP Finlay of NBC Sports, that he felt devastated for the team and that the decision to call for an earlier clock stoppage was entirely his…",
+    "publishedAt": "2026-10-12T17:54:51.000Z",
+    "collectedAt": "2026-10-12T22:05:40.441Z"
+  },
+  "clutchpoints-d12188688a7c": {
+    "id": "clutchpoints-d12188688a7c",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-writer-ethers-dan-quinn-with-most-savage-lede",
+    "title": "Washington writer ethers Commanders’ Dan Quinn, Jayden Daniels with most savage lede you’ll ever read",
+    "excerpt": "The Washington Commanders have found themselves at the center of a brutal takedown after a disappointing finish against the New York Giants on Sunday.\n\n One local writer wasted little time making his feelings known. Dave Sheinin of the Washington Sun delivered a harsh opening paragraph that took direct aim at head coach Dan Quinn and the kind of late-game execution Washington should expect from its quarterback.\n\n “As soon as the clock hit zero, Dan Quinn ripped the headset off his…",
+    "publishedAt": "2026-10-12T17:09:17.000Z",
+    "collectedAt": "2026-10-12T22:05:40.441Z"
+  },
+  "athletic-jhabvala-c3e8ed2a06b6": {
+    "id": "athletic-jhabvala-c3e8ed2a06b6",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7684573/2026/10/12/dan-quinn-commanders-overtime-tie-blame",
+    "title": "Dan Quinn 'furious' about Commanders' OT gaffe, says responsibility 'starts with me'",
+    "excerpt": "Quinn said that the team's entire process in the final minute of overtime was too slow and inefficient, starting with his own communication.",
+    "publishedAt": "2026-10-12T21:08:40.000Z",
+    "collectedAt": "2026-10-12T22:05:42.174Z"
+  },
+  "commanders-youtube-6bbf26a62cf0": {
+    "id": "commanders-youtube-6bbf26a62cf0",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=UxnuziW7IUk",
+    "title": "Taking It to Overtime: Commanders Tie Giants 27-27 | Booth Review | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-12T20:15:12.000Z",
+    "collectedAt": "2026-10-12T22:05:44.272Z"
+  },
+  "pft-6c811c1871f0": {
+    "id": "pft-6c811c1871f0",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dan-quinn-the-day-after-the-clock-debacle-weve-got-a-lot-of-shit-to-clean-up-on",
+    "title": "Dan Quinn, the day after the clock debacle: \"We've got a lot of shit to clean up on\"",
+    "excerpt": "Commanders coach Dan Quinn, who remains employed on Monday, met with reporters for his press conference one day after the most recent game. And the most recent game, a 27-27 tie with the Giants, ended with the worst example of clock management in recent years, if not ever.\n Quinn began with an opening statement that addressed the woolly mammoth in the mudroom.\n \"Well, I spoke with the team and with the coaches today, and honestly just like furious about our execution in the crucial moments of…",
+    "publishedAt": "2026-10-12T20:38:47.000Z",
+    "collectedAt": "2026-10-12T22:05:47.298Z"
+  },
+  "yahoo-nfl-8075b61dae64": {
+    "id": "yahoo-nfl-8075b61dae64",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/dan-quinn-still-furious-about-tie-with-giants-after-clock-blunder-weve-got-a-lot-of-s-to-clean-up-212258513.html",
+    "title": "Dan Quinn still 'furious' about tie with Giants after clock blunder: 'We've got a lot of s*** to clean up'",
+    "excerpt": "Dan Quinn, roughly 24 hours after a brutal mistake cost them a win, is still absolutely livid. \n The Washington Commanders head coach, after they failed to stop the clock for a game-winning field goal and ended up tying with the New York Giants on Sunday, said he was \"furious\" about his team's execution late in the contest.\n \"We work really hard on these, and it didn't look like that yesterday,\" he said, via The 33rd Team's Ari Meirov . \"I'm pissed about it.\"\n The Commanders, after making it…",
+    "publishedAt": "2026-10-12T21:02:26.000Z",
+    "collectedAt": "2026-10-12T22:05:47.980Z"
+  },
+  "yahoo-nfl-8906c5e8d1cd": {
+    "id": "yahoo-nfl-8906c5e8d1cd",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/advanced-stats-tell-us-giants-204625045.html",
+    "title": "What advanced stats tell us about Giants vs. Commanders in Week 5",
+    "excerpt": "On a Sunday of wild endings in the NFL, the Giants-Commanders game ending may have been the wildest. The Giants should have won the game after they finally started moving the ball in the second half, but they probably feel better about Cam Skattebo’s physical error than Washington does about Jayden Daniels’ mental error. Let’s a take a look at what Pro Football Focus thought of the performances of individual players and what other interesting information has popped up on X.\n PFF grades:…",
+    "publishedAt": "2026-10-12T20:46:25.000Z",
+    "collectedAt": "2026-10-12T22:05:47.980Z"
+  },
+  "yahoo-nfl-04b35cb4fd49": {
+    "id": "yahoo-nfl-04b35cb4fd49",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/furious-dan-quinn-addresses-commanders-202223499.html",
+    "title": "'Furious' Dan Quinn addresses Commanders' OT clock disaster: 'It can't happen'",
+    "excerpt": "Washington Commanders head coach Dan Quinn slammed his headset into the ground after his team tied the New York Giants 27-27 Sunday, Oct. 11, because Washington brutally mismanaged the clock without any timeouts remaining and time expired before they could get the field-goal unit onto the field.\n One day later, Quinn’s feelings have not changed much, judging by the one word he used during his news conference Monday, Oct. 12.\n “Furious.” \n “Furious about our execution in the crucial moments of…",
+    "publishedAt": "2026-10-12T20:22:23.000Z",
+    "collectedAt": "2026-10-12T22:05:47.980Z"
   }
 }
