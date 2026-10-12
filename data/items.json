@@ -1,28 +1,4 @@
 {
-  "riggos-rag-7e28f1dfb410": {
-    "id": "riggos-rag-7e28f1dfb410",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-bleak-august-fueling-verdict-nobody-should-be-making-yet",
-    "title": "Commanders' bleak August is fueling a verdict nobody should be making yet",
-    "excerpt": "The Washington Commanders are dealing with some issues right now, but nobody should be placing judgment on this team just yet.",
-    "publishedAt": "2026-08-28T12:03:28.000Z",
-    "collectedAt": "2026-08-28T12:06:06.682Z"
-  },
-  "riggos-rag-a3fc585db5b2": {
-    "id": "riggos-rag-a3fc585db5b2",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/5-rising-players-commanders-cannot-risk-sneaking-onto-practice-squad",
-    "title": "5 rising players Commanders cannot risk sneaking onto the practice squad",
-    "excerpt": "The Washington Commanders would be taking a big risk by trying to sneak these rising players onto their 2026 practice squad.",
-    "publishedAt": "2026-08-28T11:00:49.000Z",
-    "collectedAt": "2026-08-28T12:06:06.682Z"
-  },
   "hogs-haven-7e5c97a3da29": {
     "id": "hogs-haven-7e5c97a3da29",
     "sourceId": "hogs-haven",
@@ -16642,5 +16618,17 @@
     "excerpt": "Who was most at fault for the Commanders' tie? Should the Eagles have kicked a touchback instead of allowing a Jaguars return?",
     "publishedAt": "2026-10-12T09:34:03.000Z",
     "collectedAt": "2026-10-12T10:05:40.374Z"
+  },
+  "riggos-rag-ce9947cb2dfa": {
+    "id": "riggos-rag-ce9947cb2dfa",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-overtime-failure-leaves-commanders-locker-room-faith-fraying",
+    "title": "Dan Quinn’s overtime failure leaves Commanders locker room faith fraying",
+    "excerpt": "Washington Commanders head coach Dan Quinn is in danger of losing the locker room after his costly overtime blunder against the New York Giants.",
+    "publishedAt": "2026-10-12T11:30:00.000Z",
+    "collectedAt": "2026-10-12T12:05:36.237Z"
   }
 }
