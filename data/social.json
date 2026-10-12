@@ -12329,7 +12329,7 @@
     "text": "JAW-DROPPING ENDING: Watch this stunning last-second play by the #Commanders showcasing a shocking lack of clock awareness that leads to a tie with the #Giants . 😱😱😱",
     "handle": "JosinaAnderson",
     "author": "Josina Anderson",
-    "label": "",
+    "label": "Insider",
     "sourceKey": "@JosinaAnderson",
     "images": [],
     "publishedAt": "2026-10-11T20:51:22.000Z",
@@ -12958,5 +12958,47 @@
     ],
     "publishedAt": "2026-10-11T23:29:55.000Z",
     "collectedAt": "2026-10-12T00:05:45.060Z"
+  },
+  "social-5f73b29efa68": {
+    "id": "social-5f73b29efa68",
+    "url": "https://x.com/BenStandig/status/2109444250010104252",
+    "text": "My time here today is out.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/425/157/349/223/128/original/4725f168b33b0d1f.jpg"
+    ],
+    "publishedAt": "2026-10-12T00:41:15.000Z",
+    "collectedAt": "2026-10-12T01:05:54.652Z"
+  },
+  "social-539c321fc1c8": {
+    "id": "social-539c321fc1c8",
+    "url": "https://mastodon.social/@top_news/117425202928829179",
+    "text": "We just witnessed the most mind-boggling ending of the NFL season The only thing separating the Washington Commanders from an overtime win was a few seconds. Then time ran out. k-giants-washington-commanders-result-nfl-ending-overtime-rcna602854 #TopNews #News #Commanders #Daniels #Quinn",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/425/202/882/700/273/original/77ea1a2f31217e22.jpg"
+    ],
+    "publishedAt": "2026-10-12T00:53:22.115Z",
+    "collectedAt": "2026-10-12T01:06:06.831Z"
+  },
+  "social-a94c23ad70f9": {
+    "id": "social-a94c23ad70f9",
+    "url": "https://mastodon.social/@top_news/117425156147661610",
+    "text": "John Harbaugh: We wanted as many yards as we could get before field goal The Commanders' mismanagement of the clock at the end of overtime in Sunday's 27-27 tie with the Giants obscured another coaching decision that backfired earlier in the period. alk/rumor-mill/news/john-harbaugh-we-wanted-as-many-yards-as-we-could-get-before-field-goal #TopNews #News #Giants #JohnHarbaugh #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/425/156/122/544/760/original/b8114250a87cd8e9.jpg"
+    ],
+    "publishedAt": "2026-10-12T00:41:28.293Z",
+    "collectedAt": "2026-10-12T01:06:06.831Z"
   }
 }
