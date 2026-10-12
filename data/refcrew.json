@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-12T02:06:36.016Z",
+  "fetchedAt": "2026-10-12T04:06:37.382Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5591,6 +5591,22 @@
         "abbr": "SF",
         "flags": 8,
         "yards": 70
+      }
+    },
+    "401872993": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-12T00:20Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "ATL",
+        "flags": 7,
+        "yards": 67
+      },
+      "away": {
+        "abbr": "BAL",
+        "flags": 5,
+        "yards": 40
       }
     }
   }
