@@ -1,28 +1,4 @@
 {
-  "hogs-haven-7e5c97a3da29": {
-    "id": "hogs-haven-7e5c97a3da29",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/435792/commanders-news-ale-kaho-antonio-hamilton-earn-roster-spots-tonight",
-    "title": "Commanders News: Can Ale Kaho & Antonio Hamilton earn roster spots tonight?",
-    "excerpt": "LANDOVER, MD - AUGUST 14: Ale Kaho #51 of the Washington Commanders celebrates with teammates after intercepting a pass during the second half of a preseason game against the Miami Dolphins at Northwest Stadium on August 14, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 28 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the…",
-    "publishedAt": "2026-08-28T14:00:00.000Z",
-    "collectedAt": "2026-08-28T14:06:05.985Z"
-  },
-  "riggos-rag-4f7e9873ff4f": {
-    "id": "riggos-rag-4f7e9873ff4f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-finally-solve-long-term-wr-puzzle-latest-2027-nfl-mock-draft",
-    "title": "Commanders finally solve long-term WR puzzle in latest 2027 NFL mock draft",
-    "excerpt": "The Washington Commanders solved their long-term WR puzzle in ESPN's latest 2027 NFL mock draft by selecting Indiana's Charlie Becker.",
-    "publishedAt": "2026-08-28T13:00:02.000Z",
-    "collectedAt": "2026-08-28T14:06:06.611Z"
-  },
   "hogs-haven-c3f34e2f6da8": {
     "id": "hogs-haven-c3f34e2f6da8",
     "sourceId": "hogs-haven",
@@ -16630,5 +16606,53 @@
     "excerpt": "Washington Commanders head coach Dan Quinn is in danger of losing the locker room after his costly overtime blunder against the New York Giants.",
     "publishedAt": "2026-10-12T11:30:00.000Z",
     "collectedAt": "2026-10-12T12:05:36.237Z"
+  },
+  "hogs-haven-c4c0f0021bb3": {
+    "id": "hogs-haven-c4c0f0021bb3",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/448357/tied-game-vs-giants-turns-washington-into-nfl-biggest-loser-jayden-daniels-dan-quinn",
+    "title": "Commanders News: Tied game turns Washington into the NFL’s biggest loser",
+    "excerpt": "Oct 11, 2026; Landover, Maryland, USA; Washington Commanders guard Sam Cosmi (76) reacts to the tied game against the New York Giants at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images | IMAGN IMAGES via Reuters Connect \n \n The Daily Slop – 12 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other…",
+    "publishedAt": "2026-10-12T12:30:00.000Z",
+    "collectedAt": "2026-10-12T14:05:34.315Z"
+  },
+  "riggos-rag-7707f01b4dca": {
+    "id": "riggos-rag-7707f01b4dca",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-saddled-washington-commanders-failure-his-tenure-might-not-survive",
+    "title": "Dan Quinn saddled the Commanders with a failure his tenure might not survive",
+    "excerpt": "Washington Commanders head coach Dan Quinn is now fighting to save his job after an embarrassing clock management farce against the New York Giants.",
+    "publishedAt": "2026-10-12T13:00:01.000Z",
+    "collectedAt": "2026-10-12T14:05:35.187Z"
+  },
+  "cbs-nfl-8e710bfbaaae": {
+    "id": "cbs-nfl-8e710bfbaaae",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nick-sirianni-dan-quinn-hot-seat-eagles-commanders-2026",
+    "title": "Nick Sirianni, Dan Quinn fail their teams in pivotal moments during dismal NFC East weekend",
+    "excerpt": "The Eagles and Commanders squandered chances to win Sunday, and both coaches are feeling the heat",
+    "publishedAt": "2026-10-12T13:18:09.000Z",
+    "collectedAt": "2026-10-12T14:05:42.182Z"
+  },
+  "cbs-nfl-7a314e4fb753": {
+    "id": "cbs-nfl-7a314e4fb753",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/head-scratching-decisions-by-commanders-eagles-georgia-new-no-1-in-college-football-cfp-shake-up",
+    "title": "Head-scratching decisions by Commanders, Eagles; Georgia new No. 1 in college football, CFP shake-up",
+    "excerpt": "Plus, Brewers eke out NLCS opener over Dodgers",
+    "publishedAt": "2026-10-12T13:02:38.000Z",
+    "collectedAt": "2026-10-12T14:05:42.182Z"
   }
 }
