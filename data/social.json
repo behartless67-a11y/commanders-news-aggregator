@@ -1,44 +1,4 @@
 {
-  "social-52f743dc1b15": {
-    "id": "social-52f743dc1b15",
-    "url": "https://x.com/NickiJhabvala/status/2106067078536966395",
-    "text": "Terry McLaurin was added to the injury report with a hamstring issue and is QUESTIONABLE for Sunday's game in London.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-02T17:01:35.000Z",
-    "collectedAt": "2026-10-02T18:05:08.923Z"
-  },
-  "social-21ae76eafe5a": {
-    "id": "social-21ae76eafe5a",
-    "url": "https://x.com/john_keim/status/2106068404373221490",
-    "text": "Terry McLaurin added to the list with a hamstring issue. Was limited today",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/372/411/400/044/743/original/c54c38ba7d359f61.jpg"
-    ],
-    "publishedAt": "2026-10-02T17:06:51.000Z",
-    "collectedAt": "2026-10-02T18:05:43.652Z"
-  },
-  "social-715b6afe4fec": {
-    "id": "social-715b6afe4fec",
-    "url": "https://x.com/BenStandig/status/2106067235915567269",
-    "text": "The injury report has Terry McLaurin added as \"questionable\" with a hamstring Rachaad White is out.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/372/396/177/807/357/original/525096466d64ff5b.jpg"
-    ],
-    "publishedAt": "2026-10-02T17:02:12.000Z",
-    "collectedAt": "2026-10-02T18:05:45.079Z"
-  },
   "social-68dbfbf08028": {
     "id": "social-68dbfbf08028",
     "url": "https://x.com/tashanreed/status/2106081784228434389",
@@ -50,42 +10,6 @@
     "images": [],
     "publishedAt": "2026-10-02T18:00:01.000Z",
     "collectedAt": "2026-10-02T18:05:47.497Z"
-  },
-  "social-e375155ca8a9": {
-    "id": "social-e375155ca8a9",
-    "url": "https://x.com/tashanreed/status/2106067298238828689",
-    "text": "#Commanders WR Terry McLaurin suffered a hamstring injury in practice Friday and is listed as questionable to play Sunday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-02T17:02:27.000Z",
-    "collectedAt": "2026-10-02T18:05:47.497Z"
-  },
-  "social-15c960424282": {
-    "id": "social-15c960424282",
-    "url": "https://x.com/tashanreed/status/2106066829353308247",
-    "text": "White, who didn't practice this week, is ruled out as expected:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-02T17:00:35.000Z",
-    "collectedAt": "2026-10-02T18:05:47.497Z"
-  },
-  "social-aa7b6f1f25e3": {
-    "id": "social-aa7b6f1f25e3",
-    "url": "https://x.com/Schultz_Report/status/2106069174300848582",
-    "text": "I asked #Commanders WR Terry McLaurin about the #Cowboys trading for Joey Porter Jr.",
-    "handle": "Schultz_Report",
-    "author": "Jordan Schultz",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-02T17:09:54.000Z",
-    "collectedAt": "2026-10-02T18:05:58.081Z"
   },
   "social-b1f4af118c6e": {
     "id": "social-b1f4af118c6e",
@@ -13092,5 +13016,81 @@
     "images": [],
     "publishedAt": "2026-10-12T15:27:32.000Z",
     "collectedAt": "2026-10-12T16:06:05.366Z"
+  },
+  "social-598262ce6cc1": {
+    "id": "social-598262ce6cc1",
+    "url": "https://x.com/BenjaminSolak/status/2109687002912440746",
+    "text": "Not that it needed double checking, but I asked ESPN Research anyway: In the play-by-play era (since 1978), Commanders-Giants is the first game to end in an overtime tie with the final snap of the game an offensive snap inside the opponent's 25 yard line.",
+    "handle": "BenjaminSolak",
+    "author": "Benjamin Solak",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-12T16:45:52.000Z",
+    "collectedAt": "2026-10-12T17:21:52.133Z"
+  },
+  "social-67e8733d15b7": {
+    "id": "social-67e8733d15b7",
+    "url": "https://x.com/JPFinlayNBCS/status/2109685549522878681",
+    "text": "Giants 2nd half drive chart.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/428/929/024/892/720/original/47528221f8d52853.png"
+    ],
+    "publishedAt": "2026-10-12T16:40:05.000Z",
+    "collectedAt": "2026-10-12T17:21:52.134Z"
+  },
+  "social-9bff8e26c4e9": {
+    "id": "social-9bff8e26c4e9",
+    "url": "https://x.com/JPFinlayNBCS/status/2109677463328489547",
+    "text": "You know folks are mad when they blame the stadium",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-12T16:07:57.000Z",
+    "collectedAt": "2026-10-12T17:21:52.134Z"
+  },
+  "social-dd6596a43798": {
+    "id": "social-dd6596a43798",
+    "url": "https://x.com/pfrumors/status/2109693066798051762",
+    "text": "The #Commanders are expected to retain head coach Dan Quinn for at least the time being: commanders-not-expected-to-fire-hc-dan-quinn",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-12T17:09:57.000Z",
+    "collectedAt": "2026-10-12T17:22:04.989Z"
+  },
+  "social-2d146b743892": {
+    "id": "social-2d146b743892",
+    "url": "https://mastodon.social/@top_news/117429045260447902",
+    "text": "The six things we learned from Giants’ Week 6 tie: Seismic defensive pivot on full display It is perfectly understandable to not know how to feel if you were pulling for the Giants coming out of the bizarre 27-27 tie with the Commanders. There is no doubt the Giants, after staging a stro… he-six-things-we-learned-from-giants-week-6-tie-seismic-defensive-pivot/ #TopNews #News #Giants #Daniels #Commanders",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/429/045/056/480/407/original/dad9b31498857cf3.jpg"
+    ],
+    "publishedAt": "2026-10-12T17:10:31.508Z",
+    "collectedAt": "2026-10-12T17:22:07.355Z"
+  },
+  "social-9ac7d287e7fb": {
+    "id": "social-9ac7d287e7fb",
+    "url": "https://x.com/Schultz_Report/status/2109691210537308198",
+    "text": "One detail that was missed in the #Commanders ’ end-of-game sequence: It looks like Jayden Daniels was stepped on, throwing off his balance, and that’s when the play descended into mayhem. Daniels has been stepped on by his own line multiple times this season, including when he dislocated his elbow. ⬇️⬇️⬇️",
+    "handle": "Schultz_Report",
+    "author": "Jordan Schultz",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-12T17:02:35.000Z",
+    "collectedAt": "2026-10-12T17:22:07.355Z"
   }
 }
