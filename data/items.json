@@ -1,28 +1,4 @@
 {
-  "riggos-rag-f8729dbba46f": {
-    "id": "riggos-rag-f8729dbba46f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/texans-expert-trade-claim-could-put-center-needy-commanders-alert",
-    "title": "Texans expert's trade claim could put center-needy Commanders on alert",
-    "excerpt": "The Houston Texans could potentially trade Jake Andrews, which might just interest the center-needy Washington Commanders if the price is right.",
-    "publishedAt": "2026-08-28T19:00:00.000Z",
-    "collectedAt": "2026-08-28T19:53:16.056Z"
-  },
-  "commanders-youtube-a555bfbf9439": {
-    "id": "commanders-youtube-a555bfbf9439",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=xmMbSsfS3r0",
-    "title": "Jeremy Reaves Mic'd Up At Joint Practice With The Baltimore Ravens | Washington Commanders | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-08-28T19:11:10.000Z",
-    "collectedAt": "2026-08-28T19:53:18.124Z"
-  },
   "hogs-haven-c42ac9c432d7": {
     "id": "hogs-haven-c42ac9c432d7",
     "sourceId": "hogs-haven",
@@ -16738,5 +16714,53 @@
     "excerpt": "The Washington Commanders are reportedly not planning to fire head coach Dan Quinn despite the overtime error against the New York Giants.",
     "publishedAt": "2026-10-12T17:30:00.000Z",
     "collectedAt": "2026-10-12T18:05:37.796Z"
+  },
+  "hogs-haven-fb47da231cf5": {
+    "id": "hogs-haven-fb47da231cf5",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/448477/dan-quinn-furious-about-execution-crucial-moments-game",
+    "title": "Dan Quinn: “Furious about our execution in the crucial moments in the game.”",
+    "excerpt": "The Washington Commanders are the talk of the NFL world, and not for any food reasons. Their blunder in overtime that led to a tie with the Giants is being hailed as an all-time clock management mistake, and has put Dan Quinn firmly on the hot seat. His weekly ‘Tell the Truth Mondays’ media availability is going to be a lot more interesting with more questions than answers from Sunday’s result.\n\n Quinn went over that failed play again, and tried to take the blame for everything that went wrong.…",
+    "publishedAt": "2026-10-12T19:08:48.000Z",
+    "collectedAt": "2026-10-12T20:05:37.743Z"
+  },
+  "riggos-rag-dc40296d8d81": {
+    "id": "riggos-rag-dc40296d8d81",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/commanders-latest-defensive-meltdown-reveals-problem-that-wont-go-away",
+    "title": "Commanders' latest defensive meltdown reveals a problem that won't go away",
+    "excerpt": "The Washington Commanders' latest second-half defensive meltdown is becoming a concerning trend for first-year coordinator Daronte Jones.",
+    "publishedAt": "2026-10-12T19:00:00.000Z",
+    "collectedAt": "2026-10-12T20:05:38.634Z"
+  },
+  "commanders-youtube-9c5fe9d65800": {
+    "id": "commanders-youtube-9c5fe9d65800",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=jEfpYaJyjqE",
+    "title": "Jayden Daniels' Best Plays From 2-TD Rushing Game vs. Giants | NFL Week 5 | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-12T19:54:03.000Z",
+    "collectedAt": "2026-10-12T20:05:41.355Z"
+  },
+  "commanders-youtube-0f3022d7844b": {
+    "id": "commanders-youtube-0f3022d7844b",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=npMryPsspP4",
+    "title": "HC Dan Quinn Speaks To The Media | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-12T19:24:33.000Z",
+    "collectedAt": "2026-10-12T20:05:41.355Z"
   }
 }

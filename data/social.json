@@ -13510,5 +13510,31 @@
     "images": [],
     "publishedAt": "2026-10-12T18:21:31.000Z",
     "collectedAt": "2026-10-12T20:05:12.015Z"
+  },
+  "social-0a17848635b6": {
+    "id": "social-0a17848635b6",
+    "url": "https://mastodon.social/@top_news/117429697046195577",
+    "text": "Dan Quinn remains employed for now, somehow Most coaches in the NFL either have been fired or will be fired. alk/rumor-mill/news/dan-quinn-remains-employed-for-now-somehow #TopNews #News #Quinn #Commanders #DanQuinn",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/429/697/004/157/214/original/a8621ed995554a8f.jpg"
+    ],
+    "publishedAt": "2026-10-12T19:56:16.905Z",
+    "collectedAt": "2026-10-12T20:06:04.954Z"
+  },
+  "social-4852a50dcc4f": {
+    "id": "social-4852a50dcc4f",
+    "url": "https://x.com/MySportsUpdate/status/2109730759988871548",
+    "text": "Opening statement today from #Commanders HC Dan Quinn, trying to explain what in the world happened Sunday against the Giants:",
+    "handle": "MySportsUpdate",
+    "author": "Ari Meirov",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-12T19:39:44.000Z",
+    "collectedAt": "2026-10-12T20:06:04.954Z"
   }
 }
