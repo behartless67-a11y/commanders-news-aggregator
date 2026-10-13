@@ -166,8 +166,43 @@ export function renderRedditSection(reddit, cutoffMs) {
 }
 
 /**
+ * How the "Call your shot" readers did on the game just played, for the
+ * post's "Readers called it" bit: the crowd's median, the final, the closest
+ * named calls and the season standings. Read from the live site's public
+ * predictions function, since the picks live in Netlify Blobs and nowhere
+ * in this repo. Offline, or with no picks, the section is simply left out.
+ * Leaderboard names are names readers chose to put on a public board, so
+ * unlike the subreddit, naming them in the post is fine.
+ */
+export async function renderPollSection(siteUrl = process.env.SITE_URL || 'https://theburgundywire.com') {
+  const get = (q) => fetch(`${siteUrl}/.netlify/functions/predictions?${q}`, { signal: AbortSignal.timeout(8000) })
+    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null);
+  const board = await get('board=season');
+  const finals = Object.entries(board?.finals || {}).sort(([a], [b]) => b.localeCompare(a));
+  if (!finals.length) return '';
+  const [key, final] = finals[0];
+  const crowd = await get(`game=${encodeURIComponent(key)}`);
+  const game = (board.games || []).find((g) => g.game === key);
+  if (!crowd?.count && !game) return '';
+
+  const lines = ['## CALL YOUR SHOT, the reader score poll on the site', `Final: Commanders ${final.us}, ${final.opponent} ${final.them}`];
+  if (crowd?.count) {
+    lines.push(`The crowd said: Commanders ${crowd.commanders}, ${final.opponent} ${crowd.opponent} (median of ${crowd.count} picks; ${crowd.winPct}% had us winning)`);
+  }
+  if (game?.closest?.length) {
+    lines.push('Closest named calls:', ...game.closest.map((c) => `- ${c.name}: ${c.commanders}-${c.opponent}, off by ${c.miss}${c.right ? ', right winner' : ''}`));
+  }
+  if (board.standings?.length) {
+    lines.push('Season standings (right winners, then average points off):', ...board.standings.slice(0, 5)
+      .map((r, i) => `${i + 1}. ${r.name}: ${r.right}-${r.played - r.right}, off by ${r.avgMiss} a game`));
+  }
+  return `\n\n${lines.join('\n')}`;
+}
+
+/**
  * Everything the writer sees: the numbered sources, the college football
- * results, and the subreddit. Shared by generateMonday() and
+ * results, the subreddit and the reader poll. Shared by generateMonday() and
  * exportMondayPrompt() so the hand-written post is built from exactly the
  * same material a generated one would be, with no second copy to drift.
  */
@@ -181,7 +216,8 @@ export async function buildMondayCorpusText(now = new Date()) {
   const corpusText =
     renderCorpus(corpus) +
     renderCollegeFootballSection(cfb) +
-    renderRedditSection(reddit, now.getTime() - WINDOW_DAYS * 86400000);
+    renderRedditSection(reddit, now.getTime() - WINDOW_DAYS * 86400000) +
+    (await renderPollSection());
   return { corpus, corpusText };
 }
 

@@ -18,6 +18,11 @@
  * shot with people in it and a stadium or crowd shot, so the header never
  * shows faces two days running. Add new photos with that in mind.
  *
+ * The three "pair" images (Oct 13) are side-by-sides of two group selfies,
+ * from the London brunch, Högwaller and the Seattle stands. A selfie is too
+ * close to work as a strip on its own; see PAIRS in process-photos.sh. They
+ * count as faces for the ordering.
+ *
  * Root-relative paths, because build.js drops the chosen one into site.css
  * and a stylesheet resolves relative URLs against its own location.
  */
@@ -25,9 +30,13 @@ export const HERO_IMAGES = [
   '/photos/hero-bowl.jpg',
   '/photos/hero-crew.jpg',
   '/photos/hero-endzone.jpg',
-  '/photos/hero-six-in-lot.jpg',
+  '/photos/hero-pair-brunch-hogwaller.jpg',
   '/photos/hero-rain-crowd.jpg',
+  '/photos/hero-six-in-lot.jpg',
+  '/photos/hero-video-board.jpg',
   '/photos/hero-rail-bowl.jpg',
   '/photos/hero-mariota-sign.jpg',
+  '/photos/hero-pair-hogwaller-terry.jpg',
   '/photos/hero-pregame.jpg',
+  '/photos/hero-pair-seattle-stands.jpg',
 ];

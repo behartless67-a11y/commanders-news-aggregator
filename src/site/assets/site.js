@@ -821,38 +821,50 @@
   });
 
   /**
-   * "Call your shot", the reader score poll in the sidebar (predictionWidget()
-   * in templates.js). Posts in place like the Hail Mail forms above, then
+   * "Call your shot", the reader score poll (predictionWidget() in
+   * templates.js). Posts in place like the Hail Mail forms above, then
    * swaps the form for the crowd's pick from the predictions function. One
    * pick per game per browser, remembered in localStorage, so a reader who
    * comes back sees their call and the crowd's instead of a blank form. Once
    * kickoff passes the form goes for everyone and the card just shows what
    * readers called.
    *
+   * A page can carry the card more than once (the sidebar, a few headlines
+   * down the river on phones, the end of a pregame post), so the copies for
+   * one game share a pick: lock it in on any of them and they all flip.
+   *
    * The crowd numbers are cached for about a minute (see predictions.js), and
    * a pick is filed a moment after it's sent, so a brand-new pick can take a
    * minute to show up in them. The reader's own line shows straight away.
    */
+  var POLL_NAME_KEY = 'bw_poll_name';
+  var pollName = '';
+  try { pollName = localStorage.getItem(POLL_NAME_KEY) || ''; } catch (e) { pollName = ''; }
+  var pollGroups = {};
   Array.prototype.forEach.call(document.querySelectorAll('.widget-poll'), function (card) {
     var key = card.getAttribute('data-poll-key');
-    var opponent = card.getAttribute('data-opponent');
-    var kickoff = Date.parse(card.getAttribute('data-kickoff'));
-    var form = card.querySelector('.poll-form');
-    var results = card.querySelector('.poll-results');
+    (pollGroups[key] = pollGroups[key] || []).push(card);
+  });
+  Object.keys(pollGroups).forEach(function (key) {
+    var cards = pollGroups[key];
+    var opponent = cards[0].getAttribute('data-opponent');
+    var kickoff = Date.parse(cards[0].getAttribute('data-kickoff'));
     var storeKey = 'bw_pick_' + key;
     var mine = null;
     try { mine = JSON.parse(localStorage.getItem(storeKey) || 'null'); } catch (e) { mine = null; }
 
-    function line(className, text) {
-      var p = document.createElement('p');
-      p.className = className;
-      p.textContent = text;
-      results.appendChild(p);
-      return p;
-    }
-    function show(summary, note) {
+    function show(card, summary, note) {
+      var results = card.querySelector('.poll-results');
+      function line(className, text) {
+        var p = document.createElement('p');
+        p.className = className;
+        p.textContent = text;
+        results.appendChild(p);
+        return p;
+      }
       results.textContent = '';
       if (mine) line('poll-mine', 'Your call: Commanders ' + mine.us + ', ' + opponent + ' ' + mine.them + '.');
+      if (mine && mine.name) line('poll-meta', 'You\'re on the board as ' + mine.name + '.');
       if (summary && summary.count) {
         var crowd = line('poll-crowd', '');
         var label = document.createElement('span');
@@ -872,33 +884,177 @@
     function load(note) {
       fetch('/.netlify/functions/predictions?game=' + encodeURIComponent(key), { credentials: 'omit' })
         .then(function (r) { return r.ok ? r.json() : null; })
-        .then(function (s) { show(s, note); }, function () { show(null, note); });
+        .then(function (s) { cards.forEach(function (c) { show(c, s, note); }); },
+          function () { cards.forEach(function (c) { show(c, null, note); }); });
+    }
+    function lock(note) {
+      cards.forEach(function (c) {
+        var f = c.querySelector('.poll-form');
+        if (f) f.remove();
+      });
+      load(note);
     }
 
-    if (Date.now() >= kickoff) {
-      if (form) form.remove();
-      load('Picks locked at kickoff.');
-      return;
-    }
-    if (mine) {
-      if (form) form.remove();
-      load();
-      return;
-    }
-    if (!form) return;
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var data = new FormData(form);
-      mine = { us: Number(data.get('commanders')), them: Number(data.get('opponent')) };
-      try { localStorage.setItem(storeKey, JSON.stringify(mine)); } catch (err) {}
-      // Same as the Hail Mail forms: a failed request still moves on, since
-      // Netlify keeps whatever it received and a retry would only double it.
-      var done = function () { form.remove(); load(); };
-      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(data).toString() })
-        .then(done, done);
+    if (Date.now() >= kickoff) { lock('Picks locked at kickoff.'); return; }
+    if (mine) { lock(); return; }
+
+    cards.forEach(function (card) {
+      var form = card.querySelector('.poll-form');
+      if (!form) return;
+      var nameInput = form.querySelector('input[name="name"]');
+      var emailRow = form.querySelector('.poll-email');
+      // The email only matters to someone joining the board, so its row waits
+      // for a name. With JavaScript off, both rows simply show.
+      function syncEmail() {
+        if (emailRow) emailRow.hidden = !(nameInput && nameInput.value.trim());
+      }
+      if (nameInput && pollName) nameInput.value = pollName;
+      syncEmail();
+      if (nameInput) nameInput.addEventListener('input', syncEmail);
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        var name = String(data.get('name') || '').trim();
+        mine = { us: Number(data.get('commanders')), them: Number(data.get('opponent')) };
+        if (name) mine.name = name;
+        try {
+          localStorage.setItem(storeKey, JSON.stringify(mine));
+          if (name) localStorage.setItem(POLL_NAME_KEY, name);
+        } catch (err) {}
+        if (name) pollName = name;
+        // Same as a Hail Mail signup: no popup asking them again.
+        if (String(data.get('email') || '').trim()) markSeen();
+        // Same as the Hail Mail forms: a failed request still moves on, since
+        // Netlify keeps whatever it received and a retry would only double it.
+        var done = function () { lock(); };
+        // The board is cached for a minute; put the new name in the "In for"
+        // line now rather than leave the reader wondering whether it took.
+        if (name) document.dispatchEvent(new CustomEvent('bw:picked', { detail: { name: name } }));
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString() })
+          .then(done, done);
+      });
     });
   });
+
+  /**
+   * The season leaderboard inside each poll card (.poll-board), and the
+   * "Readers called it" box at the end of a post about a game that's been
+   * played (.post-poll-results, postPoll() in templates.js). One request
+   * serves both: the predictions function's ?board=season, scored by
+   * buildBoard() in src/lib/predictions.js.
+   */
+  (function () {
+    var boards = document.querySelectorAll('.poll-board');
+    var calledIt = document.querySelectorAll('.post-poll-results[data-game]');
+    if (!boards.length && !calledIt.length) return;
+
+    function make(tag, className, text) {
+      var node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text != null) node.textContent = text;
+      return node;
+    }
+    function same(a, b) {
+      var squash = function (s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ''); };
+      return squash(a) && squash(a) === squash(b);
+    }
+    function names(list) {
+      if (list.length <= 6) return list.join(', ');
+      return list.slice(0, 5).join(', ') + ' and ' + (list.length - 5) + ' more';
+    }
+    function row(r, rank, isMe) {
+      var li = make('li', isMe ? 'is-me' : '');
+      li.appendChild(make('span', 'board-rank', String(rank)));
+      li.appendChild(make('span', 'board-name', r.name));
+      li.appendChild(make('span', 'board-rec', r.right + '-' + (r.played - r.right)));
+      var miss = make('span', 'board-miss', '±' + r.avgMiss);
+      miss.title = 'Average points off per game';
+      li.appendChild(miss);
+      return li;
+    }
+    function renderBoard(box, data) {
+      var rows = data.standings || [];
+      var pending = data.pending && data.pending.names.length ? data.pending : null;
+      box.textContent = '';
+      if (!rows.length && !pending) { box.hidden = true; return; }
+      box.appendChild(make('p', 'poll-board-title', 'Season standings'));
+      if (rows.length) {
+        var list = make('ol', 'poll-board-list');
+        var meAt = -1;
+        rows.forEach(function (r, i) { if (meAt < 0 && same(r.name, pollName)) meAt = i; });
+        rows.slice(0, 5).forEach(function (r, i) { list.appendChild(row(r, i + 1, i === meAt)); });
+        // A reader below the top five still sees where they stand.
+        if (meAt >= 5) list.appendChild(row(rows[meAt], meAt + 1, true));
+        box.appendChild(list);
+        box.appendChild(make('p', 'poll-board-note', 'Most right winners, then fewest points off a game.'));
+      }
+      if (pending) box.appendChild(make('p', 'poll-board-pending', 'In for the ' + pending.opponent + ': ' + names(pending.names)));
+      box.hidden = false;
+    }
+    function renderCalledIt(box, data) {
+      var key = box.getAttribute('data-game');
+      var final = (data.finals || {})[key];
+      if (!final) return;
+      var game = (data.games || []).filter(function (g) { return g.game === key; })[0];
+      fetch('/.netlify/functions/predictions?game=' + encodeURIComponent(key), { credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.json() : null; }, function () { return null; })
+        .then(function (crowd) {
+          var count = crowd && crowd.count;
+          if (!count && !game) return;
+          var them = final.opponent;
+          box.textContent = '';
+          box.appendChild(make('p', 'post-poll-eyebrow', 'Readers called it'));
+          box.appendChild(make('p', 'post-poll-final', 'Final: Commanders ' + final.us + ', ' + them + ' ' + final.them));
+          if (count) {
+            box.appendChild(make('p', 'post-poll-line', 'The crowd said Commanders ' + crowd.commanders + ', ' + them + ' ' + crowd.opponent +
+              ' (' + count + (count === 1 ? ' pick, ' : ' picks, ') + crowd.winPct + '% had us winning).'));
+          }
+          if (game && game.closest.length) {
+            box.appendChild(make('p', 'post-poll-line', 'Closest: ' + game.closest.map(function (c) {
+              return c.name + ' (' + c.commanders + '-' + c.opponent + ', off by ' + c.miss + ')';
+            }).join(', ') + '.'));
+          }
+          var link = make('a', 'post-poll-link', 'Season standings and this week\'s pick →');
+          link.href = 'index.html#call-your-shot';
+          box.appendChild(link);
+          box.hidden = false;
+        });
+    }
+
+    var loaded = null;
+    document.addEventListener('bw:picked', function (e) {
+      var pending = loaded && loaded.pending;
+      if (!pending || pending.names.some(function (n) { return same(n, e.detail.name); })) return;
+      pending.names.push(e.detail.name);
+      Array.prototype.forEach.call(boards, function (box) { renderBoard(box, loaded); });
+    });
+
+    fetch('/.netlify/functions/predictions?board=season', { credentials: 'omit' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        loaded = data;
+        Array.prototype.forEach.call(boards, function (box) { renderBoard(box, data); });
+        Array.prototype.forEach.call(calledIt, function (box) { renderCalledIt(box, data); });
+      }, function () {});
+  })();
+
+  // Links to #call-your-shot (Hail Mail, the "Readers called it" box) land on
+  // the sidebar's copy, which on a phone is under every headline. The river
+  // carries its own copy there, so go to that one instead. After load, and a
+  // tick after that, because the browser does its own jump to the sidebar
+  // copy once the page has loaded and would otherwise undo this one.
+  if (location.hash === '#call-your-shot') {
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var feedPoll = document.getElementById('call-your-shot-feed');
+        // Instant, not the page's usual smooth scroll: arriving somewhere
+        // shouldn't play a 1,000px glide.
+        if (feedPoll && feedPoll.offsetParent !== null) feedPoll.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }, 0);
+    });
+  }
 
   /**
    * Email subscribe modal. Opens on its own on every 10th visit, but never:

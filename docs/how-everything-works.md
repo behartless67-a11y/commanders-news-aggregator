@@ -229,6 +229,22 @@ Readers pick the score of the next game. After they vote they see their pick and
 - **One per browser:** remembered in the reader's browser, the same way the newsletter popup remembers a signup. The server only accepts picks for the game that's open, before kickoff.
 - **Can't test it locally:** the dev server has no Netlify Functions, so locally you only see the form and "Your call." The crowd numbers only show up on the live site.
 
+#### The season leaderboard (added Oct 13, after week one got zero picks)
+
+- **How readers join:** the card has an optional "Name for the leaderboard" box. Type a name and an optional email box appears ("adds you to Hail Mail"). No name, no board: the pick still counts for the crowd either way.
+- **Scoring:** pick'em with a tiebreaker. Most games with the right winner leads; ties are broken by the average points off (your miss on our score plus your miss on theirs). Shown as a record ("2-1") and "±6". A tie game only counts as right if you picked a tie.
+- **You're on it automatically:** every game in `config/predictions.js` is your pick, under "Ben." Readers can't take the name; a reader who types Ben shows as "Ben (reader)." Your Giants pick (24-20 against the 27-27 tie) already has you at 0-1. Delete that line if you'd rather start the season at the 49ers.
+- **Names are public,** so links and obvious profanity are filtered out automatically (the pick still counts, just not on the board). To pull a name by hand, add it to `HIDDEN_PLAYERS` in `config/predictions.js`.
+- **Where it shows:** inside the existing poll card (top five, plus the reader's own row if they're lower, and "In for the 49ers: ..." with names only, no picks, until the game's over).
+- **Where picks go:** the `leaderboard` blob store, one per name per game (`2026-10-19-SF/jason`), so a second pick under the same name replaces the first. `predictions?board=season` serves the standings, cached for a minute. Final scores come from the schedule, so the board updates after the nightly data run picks up the final.
+
+#### Asking for picks
+
+- **On phones** the same card also appears after the third headline (it's hidden on desktop, where the sidebar copy is already on screen), and the "Call your shot" chip under the headlines jumps to it. Links to `#call-your-shot` land there on a phone.
+- **In a pregame post:** add `"pollGame": "2026-10-19-SF"` to the post's JSON. While that game's picks are open, the post ends with the poll ("Your turn: call your shot"). Once the game's final, the same spot turns into **"Readers called it"**: the final, the crowd's median, the closest named calls and a link to the standings. Put the same `pollGame` on the post-game Monday post to get that box there too.
+- **In Hail Mail:** every issue sent while picks are open gets a small "Call your shot" box under your text, with kickoff time and a link. Nothing to remember. If your issue already links to `#call-your-shot`, it's skipped so it doesn't ask twice.
+- **In the Monday corpus:** `npm run monday:corpus` now includes a "Call your shot" section (final, crowd median, closest calls, top five), read from the live site, for the "Readers called it" line in the post.
+
 ---
 
 ## The Email Popup (Subscribe Modal)
@@ -329,10 +345,10 @@ To run it on a second machine, do the one-time setup in `docs/x-browser-scraping
 | `config/local-spots.js` | Cville bars and spots for the local page |
 | `config/hero-images.js` | Rotating hero images |
 | `config/broadcast-urls.js` | Hand-verified network → watch-live URLs |
-| `config/predictions.js` | Your own score for each game, shown under the reader poll |
+| `config/predictions.js` | Your own score for each game (shown under the reader poll and scored on the leaderboard), plus names to hide from the board |
 | `src/lib/refcrew.js` | Ref crew card: Football Zebras assignment + ESPN flag counts |
-| `src/lib/predictions.js` | Reader poll: which game is open, the pick format, the crowd math |
-| `netlify/functions/predictions.js` | The crowd's pick for a game, for the poll card |
+| `src/lib/predictions.js` | Reader poll: which game is open, the pick format, the crowd math, the leaderboard scoring and name filter |
+| `netlify/functions/predictions.js` | The crowd's pick for a game, and the season leaderboard, for the poll card |
 | `src/site/templates.js` | Every page's markup, including the admin panel |
 | `src/site/assets/site.js` | All client-side JS: relative timestamps, live ticker, reveals |
 | `src/lib/reddit.js` | r/Commanders collector (Monday post only) |

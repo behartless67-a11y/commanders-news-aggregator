@@ -983,16 +983,25 @@ function ordinalOf(n) {
  * swaps in the crowd's numbers from the predictions function. See
  * src/lib/predictions.js for the key, the median and why the pick lives in
  * the blob key. Ben's own number shows once it's in config/predictions.js.
+ *
+ * The same card can appear more than once on a page: in the sidebar, a few
+ * headlines down the river on phones (riverPollCard()), and at the end of a
+ * post that asks for picks (postPoll()). Each copy needs its own id; site.js
+ * keeps them in step, so a pick in one shows in all of them. The name and
+ * email are both optional. A name puts the pick on the season leaderboard,
+ * which site.js fills into .poll-board from the predictions function; the
+ * email row stays tucked away until a name is typed, so the card a reader
+ * already knows only gains one line.
  */
-function predictionWidget(poll) {
+function predictionWidget(poll, { id = 'call-your-shot', className = '', heading = 'Call your shot' } = {}) {
   if (!poll) return '';
   const them = poll.opponent;
   const ben = poll.benPick
     ? `Ben's number: Commanders ${poll.benPick.commanders}, ${escapeHtml(them)} ${poll.benPick.opponent}.`
     : "Ben's number drops in the pregame post.";
   return `
-    <div class="widget widget-poll" id="call-your-shot" data-poll-key="${escapeHtml(poll.key)}" data-kickoff="${escapeHtml(poll.iso)}" data-opponent="${escapeHtml(them)}">
-      <h2>Call your shot</h2>
+    <div class="widget widget-poll${className ? ` ${className}` : ''}" id="${id}" data-poll-key="${escapeHtml(poll.key)}" data-kickoff="${escapeHtml(poll.iso)}" data-opponent="${escapeHtml(them)}">
+      <h2>${escapeHtml(heading)}</h2>
       <p class="poll-question">What's your number for the ${escapeHtml(them)}?</p>
       <form class="poll-form" name="prediction" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="prediction" />
@@ -1002,11 +1011,44 @@ function predictionWidget(poll) {
           <label class="poll-score"><span>Commanders</span><input type="number" name="commanders" min="0" max="99" step="1" inputmode="numeric" required /></label>
           <label class="poll-score"><span>${escapeHtml(them)}</span><input type="number" name="opponent" min="0" max="99" step="1" inputmode="numeric" required /></label>
         </div>
+        <label class="poll-field poll-name"><span>Name for the leaderboard <em>(optional)</em></span><input type="text" name="name" maxlength="20" autocomplete="nickname" /></label>
+        <label class="poll-field poll-email"><span>Email <em>(optional, adds you to Hail Mail)</em></span><input type="email" name="email" autocomplete="email" /></label>
         <button type="submit" class="poll-submit">Lock it in</button>
       </form>
       <div class="poll-results" aria-live="polite" hidden></div>
+      <div class="poll-board" hidden></div>
       <p class="poll-ben">${ben}</p>
     </div>`;
+}
+
+/**
+ * The poll again, after the third headline, for phones only (hidden at 900px
+ * and up, where the sidebar copy is already beside the river). Below 900px
+ * the sidebar sits under every headline, and a poll nobody scrolls to got
+ * zero picks its first week. Placed after the third card so the top stories
+ * still lead the page.
+ */
+const RIVER_POLL_AFTER = 3;
+function riverPollCard(poll) {
+  return predictionWidget(poll, { id: 'call-your-shot-feed', className: 'river-poll' });
+}
+
+/**
+ * The poll at the end of a post that asks for picks, the pregame post above
+ * all. `record.pollGame` is the poll key of the game the post is about
+ * (config/predictions.js explains the format). While that game's picks are
+ * open, the post ends on the poll itself. Once it's been played, the same
+ * spot shows how the readers did ("Readers called it"), filled in by site.js
+ * from the predictions function; with nobody having picked, it stays hidden.
+ * Only on the post's own page: the Blog archive shows posts in full and would
+ * otherwise stack one poll per post.
+ */
+function postPoll(record, poll) {
+  if (!record.pollGame) return '';
+  if (poll && poll.key === record.pollGame) {
+    return predictionWidget(poll, { id: 'call-your-shot-post', className: 'post-poll', heading: 'Your turn: call your shot' });
+  }
+  return `<div class="post-poll-results" data-game="${escapeHtml(record.pollGame)}" hidden></div>`;
 }
 
 /**
@@ -1019,7 +1061,9 @@ function predictionWidget(poll) {
  */
 function gameWeekJump(gameWeek) {
   const links = [];
-  if (gameWeek?.poll) links.push(['call-your-shot', `Call your shot: ${gameWeek.poll.opponent}`]);
+  // The river's own copy of the poll (riverPollCard()), a few cards down,
+  // rather than the sidebar's at the very bottom.
+  if (gameWeek?.poll) links.push(['call-your-shot-feed', `Call your shot: ${gameWeek.poll.opponent}`]);
   const card = gameWeek?.refCrew;
   if (card) {
     links.push(['ref-crew', card.assignment && card.nextDay ? `${card.nextDay}'s ref: ${card.assignment.referee}` : 'Ref watch']);
@@ -1643,7 +1687,7 @@ ${slides.join('\n')}
  * the one visible signal that separates this from the AI-generated recap
  * and preview posts sharing the same Blog archive.
  */
-function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
+function originalArticleBody(record, rosterIndex, headingTag = 'h2', poll = undefined) {
   const photos = record.photos || {};
   const paragraphs = essayParagraphs(record.paragraphs, rosterIndex, {
     photos,
@@ -1674,6 +1718,7 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
 ${paragraphs}
 ${slideshow}
 ${plug}
+${poll === undefined ? '' : postPoll(record, poll)}
 ${wireTapsAsk(record.wireTaps)}
     </article>`;
 }
@@ -1734,7 +1779,7 @@ function wireTapsAsk(question) {
  * voice than the digest/preview pipeline's citation discipline allows (see
  * monday-prompt.js).
  */
-function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
+function mondayArticleBody(record, rosterIndex, headingTag = 'h2', poll = undefined) {
   // photos and thanks are passed for parity with originalArticleBody. They
   // were missing here only because Monday posts predate both markers, and
   // the omission failed silently in the worst way: essayParagraphs resolves
@@ -1761,6 +1806,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
       ${postByline(record.reviewedAt || record.generatedAt)}
 ${paragraphs}
 ${callout}
+${poll === undefined ? '' : postPoll(record, poll)}
 ${wireTapsAsk(record.wireTaps)}
     </article>`;
 }
@@ -2069,7 +2115,7 @@ ${header('blog.html', true, isGameLive)}
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
-${originalArticleBody(record, rosterIndex, 'h1')}
+${originalArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
@@ -2128,7 +2174,7 @@ ${header('blog.html', true, isGameLive)}
 
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
-${mondayArticleBody(record, rosterIndex, 'h1')}
+${mondayArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
@@ -4619,10 +4665,13 @@ export function renderPage(
     rosterIndex = null,
   },
 ) {
+  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
+  const riverPoll = rail && gameWeek?.poll && items.length > RIVER_POLL_AFTER ? riverPollCard(gameWeek.poll) : '';
   // Not items.map(itemCard) — Array.map's third argument is the array
   // itself, and itemCard's third parameter is rosterIndex, not that array.
-  const cards = items.map((item, i) => itemCard(item, i, rosterIndex)).join('\n');
-  const rail = sidebar(videos, games, betting, teamStats, standings, gameWeek);
+  const cards = items
+    .map((item, i) => itemCard(item, i, rosterIndex) + (i === RIVER_POLL_AFTER - 1 ? riverPoll : ''))
+    .join('\n');
 
   // Only collapse when there is actually something to hide — the National
   // Coverage page can be shorter than the initial batch on a quiet week.

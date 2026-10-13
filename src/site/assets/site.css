@@ -2379,6 +2379,132 @@ main.layout{
   padding-top: 10px;
   border-top: 1px solid var(--border-soft);
 }
+/* The optional name and email, quieter than the score boxes above them so
+   the card still reads as "two numbers and a button". 16px inputs for the
+   same iOS zoom reason as .poll-score input. */
+.poll-field{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+.poll-field[hidden]{ display: none; }
+.poll-field em{
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-faint);
+}
+.poll-field input{
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 16px;
+  color: var(--text);
+}
+.poll-field input:focus{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Season standings inside the poll card, filled in by site.js. */
+.poll-board[hidden]{ display: none; }
+.poll-board{
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-soft);
+}
+.widget .poll-board-title{
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-faint);
+  margin: 0 0 6px;
+}
+.poll-board-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.poll-board-list li{
+  display: grid;
+  grid-template-columns: 18px 1fr auto 44px;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 13px;
+  padding: 3px 0;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.poll-board-list li.is-me .board-name{ color: var(--gold); }
+.board-rank{ color: var(--text-faint); font-weight: 700; }
+.board-name{
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board-rec{ font-weight: 700; }
+.board-miss{ color: var(--text-muted); text-align: right; }
+.widget .poll-board-note,
+.widget .poll-board-pending{
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 6px 0 0;
+}
+.widget .poll-board-note{ color: var(--text-faint); font-size: 11px; }
+
+/* The river's copy of the poll (riverPollCard() in templates.js): phones
+   only, since at 900px and up the sidebar's copy is already beside the
+   river. Same card, with the gap of the headline cards around it. */
+.river-poll{ display: none; }
+@media (max-width: 899px){
+  .river-poll{
+    display: block;
+    margin: 0 0 12px;
+  }
+}
+
+/* The poll at the end of a pregame post, and what replaces it once the game
+   is played (postPoll() in templates.js). Same width as the prose. */
+.post-poll{ margin: 28px 0 0; }
+.post-poll-results[hidden]{ display: none; }
+.post-poll-results{
+  margin: 28px 0 0;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+.post-poll-results p{ margin: 0 0 6px; }
+.post-poll-eyebrow{
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+}
+.post-poll-final{
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--gold);
+}
+.post-poll-line{
+  font-size: 15px;
+  color: var(--text);
+}
+.post-poll-link{
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+}
 
 .widget{
   background: var(--bg-alt);

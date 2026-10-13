@@ -1,6 +1,9 @@
 import { getStore } from '@netlify/blobs';
 import { isAuthorized } from './_auth.js';
 import crypto from 'node:crypto';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { pollGame } from '../../src/lib/predictions.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
 const FROM = process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>';
@@ -69,7 +72,37 @@ function emailSafeBody(body) {
     .replace(/<h1>/gi, `<h1 style="margin:0 0 20px;color:#FFB612;font-family:${FONT};font-size:22px;line-height:1.3;">`);
 }
 
-function buildHtml(subject, body, email) {
+/**
+ * One line under every issue sent while a game's picks are open: what's
+ * your number, and a link to the poll. Ben doesn't have to remember to ask,
+ * and an issue that already links to the poll itself doesn't get it twice.
+ * The link lands on the poll card (site.js sends phones to the river's copy).
+ */
+async function openPoll() {
+  try {
+    const schedule = JSON.parse(await fs.readFile(path.resolve('data/schedule.json'), 'utf8'));
+    const poll = pollGame(schedule);
+    return poll && Date.parse(poll.iso) > Date.now() ? poll : null;
+  } catch {
+    return null;
+  }
+}
+
+function pollAsk(poll, body) {
+  if (!poll || /call-your-shot/.test(body)) return '';
+  const kickoff = new Date(poll.iso).toLocaleString('en-US', {
+    timeZone: 'America/New_York', weekday: 'long', hour: 'numeric', minute: '2-digit',
+  });
+  const href = `${SITE_URL}/index.html?via=hailmail#call-your-shot`;
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0;">
+      <tr><td style="padding:16px 18px;border:1px solid #3a2b16;border-radius:6px;">
+        <p style="margin:0 0 4px;color:#a89f9b;font-family:${FONT};font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">Call your shot</p>
+        <p style="margin:0;color:#efe9e4;font-family:${FONT};font-size:15px;line-height:1.6;">What's your number for the ${poll.opponent}? Picks lock at kickoff, ${kickoff} ET, and the season leaderboard is keeping score. <a href="${href}" style="${LINK_STYLE}font-weight:700;">Make your pick</a></p>
+      </td></tr>
+    </table>`;
+}
+
+function buildHtml(subject, body, email, poll = null) {
   // The template's own "Read on the site" button only when the email didn't
   // bring its own. A newsletter pointing at a specific post already has the
   // button that matters, and a second generic one underneath it read as
@@ -96,6 +129,7 @@ function buildHtml(subject, body, email) {
       <tr><td style="padding:32px;color:#efe9e4;font-family:${FONT};font-size:15px;line-height:1.65;">
         ${emailSafeBody(body)}
         ${fallbackCta}
+        ${pollAsk(poll, body)}
       </td></tr>
       <tr><td align="center" style="padding:24px 32px;border-top:1px solid #3a2b16;text-align:center;">
         <p style="margin:0 0 6px;color:#7c7370;font-family:${FONT};font-size:12px;">You're getting this because you signed up at theburgundywire.com.</p>
@@ -126,13 +160,15 @@ export default async (req) => {
     return new Response(JSON.stringify({ error: 'subject and body required' }), { status: 400 });
   }
 
+  const poll = await openPoll();
+
   // Test mode: send only to the site owner
   if (testOnly) {
     const TEST_EMAIL = process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu';
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from: FROM, to: TEST_EMAIL, subject: `[TEST] ${subject}`, html: buildHtml(subject, body, TEST_EMAIL) }),
+      body: JSON.stringify({ from: FROM, to: TEST_EMAIL, subject: `[TEST] ${subject}`, html: buildHtml(subject, body, TEST_EMAIL, poll) }),
     });
     return new Response(JSON.stringify({ sent: res.ok ? 1 : 0, test: true }), { headers: { 'Content-Type': 'application/json' } });
   }
@@ -174,7 +210,7 @@ export default async (req) => {
           from: FROM,
           to: email,
           subject,
-          html: buildHtml(subject, body, email),
+          html: buildHtml(subject, body, email, poll),
           // The unsubscribe button Gmail and Apple Mail show next to the
           // sender. The POST variant is the one-click kind; unsubscribe.js
           // reads the email and token from the query string, so a POST to the

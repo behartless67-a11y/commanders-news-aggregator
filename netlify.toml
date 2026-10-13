@@ -13,6 +13,14 @@
 [functions."submission-created"]
   included_files = ["data/schedule.json"]
 
+# The season leaderboard scores picks against the finals in the schedule, and
+# Hail Mail adds a "Call your shot" link only while a game's picks are open.
+[functions."predictions"]
+  included_files = ["data/schedule.json"]
+
+[functions."newsletter-send"]
+  included_files = ["data/schedule.json"]
+
 # "Just Quieter" went up on a Sunday night as a Monday post, then moved to
 # an original once Ben pointed out it was still Sunday. Its first address
 # was live for a few minutes, so it forwards rather than 404s.

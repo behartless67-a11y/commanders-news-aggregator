@@ -2,7 +2,7 @@ import { getStore } from '@netlify/blobs';
 import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { pollGame, parseScore } from '../../src/lib/predictions.js';
+import { pollGame, parseScore, playerFor } from '../../src/lib/predictions.js';
 
 /**
  * Netlify calls this function automatically whenever ANY Netlify Form on the
@@ -110,6 +110,19 @@ async function capturePrediction(payload) {
 
   const id = crypto.randomBytes(6).toString('hex');
   await getStore('predictions').set(`${game}/${us}-${them}/${id}`, '');
+
+  // Both optional. A name puts the pick on the season leaderboard (one per
+  // name per game, so a second pick replaces the first; see buildBoard() in
+  // src/lib/predictions.js). An email signs the reader up for Hail Mail, which
+  // the form says in so many words.
+  const player = playerFor(payload.data?.name);
+  if (player) {
+    await getStore('leaderboard').set(`${game}/${player.slug}`, JSON.stringify({
+      name: player.name, commanders: us, opponent: them, submittedAt: new Date().toISOString(),
+    }));
+  }
+  const email = String(payload.data?.email || '').trim().toLowerCase();
+  if (email) await subscribe(email, 'poll');
   return new Response('ok');
 }
 
@@ -118,22 +131,27 @@ async function capturePrediction(payload) {
  * without a separate lookup, and useless to guess without the secret.
  */
 async function captureSubscriber(payload) {
-  const email = String(payload.data?.email || '').trim().toLowerCase();
-  if (!email || !email.includes('@')) return new Response('ok');
+  // Which form, plus the link tag the visit arrived on ("popup:reddit"); see
+  // the email-subscribe handler in site.js. The one way to learn which of the
+  // growth ideas in docs/viewership-deep-dive.md actually bring readers in.
+  const src = String(payload.data?.src || '').trim().slice(0, 40);
+  await subscribe(String(payload.data?.email || '').trim().toLowerCase(), src);
+  return new Response('ok');
+}
+
+/** Shared by the Hail Mail forms and the poll's optional email. */
+async function subscribe(email, src) {
+  if (!email || !email.includes('@')) return;
 
   const store = getStore('subscribers');
   const existing = await store.get(`sub:${email}`, { type: 'json' }).catch(() => null);
-  if (existing) return new Response('ok'); // already subscribed
+  if (existing) return; // already subscribed
 
   const token = crypto
     .createHmac('sha256', process.env.RESEND_API_KEY || 'fallback')
     .update(email)
     .digest('hex');
 
-  // Which form, plus the link tag the visit arrived on ("popup:reddit"); see
-  // the email-subscribe handler in site.js. The one way to learn which of the
-  // growth ideas in docs/viewership-deep-dive.md actually bring readers in.
-  const src = String(payload.data?.src || '').trim().slice(0, 40);
   await store.set(`sub:${email}`, JSON.stringify({
     email,
     subscribedAt: new Date().toISOString(),
@@ -145,7 +163,6 @@ async function captureSubscriber(payload) {
   await store.set('count', String(count + 1));
 
   await sendWelcome(email, token);
-  return new Response('ok');
 }
 
 const SITE = process.env.SITE_URL || 'https://theburgundywire.com';

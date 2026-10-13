@@ -113,6 +113,10 @@ PHOTOS=(
   "hero-bowl|$GAMEDAY/IMG_8914.JPG|1536:512:0:400|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
   "hero-endzone|$GAMEDAY/IMG_1666.HEIC|1536:512:0:358|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
   "hero-mariota-sign|$GAMEDAY/IMG_1658.HEIC|1536:512:0:235|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
+  # Added Oct 13 with the side-by-sides below: the top of the rain-hood
+  # selfie, which is the video board, the Northwest Stadium sign and a packed
+  # lower bowl, with the faces left out of frame.
+  "hero-video-board|$GAMEDAY/IMG_8999.JPG|1536:512:0:245|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
 )
 
 echo "{" > "$OUT/dimensions.json"
@@ -188,5 +192,54 @@ for row in "${PHOTOS[@]}"; do
 done
 
 echo "}" >> "$OUT/dimensions.json"
+
+# Header side-by-sides (config/hero-images.js). Ben wanted more of his own
+# photos in the header, and most of the ones with faces in them are selfies.
+# A selfie can't be a header on its own: the band a laptop shows is so short
+# that a face filling a phone frame comes out as a row of eyes, which is why
+# the strips above are all shot from a few feet back. So two group selfies
+# go side by side, each a 4:3 frame shrunk to fit the band, one either side
+# of the centered logo (which then covers the gap between them instead of
+# somebody's face), on a blurred, darkened mix of the same two photos.
+#
+# Output is a 1920x640 strip like the wide ones above. A phone shows only the
+# middle half of the width, so it gets the inner half of each photo. Not in
+# dimensions.json: the header sets them from CSS, never as an <img>.
+#
+# name|source A|crop A (or "-")|source B|crop B (or "-"). The crops pick a 4:3
+# region around the faces before anything is scaled.
+PAIRS=(
+  # The London brunch crew, left; Högwaller's beer garden in Week 1, right.
+  "hero-pair-brunch-hogwaller|$DESKTOP/friends1.jpg|-|$HOGWALLER/commanders2.jpg|-"
+  # Högwaller again: Ben and Nicole, then Ben with Scary Terry the tube man.
+  "hero-pair-hogwaller-terry|$HOGWALLER/commanders1.jpg|3672:2754:0:900|$HOGWALLER/commanders3.jpg|3200:2400:472:1500"
+  # Week 3 vs Seattle: three in the stands, then the rain-hood selfie.
+  "hero-pair-seattle-stands|$GAMEDAY/IMG_8918.JPG|1536:1152:0:264|$GAMEDAY/IMG_8999.JPG|1536:1152:0:896"
+)
+
+for row in "${PAIRS[@]}"; do
+  IFS='|' read -r name a ca b cb <<< "$row"
+  if [ ! -f "$a" ] || [ ! -f "$b" ]; then
+    if [ -f "$OUT/$name.jpg" ]; then
+      printf '%-28s (skipped, a source is gone)\n' "$name"
+      continue
+    fi
+    echo "missing source and no existing output: $name" >&2
+    exit 1
+  fi
+  pa=""; pb=""
+  [ "$ca" != "-" ] && pa="crop=$ca,"
+  [ "$cb" != "-" ] && pb="crop=$cb,"
+  ffmpeg -y -loglevel error -i "$a" -i "$b" -filter_complex "\
+[0:v]${pa}split[a0][a1];[1:v]${pb}split[b0][b1];\
+[a0]scale=960:640:force_original_aspect_ratio=increase,crop=960:640[abg];\
+[b0]scale=960:640:force_original_aspect_ratio=increase,crop=960:640[bbg];\
+[abg][bbg]hstack,boxblur=40:3,eq=brightness=-0.10:saturation=0.85[bg];\
+[a1]scale=-2:520:flags=lanczos,crop=693:520,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6[fa];\
+[b1]scale=-2:520:flags=lanczos,crop=693:520,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6[fb];\
+[bg][fa]overlay=90:60[t];[t][fb]overlay=1137:60" -frames:v 1 -q:v 5 "$OUT/$name.jpg"
+  printf '%-28s 1920x640  %6s KB\n' "$name" "$(( $(stat -c%s "$OUT/$name.jpg") / 1024 ))"
+done
+
 echo
-echo "total: $(du -sk "$OUT" | cut -f1) KB across $count photo(s)"
+echo "total: $(du -sk "$OUT" | cut -f1) KB across $count photo(s) and ${#PAIRS[@]} side-by-side(s)"
