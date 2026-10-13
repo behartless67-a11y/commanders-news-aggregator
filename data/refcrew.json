@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T02:06:36.123Z",
+  "fetchedAt": "2026-10-13T04:06:53.452Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5607,6 +5607,22 @@
         "abbr": "BAL",
         "flags": 5,
         "yards": 40
+      }
+    },
+    "401872994": {
+      "season": 2026,
+      "week": 5,
+      "date": "2026-10-13T00:15Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "LAR",
+        "flags": 11,
+        "yards": 84
+      },
+      "away": {
+        "abbr": "BUF",
+        "flags": 13,
+        "yards": 112
       }
     }
   }

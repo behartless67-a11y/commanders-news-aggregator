@@ -13610,5 +13610,69 @@
     "images": [],
     "publishedAt": "2026-10-13T02:29:07.000Z",
     "collectedAt": "2026-10-13T02:55:19.658Z"
+  },
+  "social-236da8fc0889": {
+    "id": "social-236da8fc0889",
+    "url": "https://x.com/john_keim/status/2109845251531710732",
+    "text": "Asked a former DB coach about this play. Said was a hybrid zone/man coverage. He loves the call but said it takes a lot to make it work so played a match it up properly. Could that be an issue when in a new system? “Absolutely”",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T03:14:41.000Z",
+    "collectedAt": "2026-10-13T04:05:58.690Z"
+  },
+  "social-283e74329264": {
+    "id": "social-283e74329264",
+    "url": "https://x.com/john_keim/status/2109842443575423146",
+    "text": "This was from earlier. On you know what … met with Harris (as usual). More 89/quinn-commanders-botched-final-play-starts-me",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T03:03:32.000Z",
+    "collectedAt": "2026-10-13T04:05:58.690Z"
+  },
+  "social-4f15e385e7af": {
+    "id": "social-4f15e385e7af",
+    "url": "https://x.com/BenStandig/status/2109852186196718063",
+    "text": "At least Washington didn't get a FG in OT blocked.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-13T03:42:15.000Z",
+    "collectedAt": "2026-10-13T04:06:00.088Z"
+  },
+  "social-4a4bf1370a20": {
+    "id": "social-4a4bf1370a20",
+    "url": "https://x.com/tashanreed/status/2109852247840756033",
+    "text": "I guess overtime field goals aren't guaranteed",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/431/536/692/859/777/original/4cc5c224ff972ab5.jpg"
+    ],
+    "publishedAt": "2026-10-13T03:42:29.000Z",
+    "collectedAt": "2026-10-13T04:06:01.808Z"
+  },
+  "social-67ca4be6ec4a": {
+    "id": "social-67ca4be6ec4a",
+    "url": "https://mastodon.social/@top_news/117431464110283476",
+    "text": "NFC East coaching catastrophes Misfortune favors the timid elphia-eagles-analysis/186612/nfc-east-coaching-catastrophes #TopNews #News #Commanders #Cowboys #Giants",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/431/464/071/999/553/original/1a7cb631a9c17870.jpg"
+    ],
+    "publishedAt": "2026-10-13T03:25:40.163Z",
+    "collectedAt": "2026-10-13T04:06:13.346Z"
   }
 }
