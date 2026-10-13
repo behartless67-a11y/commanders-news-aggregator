@@ -1370,6 +1370,21 @@ main.layout{
   margin: 0 0 18px;
 }
 
+/* "By Ben · October 8, 2026" under a post's headline (postByline() in
+   templates.js): the old date line's size and color, with the name linked
+   to the author page. */
+.post-byline{
+  font-size: 13px;
+  color: var(--text-faint);
+  margin: 0 0 18px;
+}
+.post-byline a{
+  color: var(--text-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+.post-byline a:hover{ color: var(--gold); }
+
 .original-badge-row{
   margin: 0 0 10px;
 }
@@ -4342,6 +4357,34 @@ body.tv-page{
 }
 
 .subscribe-modal[hidden]{ display: none; }
+
+/* On a phone the Hail Mail popup is a sheet from the bottom of the screen,
+   not a card over the middle of it: the reader can still see the page they
+   were reading, and Google's guidance on mobile interstitials prefers the
+   smaller footprint. The logo goes (the header right above says the same
+   thing), and the email box is 16px so iOS doesn't zoom in on focus. */
+@media (max-width: 640px){
+  #subscribe-modal{
+    align-items: flex-end;
+    padding: 0;
+    background: rgba(0,0,0,0.55);
+  }
+  #subscribe-modal .subscribe-modal-card{
+    max-width: none;
+    max-height: 82vh;
+    border-width: 2px 0 0;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 0 var(--burgundy);
+    padding: 22px 20px calc(20px + env(safe-area-inset-bottom, 0px));
+    animation: sheet-up 0.25s ease;
+  }
+  #subscribe-modal .subscribe-modal-logo{ display: none; }
+  #subscribe-modal .subscribe-modal-input{ font-size: 16px; }
+}
+@keyframes sheet-up{
+  from{ opacity: 0; transform: translateY(28px); }
+  to{ opacity: 1; transform: none; }
+}
 
 .subscribe-modal-card{
   background: var(--surface);

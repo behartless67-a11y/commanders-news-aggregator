@@ -346,7 +346,9 @@
     return null;
   }
 
-  var agoEls = document.querySelectorAll('time[datetime]');
+  // Not .post-date, the full date under a post's headline (postByline() in
+  // templates.js), which has to stay a date.
+  var agoEls = document.querySelectorAll('time[datetime]:not(.post-date)');
   for (var t = 0; t < agoEls.length; t++) {
     var agoLabel = relativeAgo(new Date(agoEls[t].getAttribute('datetime')));
     if (agoLabel) agoEls[t].textContent = agoLabel;
@@ -521,6 +523,27 @@
    * completed pageview would have left it — there's no separate "first
    * visit" step to skip.
    */
+  /**
+   * The tag on a link Ben shares (`?via=reddit`, `?via=hogwaller`), read on the
+   * page it lands on and sent with that one pageview (track.js buckets on it).
+   * Kept in sessionStorage for the rest of the visit too, so a newsletter
+   * signup three pages later can still say where the reader came from (see
+   * the src field below). `utm_source` counts as well, for links someone else
+   * tags. Nothing here outlives the tab.
+   */
+  var VIA_KEY = 'bw_via';
+  var landingVia = (function () {
+    var params = new URLSearchParams(window.location.search);
+    var tag = (params.get('via') || params.get('utm_source') || '').toLowerCase();
+    if (!/^[a-z0-9-]{1,24}$/.test(tag)) return null;
+    try { sessionStorage.setItem(VIA_KEY, tag); } catch (e) {}
+    return tag;
+  })();
+  function sessionVia() {
+    if (landingVia) return landingVia;
+    try { return sessionStorage.getItem(VIA_KEY); } catch (e) { return null; }
+  }
+
   function isReturningVisitor() {
     try {
       var key = 'bw_seen';
@@ -695,6 +718,7 @@
     body: JSON.stringify({
       path: window.location.pathname,
       referrer: document.referrer,
+      via: landingVia,
       sid: sessionId(),
       returning: isReturningVisitor(),
       // A bare number, bucketed server-side (see deviceBucket() in
@@ -777,6 +801,11 @@
   Array.prototype.forEach.call(document.querySelectorAll('form[name="email-subscribe"]'), function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      // Which form ("popup", "post", "page") plus the link tag this visit
+      // arrived on, e.g. "post:reddit", so the subscriber list says what works.
+      var src = form.querySelector('input[name="src"]');
+      var via = sessionVia();
+      if (src && via && src.value.indexOf(':') === -1) src.value += ':' + via;
       var done = function () {
         form.innerHTML = '<p class="subscribe-done">You\'re on the list. Hail.</p>';
         markSeen();
@@ -907,15 +936,29 @@
 
     if (alreadySeen() || isAdmin()) return;
 
-    // Show on every 10th visit rather than randomly — feels intentional,
-    // not annoying, and gives regulars a break between prompts.
+    // From a browser's 2nd pageview on, at most once every two weeks, until
+    // the reader signs up or closes it (either one retires it for good, see
+    // close() and markSeen() above). It used to wait for the 10th pageview,
+    // which meant a reader who came in from Reddit and read two pages never
+    // saw it at all; across a billion popup displays a two-page delay
+    // converted best (see docs/viewership-deep-dive.md). Page one is left
+    // alone so nobody gets asked before they've read anything.
     var VISIT_KEY = 'bw_visits';
+    var PROMPTED_KEY = 'bw_sub_prompted';
     var visits;
     try { visits = (Number(localStorage.getItem(VISIT_KEY)) || 0) + 1; localStorage.setItem(VISIT_KEY, String(visits)); } catch { visits = 1; }
-    if (visits % 10 !== 0) return;
+    if (visits < 2) return;
+    var lastPrompt = 0;
+    try { lastPrompt = Number(localStorage.getItem(PROMPTED_KEY)) || 0; } catch (e) {}
+    if (Date.now() - lastPrompt < 14 * 86400000) return;
 
-    // Small delay so the page content loads first
-    setTimeout(function () { modal.hidden = false; }, 3000);
+    // Small delay so the page content loads first. Not over the 5,000th-reader
+    // welcome, which has the floor if it's up.
+    setTimeout(function () {
+      if (document.querySelector('.milestone-modal')) return;
+      modal.hidden = false;
+      try { localStorage.setItem(PROMPTED_KEY, String(Date.now())); } catch (e) {}
+    }, 3000);
   }());
 
   /**

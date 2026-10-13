@@ -151,6 +151,40 @@ Readers outside the US get a short note under the header, in their own language,
 
 ---
 
+## Growth plumbing (from the viewership deep dive)
+
+Built October 2026 from `docs/viewership-deep-dive.md`, sections 3.1 to 3.6.
+
+**Tag every link you share.** Add `?via=` and the source shows up in the admin panel's referrers, even from apps that hide where a click came from:
+
+| Where you're posting | Add |
+|---|---|
+| r/Commanders | `?via=reddit` |
+| Hogs Haven (comments, FanPosts, a note to Bill) | `?via=hh` |
+| The Warpath | `?via=warpath` |
+| BGO | `?via=bgo` |
+| X / Bluesky / Threads | `?via=x` / `?via=bsky` / `?via=threads` |
+| Högwaller table card QR | `?via=hogwaller` |
+| Sticker QR | `?via=sticker` |
+| Hail Mail links | `?via=hailmail` |
+| A podcast mention | `?via=podcast` |
+
+Any other tag still gets its own "Tagged: name" bucket. Newsletter signups also record which form they used (popup, end of a post, the Hail Mail page) plus the tag the reader arrived on, like `post:reddit`.
+
+**Hail Mail asks at the right moment.** The popup shows from a reader's 2nd page on (not the 10th), at most once every two weeks, until they sign up or close it. On phones it's a sheet from the bottom. New subscribers get a welcome email that asks for their Commanders origin story; replies go to the newsletter address, which ImprovMX forwards to you.
+
+**Sending:** every issue carries a one-click unsubscribe header. Resend's free plan allows 100 emails a day, so the send refuses (with a reason) past 90 subscribers rather than mailing half the list. When that happens, it's time to move the send to Resend Broadcasts.
+
+**What Google sees:**
+- Posts carry "By Ben" and a full date, link to `about.html`, and have BlogPosting structured data with a clean, text-free photo (`share/clean-*.jpg`, made by `npm run share-cards`).
+- Each post can have a `seoTitle` for search results and browser tabs (team and opponent in it); the headline on the page stays the post's `title`.
+- Page titles use " | ", not an em dash.
+- Pages that only list other people's work (team-sources, national-coverage, social-feed, videos, podcasts, beat-writers, donate) are `noindex` and out of the sitemap. The homepage stays indexed.
+- Canonical links and the sitemap use the addresses without `.html`.
+- `feed.xml` is your posts only; `river.xml` is every headline.
+
+---
+
 ## The 5,000th reader
 
 Whoever's pageview takes the site to 5,000 (and later 10,000 and 25,000) gets a one-time "You're visit #5,000" popup with a "Say hi to Ben" button. It goes to **five-thousand.html**, a short survey: name, where they're reading from, how they found the site, why they read it, how long they've been a fan, what to write about next, anything else, an OK-to-shout-you-out checkbox, and an optional email.

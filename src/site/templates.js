@@ -1,5 +1,5 @@
 import { escapeHtml, cleanExcerpt } from '../lib/text.js';
-import { relativeLabel, formatDateTime, formatDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
+import { relativeLabel, formatDateTime, formatDate, formatLongDate, parseGameTime, formatGameDateTime, rfc822 } from '../lib/dates.js';
 import { linkPlayers } from '../lib/roster-links.js';
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
@@ -16,6 +16,81 @@ import { BROADCAST_URLS } from '../../config/broadcast-urls.js';
 const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog: 'Blog', original: 'Blog', monday: 'Blog' };
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog', monday: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
+
+/** A page's one public address: the homepage is "/", everything else drops ".html". */
+export function canonicalUrl(siteUrl, path = '') {
+  if (!path || path === 'index.html') return `${siteUrl}/`;
+  return `${siteUrl}/${path.replace(/\.html$/, '')}`;
+}
+
+/**
+ * Who writes the posts, for the byline, the author page and the structured
+ * data. First name only: Ben's last name appears nowhere on the site, and that
+ * stays his call (see about.html for the bio he approved).
+ */
+const AUTHOR = { name: 'Ben', path: 'about.html' };
+
+function jsonLdScript(data) {
+  // "<" escaped so nothing in a title or summary can close the script tag.
+  return `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
+}
+
+/**
+ * The homepage's own structured data: the site's name, so Google can show
+ * "The Burgundy Wire" rather than the bare domain in results. Homepage only,
+ * per Google's site-name guidance.
+ */
+function websiteJsonLd(siteName, siteUrl) {
+  return jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteName,
+    alternateName: 'theburgundywire.com',
+    url: `${siteUrl}/`,
+  });
+}
+
+/**
+ * The river filter pages (team-sources, national-coverage) and the other
+ * pages that only list other people's work stay out of search results, so
+ * Google judges the site by Ben's writing rather than by a compilation of
+ * headlines (its scraping policy names sites "dedicated to compiling
+ * content"). `follow`, so the links on them still count. The homepage is the
+ * exception: it's what brand searches land on. See docs/viewership-deep-dive.md.
+ */
+const RIVER_NOINDEX = '<meta name="robots" content="noindex, follow">';
+
+/**
+ * A post's structured data: a BlogPosting with the author, both dates and the
+ * clean, text-free photo Google Discover asks for (the share card with the
+ * headline on it stays the Facebook/X preview). `image` is the share-card
+ * manifest entry; its `clean` file is the same crop without the type.
+ */
+function blogPostingJsonLd({ headline, description, siteUrl, path, publishedAt, modifiedAt, image }) {
+  const images = [];
+  if (image?.clean) images.push(`${siteUrl}/${image.clean}`);
+  else if (image?.file) images.push(`${siteUrl}/${image.file}`);
+  return jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: String(headline).slice(0, 110),
+    description,
+    mainEntityOfPage: canonicalUrl(siteUrl, path),
+    datePublished: publishedAt,
+    dateModified: modifiedAt || publishedAt,
+    ...(images.length ? { image: images } : {}),
+    author: { '@type': 'Person', name: AUTHOR.name, url: canonicalUrl(siteUrl, AUTHOR.path) },
+    publisher: { '@type': 'Organization', name: 'The Burgundy Wire', logo: { '@type': 'ImageObject', url: `${siteUrl}/icon-512.png` } },
+  });
+}
+
+/** "By Ben · October 8, 2026" under a post's headline, the author linked to his page. */
+function postByline(iso) {
+  const date = formatLongDate(iso);
+  // class="post-date": site.js turns every other <time> into "3h ago", and an
+  // article's date has to stay a date (it's what the structured data says).
+  return `<p class="post-byline">By <a href="${AUTHOR.path}" rel="author">${escapeHtml(AUTHOR.name)}</a>${date ? ` &middot; <time class="post-date" datetime="${escapeHtml(iso)}">${escapeHtml(date)}</time>` : ''}</p>`;
+}
 
 /**
  * Open Graph / Twitter Card tags — without these, a pasted link (Slack,
@@ -42,7 +117,12 @@ function socialMetaTags({ title, description, siteUrl, path = '', image = null, 
   // Facebook treats og:url as the canonical link, so a shared post was a share
   // of the homepage: its title and image could be swapped for the homepage's,
   // and its likes counted there. `path` is the file build.js writes.
-  const url = path && path !== 'index.html' ? `${siteUrl}/${path}` : `${siteUrl}/`;
+  //
+  // Without the .html: Netlify serves every page at both /x and /x.html and
+  // its Pretty URLs rewrite every internal link to /x, so a canonical of
+  // /x.html was the one address nothing on the site actually used. Google
+  // asks for links and canonicals to agree.
+  const url = canonicalUrl(siteUrl, path);
   const article = Boolean(publishedAt);
   return `<link rel="canonical" href="${escapeHtml(url)}">
 <meta property="og:site_name" content="The Burgundy Wire">
@@ -1120,6 +1200,7 @@ function hailMailSignup({ eyebrow = 'Hail Mail', heading, body, idSuffix = 'post
       <form class="hail-mail-box-form" name="email-subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="email-subscribe" />
         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="src" value="${escapeHtml(idSuffix)}" />
         <label class="visually-hidden" for="${inputId}">Email address</label>
         <input class="hail-mail-box-input" id="${inputId}" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
         <button class="hail-mail-box-submit" type="submit">Put me on the list</button>
@@ -1132,7 +1213,7 @@ function hailMailSignup({ eyebrow = 'Hail Mail', heading, body, idSuffix = 'post
 function postHailMailSignup() {
   return hailMailSignup({
     heading: 'Get the next one in your inbox',
-    body: 'Hail Mail is my email for Commanders fans who feel too much. About once a week, usually right before the game.',
+    body: 'Hail Mail is my email for Commanders fans who feel too much. Before every game: my score, the crowd\'s score, who\'s in and who\'s out, and the one thing that made me yell at the TV that week.',
   });
 }
 
@@ -1286,7 +1367,7 @@ function digestSourceFooter(cites, byIndex) {
     .map((e) => {
       const label = e.kind === 'post' ? `@${e.handle}` : e.sourceName;
       const what = e.kind === 'post' ? e.text : e.title;
-      return `<li><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a> — ${escapeHtml(what)}</li>`;
+      return `<li><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>: ${escapeHtml(what)}</li>`;
     })
     .join('');
   if (!items) return '';
@@ -1589,7 +1670,7 @@ function originalArticleBody(record, rosterIndex, headingTag = 'h2') {
     <article class="digest-post original-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
-      <p class="digest-week">${escapeHtml(formatDate(record.publishedAt))}</p>
+      ${postByline(record.publishedAt)}
 ${paragraphs}
 ${slideshow}
 ${plug}
@@ -1677,6 +1758,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2') {
     <article class="digest-post monday-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
       <${headingTag}>${escapeHtml(record.title)}</${headingTag}>
+      ${postByline(record.reviewedAt || record.generatedAt)}
 ${paragraphs}
 ${callout}
 ${wireTapsAsk(record.wireTaps)}
@@ -1846,15 +1928,16 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
+<title>${escapeHtml(digest.headline)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
-${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl, path: `blog-${record.week}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
+${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: digest.lede, siteUrl, path: `blog-${record.week}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -1900,15 +1983,16 @@ export function renderPreviewPost(record, { siteName, siteUrl, sources, generate
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(digest.headline)} — ${escapeHtml(siteName)}</title>
+<title>${escapeHtml(digest.headline)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
-${socialMetaTags({ title: `${digest.headline} — ${siteName}`, description: digest.lede, siteUrl, path: `blog-preview-${record.gameKey}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
+${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: digest.lede, siteUrl, path: `blog-preview-${record.gameKey}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -1962,15 +2046,17 @@ export function renderOriginalPost(record, { siteName, siteUrl, sources, generat
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
+<title>${escapeHtml(record.seoTitle || record.title)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `${record.title} — ${siteName}`, description, siteUrl, path: `blog-original-${record.slug}.html`, image: shareImage, publishedAt: record.publishedAt })}
+${socialMetaTags({ title: `${record.seoTitle || record.title} | ${siteName}`, description, siteUrl, path: `blog-original-${record.slug}.html`, image: shareImage, publishedAt: record.publishedAt })}
+${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, siteUrl, path: `blog-original-${record.slug}.html`, publishedAt: record.publishedAt, modifiedAt: record.updatedAt, image: shareImage })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2019,15 +2105,17 @@ export function renderMondayPost(record, { siteName, siteUrl, sources, generated
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(record.title)} — ${escapeHtml(siteName)}</title>
+<title>${escapeHtml(record.seoTitle || record.title)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `${record.title} — ${siteName}`, description, siteUrl, path: `blog-monday-${record.key}.html`, image: shareImage, publishedAt: record.reviewedAt || record.generatedAt })}
+${socialMetaTags({ title: `${record.seoTitle || record.title} | ${siteName}`, description, siteUrl, path: `blog-monday-${record.key}.html`, image: shareImage, publishedAt: record.reviewedAt || record.generatedAt })}
+${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, siteUrl, path: `blog-monday-${record.key}.html`, publishedAt: record.reviewedAt || record.generatedAt, modifiedAt: record.updatedAt, image: shareImage })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2115,15 +2203,16 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog — ${escapeHtml(siteName)}</title>
+<title>Blog | ${escapeHtml(siteName)}</title>
 <meta name="description" content="AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.">
-${socialMetaTags({ title: `Blog — ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl, path: 'blog.html' })}
+${socialMetaTags({ title: `Blog | ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl, path: 'blog.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2181,15 +2270,16 @@ export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How It Works — ${escapeHtml(siteName)}</title>
+<title>How It Works | ${escapeHtml(siteName)}</title>
 <meta name="description" content="A mostly-honest, occasionally unhinged explanation of the robots that run this site.">
-${socialMetaTags({ title: `How It Works — ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl, path: 'how-it-works.html' })}
+${socialMetaTags({ title: `How It Works | ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl, path: 'how-it-works.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2396,15 +2486,16 @@ export function renderRosterPage({
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roster — ${escapeHtml(siteName)}</title>
+<title>Commanders Roster | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Roster — ${siteName}`, description, siteUrl, path: 'roster.html' })}
+${socialMetaTags({ title: `Commanders Roster | ${siteName}`, description, siteUrl, path: 'roster.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2522,15 +2613,16 @@ export function renderDepthChartPage({ siteName, siteUrl, sources, generatedAt, 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Depth Chart — ${escapeHtml(siteName)}</title>
+<title>Commanders Depth Chart | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Depth Chart — ${siteName}`, description, siteUrl, path: 'depth-chart.html' })}
+${socialMetaTags({ title: `Commanders Depth Chart | ${siteName}`, description, siteUrl, path: 'depth-chart.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2615,15 +2707,16 @@ export function renderInjuryReportPage({ siteName, siteUrl, sources, generatedAt
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Injury Tracker — ${escapeHtml(siteName)}</title>
+<title>Commanders Injury Report | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Injury Tracker — ${siteName}`, description, siteUrl, path: 'injury-report.html' })}
+${socialMetaTags({ title: `Commanders Injury Report | ${siteName}`, description, siteUrl, path: 'injury-report.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2666,15 +2759,17 @@ export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, ha
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Podcasts — ${escapeHtml(siteName)}</title>
+<title>Podcasts | ${escapeHtml(siteName)}</title>
 <meta name="description" content="Commanders podcasts worth your time, embedded to stream right from ${escapeHtml(siteName)}.">
-${socialMetaTags({ title: `Podcasts — ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl, path: 'podcasts.html' })}
+${socialMetaTags({ title: `Podcasts | ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl, path: 'podcasts.html' })}
+${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2727,15 +2822,17 @@ export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasW
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Videos — ${escapeHtml(siteName)}</title>
+<title>Videos | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Videos — ${siteName}`, description, siteUrl, path: 'videos.html' })}
+${socialMetaTags({ title: `Videos | ${siteName}`, description, siteUrl, path: 'videos.html' })}
+${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2806,15 +2903,16 @@ export function renderMusicPage({ siteName, siteUrl, sources, generatedAt, hasWe
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Music — ${escapeHtml(siteName)}</title>
+<title>Music | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Music — ${siteName}`, description, siteUrl, path: 'music.html' })}
+${socialMetaTags({ title: `Music | ${siteName}`, description, siteUrl, path: 'music.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -2892,7 +2990,7 @@ export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(siteName)} — Display</title>
+<title>${escapeHtml(siteName)} | Display</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="${escapeHtml(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3005,15 +3103,16 @@ export function renderContactPage({ siteName, siteUrl, sources, generatedAt, has
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — ${escapeHtml(siteName)}</title>
+<title>Contact | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Contact — ${siteName}`, description, siteUrl, path: 'contact.html' })}
+${socialMetaTags({ title: `Contact | ${siteName}`, description, siteUrl, path: 'contact.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3085,15 +3184,16 @@ export function renderWireTapsPage({ siteName, siteUrl, sources, generatedAt, ha
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wire Taps — ${escapeHtml(siteName)}</title>
+<title>Wire Taps | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Wire Taps — ${siteName}`, description, siteUrl, path: 'wiretaps.html' })}
+${socialMetaTags({ title: `Wire Taps | ${siteName}`, description, siteUrl, path: 'wiretaps.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3142,6 +3242,62 @@ ${footer(sources, generatedAt)}
 }
 
 /**
+ * about.html: who writes this. The byline on every post links here, which is
+ * what Google's helpful-content guidance looks for (a byline that leads to an
+ * author bio), and it's the page that says plainly that the site isn't the
+ * team's. Every fact in the bio is one Ben has already published in a post;
+ * nothing here is inferred.
+ */
+export function renderAboutPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `Who writes ${siteName}: Ben, a lifelong Washington Commanders fan in Charlottesville, Virginia. Not affiliated with the team, no ads.`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Ben | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `About Ben | ${siteName}`, description, siteUrl, path: 'about.html' })}
+${jsonLdScript({ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: { '@type': 'Person', name: AUTHOR.name, url: canonicalUrl(siteUrl, AUTHOR.path) } })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('about.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page about-page">
+    <h1 class="podcasts-heading">About Ben</h1>
+    <p class="page-intro">I'm Ben. I've been a Washington fan since Super Bowl XXVI, which I watched on a CRT TV next to my dad, who was already all in. I've been unreasonably invested ever since.</p>
+    <p class="page-intro">These days I live in Charlottesville, Virginia. I tailgate UVA home games, get up to Northwest Stadium when I can, and watch the rest from my couch, a Buffalo Wild Wings, or wherever the group chat says.</p>
+    <p class="page-intro">${escapeHtml(siteName)} is my one-man project: every Commanders headline in one place, each one linking to the people who reported it, plus the posts I write myself about the team, the games and the people I watch them with. It isn't affiliated with the Washington Commanders or the NFL, and it has no ads.</p>
+    <p class="page-intro">Want to say something? Ask a question for <a href="wiretaps.html">Wire Taps</a>, get <a href="hail-mail.html">Hail Mail</a> before every game, or just <a href="contact.html">write to me</a>. Everything I've written is on <a href="blog.html">the blog</a>.</p>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
  * five-thousand.html: where the reader behind the site's 5,000th pageview
  * gets to say hi. Reached from the "you're visit #5,000" welcome that
  * site.js shows on the pageview track.js says claimed the mark, and from the
@@ -3167,6 +3323,7 @@ export function renderFiveThousandPage({ siteName, siteUrl, sources, generatedAt
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3258,15 +3415,16 @@ export function renderHailMailPage({ siteName, siteUrl, sources, generatedAt, ha
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hail Mail — ${escapeHtml(siteName)}</title>
+<title>Hail Mail | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Hail Mail — ${siteName}`, description, siteUrl, path: 'hail-mail.html', image: shareImage })}
+${socialMetaTags({ title: `Hail Mail | ${siteName}`, description, siteUrl, path: 'hail-mail.html', image: shareImage })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3336,6 +3494,7 @@ ${socialMetaTags({ title: `Hello from Charlottesville | ${siteName}`, descriptio
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3440,15 +3599,17 @@ export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasW
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Donate — ${escapeHtml(siteName)}</title>
+<title>Donate | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Donate — ${siteName}`, description, siteUrl, path: 'donate.html' })}
+${socialMetaTags({ title: `Donate | ${siteName}`, description, siteUrl, path: 'donate.html' })}
+${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3503,15 +3664,16 @@ export function renderLocalSpotsPage({ siteName, siteUrl, sources, generatedAt, 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cville Spots — ${escapeHtml(siteName)}</title>
+<title>Where to Watch the Commanders in Charlottesville | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Cville Spots — ${siteName}`, description, siteUrl, path: 'cville.html' })}
+${socialMetaTags({ title: `Where to Watch the Commanders in Charlottesville | ${siteName}`, description, siteUrl, path: 'cville.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -3568,16 +3730,17 @@ export function renderAdminPage({ siteName, siteUrl, sources, generatedAt, newsl
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Admin — ${escapeHtml(siteName)}</title>
+<title>Admin | ${escapeHtml(siteName)}</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Admin — ${siteName}`, description, siteUrl, path: 'admin.html' })}
+${socialMetaTags({ title: `Admin | ${siteName}`, description, siteUrl, path: 'admin.html' })}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -4280,15 +4443,17 @@ export function renderBeatWritersPage({ siteName, siteUrl, sources, generatedAt,
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beat Writers — ${escapeHtml(siteName)}</title>
+<title>Beat Writers | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Beat Writers — ${siteName}`, description, siteUrl, path: 'beat-writers.html' })}
+${socialMetaTags({ title: `Beat Writers | ${siteName}`, description, siteUrl, path: 'beat-writers.html' })}
+${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -4377,15 +4542,17 @@ export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Social Feed — ${escapeHtml(siteName)}</title>
+<title>Social Feed | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-${socialMetaTags({ title: `Social Feed — ${siteName}`, description, siteUrl, path: 'social-feed.html' })}
+${socialMetaTags({ title: `Social Feed | ${siteName}`, description, siteUrl, path: 'social-feed.html' })}
+${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -4474,16 +4641,18 @@ export function renderPage(
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(siteName)} — Washington Commanders News</title>
+<title>${escapeHtml(siteName)} | Washington Commanders News</title>
 <meta name="description" content="The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.">
-${socialMetaTags({ title: `${siteName} — Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl, path: activeFile })}
+${socialMetaTags({ title: `${siteName} | Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl, path: activeFile })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
+${activeFile === 'index.html' ? websiteJsonLd(siteName, siteUrl) : RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#5A1414">
@@ -4544,13 +4713,14 @@ ${footer(sources, generatedAt)}
     <button class="subscribe-modal-close" id="subscribe-dismiss" aria-label="Close">&times;</button>
     <img class="subscribe-modal-logo" src="logo.png" alt="The Burgundy Wire" />
     <p class="subscribe-modal-eyebrow">One more thing</p>
-    <h2 class="subscribe-modal-heading" id="subscribe-heading">The Weekly Recap. In Your Inbox. No algorithms deciding what you see.</h2>
-    <p class="subscribe-modal-body">Once a week, a real Commanders fan (me) writes up the week's biggest storylines. The injuries that are keeping me up at night, the games I'm irrationally optimistic about, and the decades of earned trauma that color all of it. The thoughts are mine. The grammar? That's Claude's problem. Think of it as the group chat you wish you were in, cleaned up just enough to not embarrass anyone.</p>
-    <p class="subscribe-modal-body">Weekly game blog. Occasional unhinged season predictions. Zero obligation to be professional about any of it.</p>
+    <h2 class="subscribe-modal-heading" id="subscribe-heading">Before every game: one email from me.</h2>
+    <p class="subscribe-modal-body">My score, the crowd's score, who's in and who's out, and the one thing that made me yell at the TV that week. From a real Commanders fan (me), with decades of earned trauma coloring all of it. The thoughts are mine. The grammar? That's Claude's problem.</p>
+    <p class="subscribe-modal-body">Occasional unhinged season predictions. Zero obligation to be professional about any of it.</p>
     <p class="subscribe-modal-fine">No spam. No ads. One fan, one AI, and way too many feelings about this team.</p>
     <form class="subscribe-modal-form" name="email-subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="email-subscribe" />
       <input type="hidden" name="bot-field" />
+      <input type="hidden" name="src" value="popup" />
       <input class="subscribe-modal-input" type="email" name="email" placeholder="your@email.com" required autocomplete="email" />
       <button class="subscribe-modal-submit" type="submit">Put me on the list</button>
     </form>
@@ -4563,27 +4733,36 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
-export function renderRss(items, { siteName, siteUrl, generatedAt }) {
+/**
+ * An RSS 2.0 feed (build.js writes two: feed.xml, Ben's posts, and river.xml,
+ * everything). Links are absolute, as the spec requires. Ben's own items used
+ * to go out as "blog-original-x.html", which some readers can't open. A
+ * publisher's item carries <source url="...">, the url being required by the
+ * spec, so a reader can see whose story it is.
+ */
+export function renderRss(items, { siteName, siteUrl, generatedAt, feedPath = 'feed.xml', title = siteName, description = 'Every Washington Commanders headline, one feed.' }) {
   const entries = items
-    .map(
-      (item) => `
+    .map((item) => {
+      const link = item.internal ? canonicalUrl(siteUrl, item.url) : item.url;
+      const source = item.internal ? '' : `\n    <source url="${escapeHtml(item.sourceHomepage || siteUrl)}">${escapeHtml(item.sourceName)}</source>`;
+      return `
   <item>
     <title>${escapeHtml(item.title)}</title>
-    <link>${escapeHtml(item.url)}</link>
+    <link>${escapeHtml(link)}</link>
     <guid isPermaLink="false">${escapeHtml(item.id)}</guid>
-    <pubDate>${rfc822(item.publishedAt || item.collectedAt)}</pubDate>
-    <source>${escapeHtml(item.sourceName)}</source>
+    <pubDate>${rfc822(item.publishedAt || item.collectedAt)}</pubDate>${source}
     ${item.excerpt ? `<description>${escapeHtml(item.excerpt)}</description>` : ''}
-  </item>`,
-    )
+  </item>`;
+    })
     .join('');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>${escapeHtml(siteName)}</title>
-  <link>${escapeHtml(siteUrl)}</link>
-  <description>Every Washington Commanders headline, one feed.</description>
+  <title>${escapeHtml(title)}</title>
+  <link>${escapeHtml(siteUrl)}/</link>
+  <atom:link href="${escapeHtml(`${siteUrl}/${feedPath}`)}" rel="self" type="application/rss+xml" />
+  <description>${escapeHtml(description)}</description>
   <lastBuildDate>${rfc822(generatedAt)}</lastBuildDate>
   ${entries}
 </channel>
@@ -4598,13 +4777,13 @@ export function renderRss(items, { siteName, siteUrl, generatedAt }) {
  * missing lastmod as "unknown", never as an error.
  */
 export function renderSitemap(entries, { siteUrl }) {
-  // The homepage as "/", matching its canonical link (see socialMetaTags), so
-  // Google isn't handed two addresses for the same page.
+  // Each page at its canonical address (see canonicalUrl()), so Google isn't
+  // handed two addresses for the same page.
   const urls = entries
     .map(
       (e) => `
   <url>
-    <loc>${escapeHtml(e.path === 'index.html' ? `${siteUrl}/` : `${siteUrl}/${e.path}`)}</loc>
+    <loc>${escapeHtml(canonicalUrl(siteUrl, e.path))}</loc>
     ${e.lastmod ? `<lastmod>${escapeHtml(e.lastmod.slice(0, 10))}</lastmod>` : ''}
   </url>`,
     )

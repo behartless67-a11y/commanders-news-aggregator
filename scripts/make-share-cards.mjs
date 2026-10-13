@@ -52,6 +52,9 @@ const FONT = process.env.FONT || 'C:/Windows/Fonts/seguibl.ttf';
 
 const W = 1200;
 const H = 630;
+/** The text-free 16:9 version for structured data (see makeCard). */
+const CLEAN_W = 1200;
+const CLEAN_H = 675;
 const MARGIN = 60;
 const TEXT = '0xEFE9E4'; // --text
 const GOLD = '0xFFB612'; // --gold
@@ -201,11 +204,24 @@ function makeCard(post, tmp) {
     ['-v', 'error', '-y', '-i', bg, '-i', path.join(ASSETS, 'logo.png'), '-filter_complex', filter, '-frames:v', '1', '-q:v', '3', out],
     { cwd: tmp, stdio: ['ignore', 'inherit', 'inherit'] },
   );
+
+  // The same photo and crop with nothing on it, 16:9 at 1200 wide: the image
+  // a post's structured data hands Google (blogPostingJsonLd() in
+  // templates.js). Discover asks for large images without logos or text on
+  // them, which the card above is full of. The card stays the Facebook/X
+  // preview, where the headline on the picture is the point.
+  const cleanOut = path.join(SHARE_DIR, `clean-${id}.jpg`);
+  execFileSync(
+    'ffmpeg',
+    ['-v', 'error', '-y', '-i', bg, '-vf', `scale=${CLEAN_W}:${CLEAN_H}:force_original_aspect_ratio=increase,crop=${CLEAN_W}:${CLEAN_H}:(iw-${CLEAN_W})/2:(ih-${CLEAN_H})*${focusY}`, '-frames:v', '1', '-q:v', '3', cleanOut],
+    { stdio: ['ignore', 'inherit', 'inherit'] },
+  );
   return {
     file: `share/${id}.jpg`,
     w: W,
     h: H,
     alt: `The headline "${record.title}" over a photo, with The Burgundy Wire logo.`,
+    clean: `share/clean-${id}.jpg`,
   };
 }
 

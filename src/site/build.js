@@ -25,7 +25,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderFiveThousandPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -430,6 +430,13 @@ export async function buildSite() {
     'utf8',
   );
 
+  // The author page every post's byline links to.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'about.html'),
+    renderAboutPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
   // Unlisted, like tv.html: only the reader behind the 5,000th pageview gets
   // sent here (see claimMilestone() in netlify/functions/track.js), so it's
   // left out of the sitemap below and disallowed in robots.txt.
@@ -485,18 +492,31 @@ export async function buildSite() {
     'utf8',
   );
 
-  const rss = renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt });
+  // Two feeds. feed.xml is Ben's own posts, the one feed readers and feed
+  // directories should subscribe to; it used to mix 59 publisher headlines in
+  // with them, so subscribing to "The Burgundy Wire" got you mostly other
+  // people's work. river.xml keeps the old everything-feed for anyone who
+  // wants the river in a reader.
+  const ownPosts = allSorted.filter((item) => item.sourceId === 'blog');
+  await fs.writeFile(
+    path.join(DIST_DIR, 'river.xml'),
+    renderRss(sorted, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt, feedPath: 'river.xml', title: `${SITE_NAME}: every Commanders headline`, description: 'Every Washington Commanders headline The Burgundy Wire collects, each linking to the publisher.' }),
+    'utf8',
+  );
+  const rss = renderRss(ownPosts, { siteName: SITE_NAME, siteUrl: SITE_URL, generatedAt, feedPath: 'feed.xml', title: SITE_NAME, description: 'Posts from Ben, a lifelong Washington Commanders fan in Charlottesville, Virginia.' });
   await fs.writeFile(path.join(DIST_DIR, 'feed.xml'), rss, 'utf8');
 
   // Every real page just written above, for Search Console to crawl from —
   // not admin.html or tv.html, which robots.txt below excludes from
   // crawling entirely (neither is a page a reader browses to).
+  // Not the pages that only list other people's work (team-sources,
+  // national-coverage, podcasts, videos, beat-writers, social-feed, donate):
+  // those carry noindex (RIVER_NOINDEX in templates.js), and a sitemap listing
+  // a noindexed page sends Google mixed signals.
   const staticPaths = [
-    'index.html', 'team-sources.html', 'national-coverage.html',
-    'podcasts.html', 'videos.html', 'how-it-works.html', 'roster.html',
-    'depth-chart.html', 'injury-report.html', 'contact.html', 'donate.html',
-    'music.html', 'beat-writers.html', 'cville.html', 'wiretaps.html',
-    'hail-mail.html',
+    'index.html', 'about.html', 'how-it-works.html', 'roster.html',
+    'depth-chart.html', 'injury-report.html', 'contact.html',
+    'music.html', 'cville.html', 'wiretaps.html', 'hail-mail.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),

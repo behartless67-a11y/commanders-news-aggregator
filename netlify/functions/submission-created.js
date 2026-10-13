@@ -130,16 +130,62 @@ async function captureSubscriber(payload) {
     .update(email)
     .digest('hex');
 
+  // Which form, plus the link tag the visit arrived on ("popup:reddit"); see
+  // the email-subscribe handler in site.js. The one way to learn which of the
+  // growth ideas in docs/viewership-deep-dive.md actually bring readers in.
+  const src = String(payload.data?.src || '').trim().slice(0, 40);
   await store.set(`sub:${email}`, JSON.stringify({
     email,
     subscribedAt: new Date().toISOString(),
     token,
+    ...(src ? { src } : {}),
   }));
 
   const count = Number((await store.get('count', { type: 'text' }).catch(() => '0')) || '0');
   await store.set('count', String(count + 1));
 
+  await sendWelcome(email, token);
   return new Response('ok');
+}
+
+const SITE = process.env.SITE_URL || 'https://theburgundywire.com';
+
+/**
+ * The first email a new subscriber gets: what Hail Mail is, two places to
+ * start, and one question to answer by replying. Replies go to the From
+ * address, which the domain's mail forwarding (ImprovMX) passes on to Ben.
+ * They're the conversation the newsletter is for, and they feed Wire Taps.
+ * Same unsubscribe link as every issue. A failed send costs nothing: the
+ * reader is already on the list.
+ */
+async function sendWelcome(email, token) {
+  if (!process.env.RESEND_API_KEY) return;
+  const unsub = `${SITE}/.netlify/functions/unsubscribe?email=${encodeURIComponent(email)}&token=${token}`;
+  const p = (s) => `<p style="margin:0 0 16px">${s}</p>`;
+  const link = (href, text) => `<a href="${SITE}/${href}?via=hailmail" style="color:#7a1c1c;font-weight:700">${text}</a>`;
+  const html = `<div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.55;color:#222;max-width:560px">
+${p('Hey, it\'s Ben.')}
+${p('Thanks for signing up for Hail Mail. Here\'s the deal: before every Commanders game, one email from me. My score, the crowd\'s score, who\'s in and who\'s out, and the one thing that made me yell at the TV that week. No spam, no ads, and nobody else gets your address.')}
+${p('If you\'re new around here, start with these:')}
+<ul style="margin:0 0 16px;padding-left:20px">
+<li style="margin-bottom:6px">${link('blog-original-how-a-crt-tv-a-ditch-and-the-internet-made-me-a-lifer', 'How a CRT TV, a Ditch, and the Internet Made Me a Lifer')} (the origin story)</li>
+<li>${link('blog', 'Everything I\'ve written so far')}</li>
+</ul>
+${p('And one question, because I genuinely want to know: <strong>what\'s your Commanders origin story?</strong> Hit reply and tell me. I read every one.')}
+${p('Hail,<br>Ben')}
+<p style="margin:24px 0 0;font-size:12px;color:#888"><a href="${SITE}" style="color:#888">theburgundywire.com</a> &middot; <a href="${unsub}" style="color:#888">Unsubscribe</a> anytime. No hard feelings.</p>
+</div>`;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
+      to: email,
+      subject: 'You\'re on the Hail Mail list',
+      html,
+      headers: { 'List-Unsubscribe': `<${unsub}>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' },
+    }),
+  }).catch(() => {});
 }
 
 /**

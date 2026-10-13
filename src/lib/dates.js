@@ -18,6 +18,18 @@ export function formatDate(iso) {
   });
 }
 
+/**
+ * "October 8, 2026": the date on a post. formatDate() above has no year, which
+ * is fine on a river card but not on an article, where search engines and
+ * readers both want to know when it was written (and the structured data's
+ * datePublished has to match what's on the page).
+ */
+export function formatLongDate(iso) {
+  const date = iso ? new Date(iso) : null;
+  if (!date || Number.isNaN(date.getTime())) return '';
+  return date.toLocaleDateString('en-US', { timeZone: TZ, month: 'long', day: 'numeric', year: 'numeric' });
+}
+
 export function formatDateTime(iso) {
   const date = iso ? new Date(iso) : null;
   if (!date || Number.isNaN(date.getTime())) return '';

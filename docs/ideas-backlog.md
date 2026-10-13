@@ -52,10 +52,6 @@ Done: contrast, readable posts, quieter feed, grouped duplicate stories. Still o
 
 ---
 
-## Viewership ideas still to go (1 and 2 done)
+## Viewership
 
-3. The Warpath / ExtremeSkins
-4. Hogs Haven fan posts
-5. Local QR codes
-6. X / Bluesky
-7. Podcasts
+Superseded by the full plan in `docs/viewership-deep-dive.md` (October 10, 2026), which covers the old list (Warpath, Hogs Haven FanPosts, QR codes, X/Bluesky, podcasts) with research behind each. Two corrections from it: ExtremeSkins is gone (its crowd moved to BGO, bgobsession.com), and Hogs Haven FanPosts still exist.

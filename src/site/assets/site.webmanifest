@@ -7,6 +7,6 @@
   ],
   "theme_color": "#5A1414",
   "background_color": "#14100f",
-  "display": "browser",
+  "display": "minimal-ui",
   "start_url": "/"
 }

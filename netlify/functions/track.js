@@ -58,7 +58,42 @@ const REFERRER_LABELS = [
   [/(^|\.)discord(app)?\.com$/i, 'Discord'],
   [/(^|\.)flipboard\.com$/i, 'Flipboard'],
   [/^t\.me$/i, 'Telegram'],
+  [/(^|\.)bsky\.app$/i, 'Bluesky'],
+  [/(^|\.)threads\.(net|com)$/i, 'Threads'],
+  [/(^|\.)hogshaven\.com$/i, 'Hogs Haven'],
+  [/(^|\.)bgobsession\.com$/i, 'BGO'],
+  [/(^|\.)thewarpath\.net$/i, 'The Warpath'],
+  // Reddit's Android app sends its package name as the referrer host.
+  [/^com\.reddit\.frontpage$/i, 'Reddit'],
 ];
+
+/**
+ * Tagged links (`?via=reddit` on a link Ben shares) name their own source, so
+ * they win over the referrer. Most of the "Direct / no referrer" bucket is
+ * people arriving from apps (Reddit's, Slack, iMessage) that send no referrer
+ * at all, and a tag is the only way to tell those apart. Known tags land in the
+ * same bucket as the matching referrer, so "Reddit" means Reddit either way;
+ * an unknown tag still gets its own bucket rather than being thrown away.
+ */
+const VIA_LABELS = {
+  reddit: 'Reddit',
+  hh: 'Hogs Haven',
+  warpath: 'The Warpath',
+  bgo: 'BGO',
+  x: 'X (Twitter)',
+  bsky: 'Bluesky',
+  threads: 'Threads',
+  hogwaller: 'Högwaller (QR code)',
+  sticker: 'Sticker (QR code)',
+  hailmail: 'Hail Mail email',
+  podcast: 'Podcast mention',
+};
+
+function viaBucket(raw) {
+  const tag = String(raw || '').toLowerCase().trim();
+  if (!/^[a-z0-9-]{1,24}$/.test(tag)) return null;
+  return VIA_LABELS[tag] || `Tagged: ${tag}`;
+}
 
 /**
  * Returns a display label, or null when the click shouldn't be counted as a
@@ -257,7 +292,7 @@ export default async (req, context) => {
     bump(`month:${month}`),
   ];
 
-  const bucket = referrerBucket(
+  const bucket = viaBucket(body.via) || referrerBucket(
     typeof body.referrer === 'string' ? body.referrer.slice(0, MAX_LEN) : '',
     req.headers.get('host'),
   );

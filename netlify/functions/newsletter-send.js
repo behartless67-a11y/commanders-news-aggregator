@@ -144,6 +144,20 @@ export default async (req) => {
     return new Response(JSON.stringify({ sent: 0, failed: 0, message: 'No subscribers yet.' }));
   }
 
+  // Each subscriber is one call to Resend's /emails, and Resend's free plan
+  // allows 100 of those a day, shared with welcome emails, test sends and the
+  // 5,000th-reader note. Past it, a send fails partway through and the only
+  // trace is a "failed" count. Better to refuse the whole send with a reason
+  // than mail half the list. The fix when this trips is moving the send to
+  // Resend Broadcasts (free up to 1,000 contacts, no daily cap), which needs a
+  // real send to test against, so it waits until the list is close.
+  const DAILY_HEADROOM = 90;
+  if (blobs.length > DAILY_HEADROOM) {
+    return new Response(JSON.stringify({
+      error: `Hail Mail has ${blobs.length} subscribers, past the ${DAILY_HEADROOM} Resend's free plan can safely send in a day. Time to switch the send to Resend Broadcasts (see docs/viewership-deep-dive.md, 3.6).`,
+    }), { status: 409, headers: { 'Content-Type': 'application/json' } });
+  }
+
   let sent = 0;
   let failed = 0;
 
@@ -161,6 +175,11 @@ export default async (req) => {
           to: email,
           subject,
           html: buildHtml(subject, body, email),
+          // The unsubscribe button Gmail and Apple Mail show next to the
+          // sender. The POST variant is the one-click kind; unsubscribe.js
+          // reads the email and token from the query string, so a POST to the
+          // same URL works as-is.
+          headers: { 'List-Unsubscribe': `<${unsubscribeUrl(email)}>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' },
         }),
       });
       if (res.ok) { sent++; } else { failed++; }
