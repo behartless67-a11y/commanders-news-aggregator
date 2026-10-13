@@ -1,16 +1,4 @@
 {
-  "hogs-haven-639c564304c3": {
-    "id": "hogs-haven-639c564304c3",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-roster/435031/washington-commanders-roster-cuts-tracker-rumors-news-updates-trades",
-    "title": "Washington Commanders roster cuts tracker: Rumors, news, updates, trades, and more",
-    "excerpt": "ASHBURN, VA - AUGUST 01: Jaden Bradley #86 of the Washington Commanders warms up during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Washington Commanders prepare for their season opener against the Philadelphia Eagles on September 13th. NFL teams are required to cut their rosters down to 53 players by 6 p.m. ET on Sunday. Teams will be able to form 17* player practice squads on Monday after…",
-    "publishedAt": "2026-08-29T11:00:00.000Z",
-    "collectedAt": "2026-08-29T12:06:10.629Z"
-  },
   "riggos-rag-c603673b1097": {
     "id": "riggos-rag-c603673b1097",
     "sourceId": "riggos-rag",
@@ -16822,5 +16810,17 @@
     "excerpt": "The Commanders coach is under fire for poor game management, which is not a new issue in Washington.",
     "publishedAt": "2026-10-13T10:00:23.000Z",
     "collectedAt": "2026-10-13T10:05:38.438Z"
+  },
+  "hogs-haven-aa776beb5b7b": {
+    "id": "hogs-haven-aa776beb5b7b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-draft/448620/future-hogs-week-6-college-football-players-could-help-commanders",
+    "title": "Future Hogs – Week 6: College football players who could help the Commanders",
+    "excerpt": "BLOOMINGTON, IN - SEPTEMBER 12: Indiana Hoosiers WR Nick Marsh (11) warms up prior to a college football game between the Howard Bison and Indiana Hoosiers on September 12, 2026 at Memorial Stadium in Bloomington, IN. (Photo by James Black/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images \n \n Down went #1 in Week 6 of college football. The Red River Rivalry between #1 Texas and Oklahoma went to the Sooners. Although Arch Manning threw for three touchdowns, he also threw a…",
+    "publishedAt": "2026-10-13T11:00:00.000Z",
+    "collectedAt": "2026-10-13T11:24:47.832Z"
   }
 }
