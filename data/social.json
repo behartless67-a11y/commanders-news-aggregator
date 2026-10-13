@@ -12856,7 +12856,7 @@
     "text": "After talking to people around the league early this morning, the sense is that a change at head coach for the Washington #Commanders is not currently anticipated following yesterday’s tie with the #Giants .",
     "handle": "JosinaAnderson",
     "author": "Josina Anderson",
-    "label": "",
+    "label": "Insider",
     "sourceKey": "@JosinaAnderson",
     "images": [],
     "publishedAt": "2026-10-12T14:15:32.000Z",
@@ -13567,5 +13567,41 @@
     "images": [],
     "publishedAt": "2026-10-12T22:59:14.000Z",
     "collectedAt": "2026-10-13T00:05:57.565Z"
+  },
+  "social-09d214dd4051": {
+    "id": "social-09d214dd4051",
+    "url": "https://x.com/BenStandig/status/2109811719245549722",
+    "text": "Magic rediscovered his optimism even in trying times.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-13T01:01:26.000Z",
+    "collectedAt": "2026-10-13T01:49:00.505Z"
+  },
+  "social-b510308eaae3": {
+    "id": "social-b510308eaae3",
+    "url": "https://x.com/tashanreed/status/2109820406269915389",
+    "text": "What would firing Quinn now do to make the #Commanders better, exactly? If this season goes down the drain and you pull the trigger in the offseason, fair game. But how would doing it in Week 6 make them better in 2026?",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-13T01:35:58.000Z",
+    "collectedAt": "2026-10-13T01:49:01.612Z"
+  },
+  "social-2e552303f720": {
+    "id": "social-2e552303f720",
+    "url": "https://x.com/tashanreed/status/2109816037072134274",
+    "text": "You really can't hit in the NFL anymore 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-13T01:18:36.000Z",
+    "collectedAt": "2026-10-13T01:49:01.612Z"
   }
 }
