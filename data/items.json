@@ -1,16 +1,4 @@
 {
-  "riggos-rag-03349e1c615c": {
-    "id": "riggos-rag-03349e1c615c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/spiraling-commanders-draft-pick-blows-final-audition-with-roster-fate-stake",
-    "title": "Spiraling Commanders draft pick blows final audition with roster fate at stake",
-    "excerpt": "Washington Commanders linebacker Kain Medrano blew his final audition against the Baltimore Ravers, leaving his roster hopes hanging by a thread.",
-    "publishedAt": "2026-08-29T17:30:00.000Z",
-    "collectedAt": "2026-08-29T18:06:12.589Z"
-  },
   "riggos-rag-7c8ee4bef9be": {
     "id": "riggos-rag-7c8ee4bef9be",
     "sourceId": "riggos-rag",
@@ -16786,5 +16774,53 @@
     "excerpt": "The problem with everyone taking the blame for a colossal clock-management blunder is that, if everyone is Spartacus , it's impossible to know who's truly at fault.\n As to the end of the Giants-Commanders game, coach Dan Quinn has taken the blame — and quarterback Jayden Daniels has taken the blame . Presumably, offensive coordinator David Blough will take the blame, too, the next time he speaks to reporters.\n So who's truly to blame?\n On Tuesday's edition of PFT Live , Chris Simms suggested…",
     "publishedAt": "2026-10-13T15:16:20.000Z",
     "collectedAt": "2026-10-13T16:05:48.884Z"
+  },
+  "hogs-haven-a41161224e6b": {
+    "id": "hogs-haven-a41161224e6b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-power-rankings/446793/power-rankings-week-6-ties-bind-washington-commanders-nfl-basement",
+    "title": "Power Rankings Week 6: Ties that bind the Washington Commanders to NFL’s basement",
+    "excerpt": "Oct 11, 2026; Landover, Maryland, USA; Washington Commanders head coach Dan Quinn reacts after the game against the New York Giants at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images | IMAGN IMAGES via Reuters Connect \n \n The Washington Commanders are 1-3-1 and everyone is still talking about the embarrassing finish to their game against the Giants that ended in a 27-27 tie. We’ve gone over what went down, and everyone’s been trying to piece together who gets some, or all, of the…",
+    "publishedAt": "2026-10-13T18:00:00.000Z",
+    "collectedAt": "2026-10-13T18:52:36.774Z"
+  },
+  "hogs-haven-b30db0fc0347": {
+    "id": "hogs-haven-b30db0fc0347",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/448853/discuss-your-feelings-about-commanders-direction-in-our-weekly-survey",
+    "title": "Discuss your feelings about Commanders’ direction in our weekly survey",
+    "excerpt": "LANDOVER, MARYLAND - OCTOBER 11: Fans celebrate after Jayden Daniels #5 of the Washington Commanders scored a touchdown during the third quarter of the game against the New York Giants at Northwest Stadium on October 11, 2026 in Landover, Maryland. (Photo by Patrick Smith/Getty Images) | Getty Images \n \n Welcome to SB Nation Reacts, a survey of fans across the NFL. Throughout the year we ask questions of the most plugged-in Commanders fans and fans across the country. \n\n Sign up here to…",
+    "publishedAt": "2026-10-13T16:23:30.000Z",
+    "collectedAt": "2026-10-13T18:52:36.774Z"
+  },
+  "riggos-rag-ba74bbb9254e": {
+    "id": "riggos-rag-ba74bbb9254e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/devin-neal-washington-commanders-opportunity-kaytron-allen-gamble-backfires",
+    "title": "Devin Neal gets Commanders opportunity after Kaytron Allen gamble backfires",
+    "excerpt": "The Washington Commanders have signed running back Devin Neal to their practice squad after Adam Peters' gamble on Kaytron Allen backfired.",
+    "publishedAt": "2026-10-13T17:30:00.000Z",
+    "collectedAt": "2026-10-13T18:52:37.858Z"
+  },
+  "yahoo-nfl-b03eb5fe7744": {
+    "id": "yahoo-nfl-b03eb5fe7744",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/micah-parsons-says-jayden-daniels-172804884.html",
+    "title": "Micah Parsons says Jayden Daniels 'probably cost' Commanders coach his job after OT clock debacle",
+    "excerpt": "Green Bay Packers linebacker Micah Parsons has not returned from the knee injury that cost him the end of last season and the start of the 2026 campaign.\n His podcast, disseminated via Bleacher Report , is in full swing, however. And the current episode dives into the Washington Commanders' clock-management debacle at the end of overtime that led to a 27-27 tie against the New York Giants on Sunday, Oct. 11, when quarterback Jayden Daniels took a sack as the finals ticked off the clock and…",
+    "publishedAt": "2026-10-13T17:28:04.000Z",
+    "collectedAt": "2026-10-13T18:52:43.877Z"
   }
 }

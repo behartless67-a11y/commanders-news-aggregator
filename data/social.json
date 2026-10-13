@@ -1,45 +1,4 @@
 {
-  "social-a2f53fa2160c": {
-    "id": "social-a2f53fa2160c",
-    "url": "https://x.com/john_keim/status/2106453925037518865",
-    "text": "And this is what it looked like at the rally:",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/754/956/039/original/909061edce421483.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/815/269/273/original/8190a2874baf7952.jpg"
-    ],
-    "publishedAt": "2026-10-03T18:38:46.000Z",
-    "collectedAt": "2026-10-03T19:00:10.707Z"
-  },
-  "social-779b49dd82f2": {
-    "id": "social-779b49dd82f2",
-    "url": "https://x.com/john_keim/status/2106453817139011649",
-    "text": "So the “Washington Road Warrior” was at the rally. Asked his real name: “Road”.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/378/434/648/631/586/original/378e49de7c2b5c98.jpg"
-    ],
-    "publishedAt": "2026-10-03T18:38:20.000Z",
-    "collectedAt": "2026-10-03T19:00:10.707Z"
-  },
-  "social-1541729fa105": {
-    "id": "social-1541729fa105",
-    "url": "https://x.com/john_keim/status/2106451259255620003",
-    "text": "Josh Harris asked by @NickiJhabvala@twitter.com about the logo/spear (and then @JPFinlayNBCS ).",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-03T18:28:10.000Z",
-    "collectedAt": "2026-10-03T19:00:10.707Z"
-  },
   "social-f2986531109d": {
     "id": "social-f2986531109d",
     "url": "https://x.com/NickiJhabvala/status/2106463784076284280",
@@ -13579,5 +13538,77 @@
     "images": [],
     "publishedAt": "2026-10-13T14:59:26.196Z",
     "collectedAt": "2026-10-13T16:06:07.106Z"
+  },
+  "social-ad8ed9606a55": {
+    "id": "social-ad8ed9606a55",
+    "url": "https://x.com/JPFinlayNBCS/status/2110064079347872173",
+    "text": "Week 8 Commanders/Eagles getting flexed out of SNF?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-13T17:44:14.000Z",
+    "collectedAt": "2026-10-13T18:52:46.774Z"
+  },
+  "social-321649946c2b": {
+    "id": "social-321649946c2b",
+    "url": "https://x.com/JPFinlayNBCS/status/2110053856147046602",
+    "text": "Rebrand for the Wiz? Very interesting article here",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-13T17:03:36.000Z",
+    "collectedAt": "2026-10-13T18:52:46.774Z"
+  },
+  "social-7744ce4e514b": {
+    "id": "social-7744ce4e514b",
+    "url": "https://x.com/john_keim/status/2110071439147901224",
+    "text": "Relive the fun at 7:30 ET tonight with @RealBramW@twitter.com . @ESPNRichmond@twitter.com i=k8MGnJW9uiE-QPsT",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T18:13:28.000Z",
+    "collectedAt": "2026-10-13T18:52:48.383Z"
+  },
+  "social-f45f49952b86": {
+    "id": "social-f45f49952b86",
+    "url": "https://x.com/john_keim/status/2110041332836343875",
+    "text": "@SharpFootball Fair. Quinn can certainly step in. But jones calls the D. Just being accurate.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T16:13:51.000Z",
+    "collectedAt": "2026-10-13T18:52:48.383Z"
+  },
+  "social-26f05b08bf84": {
+    "id": "social-26f05b08bf84",
+    "url": "https://x.com/john_keim/status/2110038963960369384",
+    "text": "Daronte Jones is in charge of the D but interesting numbers.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T16:04:26.000Z",
+    "collectedAt": "2026-10-13T18:52:48.383Z"
+  },
+  "social-69fe0110bf8d": {
+    "id": "social-69fe0110bf8d",
+    "url": "https://x.com/RichEisenShow/status/2110077877928735000",
+    "text": "Why would #RaiseHail let go of Dan Quinn even after the bumbling way Sunday's overtime period ended in Washington? #NFL",
+    "handle": "RichEisenShow",
+    "author": "Rich Eisen Show",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [],
+    "publishedAt": "2026-10-13T18:39:04.000Z",
+    "collectedAt": "2026-10-13T18:53:02.990Z"
   }
 }
