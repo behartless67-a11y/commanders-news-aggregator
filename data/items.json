@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-5b5ed671d21d": {
-    "id": "commanders-youtube-5b5ed671d21d",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=GYewc4JB3X8",
-    "title": "LIVE: QB Sam Hartman Speaks To The Media After The Game | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-08-29T01:49:18.000Z",
-    "collectedAt": "2026-08-29T02:06:14.755Z"
-  },
   "yahoo-nfl-47718dc2a8d1": {
     "id": "yahoo-nfl-47718dc2a8d1",
     "sourceId": "yahoo-nfl",
@@ -16822,5 +16810,17 @@
     "excerpt": "No one involved is blameless for the Washington Commanders' game-ending debacle against the New York Giants in overtime.Coach Dan Quinn on Monday expressed frus",
     "publishedAt": "2026-10-12T23:10:15.000Z",
     "collectedAt": "2026-10-13T00:05:39.178Z"
+  },
+  "clutchpoints-d4dc6d28376b": {
+    "id": "clutchpoints-d4dc6d28376b",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-dan-quinn-addresses-fan-confidence-brutal-week-5-giants",
+    "title": "Commanders’ Dan Quinn addresses fan confidence after brutal Week 5 ending vs. Giants",
+    "excerpt": "It has been a tough Monday for Washington Commanders head coach Dan Quinn . And he apparently still hasn’t cooled down . However, Quinn addressed fan confidence after the brutal Week 5 ending against the Giants, according to a post on X by Scott Abraham.\n\n “Scott Abraham @Scott7news: The Washington Commanders have only 3 wins in their last 17 games. I asked head coach Dan Quinn about the fan base losing confidence in him. He told me, ‘I’m just as pissed too, Scott. I’m very much looking forward…",
+    "publishedAt": "2026-10-13T01:02:51.000Z",
+    "collectedAt": "2026-10-13T02:05:32.727Z"
   }
 }
