@@ -13610,5 +13610,47 @@
     "images": [],
     "publishedAt": "2026-10-13T19:22:47.000Z",
     "collectedAt": "2026-10-13T20:05:11.772Z"
+  },
+  "social-5dab025b05dc": {
+    "id": "social-5dab025b05dc",
+    "url": "https://x.com/Commanders/status/2110098460145774780",
+    "text": "We have signed RB Devin Neal to the practice squad",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/435/393/483/205/537/original/d82b8ed74d99348e.jpg"
+    ],
+    "publishedAt": "2026-10-13T20:00:51.000Z",
+    "collectedAt": "2026-10-13T20:05:46.005Z"
+  },
+  "social-1745c0e4d3e4": {
+    "id": "social-1745c0e4d3e4",
+    "url": "https://x.com/Commanders/status/2110083150726533519",
+    "text": "a round of applause for @joshuaconerlyjr@twitter.com 👏",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/435/145/065/527/448/original/0705809591b54719.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/435/145/098/186/984/original/0461a51fa59e49b8.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/435/145/125/155/267/original/2ab243214d07d1ce.jpg"
+    ],
+    "publishedAt": "2026-10-13T19:00:01.000Z",
+    "collectedAt": "2026-10-13T20:05:46.005Z"
+  },
+  "social-679b55a13c17": {
+    "id": "social-679b55a13c17",
+    "url": "https://x.com/john_keim/status/2110099007288885723",
+    "text": "The Commanders signed RB Devin Neal to the practice squad. Was a 6th-round pick by the Saints in 2025. Rushed 57 times for 206 yards last year. Was released from Minnesota’s PS last week.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-13T20:03:01.000Z",
+    "collectedAt": "2026-10-13T20:05:49.092Z"
   }
 }
