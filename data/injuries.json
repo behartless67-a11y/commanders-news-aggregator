@@ -2,7 +2,7 @@
   {
     "name": "Charles Omenihu",
     "position": "DE",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Groin",
     "notes": null
   },
@@ -51,28 +51,28 @@
   {
     "name": "Marcus Mariota",
     "position": "QB",
-    "status": "Out",
+    "status": "Doubtful",
     "bodyPart": "Knee - MCL",
     "notes": "Sprain"
   },
   {
     "name": "Nick Cross",
     "position": "DB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Illness",
     "notes": null
   },
   {
     "name": "Percy Butler",
     "position": "DB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   },
   {
     "name": "Stefon Diggs",
     "position": "WR",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   },
@@ -86,7 +86,7 @@
   {
     "name": "Tyler Owens",
     "position": "DB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
   }
