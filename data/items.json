@@ -1,16 +1,4 @@
 {
-  "riggos-rag-a294c0bd0adf": {
-    "id": "riggos-rag-a294c0bd0adf",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/7-washington-commanders-destined-practice-squad-despite-valiant-roster-push",
-    "title": "7 Commanders destined for the practice squad despite valiant roster push",
-    "excerpt": "These Washington Commanders players look destined for the practice squad despite their valiant roster pushes over the offseason.",
-    "publishedAt": "2026-08-30T10:00:00.000Z",
-    "collectedAt": "2026-08-30T10:06:13.179Z"
-  },
   "riggos-rag-e0808c32cd51": {
     "id": "riggos-rag-e0808c32cd51",
     "sourceId": "riggos-rag",
@@ -16930,5 +16918,29 @@
     "excerpt": "Micah Parsons got very candid about the Commanders’ botched final play against the Giants in Week 5, saying Jayden Daniels had “probably cost” Dan Quinn his job. \n The Packers star edge rusher took the QB to task for the error in the final seconds of overtime that resulted in the Commanders and Giants settling for a tie when all was said and done on Sunday afternoon. \n “Jayden Daniels probably cost my man Dan Quinn his job,” Parsons said during the latest episode of “The Edge with Micah…",
     "publishedAt": "2026-10-14T00:35:26.000Z",
     "collectedAt": "2026-10-14T06:05:42.332Z"
+  },
+  "riggos-rag-0a0777b0a4b1": {
+    "id": "riggos-rag-0a0777b0a4b1",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/6-washington-commanders-players-whose-standout-efforts-getting-lost-mess",
+    "title": "6 Commanders players whose standout efforts are getting lost in the mess",
+    "excerpt": "There are several Washington Commanders players whose standout efforts so far this season are getting completely lost in the mess.",
+    "publishedAt": "2026-10-14T10:00:00.000Z",
+    "collectedAt": "2026-10-14T10:05:39.896Z"
+  },
+  "athletic-commanders-e6b940f1180d": {
+    "id": "athletic-commanders-e6b940f1180d",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7687268/2026/10/14/commanders-final-botched-play-questions-process",
+    "title": "Everything we know (and every question we still have) about the Commanders' botched final play",
+    "excerpt": "The insane sequence that ended the Commanders' 27-27 tie with the Giants has been picked over incessantly — and still needs some explaining.",
+    "publishedAt": "2026-10-14T10:00:41.000Z",
+    "collectedAt": "2026-10-14T10:05:43.081Z"
   }
 }
