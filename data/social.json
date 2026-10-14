@@ -13545,5 +13545,19 @@
     "images": [],
     "publishedAt": "2026-10-13T22:17:24.000Z",
     "collectedAt": "2026-10-13T23:36:17.906Z"
+  },
+  "social-f53af4bd83b2": {
+    "id": "social-f53af4bd83b2",
+    "url": "https://x.com/Commanders/status/2110158647129174310",
+    "text": "Showing off the speed @NextGenStats x @awscloud@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/436/325/559/789/853/original/c883f972b099d3db.jpg"
+    ],
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "collectedAt": "2026-10-14T00:06:19.340Z"
   }
 }

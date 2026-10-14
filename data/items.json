@@ -1,40 +1,4 @@
 {
-  "hogs-haven-8353b2292e93": {
-    "id": "hogs-haven-8353b2292e93",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-roster/435033/how-it-works-nfl-practice-squad-rules-eligibility-salary-waiver-wire",
-    "title": "How it works: NFL Practice Squad rules, eligibility, salary, waiver wire, and more",
-    "excerpt": "LANDOVER, MARYLAND - AUGUST 14: Ricky Barber #50 of the Washington Commanders reacts during the NFL preseason football game against the Miami Dolphins at Northwest Stadium on August 14, 2026 in Landover, Maryland. (Photo by Perry Knotts/Getty Images) | Getty Images \n \n The Washington Commanders have to trim their roster down to 53 players by 6 p.m. ET today. The roster cuts will start before then, and many of those players will be signed to the team’s 17-man practice squad. Every team has to…",
-    "publishedAt": "2026-08-30T00:00:00.000Z",
-    "collectedAt": "2026-08-30T00:06:08.850Z"
-  },
-  "clutchpoints-89b8b1888a1e": {
-    "id": "clutchpoints-89b8b1888a1e",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-releases-ex-bills-2nd-round-edge-boogie-basham",
-    "title": "Commanders release ex-Bills 2nd round defender",
-    "excerpt": "The Washington Commanders invested a good chunk of change in their defense, which seems quite rational given the injury and age-related questions surrounding the offense . They intend to be a more well-rounded football team than the one that gave up an NFL-worst 384.0 yards per game last season. Boogie Basham will not get the chance to help them complete that objective. Management is releasing the 28-year-old outside linebacker, per Ian Rapoport of ESPN and NFL Network.\n\n Basham, a 2021…",
-    "publishedAt": "2026-08-29T23:48:36.000Z",
-    "collectedAt": "2026-08-30T00:06:09.619Z"
-  },
-  "wjla-commanders-de5b6a3c65ce": {
-    "id": "wjla-commanders-de5b6a3c65ce",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-nfl-roster-cuts-53-players-deadline-sunday-6-pm-running-backs-wide-receivers-secondary-offensive-line-injuries-preseason-depth-practice-squad-waiver-claims-monday-international-player-pathway-philadelphia-eagles-sept-13-regular",
-    "title": "Roster cut down day looms for Commanders' coaching staff and players",
-    "excerpt": "The Commanders must cut roughly 38 players and finalize their 53-player roster before beginning preparations for the Philadelphia Eagles.",
-    "publishedAt": "2026-08-30T00:03:26.000Z",
-    "collectedAt": "2026-08-30T00:06:14.079Z"
-  },
   "riggos-rag-a294c0bd0adf": {
     "id": "riggos-rag-a294c0bd0adf",
     "sourceId": "riggos-rag",
@@ -16906,5 +16870,17 @@
     "excerpt": "Green Bay Packers star Micah Parsons ripped Washington Commanders quarterback Jayden Daniels for his costly mistake during Sunday’s 27-27 overtime tie against the New York Giants , suggesting the blunder could cost head coach Dan Quinn his job.\n\n Speaking on the latest episode of The Edge with Micah Parsons, the former Dallas Cowboys linebacker criticized Daniels for failing to manage the clock during Washington’s final offensive possession.\n\n “Jayden Daniels probably cost my man Dan Quinn his…",
     "publishedAt": "2026-10-13T21:58:27.000Z",
     "collectedAt": "2026-10-13T23:35:55.964Z"
+  },
+  "athletic-commanders-c3a43e1c3d98": {
+    "id": "athletic-commanders-c3a43e1c3d98",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7687870/2026/10/13/packers-micah-parsons-criticizes-commanders-jayden-daniels",
+    "title": "Micah Parsons says 'Jayden Daniels probably cost my man Dan Quinn his job'",
+    "excerpt": "\"This is a lack of preparation, a lack of mentality, and a lack of urgency,\" Parsons said. \"That just can't happen.\"",
+    "publishedAt": "2026-10-13T23:39:40.000Z",
+    "collectedAt": "2026-10-14T00:06:13.336Z"
   }
 }
