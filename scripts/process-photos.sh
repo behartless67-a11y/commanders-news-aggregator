@@ -206,12 +206,22 @@ echo "}" >> "$OUT/dimensions.json"
 # middle half of the width, so it gets the inner half of each photo. Not in
 # dimensions.json: the header sets them from CSS, never as an <img>.
 #
+# The first version put two big hard-edged frames close to the edges, and on
+# Ben's 1904px monitor, where the header is a 6.7:1 band, it read as a
+# collage: giant faces, visible photo edges, a dark panel behind the logo.
+# Now each frame is smaller (480x360, so faces come out about the size they
+# are in the crew shot), sits nearer the middle (so a phone still gets most
+# of each), and fades into the background on every side (the geq alpha: 90px
+# ramps left and right, 45px top and bottom), over a darker blur.
+#
 # name|source A|crop A (or "-")|source B|crop B (or "-"). The crops pick a 4:3
 # region around the faces before anything is scaled.
 PAIRS=(
   # The London brunch crew, left; Högwaller's beer garden in Week 1, right.
   "hero-pair-brunch-hogwaller|$DESKTOP/friends1.jpg|-|$HOGWALLER/commanders2.jpg|-"
-  # Högwaller again: Ben and Nicole, then Ben with Scary Terry the tube man.
+  # Högwaller again: Ben and Nicole, then Ben and Nicole out front by Scary
+  # Terry, the bar's inflatable tube man (his yellow arm, not his head, is
+  # what makes the crop; Nicole is the one beside it).
   "hero-pair-hogwaller-terry|$HOGWALLER/commanders1.jpg|3672:2754:0:900|$HOGWALLER/commanders3.jpg|3200:2400:472:1500"
   # Week 3 vs Seattle: three in the stands, then the rain-hood selfie.
   "hero-pair-seattle-stands|$GAMEDAY/IMG_8918.JPG|1536:1152:0:264|$GAMEDAY/IMG_8999.JPG|1536:1152:0:896"
@@ -230,14 +240,15 @@ for row in "${PAIRS[@]}"; do
   pa=""; pb=""
   [ "$ca" != "-" ] && pa="crop=$ca,"
   [ "$cb" != "-" ] && pb="crop=$cb,"
+  feather="geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*min(1,min(min(X,W-1-X)/90,min(Y,H-1-Y)/45))'"
   ffmpeg -y -loglevel error -i "$a" -i "$b" -filter_complex "\
 [0:v]${pa}split[a0][a1];[1:v]${pb}split[b0][b1];\
 [a0]scale=960:640:force_original_aspect_ratio=increase,crop=960:640[abg];\
 [b0]scale=960:640:force_original_aspect_ratio=increase,crop=960:640[bbg];\
-[abg][bbg]hstack,boxblur=40:3,eq=brightness=-0.10:saturation=0.85[bg];\
-[a1]scale=-2:520:flags=lanczos,crop=693:520,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6[fa];\
-[b1]scale=-2:520:flags=lanczos,crop=693:520,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6[fb];\
-[bg][fa]overlay=90:60[t];[t][fb]overlay=1137:60" -frames:v 1 -q:v 5 "$OUT/$name.jpg"
+[abg][bbg]hstack,boxblur=40:3,eq=brightness=-0.20:saturation=0.80,format=rgba[bg];\
+[a1]scale=-2:360:flags=lanczos,crop=480:360,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6,format=rgba,$feather[fa];\
+[b1]scale=-2:360:flags=lanczos,crop=480:360,eq=contrast=1.08:saturation=1.10:gamma=1.03,unsharp=5:5:0.6,format=rgba,$feather[fb];\
+[bg][fa]overlay=300:140[t];[t][fb]overlay=1140:140,format=rgb24" -frames:v 1 -q:v 5 "$OUT/$name.jpg"
   printf '%-28s 1920x640  %6s KB\n' "$name" "$(( $(stat -c%s "$OUT/$name.jpg") / 1024 ))"
 done
 
