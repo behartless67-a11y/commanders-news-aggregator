@@ -1,16 +1,4 @@
 {
-  "pft-6ae264ed2c78": {
-    "id": "pft-6ae264ed2c78",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-cut-qb-sam-hartman",
-    "title": "Commanders cut QB Sam Hartman",
-    "excerpt": "Quarterback Sam Hartman's time is up in Washington. \n Per multiple reports, the Commanders are waiving Hartman on Sunday as they cut their roster to 53 players. \n Hartman signed with the team after going undrafted in 2024 and he's spent most of the last two seasons on the practice squad. Hartman has not appeared in any regular season games for the Commanders. \n Marcus Mariota is the primary backup to Jayden Daniels for Washington and he's missed most of the last month after suffering a sprained…",
-    "publishedAt": "2026-08-30T19:26:16.000Z",
-    "collectedAt": "2026-08-30T20:06:19.555Z"
-  },
   "riggos-rag-355c1c30bfbc": {
     "id": "riggos-rag-355c1c30bfbc",
     "sourceId": "riggos-rag",
@@ -17062,5 +17050,29 @@
     "excerpt": "Washington Commanders wide receiver Dyami Brown is quietly burning through his last chance with the team this season.",
     "publishedAt": "2026-10-14T17:36:41.000Z",
     "collectedAt": "2026-10-14T18:05:38.156Z"
+  },
+  "riggos-rag-7499d48f0cc6": {
+    "id": "riggos-rag-7499d48f0cc6",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-next-response-could-decide-how-long-washington-commanders-tenure-lasts",
+    "title": "Dan Quinn’s next response could decide how long his Commanders tenure lasts",
+    "excerpt": "Under-fire head coach Dan Quinn’s next response could decide how long his Washington Commanders tenure lasts.",
+    "publishedAt": "2026-10-14T19:28:40.000Z",
+    "collectedAt": "2026-10-14T20:05:40.373Z"
+  },
+  "clutchpoints-4495ff34ab23": {
+    "id": "clutchpoints-4495ff34ab23",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-rumors-dan-quinn-job-somehow-not-immediate-danger-after-giants-game-debacle",
+    "title": "Commanders rumors: Dan Quinn’s job somehow not in immediate danger after Giants game debacle",
+    "excerpt": "The Washington Commanders suffered a fate worse than a loss in Week 5. Washington tied with New York in overtime after the team botched their attempt to kick a game-winning field goal. But it appears that Washington’s ownership is not making any drastic changes after that embarrassing sequence.\n\n ESPN’s Jeremy Fowler and Dan Graziano shared several updates from around the league in their latest article. One update centered around head coach Dan Quinn’s job security following last weekend’s ugly…",
+    "publishedAt": "2026-10-14T15:07:52.000Z",
+    "collectedAt": "2026-10-14T20:05:40.588Z"
   }
 }
