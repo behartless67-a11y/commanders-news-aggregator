@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-df2c3368715a": {
-    "id": "commanders-youtube-df2c3368715a",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/shorts/vd5CoUlyvCk",
-    "title": "London Fletcher was inducted today into the DC Sports Hall of Fame Class of 2026 👏",
-    "excerpt": "",
-    "publishedAt": "2026-08-30T17:41:19.000Z",
-    "collectedAt": "2026-08-30T18:06:15.925Z"
-  },
   "pft-6ae264ed2c78": {
     "id": "pft-6ae264ed2c78",
     "sourceId": "pft",
@@ -17062,5 +17050,17 @@
     "excerpt": "The Daily Slop – 14 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n The Athletic (paywall)\n That botched final play: What we know and still don’t know \n Daniels could have thrown the ball over Sinnott’s head — or even heaved it downfield, well beyond Okonkwo or…",
     "publishedAt": "2026-10-14T14:00:00.000Z",
     "collectedAt": "2026-10-14T16:05:45.740Z"
+  },
+  "riggos-rag-29dfde4a04ef": {
+    "id": "riggos-rag-29dfde4a04ef",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dyami-brown-quietly-burning-through-his-last-chances-washington-commanders",
+    "title": "Dyami Brown is quietly burning through his last chances with the Commanders",
+    "excerpt": "Washington Commanders wide receiver Dyami Brown is quietly burning through his last chance with the team this season.",
+    "publishedAt": "2026-10-14T17:36:41.000Z",
+    "collectedAt": "2026-10-14T18:05:38.156Z"
   }
 }
