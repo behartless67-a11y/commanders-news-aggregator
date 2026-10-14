@@ -1,16 +1,4 @@
 {
-  "riggos-rag-355c1c30bfbc": {
-    "id": "riggos-rag-355c1c30bfbc",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/van-jefferson-falls-victim-to-brutal-commanders-wr-number-crunch",
-    "title": "Van Jefferson falls victim to brutal Commanders WR number crunch",
-    "excerpt": "Washington Commanders wide receiver Van Jefferson Jr fell victim to the brutal wide receiver number crunch.",
-    "publishedAt": "2026-08-30T20:46:46.000Z",
-    "collectedAt": "2026-08-30T22:06:14.477Z"
-  },
   "pft-6ed9011cac22": {
     "id": "pft-6ed9011cac22",
     "sourceId": "pft",
@@ -17074,5 +17062,17 @@
     "excerpt": "The Washington Commanders suffered a fate worse than a loss in Week 5. Washington tied with New York in overtime after the team botched their attempt to kick a game-winning field goal. But it appears that Washington’s ownership is not making any drastic changes after that embarrassing sequence.\n\n ESPN’s Jeremy Fowler and Dan Graziano shared several updates from around the league in their latest article. One update centered around head coach Dan Quinn’s job security following last weekend’s ugly…",
     "publishedAt": "2026-10-14T15:07:52.000Z",
     "collectedAt": "2026-10-14T20:05:40.588Z"
+  },
+  "hogs-haven-d6c717ac74c0": {
+    "id": "hogs-haven-d6c717ac74c0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/449076/commanders-dan-quinn-giants-tie-49ers-hot-seat-head-coach",
+    "title": "Commanders response to Giants tie will speak volumes about Dan Quinn",
+    "excerpt": "We’ve been crushing the Commanders for what happened at the end of what might be the fateful moment of the season. \n\n The criticism is just. \n\n The Commanders tied the New York Giants by a score of 27-27 , as we all know. The result was unacceptable by any metric. Our gut tells us the same thing. \n\n We’re now at the acceptance phase of the grieving process, however, understanding that the past can’t be changed, head coach Dan Quinn isn’t getting fired (right now) and the sun still rose from the…",
+    "publishedAt": "2026-10-14T21:29:22.000Z",
+    "collectedAt": "2026-10-14T22:05:40.809Z"
   }
 }
