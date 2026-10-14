@@ -1,28 +1,4 @@
 {
-  "hogs-haven-707dfccb7dd1": {
-    "id": "hogs-haven-707dfccb7dd1",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/436291/has-adam-peters-given-dan-quinn-a-winning-roster-eagles-wk-1",
-    "title": "Commanders News: Has Adam Peters given Dan Quinn a winning roster?",
-    "excerpt": "The Daily Slop – 30 August 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n The Athletic (paywall)\n\n Commanders’ shaky preseason requires immediate fortification before the regular season \n\n The Commanders sat 41 players before a 41-3 loss to the Ravens, capping an ugly…",
-    "publishedAt": "2026-08-30T14:00:00.000Z",
-    "collectedAt": "2026-08-30T14:06:13.451Z"
-  },
-  "riggos-rag-719c7a770da0": {
-    "id": "riggos-rag-719c7a770da0",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-must-resist-glaring-waiver-wire-trap-from-dan-quinn-past",
-    "title": "Commanders must resist glaring waiver-wire trap from Dan Quinn's past",
-    "excerpt": "The Washington Commanders must resist a glaring waiver-wire trap from head coach Dan Quinn's past in a position of need.",
-    "publishedAt": "2026-08-30T13:00:03.000Z",
-    "collectedAt": "2026-08-30T14:06:15.191Z"
-  },
   "riggos-rag-f4668a6e7739": {
     "id": "riggos-rag-f4668a6e7739",
     "sourceId": "riggos-rag",
@@ -46,18 +22,6 @@
     "excerpt": "Seattle Seahawks cornerback Trevon Diggs wasted no time in challenging the Washington Commanders' offseason judgment with a preseason interception.",
     "publishedAt": "2026-08-30T14:30:00.000Z",
     "collectedAt": "2026-08-30T16:02:53.894Z"
-  },
-  "yahoo-nfl-1a52185f53ee": {
-    "id": "yahoo-nfl-1a52185f53ee",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-gm-adam-peters-given-140000886.html",
-    "title": "Has Commanders GM Adam Peters given Dan Quinn a winning roster? - Daily Slop",
-    "excerpt": "The Daily Slop – 30 August 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n The Athletic (paywall)\n Commanders’ shaky preseason requires immediate fortification before the regular season \n The Commanders sat 41 players before a 41-3 loss to the Ravens, capping an ugly end…",
-    "publishedAt": "2026-08-30T14:00:00.000Z",
-    "collectedAt": "2026-08-30T16:02:59.009Z"
   },
   "hogs-haven-1d14be5529e8": {
     "id": "hogs-haven-1d14be5529e8",
@@ -16954,5 +16918,65 @@
     "excerpt": "Washington Commanders running back Jacory Croskey-Merritt's best game of the season wasn't enough to change the team's stance.",
     "publishedAt": "2026-10-14T11:30:00.000Z",
     "collectedAt": "2026-10-14T12:05:38.086Z"
+  },
+  "hogs-haven-0adb07ec3754": {
+    "id": "hogs-haven-0adb07ec3754",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/448865/rasul-douglas-amik-robertson-playing-well-trey-amos-tress-way-dan-quinn-jayden-daniels",
+    "title": "Commanders News: Vets Rasul Douglas & Amik Robertson playing well so far",
+    "excerpt": "The Daily Slop – 14 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n The Athletic (paywall)\n\n That botched final play: What we know and still don’t know \n\n Daniels could have thrown the ball over Sinnott’s head — or even heaved it downfield, well beyond Okonkwo…",
+    "publishedAt": "2026-10-14T14:00:00.000Z",
+    "collectedAt": "2026-10-14T14:05:43.097Z"
+  },
+  "hogs-haven-2d1c8cacc6ec": {
+    "id": "hogs-haven-2d1c8cacc6ec",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-podcasts/449004/commanders-tie-exposed-two-major-problems-both-sides-ball",
+    "title": "The Commanders’ Tie Exposed Two Major Problems on Both Sides of the Ball",
+    "excerpt": "LANDOVER, MD - AUGUST 14: Head coach Dan Quinn and defensive coordinator Daronte Jones of the Washington Commanders look on before the preseason game against the Miami Dolphins at Northwest Stadium on August 14, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Washington Commanders’ final sequence of plays in overtime has earned its place in the league’s history books. But amid the fallout from a historically bad tie, rookie coordinators David Blough and…",
+    "publishedAt": "2026-10-14T12:00:00.000Z",
+    "collectedAt": "2026-10-14T14:05:43.097Z"
+  },
+  "riggos-rag-f65a358c7afd": {
+    "id": "riggos-rag-f65a358c7afd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-has-more-learn-than-washington-commanders-fans-want-admit",
+    "title": "Jayden Daniels has more to learn than Commanders fans want to admit",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels must silence the noise more than ever after Week 5's debacle finish.",
+    "publishedAt": "2026-10-14T13:00:02.000Z",
+    "collectedAt": "2026-10-14T14:05:43.416Z"
+  },
+  "cbs-nfl-146b83881c36": {
+    "id": "cbs-nfl-146b83881c36",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nfl-coach-hot-seat-rankings-week-6-dan-quinn-jim-harbaugh",
+    "title": "NFL coaching hot-seat rankings: Todd Bowles, Dan Quinn and Jim Harbaugh face mounting pressure",
+    "excerpt": "Quinn is one of several coaches who are feeling the heat",
+    "publishedAt": "2026-10-14T12:59:15.000Z",
+    "collectedAt": "2026-10-14T14:05:50.297Z"
+  },
+  "yahoo-nfl-88450ddcbfaa": {
+    "id": "yahoo-nfl-88450ddcbfaa",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/nfl-power-rankings-week-6-someone-has-to-win-nfc-east-among-disappointing-cowboys-commanders-giants-and-eagles-131355892.html",
+    "title": "NFL Power Rankings entering Week 6: Someone has to win NFC East among disappointing Cowboys, Commanders, Giants and Eagles",
+    "excerpt": "NFC East: Cowboys | Giants | Eagles | Commanders \n NFC North : Bears | Lions | Packers | Vikings \n NFC South: Falcons | Panthers | Saints | Buccaneers \n NFC West: Cardinals | Rams | 49ers | Seahawks \n AFC East: Bills | Dolphins | Patriots | Jets \n AFC North: Ravens | Bengals | Browns | Steelers \n AFC South: Texans | Colts | Jaguars | Titans \n AFC West: Broncos | Chiefs | Raiders | Chargers \n The NFC East has become the new NFC South, at least through five games. It is the worst division in…",
+    "publishedAt": "2026-10-13T04:10:11.000Z",
+    "collectedAt": "2026-10-14T14:05:50.468Z"
   }
 }
