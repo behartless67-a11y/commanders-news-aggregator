@@ -1,16 +1,4 @@
 {
-  "wjla-commanders-ebda400d9f8a": {
-    "id": "wjla-commanders-ebda400d9f8a",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/preseason-no-more-commanders-get-ready-for-the-upcoming-regular-season",
-    "title": "Preseason no more; Commanders get ready for the upcoming regular season",
-    "excerpt": "Training camp done. Preseason done.Meaningful NFL games are on the horizon. The Washington Commanders are now fully focused on their season opener on Sunday, Se",
-    "publishedAt": "2026-08-31T22:35:37.000Z",
-    "collectedAt": "2026-08-31T23:37:04.190Z"
-  },
   "hogs-haven-f4c931b3f687": {
     "id": "hogs-haven-f4c931b3f687",
     "sourceId": "hogs-haven",
@@ -17050,5 +17038,17 @@
     "excerpt": "Daniels defended Dan Quinn on Thursday and shouldered full responsibility for Washington letting the clock run out in field goal range",
     "publishedAt": "2026-10-15T20:32:07.000Z",
     "collectedAt": "2026-10-15T22:05:43.738Z"
+  },
+  "hogs-haven-a198486a5fb7": {
+    "id": "hogs-haven-a198486a5fb7",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/446986/commanders-49ers-thursday-injury-report-bill-croskey-merritt-stefon-diggs-trey-amos",
+    "title": "Commanders vs. 49ers Thursday injury report: Bill Croskey-Merritt not practicing",
+    "excerpt": "Commanders running back Bill Croskey-Merritt had his best game of this early season on Sunday, turning in 82 yards and a touchdown on just 11 carries. His high per carry average was boosted by an explosive touchdown, but Croskey-Merritt came out of Sunday’s 27-27 draw with the New York Giants a bit banged up. \n\n He did not participate in Thursday’s practice with a groin injury, per the Commanders. Head coach Dan Quinn didn’t address the issue during his press conference earlier in the day, so…",
+    "publishedAt": "2026-10-15T22:30:48.000Z",
+    "collectedAt": "2026-10-15T22:53:27.249Z"
   }
 }
