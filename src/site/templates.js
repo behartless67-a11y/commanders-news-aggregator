@@ -18,21 +18,25 @@ const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blo
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
 /**
- * A page's one public address: the homepage is "/", everything else is its
- * file name, ".html" and all, because that's how every link on the site, in
- * the feeds and in shared posts already points at it. The canonical tags,
- * og:url, the structured data and the sitemap all come from here.
+ * A page's one public address: the homepage is "/", everything else drops
+ * ".html". The canonical tags, og:url, the structured data, the feed and the
+ * sitemap all come from here.
  *
- * For two days (Oct 11 to 15) this dropped the ".html". Netlify serves both
- * forms with a 200, so Google saw hundreds of internal links to /x.html and a
- * canonical naming /x, picked /x.html itself, and emailed "Duplicate, Google
- * chose different canonical than user." Extensionless would only work with
- * every internal link rewritten and a 301 on the .html form; matching the
- * links is the version with nothing to break.
+ * Extensionless because that's the form Google itself picks. Netlify serves
+ * both /x and /x.html with a 200, and Search Console (checked Oct 15) showed
+ * Google indexing /blog, /cville, /hail-mail and the CRT post without the
+ * ".html" from crawls on Oct 8 to 11, while every canonical still said
+ * ".html". The one page it flagged, "Duplicate, Google chose different
+ * canonical than user" (first seen Oct 10), was a post declaring /x.html
+ * where Google had chosen /x. Declaring the form Google already prefers is
+ * what clears that. (On Oct 15 this briefly went back to ".html" on the
+ * theory that the internal links, which all say ".html", should win. Google's
+ * own choices said otherwise.) The internal links can stay as they are:
+ * Google resolves them to the same page either way.
  */
 export function canonicalUrl(siteUrl, path = '') {
   if (!path || path === 'index.html') return `${siteUrl}/`;
-  return `${siteUrl}/${path}`;
+  return `${siteUrl}/${path.replace(/\.html$/, '')}`;
 }
 
 /**
