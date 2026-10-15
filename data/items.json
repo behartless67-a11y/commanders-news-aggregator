@@ -1,16 +1,4 @@
 {
-  "athletic-jhabvala-a7823419e13e": {
-    "id": "athletic-jhabvala-a7823419e13e",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7550977/2026/08/30/commanders-53-man-roster-2026",
-    "title": "Commanders' 53-man roster: Rookies make their mark, but more changes are coming",
-    "excerpt": "Injuries and competition forced the Commanders to adjust their plans and will surely lead to additional tweaks in the days ahead.",
-    "publishedAt": "2026-08-31T00:04:04.000Z",
-    "collectedAt": "2026-08-31T00:06:16.583Z"
-  },
   "riggos-rag-ddb2f35c2d17": {
     "id": "riggos-rag-ddb2f35c2d17",
     "sourceId": "riggos-rag",
@@ -17026,5 +17014,17 @@
     "excerpt": "Oct 11, 2026; Landover, Maryland, USA; Washington Commanders quarterback Jayden Daniels (5) celebrates scoring a touchdown during the fourth quarter against the New York Giants at Northwest Stadium. Mandatory Credit: Amber Searls-Imagn Images \n \n\n Washington enters Monday Night Football against an unbeaten San Francisco team with disadvantages across the roster, but one quarterback comparison gives the Commanders a reason to believe.\n\n The Washington Commanders tied the New York Giants, the…",
     "publishedAt": "2026-10-14T22:29:28.000Z",
     "collectedAt": "2026-10-14T22:58:42.808Z"
+  },
+  "clutchpoints-7769802998a8": {
+    "id": "clutchpoints-7769802998a8",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/1-player-commanders-must-trade-before-2026-nfl-trade-deadline",
+    "title": "1 player Commanders must trade before 2026 NFL trade deadline",
+    "excerpt": "The Washington Commanders are off to a rough start in the 2026 NFL season , and their upcoming game against the San Francisco 49ers could help determine the team’s direction. If Washington cannot turn things around, the front office should consider becoming a seller before the Nov. 10 trade deadline. Defensive tackle Daron Payne is one player who could bring back a useful return.\n\n Payne is in his ninth season with Washington and has built a strong résumé during his time with the team. He has…",
+    "publishedAt": "2026-10-14T22:46:31.000Z",
+    "collectedAt": "2026-10-15T00:05:36.484Z"
   }
 }

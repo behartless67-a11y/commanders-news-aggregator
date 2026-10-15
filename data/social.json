@@ -9839,5 +9839,31 @@
     ],
     "publishedAt": "2026-10-14T22:17:00.000Z",
     "collectedAt": "2026-10-14T22:58:52.139Z"
+  },
+  "social-403140447091": {
+    "id": "social-403140447091",
+    "url": "https://x.com/Commanders/status/2110512809037476335",
+    "text": "off and running @Gatorade@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/441/854/166/028/169/original/9011c9baaa74e716.jpg"
+    ],
+    "publishedAt": "2026-10-14T23:27:19.000Z",
+    "collectedAt": "2026-10-15T00:05:43.919Z"
+  },
+  "social-6d98bcc94aae": {
+    "id": "social-6d98bcc94aae",
+    "url": "https://x.com/BenStandig/status/2110520773278359899",
+    "text": "No practice squad. First-team all-hair.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-14T23:58:58.000Z",
+    "collectedAt": "2026-10-15T00:05:48.190Z"
   }
 }
