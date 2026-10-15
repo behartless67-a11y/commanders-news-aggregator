@@ -10040,5 +10040,57 @@
     "images": [],
     "publishedAt": "2026-10-15T21:35:33.000Z",
     "collectedAt": "2026-10-15T22:05:12.755Z"
+  },
+  "social-cc801e3a47a7": {
+    "id": "social-cc801e3a47a7",
+    "url": "https://x.com/Commanders/status/2110853223376679422",
+    "text": "Thursday injury report #WASvsSF | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/447/178/336/455/387/original/2fa5a020564b5482.jpg"
+    ],
+    "publishedAt": "2026-10-15T22:00:00.000Z",
+    "collectedAt": "2026-10-15T22:05:45.701Z"
+  },
+  "social-b862650b976d": {
+    "id": "social-b862650b976d",
+    "url": "https://x.com/john_keim/status/2110853686993784995",
+    "text": "The injury report. 7 DNPs. Croskey-Merritt listed with a groin injury.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/447/180/151/773/155/original/d24f66096c65b881.jpg"
+    ],
+    "publishedAt": "2026-10-15T22:01:51.000Z",
+    "collectedAt": "2026-10-15T22:05:48.442Z"
+  },
+  "social-adf2f2728d44": {
+    "id": "social-adf2f2728d44",
+    "url": "https://x.com/john_keim/status/2110846199469339074",
+    "text": "The shame of that last play for Daniels on Sunday: he played well up until that point. 442/jayden-daniels-shows-flashes-rookie-form?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-15T21:32:06.000Z",
+    "collectedAt": "2026-10-15T22:05:48.442Z"
+  },
+  "social-8e11fab59f77": {
+    "id": "social-8e11fab59f77",
+    "url": "https://x.com/tashanreed/status/2110853448677867768",
+    "text": "Time travel doesn't exist yet — and the undefeated 49ers are next on the docket — so the #Commanders have no choice but to move on. Here are some X-factors to monitor ahead of their trip to San Francisco: /10/15/jayden-danielss-poise-under-pressure-more-x-factors-commanders-vs-49ers/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-15T22:00:54.000Z",
+    "collectedAt": "2026-10-15T22:05:51.363Z"
   }
 }
