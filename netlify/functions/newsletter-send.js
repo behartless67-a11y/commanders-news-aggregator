@@ -194,19 +194,41 @@ export default async (req) => {
     }), { status: 409, headers: { 'Content-Type': 'application/json' } });
   }
 
-  let sent = 0;
-  let failed = 0;
+  // One request per 100 subscribers to Resend's batch endpoint, not one per
+  // subscriber. The one-at-a-time loop this replaced ran straight into the
+  // free plan's 2-requests-a-second limit: the Oct 15 issue went out "Sent 13,
+  // 1 failed," with no way to tell who the one was. A batch is one request, so
+  // there's no rate to trip, and it can't run past the function timeout as
+  // the list grows.
+  //
+  // Everyone a batch reaches is logged under this issue (newsletter-sent,
+  // "<issue>/<email>", the issue being a hash of the subject), and anyone
+  // already logged is skipped. So after a partial failure, pressing "Send to
+  // all subscribers" again reaches only the people who missed it, and a
+  // double-click can't mail anyone twice. The Idempotency-Key covers the gap
+  // between two clicks landing before the log is written.
+  const issue = crypto.createHash('sha256').update(subject).digest('hex').slice(0, 16);
+  const log = getStore('newsletter-sent');
+  const { blobs: already } = await log.list({ prefix: `${issue}/` }).catch(() => ({ blobs: [] }));
+  const done = new Set(already.map((b) => b.key.slice(issue.length + 1)));
+  const emails = blobs.map((b) => b.key.replace('sub:', '')).filter((e) => !done.has(e));
+  const skipped = blobs.length - emails.length;
 
-  for (const blob of blobs) {
-    const email = blob.key.replace('sub:', '');
+  let sent = 0;
+  const failedEmails = [];
+  const errors = [];
+  for (let i = 0; i < emails.length; i += 100) {
+    const chunk = emails.slice(i, i + 100);
+    const key = `hailmail-${issue}-${crypto.createHash('sha256').update(chunk.join(',')).digest('hex').slice(0, 16)}`;
     try {
-      const res = await fetch('https://api.resend.com/emails', {
+      const res = await fetch('https://api.resend.com/emails/batch', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
           'Content-Type': 'application/json',
+          'Idempotency-Key': key,
         },
-        body: JSON.stringify({
+        body: JSON.stringify(chunk.map((email) => ({
           from: FROM,
           to: email,
           subject,
@@ -216,15 +238,24 @@ export default async (req) => {
           // reads the email and token from the query string, so a POST to the
           // same URL works as-is.
           headers: { 'List-Unsubscribe': `<${unsubscribeUrl(email)}>`, 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click' },
-        }),
+        }))),
       });
-      if (res.ok) { sent++; } else { failed++; }
-    } catch {
-      failed++;
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        failedEmails.push(...chunk);
+        errors.push(data.message || `Resend said ${res.status}`);
+        continue;
+      }
+      sent += chunk.length;
+      const at = new Date().toISOString();
+      await Promise.all(chunk.map((email) => log.set(`${issue}/${email}`, at).catch(() => {})));
+    } catch (err) {
+      failedEmails.push(...chunk);
+      errors.push(String(err.message || err));
     }
   }
 
-  return new Response(JSON.stringify({ sent, failed }), {
+  return new Response(JSON.stringify({ sent, failed: failedEmails.length, failedEmails, skipped, errors }), {
     headers: { 'Content-Type': 'application/json' },
   });
 };

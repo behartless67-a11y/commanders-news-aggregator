@@ -180,7 +180,7 @@ Any other tag still gets its own "Tagged: name" bucket. Newsletter signups also 
 - Each post can have a `seoTitle` for search results and browser tabs (team and opponent in it); the headline on the page stays the post's `title`.
 - Page titles use " | ", not an em dash.
 - Pages that only list other people's work (team-sources, national-coverage, social-feed, videos, podcasts, beat-writers, donate) are `noindex` and out of the sitemap. The homepage stays indexed.
-- Canonical links and the sitemap use the addresses without `.html`.
+- Canonical links and the sitemap use the same `.html` addresses every link on the site uses. (They dropped the `.html` for a few days in October, and Google flagged it as "Google chose different canonical than user," because both forms load and all the links say `.html`.)
 - `feed.xml` is your posts only; `river.xml` is every headline.
 
 ---

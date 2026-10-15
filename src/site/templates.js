@@ -17,10 +17,22 @@ const CATEGORY_LABEL = { team: 'Team Source', league: 'National Coverage', blog:
 const CATEGORY_BADGE_CLASS = { team: 'badge-team', league: 'badge-national', blog: 'badge-blog', original: 'badge-blog', monday: 'badge-blog' };
 const PAYWALLED_SOURCE_IDS = new Set(SOURCES.filter((s) => s.paywalled).map((s) => s.id));
 
-/** A page's one public address: the homepage is "/", everything else drops ".html". */
+/**
+ * A page's one public address: the homepage is "/", everything else is its
+ * file name, ".html" and all, because that's how every link on the site, in
+ * the feeds and in shared posts already points at it. The canonical tags,
+ * og:url, the structured data and the sitemap all come from here.
+ *
+ * For two days (Oct 11 to 15) this dropped the ".html". Netlify serves both
+ * forms with a 200, so Google saw hundreds of internal links to /x.html and a
+ * canonical naming /x, picked /x.html itself, and emailed "Duplicate, Google
+ * chose different canonical than user." Extensionless would only work with
+ * every internal link rewritten and a 301 on the .html form; matching the
+ * links is the version with nothing to break.
+ */
 export function canonicalUrl(siteUrl, path = '') {
   if (!path || path === 'index.html') return `${siteUrl}/`;
-  return `${siteUrl}/${path.replace(/\.html$/, '')}`;
+  return `${siteUrl}/${path}`;
 }
 
 /**
@@ -4095,7 +4107,14 @@ ${footer(sources, generatedAt)}
               .then(function (d) {
                 result.textContent = testOnly
                   ? (d.sent ? 'Test sent to bh4hb@virginia.edu!' : (d.error || 'Something went wrong.'))
-                  : 'Sent ' + d.sent + (d.failed ? ', ' + d.failed + ' failed.' : '.');
+                  : d.error
+                    ? d.error
+                    // Who missed it and why, so a retry isn't a guess. A
+                    // second press only goes to them; newsletter-send.js
+                    // skips everyone this issue already reached.
+                    : 'Sent ' + d.sent + '.' +
+                      (d.skipped ? ' ' + d.skipped + ' already had it.' : '') +
+                      (d.failed ? ' Failed (' + d.failed + '): ' + (d.failedEmails || []).join(', ') + '. ' + (d.errors || []).join(' ') + ' Press send again to retry just them.' : '');
                 result.hidden = false;
                 btn.disabled = false; btn.textContent = idleLabel;
               })
