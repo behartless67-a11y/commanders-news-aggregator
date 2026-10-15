@@ -1,16 +1,4 @@
 {
-  "riggos-rag-ddb2f35c2d17": {
-    "id": "riggos-rag-ddb2f35c2d17",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-initial-roster-clearly-exposes-adam-peters-unfinished-business",
-    "title": "Commanders' initial roster clearly exposes Adam Peters' unfinished business",
-    "excerpt": "Adam Peters still has work to do despite the Washington Commanders finalizing their initial 53-man roster.",
-    "publishedAt": "2026-08-31T10:00:00.000Z",
-    "collectedAt": "2026-08-31T10:06:17.144Z"
-  },
   "hogs-haven-2d3d8a05dbdb": {
     "id": "hogs-haven-2d3d8a05dbdb",
     "sourceId": "hogs-haven",
@@ -17038,5 +17026,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-15T01:00:17.000Z",
     "collectedAt": "2026-10-15T03:13:31.033Z"
+  },
+  "hogs-haven-16e092df245d": {
+    "id": "hogs-haven-16e092df245d",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/449068/commanders-film-review-session-quarterback-jayden-daniels-giants",
+    "title": "Commanders Film Session: How Jayden Daniels powered Washington in his return",
+    "excerpt": "Jayden Daniels’ return to the lineup against the New York Giants was nothing short of impressive. While his legs helped keep Washington’s offense afloat, accounting for 103 rushing yards and two touchdowns, his efficiency as a passer was just as dangerous. Daniels’ 199 passing yards may not jump off the stat sheet , but he completed 68% of his passes, finishing with 17 completions . His decision-making, aggression and ball placement kept the offense moving and demonstrated how dangerous he can…",
+    "publishedAt": "2026-10-15T10:00:00.000Z",
+    "collectedAt": "2026-10-15T11:03:10.022Z"
+  },
+  "riggos-rag-d45100339e73": {
+    "id": "riggos-rag-d45100339e73",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/predicting-washington-commanders-next-five-games-another-season-threatens-unravel",
+    "title": "Predicting the Commanders’ next five games as another season threatens to unravel",
+    "excerpt": "Predicting the Washington Commanders' next five games after their major blunder against the New York Giants leaves head coach Dan Quinn in peril.",
+    "publishedAt": "2026-10-15T10:07:56.000Z",
+    "collectedAt": "2026-10-15T11:03:10.938Z"
   }
 }
