@@ -1,28 +1,4 @@
 {
-  "riggos-rag-4cbac6cf7228": {
-    "id": "riggos-rag-4cbac6cf7228",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-face-familiar-crossroads-after-giants-shocking-roster-move",
-    "title": "Commanders face a familiar crossroads after Giants' shocking roster move",
-    "excerpt": "The Washington Commanders should consider signing offensive lineman Evan Neal after his shocking release from the New York Giants.",
-    "publishedAt": "2026-08-31T16:36:49.000Z",
-    "collectedAt": "2026-08-31T18:06:21.061Z"
-  },
-  "clutchpoints-7664763a88d1": {
-    "id": "clutchpoints-7664763a88d1",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-biggest-mistake-53-man-roster-cutdown-day-2026-nfl-season",
-    "title": "Commanders’ biggest mistake on 53-man roster cutdown day ahead of 2026 NFL season",
-    "excerpt": "The offseason didn’t go as the Washington Commanders planned , and they faced tough decisions as training camp wrapped up. But here is their biggest mistake on the 53-man roster cutdown day ahead of the 2026 NFL season.\n\n Every season brings hope, but the Commanders and head coach Dan Quinn seem to be on shaky ground overall. They’re coming off a 5-12 season, and they improved their defense. But they are taking a lot of chances on the offensive side of the ball that might torpedo their…",
-    "publishedAt": "2026-08-31T17:59:25.000Z",
-    "collectedAt": "2026-08-31T18:46:23.461Z"
-  },
   "hogs-haven-282d2e49795a": {
     "id": "hogs-haven-282d2e49795a",
     "sourceId": "hogs-haven",
@@ -17026,5 +17002,77 @@
     "excerpt": "Quarterback Jayden Daniels and head coach Dan Quinn must put on a united front before the Washington Commanders’ season slips away.",
     "publishedAt": "2026-10-15T13:00:04.000Z",
     "collectedAt": "2026-10-15T16:05:36.321Z"
+  },
+  "riggos-rag-e8b02995b764": {
+    "id": "riggos-rag-e8b02995b764",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/more-washington-commanders-losses-could-put-season-altering-sell-off-adam-peters-radar",
+    "title": "More Commanders losses could put a season-altering sell-off on Adam Peters’ radar",
+    "excerpt": "More Washington Commanders losses could put a season-altering sell-off on general manager Adam Peters’ radar before the trade deadline.",
+    "publishedAt": "2026-10-15T17:30:00.000Z",
+    "collectedAt": "2026-10-15T18:05:43.408Z"
+  },
+  "commanders-youtube-a78b0791f20a": {
+    "id": "commanders-youtube-a78b0791f20a",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=OstrFV__f4A",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-15T16:51:45.000Z",
+    "collectedAt": "2026-10-15T18:05:46.450Z"
+  },
+  "pft-840fbc9a3e09": {
+    "id": "pft-840fbc9a3e09",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dan-quinn-on-jayden-daniels-even-through-tough-weeks-he-is-really-resilient",
+    "title": "Dan Quinn on Jayden Daniels: Even through tough weeks, he is really resilient",
+    "excerpt": "The Commanders spent a lot of time talking about the blunders that cost them a chance to beat the Giants in overtime in Week 6, but the time has now come for them to turn the page to Monday night's game against the 49ers. \n Head coach Dan Quinn said at a Thursday press conference that the failure to stop the clock in time to try a game-winning field goal was \"my responsibility, point blank, period\" and that the steps that led to that failure have been \"dissected, discussed, corrected\" over the…",
+    "publishedAt": "2026-10-15T17:03:56.000Z",
+    "collectedAt": "2026-10-15T18:05:49.808Z"
+  },
+  "pft-c4f441a0fd3f": {
+    "id": "pft-c4f441a0fd3f",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-designate-lb-jordan-magee-for-return",
+    "title": "Commanders designate LB Jordan Magee for return",
+    "excerpt": "Linebacker Jordan Magee is set to return to Commanders practice. \n The team announced that they have designated Magee for return from injured reserve on Thursday. Magee will be able to practice with the team for the next 21 days and can be activated at any point in that window, so he could play against the 49ers on Monday night. \n Magee had two tackles in Week 1 before injuring his hamstring late in the game. \n The Commanders picked Magee in the fifth round in 2024 and he appeared in 25 games…",
+    "publishedAt": "2026-10-15T16:34:50.000Z",
+    "collectedAt": "2026-10-15T18:05:49.808Z"
+  },
+  "yahoo-nfl-bdbc3737d3cf": {
+    "id": "yahoo-nfl-bdbc3737d3cf",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/dan-quinn-ve-turned-page-164955700.html",
+    "title": "Dan Quinn: “We’ve turned the page from Sunday.”",
+    "excerpt": "The Washington Commanders visit the San Francisco 49ers on Monday Night Football this week. That means their normal practice schedule has been pushed back a day, and they are hitting the fields in Ashburn, VA to prepare for the big primetime game. Dan Quinn spoke to reporters before today’s session began, and answered more questions from last week, about this week’s game, and his future in Washington.\n The team announced they were opening the 21-day practice window for LB Jordan Magee…",
+    "publishedAt": "2026-10-15T16:49:55.000Z",
+    "collectedAt": "2026-10-15T18:05:50.216Z"
+  },
+  "yahoo-nfl-6162eb671d09": {
+    "id": "yahoo-nfl-6162eb671d09",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/washington-commanders-open-practice-window-164352412.html",
+    "title": "Washington Commanders open practice window for key reserve linebacker",
+    "excerpt": "Jordan Magee is getting back to practice. That’s a plus for the Commanders, who formally opened his 21-day window to return off injured reserve.\n He was placed on IR following a hamstring strain suffered in a Week 1 loss to the Philadelphia Eagles. He’s an important depth piece and core special teams player who was missed while he was out.\n Washington’s linebacker depth was tested during that stretch with Frankie Luvu missing time and Leo Chenal suffering a fractured neck that ended his…",
+    "publishedAt": "2026-10-15T16:43:52.000Z",
+    "collectedAt": "2026-10-15T18:05:50.216Z"
   }
 }
