@@ -51,18 +51,6 @@
     "publishedAt": "2026-10-05T22:02:20.000Z",
     "collectedAt": "2026-10-05T22:05:45.489Z"
   },
-  "social-28c991a4cef1": {
-    "id": "social-28c991a4cef1",
-    "url": "https://x.com/ProFootballTalk/status/2107213883429859660",
-    "text": "The Commanders didn't lose to the Colts on Sunday due to lack of fan support; their fans dominated the neutral-site game in London. alk/rumor-mill/news/commanders-fans-dominated-in-london-game-vs-colts",
-    "handle": "ProFootballTalk",
-    "author": "ProFootballTalk",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-05T20:58:34.000Z",
-    "collectedAt": "2026-10-05T22:05:45.490Z"
-  },
   "social-854a3a115f45": {
     "id": "social-854a3a115f45",
     "url": "https://x.com/BenStandig/status/2107230014739554479",
@@ -244,18 +232,6 @@
     "images": [],
     "publishedAt": "2026-10-05T23:33:40.000Z",
     "collectedAt": "2026-10-06T00:05:56.263Z"
-  },
-  "social-48968e6b5e34": {
-    "id": "social-48968e6b5e34",
-    "url": "https://x.com/SharpFootball/status/2107203117465108740",
-    "text": "if you watched the NFL and thought something didn't feel right, you're not alone: #1 most flags in over a decade thru 4 weeks, refs are impacting the most CRITICAL moments of games most: #1 most red zone penalties per game by offenses in history #1 most penalties on 3rd/4th downs in the second half of games in history and 17 touchdowns nullified by penalty! (vs only 5 in 2025 & 4 in 2024) Refs are impacting the most important moments of games unlike we've ever seen before in the NFL, and even some of the coaches are speaking up full analysis and historical data: ysis/nfl-penalties-2026/",
-    "handle": "SharpFootball",
-    "author": "Warren Sharp",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-05T20:15:47.000Z",
-    "collectedAt": "2026-10-06T01:06:57.602Z"
   },
   "social-5c1ef4635efb": {
     "id": "social-5c1ef4635efb",
@@ -10111,5 +10087,22 @@
     "images": [],
     "publishedAt": "2026-10-15T19:07:50.000Z",
     "collectedAt": "2026-10-15T20:06:27.523Z"
+  },
+  "social-6dbaf13debba": {
+    "id": "social-6dbaf13debba",
+    "url": "https://x.com/Commanders/status/2110833474676355095",
+    "text": "MNF prep 🙌 @bigbearai@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/392/470/764/original/90a5608ebca50037.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/432/728/903/original/81b695c6e9cc3e53.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/478/519/179/original/c3dfba1b16eaf8a1.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/511/327/230/original/98f0c89e87dbc798.jpg"
+    ],
+    "publishedAt": "2026-10-15T20:41:32.000Z",
+    "collectedAt": "2026-10-15T21:08:05.288Z"
   }
 }
