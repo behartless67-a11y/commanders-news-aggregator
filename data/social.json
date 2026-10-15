@@ -1,28 +1,4 @@
 {
-  "social-99fd54ff96a0": {
-    "id": "social-99fd54ff96a0",
-    "url": "https://x.com/BenStandig/status/2107092805042475361",
-    "text": "Starting an 8-hour flight with no wi-fi. Wish me luck.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-05T12:57:27.000Z",
-    "collectedAt": "2026-10-05T14:05:42.643Z"
-  },
-  "social-a4cdb1e3eaae": {
-    "id": "social-a4cdb1e3eaae",
-    "url": "https://x.com/BenStandig/status/2107080888584425645",
-    "text": "I can see someone changing their fantasy football team to \"No Illegal Shift.\"",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-05T12:10:06.000Z",
-    "collectedAt": "2026-10-05T14:05:42.643Z"
-  },
   "social-196327f77f9d": {
     "id": "social-196327f77f9d",
     "url": "https://x.com/NickiJhabvala/status/2107133755433669096",
@@ -45,18 +21,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-05T15:26:48.000Z",
-    "collectedAt": "2026-10-05T16:05:49.209Z"
-  },
-  "social-5a68ab4a31eb": {
-    "id": "social-5a68ab4a31eb",
-    "url": "https://x.com/tashanreed/status/2107117351342936513",
-    "text": "They didn't block anyone y'all 😂",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-05T14:34:59.000Z",
     "collectedAt": "2026-10-05T16:05:49.209Z"
   },
   "social-005c8f733005": {
@@ -107,54 +71,6 @@
     "sourceKey": "#Commanders",
     "images": [],
     "publishedAt": "2026-10-05T15:34:44.202Z",
-    "collectedAt": "2026-10-05T16:06:00.444Z"
-  },
-  "social-e375996998f1": {
-    "id": "social-e375996998f1",
-    "url": "https://mysportgallery.com/@slessans2/117388810893636952",
-    "text": "It is worth noting that the DC Defenders are still the best football team in the DMV area. 🤷‍♂️ #UFL | #DefendTheDMV | #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-05T14:38:23.000Z",
-    "collectedAt": "2026-10-05T16:06:00.444Z"
-  },
-  "social-ac3c85fabdfb": {
-    "id": "social-ac3c85fabdfb",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mx55euygbw25",
-    "text": "It is worth noting that the DC Defenders are still the best football team in the DMV area. 🤷‍♂️ #UFL | #DefendTheDMV | #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-05T14:38:25.872Z",
-    "collectedAt": "2026-10-05T16:06:00.444Z"
-  },
-  "social-f96b319fe81a": {
-    "id": "social-f96b319fe81a",
-    "url": "https://mysportgallery.com/@slessans2/117388790495267639",
-    "text": "Good morning to everyone but the idiot Commanders coaches. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-05T14:33:12.000Z",
-    "collectedAt": "2026-10-05T16:06:00.444Z"
-  },
-  "social-fcbace738300": {
-    "id": "social-fcbace738300",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mx553l37752j",
-    "text": "Good morning to everyone but the idiot Commanders coaches. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-05T14:33:13.392Z",
     "collectedAt": "2026-10-05T16:06:00.444Z"
   },
   "social-eb412cd192d4": {
@@ -9735,5 +9651,31 @@
     "images": [],
     "publishedAt": "2026-10-15T02:55:23.000Z",
     "collectedAt": "2026-10-15T03:13:38.137Z"
+  },
+  "social-66baa69686ec": {
+    "id": "social-66baa69686ec",
+    "url": "https://x.com/john_keim/status/2110710424870310286",
+    "text": "On video with @barrysvrluga@twitter.com talking about Sunday’s WTF moment but also looking at other discipline aspects; how can they recover. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-15T12:32:35.000Z",
+    "collectedAt": "2026-10-15T14:46:17.128Z"
+  },
+  "social-833f6f4abc51": {
+    "id": "social-833f6f4abc51",
+    "url": "https://x.com/BenStandig/status/2110737410607006206",
+    "text": "“Bro, I hate to break it to you. I don’t do nothing. Nothing. I breathe football, real life.” Trey Amos has no hobbies. No distractions. Just football. After 11 months and two injuries, the Commanders CB wants his life back. no-hobbies-no-distractions-trey-amos?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/445/369/471/095/702/original/4c5347a9ff757a29.jpg"
+    ],
+    "publishedAt": "2026-10-15T14:19:48.000Z",
+    "collectedAt": "2026-10-15T14:46:18.506Z"
   }
 }
