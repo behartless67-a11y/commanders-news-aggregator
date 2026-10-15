@@ -1,28 +1,4 @@
 {
-  "social-eb412cd192d4": {
-    "id": "social-eb412cd192d4",
-    "url": "https://x.com/john_keim/status/2107146150260445618",
-    "text": "Quinn had said after the game it was a \"serious\" ankle injury. Commanders lose their punt and kickoff returner. Showed he could help at times at WR.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-05T16:29:25.000Z",
-    "collectedAt": "2026-10-05T16:47:51.804Z"
-  },
-  "social-231683b99074": {
-    "id": "social-231683b99074",
-    "url": "https://x.com/NickiJhabvala/status/2107151654479106470",
-    "text": "Commanders QB Marcus Mariota did sprain his MCL in Sunday's game vs. the Colts, per source. It's the second time he's sprained it this year; first time was in the preseason opener against Miami.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-05T16:51:18.000Z",
-    "collectedAt": "2026-10-05T18:05:11.506Z"
-  },
   "social-085039aff9c3": {
     "id": "social-085039aff9c3",
     "url": "https://x.com/tashanreed/status/2107184335514185838",
@@ -9639,5 +9615,53 @@
     "images": [],
     "publishedAt": "2026-10-15T15:58:08.000Z",
     "collectedAt": "2026-10-15T16:05:48.126Z"
+  },
+  "social-1b39d5cd9d3d": {
+    "id": "social-1b39d5cd9d3d",
+    "url": "https://x.com/NickiJhabvala/status/2110782787162616319",
+    "text": "Bill is not out here during the media-viewing portion of practice. Austin Ekeler is wearing a no-contact jersey. Marcus Mariota (MCL) and Charles Omenihu (groin) are working with trainers on the side field.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-15T17:20:07.000Z",
+    "collectedAt": "2026-10-15T18:05:12.626Z"
+  },
+  "social-0e5444e150e3": {
+    "id": "social-0e5444e150e3",
+    "url": "https://x.com/NickiJhabvala/status/2110772863066161438",
+    "text": "Dan Quinn said Stefon Diggs, Percy Butler and Tyler Owens will not practice today, but Quinn is hopeful they'll get some time later in the week.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-15T16:40:41.000Z",
+    "collectedAt": "2026-10-15T18:05:12.626Z"
+  },
+  "social-c060e44ba705": {
+    "id": "social-c060e44ba705",
+    "url": "https://x.com/NickiJhabvala/status/2110771140020855255",
+    "text": "Dan Quinn said Trey Amos, Nick Cross and Jeremy McNichols will have a full week of practice.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-15T16:33:50.000Z",
+    "collectedAt": "2026-10-15T18:05:12.626Z"
+  },
+  "social-afdea1ffdba3": {
+    "id": "social-afdea1ffdba3",
+    "url": "https://x.com/NickiJhabvala/status/2110766867920851152",
+    "text": "The Commanders opened the 21-day practice window for LB Jordan Magee.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-15T16:16:52.000Z",
+    "collectedAt": "2026-10-15T18:05:12.626Z"
   }
 }
