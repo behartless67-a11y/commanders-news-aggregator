@@ -1,42 +1,4 @@
 {
-  "social-5c1ef4635efb": {
-    "id": "social-5c1ef4635efb",
-    "url": "https://x.com/BenStandig/status/2107275030518239308",
-    "text": "RB Robert Henry Jr. is being signed off the Commanders' practice squad by Seattle, source confirms. Had a fun summer here, for sure.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-06T01:01:33.000Z",
-    "collectedAt": "2026-10-06T01:07:00.516Z"
-  },
-  "social-5641257cda05": {
-    "id": "social-5641257cda05",
-    "url": "https://x.com/tashanreed/status/2107270133810864632",
-    "text": "Just as Jayden Daniels is set to make his return, the #Commanders have another quarterback on the mend. My update on Marcus Mariota, plus many other injured players for Washington: /10/05/daniels-nears-return-mariota-is-sidelined-with-another-mcl-sprain/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-06T00:42:05.000Z",
-    "collectedAt": "2026-10-06T01:07:01.641Z"
-  },
-  "social-6efd2a2ad73c": {
-    "id": "social-6efd2a2ad73c",
-    "url": "https://x.com/Schultz_Report/status/2107274150028992961",
-    "text": "Sources: The #Seahawks are signing RB Robert Henry Jr. to their active roster off the #Commanders practice squad. Henry was a UDFA out of UTSA this past spring, where he earned First-Team All-American Conference honors. The deal was confirmed by @eliteloyaltysp@twitter.com .",
-    "handle": "Schultz_Report",
-    "author": "Jordan Schultz",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/391/249/420/095/973/original/c3820ef13441e012.jpg"
-    ],
-    "publishedAt": "2026-10-06T00:58:03.000Z",
-    "collectedAt": "2026-10-06T01:07:12.369Z"
-  },
   "social-2065b612ddd1": {
     "id": "social-2065b612ddd1",
     "url": "https://x.com/john_keim/status/2107431739677462925",
@@ -139,20 +101,6 @@
     "images": [],
     "publishedAt": "2026-10-06T15:54:36.000Z",
     "collectedAt": "2026-10-06T16:05:48.571Z"
-  },
-  "social-22eb89125153": {
-    "id": "social-22eb89125153",
-    "url": "https://x.com/PFF/status/2107287427224404058",
-    "text": "The coverage kings in Week 4 👑",
-    "handle": "PFF",
-    "author": "PFF",
-    "label": "",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/391/459/404/974/017/original/83c52a4302782c8e.jpg"
-    ],
-    "publishedAt": "2026-10-06T01:50:48.000Z",
-    "collectedAt": "2026-10-06T16:05:49.845Z"
   },
   "social-d56f5eb48361": {
     "id": "social-d56f5eb48361",
@@ -10046,5 +9994,29 @@
     ],
     "publishedAt": "2026-10-15T23:54:04.000Z",
     "collectedAt": "2026-10-16T00:05:43.961Z"
+  },
+  "social-ae2a2bdda5ae": {
+    "id": "social-ae2a2bdda5ae",
+    "url": "https://x.com/NickiJhabvala/status/2110889754807914765",
+    "text": "Josh Harris, talking on a @TheEconomicClub",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-16T00:25:10.000Z",
+    "collectedAt": "2026-10-16T02:05:13.486Z"
+  },
+  "social-e68f5de5fcd6": {
+    "id": "social-e68f5de5fcd6",
+    "url": "https://x.com/NickiJhabvala/status/2110886173853823395",
+    "text": "Josh Harris, talking on a panel with David Rubenstein, Michele Kang and Ted Leonsis at The Economic Club of D.C., about the family sacrifice that comes with being a sports team owner, jokingly said: \"I want to apologize to my wife for this week. I'm really sorry. I wasn't very",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-16T00:10:56.000Z",
+    "collectedAt": "2026-10-16T02:05:13.486Z"
   }
 }
