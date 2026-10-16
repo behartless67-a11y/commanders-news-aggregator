@@ -1,30 +1,4 @@
 {
-  "social-c80f487589d1": {
-    "id": "social-c80f487589d1",
-    "url": "https://x.com/tashanreed/status/2107255766034034800",
-    "text": "I'll be livestreaming The Tashan Reed Show at 7 p.m. ET tomorrow. We'll discuss the #Commanders ' loss to the Colts, all of the injuries, Jayden Daniels' looming return, the Giants matchup and more. Join here: 397861",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/390/963/949/833/733/original/40b0bcf016abc085.jpg"
-    ],
-    "publishedAt": "2026-10-05T23:45:00.000Z",
-    "collectedAt": "2026-10-06T00:05:44.040Z"
-  },
-  "social-3ae46c87ffd9": {
-    "id": "social-3ae46c87ffd9",
-    "url": "https://x.com/FantasyProsNFL/status/2107252915333128529",
-    "text": "Jayden Daniels (elbow) hopeful to return in Week 5 4/jayden-daniels-elbow-hopeful-to-return-week-5.php?mp_feature=news&mp_platform=x&mp_sport=NFL via @koslow_ari@twitter.com #RaiseHail",
-    "handle": "FantasyProsNFL",
-    "author": "FantasyPros",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-10-05T23:33:40.000Z",
-    "collectedAt": "2026-10-06T00:05:56.263Z"
-  },
   "social-5c1ef4635efb": {
     "id": "social-5c1ef4635efb",
     "url": "https://x.com/BenStandig/status/2107275030518239308",
@@ -35,20 +9,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-10-06T01:01:33.000Z",
-    "collectedAt": "2026-10-06T01:07:00.516Z"
-  },
-  "social-fae68634fbd3": {
-    "id": "social-fae68634fbd3",
-    "url": "https://x.com/BenStandig/status/2107260808371531959",
-    "text": "Dan Quinn mostly ended up discussing injuries with reporters today. One player not mentioned provide his own updates. Yikes. @JR1ERA@twitter.com",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/391/042/505/958/344/original/b8171b2f9b11b583.jpg"
-    ],
-    "publishedAt": "2026-10-06T00:05:02.000Z",
     "collectedAt": "2026-10-06T01:07:00.516Z"
   },
   "social-5641257cda05": {
@@ -10010,5 +9970,17 @@
     "images": [],
     "publishedAt": "2026-10-15T22:33:15.000Z",
     "collectedAt": "2026-10-15T22:53:43.728Z"
+  },
+  "social-2943fb1d719d": {
+    "id": "social-2943fb1d719d",
+    "url": "https://x.com/NickiJhabvala/status/2110855963360342161",
+    "text": "Jayden Daniels said that the Commanders' clock-management gaffe that resulted in a tie to the Giants falls on him and that he told teammates it \"would never happen again.\"",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-15T22:10:54.000Z",
+    "collectedAt": "2026-10-16T00:05:12.144Z"
   }
 }
