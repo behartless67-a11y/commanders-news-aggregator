@@ -1,30 +1,4 @@
 {
-  "social-7ca5026e4bfa": {
-    "id": "social-7ca5026e4bfa",
-    "url": "https://x.com/JPFinlayNBCS/status/2107519870976115038",
-    "text": "I want an Ovi statue and I want it now",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-06T17:14:27.000Z",
-    "collectedAt": "2026-10-06T17:56:31.322Z"
-  },
-  "social-071b62b7d18f": {
-    "id": "social-071b62b7d18f",
-    "url": "https://x.com/JPFinlayNBCS/status/2107507885181947942",
-    "text": "8 different NFL tight ends have over 200+ receiving yards through 4 games. The Commanders tight ends combined have 10 catches for 65 yards in 4 games.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/394/906/529/446/000/original/95b128f929b05277.jpg"
-    ],
-    "publishedAt": "2026-10-06T16:26:50.000Z",
-    "collectedAt": "2026-10-06T17:56:31.322Z"
-  },
   "social-abb65eb9509d": {
     "id": "social-abb65eb9509d",
     "url": "https://x.com/john_keim/status/2107544348917187044",
@@ -250,18 +224,6 @@
     ],
     "publishedAt": "2026-10-07T01:23:38.000Z",
     "collectedAt": "2026-10-07T02:05:47.935Z"
-  },
-  "social-18005d395fca": {
-    "id": "social-18005d395fca",
-    "url": "https://x.com/Britt_Ghiroli/status/2107509498008961030",
-    "text": "I’ve lived in the area since 2010, and I’ve never seen as much anger aimed at the local baseball team as I am now. On what the Orioles Jim Palmer-Craig Albernaz unreturned text outrage is really about: 026/10/06/orioles-jim-palmer-text-craig-albernaz/?unlocked_article_code=1.GlE.2woY.OrYuklzm0kb5&source=emp_shared_article&smid=ta-ios-share",
-    "handle": "Britt_Ghiroli",
-    "author": "Britt Ghiroli",
-    "label": "",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-06T16:33:14.000Z",
-    "collectedAt": "2026-10-07T04:05:48.025Z"
   },
   "social-f6620bc4d393": {
     "id": "social-f6620bc4d393",
@@ -10259,5 +10221,17 @@
     "images": [],
     "publishedAt": "2026-10-16T15:08:38.000Z",
     "collectedAt": "2026-10-16T16:08:38.928Z"
+  },
+  "social-3a0045b6cda1": {
+    "id": "social-3a0045b6cda1",
+    "url": "https://x.com/NickiJhabvala/status/2111136327723016380",
+    "text": "Bill (groin) was not at practice. RB Rachaad White (shoulder) and RB Austin Ekeler (chest) were wearing no-contact jerseis. WR Terry McLaurin and OLB K'Lavon Chaisson had rest days.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-16T16:44:58.000Z",
+    "collectedAt": "2026-10-16T18:06:49.171Z"
   }
 }
