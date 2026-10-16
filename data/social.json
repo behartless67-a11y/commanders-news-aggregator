@@ -9982,5 +9982,69 @@
     "images": [],
     "publishedAt": "2026-10-15T22:10:54.000Z",
     "collectedAt": "2026-10-16T00:05:12.144Z"
+  },
+  "social-10daacc8e406": {
+    "id": "social-10daacc8e406",
+    "url": "https://x.com/Commanders/status/2110874239138148665",
+    "text": "LIVE: Command Center Podcast from @MGMNatlHarbor@twitter.com xM",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-15T23:23:31.000Z",
+    "collectedAt": "2026-10-16T00:05:39.544Z"
+  },
+  "social-b9db053744f7": {
+    "id": "social-b9db053744f7",
+    "url": "https://x.com/Commanders/status/2110873438458126565",
+    "text": "LIVE: Command Center Podcast from @MGMNatlHarbor@twitter.com JQ",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-15T23:20:20.000Z",
+    "collectedAt": "2026-10-16T00:05:39.544Z"
+  },
+  "social-7279cc3e14f4": {
+    "id": "social-7279cc3e14f4",
+    "url": "https://x.com/Commanders/status/2110867061886923035",
+    "text": "white on gold's first appearance since the 2015 regular season 🤩",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-15T22:55:00.000Z",
+    "collectedAt": "2026-10-16T00:05:39.545Z"
+  },
+  "social-577d251a229a": {
+    "id": "social-577d251a229a",
+    "url": "https://x.com/john_keim/status/2110881157466169591",
+    "text": "Mark Ein moderating a program for The Economic Club; talking to owners of the local teams. Yes that’s Josh Harris on the right.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/447/610/230/815/459/original/19772eefae277a6f.jpg"
+    ],
+    "publishedAt": "2026-10-15T23:51:00.000Z",
+    "collectedAt": "2026-10-16T00:05:42.321Z"
+  },
+  "social-28ecd37e4254": {
+    "id": "social-28ecd37e4254",
+    "url": "https://x.com/BenStandig/status/2110881925892087944",
+    "text": "Packed panel of D.C. sports owners at the Economic Club: 🏈 Josh Harris 🏒 🏀 Ted Leonsis ⚾️ David Rubenstein ⚽️ Michele Kang Moderated by Mark Ein Topic: Being an owner, basically.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/447/636/554/266/556/original/d2a907fa7d0a7c85.jpg"
+    ],
+    "publishedAt": "2026-10-15T23:54:04.000Z",
+    "collectedAt": "2026-10-16T00:05:43.961Z"
   }
 }

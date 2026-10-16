@@ -1,28 +1,4 @@
 {
-  "hogs-haven-f4c931b3f687": {
-    "id": "hogs-haven-f4c931b3f687",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-roster/436726/washington-commanders-53-man-roster-dan-quinn-adam-peters-press-conference-nick-allegretti-trey-amos-jayden-daniels",
-    "title": "Commanders takeaways from Dan Quinn, Adam Peters press conference",
-    "excerpt": "The Commanders formally set their initial 53-man roster on Sunday and then made some tweaks to it. Expect that pattern to continue over the next two weeks, as Washington prepares to play the Philadelphia Eagles on Sept. 13 in the regular-season opener. \n\n Monday afternoon marked the first time head coach Dan Quinn and general manager Adam Peters spoke publicly since the weekend’s roster cuts, and they explained why actions were taken and how this team was formed. \n\n Here are some key takeaways…",
-    "publishedAt": "2026-09-01T00:03:17.000Z",
-    "collectedAt": "2026-09-01T00:06:25.403Z"
-  },
-  "yahoo-nfl-d3e3b1ee8af2": {
-    "id": "yahoo-nfl-d3e3b1ee8af2",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/five-takeaways-dan-quinn-adam-000317706.html",
-    "title": "Five takeaways from Dan Quinn, Adam Peters press conference after Commanders roster cuts",
-    "excerpt": "The Commanders formally set their initial 53-man roster on Sunday and then made some tweaks to it. Expect that pattern to continue over the next two weeks, as Washington prepares to play the Philadelphia Eagles on Sept. 13 in the regular-season opener. \n Monday afternoon marked the first time head coach Dan Quinn and general manager Adam Peters spoke publicly since the weekend’s roster cuts, and they explained why actions were taken and how this team was formed. \n Here are some key takeaways…",
-    "publishedAt": "2026-09-01T00:03:17.000Z",
-    "collectedAt": "2026-09-01T02:06:25.756Z"
-  },
   "riggos-rag-6d7581229919": {
     "id": "riggos-rag-6d7581229919",
     "sourceId": "riggos-rag",
@@ -17050,5 +17026,29 @@
     "excerpt": "Commanders running back Bill Croskey-Merritt had his best game of this early season on Sunday, turning in 82 yards and a touchdown on just 11 carries. His high per carry average was boosted by an explosive touchdown, but Croskey-Merritt came out of Sunday’s 27-27 draw with the New York Giants a bit banged up. \n\n He did not participate in Thursday’s practice with a groin injury, per the Commanders. Head coach Dan Quinn didn’t address the issue during his press conference earlier in the day, so…",
     "publishedAt": "2026-10-15T22:30:48.000Z",
     "collectedAt": "2026-10-15T22:53:27.249Z"
+  },
+  "commanders-youtube-fd038e0d805a": {
+    "id": "commanders-youtube-fd038e0d805a",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=ygd6OHf9VeQ",
+    "title": "LIVE: Command Center Podcast From MGM National Harbor Previewing Commanders vs. 49ers",
+    "excerpt": "",
+    "publishedAt": "2026-10-15T23:23:29.000Z",
+    "collectedAt": "2026-10-16T00:05:33.944Z"
+  },
+  "yahoo-nfl-655bce98478c": {
+    "id": "yahoo-nfl-655bce98478c",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-vs-49ers-thursday-injury-223048141.html",
+    "title": "Commanders vs. 49ers Thursday injury report: Key Washington RB a surprise DNP",
+    "excerpt": "Commanders running back Bill Croskey-Merritt had his best game of this early season on Sunday, turning in 82 yards and a touchdown on just 11 carries. His high per carry average was boosted by an explosive touchdown, but Croskey-Merritt came out of Sunday’s 27-27 draw with the New York Giants a bit banged up. \n He did not participate in Thursday’s practice with a groin injury, per the Commanders. Head coach Dan Quinn didn’t address the issue during his press conference earlier in the day, so…",
+    "publishedAt": "2026-10-15T22:30:48.000Z",
+    "collectedAt": "2026-10-16T00:05:38.161Z"
   }
 }

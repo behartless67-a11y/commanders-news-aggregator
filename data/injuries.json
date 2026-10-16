@@ -14,10 +14,24 @@
     "notes": null
   },
   {
+    "name": "Fabian Moreau",
+    "position": "CB",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
     "status": "Questionable",
     "bodyPart": "Groin",
+    "notes": null
+  },
+  {
+    "name": "Javontae Jean-Baptiste",
+    "position": "DL",
+    "status": "Questionable",
+    "bodyPart": "Pectoral",
     "notes": null
   },
   {
@@ -39,6 +53,13 @@
     "position": "RB",
     "status": "IR",
     "bodyPart": "Quadriceps",
+    "notes": null
+  },
+  {
+    "name": "Jeremy Reaves",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Ribs",
     "notes": null
   },
   {
@@ -74,6 +95,13 @@
     "position": "DB",
     "status": "Questionable",
     "bodyPart": "Hamstring",
+    "notes": null
+  },
+  {
+    "name": "Quan Martin",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Illness",
     "notes": null
   },
   {
