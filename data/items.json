@@ -1,28 +1,4 @@
 {
-  "commanders-official-3886b135b0f8": {
-    "id": "commanders-official-3886b135b0f8",
-    "sourceId": "commanders-official",
-    "sourceName": "Commanders.com",
-    "sourceHomepage": "https://www.commanders.com/news/",
-    "category": "team",
-    "url": "https://www.commanders.com/news/commanders-to-pay-tribute-to-sonny-jurgensen-and-monte-coleman-at-halftime-of-home-opener",
-    "title": "Commanders to pay tribute to Sonny Jurgensen and Monte Coleman at halftime of home opener",
-    "excerpt": "Washington will honor two franchise greats who passed away this year during the team’s home opener against the Seattle Seahawks on Sept. 27.",
-    "publishedAt": "2026-09-01T19:00:10.000Z",
-    "collectedAt": "2026-09-01T20:06:20.555Z"
-  },
-  "hogs-haven-65f277a975d8": {
-    "id": "hogs-haven-65f277a975d8",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/436922/commanders-center-nick-allegretti-matt-gulbin-adam-peters",
-    "title": "What Commanders OL Nick Allegretti said about rehab, return to lineup",
-    "excerpt": "Nick Allegretti has been the subject of more Commanders conversation than offensive linemen typically generate. A nagging calf strain that stole most of his training camp, a vital period for the presumptive starting center after playing guard most of his NFL career. \n\n Washington’s backup plans proved faulty, with Julian Good-Jones struggling to provide stability and sixth-round rookie Matt Gulbin needing expected time to develop. \n\n That left the fan base up in arms, especially following Tyler…",
-    "publishedAt": "2026-09-01T19:33:49.000Z",
-    "collectedAt": "2026-09-01T20:06:20.840Z"
-  },
   "atoz-sports-c8f7f5972c1a": {
     "id": "atoz-sports-c8f7f5972c1a",
     "sourceId": "atoz-sports",
@@ -17158,5 +17134,65 @@
     "excerpt": "Washington Commanders offensive coordinator David Blough took blame for the infamous Week 5 blunder that went beyond Dan Quinn.",
     "publishedAt": "2026-10-16T17:30:00.000Z",
     "collectedAt": "2026-10-16T18:07:11.646Z"
+  },
+  "hogs-haven-19e2fca7098c": {
+    "id": "hogs-haven-19e2fca7098c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/449536/commanders-giants-tie-david-blough-dan-quinn-jayden-daniels-clock-week-5",
+    "title": "We may never know full story of Commanders end-of-game events vs. Giants",
+    "excerpt": "Commanders offensive coordinator David Blough was the latest in a line of players and coaches to talk about that Week 5 tie with the Giants where the clock was unfathomably allowed to run out before giving Drew Stevens a chance to convert a makable field-goal attempt. \n\n Like head coach Dan Quinn and quarterback Jayden Daniels before him , stood up and took responsibility for what went down. Blough said he thought extensively about the play and how he could’ve done better, emerging with resolve…",
+    "publishedAt": "2026-10-16T18:52:05.000Z",
+    "collectedAt": "2026-10-16T20:05:32.976Z"
+  },
+  "hogs-haven-c223be5f2821": {
+    "id": "hogs-haven-c223be5f2821",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/449465/david-blough-it-falls-on-meim-the-leader-of-the-unit",
+    "title": "David Blough: It falls on me…I’m the leader of the unit",
+    "excerpt": "The Washington Commanders are preparing for a Monday Night Football game against the San Francisco 49ers, but still getting asked about the finish to last week’s game against the Giants. This is the first time the media has had a chance to question Washington’s coordinators, but we’ve heard from Dan Quinn three times since the final play of overtime was bungled, resulting in a tie. \n\n There have been a lot of questions, assumptions, speculation, and third-hand reporting about what led to that…",
+    "publishedAt": "2026-10-16T16:07:49.000Z",
+    "collectedAt": "2026-10-16T20:05:32.976Z"
+  },
+  "riggos-rag-71adf7ce4a1b": {
+    "id": "riggos-rag-71adf7ce4a1b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/stefon-diggs-edges-closer-giving-washington-commanders-stronger-hand-prime-time",
+    "title": "Stefon Diggs edges closer to giving Commanders a stronger hand in prime time",
+    "excerpt": "Washington Commanders wide receiver Stefon Diggs made a timely return to practice ahead of Monday Night Football against the San Francisco 49ers.",
+    "publishedAt": "2026-10-16T19:00:01.000Z",
+    "collectedAt": "2026-10-16T20:05:33.698Z"
+  },
+  "yahoo-nfl-9d0eabe1d2b0": {
+    "id": "yahoo-nfl-9d0eabe1d2b0",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/may-never-know-full-story-185205642.html",
+    "title": "We may never know full story of Commanders end-of-game events vs. Giants (and why that’s okay)",
+    "excerpt": "Commanders offensive coordinator David Blough was the latest in a line of players and coaches to talk about that Week 5 tie with the Giants where the clock was unfathomably allowed to run out before giving Drew Stevens a chance to convert a makable field-goal attempt. \n Like head coach Dan Quinn and quarterback Jayden Daniels before him , stood up and took responsibility for what went down. Blough said he thought extensively about the play and how he could’ve done better, emerging with resolve…",
+    "publishedAt": "2026-10-16T18:52:05.000Z",
+    "collectedAt": "2026-10-16T20:05:39.521Z"
+  },
+  "yahoo-nfl-ef1bd509bcd4": {
+    "id": "yahoo-nfl-ef1bd509bcd4",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/3-things-watch-49ers-commanders-180100352.html",
+    "title": "3 things to watch for in 49ers-Commanders: Keep Jayden Daniels in the pocket",
+    "excerpt": "(Photo by Greg Fiume/Getty Images) | Getty Images The San Francisco 49ers look to extend their five-game winning streak against the Washington Commanders on Monday Night Football at Levi’s Stadium. The Commanders limp into this game with an injury report longer than the 49ers’ somehow and following a tie with the New York football Giants. After a very physical and tense matchup with the defending Super Bowl champions, the extra day of rest is right on time for the 49ers. Seattle fell to the…",
+    "publishedAt": "2026-10-16T18:01:00.000Z",
+    "collectedAt": "2026-10-16T20:05:39.521Z"
   }
 }

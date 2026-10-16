@@ -1,7 +1,31 @@
 {
   "subreddit": "Commanders",
-  "fetchedAt": "2026-10-16T18:08:21.273Z",
+  "fetchedAt": "2026-10-16T20:06:35.341Z",
   "posts": [
+    {
+      "id": "t3_1x7or64",
+      "author": "/u/mandoslorians",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/",
+      "at": "2026-10-16T18:57:07+00:00",
+      "title": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "what could this mean? (ball is life) submitted by /u/mandoslorians [link] [comments]"
+    },
+    {
+      "id": "t3_1x7ooeo",
+      "author": "/u/Local_Avocado_3552",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7ooeo/california_fans/",
+      "at": "2026-10-16T18:54:06+00:00",
+      "title": "California fans",
+      "body": "Anyone showing up for the game on Monday? I’m considering going last minute, just have a feeling it’s gonna be a brutal turnout for Commanders fans. We’re heavy underdogs at an away game across the country on prime time 😂 submitted by /u/Local_Avocado_3552 [link] [comments]"
+    },
+    {
+      "id": "t3_1x7o4mt",
+      "author": "/u/BeNicole2007",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7o4mt/about_two_months_ago_you_helped_me_build_a/",
+      "at": "2026-10-16T18:32:42+00:00",
+      "title": "About two months ago, you helped me build a Commanders news site. Here's what came of it...",
+      "body": "Back in August I posted the little Commanders news site I built, and I just wanted to thank you all for the honest feedback, the support and everything that you said to me. Again, this is not for money. It’s something my dad put in my stupid brain, I love this team, and I’ve met some of my lifelong friends through it. I’d say most things y’all asked for, I incorporated (or at least tried!). Nicki Jhabvala is finally in the social feed, there’s a depth chart and injury report, and I just started boiling every press conference down to five bullets. So while I was on version 0.0.0.1, it’s time to"
+    },
     {
       "id": "t3_1x7m5ph",
       "author": "/u/Waste-Cap8868",
@@ -2025,33 +2049,209 @@
       "at": "2026-10-07T20:08:14+00:00",
       "title": "Wednesday injury report (23 players listed)",
       "body": "submitted by /u/boumtjeboo [link] [comments]"
-    },
-    {
-      "id": "t3_1x06gos",
-      "author": "/u/Sumwhut_Loved",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x06gos/if_you_step_on_jd5s_foot_you_get_cut/",
-      "at": "2026-10-07T19:57:36+00:00",
-      "title": "if you step on JD5's foot you get cut...",
-      "body": "just a reminder to all players on the 53. submitted by /u/Sumwhut_Loved [link] [comments]"
-    },
-    {
-      "id": "t3_1x04xm0",
-      "author": "/u/SteelAndSalt",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x04xm0/you_guys_ever_read_the_book_into_the_wild/",
-      "at": "2026-10-07T18:53:54+00:00",
-      "title": "You guys ever read the book “Into the Wild”?",
-      "body": "In the book, which is based off a true story, Chris is from Annandale VA. He goes off on his wild adventure after high school and does the following: leaves his car in a river bed, burns his money, and changes his name. He literally wants to separate himself completely from his past and just live freely in the woods or whatever. But there is one point where he is living in some hippie community in the desert somewhere, and the people he’s with are trying to figure out where he’s actually from. At this point they mention he was rooting especially hard for the Washington Redskins while the game "
-    },
-    {
-      "id": "t3_1x04caz",
-      "author": "/u/ewilliam",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x04caz/keim_wr_stefon_diggs_was_not_on_the_practice/",
-      "at": "2026-10-07T18:30:50+00:00",
-      "title": "[Keim] WR Stefon Diggs was not on the practice field during the portion open to the media. Not sure why at this point.",
-      "body": "submitted by /u/ewilliam [link] [comments]"
     }
   ],
   "comments": [
+    {
+      "id": "t1_ph6dhdo",
+      "author": "/u/cocotess",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7o4mt/about_two_months_ago_you_helped_me_build_a/ph6dhdo/",
+      "at": "2026-10-16T20:05:57+00:00",
+      "onPost": "About two months ago, you helped me build a Commanders news site. Here's what came of it...",
+      "body": "you need caching and prefetching. everytime you change a tab it does a full page load, you need to employ SPA techniques. And then when revisiting a tab it's obviously doing a refetch of all the data. what tech stack are you using?"
+    },
+    {
+      "id": "t1_ph6crw6",
+      "author": "/u/99--Overall",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6crw6/",
+      "at": "2026-10-16T20:02:48+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "Maybe he will be a serious coach now"
+    },
+    {
+      "id": "t1_ph6ckt3",
+      "author": "/u/challenja",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x78wap/taylor_heinicke_had_his_odu_jersey_retired_last/ph6ckt3/",
+      "at": "2026-10-16T20:01:55+00:00",
+      "onPost": "Taylor Heinicke had his ODU jersey retired last night! Congrats to #TH4",
+      "body": "https://giphy.com/gifs/pCO5tKdP22RC8"
+    },
+    {
+      "id": "t1_ph6ck45",
+      "author": "/u/FannyNisbit",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7o6id/bill/ph6ck45/",
+      "at": "2026-10-16T20:01:50+00:00",
+      "onPost": "Bill",
+      "body": "HAHAHAHAHAHA Above average. Thats funny. Bill would be a great #2 or is good in a committee. He is not in the mold of a Gibbs, Bijan, JT, Henry, CMC, Kyren, walker, etc."
+    },
+    {
+      "id": "t1_ph6cja7",
+      "author": "/u/httr20",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x78wap/taylor_heinicke_had_his_odu_jersey_retired_last/ph6cja7/",
+      "at": "2026-10-16T20:01:44+00:00",
+      "onPost": "Taylor Heinicke had his ODU jersey retired last night! Congrats to #TH4",
+      "body": "I never said I loved him, and in fact have said he was an average QB. Clearly you have something else going on if you feel the need to troll on Reddit."
+    },
+    {
+      "id": "t1_ph6c3zv",
+      "author": "/u/schmuckmulligan",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x75hcd/michaels_making_fun_of_us_on_the_broadcast_lol/ph6c3zv/",
+      "at": "2026-10-16T19:59:53+00:00",
+      "onPost": "Michaels making fun of us on the broadcast lol",
+      "body": "Yeah, you're right. I had the clock wrong in my head. I'm coming around to the opinion that running plays you don't have to when you don't have a timeout is inherently stupid. There are too many potential disasters -- an intentional grounding that costs you 10 yards and a runoff, an injury that forces a runoff, a bad sack, etc. Just kick the fucking field goal."
+    },
+    {
+      "id": "t1_ph6c1eb",
+      "author": "/u/smashmode",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6c1eb/",
+      "at": "2026-10-16T19:59:34+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "The number of people that are truly triggered by his backward hat is crazy"
+    },
+    {
+      "id": "t1_ph6bzdk",
+      "author": "/u/Ok-Personality8727",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x6b19g/positive_reality_check_the_pessimism_is_getting_a/ph6bzdk/",
+      "at": "2026-10-16T19:59:19+00:00",
+      "onPost": "Positive reality check: the pessimism is getting a bit much.",
+      "body": "Good teams don’t make excuses about their schedule. They are the tough schedule."
+    },
+    {
+      "id": "t1_ph6bwlp",
+      "author": "/u/Lyt_Diamond_Hands",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6bwlp/",
+      "at": "2026-10-16T19:58:59+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "Quinn finally dialling in: https://preview.redd.it/hxeo70ngxvvh1.jpeg?width=1290&format=pjpg&auto=webp&s=5120de9bc8bec02e44859660e33bd5b180df7731"
+    },
+    {
+      "id": "t1_ph6bibo",
+      "author": "/u/Ok-Personality8727",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x6b19g/positive_reality_check_the_pessimism_is_getting_a/ph6bibo/",
+      "at": "2026-10-16T19:57:14+00:00",
+      "onPost": "Positive reality check: the pessimism is getting a bit much.",
+      "body": "Do you watch the NFL? Most games are competitive. Competitive or not isn’t the binary of good and bad NFL teams. It’s whether you win games or not. This isn’t a we’ll get them next week league."
+    },
+    {
+      "id": "t1_ph6bdyk",
+      "author": "/u/KnightOfLongview",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7o6id/bill/ph6bdyk/",
+      "at": "2026-10-16T19:56:41+00:00",
+      "onPost": "Bill",
+      "body": "did you watch the seahawks yesterday? I'm taking Bill over anything they have got, Texans don't have anything special. Green bay has nothing. Scat on the gmen is overrated. Cowboys have nobody. NO has the ghost of Kamara starting. Having Bill is hands down better than those teams, and there are many teams with starting backs that are right about the same level as Bill. Stop dooming and use your noodle."
+    },
+    {
+      "id": "t1_ph6b84q",
+      "author": "/u/SpyHill",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x6wzs2/maybe_im_insane_but_the_reaction_to_the_flub/ph6b84q/",
+      "at": "2026-10-16T19:55:58+00:00",
+      "onPost": "Maybe I'm insane, but ... the reaction to \"the flub\" seems crazy overblown at this point",
+      "body": "Hard disagree as a lifelong Caps and Redskins fan. If you said that about the Wizards you’d be right. I lived through and enjoyed 3 superbowl wins. I also enjoyed great Capitals teams with Mike Gartner and Peter Bondra. The Capitals have had a good fan base here since the late 70s. It’s different today, but not that different."
+    },
+    {
+      "id": "t1_ph6axoh",
+      "author": "/u/jakefromstatefire",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6axoh/",
+      "at": "2026-10-16T19:54:43+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "This season needs more of a turnaround than a hat but its a start"
+    },
+    {
+      "id": "t1_ph6ax5m",
+      "author": "/u/needadvice3241",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7o4mt/about_two_months_ago_you_helped_me_build_a/ph6ax5m/",
+      "at": "2026-10-16T19:54:39+00:00",
+      "onPost": "About two months ago, you helped me build a Commanders news site. Here's what came of it...",
+      "body": "I mostly use the site for the beat reporter feeds during games (so I don't have to get a Twitter account). One point of feedback is it seems like you only fetch the latest tweets at some fixed interval, meaning there's a lag between when Keim or Nicki post something and when it shows up on the site - a live feed would be more useful on gamedays."
+    },
+    {
+      "id": "t1_ph6asq2",
+      "author": "/u/mandoslorians",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6asq2/",
+      "at": "2026-10-16T19:54:06+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "🙂‍↕️"
+    },
+    {
+      "id": "t1_ph6aqty",
+      "author": "/u/mandoslorians",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6aqty/",
+      "at": "2026-10-16T19:53:52+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "I agree"
+    },
+    {
+      "id": "t1_ph6aptb",
+      "author": "/u/mandoslorians",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6aptb/",
+      "at": "2026-10-16T19:53:44+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "it’s damn good"
+    },
+    {
+      "id": "t1_ph6ajvz",
+      "author": "/u/Mil10dgr8",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6ajvz/",
+      "at": "2026-10-16T19:53:02+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "The culture is changing"
+    },
+    {
+      "id": "t1_ph6aa5g",
+      "author": "/u/FenderZero",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6aa5g/",
+      "at": "2026-10-16T19:51:51+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "https://i.redd.it/176erb47wvvh1.gif"
+    },
+    {
+      "id": "t1_ph6a7b3",
+      "author": "/u/ADLegend21",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6a7b3/",
+      "at": "2026-10-16T19:51:30+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "Blowout win for the Commanders incoming."
+    },
+    {
+      "id": "t1_ph6a5sj",
+      "author": "/u/Roland-Flagg",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph6a5sj/",
+      "at": "2026-10-16T19:51:19+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "We are putting up 49 against the 49ers"
+    },
+    {
+      "id": "t1_ph69e8x",
+      "author": "/u/needadvice3241",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7ln7x/few_guys_back_at_practice_today/ph69e8x/",
+      "at": "2026-10-16T19:47:56+00:00",
+      "onPost": "Few guys back at practice today🫡",
+      "body": "I would like to request no Mike please."
+    },
+    {
+      "id": "t1_ph698kk",
+      "author": "/u/Appropriate-Sun834",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph698kk/",
+      "at": "2026-10-16T19:47:15+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "Bring it home"
+    },
+    {
+      "id": "t1_ph692qb",
+      "author": "/u/mandoslorians",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph692qb/",
+      "at": "2026-10-16T19:46:32+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "The hat made it true"
+    },
+    {
+      "id": "t1_ph691rt",
+      "author": "/u/Punisher_B",
+      "link": "https://www.reddit.com/r/Commanders/comments/1x7or64/this_just_in_dan_quinn_was_seen_wearing_his_hat/ph691rt/",
+      "at": "2026-10-16T19:46:25+00:00",
+      "onPost": "this just in: dan quinn was seen wearing his hat the correct way",
+      "body": "Big if true."
+    },
     {
       "id": "t1_ph5lz78",
       "author": "/u/The_Lawlbringer",
@@ -6651,206 +6851,6 @@
       "at": "2026-10-14T17:55:59+00:00",
       "onPost": "Bill, what happened to his usage last week?",
       "body": "Lack of trust due his fumbles against the Eagles. If I'm not mistaken, Bill's last run was a 20 yarder at the end of the 3rd quarter. I would be okay with decisions like that being consistent but we have no problem playing Dyami Brown and throwing screens to him even though he's fumbled on nearly every screen play we've thrown to him since 2024."
-    },
-    {
-      "id": "t1_pgqh9eh",
-      "author": "/u/zipzap21",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5wpc3/bill_what_happened_to_his_usage_last_week/pgqh9eh/",
-      "at": "2026-10-14T17:55:52+00:00",
-      "onPost": "Bill, what happened to his usage last week?",
-      "body": "And the other half bewilder me!"
-    },
-    {
-      "id": "t1_pgqh8sg",
-      "author": "/u/wizkid78",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5vdjv/look_im_not_saying_it_will_happen_but_heres_why/pgqh8sg/",
-      "at": "2026-10-14T17:55:48+00:00",
-      "onPost": "Look I’m not saying it will happen, but here’s why there is still hope for this season 🙏🏾",
-      "body": "I ran a pretty realistic playoff predictor scenario that has us at 7-8-1 playing against the 7-9 cowboys for the division"
-    },
-    {
-      "id": "t1_pgqh8d5",
-      "author": "/u/HuckleberryHuge3752",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5ouk2/mnf_v_bengals/pgqh8d5/",
-      "at": "2026-10-14T17:55:45+00:00",
-      "onPost": "MNF V Bengals",
-      "body": "I have 4 lower bowl seats to sell (Section 141). DM if interested. Safe travels. Thx"
-    },
-    {
-      "id": "t1_pgqh3j1",
-      "author": "/u/Chief_Fever",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5t44w/jd5s_return/pgqh3j1/",
-      "at": "2026-10-14T17:55:13+00:00",
-      "onPost": "JD5's Return",
-      "body": "We have to forgive Jaysus as he is our only chance to get to the promised land. That’s why we need to put all the blame on the coaches."
-    },
-    {
-      "id": "t1_pgqgue0",
-      "author": "/u/Mad_Pupil_9",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5v0qu/sundays_bizarre_ending_masks_the_real_problem/pgqgue0/",
-      "at": "2026-10-14T17:54:12+00:00",
-      "onPost": "Sunday’s bizarre ending masks the real problem",
-      "body": "It’s both an offensive problem and a defensive depth problem. Particularly since playing defense is more tiring than offense since you’re reacting to what the opposing offense is doing. Since we’re rebuilding, we lack the depth to truly rotate players during series to keep the starters fresh late game."
-    },
-    {
-      "id": "t1_pgqgd2t",
-      "author": "/u/NoHoHan",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x3j4a2/you_cannot_keep_quinn_after_that_game_especially/pgqgd2t/",
-      "at": "2026-10-14T17:52:18+00:00",
-      "onPost": "You cannot keep Quinn after that game, especially that ending.",
-      "body": "I’d like to keep these guys, but the top priority is finding a new head coach. If that means we lose one or both of the coordinators, I won’t lose any sleep over it. I could see Bryan Flores coming in and saying “no I actually do want to keep Daronte”. Not sure if there’s a scenario where David Blough stays. From what I’ve seen, for both these coordinators, their main weakness is a failure to make timely in-game adjustments. They both are good at coming up with gameplans ahead of time, which is a valuable skill and shows potential, I think. Reacting in game to adjust, or calling all the right "
-    },
-    {
-      "id": "t1_pgqg7g1",
-      "author": "/u/Ok-Insect1505",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5xpwi/we_need_more_amik_robertson_energy_from_our_fans/pgqg7g1/",
-      "at": "2026-10-14T17:51:40+00:00",
-      "onPost": "We need more Amik Robertson energy from our fans.",
-      "body": "I don’t get why we don’t just have our first round super freak ex safety LB just tail him all game. He should’ve been shadowing likely all game too"
-    },
-    {
-      "id": "t1_pgqfzde",
-      "author": "/u/Responsible-Mud-2968",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5c03d/stupid/pgqfzde/",
-      "at": "2026-10-14T17:50:46+00:00",
-      "onPost": "Stupid",
-      "body": "I bought a Sam Howell Rookie card for $1k. Don’t feel too bad about"
-    },
-    {
-      "id": "t1_pgqfrgi",
-      "author": "/u/Ok-Insect1505",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5xaw9/jrfortgang_throwthedamball_on_x_jd_is_third_in/pgqfrgi/",
-      "at": "2026-10-14T17:49:54+00:00",
-      "onPost": "Jrfortgang (@throwthedamball) on X: JD is third in the NFL in the \"High PFF / High EPA\" quadrant",
-      "body": "If only we had a run game. There are teams like the bills and lions and panthers which have terrible defenses but still win because they run the ball so well, it’s easy for good passers to pick apart soft zones and stay ahead of schedule on 2nd and short. We could be like them if we could average 4-5 per carry"
-    },
-    {
-      "id": "t1_pgqfist",
-      "author": "/u/deafness",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5bu2s/sonny_styles_is_a_junkyard_dog/pgqfist/",
-      "at": "2026-10-14T17:48:56+00:00",
-      "onPost": "Sonny Styles is a junkyard dog",
-      "body": "For a second i thought this was Dan Quinn writing this on a burner account lol"
-    },
-    {
-      "id": "t1_pgqfi9p",
-      "author": "/u/Haskins77",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5xpwi/we_need_more_amik_robertson_energy_from_our_fans/pgqfi9p/",
-      "at": "2026-10-14T17:48:52+00:00",
-      "onPost": "We need more Amik Robertson energy from our fans.",
-      "body": "He’s only been here for 5 games. Try 35 plus years and get back to me."
-    },
-    {
-      "id": "t1_pgqfhip",
-      "author": "/u/Uniblab_78",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x583vs/mikey_film/pgqfhip/",
-      "at": "2026-10-14T17:48:47+00:00",
-      "onPost": "Mikey Film",
-      "body": "They definitely have an alert to when Mike is in the game. He is going to have to make them pay with a couple of picks. Of the lowlights the pick play didn’t look like 100% his fault. On the Nabor’s TD, he may have been baiting for a pick."
-    },
-    {
-      "id": "t1_pgqfeou",
-      "author": "/u/Triad64",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5t44w/jd5s_return/pgqfeou/",
-      "at": "2026-10-14T17:48:28+00:00",
-      "onPost": "JD5's Return",
-      "body": "This is my take as well."
-    },
-    {
-      "id": "t1_pgqfbqh",
-      "author": "/u/iWearSkinyTies",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x58t7i/last_play_jayden_avoided_tripping/pgqfbqh/",
-      "at": "2026-10-14T17:48:09+00:00",
-      "onPost": "Last Play: Jayden Avoided Tripping",
-      "body": "I don't understand how Jayden isn't 1000 percent to blame for this. And him throwing the coaching under the bus says a lot about him. Y'all babying this kid just like his mama. I hate Quinn, but this was not on the coaching."
-    },
-    {
-      "id": "t1_pgpwz8s",
-      "author": "/u/NightwingArc",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5s5j4/one_positive_for_the_defense_tied_for_5th_in/pgpwz8s/",
-      "at": "2026-10-14T16:34:10+00:00",
-      "onPost": "One Positive for the Defense: Tied for 5th in Takeaways and 2nd in Turnover Differential",
-      "body": "The word “partially” already implies there’s more than one reason."
-    },
-    {
-      "id": "t1_pgpwx1o",
-      "author": "/u/The_Bard",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5ocoo/what_do_you_guys_think_of_this/pgpwx1o/",
-      "at": "2026-10-14T16:33:55+00:00",
-      "onPost": "What do you guys think of this?",
-      "body": "Theismann was mid until Joe Gibbs fixed him. If he played his whole career in the NFL for Gibbs he'd be a consideration"
-    },
-    {
-      "id": "t1_pgpwtmb",
-      "author": "/u/monknster",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5d7wj/told_you_about_quinn_and_peters/pgpwtmb/",
-      "at": "2026-10-14T16:33:31+00:00",
-      "onPost": "Told you about Quinn and Peter’s",
-      "body": "Buddy...what the heck are you talking about? If you have a crystal ball 🔮 please go apply to be our GM or for that matter go apply to be a GM anywhere else! Let's see how you do! All the told you so narratives keep forgetting one crucial fact, NFL is bunch of professionals and you can't expect to win like it's a Madden franchise."
-    },
-    {
-      "id": "t1_pgpwsqw",
-      "author": "/u/raiderMoes",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5v0qu/sundays_bizarre_ending_masks_the_real_problem/pgpwsqw/",
-      "at": "2026-10-14T16:33:26+00:00",
-      "onPost": "Sunday’s bizarre ending masks the real problem",
-      "body": "I’ll be controversial and say that Jayden is not as good as Marcus as in getting the team up to line and getting plays off smoothly."
-    },
-    {
-      "id": "t1_pgpwq2k",
-      "author": "/u/mycorona69",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5ocoo/what_do_you_guys_think_of_this/pgpwq2k/",
-      "at": "2026-10-14T16:33:08+00:00",
-      "onPost": "What do you guys think of this?",
-      "body": "Larry brown should be in!"
-    },
-    {
-      "id": "t1_pgpwgm6",
-      "author": "/u/POHoudini",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5v0qu/sundays_bizarre_ending_masks_the_real_problem/pgpwgm6/",
-      "at": "2026-10-14T16:32:03+00:00",
-      "onPost": "Sunday’s bizarre ending masks the real problem",
-      "body": "How many fucking threads do we need that yall cant get your hurt feelings out. https://giphy.com/gifs/zjuzfRbzBPW9YzyU0k"
-    },
-    {
-      "id": "t1_pgpwa8o",
-      "author": "/u/zainz24",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5s5j4/one_positive_for_the_defense_tied_for_5th_in/pgpwa8o/",
-      "at": "2026-10-14T16:31:20+00:00",
-      "onPost": "One Positive for the Defense: Tied for 5th in Takeaways and 2nd in Turnover Differential",
-      "body": "Then you should have mentioned it. (Just like I should have) It's not injuries than Coaching it's harder to coach without LT, QB, WR1 and WR2 at times and your starting LB, CB"
-    },
-    {
-      "id": "t1_pgpw7bp",
-      "author": "/u/Secure-Bear4184",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5vdjv/look_im_not_saying_it_will_happen_but_heres_why/pgpw7bp/",
-      "at": "2026-10-14T16:31:00+00:00",
-      "onPost": "Look I’m not saying it will happen, but here’s why there is still hope for this season 🙏🏾",
-      "body": "We should be getting a lot of players back too. 49ers only losing more as well. Besides bosa ofc he is coming back I believe"
-    },
-    {
-      "id": "t1_pgpw2eb",
-      "author": "/u/True_Window_9389",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5vdjv/look_im_not_saying_it_will_happen_but_heres_why/pgpw2eb/",
-      "at": "2026-10-14T16:30:27+00:00",
-      "onPost": "Look I’m not saying it will happen, but here’s why there is still hope for this season 🙏🏾",
-      "body": "Tbh, the last play was icing on the cake. I was more demoralized by the coaching in the rest of the game, including blowing the lead in the first place."
-    },
-    {
-      "id": "t1_pgpw1as",
-      "author": "/u/NightwingArc",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5s5j4/one_positive_for_the_defense_tied_for_5th_in/pgpw1as/",
-      "at": "2026-10-14T16:30:20+00:00",
-      "onPost": "One Positive for the Defense: Tied for 5th in Takeaways and 2nd in Turnover Differential",
-      "body": "It’s not only injuries. It’s also coaching. Which is why I said it’s part of the reason."
-    },
-    {
-      "id": "t1_pgpvx3q",
-      "author": "/u/dand06",
-      "link": "https://www.reddit.com/r/Commanders/comments/1x5vdjv/look_im_not_saying_it_will_happen_but_heres_why/pgpvx3q/",
-      "at": "2026-10-14T16:29:53+00:00",
-      "onPost": "Look I’m not saying it will happen, but here’s why there is still hope for this season 🙏🏾",
-      "body": "Agreed - the same can be said about the Eagles, Giants and Dallas - and that’s why the division is still within grabs. No one else has looked fantastic, and eventually someone is going to break out and finally take over , and it definitely won’t be Jameis Winston and the Giants."
     }
   ]
 }
