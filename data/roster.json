@@ -902,6 +902,31 @@
     }
   },
   {
+    "slug": "jordan-magee",
+    "name": "Jordan Magee",
+    "jersey": "58",
+    "position": "LB",
+    "espnId": "4568617",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4568617.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "2"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "quan-martin",
     "name": "Quan Martin",
     "jersey": "20",
@@ -1369,31 +1394,6 @@
         {
           "label": "TCKL",
           "value": "18"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "jordan-magee",
-    "name": "Jordan Magee",
-    "jersey": "58",
-    "position": "LB",
-    "espnId": "4568617",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4568617.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "2"
         },
         {
           "label": "SACK",
