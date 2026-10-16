@@ -231,6 +231,11 @@ function itemCard(item, index, rosterIndex) {
   const isOwnPost = CATEGORY_BADGE_CLASS[item.category] === 'badge-blog';
   const ownLabel = isOwnPost ? `<span class="card-label">${escapeHtml(CATEGORY_LABEL[item.category])}</span>` : '';
   const paywall = PAYWALLED_SOURCE_IDS.has(item.sourceId) ? '<span class="card-paywall">Paywall</span>' : '';
+  // A team video with a written breakdown (attachVideoNotes() in build.js)
+  // says so on its card, and the tag goes straight to it on the Videos page.
+  const breakdown = item.notes
+    ? `<a class="card-breakdown" href="videos.html#breakdown-${escapeHtml(item.notes.id)}">Breakdown</a>`
+    : '';
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
   const extra = index >= RIVER_INITIAL ? ' card-extra' : '';
   // Two sentences, everywhere: a full 500-character excerpt on every card made
@@ -274,7 +279,7 @@ function itemCard(item, index, rosterIndex) {
   return `
     <article class="card${extra}${item.pinned ? ' card-pinned' : ''}">
       <div class="card-top">
-        ${ownLabel}<span class="card-source">${escapeHtml(item.sourceName)}</span>${paywall}
+        ${ownLabel}<span class="card-source">${escapeHtml(item.sourceName)}</span>${paywall}${breakdown}
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
       </div>
       ${pinNote}
@@ -528,23 +533,82 @@ function tidyVideoTitle(title) {
   return trimmed || String(title || '');
 }
 
+/**
+ * A breakdown's bullets (data/video-notes.json; see attachVideoNotes() in
+ * build.js). Plain text, escaped like everything else that comes from data.
+ */
+function breakdownBullets(notes) {
+  return `<ul class="breakdown-list">${notes.bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join('')}</ul>`;
+}
+
 function videoCard(item) {
   const id = videoId(item.url);
   if (!id) return '';
   const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
+  // A video with a breakdown says so on the card itself, in gold, and the
+  // bullets sit under it in a native <details> (closed, so the rail looks the
+  // same as ever until someone wants them). Outside the <a>, since that link
+  // is the play button and HTML can't nest interactive content inside it.
+  const notes = item.notes;
+  const gist = notes
+    ? `
+          <details class="video-gist">
+            <summary>Read the breakdown</summary>
+            ${breakdownBullets(notes)}
+            <a class="video-gist-more" href="videos.html#breakdowns">Every breakdown this week &rarr;</a>
+          </details>`
+    : '';
   return `
-        <li class="video-card">
+        <li class="video-card${notes ? ' has-breakdown' : ''}">
           <a class="video-link" href="${escapeHtml(item.url)}" data-video-id="${escapeHtml(id)}" target="_blank" rel="noopener noreferrer">
             <span class="video-thumb">
               <img src="https://i.ytimg.com/vi/${escapeHtml(id)}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async" />
               <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z"/></svg></span>
             </span>
             <span class="video-meta">
+              ${notes ? '<span class="breakdown-tag">Breakdown</span>' : ''}
               <span class="video-title">${escapeHtml(tidyVideoTitle(item.title))}</span>
               ${when ? `<span class="video-time">${escapeHtml(when)}</span>` : ''}
             </span>
-          </a>
+          </a>${gist}
         </li>`;
+}
+
+/**
+ * The Videos page's "Press conferences in 60 seconds": every breakdown from
+ * the last two weeks (build.js), newest first, each with its bullets showing
+ * and a link to the whole video. Summaries, never transcripts: the videos are
+ * the team's, and the point is to send people to them.
+ */
+function breakdownSection(items) {
+  if (!items.length) return '';
+  const entries = items
+    .map((item) => {
+      const id = videoId(item.url);
+      if (!id) return '';
+      const n = item.notes;
+      const date = item.publishedAt ? formatLongDate(item.publishedAt) : '';
+      const meta = [n.kind, n.minutes ? `${n.minutes} min` : '', date].filter(Boolean).join(' · ');
+      return `
+      <article class="breakdown" id="breakdown-${escapeHtml(id)}">
+        <a class="breakdown-thumb" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}">
+          <img src="https://i.ytimg.com/vi/${escapeHtml(id)}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async" />
+        </a>
+        <div class="breakdown-body">
+          <p class="breakdown-meta">${escapeHtml(meta)}</p>
+          <h3 class="breakdown-title">${escapeHtml(n.label)}</h3>
+          ${breakdownBullets(n)}
+          <a class="breakdown-watch" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}">Watch the whole thing &rarr;</a>
+        </div>
+      </article>`;
+    })
+    .join('');
+  return `
+    <section class="breakdowns" id="breakdowns" aria-labelledby="breakdowns-heading">
+      <h2 class="breakdowns-heading" id="breakdowns-heading">Press conferences in 60 seconds</h2>
+      <p class="page-intro">The useful ones from the team's channel, boiled down from YouTube's own transcripts. Every one links to the full video.</p>
+${entries}
+    </section>`;
 }
 
 /**
@@ -2876,7 +2940,7 @@ ${footer(sources, generatedAt)}
  * this page is never linked to there; it still renders and works if visited
  * directly, same as any other page.
  */
-export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
+export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, videos = [], breakdowns = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null, isGameLive = false }) {
   const widget = videoWidget(videos);
   const description = `Recent Washington Commanders videos, played right from ${siteName} through YouTube's own embedded player.`;
   return `<!doctype html>
@@ -2910,6 +2974,7 @@ ${header('videos.html', hasWeekly, isGameLive)}
     <h1 class="podcasts-heading">Videos</h1>
     <p class="page-intro">The same clips from the video rail, on their own page.</p>
     ${widget || '<p class="river-empty">No videos yet — check back after the next build.</p>'}
+    ${breakdownSection(breakdowns)}
   </div>
 </main>
 

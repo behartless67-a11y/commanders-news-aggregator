@@ -1126,6 +1126,24 @@ main.layout{
   content: "·";
   margin-right: 10px;
 }
+/* "Breakdown" on a team video that has one (itemCard() in templates.js):
+   the gold uppercase of .card-label, so it reads as the site's own addition,
+   and a link to the breakdown on the Videos page. */
+.card-breakdown{
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+}
+.card-breakdown::before{
+  content: "·";
+  margin-right: 10px;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+.card-breakdown:hover{ text-decoration: underline; }
 
 .card-time{
   margin-left:auto;
@@ -1288,6 +1306,99 @@ main.layout{
 }
 
 .video-meta{ display: block; }
+
+/* Video breakdowns (videoCard() and breakdownSection() in templates.js). */
+.breakdown-tag{
+  display: block;
+  margin: 0 0 3px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.video-gist{
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.video-gist > summary{
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--gold);
+  list-style-position: inside;
+}
+.video-gist[open] > summary{ margin-bottom: 6px; }
+.breakdown-list{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.breakdown-list li{ margin: 0 0 6px; }
+.video-gist-more{
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.breakdowns{
+  margin: 36px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-soft);
+}
+.breakdowns-heading{
+  font-size: 22px;
+  margin: 0 0 6px;
+}
+.breakdown{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-soft);
+  scroll-margin-top: 16px;
+}
+.breakdown:target{ background: rgba(255, 182, 18, 0.05); }
+.breakdown-thumb img{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.breakdown-meta{
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.breakdown-title{
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.breakdown .breakdown-list{
+  font-size: 15px;
+  color: var(--text);
+}
+.breakdown-watch{
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+}
+@media (max-width: 640px){
+  .breakdown{ grid-template-columns: 1fr; gap: 12px; }
+  /* Full-width thumbnails would put a screen of picture between every two
+     breakdowns on a phone; this is enough to recognize the video. */
+  .breakdown-thumb{ max-width: 220px; }
+}
 
 .video-title{
   display: block;
@@ -3117,7 +3228,14 @@ main.layout{
 /* Mostly visited on a phone (see the mobile-only nav link in header()), but
    still readable if opened on a wider screen — capped rather than letting
    the video cards stretch full-bleed across a desktop layout-wide page. */
+/* The clips stay in their 480px column; the page around them widens so the
+   breakdowns underneath (breakdownSection() in templates.js) read as prose
+   rather than a column of three-word lines. */
 .videos-page{
+  max-width: 860px;
+}
+.videos-page .widget-videos,
+.videos-page > .page-intro{
   max-width: 480px;
 }
 

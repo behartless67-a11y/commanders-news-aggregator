@@ -99,6 +99,36 @@ function heroImageForDate(pool, date) {
 }
 
 /**
+ * Breakdowns of the team's press conferences and podcasts, written by hand
+ * from YouTube's own transcripts and kept in data/video-notes.json, keyed by
+ * YouTube video id. How they get made is in docs/how-everything-works.md
+ * ("Video breakdowns"): YouTube refuses transcript requests from a build
+ * server, and there's no model in the pipeline to summarize one anyway.
+ * A missing file just means no breakdowns.
+ */
+async function loadVideoNotes() {
+  try {
+    return JSON.parse(await fs.readFile(path.resolve('data/video-notes.json'), 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Hangs each breakdown on its video's own item, so every place the video
+ * shows up (the river card, the rail card, the Videos page) knows there's
+ * one and can say so. Ben asked for exactly that: anywhere a video has a
+ * breakdown, the reader should be able to tell.
+ */
+const BREAKDOWN_WINDOW_MS = 14 * 24 * 60 * 60 * 1000;
+function attachVideoNotes(items, notes) {
+  return items.map((item) => {
+    const id = (String(item.url || '').match(/[?&]v=([A-Za-z0-9_-]{11})/) || [])[1];
+    return id && notes[id] ? { ...item, notes: { ...notes[id], id } } : item;
+  });
+}
+
+/**
  * The ten newest of Ben's own posts, for the admin newsletter panel's "Start
  * from a post" picker: everything a Hail Mail email about the post needs,
  * with absolute URLs, since an email has no page to resolve a relative one
@@ -232,7 +262,7 @@ export async function buildSite() {
 
   // Each page is capped to its most recent N rather than rendering the full
   // backlog the store has accumulated since the last prune.
-  const allSorted = sortedItems(itemsWithBlog);
+  const allSorted = attachVideoNotes(sortedItems(itemsWithBlog), await loadVideoNotes());
   // Pin before capping, so a fresh post can't be cut by MAX_RIVER_ITEMS on the
   // way to the top. allSorted stays in pure date order for the video rail and
   // mention counts below, neither of which should see the pinned reordering.
@@ -242,6 +272,13 @@ export async function buildSite() {
   // Drawn from the whole store, not the capped river — the rail shouldn't empty
   // out just because a busy news week pushed the clips past MAX_RIVER_ITEMS.
   const videos = allSorted.filter((item) => VIDEO_SOURCE_IDS.has(item.sourceId)).slice(0, MAX_VIDEOS);
+  // Every breakdown from the last two weeks, for the Videos page. The rail
+  // only holds the six newest uploads, and the team posts enough that a
+  // Wednesday press conference has rolled off it by Sunday, well before its
+  // breakdown stops being worth reading.
+  const breakdowns = allSorted.filter(
+    (item) => item.notes && VIDEO_SOURCE_IDS.has(item.sourceId) && Date.now() - Date.parse(item.publishedAt) < BREAKDOWN_WINDOW_MS,
+  );
   const generatedAt = new Date().toISOString();
 
   // Null (not an empty index) when the cache is empty, so linkPlayers()
@@ -355,7 +392,7 @@ export async function buildSite() {
 
   await fs.writeFile(
     path.join(DIST_DIR, 'videos.html'),
-    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, games, betting, teamStats, standings, gameWeek }),
+    renderVideosPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, videos, breakdowns, games, betting, teamStats, standings, gameWeek }),
     'utf8',
   );
 

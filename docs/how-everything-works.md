@@ -247,6 +247,24 @@ Readers pick the score of the next game. After they vote they see their pick and
 
 ---
 
+## Video breakdowns ("Press conferences in 60 seconds")
+
+Short written breakdowns of the team's press conferences and podcasts, added Oct 16. Five bullets each, never the transcript itself (the videos are the team's, and the point is to send people to them).
+
+**Where they show up.** Anywhere a video with a breakdown appears, it says so (Ben's ask):
+- the headline feed: a gold **Breakdown** tag on the video's card, linking to it on the Videos page
+- the sidebar video box: a gold **Breakdown** tag on the card, plus a closed "Read the breakdown" dropdown
+- the Videos page: a "Press conferences in 60 seconds" section with every breakdown from the last two weeks, newest first
+
+**How one gets made.** By hand, in a Claude session, because nothing can do it unattended: YouTube refuses transcript requests from build servers (two methods tried Oct 16, both came back empty), and there's no model in the pipeline to summarize anyway. Ben says "do the video notes" (Thursday or Friday of game week is the sweet spot), and Claude:
+1. picks the worthwhile uploads from the team's channel (press conferences, Command Center; skip mic'd-up and hype videos)
+2. opens each in Ben's Chrome, clicks "Show transcript," and reads the panel (`get_page_text` returns the whole thing)
+3. writes five bullets, checks every name against `data/roster.json` (auto-captions spell nicknames phonetically: "Meek"/"Mikey" is Mike Sainristil, "Chig" is Chig Okonkwo, "J-Mack" is Jeremy McNichols), no em dashes
+4. adds an entry to `data/video-notes.json`, keyed by the YouTube video id (the `v=` part of the URL): `label` ("Jayden Daniels, Thursday"), `kind` ("Press conference" or "Team podcast"), `minutes`, `writtenAt`, `bullets`
+5. previews, and ships when Ben says go
+
+---
+
 ## The Email Popup (Subscribe Modal)
 
 - Shows on the 10th, 20th, 30th... visit for a given browser

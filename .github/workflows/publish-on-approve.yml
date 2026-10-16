@@ -11,6 +11,10 @@ on:
       # is no approval gate to fire this workflow later, so without this path
       # the post sat unbuilt until nightly.yml's next 4-hour tick.
       - 'data/originals/**'
+      # Video breakdowns are hand-written too, usually in a commit of their own
+      # on a Thursday or Friday of game week, and they're worth having up
+      # before the weekend rather than at the next 4-hour nightly tick.
+      - 'data/video-notes.json'
       # And a post is only as live as the templates that render it: shipping
       # markup or CSS for a new post shape in one push and the post itself in
       # another would deploy them hours apart.
