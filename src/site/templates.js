@@ -1062,7 +1062,7 @@ function riverPollCard(poll) {
 function postPoll(record, poll) {
   if (!record.pollGame) return '';
   if (poll && poll.key === record.pollGame) {
-    return predictionWidget(poll, { id: 'call-your-shot-post', className: 'post-poll', heading: 'Your turn: call your shot' });
+    return predictionWidget(poll, { id: 'call-your-shot-post', className: 'post-poll', heading: 'Call your shot' });
   }
   return `<div class="post-poll-results" data-game="${escapeHtml(record.pollGame)}" hidden></div>`;
 }

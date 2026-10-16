@@ -241,7 +241,7 @@ Readers pick the score of the next game. After they vote they see their pick and
 #### Asking for picks
 
 - **On phones** the same card also appears after the third headline (it's hidden on desktop, where the sidebar copy is already on screen), and the "Call your shot" chip under the headlines jumps to it. Links to `#call-your-shot` land there on a phone.
-- **In a pregame post:** add `"pollGame": "2026-10-19-SF"` to the post's JSON. While that game's picks are open, the post ends with the poll ("Your turn: call your shot"). Once the game's final, the same spot turns into **"Readers called it"**: the final, the crowd's median, the closest named calls and a link to the standings. Put the same `pollGame` on the post-game Monday post to get that box there too.
+- **In a pregame post:** add `"pollGame": "2026-10-19-SF"` to the post's JSON. While that game's picks are open, the post ends with the poll ("Call your shot"). Once the game's final, the same spot turns into **"Readers called it"**: the final, the crowd's median, the closest named calls and a link to the standings. Put the same `pollGame` on the post-game Monday post to get that box there too.
 - **In Hail Mail:** every issue sent while picks are open gets a small "Call your shot" box under your text, with kickoff time and a link. Nothing to remember. If your issue already links to `#call-your-shot`, it's skipped so it doesn't ask twice.
 - **In the Monday corpus:** `npm run monday:corpus` now includes a "Call your shot" section (final, crowd median, closest calls, top five), read from the live site, for the "Readers called it" line in the post.
 

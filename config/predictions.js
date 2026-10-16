@@ -13,6 +13,8 @@
 export const BEN_PICKS = {
   // "Full Volume" (data/originals/full-volume.json), Oct 8: we keep it close, then pull away.
   '2026-10-11-NYG': { commanders: 24, opponent: 20 },
+  // "Turning the Page" (data/originals/turning-the-page.json), Oct 16: we win, and only God knows why.
+  '2026-10-19-SF': { commanders: 17, opponent: 16 },
 };
 
 /**

@@ -111,6 +111,13 @@
     "alt": "The headline \"Three Thousand\" over a photo, with The Burgundy Wire logo.",
     "clean": "share/clean-original-three-thousand.jpg"
   },
+  "original-turning-the-page": {
+    "file": "share/original-turning-the-page.jpg",
+    "w": 1200,
+    "h": 630,
+    "alt": "The headline \"Turning the Page: 17-16, a Birthday and Two Scary Terrys\" over a photo, with The Burgundy Wire logo.",
+    "clean": "share/clean-original-turning-the-page.jpg"
+  },
   "original-two-weeks-out-one-massive-injury-and-a-pbr-i-havent-earned-yet": {
     "file": "share/original-two-weeks-out-one-massive-injury-and-a-pbr-i-havent-earned-yet.jpg",
     "w": 1200,
