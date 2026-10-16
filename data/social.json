@@ -1,16 +1,4 @@
 {
-  "social-239e4450b360": {
-    "id": "social-239e4450b360",
-    "url": "https://x.com/Commanders/status/2107599282769391838",
-    "text": "what we mean by Baklava Bomber",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-06T22:30:00.000Z",
-    "collectedAt": "2026-10-06T23:33:42.389Z"
-  },
   "social-ea475ac85a9b": {
     "id": "social-ea475ac85a9b",
     "url": "https://x.com/john_keim/status/2107611392618766677",
@@ -10321,5 +10309,29 @@
     "images": [],
     "publishedAt": "2026-10-16T22:02:28.000Z",
     "collectedAt": "2026-10-16T22:05:49.901Z"
+  },
+  "social-a1c37719b4ed": {
+    "id": "social-a1c37719b4ed",
+    "url": "https://x.com/tashanreed/status/2111218639038755032",
+    "text": "#Commanders DT Javon Kinlaw missed practice today due to ankle/knee injuries. He was a full participant yesterday. It wasn't for rest.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-16T22:12:02.000Z",
+    "collectedAt": "2026-10-16T22:31:31.334Z"
+  },
+  "social-270b937e7123": {
+    "id": "social-270b937e7123",
+    "url": "https://x.com/tashanreed/status/2111217739738353771",
+    "text": "This means something to me!",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-16T22:08:28.000Z",
+    "collectedAt": "2026-10-16T22:31:31.334Z"
   }
 }
