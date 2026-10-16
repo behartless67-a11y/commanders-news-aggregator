@@ -1,5 +1,6 @@
 import { getStore } from '@netlify/blobs';
 import { TZ } from '../../src/lib/dates.js';
+import { isAuthorized } from './_auth.js';
 
 /**
  * Fired by two tiny beacons in site.js — the only way to get real traffic
@@ -255,6 +256,21 @@ export default async (req, context) => {
     if (!allowed.some((h) => refHost === h || refHost.endsWith('.' + h))) {
       return new Response('Forbidden', { status: 403 });
     }
+  }
+
+  // Ben's own browsing doesn't count: either a live admin session, or the
+  // year-long bw_owner marker the admin page sets (see loadStats() in the
+  // admin page script). Checked here, not in site.js, because the session
+  // cookie is HttpOnly. site.js used to look for it in document.cookie, where
+  // it can never appear, so until Oct 16 every one of Ben's pageviews was
+  // counted, and the 5,000th visit could in principle have been his. (It
+  // wasn't: his Chrome has no bw_milestone.)
+  const cookies = req.headers.get('cookie') || '';
+  if (isAuthorized(req) || /(?:^|;\s*)bw_owner=1(?:;|$)/.test(cookies)) {
+    return new Response(JSON.stringify({ country: null, milestone: null }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+    });
   }
 
   const body = await req.json().catch(() => ({}));

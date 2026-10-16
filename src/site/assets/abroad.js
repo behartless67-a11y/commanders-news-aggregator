@@ -573,7 +573,9 @@
 
   function storedState() { try { return localStorage.getItem(STORE_KEY); } catch (e) { return null; } }
   function remember(v) { try { localStorage.setItem(STORE_KEY, v); } catch (e) {} }
-  function isAdmin() { return document.cookie.split(';').some(function (c) { return c.trim().indexOf('admin_session=') === 0; }); }
+  // bw_owner, not admin_session: the session cookie is HttpOnly and never
+  // shows up in document.cookie (see track.js).
+  function isAdmin() { return document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; }); }
   function param(name) { return new URLSearchParams(window.location.search).get(name); }
 
   function supported(tag) {

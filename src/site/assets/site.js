@@ -709,8 +709,9 @@
   // Add ?country=DE to preview the version a reader outside the US gets.
   if (forcedMilestone > 0) celebrateMilestone(forcedMilestone, true, forcedCountry || null);
 
-  if (document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); })) {
-    // admin browsing — don't count this
+  if (document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; })) {
+    // Ben's own browser (bw_owner, set by the admin page): don't count it.
+    // track.js checks too, since this is only the cheap early exit.
   } else
   fetch('/.netlify/functions/track', {
     method: 'POST',
@@ -769,7 +770,7 @@
     var BAR_KEY = 'bw_bar_dismissed';
     function dismissed() { try { return Boolean(localStorage.getItem(BAR_KEY)); } catch { return true; } }
     function dismiss() { try { localStorage.setItem(BAR_KEY, '1'); } catch {} }
-    function isAdmin() { return document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); }); }
+    function isAdmin() { return document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; }); }
     function subscribed() { try { return Boolean(localStorage.getItem('bw_sub')); } catch { return false; } }
     if (dismissed() || subscribed() || isAdmin()) return;
     setTimeout(function () {
@@ -1078,7 +1079,7 @@
       markSeen();
     }
     function isAdmin() {
-      return document.cookie.split(';').some(function (c) { return c.trim().startsWith('admin_session='); });
+      return document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; });
     }
 
     modal.querySelector('#subscribe-dismiss').addEventListener('click', close);

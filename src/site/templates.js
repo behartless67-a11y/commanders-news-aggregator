@@ -4239,6 +4239,14 @@ ${footer(sources, generatedAt)}
     fetch('/.netlify/functions/admin-stats', { credentials: 'same-origin' })
       .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
       .then(function (data) {
+        // The stats only load for a real admin session, so this is the moment
+        // to mark this browser as Ben's for a year: track.js stops counting
+        // its pageviews, and the newsletter popup and bar leave it alone. The
+        // session cookie can't do that job, because it's HttpOnly (invisible
+        // to page scripts, on purpose) and only lasts 12 hours. bw_owner is
+        // not a credential; anyone setting it by hand only stops counting
+        // themselves.
+        document.cookie = 'bw_owner=1; Max-Age=31536000; Path=/; Secure; SameSite=Lax';
         // Derived from data already being collected, not a new counter of its
         // own — "pages per visit" is just views divided by uniques over the
         // same 14-day window the daily chart already carries.
