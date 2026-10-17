@@ -1,70 +1,4 @@
 {
-  "social-d7a4db481e60": {
-    "id": "social-d7a4db481e60",
-    "url": "https://x.com/Commanders/status/2107871373045665866",
-    "text": "LIVE: HC Dan Quinn speaks to the media before practice KN",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-07T16:31:12.000Z",
-    "collectedAt": "2026-10-07T17:21:12.185Z"
-  },
-  "social-9a43dee5092d": {
-    "id": "social-9a43dee5092d",
-    "url": "https://x.com/Commanders/status/2107869812068126722",
-    "text": "We have made the following roster moves: - Released DT Jeffrey M’Ba from the practice squad - Signed WR Nick DeGennaro to the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/400/567/625/090/487/original/1c1a7948b0d6040e.jpg"
-    ],
-    "publishedAt": "2026-10-07T16:25:00.000Z",
-    "collectedAt": "2026-10-07T17:21:12.185Z"
-  },
-  "social-b6453f87bf14": {
-    "id": "social-b6453f87bf14",
-    "url": "https://x.com/Commanders/status/2107868555098153318",
-    "text": "CB Trey Amos, DE Deatrich Wise Jr. and RB Jeremy McNichols have all returned to practice and their 21-day windows have been opened",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/400/542/743/718/825/original/3636dd1b69f18c13.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/400/542/779/421/150/original/9efb31ae2cf3fe6d.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/400/542/811/742/368/original/bddb23c583511349.jpg"
-    ],
-    "publishedAt": "2026-10-07T16:20:00.000Z",
-    "collectedAt": "2026-10-07T17:21:12.186Z"
-  },
-  "social-e95be614990c": {
-    "id": "social-e95be614990c",
-    "url": "https://x.com/JPFinlayNBCS/status/2107874887264084020",
-    "text": "Dan Quinn says pre-snap penalties are his top focus working with the offense this week. Those flags have killed Washington, nullified 2 TDs in the last 2 weeks",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-07T16:45:10.000Z",
-    "collectedAt": "2026-10-07T17:21:13.846Z"
-  },
-  "social-76d5b854e1a9": {
-    "id": "social-76d5b854e1a9",
-    "url": "https://x.com/JPFinlayNBCS/status/2107873692344614938",
-    "text": "Dan Quinn on Laremy Tunsil's rehab: There's not a timeline yet but they're pleased. \"It's a longer recovery in that spot\"",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-07T16:40:25.000Z",
-    "collectedAt": "2026-10-07T17:21:13.846Z"
-  },
   "social-8126c3a974a9": {
     "id": "social-8126c3a974a9",
     "url": "https://x.com/john_keim/status/2107882945059205256",
@@ -77,78 +11,6 @@
     "publishedAt": "2026-10-07T17:17:11.000Z",
     "collectedAt": "2026-10-07T17:21:15.312Z"
   },
-  "social-c7a28a0adeac": {
-    "id": "social-c7a28a0adeac",
-    "url": "https://x.com/john_keim/status/2107873563273572856",
-    "text": "Quinn said they're optimistic with Mariota will follow a similar path as his first sprained MCL. Probably miss two games then a bye. Of course if Jayden Daniels stays healthy, then no need for Mariota.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:39:54.000Z",
-    "collectedAt": "2026-10-07T17:21:15.312Z"
-  },
-  "social-0a31d7e0f884": {
-    "id": "social-0a31d7e0f884",
-    "url": "https://x.com/john_keim/status/2107873135299375351",
-    "text": "Dan Quinn said it's too early to know how quickly CB Trey Amos can get up to speed and be ready to play. Has had one practice since Week 10.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:38:12.000Z",
-    "collectedAt": "2026-10-07T17:21:15.312Z"
-  },
-  "social-7e5698e844db": {
-    "id": "social-7e5698e844db",
-    "url": "https://x.com/john_keim/status/2107872111436190069",
-    "text": "Terry McLaurin (hamstring) will work on a separate field today. Better updates later in the week.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:34:08.000Z",
-    "collectedAt": "2026-10-07T17:21:15.312Z"
-  },
-  "social-aa2aa171bd16": {
-    "id": "social-aa2aa171bd16",
-    "url": "https://x.com/john_keim/status/2107871221190643771",
-    "text": "As @NickiJhabvala@twitter.com said, no IR for Marcus Mariota. Confidence is there he can return within a couple weeks. Similar timetable to camp when he was hurt Aug 14 and returned to practice Sept. 1. Also saw enough good things from AK vs. the Colts.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:30:36.000Z",
-    "collectedAt": "2026-10-07T17:21:15.312Z"
-  },
-  "social-d57ba50d3c32": {
-    "id": "social-d57ba50d3c32",
-    "url": "https://x.com/john_keim/status/2107870054071128446",
-    "text": "Washington released DT Jeffrey M'Ba from the practice squad.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:25:57.000Z",
-    "collectedAt": "2026-10-07T17:21:15.313Z"
-  },
-  "social-c2ddf2a20e0f": {
-    "id": "social-c2ddf2a20e0f",
-    "url": "https://x.com/john_keim/status/2107869705671188550",
-    "text": "Washington opened the 21-day window for CB Trey Amos, DE Deatrich Wise Jr., and RB Jeremy McNichols. So all will return to practice today.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-07T16:24:34.000Z",
-    "collectedAt": "2026-10-07T17:21:15.313Z"
-  },
   "social-eb660e098555": {
     "id": "social-eb660e098555",
     "url": "https://x.com/BenStandig/status/2107878892887212482",
@@ -159,30 +21,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-10-07T17:01:05.000Z",
-    "collectedAt": "2026-10-07T17:21:16.493Z"
-  },
-  "social-4a98c35fcea1": {
-    "id": "social-4a98c35fcea1",
-    "url": "https://x.com/BenStandig/status/2107872100254199877",
-    "text": "Terry McLaurin (hamstring) will work on the side today at practice.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-07T16:34:05.000Z",
-    "collectedAt": "2026-10-07T17:21:16.493Z"
-  },
-  "social-12f91ad306db": {
-    "id": "social-12f91ad306db",
-    "url": "https://x.com/BenStandig/status/2107868945298440645",
-    "text": "CB Trey Amos, DE Deatrich Wise Jr. and RB Jeremy McNichols had their 21-day windows opened.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-07T16:21:33.000Z",
     "collectedAt": "2026-10-07T17:21:16.493Z"
   },
   "social-0e5a6fa6c492": {
@@ -221,30 +59,6 @@
     "publishedAt": "2026-10-07T17:13:24.000Z",
     "collectedAt": "2026-10-07T17:21:17.753Z"
   },
-  "social-4db97eaed832": {
-    "id": "social-4db97eaed832",
-    "url": "https://x.com/tashanreed/status/2107872450281373875",
-    "text": "Quinn said they've opened the practice windows for CB Trey Amos, RB Jeremy McNichols and DE Deatrich Wise. Those players now have 21 days to be moved to the roster.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-07T16:35:29.000Z",
-    "collectedAt": "2026-10-07T17:21:17.753Z"
-  },
-  "social-02eea8a65ac6": {
-    "id": "social-02eea8a65ac6",
-    "url": "https://x.com/tashanreed/status/2107872078602899483",
-    "text": "#Commanders HC Dan Quinn said WR Terry McLaurin (hamstring) won't practice today, but will work off to the side.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-07T16:34:00.000Z",
-    "collectedAt": "2026-10-07T17:21:17.753Z"
-  },
   "social-09a77bb0ba6a": {
     "id": "social-09a77bb0ba6a",
     "url": "https://x.com/AdamSchefter/status/2107883373436059651",
@@ -256,66 +70,6 @@
     "images": [],
     "publishedAt": "2026-10-07T17:18:53.000Z",
     "collectedAt": "2026-10-07T17:21:20.752Z"
-  },
-  "social-23c80a27f817": {
-    "id": "social-23c80a27f817",
-    "url": "https://x.com/NickiJhabvala/status/2107872256781103409",
-    "text": "Dan Quinn said he's hopeful the TE production will improve as Chig Okonkwo gets back into the weekly flow after he missed two games with a hamstring injury.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-07T16:34:43.000Z",
-    "collectedAt": "2026-10-07T18:05:12.545Z"
-  },
-  "social-7fec7825391c": {
-    "id": "social-7fec7825391c",
-    "url": "https://x.com/NickiJhabvala/status/2107872039050625496",
-    "text": "Dan Quinn said WR Terry McLaurin will work off to the side today at practice today.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-07T16:33:51.000Z",
-    "collectedAt": "2026-10-07T18:05:12.546Z"
-  },
-  "social-db686e487b73": {
-    "id": "social-db686e487b73",
-    "url": "https://x.com/NickiJhabvala/status/2107870759129399590",
-    "text": "Marcus Mariota will not go on IR for his MCL sprain, which his huge. Indicates the team believes he could be back within 2-3 weeks (he missed 2.5 weeks after his first MCL sprain in August). Means they may not need to get an outside veteran QB to tide them over, but we'll hear",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-07T16:28:45.000Z",
-    "collectedAt": "2026-10-07T18:05:12.546Z"
-  },
-  "social-9bfbf9d353d7": {
-    "id": "social-9bfbf9d353d7",
-    "url": "https://x.com/NickiJhabvala/status/2107869964766261320",
-    "text": "The Commanders designated CB Trey Amos, RB Jeremy McNichols and DE Deatrich Wise for return from IR. The team has 21 days to either activate them or leave them on IR for the remainder of the season.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-07T16:25:36.000Z",
-    "collectedAt": "2026-10-07T18:05:12.546Z"
-  },
-  "social-0675e61d1a8e": {
-    "id": "social-0675e61d1a8e",
-    "url": "https://x.com/NickiJhabvala/status/2107869905140011386",
-    "text": "The Commanders also released DT Jeffrey M’Ba from the practice squad.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-07T16:25:22.000Z",
-    "collectedAt": "2026-10-07T18:05:12.546Z"
   },
   "social-2834b9182ff0": {
     "id": "social-2834b9182ff0",
@@ -10269,5 +10023,151 @@
     "images": [],
     "publishedAt": "2026-10-17T15:17:23.000Z",
     "collectedAt": "2026-10-17T16:05:47.351Z"
+  },
+  "social-7a6a8337f24a": {
+    "id": "social-7a6a8337f24a",
+    "url": "https://x.com/Commanders/status/2111497365295431993",
+    "text": "LIVE: HC Dan Quinn speaks to the media after practice JQ",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-17T16:39:36.000Z",
+    "collectedAt": "2026-10-17T16:55:20.904Z"
+  },
+  "social-1aed63522fd1": {
+    "id": "social-1aed63522fd1",
+    "url": "https://x.com/Commanders/status/2111489886402551991",
+    "text": "heading out west @EASTERNMOTORS@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/457/127/713/046/774/original/62b358f72c8f394e.jpg"
+    ],
+    "publishedAt": "2026-10-17T16:09:53.000Z",
+    "collectedAt": "2026-10-17T16:55:20.905Z"
+  },
+  "social-5419a8aebf0b": {
+    "id": "social-5419a8aebf0b",
+    "url": "https://x.com/john_keim/status/2111498118642745346",
+    "text": "Ruled out for Monday: Bill Croskey-Merritt, Javontae Jean-Baptiste, Charles Omenihu and Marcus Mariota. Everyone else will travel to SF. Decisions on players such as Jeremy McNichols will be made Monday.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-17T16:42:35.000Z",
+    "collectedAt": "2026-10-17T16:55:23.733Z"
+  },
+  "social-84f80aff150d": {
+    "id": "social-84f80aff150d",
+    "url": "https://x.com/john_keim/status/2111492300299706677",
+    "text": "On video (SC4U) talking about why a disciplined pass rush is a must Monday night. 209/commanders-defense-needs-discipline-face-brock-purdy?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-17T16:19:28.000Z",
+    "collectedAt": "2026-10-17T16:55:23.733Z"
+  },
+  "social-7aa62631fb8b": {
+    "id": "social-7aa62631fb8b",
+    "url": "https://x.com/john_keim/status/2111490266053890340",
+    "text": "On video (SC4U) talking about why a disinclined pass rush is a must Monday night. 209/commanders-defense-needs-discipline-face-brock-purdy?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-17T16:11:23.000Z",
+    "collectedAt": "2026-10-17T16:55:23.733Z"
+  },
+  "social-7d96b9a1ba9b": {
+    "id": "social-7d96b9a1ba9b",
+    "url": "https://x.com/BenStandig/status/2111500217849639121",
+    "text": "Dan Quinn just announced that indeed, Bill is out for Week 6.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-17T16:50:56.000Z",
+    "collectedAt": "2026-10-17T16:55:25.164Z"
+  },
+  "social-d00b1ac939e2": {
+    "id": "social-d00b1ac939e2",
+    "url": "https://x.com/BenStandig/status/2111498012291719333",
+    "text": "OUT for MNF: RB Jacory Croskey-Merritt, ED Javontae Jean-Baptiste, DE Charles Omenihu, QB Marcus Mariota All others are traveling to SF.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-17T16:42:10.000Z",
+    "collectedAt": "2026-10-17T16:55:25.165Z"
+  },
+  "social-3a47f1bf1a27": {
+    "id": "social-3a47f1bf1a27",
+    "url": "https://x.com/tashanreed/status/2111499393144934450",
+    "text": "Quinn said rookie OLB Joshua Josephs will see more playing time for the #Commanders with Omenihu and Jean-Baptiste out. It's been a quiet year for him so far, but Quinn said he's been making progress.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-17T16:47:39.000Z",
+    "collectedAt": "2026-10-17T16:55:26.569Z"
+  },
+  "social-152822536a88": {
+    "id": "social-152822536a88",
+    "url": "https://x.com/tashanreed/status/2111498901547348173",
+    "text": "Croskey-Merritt suffered a groin strain in late August but was able to return by Week 1. We'll see how long he's out this time.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-17T16:45:42.000Z",
+    "collectedAt": "2026-10-17T16:55:26.569Z"
+  },
+  "social-831ba4f533b9": {
+    "id": "social-831ba4f533b9",
+    "url": "https://x.com/tashanreed/status/2111497996294615401",
+    "text": "Quinn said Croskey-Merritt re-injured the groin injury that he had earlier this year. His timeline is TBD.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-17T16:42:06.000Z",
+    "collectedAt": "2026-10-17T16:55:26.569Z"
+  },
+  "social-bbf7f2653220": {
+    "id": "social-bbf7f2653220",
+    "url": "https://x.com/tashanreed/status/2111497596011212820",
+    "text": "#Commanders HC Dan Quinn ruled out RB Jacory Croskey-Merritt (groin), DE Charles Omenihu (groin), OLB Javontae Jean-Baptiste (pectoral) and QB Marcus Mariota (knee).",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-17T16:40:31.000Z",
+    "collectedAt": "2026-10-17T16:55:26.569Z"
+  },
+  "social-480f985c6a35": {
+    "id": "social-480f985c6a35",
+    "url": "https://x.com/tashanreed/status/2111490535928336679",
+    "text": "The #Commanders ' best pass rusher this season has been OLB K'Lavon Chaisson: - 14.7% pressure rate (16th in the NFL among players with at least 100 snaps as a pass ruhser) - 2.5 sacks (team high) - 8 QB hits (T-14th)",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-17T16:12:28.000Z",
+    "collectedAt": "2026-10-17T16:55:26.569Z"
   }
 }
