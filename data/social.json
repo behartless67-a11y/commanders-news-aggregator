@@ -10333,5 +10333,43 @@
     "images": [],
     "publishedAt": "2026-10-16T22:07:28.000Z",
     "collectedAt": "2026-10-17T00:05:12.046Z"
+  },
+  "social-817c8ddec524": {
+    "id": "social-817c8ddec524",
+    "url": "https://x.com/Commanders/status/2111245811380031509",
+    "text": "💪💪💪 @Redwire@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/453/313/385/674/086/original/4ad1409ef83b54a3.jpg"
+    ],
+    "publishedAt": "2026-10-17T00:00:01.000Z",
+    "collectedAt": "2026-10-17T00:05:42.782Z"
+  },
+  "social-a0f74a205541": {
+    "id": "social-a0f74a205541",
+    "url": "https://x.com/Commanders/status/2111224165999022382",
+    "text": "Antonio Pierce 78 yard house call!",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-16T22:34:00.000Z",
+    "collectedAt": "2026-10-17T00:05:42.783Z"
+  },
+  "social-f11e7c8edac7": {
+    "id": "social-f11e7c8edac7",
+    "url": "https://x.com/BenStandig/status/2111229435936399465",
+    "text": "There are a few variables here to consider, but in general, not ideal.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-16T22:54:56.000Z",
+    "collectedAt": "2026-10-17T00:05:47.044Z"
   }
 }
