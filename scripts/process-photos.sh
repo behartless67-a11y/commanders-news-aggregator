@@ -121,8 +121,8 @@ PHOTOS=(
   # and the signed vintage helmet next to the UVA one. Loose files on the
   # Desktop itself, not the Högwaller photos in $HOGWALLER that happen to
   # share the names commanders1/commanders2.jpg. No faces, so they count as
-  # Commanders shots for the ordering in config/hero-images.js.
-  "hero-helmet-w|$DESKTOP/commanders1.jpg|3000:1000:0:911|contrast=1.06:saturation=1.08:gamma=1.0|-|1920"
+  # Commanders shots for the ordering in config/hero-images.js. The W helmet
+  # is in SINGLES below instead: as a plain strip it was all W.
   "hero-helmet-vintage|$DESKTOP/commanders2.jpg|4032:1344:0:578|contrast=1.06:saturation=1.08:gamma=1.0|-|1920"
 )
 
@@ -259,5 +259,45 @@ for row in "${PAIRS[@]}"; do
   printf '%-28s 1920x640  %6s KB\n' "$name" "$(( $(stat -c%s "$OUT/$name.jpg") / 1024 ))"
 done
 
+# Header singles: one photo, shrunk to sit inside the band, on a blurred,
+# darkened copy of itself. For a close-up of one object, where even the full
+# width of the photo cut to a strip is too tight: the header shows only the
+# middle of the strip (about 365 of its 640 rows on a 1440px laptop, 275 on
+# a 1904px monitor), so the W helmet as a plain strip (Oct 16) was nothing
+# but the W. Ben found it far too close up (Oct 17) and picked the more
+# zoomed-out of two versions, with more of the shelf showing.
+#
+# name|source|background crop (a 3:1 band of the source)|photo height in the
+# 640px strip|photo's left edge. The photo keeps its own shape (4:3 here) and
+# is centered vertically. The left edge is set so the W lands just right of
+# the centered logo, which covers strip x ~760-1160 on a laptop and the same
+# on a phone; the facemask goes behind the logo instead.
+SINGLES=(
+  "hero-helmet-w|$DESKTOP/commanders1.jpg|4032:1344:0:880|420|928"
+)
+
+for row in "${SINGLES[@]}"; do
+  IFS='|' read -r name src bgcrop fh left <<< "$row"
+  if [ ! -f "$src" ]; then
+    if [ -f "$OUT/$name.jpg" ]; then
+      printf '%-28s (skipped, source is gone)\n' "$name"
+      continue
+    fi
+    echo "missing source and no existing output: $name" >&2
+    exit 1
+  fi
+  sw=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of csv=p=0 "$src")
+  sh=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of csv=p=0 "$src")
+  fw=$(( fh * sw / sh / 2 * 2 ))
+  top=$(( (640 - fh) / 2 ))
+  feather="geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*min(1,min(min(X,W-1-X)/110,min(Y,H-1-Y)/55))'"
+  ffmpeg -y -loglevel error -i "$src" -filter_complex "\
+[0:v]split[s0][s1];\
+[s0]crop=$bgcrop,scale=1920:640,boxblur=36:3,eq=brightness=-0.24:saturation=0.85,format=rgba[bg];\
+[s1]scale=${fw}:${fh}:flags=lanczos,eq=contrast=1.06:saturation=1.08,unsharp=5:5:0.5,format=rgba,$feather[fg];\
+[bg][fg]overlay=${left}:${top},format=rgb24" -frames:v 1 -q:v 4 "$OUT/$name.jpg"
+  printf '%-28s 1920x640  %6s KB\n' "$name" "$(( $(stat -c%s "$OUT/$name.jpg") / 1024 ))"
+done
+
 echo
-echo "total: $(du -sk "$OUT" | cut -f1) KB across $count photo(s) and ${#PAIRS[@]} side-by-side(s)"
+echo "total: $(du -sk "$OUT" | cut -f1) KB across $count photo(s), ${#PAIRS[@]} side-by-side(s) and ${#SINGLES[@]} single(s)"
