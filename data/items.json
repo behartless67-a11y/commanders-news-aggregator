@@ -1,40 +1,4 @@
 {
-  "hogs-haven-f243d73ad1c0": {
-    "id": "hogs-haven-f243d73ad1c0",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/437113/stefon-diggs-dan-quinn-jaylin-lane",
-    "title": "How Stefon Diggs ‘fire’ has helped improve Washington Commanders",
-    "excerpt": "The Commanders needed a solid No. 2 receiver entering training camp to fortify the position group and make it complete. That was clear and evident early on, with an experienced veteran opposite Terry McLaurin who could allow rookie Antonio Williams to develop at a proper place. \n\n Washington was patient in the marketplace but maintained a presence there, eventually agreeing to terms on a one-year deal with DMV native and University of Maryland product Stefon Diggs. \n\n The veteran’s track record…",
-    "publishedAt": "2026-09-02T17:16:45.000Z",
-    "collectedAt": "2026-09-02T18:06:28.510Z"
-  },
-  "riggos-rag-fee1836a55ed": {
-    "id": "riggos-rag-fee1836a55ed",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/k-lavon-chaisson-hands-commanders-timely-escape-from-week-1-dread",
-    "title": "K'Lavon Chaisson hands Commanders a timely escape from Week 1 dread",
-    "excerpt": "Washington Commanders edge rusher K'Lavon Chaisson made his welcome return to practice before Week 1 against the Philadelphia Eagles.",
-    "publishedAt": "2026-09-02T17:48:51.000Z",
-    "collectedAt": "2026-09-02T18:06:29.512Z"
-  },
-  "athletic-jhabvala-fee80cb0c3db": {
-    "id": "athletic-jhabvala-fee80cb0c3db",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7559558/2026/09/02/commanders-mailbag-submit-your-questions-for-beat-reporter-nicki-jhabvala-3",
-    "title": "Commanders mailbag: Submit your questions for beat reporter Nicki Jhabvala",
-    "excerpt": "After finishing last season 5-12 and then embracing several significant changes, the Commanders are closing in on their season opener.",
-    "publishedAt": "2026-09-02T16:59:26.000Z",
-    "collectedAt": "2026-09-02T18:06:30.360Z"
-  },
   "yahoo-nfl-18c7f7f12e35": {
     "id": "yahoo-nfl-18c7f7f12e35",
     "sourceId": "yahoo-nfl",
@@ -17206,5 +17170,53 @@
     "excerpt": "Washington Commanders linebacker Jordan Magee is nearing a return with more to prove and less room to hide.",
     "publishedAt": "2026-10-17T14:30:00.000Z",
     "collectedAt": "2026-10-17T14:57:54.644Z"
+  },
+  "hogs-haven-678968b2cc22": {
+    "id": "hogs-haven-678968b2cc22",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/449648/commanders-vs-49ers-saturday-injury-report-bill-croskey-merritt-stefon-diggs-terry-mclaurin",
+    "title": "Commanders vs. 49ers Saturday injury report: Bill Croskey-Merritt out",
+    "excerpt": "Running back Bill Croskey-Merritt didn’t practice all week due to a groin injury and won’t be available to play the San Francisco 49ers on Monday night. Head coach Dan Quinn ruled him out during his Friday press conference.\n\n That’s a blow, considering Croskey Merritt got revved up with a strong performance in a Week 5 tie versus the New York Giants. \n\n Quinn said that Croskey-Merritt re-injured the groin originally hurt in August, which makes recovery a bit tougher. \n\n “That’s harder, on the…",
+    "publishedAt": "2026-10-17T16:45:31.000Z",
+    "collectedAt": "2026-10-17T18:05:33.982Z"
+  },
+  "riggos-rag-8f461563b3c1": {
+    "id": "riggos-rag-8f461563b3c1",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/kyle-shanahan-jayden-daniels-makes-washington-commanders-dangerous-underdog",
+    "title": "Kyle Shanahan knows Jayden Daniels makes Commanders a dangerous underdog",
+    "excerpt": "San Francisco 49ers head coach Kyle Shanahan knows quarterback Jayden Daniels makes the Washington Commanders a dangerous underdog.",
+    "publishedAt": "2026-10-17T16:00:00.000Z",
+    "collectedAt": "2026-10-17T18:05:35.489Z"
+  },
+  "commanders-youtube-0ba6ca5b819a": {
+    "id": "commanders-youtube-0ba6ca5b819a",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=9vNYdXNERcs",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media After Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-17T16:50:35.000Z",
+    "collectedAt": "2026-10-17T18:05:38.878Z"
+  },
+  "pft-f7ad4ab98e2f": {
+    "id": "pft-f7ad4ab98e2f",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-wont-have-jacory-croskey-merritt-monday-night",
+    "title": "Commanders won't have Jacory Croskey-Merritt Monday night",
+    "excerpt": "The Commanders will be without their top running back for Monday night's game against the 49ers. \n Head coach Dan Quinn said on Saturday that Jacory Croskey-Merritt has been ruled out. Croskey-Merritt is dealing with a groin injury that kept him out of practice all this week. \n Croskey-Merritt also missed time with a groin injury this summer and the current issue steps from an aggravation of that issue. \n The Commanders are dealing with several other injuries in the backfield. Rachaad White has…",
+    "publishedAt": "2026-10-17T17:31:18.000Z",
+    "collectedAt": "2026-10-17T18:05:42.005Z"
   }
 }

@@ -9,7 +9,7 @@
   {
     "name": "Charles Omenihu",
     "position": "DE",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Groin",
     "notes": null
   },
@@ -23,7 +23,7 @@
   {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Groin",
     "notes": null
   },
@@ -37,7 +37,7 @@
   {
     "name": "Javontae Jean-Baptiste",
     "position": "DL",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Pectoral",
     "notes": null
   },
@@ -100,7 +100,7 @@
   {
     "name": "Marcus Mariota",
     "position": "QB",
-    "status": "Doubtful",
+    "status": "Out",
     "bodyPart": "Knee - MCL",
     "notes": "Sprain"
   },
