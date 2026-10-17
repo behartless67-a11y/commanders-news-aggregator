@@ -1,23 +1,9 @@
 [
   {
-    "name": "Austin Ekeler",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Chest",
-    "notes": null
-  },
-  {
     "name": "Charles Omenihu",
     "position": "DE",
     "status": "Out",
     "bodyPart": "Groin",
-    "notes": null
-  },
-  {
-    "name": "Fabian Moreau",
-    "position": "CB",
-    "status": "Questionable",
-    "bodyPart": "Knee",
     "notes": null
   },
   {
@@ -63,13 +49,6 @@
     "notes": null
   },
   {
-    "name": "Jeremy Reaves",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Ribs",
-    "notes": null
-  },
-  {
     "name": "Jordan Magee",
     "position": "LB",
     "status": "IR",
@@ -105,6 +84,13 @@
     "notes": "Sprain"
   },
   {
+    "name": "Nick Cross",
+    "position": "DB",
+    "status": "Questionable",
+    "bodyPart": "Illness",
+    "notes": null
+  },
+  {
     "name": "Percy Butler",
     "position": "DB",
     "status": "Questionable",
@@ -112,21 +98,7 @@
     "notes": null
   },
   {
-    "name": "Rachaad White",
-    "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
-  },
-  {
     "name": "Stefon Diggs",
-    "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
-    "name": "Terry McLaurin",
     "position": "WR",
     "status": "Questionable",
     "bodyPart": "Hamstring",
@@ -138,13 +110,6 @@
     "status": "IR",
     "bodyPart": "Ankle",
     "notes": "Sprain"
-  },
-  {
-    "name": "Treylon Burks",
-    "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
   },
   {
     "name": "Tyler Owens",

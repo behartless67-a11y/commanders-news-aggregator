@@ -1,28 +1,4 @@
 {
-  "yahoo-nfl-18c7f7f12e35": {
-    "id": "yahoo-nfl-18c7f7f12e35",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/dan-quinn-gives-injury-updates-183000396.html",
-    "title": "Dan Quinn gives injury updates and talks about leadership",
-    "excerpt": "The Washington Commanders were in Ashburn today for the last practice of the week and also the first padded practice of the regular season. Dan Quinn gave some positive injury updates on Bill Croskey-Merritt (knee) and K’Lavon Chaisson (knee) who both participated today. Odafe Oweh (calf) will be back at practice next week, but Quinn wouldn’t commit to him being available for Week 1 until he sees his return on the field. \n\n Quinn was happy with the leadership he’s seen from players this year,…",
-    "publishedAt": "2026-09-02T18:30:00.000Z",
-    "collectedAt": "2026-09-02T19:18:47.925Z"
-  },
-  "riggos-rag-4f77ca3a22bc": {
-    "id": "riggos-rag-4f77ca3a22bc",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jayden-daniels-can-slence-his-doubters-commanders-dont-fail-him-first",
-    "title": "Jayden Daniels can slence his doubters if Commanders don't fail him first",
-    "excerpt": "Third-year quarterback Jayden Daniels can silence his growing doubts, but not if the Washington Commanders don't fail him first.",
-    "publishedAt": "2026-09-02T19:32:03.000Z",
-    "collectedAt": "2026-09-02T20:06:32.182Z"
-  },
   "riggos-rag-a702cff5169e": {
     "id": "riggos-rag-a702cff5169e",
     "sourceId": "riggos-rag",
@@ -12839,18 +12815,6 @@
     "publishedAt": "2026-09-07T21:30:00.000Z",
     "collectedAt": "2026-10-07T02:43:27.056Z"
   },
-  "beltway-football-f16f9d66daac": {
-    "id": "beltway-football-f16f9d66daac",
-    "sourceId": "beltway-football",
-    "sourceName": "Beltway Football",
-    "sourceHomepage": "https://art19.com/shows/beltway-football",
-    "category": "team",
-    "url": "https://art19.com/shows/beltway-football/episodes/cca1297e-83c6-4ba5-89d2-056888a9a0f3",
-    "title": "Preseason's over: Will Odafe Oweh play Week 1? Plus a trust meter for Commanders' position groups",
-    "excerpt": "JP Finlay and Mitch Tischler wrap up Washington Commanders preseason before the team hits the road for a Week 1 clash with the Philadelphia Eagles. The guys react to the latest injury news surrounding Odafe Oweh and break out the trust meter for the Commanders' various position groups entering the 2026 regular season. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
-    "publishedAt": "2026-09-02T18:30:00.000Z",
-    "collectedAt": "2026-10-07T02:43:27.056Z"
-  },
   "clutchpoints-f80d275f6253": {
     "id": "clutchpoints-f80d275f6253",
     "sourceId": "clutchpoints",
@@ -17218,5 +17182,17 @@
     "excerpt": "The Commanders will be without their top running back for Monday night's game against the 49ers. \n Head coach Dan Quinn said on Saturday that Jacory Croskey-Merritt has been ruled out. Croskey-Merritt is dealing with a groin injury that kept him out of practice all this week. \n Croskey-Merritt also missed time with a groin injury this summer and the current issue steps from an aggravation of that issue. \n The Commanders are dealing with several other injuries in the backfield. Rachaad White has…",
     "publishedAt": "2026-10-17T17:31:18.000Z",
     "collectedAt": "2026-10-17T18:05:42.005Z"
+  },
+  "pft-7253bdf61252": {
+    "id": "pft-7253bdf61252",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-list-stefon-diggs-eight-others-as-questionable",
+    "title": "Commanders list Stefon Diggs, eight others as questionable",
+    "excerpt": "The Commanders played without wide receiver Stefon Diggs last Sunday and they'll wait to make a call on his availability for Monday's game against the 49ers. \n Diggs has been listed as questionable to play after practicing on a limited basis the last two days. Diggs, who had 18 catches in the first four games, has been battling a hamstring injury. \n The Commanders listed eight other players as questionable as well. The group includes cornerback Trey Amos (ankle), linebacker Jordan Magee…",
+    "publishedAt": "2026-10-17T19:35:02.000Z",
+    "collectedAt": "2026-10-17T20:05:40.722Z"
   }
 }
