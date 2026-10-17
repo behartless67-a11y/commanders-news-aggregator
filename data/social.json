@@ -1,16 +1,4 @@
 {
-  "social-ea475ac85a9b": {
-    "id": "social-ea475ac85a9b",
-    "url": "https://x.com/john_keim/status/2107611392618766677",
-    "text": "Will be joined by @BenStandig .",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-06T23:18:08.000Z",
-    "collectedAt": "2026-10-06T23:33:45.354Z"
-  },
   "social-b6a1d4070fb2": {
     "id": "social-b6a1d4070fb2",
     "url": "https://x.com/NickiJhabvala/status/2107635954068464059",
@@ -10333,5 +10321,17 @@
     "images": [],
     "publishedAt": "2026-10-16T22:08:28.000Z",
     "collectedAt": "2026-10-16T22:31:31.334Z"
+  },
+  "social-5d361e02f28a": {
+    "id": "social-5d361e02f28a",
+    "url": "https://x.com/NickiJhabvala/status/2111217488851808545",
+    "text": "Commanders injury report … Javon Kinlaw did not practice today either.",
+    "handle": "NickiJhabvala",
+    "author": "Nicki Jhabvala",
+    "label": "The Athletic",
+    "sourceKey": "@NickiJhabvala",
+    "images": [],
+    "publishedAt": "2026-10-16T22:07:28.000Z",
+    "collectedAt": "2026-10-17T00:05:12.046Z"
   }
 }
