@@ -1,28 +1,4 @@
 {
-  "riggos-rag-201d52f26921": {
-    "id": "riggos-rag-201d52f26921",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/adam-peters-sends-wrong-signals-pivotal-commanders-crossroads",
-    "title": "Adam Peters sends all the wrong signals at pivotal Commanders crossroads",
-    "excerpt": "Washington Commanders general manager Adam Peters sent out all the wrong signals before a crossroads campaign.",
-    "publishedAt": "2026-09-02T12:00:01.000Z",
-    "collectedAt": "2026-09-02T12:06:24.164Z"
-  },
-  "riggos-rag-39a7060eccc3": {
-    "id": "riggos-rag-39a7060eccc3",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/5-commanders-must-justify-adam-peters-surprising-show-faith",
-    "title": "5 Commanders who must justify Adam Peters' surprising show of faith",
-    "excerpt": "These Washington Commanders must now justify general manager Adam Peters' surprising show of faith during roster cutdowns.",
-    "publishedAt": "2026-09-02T10:43:38.000Z",
-    "collectedAt": "2026-09-02T12:06:24.164Z"
-  },
   "hogs-haven-954c4f039262": {
     "id": "hogs-haven-954c4f039262",
     "sourceId": "hogs-haven",
@@ -17242,5 +17218,29 @@
     "excerpt": "How does a quarterback bounce back from a public blunder?",
     "publishedAt": "2026-10-17T10:00:46.000Z",
     "collectedAt": "2026-10-17T10:05:35.217Z"
+  },
+  "riggos-rag-d3f06b0e79d9": {
+    "id": "riggos-rag-d3f06b0e79d9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-owning-washington-commanders-failure-gives-jayden-daniels-cause-rally-behind",
+    "title": "Dan Quinn owning Commanders failure gives Jayden Daniels a cause to rally behind",
+    "excerpt": "Dan Quinn owning the Washington Commanders' overtime failure was not lost on third-year quarterback Jayden Daniels.",
+    "publishedAt": "2026-10-17T11:30:00.000Z",
+    "collectedAt": "2026-10-17T12:05:29.808Z"
+  },
+  "riggos-rag-ad27a0409534": {
+    "id": "riggos-rag-ad27a0409534",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/7-washington-commanders-caught-concerning-mismatches-against-49ers",
+    "title": "7 Commanders players caught in concerning mismatches against the 49ers",
+    "excerpt": "There are several concerning mismatches the Washington Commanders have to overcome against the San Francisco 49ers on Monday Night Football.",
+    "publishedAt": "2026-10-17T10:00:00.000Z",
+    "collectedAt": "2026-10-17T12:05:29.808Z"
   }
 }
