@@ -2264,9 +2264,11 @@ main.layout{
   gap: 14px;
 }
 
-/* Wraps the team-stats and schedule widgets so they stay stacked together when
-   the rail goes two-across above 1400px. Inert at narrower widths — a single
-   column nested inside a single column. */
+/* Wraps the team-stats and schedule widgets so they stay stacked together.
+   The rail used to go two-across above 1400px, which is what this was for;
+   since Oct 16 it stays one column at every width (a reader found four
+   columns on a wide screen too much), so for now it's inert: a single column
+   nested inside a single column, kept in case the rail ever widens again. */
 .sidebar-stack{
   display: flex;
   flex-direction: column;
@@ -2275,8 +2277,8 @@ main.layout{
 }
 
 /* The Film Room and the video rail under it, wrapped for the same reason as
-   .sidebar-stack: above 1400px the rail goes two-across, and this keeps the
-   pair together as one of the two columns instead of three. */
+   .sidebar-stack (keeps the pair together if the rail ever goes two-across
+   again; inert while it's one column). */
 .sidebar-watch{
   display: flex;
   flex-direction: column;
@@ -3215,6 +3217,50 @@ main.layout{
   background: var(--burgundy);
   border-color: var(--gold);
   color: var(--gold);
+}
+
+/* Game-day live mode (the poller in site.js). One quiet line under the intro
+   while it's on, and a gold edge that fades off a post that just arrived, so
+   a reader glancing back at the tab can see what's new without the list
+   jumping around any more than it has to. */
+.social-live-status{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.social-live-status[hidden]{ display: none; }
+
+.social-live-status .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--gold);
+  animation: live-pulse 1.8s ease-in-out infinite;
+}
+
+/* The bar and tint sit in the 12px to the left of the post (negative margin,
+   matching padding), so the avatar and text stay lined up with the posts
+   around it before, during and after the fade. */
+.social-feed-post.is-new{
+  margin-left: -12px;
+  padding-left: 12px;
+  box-shadow: inset 3px 0 0 var(--gold);
+  animation: social-new 12s ease-out forwards;
+}
+
+@keyframes social-new{
+  0%, 60%{ background: rgba(255,182,18,0.08); box-shadow: inset 3px 0 0 var(--gold); }
+  100%{ background: transparent; box-shadow: inset 3px 0 0 transparent; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .social-live-status .dot{ animation: none; }
+  .social-feed-post.is-new{ animation: none; background: rgba(255,182,18,0.06); }
 }
 
 /* ---------- Roster ---------- */
@@ -4270,34 +4316,27 @@ main.layout.page-admin{
   }
 }
 
-/* Above ~1400px, .card-excerpt's own 105ch cap (deliberate — see that rule)
-   left a growing dead gap between the river and a sidebar that was still
-   only 320px wide, worse the wider the screen got. Rather than let the river
-   column alone absorb reclaimed width it can't use, the sidebar widens and
-   the video widget sits beside a new schedule widget instead of above it. */
+/* Wide screens: three columns, never four. This used to split the sidebar
+   into two side-by-side columns above 1400px, to soak up width the river
+   couldn't use, and on a big monitor the homepage became four columns (live
+   feed, headlines, two sidebar halves) plus the ticker. A reader on
+   r/Commanders called it "four whole columns thrown my way" (Oct 16), and at
+   1440px it squeezed the headlines into about 420px. Now the sidebar stays
+   one 400px column, and the page itself stops widening at 1640px and
+   centers, so the extra width on a very wide screen becomes even margins
+   instead of another column. Team Stats' rush/pass row needs 360px, so 400
+   keeps it on one line. */
 @media (min-width: 1400px){
   main.layout{
-    grid-template-columns: minmax(0, 1fr) 640px;
+    max-width: 1640px;
+    grid-template-columns: minmax(0, 1fr) 400px;
   }
   /* Same specificity and same min-width: 1300px condition (still true here)
-     as the .page-river rule above, so source order decides — this one is
-     textually later, so it correctly wins and gives the sidebar its full
-     640px alongside the feed column instead of freezing it at 320px. */
+     as the .page-river rule above, so source order decides: this one is
+     textually later, so it wins. */
   main.layout.page-river{
-    grid-template-columns: 280px minmax(0, 1fr) 640px;
+    grid-template-columns: 280px minmax(0, 1fr) 400px;
   }
-  .sidebar{
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  /* 280px, not 320px — the 40px given up here is exactly what
-     sidebar-stack (flex: 1 1 0 below) needs to keep Team Stats' rush/pass
-     row on one line at this breakpoint too, matching the 320 -> 360 sidebar
-     widening at 1300px above. */
-  .sidebar-watch{ flex: 0 0 280px; }
-  /* The stats+schedule column takes the reclaimed width, not the schedule
-     alone — see sidebar() in templates.js for why they're nested. */
-  .sidebar-stack{ flex: 1 1 0; min-width: 0; }
 }
 
 @media (max-width: 480px){

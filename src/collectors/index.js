@@ -4,6 +4,7 @@ import { ROSTER_ALIASES } from '../../config/roster-aliases.js';
 import { log } from '../lib/log.js';
 import { isRelevant, relevanceSignal, isSocialFiller } from '../lib/relevance.js';
 import { daysAgo } from '../lib/dates.js';
+import { keepSocialPost } from '../lib/social-filter.js';
 import { loadRosterCache } from '../lib/roster.js';
 import { buildRosterIndex } from '../lib/roster-links.js';
 import {
@@ -39,25 +40,9 @@ const MAX_WIRE_AGE_DAYS = Number(process.env.MAX_WIRE_AGE_DAYS || 14);
 
 const MAX_ITEMS_PER_SOURCE = Number(process.env.MAX_ITEMS_PER_SOURCE || 15);
 
-/**
- * Social posts age out much faster than articles. A three-day-old headline is
- * still worth reading; a three-day-old "he's practicing today" tweet is not.
- */
-const MAX_SOCIAL_AGE_DAYS = Number(process.env.MAX_SOCIAL_AGE_DAYS || 3);
-
-/**
- * Posts shorter than this are almost always a caption on a photo or video
- * ("Early scene:"), which carries nothing once the media is stripped away.
- */
-const MIN_SOCIAL_TEXT_CHARS = Number(process.env.MIN_SOCIAL_TEXT_CHARS || 25);
-
-/** Shared by collectSocialAll() and collectSocialBrowser() — same freshness/length bar for every social source, whichever way it was fetched. */
-function keepSocialPost(post, alwaysRelevant) {
-  if (post.text.length < MIN_SOCIAL_TEXT_CHARS) return false;
-  if (post.publishedAt && daysAgo(post.publishedAt) > MAX_SOCIAL_AGE_DAYS) return false;
-  if (alwaysRelevant) return true;
-  return relevanceSignal(`${post.text} ${post.handle}`) !== null;
-}
+// keepSocialPost() (the freshness, length and relevance bar for every social
+// post) lives in src/lib/social-filter.js, shared with the live game-day
+// function.
 
 /**
  * Re-check stored items against the current relevance rules and drop the ones

@@ -15,18 +15,26 @@
  * responding: a failure, a timeout or a blocked request all leave the
  * built-in ticker exactly as it was.
  *
- * SCOPE: the seven Commanders beat accounts only (alwaysRelevant in
+ * SCOPE: the Commanders beat accounts only (alwaysRelevant in
  * config/social.js), not the six national insiders. Two reasons. Every post
  * from a beat account is on topic, so this needs none of the keyword
  * relevance machinery the collector runs; and each account is a separate
- * upstream request behind a shared per-host throttle, so the account list is
- * the function's latency budget. National insiders still reach the ticker
- * the normal way, through the scheduled collection.
+ * upstream request, so the account list is the function's latency budget.
+ * National insiders still reach the ticker the normal way, through the
+ * scheduled collection.
+ *
+ * FRESHNESS: the fetching is src/lib/live-social.js, shared with the Social
+ * Feed page's live mode. Until Oct 16 this went through collectAccount(),
+ * whose fetch helper memoizes every URL with no expiry; on a warm instance
+ * (which steady game-day polling guarantees) that meant serving the first
+ * answer over and over. See live-social.js.
  */
 import { SOCIAL_ACCOUNTS } from '../../config/social.js';
-import { collectAccount } from '../../src/collectors/mastodon.js';
+import { fetchLivePosts } from '../../src/lib/live-social.js';
 
-const BEAT_ACCOUNTS = SOCIAL_ACCOUNTS.filter((a) => a.alwaysRelevant);
+// Not the browser-only accounts (Nicki): they aren't on the mirror at all,
+// so looking them up here is a guaranteed miss every minute.
+const BEAT_ACCOUNTS = SOCIAL_ACCOUNTS.filter((a) => a.alwaysRelevant && !a.viaBrowser);
 
 /** Matches the collector's own bar so a post can't appear here and nowhere else. */
 const MIN_TEXT_CHARS = Number(process.env.MIN_SOCIAL_TEXT_CHARS || 25);
@@ -42,26 +50,21 @@ const MAX_POSTS = Number(process.env.MAX_TICKER_POSTS || 30);
 const CDN_MAX_AGE = Number(process.env.TICKER_CDN_MAX_AGE || 60);
 
 export default async () => {
-  // Parallel, though the per-host throttle in http.js still paces the actual
-  // requests. Sequential would add each response's latency on top of that
-  // pacing and is what would put this near the function timeout.
-  const settled = await Promise.allSettled(BEAT_ACCOUNTS.map((a) => collectAccount(a)));
+  // All accounts at once; a slow or failed one just contributes nothing.
+  const live = await fetchLivePosts(BEAT_ACCOUNTS);
 
   const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
   const byUrl = new Map();
-  for (const result of settled) {
-    if (result.status !== 'fulfilled') continue;
-    for (const post of result.value) {
-      if (!post?.url || !post.text || post.text.length < MIN_TEXT_CHARS) continue;
-      const at = Date.parse(post.publishedAt || '');
-      if (Number.isFinite(at) && at < cutoff) continue;
-      byUrl.set(post.url, {
-        handle: post.handle,
-        text: post.text,
-        url: post.url,
-        publishedAt: post.publishedAt || null,
-      });
-    }
+  for (const { post } of live) {
+    if (!post?.url || !post.text || post.text.length < MIN_TEXT_CHARS) continue;
+    const at = Date.parse(post.publishedAt || '');
+    if (Number.isFinite(at) && at < cutoff) continue;
+    byUrl.set(post.url, {
+      handle: post.handle,
+      text: post.text,
+      url: post.url,
+      publishedAt: post.publishedAt || null,
+    });
   }
 
   const posts = [...byUrl.values()]

@@ -163,3 +163,9 @@ export async function collectTag(entry) {
   // off each post instead of taken from config.
   return statuses.map((s) => normalize(s, { account: null, sourceKey: entry.name })).filter(Boolean);
 }
+
+// For src/lib/live-social.js (the two live game-day functions), which fetches
+// the same timelines without this module's per-run memo and per-host throttle
+// (both right for a collection run, wrong for a function answering every
+// minute).
+export { normalize as normalizeStatus, INSTANCE, BRIDGE, PER_ACCOUNT };

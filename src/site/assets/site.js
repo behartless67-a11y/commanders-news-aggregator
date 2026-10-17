@@ -1058,6 +1058,91 @@
   }
 
   /**
+   * The Social Feed page, live during a game (netlify/functions/social-live.js).
+   * The page carries the game window as data-live-from/data-live-to (worked
+   * out at build time, liveWindowAttrs() in templates.js). Inside it, and only
+   * while the tab is visible, this asks the function for the newest posts once
+   * a minute and slides any it hasn't shown yet into place by time, already
+   * rendered the same way as the rest of the list. Outside the window it does
+   * nothing at all, apart from waking up at the window's start if the page
+   * is left open. `?live=1` forces it on, for previewing.
+   */
+  (function () {
+    var list = document.querySelector('.social-feed-list[data-live-from]');
+    if (!list) return;
+    var forced = /[?&]live=1\b/.test(window.location.search);
+    var from = Date.parse(list.getAttribute('data-live-from'));
+    var to = Date.parse(list.getAttribute('data-live-to'));
+    var status = document.getElementById('social-live-status');
+    var statusText = status && status.querySelector('.social-live-text');
+    var seen = {};
+    Array.prototype.forEach.call(list.querySelectorAll('[data-post-id]'), function (el) {
+      seen[el.getAttribute('data-post-id')] = true;
+    });
+    var timer = null;
+    var MINUTE = 60000;
+    function isLive() { var now = Date.now(); return forced || (now >= from && now <= to); }
+    function later(ms) { clearTimeout(timer); timer = setTimeout(tick, ms); }
+    function tick() {
+      if (!isLive()) {
+        if (status) status.hidden = true;
+        // Left open before kickoff: check back when the window opens (capped,
+        // since browsers stretch long timers in background tabs anyway).
+        if (Date.now() < from) later(Math.min(from - Date.now(), 30 * MINUTE));
+        return;
+      }
+      if (status) status.hidden = false;
+      if (document.hidden) { later(MINUTE); return; }
+      fetch('/.netlify/functions/social-live', { credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data || !data.posts) return;
+          var fresh = data.posts.filter(function (p) { return p.id && !seen[p.id]; });
+          var shown = 0;
+          // Oldest first (the answer is newest first), so on an empty page
+          // each one has the one before it to sort against.
+          fresh.slice().reverse().forEach(function (p) {
+            seen[p.id] = true;
+            // Into its place by time, not just the top: the page also holds
+            // Nicki's posts (not in the live answer), and the mirror can be
+            // a few minutes behind, so a "new" post isn't always the newest.
+            var at = Date.parse(p.publishedAt) || 0;
+            var before = null;
+            var items = list.querySelectorAll('.social-feed-post');
+            for (var i = 0; i < items.length; i++) {
+              if ((Date.parse(items[i].getAttribute('data-published')) || 0) < at) { before = items[i]; break; }
+            }
+            var el;
+            if (before) {
+              before.insertAdjacentHTML('beforebegin', p.html);
+              el = before.previousElementSibling;
+            } else if (!items.length) {
+              // An empty page (a quiet stretch before kickoff): anything goes.
+              list.insertAdjacentHTML('beforeend', p.html);
+              el = list.lastElementChild;
+              var empty = list.parentNode.querySelector('.river-empty');
+              if (empty) empty.hidden = true;
+            } else {
+              // Older than everything on the page: not news, leave it out.
+              return;
+            }
+            el.classList.add('is-new');
+            shown++;
+          });
+          if (statusText) {
+            statusText.textContent = 'Live: checking for new posts every minute' +
+              (shown ? '. ' + shown + (shown === 1 ? ' new post' : ' new posts') + ' just now.' : '');
+          }
+        }, function () {})
+        .then(function () { later(MINUTE); });
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && isLive()) tick();
+    });
+    tick();
+  })();
+
+  /**
    * Email subscribe modal. Opens on its own on every 10th visit, but never:
    *   - if the visitor has already dismissed or submitted (bw_sub key set)
    *   - if the admin session cookie is present (site owner browsing)

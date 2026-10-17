@@ -117,6 +117,13 @@ PHOTOS=(
   # selfie, which is the video board, the Northwest Stadium sign and a packed
   # lower bowl, with the faces left out of frame.
   "hero-video-board|$GAMEDAY/IMG_8999.JPG|1536:512:0:245|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
+  # Added Oct 16: two helmets from Ben's watching area at home, the W helmet
+  # and the signed vintage helmet next to the UVA one. Loose files on the
+  # Desktop itself, not the Högwaller photos in $HOGWALLER that happen to
+  # share the names commanders1/commanders2.jpg. No faces, so they count as
+  # Commanders shots for the ordering in config/hero-images.js.
+  "hero-helmet-w|$DESKTOP/commanders1.jpg|3000:1000:0:911|contrast=1.06:saturation=1.08:gamma=1.0|-|1920"
+  "hero-helmet-vintage|$DESKTOP/commanders2.jpg|4032:1344:0:578|contrast=1.06:saturation=1.08:gamma=1.0|-|1920"
 )
 
 echo "{" > "$OUT/dimensions.json"

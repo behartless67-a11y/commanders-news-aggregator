@@ -305,14 +305,34 @@ When a collector stops working the site doesn't break, it just quietly stops get
 
 The beat-writer ticker at the top of the page is built into the static HTML like everything else, which meant it was stale exactly when it mattered most, during a game. A reader wrote in about precisely this.
 
-So `site.js` now refreshes it in the browser from **`/api/ticker`** (`netlify/functions/ticker.js`), which fetches the seven Commanders beat accounts live at request time.
+So `site.js` now refreshes it in the browser from **`/api/ticker`** (`netlify/functions/ticker.js`), which fetches the Commanders beat accounts live at request time (not Nicki, who isn't on the mirror; see below).
 
-Two things about it worth remembering:
+Things about it worth remembering:
 
 - It **merges** into the rail rather than replacing it. The endpoint only covers the beat accounts, while the built page also carries national insiders from the scheduled collection. Replacing would silently drop them.
 - It is cached at the CDN for 60 seconds, which is what stops a busy Sunday hammering the upstream mirror. A thousand readers inside one minute cost one upstream fetch.
+- **It fetches fresh every time** through `src/lib/live-social.js`. Until Oct 16 it went through the collectors' `fetchText()`, which remembers every URL it has fetched with no expiry. Fine for a collection run, but a Netlify function stays "warm" between requests, and game-day polling keeps it warm, so `/api/ticker` kept serving its first answer for as long as the instance lived. A reader on r/Commanders noticed the lag. If you ever write another live function, use `live-social.js`, not the collectors.
 
 Every failure path leaves the built-in ticker exactly as rendered: no endpoint, a 503, a parse error, an empty list, or no JavaScript at all.
+
+### The Social Feed page goes live during games
+
+Same idea for the Social Feed page (`social-feed.html`), which some readers use instead of X on game day. From 30 minutes before kickoff to 4 hours after, `site.js` asks **`/.netlify/functions/social-live`** for new posts once a minute and slides any it hasn't shown yet into place, with a gold edge that fades over about 12 seconds. A gold "Live" line under the intro says it's on.
+
+- The game window is worked out at build time (`liveWindowAttrs()` in `templates.js`) and sits on the list as `data-live-from` / `data-live-to`, so a page built hours before kickoff still switches on by itself.
+- It only polls while the tab is visible. Outside the window it does nothing.
+- The function returns posts already rendered by the same `socialFeedPost()` the page uses, so a live post looks exactly like a built one. Same accounts and same bar (`keepSocialPost()` in `src/lib/social-filter.js`) as the scheduled collection. Nicki's posts still arrive on their own schedule, from the browser scrape on your machine.
+- Free: it's a function call cached for a minute at the CDN, not a deploy.
+- To preview it any time: add `?live=1` to the Social Feed URL.
+
+---
+
+## Faster tabs and the wide-screen layout (Oct 16)
+
+Two more fixes from the same Reddit thread:
+
+- **Tabs open faster.** Every page has a small `<script type="speculationrules">` (`SPECULATION_RULES` in `templates.js`) that tells Chrome and Edge to fetch a page in the background when you hover or start tapping a link to it, so the click lands on a page that's already downloaded. It's *prefetch* only, never *prerender*: prerendering would run `site.js` on pages nobody actually opened and inflate the visit counts. Admin and function URLs are excluded. Browsers that don't support it (Safari, Firefox) just ignore it.
+- **Three columns on wide screens, never four.** At 1400px and wider the sidebar used to split into two columns, which made the homepage four columns plus the ticker. A reader called it too much. Now it's live feed, headlines and one 400px sidebar, and the whole page stops widening at 1640px and centers. On a 1440px laptop the headlines column went from about 424px to 641px. Below 1400px nothing changed.
 
 ---
 

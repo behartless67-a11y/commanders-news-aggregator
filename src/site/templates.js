@@ -5,6 +5,30 @@ import { SOCIAL_ACCOUNTS } from '../../config/social.js';
 import { SOURCES } from '../../config/sources.js';
 import { BROADCAST_URLS } from '../../config/broadcast-urls.js';
 
+/**
+ * Tab switches that feel instant (a reader on r/Commanders, Oct 16: "every
+ * time you change a tab it does a full page load"). Speculation rules tell
+ * Chrome and Edge to fetch a same-site page as soon as the pointer rests on
+ * a link to it, so the click lands on a page that is already downloaded.
+ * Browsers without support ignore the tag, and nothing else changes: still
+ * plain static pages, no single-page app.
+ *
+ * Prefetch, never prerender: a prerendered page runs site.js, which would
+ * count a pageview for a page nobody opened. The admin page, the Functions
+ * and new-tab links (every outbound link) are left out.
+ */
+const SPECULATION_RULES = `<script type="speculationrules">${JSON.stringify({
+  prefetch: [{
+    where: { and: [
+      { href_matches: '/*' },
+      { not: { href_matches: '/admin*' } },
+      { not: { href_matches: '/.netlify/*' } },
+      { not: { selector_matches: '[target=_blank]' } },
+    ] },
+    eagerness: 'moderate',
+  }],
+})}</script>`;
+
 // Every Blog-tab post type (digest, preview, original, Monday recap) shares
 // this one label/class — 'blog'/'original'/'monday' stay distinct as
 // `category` values (blogRiverItems() still tags each type separately, in
@@ -2061,6 +2085,7 @@ ${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: diges
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2116,6 +2141,7 @@ ${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: diges
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2180,6 +2206,7 @@ ${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, si
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2239,6 +2266,7 @@ ${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, si
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2336,6 +2364,7 @@ ${socialMetaTags({ title: `Blog | ${siteName}`, description: 'AI-written recaps 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2403,6 +2432,7 @@ ${socialMetaTags({ title: `How It Works | ${siteName}`, description: 'A mostly-h
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2619,6 +2649,7 @@ ${socialMetaTags({ title: `Commanders Roster | ${siteName}`, description, siteUr
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2746,6 +2777,7 @@ ${socialMetaTags({ title: `Commanders Depth Chart | ${siteName}`, description, s
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2840,6 +2872,7 @@ ${socialMetaTags({ title: `Commanders Injury Report | ${siteName}`, description,
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2893,6 +2926,7 @@ ${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -2956,6 +2990,7 @@ ${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3037,6 +3072,7 @@ ${socialMetaTags({ title: `Music | ${siteName}`, description, siteUrl, path: 'mu
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3124,6 +3160,7 @@ export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#5A1414">
@@ -3237,6 +3274,7 @@ ${socialMetaTags({ title: `Contact | ${siteName}`, description, siteUrl, path: '
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3318,6 +3356,7 @@ ${socialMetaTags({ title: `Wire Taps | ${siteName}`, description, siteUrl, path:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3390,6 +3429,7 @@ ${jsonLdScript({ '@context': 'https://schema.org', '@type': 'ProfilePage', mainE
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3448,6 +3488,7 @@ export function renderFiveThousandPage({ siteName, siteUrl, sources, generatedAt
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3549,6 +3590,7 @@ ${socialMetaTags({ title: `Hail Mail | ${siteName}`, description, siteUrl, path:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3619,6 +3661,7 @@ ${socialMetaTags({ title: `Hello from Charlottesville | ${siteName}`, descriptio
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3734,6 +3777,7 @@ ${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3798,6 +3842,7 @@ ${socialMetaTags({ title: `Where to Watch the Commanders in Charlottesville | ${
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -3865,6 +3910,7 @@ ${socialMetaTags({ title: `Admin | ${siteName}`, description, siteUrl, path: 'ad
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -4593,6 +4639,7 @@ ${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -4646,14 +4693,14 @@ const SOCIAL_ACCOUNTS_BY_HANDLE = new Map(SOCIAL_ACCOUNTS.map((a) => [a.handle, 
  * the ticker's own post data and the Beat Writers page's avatar lookup, but
  * as one merged list instead of per-reporter columns or a scrolling strip.
  */
-function socialFeedPost(post, extra) {
+export function socialFeedPost(post, extra) {
   const account = SOCIAL_ACCOUNTS_BY_HANDLE.get(post.handle);
   const when = post.publishedAt ? relativeLabel(post.publishedAt) : '';
   const avatar = account?.avatar
     ? `<img class="social-feed-avatar" src="${escapeHtml(account.avatar)}" alt="" width="44" height="44" loading="lazy" />`
     : `<span class="social-feed-avatar social-feed-avatar-placeholder" aria-hidden="true">${escapeHtml(post.handle.charAt(0))}</span>`;
   return `
-      <li class="social-feed-post${extra ? ' social-feed-post-extra' : ''}">
+      <li class="social-feed-post${extra ? ' social-feed-post-extra' : ''}" data-post-id="${escapeHtml(post.id || '')}" data-published="${escapeHtml(post.publishedAt || '')}">
         ${avatar}
         <a class="social-feed-body" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
           <span class="social-feed-head">
@@ -4663,6 +4710,29 @@ function socialFeedPost(post, extra) {
           <span class="social-feed-text">${escapeHtml(post.text)}</span>
         </a>
       </li>`;
+}
+
+/**
+ * When the Social Feed page should go live (social-live.js and the live
+ * handler in site.js): the next game that hasn't finished, from half an hour
+ * before kickoff until four hours after, which covers overtime and the
+ * postgame flurry. Worked out at build time and handed to site.js as two
+ * timestamps, so a page built hours before kickoff still goes live on time.
+ * Nothing at all when there's no game ahead.
+ */
+function liveWindowAttrs(games, generatedAt) {
+  const now = Date.parse(generatedAt) || Date.now();
+  for (const g of games || []) {
+    if (g.isBye) continue;
+    const iso = parseGameTime(g.gametime);
+    if (!iso) continue;
+    const kickoff = Date.parse(iso);
+    const to = kickoff + 4 * 3600000;
+    if (to < now) continue;
+    const from = kickoff - 30 * 60000;
+    return ` data-live-from="${new Date(from).toISOString()}" data-live-to="${new Date(to).toISOString()}"`;
+  }
+  return '';
 }
 
 export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, socialPosts = [], videos = [], games = [], betting = null, teamStats = null, standings = null, gameWeek = null }) {
@@ -4692,6 +4762,7 @@ ${RIVER_NOINDEX}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -4716,8 +4787,9 @@ ${header('social-feed.html', hasWeekly, isGameLive)}
       <span class="river-heading-sep" aria-hidden="true">|</span>
       <a class="river-heading-link" href="index.html">Latest Headlines</a>
     </div>
-    <p class="page-intro page-intro-wide">Every post from the ticker up top, merged into one list, newest first. No headlines, just the reporters. Updates on the same schedule as the ticker, every two hours.</p>
-    <ul class="social-feed-list${collapsed ? ' is-collapsed' : ''}">${items || ''}
+    <p class="page-intro page-intro-wide">Every post from the ticker up top, merged into one list, newest first. No headlines, just the reporters. Updates every few hours, and every minute while a Commanders game is on.</p>
+    <p class="social-live-status" id="social-live-status" hidden><span class="dot" aria-hidden="true"></span> <span class="social-live-text">Live: checking for new posts every minute</span></p>
+    <ul class="social-feed-list${collapsed ? ' is-collapsed' : ''}"${liveWindowAttrs(games, generatedAt)}>${items || ''}
     </ul>
     ${!socialPosts.length ? '<p class="river-empty">No posts yet.</p>' : ''}
     ${moreButton}
@@ -4795,6 +4867,7 @@ ${activeFile === 'index.html' ? websiteJsonLd(siteName, siteUrl) : RIVER_NOINDEX
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">

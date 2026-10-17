@@ -23,6 +23,10 @@
  * close to work as a strip on its own; see PAIRS in process-photos.sh. They
  * count as faces for the ordering.
  *
+ * The two helmet strips (Oct 16) are from Ben's watching area at home, not
+ * the game: the W helmet, and the signed vintage helmet beside a UVA one.
+ * No faces, so each sits after a face shot.
+ *
  * Root-relative paths, because build.js drops the chosen one into site.css
  * and a stylesheet resolves relative URLs against its own location.
  */
@@ -31,6 +35,7 @@ export const HERO_IMAGES = [
   '/photos/hero-crew.jpg',
   '/photos/hero-endzone.jpg',
   '/photos/hero-pair-brunch-hogwaller.jpg',
+  '/photos/hero-helmet-w.jpg',
   '/photos/hero-rain-crowd.jpg',
   '/photos/hero-six-in-lot.jpg',
   '/photos/hero-video-board.jpg',
@@ -39,4 +44,5 @@ export const HERO_IMAGES = [
   '/photos/hero-pair-hogwaller-terry.jpg',
   '/photos/hero-pregame.jpg',
   '/photos/hero-pair-seattle-stands.jpg',
+  '/photos/hero-helmet-vintage.jpg',
 ];
