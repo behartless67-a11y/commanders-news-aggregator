@@ -1,59 +1,4 @@
 {
-  "social-ff9484e20028": {
-    "id": "social-ff9484e20028",
-    "url": "https://x.com/Commanders/status/2107958647552884982",
-    "text": "🗓️ Week 5: #NYGvsWAS 🏟️ Northwest Stadium 📺 1pm on FOX",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/401/948/763/460/612/original/53d676528821f0d4.jpg"
-    ],
-    "publishedAt": "2026-10-07T22:18:00.000Z",
-    "collectedAt": "2026-10-07T22:55:25.449Z"
-  },
-  "social-ed267d4c9774": {
-    "id": "social-ed267d4c9774",
-    "url": "https://x.com/BenStandig/status/2107964617247052156",
-    "text": "Commanders rookie K Drew Stevens drilled a 70-yard field goal in practice today with a 10 mph tailwind.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-07T22:41:43.000Z",
-    "collectedAt": "2026-10-07T22:55:31.315Z"
-  },
-  "social-f9e92ac8b24e": {
-    "id": "social-f9e92ac8b24e",
-    "url": "https://x.com/Commanders/status/2107969217299616128",
-    "text": "the last couple of times the Giants came to town ⬇️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/402/115/999/343/353/original/54ebcbdfed790896.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/037/951/050/original/17f1b51ceda3285d.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/097/144/989/original/d6b3d0b9b00c8d22.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/402/116/125/256/495/original/782d845c286c6b3f.jpg"
-    ],
-    "publishedAt": "2026-10-07T23:00:00.000Z",
-    "collectedAt": "2026-10-08T00:05:43.116Z"
-  },
-  "social-318f858af048": {
-    "id": "social-318f858af048",
-    "url": "https://x.com/tashanreed/status/2107968037987229811",
-    "text": "The #Commanders ' collective backs are against the wall headed into a must-win game against the Giants. My X-factors to watch in their matchup: /10/07/an-offensive-line-flux-more-x-factors-commanders-vs-giants/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-07T22:55:19.000Z",
-    "collectedAt": "2026-10-08T00:05:48.644Z"
-  },
   "social-5abcacb890fd": {
     "id": "social-5abcacb890fd",
     "url": "https://x.com/pfrumors/status/2107998847989612606",
@@ -9985,5 +9930,32 @@
     "images": [],
     "publishedAt": "2026-10-17T20:10:43.000Z",
     "collectedAt": "2026-10-17T22:05:10.100Z"
+  },
+  "social-4c41266247b1": {
+    "id": "social-4c41266247b1",
+    "url": "https://x.com/Commanders/status/2111595490328662242",
+    "text": "Next stop MNF @united@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/458/771/828/707/691/original/544a51a2498cda95.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/458/771/868/002/307/original/f1d0f9d71e1e9126.jpg"
+    ],
+    "publishedAt": "2026-10-17T23:09:31.000Z",
+    "collectedAt": "2026-10-17T23:52:48.804Z"
+  },
+  "social-91553c5b9114": {
+    "id": "social-91553c5b9114",
+    "url": "https://x.com/ProFootballHOF/status/2111489204932718618",
+    "text": "The newly redesigned Washington Commanders home uniform has arrived in Canton, including the jersey worn by Rachaad White when he scored the first touchdown in the new threads during Washington's 33-31 victory over the defending champions. History looks good in burgundy and gold.",
+    "handle": "ProFootballHOF",
+    "author": "Pro Football Hall of Fame",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-17T16:07:10.000Z",
+    "collectedAt": "2026-10-17T23:52:52.403Z"
   }
 }
