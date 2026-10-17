@@ -1,16 +1,4 @@
 {
-  "riggos-rag-5cdb6bdd19c1": {
-    "id": "riggos-rag-5cdb6bdd19c1",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/josh-conerly-jr-refuses-entertain-obvious-fear-gripping-commanders-fans",
-    "title": "Josh Conerly Jr. refuses to entertain the obvious fear gripping Commanders fans",
-    "excerpt": "Washington Commanders right tackle Josh Conerly Jr. believes there is a real misconception around the offensive line heading into the season.",
-    "publishedAt": "2026-09-02T14:30:00.000Z",
-    "collectedAt": "2026-09-02T15:58:03.010Z"
-  },
   "commanders-youtube-15c527e2b413": {
     "id": "commanders-youtube-15c527e2b413",
     "sourceId": "commanders-youtube",
@@ -17230,5 +17218,17 @@
     "excerpt": "Defensive coordinator Daronte Jones sees a simple fix for the Washington Commanders' costly second-half slumps.",
     "publishedAt": "2026-10-17T13:00:02.000Z",
     "collectedAt": "2026-10-17T14:05:32.883Z"
+  },
+  "riggos-rag-19d1ef2c6e9b": {
+    "id": "riggos-rag-19d1ef2c6e9b",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jordan-magee-nears-washington-commanders-return-more-prove-less-room-hide",
+    "title": "Jordan Magee nears Commanders return with more to prove and less room to hide",
+    "excerpt": "Washington Commanders linebacker Jordan Magee is nearing a return with more to prove and less room to hide.",
+    "publishedAt": "2026-10-17T14:30:00.000Z",
+    "collectedAt": "2026-10-17T14:57:54.644Z"
   }
 }
