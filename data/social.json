@@ -49,18 +49,6 @@
     "publishedAt": "2026-10-07T20:41:43.000Z",
     "collectedAt": "2026-10-07T20:59:57.051Z"
   },
-  "social-8cf227317dc4": {
-    "id": "social-8cf227317dc4",
-    "url": "https://x.com/tashanreed/status/2107925954513547613",
-    "text": "Diggs didn't practice today due to a hamstring injury. So, the #Commanders ' top two WRs are nursing bad hammys.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-07T20:08:05.000Z",
-    "collectedAt": "2026-10-07T20:59:57.051Z"
-  },
   "social-e474bd9819c8": {
     "id": "social-e474bd9819c8",
     "url": "https://x.com/caplannfl/status/2107931829718093918",
@@ -10013,5 +10001,29 @@
     "images": [],
     "publishedAt": "2026-10-17T18:15:03.000Z",
     "collectedAt": "2026-10-17T20:05:51.216Z"
+  },
+  "social-44be58cc87cb": {
+    "id": "social-44be58cc87cb",
+    "url": "https://x.com/john_keim/status/2111552166263677101",
+    "text": "Fines for Washington: Dorance Armstrong (unnecessary roughness; facemask) for $11,941 And Amik Robertson (unnecessary roughness; low block) for $12,537",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-17T20:17:21.000Z",
+    "collectedAt": "2026-10-17T20:21:35.325Z"
+  },
+  "social-022f9a3ea98c": {
+    "id": "social-022f9a3ea98c",
+    "url": "https://x.com/BenStandig/status/2111552275927994403",
+    "text": "Thoughts on the Commanders RB situation for the fantasy football crowd with Bill out: 🏈 Rachaad White should be busy. No official injury status despite \"limited\" the final practices. RBBC likely but he should easily out-snap others. 🏈 Austin Ekeler's variance is significant but hard to trust. Desperate times and such. Also \"limited\" with no injury designation. This is his 3rd week since signing. Good opportunity to show he warrants more snaps even when Bill returns 🏈 For folks asking about Devin Neal ... not gonna lie. We had a busy week and I didn't get around to asking about the new PS back. I would think Jeremy McNichols or Craig Reynolds joins the roster. That requires a roster spot for JM if he's activated off IR.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-17T20:17:47.000Z",
+    "collectedAt": "2026-10-17T20:21:36.743Z"
   }
 }
