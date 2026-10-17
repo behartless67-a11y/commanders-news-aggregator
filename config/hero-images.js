@@ -46,3 +46,16 @@ export const HERO_IMAGES = [
   '/photos/hero-pair-seattle-stands.jpg',
   '/photos/hero-helmet-vintage.jpg',
 ];
+
+/**
+ * One-off overrides by UTC date, the same day heroImageForDate() in build.js
+ * works from (so a day flips at 8 PM Eastern during daylight time, 7 PM in
+ * winter). That day shows this photo instead of its turn in the rotation.
+ * Ben wanted to see the new helmet shots right away (Oct 17) rather than
+ * wait for their turn. A date in the past does nothing, so old entries can
+ * be cleared out whenever.
+ */
+export const HERO_PINNED = {
+  '2026-10-17': '/photos/hero-helmet-w.jpg',
+  '2026-10-18': '/photos/hero-helmet-vintage.jpg',
+};

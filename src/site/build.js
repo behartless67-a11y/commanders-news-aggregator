@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
 import { LOCAL_SPOTS } from '../../config/local-spots.js';
-import { HERO_IMAGES } from '../../config/hero-images.js';
+import { HERO_IMAGES, HERO_PINNED } from '../../config/hero-images.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
@@ -90,9 +90,12 @@ const PIN_WINDOW_MS = Number(process.env.BLOG_PIN_HOURS || 24) * 60 * 60 * 1000;
  * than a different one per page or per visit. Day-of-year modulo the pool
  * size, so a small pool repeats across the year instead of needing to keep
  * growing to stay "new". Exact UTC-vs-local-midnight edge cases don't matter
- * for a cosmetic background photo.
+ * for a cosmetic background photo. A date in `pinned` (HERO_PINNED in
+ * config/hero-images.js) skips the rotation for that one day.
  */
-function heroImageForDate(pool, date) {
+function heroImageForDate(pool, date, pinned = {}) {
+  const pin = pinned[date.toISOString().slice(0, 10)];
+  if (pin) return pin;
   const start = Date.UTC(date.getUTCFullYear(), 0, 0);
   const dayOfYear = Math.floor((date.getTime() - start) / 86400000);
   return pool[dayOfYear % pool.length];
@@ -575,7 +578,7 @@ export async function buildSite() {
   // an override rule, since site.css itself has no templating step of its
   // own and this is the one value in it that changes per build.
   const heroCss = await fs.readFile(path.resolve('src/site/assets/site.css'), 'utf8');
-  const heroUrl = heroImageForDate(HERO_IMAGES, new Date(generatedAt));
+  const heroUrl = heroImageForDate(HERO_IMAGES, new Date(generatedAt), HERO_PINNED);
   await fs.writeFile(
     path.join(DIST_DIR, 'site.css'),
     // Targets ::before, the photo layer, not .hero itself: the photo lives on
