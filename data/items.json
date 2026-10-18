@@ -1,16 +1,4 @@
 {
-  "athletic-jhabvala-ffdd4fd19afa": {
-    "id": "athletic-jhabvala-ffdd4fd19afa",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7561583/2026/09/03/commanders-offensive-line-questions",
-    "title": "Digging into the Commanders’ O-line concerns and player development: Mailbag",
-    "excerpt": "It’s hard to draw definitive conclusions from preseason action, but there are reasons to be worried about Washington’s offensive line.",
-    "publishedAt": "2026-09-03T15:31:36.000Z",
-    "collectedAt": "2026-09-03T15:47:21.585Z"
-  },
   "riggos-rag-fc584329c9ab": {
     "id": "riggos-rag-fc584329c9ab",
     "sourceId": "riggos-rag",
@@ -17302,5 +17290,53 @@
     "excerpt": "Washington Commanders' rookie linebacker Sonny Styles can be the most important player in Week 6 against the unbeaten San Francisco 49ers.",
     "publishedAt": "2026-10-18T12:30:00.000Z",
     "collectedAt": "2026-10-18T14:05:29.914Z"
+  },
+  "hogs-haven-629a83fd3c7c": {
+    "id": "hogs-haven-629a83fd3c7c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/449762/five-commanders-players-san-francisco-49ers-terry-mclaurin-nick-cross-rachaad-white-odafe-oweh",
+    "title": "Five Washington Commanders players key to beating San Francisco 49ers",
+    "excerpt": "The Commanders have emerged from the New York Giants mess intact. The fallout from the end-of-game blunder that allowed the clock to run out within field-goal range and result in a shocking 27-27 tie was massive on a local and national level. \n\n Washington was the league-wide talking point for all the wrong reasons, as headlines about clock management and Dan Quinn’s job status poured in from every corner. Then came the steady stream of accountability pressers, from Quinn to quarterback Jayden…",
+    "publishedAt": "2026-10-18T15:30:00.000Z",
+    "collectedAt": "2026-10-18T16:05:33.163Z"
+  },
+  "riggos-rag-2fcf9b65c8f8": {
+    "id": "riggos-rag-2fcf9b65c8f8",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/rachaad-white-expanded-washington-commanders-role-urgent-demand",
+    "title": "Rachaad White’s expanded Commanders role comes with an urgent demand",
+    "excerpt": "Washington Commanders running back Rachaad White could have an expanded role in Week 6 with Jacory Croskey-Merritt out of the lineup.",
+    "publishedAt": "2026-10-18T15:30:00.000Z",
+    "collectedAt": "2026-10-18T16:05:33.938Z"
+  },
+  "riggos-rag-3bf36af5932e": {
+    "id": "riggos-rag-3bf36af5932e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/trent-williams-washington-commanders-snub-adds-edge-prime-time-upset-bid",
+    "title": "Trent Williams’ Commanders snub adds an edge to their prime-time upset bid",
+    "excerpt": "Trent Williams forgets that he ever played for the Washington Commanders, which adds some spice before their prime-time clash with the San Francisco 49ers.",
+    "publishedAt": "2026-10-18T15:30:00.000Z",
+    "collectedAt": "2026-10-18T16:05:33.938Z"
+  },
+  "clutchpoints-99ebeaecc9b7": {
+    "id": "clutchpoints-99ebeaecc9b7",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/3-players-commanders-must-target-2026-nfl-trade-deadline",
+    "title": "3 players Commanders must target at 2026 NFL trade deadline",
+    "excerpt": "The Washington Commanders are heading into their Monday Night Football matchup against the San Francisco 49ers, facing another setback in their backfield. Jacory Croskey-Merritt has been ruled out due to a groin injury , and Austin Ekeler has been dealing with physical limitations throughout the week. This uncertainty adds to the challenging situation for a Washington team trying to bounce back from a disappointing 27-27 tie against the New York Giants.\n\n Despite the turmoil, Ekeler has…",
+    "publishedAt": "2026-10-18T14:57:56.000Z",
+    "collectedAt": "2026-10-18T16:05:34.120Z"
   }
 }
