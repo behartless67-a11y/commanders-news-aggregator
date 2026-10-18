@@ -1,20 +1,13 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-10-18T20:06:06.903Z",
+  "fetchedAt": "2026-10-18T22:06:09.193Z",
   "teams": [
     {
       "abbr": "NYG",
       "name": "New York Giants",
-      "overall": "3-1-1",
-      "streak": "-",
-      "winPercent": 0.7
-    },
-    {
-      "abbr": "PHI",
-      "name": "Philadelphia Eagles",
-      "overall": "2-3",
-      "streak": "L3",
-      "winPercent": 0.4
+      "overall": "3-2-1",
+      "streak": "L1",
+      "winPercent": 0.5833333
     },
     {
       "abbr": "DAL",
@@ -22,6 +15,13 @@
       "overall": "2-3",
       "streak": "L1",
       "winPercent": 0.4
+    },
+    {
+      "abbr": "PHI",
+      "name": "Philadelphia Eagles",
+      "overall": "2-4",
+      "streak": "L4",
+      "winPercent": 0.33333334
     },
     {
       "abbr": "WAS",

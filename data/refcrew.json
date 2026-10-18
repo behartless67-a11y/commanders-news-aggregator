@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T20:06:41.377Z",
+  "fetchedAt": "2026-10-18T22:06:54.686Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5671,6 +5671,102 @@
         "abbr": "BAL",
         "flags": 6,
         "yards": 29
+      }
+    },
+    "401872998": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "John Hussey",
+      "home": {
+        "abbr": "PHI",
+        "flags": 11,
+        "yards": 84
+      },
+      "away": {
+        "abbr": "CAR",
+        "flags": 13,
+        "yards": 149
+      }
+    },
+    "401872999": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "ATL",
+        "flags": 4,
+        "yards": 31
+      },
+      "away": {
+        "abbr": "CHI",
+        "flags": 12,
+        "yards": 133
+      }
+    },
+    "401873000": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "NYG",
+        "flags": 10,
+        "yards": 73
+      },
+      "away": {
+        "abbr": "NO",
+        "flags": 7,
+        "yards": 52
+      }
+    },
+    "401873001": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "NE",
+        "flags": 5,
+        "yards": 57
+      },
+      "away": {
+        "abbr": "NYJ",
+        "flags": 5,
+        "yards": 35
+      }
+    },
+    "401873002": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "TB",
+        "flags": 4,
+        "yards": 38
+      },
+      "away": {
+        "abbr": "PIT",
+        "flags": 5,
+        "yards": 62
+      }
+    },
+    "401873003": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Bill Vinovich",
+      "home": {
+        "abbr": "IND",
+        "flags": 5,
+        "yards": 61
+      },
+      "away": {
+        "abbr": "TEN",
+        "flags": 8,
+        "yards": 54
       }
     }
   }
