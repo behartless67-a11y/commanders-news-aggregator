@@ -17302,5 +17302,17 @@
     "excerpt": "Find out how to watch the Washington Commanders play the San Francisco 49ers, with time, TV channel and streaming information.",
     "publishedAt": "2026-10-18T01:31:49.000Z",
     "collectedAt": "2026-10-18T02:05:33.424Z"
+  },
+  "commanders-youtube-72f3f840220b": {
+    "id": "commanders-youtube-72f3f840220b",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=6htw7BPg-_k",
+    "title": "HC Dan Quinn Previews Commanders Vs. 49ers Monday Night Matchup | Commanders | The Gameplan | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-10-18T04:00:11.000Z",
+    "collectedAt": "2026-10-18T08:05:34.786Z"
   }
 }
