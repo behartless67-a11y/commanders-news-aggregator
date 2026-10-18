@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T16:06:47.390Z",
+  "fetchedAt": "2026-10-18T18:06:47.362Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5639,6 +5639,22 @@
         "abbr": "SEA",
         "flags": 7,
         "yards": 75
+      }
+    },
+    "401872996": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T13:30Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "JAX",
+        "flags": 6,
+        "yards": 66
+      },
+      "away": {
+        "abbr": "HOU",
+        "flags": 6,
+        "yards": 40
       }
     }
   }
