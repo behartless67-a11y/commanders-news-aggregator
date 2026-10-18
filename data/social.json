@@ -9945,5 +9945,31 @@
     "images": [],
     "publishedAt": "2026-10-17T16:07:10.000Z",
     "collectedAt": "2026-10-17T23:52:52.403Z"
+  },
+  "social-e78d8027077a": {
+    "id": "social-e78d8027077a",
+    "url": "https://x.com/Commanders/status/2111623993002463658",
+    "text": "Week 6 under the lights @ESPNNFL | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/459/218/054/442/776/original/22551ad808b1c910.jpg"
+    ],
+    "publishedAt": "2026-10-18T01:02:46.000Z",
+    "collectedAt": "2026-10-18T02:05:38.967Z"
+  },
+  "social-856da5f24e08": {
+    "id": "social-856da5f24e08",
+    "url": "https://x.com/MonSportsNet/status/2111608357563797550",
+    "text": "The @Commanders are turning their focus to San Francisco, but the buzz from Week 5 hasn’t faded just yet 😬 @Mitch_Tischler@twitter.com and @JPFinlayNBCS share their take on what’s ahead in a new episode of Beltway Football!",
+    "handle": "MonSportsNet",
+    "author": "Monumental Sports Network",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-18T00:00:38.000Z",
+    "collectedAt": "2026-10-18T02:05:40.387Z"
   }
 }
