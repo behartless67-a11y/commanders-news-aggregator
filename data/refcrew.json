@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T18:28:20.696Z",
+  "fetchedAt": "2026-10-18T20:06:41.377Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5655,6 +5655,22 @@
         "abbr": "HOU",
         "flags": 6,
         "yards": 40
+      }
+    },
+    "401872997": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "referee": "Carl Cheffers",
+      "home": {
+        "abbr": "CLE",
+        "flags": 6,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "BAL",
+        "flags": 6,
+        "yards": 29
       }
     }
   }
