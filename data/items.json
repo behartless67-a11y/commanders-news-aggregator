@@ -1,28 +1,4 @@
 {
-  "riggos-rag-a702cff5169e": {
-    "id": "riggos-rag-a702cff5169e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-face-uneasy-odafe-oweh-wait-eagles-opener-looms",
-    "title": "Commanders face an uneasy Odafe Oweh wait as Eagles opener looms",
-    "excerpt": "The Washington Commanders will get edge rusher Odafe Oweh back onto the practice field next week, but his status for their regular-season opener remains unclear.",
-    "publishedAt": "2026-09-03T11:30:00.000Z",
-    "collectedAt": "2026-09-03T12:06:29.955Z"
-  },
-  "riggos-rag-b0f30e46f856": {
-    "id": "riggos-rag-b0f30e46f856",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/8-commanders-whose-stock-could-explode-beyond-recognition-2026",
-    "title": "8 Commanders whose stock could explode beyond recognition in 2026",
-    "excerpt": "Which Washington Commanders players could see their stock explode beyond recognition during the 2026 campaign?",
-    "publishedAt": "2026-09-03T10:20:42.000Z",
-    "collectedAt": "2026-09-03T12:06:29.955Z"
-  },
   "riggos-rag-b6ecd73a6b32": {
     "id": "riggos-rag-b6ecd73a6b32",
     "sourceId": "riggos-rag",
@@ -17326,5 +17302,29 @@
     "excerpt": "Daniels shares the blame for Washington’s botched finish. But the Commanders need their quarterback to own his mistake and lead them.",
     "publishedAt": "2026-10-18T10:01:44.000Z",
     "collectedAt": "2026-10-18T10:05:36.220Z"
+  },
+  "hogs-haven-1249849a7961": {
+    "id": "hogs-haven-1249849a7961",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/449738/if-washington-beats-sf-itll-be-because-jayden-went-off-dan-quinn-jalen-hurts",
+    "title": "Commanders: If Washington beats SF, “it’ll be because Jayden went off”",
+    "excerpt": "LANDOVER, MARYLAND - OCTOBER 11: Jayden Daniels #5 of the Washington Commanders looks to pass during the second quarter of the game against the New York Giants at Northwest Stadium on October 11, 2026 in Landover, Maryland. (Photo by Patrick Smith/Getty Images) | Getty Images \n \n The Daily Slop – 18 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports…",
+    "publishedAt": "2026-10-18T12:00:00.000Z",
+    "collectedAt": "2026-10-18T12:05:31.557Z"
+  },
+  "riggos-rag-b90ff7161054": {
+    "id": "riggos-rag-b90ff7161054",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-7-round-2027-nfl-mock-draft-addresses-cracks-already-showing",
+    "title": "Commanders 7-round 2027 NFL mock draft addresses cracks already showing",
+    "excerpt": "Washington Commanders general manager Adam Peters addresses cracks already showing in this seven-round NFL mock draft.",
+    "publishedAt": "2026-10-18T11:05:44.000Z",
+    "collectedAt": "2026-10-18T12:05:32.335Z"
   }
 }
