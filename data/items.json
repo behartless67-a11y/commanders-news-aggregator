@@ -1,16 +1,4 @@
 {
-  "riggos-rag-b6ecd73a6b32": {
-    "id": "riggos-rag-b6ecd73a6b32",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/adam-peters-doubles-down-commanders-center-gamble-with-no-room-error",
-    "title": "Adam Peters doubles down on Commanders' center gamble with no room for error",
-    "excerpt": "Washington Commanders general manager Adam Peters doubled down on his controversial gamble at center, which has no room for error.",
-    "publishedAt": "2026-09-03T13:00:04.000Z",
-    "collectedAt": "2026-09-03T14:06:28.880Z"
-  },
   "riggos-rag-aa7f1dff9ec7": {
     "id": "riggos-rag-aa7f1dff9ec7",
     "sourceId": "riggos-rag",
@@ -17326,5 +17314,29 @@
     "excerpt": "Washington Commanders general manager Adam Peters addresses cracks already showing in this seven-round NFL mock draft.",
     "publishedAt": "2026-10-18T11:05:44.000Z",
     "collectedAt": "2026-10-18T12:05:32.335Z"
+  },
+  "riggos-rag-a9ce227066dd": {
+    "id": "riggos-rag-a9ce227066dd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sam-cosmi-must-channel-his-anger-keep-commanders-jayden-daniels-upright",
+    "title": "Sam Cosmi must channel his anger to keep Commanders' Jayden Daniels upright",
+    "excerpt": "Washington Commanders' standout right guard Sam Cosmi has an underrated, but key role to play in a vital matchup against the San Francisco 49ers.",
+    "publishedAt": "2026-10-18T14:00:01.000Z",
+    "collectedAt": "2026-10-18T14:05:29.914Z"
+  },
+  "riggos-rag-9766e243f0de": {
+    "id": "riggos-rag-9766e243f0de",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/sonny-styles-faces-49ers-matchup-washington-commanders-drafted-him-solve",
+    "title": "Sonny Styles faces the 49ers matchup Commanders drafted him to solve",
+    "excerpt": "Washington Commanders' rookie linebacker Sonny Styles can be the most important player in Week 6 against the unbeaten San Francisco 49ers.",
+    "publishedAt": "2026-10-18T12:30:00.000Z",
+    "collectedAt": "2026-10-18T14:05:29.914Z"
   }
 }
