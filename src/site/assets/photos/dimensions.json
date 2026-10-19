@@ -40,5 +40,13 @@
   "brunch-crew": { "w": 1200, "h": 900 },
   "hero-video-board": { "w": 1536, "h": 512 },
   "hero-helmet-w": { "w": 1920, "h": 640 },
-  "hero-helmet-vintage": { "w": 1920, "h": 640 }
+  "hero-helmet-vintage": { "w": 1920, "h": 640 },
+  "birthday-pookie-cat": { "w": 900, "h": 1200 },
+  "birthday-ben-nicole": { "w": 900, "h": 1200 },
+  "birthday-arena": { "w": 1200, "h": 900 },
+  "birthday-family-lunch": { "w": 1200, "h": 900 },
+  "birthday-deck-lunch": { "w": 900, "h": 1200 },
+  "birthday-topgolf": { "w": 900, "h": 1200 },
+  "birthday-aviators": { "w": 1200, "h": 900 },
+  "birthday-darcie-nicole": { "w": 1200, "h": 900 }
 }

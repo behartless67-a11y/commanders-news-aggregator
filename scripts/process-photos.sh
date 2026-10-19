@@ -20,6 +20,7 @@ HOGWALLER="C:/Users/Ben/Desktop/commanders"
 # Later one-offs land loose on the Desktop rather than in a batch folder.
 DESKTOP="C:/Users/Ben/Desktop"
 GAMEDAY="C:/Users/Ben/Desktop/gameday"
+BIRTHDAY="C:/Users/Ben/Desktop/birthday"
 
 # Long edge in px. Big enough to look sharp on a retina laptop at the widths
 # these are displayed at, small enough that a gallery of them is not a 6 MB
@@ -84,6 +85,18 @@ PHOTOS=(
   "gameday-mariota-sign|$GAMEDAY/IMG_1658.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.03|-"
   "gameday-coverage|$GAMEDAY/IMG_1666.HEIC|-|contrast=1.12:saturation=1.14:gamma=1.02|-"
   "gameday-selfie|$GAMEDAY/IMG_1674.HEIC|-|contrast=1.10:saturation=1.12:gamma=1.03|-"
+  # Ben's 45th birthday post (Oct 19), from $BIRTHDAY: Nicole and a bar cat,
+  # an arena night with Sam and Jason, lunch with his mom, stepdad Darryl and
+  # Nicole's mom Chris, Topgolf, and Darcie. Phone shots, so a lighter touch
+  # than the gameday set; no badges anywhere to blur.
+  "birthday-pookie-cat|$BIRTHDAY/1.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-ben-nicole|$BIRTHDAY/2.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-arena|$BIRTHDAY/3.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-family-lunch|$BIRTHDAY/4.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-deck-lunch|$BIRTHDAY/5.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-topgolf|$BIRTHDAY/6.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-aviators|$BIRTHDAY/7.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
+  "birthday-darcie-nicole|$BIRTHDAY/8.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
   # Header backdrops (config/hero-images.js), replacing the stock photos. The
   # header is a very wide, short band, about 5:1 on a desktop, so each is cut
   # to a 3:1 strip: wide enough to fill it, with vertical room left over for
