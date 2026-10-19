@@ -1,16 +1,4 @@
 {
-  "riggos-rag-e274cf87a6de": {
-    "id": "riggos-rag-e274cf87a6de",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/7-bold-predictions-washington-commanders-make-break-2026-season",
-    "title": "7 bold predictions for the Commanders' make-or-break 2026 season",
-    "excerpt": "Bold predictions for the Washington Commanders as head coach Dan Quinn embarks on a make-or-break season in 2026.",
-    "publishedAt": "2026-09-04T10:00:03.000Z",
-    "collectedAt": "2026-09-04T10:12:30.571Z"
-  },
   "hogs-haven-760e12a18031": {
     "id": "hogs-haven-760e12a18031",
     "sourceId": "hogs-haven",
@@ -17302,5 +17290,17 @@
     "excerpt": "We’ve got an extra long wait heading into Monday night’s game against the San Francisco 49ers at Levi’s Stadium. \n\n The Commanders headed out west on Saturday afternoon to properly acclimate for what has become a massive game on the schedule. \n\n This Week 6 matchup wasn’t one just after the schedule came out . Week 5’s events and a 1-3-1 overall record has changed some things, especially after an inexcusable Commanders blunder — we won’t rehash it here — that resulted in a 27-27 tie . \n\n The…",
     "publishedAt": "2026-10-19T00:30:00.000Z",
     "collectedAt": "2026-10-19T02:05:29.444Z"
+  },
+  "athletic-commanders-ef9887f9c584": {
+    "id": "athletic-commanders-ef9887f9c584",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7702260/2026/10/19/commanders-prime-time-record-monday-night-football",
+    "title": "The Commanders are on the brink. They're also in primetime. Get the popcorn",
+    "excerpt": "Washington, which has a tumultuous relationship with primetime football, is scheduled for four such games in the next six weeks.",
+    "publishedAt": "2026-10-19T10:00:02.000Z",
+    "collectedAt": "2026-10-19T10:05:35.616Z"
   }
 }
