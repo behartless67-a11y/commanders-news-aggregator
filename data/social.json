@@ -1,66 +1,4 @@
 {
-  "social-a03741677fa2": {
-    "id": "social-a03741677fa2",
-    "url": "https://x.com/Commanders/status/2108323803667599679",
-    "text": "SUUUUUL 💪 @RasulEra@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/407/652/066/079/312/original/57ea5d2258224154.jpg"
-    ],
-    "publishedAt": "2026-10-08T22:29:00.000Z",
-    "collectedAt": "2026-10-08T23:07:41.591Z"
-  },
-  "social-06d02fa44356": {
-    "id": "social-06d02fa44356",
-    "url": "https://x.com/john_keim/status/2108337013359587645",
-    "text": "Talking about the Giants with @JordanRaanan . Key to the quick start. Where can the Commanders take advantage. Update on injuries. Kaytron Allen waived. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000793936189",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-08T23:21:29.000Z",
-    "collectedAt": "2026-10-09T00:11:37.885Z"
-  },
-  "social-9e82694a0d80": {
-    "id": "social-9e82694a0d80",
-    "url": "https://x.com/BenStandig/status/2108345197637902737",
-    "text": "It's gonna be hard watching AJD, AD, and the Wizards while suppressing what I think other NBA cities call... hope.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-08T23:54:00.000Z",
-    "collectedAt": "2026-10-09T00:11:39.269Z"
-  },
-  "social-748e19b46eac": {
-    "id": "social-748e19b46eac",
-    "url": "https://x.com/BenStandig/status/2108342224085815777",
-    "text": "I am very happy for my guy @chasedcsports@twitter.com . Good luck on the sidelines this season.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-08T23:42:11.000Z",
-    "collectedAt": "2026-10-09T00:11:39.269Z"
-  },
-  "social-1bba9bb7a788": {
-    "id": "social-1bba9bb7a788",
-    "url": "https://x.com/BenStandig/status/2108339828211200420",
-    "text": "We're about to see AJ Dybantsa play hoops wearing a Wizards uniform. Quick read/Q&A on the No. 1 pick with a fondness for hockey assists and Kevin Durant's game.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-08T23:32:40.000Z",
-    "collectedAt": "2026-10-09T00:11:39.269Z"
-  },
   "social-d23ab31b951a": {
     "id": "social-d23ab31b951a",
     "url": "https://x.com/Commanders/status/2108359287370084824",
@@ -9339,5 +9277,17 @@
     "images": [],
     "publishedAt": "2026-10-18T20:26:11.000Z",
     "collectedAt": "2026-10-18T22:05:49.964Z"
+  },
+  "social-da623802cd98": {
+    "id": "social-da623802cd98",
+    "url": "https://x.com/john_keim/status/2111958246017908747",
+    "text": "On video with 5 thoughts. On Jayden Daniels and the team dealing with the fallout. Trey Amos on pace to return. The d needs to be more detailed and eyeing the 49ers. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-18T23:10:58.000Z",
+    "collectedAt": "2026-10-19T00:00:27.025Z"
   }
 }
