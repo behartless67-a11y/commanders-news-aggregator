@@ -1,12 +1,12 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-10-19T04:06:30.922Z",
+  "fetchedAt": "2026-10-19T06:06:34.730Z",
   "offense": {
     "yardsPerGame": {
       "value": "327.4",
-      "rank": 18,
-      "rankLabel": "18th"
+      "rank": 19,
+      "rankLabel": "19th"
     },
     "pointsPerGame": {
       "value": "23.0",
