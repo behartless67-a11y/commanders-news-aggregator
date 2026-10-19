@@ -25,7 +25,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -474,6 +474,14 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'about.html'),
     renderAboutPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
+    'utf8',
+  );
+
+  // Linked from Hail Mail rather than the nav: noindex, and not in the
+  // sitemap below.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'roll-call.html'),
+    renderRollCallPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
     'utf8',
   );
 

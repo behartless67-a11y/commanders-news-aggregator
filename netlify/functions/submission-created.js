@@ -26,6 +26,7 @@ export default async (req) => {
   if (payload.form_name === 'abroad') return captureAbroad(payload);
   if (payload.form_name === 'prediction') return capturePrediction(payload);
   if (payload.form_name === 'milestone') return captureMilestone(payload);
+  if (payload.form_name === 'rollcall') return captureRollCall(payload);
   return new Response('ok');
 };
 
@@ -76,6 +77,68 @@ async function captureMilestone(payload) {
         ...(replyTo ? { reply_to: replyTo } : {}),
         subject: `Your ${entry.winner ? entry.winner.replace(/^yes, visit /, '') : 'milestone'} reader wrote in${entry.name ? `: ${entry.name}` : ''}`,
         html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows}<p style="color:#888;font-size:12px">${replyTo ? `Hit reply to write back, and ask for their mailing address for the sticker${entry.country && entry.country !== 'US' ? 's (two, they\'re reading from abroad)' : ''}.` : 'No email left, so this one is one-way, and there\'s nowhere to send the sticker.'}</p></div>`,
+      }),
+    }).catch(() => {});
+  }
+  return new Response('ok');
+}
+
+/**
+ * Roll call (roll-call.html): any reader telling Ben about themselves. Same
+ * treatment as the 5,000th reader: kept in its own blob store for the admin
+ * panel's Roll call section, and emailed to Ben the moment it arrives, with
+ * Reply-To set to the reader when they leave an address. `share` says what
+ * Ben may do with it ("no" unless the reader picked otherwise, and anything
+ * unexpected reads as "no"), and the email leads with it so it's the first
+ * thing he sees.
+ */
+const ROLLCALL_FIELDS = [
+  ['name', 'Name'],
+  ['where', 'Reading from'],
+  ['story', 'How they became a fan'],
+  ['watch', 'Watches the games'],
+  ['ritual', 'Game-day ritual'],
+  ['favorite_player', 'Favorite player'],
+  ['not_over', 'Still not over'],
+  ['write_about', 'Write about'],
+  ['email', 'Email'],
+  ['via', 'Came from'],
+];
+const ROLLCALL_SHARE = {
+  no: 'Just for you. Do not share.',
+  anon: 'OK to share, but leave their name out.',
+  name: 'OK to share, with their name and where they are from.',
+};
+
+async function captureRollCall(payload) {
+  const entry = {};
+  for (const [field] of ROLLCALL_FIELDS) entry[field] = String(payload.data?.[field] || '').trim().slice(0, 4000);
+  const share = String(payload.data?.share || '');
+  entry.share = ROLLCALL_SHARE[share] ? share : 'no';
+  const answered = ROLLCALL_FIELDS.some(([field]) => field !== 'via' && entry[field]);
+  if (!answered) return new Response('ok');
+
+  const at = new Date().toISOString();
+  const id = crypto.randomBytes(4).toString('hex');
+  await getStore('rollcall').set(`r:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
+
+  if (process.env.RESEND_API_KEY) {
+    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const rows = ROLLCALL_FIELDS
+      .filter(([field]) => entry[field])
+      .map(([field, label]) => `<p style="margin:0 0 14px"><strong>${label}</strong><br>${esc(entry[field]).replace(/\n/g, '<br>')}</p>`)
+      .join('');
+    const replyTo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(entry.email) ? entry.email : undefined;
+    const who = [entry.name, entry.where].filter(Boolean).join(' from ');
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
+        to: process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu',
+        ...(replyTo ? { reply_to: replyTo } : {}),
+        subject: `Roll call${who ? `: ${who}` : ''}`,
+        html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222"><p style="margin:0 0 18px;padding:10px 12px;background:#f6f1e6;border-left:4px solid #FFB612"><strong>Sharing:</strong> ${ROLLCALL_SHARE[entry.share]}</p>${rows}<p style="color:#888;font-size:12px">${replyTo ? 'Hit reply to write back.' : 'No email left, so this one is one-way.'}</p></div>`,
       }),
     }).catch(() => {});
   }

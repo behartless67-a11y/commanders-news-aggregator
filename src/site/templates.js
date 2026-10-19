@@ -3762,6 +3762,146 @@ ${footer(sources, generatedAt)}
 </html>`;
 }
 
+/**
+ * roll-call.html: "tell me about you," for every reader, wherever they are.
+ * Ben wanted to hear from the people reading (Oct 18): "you dont have to be
+ * featured if you dont want to, but i just want to know more about my fellow
+ * fans." So the last question is whether any of it can be shared, and the
+ * answer starts at "just for Ben": sharing is something a reader turns on,
+ * never something they have to remember to turn off.
+ *
+ * Same questions-and-styles family as abroad.html (it reuses those classes),
+ * written for anyone. Answers land in the admin panel's Roll call section and
+ * are emailed to Ben on arrival, with Reply-To set to the reader when they
+ * leave an address (captureRollCall() in submission-created.js). Linked from
+ * Hail Mail, not the nav, so it's noindex and out of the sitemap.
+ */
+export function renderRollCallPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
+  const description = `Roll call for ${siteName} readers: a few optional questions from one Washington fan in Charlottesville who'd like to know who's out there.`;
+  const watch = [
+    'On my couch, yelling at it',
+    'At a bar, with strangers who become family by the fourth quarter',
+    'In the stands, bless me',
+    'With family, whether they like it or not',
+    "On my phone, somewhere I'm not supposed to be",
+    "I can't watch. I check the score and suffer.",
+  ];
+  const share = [
+    ['no', "Just for you, Ben. Please don't share it.", true],
+    ['anon', 'You can share it, but leave my name out', false],
+    ['name', "You can share it with my name and where I'm from", false],
+  ];
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll Call | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('roll-call.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="contact-page abroad-page rollcall-page">
+    <h1 class="podcasts-heading">Roll Call</h1>
+    <p class="page-intro">I'm Ben. I write this thing from Charlottesville, and more of you show up every week. I love that. I also know almost nothing about any of you, except that we all have the same condition.</p>
+    <p class="page-intro">So tell me about you. Every question is optional: answer one, answer all of them, whatever you feel like. At the bottom you decide whether I can share any of it. The first choice, just for me, is already picked, and honestly, that's just as good. I'm not looking for content. I just want to know who's out here suffering with me.</p>
+
+    <form name="rollcall" method="POST" action="/roll-call.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form abroad-form rollcall-form">
+      <input type="hidden" name="form-name" value="rollcall" />
+      <input type="hidden" name="via" value="" />
+      <p class="contact-honeypot"><label>Leave this field blank<input name="bot-field" /></label></p>
+
+      <fieldset class="abroad-q">
+        <legend>Who are you?</legend>
+        <div class="abroad-pair">
+          <label class="contact-field"><span>What should I call you?</span>
+            <input class="contact-input" type="text" name="name" autocomplete="given-name" maxlength="80" /></label>
+          <label class="contact-field"><span>Where are you reading from?</span>
+            <input class="contact-input" type="text" name="where" autocomplete="address-level2" maxlength="120" /></label>
+        </div>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">How did you end up a Commanders fan?</span>
+        <span class="abroad-hint">Everyone has a story. Mine involves a CRT TV and a ditch.</span>
+        <textarea class="contact-input contact-textarea" name="story" rows="5" maxlength="4000"></textarea>
+      </label>
+
+      <fieldset class="abroad-q">
+        <legend>Where do you watch the games?</legend>
+        <div class="abroad-options">
+${watch.map((value) => `          <label class="abroad-option"><input type="radio" name="watch" value="${escapeHtml(value)}" /> <span>${escapeHtml(value)}</span></label>`).join('\n')}
+        </div>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">Any game-day rituals or superstitions?</span>
+        <span class="abroad-hint">No judgment. We're all doing something weird.</span>
+        <input class="contact-input" type="text" name="ritual" maxlength="400" />
+      </label>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">Favorite player, past or present?</span>
+        <input class="contact-input" type="text" name="favorite_player" maxlength="200" />
+      </label>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">The game you're still not over?</span>
+        <span class="abroad-hint">Mine changes about once a week. That's how this is going.</span>
+        <input class="contact-input" type="text" name="not_over" maxlength="400" />
+      </label>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">Anything you want me to write about?</span>
+        <textarea class="contact-input contact-textarea" name="write_about" rows="3" maxlength="2000"></textarea>
+      </label>
+
+      <fieldset class="abroad-q">
+        <legend>Can I share any of this?</legend>
+        <div class="abroad-options">
+${share.map(([value, label, checked]) => `          <label class="abroad-option"><input type="radio" name="share" value="${value}"${checked ? ' checked' : ''} /> <span>${escapeHtml(label)}</span></label>`).join('\n')}
+        </div>
+      </fieldset>
+
+      <label class="contact-field abroad-q">
+        <span class="abroad-q-title">Email (only if you'd like me to write back)</span>
+        <input class="contact-input" type="email" name="email" autocomplete="email" maxlength="200" />
+      </label>
+
+      <button class="contact-submit" type="submit">Report for roll call</button>
+      <p class="abroad-privacy">Only I see what you send. Nothing is saved unless you hit the button, and nothing goes on the site unless you said above that it can.</p>
+    </form>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
 export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false }) {
   const description = `${siteName} is a free, ad-free fan project. Chip in toward hosting if you'd like.`;
   return `<!doctype html>
@@ -3992,6 +4132,11 @@ ${header('admin.html', false, false)}
       </section>
 
       <section class="admin-section">
+        <h2>Roll call</h2>
+        <div id="admin-rollcall"><p class="page-intro">Loading…</p></div>
+      </section>
+
+      <section class="admin-section">
         <h2>Readers abroad</h2>
         <div id="admin-abroad"><p class="page-intro">Loading…</p></div>
       </section>
@@ -4040,6 +4185,7 @@ ${footer(sources, generatedAt)}
   var newsletterEl = document.getElementById('admin-newsletter');
   var wiretapsEl = document.getElementById('admin-wiretaps');
   var abroadEl = document.getElementById('admin-abroad');
+  var rollcallEl = document.getElementById('admin-rollcall');
 
   var pipelineEl = document.getElementById('admin-pipeline');
 
@@ -4050,6 +4196,7 @@ ${footer(sources, generatedAt)}
     loadStats();
     loadDrafts();
     loadWireTaps();
+    loadRollCall();
     loadAbroad();
     loadNewsletter();
   }
@@ -4131,6 +4278,44 @@ ${footer(sources, generatedAt)}
 
   // "Hello from far away" survey answers (abroad.html). Answers can be in any
   // language; the lang field says which version of the survey they saw.
+  // Roll call (roll-call.html). The sharing answer comes first on every
+  // entry, in gold only when it's a yes, so "just for me" can't be missed.
+  function loadRollCall() {
+    fetch('/.netlify/functions/rollcall-list', { credentials: 'same-origin' })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (data) {
+        if (!data.count) {
+          rollcallEl.innerHTML = '<p class="page-intro">Nobody has reported for roll call yet. It goes out with the next Hail Mail.</p>';
+          return;
+        }
+        var share = { no: 'Just for you. Do not share.', anon: 'OK to share, but leave their name out', name: 'OK to share, with their name and where they are from' };
+        var rows = [
+          ['story', 'How they became a fan'], ['watch', 'Watches'], ['ritual', 'Ritual'],
+          ['favorite_player', 'Favorite player'], ['not_over', 'Still not over'], ['write_about', 'Write about'], ['email', 'Email'],
+        ];
+        var items = data.entries.map(function (e) {
+          var when = new Date(e.submittedAt);
+          var stamp = isNaN(when.getTime()) ? '' : when.toLocaleString();
+          var who = [e.name, e.where].filter(Boolean).join(', ') || 'Somebody out there';
+          var ok = e.share === 'anon' || e.share === 'name';
+          var sharing = '<div style="font-size:13px;margin:2px 0 4px;' + (ok ? 'color:var(--gold)' : 'color:var(--text-muted)') + '">' + esc(share[e.share] || share.no) + '</div>';
+          var body = rows.filter(function (r) { return e[r[0]]; }).map(function (r) {
+            return '<div style="margin-top:4px"><span class="page-intro" style="font-size:12px;margin:0">' + r[1] + ':</span> <span style="white-space:pre-wrap">' + esc(e[r[0]]) + '</span></div>';
+          }).join('');
+          return '<li style="margin-bottom:18px">' +
+            '<div style="color:var(--gold);font-weight:600">' + esc(who) + '</div>' +
+            sharing + body +
+            '<div class="page-intro" style="font-size:12px;margin:2px 0 0">' + esc(stamp) + (e.via ? ' &middot; via ' + esc(e.via) : '') + '</div>' +
+            '</li>';
+        }).join('');
+        rollcallEl.innerHTML = '<p class="page-intro"><strong style="color:var(--gold)">' + data.count + '</strong> reader' + (data.count === 1 ? '' : 's') + ' reported for roll call</p>' +
+          '<ul class="admin-path-list" style="margin:8px 0 0;list-style:none;padding:0">' + items + '</ul>';
+      })
+      .catch(function () {
+        rollcallEl.innerHTML = '<p class="page-intro">Could not load roll call.</p>';
+      });
+  }
+
   function loadAbroad() {
     fetch('/.netlify/functions/abroad-list', { credentials: 'same-origin' })
       .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })

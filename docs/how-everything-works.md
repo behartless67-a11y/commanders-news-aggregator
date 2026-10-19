@@ -139,6 +139,19 @@ Worth knowing: Netlify keeps its own copy of every form submission regardless of
 
 ---
 
+## Roll Call (readers telling you about themselves)
+
+`roll-call.html` is a few optional questions for any reader: name, where they're from, how they became a fan, where they watch, rituals, favorite player, the game they're still not over, what you should write about. It's linked from Hail Mail, not the nav, so it's noindex and out of the sitemap.
+
+- **The last question is whether you can share it**, and it starts on "just for you, Ben." A reader has to choose to let you share; they never have to remember to stop you. The three answers: just for you, share without my name, share with my name and where I'm from.
+- **Every answer is emailed to you the moment it arrives** (subject "Roll call: name from place"), with the sharing answer at the top. If they left an email, Reply-To is them, so writing back is just hitting reply.
+- **They also live in the admin panel** under Roll call, newest first, sharing answer first on each one, plus where they came from (`via hailmail` when the link came from a newsletter).
+- Plumbing: `captureRollCall()` in `netlify/functions/submission-created.js` (blob store `rollcall`), `netlify/functions/rollcall-list.js` for admin, `renderRollCallPage()` in `templates.js`. It reuses the Readers Abroad survey's styles.
+
+**Replies to Hail Mail itself:** the newsletter comes from `newsletter@theburgundywire.com`. Mail to the domain goes through ImprovMX, so whether a reader's "reply" reaches you depends on that address (or a catch-all) being forwarded in your ImprovMX dashboard.
+
+---
+
 ## Readers Abroad (the international hello)
 
 Readers outside the US get a short note under the header, in their own language, thanking them for visiting and inviting them to write in. It links to **abroad.html**, a survey translated into 15 languages (with a switcher), their country filled in and this week's kickoff shown in their own time zone. Answers show up in the admin panel under **Readers abroad**.

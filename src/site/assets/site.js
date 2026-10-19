@@ -705,6 +705,29 @@
     });
   })();
 
+  // Roll call (roll-call.html): sent in place like the other forms, with
+  // where the reader came from (?via=hailmail, kept for the tab by
+  // sessionVia()) so Ben can tell which Hail Mail brought them.
+  (function () {
+    var form = document.querySelector('form[name="rollcall"]');
+    if (!form) return;
+    var via = form.querySelector('input[name="via"]');
+    if (via) via.value = sessionVia() || '';
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var done = function () {
+        var p = document.createElement('p');
+        p.className = 'abroad-thanks';
+        p.textContent = "Got it. Thank you, truly. I read every single one of these, and I can't wait to read yours. Hail.";
+        form.replaceWith(p);
+        p.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      };
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString() })
+        .then(done, done);
+    });
+  })();
+
   var forcedMilestone = Number(new URLSearchParams(window.location.search).get('milestone'));
   // Add ?country=DE to preview the version a reader outside the US gets.
   if (forcedMilestone > 0) celebrateMilestone(forcedMilestone, true, forcedCountry || null);
