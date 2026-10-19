@@ -35,14 +35,42 @@ const P_STYLE = `margin:0 0 16px;color:#efe9e4;font-family:${FONT};font-size:15p
 const LINK_STYLE = 'color:#FFB612;text-decoration:underline;';
 
 /**
- * A "bulletproof" button: the color and padding live on a table cell, which
- * Outlook respects, instead of on the link, which it doesn't. Outlook still
- * drops the border-radius, so corners come out square there. Harmless.
+ * A "bulletproof" button, in two versions.
+ *
+ * Desktop Outlook (Word's layout engine) gets a VML roundrect inside an
+ * [if mso] comment: a fixed-size shape it draws itself, with real rounded
+ * corners and its label centered in it. The first version of this button was
+ * a colored table cell, and in Outlook (Oct 19, "Report for roll call") it
+ * came out a tall square block with the next paragraph jammed against it:
+ * Word ignores margin on a table, so the gap below vanished, and it sized
+ * the box off the link's inherited 1.65 line height.
+ *
+ * Everyone else gets a pill-shaped table cell, gold with a darker gold edge
+ * along the bottom, the label and an arrow. The space around it is padding
+ * on a wrapping cell rather than margin, and every line height is set in
+ * pixels (mso-line-height-rule: exactly), so nothing is left to inherit.
+ *
+ * The VML shape needs a width up front; it's estimated from the label at
+ * roughly 9px a character in 15px bold, plus the side padding.
  */
 function button(href, label) {
-  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 24px;">
-      <tr><td bgcolor="#FFB612" style="background:#FFB612;border-radius:6px;padding:13px 26px;">
-        <a href="${href}" style="color:#0a0807;font-family:${FONT};font-size:15px;font-weight:700;text-decoration:none;display:inline-block;">${label}</a>
+  const text = `${label}&nbsp;&rarr;`;
+  const vmlWidth = Math.max(180, Math.round(String(label).length * 9 + 72));
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr><td style="padding:8px 0 26px;">
+        <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${href}" style="height:46px;v-text-anchor:middle;width:${vmlWidth}px;" arcsize="50%" stroke="f" fillcolor="#FFB612">
+          <w:anchorlock/>
+          <center style="color:#14100f;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;">${text}</center>
+        </v:roundrect>
+        <![endif]-->
+        <!--[if !mso]><!-->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+          <tr><td bgcolor="#FFB612" style="background:#FFB612;border-radius:999px;border-bottom:3px solid #c48c0a;padding:12px 28px;line-height:20px;mso-line-height-rule:exactly;">
+            <a href="${href}" style="color:#14100f;font-family:${FONT};font-size:15px;line-height:20px;font-weight:700;letter-spacing:0.2px;text-decoration:none;display:inline-block;">${text}</a>
+          </td></tr>
+        </table>
+        <!--<![endif]-->
       </td></tr>
     </table>`;
 }
