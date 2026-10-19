@@ -1,28 +1,4 @@
 {
-  "riggos-rag-aeff7e1b62fa": {
-    "id": "riggos-rag-aeff7e1b62fa",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/steve-smith-gives-luke-mccaffrey-priceless-validation-after-commanders-reprieve",
-    "title": "Steve Smith gives Luke McCaffrey priceless validation after Commanders reprieve",
-    "excerpt": "Prolific former wide receiver Steve Smith Sr. laid out precisely why Luke McCaffrey remains on the Washington Commanders roster.",
-    "publishedAt": "2026-09-04T17:30:00.000Z",
-    "collectedAt": "2026-09-04T18:06:33.759Z"
-  },
-  "pft-5fc699ab43d4": {
-    "id": "pft-5fc699ab43d4",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-i-cant-live-off-what-i-did-in-2024",
-    "title": "Jayden Daniels: I can't live off what I did in 2024",
-    "excerpt": "The discussion around Commanders quarterback Jayden Daniels this summer has been focused more on his jersey number at LSU than anything having to do with his current play, but that will change next weekend. \n Daniels will make his first start since Week 14 of last season when the Commanders face the Eagles in Week 1 and he'll be making his first start since the Commanders replaced offensive coordinator Kliff Kingsbury with David Blough. When Daniels does take the field, people will be watching…",
-    "publishedAt": "2026-09-04T17:40:48.000Z",
-    "collectedAt": "2026-09-04T18:06:39.372Z"
-  },
   "hogs-haven-fb25e9d3239a": {
     "id": "hogs-haven-fb25e9d3239a",
     "sourceId": "hogs-haven",
@@ -17347,7 +17323,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-news/449852/commanders-gm-adam-peters-dan-quinn-nfc-east-trade-deadline-interview",
     "title": "Commanders GM Adam Peters talks Dan Quinn, NFC East, trade deadline",
-    "excerpt": "Commanders general manager Adam Peters held his weekly interview with 106.7-FM The Fan a few days later than normal, considering some travel conflicts and the later Monday night start to Washington’s Week 6 contest against the San Francisco 49ers. \n\n So, hopefullly, this was the last Commanders interview focused on what happened against the New York Giants . Fan fatigue has set in — we’ve heard you in the comments — and now all bases have been covered. Peters was largely forward thinking in…",
+    "excerpt": "Commanders general manager Adam Peters held his weekly interview with the Sports Junkies on 106.7-FM The Fan a few days later than normal, considering some travel conflicts and the later Monday night start to Washington’s Week 6 contest against the San Francisco 49ers. \n\n So, hopefullly, this was the last Commanders interview focused on what happened against the New York Giants . Fan fatigue has set in — we’ve heard you in the comments — and now all bases have been covered. Peters was largely…",
     "publishedAt": "2026-10-19T14:43:25.000Z",
     "collectedAt": "2026-10-19T16:05:32.885Z"
   },
@@ -17410,5 +17386,101 @@
     "excerpt": "SEATTLE, WASHINGTON - OCTOBER 11: Brock Purdy #13 of the San Francisco 49ers gestures after the game against the Seattle Seahawks at Lumen Field on October 11, 2026 in Seattle, Washington. (Photo by Alika Jenner/Getty Images) | Getty Images Fresh off a huge Week 5 divisional win against the Seattle Seahawks, the San Francisco 49ers begin their longest stretch of games without an NFC West opponent with a Monday night date against the Washington Commanders.\n Washington has already aided the 49ers…",
     "publishedAt": "2026-10-19T15:30:00.000Z",
     "collectedAt": "2026-10-19T16:05:40.249Z"
+  },
+  "riggos-rag-a2c2a8a5df8a": {
+    "id": "riggos-rag-a2c2a8a5df8a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/dan-quinn-faces-washington-commanders-referendum-goes-beyond-final-score",
+    "title": "Dan Quinn faces a Commanders referendum that goes beyond the final score",
+    "excerpt": "Dan Quinn faces a Washington Commanders referendum that goes beyond the final score on Monday Night Football.",
+    "publishedAt": "2026-10-19T17:33:13.000Z",
+    "collectedAt": "2026-10-19T18:05:36.221Z"
+  },
+  "athletic-jhabvala-059e900f99a4": {
+    "id": "athletic-jhabvala-059e900f99a4",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7704874/2026/10/19/commanders-gm-adam-peters-giants-mistake",
+    "title": "Commanders GM Adam Peters praises team culture, leadership a week after Giants OT gaffe",
+    "excerpt": "“It showed a lot of leadership and growth and maturity (that) all the people that were involved all took accountability,\" Peters said.",
+    "publishedAt": "2026-10-19T17:07:25.000Z",
+    "collectedAt": "2026-10-19T18:05:38.057Z"
+  },
+  "commanders-youtube-90dbc9e0e0da": {
+    "id": "commanders-youtube-90dbc9e0e0da",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=5uXAbT8sfCg",
+    "title": "MNF PREVIEW: 49ers vs. Commanders | Booth Review | Washington Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-10-19T16:00:04.000Z",
+    "collectedAt": "2026-10-19T18:05:39.623Z"
+  },
+  "cbs-nfl-36a36a8cadb8": {
+    "id": "cbs-nfl-36a36a8cadb8",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/betting/news/49ers-vs-commanders-odds-picks-monday-night-football-first-touchdown-predictions-include-george-kittle",
+    "title": "49ers vs. Commanders odds, picks: Monday Night Football first touchdown predictions include George Kittle",
+    "excerpt": "We'll go over the prediction markets at Kalshi for the first touchdown scorer in 49ers vs. Commanders on Monday Night Football",
+    "publishedAt": "2026-10-19T16:54:50.000Z",
+    "collectedAt": "2026-10-19T18:05:42.501Z"
+  },
+  "cbs-nfl-b2f24064e807": {
+    "id": "cbs-nfl-b2f24064e807",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/pick-six-jalen-hurts-plus-colts-fire-chris-ballard-commanders-49ers-picks",
+    "title": "Pick Six: Jalen Hurts could be done for the year, plus Colts fire GM Chris Ballard and Commanders-49ers picks",
+    "excerpt": "Here's everything you need to know about the NFL for Oct. 19",
+    "publishedAt": "2026-10-19T16:45:09.000Z",
+    "collectedAt": "2026-10-19T18:05:42.501Z"
+  },
+  "cbs-nfl-fdc2f06c6062": {
+    "id": "cbs-nfl-fdc2f06c6062",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/is-stefon-diggs-playing-tonight-injury-update-commanders-vs-49ers",
+    "title": "Is Stefon Diggs playing on 'Monday Night Football?' A look at the Commanders WR's status vs. 49ers",
+    "excerpt": "Diggs is officially listed as questionable with a hamstring injury",
+    "publishedAt": "2026-10-19T16:27:42.000Z",
+    "collectedAt": "2026-10-19T18:05:42.501Z"
+  },
+  "cbs-nfl-419015431ba6": {
+    "id": "cbs-nfl-419015431ba6",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/is-mike-evans-playing-monday-night-football",
+    "title": "Is Mike Evans playing on 'Monday Night Football?' A look at the 49ers WR's status vs. Commanders",
+    "excerpt": "Evans is officially listed as questionable for Week 6",
+    "publishedAt": "2026-10-19T15:52:01.000Z",
+    "collectedAt": "2026-10-19T18:05:42.501Z"
+  },
+  "yahoo-nfl-a85985e8595f": {
+    "id": "yahoo-nfl-a85985e8595f",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-49ers-try-to-stay-undefeated-vs-commanders-160949073.html",
+    "title": "NFL Monday Night Football preview: 49ers try to stay undefeated vs. Commanders",
+    "excerpt": "As we found out in Week 6, and see pretty much every week in the NFL, being expected to win doesn't mean too much. \n Teams like the Los Angeles Rams and Indianapolis Colts lost as significant favorites on Sunday, and perhaps that's a warning for the San Francisco 49ers. \n The 49ers are 5-0. They and the Kansas City Chiefs are the only undefeated teams in the NFL. The 49ers face a Washington Commanders team that's 1-3-1 and coming off an embarrassing time-management debacle that cost them a…",
+    "publishedAt": "2026-10-19T16:09:49.000Z",
+    "collectedAt": "2026-10-19T18:05:43.031Z"
   }
 }

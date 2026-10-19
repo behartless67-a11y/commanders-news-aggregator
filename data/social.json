@@ -8859,5 +8859,34 @@
     "images": [],
     "publishedAt": "2026-10-19T17:13:42.000Z",
     "collectedAt": "2026-10-19T18:05:09.588Z"
+  },
+  "social-56189b04dc8f": {
+    "id": "social-56189b04dc8f",
+    "url": "https://x.com/JPFinlayNBCS/status/2112230753648214280",
+    "text": "In 2 career Monday Night Football games Jayden Daniels has been terrific. 81 percent completion, 465 pass yards, 5 TDs vs 1 INT. Another 90 yards rushing and 1 TD on the ground. Jayden likes the bright lights.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/468/698/684/288/646/original/842e02be8ffd2894.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/468/698/742/414/615/original/2c91b244521cb799.jpg"
+    ],
+    "publishedAt": "2026-10-19T17:13:49.000Z",
+    "collectedAt": "2026-10-19T18:05:46.732Z"
+  },
+  "social-e85536e40d76": {
+    "id": "social-e85536e40d76",
+    "url": "https://x.com/AdamSchefter/status/2112162580106203178",
+    "text": "If the Commanders lose tonight on Monday Night Football to the 49ers, the NFC East would become the first division in NFL history to be winless in consecutive weeks in which all teams in the division played a game. And two of the teams played each other last week.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/467/639/204/185/702/original/8d51ca28f87f96f0.jpg"
+    ],
+    "publishedAt": "2026-10-19T12:42:55.000Z",
+    "collectedAt": "2026-10-19T18:05:51.436Z"
   }
 }
