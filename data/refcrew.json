@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T22:14:06.682Z",
+  "fetchedAt": "2026-10-19T00:06:41.933Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5767,6 +5767,54 @@
         "abbr": "TEN",
         "flags": 8,
         "yards": 54
+      }
+    },
+    "401873004": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T20:05Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "LAR",
+        "flags": 4,
+        "yards": 31
+      },
+      "away": {
+        "abbr": "ARI",
+        "flags": 5,
+        "yards": 51
+      }
+    },
+    "401873005": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "LV",
+        "flags": 7,
+        "yards": 62
+      },
+      "away": {
+        "abbr": "BUF",
+        "flags": 8,
+        "yards": 77
+      }
+    },
+    "401873006": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "KC",
+        "flags": 8,
+        "yards": 89
+      },
+      "away": {
+        "abbr": "LAC",
+        "flags": 7,
+        "yards": 59
       }
     }
   }
