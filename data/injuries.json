@@ -9,7 +9,7 @@
   {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
-    "status": "Out",
+    "status": "IR",
     "bodyPart": "Groin",
     "notes": null
   },
@@ -23,7 +23,7 @@
   {
     "name": "Javontae Jean-Baptiste",
     "position": "DL",
-    "status": "Out",
+    "status": "IR",
     "bodyPart": "Pectoral",
     "notes": null
   },
@@ -40,20 +40,6 @@
     "status": "IR",
     "bodyPart": "Pectoral",
     "notes": "Surgery"
-  },
-  {
-    "name": "Jeremy McNichols",
-    "position": "RB",
-    "status": "IR",
-    "bodyPart": "Quadriceps",
-    "notes": null
-  },
-  {
-    "name": "Jordan Magee",
-    "position": "LB",
-    "status": "IR",
-    "bodyPart": "Hamstring",
-    "notes": null
   },
   {
     "name": "Laremy Tunsil",
@@ -103,13 +89,6 @@
     "status": "Questionable",
     "bodyPart": "Hamstring",
     "notes": null
-  },
-  {
-    "name": "Trey Amos",
-    "position": "DB",
-    "status": "IR",
-    "bodyPart": "Ankle",
-    "notes": "Sprain"
   },
   {
     "name": "Tyler Owens",
