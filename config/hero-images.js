@@ -58,4 +58,8 @@ export const HERO_IMAGES = [
 export const HERO_PINNED = {
   '2026-10-17': '/photos/hero-helmet-w.jpg',
   '2026-10-18': '/photos/hero-helmet-vintage.jpg',
+  // Ben's birthday post day: his turn in the rotation was a family photo,
+  // and he wanted the helmets back instead. The vintage one follows on the
+  // 20th by rotation anyway.
+  '2026-10-19': '/photos/hero-helmet-w.jpg',
 };
