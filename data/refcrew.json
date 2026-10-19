@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T03:17:57.045Z",
+  "fetchedAt": "2026-10-19T04:06:37.245Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5815,6 +5815,22 @@
         "abbr": "LAC",
         "flags": 7,
         "yards": 59
+      }
+    },
+    "401873007": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-19T00:20Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "GB",
+        "flags": 11,
+        "yards": 96
+      },
+      "away": {
+        "abbr": "DAL",
+        "flags": 11,
+        "yards": 108
       }
     }
   }
