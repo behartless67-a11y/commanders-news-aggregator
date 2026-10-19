@@ -1,19 +1,4 @@
 {
-  "social-8655585995b7": {
-    "id": "social-8655585995b7",
-    "url": "https://x.com/Commanders/status/2108681410001444999",
-    "text": "all eyes on Sunday @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/413/242/425/605/176/original/a955adb0e2f9d785.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/413/242/616/259/497/original/9a8b5cb20618fb1c.jpg"
-    ],
-    "publishedAt": "2026-10-09T22:10:00.000Z",
-    "collectedAt": "2026-10-09T22:27:22.984Z"
-  },
   "social-7d4d5e2b492d": {
     "id": "social-7d4d5e2b492d",
     "url": "https://x.com/Commanders/status/2108701545156026787",
@@ -8896,5 +8881,351 @@
     ],
     "publishedAt": "2026-10-19T20:15:24.107Z",
     "collectedAt": "2026-10-19T22:05:58.865Z"
+  },
+  "social-6adfda6f362c": {
+    "id": "social-6adfda6f362c",
+    "url": "https://x.com/Commanders/status/2112318052423598266",
+    "text": "Gameday LIVE: Pregame warmups before #WASvsSF on MNF | 8:15pm on ESPN GL",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T23:00:43.000Z",
+    "collectedAt": "2026-10-19T23:18:11.664Z"
+  },
+  "social-9fb510bf40bf": {
+    "id": "social-9fb510bf40bf",
+    "url": "https://x.com/Commanders/status/2112303975332749347",
+    "text": "We're honoring the legacy of coach Greg Knapp with the @49ers and the #KnappStairClimb , raising awareness against distracted driving 💛 @knappmemorial@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/778/068/389/original/94c2dd6403ee7915.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/921/427/622/original/e1784fcd096f2521.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/963/825/645/original/2e83c89e517b9efd.jpg"
+    ],
+    "publishedAt": "2026-10-19T22:04:47.000Z",
+    "collectedAt": "2026-10-19T23:18:11.665Z"
+  },
+  "social-b29e65fbcc4f": {
+    "id": "social-b29e65fbcc4f",
+    "url": "https://x.com/JPFinlayNBCS/status/2112318682177384551",
+    "text": "Best OLineman I’ve ever covered and a better dude",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-19T23:03:13.000Z",
+    "collectedAt": "2026-10-19T23:18:13.003Z"
+  },
+  "social-e6696b9fa9ec": {
+    "id": "social-e6696b9fa9ec",
+    "url": "https://x.com/JPFinlayNBCS/status/2112306654108860758",
+    "text": "Gotta make sure the helmet comms work. Especially after last week",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/885/803/761/331/original/4ea08dc63c8eaf49.jpg"
+    ],
+    "publishedAt": "2026-10-19T22:15:25.000Z",
+    "collectedAt": "2026-10-19T23:18:13.003Z"
+  },
+  "social-b8c14b0f9111": {
+    "id": "social-b8c14b0f9111",
+    "url": "https://x.com/JPFinlayNBCS/status/2112304548765442252",
+    "text": "Haven’t seen the gold pants in a while",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/865/953/381/614/original/21db553571d3779d.jpg"
+    ],
+    "publishedAt": "2026-10-19T22:07:03.000Z",
+    "collectedAt": "2026-10-19T23:18:13.003Z"
+  },
+  "social-de1298ca3c49": {
+    "id": "social-de1298ca3c49",
+    "url": "https://x.com/john_keim/status/2112316875183145319",
+    "text": "RE: tuses/2112314173795516799 Also means Mike Evans is active",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-19T22:56:02.000Z",
+    "collectedAt": "2026-10-19T23:18:14.431Z"
+  },
+  "social-68d9bb4fab70": {
+    "id": "social-68d9bb4fab70",
+    "url": "https://x.com/john_keim/status/2112315916361007171",
+    "text": "Washington inactives: CB Fabian Moreau, QB Marcus Mariota, CB Isaac Yiadom, LB T.J. Maguranyanga, DE Charles Omenihu, OL Tanoa Togiai. 33544-4",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-19T22:52:14.000Z",
+    "collectedAt": "2026-10-19T23:18:14.431Z"
+  },
+  "social-9d61ce99d0da": {
+    "id": "social-9d61ce99d0da",
+    "url": "https://x.com/john_keim/status/2112311516842315784",
+    "text": "We’ll find out in a few minutes about inactives but looking good for the questionable players. Will be good for the secondary to have back Amos and Cross",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-19T22:34:45.000Z",
+    "collectedAt": "2026-10-19T23:18:14.431Z"
+  },
+  "social-945f61d565eb": {
+    "id": "social-945f61d565eb",
+    "url": "https://x.com/john_keim/status/2112309478586823166",
+    "text": "Big night for Jayden Daniels. (Will be facing the team he grew up rooting for)",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-19T22:26:39.000Z",
+    "collectedAt": "2026-10-19T23:18:14.431Z"
+  },
+  "social-613b05cbaaf4": {
+    "id": "social-613b05cbaaf4",
+    "url": "https://x.com/49ers/status/2112314173795516799",
+    "text": "Deebo Samuel Sr. and Nick Bosa ruled out for today's game. @SutterHealth@twitter.com inactives 📰:",
+    "handle": "49ers",
+    "author": "San Francisco 49ers",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/469/999/129/058/492/original/ad6457e91c2260d2.jpg"
+    ],
+    "publishedAt": "2026-10-19T22:45:18.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-73904439be1d": {
+    "id": "social-73904439be1d",
+    "url": "https://x.com/BenStandig/status/2112314419896328636",
+    "text": "WR Stefon Diggs ND DT Javon Kinlaw are active. Inactives: QB Marcus Mariota CB Fabian Moreau CB Isaac Yiadom OLB T.J. Magunranyanga G Tanoa Togiai DE Charles Omenihu",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-19T22:46:17.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-be3381621f5b": {
+    "id": "social-be3381621f5b",
+    "url": "https://x.com/BenStandig/status/2112314066605944977",
+    "text": "Josh Harris joined the group.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-19T22:44:53.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-b484c250d02a": {
+    "id": "social-b484c250d02a",
+    "url": "https://x.com/BenStandig/status/2112313572592435673",
+    "text": "Stefon Diggs playing catch with… everyone, including @Mitch_Tischler@twitter.com .",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-19T22:42:55.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-1b006a038d12": {
+    "id": "social-1b006a038d12",
+    "url": "https://x.com/BenStandig/status/2112307540675715205",
+    "text": "Stefon Diggs ready to take-off?",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-19T22:18:57.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-b15012b9f2c3": {
+    "id": "social-b15012b9f2c3",
+    "url": "https://x.com/BenStandig/status/2112306739865588164",
+    "text": "Adam Peters, Dan Quinn and Bob Myers walk out to the field.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-19T22:15:46.000Z",
+    "collectedAt": "2026-10-19T23:18:15.837Z"
+  },
+  "social-90b528aa2342": {
+    "id": "social-90b528aa2342",
+    "url": "https://x.com/tashanreed/status/2112314900009934886",
+    "text": "RE: tuses/2112314173795516799 Bosa's out, but Mike Evans is playing today:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-19T22:48:11.000Z",
+    "collectedAt": "2026-10-19T23:18:17.350Z"
+  },
+  "social-d5c0c45d84c7": {
+    "id": "social-d5c0c45d84c7",
+    "url": "https://x.com/tashanreed/status/2112314283623338355",
+    "text": "WR Stefon Diggs, S Nick Cross, C Lucas Patrick, etc. are good to go for the #Commanders",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-19T22:45:44.000Z",
+    "collectedAt": "2026-10-19T23:18:17.350Z"
+  },
+  "social-ccbd66c1597c": {
+    "id": "social-ccbd66c1597c",
+    "url": "https://x.com/AdamSchefter/status/2112314478553337870",
+    "text": "49ers WR Mike Evans is active tonight vs. the Commanders.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-19T22:46:31.000Z",
+    "collectedAt": "2026-10-19T23:18:20.498Z"
+  },
+  "social-5fc390b0543b": {
+    "id": "social-5fc390b0543b",
+    "url": "https://x.com/AdamSchefter/status/2112314240606388629",
+    "text": "Commanders WR Stefon Diggs is active tonight vs. the 49ers.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-10-19T22:45:34.000Z",
+    "collectedAt": "2026-10-19T23:18:20.498Z"
+  },
+  "social-d704b3197c49": {
+    "id": "social-d704b3197c49",
+    "url": "https://x.com/RapSheet/status/2112315007157375090",
+    "text": "All hands on deck: Both #Commanders WR Stefon Diggs and #49ers WR Mike Evans are officially active tonight. Evans did not practice all week.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-10-19T22:48:37.000Z",
+    "collectedAt": "2026-10-19T23:18:21.662Z"
+  },
+  "social-37ae3a12ecbb": {
+    "id": "social-37ae3a12ecbb",
+    "url": "https://x.com/MikeGarafolo/status/2112314824499646895",
+    "text": "#Commanders WR Stefon Diggs and #49ers WR Mike Evans both officially active tonight.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [],
+    "publishedAt": "2026-10-19T22:47:53.000Z",
+    "collectedAt": "2026-10-19T23:18:22.956Z"
+  },
+  "social-c99148bf2da6": {
+    "id": "social-c99148bf2da6",
+    "url": "https://x.com/pfrumors/status/2112320688589541376",
+    "text": "Commanders RB Jacory Croskey-Merritt is heading to IR commanders-place-rb-jacory-croskey-merritt-on-ir",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "PFR",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-19T23:11:11.000Z",
+    "collectedAt": "2026-10-19T23:18:26.061Z"
+  },
+  "social-a3e7777a8075": {
+    "id": "social-a3e7777a8075",
+    "url": "https://mysportgallery.com/@slessans2/117470046442846567",
+    "text": "Commanders inactives tonight: - DE Charles Omenihu - CB Isaac Yiadom - QB Marcus Mariota - OL Tanoa Togiai - LB T.J. Maguranyanga - CB Fabian Moreau #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:57:39.000Z",
+    "collectedAt": "2026-10-19T23:18:27.996Z"
+  },
+  "social-f1a4bbbaa3d8": {
+    "id": "social-f1a4bbbaa3d8",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3myb7si2e5p2m",
+    "text": "Commanders inactives tonight: - DE Charles Omenihu - CB Isaac Yiadom - QB Marcus Mariota - OL Tanoa Togiai - LB T.J. Maguranyanga - CB Fabian Moreau #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:57:40.073Z",
+    "collectedAt": "2026-10-19T23:18:27.996Z"
+  },
+  "social-9b9388bb20da": {
+    "id": "social-9b9388bb20da",
+    "url": "https://mysportgallery.com/@slessans2/117470024042155195",
+    "text": "Dear Football Gods, please hear my humble prayer: keep all our Commanders healthy, build an impenetrable human fortress around Jayden, and somehow, some way, bless us with a miracle to squeak out a win today. Amen. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:51:58.000Z",
+    "collectedAt": "2026-10-19T23:18:27.996Z"
+  },
+  "social-0346d0e9475d": {
+    "id": "social-0346d0e9475d",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3myb7ie6cqe2m",
+    "text": "Dear Football Gods, please hear my humble prayer: keep all our Commanders healthy, build an impenetrable human fortress around Jayden, and somehow, some way, bless us with a miracle to squeak out a win today. Amen. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:52:00.505Z",
+    "collectedAt": "2026-10-19T23:18:27.997Z"
+  },
+  "social-3d23fed0807e": {
+    "id": "social-3d23fed0807e",
+    "url": "https://mysportgallery.com/@slessans2/117470012917026513",
+    "text": "Stefon Diggs is active tonight. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:49:08.000Z",
+    "collectedAt": "2026-10-19T23:18:27.997Z"
+  },
+  "social-00e4f9bcec46": {
+    "id": "social-00e4f9bcec46",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3myb7dd446v2m",
+    "text": "Stefon Diggs is active tonight. #NFL | #HTTC | #Commanders | #RaiseHail",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-19T22:49:11.622Z",
+    "collectedAt": "2026-10-19T23:18:27.997Z"
   }
 }

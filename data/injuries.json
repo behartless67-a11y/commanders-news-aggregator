@@ -7,17 +7,24 @@
     "notes": null
   },
   {
+    "name": "Fabian Moreau",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Isaac Yiadom",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
     "status": "IR",
     "bodyPart": "Groin",
-    "notes": null
-  },
-  {
-    "name": "Javon Kinlaw",
-    "position": "DT",
-    "status": "Questionable",
-    "bodyPart": "Ankle",
     "notes": null
   },
   {
@@ -56,13 +63,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "Lucas Patrick",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Illness",
-    "notes": null
-  },
-  {
     "name": "Marcus Mariota",
     "position": "QB",
     "status": "Out",
@@ -70,31 +70,10 @@
     "notes": "Sprain"
   },
   {
-    "name": "Nick Cross",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Illness",
-    "notes": null
-  },
-  {
-    "name": "Percy Butler",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
-    "name": "Stefon Diggs",
-    "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
-    "notes": null
-  },
-  {
-    "name": "Tyler Owens",
-    "position": "DB",
-    "status": "Questionable",
-    "bodyPart": "Hamstring",
+    "name": "T.J. Maguranyanga",
+    "position": "DE",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   }
 ]
