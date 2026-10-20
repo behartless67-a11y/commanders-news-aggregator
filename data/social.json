@@ -11327,5 +11327,71 @@
     "images": [],
     "publishedAt": "2026-10-20T15:04:52.000Z",
     "collectedAt": "2026-10-20T16:05:54.355Z"
+  },
+  "social-9b148b0c6188": {
+    "id": "social-9b148b0c6188",
+    "url": "https://x.com/Jomboy_/status/2112572236725121077",
+    "text": "I looked into this Dan Quinn lipreading",
+    "handle": "Jomboy_",
+    "author": "Jimmy O'Brien",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-20T15:50:45.000Z",
+    "collectedAt": "2026-10-20T16:21:55.210Z"
+  },
+  "social-9254c00f728b": {
+    "id": "social-9254c00f728b",
+    "url": "https://x.com/RapSheet/status/2112577560538476754",
+    "text": "The #Falcons are signing edge Charles Snowden off the #Commanders practice squad to their 53-man roster, source said. With Washington this year, Snowden was with the #Raiders the last three seasons.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/474/121/500/742/814/original/56cb415ed1a27c37.jpg"
+    ],
+    "publishedAt": "2026-10-20T16:11:54.000Z",
+    "collectedAt": "2026-10-20T16:21:57.285Z"
+  },
+  "social-f868105ba4f6": {
+    "id": "social-f868105ba4f6",
+    "url": "https://x.com/BenStandig/status/2112578417602560210",
+    "text": "The Falcons are signing EDGE Charles Snowden off Washington's practice squad, source confirms ( @RapSheet 1st).",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-20T16:15:19.000Z",
+    "collectedAt": "2026-10-20T16:21:58.268Z"
+  },
+  "social-ed34ddf94f8f": {
+    "id": "social-ed34ddf94f8f",
+    "url": "https://x.com/BenStandig/status/2112577809583570992",
+    "text": "Anthony Davis wants out of Washington. The relationship is destined to implode. That's the prevailing NBA narrative. Except sources on both sides tell me there are no issues. Davis isn't interested in correcting the speculation, either. My latest ⬇️ anthony-davis-the-wizards-and-the",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/474/120/092/012/305/original/baca0a76a6a072d1.jpg"
+    ],
+    "publishedAt": "2026-10-20T16:12:54.000Z",
+    "collectedAt": "2026-10-20T16:21:58.268Z"
+  },
+  "social-691e1f75c1de": {
+    "id": "social-691e1f75c1de",
+    "url": "https://x.com/BenStandig/status/2112577165778882705",
+    "text": "The Commanders nearly pulled off a stunning comeback against the unbeaten 49ers. Nobody was celebrating. A disastrous 1H, another injury to a cornerstone player and familiar execution issues left Washington frustrated by what might have been. ⬇️ commanders-wake-up-too-late-against",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/474/113/873/295/039/original/da830f1fa37a7783.jpg"
+    ],
+    "publishedAt": "2026-10-20T16:10:20.000Z",
+    "collectedAt": "2026-10-20T16:21:58.268Z"
   }
 }
