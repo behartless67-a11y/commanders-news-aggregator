@@ -1,28 +1,4 @@
 {
-  "hogs-haven-898f28be81b3": {
-    "id": "hogs-haven-898f28be81b3",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-undrafted-free-agents/437384/winner-2026-washington-commanders-roster-prediction-contest",
-    "title": "Announcing the winner of the 2026 Washington Commanders Roster Prediction Contest!",
-    "excerpt": "LANDOVER, MARYLAND - DECEMBER 20: Trent Scott #73 of the Washington Commanders stands on the sidelines prior to an NFL football game against the Philadelphia Eagles at Northwest Stadium on December 20, 2025 in Landover, Maryland. (Photo by Kevin Sabitus/Getty Images) | Getty Images \n \n We began a long journey together back on March 11, when CB Amik Robertson was the first veteran free agent signed by the Commanders in 2026 . The roster building continued at a fast pace, with the team eventually…",
-    "publishedAt": "2026-09-05T11:00:00.000Z",
-    "collectedAt": "2026-09-05T12:05:33.339Z"
-  },
-  "riggos-rag-75c02a9718b5": {
-    "id": "riggos-rag-75c02a9718b5",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/zach-ertz-could-seal-storybook-reunion-with-bitter-commanders-twist",
-    "title": "Zach Ertz could seal a storybook reunion with bitter Commanders twist",
-    "excerpt": "Former Washington Commanders tight end Zach Ertz could be set for a storybook reunion with the Philadelphia Eagles.",
-    "publishedAt": "2026-09-05T11:30:53.000Z",
-    "collectedAt": "2026-09-05T12:05:34.108Z"
-  },
   "hogs-haven-ce1a54a323ea": {
     "id": "hogs-haven-ce1a54a323ea",
     "sourceId": "hogs-haven",
@@ -18322,5 +18298,53 @@
     "excerpt": "The bye week has arrived for Quinn and his 1-4-1 Commanders. Whether he can fix his team's problems remains an open question.",
     "publishedAt": "2026-10-20T10:00:45.000Z",
     "collectedAt": "2026-10-20T10:05:34.732Z"
+  },
+  "atoz-sports-29b73833da89": {
+    "id": "atoz-sports-29b73833da89",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/dan-quinn-commanders-49ers-fourth-down-viral-clip-explanation",
+    "title": "Dan Quinn pushes back on viral Commanders sideline clip that appeared to show confusion during 49ers game",
+    "excerpt": "Oct 19, 2026; Santa Clara, California, USA; Washington Commanders head coach Dan Quinn gestures during the third quarter against the San Francisco 49ers at Levi’s Stadium. Mandatory Credit: Kyle Terada-Imagn Images \n \n\n After cameras captured a puzzling reaction to Washington’s failed fourth-down attempt, Quinn explained what was happening on his headset and why the Commanders had planned to go for it.\n\n Dan Quinn found himself at the center of another controversy during the Washington…",
+    "publishedAt": "2026-10-20T12:00:00.000Z",
+    "collectedAt": "2026-10-20T12:05:32.461Z"
+  },
+  "riggos-rag-74d9df4bb6dd": {
+    "id": "riggos-rag-74d9df4bb6dd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-fans-should-brace-worst-after-terry-mclaurin-injury",
+    "title": "Commanders fans should brace for the worst after Terry McLaurin’s injury",
+    "excerpt": "Washington Commanders fans are bracing for bad news after a concerning knee injury to beloved wide receiver Terry McLaurin.",
+    "publishedAt": "2026-10-20T11:30:00.000Z",
+    "collectedAt": "2026-10-20T12:05:32.691Z"
+  },
+  "athletic-jhabvala-97c0860f5146": {
+    "id": "athletic-jhabvala-97c0860f5146",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7707080/2026/10/20/jayden-daniels-washington-commanders-49ers",
+    "title": "Against 49ers, Jayden Daniels shows Commanders what they have and what they lack",
+    "excerpt": "After a brutal first half by Washington, Jayden Daniels gave his team a chance to win with a performance that displayed his rare abilities.",
+    "publishedAt": "2026-10-20T11:00:46.000Z",
+    "collectedAt": "2026-10-20T12:05:35.205Z"
+  },
+  "pft-f32ae0a254c4": {
+    "id": "pft-f32ae0a254c4",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/terry-mclaurin-believed-to-have-season-ending-knee-injury",
+    "title": "Terry McLaurin believed to have season-ending knee injury",
+    "excerpt": "Commanders wide receiver Terry McLaurin had to be carted off the field with an air cast on his left knee on Monday night and the image didn't do much to conjure up hopes of a quick return to the field this season. \n Head coach Dan Quinn confirmed that the team feared a \"significant\" injury after the game and that McLaurin would go for tests on Tuesday to determine just how significant it is. Those tests are pending, but Ian Rapoport of NFL Media reports that the team is bracing to learn that…",
+    "publishedAt": "2026-10-20T11:17:20.000Z",
+    "collectedAt": "2026-10-20T12:05:39.436Z"
   }
 }
