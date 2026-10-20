@@ -1,13 +1,7 @@
 {
-  "fetchedAt": "2026-10-20T18:07:45.754Z",
+  "fetchedAt": "2026-10-20T20:06:39.859Z",
   "season": 2026,
-  "assignment": {
-    "season": 2026,
-    "week": 6,
-    "game": "Commanders at 49ers",
-    "referee": "Adrian Hill",
-    "url": "https://www.footballzebras.com/2026/10/week-6-referee-assignments-2026/"
-  },
+  "assignment": null,
   "games": {
     "401772510": {
       "season": 2025,

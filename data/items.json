@@ -1,28 +1,4 @@
 {
-  "hogs-haven-1074ec496979": {
-    "id": "hogs-haven-1074ec496979",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/437669/washington-commanders-season-preview-dan-quinn-hot-seat-adam-peters",
-    "title": "Commanders debate: How secure is Washington coach Dan Quinn’s job status?",
-    "excerpt": "I started writing an analysis on Sunday morning stating that Commanders head coach Dan Quinn ’s job status is in some jeopardy — I despise the term “hot seat” — before ever playing a meaningful 2026 snap. And that rough overall record should prompt his ouster after a third season in Washington. \n\n I had a case laid out. It was debatable, but the logic was sound. Then my brain started messing with me. The deeper I got into the story, the more my inner voice started arguing with what was already…",
-    "publishedAt": "2026-09-05T19:12:58.000Z",
-    "collectedAt": "2026-09-05T20:05:37.639Z"
-  },
-  "yahoo-nfl-9d0ad1f49a36": {
-    "id": "yahoo-nfl-9d0ad1f49a36",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-debate-much-pressure-dan-191258719.html",
-    "title": "Commanders debate: How much pressure is Dan Quinn under heading into 2026?",
-    "excerpt": "I started writing an analysis on Sunday morning stating that Commanders head coach Dan Quinn ’s job status is in some jeopardy — I despise the term “hot seat” — before ever playing a meaningful 2026 snap. And that rough overall record should prompt his ouster after a third season in Washington. \n I had a case laid out. It was debatable, but the logic was sound. Then my brain started messing with me. The deeper I got into the story, the more my inner voice started arguing with what was already…",
-    "publishedAt": "2026-09-05T19:12:58.000Z",
-    "collectedAt": "2026-09-05T20:05:42.859Z"
-  },
   "commanders-youtube-12bcc0fabb98": {
     "id": "commanders-youtube-12bcc0fabb98",
     "sourceId": "commanders-youtube",
@@ -17695,7 +17671,7 @@
     "category": "league",
     "url": "https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football",
     "title": "Commanders' Terry McLaurin carted off after knee injury vs. 49ers, ruled out",
-    "excerpt": "McLaurin went down while running a route late in the first quarter",
+    "excerpt": "McLaurin suffered a torn patellar tendon in Washington's loss vs. the 49ers",
     "publishedAt": "2026-10-20T01:10:11.000Z",
     "collectedAt": "2026-10-20T02:05:33.496Z"
   },
@@ -18343,7 +18319,7 @@
     "category": "league",
     "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-week-6-142829593.html",
     "title": "NFL news, live updates: Terry McLaurin suffers potential season-ending knee injury on MNF; Eagles QB Jalen Hurts reportedly out for season with blood clots in lungs",
-    "excerpt": "Week 6 of the NFL season is very nearly a wrap, with the Washington Commanders and San Francisco 49ers on \"Monday Night Football\" to close out the slate.\n But before that, Monday morning brought some unexpected news, as the Colts announced they fired GM Chris Ballard, who's been in the role since 2017. Indianapolis fell to the Titans on Sunday .\n Also on Monday morning, the Philadelphia Eagles and NFL agent Nicole Lynn released a joint statement on the status of Jalen Hurts, clarifying his…",
+    "excerpt": "Week 6 of the NFL season is a wrap … and unfortunately, Monday night's showdown between the Washington Commanders and San Francisco 49ers wasn't without its bumps and bruises. Commanders receiver Terry McLaurin was carted off with what turned out to be a season-ending knee injury , while 49ers Pro Bowl wideout Mike Evans exited with Achilles soreness.\n But before that, Monday morning brought some unexpected news, as the Colts announced they fired GM Chris Ballard, who's been in the role since…",
     "publishedAt": "2026-10-19T12:04:00.000Z",
     "collectedAt": "2026-10-20T16:05:50.180Z"
   },
@@ -18478,5 +18454,125 @@
     "excerpt": "(Photo by Lachlan Cunningham/Getty Images) | Getty Images A win is a win. Ugly October victories don’t affect playoff seeding. We saw the Rams and Seahawks lose this very game in Week 6.\n That’s not to say the San Francisco 49ers can get away with going three-and-out three times in a row to end a game, or giving their opponents multiple first downs via penalty. Overcoming self-inflicted wounds and escaping with a win is the tell of a contender.\n Here are the winners and losers from Week 6\n Mike…",
     "publishedAt": "2026-10-20T16:35:33.000Z",
     "collectedAt": "2026-10-20T18:06:45.486Z"
+  },
+  "hogs-haven-8b5094c51d9c": {
+    "id": "hogs-haven-8b5094c51d9c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/449126/dan-quinn-ol-performance-below-standard-set-ourselves",
+    "title": "Dan Quinn: OL performance was below the standard we set for ourselves",
+    "excerpt": "SANTA CLARA, CALIFORNIA - OCTOBER 19: Head coach Dan Quinn of the Washington Commanders looks on against the San Francisco 49ers in the third quarter of an NFL football game at Levi's Stadium on October 19, 2026 in Santa Clara, California. (Photo by Thearon W. Henderson/Getty Images) | Getty Images The Washington Commanders season takes a pause as they enter their Week 7 bye. The team just lost to the San Francisco 49ers on Monday Night Football, dropping their record to 1-4-1 for the season.…",
+    "publishedAt": "2026-10-20T19:42:05.000Z",
+    "collectedAt": "2026-10-20T20:05:34.001Z"
+  },
+  "hogs-haven-e1dde0421b32": {
+    "id": "hogs-haven-e1dde0421b32",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/450232/commanders-terry-mclaurin-knee-injury-dan-quinn-patella-tendon",
+    "title": "Commanders injury update: WR Terry McLaurin (knee) out for 2026 season",
+    "excerpt": "Commanders receiver Terry McLaurin has suffered a torn patellar tendon in his knee and it out for the season. \n\n Head coach Dan Quinn announced that difficult news during his Tuesday afternoon press conference . \n\n McLaurin will have surgery to repair the injury in the coming days. \n\n The team acknowledged the significant loss as well. \n\n \n HC Dan Quinn confirmed that WR Terry McLaurin suffered a season-ending injury in last night’s game\n\nWishing our captain a healthy recovery 🤍…",
+    "publishedAt": "2026-10-20T19:21:58.000Z",
+    "collectedAt": "2026-10-20T20:05:34.001Z"
+  },
+  "riggos-rag-133ba9591fa9": {
+    "id": "riggos-rag-133ba9591fa9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/terry-mclaurin-torn-patellar-tendon-could-end-washington-commanders-career",
+    "title": "Terry McLaurin’s torn patellar tendon could end his Commanders career",
+    "excerpt": "Washington Commanders wide receiver Terry McLaurin's serious knee injury could see his prolific time with the franchise come to an end.",
+    "publishedAt": "2026-10-20T19:06:39.000Z",
+    "collectedAt": "2026-10-20T20:05:34.836Z"
+  },
+  "clutchpoints-a1513bfe8a3f": {
+    "id": "clutchpoints-a1513bfe8a3f",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-terry-mclaurin-officially-out-for-the-season",
+    "title": "Commanders’ Terry McLaurin officially out for the season",
+    "excerpt": "The Washington Commanders will be without Terry McLaurin for the remainder of the 2026 NFL season after an MRI confirmed the star wide receiver suffered a torn patellar tendon.\n\n ESPN/NFL Network’s Ian Rapoport reported Tuesday that McLaurin is done for the season following the injury he sustained during Monday night’s loss to the San Francisco 49ers. The veteran receiver now faces a lengthy recovery, dealing another setback to a Commanders team that has struggled to find consistency this…",
+    "publishedAt": "2026-10-20T19:26:33.000Z",
+    "collectedAt": "2026-10-20T20:05:35.021Z"
+  },
+  "athletic-jhabvala-eceeddf6c462": {
+    "id": "athletic-jhabvala-eceeddf6c462",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7707523/2026/10/20/terry-mclaurin-torn-patellar-tendon-injury-commanders",
+    "title": "Commanders' WR Terry McLaurin out for season with torn patellar tendon",
+    "excerpt": "McLaurin, the Commanders' veteran receiver, was injured late in the first quarter of Monday night's game against the 49ers.",
+    "publishedAt": "2026-10-20T19:06:12.000Z",
+    "collectedAt": "2026-10-20T20:05:36.686Z"
+  },
+  "commanders-youtube-6c3d3ab10961": {
+    "id": "commanders-youtube-6c3d3ab10961",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=ABlimFSKL70",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-20T19:23:46.000Z",
+    "collectedAt": "2026-10-20T20:05:37.954Z"
+  },
+  "pft-28f4d8b64cc8": {
+    "id": "pft-28f4d8b64cc8",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/terry-mclaurin-out-for-year-with-torn-patellar-tendon",
+    "title": "Terry McLaurin out for year with torn patellar tendon",
+    "excerpt": "Commanders wide receiver Terry McLaurin's knee injury looked bad on the field Monday night and head coach Dan Quinn confirmed the worst at a press conference on Tuesday. \n McLaurin will miss the rest of the season with a torn patellar tendon. McLaurin will have surgery to repair the injury. \n McLaurin had a 27-yard catch before the injury on Monday and 15 catches for 230 yards and a touchdown in five games this season. He also missed seven games last season while dealing with a quad injury, but…",
+    "publishedAt": "2026-10-20T19:12:20.000Z",
+    "collectedAt": "2026-10-20T20:05:40.755Z"
+  },
+  "yahoo-nfl-56de288c3c0e": {
+    "id": "yahoo-nfl-56de288c3c0e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-suffer-brutal-loss-terry-192158630.html",
+    "title": "Commanders suffer brutal loss with Terry McLaurin ruled out for the season",
+    "excerpt": "Commanders receiver Terry McLaurin has suffered a torn patellar tendon in his knee and it out for the season. \n Head coach Dan Quinn announced that difficult news during his Tuesday afternoon press conference . \n McLaurin will have surgery to repair the injury in the coming days. \n The team acknowledged the significant loss as well. \n HC Dan Quinn confirmed that WR Terry McLaurin suffered a season-ending injury in last night’s game\n\nWishing our captain a healthy recovery 🤍…",
+    "publishedAt": "2026-10-20T19:21:58.000Z",
+    "collectedAt": "2026-10-20T20:05:41.561Z"
+  },
+  "yahoo-nfl-a8574d8e3093": {
+    "id": "yahoo-nfl-a8574d8e3093",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-wr-terry-mclaurin-out-for-the-season-after-suffering-knee-injury-in-loss-to-49ers-190526965.html",
+    "title": "Commanders WR Terry McLaurin out for the season after suffering knee injury in loss to 49ers",
+    "excerpt": "Terry McLaurin's season is over.\n McLaurin suffered a torn patellar tendon in the Washington Commanders' 23-17 loss to the San Francisco 49ers on Monday night , head coach Dan Quinn announced. As a result, he will miss the rest of the season.\n \"I had a chance to speak to him last night on the plane, and again after testing today,\" Quinn said. \"I'm gutted for him.\"\n McLaurin was running a route near the end of the first quarter of Monday's matchup at Levi's Stadium when he suddenly fell near the…",
+    "publishedAt": "2026-10-20T19:05:26.000Z",
+    "collectedAt": "2026-10-20T20:05:41.561Z"
+  },
+  "yahoo-nfl-0c0d3dc7e339": {
+    "id": "yahoo-nfl-0c0d3dc7e339",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/nfl-week-7-injury-report-185122522.html",
+    "title": "NFL Week 7 Injury Report: Mike Evans' Achilles; significant injuries to Terry McLaurin, Davante Adams",
+    "excerpt": "Staying up to date on NFL injury news is of the utmost importance for fantasy football success. The article below tracks all fantasy-relevant players currently listed on their team's injury report and provides fantasy managers with actionable recommendations as new information rolls in.\n \n Check back for updates from Tuesday through Saturday.\n \n Don’t forget: Check out the Rotoworld player news feed for all the latest news, notes, and transactions around the league. \n \n \n **UPDATED AS OF…",
+    "publishedAt": "2026-10-20T18:51:22.000Z",
+    "collectedAt": "2026-10-20T20:05:41.561Z"
   }
 }
