@@ -10501,7 +10501,7 @@
     "text": "WHAT IN THE WORLD: How in the heck to the refs pick the flag up on this helmet hit by Fred Warner in a game where the stripes are supposed to be watching the play, looking out for player safety, have independent oversight in-stadium on helmet hits and Park Ave watching too. #Commanders have a valid gripe.",
     "handle": "JosinaAnderson",
     "author": "Josina Anderson",
-    "label": "",
+    "label": "Insider",
     "sourceKey": "@JosinaAnderson",
     "images": [],
     "publishedAt": "2026-10-20T02:43:49.000Z",
@@ -11196,7 +11196,7 @@
     "text": "For the late night sickos: The latest episode of The Tashan Reed Show breaking down the #Commanders ' loss to the 49ers is out now. Watch here: tashan-reed-show-breaking-down?r=1gwknd&utm_medium=ios",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "The Washington Post",
+    "label": "",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-20T06:17:58.000Z",
@@ -11213,5 +11213,31 @@
     "images": [],
     "publishedAt": "2026-10-20T06:49:40.000Z",
     "collectedAt": "2026-10-20T08:05:48.943Z"
+  },
+  "social-55d548b62066": {
+    "id": "social-55d548b62066",
+    "url": "https://mastodon.social/@killbait/117472369641633728",
+    "text": "Commanders' Second-Half Rally Falls Short Against 49ers in 23-17 Defeat 📰 Original title: Commanders’ spirited comeback falls short in loss to undefeated 49ers 🤖 IA: It's not clickbait ✅ 👥 Users: It's not clickbait ✅ 👇👇👇 ond-half-rally-falls-short-against-49ers-in-23-17-defeat.html?utm_source=mastodon_social&utm_medium=social&utm_campaign=killbait.mastodon_social #sports #football #nfl #commanders",
+    "handle": "killbait",
+    "author": "KillBait",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-20T08:48:29.037Z",
+    "collectedAt": "2026-10-20T09:07:17.328Z"
+  },
+  "social-98210d570174": {
+    "id": "social-98210d570174",
+    "url": "https://mastodon.social/@top_news/117472275784526762",
+    "text": "Commanders-49ers on 'Monday Night Football': What We Learned from San Francisco's 23-17 win NFL.com's Bobby Kownack breaks down San Francisco's impressive Monday night victory over the visiting Commanders. on-monday-night-football-what-we-learned-from-san-francisco-s-23-17-win #TopNews #News #Washington #Commanders #Daniels",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/472/275/739/904/066/original/360878f3d817544d.jpg"
+    ],
+    "publishedAt": "2026-10-20T08:24:36.890Z",
+    "collectedAt": "2026-10-20T09:07:17.329Z"
   }
 }
