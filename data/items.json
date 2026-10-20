@@ -1,16 +1,4 @@
 {
-  "riggos-rag-0ec198292f7c": {
-    "id": "riggos-rag-0ec198292f7c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-7-round-2027-mock-draft-college-football-chaos-begins",
-    "title": "Commanders 7-round 2027 mock draft as the college football chaos begins",
-    "excerpt": "Our first 2027 NFL mock draft for the Washington Commanders as the college football season finally gets underway.",
-    "publishedAt": "2026-09-05T10:00:01.000Z",
-    "collectedAt": "2026-09-05T10:05:35.214Z"
-  },
   "hogs-haven-898f28be81b3": {
     "id": "hogs-haven-898f28be81b3",
     "sourceId": "hogs-haven",
@@ -18310,5 +18298,29 @@
     "excerpt": "SANTA CLARA — The 49ers escaped Monday Night Football with their perfect record still in tact.\n They took extended their lead to 20 points on their first possession of the second half and held for a 23-17 win as the Commanders whittled the lead away with 14 unanswered points after halftime.\n Grading the 49ers’ closer-than-expected win over Washington, which fell to 1-4-1:\n Brock Purdy (13) passes against the Commanders. AP Photo/Kelley L. Cox Quarterback: A\n Brock Purdy is officially the…",
     "publishedAt": "2026-10-20T04:12:19.000Z",
     "collectedAt": "2026-10-20T09:06:59.703Z"
+  },
+  "riggos-rag-f605ab83e731": {
+    "id": "riggos-rag-f605ab83e731",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/3-winners-5-losers-washington-commanders-miserable-defeat-49ers-week-6",
+    "title": "3 winners (and 5 losers) from Commanders' miserable defeat to the 49ers",
+    "excerpt": "Who were the big winners and losers from the Washington Commanders' miserable defeat to the San Francisco 49ers on Monday Night Football?",
+    "publishedAt": "2026-10-20T10:02:00.000Z",
+    "collectedAt": "2026-10-20T10:05:32.115Z"
+  },
+  "athletic-commanders-66fcb919939d": {
+    "id": "athletic-commanders-66fcb919939d",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7706838/2026/10/20/dan-quinn-commanders-loss-49ers-monday-night-football",
+    "title": "How much of a microscope is Dan Quinn under? People are trying to read his lips",
+    "excerpt": "The bye week has arrived for Quinn and his 1-4-1 Commanders. Whether he can fix his team's problems remains an open question.",
+    "publishedAt": "2026-10-20T10:00:45.000Z",
+    "collectedAt": "2026-10-20T10:05:34.732Z"
   }
 }
