@@ -1,25 +1,25 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-10-20T04:06:26.912Z",
+  "fetchedAt": "2026-10-20T06:06:31.970Z",
   "offense": {
     "yardsPerGame": {
-      "value": "327.4",
+      "value": "325.2",
       "rank": 19,
       "rankLabel": "19th"
     },
     "pointsPerGame": {
-      "value": "23.0",
+      "value": "22.0",
       "rank": 17,
       "rankLabel": "17th"
     },
     "passYardsPerGame": {
-      "value": "187.8",
-      "rank": 24,
-      "rankLabel": "24th"
+      "value": "200.0",
+      "rank": 21,
+      "rankLabel": "21st"
     },
     "rushYardsPerGame": {
-      "value": "139.6",
+      "value": "125.2",
       "rank": 6,
       "rankLabel": "6th"
     }
@@ -52,7 +52,7 @@
       {
         "key": "Pass",
         "name": "Jayden Daniels",
-        "value": "459"
+        "value": "759"
       },
       {
         "key": "Rush",
@@ -62,19 +62,19 @@
       {
         "key": "Recv",
         "name": "Terry McLaurin",
-        "value": "203"
+        "value": "230"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
-        "name": "Jeremy Reaves",
-        "value": "34"
+        "name": "Sonny Styles",
+        "value": "46"
       },
       {
         "key": "Sack",
-        "name": "K'Lavon Chaisson",
-        "value": "2.5"
+        "name": "Odafe Oweh",
+        "value": "3"
       },
       {
         "key": "Int",
