@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-4bdb2f180905": {
-    "id": "commanders-youtube-4bdb2f180905",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=T17paTu3wpk",
-    "title": "Gearing Up For The Season With Quarterback Jayden Daniels | The Player's Club",
-    "excerpt": "",
-    "publishedAt": "2026-09-05T04:05:28.000Z",
-    "collectedAt": "2026-09-05T08:02:46.642Z"
-  },
   "riggos-rag-0ec198292f7c": {
     "id": "riggos-rag-0ec198292f7c",
     "sourceId": "riggos-rag",
@@ -17986,5 +17974,113 @@
     "excerpt": "Last week, the Washington Commanders completely screwed up an end-of-game scenario and let time run out in overtime without getting a field goal attempt off . \n On Monday night, the Commanders had another ridiculous gaffe. While it wasn't quite as bad as last week, it was an embarrassment. It might also force Commanders owners to examine what's happening with their team, especially with head coach Dan Quinn. \n The Commanders went for it on fourth-and-2 at the San Francisco 13-yard line in the…",
     "publishedAt": "2026-10-20T02:06:39.000Z",
     "collectedAt": "2026-10-20T03:25:47.185Z"
+  },
+  "hogs-haven-0c51f482a752": {
+    "id": "hogs-haven-0c51f482a752",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/449918/washington-commanders-san-francisco-49ers-takeaways-dan-quinn-jayden-daniels-terry-mclaurin",
+    "title": "Key takeaways from Washington Commanders loss to San Francisco 49ers",
+    "excerpt": "BOX SCORE \n\n We all know what happened in Week 5. We don’t have to go over that debacle against the Giants for the 1,000 th time. Washington said all the right things, took accountability for that mess and maintained a unified front while vowing to be better moving forward. \n\n Head coach Dan Quinn even turned his hat around. While seemingly silly, it was a symbol that he and the Commanders were ditching the relaxed vibe and taking things more seriously. \n\n Proving that they were better and had…",
+    "publishedAt": "2026-10-20T03:26:00.000Z",
+    "collectedAt": "2026-10-20T04:05:28.187Z"
+  },
+  "riggos-rag-ea8cb99c148c": {
+    "id": "riggos-rag-ea8cb99c148c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-major-observations-from-jayden-daniels-performance-against-49ers-week-6",
+    "title": "5 major observations from Jayden Daniels' performance against the 49ers",
+    "excerpt": "Some major observations from Washington Commanders quarterback Jayden Daniels' performance against the San Francisco 49ers.",
+    "publishedAt": "2026-10-20T03:30:54.000Z",
+    "collectedAt": "2026-10-20T04:05:28.785Z"
+  },
+  "wjla-commanders-0922fb82ddd6": {
+    "id": "wjla-commanders-0922fb82ddd6",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/purdy-and-the-49ers-build-a-big-lead-and-hold-on-to-beat-the-commanders-23-17",
+    "title": "Purdy and the 49ers build a big lead and hold on to beat the Commanders 23-17",
+    "excerpt": "Brock Purdy threw a touchdown pass, Christian McCaffrey ran for two scores and the San Francisco 49ers held on to beat the Washington Commanders 23-17 on Monday",
+    "publishedAt": "2026-10-20T03:41:14.000Z",
+    "collectedAt": "2026-10-20T04:05:34.699Z"
+  },
+  "wjla-commanders-b031047fb462": {
+    "id": "wjla-commanders-b031047fb462",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-wr-terry-mclaurin-carted-off-field-with-a-knee-injury-vs-49ers",
+    "title": "Commanders WR Terry McLaurin carted off field with a knee injury vs. 49ers",
+    "excerpt": "Washington Commanders receiver Terry McLaurin was taken off the field on a cart after an injury to his left knee.McLaurin was running a pattern in the first qua",
+    "publishedAt": "2026-10-20T03:36:32.000Z",
+    "collectedAt": "2026-10-20T04:05:34.699Z"
+  },
+  "pft-024989d96799": {
+    "id": "pft-024989d96799",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-has-until-tuesday-to-decide-whether-to-flex-eagles-commanders-out-of-prime-time",
+    "title": "NFL has until Tuesday to decide whether to flex Eagles-Commanders out of prime time",
+    "excerpt": "With the Eagles slipping to 2-4 and the Commanders sliding to 1-4-1, the two teams have a Week 8 prime-time date looming. And if the league is considering a flex (as it reportedly was out of last week ), the clock is ticking.\n By rule, Tuesday, October 20, is the deadline for moving the Sunday night game.\n The problem is the absence of clear options. Ravens-Bills makes the most sense, but the Ravens play the following Thursday night. Vikings-Lions is a possibility, if the NFL is willing to…",
+    "publishedAt": "2026-10-20T03:49:06.000Z",
+    "collectedAt": "2026-10-20T04:05:34.778Z"
+  },
+  "pft-4d56eeafc105": {
+    "id": "pft-4d56eeafc105",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/whats-next-for-dan-quinn",
+    "title": "What's next for Dan Quinn?",
+    "excerpt": "At the end of the first half of Monday night's game, with the Commanders down 20-3 and coach Dan Quinn going viral based on a lip-reading clip that was being widely interpreted as him not realizing it was fourth down (after a failed fourth-down play), it looked like Quinn was on track to get fired after the game.\n Then came the second half, and an effort by the Commanders that made the final score (23-17) far more respectable.\n So now owner Josh Harris has a decision to make. One week removed…",
+    "publishedAt": "2026-10-20T03:34:01.000Z",
+    "collectedAt": "2026-10-20T04:05:34.778Z"
+  },
+  "pft-94958e5ccea1": {
+    "id": "pft-94958e5ccea1",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/monday-night-football-49ers-hang-on-for-23-17-win-over-commanders",
+    "title": "Monday Night Football: 49ers hang on for 23-17 win over Commanders",
+    "excerpt": "The Commanders dug a hole in the first half, and the 49ers were throwing dirt on top of them in the third quarter. \n San Francisco led 20-3 at halftime and 23-3 with 18 seconds left in the third quarter. It came down to the last play.\n The 49ers held on for a 23-17 victory that was too close for comfort for the home fans. The 49ers are 6-0, and the Commanders are 1-4-1.\n The Commanders had 17 plays, two first downs and 90 yards in the first half. The 49ers had 41 plays, 17 first downs and 303…",
+    "publishedAt": "2026-10-20T03:30:52.000Z",
+    "collectedAt": "2026-10-20T04:05:34.778Z"
+  },
+  "cbs-nfl-798d07cd2f8b": {
+    "id": "cbs-nfl-798d07cd2f8b",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nfl-grades-week-6-browns-ravens-afc-colts-2026",
+    "title": "NFL Week 6 grades for every team that played: 49ers hold off furious Commanders rally, Colts get 'F'",
+    "excerpt": "We're handing out grades for every Week 6 game, and we don't hold back",
+    "publishedAt": "2026-10-20T03:55:14.000Z",
+    "collectedAt": "2026-10-20T04:05:34.843Z"
+  },
+  "yahoo-nfl-ad7a5a98ab01": {
+    "id": "yahoo-nfl-ad7a5a98ab01",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/nfl/breaking-news/article/commanders-star-terry-mclaurin-carted-off-after-knee-injury-early-in-loss-to-49ers-032814610.html",
+    "title": "Commanders star Terry McLaurin carted off after knee injury early in loss to 49ers",
+    "excerpt": "The Washington Commanders lost star wide receiver Terry McLaurin early Monday night after he went down with what appears to be a significant knee injury.\n McLaurin was running a route near the end of the first quarter of Washington's 23-17 loss to the San Francisco 49ers when he suddenly fell near the sideline at Levi's Stadium. Replay showed that McLaurin's left knee gave out on him and buckled as he was planting to the outside. \n He remained down on the field for quite some time in front of…",
+    "publishedAt": "2026-10-20T00:58:26.000Z",
+    "collectedAt": "2026-10-20T04:05:35.227Z"
   }
 }
