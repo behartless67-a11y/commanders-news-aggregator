@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-10-20T02:05:55.909Z",
+  "fetchedAt": "2026-10-20T03:26:12.894Z",
   "teams": [
     {
       "abbr": "NYG",
@@ -26,9 +26,9 @@
     {
       "abbr": "WAS",
       "name": "Washington Commanders",
-      "overall": "1-3-1",
-      "streak": "-",
-      "winPercent": 0.3
+      "overall": "1-4-1",
+      "streak": "L1",
+      "winPercent": 0.25
     }
   ]
 }

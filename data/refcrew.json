@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T02:06:28.715Z",
+  "fetchedAt": "2026-10-20T03:26:47.749Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -5831,6 +5831,22 @@
         "abbr": "DAL",
         "flags": 11,
         "yards": 108
+      }
+    },
+    "401873008": {
+      "season": 2026,
+      "week": 6,
+      "date": "2026-10-20T00:15Z",
+      "referee": "Adrian Hill",
+      "home": {
+        "abbr": "SF",
+        "flags": 11,
+        "yards": 88
+      },
+      "away": {
+        "abbr": "WSH",
+        "flags": 7,
+        "yards": 66
       }
     }
   }

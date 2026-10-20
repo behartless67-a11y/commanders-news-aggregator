@@ -113,6 +113,20 @@
   },
   {
     "season": "regular",
+    "week": "WEEK 6",
+    "gametime": "10/19/2026 20:15:00 -04:00",
+    "homeAway": "AT",
+    "opponentAbbr": "SF",
+    "opponent": "San Francisco 49ers",
+    "opponentShort": "49ers",
+    "venue": "Levi's® Stadium",
+    "result": "L",
+    "points": "17 - 23",
+    "broadcast": null,
+    "isBye": false
+  },
+  {
+    "season": "regular",
     "week": "WEEK 7",
     "isBye": true
   },
