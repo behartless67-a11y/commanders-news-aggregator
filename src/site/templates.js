@@ -1903,6 +1903,10 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2', poll = undefi
   // callout at the end and doesn't render it twice.
   const usesMarker = record.paragraphs.some((p) => p.trim() === '!callout');
   const callout = usesMarker ? '' : partnerCallout(record.callout);
+  // Same trusted-HTML `plug` line originals have (see originalArticleBody),
+  // for a closing link like "Roll Call is here." Monday posts never needed
+  // one until the Oct 20 recap thanked the first readers to write in.
+  const plug = record.plug ? `<p class="digest-para original-plug">${record.plug}</p>` : '';
   return `
     <article class="digest-post monday-post">
       <p class="original-badge-row"><span class="badge badge-blog">Blog</span></p>
@@ -1910,6 +1914,7 @@ function mondayArticleBody(record, rosterIndex, headingTag = 'h2', poll = undefi
       ${postByline(record.reviewedAt || record.generatedAt)}
 ${paragraphs}
 ${callout}
+${plug}
 ${poll === undefined ? '' : postPoll(record, poll)}
 ${wireTapsAsk(record.wireTaps)}
     </article>`;
