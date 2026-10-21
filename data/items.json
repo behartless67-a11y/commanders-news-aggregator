@@ -1,16 +1,4 @@
 {
-  "riggos-rag-17fb286157a7": {
-    "id": "riggos-rag-17fb286157a7",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/10-commanders-facing-what-could-be-their-last-stand-washington",
-    "title": "10 Commanders facing what could be their last stand in Washington",
-    "excerpt": "Which Washington Commanders players could be embarking on their final season with the club in 2026?",
-    "publishedAt": "2026-09-06T10:00:01.000Z",
-    "collectedAt": "2026-09-06T10:05:38.660Z"
-  },
   "riggos-rag-cd39bcce3452": {
     "id": "riggos-rag-cd39bcce3452",
     "sourceId": "riggos-rag",
@@ -18634,5 +18622,29 @@
     "excerpt": "Aug 28, 2026; Baltimore, Maryland, USA; Washington Commanders head coach Dan Quinn and the bench reacts after Washington Commanders safety Quindell Johnson (40) interception during the second half against the Baltimore Ravens at M&T Bank Stadium. Mandatory Credit: Tommy Gilligan-Imagn Images | IMAGN IMAGES via Reuters Connect \n \n Welcome to SB Nation Reacts, a survey of fans across the NFL. Throughout the year we ask questions of the most plugged-in Commanders fans and fans across the country.…",
     "publishedAt": "2026-10-21T09:00:00.000Z",
     "collectedAt": "2026-10-21T09:07:09.349Z"
+  },
+  "riggos-rag-d5f6a2607275": {
+    "id": "riggos-rag-d5f6a2607275",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/4-winners-5-losers-washington-commanders-bye-week-hard-decisions-loom",
+    "title": "4 winners (and 5 losers) at the Commanders’ bye week as hard decisions loom",
+    "excerpt": "Who are the big winners and losers at the Washington Commanders' 2026 bye week as some hard decisions loom?",
+    "publishedAt": "2026-10-21T10:00:00.000Z",
+    "collectedAt": "2026-10-21T10:05:33.369Z"
+  },
+  "pft-12a46f0812d0": {
+    "id": "pft-12a46f0812d0",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dan-quinn-tells-jayden-daniels-to-take-your-shot-even-then-theres-a-penalty-flag-on-the-field",
+    "title": "Dan Quinn tells Jayden Daniels to \"take your shot\" even then there's a penalty flag on the field",
+    "excerpt": "One of the lingering questions from this week's Monday Night Football relates to the perception that Commanders coach Dan Quinn didn't know his team was facing a fourth-and-two play from the San Francisco 13 when it was, you know, facing a fourth-and-two play from the San Francisco 13.\n After the game ended, Quinn (who was ready to address the viral lip-reading moment) said he \" definitely \" knew it was fourth down, before essentially acknowledging that he didn't instantly realize a post-snap…",
+    "publishedAt": "2026-10-21T09:31:53.000Z",
+    "collectedAt": "2026-10-21T10:05:38.928Z"
   }
 }
