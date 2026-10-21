@@ -143,18 +143,6 @@
     "publishedAt": "2026-10-11T17:03:46.000Z",
     "collectedAt": "2026-10-11T18:05:13.365Z"
   },
-  "social-e8d9fa1d3f60": {
-    "id": "social-e8d9fa1d3f60",
-    "url": "https://x.com/NickiJhabvala/status/2109319480295764062",
-    "text": "The classic Washington unis are the nicest in the league. Hands down.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-11T16:25:28.000Z",
-    "collectedAt": "2026-10-11T18:05:13.365Z"
-  },
   "social-aaccc2fe4d8e": {
     "id": "social-aaccc2fe4d8e",
     "url": "https://x.com/Commanders/status/2109340403904229689",
@@ -603,18 +591,6 @@
     "publishedAt": "2026-10-11T17:27:01.000Z",
     "collectedAt": "2026-10-11T18:05:55.170Z"
   },
-  "social-f9245d3bf568": {
-    "id": "social-f9245d3bf568",
-    "url": "https://x.com/MikeGarafolo/status/2109320728562819581",
-    "text": "Jayden Daniels with a sleeve over his brace. Handing off with his left hand, though. #Commanders expecting a full go.",
-    "handle": "MikeGarafolo",
-    "author": "Mike Garafolo",
-    "label": "NFL Network",
-    "sourceKey": "@MikeGarafolo",
-    "images": [],
-    "publishedAt": "2026-10-11T16:30:25.000Z",
-    "collectedAt": "2026-10-11T18:05:55.170Z"
-  },
   "social-56e95549df95": {
     "id": "social-56e95549df95",
     "url": "https://x.com/oncediariomx/status/2109343536344637498",
@@ -822,46 +798,6 @@
     "images": [],
     "publishedAt": "2026-10-11T16:56:07.536Z",
     "collectedAt": "2026-10-11T18:06:00.544Z"
-  },
-  "social-08a00ca26ce6": {
-    "id": "social-08a00ca26ce6",
-    "url": "https://mysportgallery.com/@slessans2/117423253390570440",
-    "text": "Supporting the Commanders the only way I know how: by wearing the official hat of the best football team we’ve had since 1991. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/423/253/715/390/119/original/51dceab35b8b0365.jpg"
-    ],
-    "publishedAt": "2026-10-11T16:37:34.000Z",
-    "collectedAt": "2026-10-11T18:06:00.544Z"
-  },
-  "social-3c620f5755a3": {
-    "id": "social-3c620f5755a3",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mxmgthmrn425",
-    "text": "Supporting the Commanders the only way I know how: by wearing the official hat of the best football team we’ve had since 1991. #NFL | #HTTC | #Commanders | #RaiseHail",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/423/254/125/698/399/original/757735134eeafb45.jpeg"
-    ],
-    "publishedAt": "2026-10-11T16:37:34.930Z",
-    "collectedAt": "2026-10-11T18:06:01.177Z"
-  },
-  "social-69d94295bf22": {
-    "id": "social-69d94295bf22",
-    "url": "https://mstdn.social/@TechBean/117423198320765376",
-    "text": "Me nervous? Absolutely. #NYGvsWAS #HTTC #TakeCommand #RaiseHail #Commanders #Giants #NFCEast #NFL",
-    "handle": "TechBean",
-    "author": "Bean 🇺🇸🇻🇪",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-10-11T16:23:34.000Z",
-    "collectedAt": "2026-10-11T18:06:01.177Z"
   },
   "social-a57e53136533": {
     "id": "social-a57e53136533",
@@ -11381,5 +11317,29 @@
     "images": [],
     "publishedAt": "2026-10-21T15:37:22.919Z",
     "collectedAt": "2026-10-21T16:06:10.443Z"
+  },
+  "social-d4c0cd6d591e": {
+    "id": "social-d4c0cd6d591e",
+    "url": "https://x.com/JPFinlayNBCS/status/2112939868058001409",
+    "text": "Wouldnt be mad with Billy Football. Every coach from JMU succeeds. Something in the water in Harrisonburg",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-21T16:11:35.000Z",
+    "collectedAt": "2026-10-21T16:37:32.768Z"
+  },
+  "social-1d9c5b42d1f5": {
+    "id": "social-1d9c5b42d1f5",
+    "url": "https://x.com/JPFinlayNBCS/status/2112939762545987820",
+    "text": "Will not be mad w Dan Mullen, had actually heard he had interest in the job at one point",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-21T16:11:10.000Z",
+    "collectedAt": "2026-10-21T16:37:32.768Z"
   }
 }
