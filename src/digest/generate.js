@@ -9,12 +9,13 @@ import { validate } from './validate.js';
 import { sanitizeDigest } from './sanitize.js';
 
 const MODEL = process.env.DIGEST_MODEL || 'anthropic.claude-sonnet-5';
-// Send to both so UVA spam filters can't swallow the only copy.
-const NOTIFY_EMAILS = (process.env.DIGEST_NOTIFY_EMAIL || 'bh4hb@virginia.edu,behartless67@gmail.com').split(',').map(e => e.trim());
+// Comma-separated, from the environment only (this repo is public). Send to
+// two addresses so UVA spam filters can't swallow the only copy.
+const NOTIFY_EMAILS = (process.env.DIGEST_NOTIFY_EMAIL || '').split(',').map(e => e.trim()).filter(Boolean);
 const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
 
 async function notifyDraftReady(key, headline) {
-  if (!process.env.RESEND_API_KEY) return;
+  if (!process.env.RESEND_API_KEY || !NOTIFY_EMAILS.length) return;
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },

@@ -4411,7 +4411,7 @@ ${footer(sources, generatedAt)}
               .then(function (r) { return r.json(); })
               .then(function (d) {
                 result.textContent = testOnly
-                  ? (d.sent ? 'Test sent to bh4hb@virginia.edu!' : (d.error || 'Something went wrong.'))
+                  ? (d.sent ? 'Test sent to ' + (d.to || 'your inbox') + '!' : (d.error || 'Something went wrong.'))
                   : d.error
                     ? d.error
                     // Who missed it and why, so a retry isn't a guess. A
@@ -4735,9 +4735,16 @@ ${footer(sources, generatedAt)}
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: form.password.value }),
     })
-      .then(function (r) { return r.json().then(function (data) { return { ok: r.ok && data.ok }; }); })
-      .then(function (result) { if (result.ok) { showDashboard(); } else { error.hidden = false; } })
-      .catch(function () { error.hidden = false; });
+      .then(function (r) { return r.json().then(function (data) { return { ok: r.ok && data.ok, locked: !!data.locked, retryAfter: data.retryAfter }; }); })
+      .then(function (result) {
+        if (result.ok) { showDashboard(); return; }
+        // admin-login.js locks an address out after five wrong passwords.
+        error.textContent = result.locked
+          ? 'Too many wrong passwords. Try again in ' + Math.max(1, Math.ceil((result.retryAfter || 900) / 60)) + ' minutes.'
+          : 'Wrong password.';
+        error.hidden = false;
+      })
+      .catch(function () { error.textContent = 'Wrong password.'; error.hidden = false; });
   });
 
   document.getElementById('admin-logout').addEventListener('click', function () {

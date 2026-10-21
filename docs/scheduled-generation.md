@@ -19,8 +19,8 @@
   is stored as a SHA-256 hash in the `ADMIN_PASSWORD_HASH` Netlify env var,
   never in the repo.
 - **Contact page** (`/contact.html`) — Netlify Forms, no backend. Submits
-  to `admin@theburgundywire.com`, which ImprovMX forwards to
-  `bh4hb@virginia.edu`. Only "Message" is required.
+  to `admin@theburgundywire.com`, which ImprovMX forwards to Ben's inbox.
+  Only "Message" is required.
 - Mobile: collapsible nav dropdown and a collapsible footer, both using the
   same zero-JS checkbox+label pattern; the river shows two sentences per
   card instead of the full excerpt.

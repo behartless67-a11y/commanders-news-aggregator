@@ -190,15 +190,22 @@ export default async (req) => {
 
   const poll = await openPoll();
 
-  // Test mode: send only to the site owner
+  // Test mode: send only to the site owner. The address lives in the
+  // ADMIN_TEST_EMAIL environment variable and nowhere in the code: this repo
+  // is public, so anything written here is readable by anyone (Oct 21).
   if (testOnly) {
-    const TEST_EMAIL = process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu';
+    const TEST_EMAIL = process.env.ADMIN_TEST_EMAIL;
+    if (!TEST_EMAIL) {
+      return new Response(JSON.stringify({ sent: 0, test: true, error: 'ADMIN_TEST_EMAIL is not set in Netlify.' }), { headers: { 'Content-Type': 'application/json' } });
+    }
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ from: FROM, to: TEST_EMAIL, subject: `[TEST] ${subject}`, html: buildHtml(subject, body, TEST_EMAIL, poll) }),
     });
-    return new Response(JSON.stringify({ sent: res.ok ? 1 : 0, test: true }), { headers: { 'Content-Type': 'application/json' } });
+    // Behind the admin login, so returning the address is fine; the admin
+    // page shows it instead of having it typed into public HTML.
+    return new Response(JSON.stringify({ sent: res.ok ? 1 : 0, test: true, to: TEST_EMAIL }), { headers: { 'Content-Type': 'application/json' } });
   }
 
   const store = getStore('subscribers');

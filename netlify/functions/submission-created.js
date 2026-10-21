@@ -61,7 +61,8 @@ async function captureMilestone(payload) {
   const id = crypto.randomBytes(4).toString('hex');
   await getStore('milestone').set(`m:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
 
-  if (process.env.RESEND_API_KEY) {
+  // ADMIN_TEST_EMAIL in Netlify, never a literal here: the repo is public.
+  if (process.env.RESEND_API_KEY && process.env.ADMIN_TEST_EMAIL) {
     const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     const rows = MILESTONE_FIELDS
       .filter(([field]) => entry[field])
@@ -73,7 +74,7 @@ async function captureMilestone(payload) {
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
-        to: process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu',
+        to: process.env.ADMIN_TEST_EMAIL,
         ...(replyTo ? { reply_to: replyTo } : {}),
         subject: `Your ${entry.winner ? entry.winner.replace(/^yes, visit /, '') : 'milestone'} reader wrote in${entry.name ? `: ${entry.name}` : ''}`,
         html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows}<p style="color:#888;font-size:12px">${replyTo ? `Hit reply to write back, and ask for their mailing address for the sticker${entry.country && entry.country !== 'US' ? 's (two, they\'re reading from abroad)' : ''}.` : 'No email left, so this one is one-way, and there\'s nowhere to send the sticker.'}</p></div>`,
@@ -122,7 +123,8 @@ async function captureRollCall(payload) {
   const id = crypto.randomBytes(4).toString('hex');
   await getStore('rollcall').set(`r:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
 
-  if (process.env.RESEND_API_KEY) {
+  // ADMIN_TEST_EMAIL in Netlify, never a literal here: the repo is public.
+  if (process.env.RESEND_API_KEY && process.env.ADMIN_TEST_EMAIL) {
     const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     const rows = ROLLCALL_FIELDS
       .filter(([field]) => entry[field])
@@ -135,7 +137,7 @@ async function captureRollCall(payload) {
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
-        to: process.env.ADMIN_TEST_EMAIL || 'bh4hb@virginia.edu',
+        to: process.env.ADMIN_TEST_EMAIL,
         ...(replyTo ? { reply_to: replyTo } : {}),
         subject: `Roll call${who ? `: ${who}` : ''}`,
         html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222"><p style="margin:0 0 18px;padding:10px 12px;background:#f6f1e6;border-left:4px solid #FFB612"><strong>Sharing:</strong> ${ROLLCALL_SHARE[entry.share]}</p>${rows}<p style="color:#888;font-size:12px">${replyTo ? 'Hit reply to write back.' : 'No email left, so this one is one-way.'}</p></div>`,
