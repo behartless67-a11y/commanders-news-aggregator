@@ -10778,7 +10778,7 @@
     "text": "I'll be livestreaming the The Tashan Reed Show at 10:30 p.m. PT/1:30 a.m. ET tonight to recap the #Commanders ' loss to the 49ers. Join here: 418315?utm_source=live-stream-scheduled-upsell",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "",
+    "label": "The Washington Post",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-20T04:43:53.000Z",
@@ -10790,7 +10790,7 @@
     "text": "#Commanders HC Dan Quinn doesn't have a firm update on WR Terry McLaurin (left knee), but he said there's concern that it's significant.",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "",
+    "label": "The Washington Post",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-20T04:14:18.000Z",
@@ -10838,7 +10838,7 @@
     "text": "For the late night sickos: The latest episode of The Tashan Reed Show breaking down the #Commanders ' loss to the 49ers is out now. Watch here: tashan-reed-show-breaking-down?r=1gwknd&utm_medium=ios",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "",
+    "label": "The Washington Post",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-20T06:17:58.000Z",
@@ -11641,5 +11641,41 @@
     "images": [],
     "publishedAt": "2026-10-20T22:48:09.000Z",
     "collectedAt": "2026-10-20T22:55:55.623Z"
+  },
+  "social-10438adbb1d9": {
+    "id": "social-10438adbb1d9",
+    "url": "https://x.com/MySportsUpdate/status/2112692329547173984",
+    "text": "Today was the deadline for the NFL to flex #Eagles - #Commanders out of Sunday Night Football in Week 8. No change was made. The game remains on SNF.",
+    "handle": "MySportsUpdate",
+    "author": "Ari Meirov",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-20T23:47:57.000Z",
+    "collectedAt": "2026-10-21T00:05:54.912Z"
+  },
+  "social-f1f53659a0ad": {
+    "id": "social-f1f53659a0ad",
+    "url": "https://mysportgallery.com/@slessans2/117475704829418535",
+    "text": "The Commanders vs Eagles game is not going to be flexed at this point. This might violate the Geneva Conventions. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-20T22:56:39.000Z",
+    "collectedAt": "2026-10-21T00:05:54.912Z"
+  },
+  "social-6423cb37e8ab": {
+    "id": "social-6423cb37e8ab",
+    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mydq7namoo2l",
+    "text": "The Commanders vs Eagles game is not going to be flexed at this point. This might violate the Geneva Conventions. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
+    "handle": "slessans.bsky.social",
+    "author": "Seth “Football Collector”",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-10-20T22:56:41.118Z",
+    "collectedAt": "2026-10-21T00:05:54.912Z"
   }
 }
