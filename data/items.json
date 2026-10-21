@@ -1,16 +1,4 @@
 {
-  "riggos-rag-cd39bcce3452": {
-    "id": "riggos-rag-cd39bcce3452",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jayden-daniels-received-respect-his-harshest-critics-wont-give-him",
-    "title": "Jayden Daniels just received the respect his harshest critics won't give him",
-    "excerpt": "Washington Commanders quarterback Jayden Daniels just received the respect that his harshest critics won't give him.",
-    "publishedAt": "2026-09-06T11:30:00.000Z",
-    "collectedAt": "2026-09-06T12:05:37.828Z"
-  },
   "hogs-haven-9f7844ec7626": {
     "id": "hogs-haven-9f7844ec7626",
     "sourceId": "hogs-haven",
@@ -18646,5 +18634,29 @@
     "excerpt": "One of the lingering questions from this week's Monday Night Football relates to the perception that Commanders coach Dan Quinn didn't know his team was facing a fourth-and-two play from the San Francisco 13 when it was, you know, facing a fourth-and-two play from the San Francisco 13.\n After the game ended, Quinn (who was ready to address the viral lip-reading moment) said he \" definitely \" knew it was fourth down, before essentially acknowledging that he didn't instantly realize a post-snap…",
     "publishedAt": "2026-10-21T09:31:53.000Z",
     "collectedAt": "2026-10-21T10:05:38.928Z"
+  },
+  "riggos-rag-f3957ac329fb": {
+    "id": "riggos-rag-f3957ac329fb",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/terry-mclaurin-injury-adds-urgency-washington-commanders-brian-thomas-jr-trade-case",
+    "title": "Terry McLaurin’s injury adds urgency to Commanders’ Brian Thomas Jr. trade case",
+    "excerpt": "Terry McLaurin's devastating injury could push the Washington Commanders straight toward a trade for Brian Thomas Jr.",
+    "publishedAt": "2026-10-21T11:30:00.000Z",
+    "collectedAt": "2026-10-21T12:05:33.637Z"
+  },
+  "yahoo-nfl-6e3748efe6c6": {
+    "id": "yahoo-nfl-6e3748efe6c6",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/nfl-hot-seat-coaches-led-100453346.html",
+    "title": "NFL hot seat coaches led by Dan Quinn after another Commanders' blunder",
+    "excerpt": "As the NFL standings get looser, the pucker factor in certain corners of the league is tightening.\n That certainly happened in Indianapolis this week, Colts co-owner and CEO Carlie Irsay-Gordon serving up this season’s first executive sacrifice to the always bloodthirsty football gods (and fans) by pink-slipping longtime GM Chris Ballard on Monday, Oct. 19.\n There will be more, it’s only a matter of when and where – though in a region where the hot seat is a way of life, a simmer threatens to…",
+    "publishedAt": "2026-10-21T10:04:53.000Z",
+    "collectedAt": "2026-10-21T12:05:41.304Z"
   }
 }
