@@ -11,66 +11,6 @@
     "publishedAt": "2026-10-12T03:40:08.000Z",
     "collectedAt": "2026-10-12T04:05:11.360Z"
   },
-  "social-a804fac120d0": {
-    "id": "social-a804fac120d0",
-    "url": "https://x.com/NickiJhabvala/status/2109473588084691100",
-    "text": "Commanders TE Ben Sinnott on that last play:",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-12T02:37:50.000Z",
-    "collectedAt": "2026-10-12T04:05:11.360Z"
-  },
-  "social-6f5d9b5700a7": {
-    "id": "social-6f5d9b5700a7",
-    "url": "https://x.com/NickiJhabvala/status/2109472149832364365",
-    "text": "Cosmi slammed his helmet to the ground right after the final play. Clearly/rightfully not happy about the way that ended.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-12T02:32:07.000Z",
-    "collectedAt": "2026-10-12T04:05:11.360Z"
-  },
-  "social-f96cd3accd70": {
-    "id": "social-f96cd3accd70",
-    "url": "https://x.com/NickiJhabvala/status/2109469162217013486",
-    "text": "Dan Quinn's explanation of the final play: “Yeah, like the sequencing of that does not fall on (Daniels). It's an outside throw or a clock. Those are the two — out-of-bounds throw or a clock. And that has to come from me. I don't even have to put him into that spot. I can do that",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-12T02:20:14.000Z",
-    "collectedAt": "2026-10-12T04:05:11.360Z"
-  },
-  "social-ded41f5bb0d7": {
-    "id": "social-ded41f5bb0d7",
-    "url": "https://x.com/NickiJhabvala/status/2109466142578188381",
-    "text": "What the heck happened on the Commanders' last play in overtime against the Giants? Here's what Dan Quinn and his players had to say about it ...",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-12T02:08:15.000Z",
-    "collectedAt": "2026-10-12T04:05:11.360Z"
-  },
-  "social-bae6052b7dcd": {
-    "id": "social-bae6052b7dcd",
-    "url": "https://x.com/JPFinlayNBCS/status/2109480781634740693",
-    "text": "Inexplicable. Incomprehensible. Baffling. All accurate to describe the end of the Commanders game.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-12T03:06:25.000Z",
-    "collectedAt": "2026-10-12T04:05:43.502Z"
-  },
   "social-47ff9f0187cf": {
     "id": "social-47ff9f0187cf",
     "url": "https://x.com/john_keim/status/2109488565931389312",
@@ -81,18 +21,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-10-12T03:37:21.000Z",
-    "collectedAt": "2026-10-12T04:05:44.910Z"
-  },
-  "social-11d7928df454": {
-    "id": "social-11d7928df454",
-    "url": "https://x.com/john_keim/status/2109466041487421745",
-    "text": "Just brutal. So much blame to go around on the final play. And yet another defensive collapse in the second half. 1-3-1 is a good zone D in hoops, not a record they needed. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000795843355",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-12T02:07:50.000Z",
     "collectedAt": "2026-10-12T04:05:44.910Z"
   },
   "social-46670108e7e2": {
@@ -8839,5 +8767,17 @@
     "images": [],
     "publishedAt": "2026-10-22T00:58:00.000Z",
     "collectedAt": "2026-10-22T02:05:46.834Z"
+  },
+  "social-13bd30e1f020": {
+    "id": "social-13bd30e1f020",
+    "url": "https://x.com/MonSportsNet/status/2113087905832858099",
+    "text": "Welcome to Washington, AD 🪄🏀 He checks in with @chasedcsports@twitter.com after his regular season @WashWizards debut that ended in a dub! 🔗:",
+    "handle": "MonSportsNet",
+    "author": "Monumental Sports Network",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-22T01:59:50.000Z",
+    "collectedAt": "2026-10-22T03:19:11.070Z"
   }
 }
