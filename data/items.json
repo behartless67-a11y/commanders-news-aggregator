@@ -1,16 +1,4 @@
 {
-  "riggos-rag-77bf1687c37e": {
-    "id": "riggos-rag-77bf1687c37e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/8-washington-commanders-firmly-hot-seat-entering-crucial-2026-season",
-    "title": "8 Commanders firmly on the hot seat entering crucial 2026 season",
-    "excerpt": "Which Washington Commanders find themselves firmly on the hot seat entering a critical 2026 campaign?",
-    "publishedAt": "2026-09-07T10:00:02.000Z",
-    "collectedAt": "2026-09-07T10:05:46.253Z"
-  },
   "hogs-haven-094e9790dd7e": {
     "id": "hogs-haven-094e9790dd7e",
     "sourceId": "hogs-haven",
@@ -18838,5 +18826,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-22T01:00:02.000Z",
     "collectedAt": "2026-10-22T08:05:34.672Z"
+  },
+  "riggos-rag-9cca0244d61d": {
+    "id": "riggos-rag-9cca0244d61d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/8-washington-commanders-could-traded-post-bye-losses-force-adam-peters-hand",
+    "title": "8 Commanders who could be traded if post-bye losses force Adam Peters’ hand",
+    "excerpt": "Which Washington Commanders players could be traded if they cannot get out of their slump after the bye week?",
+    "publishedAt": "2026-10-22T10:00:00.000Z",
+    "collectedAt": "2026-10-22T10:05:31.666Z"
+  },
+  "athletic-commanders-8f99091366f5": {
+    "id": "athletic-commanders-8f99091366f5",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7710940/2026/10/22/nfl-hot-seat-week-6-bo-nix-mike-mcdaniel-dan-quinn",
+    "title": "Who has the hottest seat in the NFL? Bo Nix, Mike McDaniel, Dan Quinn and more",
+    "excerpt": "The Broncos might be winning games, but Nix isn't getting it done at quarterback. McDaniel and Quinn could be on their way out.",
+    "publishedAt": "2026-10-22T09:30:45.000Z",
+    "collectedAt": "2026-10-22T10:05:33.160Z"
   }
 }
