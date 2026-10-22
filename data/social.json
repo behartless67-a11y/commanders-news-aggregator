@@ -25,18 +25,6 @@
     "publishedAt": "2026-10-12T16:40:05.000Z",
     "collectedAt": "2026-10-12T17:21:52.134Z"
   },
-  "social-9bff8e26c4e9": {
-    "id": "social-9bff8e26c4e9",
-    "url": "https://x.com/JPFinlayNBCS/status/2109677463328489547",
-    "text": "You know folks are mad when they blame the stadium",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-12T16:07:57.000Z",
-    "collectedAt": "2026-10-12T17:21:52.134Z"
-  },
   "social-dd6596a43798": {
     "id": "social-dd6596a43798",
     "url": "https://x.com/pfrumors/status/2109693066798051762",
@@ -8391,5 +8379,45 @@
     "images": [],
     "publishedAt": "2026-10-22T11:41:03.000Z",
     "collectedAt": "2026-10-22T12:05:43.778Z"
+  },
+  "social-3445bc1c9f8b": {
+    "id": "social-3445bc1c9f8b",
+    "url": "https://x.com/Commanders/status/2113289272371597549",
+    "text": "10-point underdogs. Johnny Unitas and the reigning NFL champions. A Sunday in 1959 produced an upset for the ages. @_Rocketdyne@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/485/240/654/810/386/original/1a2b980379e88687.jpg"
+    ],
+    "publishedAt": "2026-10-22T15:20:00.000Z",
+    "collectedAt": "2026-10-22T16:38:31.345Z"
+  },
+  "social-8038734d9f92": {
+    "id": "social-8038734d9f92",
+    "url": "https://x.com/BenStandig/status/2113283767645216901",
+    "text": "Bub Carrington wanted to see if Anthony Davis still had another gear. So did many around the NBA. They got their answer. The 10-time All-Star delivered a vintage performance: 34 points, a comeback win and a reason to believe in Washington. ⬇️ anthony-davis-wizards-debut-offered",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/485/152/619/098/016/original/d83cd33880a2a0c7.jpg"
+    ],
+    "publishedAt": "2026-10-22T14:58:07.000Z",
+    "collectedAt": "2026-10-22T16:38:36.003Z"
+  },
+  "social-5ae0db08591e": {
+    "id": "social-5ae0db08591e",
+    "url": "https://x.com/tashanreed/status/2113291191903302069",
+    "text": "The #Commanders have again been ravished by injuries. They’re winless in the NFC East. They endured one of the most embarrassing endings ever... and they still aren’t out of the division crown race. My takeaways from a wonky first half of the season: /10/22/five-takeaways-commanders-lackluster-season-thus-far/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-22T15:27:37.000Z",
+    "collectedAt": "2026-10-22T16:38:37.304Z"
   }
 }
