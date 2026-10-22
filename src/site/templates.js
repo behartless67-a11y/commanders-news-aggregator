@@ -282,7 +282,7 @@ function itemCard(item, index, rosterIndex) {
     const list = related
       .map((r) => {
         const rWhen = r.publishedAt ? relativeLabel(r.publishedAt) : '';
-        return `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(r.sourceId)}">${escapeHtml(r.title)}</a> <span class="card-more-meta">${escapeHtml(r.sourceName)}${rWhen ? ` · ${escapeHtml(rWhen)}` : ''}</span></li>`;
+        return `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(r.sourceId)}">${escapeHtml(r.title)}</a> <span class="card-more-meta">${escapeHtml(r.sourceName)}${rWhen ? ` · <time datetime="${escapeHtml(r.publishedAt)}">${escapeHtml(rWhen)}</time>` : ''}</span></li>`;
       })
       .join('');
     moreMarkup = `<details class="card-more">
@@ -592,7 +592,7 @@ function videoCard(item) {
             <span class="video-meta">
               ${notes ? '<span class="breakdown-tag">Breakdown</span>' : ''}
               <span class="video-title">${escapeHtml(tidyVideoTitle(item.title))}</span>
-              ${when ? `<span class="video-time">${escapeHtml(when)}</span>` : ''}
+              ${when ? `<time class="video-time" datetime="${escapeHtml(item.publishedAt)}">${escapeHtml(when)}</time>` : ''}
             </span>
           </a>${gist}
         </li>`;
@@ -2575,7 +2575,7 @@ function rosterCard(player, mentionInfo, { showMentionBadge = true, extra = fals
           ${recent
             .map((item) => {
               const when = item.publishedAt ? relativeLabel(item.publishedAt) : '';
-              return `<li><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>${when ? ` <span class="roster-recent-time">${escapeHtml(when)}</span>` : ''}</li>`;
+              return `<li><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>${when ? ` <time class="roster-recent-time" datetime="${escapeHtml(item.publishedAt)}">${escapeHtml(when)}</time>` : ''}</li>`;
             })
             .join('\n          ')}
         </ul>`
@@ -4776,7 +4776,7 @@ function beatPost(post, extra) {
       <li class="beat-post${extra ? ' beat-post-extra' : ''}">
         <a href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
           <span class="beat-post-text">${escapeHtml(post.text)}</span>
-          ${when ? `<span class="beat-post-time">${escapeHtml(when)}</span>` : ''}
+          ${when ? `<time class="beat-post-time" datetime="${escapeHtml(post.publishedAt)}">${escapeHtml(when)}</time>` : ''}
         </a>
       </li>`;
 }
