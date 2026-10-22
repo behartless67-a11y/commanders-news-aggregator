@@ -3,6 +3,7 @@ import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
 import { LOCAL_SPOTS } from '../../config/local-spots.js';
 import { HERO_IMAGES, HERO_PINNED } from '../../config/hero-images.js';
+import { writeBuildHash } from './build-hash.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
 import { loadRosterCache } from '../lib/roster.js';
@@ -649,8 +650,12 @@ export async function buildSite() {
       if (err.code !== 'ENOENT') throw err;
     });
 
+  // Last, once everything else is in place: the fingerprint the workflows
+  // compare with the live site before deciding to deploy (see build-hash.js).
+  const buildHash = await writeBuildHash(DIST_DIR, path.resolve('.'));
+
   log.ok(
-    `built dist/ — ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
+    `built dist/ (${buildHash.slice(0, 10)}): ${sorted.length} item(s) across ${PAGES.length} page(s), ` +
       `${socialPosts.length} ticker post(s), ${videos.length} video(s), ${publishedDigests.length} weekly recap(s)`,
   );
   return { count: sorted.length, social: socialPosts.length, videos: videos.length, digests: publishedDigests.length };

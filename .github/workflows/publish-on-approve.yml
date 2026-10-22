@@ -36,24 +36,60 @@ concurrency:
 
 permissions:
   contents: read
+  # To see whether a newer run of this workflow is already queued (below).
+  actions: read
 
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+      # An editing session is often several pushes a few minutes apart, and
+      # each one used to mean its own production deploy (Netlify credits).
+      # So wait a moment, then step aside if a newer run of this workflow is
+      # already queued: it checks out a later commit, so it deploys
+      # everything this one would have. Oct 22.
+      - name: Wait for follow-up pushes
+        id: batch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 90
+          newer=$(gh run list --repo "${{ github.repository }}" --workflow publish-on-approve.yml --branch master --limit 10             --json databaseId,status --jq '[.[] | select(.databaseId > ${{ github.run_id }}) | select(.status != "completed")] | length' || echo 0)
+          if [ "${newer:-0}" -gt 0 ]; then
+            echo "a newer push is already queued, and its run will deploy"
+            echo "superseded=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "superseded=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.batch.outputs.superseded != 'true'
 
       - uses: actions/setup-node@v4
+        if: steps.batch.outputs.superseded != 'true'
         with:
           node-version: 20
 
       - run: npm ci
+        if: steps.batch.outputs.superseded != 'true'
 
       - run: npm run build
+        if: steps.batch.outputs.superseded != 'true'
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      # Same check as nightly.yml: skip the deploy if the build matches what's
+      # live (a push that only touched docs-adjacent code, say). See
+      # src/site/build-hash.js.
+      - name: Check whether the built site changed
+        if: steps.batch.outputs.superseded != 'true'
+        id: site
+        run: node scripts/needs-deploy.mjs
         env:
           SITE_URL: ${{ vars.SITE_URL }}
 
       - name: Deploy to Netlify
+        if: steps.batch.outputs.superseded != 'true' && steps.site.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

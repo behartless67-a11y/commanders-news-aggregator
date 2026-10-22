@@ -139,12 +139,21 @@ jobs:
             git push
           fi
 
-      # Nothing new collected means the build output is the same as the one
-      # already live, so there's nothing to republish. The relative timestamps
-      # that used to go stale between deploys are recomputed in the browser
-      # now (see site.js), so a skipped deploy costs the reader nothing.
+      # Deploy only if the built site differs from what's live (Oct 22).
+      # Every production deploy costs Netlify credits, and the data/ check
+      # above is nearly always true because caches carry fresh timestamps.
+      # See src/site/build-hash.js and scripts/needs-deploy.mjs.
+      - name: Check whether the built site changed
+        id: site
+        run: node scripts/needs-deploy.mjs
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      # The relative timestamps that used to go stale between deploys are
+      # recomputed in the browser (see site.js), so a skipped deploy costs
+      # the reader nothing.
       - name: Deploy to Netlify
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.site.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

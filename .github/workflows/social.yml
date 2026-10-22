@@ -6,7 +6,13 @@ name: Social ticker refresh
 # `build` — never `collect` — so it never re-fetches the news feeds.
 
 on:
-  schedule:
+  # Schedule switched off Oct 22 to save Netlify deploys: nightly.yml runs
+  # `npm run social` on every one of its own runs, and the ticker and the
+  # Live Feed column refresh beat-writer posts in the browser from
+  # /api/ticker, so these extra runs mostly paid for deploys readers didn't
+  # need. Still runnable by hand (workflow_dispatch). To bring it back,
+  # uncomment the two lines below.
+  # schedule:
     # Every 4 hours, offset 2h from nightly's `0 */4` so the two never land on
     # the same minute and queue behind each other on the concurrency group
     # below. Was every 2 hours, which on a credits-priced Netlify account was
@@ -15,7 +21,7 @@ on:
     # need a fresh build now recompute in the browser (see site.js), so the
     # deploy cadence and how current the page looks are no longer the same
     # question.
-    - cron: '0 2,6,10,14,18,22 * * *'
+  #   - cron: '0 2,6,10,14,18,22 * * *'
   workflow_dispatch: {}
 
 # Shares a group with nightly.yml: both workflows commit data/ and push, so
@@ -72,8 +78,18 @@ jobs:
       # Only when the ticker actually moved. This step used to run every tick
       # regardless, so more than half of this workflow's production deploys
       # republished byte-identical output.
+      # Deploy only if the built site differs from what's live (Oct 22).
+      # Every production deploy costs Netlify credits, and the data/ check
+      # above is nearly always true because caches carry fresh timestamps.
+      # See src/site/build-hash.js and scripts/needs-deploy.mjs.
+      - name: Check whether the built site changed
+        id: site
+        run: node scripts/needs-deploy.mjs
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
       - name: Deploy to Netlify
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true' && steps.site.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -34,21 +34,27 @@ Everything runs on GitHub Actions. No local machine needed for any of this. Time
 
 | Workflow | When | What it does |
 |---|---|---|
-| `nightly.yml` | Every 4 hours | The main one. Collects news, then refreshes social, roster, depth chart, schedule, betting, injuries, standings, team stats and Reddit. Builds and deploys **only if something actually changed**. |
-| `social.yml` | 02, 06, 10, 14, 18, 22 [10pm, 2am, 6am, 10am, 2pm, 6pm] | Refreshes the beat-writer ticker and deploys if it changed. |
+| `nightly.yml` | Every 4 hours | The main one. Collects news, then refreshes social, roster, depth chart, schedule, betting, injuries, standings, team stats and Reddit. Builds, then deploys **only if the built site differs from what's live** (see below). |
+| `social.yml` | **Schedule off** (Oct 22) | Nightly already collects social every run, and the ticker and Live Feed refresh in the browser. Still runnable by hand. |
 | `gameday.yml` | Every 15 min | Checks for a live game window; refreshes the ticker during one. |
 | `scheduled.yml` | Hourly | Publishes any post whose scheduled time has passed. Deploys only when something actually goes live. |
 | `roster-stats.yml` | Tue 12:00 [8am] | Per-player season stats. |
 | `monday.yml` | Mon 12:00 [8am] | Refreshes college football and writes the Monday briefing (see below). Does **not** write the post. |
-| `publish-on-approve.yml` | On push | Rebuilds and deploys when `data/digests`, `data/previews`, `data/mondays`, `data/originals` or `src/` changes. |
+| `publish-on-approve.yml` | On push | Rebuilds and deploys when `data/digests`, `data/previews`, `data/mondays`, `data/originals`, `src/` or `netlify/` changes. Waits 90 seconds first and steps aside if a newer push is already queued, so a burst of pushes is one deploy. |
 | `preview.yml` | **Disabled** | Only ever called Bedrock. Its cron is commented out, not deleted. |
 
 ### Why deploys are gated
 
-Netlify bills this account on credits, so cost tracks **deploy volume, not traffic**. At one point the site was deploying ~26 times a day on about 5 real changes. Two things fixed that, and both are worth preserving:
+Netlify bills this account on credits, so cost tracks **deploy volume, not traffic**. Each production deploy costs 15 credits. A function call costs a tiny fraction of one. In October 2026 the site was deploying about 620 times a month against a 3,000-credit allowance (about 200 deploys), paid for in automatic $10 top-ups.
 
-- Every workflow deploys only when its data actually changed. `nightly.yml` additionally ignores `data/reddit.json`, which changes nearly every run and renders nowhere on the site.
-- Relative timestamps ("2h ago") are recomputed in the browser by `site.js`, so the page doesn't go stale-looking between deploys. Freshness stopped being a reason to redeploy.
+What keeps it down, all worth preserving:
+
+- **Deploy only when the built site changed.** Every build writes `dist/build-hash.txt`, a fingerprint of the output with the meaningless per-build bits taken out: the "Last updated" time, feed build dates and "Xh ago" labels. It also covers the function code. `scripts/needs-deploy.mjs` compares it with the live site's copy, and the workflows skip the deploy when they match. This replaced the old "did anything in data/ change?" check, which was nearly always true because the caches carry fresh timestamps.
+- **The Nicki scraper doesn't deploy.** `scripts/ship.js` used to start a full nightly build after every push, every two hours, even when only the run log changed (about 220 deploys a month). Now it just commits, and the next nightly publishes it.
+- **`social.yml`'s schedule is off**, and `publish-on-approve` batches bursts of pushes (see the table).
+- **The browser keeps things current between deploys:** relative timestamps everywhere (including the ticker, Live Feed and Social Feed labels), the ticker and Live Feed from `/api/ticker`, and the Social Feed page, which checks `social-live` once on load (every minute during games).
+
+To force a deploy anyway, build and deploy by hand: `npm run build` then `npx netlify deploy --prod --dir=dist`. (`needs-deploy.mjs` also honors `FORCE_DEPLOY=true` if a workflow ever needs it.)
 
 **Don't add a step that commits to `data/` without thinking about whether it should trigger a deploy.**
 
@@ -379,7 +385,7 @@ Hogs Haven and ClutchPoints are excluded from the Monday corpus specifically (`E
 
 ### The one collector that does NOT run in GitHub Actions
 
-**Nicki Jhabvala** isn't carried by the Mastodon bridge, so she comes through `npm run x-scrape`, which drives a real logged-in Chrome. That can't run on a CI runner, so it runs on **your work machine** via Task Scheduler, every 2 hours. It reports to the Pipeline panel as the `social-browser` stage.
+**Nicki Jhabvala** isn't carried by the Mastodon bridge, so she comes through `npm run x-scrape`, which drives a real logged-in Chrome. That can't run on a CI runner, so it runs on **your work machine** via Task Scheduler, every 2 hours. It reports to the Pipeline panel as the `social-browser` stage. Since Oct 22 it only commits; her new posts go live with the next nightly build (within about 4 hours), not on their own deploy.
 
 This means the Pipeline panel will flag `social-browser` as stale any time that machine is off, asleep, or you're away for a weekend. That's expected, not a bug.
 

@@ -74,16 +74,35 @@ function runWork() {
   }
 }
 
+/**
+ * Whether this run found anything a reader would see: new posts land in
+ * data/social.json. Every run also rewrites data/state.json (the run log the
+ * admin Pipeline panel reads), so "anything staged" was true every two hours
+ * whether or not Nicki had posted, and each of those kicked off a full
+ * nightly build and production deploy, roughly 220 a month (Oct 22, found
+ * while cutting Netlify costs). The run log still gets committed; it just
+ * doesn't summon a deploy on its own.
+ */
+function hasNewPosts() {
+  try {
+    execSync('git diff --cached --quiet -- data/social.json');
+    return false;
+  } catch {
+    return true;
+  }
+}
+
 function commitAndPush(attempt) {
   sh('git add data/');
   if (!hasStagedChanges()) {
     console.log('no data changes — nothing to ship');
     return false;
   }
+  const newPosts = hasNewPosts();
   sh(`git commit -m "${COMMANDS[MODE].message}"`);
   try {
     sh('git push origin master');
-    return true;
+    return newPosts;
   } catch (err) {
     // nightly.yml/social.yml/gameday.yml push on their own schedule too
     // (see the concurrency-group comment in those workflows) — a rejected
@@ -106,10 +125,13 @@ sh('git reset --hard origin/master');
 const exitCode = runWork();
 const shipped = commitAndPush(0);
 
-if (shipped) {
-  sh('gh workflow run nightly.yml');
-  console.log('shipped — triggered nightly.yml to build and deploy');
-}
+// No deploy from here any more (Oct 22). This used to start a full nightly
+// build and production deploy after every push, which with a run every two
+// hours was about 220 deploys a month, most of them for nothing but the run
+// log. Nicki's new posts are committed now and go live with the next
+// scheduled nightly build (every four hours). To publish them immediately
+// instead, put back: sh('gh workflow run nightly.yml');
+console.log(shipped ? 'pushed; the next scheduled nightly build publishes it' : 'nothing new to publish');
 
 /**
  * Edge-triggered, not level-triggered: only the transition into "broken"

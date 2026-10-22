@@ -473,7 +473,7 @@ function liveFeedPost(post) {
     ? `<img class="live-feed-avatar" src="${escapeHtml(account.avatar)}" alt="" width="32" height="32" loading="lazy" />`
     : `<span class="live-feed-avatar live-feed-avatar-placeholder" aria-hidden="true">${escapeHtml(post.handle.charAt(0))}</span>`;
   return `
-        <a class="live-feed-post" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
+        <a class="live-feed-post" href="${escapeHtml(post.url)}"${post.publishedAt ? ` data-at="${escapeHtml(post.publishedAt)}"` : ''} target="_blank" rel="noopener noreferrer">
           ${avatar}
           <span class="live-feed-body">
             <span class="live-feed-head-row">

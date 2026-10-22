@@ -74,8 +74,19 @@ jobs:
           git pull --rebase -X theirs -q origin master || true
           git push
 
-      - name: Deploy to Netlify
+      # Deploy only if the built site differs from what's live (Oct 22).
+      # Every production deploy costs Netlify credits, and the data/ check
+      # above is nearly always true because caches carry fresh timestamps.
+      # See src/site/build-hash.js and scripts/needs-deploy.mjs.
+      - name: Check whether the built site changed
         if: steps.check.outputs.live == 'true'
+        id: site
+        run: node scripts/needs-deploy.mjs
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Deploy to Netlify
+        if: steps.check.outputs.live == 'true' && steps.site.outputs.changed == 'true'
         run: npx netlify deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -354,6 +354,23 @@
     if (agoLabel) agoEls[t].textContent = agoLabel;
   }
 
+  // The ticker, the Live Feed column and the Social Feed print their own
+  // "Xh ago" labels in spans rather than <time>, so they get the same
+  // treatment from each post's own timestamp. Since Oct 22 the site deploys
+  // only when something actually changed (see src/site/build-hash.js), so a
+  // label baked in at build time could otherwise be hours out of date.
+  [['.ticker-time', '.ticker-post', 'data-at'],
+    ['.live-feed-time', '.live-feed-post', 'data-at'],
+    ['.social-feed-time', '.social-feed-post', 'data-published']].forEach(function (spec) {
+    var els = document.querySelectorAll(spec[0]);
+    for (var i = 0; i < els.length; i++) {
+      var owner = els[i].closest(spec[1]);
+      var stamp = owner && owner.getAttribute(spec[2]);
+      var label = stamp && relativeAgo(new Date(stamp));
+      if (label) els[i].textContent = label;
+    }
+  });
+
   /**
    * Live ticker refresh.
    *
@@ -432,6 +449,43 @@
       groups[0].innerHTML = html;
       groups[1].innerHTML = html;
       track.style.animationDuration = Math.max(60, Math.round(chars / CHARS_PER_SEC)) + 's';
+      renderLiveFeed(posts);
+    }
+
+    // The Live Feed column (liveFeedWidget() in templates.js) is the same
+    // posts in a different shape, shown instead of the ticker on wide
+    // screens, and until Oct 22 it only ever changed with a deploy. It now
+    // takes the same fresh list the ticker just got. Avatars come from the
+    // posts the build already rendered there, by handle; a handle the page
+    // hasn't seen gets the same initial-letter placeholder the build uses.
+    var liveTrack = document.querySelector('.live-feed-track');
+    var liveGroups = liveTrack ? liveTrack.querySelectorAll('.live-feed-group') : [];
+    // Mirrors LIVE_FEED_SECONDS_PER_POST in templates.js.
+    var LIVE_SECONDS_PER_POST = 4.5;
+    function renderLiveFeed(posts) {
+      if (liveGroups.length !== 2) return;
+      var avatars = {};
+      var built = liveGroups[0].querySelectorAll('.live-feed-post');
+      for (var i = 0; i < built.length; i++) {
+        var handle = textOf(built[i], '.live-feed-handle').replace(/^@/, '');
+        var avatar = built[i].querySelector('.live-feed-avatar');
+        if (handle && avatar && !avatars[handle]) avatars[handle] = avatar.outerHTML;
+      }
+      var html = posts.map(function (post) {
+        var when = post.publishedAt ? relativeAgo(new Date(post.publishedAt)) : null;
+        var at = post.publishedAt ? ' data-at="' + esc(post.publishedAt) + '"' : '';
+        var avatarHtml = avatars[post.handle] ||
+          '<span class="live-feed-avatar live-feed-avatar-placeholder" aria-hidden="true">' + esc(post.handle.charAt(0)) + '</span>';
+        return '<a class="live-feed-post" href="' + esc(post.url) + '"' + at + ' target="_blank" rel="noopener noreferrer">' +
+          avatarHtml +
+          '<span class="live-feed-body"><span class="live-feed-head-row">' +
+          '<span class="live-feed-handle">@' + esc(post.handle) + '</span>' +
+          (when ? '<span class="live-feed-time">' + esc(when) + '</span>' : '') +
+          '</span><span class="live-feed-text">' + esc(post.text) + '</span></span></a>';
+      }).join('');
+      liveGroups[0].innerHTML = html;
+      liveGroups[1].innerHTML = html;
+      liveTrack.style.animationDuration = Math.max(20, Math.round(posts.length * LIVE_SECONDS_PER_POST)) + 's';
     }
 
     function merge(fresh) {
@@ -1086,12 +1140,14 @@
    * out at build time, liveWindowAttrs() in templates.js). Inside it, and only
    * while the tab is visible, this asks the function for the newest posts once
    * a minute and slides any it hasn't shown yet into place by time, already
-   * rendered the same way as the rest of the list. Outside the window it does
-   * nothing at all, apart from waking up at the window's start if the page
-   * is left open. `?live=1` forces it on, for previewing.
+   * rendered the same way as the rest of the list. Outside the window it
+   * looks once when the page opens (Oct 22: the site stopped redeploying
+   * every couple of hours just for new posts, see src/site/build-hash.js),
+   * then sleeps until the window's start if the page is left open.
+   * `?live=1` forces live mode on, for previewing.
    */
   (function () {
-    var list = document.querySelector('.social-feed-list[data-live-from]');
+    var list = document.querySelector('.social-feed-list');
     if (!list) return;
     var forced = /[?&]live=1\b/.test(window.location.search);
     var from = Date.parse(list.getAttribute('data-live-from'));
@@ -1106,9 +1162,12 @@
     var MINUTE = 60000;
     function isLive() { var now = Date.now(); return forced || (now >= from && now <= to); }
     function later(ms) { clearTimeout(timer); timer = setTimeout(tick, ms); }
+    var pulledOnce = false;
     function tick() {
       if (!isLive()) {
         if (status) status.hidden = true;
+        // One look per page view outside a game: no polling, no status line.
+        if (!pulledOnce && !document.hidden) { pulledOnce = true; pull(false); }
         // Left open before kickoff: check back when the window opens (capped,
         // since browsers stretch long timers in background tabs anyway).
         if (Date.now() < from) later(Math.min(from - Date.now(), 30 * MINUTE));
@@ -1116,7 +1175,10 @@
       }
       if (status) status.hidden = false;
       if (document.hidden) { later(MINUTE); return; }
-      fetch('/.netlify/functions/social-live', { credentials: 'omit' })
+      pull(true).then(function () { later(MINUTE); });
+    }
+    function pull(live) {
+      return fetch('/.netlify/functions/social-live', { credentials: 'omit' })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) {
           if (!data || !data.posts) return;
@@ -1152,15 +1214,15 @@
             el.classList.add('is-new');
             shown++;
           });
-          if (statusText) {
+          if (live && statusText) {
             statusText.textContent = 'Live: checking for new posts every minute' +
               (shown ? '. ' + shown + (shown === 1 ? ' new post' : ' new posts') + ' just now.' : '');
           }
-        }, function () {})
-        .then(function () { later(MINUTE); });
+        }, function () {});
     }
     document.addEventListener('visibilitychange', function () {
-      if (!document.hidden && isLive()) tick();
+      // A page opened in a background tab gets its one look when it's shown.
+      if (!document.hidden && (isLive() || !pulledOnce)) tick();
     });
     tick();
   })();
