@@ -1,16 +1,4 @@
 {
-  "hogs-haven-094e9790dd7e": {
-    "id": "hogs-haven-094e9790dd7e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/437817/the-athletic-stupidly-writes-off-commanders-season-before-it-starts",
-    "title": "The Athletic stupidly writes off Commanders’ season before it starts",
-    "excerpt": "The Daily Slop – 7 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n \n this time next week you will be watching Commanders football 🙂‍↕️ pic.twitter.com/xlJNPvalLq \n&mdash; Washington Commanders (@Commanders) September 6, 2026 \n\n \n\n \n See you in 1 Sunday.…",
-    "publishedAt": "2026-09-07T12:00:00.000Z",
-    "collectedAt": "2026-09-07T12:05:48.463Z"
-  },
   "commanders-youtube-cde2ac8ec76f": {
     "id": "commanders-youtube-cde2ac8ec76f",
     "sourceId": "commanders-youtube",
@@ -46,18 +34,6 @@
     "excerpt": "We have talked ad nauseam about the Washington Commanders surrounding quarterback Jayden Daniels with the necessary talent for him to be able to remove the Superman cape heading into Year 3. That discussion certainly hit an all-time high when it was first reported that general manager Adam Peters had signed veteran wide receiver Stefon Diggs.\n Former #Patriots WR Stefon Diggs is set to sign with the #Commanders , sources say.\n\nWith an offseason at full health, Diggs is ready to hit the ground…",
     "publishedAt": "2026-09-07T16:09:59.000Z",
     "collectedAt": "2026-09-07T17:15:27.043Z"
-  },
-  "hogs-haven-1817afd9b654": {
-    "id": "hogs-haven-1817afd9b654",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/437817/the-athletic-writes-off-commanders-season-before-it-starts",
-    "title": "Commanders news: The Athletic writes off Commanders’ season before it starts",
-    "excerpt": "The Daily Slop – 7 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n \n this time next week you will be watching Commanders football 🙂‍↕️ pic.twitter.com/xlJNPvalLq \n&mdash; Washington Commanders (@Commanders) September 6, 2026 \n\n \n\n \n See you in 1 Sunday.…",
-    "publishedAt": "2026-09-07T12:00:00.000Z",
-    "collectedAt": "2026-09-07T20:05:46.364Z"
   },
   "yahoo-nfl-8deb47ec8145": {
     "id": "yahoo-nfl-8deb47ec8145",
@@ -18850,5 +18826,29 @@
     "excerpt": "The Broncos might be winning games, but Nix isn't getting it done at quarterback. McDaniel and Quinn could be on their way out.",
     "publishedAt": "2026-10-22T09:30:45.000Z",
     "collectedAt": "2026-10-22T10:05:33.160Z"
+  },
+  "hogs-haven-ac2f44f92be3": {
+    "id": "hogs-haven-ac2f44f92be3",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/450407/nfc-east-offers-turnaround-chance-for-one-struggling-team-jayden-daniels-dan-quinn-antonio-williams",
+    "title": "Commanders News: NFC East offers turnaround chance for one struggling team",
+    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Jayden Daniels #5 of the Washington Commanders looks to pass against the Philadelphia Eagles in the first quarter of a game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Emilee Chinn/Getty Images) | Getty Images \n \n The Daily Slop – 22 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC…",
+    "publishedAt": "2026-10-22T11:30:00.000Z",
+    "collectedAt": "2026-10-22T12:05:33.875Z"
+  },
+  "riggos-rag-4970a09347bc": {
+    "id": "riggos-rag-4970a09347bc",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/stefon-diggs-carry-washington-commanders-passing-attack-built-terry-mclaurin",
+    "title": "Stefon Diggs must now carry a Commanders passing attack built for Terry McLaurin",
+    "excerpt": "Stefon Diggs must now carry a Washington Commanders passing attack built for injured wide receiver Terry McLaurin.",
+    "publishedAt": "2026-10-22T11:30:00.000Z",
+    "collectedAt": "2026-10-22T12:05:34.411Z"
   }
 }
