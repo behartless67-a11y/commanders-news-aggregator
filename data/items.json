@@ -1,16 +1,4 @@
 {
-  "dc-sports-king-26ebe00f285e": {
-    "id": "dc-sports-king-26ebe00f285e",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/commanders-have-excellent-strategy-behind-van-jefferson-returning",
-    "title": "Commanders Have Excellent Strategy Behind Van Jefferson Returning",
-    "excerpt": "When NFL front offices assemble the initial 53-man roster, the final decisions inevitably come down to mathematical utility rather than sheer offensive talent. That exact dynamic played out in the nation’s capital during roster cutdowns for the Washington Commanders.\n\n After being released at the roster deadline, veteran wide receiver Van Jefferson quickly returned to the Commanders, signing to the practice squad . At first glance, retaining the 30-year-old wideout might appear redundant given…",
-    "publishedAt": "2026-09-08T02:07:40.000Z",
-    "collectedAt": "2026-09-08T03:05:00.222Z"
-  },
   "dc-sports-king-f4ee512867e2": {
     "id": "dc-sports-king-f4ee512867e2",
     "sourceId": "dc-sports-king",
@@ -18850,5 +18838,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-22T20:00:26.000Z",
     "collectedAt": "2026-10-22T22:57:38.790Z"
+  },
+  "hogs-haven-e56bb0daf617": {
+    "id": "hogs-haven-e56bb0daf617",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/450762/commanders-bye-week-jayden-daniels-david-blough-laremy-tunsil",
+    "title": "Commanders at the bye: What Jayden Daniels, Washington offense must fix",
+    "excerpt": "The Commanders offense isn’t a disaster. It isn’t in a perfect spot, either. We’re hovering somewhere in the either, with a dynamic quarterback in Jayden Daniels and an offensive line still (and maybe forever) reeling from Laremy Tunsil’s loss. \n\n The run game can’t get going the way offensive coordinator David Blough would like and the passing game is missing some golden opportunities. Then there’s the issue of situational football and pre-snap penalties, which are killing this unit at the…",
+    "publishedAt": "2026-10-22T23:03:17.000Z",
+    "collectedAt": "2026-10-23T03:24:29.068Z"
+  },
+  "wjla-commanders-cd800b922ea8": {
+    "id": "wjla-commanders-cd800b922ea8",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-and-coach-dan-quinn-are-at-a-crossroads-at-the-bye-week",
+    "title": "Commanders and coach Dan Quinn are at a crossroads at the bye week",
+    "excerpt": "The Washington Commanders' season, to this point, hasn't gone as they'd planned.Their defense has not taken a noticeable leap forward despite key offseason addi",
+    "publishedAt": "2026-10-23T01:17:51.000Z",
+    "collectedAt": "2026-10-23T03:24:35.534Z"
   }
 }

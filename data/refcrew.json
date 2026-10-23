@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T22:58:39.028Z",
+  "fetchedAt": "2026-10-23T03:25:34.151Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -5841,6 +5841,22 @@
         "abbr": "WSH",
         "flags": 7,
         "yards": 66
+      }
+    },
+    "401873010": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-23T00:15Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "CHI",
+        "flags": 9,
+        "yards": 69
+      },
+      "away": {
+        "abbr": "NE",
+        "flags": 10,
+        "yards": 71
       }
     }
   }

@@ -1,40 +1,4 @@
 {
-  "social-e75631ec6bc8": {
-    "id": "social-e75631ec6bc8",
-    "url": "https://x.com/tashanreed/status/2109833782694174799",
-    "text": "The Seahawks literally *just* won the Super Bowl last year 😂",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-13T02:29:07.000Z",
-    "collectedAt": "2026-10-13T02:55:19.658Z"
-  },
-  "social-236da8fc0889": {
-    "id": "social-236da8fc0889",
-    "url": "https://x.com/john_keim/status/2109845251531710732",
-    "text": "Asked a former DB coach about this play. Said was a hybrid zone/man coverage. He loves the call but said it takes a lot to make it work so played a match it up properly. Could that be an issue when in a new system? “Absolutely”",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-13T03:14:41.000Z",
-    "collectedAt": "2026-10-13T04:05:58.690Z"
-  },
-  "social-283e74329264": {
-    "id": "social-283e74329264",
-    "url": "https://x.com/john_keim/status/2109842443575423146",
-    "text": "This was from earlier. On you know what … met with Harris (as usual). More 89/quinn-commanders-botched-final-play-starts-me",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-13T03:03:32.000Z",
-    "collectedAt": "2026-10-13T04:05:58.690Z"
-  },
   "social-4f15e385e7af": {
     "id": "social-4f15e385e7af",
     "url": "https://x.com/BenStandig/status/2109852186196718063",
@@ -7715,5 +7679,29 @@
     ],
     "publishedAt": "2026-10-22T18:00:02.000Z",
     "collectedAt": "2026-10-22T22:57:43.484Z"
+  },
+  "social-e2ae0974fece": {
+    "id": "social-e2ae0974fece",
+    "url": "https://x.com/BenStandig/status/2113445391001698310",
+    "text": "🎙️Bye week talk on Jayden Daniels' performances, David Blough's plans, NFC East QBs and NFL trends with Derrik Klassen. Working around OL issues. Hire a Blough mentor? The intentional grounding play design. Trade for Brian Thomas? Future OCs turned HC. pass-it-on-97c?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-23T01:40:21.000Z",
+    "collectedAt": "2026-10-23T03:24:41.491Z"
+  },
+  "social-203881837186": {
+    "id": "social-203881837186",
+    "url": "https://x.com/tashanreed/status/2113438278213063122",
+    "text": "This is horrible news, man. Marshall was such a big part of my childhood growing up in St. Louis. Wishing him the best.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-23T01:12:05.000Z",
+    "collectedAt": "2026-10-23T03:24:42.891Z"
   }
 }
