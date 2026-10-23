@@ -2,8 +2,13 @@ name: Nightly build
 
 on:
   schedule:
-    # Every 4 hours on the hour (00:00, 04:00, 08:00 UTC, etc).
-    - cron: '0 */4 * * *'
+    # Every 4 hours, at 17 past (00:17, 04:17, 08:17 UTC, etc). Not on the
+    # hour: GitHub delays and sometimes drops scheduled runs at the top of
+    # the hour, when everyone's cron fires. On Oct 23 it skipped the 00:00
+    # and 08:00 runs outright, leaving the river 17 hours without a new
+    # story. scripts/ship.js (every 2 hours on Ben's PC) is the backstop:
+    # it starts a run if this one hasn't happened in 4.25 hours.
+    - cron: '17 */4 * * *'
   workflow_dispatch: {}
 
 # Shared with social.yml: its hourly `0 * * * *` tick lands on this same
@@ -110,8 +115,12 @@ jobs:
       # Commit the updated item state so tomorrow's run only adds genuinely
       # new items, the same idempotency `collect` already guarantees
       # locally. Nothing to commit on a quiet night is not an error.
+      # continue-on-error so a GitHub hiccup on the push (Oct 23: "remote:
+      # Internal Server Error") can't stop the deploy below. The next run
+      # re-collects anyway, so the data isn't lost, just saved later.
       - name: Commit updated data
         id: commit
+        continue-on-error: true
         run: |
           git config user.name "nightly-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -136,7 +145,8 @@ jobs:
             # -X theirs keeps this job's own freshly collected data when a cache
             # file conflicts, which is right: it just fetched the newer copy.
             git pull --rebase -X theirs -q origin master || true
-            git push
+            # Three tries, a little apart, before giving up on the push.
+            git push || { sleep 20; git pull --rebase -X theirs -q origin master || true; git push; } || { sleep 60; git pull --rebase -X theirs -q origin master || true; git push; }
           fi
 
       # Deploy only if the built site differs from what's live (Oct 22).

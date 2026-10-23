@@ -131,7 +131,28 @@ const shipped = commitAndPush(0);
 // log. Nicki's new posts are committed now and go live with the next
 // scheduled nightly build (every four hours). To publish them immediately
 // instead, put back: sh('gh workflow run nightly.yml');
-console.log(shipped ? 'pushed; the next scheduled nightly build publishes it' : 'nothing new to publish');
+console.log(shipped ? 'pushed; the next nightly build publishes it' : 'nothing new to publish');
+
+// Backstop for GitHub's scheduler, which delays and sometimes skips
+// nightly.yml's own cron (Oct 23: two runs in a row never happened, and the
+// site went 17 hours without a new story). This task runs reliably every two
+// hours, so if nightly hasn't started in 4.25 hours, start it (not 4: this
+// runs at :05 on even hours, just before the :17 cron, and would double up). Nightly only
+// deploys when the built site actually changed (src/site/build-hash.js),
+// so this keeps the news fresh without bringing back a deploy every run.
+const NIGHTLY_STALE_MS = 4.25 * 60 * 60 * 1000;
+try {
+  const last = shQuiet('gh run list --workflow nightly.yml --limit 1 --json createdAt --jq ".[0].createdAt"').trim();
+  const age = last ? Date.now() - Date.parse(last) : Infinity;
+  if (!(age < NIGHTLY_STALE_MS)) {
+    sh('gh workflow run nightly.yml');
+    console.log(`nightly last started ${last || 'never'}, so started one now`);
+  } else {
+    console.log(`nightly ran ${Math.round(age / 60000)} minutes ago; no need to start one`);
+  }
+} catch (err) {
+  console.warn(`could not check on nightly.yml: ${err.message}`);
+}
 
 /**
  * Edge-triggered, not level-triggered: only the transition into "broken"
