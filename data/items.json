@@ -1,64 +1,4 @@
 {
-  "riggos-rag-6ea5f13db3dc": {
-    "id": "riggos-rag-6ea5f13db3dc",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jayden-daniels-doesnt-need-mvp-season-give-commanders-what-they-crave",
-    "title": "Jayden Daniels doesn't need MVP season to give Commanders what they crave",
-    "excerpt": "Third-year quarterback Jayden Daniels doesn't need an NFL MVP season to give the Washington Commanders what they crave.",
-    "publishedAt": "2026-09-08T19:00:02.000Z",
-    "collectedAt": "2026-09-08T19:23:32.297Z"
-  },
-  "hogs-haven-8fac8b99cbd2": {
-    "id": "hogs-haven-8fac8b99cbd2",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-depth-chart/435024/washington-commanders-week-1-depth-chart-mike-sainristil-sonny-styles-amik-robertson-philadelphia-eagles",
-    "title": "The Washington Commanders release Week 1 depth chart",
-    "excerpt": "The Washington Commanders have released their first unofficial depth chart of the 2026 regular season. They released their intial (and unofficial) one before the first preseason game, but this is the first one released after the 53-man roster cut. \n\n There aren’t many surprises on the document, with some clarity provided at the cornerback spot. Mike Sainristil and Amik Roberson are listed as first-teamers, with Rasul Douglas and Fabian Moreau behind them. There isn’t a slot cornerback position…",
-    "publishedAt": "2026-09-08T19:37:15.000Z",
-    "collectedAt": "2026-09-08T20:05:46.982Z"
-  },
-  "riggos-rag-473bfd1e0391": {
-    "id": "riggos-rag-473bfd1e0391",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-clue-may-give-treylon-burks-belief-his-career-was-missing",
-    "title": "Commanders clue may give Treylon Burks the belief his career was missing",
-    "excerpt": "Treylon Burks got a big vote of confidence from the Washington Commanders before their Week 1 opener against the Philadelphia Eagles.",
-    "publishedAt": "2026-09-08T21:00:02.000Z",
-    "collectedAt": "2026-09-08T22:05:48.750Z"
-  },
-  "pft-216482ef4157": {
-    "id": "pft-216482ef4157",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-among-5-commanders-captains",
-    "title": "Jayden Daniels among 5 Commanders captains",
-    "excerpt": "The number five is important to Jayden Daniels, so perhaps it's appropriate that he's one of five captains on the Commanders this season.\n Washington announced that Daniels was chosen as a team captain alongside wide receiver Terry McLaurin, linebacker Frankie Luvu, safety Jeremy Reaves and punter Tress Way.\n Daniels said he thinks being named a team captain is a natural extension of the leadership he exudes as the Commanders' starting quarterback.\n \"I just think it comes with reps here. Going…",
-    "publishedAt": "2026-09-08T21:13:58.000Z",
-    "collectedAt": "2026-09-08T22:05:53.957Z"
-  },
-  "hogs-haven-a7b8f5f4a028": {
-    "id": "hogs-haven-a7b8f5f4a028",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/438258/will-the-commanders-get-off-to-a-fast-start-in-26-survey",
-    "title": "Will the Commanders get off to a fast start in ‘26? – survey",
-    "excerpt": "Welcome to SB Nation Reacts, a survey of fans across the NFL. Throughout the year we ask questions of the most plugged-in Commanders fans and fans across the country. \n\n Now that the season is starting, we’re back to asking the standard confidence question each week; that is, “Are you confident the Commanders are headed in the right direction?”\n\n We’ve been asking that question weekly from September to December for many years.\n\n This week, we also have a second question that is focused on how…",
-    "publishedAt": "2026-09-08T20:21:28.000Z",
-    "collectedAt": "2026-09-09T00:05:45.397Z"
-  },
   "wjla-commanders-8867fa147ba6": {
     "id": "wjla-commanders-8867fa147ba6",
     "sourceId": "wjla-commanders",
@@ -18766,5 +18706,41 @@
     "excerpt": "",
     "publishedAt": "2026-10-23T14:00:01.000Z",
     "collectedAt": "2026-10-23T18:55:37.983Z"
+  },
+  "hogs-haven-86df27918f20": {
+    "id": "hogs-haven-86df27918f20",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/450878/commanders-nfl-trade-deadline-espn-andrew-wylie-patriots",
+    "title": "Commanders projected to sell offensive lineman at NFL trade deadline",
+    "excerpt": "The NFL trade deadline is coming up in the relatively near future, with the last day to deal on Nov. 10. That comes right after a Week 9 contest with the L.A. Rams, after which we should have a great idea about this Commanders season. \n\n Washington must surge and stack some wins right away, lest the season go south. Will the Commander be buyers or sellers at the trade deadline? That will depend on what happens next. \n\n We’ll see tons of projected trades in the coming weeks, and ESPN believes…",
+    "publishedAt": "2026-10-23T20:10:11.000Z",
+    "collectedAt": "2026-10-23T23:10:13.843Z"
+  },
+  "hogs-haven-f80e3d7a13db": {
+    "id": "hogs-haven-f80e3d7a13db",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/450866/commanders-bye-week-sonny-styles-trey-amos-odafe-oweh",
+    "title": "Commanders at the bye: Sonny Styles provides hope for better defense",
+    "excerpt": "The Commanders invested a ton in their defense, with money spent on younger players perceived to be on the ascent. Odafe Oweh came with a huge price tag . Nick Cross was supposed to lock down the secondary. Leo Chenal was to help anchor the linebacker corps with No. 7 overall NFL draft pick Sonny Styles. \n\n Amik Robertson was signed to fortify a young cornerback corps ready for better. \n\n This group, including K’Lavon Chaisson and Charles Omenihu, was supposed to help a previously old and slow…",
+    "publishedAt": "2026-10-23T19:26:21.000Z",
+    "collectedAt": "2026-10-23T23:10:13.843Z"
+  },
+  "riggos-rag-e9b00fb612a0": {
+    "id": "riggos-rag-e9b00fb612a0",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/the-greatest-washington-commanders-team-that-never-reached-super-bowl",
+    "title": "The greatest Washington team that never reached the Super Bowl",
+    "excerpt": "The Washington Commanders have played for the NFL championship eleven times in their long history. But some of the greatest teams in franchise history never made it that far.",
+    "publishedAt": "2026-10-23T19:00:00.000Z",
+    "collectedAt": "2026-10-23T23:10:14.579Z"
   }
 }
