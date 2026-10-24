@@ -1,16 +1,4 @@
 {
-  "wjla-commanders-8867fa147ba6": {
-    "id": "wjla-commanders-8867fa147ba6",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-northwest-stadium-2026-nfl-dmv-dc-maryland-food-menu-flavors-of-the-season-crab-stuffed-pretzel-dip-half-smoke-hail-mary-cheesesteak-football-concessions-fans",
-    "title": "What's new on the Commanders' menu at Northwest Stadium this season?",
-    "excerpt": "When fans return to Northwest Stadium, they’ll also have a chance to check out a new lineup of food options inspired by the DMV.",
-    "publishedAt": "2026-09-09T08:22:30.000Z",
-    "collectedAt": "2026-09-09T08:37:27.398Z"
-  },
   "hogs-haven-d4b63fd18898": {
     "id": "hogs-haven-d4b63fd18898",
     "sourceId": "hogs-haven",
@@ -69,18 +57,6 @@
     "title": "Commanders' Terry McLaurin enters unfamiliar territory (and the NFL is watching)",
     "excerpt": "Washington Commanders wide receiver Terry McLaurin is entering unfamiliar territory this season with new doubters to silence.",
     "publishedAt": "2026-09-09T11:30:00.000Z",
-    "collectedAt": "2026-09-09T14:05:49.646Z"
-  },
-  "riggos-rag-ed4609abee9f": {
-    "id": "riggos-rag-ed4609abee9f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/predicting-washington-commanders-first-five-games-pivotal-2026-season",
-    "title": "Predicting the Commanders' first five games of a pivotal 2026 season",
-    "excerpt": "Predicting the first five games of what promises to be a pivotal 2026 campaign for the Washington Commanders and head coach Dan Quinn.",
-    "publishedAt": "2026-09-09T10:00:02.000Z",
     "collectedAt": "2026-09-09T14:05:49.646Z"
   },
   "commanders-youtube-04289df5d2cb": {
@@ -18742,5 +18718,41 @@
     "excerpt": "The Washington Commanders have played for the NFL championship eleven times in their long history. But some of the greatest teams in franchise history never made it that far.",
     "publishedAt": "2026-10-23T19:00:00.000Z",
     "collectedAt": "2026-10-23T23:10:14.579Z"
+  },
+  "hogs-haven-acb01d9f650b": {
+    "id": "hogs-haven-acb01d9f650b",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/450894/adam-peters-says-jayden-daniels-wont-make-same-mistake-again",
+    "title": "Adam Peters says Jayden Daniels won’t make same mistake again",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 21: Washington Commanders general manager Adam Peters looks on before the game against the Las Vegas Raiders at Northwest Stadium on September 21, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images \n \n The Washington Commanders are on their bye week, so that means a week-long break for the players, coaches, and fans, but general manager Adam Peters maintained his weekly radio appearance with the Junkies. The Commanders are 1-4-1 after…",
+    "publishedAt": "2026-10-23T12:25:00.000Z",
+    "collectedAt": "2026-10-24T10:05:37.375Z"
+  },
+  "riggos-rag-aa31662c2e7c": {
+    "id": "riggos-rag-aa31662c2e7c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-rookie-stock-report-puts-early-promise-under-bye-week-scrutiny",
+    "title": "Commanders rookie stock report puts early promise under bye-week scrutiny",
+    "excerpt": "Checking in on how the Washington Commanders' rookie class is faring with the team on their 2026 bye week.",
+    "publishedAt": "2026-10-24T10:00:03.000Z",
+    "collectedAt": "2026-10-24T10:05:38.509Z"
+  },
+  "commanders-youtube-7b3ff3c2a429": {
+    "id": "commanders-youtube-7b3ff3c2a429",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=GlMnJybTQM0",
+    "title": "Super Bowl Champ Brian Mitchell + 2026 Season Review I The Player's Club I Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-10-24T04:05:23.000Z",
+    "collectedAt": "2026-10-24T10:05:42.453Z"
   }
 }
