@@ -80,18 +80,6 @@
     "publishedAt": "2026-10-14T19:38:44.000Z",
     "collectedAt": "2026-10-14T20:05:55.019Z"
   },
-  "social-a15d232f27b3": {
-    "id": "social-a15d232f27b3",
-    "url": "https://x.com/tashanreed/status/2110431913789763635",
-    "text": "The number of games Jayden Daniels finished in that 17-game span: *three* The pressure is absolutely on for the #Commanders this season, but the stuff about last year feels pretty disingenuous. This team is going nowhere fast if Daniels isn't out there.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-14T18:05:52.000Z",
-    "collectedAt": "2026-10-14T20:05:55.019Z"
-  },
   "social-573f654c6b41": {
     "id": "social-573f654c6b41",
     "url": "https://x.com/Commanders/status/2110481269729464439",
@@ -7064,5 +7052,55 @@
     "images": [],
     "publishedAt": "2026-10-23T23:48:29.000Z",
     "collectedAt": "2026-10-24T04:05:47.147Z"
+  },
+  "social-6af4e8604926": {
+    "id": "social-6af4e8604926",
+    "url": "https://x.com/Commanders/status/2114025373801337063",
+    "text": "Jayden being Jayden @CampbellsChunky@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/496/753/383/716/826/original/1d2183d58b58f950.jpg"
+    ],
+    "publishedAt": "2026-10-24T16:05:00.000Z",
+    "collectedAt": "2026-10-24T18:05:47.081Z"
+  },
+  "social-87940af6dab7": {
+    "id": "social-87940af6dab7",
+    "url": "https://x.com/Commanders/status/2113991399180038327",
+    "text": "The greatest upset 🎧 @_Rocketdyne@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-24T13:50:00.000Z",
+    "collectedAt": "2026-10-24T18:05:47.082Z"
+  },
+  "social-46756c3401c6": {
+    "id": "social-46756c3401c6",
+    "url": "https://x.com/JPFinlayNBCS/status/2114026609497796972",
+    "text": "It’s who Willard is. Whenever he can take cheap shots, he will. Good luck.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-24T16:09:55.000Z",
+    "collectedAt": "2026-10-24T18:05:48.552Z"
+  },
+  "social-3f0cfe5f806e": {
+    "id": "social-3f0cfe5f806e",
+    "url": "https://x.com/MonSportsNet/status/2113992758264275105",
+    "text": "Beltway Football takes on your 🫵 questions in this weekend’s new episode! @JPFinlayNBCS & @Mitch_Tischler@twitter.com address concerns about the O-line and discuss potential changes ⬇️",
+    "handle": "MonSportsNet",
+    "author": "Monumental Sports Network",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-24T13:55:24.000Z",
+    "collectedAt": "2026-10-24T18:05:48.552Z"
   }
 }
