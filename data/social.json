@@ -1,18 +1,4 @@
 {
-  "social-939585f87b90": {
-    "id": "social-939585f87b90",
-    "url": "https://x.com/Commanders/status/2110495110995591604",
-    "text": "🗓️ Week 6: #WASvsSF 🏟️ Levi's Stadium 📺 8:15pm on ESPN",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/441/577/520/961/989/original/3aacc6b6664d2b41.jpg"
-    ],
-    "publishedAt": "2026-10-14T22:17:00.000Z",
-    "collectedAt": "2026-10-14T22:58:52.139Z"
-  },
   "social-403140447091": {
     "id": "social-403140447091",
     "url": "https://x.com/Commanders/status/2110512809037476335",
@@ -6991,5 +6977,53 @@
     "images": [],
     "publishedAt": "2026-10-24T13:55:24.000Z",
     "collectedAt": "2026-10-24T18:05:48.552Z"
+  },
+  "social-4b3628c263b4": {
+    "id": "social-4b3628c263b4",
+    "url": "https://x.com/MikeGarafolo/status/2114086975015985156",
+    "text": "#49ers LB Fred Warner was fined $65,673 for two instances against the #Commanders — $17,911 for a hit on TE Chig Okonkwo (flag was thrown then picked up, with ESPN broadcast saying it should’ve stayed a penalty) and $47,762 for use of the helmet here that wasn’t flagged.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-24T20:09:47.000Z",
+    "collectedAt": "2026-10-24T22:29:44.795Z"
+  },
+  "social-d2fef14ba5db": {
+    "id": "social-d2fef14ba5db",
+    "url": "https://x.com/BenStandig/status/2114090882689298717",
+    "text": "Both plays were in the 4th quarter. .",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-24T20:25:18.000Z",
+    "collectedAt": "2026-10-24T22:29:46.539Z"
+  },
+  "social-02d74e804c84": {
+    "id": "social-02d74e804c84",
+    "url": "https://x.com/BenStandig/status/2114090020747264397",
+    "text": "All the conversation about inappropriate use of the helmet by 49ers LB Fred Warner was addressed by the league with two fines totalling $65,673. $17,911 for a hit on a defenseless player (flag was thrown then reversed) and $47,762 for use of the helmet. No flag thrown.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-24T20:21:53.000Z",
+    "collectedAt": "2026-10-24T22:29:46.539Z"
+  },
+  "social-11044c831f08": {
+    "id": "social-11044c831f08",
+    "url": "https://x.com/BenStandig/status/2114088727027044607",
+    "text": "All the conversation about inappropriate use of the helmet by 49ers LB Fred Warner was addressed by the league with two fines totalling $65,673. $17,911 for a hit on TE Chig Okonkwo (flag was thrown then reversed) and $47,762 for use of the helmet, also on Chig. No flag thrown.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-24T20:16:45.000Z",
+    "collectedAt": "2026-10-24T22:29:46.539Z"
   }
 }
