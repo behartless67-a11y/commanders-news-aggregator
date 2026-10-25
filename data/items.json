@@ -1,28 +1,4 @@
 {
-  "hogs-haven-f3bcdd2b2ea0": {
-    "id": "hogs-haven-f3bcdd2b2ea0",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/438592/commanders-david-blough-daronte-jones-sean-mannion-eagles-nfl-week-1",
-    "title": "How will Commanders’ David Blough, Daronte Jones impact Eagles clash?",
-    "excerpt": "The season’s just starting and the Washington Commanders have a massive NFC East clash right out of the gate . There’s no easing into a crucial 2026 campaign, with a road game in Philadelphia to start us off. \n\n This longstanding rivalry is a passionate one, with little love for those on the other side. This Week 1 matchup is intriguing for all the mystery surrounding two teams that know each other well. \n\n Three of the four play callers are brand new, without a history in the job to draw from.…",
-    "publishedAt": "2026-09-10T11:00:00.000Z",
-    "collectedAt": "2026-09-10T12:05:53.249Z"
-  },
-  "riggos-rag-dd8295a72b7b": {
-    "id": "riggos-rag-dd8295a72b7b",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/stefon-diggs-knows-what-will-make-break-commanders-offensive-surge",
-    "title": "Stefon Diggs knows what will make or break Commanders' offensive surge",
-    "excerpt": "Washington Commanders wide receiver Stefon Diggs already knows what will make or break the team's offensive surge under David Blough.",
-    "publishedAt": "2026-09-10T11:30:00.000Z",
-    "collectedAt": "2026-09-10T12:05:54.432Z"
-  },
   "hogs-haven-f3d807627c8a": {
     "id": "hogs-haven-f3d807627c8a",
     "sourceId": "hogs-haven",
@@ -34,18 +10,6 @@
     "excerpt": "LANDOVER, MARYLAND - DECEMBER 20: Ben Sinnott #82 of the Washington Commanders signals as he lines up during an NFL football game against the Philadelphia Eagles at Northwest Stadium on December 20, 2025 in Landover, Maryland. (Photo by Michael Owens/Getty Images) | Getty Images \n \n The Daily Slop – 10 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and…",
     "publishedAt": "2026-09-10T14:03:19.000Z",
     "collectedAt": "2026-09-10T14:06:07.880Z"
-  },
-  "riggos-rag-b583c0f1c6e1": {
-    "id": "riggos-rag-b583c0f1c6e1",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/sonny-styles-true-commanders-rookie-test-has-nothing-to-do-with-stardom",
-    "title": "Sonny Styles’ true Commanders rookie test has nothing to do with stardom",
-    "excerpt": "The true rookie test for Washington Commanders linebacker Sonny Styles has nothing to do with superstardom.",
-    "publishedAt": "2026-09-10T13:00:03.000Z",
-    "collectedAt": "2026-09-10T14:06:09.214Z"
   },
   "riggos-rag-992e2992ab72": {
     "id": "riggos-rag-992e2992ab72",
@@ -18562,5 +18526,29 @@
     "excerpt": "",
     "publishedAt": "2026-10-25T04:00:26.000Z",
     "collectedAt": "2026-10-25T10:05:37.000Z"
+  },
+  "riggos-rag-fdc1989ee30e": {
+    "id": "riggos-rag-fdc1989ee30e",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jerry-jeudy-could-give-washington-commanders-trade-escape-terry-mclaurin-loss",
+    "title": "Jerry Jeudy could give Commanders a trade escape after Terry McLaurin loss",
+    "excerpt": "Cleveland Browns wide receiver Jerry Jeudy could give the Washington Commanders a trade escape after losing Terry McLaurin to injury.",
+    "publishedAt": "2026-10-25T11:30:00.000Z",
+    "collectedAt": "2026-10-25T13:12:12.593Z"
+  },
+  "riggos-rag-ba27418e0e49": {
+    "id": "riggos-rag-ba27418e0e49",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-7-round-2027-mock-draft-puts-top-five-pick-adam-peters-hands",
+    "title": "Commanders 7-round 2027 mock draft puts a top-five pick in Adam Peters' hands",
+    "excerpt": "Tbe Washington Commanders are projected to be picking No. 5 overall in the 2027 NFL Draft at their bye week, but how would they use it?",
+    "publishedAt": "2026-10-25T10:15:44.000Z",
+    "collectedAt": "2026-10-25T13:12:12.593Z"
   }
 }
