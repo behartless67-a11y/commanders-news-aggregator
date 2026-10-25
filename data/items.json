@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-46b0ca1fbb7d": {
-    "id": "commanders-youtube-46b0ca1fbb7d",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=7ShsDOWA0L4",
-    "title": "🔥 THE FILM DON’T LIE: Jayden Daniels Is ELITE… AND STILL RISING! | Film Breakdown | Commanders | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-09-10T01:00:06.000Z",
-    "collectedAt": "2026-09-10T08:05:55.859Z"
-  },
   "riggos-rag-304aa02b32b2": {
     "id": "riggos-rag-304aa02b32b2",
     "sourceId": "riggos-rag",
@@ -18574,5 +18562,17 @@
     "excerpt": "San Francisco 49ers linebacker Fred Warner was fined twice for a total of $65,673 for two hits on Washington Commanders tight end Chig Okonkwo during their Week 6 Monday night matchup. The 49ers won the game, 23-17 .\n The first fine issued to Warner was $17,911 for a hit on a defenseless player. During the game, officials initially called that penalty on the field but later withdrew the flag. After reviewing the video, the NFL obviously felt otherwise and levied the fine. \n Warner was also…",
     "publishedAt": "2026-10-24T22:28:53.000Z",
     "collectedAt": "2026-10-24T22:29:39.159Z"
+  },
+  "cbs-nfl-de62d38c67c3": {
+    "id": "cbs-nfl-de62d38c67c3",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nfl-levies-two-fines-to-49ers-lb-fred-warner",
+    "title": "NFL levies two fines to 49ers LB Fred Warner for hit on Commanders TE Chig Okonkwo",
+    "excerpt": "Warner was initially flagged for the violation, but the officials picked it up",
+    "publishedAt": "2026-10-24T22:12:23.000Z",
+    "collectedAt": "2026-10-25T04:05:42.402Z"
   }
 }
