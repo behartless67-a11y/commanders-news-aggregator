@@ -1,97 +1,4 @@
 {
-  "social-6dbaf13debba": {
-    "id": "social-6dbaf13debba",
-    "url": "https://x.com/Commanders/status/2110833474676355095",
-    "text": "MNF prep 🙌 @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/392/470/764/original/90a5608ebca50037.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/432/728/903/original/81b695c6e9cc3e53.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/478/519/179/original/c3dfba1b16eaf8a1.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/446/864/511/327/230/original/98f0c89e87dbc798.jpg"
-    ],
-    "publishedAt": "2026-10-15T20:41:32.000Z",
-    "collectedAt": "2026-10-15T21:08:05.288Z"
-  },
-  "social-9ece021c91f6": {
-    "id": "social-9ece021c91f6",
-    "url": "https://x.com/NickiJhabvala/status/2110854473153163413",
-    "text": "Bill did not practice because of a groin injury. And all five safeties are on here, but Nick Cross was a full participant, as Quinn said he would be, and Jeremy Reaves and Quan Martin were limited.",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-15T22:04:58.000Z",
-    "collectedAt": "2026-10-15T22:05:12.755Z"
-  },
-  "social-bdf8c6b292c8": {
-    "id": "social-bdf8c6b292c8",
-    "url": "https://x.com/NickiJhabvala/status/2110847070428856738",
-    "text": "More from Jayden Daniels: \"Marcus (Mariota) kind of told me—I'm not gonna say I'm one of the greats, but he told me every great one has been through adversity in their career. And you gotta deal with it, you gotta learn from it and move forward and not dwell on it and let it",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-15T21:35:33.000Z",
-    "collectedAt": "2026-10-15T22:05:12.755Z"
-  },
-  "social-cc801e3a47a7": {
-    "id": "social-cc801e3a47a7",
-    "url": "https://x.com/Commanders/status/2110853223376679422",
-    "text": "Thursday injury report #WASvsSF | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/447/178/336/455/387/original/2fa5a020564b5482.jpg"
-    ],
-    "publishedAt": "2026-10-15T22:00:00.000Z",
-    "collectedAt": "2026-10-15T22:05:45.701Z"
-  },
-  "social-b862650b976d": {
-    "id": "social-b862650b976d",
-    "url": "https://x.com/john_keim/status/2110853686993784995",
-    "text": "The injury report. 7 DNPs. Croskey-Merritt listed with a groin injury.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/447/180/151/773/155/original/d24f66096c65b881.jpg"
-    ],
-    "publishedAt": "2026-10-15T22:01:51.000Z",
-    "collectedAt": "2026-10-15T22:05:48.442Z"
-  },
-  "social-adf2f2728d44": {
-    "id": "social-adf2f2728d44",
-    "url": "https://x.com/john_keim/status/2110846199469339074",
-    "text": "The shame of that last play for Daniels on Sunday: he played well up until that point. 442/jayden-daniels-shows-flashes-rookie-form?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-15T21:32:06.000Z",
-    "collectedAt": "2026-10-15T22:05:48.442Z"
-  },
-  "social-8e11fab59f77": {
-    "id": "social-8e11fab59f77",
-    "url": "https://x.com/tashanreed/status/2110853448677867768",
-    "text": "Time travel doesn't exist yet — and the undefeated 49ers are next on the docket — so the #Commanders have no choice but to move on. Here are some X-factors to monitor ahead of their trip to San Francisco: /10/15/jayden-danielss-poise-under-pressure-more-x-factors-commanders-vs-49ers/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-15T22:00:54.000Z",
-    "collectedAt": "2026-10-15T22:05:51.363Z"
-  },
   "social-d9e0abb83684": {
     "id": "social-d9e0abb83684",
     "url": "https://x.com/BenStandig/status/2110862523272753625",
@@ -105,18 +12,6 @@
     ],
     "publishedAt": "2026-10-15T22:36:58.000Z",
     "collectedAt": "2026-10-15T22:53:39.318Z"
-  },
-  "social-085414adc9c3": {
-    "id": "social-085414adc9c3",
-    "url": "https://x.com/tashanreed/status/2110854238599582051",
-    "text": "It's a groin injury for Croskey-Merritt",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-15T22:04:02.000Z",
-    "collectedAt": "2026-10-15T22:53:40.740Z"
   },
   "social-d3fffd1cfb85": {
     "id": "social-d3fffd1cfb85",
