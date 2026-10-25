@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T19:05:18.061Z",
+  "fetchedAt": "2026-10-25T22:35:35.006Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -5873,6 +5873,118 @@
         "abbr": "PIT",
         "flags": 6,
         "yards": 57
+      }
+    },
+    "401873012": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "BAL",
+        "flags": 10,
+        "yards": 57
+      },
+      "away": {
+        "abbr": "CIN",
+        "flags": 1,
+        "yards": 15
+      }
+    },
+    "401873013": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "TEN",
+        "flags": 5,
+        "yards": 35
+      },
+      "away": {
+        "abbr": "CLE",
+        "flags": 8,
+        "yards": 48
+      }
+    },
+    "401873014": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Brad Rogers",
+      "home": {
+        "abbr": "MIN",
+        "flags": 4,
+        "yards": 24
+      },
+      "away": {
+        "abbr": "IND",
+        "flags": 6,
+        "yards": 46
+      }
+    },
+    "401873015": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "NYJ",
+        "flags": 6,
+        "yards": 36
+      },
+      "away": {
+        "abbr": "MIA",
+        "flags": 5,
+        "yards": 26
+      }
+    },
+    "401873016": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "HOU",
+        "flags": 10,
+        "yards": 80
+      },
+      "away": {
+        "abbr": "NYG",
+        "flags": 4,
+        "yards": 50
+      }
+    },
+    "401873017": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "ATL",
+        "flags": 5,
+        "yards": 39
+      },
+      "away": {
+        "abbr": "SF",
+        "flags": 7,
+        "yards": 55
+      }
+    },
+    "401873018": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "referee": "Carl Cheffers",
+      "home": {
+        "abbr": "CAR",
+        "flags": 4,
+        "yards": 56
+      },
+      "away": {
+        "abbr": "TB",
+        "flags": 6,
+        "yards": 35
       }
     }
   }

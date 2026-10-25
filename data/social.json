@@ -13,30 +13,6 @@
     "publishedAt": "2026-10-15T22:36:58.000Z",
     "collectedAt": "2026-10-15T22:53:39.318Z"
   },
-  "social-d3fffd1cfb85": {
-    "id": "social-d3fffd1cfb85",
-    "url": "https://x.com/AdamSchefter/status/2110861589465256367",
-    "text": "Commanders quarterback Jayden Daniels addressed his teammates, once more blaming himself for the end-of-overtime debacle against the Giants on Sunday before making a vow. Story via @john_keim : 30/jayden-daniels-addresses-commanders-teammates-ot-gaffe",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-10-15T22:33:15.000Z",
-    "collectedAt": "2026-10-15T22:53:43.728Z"
-  },
-  "social-2943fb1d719d": {
-    "id": "social-2943fb1d719d",
-    "url": "https://x.com/NickiJhabvala/status/2110855963360342161",
-    "text": "Jayden Daniels said that the Commanders' clock-management gaffe that resulted in a tie to the Giants falls on him and that he told teammates it \"would never happen again.\"",
-    "handle": "NickiJhabvala",
-    "author": "Nicki Jhabvala",
-    "label": "The Athletic",
-    "sourceKey": "@NickiJhabvala",
-    "images": [],
-    "publishedAt": "2026-10-15T22:10:54.000Z",
-    "collectedAt": "2026-10-16T00:05:12.144Z"
-  },
   "social-10daacc8e406": {
     "id": "social-10daacc8e406",
     "url": "https://x.com/Commanders/status/2110874239138148665",
@@ -6374,5 +6350,31 @@
     "images": [],
     "publishedAt": "2026-10-25T18:15:00.000Z",
     "collectedAt": "2026-10-25T19:04:22.686Z"
+  },
+  "social-41c80a6a8101": {
+    "id": "social-41c80a6a8101",
+    "url": "https://x.com/BenStandig/status/2114453567386132763",
+    "text": "RE: atuses/2114452582722646279 Giants beat Texans in OT. Commanders will be 2.5 games back of first place when they return for Week 8.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-25T20:26:29.000Z",
+    "collectedAt": "2026-10-25T22:34:30.038Z"
+  },
+  "social-afd61eccf930": {
+    "id": "social-afd61eccf930",
+    "url": "https://x.com/tashanreed/status/2114473745528328212",
+    "text": "I guess the Giants are real?",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/503/747/728/626/193/original/50cf8716025f2ca7.jpg"
+    ],
+    "publishedAt": "2026-10-25T21:46:40.000Z",
+    "collectedAt": "2026-10-25T22:34:31.169Z"
   }
 }

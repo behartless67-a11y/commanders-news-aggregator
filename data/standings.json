@@ -1,13 +1,13 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-10-25T19:04:44.369Z",
+  "fetchedAt": "2026-10-25T22:34:47.367Z",
   "teams": [
     {
       "abbr": "NYG",
       "name": "New York Giants",
-      "overall": "3-2-1",
-      "streak": "L1",
-      "winPercent": 0.5833333
+      "overall": "4-2-1",
+      "streak": "W1",
+      "winPercent": 0.64285713
     },
     {
       "abbr": "PHI",
