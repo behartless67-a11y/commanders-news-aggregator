@@ -1,0 +1,93 @@
+{
+  "slug": "hello-commanders-fans-around-the-world",
+  "title": "Hello, Bonjour, Hallo, Hola: A Note to Commanders Fans Around the World",
+  "seoTitle": "Hello, Bonjour, Hallo, Hola: A Note to Commanders Fans Around the World",
+  "summary": "A short hello, in your language, to the Commanders fans reading from 28 countries outside the US, and a sticker for the first one who writes in.",
+  "share": {
+    "background": "bowl"
+  },
+  "pinHours": 96,
+  "thanks": [
+    {
+      "lang": "en",
+      "word": "G'day, hello and cheers! Tell me your story.",
+      "where": "Australia, Canada, Singapore, Ireland, New Zealand and the United Kingdom"
+    },
+    {
+      "lang": "de-CH",
+      "word": "Grüezi, Schweiz! Erzählt mir eure Geschichte.",
+      "where": "Switzerland"
+    },
+    {
+      "lang": "de",
+      "word": "Hallo! Erzähl mir deine Geschichte.",
+      "where": "Germany"
+    },
+    {
+      "lang": "fr",
+      "word": "Bonjour ! Racontez-moi votre histoire.",
+      "where": "France, Quebec and Morocco"
+    },
+    {
+      "lang": "es",
+      "word": "¡Hola! Cuéntame tu historia.",
+      "where": "Panama, Mexico, Colombia and Spain"
+    },
+    {
+      "lang": "nl",
+      "word": "Hallo! Vertel me je verhaal.",
+      "where": "The Netherlands"
+    },
+    {
+      "lang": "el",
+      "word": "Γεια σας! Πείτε μου την ιστορία σας.",
+      "roman": "Geia sas! Peíte mou tin istoría sas.",
+      "where": "Greece"
+    },
+    {
+      "lang": "zh-Hans",
+      "word": "你好！跟我说说你的故事吧。",
+      "roman": "Nǐ hǎo! Gēn wǒ shuōshuo nǐ de gùshi ba.",
+      "where": "China"
+    },
+    {
+      "lang": "zh-Hant",
+      "word": "你好！跟我說說你的故事吧。",
+      "roman": "Nǐ hǎo! Gēn wǒ shuōshuo nǐ de gùshi ba.",
+      "where": "Hong Kong"
+    },
+    {
+      "lang": "sv",
+      "word": "Hej! Berätta din historia för mig.",
+      "where": "Sweden"
+    },
+    {
+      "lang": "hi",
+      "word": "नमस्ते! मुझे अपनी कहानी बताइए।",
+      "roman": "Namaste! Mujhe apni kahani bataiye.",
+      "where": "India"
+    },
+    {
+      "lang": "it",
+      "word": "Ciao! Raccontami la tua storia.",
+      "where": "Italy"
+    },
+    {
+      "lang": "ja",
+      "word": "こんにちは！あなたのストーリーを聞かせてください。",
+      "roman": "Konnichiwa! Anata no sutōrī o kikasete kudasai.",
+      "where": "Japan"
+    }
+  ],
+  "paragraphs": [
+    "Quick one, and it's not about the trade deadline. This site has been read in 28 countries outside the United States. I'm one Commanders fan in Charlottesville, Virginia, writing about a 1-4-1 football team, and that still blows my mind every single time I look.",
+    "I've never heard from a single one of you. Not once. So here's a hello in your language, as best I can do it. If I got yours wrong, tell me. That counts as writing in.",
+    "!thanks",
+    "A few of you, specifically. To our reader in France who gets Hail Mail: bonjour, and thank you. Germany, you keep coming back, and I notice. Panama and India, I see you too. And Switzerland: you were our number one country outside the US for weeks, and then you went quiet. Are you OK? Did we do something? Come back.",
+    "Here's the deal. The first reader from outside the US to write in gets a Burgundy Wire sticker, mailed by me, wherever you are. One sentence is plenty: where you are, and how you ended up with this team. If you want the sticker, leave an email on the hello form so I can ask where to send it. Write in any language. I'll figure it out. All I ask in return is a picture of where it ends up.",
+    "Eagles on Sunday night, Nov. 1. Wherever you're watching from, and at whatever terrible hour that is for you: Hail."
+  ],
+  "plug": "Write in from wherever you are: <a href=\"abroad.html\">say hello here</a>. It comes in your language, and every question is optional. <span id=\"abroad-wave-slot\"></span>",
+  "status": "published",
+  "publishedAt": "2026-10-25T20:09:55.672Z"
+}

@@ -290,7 +290,7 @@ ${p('Hail,<br>Ben')}
  */
 const ABROAD_FIELDS = [
   'country', 'country_code', 'city', 'lang', 'story', 'watch', 'worst_kickoff',
-  'favorite_player', 'write_about', 'mention_ok', 'mention_name', 'email',
+  'favorite_player', 'write_about', 'mention_ok', 'mention_name', 'email', 'wave',
 ];
 
 async function captureAbroad(payload) {
@@ -298,13 +298,36 @@ async function captureAbroad(payload) {
   for (const field of ABROAD_FIELDS) {
     entry[field] = String(payload.data?.[field] || '').trim().slice(0, 4000);
   }
-  const answered = ['country', 'city', 'story', 'watch', 'worst_kickoff', 'favorite_player', 'write_about', 'mention_name', 'email']
+  const answered = ['country', 'city', 'story', 'watch', 'worst_kickoff', 'favorite_player', 'write_about', 'mention_name', 'email', 'wave']
     .some((f) => entry[f]);
   if (!answered) return new Response('ok');
 
   const at = new Date().toISOString();
   const id = crypto.randomBytes(4).toString('hex');
   await getStore('abroad').set(`a:${at}:${id}`, JSON.stringify({ id, submittedAt: at, ...entry }));
+
+  // Emailed on arrival, like Roll Call (Oct 25): Ben wants to know the
+  // moment anyone abroad waves or writes. ADMIN_TEST_EMAIL lives in Netlify,
+  // never in this public repo.
+  if (process.env.RESEND_API_KEY && process.env.ADMIN_TEST_EMAIL) {
+    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const where = entry.country || entry.country_code || 'somewhere abroad';
+    const labels = [['story', 'Their story'], ['city', 'City'], ['watch', 'Watches via'], ['worst_kickoff', 'Worst kickoff'], ['favorite_player', 'Favorite player'], ['write_about', 'Write about'], ['mention_ok', 'OK to mention'], ['mention_name', 'Name to use'], ['email', 'Email'], ['lang', 'Language']];
+    const rows = labels.filter(([k]) => entry[k]).map(([k, label]) => `<p style="margin:0 0 14px"><strong>${label}</strong><br>${esc(entry[k]).replace(/\n/g, '<br>')}</p>`).join('');
+    const replyTo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(entry.email) ? entry.email : undefined;
+    const waveOnly = entry.wave && !entry.story && !entry.city && !entry.email;
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>',
+        to: process.env.ADMIN_TEST_EMAIL,
+        ...(replyTo ? { reply_to: replyTo } : {}),
+        subject: waveOnly ? `👋 Someone in ${where} waved hello` : `A reader in ${where} wrote in`,
+        html: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222"><p style="margin:0 0 14px"><strong>${waveOnly ? 'One tap, no words: just a wave from' : 'From'}</strong> ${esc(where)}</p>${rows}<p style="color:#888;font-size:12px">${replyTo ? 'Hit reply to write back.' : 'No email left, so this one is one-way. It is also in admin under Readers abroad.'}</p></div>`,
+      }),
+    }).catch(() => {});
+  }
   return new Response('ok');
 }
 

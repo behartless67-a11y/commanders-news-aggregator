@@ -4955,6 +4955,63 @@ body.tv-page{
   .abroad-invite-link{ white-space: normal; }
 }
 
+/* The one-tap wave: in the note above, or in a post's own slot
+   (#abroad-wave-slot). Same pill as the contact form's Send. */
+.abroad-wave{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 10px;
+}
+.abroad-wave-btn,
+.abroad-wave-send{
+  padding: 8px 18px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+  background: var(--burgundy);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+.abroad-wave-btn:hover,
+.abroad-wave-send:hover{
+  background: var(--gold);
+  color: var(--burgundy-800);
+}
+.abroad-wave-btn:disabled,
+.abroad-wave-send:disabled{ opacity: 0.6; cursor: default; }
+.abroad-wave-note{
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.abroad-wave-thanks{
+  flex-basis: 100%;
+  font-size: 15px;
+  color: var(--text);
+}
+.abroad-wave-form{
+  display: flex;
+  flex: 1 1 100%;
+  gap: 8px;
+  max-width: 560px;
+}
+.abroad-wave-input{
+  flex: 1;
+  min-width: 0;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+}
+.abroad-wave-input:focus{ outline: none; border-color: var(--gold); }
+
 /* abroad.html: the contact form's bones, but the questions are sentences, so
    they're set as sentences (no uppercase tracking), and the page is a little
    wider to hold them. */

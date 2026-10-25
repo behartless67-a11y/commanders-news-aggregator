@@ -165,6 +165,8 @@ Readers outside the US get a short note under the header, in their own language,
 - **How it knows:** the visit tracker already gets each reader's country from Netlify; it now just sends the country code back to the page. Nothing new is stored. US readers never see the note or download the translations (`src/site/assets/abroad.js`).
 - **Language:** the reader's browser language first, then their country, then English.
 - **One and done:** the × hides it for good on that browser, and so does sending the survey.
+- **The one-tap wave:** the note also has a 👋 button. One tap sends just their country and language, then offers one optional line to say more. A post can put the button in its own text with `<span id="abroad-wave-slot"></span>` (the hello post does), and then the note leaves its copy out. The form field `wave` has to stay in abroad.html's form, or Netlify drops it.
+- **Ben gets an email:** every wave, line and survey is emailed to `ADMIN_TEST_EMAIL` as it arrives (`captureAbroad()` in `submission-created.js`), with reply-to set when they left an address.
 - **To see it yourself:** add `?country=DE&lang=de` (or `?country=MX&lang=es`, `?country=JP&lang=ja`) to any page URL.
 - **Editing the copy:** all the text, in every language, lives in `STRINGS` at the top of `abroad.js`. No em dashes in any language.
 

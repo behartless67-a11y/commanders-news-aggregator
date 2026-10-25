@@ -3695,6 +3695,9 @@ ${header('abroad.html', hasWeekly, isGameLive)}
       <input type="hidden" name="form-name" value="abroad" />
       <input type="hidden" name="country_code" value="" />
       <input type="hidden" name="lang" value="en" />
+      <!-- Filled by the one-tap wave in abroad.js, never by this form. It has
+           to exist here anyway: Netlify only keeps fields it saw at deploy. -->
+      <input type="hidden" name="wave" value="" />
       <p class="contact-honeypot"><label>Leave this field blank<input name="bot-field" /></label></p>
 
       <fieldset class="abroad-q">
@@ -4343,6 +4346,8 @@ ${footer(sources, generatedAt)}
           var body = rows.filter(function (r) { return e[r[0]]; }).map(function (r) {
             return '<div style="margin-top:4px"><span class="page-intro" style="font-size:12px;margin:0">' + r[1] + ':</span> <span style="white-space:pre-wrap">' + esc(e[r[0]]) + '</span></div>';
           }).join('');
+          // A one-tap wave carries nothing but the country (abroad.js).
+          if (e.wave && !body) body = '<div style="margin-top:4px">👋 Waved hello</div>';
           return '<li style="margin-bottom:18px">' +
             '<div style="color:var(--gold);font-weight:600">' + esc(place) + (e.lang && e.lang !== 'en' ? ' <span class="page-intro" style="font-size:12px;margin:0">(' + esc(e.lang) + ')</span>' : '') + '</div>' +
             body + mention +

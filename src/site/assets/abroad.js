@@ -31,6 +31,10 @@
       invite_line_far: 'Reading from far away? Thanks for stopping by. That alone made my day.',
       invite_cta: 'Got two minutes? Tell me how you ended up a Commanders fan',
       dismiss: 'Close',
+      wave: 'Wave hello',
+      wave_note: 'One tap. It only tells me your country.',
+      wave_more: 'Got it, thank you! Want to say more? One sentence is plenty.',
+      send: 'Send',
       page_title: 'Hello from Charlottesville',
       intro1: "I'm Ben. I run this site from Charlottesville, Virginia, and it still blows my mind that anyone reads it from {country}.",
       intro1_far: "I'm Ben. I run this site from Charlottesville, Virginia, and it still blows my mind that anyone reads it from so far away.",
@@ -66,6 +70,10 @@
       invite_line_far: '¿Nos lees desde lejos? Gracias por pasar. Solo con eso ya me alegraste el día.',
       invite_cta: '¿Tienes dos minutos? Cuéntame cómo terminaste siendo fan de los Commanders',
       dismiss: 'Cerrar',
+      wave: 'Saluda',
+      wave_note: 'Un toque. Solo me dice tu país.',
+      wave_more: '¡Recibido, gracias! ¿Quieres contarme algo más? Con una frase basta.',
+      send: 'Enviar',
       page_title: 'Saludos desde Charlottesville',
       intro1: 'Soy Ben. Hago este sitio desde Charlottesville, Virginia, y todavía me sorprende que alguien lo lea desde {country}.',
       intro1_far: 'Soy Ben. Hago este sitio desde Charlottesville, Virginia, y todavía me sorprende que alguien lo lea desde tan lejos.',
@@ -100,6 +108,10 @@
       invite_line_far: 'Lendo de tão longe? Obrigado pela visita. Só isso já fez o meu dia.',
       invite_cta: 'Tem dois minutinhos? Me conta como você virou fã dos Commanders',
       dismiss: 'Fechar',
+      wave: 'Diga olá',
+      wave_note: 'Um toque. Só me diz o seu país.',
+      wave_more: 'Recebido, obrigado! Quer contar mais? Uma frase já basta.',
+      send: 'Enviar',
       page_title: 'Um oi de Charlottesville',
       intro1_far: 'Eu sou o Ben. Faço este site em Charlottesville, na Virgínia, e ainda acho incrível que alguém leia de tão longe.',
       intro2: 'Sinceramente, a sua visita já basta, e eu agradeço. Mas se quiser escrever, vou ficar muito feliz. Todas as perguntas são opcionais, e você pode responder em qualquer idioma.',
@@ -133,6 +145,10 @@
       invite_line_far: 'Vous nous lisez de loin' + NBSP + '? Merci de votre visite, ça suffit déjà à illuminer ma journée.',
       invite_cta: 'Vous avez deux minutes' + NBSP + '? Racontez-moi comment vous êtes devenu fan des Commanders',
       dismiss: 'Fermer',
+      wave: 'Dire bonjour',
+      wave_note: 'Un clic. Cela m\u2019indique seulement votre pays.',
+      wave_more: 'Bien reçu, merci\u00a0! Vous voulez m\u2019en dire plus\u00a0? Une phrase suffit.',
+      send: 'Envoyer',
       page_title: 'Bonjour de Charlottesville',
       intro1_far: "Je m'appelle Ben. Je fais ce site depuis Charlottesville, en Virginie, et je n'en reviens toujours pas qu'on le lise d'aussi loin.",
       intro2: "Franchement, votre visite suffit déjà, et je vous en remercie. Mais si vous avez envie de m'écrire, ça me ferait vraiment plaisir. Toutes les questions sont facultatives, et vous pouvez répondre dans la langue de votre choix.",
@@ -166,6 +182,10 @@
       invite_line_far: 'Du liest von so weit weg mit? Danke für deinen Besuch. Allein das hat mir den Tag versüßt.',
       invite_cta: 'Hast du zwei Minuten? Erzähl mir, wie du Commanders-Fan geworden bist',
       dismiss: 'Schließen',
+      wave: 'Hallo sagen',
+      wave_note: 'Ein Klick. Das verrät mir nur dein Land.',
+      wave_more: 'Angekommen, danke! Magst du mehr erzählen? Ein Satz reicht.',
+      send: 'Senden',
       page_title: 'Grüße aus Charlottesville',
       intro1_far: 'Ich bin Ben. Ich mache diese Seite in Charlottesville, Virginia, und kann immer noch kaum glauben, dass jemand sie von so weit weg liest.',
       intro2: 'Ehrlich gesagt reicht dein Besuch schon völlig, und ich freue mich darüber. Aber wenn du Lust hast, mir zu schreiben, würde mich das riesig freuen. Alle Fragen sind freiwillig, und du kannst in jeder Sprache antworten.',
@@ -199,6 +219,10 @@
       invite_line_far: 'Ci leggi da così lontano? Grazie della visita. Già solo questo mi ha fatto felice.',
       invite_cta: 'Hai due minuti? Raccontami come sei diventato tifoso dei Commanders',
       dismiss: 'Chiudi',
+      wave: 'Saluta',
+      wave_note: 'Un clic. Mi dice solo il tuo paese.',
+      wave_more: 'Ricevuto, grazie! Vuoi raccontarmi di più? Basta una frase.',
+      send: 'Invia',
       page_title: 'Un saluto da Charlottesville',
       intro1_far: 'Sono Ben. Faccio questo sito da Charlottesville, in Virginia, e ancora non ci credo che qualcuno lo legga da così lontano.',
       intro2: 'Sinceramente, la tua visita basta e avanza, e te ne sono grato. Ma se ti va di scrivermi, mi renderesti davvero felice. Tutte le domande sono facoltative e puoi rispondere in qualsiasi lingua.',
@@ -233,6 +257,10 @@
       invite_line_far: 'Lees je mee van ver weg? Bedankt voor je bezoek. Daar word ik al blij van.',
       invite_cta: 'Heb je twee minuten? Vertel me hoe je fan van de Commanders bent geworden',
       dismiss: 'Sluiten',
+      wave: 'Zwaai even',
+      wave_note: 'Eén klik. Het vertelt me alleen je land.',
+      wave_more: 'Ontvangen, bedankt! Wil je meer vertellen? Eén zin is genoeg.',
+      send: 'Verstuur',
       page_title: 'Groeten uit Charlottesville',
       intro1: 'Ik ben Ben. Ik maak deze site vanuit Charlottesville, Virginia, en ik vind het nog steeds ongelooflijk dat iemand hem leest vanuit {country}.',
       intro1_far: 'Ik ben Ben. Ik maak deze site vanuit Charlottesville, Virginia, en ik vind het nog steeds ongelooflijk dat iemand hem van zo ver weg leest.',
@@ -268,6 +296,10 @@
       invite_line_far: 'Läser du från långt bort? Tack för att du tittar in. Bara det gjorde min dag.',
       invite_cta: 'Har du två minuter? Berätta hur du blev Commanders-fan',
       dismiss: 'Stäng',
+      wave: 'Vinka hej',
+      wave_note: 'Ett klick. Det berättar bara vilket land du är i.',
+      wave_more: 'Mottaget, tack! Vill du berätta mer? En mening räcker.',
+      send: 'Skicka',
       page_title: 'Hälsningar från Charlottesville',
       intro1: 'Jag heter Ben. Jag gör den här sajten i Charlottesville, Virginia, och jag kan fortfarande inte fatta att någon läser den från {country}.',
       intro1_far: 'Jag heter Ben. Jag gör den här sajten i Charlottesville, Virginia, och jag kan fortfarande inte fatta att någon läser den så långt bort ifrån.',
@@ -303,6 +335,10 @@
       invite_line_far: 'Leser du langt unna? Takk for at du kikker innom. Bare det gjorde dagen min.',
       invite_cta: 'Har du to minutter? Fortell meg hvordan du ble Commanders-fan',
       dismiss: 'Lukk',
+      wave: 'Vink hei',
+      wave_note: 'Ett klikk. Det forteller meg bare hvilket land du er i.',
+      wave_more: 'Mottatt, takk! Vil du fortelle mer? Én setning holder.',
+      send: 'Send',
       page_title: 'Hilsen fra Charlottesville',
       intro1: 'Jeg heter Ben. Jeg lager denne siden i Charlottesville i Virginia, og jeg kan fortsatt ikke tro at noen leser den fra {country}.',
       intro1_far: 'Jeg heter Ben. Jeg lager denne siden i Charlottesville i Virginia, og jeg kan fortsatt ikke tro at noen leser den så langt unna.',
@@ -338,6 +374,10 @@
       invite_line_far: 'Læser du med langt væk fra? Tak fordi du kigger forbi. Bare det gjorde min dag.',
       invite_cta: 'Har du to minutter? Fortæl mig, hvordan du blev Commanders-fan',
       dismiss: 'Luk',
+      wave: 'Vink hej',
+      wave_note: 'Ét klik. Det fortæller mig kun, hvilket land du er i.',
+      wave_more: 'Modtaget, tak! Vil du fortælle mere? Én sætning er nok.',
+      send: 'Send',
       page_title: 'Hilsner fra Charlottesville',
       intro1: 'Jeg hedder Ben. Jeg laver den her side i Charlottesville i Virginia, og jeg kan stadig ikke fatte, at nogen læser den fra {country}.',
       intro1_far: 'Jeg hedder Ben. Jeg laver den her side i Charlottesville i Virginia, og jeg kan stadig ikke fatte, at nogen læser den så langt væk fra.',
@@ -372,6 +412,10 @@
       invite_line_far: 'Czytasz nas z daleka? Dzięki za odwiedziny. Już samo to poprawiło mi dzień.',
       invite_cta: 'Masz dwie minuty? Opowiedz mi, jak to się stało, że kibicujesz Commanders',
       dismiss: 'Zamknij',
+      wave: 'Pomachaj',
+      wave_note: 'Jedno kliknięcie. Mówi mi tylko, z jakiego jesteś kraju.',
+      wave_more: 'Dotarło, dzięki! Chcesz napisać coś więcej? Jedno zdanie wystarczy.',
+      send: 'Wyślij',
       page_title: 'Pozdrowienia z Charlottesville',
       intro1_far: 'Jestem Ben. Robię tę stronę w Charlottesville w Wirginii i wciąż nie mogę uwierzyć, że ktoś czyta ją z tak daleka.',
       intro2: 'Szczerze mówiąc, sama wizyta to już dużo i bardzo ją doceniam. Ale jeśli masz ochotę do mnie napisać, sprawisz mi ogromną radość. Wszystkie pytania są nieobowiązkowe i możesz odpowiadać w dowolnym języku.',
@@ -406,6 +450,10 @@
       invite_line_far: '遠くから読んでくれているんですか？来てくれてありがとう。それだけで今日はうれしい一日です。',
       invite_cta: '2分だけ時間ありますか？コマンダースのファンになったきっかけを教えてください',
       dismiss: '閉じる',
+      wave: '手を振る',
+      wave_note: 'ワンクリックで、国名だけが送られます。',
+      wave_more: '届きました、ありがとう！もう少し教えてくれますか？一言で十分です。',
+      send: '送信',
       page_title: 'シャーロッツビルからこんにちは',
       intro1: 'ベンです。バージニア州シャーロッツビルでこのサイトを作っています。{country}から読んでくれる人がいるなんて、今でも信じられません。',
       intro1_far: 'ベンです。バージニア州シャーロッツビルでこのサイトを作っています。こんなに遠くから読んでくれる人がいるなんて、今でも信じられません。',
@@ -441,6 +489,10 @@
       invite_line_far: '멀리서 읽고 계신가요? 방문해 주셔서 감사해요. 그것만으로도 하루가 즐거워졌어요.',
       invite_cta: '2분만 시간 있으세요? 커맨더스 팬이 된 이야기를 들려주세요',
       dismiss: '닫기',
+      wave: '손 흔들기',
+      wave_note: '한 번만 누르면 국가만 전달돼요.',
+      wave_more: '받았어요, 고마워요! 더 이야기해 줄래요? 한 문장이면 충분해요.',
+      send: '보내기',
       page_title: '샬러츠빌에서 보내는 인사',
       intro1: '저는 벤이에요. 버지니아주 샬러츠빌에서 이 사이트를 만들고 있는데, {country}에서 읽어 주시는 분이 있다니 아직도 신기해요.',
       intro1_far: '저는 벤이에요. 버지니아주 샬러츠빌에서 이 사이트를 만들고 있는데, 이렇게 멀리서 읽어 주시는 분이 있다니 아직도 신기해요.',
@@ -476,6 +528,10 @@
       invite_line_far: '你在很远的地方看我们的网站吗？谢谢你的来访，光是这样就让我开心一整天。',
       invite_cta: '有两分钟吗？跟我说说你是怎么成为指挥官队球迷的',
       dismiss: '关闭',
+      wave: '挥手打个招呼',
+      wave_note: '点一下就好，只会告诉我你所在的国家。',
+      wave_more: '收到了，谢谢！想多说几句吗？一句话就够了。',
+      send: '发送',
       page_title: '来自夏洛茨维尔的问候',
       intro1: '我是 Ben。我在弗吉尼亚州的夏洛茨维尔做这个网站，到现在还是不敢相信有人会在{country}看。',
       intro1_far: '我是 Ben。我在弗吉尼亚州的夏洛茨维尔做这个网站，到现在还是不敢相信有人会在这么远的地方看。',
@@ -511,6 +567,10 @@
       invite_line_far: '你在很遠的地方看我們的網站嗎？謝謝你的造訪，光是這樣就讓我開心一整天。',
       invite_cta: '有兩分鐘嗎？跟我說說你是怎麼成為指揮官隊球迷的',
       dismiss: '關閉',
+      wave: '揮手打個招呼',
+      wave_note: '點一下就好，只會告訴我你所在的國家。',
+      wave_more: '收到了，謝謝！想多說幾句嗎？一句話就夠了。',
+      send: '送出',
       page_title: '來自夏洛茨維爾的問候',
       intro1: '我是 Ben。我在維吉尼亞州的夏洛茨維爾經營這個網站，到現在還是不敢相信有人會在{country}看。',
       intro1_far: '我是 Ben。我在維吉尼亞州的夏洛茨維爾經營這個網站，到現在還是不敢相信有人會在這麼遠的地方看。',
@@ -622,6 +682,111 @@
     return t(lang, key + '_far');
   }
 
+  /* ---------- One-tap wave (Oct 25) ---------- */
+
+  // The survey is a whole form, and nobody from abroad had ever filled it
+  // in. A wave is one tap: it sends the abroad form with wave=yes, the
+  // reader's country (the same rough, connection-level guess the note
+  // already uses) and language, and nothing else. Then it offers one
+  // optional line for anyone who feels like saying more. Both land in the
+  // `abroad` store and email Ben (captureAbroad() in submission-created.js).
+  function sendAbroad(country, lang, fields) {
+    var body = new URLSearchParams();
+    body.set('form-name', 'abroad');
+    body.set('country', countryName(country, 'en'));
+    body.set('country_code', country || '');
+    body.set('lang', lang);
+    Object.keys(fields).forEach(function (k) { body.set(k, fields[k]); });
+    return fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString(),
+    });
+  }
+
+  function waveBox(country, lang, alreadyWaved) {
+    var box = document.createElement('span');
+    box.className = 'abroad-wave';
+    box.setAttribute('lang', LOCALE[lang] || lang);
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'abroad-wave-btn';
+    btn.textContent = '👋 ' + t(lang, 'wave');
+    var note = document.createElement('span');
+    note.className = 'abroad-wave-note';
+    note.textContent = t(lang, 'wave_note');
+    box.appendChild(btn);
+    box.appendChild(note);
+
+    function sayMore(focus) {
+      box.innerHTML = '';
+      var lead = document.createElement('span');
+      lead.className = 'abroad-wave-thanks';
+      lead.textContent = t(lang, 'wave_more');
+      var form = document.createElement('form');
+      form.className = 'abroad-wave-form';
+      var input = document.createElement('input');
+      input.type = 'text';
+      input.maxLength = 1000;
+      input.className = 'abroad-wave-input';
+      input.placeholder = t(lang, 'q_story');
+      input.setAttribute('aria-label', t(lang, 'q_story'));
+      var send = document.createElement('button');
+      send.type = 'submit';
+      send.className = 'abroad-wave-send';
+      send.textContent = t(lang, 'send');
+      form.appendChild(input);
+      form.appendChild(send);
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var text = input.value.trim();
+        if (!text) return;
+        send.disabled = true;
+        var done = function () {
+          box.innerHTML = '';
+          var thanks = document.createElement('span');
+          thanks.className = 'abroad-wave-thanks';
+          thanks.textContent = t(lang, 'thanks');
+          box.appendChild(thanks);
+          remember('done');
+        };
+        sendAbroad(country, lang, { story: text }).then(done, done);
+      });
+      box.appendChild(lead);
+      box.appendChild(form);
+      if (focus) input.focus();
+    }
+
+    btn.addEventListener('click', function () {
+      btn.disabled = true;
+      // Remembered either way, so the note stops asking on every page.
+      remember('waved');
+      var next = function () { sayMore(true); };
+      sendAbroad(country, lang, { wave: 'yes' }).then(next, next);
+    });
+    if (alreadyWaved) sayMore(false);
+    return box;
+  }
+
+  // A post that wants the wave in its own text gives it a slot:
+  // <span id="abroad-wave-slot"></span> in its plug line (see
+  // hello-commanders-fans-around-the-world). Shown there even if the reader
+  // closed the note, since the post is asking directly.
+  function mountSlot(country) {
+    var slot = document.getElementById('abroad-wave-slot');
+    if (!slot || slot.dataset.wired || isAdmin() && !param('country')) return;
+    slot.dataset.wired = '1';
+    var lang = pickLang(country);
+    if (storedState() === 'done') {
+      var thanks = document.createElement('span');
+      thanks.className = 'abroad-wave abroad-wave-thanks';
+      thanks.textContent = t(lang, 'thanks');
+      slot.appendChild(thanks);
+      return;
+    }
+    slot.appendChild(waveBox(country, lang, storedState() === 'waved'));
+  }
+
   /* ---------- The note under the header, on every page ---------- */
 
   function invite(country) {
@@ -646,6 +811,9 @@
     var close = note.querySelector('.abroad-invite-close');
     close.setAttribute('aria-label', t(lang, 'dismiss'));
     close.addEventListener('click', function () { note.remove(); remember('dismissed'); });
+    // The wave rides along in the note, unless this page has its own slot
+    // for it (one button per page, not two).
+    if (!document.getElementById('abroad-wave-slot')) note.appendChild(waveBox(country, lang));
     var hero = document.querySelector('.hero');
     if (hero) hero.insertAdjacentElement('afterend', note);
     else document.body.insertAdjacentElement('afterbegin', note);
@@ -745,7 +913,7 @@
   window.bwAbroad = {
     start: function (country) {
       if (document.getElementById('abroad-survey')) survey(country);
-      else invite(country);
+      else { invite(country); mountSlot(country); }
     },
   };
 
