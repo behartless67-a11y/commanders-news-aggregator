@@ -1,19 +1,19 @@
 {
-  "fetchedAt": "2026-10-19T18:11:10.308Z",
+  "fetchedAt": "2026-10-26T18:05:17.047Z",
   "uva": {
     "lastGame": {
-      "date": "2026-10-17T16:00Z",
-      "uvaScore": "13",
-      "opponentScore": "23",
-      "opponent": "SMU Mustangs",
-      "isHome": false,
+      "date": "2026-10-23T23:00Z",
+      "uvaScore": "16",
+      "opponentScore": "19",
+      "opponent": "Duke Blue Devils",
+      "isHome": true,
       "won": false,
-      "venue": "Gerald J. Ford Stadium"
+      "venue": "Scott Stadium"
     },
     "nextGame": {
-      "date": "2026-10-23T23:00Z",
-      "opponent": "Duke Blue Devils",
-      "isHome": true
+      "date": "2026-10-31T19:45Z",
+      "opponent": "Wake Forest Demon Deacons",
+      "isHome": false
     }
   },
   "notable": []
