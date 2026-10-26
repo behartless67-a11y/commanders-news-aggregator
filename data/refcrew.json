@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T22:35:35.006Z",
+  "fetchedAt": "2026-10-26T04:07:13.595Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -5985,6 +5985,70 @@
         "abbr": "TB",
         "flags": 6,
         "yards": 35
+      }
+    },
+    "401873019": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T20:05Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "ARI",
+        "flags": 9,
+        "yards": 59
+      },
+      "away": {
+        "abbr": "DEN",
+        "flags": 11,
+        "yards": 114
+      }
+    },
+    "401873020": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "referee": "Alex Moore",
+      "home": {
+        "abbr": "DET",
+        "flags": 5,
+        "yards": 50
+      },
+      "away": {
+        "abbr": "GB",
+        "flags": 8,
+        "yards": 81
+      }
+    },
+    "401873021": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "referee": "Ronald Torbert",
+      "home": {
+        "abbr": "LV",
+        "flags": 6,
+        "yards": 64
+      },
+      "away": {
+        "abbr": "LAR",
+        "flags": 7,
+        "yards": 90
+      }
+    },
+    "401873022": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-26T00:20Z",
+      "referee": "John Hussey",
+      "home": {
+        "abbr": "SEA",
+        "flags": 4,
+        "yards": 20
+      },
+      "away": {
+        "abbr": "KC",
+        "flags": 2,
+        "yards": 15
       }
     }
   }

@@ -1,28 +1,4 @@
 {
-  "commanders-youtube-3d89bed7c0af": {
-    "id": "commanders-youtube-3d89bed7c0af",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=3_IQxSdEajc",
-    "title": "Iron's Hot, Time To Strike | Washington Commanders 2026 Season Trailer | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-09-10T23:00:16.000Z",
-    "collectedAt": "2026-09-11T00:05:59.219Z"
-  },
-  "pft-54bd7a679072": {
-    "id": "pft-54bd7a679072",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-add-dt-daron-payne-to-injury-report",
-    "title": "Commanders add DT Daron Payne to injury report",
-    "excerpt": "The Commanders added defensive tackle Daron Payne to their injury report on Thursday. They list him as limited with a knee injury.\n That is not a good sign for the team ahead of Sunday's season opener against the Eagles.\n The Commanders also added defensive lineman Javon Kinlaw to Thursday's report, but he was a full participant with a back injury.\n Outside linebacker K’Lavon Chaisson (knee), running back Jacory Croskey-Merritt (groin) and outside linebacker Odafe Oweh (calf) remained limited a…",
-    "publishedAt": "2026-09-11T00:01:18.000Z",
-    "collectedAt": "2026-09-11T00:06:03.127Z"
-  },
   "riggos-rag-2b08e7ab18b9": {
     "id": "riggos-rag-2b08e7ab18b9",
     "sourceId": "riggos-rag",
@@ -18418,5 +18394,17 @@
     "excerpt": "Oct 25, 2026; Houston, Texas, USA; New York Giants running back Cam Skattebo (44) celebrates after scoring a touchdown during the fourth quarter against the Houston Texans at Reliant Stadium. Mandatory Credit: Troy Taormina-Imagn Images \n \n\n Washington stayed at 1-4-1 on its bye, but New York’s 27-21 overtime win in Houston pushed the Giants to 4-2-1 and made the Commanders’ NFC East climb even steeper.\n\n The Washington Commanders didn’t play a snap Sunday, but their position in the NFC East…",
     "publishedAt": "2026-10-25T21:11:26.000Z",
     "collectedAt": "2026-10-25T22:34:18.194Z"
+  },
+  "hogs-haven-4bf3a86c6a56": {
+    "id": "hogs-haven-4bf3a86c6a56",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-odds/450956/commanders-vs-eagles-odds-week-8-opening-lines-point-spread-total",
+    "title": "Commanders vs. Eagles odds: Opening lines for Week 8 matchup",
+    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Jayden Daniels #5 of the Washington Commanders looks to pass against the Philadelphia Eagles in the first quarter of a game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Emilee Chinn/Getty Images) | Getty Images The Washington Commanders are 1-4-1 after a Week 6 loss to the 49ers that saw the team come back from a 20-point deficit, but still fall short of the win. The team has been on their bye week, licking…",
+    "publishedAt": "2026-10-26T01:00:00.000Z",
+    "collectedAt": "2026-10-26T04:06:01.063Z"
   }
 }
