@@ -1,16 +1,4 @@
 {
-  "hogs-haven-3654ea34466a": {
-    "id": "hogs-haven-3654ea34466a",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-odds/439124/washington-commanders-vs-philadelphia-eagles-predictions-prop-bets",
-    "title": "Washington Commanders vs Philadelphia Eagles Predictions and Prop Bets",
-    "excerpt": "LANDOVER, MARYLAND - DECEMBER 20: Jacory Croskey-Merritt #22 of the Washington Commanders celebrates a first down against the Philadelphia Eagles in the first quarter at Northwest Stadium on December 20, 2025 in Landover, Maryland. (Photo by Greg Fiume/Getty Images) | Getty Images \n \n The Washington Commanders are visiting the Philadelphia Eagles this week, and they are 5.5-point underdogs in the season opener. This is a big game for both teams, and could set the tone for the NFC East for the…",
-    "publishedAt": "2026-09-11T20:30:00.000Z",
-    "collectedAt": "2026-09-11T22:05:58.123Z"
-  },
   "commanders-youtube-d89279a2f184": {
     "id": "commanders-youtube-d89279a2f184",
     "sourceId": "commanders-youtube",
@@ -22,18 +10,6 @@
     "excerpt": "",
     "publishedAt": "2026-09-11T22:00:34.000Z",
     "collectedAt": "2026-09-11T22:06:01.773Z"
-  },
-  "yahoo-nfl-cc8ce884a358": {
-    "id": "yahoo-nfl-cc8ce884a358",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/eagles-commanders-final-injury-report-201119390.html",
-    "title": "Eagles-Commanders Final Injury Report: Jonathan Greenard ruled OUT",
-    "excerpt": "PHILADELPHIA, PENNSYLVANIA - MAY 27: Jonathan Greenard #52 of the Philadelphia Eagles looks on during OTA offseason workouts at Jefferson Health Training Complex on May 27, 2026 in Philadelphia, Pennsylvania. (Photo by Mitchell Leff/Getty Images) | Getty Images The Philadelphia Eagles issued their third and final official injury report of the week on Friday in advance of their Week 1 game against the Washington Commanders.\n The Eagles ruled one player OUT: Jonathan Greenard. \n Greenard returned…",
-    "publishedAt": "2026-09-11T20:11:19.000Z",
-    "collectedAt": "2026-09-11T22:06:05.171Z"
   },
   "commanders-youtube-e432499fd745": {
     "id": "commanders-youtube-e432499fd745",
@@ -18298,5 +18274,41 @@
     "excerpt": "Commanders head coach Dan Quinn spoke to the media on Monday afternoon, for the first time since the start of Washington’s bye week. His public comments came just before the first practice back after some time off during Week 7. \n He addressed several topics during this session, including some key injury updates. The Commanders will get receiver Treylon Burks, quarterback Marcus Mariota and defensive lineman Charles Omenihu back, though Javon Kinlaw isn’t quite ready. \n Quinn also provided some…",
     "publishedAt": "2026-10-26T18:52:23.000Z",
     "collectedAt": "2026-10-26T20:05:49.918Z"
+  },
+  "hogs-haven-fe44cdd54429": {
+    "id": "hogs-haven-fe44cdd54429",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/451123/commanders-antonio-williams-snaps-terry-mclaurin-fantasy-football-stefon-diggs",
+    "title": "Commanders WR Antonio Williams snaps to increase with Terry McLaurin out",
+    "excerpt": "The question of who steps up with Terry McLaurin out for the season has been answered. Commanders head coach addressed that topic during his Monday afternoon press conference coming out of the bye. \n\n Quinn has had a bye week to ponder how to proceed after McLaurin suffered a season-ending knee injury during a Week 6 loss to the San Francisco 49ers . \n\n He was asked if it raises Stefon Diggs’ activity. Not necessarily. That was his answer, in sum. \n\n The veteran receiver will keep doing his…",
+    "publishedAt": "2026-10-26T20:10:40.000Z",
+    "collectedAt": "2026-10-26T21:01:49.751Z"
+  },
+  "commanders-youtube-ea89eb23c974": {
+    "id": "commanders-youtube-ea89eb23c974",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=dsq8GKNrB6A",
+    "title": "Commanders Bye Week Breakdown | Booth Review | Washington Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-10-26T20:00:01.000Z",
+    "collectedAt": "2026-10-26T21:01:58.855Z"
+  },
+  "wjla-commanders-2f7b76322ef3": {
+    "id": "wjla-commanders-2f7b76322ef3",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-depth-at-receiver-improving-in-place-of-injured-terry-mclaurin",
+    "title": "Commanders' depth at receiver improving in place of injured Terry McLaurin",
+    "excerpt": "The Washington Commanders are coming out of their bye week at 1-4-1 with matchups against the Philadelphia Eagles and Los Angeles Rams on deck.But any second-ha",
+    "publishedAt": "2026-10-26T20:12:05.000Z",
+    "collectedAt": "2026-10-26T21:02:00.569Z"
   }
 }
