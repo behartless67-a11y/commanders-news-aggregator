@@ -5838,5 +5838,69 @@
     "images": [],
     "publishedAt": "2026-10-27T02:36:12.000Z",
     "collectedAt": "2026-10-27T05:07:49.701Z"
+  },
+  "social-b253f8bf0e2a": {
+    "id": "social-b253f8bf0e2a",
+    "url": "https://x.com/Commanders/status/2115080264250449974",
+    "text": "HBD @GulbinMatt@twitter.com ! 🎂",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/513/226/335/499/037/original/c5050be09a5e958e.jpg"
+    ],
+    "publishedAt": "2026-10-27T13:56:45.000Z",
+    "collectedAt": "2026-10-27T14:33:10.812Z"
+  },
+  "social-0d8c4345d9b2": {
+    "id": "social-0d8c4345d9b2",
+    "url": "https://x.com/john_keim/status/2115080175423815735",
+    "text": "A new site courtesy of @RealBramW@twitter.com covering local sports: from high schools to all the local pro teams.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-27T13:56:24.000Z",
+    "collectedAt": "2026-10-27T14:33:13.539Z"
+  },
+  "social-2ffda687c613": {
+    "id": "social-2ffda687c613",
+    "url": "https://x.com/john_keim/status/2115073060634345834",
+    "text": "Sunday is an absolute MUST win for Washington. Zero excuses. Along with that, play a clean, smart game. That's how you start to create momentum. But...you absolutely have to beat the Eagles.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-27T13:28:08.000Z",
+    "collectedAt": "2026-10-27T14:33:13.539Z"
+  },
+  "social-32d67a03c1eb": {
+    "id": "social-32d67a03c1eb",
+    "url": "https://x.com/john_keim/status/2115064753508766020",
+    "text": "On video talking about the Commanders after the bye week. Injury updates; on Dan Quinn, more on Jayden Daniels etc. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-27T12:55:07.000Z",
+    "collectedAt": "2026-10-27T14:33:13.539Z"
+  },
+  "social-874590fa7114": {
+    "id": "social-874590fa7114",
+    "url": "https://x.com/tashanreed/status/2115081420288786644",
+    "text": "This may be the craziest NFL marketing I've ever seen. They have goalposts in the urinals at Mexico City airport ahead of their game here next month 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/513/240/533/965/466/original/63573192f6220a63.jpg"
+    ],
+    "publishedAt": "2026-10-27T14:01:21.000Z",
+    "collectedAt": "2026-10-27T14:33:16.897Z"
   }
 }
