@@ -5802,5 +5802,79 @@
     "images": [],
     "publishedAt": "2026-10-26T18:16:43.000Z",
     "collectedAt": "2026-10-26T20:06:17.491Z"
+  },
+  "social-33ea5208653c": {
+    "id": "social-33ea5208653c",
+    "url": "https://x.com/JPFinlayNBCS/status/2114881625024819466",
+    "text": "Big difference between Hurts and McKee on the tush push but refs actually made the right call",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-27T00:47:26.000Z",
+    "collectedAt": "2026-10-27T02:05:51.364Z"
+  },
+  "social-7063f8636efe": {
+    "id": "social-7063f8636efe",
+    "url": "https://x.com/JPFinlayNBCS/status/2114879949932757458",
+    "text": "Things I wasn’t expecting to see tonight",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/510/102/676/548/775/original/a357ca390f5ecbb8.jpg"
+    ],
+    "publishedAt": "2026-10-27T00:40:47.000Z",
+    "collectedAt": "2026-10-27T02:05:51.364Z"
+  },
+  "social-d89d79d42777": {
+    "id": "social-d89d79d42777",
+    "url": "https://x.com/JPFinlayNBCS/status/2114877044647707111",
+    "text": "What a difference healthy Saquan makes",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-27T00:29:14.000Z",
+    "collectedAt": "2026-10-27T02:05:51.364Z"
+  },
+  "social-81a648464617": {
+    "id": "social-81a648464617",
+    "url": "https://x.com/BenStandig/status/2114897831265710470",
+    "text": "The Super Bowl halftime act. Nice.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-27T01:51:50.000Z",
+    "collectedAt": "2026-10-27T02:05:53.873Z"
+  },
+  "social-c9598a50a7a4": {
+    "id": "social-c9598a50a7a4",
+    "url": "https://x.com/BenStandig/status/2114879042281509316",
+    "text": "Trae Young is nothing if not entertaining.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-27T00:37:10.000Z",
+    "collectedAt": "2026-10-27T02:05:53.873Z"
+  },
+  "social-c349bacf5373": {
+    "id": "social-c349bacf5373",
+    "url": "https://x.com/pfrumors/status/2114844925413962129",
+    "text": "The Commanders are “pretty open for business” ahead of the NFL trade deadline commanders-open-to-trade-offers",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "PFR",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-10-26T22:21:36.000Z",
+    "collectedAt": "2026-10-27T02:06:03.526Z"
   }
 }

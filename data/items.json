@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-d89279a2f184": {
-    "id": "commanders-youtube-d89279a2f184",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=5RqSqZ2utl8",
-    "title": "Where The Air Is Rare | Commanders Log: Season 5, Episode 5",
-    "excerpt": "",
-    "publishedAt": "2026-09-11T22:00:34.000Z",
-    "collectedAt": "2026-09-11T22:06:01.773Z"
-  },
   "commanders-youtube-e432499fd745": {
     "id": "commanders-youtube-e432499fd745",
     "sourceId": "commanders-youtube",
@@ -18310,5 +18298,17 @@
     "excerpt": "The Washington Commanders are coming out of their bye week at 1-4-1 with matchups against the Philadelphia Eagles and Los Angeles Rams on deck.But any second-ha",
     "publishedAt": "2026-10-26T20:12:05.000Z",
     "collectedAt": "2026-10-26T21:02:00.569Z"
+  },
+  "atoz-sports-ab99a014bf7b": {
+    "id": "atoz-sports-ab99a014bf7b",
+    "sourceId": "atoz-sports",
+    "sourceName": "A to Z Sports",
+    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
+    "category": "team",
+    "url": "https://atozsports.com/nfl/washington-commanders-news/commanders-daron-payne-trade-ideas-brian-thomas-isaiah-simmons",
+    "title": "Two Daron Payne trade proposals could help Commanders reshape roster before NFL deadline arrives in Washington",
+    "excerpt": "Nov 12, 2023; Seattle, Washington, USA; Washington Commanders defensive tackle Daron Payne (94) rushes the passer against the Seattle Seahawks during the fourth quarter at Lumen Field. Mandatory Credit: Joe Nicholson-USA TODAY Sports \n \n\n With Washington weighing its options before the trade deadline, two hypothetical Daron Payne deals explore whether a receiver or linebacker could offer more value.\n\n The Washington Commanders should trade defensive tackle Daron Payne before the NFL trade…",
+    "publishedAt": "2026-10-26T22:58:21.000Z",
+    "collectedAt": "2026-10-27T02:05:31.120Z"
   }
 }
