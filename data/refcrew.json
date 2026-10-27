@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T02:06:46.799Z",
+  "fetchedAt": "2026-10-27T05:08:43.940Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -5841,6 +5841,22 @@
         "abbr": "WSH",
         "flags": 7,
         "yards": 66
+      }
+    },
+    "401873009": {
+      "season": 2026,
+      "week": 7,
+      "date": "2026-10-27T00:15Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "PHI",
+        "flags": 5,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "DAL",
+        "flags": 8,
+        "yards": 47
       }
     },
     "401873010": {
