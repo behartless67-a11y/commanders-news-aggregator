@@ -30,7 +30,14 @@ import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPo
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
-const SITE_URL = process.env.SITE_URL || 'http://localhost:8080';
+// Production by default (Oct 28, 2026). This used to fall back to
+// http://localhost:8080, and a build on any machine without SITE_URL set
+// stamped that into every canonical, og:url, the sitemap, the feed and the
+// structured data. One such build was deployed over the live site every
+// morning for weeks (see docs/retire-work-pc-tasks.md). Links inside the
+// pages are relative, so a local preview works fine with the real URL here.
+// Set SITE_URL to override on purpose: SITE_URL=http://localhost:8080 npm run build
+const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
 const MAX_RIVER_ITEMS = Number(process.env.MAX_RIVER_ITEMS || 60);
 
 /**

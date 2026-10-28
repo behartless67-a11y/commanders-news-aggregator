@@ -423,7 +423,7 @@ To run it on a second machine, do the one-time setup in `docs/x-browser-scraping
 | `data/originals/` | Hand-written blog posts |
 | `data/mondays/` | "A Case of the Mondays" posts and briefings |
 | `data/digests/` | Weekly recap drafts (not currently generated) |
-| `scheduled-post.ps1` | Windows Task Scheduler script for local tasks |
+| `scheduled-post.ps1` | Retired Oct 28, 2026: a no-op that disables its own Task Scheduler jobs. See `docs/retire-work-pc-tasks.md` |
 
 ---
 

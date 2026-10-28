@@ -1,5 +1,7 @@
 # Session notes: what shipped, and what's left to schedule
 
+> **Retired (Oct 28, 2026).** The two Task Scheduler jobs described below were superseded weeks ago (previews and digests are hand-written; deploys run only from GitHub Actions), but they kept firing on the work machine and deployed localhost-URL builds over the live site every morning. `scheduled-post.ps1` is now a no-op that disables its own tasks. The fix-it steps are in [retire-work-pc-tasks.md](retire-work-pc-tasks.md). The rest of this page is kept for history.
+
 ## Everything shipped in this session, for reference
 
 - **Roster page** (`/roster.html`) — ESPN photos, jersey/position, season
