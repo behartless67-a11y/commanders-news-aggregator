@@ -21,6 +21,10 @@ HOGWALLER="C:/Users/Ben/Desktop/commanders"
 DESKTOP="C:/Users/Ben/Desktop"
 GAMEDAY="C:/Users/Ben/Desktop/gameday"
 BIRTHDAY="C:/Users/Ben/Desktop/birthday"
+# The licensed header photos (public domain and Creative Commons stadium and
+# game shots; see HERO_CREDITS in config/hero-images.js), with their
+# candidates.json of who took what.
+HEADER="C:/Users/Ben/Desktop/header-photos"
 
 # Long edge in px. Big enough to look sharp on a retina laptop at the widths
 # these are displayed at, small enough that a gallery of them is not a 6 MB
@@ -97,46 +101,52 @@ PHOTOS=(
   "birthday-topgolf|$BIRTHDAY/6.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
   "birthday-aviators|$BIRTHDAY/7.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
   "birthday-darcie-nicole|$BIRTHDAY/8.jpg|-|contrast=1.05:saturation=1.06:gamma=1.02|-"
-  # Header backdrops (config/hero-images.js), replacing the stock photos. The
-  # header is a very wide, short band, about 5:1 on a desktop, so each is cut
-  # to a 3:1 strip: wide enough to fill it, with vertical room left over for
-  # the slow drift in site.css to travel through. They get the long-edge
-  # override because this is the one image every page loads first and at
-  # full width; 1200px would come out visibly soft across a 1440px screen.
+  # The London brunch crew (the Oct 13 Monday post, "Just Quieter"). Its
+  # output was added by hand with the post and the original is gone; the row
+  # is here so dimensions.json keeps the entry (see the skip branch below).
+  "brunch-crew|$DESKTOP/brunch-crew.jpg|-|-|-"
+  # Header backdrops (config/hero-images.js). The header is a very wide,
+  # short band, about 5:1 on a desktop, so each is cut to a 3:1 strip: wide
+  # enough to fill it, with vertical room left over for the slow drift in
+  # site.css to travel through. They get the long-edge override because this
+  # is the one image every page loads first and at full width; 1200px would
+  # come out visibly soft across a 1440px screen.
   #
-  # Ben asked for faces first ("crop to see more of our faces"), then crowd
-  # and other Commanders shots, so that's the mix. The logo sits dead center
-  # of the header, which means on a group shot the middle person is behind
-  # it; the crops put faces in the vertical middle of the strip and rely on
-  # the people on either side of center to carry it.
+  # Oct 28, 2026: Ben's own photos came out of the header (public repo, his
+  # face on every page) and these went in: public-domain frames by military
+  # photographers at Commanders games (DVIDS, the White House, the Joint
+  # Staff), a CC0 night exterior, and CC BY-SA game photos by Joe Glorioso
+  # (All-Pro Reels). Who took each is in HERO_CREDITS in
+  # config/hero-images.js and on credits.html. The old rows, the side-by-
+  # side pairs and the single-object strips are in git history before this
+  # date if they are ever wanted back.
   #
-  # Faces. Group shots taken from a few feet away, not selfies: a face that
-  # fills a phone frame is taller than this whole strip, so a close-up only
-  # ever showed a slice of it (the rain-hood selfie came out as a row of
-  # eyes). These were also picked so Ben, his dad and his brother Josh land
-  # either side of the centered logo rather than behind it. The one
-  # exception is the rail shot, kept for the stadium bowl behind them.
-  "hero-crew|$GAMEDAY/IMG_8892.JPG|2048:682:0:242|contrast=1.10:saturation=1.12:gamma=1.03|-|1920"
-  "hero-six-in-lot|$GAMEDAY/IMG_8891.JPG|1536:512:0:500|contrast=1.10:saturation=1.12:gamma=1.03|-|1536"
-  "hero-rail-bowl|$GAMEDAY/IMG_8910.JPG|2048:682:0:340|contrast=1.10:saturation=1.12:gamma=1.03|-|1920"
-  # Crowd
-  "hero-rain-crowd|$GAMEDAY/IMG_8959.JPG|1536:512:0:665|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
-  "hero-pregame|$GAMEDAY/IMG_8933.JPG|1536:512:0:460|contrast=1.12:saturation=1.12:gamma=1.02|-|1536"
-  # Commanders
-  "hero-bowl|$GAMEDAY/IMG_8914.JPG|1536:512:0:400|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
-  "hero-endzone|$GAMEDAY/IMG_1666.HEIC|1536:512:0:358|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
-  "hero-mariota-sign|$GAMEDAY/IMG_1658.HEIC|1536:512:0:235|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
-  # Added Oct 13 with the side-by-sides below: the top of the rain-hood
-  # selfie, which is the video board, the Northwest Stadium sign and a packed
-  # lower bowl, with the faces left out of frame.
-  "hero-video-board|$GAMEDAY/IMG_8999.JPG|1536:512:0:245|contrast=1.12:saturation=1.14:gamma=1.02|-|1536"
-  # Added Oct 16: two helmets from Ben's watching area at home, the W helmet
-  # and the signed vintage helmet next to the UVA one. Loose files on the
-  # Desktop itself, not the Högwaller photos in $HOGWALLER that happen to
-  # share the names commanders1/commanders2.jpg. No faces, so they count as
-  # Commanders shots for the ordering in config/hero-images.js. The W helmet
-  # is in SINGLES below instead: as a plain strip it was all W.
-  "hero-helmet-vintage|$DESKTOP/commanders2.jpg|4032:1344:0:578|contrast=1.06:saturation=1.08:gamma=1.0|-|1920"
+  # The crops were placed by eye, one per photo, so helmets and faces stay
+  # inside the band a desktop actually shows (the middle ~57% of the strip,
+  # tighter once the drift runs), with the subject near the horizontal
+  # middle so a phone, which shows the center half, keeps it too. On the
+  # tight game-action frames (run-out, touchdown, black alternates) the
+  # heads sit at the very top of the source, so y=0 is as high as the band
+  # goes and a desktop still clips the crowns a little.
+  "hero-flyover-formation|$HEADER/01-flyover-formation-northwest-stadium-2025.jpg|2000:667:0:40|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-color-guard-flyover|$HEADER/02-color-guard-flyover-big-flag-2024.jpg|1999:666:0:260|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-anthem-fireworks|$HEADER/03-anthem-fireworks-northwest-stadium-2025.jpg|2000:667:0:520|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-giant-flag-crowd|$HEADER/04-giant-flag-crowd-northwest-stadium-2025.jpg|1999:666:0:230|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-air-force-one-aerial|$HEADER/05-air-force-one-aerial-northwest-stadium-2025.jpg|2100:700:0:650|contrast=1.12:saturation=1.12:gamma=1.0|-|1920"
+  "hero-stadium-exterior-night|$HEADER/06-northwest-stadium-exterior-night-2024.jpg|9248:3083:0:1000|contrast=1.04:saturation=1.05:gamma=1.04|-|1920"
+  "hero-full-bowl-anthem|$HEADER/08-army-navy-full-bowl-northwest-stadium-2024.jpg|7415:2472:0:230|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-team-runs-out|$HEADER/10-eagles-2022-team-runs-out.jpg|6192:2064:0:0|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-mclaurin-champions-wall|$HEADER/11-eagles-2022-mclaurin-world-champions-wall.jpg|4061:1354:0:0|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-fight-for-old-dc-mural|$HEADER/12-eagles-2022-fight-for-old-dc-mural.jpg|7322:2441:0:600|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-take-command-tunnel|$HEADER/13-eagles-2022-take-command-tunnel.jpg|4700:1567:0:980|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-burgundy-fan-section|$HEADER/14-raiders-2025-fan-section-burgundy.jpg|4300:1433:0:200|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-video-board-sign|$HEADER/15-video-board-northwest-stadium-sign-2025.jpg|1999:666:0:120|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-touchdown-celebration|$HEADER/16-jaguars-2022-touchdown-celebration-crowd.jpg|5339:1780:0:0|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-huddle-helmets-up|$HEADER/17-jaguars-2022-huddle-helmets-up.jpg|3900:1300:0:80|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-tackle-championship-wall|$HEADER/18-jaguars-2022-tackle-championship-wall.jpg|4025:1342:0:50|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-black-alternates-celebration|$HEADER/19-vikings-2022-black-uniform-celebration.jpg|6981:2327:0:0|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-mnf-huddle-lights|$HEADER/20-bears-2025-mnf-huddle-under-lights.jpg|3300:1100:0:340|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
+  "hero-mnf-line-of-scrimmage|$HEADER/21-bears-2025-mnf-line-of-scrimmage.jpg|3600:1200:0:330|contrast=1.06:saturation=1.08:gamma=1.02|-|1920"
 )
 
 echo "{" > "$OUT/dimensions.json"
@@ -236,15 +246,8 @@ echo "}" >> "$OUT/dimensions.json"
 #
 # name|source A|crop A (or "-")|source B|crop B (or "-"). The crops pick a 4:3
 # region around the faces before anything is scaled.
+# Retired Oct 28, 2026 with Ben's photos; the three rows are in git history.
 PAIRS=(
-  # The London brunch crew, left; Högwaller's beer garden in Week 1, right.
-  "hero-pair-brunch-hogwaller|$DESKTOP/friends1.jpg|-|$HOGWALLER/commanders2.jpg|-"
-  # Högwaller again: Ben and Nicole, then Ben and Nicole out front by Scary
-  # Terry, the bar's inflatable tube man (his yellow arm, not his head, is
-  # what makes the crop; Nicole is the one beside it).
-  "hero-pair-hogwaller-terry|$HOGWALLER/commanders1.jpg|3672:2754:0:900|$HOGWALLER/commanders3.jpg|3200:2400:472:1500"
-  # Week 3 vs Seattle: three in the stands, then the rain-hood selfie.
-  "hero-pair-seattle-stands|$GAMEDAY/IMG_8918.JPG|1536:1152:0:264|$GAMEDAY/IMG_8999.JPG|1536:1152:0:896"
 )
 
 for row in "${PAIRS[@]}"; do
@@ -285,8 +288,8 @@ done
 # is centered vertically. The left edge is set so the W lands just right of
 # the centered logo, which covers strip x ~760-1160 on a laptop and the same
 # on a phone; the facemask goes behind the logo instead.
+# Retired Oct 28, 2026 with Ben's photos; the W helmet row is in git history.
 SINGLES=(
-  "hero-helmet-w|$DESKTOP/commanders1.jpg|4032:1344:0:880|420|928"
 )
 
 for row in "${SINGLES[@]}"; do

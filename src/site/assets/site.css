@@ -62,8 +62,8 @@ img, svg{ display:block; max-width:100%; }
 }
 
 /* ---------- Hero (header + ticker backdrop) ----------
-   The actual background-image is NOT set here. It rotates through a small
-   pool of Ben's own photos (config/hero-images.js), picked once per build
+   The actual background-image is NOT set here. It rotates through a pool of
+   licensed stadium and game photos (config/hero-images.js), picked once per build
    from the date, so every reader sees the same one on a given day rather
    than a different photo per page or per visit. build.js appends the real
    `.hero::before{ background-image: ... }` rule to the end of this file at
@@ -2523,6 +2523,41 @@ main.layout{
   font-size: 12px;
   font-weight: 700;
   color: var(--gold);
+}
+
+/* credits.html (renderCreditsPage()): one row per header photo, the strip
+   itself as the thumbnail so a reader can tell which day's photo is which. */
+.credit-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.credit-item{
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.credit-thumb{
+  width: 240px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--surface);
+}
+.credit-text p{ margin: 0; }
+.credit-title{ font-weight: 700; }
+.credit-line{
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.credit-line a{ color: var(--gold); }
+@media (max-width: 560px){
+  .credit-item{ grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .credit-thumb{ width: 100%; height: auto; aspect-ratio: 3 / 1; }
 }
 
 /* ---------- Call your shot (reader score poll) ---------- */

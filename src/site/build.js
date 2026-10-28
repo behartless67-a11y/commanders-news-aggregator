@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { SOURCES } from '../../config/sources.js';
 import { LOCAL_SPOTS } from '../../config/local-spots.js';
-import { HERO_IMAGES, HERO_PINNED } from '../../config/hero-images.js';
+import { HERO_IMAGES, HERO_PINNED, HERO_CREDITS } from '../../config/hero-images.js';
 import { writeBuildHash } from './build-hash.js';
 import { log } from '../lib/log.js';
 import { loadItems, sortedItems, loadSocial, sortedSocial } from '../lib/store.js';
@@ -27,7 +27,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderRefsPage, renderLeaderboardPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderRefsPage, renderLeaderboardPage, renderCreditsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -545,6 +545,13 @@ export async function buildSite() {
   await fs.writeFile(
     path.join(DIST_DIR, 'leaderboard.html'),
     renderLeaderboardPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, poll: gameWeek.poll }),
+    'utf8',
+  );
+
+  // Who took the header photos (renderCreditsPage()). Linked from the footer.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'credits.html'),
+    renderCreditsPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, heroes: HERO_IMAGES, credits: HERO_CREDITS }),
     'utf8',
   );
 

@@ -1321,7 +1321,7 @@ function footer(sources, generatedAt) {
     </a>
     <div class="footer-bottom">
       <span>Headlines link to their original publishers. The Burgundy Wire is one fan's independent project, built and run solo, not an official team site and not affiliated with the Washington Commanders or the NFL, just deeply, unreasonably invested.</span>
-      <span><a href="admin.html" class="footer-admin-link">Admin</a> &middot; &copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
+      <span><a href="admin.html" class="footer-admin-link">Admin</a> &middot; <a href="credits.html" class="footer-admin-link">Photo credits</a> &middot; &copy; ${new Date(generatedAt).getFullYear()} The Burgundy Wire</span>
     </div>
   </div>
 </footer>`;
@@ -4119,6 +4119,73 @@ function dataTable(head, rows, className = '') {
 function dataCell(value, { num = false, className = '' } = {}) {
   const cls = [num ? 'num' : '', className].filter(Boolean).join(' ');
   return cls ? `<td class="${cls}">${value}</td>` : `<td>${value}</td>`;
+}
+
+/**
+ * credits.html: who took the header photos. The header is a CSS background
+ * with no caption slot, and the photo changes daily, so one page covers the
+ * whole pool (HERO_IMAGES in config/hero-images.js, with HERO_CREDITS for
+ * the photographer, license and source of each). The Creative Commons ones
+ * require the credit and the license named; the public-domain government
+ * ones ask for it; and it's the right thing to do regardless. The cropped
+ * header strips of the CC BY-SA photos are offered under the same license,
+ * which the page says.
+ */
+export function renderCreditsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, heroes = [], credits = {} }) {
+  const title = 'Header photo credits';
+  const description = 'Who took the photos behind The Burgundy Wire header, with each photo’s license and source.';
+  const items = heroes.map((src) => {
+    const c = credits[src] || {};
+    const name = c.title || src.replace(/^.*\//, '').replace(/\.jpg$/, '').replace(/^hero-/, '').replace(/-/g, ' ');
+    const credit = c.credit ? `Photo: ${escapeHtml(c.credit)}` : "Ben's own photo";
+    const license = c.license
+      ? (c.licenseUrl ? `<a href="${escapeHtml(c.licenseUrl)}" target="_blank" rel="noopener noreferrer license">${escapeHtml(c.license)}</a>` : escapeHtml(c.license))
+      : '';
+    const source = c.sourceUrl ? ` &middot; <a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">source</a>` : '';
+    return `
+      <li class="credit-item">
+        <img class="credit-thumb" src="${escapeHtml(src.replace(/^\//, ''))}" alt="" loading="lazy" width="480" height="160" />
+        <div class="credit-text">
+          <p class="credit-title">${escapeHtml(name)}</p>
+          <p class="credit-line">${credit}${license ? ` &middot; ${license}` : ''}${source}. Cropped to the header band and color-adjusted.</p>
+        </div>
+      </li>`;
+  });
+  const hasShareAlike = heroes.some((src) => /BY-SA/i.test(credits[src]?.license || ''));
+  return `<!doctype html>
+<html lang="en">
+<head>
+${dataPageHead({ title, description, siteName, siteUrl, path: 'credits.html', generatedAt })}
+</head>
+<body>
+
+<div class="hero">
+${header('credits.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="data-page">
+    <h1 class="podcasts-heading">Header photo credits</h1>
+    <p class="page-intro">The photo behind the header changes every day. These are the photographers who took them, most of them public-domain work by military photographers at Commanders games, the rest Creative Commons photos from fans who shoot the games and share them. Thank you, all of you.</p>
+    <ul class="credit-list">
+      ${items.join('\n')}
+    </ul>
+    <section class="data-section data-prose">
+      <h2>The fine print</h2>
+      <p>Each header image is a wide crop of the original with a light color lift, served from this site. ${hasShareAlike ? 'The crops of the CC BY-SA photos are available under the same CC BY-SA license as their originals; ask through the <a href="contact.html">contact page</a> and I’ll send the file. ' : ''}Public-domain photos by U.S. government photographers appear with their requested credit line, and their appearance here doesn’t imply any endorsement by the Department of Defense or anyone else. If one of these is yours and the credit is wrong or you’d like it taken down, <a href="contact.html">say so</a> and it’s done.</p>
+    </section>
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
 }
 
 /**
