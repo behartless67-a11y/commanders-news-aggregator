@@ -16,7 +16,7 @@
   {
     "name": "Javon Kinlaw",
     "position": "DT",
-    "status": "Questionable",
+    "status": "Doubtful",
     "bodyPart": "Knee",
     "notes": null
   },
@@ -65,8 +65,8 @@
   {
     "name": "Terry McLaurin",
     "position": "WR",
-    "status": "Out",
+    "status": "IR",
     "bodyPart": "Knee",
-    "notes": null
+    "notes": "Surgery"
   }
 ]

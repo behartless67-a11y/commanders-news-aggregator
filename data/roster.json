@@ -366,31 +366,6 @@
     }
   },
   {
-    "slug": "terry-mclaurin",
-    "name": "Terry McLaurin",
-    "jersey": "17",
-    "position": "WR",
-    "espnId": "3121422",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3121422.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "15"
-        },
-        {
-          "label": "YDS",
-          "value": "230"
-        },
-        {
-          "label": "TD",
-          "value": "1"
-        }
-      ]
-    }
-  },
-  {
     "slug": "chig-okonkwo",
     "name": "Chig Okonkwo",
     "jersey": "85",
@@ -1382,6 +1357,31 @@
     }
   },
   {
+    "slug": "terry-mclaurin",
+    "name": "Terry McLaurin",
+    "jersey": "17",
+    "position": "WR",
+    "espnId": "3121422",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3121422.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "15"
+        },
+        {
+          "label": "YDS",
+          "value": "230"
+        },
+        {
+          "label": "TD",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  {
     "slug": "jeremy-mcnichols",
     "name": "Jeremy McNichols",
     "jersey": "26",
@@ -1499,6 +1499,15 @@
     "position": "QB",
     "espnId": "4361994",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361994.png",
+    "stats": null
+  },
+  {
+    "slug": "kyle-kennard",
+    "name": "Kyle Kennard",
+    "jersey": "",
+    "position": "LB",
+    "espnId": "4432333",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4432333.png",
     "stats": null
   },
   {
