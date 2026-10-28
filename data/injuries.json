@@ -2,22 +2,8 @@
   {
     "name": "Charles Omenihu",
     "position": "DE",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Groin",
-    "notes": null
-  },
-  {
-    "name": "Fabian Moreau",
-    "position": "CB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
-    "name": "Isaac Yiadom",
-    "position": "CB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -72,16 +58,9 @@
   {
     "name": "Marcus Mariota",
     "position": "QB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Knee - MCL",
     "notes": "Sprain"
-  },
-  {
-    "name": "T.J. Maguranyanga",
-    "position": "DE",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
   },
   {
     "name": "Terry McLaurin",
