@@ -15,7 +15,7 @@ import { loadBettingCache } from '../lib/betting.js';
 import { loadInjuriesCache } from '../lib/injuries.js';
 import { loadTeamStatsCache } from '../lib/teamstats.js';
 import { loadStandingsCache } from '../lib/standings.js';
-import { loadRefCrewCache, refCrewCard } from '../lib/refcrew.js';
+import { loadRefCrewCache, refCrewCard, refCrewPage } from '../lib/refcrew.js';
 import { pollGame } from '../lib/predictions.js';
 import { BEN_PICKS } from '../../config/predictions.js';
 import { REF_NOTES } from '../../config/ref-notes.js';
@@ -27,7 +27,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderRefsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderRefsPage, renderLeaderboardPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -319,9 +319,10 @@ export async function buildSite() {
   // three. Each part is null or empty when it has nothing to say, and its box
   // then doesn't render.
   const nextPoll = pollGame(games);
+  const refCache = await loadRefCrewCache();
   const gameWeek = {
     filmRoom: filmRoomItems(allSorted),
-    refCrew: refCrewCard(await loadRefCrewCache(), games),
+    refCrew: refCrewCard(refCache, games),
     poll: nextPoll ? { ...nextPoll, benPick: BEN_PICKS[nextPoll.key] || null } : null,
   };
   // liveGame already loaded above for river item inclusion.
@@ -522,7 +523,9 @@ export async function buildSite() {
   );
 
   // The ref card as its own page, for the weekly "who's reffing" search (see
-  // renderRefsPage()). Linked from the card itself, and in the sitemap.
+  // renderRefsPage()). Linked from the card itself, and in the sitemap. The
+  // tables under the answer come from refCrewPage(), the same cache in the
+  // same pass as the card.
   const refCard = gameWeek.refCrew;
   const refWeek = refCard?.assignment?.week || refCard?.nextWeek;
   await fs.writeFile(
@@ -530,9 +533,18 @@ export async function buildSite() {
     renderRefsPage({
       siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive,
       refCrew: refCard,
+      page: refCrewPage(refCache, games),
       poll: gameWeek.poll,
       note: refCard && refWeek ? REF_NOTES[`${refCard.season}-${refWeek}`] || null : null,
     }),
+    'utf8',
+  );
+
+  // The poll's season standings as a page (renderLeaderboardPage()), filled
+  // in by site.js from the predictions function.
+  await fs.writeFile(
+    path.join(DIST_DIR, 'leaderboard.html'),
+    renderLeaderboardPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive, poll: gameWeek.poll }),
     'utf8',
   );
 
@@ -589,7 +601,7 @@ export async function buildSite() {
     'index.html', 'about.html', 'how-it-works.html', 'roster.html',
     'depth-chart.html', 'injury-report.html', 'contact.html',
     'music.html', 'cville.html', 'wiretaps.html', 'hail-mail.html',
-    'whos-reffing.html',
+    'whos-reffing.html', 'leaderboard.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),

@@ -2,6 +2,8 @@
 
 Written Oct 28, 2026. If you are reading this on the work machine (or pasting it into Claude there), skip to **What to do on the work machine**.
 
+> **Done, Oct 28, 2026.** Ben deleted both tasks on the work machine the same afternoon. Kept for the record and for the "how to tell if it comes back" check at the bottom.
+
 ## What's wrong
 
 Two Windows Task Scheduler jobs, registered in early September per [scheduled-generation.md](scheduled-generation.md), still run `scheduled-post.ps1` from the repo clone on the work machine:

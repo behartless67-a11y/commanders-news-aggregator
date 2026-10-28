@@ -239,7 +239,7 @@ Who has the next game and how many flags his crews throw, plus our last game's f
 - **The numbers** come from ESPN: every finished game's referee and both teams' accepted penalties, this season and last. Each game is fetched once and kept in `data/refcrew.json`, so after the first big backfill a nightly run only reads that week's games.
 - **Ranks** only include referees with 5 or more games, so a new ref shows his numbers with "too few to rank him yet."
 - **Refresh by hand:** `npm run ref-crew`. It's in the nightly job, after team stats.
-- **The full page:** `whos-reffing.html` ("Every ref, ranked" on the card) has the same numbers plus every referee in a table and every game this crew has had with Washington. It's one permanent URL whose title changes with the game ("Who's Reffing Commanders vs. Eagles (Week 8)? ..."), built for the weekly "who's reffing the Commanders game" search, and it's in the sitemap.
+- **The full page:** `whos-reffing.html` (linked from the card and the footer) has the same numbers plus every game this referee has worked in the two-season window, every game this crew has had with Washington, our flags game by game with each game's referee and result, and every referee in a table (ranked ones first, then the ones with too few games). It's one permanent URL whose title changes with the game ("Who's Reffing Commanders vs. Eagles (Week 8)? ..."), built for the weekly "who's reffing the Commanders game" search, and it's in the sitemap. The tables come from `refCrewPage()` in `src/lib/refcrew.js`, the same pass as the card.
 - **Your line for the week:** add one to `config/ref-notes.js`, keyed `"<season>-<week>"` (`'2026-8': '...'`). It shows on the page that week only. Optional.
 
 ### Send it to the group chat (end of every post)
@@ -264,7 +264,7 @@ Readers pick the score of the next game. After they vote they see their pick and
 - **Scoring:** pick'em with a tiebreaker. Most games with the right winner leads; ties are broken by the average points off (your miss on our score plus your miss on theirs). Shown as a record ("2-1") and "±6". A tie game only counts as right if you picked a tie.
 - **You're on it automatically:** every game in `config/predictions.js` is your pick, under "Ben." Readers can't take the name; a reader who types Ben shows as "Ben (reader)." Your Giants pick (24-20 against the 27-27 tie) already has you at 0-1. Delete that line if you'd rather start the season at the 49ers.
 - **Names are public,** so links and obvious profanity are filtered out automatically (the pick still counts, just not on the board). To pull a name by hand, add it to `HIDDEN_PLAYERS` in `config/predictions.js`.
-- **Where it shows:** inside the existing poll card (top five, plus the reader's own row if they're lower, and "In for the 49ers: ..." with names only, no picks, until the game's over).
+- **Where it shows:** inside the existing poll card (top five, plus the reader's own row if they're lower, and "In for the 49ers: ..." with names only, no picks, until the game's over). Since Oct 28 the card also links to **`/leaderboard`, the "Call Your Shot" page**: everyone, every scored game with its closest calls, the poll for the open game, and the rules (including the sticker for the season winner). Filled in by `site.js` from the same `predictions?board=season` request, so it never needs a deploy to update. That's the link to post when you want people to try to beat you.
 - **Where picks go:** the `leaderboard` blob store, one per name per game (`2026-10-19-SF/jason`), so a second pick under the same name replaces the first. `predictions?board=season` serves the standings, cached for a minute. Final scores come from the schedule, so the board updates after the nightly data run picks up the final.
 
 #### Asking for picks
@@ -413,6 +413,7 @@ To run it on a second machine, do the one-time setup in `docs/x-browser-scraping
 | `config/hero-images.js` | Rotating hero images |
 | `config/broadcast-urls.js` | Hand-verified network → watch-live URLs |
 | `config/predictions.js` | Your own score for each game (shown under the reader poll and scored on the leaderboard), plus names to hide from the board |
+| `config/ref-notes.js` | Your optional one-liner on the week's referee, keyed `"<season>-<week>"`, shown on whos-reffing.html that week |
 | `src/lib/refcrew.js` | Ref crew card: Football Zebras assignment + ESPN flag counts |
 | `src/lib/predictions.js` | Reader poll: which game is open, the pick format, the crowd math, the leaderboard scoring and name filter |
 | `netlify/functions/predictions.js` | The crowd's pick for a game, and the season leaderboard, for the poll card |

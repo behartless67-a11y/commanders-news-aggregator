@@ -2403,6 +2403,127 @@ main.layout{
   font-weight: 600;
 }
 .ref-note a:hover{ color: var(--gold); }
+/* ---------- Who's reffing and Call Your Shot: the data pages ----------
+   The two game-week cards as full pages (renderRefsPage() and
+   renderLeaderboardPage() in templates.js). One column of prose and tables;
+   .data-table is the depth chart's table, and .table-scroll lets a six-
+   column table slide sideways on a phone instead of squeezing the page. */
+.data-page{
+  max-width: 900px;
+  margin: 0 auto;
+  /* A grid item's minimum width is its content's, so without this a six-
+     column table on a 360px phone widens the whole page instead of
+     scrolling inside .table-scroll. */
+  min-width: 0;
+  width: 100%;
+}
+.data-section{ margin: 30px 0 0; }
+.data-section h2{
+  font-size: 19px;
+  margin: 0 0 4px;
+}
+.data-section h3{
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+.data-sub{
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+.data-prose p{
+  color: var(--text-muted);
+  max-width: 68ch;
+  margin: 0 0 10px;
+}
+.data-prose a{ color: var(--gold); }
+.table-scroll{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.data-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.data-table th{
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.data-table td{
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+.data-table .num{
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.data-table tr.is-assigned td,
+.data-table tr.is-us td,
+.data-table tr.is-me td{
+  color: var(--gold);
+  font-weight: 700;
+}
+.data-table tr.is-assigned td{ background: rgba(255,182,18,0.10); }
+.data-table tr.is-house td{ font-style: italic; }
+.data-faint{ color: var(--text-faint); }
+.data-tag{
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--burgundy-800);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  vertical-align: 1px;
+}
+
+/* The leaderboard page: its own copy of the poll drops the card-sized board,
+   since the whole thing is right under it. */
+.board-page-poll .poll-board{ display: none; }
+.board-page .board-loading,
+.board-page .board-empty,
+.board-page .board-pending{
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+.board-game{
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+}
+.board-game p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.board-rules{
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+  max-width: 68ch;
+}
+.board-rules li{ margin: 0 0 6px; }
+.board-rules a{ color: var(--gold); }
+.poll-board-link{
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+}
 
 /* ---------- Call your shot (reader score poll) ---------- */
 .widget .poll-question{
@@ -5299,10 +5420,6 @@ body.tv-page{
   margin: 10px 0 0;
 }
 .ref-more a{ color: var(--gold); }
-.refs-page{
-  max-width: 760px;
-  margin: 0 auto;
-}
 .refs-eyebrow{
   margin: 0 0 4px;
   font-size: 11px;
@@ -5341,25 +5458,4 @@ body.tv-page{
   font-size: 18px;
   margin: 28px 0 10px;
 }
-.refs-table td:nth-child(n+3), .refs-table th:nth-child(n+3){
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-.refs-row-ours td{
-  background: rgba(255,182,18,0.10);
-  font-weight: 700;
-}
-.refs-tag{
-  display: inline-block;
-  margin-left: 6px;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: var(--gold);
-  color: #0a0807;
-  font-size: 10.5px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  vertical-align: 1px;
-}
-.refs-page .post-poll{ margin-top: 28px; }
+.data-page .post-poll{ margin-top: 28px; }

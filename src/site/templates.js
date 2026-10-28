@@ -1044,7 +1044,7 @@ function refCrewWidget(card) {
           <span class="ref-num">${escapeHtml(String(ref.flagsPerGame))}</span>
           <span class="ref-num-label">flags a game from his crews<br />League average: ${escapeHtml(String(card.leagueFlagsPerGame))}</span>
         </div>`);
-      lines.push(`<p class="ref-line">${escapeHtml(ordinalOf(ref.rank))} most of ${ref.rankedRefs} referees, over ${ref.games} games in ${card.season - 1} and ${card.season}.</p>`);
+      lines.push(`<p class="ref-line">${rankPhrase(ref.rank, ref.rankedRefs)}, over ${ref.games} games in ${card.season - 1} and ${card.season}.</p>`);
       lines.push(`<p class="ref-line">Home teams draw ${escapeHtml(String(ref.homeFlagsPerGame))} a game, road teams ${escapeHtml(String(ref.awayFlagsPerGame))}.</p>`);
     } else if (ref) {
       lines.push(`<p class="ref-line">${ref.games} game${ref.games === 1 ? '' : 's'} so far, ${escapeHtml(String(ref.flagsPerGame))} flags a game. Too few to rank him yet.</p>`);
@@ -1070,9 +1070,14 @@ function refCrewWidget(card) {
     <div class="widget widget-refcrew" id="ref-crew">
       <h2>${escapeHtml(heading)}</h2>
       ${lines.join('\n      ')}
-      <p class="ref-more"><a href="whos-reffing.html">Every ref, ranked &rarr;</a></p>
+      <p class="ref-more"><a href="whos-reffing.html">Every ref, ranked, and our flags game by game &rarr;</a></p>
       <p class="ref-note">Assignment from <a href="${escapeHtml(assignment?.url || 'https://www.footballzebras.com/category/assignments/')}" target="_blank" rel="noopener noreferrer">Football Zebras</a>. Flags are accepted penalties on both teams, from ESPN box scores.</p>
     </div>`;
+}
+
+/** "The most of 17 referees" for the top spot, "3rd most of 17 referees" below it: "1st most" isn't English. */
+function rankPhrase(rank, total) {
+  return rank === 1 ? `The most of ${total} referees` : `${ordinalOf(rank)} most of ${total} referees`;
 }
 
 /** 1 -> "1st", 22 -> "22nd": ranks here run past the four the standings widget needs. */
@@ -1285,6 +1290,16 @@ function footer(sources, generatedAt) {
         <a class="rss-link" href="cville.html">
           <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
           Cville Spots
+        </a>
+        <!-- The two game-week pages that grew out of sidebar cards: the ref
+             card's numbers in full, and the poll's season standings. -->
+        <a class="rss-link" href="whos-reffing.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 2h2v20H5zm4 2h11l-3 4.5 3 4.5H9z"/></svg>
+          Ref Watch
+        </a>
+        <a class="rss-link" href="leaderboard.html">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M7 3h10v2h4v3a5 5 0 0 1-4.4 4.96A6 6 0 0 1 13 16.9V19h3v2H8v-2h3v-2.1a6 6 0 0 1-3.6-3.94A5 5 0 0 1 3 8V5h4zm10 4v1c0 .9-.1 1.7-.3 2.5A3 3 0 0 0 19 8V7zM5 7v1a3 3 0 0 0 2.3 2.5A9 9 0 0 1 7 8V7z"/></svg>
+          Call Your Shot
         </a>
         <!-- The mailbag. Built unlinked on purpose for a Reddit-driven test,
              which is over: it's being promoted in a post now, and a page a
@@ -4040,9 +4055,118 @@ ${header('cville.html', hasWeekly, isGameLive)}
 
 <main class="layout layout-wide">
   <div class="contact-page">
-    <h1 class="podcasts-heading">Cville Spots</h1>
+    <h1 class="podcasts-heading">Where to watch the Commanders in Charlottesville</h1>
     <p class="page-intro">I live in Charlottesville. If this site ever becomes a place for local Commanders fans to find each other in person, this is where that starts: a short, hand-picked list of local spots that are Commanders-friendly. No algorithm, no paid placement, just places I'd actually send a friend.</p>
     ${list}
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/** Shared head for the two game-week data pages below: same fonts, icons and manifest as every other page. */
+function dataPageHead({ title, description, siteName, siteUrl, path, generatedAt }) {
+  return `<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(title)} | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `${title} | ${siteName}`, description, siteUrl, path })}
+${jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    url: canonicalUrl(siteUrl, path),
+    dateModified: generatedAt,
+    isPartOf: { '@type': 'WebSite', name: siteName, url: `${siteUrl}/` },
+  })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">`;
+}
+
+/** A data table in a wrapper that scrolls sideways on a phone instead of breaking the page. */
+function dataTable(head, rows, className = '') {
+  return `
+      <div class="table-scroll"><table class="data-table${className ? ` ${className}` : ''}">
+        <thead><tr>${head.map(([label, num]) => `<th${num ? ' class="num"' : ''}>${label}</th>`).join('')}</tr></thead>
+        <tbody>
+          ${rows.join('\n          ')}
+        </tbody>
+      </table></div>`;
+}
+function dataCell(value, { num = false, className = '' } = {}) {
+  const cls = [num ? 'num' : '', className].filter(Boolean).join(' ');
+  return cls ? `<td class="${cls}">${value}</td>` : `<td>${value}</td>`;
+}
+
+/**
+ * Call Your Shot (leaderboard.html): the poll's season standings as a page,
+ * for the reader ranked ninth who can't see it in the card's top five, and
+ * for a link Ben can post ("see if you beat Ben"). The standings themselves
+ * are filled in by site.js from the predictions function, the same request
+ * the poll cards make, so nothing here goes stale between deploys. The page
+ * carries the poll for the open game and the rules; its own copy of the
+ * poll hides the card-sized board, since the full one is right under it.
+ */
+export function renderLeaderboardPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, poll = null }) {
+  const title = 'Call Your Shot: Season Standings';
+  const description = "Readers call the Commanders' final score before every kickoff. The season standings: most right winners, then fewest points off a game, with Ben on the board too.";
+  const widget = poll
+    ? predictionWidget(poll, { id: 'call-your-shot-page', className: 'post-poll board-page-poll' })
+    : '<p class="page-intro">Picks open again once the next game is on the schedule.</p>';
+  return `<!doctype html>
+<html lang="en">
+<head>
+${dataPageHead({ title, description, siteName, siteUrl, path: 'leaderboard.html', generatedAt })}
+</head>
+<body>
+
+<div class="hero">
+${header('leaderboard.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="data-page">
+    <h1 class="podcasts-heading">Call Your Shot</h1>
+    <p class="page-intro">Before every kickoff, readers call the final score. Put a name on your pick and it goes on the board, and the board stays up all season.</p>
+    ${widget}
+    <section class="data-section board-page" data-leaderboard-page>
+      <h2>Season standings</h2>
+      <p class="board-loading">Loading the standings&hellip;</p>
+    </section>
+    <section class="data-section data-prose">
+      <h2>How it works</h2>
+      <ul class="board-rules">
+        <li>Picks are open until kickoff. Send a new one and it replaces your old one.</li>
+        <li>Most right winners leads. Ties go to the smaller average miss: points off on our score plus points off on theirs.</li>
+        <li>A name is optional. Without one your pick still counts toward the crowd's number, it just can't make the board.</li>
+        <li>Ben's number from the pregame post is on the board too, under his name, which nobody else gets to use.</li>
+        <li>Email is optional and adds you to <a href="hail-mail.html">Hail Mail</a>, where the Monday post says how everyone did.</li>
+        <li>The season winner gets a Burgundy Wire sticker and a full year of bragging rights.</li>
+      </ul>
+    </section>
   </div>
 </main>
 
@@ -4074,39 +4198,30 @@ ${footer(sources, generatedAt)}
  * `note` is Ben's own line for the week, from config/ref-notes.js. The page
  * reads fine without one.
  */
-function refsPageTitle(card) {
+function refsPageTitle(card, vs = 'vs.') {
   const a = card?.assignment;
   const opp = card?.nextOpponent;
-  if (a && opp) return `Who's Reffing Commanders vs. ${opp} (Week ${a.week})? ${a.referee}'s Crew, by the Numbers`;
-  if (opp && card.nextWeek) return `Who's Reffing Commanders vs. ${opp} (Week ${card.nextWeek})? Crews Are Announced Tuesdays`;
+  if (a && opp) return `Who's Reffing Commanders ${vs} ${opp} (Week ${a.week})? ${a.referee}'s Crew, by the Numbers`;
+  if (opp && card.nextWeek) return `Who's Reffing Commanders ${vs} ${opp} (Week ${card.nextWeek})? Crews Are Announced Tuesdays`;
   return `Who's Reffing the Commanders Game? Referee Assignments and Flag Counts`;
 }
 
-function refsRankingsTable(card) {
-  const ours = card.assignment ? card.assignment.referee : null;
-  const rows = card.rankings
-    .map((r, i) => {
-      const mine = ours && r.name === card.assignment.referee ? ' class="refs-row-ours"' : '';
-      return `<tr${mine}>
-        <td>${i + 1}</td>
-        <td>${escapeHtml(r.name)}${mine ? ' <span class="refs-tag">This week</span>' : ''}</td>
-        <td>${r.games}</td>
-        <td>${escapeHtml(String(r.flagsPerGame))}</td>
-        <td>${r.yardsPerGame}</td>
-      </tr>`;
-    })
-    .join('\n');
-  return `<div class="depth-chart-scroll">
-      <table class="depth-chart-table refs-table">
-        <thead><tr><th>#</th><th>Referee</th><th>Games</th><th>Flags a game</th><th>Yards a game</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`;
+/**
+ * Every referee in the two-season window (refCrewPage() in refcrew.js):
+ * ranked ones first, then the ones with too few games for a rank, and how
+ * often each has had a Washington game.
+ */
+function refsRankingsTable(page) {
+  const rows = page.referees.map((r) => `<tr${r.assigned ? ' class="is-assigned"' : ''}>${dataCell(r.rank || '<span class="data-faint">&ndash;</span>', { num: true })}${dataCell(escapeHtml(r.name) + (r.assigned ? ' <span class="data-tag">This week</span>' : ''))}${dataCell(r.games, { num: true })}${dataCell(r.flagsPerGame, { num: true })}${dataCell(r.yardsPerGame, { num: true })}${dataCell(`${r.homeFlagsPerGame} / ${r.awayFlagsPerGame}`, { num: true })}${dataCell(r.withUs || '<span class="data-faint">0</span>', { num: true })}</tr>`);
+  return dataTable([['#', true], ['Referee'], ['Games', true], ['Flags a game', true], ['Yards a game', true], ['Home / road', true], ['With us', true]], rows);
 }
 
-export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, refCrew = null, poll = null, note = null }) {
+/** `page` is refCrewPage(): the tables under the answer. The card alone still makes a page. */
+export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, refCrew = null, page = null, poll = null, note = null }) {
   const card = refCrew;
-  const title = refsPageTitle(card);
+  // "at" on the road; the next game's home/away comes with the page data.
+  const vs = page?.next?.homeAway === 'AT' ? 'at' : 'vs.';
+  const title = refsPageTitle(card, vs);
   const a = card?.assignment || null;
   const ref = card?.ref || null;
   const opp = card?.nextOpponent || null;
@@ -4114,7 +4229,7 @@ export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWee
 
   let description;
   if (a && ref?.rank) {
-    description = `${a.referee}'s crew has ${a.game} in Week ${a.week}: ${ref.flagsPerGame} flags a game, ${ordinalOf(ref.rank)} most of ${ref.rankedRefs} NFL referees, and how Washington has done with them.`;
+    description = `${a.referee}'s crew has ${a.game} in Week ${a.week}: ${ref.flagsPerGame} flags a game, ${ref.rank === 1 ? 'the most' : `${ordinalOf(ref.rank)} most`} of ${ref.rankedRefs} NFL referees, and how Washington has done with them.`;
   } else if (a) {
     description = `${a.referee}'s crew has ${a.game} in Week ${a.week}. Flag counts for every NFL referee, and how the Commanders draw them.`;
   } else {
@@ -4124,7 +4239,7 @@ export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWee
   const sections = [];
   const kickoff = card?.nextIso ? formatGameDateTime(card.nextIso) : '';
   const eyebrow = [card?.nextWeek ? `Week ${card.nextWeek}` : '', kickoff].filter(Boolean).map(escapeHtml).join(' &middot; ');
-  const heading = opp ? `Who's reffing Commanders vs. ${opp}?` : "Who's reffing the Commanders game?";
+  const heading = opp ? `Who's reffing Commanders ${vs} ${opp}?` : "Who's reffing the Commanders game?";
 
   if (a) {
     sections.push(`<p class="refs-answer"><strong>${escapeHtml(a.referee)}</strong> and crew have ${escapeHtml(a.game)}.</p>`);
@@ -4134,7 +4249,7 @@ export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWee
         <span class="ref-num-label">flags a game from ${escapeHtml(a.referee)}'s crews<br />League average: ${escapeHtml(String(card.leagueFlagsPerGame))}</span>
       </div>`);
       sections.push(`<ul class="refs-facts">
-        <li>${escapeHtml(ordinalOf(ref.rank))} most flags of ${ref.rankedRefs} referees, over ${ref.games} games in ${seasons}.</li>
+        <li>${rankPhrase(ref.rank, ref.rankedRefs)} for flags a game, over ${ref.games} games in ${seasons}.</li>
         <li>${ref.yardsPerGame} penalty yards a game.</li>
         <li>Home teams draw ${escapeHtml(String(ref.homeFlagsPerGame))} flags a game from this crew, road teams ${escapeHtml(String(ref.awayFlagsPerGame))}.</li>
       </ul>`);
@@ -4161,19 +4276,41 @@ export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWee
     sections.push(`<h2 class="refs-h2">${escapeHtml(a.referee)} and Washington</h2>\n${items}`);
   }
 
+  // The referee's own games, newest first, so "17 a game" has the games behind it.
+  if (a && page?.refLog?.length) {
+    const recent = page.refLog.slice(0, 12);
+    sections.push(`<h2 class="refs-h2">${escapeHtml(a.referee)}'s last ${recent.length === 1 ? 'game' : `${recent.length} games`}</h2>
+    <p class="data-sub">Newest first. Flags on the home team, then the road team.</p>
+    ${dataTable(
+      [['Game'], ['Matchup'], ['Home', true], ['Road', true], ['Total', true], ['Yards', true]],
+      recent.map((g) => `<tr${g.withUs ? ' class="is-us"' : ''}>${dataCell(`${g.season} Wk ${g.week}`)}${dataCell(`${escapeHtml(g.away.team)} at ${escapeHtml(g.home.team)}`)}${dataCell(g.home.flags, { num: true })}${dataCell(g.away.flags, { num: true })}${dataCell(g.flags, { num: true })}${dataCell(g.yards, { num: true })}</tr>`),
+    )}`);
+  }
+
+  // Our season game by game, with who worked each one. Without the page data
+  // (no cache yet), the card's two lines stand in.
   const lg = card?.lastGame;
   const us = card?.commanders;
-  if (lg || us) {
+  if (page?.ourGames?.length) {
+    const score = (g) => (g.result && g.points ? `${g.result} ${g.points.replace(/\s+/g, '')}` : '');
+    sections.push(`<h2 class="refs-h2">The Commanders' flags in ${card.season}, game by game</h2>
+    ${us ? `<p class="data-sub">${escapeHtml(String(us.flagsPerGame))} flags a game on us, ${escapeHtml(ordinalOf(us.rank))} most of ${us.teams} teams.</p>` : ''}
+    ${dataTable(
+      [['Wk', true], ['Game'], ['Result'], ['Referee'], ['On us', true], ['On them', true]],
+      page.ourGames.map((g) => `<tr>${dataCell(g.week, { num: true })}${dataCell(`${g.homeAway === 'AT' ? 'at' : 'vs.'} ${escapeHtml(g.opponent)}`)}${dataCell(escapeHtml(score(g)))}${dataCell(g.referee ? escapeHtml(g.referee) : '<span class="data-faint">not listed</span>')}${dataCell(g.ourFlags, { num: true })}${dataCell(g.theirFlags, { num: true })}</tr>`),
+    )}`);
+  } else if (lg || us) {
     const lines = [];
     if (lg) lines.push(`<li>Last game${lg.referee ? ` (${escapeHtml(lg.referee)}'s crew)` : ''}: ${flagsWord(lg.ourFlags)} on Washington, ${lg.theirFlags} on the ${escapeHtml(lg.opponent)}.</li>`);
     if (us) lines.push(`<li>${escapeHtml(String(us.flagsPerGame))} flags a game over ${us.games} games, ${escapeHtml(ordinalOf(us.rank))} most of ${us.teams} teams.</li>`);
     sections.push(`<h2 class="refs-h2">The Commanders and flags in ${card.season}</h2>\n<ul class="refs-facts">${lines.join('')}</ul>`);
   }
 
-  if (card?.rankings?.length) {
+  if (page?.referees?.length) {
+    const rankedCount = page.referees.filter((r) => r.rank).length;
     sections.push(`<h2 class="refs-h2">Every referee, most flags to fewest</h2>
-    <p class="page-intro">${seasons} regular seasons, referees with at least five games. Flags are accepted penalties on both teams.</p>
-    ${refsRankingsTable(card)}`);
+    <p class="data-sub">${seasons} regular seasons, ${page.gamesInWindow} games. League average: ${escapeHtml(String(card.leagueFlagsPerGame))} flags a game. Flags are accepted penalties on both teams.${rankedCount < page.referees.length ? ' A referee needs five games to be ranked; the rest are at the bottom.' : ''}</p>
+    ${refsRankingsTable(page)}`);
   }
 
   sections.push(`<h2 class="refs-h2">Where this comes from</h2>
@@ -4208,7 +4345,7 @@ ${header('whos-reffing.html', hasWeekly, isGameLive)}
 </div>
 
 <main class="layout layout-wide">
-  <div class="refs-page">
+  <div class="data-page">
     ${eyebrow ? `<p class="refs-eyebrow">${eyebrow}</p>` : ''}
     <h1 class="podcasts-heading">${escapeHtml(heading)}</h1>
     ${sections.join('\n    ')}

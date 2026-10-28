@@ -1054,7 +1054,9 @@
   (function () {
     var boards = document.querySelectorAll('.poll-board');
     var calledIt = document.querySelectorAll('.post-poll-results[data-game]');
-    if (!boards.length && !calledIt.length) return;
+    // The full board on leaderboard.html (renderLeaderboardPage() in templates.js).
+    var boardPage = document.querySelector('[data-leaderboard-page]');
+    if (!boards.length && !calledIt.length && !boardPage) return;
 
     function make(tag, className, text) {
       var node = document.createElement(tag);
@@ -1097,7 +1099,75 @@
         box.appendChild(make('p', 'poll-board-note', 'Most right winners, then fewest points off a game.'));
       }
       if (pending) box.appendChild(make('p', 'poll-board-pending', 'In for the ' + pending.opponent + ': ' + names(pending.names)));
+      var more = make('a', 'poll-board-link', 'Full standings →');
+      more.href = 'leaderboard.html';
+      box.appendChild(more);
       box.hidden = false;
+    }
+    /** "2026-10-19-SF" as "Oct 19": the poll key carries the kickoff date. */
+    function gameDate(key) {
+      var m = /^(\d{4})-(\d{2})-(\d{2})-/.exec(key);
+      if (!m) return key;
+      return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], 12)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+    }
+    /**
+     * Everyone, every scored game: the whole board, on its own page. Same
+     * data as the card's top five; the card links here for the rest.
+     */
+    function renderBoardPage(box, data) {
+      var rows = data.standings || [];
+      var games = data.games || [];
+      var pending = data.pending && data.pending.names.length ? data.pending : null;
+      box.textContent = '';
+      box.appendChild(make('h2', null, 'Season standings'));
+      if (!rows.length) {
+        box.appendChild(make('p', 'board-empty', pending
+          ? 'Nobody has been scored yet. The first standings go up after the ' + pending.opponent + ' game.'
+          : 'Nobody is on the board yet. Put a name on your pick and you are first.'));
+      } else {
+        var table = make('table', 'data-table board-table');
+        var head = make('thead');
+        var hr = make('tr');
+        [['#', true], ['Name'], ['Record', true], ['Avg off', true], ['Games', true]].forEach(function (h) {
+          hr.appendChild(make('th', h[1] ? 'num' : null, h[0]));
+        });
+        head.appendChild(hr);
+        table.appendChild(head);
+        var body = make('tbody');
+        rows.forEach(function (r, i) {
+          var tr = make('tr', (same(r.name, pollName) ? 'is-me ' : '') + (r.house ? 'is-house' : ''));
+          tr.appendChild(make('td', 'num', String(i + 1)));
+          tr.appendChild(make('td', 'board-name', r.name));
+          tr.appendChild(make('td', 'num', r.right + '-' + (r.played - r.right)));
+          var miss = make('td', 'num', '±' + r.avgMiss);
+          miss.title = 'Average points off per game';
+          tr.appendChild(miss);
+          tr.appendChild(make('td', 'num', String(r.played)));
+          body.appendChild(tr);
+        });
+        table.appendChild(body);
+        var wrap = make('div', 'table-scroll');
+        wrap.appendChild(table);
+        box.appendChild(wrap);
+        box.appendChild(make('p', 'data-sub', 'Most right winners, then fewest points off a game (our score plus theirs).'));
+      }
+      if (pending) box.appendChild(make('p', 'board-pending', 'In for the ' + pending.opponent + ': ' + pending.names.join(', ') + '.'));
+      games.forEach(function (g) {
+        var sec = make('div', 'board-game');
+        sec.appendChild(make('h3', null, gameDate(g.game) + ' · ' + g.opponent + ' · Final: Commanders ' + g.final.us + ', ' + g.opponent + ' ' + g.final.them));
+        var line = g.players + (g.players === 1 ? ' named pick.' : ' named picks.');
+        if (g.closest.length) {
+          line += ' Closest: ' + g.closest.map(function (c) {
+            return c.name + ' (' + c.commanders + '-' + c.opponent + ', off by ' + c.miss + (c.right ? '' : ', wrong winner') + ')';
+          }).join(', ') + '.';
+        }
+        sec.appendChild(make('p', null, line));
+        box.appendChild(sec);
+      });
+    }
+    function boardPageFailed() {
+      var note = boardPage && boardPage.querySelector('.board-loading');
+      if (note) note.textContent = 'The standings did not load. Try again in a minute.';
     }
     function renderCalledIt(box, data) {
       var key = box.getAttribute('data-game');
@@ -1123,7 +1193,7 @@
             }).join(', ') + '.'));
           }
           var link = make('a', 'post-poll-link', 'Season standings and this week\'s pick →');
-          link.href = 'index.html#call-your-shot';
+          link.href = 'leaderboard.html';
           box.appendChild(link);
           box.hidden = false;
         });
@@ -1135,16 +1205,18 @@
       if (!pending || pending.names.some(function (n) { return same(n, e.detail.name); })) return;
       pending.names.push(e.detail.name);
       Array.prototype.forEach.call(boards, function (box) { renderBoard(box, loaded); });
+      if (boardPage) renderBoardPage(boardPage, loaded);
     });
 
     fetch('/.netlify/functions/predictions?board=season', { credentials: 'omit' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
-        if (!data) return;
+        if (!data) { boardPageFailed(); return; }
         loaded = data;
         Array.prototype.forEach.call(boards, function (box) { renderBoard(box, data); });
         Array.prototype.forEach.call(calledIt, function (box) { renderCalledIt(box, data); });
-      }, function () {});
+        if (boardPage) renderBoardPage(boardPage, data);
+      }, boardPageFailed);
   })();
 
   // Links to #call-your-shot (Hail Mail, the "Readers called it" box) land on

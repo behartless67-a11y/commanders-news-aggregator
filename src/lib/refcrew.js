@@ -230,7 +230,7 @@ function nextCommandersGame(schedule) {
     if (g.season !== 'regular' || g.isBye || g.result) continue;
     const iso = parseGameTime(g.gametime);
     if (iso && Date.parse(iso) > now - 4 * 3600000) {
-      return { week: Number(String(g.week).replace(/\D/g, '')), opponent: g.opponentShort || g.opponent, iso };
+      return { week: Number(String(g.week).replace(/\D/g, '')), opponent: g.opponentShort || g.opponent, homeAway: g.homeAway, iso };
     }
   }
   return null;
@@ -248,31 +248,44 @@ function nextCommandersGame(schedule) {
  *   withUs         his games involving Washington in the same window
  *   lastGame       the most recent Washington game in the cache, whoever reffed
  *   commanders     Washington's own flags per game this season, and its rank
- *   rankings       every referee with enough games, most flags first, for the
- *                  table on whos-reffing.html (the sidebar card doesn't use it)
+ *
+ * The tables on whos-reffing.html come from refCrewPage() below, which
+ * builds on this.
  */
+const flagsIn = (g) => g.home.flags + g.away.flags;
+
+/**
+ * Flag totals per referee over a set of games, keyed by refKey(), plus the
+ * referees with enough games to rank, most flags a game first. Shared by the
+ * card and the Ref Watch page so the two never disagree on a number.
+ */
+function refTotals(games) {
+  const byRef = new Map();
+  for (const g of games) {
+    if (!g.referee) continue;
+    const key = refKey(g.referee);
+    const entry = byRef.get(key) || { key, name: g.referee, games: 0, flags: 0, yards: 0, homeFlags: 0, awayFlags: 0, withUs: 0 };
+    entry.games += 1;
+    entry.flags += flagsIn(g);
+    entry.yards += g.home.yards + g.away.yards;
+    entry.homeFlags += g.home.flags;
+    entry.awayFlags += g.away.flags;
+    if (g.home.abbr === WSH || g.away.abbr === WSH) entry.withUs += 1;
+    byRef.set(key, entry);
+  }
+  const ranked = [...byRef.values()]
+    .filter((r) => r.games >= MIN_GAMES_TO_RANK)
+    .sort((a, b) => b.flags / b.games - a.flags / a.games);
+  return { byRef, ranked };
+}
+
 export function refCrewCard(cache, schedule) {
   const all = Object.values(cache?.games || {});
   if (!all.length) return null;
   const season = cache.season;
   const window = all.filter((g) => g.season === season || g.season === season - 1);
 
-  const flagsIn = (g) => g.home.flags + g.away.flags;
-  const byRef = new Map();
-  for (const g of window) {
-    if (!g.referee) continue;
-    const key = refKey(g.referee);
-    const entry = byRef.get(key) || { name: g.referee, games: 0, flags: 0, yards: 0, homeFlags: 0, awayFlags: 0 };
-    entry.games += 1;
-    entry.flags += flagsIn(g);
-    entry.yards += g.home.yards + g.away.yards;
-    entry.homeFlags += g.home.flags;
-    entry.awayFlags += g.away.flags;
-    byRef.set(key, entry);
-  }
-  const ranked = [...byRef.values()]
-    .filter((r) => r.games >= MIN_GAMES_TO_RANK)
-    .sort((a, b) => b.flags / b.games - a.flags / a.games);
+  const { byRef, ranked } = refTotals(window);
   const leagueFlags = window.length ? round1(window.reduce((n, g) => n + flagsIn(g), 0) / window.length) : null;
 
   const next = nextCommandersGame(schedule);
@@ -345,12 +358,6 @@ export function refCrewCard(cache, schedule) {
     withUs,
     lastGame,
     commanders,
-    rankings: ranked.map((r) => ({
-      name: r.name,
-      games: r.games,
-      flagsPerGame: round1(r.flags / r.games),
-      yardsPerGame: Math.round(r.yards / r.games),
-    })),
     nextWeek: next?.week || null,
     nextOpponent: next?.opponent || null,
     nextIso: next?.iso || null,
@@ -358,4 +365,87 @@ export function refCrewCard(cache, schedule) {
     // Mondays, Christmas or London.
     nextDay: next ? new Date(next.iso).toLocaleDateString('en-US', { timeZone: TZ, weekday: 'long' }) : null,
   };
+}
+
+/**
+ * Everything the Ref Watch page (ref.html) shows: the card's numbers plus
+ * the tables behind them, from the same cache in the same pass.
+ *
+ *   next        the next Commanders game, for the page title: week,
+ *               opponent, homeAway, iso
+ *   referees    every referee in the two-season window, ranked ones first
+ *               by flags a game, then the rest (too few games for a rank)
+ *   refLog      the assigned referee's games in the window, newest first
+ *   ourGames    every Washington game this season, newest first, with its
+ *               referee and the result from the schedule
+ *   gamesInWindow  how many games the league average rests on
+ */
+export function refCrewPage(cache, schedule) {
+  const card = refCrewCard(cache, schedule);
+  if (!card) return null;
+  const all = Object.values(cache.games || {});
+  const season = cache.season;
+  const window = all.filter((g) => g.season === season || g.season === season - 1);
+  const newestFirst = (x, y) => String(y.date).localeCompare(String(x.date));
+  const perGame = (r) => ({
+    flagsPerGame: round1(r.flags / r.games),
+    yardsPerGame: Math.round(r.yards / r.games),
+    homeFlagsPerGame: round1(r.homeFlags / r.games),
+    awayFlagsPerGame: round1(r.awayFlags / r.games),
+  });
+
+  const { byRef, ranked } = refTotals(window);
+  const rankOf = new Map(ranked.map((r, i) => [r.key, i + 1]));
+  const assignedKey = card.assignment ? refKey(card.assignment.referee) : null;
+  const referees = [...byRef.values()]
+    .map((r) => ({ name: r.name, games: r.games, withUs: r.withUs, rank: rankOf.get(r.key) || null, assigned: r.key === assignedKey, ...perGame(r) }))
+    .sort((a, b) => {
+      if (a.rank && b.rank) return a.rank - b.rank;
+      if (a.rank || b.rank) return a.rank ? -1 : 1;
+      return b.flagsPerGame - a.flagsPerGame || b.games - a.games;
+    });
+
+  const refLog = assignedKey
+    ? window
+      .filter((g) => g.referee && refKey(g.referee) === assignedKey)
+      .sort(newestFirst)
+      .map((g) => ({
+        season: g.season,
+        week: g.week,
+        home: { team: nickname(g.home.abbr), flags: g.home.flags },
+        away: { team: nickname(g.away.abbr), flags: g.away.flags },
+        flags: flagsIn(g),
+        yards: g.home.yards + g.away.yards,
+        withUs: g.home.abbr === WSH || g.away.abbr === WSH,
+      }))
+    : [];
+
+  // The schedule has what ESPN's box score doesn't: who won.
+  const scheduleByWeek = new Map(
+    (schedule || [])
+      .filter((g) => g.season === 'regular' && !g.isBye)
+      .map((g) => [Number(String(g.week).replace(/\D/g, '')), g]),
+  );
+  const ourGames = all
+    .filter((g) => g.season === season && (g.home.abbr === WSH || g.away.abbr === WSH))
+    .sort(newestFirst)
+    .map((g) => {
+      const us = g.home.abbr === WSH ? g.home : g.away;
+      const them = g.home.abbr === WSH ? g.away : g.home;
+      const s = scheduleByWeek.get(g.week);
+      return {
+        week: g.week,
+        opponent: nickname(them.abbr),
+        homeAway: g.home.abbr === WSH ? 'VS' : 'AT',
+        referee: g.referee,
+        ourFlags: us.flags,
+        ourYards: us.yards,
+        theirFlags: them.flags,
+        theirYards: them.yards,
+        result: s?.result || null,
+        points: s?.points || null,
+      };
+    });
+
+  return { ...card, next: nextCommandersGame(schedule), referees, refLog, ourGames, gamesInWindow: window.length };
 }
