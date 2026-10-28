@@ -1,16 +1,4 @@
 {
-  "social-91c8d7942d20": {
-    "id": "social-91c8d7942d20",
-    "url": "https://x.com/Commanders/status/2111834699626693026",
-    "text": ". @espn need any new voice actors? 👀",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-18T15:00:03.000Z",
-    "collectedAt": "2026-10-18T15:22:58.923Z"
-  },
   "social-acf37eaed880": {
     "id": "social-acf37eaed880",
     "url": "https://x.com/john_keim/status/2111836692596568259",
@@ -5617,5 +5605,81 @@
     "images": [],
     "publishedAt": "2026-10-28T04:29:57.000Z",
     "collectedAt": "2026-10-28T05:44:24.500Z"
+  },
+  "social-298fe0808de2": {
+    "id": "social-298fe0808de2",
+    "url": "https://x.com/JPFinlayNBCS/status/2115457753799905783",
+    "text": "With the trade deadline looming it's easy to say Washington should sell. They likely should. But if a young guy with control is available at a reduced cost, that's something that can make sense. (yes, that's Brian Thomas Jr's music)",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-28T14:56:46.000Z",
+    "collectedAt": "2026-10-28T15:07:33.126Z"
+  },
+  "social-009b1108168f": {
+    "id": "social-009b1108168f",
+    "url": "https://x.com/JPFinlayNBCS/status/2115447447195672794",
+    "text": "When do you want AJ Dybantsa to make his debut?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-28T14:15:49.000Z",
+    "collectedAt": "2026-10-28T15:07:33.126Z"
+  },
+  "social-37bf9b3efdf6": {
+    "id": "social-37bf9b3efdf6",
+    "url": "https://x.com/john_keim/status/2115427736340832554",
+    "text": "On video with @RealBramW@twitter.com on trades; sundays game vs the Eagles, Jayden Daniels under scrutiny and more. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-28T12:57:29.000Z",
+    "collectedAt": "2026-10-28T15:07:34.653Z"
+  },
+  "social-6a05b6262d79": {
+    "id": "social-6a05b6262d79",
+    "url": "https://x.com/BenStandig/status/2115414506310369386",
+    "text": "Commanders 2027 roster: Washington enters a crossroads week. Can it stay afloat in the NFC East, or will it become a seller at the trade deadline? With those questions looming, an early look at who stays, who goes and what the offense still needs. ⬇️ commanders-2027-roster-who-stays",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/518/451/278/456/219/original/2b5a79e4602617c5.jpg"
+    ],
+    "publishedAt": "2026-10-28T12:04:55.000Z",
+    "collectedAt": "2026-10-28T15:07:36.264Z"
+  },
+  "social-45518c725442": {
+    "id": "social-45518c725442",
+    "url": "https://x.com/BenStandig/status/2115407726465470507",
+    "text": "🎙 Unnamed Wizards pod, episode 2: Getting ready for the Dybantsa debut, Will Riley's purgatory, expansion draft protection and the one pure basketball concern with @Truth_About_It@twitter.com and @LedellsPlace@twitter.com . unnamed-wizards-pod-episode-2-getting",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/518/341/703/080/216/original/ac7d6dbffd7be694.jpg"
+    ],
+    "publishedAt": "2026-10-28T11:37:59.000Z",
+    "collectedAt": "2026-10-28T15:07:36.264Z"
+  },
+  "social-edea71036aaf": {
+    "id": "social-edea71036aaf",
+    "url": "https://x.com/tashanreed/status/2115428568721408377",
+    "text": "Butker and Tucker in the same room is insane 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-28T13:00:48.000Z",
+    "collectedAt": "2026-10-28T15:07:37.816Z"
   }
 }
