@@ -1,16 +1,4 @@
 {
-  "social-bb69345c3f93": {
-    "id": "social-bb69345c3f93",
-    "url": "https://x.com/BenStandig/status/2111682938119258401",
-    "text": "An enjoyable 8 minutes down memory lane despite the result. What an offensive showcase.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-18T04:57:00.000Z",
-    "collectedAt": "2026-10-18T06:10:48.296Z"
-  },
   "social-b983e40eae44": {
     "id": "social-b983e40eae44",
     "url": "https://x.com/RapSheet/status/2111809876531786070",
@@ -5629,5 +5617,29 @@
     "images": [],
     "publishedAt": "2026-10-27T20:52:41.000Z",
     "collectedAt": "2026-10-28T02:05:39.921Z"
+  },
+  "social-2660472a5927": {
+    "id": "social-2660472a5927",
+    "url": "https://x.com/JPFinlayNBCS/status/2115285636576112643",
+    "text": "Didn’t need the series going extras tonight. Would have liked the sleep. But nothing like watching the final out. So I’m committed. Thru 12. I think.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-28T03:32:50.000Z",
+    "collectedAt": "2026-10-28T05:44:21.634Z"
+  },
+  "social-7f050b9cc1ef": {
+    "id": "social-7f050b9cc1ef",
+    "url": "https://x.com/BenStandig/status/2115300008345899081",
+    "text": "Good for the Rays. AL East teams never quit.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-28T04:29:57.000Z",
+    "collectedAt": "2026-10-28T05:44:24.500Z"
   }
 }
