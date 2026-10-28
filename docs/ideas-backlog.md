@@ -4,6 +4,20 @@ Things we've talked about building but haven't yet. Newest batch first. When one
 
 ---
 
+## Follow-ups to check (October 28, 2026)
+
+From the day the work machine's Task Scheduler jobs were retired and the "Who's reffing" page, the group-chat share button, Bing and Feedspot went in. Nothing to build here, just things to look at.
+
+- **October 29, after 7:05 AM: the localhost deploys should be gone.** Both work-machine tasks were deleted Oct 28 (see `docs/retire-work-pc-tasks.md`). Check that the homepage canonical says theburgundywire.com (`curl.exe -s https://theburgundywire.com/ | Select-String canonical`) and that Netlify's deploy list has no 11:01 UTC deploy without a matching GitHub Actions run.
+- **Every game week: a line for the ref page (optional).** Add one to `config/ref-notes.js`, keyed `'<season>-<week>'` (`'2026-8'` for the Eagles). It shows on whos-reffing.html that week only.
+- **A week or two out: Google Preferred Sources.** Search for theburgundywire.com at google.com/preferences/source. On Oct 28 it found nothing (Hogs Haven came up fine), so the link was pulled from posts and Hail Mail. Once the site shows up, put it back: `https://www.google.com/preferences/source?q=theburgundywire.com`, under the share button (`postShare()` in `templates.js`) and in the Hail Mail footer (`newsletter-send.js`).
+- **Search Console: is whos-reffing indexed?** Indexing was requested Oct 28. Check it with URL Inspection, and see whether "who is reffing the Commanders game" starts showing up under Performance. Twelve pages were "Discovered, currently not indexed" that day; watch that number fall.
+- **Admin stats: "Reader share (group chat)."** The new share button tags its links `?via=share`. If that row stays empty after a few posts, the button needs a better spot or better words.
+- **Bing:** the site and its sitemap were added Oct 28 (theburgundywire.com only; batten.virginia.edu was left out on purpose). Check that the sitemap shows "Success" instead of "Processing."
+- **Feedspot:** submitted for free with admin@theburgundywire.com. Don't pay for their placement plans ($14 to $74 a month). If the site shows up on their Commanders list on its own, great.
+
+---
+
 ## From r/Commanders (October 6, 2026)
 
 Read from the sub's top posts that week plus nine days of its posts and comments. Built the same day: the three new feeds, the Film Room, the ref card and the score poll. Still to do:
@@ -55,3 +69,5 @@ Done: contrast, readable posts, quieter feed, grouped duplicate stories. Still o
 ## Viewership
 
 Superseded by the full plan in `docs/viewership-deep-dive.md` (October 10, 2026), which covers the old list (Warpath, Hogs Haven FanPosts, QR codes, X/Bluesky, podcasts) with research behind each. Two corrections from it: ExtremeSkins is gone (its crowd moved to BGO, bgobsession.com), and Hogs Haven FanPosts still exist.
+
+Built from it so far: sections 3.1 to 3.8 (link tags, SEO, feeds, the popup, the welcome email, the leaderboard, the ref page) and, from 3.9, Bing, Feedspot and the installable manifest. Still open from 3.9: the Bluesky and Threads auto-post, and the Preferred Sources link (see "Follow-ups to check" above). Everything in sections 4 and 5 is Ben's to do and isn't tracked here.
