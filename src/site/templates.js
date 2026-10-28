@@ -1367,15 +1367,6 @@ function postHailMailSignup() {
 }
 
 /**
- * Google's "preferred sources" page for this site: a reader who stars it there
- * sees more of the site in Top Stories. Domain only, no path, per Google's
- * format (developers.google.com/search/docs/appearance/preferred-sources).
- */
-export function preferredSourceUrl(siteUrl) {
-  return `https://www.google.com/preferences/source?q=${encodeURIComponent(new URL(siteUrl).hostname)}`;
-}
-
-/**
  * "Send this to the group chat" at the end of a post. Most of the site's
  * traffic arrives with no referrer, which is mostly people tapping a link in
  * iMessage, Slack or a group text, so the readers who share a post are already
@@ -1384,8 +1375,13 @@ export function preferredSourceUrl(siteUrl) {
  *
  * site.js opens the phone's share sheet (navigator.share), or copies the link
  * on a desktop browser without one. The button is hidden until site.js shows
- * it, so with JavaScript off there's no button that does nothing; the
- * Preferred Sources link under it is a plain link and always shows.
+ * it, so with JavaScript off there's no button that does nothing.
+ *
+ * A Google Preferred Sources link sat under the button for a day (Oct 28) and
+ * came out: Google's source tool didn't list the site yet, so the link landed
+ * readers on "No results". Once a search for theburgundywire.com at
+ * google.com/preferences/source finds it, the link is
+ * https://www.google.com/preferences/source?q=theburgundywire.com
  */
 function postShare({ siteUrl, path, title }) {
   const url = `${canonicalUrl(siteUrl, path)}?via=share`;
@@ -1398,7 +1394,6 @@ function postShare({ siteUrl, path, title }) {
         </button>
         <p class="post-share-done" role="status" hidden>Link copied. Go paste it in the chat.</p>
       </div>
-      <p class="post-share-google">Find us on Google? <a href="${escapeHtml(preferredSourceUrl(siteUrl))}" target="_blank" rel="noopener noreferrer">Add The Burgundy Wire as a preferred source</a> and Google shows you more of it in Top Stories.</p>
     </aside>`;
 }
 

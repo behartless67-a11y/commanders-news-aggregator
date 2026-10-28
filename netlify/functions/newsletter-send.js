@@ -6,9 +6,6 @@ import path from 'node:path';
 import { pollGame } from '../../src/lib/predictions.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://theburgundywire.com';
-// Google's page for starring this site as a preferred source (same link as the
-// end of every post; preferredSourceUrl() in src/site/templates.js).
-const PREFERRED_SOURCE_URL = `https://www.google.com/preferences/source?q=${new URL(SITE_URL).hostname}`;
 const FROM = process.env.NEWSLETTER_FROM || 'Ben at The Burgundy Wire <newsletter@theburgundywire.com>';
 
 function unsubscribeUrl(email) {
@@ -163,7 +160,6 @@ function buildHtml(subject, body, email, poll = null) {
         ${pollAsk(poll, body)}
       </td></tr>
       <tr><td align="center" style="padding:24px 32px;border-top:1px solid #3a2b16;text-align:center;">
-        <p style="margin:0 0 10px;color:#a89f9b;font-family:${FONT};font-size:12px;line-height:1.5;">Use Google News? <a href="${PREFERRED_SOURCE_URL}" style="color:#FFB612;text-decoration:underline;">Add The Burgundy Wire as a preferred source</a> and Google shows you more of it.</p>
         <p style="margin:0 0 6px;color:#7c7370;font-family:${FONT};font-size:12px;">You're getting this because you signed up at theburgundywire.com.</p>
         <p style="margin:0;color:#7c7370;font-family:${FONT};font-size:12px;"><a href="${unsubscribeUrl(email)}" style="color:#a89f9b;text-decoration:underline;">Unsubscribe</a> anytime. No hard feelings.</p>
       </td></tr>

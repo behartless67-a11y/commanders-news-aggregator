@@ -244,7 +244,9 @@ Who has the next game and how many flags his crews throw, plus our last game's f
 
 ### Send it to the group chat (end of every post)
 
-A button under each post that opens the phone's share sheet (or copies the link on a desktop). The link carries `?via=share`, so readers it brings in show up in the admin referrers as **Reader share (group chat)**. Under it, a link to add the site as a Google preferred source; the same link is in the Hail Mail footer.
+A button under each post that opens the phone's share sheet (or copies the link on a desktop). The link carries `?via=share`, so readers it brings in show up in the admin referrers as **Reader share (group chat)**.
+
+**Google Preferred Sources** (readers starring the site so Google shows more of it): not linked yet, because Google's tool doesn't list the site (checked Oct 28). Once a search for theburgundywire.com at google.com/preferences/source finds it, the link to add under the share button and in the Hail Mail footer is `https://www.google.com/preferences/source?q=theburgundywire.com`.
 
 ### Call your shot (the reader score poll)
 
