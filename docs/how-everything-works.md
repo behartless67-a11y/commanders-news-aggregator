@@ -239,6 +239,12 @@ Who has the next game and how many flags his crews throw, plus our last game's f
 - **The numbers** come from ESPN: every finished game's referee and both teams' accepted penalties, this season and last. Each game is fetched once and kept in `data/refcrew.json`, so after the first big backfill a nightly run only reads that week's games.
 - **Ranks** only include referees with 5 or more games, so a new ref shows his numbers with "too few to rank him yet."
 - **Refresh by hand:** `npm run ref-crew`. It's in the nightly job, after team stats.
+- **The full page:** `whos-reffing.html` ("Every ref, ranked" on the card) has the same numbers plus every referee in a table and every game this crew has had with Washington. It's one permanent URL whose title changes with the game ("Who's Reffing Commanders vs. Eagles (Week 8)? ..."), built for the weekly "who's reffing the Commanders game" search, and it's in the sitemap.
+- **Your line for the week:** add one to `config/ref-notes.js`, keyed `"<season>-<week>"` (`'2026-8': '...'`). It shows on the page that week only. Optional.
+
+### Send it to the group chat (end of every post)
+
+A button under each post that opens the phone's share sheet (or copies the link on a desktop). The link carries `?via=share`, so readers it brings in show up in the admin referrers as **Reader share (group chat)**. Under it, a link to add the site as a Google preferred source; the same link is in the Hail Mail footer.
 
 ### Call your shot (the reader score poll)
 

@@ -5245,3 +5245,129 @@ body.tv-page{
   color: var(--text-faint);
   line-height: 1.4;
 }
+
+/* ---------- Send it to the group chat (postShare() in templates.js) ----------
+   Sits between the end of a post and the Hail Mail box, so it's the first
+   thing a reader sees on finishing. The row starts hidden and site.js shows
+   it when the browser can share or copy. */
+.post-share{
+  max-width: 640px;
+  margin: 28px 0 0;
+}
+.post-share-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin: 0 0 12px;
+}
+.post-share-row[hidden]{ display: none; }
+.post-share-ask{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.post-share-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.post-share-btn svg{ fill: currentColor; }
+.post-share-btn:hover{ background: var(--gold); color: #0a0807; }
+.post-share-done{
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+.post-share-google{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-faint);
+}
+.post-share-google a{ color: var(--text-muted); font-weight: 600; }
+.post-share-google a:hover{ color: var(--gold); }
+
+/* ---------- Who's reffing (whos-reffing.html, renderRefsPage()) ---------- */
+.widget .ref-more{
+  font-size: 12.5px;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+.ref-more a{ color: var(--gold); }
+.refs-page{
+  max-width: 760px;
+  margin: 0 auto;
+}
+.refs-eyebrow{
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.refs-answer{
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 6px 0 18px;
+}
+.refs-answer strong{ color: var(--gold); }
+.refs-figure{ margin: 0 0 14px; }
+.refs-figure .ref-num{ font-size: 44px; }
+.refs-figure .ref-num-label{ font-size: 13px; }
+.refs-facts{
+  margin: 0 0 20px;
+  padding-left: 20px;
+  color: var(--text);
+  line-height: 1.6;
+}
+.refs-facts li{ margin: 0 0 4px; }
+.refs-note-ben{
+  margin: 0 0 22px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--gold);
+  background: var(--surface);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.55;
+}
+.refs-note-ben strong{ color: var(--gold); }
+.refs-h2{
+  font-size: 18px;
+  margin: 28px 0 10px;
+}
+.refs-table td:nth-child(n+3), .refs-table th:nth-child(n+3){
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.refs-row-ours td{
+  background: rgba(255,182,18,0.10);
+  font-weight: 700;
+}
+.refs-tag{
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #0a0807;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  vertical-align: 1px;
+}
+.refs-page .post-poll{ margin-top: 28px; }

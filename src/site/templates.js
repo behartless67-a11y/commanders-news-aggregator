@@ -1070,6 +1070,7 @@ function refCrewWidget(card) {
     <div class="widget widget-refcrew" id="ref-crew">
       <h2>${escapeHtml(heading)}</h2>
       ${lines.join('\n      ')}
+      <p class="ref-more"><a href="whos-reffing.html">Every ref, ranked &rarr;</a></p>
       <p class="ref-note">Assignment from <a href="${escapeHtml(assignment?.url || 'https://www.footballzebras.com/category/assignments/')}" target="_blank" rel="noopener noreferrer">Football Zebras</a>. Flags are accepted penalties on both teams, from ESPN box scores.</p>
     </div>`;
 }
@@ -1363,6 +1364,42 @@ function postHailMailSignup() {
     heading: 'Get the next one in your inbox',
     body: 'Hail Mail is my email for Commanders fans who feel too much. Before every game: my score, the crowd\'s score, who\'s in and who\'s out, and the one thing that made me yell at the TV that week.',
   });
+}
+
+/**
+ * Google's "preferred sources" page for this site: a reader who stars it there
+ * sees more of the site in Top Stories. Domain only, no path, per Google's
+ * format (developers.google.com/search/docs/appearance/preferred-sources).
+ */
+export function preferredSourceUrl(siteUrl) {
+  return `https://www.google.com/preferences/source?q=${encodeURIComponent(new URL(siteUrl).hostname)}`;
+}
+
+/**
+ * "Send this to the group chat" at the end of a post. Most of the site's
+ * traffic arrives with no referrer, which is mostly people tapping a link in
+ * iMessage, Slack or a group text, so the readers who share a post are already
+ * the biggest source of new ones. This makes that one tap, and tags the link
+ * ?via=share so track.js can count what it brings in.
+ *
+ * site.js opens the phone's share sheet (navigator.share), or copies the link
+ * on a desktop browser without one. The button is hidden until site.js shows
+ * it, so with JavaScript off there's no button that does nothing; the
+ * Preferred Sources link under it is a plain link and always shows.
+ */
+function postShare({ siteUrl, path, title }) {
+  const url = `${canonicalUrl(siteUrl, path)}?via=share`;
+  return `<aside class="post-share" aria-label="Share this post">
+      <div class="post-share-row" data-share-url="${escapeHtml(url)}" data-share-title="${escapeHtml(title)}" hidden>
+        <p class="post-share-ask">Know somebody who needs to read this?</p>
+        <button type="button" class="post-share-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2z"/></svg>
+          Send it to the group chat
+        </button>
+        <p class="post-share-done" role="status" hidden>Link copied. Go paste it in the chat.</p>
+      </div>
+      <p class="post-share-google">Find us on Google? <a href="${escapeHtml(preferredSourceUrl(siteUrl))}" target="_blank" rel="noopener noreferrer">Add The Burgundy Wire as a preferred source</a> and Google shows you more of it in Top Stories.</p>
+    </aside>`;
 }
 
 /**
@@ -2228,6 +2265,7 @@ ${header('blog.html', true, isGameLive)}
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
 ${originalArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
+    ${postShare({ siteUrl, path: `blog-original-${record.slug}.html`, title: record.title })}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
@@ -2288,6 +2326,7 @@ ${header('blog.html', true, isGameLive)}
 <main class="layout${rail ? '' : ' layout-wide'}">
   <div>
 ${mondayArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
+    ${postShare({ siteUrl, path: `blog-monday-${record.key}.html`, title: record.title })}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
@@ -4009,6 +4048,177 @@ ${header('cville.html', hasWeekly, isGameLive)}
     <h1 class="podcasts-heading">Cville Spots</h1>
     <p class="page-intro">I live in Charlottesville. If this site ever becomes a place for local Commanders fans to find each other in person, this is where that starts: a short, hand-picked list of local spots that are Commanders-friendly. No algorithm, no paid placement, just places I'd actually send a friend.</p>
     ${list}
+  </div>
+</main>
+
+${footer(sources, generatedAt)}
+
+<a class="wire-taps-tab" href="wiretaps.html" aria-label="Ask a question on Wire Taps">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6z"/></svg>
+  <span>Got a question? Wire Taps</span>
+</a>
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8l6 6H6z"/></svg>
+</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>`;
+}
+
+/**
+ * whos-reffing.html: the ref card as a page of its own, for the search people
+ * actually type every week ("who is reffing the Commanders game"). One
+ * permanent URL whose title and heading change with the game, so whatever
+ * ranking it earns carries over from week to week instead of starting over
+ * on a new post. Same numbers as the sidebar card (refCrewCard() in
+ * src/lib/refcrew.js), plus the full referee table and every game this crew
+ * has had with Washington, which the card has no room for.
+ *
+ * `note` is Ben's own line for the week, from config/ref-notes.js. The page
+ * reads fine without one.
+ */
+function refsPageTitle(card) {
+  const a = card?.assignment;
+  const opp = card?.nextOpponent;
+  if (a && opp) return `Who's Reffing Commanders vs. ${opp} (Week ${a.week})? ${a.referee}'s Crew, by the Numbers`;
+  if (opp && card.nextWeek) return `Who's Reffing Commanders vs. ${opp} (Week ${card.nextWeek})? Crews Are Announced Tuesdays`;
+  return `Who's Reffing the Commanders Game? Referee Assignments and Flag Counts`;
+}
+
+function refsRankingsTable(card) {
+  const ours = card.assignment ? card.assignment.referee : null;
+  const rows = card.rankings
+    .map((r, i) => {
+      const mine = ours && r.name === card.assignment.referee ? ' class="refs-row-ours"' : '';
+      return `<tr${mine}>
+        <td>${i + 1}</td>
+        <td>${escapeHtml(r.name)}${mine ? ' <span class="refs-tag">This week</span>' : ''}</td>
+        <td>${r.games}</td>
+        <td>${escapeHtml(String(r.flagsPerGame))}</td>
+        <td>${r.yardsPerGame}</td>
+      </tr>`;
+    })
+    .join('\n');
+  return `<div class="depth-chart-scroll">
+      <table class="depth-chart-table refs-table">
+        <thead><tr><th>#</th><th>Referee</th><th>Games</th><th>Flags a game</th><th>Yards a game</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWeekly = false, isGameLive = false, refCrew = null, poll = null, note = null }) {
+  const card = refCrew;
+  const title = refsPageTitle(card);
+  const a = card?.assignment || null;
+  const ref = card?.ref || null;
+  const opp = card?.nextOpponent || null;
+  const seasons = card ? `${card.season - 1} and ${card.season}` : '';
+
+  let description;
+  if (a && ref?.rank) {
+    description = `${a.referee}'s crew has ${a.game} in Week ${a.week}: ${ref.flagsPerGame} flags a game, ${ordinalOf(ref.rank)} most of ${ref.rankedRefs} NFL referees, and how Washington has done with them.`;
+  } else if (a) {
+    description = `${a.referee}'s crew has ${a.game} in Week ${a.week}. Flag counts for every NFL referee, and how the Commanders draw them.`;
+  } else {
+    description = 'Which referee has the next Washington Commanders game, how many flags each NFL crew throws, and how many the Commanders draw. Updated every week.';
+  }
+
+  const sections = [];
+  const kickoff = card?.nextIso ? formatGameDateTime(card.nextIso) : '';
+  const eyebrow = [card?.nextWeek ? `Week ${card.nextWeek}` : '', kickoff].filter(Boolean).map(escapeHtml).join(' &middot; ');
+  const heading = opp ? `Who's reffing Commanders vs. ${opp}?` : "Who's reffing the Commanders game?";
+
+  if (a) {
+    sections.push(`<p class="refs-answer"><strong>${escapeHtml(a.referee)}</strong> and crew have ${escapeHtml(a.game)}.</p>`);
+    if (ref?.rank) {
+      sections.push(`<div class="ref-figure refs-figure">
+        <span class="ref-num">${escapeHtml(String(ref.flagsPerGame))}</span>
+        <span class="ref-num-label">flags a game from ${escapeHtml(a.referee)}'s crews<br />League average: ${escapeHtml(String(card.leagueFlagsPerGame))}</span>
+      </div>`);
+      sections.push(`<ul class="refs-facts">
+        <li>${escapeHtml(ordinalOf(ref.rank))} most flags of ${ref.rankedRefs} referees, over ${ref.games} games in ${seasons}.</li>
+        <li>${ref.yardsPerGame} penalty yards a game.</li>
+        <li>Home teams draw ${escapeHtml(String(ref.homeFlagsPerGame))} flags a game from this crew, road teams ${escapeHtml(String(ref.awayFlagsPerGame))}.</li>
+      </ul>`);
+    } else if (ref) {
+      sections.push(`<p class="page-intro">${ref.games} game${ref.games === 1 ? '' : 's'} in ${seasons} so far, ${escapeHtml(String(ref.flagsPerGame))} flags a game. Too few to rank against the other referees yet.</p>`);
+    } else {
+      sections.push(`<p class="page-intro">No games on record for this referee in ${seasons}, so there's nothing to rank yet.</p>`);
+    }
+  } else if (card?.nextWeek) {
+    sections.push(`<p class="refs-answer">Not announced yet. Football Zebras posts the week's referee assignments on Tuesdays, and this page picks it up that night.</p>`);
+  } else {
+    sections.push(`<p class="refs-answer">No Commanders game on the schedule right now. This page comes back to life when the next one is.</p>`);
+  }
+
+  if (note) sections.push(`<p class="refs-note-ben"><strong>Ben:</strong> ${escapeHtml(note)}</p>`);
+
+  if (a) {
+    const history = card.withUs || [];
+    const items = history.length
+      ? `<ul class="refs-facts">${history
+          .map((g) => `<li>${g.season} Week ${g.week} vs. the ${escapeHtml(g.opponent)}: ${flagsWord(g.ourFlags)} on Washington, ${g.theirFlags} on the ${escapeHtml(g.opponent)}.</li>`)
+          .join('')}</ul>`
+      : `<p class="page-intro">${escapeHtml(a.referee)} hasn't had a Commanders game in ${seasons}.</p>`;
+    sections.push(`<h2 class="refs-h2">${escapeHtml(a.referee)} and Washington</h2>\n${items}`);
+  }
+
+  const lg = card?.lastGame;
+  const us = card?.commanders;
+  if (lg || us) {
+    const lines = [];
+    if (lg) lines.push(`<li>Last game${lg.referee ? ` (${escapeHtml(lg.referee)}'s crew)` : ''}: ${flagsWord(lg.ourFlags)} on Washington, ${lg.theirFlags} on the ${escapeHtml(lg.opponent)}.</li>`);
+    if (us) lines.push(`<li>${escapeHtml(String(us.flagsPerGame))} flags a game over ${us.games} games, ${escapeHtml(ordinalOf(us.rank))} most of ${us.teams} teams.</li>`);
+    sections.push(`<h2 class="refs-h2">The Commanders and flags in ${card.season}</h2>\n<ul class="refs-facts">${lines.join('')}</ul>`);
+  }
+
+  if (card?.rankings?.length) {
+    sections.push(`<h2 class="refs-h2">Every referee, most flags to fewest</h2>
+    <p class="page-intro">${seasons} regular seasons, referees with at least five games. Flags are accepted penalties on both teams.</p>
+    ${refsRankingsTable(card)}`);
+  }
+
+  sections.push(`<h2 class="refs-h2">Where this comes from</h2>
+    <p class="page-intro">The assignment is from <a href="${escapeHtml(a?.url || 'https://www.footballzebras.com/category/assignments/')}" target="_blank" rel="noopener noreferrer">Football Zebras</a>, which posts every week's referees on Tuesday. The flags are ESPN's box scores: every accepted penalty in every game of the last two seasons, counted for the referee whose crew worked it. Updated every night${card?.fetchedAt ? `, last on ${escapeHtml(formatLongDate(card.fetchedAt))}` : ''}.</p>`);
+
+  const pollBlock = poll ? predictionWidget(poll, { id: 'call-your-shot-refs', className: 'post-poll', heading: 'Call your shot' }) : '';
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(title)} | ${escapeHtml(siteName)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+${socialMetaTags({ title: `${title} | ${siteName}`, description, siteUrl, path: 'whos-reffing.html' })}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css" />
+${SPECULATION_RULES}
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#5A1414">
+</head>
+<body>
+
+<div class="hero">
+${header('whos-reffing.html', hasWeekly, isGameLive)}
+</div>
+
+<main class="layout layout-wide">
+  <div class="refs-page">
+    ${eyebrow ? `<p class="refs-eyebrow">${eyebrow}</p>` : ''}
+    <h1 class="podcasts-heading">${escapeHtml(heading)}</h1>
+    ${sections.join('\n    ')}
+    ${pollBlock}
+    ${postShare({ siteUrl, path: 'whos-reffing.html', title })}
   </div>
 </main>
 

@@ -18,6 +18,7 @@ import { loadStandingsCache } from '../lib/standings.js';
 import { loadRefCrewCache, refCrewCard } from '../lib/refcrew.js';
 import { pollGame } from '../lib/predictions.js';
 import { BEN_PICKS } from '../../config/predictions.js';
+import { REF_NOTES } from '../../config/ref-notes.js';
 import { isGameWindowActive } from '../lib/gamewindow.js';
 import { loadLiveGameState } from '../lib/livegame.js';
 import { buildRosterIndex, countMentions } from '../lib/roster-links.js';
@@ -26,7 +27,7 @@ import { listDigests } from '../digest/generate.js';
 import { listPreviews } from '../digest/preview-generate.js';
 import { listOriginals } from '../digest/originals.js';
 import { listMondays } from '../digest/monday-generate.js';
-import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
+import { renderPage, renderRss, renderSitemap, renderWeeklyIndex, renderWeeklyPost, renderPreviewPost, renderOriginalPost, renderMondayPost, renderPodcastsPage, renderVideosPage, renderMusicPage, renderHowItWorksPage, renderRosterPage, renderDepthChartPage, renderInjuryReportPage, renderContactPage, renderDonatePage, renderLocalSpotsPage, renderRefsPage, renderWireTapsPage, renderHailMailPage, renderAbroadPage, renderRollCallPage, renderFiveThousandPage, renderAboutPage, renderAdminPage, renderBeatWritersPage, renderSocialFeedPage, renderTvPage, blogRiverItems, liveGameRiverItem, PAGES } from './templates.js';
 
 const DIST_DIR = path.resolve(process.env.DIST_DIR || 'dist');
 const SITE_NAME = process.env.SITE_NAME || 'The Burgundy Wire';
@@ -520,6 +521,21 @@ export async function buildSite() {
     'utf8',
   );
 
+  // The ref card as its own page, for the weekly "who's reffing" search (see
+  // renderRefsPage()). Linked from the card itself, and in the sitemap.
+  const refCard = gameWeek.refCrew;
+  const refWeek = refCard?.assignment?.week || refCard?.nextWeek;
+  await fs.writeFile(
+    path.join(DIST_DIR, 'whos-reffing.html'),
+    renderRefsPage({
+      siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive,
+      refCrew: refCard,
+      poll: gameWeek.poll,
+      note: refCard && refWeek ? REF_NOTES[`${refCard.season}-${refWeek}`] || null : null,
+    }),
+    'utf8',
+  );
+
   await fs.writeFile(
     path.join(DIST_DIR, 'music.html'),
     renderMusicPage({ siteName: SITE_NAME, siteUrl: SITE_URL, sources: SOURCES, generatedAt, hasWeekly, isGameLive }),
@@ -573,6 +589,7 @@ export async function buildSite() {
     'index.html', 'about.html', 'how-it-works.html', 'roster.html',
     'depth-chart.html', 'injury-report.html', 'contact.html',
     'music.html', 'cville.html', 'wiretaps.html', 'hail-mail.html',
+    'whos-reffing.html',
   ];
   const sitemapEntries = [
     ...staticPaths.map((p) => ({ path: p, lastmod: generatedAt })),

@@ -837,6 +837,35 @@
   });
 
   /**
+   * "Send it to the group chat" (postShare() in templates.js). Phones get
+   * their own share sheet, which is where iMessage and the group texts live;
+   * a desktop browser without one gets the link copied instead. Hidden in the
+   * HTML and shown here, so a reader without JavaScript never sees a button
+   * that does nothing. The link carries ?via=share, so whoever it brings in
+   * is counted as a reader share.
+   */
+  Array.prototype.forEach.call(document.querySelectorAll('.post-share-row[data-share-url]'), function (row) {
+    var url = row.getAttribute('data-share-url');
+    var title = row.getAttribute('data-share-title') || document.title;
+    var btn = row.querySelector('.post-share-btn');
+    var done = row.querySelector('.post-share-done');
+    var canCopy = navigator.clipboard && window.isSecureContext;
+    if (!navigator.share && !canCopy) return;
+    row.hidden = false;
+    btn.addEventListener('click', function () {
+      if (navigator.share) {
+        // A reader backing out of the share sheet rejects too; that's not an error.
+        navigator.share({ title: title, url: url }).catch(function () {});
+        return;
+      }
+      navigator.clipboard.writeText(url).then(
+        function () { done.textContent = 'Link copied. Go paste it in the chat.'; done.hidden = false; },
+        function () { done.textContent = 'Copy this link: ' + url; done.hidden = false; }
+      );
+    });
+  });
+
+  /**
    * Hail Mail floating bar. Shows after 2 seconds on every page load, as
    * long as the visitor hasn't subscribed or dismissed it (or is the admin).
    * Tapping "Sign me up" opens the subscribe modal; X permanently dismisses.

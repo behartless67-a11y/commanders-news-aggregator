@@ -88,6 +88,9 @@ const VIA_LABELS = {
   sticker: 'Sticker (QR code)',
   hailmail: 'Hail Mail email',
   podcast: 'Podcast mention',
+  // The "Send it to the group chat" button at the end of a post (postShare()
+  // in templates.js): a reader passing a link along, not Ben.
+  share: 'Reader share (group chat)',
 };
 
 function viaBucket(raw) {

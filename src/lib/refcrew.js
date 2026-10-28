@@ -248,6 +248,8 @@ function nextCommandersGame(schedule) {
  *   withUs         his games involving Washington in the same window
  *   lastGame       the most recent Washington game in the cache, whoever reffed
  *   commanders     Washington's own flags per game this season, and its rank
+ *   rankings       every referee with enough games, most flags first, for the
+ *                  table on whos-reffing.html (the sidebar card doesn't use it)
  */
 export function refCrewCard(cache, schedule) {
   const all = Object.values(cache?.games || {});
@@ -336,13 +338,22 @@ export function refCrewCard(cache, schedule) {
   if (!assignment && !lastGame) return null;
   return {
     season,
+    fetchedAt: cache.fetchedAt || null,
     assignment,
     ref,
     leagueFlagsPerGame: leagueFlags,
     withUs,
     lastGame,
     commanders,
+    rankings: ranked.map((r) => ({
+      name: r.name,
+      games: r.games,
+      flagsPerGame: round1(r.flags / r.games),
+      yardsPerGame: Math.round(r.yards / r.games),
+    })),
     nextWeek: next?.week || null,
+    nextOpponent: next?.opponent || null,
+    nextIso: next?.iso || null,
     // "Sunday", for the "Sunday's ref" heading: most weeks, but not Thursdays,
     // Mondays, Christmas or London.
     nextDay: next ? new Date(next.iso).toLocaleDateString('en-US', { timeZone: TZ, weekday: 'long' }) : null,
