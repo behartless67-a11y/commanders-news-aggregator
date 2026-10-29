@@ -3935,16 +3935,29 @@ main.layout{
   padding: 8px 16px;
 }
 
-/* Guarantees the RSS and Watch Party links stack on their own lines rather
-   than sitting side by side — .rss-link is inline-flex, so two of them as
-   plain siblings would otherwise flow onto the same line whenever the
-   column is wide enough to fit both, instead of always stacking the way
-   every other footer column's content does. */
+/* The Subscribe column's pills. A grid, not inline-flex siblings, so the
+   pills are all the same width and never flow onto one line by accident.
+   One column here; two side by side from 900px up (see that breakpoint),
+   where seven stacked pills had grown taller than the source lists beside
+   them. Capped so the pills don't balloon on a wide monitor. */
 .footer-links-col{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  /* As many 170px-plus columns as fit: two on a laptop and up, one when the
+     column is narrower than that, so "Watch Party Mode" never overflows
+     its pill. */
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 10px;
+  max-width: 440px;
+}
+.footer-links-col h3{
+  grid-column: 1 / -1;
+  margin-bottom: 4px;
+}
+.footer-links-col .rss-link{
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  white-space: nowrap;
 }
 
 .rss-link:hover{
@@ -4418,8 +4431,11 @@ main.layout.page-admin{
   main.layout.layout-wide{
     grid-template-columns: minmax(0, 1fr);
   }
+  /* The Subscribe column gets a real share of the width (it was `auto`,
+     which pinned a narrow stack of pills to the far right with a gap of
+     nothing beside it) and lays its pills out two across. */
   .footer-grid{
-    grid-template-columns: 1.4fr 1.4fr 1fr auto;
+    grid-template-columns: 1.3fr 1.3fr 0.9fr 1.5fr;
     gap: 32px;
     align-items: start;
   }
