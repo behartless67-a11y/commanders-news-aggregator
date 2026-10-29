@@ -1,44 +1,4 @@
 {
-  "social-5ba6ba16d88f": {
-    "id": "social-5ba6ba16d88f",
-    "url": "https://x.com/Commanders/status/2112298997490556971",
-    "text": "They call him Sonny Styles for a reason 👔",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/469/772/475/211/897/original/43d62d4b3b9338ae.jpg"
-    ],
-    "publishedAt": "2026-10-19T21:45:00.000Z",
-    "collectedAt": "2026-10-19T22:05:40.918Z"
-  },
-  "social-b3d175045383": {
-    "id": "social-b3d175045383",
-    "url": "https://x.com/Commanders/status/2112294651596312578",
-    "text": "👋👋 @JayD__5@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-19T21:27:44.000Z",
-    "collectedAt": "2026-10-19T22:05:40.919Z"
-  },
-  "social-638c6939e74c": {
-    "id": "social-638c6939e74c",
-    "url": "https://x.com/tashanreed/status/2112297292304957548",
-    "text": "Programming update: With the #Commanders on a bye next week, I'll be livestreaming The Tashan Reed Show following their MNF matchup with the 49ers tonight. Subscribe to my Substack to get an alert when I go live:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/469/735/494/977/251/original/2c16e1fb47beed97.jpg"
-    ],
-    "publishedAt": "2026-10-19T21:38:13.000Z",
-    "collectedAt": "2026-10-19T22:05:46.515Z"
-  },
   "social-6adfda6f362c": {
     "id": "social-6adfda6f362c",
     "url": "https://x.com/Commanders/status/2112318052423598266",
@@ -50,22 +10,6 @@
     "images": [],
     "publishedAt": "2026-10-19T23:00:43.000Z",
     "collectedAt": "2026-10-19T23:18:11.664Z"
-  },
-  "social-9fb510bf40bf": {
-    "id": "social-9fb510bf40bf",
-    "url": "https://x.com/Commanders/status/2112303975332749347",
-    "text": "We're honoring the legacy of coach Greg Knapp with the @49ers and the #KnappStairClimb , raising awareness against distracted driving 💛 @knappmemorial@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/778/068/389/original/94c2dd6403ee7915.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/921/427/622/original/e1784fcd096f2521.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/469/877/963/825/645/original/2e83c89e517b9efd.jpg"
-    ],
-    "publishedAt": "2026-10-19T22:04:47.000Z",
-    "collectedAt": "2026-10-19T23:18:11.665Z"
   },
   "social-b29e65fbcc4f": {
     "id": "social-b29e65fbcc4f",
