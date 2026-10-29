@@ -23,30 +23,6 @@
     "publishedAt": "2026-09-14T21:25:54.000Z",
     "collectedAt": "2026-09-14T22:06:11.722Z"
   },
-  "riggos-rag-2c2ce612a990": {
-    "id": "riggos-rag-2c2ce612a990",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/grading-jayden-daniels-rocky-commanders-return-after-stirring-late-rally-eagles",
-    "title": "Grading Jayden Daniels’ rocky Commanders return after stirring late rally",
-    "excerpt": "Grading Washington Commanders quarterback Jayden Daniels' long--awaited return to action against the Philadelphia Eagles in Week 1.",
-    "publishedAt": "2026-09-14T21:00:03.000Z",
-    "collectedAt": "2026-09-14T22:06:12.087Z"
-  },
-  "wjla-commanders-9a5b549d818a": {
-    "id": "wjla-commanders-9a5b549d818a",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/pass-protection-and-chunk-plays-hurt-the-commanders-who-still-came-close-to-an-upset-in-p",
-    "title": "Pass protection and chunk plays hurt the Commanders, who still came close to an upset in P",
-    "excerpt": "WASHINGTON (AP) — As expected, Jayden Daniels had to spend a lot of time in the season opener navigating a pass rush that Washington struggled to block.Even so,",
-    "publishedAt": "2026-09-14T21:02:08.000Z",
-    "collectedAt": "2026-09-14T22:06:22.123Z"
-  },
   "yahoo-nfl-00654a4958d0": {
     "id": "yahoo-nfl-00654a4958d0",
     "sourceId": "yahoo-nfl",
@@ -18118,5 +18094,41 @@
     "excerpt": "Defensiive lineman Johnny Newton's early return from injury comes when the Washington Commanders need him most.",
     "publishedAt": "2026-10-29T16:00:03.000Z",
     "collectedAt": "2026-10-29T20:05:34.191Z"
+  },
+  "riggos-rag-b8cebfd9bc37": {
+    "id": "riggos-rag-b8cebfd9bc37",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/amik-robertson-eagles-guarantee-puts-washington-commanders-pride-line",
+    "title": "Amik Robertson's Eagles guarantee puts Commanders' pride on the line",
+    "excerpt": "Washington Commanders cornerback Amik Robertson put the team's pride on the line by guaranteeing victory over the Philadelphia Eagles.",
+    "publishedAt": "2026-10-29T20:21:14.000Z",
+    "collectedAt": "2026-10-29T21:08:21.614Z"
+  },
+  "commanders-youtube-a934fcff5788": {
+    "id": "commanders-youtube-a934fcff5788",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=H4ttiqU9QbU",
+    "title": "Sunday Night NFC East Showdown 🎇 + Film Room: Commanders Defense vs. Eagles | Command Center",
+    "excerpt": "",
+    "publishedAt": "2026-10-29T20:00:08.000Z",
+    "collectedAt": "2026-10-29T21:08:24.914Z"
+  },
+  "wjla-commanders-5124a7c19de8": {
+    "id": "wjla-commanders-5124a7c19de8",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/commanders-quarters-eagles-washington-philadelphia-eagles-dan-quinn-football",
+    "title": "Commanders focus on putting together four complete quarters against Eagles",
+    "excerpt": "The Washington Commanders have shown they can compete for a half this season. On Sunday night, they’ll try to prove they can do it for an entire game.That has b",
+    "publishedAt": "2026-10-29T20:17:00.000Z",
+    "collectedAt": "2026-10-29T21:08:27.878Z"
   }
 }
