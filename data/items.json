@@ -1,100 +1,4 @@
 {
-  "hogs-haven-734d7fdee891": {
-    "id": "hogs-haven-734d7fdee891",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/439442/commanders-philadelphia-eagles-winners-losers-antonio-williams-nick-cross-tyler-owens-week-1",
-    "title": "Commanders vs. Eagles (game one) – Studs and Duds",
-    "excerpt": "The Washington Commanders traveled to Philadelphia for a late afternoon start to open the 2026 season. It was a mixed bag, as Washington’s defense was better than expected while the offense left a lot to be desired.\n\n Ultimately, Washington fell 24-22 in what was a very competitive game. There are a lot of good things fans can take away from this game, however, there are no moral victories and a loss is a loss — especially within the division.\n\n Quinn and company will have a week to clean some…",
-    "publishedAt": "2026-09-14T16:05:09.000Z",
-    "collectedAt": "2026-09-14T16:06:17.163Z"
-  },
-  "riggos-rag-cbd713fad9ea": {
-    "id": "riggos-rag-cbd713fad9ea",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/tyler-owens-viral-eagles-demolition-confirms-his-washington-commanders-rise-coming",
-    "title": "Tyler Owens’ viral Eagles demolition confirms his Commanders rise is coming",
-    "excerpt": "Washington Commanders safety Tyler Owens' viral special-teams play against the Philadelphia Eagles confirmed his rise is coming.",
-    "publishedAt": "2026-09-14T16:00:01.000Z",
-    "collectedAt": "2026-09-14T16:06:18.215Z"
-  },
-  "riggos-rag-db109831342a": {
-    "id": "riggos-rag-db109831342a",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/mike-sainristil-become-liability-washington-commanders-cannot-afford",
-    "title": "Mike Sainristil has become a liability the Commanders cannot afford",
-    "excerpt": "Washington Commanders cornerback Mike Sainristil has become a liability that Daronte Jones' defense cannot afford.",
-    "publishedAt": "2026-09-14T17:30:00.000Z",
-    "collectedAt": "2026-09-14T17:42:22.331Z"
-  },
-  "yahoo-nfl-b00b72427739": {
-    "id": "yahoo-nfl-b00b72427739",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/commanders-tyler-owens-draw-praise-after-exceptional-special-teams-play-one-of-the-greatest-football-plays-ive-ever-seen-160659323.html",
-    "title": "Commanders' Tyler Owens draw praise after exceptional special teams play: 'One of the greatest football plays I've ever seen'",
-    "excerpt": "Washington Commanders safety Tyler Owens proved one important thing with his Week 1 performance: Sometimes, the box score lies. \n If you look at Owens' stat line from Sunday, you'll note that he registered just two tackles in the team's 24-22 loss to the Philadelphia Eagles. But that doesn't tell the full story … far from it.\n Owens received massive praise for a phenomenal special teams tackle, one in which he aggressively fought off multiple blockers before driving the runner into the ground…",
-    "publishedAt": "2026-09-14T16:06:59.000Z",
-    "collectedAt": "2026-09-14T17:42:27.098Z"
-  },
-  "riggos-rag-e32c21c2d94c": {
-    "id": "riggos-rag-e32c21c2d94c",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/sonny-styles-antonio-williams-already-look-like-commanders-draft-breakthrough",
-    "title": "Sonny Styles and Antonio Williams already look like Commanders’ draft breakthrough",
-    "excerpt": "The Washington Commanders got some early encouraging signs from the rookie duo of Sonny Styles and Antonio Williams in Week 1.",
-    "publishedAt": "2026-09-14T19:00:03.000Z",
-    "collectedAt": "2026-09-14T20:06:15.141Z"
-  },
-  "commanders-youtube-a420034935be": {
-    "id": "commanders-youtube-a420034935be",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=pcWi3YT58r4",
-    "title": "LIVE: HC Dan Quinn Speaks To The Media The Day After The Season Opener | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-09-14T19:23:38.000Z",
-    "collectedAt": "2026-09-14T20:06:15.994Z"
-  },
-  "commanders-youtube-01226890ee1c": {
-    "id": "commanders-youtube-01226890ee1c",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=D9JvNlAfvM4",
-    "title": "THE COMMANDERS ARE FOR REAL! Attacking Defense + One Play Away!!! | Booth Review | Washington | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-09-14T18:45:47.000Z",
-    "collectedAt": "2026-09-14T20:06:15.994Z"
-  },
-  "yahoo-nfl-3f893fb800f5": {
-    "id": "yahoo-nfl-3f893fb800f5",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/dan-quinn-talks-mike-sainristil-195302494.html",
-    "title": "Dan Quinn talks about Mike Sainristil, Nick Allegretti, and Sonny Styles",
-    "excerpt": "Dan Quinn spoke to reporters for his weekly “Tell the Truth Monday” press conference. The Commanders lost their season opener to the Philadelphia Eagles 24-22, and now prepare for another road division game against the Cowboys. Quinn liked some things he saw like an improved defense, but also noted areas that need to be improved like the OL, Mike Sainristil, and defending the seam like vs Dallas Goedert on his touchdown play. \n\n Four players left the game with injuries, and Quinn said the team…",
-    "publishedAt": "2026-09-14T19:53:02.000Z",
-    "collectedAt": "2026-09-14T20:06:19.498Z"
-  },
   "hogs-haven-f410176f149c": {
     "id": "hogs-haven-f410176f149c",
     "sourceId": "hogs-haven",
@@ -18166,5 +18070,53 @@
     "excerpt": "The Daily Slop – 29 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n ESPN \n Why Commanders believe they aren’t done yet in the NFC East \n The Washington Commanders’ hopes of climbing into the NFC East race focuses on a variety of factors: The NFC East isn’t good;…",
     "publishedAt": "2026-10-29T14:00:00.000Z",
     "collectedAt": "2026-10-29T15:14:58.940Z"
+  },
+  "hogs-haven-116938f95d29": {
+    "id": "hogs-haven-116938f95d29",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/451633/tylers-take-commanders-adam-peters-2024-nfl-draft-class-grades-full-command-show",
+    "title": "Tyler’s Take: Grading Commanders GM Adam Peters’ 2024 NFL draft class",
+    "excerpt": "Editor’s note: HH analyst Mark Tyler uses input from Commanders analyst Grant Mitchell, who offers quality content you can find on Twitter ( @FullCommandShow ) and on YouTube ( @FullCommandShow ) \n\n \n\n I’ve always said that you can’t grade a draft class for at least two full seasons. With Adam Peters’ 2024 draft class , we now have two full seasons and six games to evaluate.\n\n With that said, the grading of the 2024 class us now pretty fair game…\n\n \n\n I saw this tweet from my friend Grant…",
+    "publishedAt": "2026-10-29T19:48:35.000Z",
+    "collectedAt": "2026-10-29T20:05:33.688Z"
+  },
+  "hogs-haven-542e93a3acd7": {
+    "id": "hogs-haven-542e93a3acd7",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/451760/david-blough-daronte-jones-commanders-eagles-steve-wilks-press-conference",
+    "title": "What David Blough, Daronte Jones said about Commanders clash with Eagles",
+    "excerpt": "The Washington Commanders have come back from their bye week and head into a fourth division game despite the fact that its just Week 8. They are hosting the Philadelphia Eagles on Sunday Night Football in a game that will have big consequences for the loser. \n\n If the Commanders win, they still have a chance in a weak NFC East . Lose and the calls to fire head coach Dan Quinn in get too hard to ignore. That will also affect first-time coordinators Daronte Jones and David Blough who have both…",
+    "publishedAt": "2026-10-29T17:25:33.000Z",
+    "collectedAt": "2026-10-29T20:05:33.688Z"
+  },
+  "riggos-rag-9442f025b1b0": {
+    "id": "riggos-rag-9442f025b1b0",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jeffrey-simmons-trade-puts-washington-commanders-clock-daron-payne",
+    "title": "Jeffrey Simmons trade puts Commanders on the clock over Daron Payne",
+    "excerpt": "Jeffrey Simmons' bombshell trade to the Chicago Bears officially puts the Washington Commanders on the clock with Daron Payne.",
+    "publishedAt": "2026-10-29T17:30:00.000Z",
+    "collectedAt": "2026-10-29T20:05:34.191Z"
+  },
+  "riggos-rag-ca68c95d2c29": {
+    "id": "riggos-rag-ca68c95d2c29",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/johnny-newton-early-return-comes-when-washington-commanders-need-him-most",
+    "title": "Johnny Newton's early return comes when the Commanders need him most",
+    "excerpt": "Defensiive lineman Johnny Newton's early return from injury comes when the Washington Commanders need him most.",
+    "publishedAt": "2026-10-29T16:00:03.000Z",
+    "collectedAt": "2026-10-29T20:05:34.191Z"
   }
 }
