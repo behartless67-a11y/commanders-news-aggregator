@@ -42,6 +42,13 @@
     "notes": "Surgery"
   },
   {
+    "name": "John Bates",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
+    "notes": null
+  },
+  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
@@ -56,11 +63,11 @@
     "notes": "Surgery"
   },
   {
-    "name": "Marcus Mariota",
-    "position": "QB",
+    "name": "Stefon Diggs",
+    "position": "WR",
     "status": "Questionable",
-    "bodyPart": "Knee - MCL",
-    "notes": "Sprain"
+    "bodyPart": "Hand",
+    "notes": null
   },
   {
     "name": "Terry McLaurin",
@@ -68,5 +75,12 @@
     "status": "IR",
     "bodyPart": "Knee",
     "notes": "Surgery"
+  },
+  {
+    "name": "Treylon Burks",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Foot",
+    "notes": null
   }
 ]
