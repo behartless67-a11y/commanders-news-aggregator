@@ -1,40 +1,4 @@
 {
-  "hogs-haven-3b37b057c9c1": {
-    "id": "hogs-haven-3b37b057c9c1",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/439566/commanders-report-card-grades-nfl-week-1-philadelphia-eagles-jayden-daniels-antonio-williams-sonny-styles",
-    "title": "Commanders report card: Team grades in NFL Week 1 loss to Eagles",
-    "excerpt": "The Commanders are 0-1. That’s a simple fact following Sunday’s 24-22 loss to the Philadelphia Eagles at Lincoln Financial Field. \n\n While NFL football’s a zero-sum game, there was some nuance to the season-opener worth noting, with some standout performances and (let’s be honest) unacceptable blunders that played a huge role in the outcome. \n\n There was a reason why the Commanders struggled at the outset and found a way to come storming back, only to be felled by a failed 2-point conversion…",
-    "publishedAt": "2026-09-14T03:08:38.000Z",
-    "collectedAt": "2026-09-14T03:24:03.921Z"
-  },
-  "dc-sports-king-29a946451feb": {
-    "id": "dc-sports-king-29a946451feb",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/watch-tyler-owens-proves-his-value-to-commanders-special-teams-play-of-the-year",
-    "title": "Watch Tyler Owens Proves His Value to Commanders With Special Teams Play of the Year",
-    "excerpt": "A special teams snap rarely becomes the defining highlight of an NFC East divisional clash. Still, Washington Commanders safety Tyler Owens achieved exactly that during Sunday’s season opener against the Philadelphia Eagles. In an astonishing display of effort, power, and physicality, the Texas Tech product demonstrated precisely why he stays a vital piece of the 53-man roster.\n\n During a punt coverage rep at Lincoln Financial Field, Owens delivered a sequence that resembled a professional…",
-    "publishedAt": "2026-09-14T05:26:46.000Z",
-    "collectedAt": "2026-09-14T06:06:13.634Z"
-  },
-  "yahoo-nfl-10ee6401bb2e": {
-    "id": "yahoo-nfl-10ee6401bb2e",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/jalen-hurts-proves-he-can-adapt-while-eagles-oc-sean-mannion-establishes-proof-of-concept-in-win-over-commanders-053710826.html",
-    "title": "Jalen Hurts proves he can adapt while Eagles OC Sean Mannion establishes proof of concept in win over Commanders",
-    "excerpt": "PHILADELPHIA — The reports stacked like cars piling up in Sunday traffic on Interstate 95 en route to Lincoln Financial Field. More than ever, the willingness of Eagles quarterback Jalen Hurts to adapt as a signal-caller and detach from his comfort zone has been under the microscope.\n One dispatch chronicled Hurts' involvement in an underwhelming \"four verts\" play-call that resulted in Philadelphia's drama-infested 2025 campaign ending with an anticlimactic whimper during the wild-card round of…",
-    "publishedAt": "2026-09-14T05:37:10.000Z",
-    "collectedAt": "2026-09-14T06:06:16.138Z"
-  },
   "dc-sports-king-2011a9a530d6": {
     "id": "dc-sports-king-2011a9a530d6",
     "sourceId": "dc-sports-king",
@@ -18178,5 +18142,17 @@
     "excerpt": "The Washington Commanders are still floundering as the NFL regular season approaches its halfway mark. And the 1-4-1 Commanders are looking to climb out of the",
     "publishedAt": "2026-10-28T23:08:04.000Z",
     "collectedAt": "2026-10-29T02:06:44.385Z"
+  },
+  "clutchpoints-c51472a312f5": {
+    "id": "clutchpoints-c51472a312f5",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/ranking-top-3-commanders-most-likely-to-be-dealt-at-2026-nfl-trade-deadline",
+    "title": "Ranking top 3 Commanders most likely to be dealt at 2026 NFL trade deadline",
+    "excerpt": "The Washington Commanders have reached a point where they need to seriously consider their future. With just one win and their playoff hopes fading, Washington should explore trading veterans for future draft capital before the NFL trade deadline on November 10.\n\n The Commanders still have an opportunity to change the narrative, with a Sunday Night Football matchup against the Philadelphia Eagles approaching. However, one victory is not enough to inspire confidence that this team can turn its…",
+    "publishedAt": "2026-10-28T22:39:38.000Z",
+    "collectedAt": "2026-10-29T05:50:10.503Z"
   }
 }

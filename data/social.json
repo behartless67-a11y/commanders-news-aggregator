@@ -6010,7 +6010,7 @@
     "text": "A new injury: #Commanders TE John Bates (shoulder) didn't practice today. Spotted him warming up with a cap on, but he was a non-participant in practice.",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "The Washington Post",
+    "label": "",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-28T22:49:15.000Z",
@@ -6022,10 +6022,64 @@
     "text": "Reminder: I'll be going live to preview the #Commanders ' matchup with the Eagles at 7pm ET tonight. Join here to watch on Substack:",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "The Washington Post",
+    "label": "",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-28T21:26:01.000Z",
     "collectedAt": "2026-10-29T02:06:52.188Z"
+  },
+  "social-aa21e08b7f5d": {
+    "id": "social-aa21e08b7f5d",
+    "url": "https://x.com/JPFinlayNBCS/status/2115644226734080266",
+    "text": "So easy to root for this Brewers team. Congrats Milwaukee.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-10-29T03:17:45.000Z",
+    "collectedAt": "2026-10-29T05:50:20.155Z"
+  },
+  "social-65fe83706e82": {
+    "id": "social-65fe83706e82",
+    "url": "https://x.com/NBA/status/2115650167949148197",
+    "text": "RE: ses/2115620025063149659 AJ Dybantsa becomes the seventh No. 1 overall pick, since 1982-83, to lead his team in scoring in his NBA debut, he joins: Paolo Banchero (2022) Anthony Davis (2012) LeBron James (2003) Allen Iverson (1996) David Robinson (1989) Hakeem Olajuwon (1984)",
+    "handle": "NBA",
+    "author": "NBA",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/522/127/269/910/435/original/16fceafff23ce8cf.jpg"
+    ],
+    "publishedAt": "2026-10-29T03:41:21.000Z",
+    "collectedAt": "2026-10-29T05:50:23.646Z"
+  },
+  "social-9c968814f73b": {
+    "id": "social-9c968814f73b",
+    "url": "https://x.com/BenStandig/status/2115640839871316074",
+    "text": "🎙 Discussed the Dybantsa debut with the dude, @kevinsheehanDC@twitter.com , on the still-unnamed Wizards pod. Open to all. the-dybantsa-debut-comes-in-a-loss?r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/521/993/453/313/664/original/a3b397dbc7fe04be.jpg"
+    ],
+    "publishedAt": "2026-10-29T03:04:17.000Z",
+    "collectedAt": "2026-10-29T05:50:23.646Z"
+  },
+  "social-7b7343887285": {
+    "id": "social-7b7343887285",
+    "url": "https://x.com/caplannfl/status/2115576741037044211",
+    "text": "#Commanders Wednesday injury report..",
+    "handle": "caplannfl",
+    "author": "Adam Caplan",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/520/979/731/090/197/original/66573ded8d828d36.jpg"
+    ],
+    "publishedAt": "2026-10-28T22:49:35.000Z",
+    "collectedAt": "2026-10-29T05:50:35.537Z"
   }
 }
