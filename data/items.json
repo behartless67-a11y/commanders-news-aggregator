@@ -23,18 +23,6 @@
     "publishedAt": "2026-09-15T21:35:20.000Z",
     "collectedAt": "2026-09-15T22:06:14.295Z"
   },
-  "riggos-rag-02235b65e1a2": {
-    "id": "riggos-rag-02235b65e1a2",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/joshua-josephs-keeps-turning-limited-commanders-chances-into-lasting-impressions",
-    "title": "Joshua Josephs keeps turning limited Commanders chances into lasting impressions",
-    "excerpt": "Washington Commanders rookie edge rusher Joshua Josephs keeps turning limited chances into lasting impressions to start his NFL journey.",
-    "publishedAt": "2026-09-15T20:42:20.000Z",
-    "collectedAt": "2026-09-15T22:06:15.040Z"
-  },
   "athletic-jhabvala-2a15636ab647": {
     "id": "athletic-jhabvala-2a15636ab647",
     "sourceId": "athletic-jhabvala",
@@ -18154,5 +18142,41 @@
     "excerpt": "Nov 10, 2024; Landover, Maryland, USA; Washington Commanders head coach Dan Quinn (L) congratulates Commanders quarterback Jayden Daniels (5) after a touchdown drive against the Pittsburgh Steelers during the first half at Northwest Stadium. Mandatory Credit: Geoff Burke-Imagn Images | USA TODAY Sports via Reuters Con The Philadelphia Eagles are riding a five-game losing streak entering Sunday Night Football against the Washington Commanders, a team they beat in the season opener. Can the Birds…",
     "publishedAt": "2026-10-30T16:44:29.000Z",
     "collectedAt": "2026-10-30T20:05:38.707Z"
+  },
+  "hogs-haven-5ea7b098a9a0": {
+    "id": "hogs-haven-5ea7b098a9a0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/451911/commanders-eagles-injury-report-treylon-burks-javon-kinlaw-saquon-barkley",
+    "title": "Commanders vs. Eagles injury report: Treylon Burks questionable",
+    "excerpt": "Commanders receiver Treylon Burks was designated as questionable to play Sunday night’s game against the Philadelphia Eagles due to a foot injury. That’s especially notable for Washington’s first game without Terry McLaurin, who suffered a season-ending torn patellar tendon against the 49ers in a Week 6 loss heading into a bye. \n\n While Antonio Williams will see an increased snap count and target share, Burks is the presumptive replacement at the X receiver position. Not having him against the…",
+    "publishedAt": "2026-10-30T20:16:04.000Z",
+    "collectedAt": "2026-10-30T20:48:35.170Z"
+  },
+  "hogs-haven-e82d680de462": {
+    "id": "hogs-haven-e82d680de462",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/451925/dan-quinn-steve-wilks-another-set-seasoned-eyes-sidelines",
+    "title": "Dan Quinn: Steve Wilks will be another set of seasoned eyes on the sidelines",
+    "excerpt": "The Washington Commanders finished up their last full practice of the week before they host the Philadelphia Eagles at Northwest Stadium on Sunday Night Football. DT Javon Kinlaw (knee) is the only player that will be ruled out, with other injured players set to get evaluated today to see if they’re good to go for Sunday night.\n\n The Commanders hired former head coach Steve Wilks to help on defense, and his role is already increasing from what was originally reported. He was with the team for…",
+    "publishedAt": "2026-10-30T17:00:00.000Z",
+    "collectedAt": "2026-10-30T20:48:35.170Z"
+  },
+  "yahoo-nfl-dec7cbbee93e": {
+    "id": "yahoo-nfl-dec7cbbee93e",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-vs-eagles-injury-report-201604742.html",
+    "title": "Commanders vs. Eagles injury report: Washington could be without two key defensive linemen",
+    "excerpt": "Commanders receiver Treylon Burks was designated as questionable to play Sunday night’s game against the Philadelphia Eagles due to a foot injury. That’s especially notable for Washington’s first game without Terry McLaurin, who suffered a season-ending torn patellar tendon against the 49ers in a Week 6 loss heading into a bye. \n While Antonio Williams will see an increased snap count and target share, Burks is the presumptive replacement at the X receiver position. Not having him against the…",
+    "publishedAt": "2026-10-30T20:16:04.000Z",
+    "collectedAt": "2026-10-30T20:48:43.384Z"
   }
 }

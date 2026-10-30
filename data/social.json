@@ -1,16 +1,4 @@
 {
-  "social-a8e3105e4877": {
-    "id": "social-a8e3105e4877",
-    "url": "https://x.com/RapSheet/status/2112638498020769824",
-    "text": "From @BigDayESPN@twitter.com : The latest on #49ers WR Mike Evans (Achilles) and #Commanders WR Terry McLaurin (torn patellar tendon).",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-10-20T20:14:03.000Z",
-    "collectedAt": "2026-10-20T21:25:24.592Z"
-  },
   "social-00d6ebebd38e": {
     "id": "social-00d6ebebd38e",
     "url": "https://x.com/BenStandig/status/2112678596124750189",
@@ -3211,5 +3199,31 @@
     "images": [],
     "publishedAt": "2026-10-30T16:45:54.000Z",
     "collectedAt": "2026-10-30T20:05:57.827Z"
+  },
+  "social-f2611054be27": {
+    "id": "social-f2611054be27",
+    "url": "https://x.com/BenStandig/status/2116260720039911718",
+    "text": "Four players are \"questionable\" for Sunday, including Daron Payne.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/531/732/009/501/505/original/1f5e9e2721ab3705.jpg"
+    ],
+    "publishedAt": "2026-10-30T20:07:28.000Z",
+    "collectedAt": "2026-10-30T20:48:48.648Z"
+  },
+  "social-fb98d367499c": {
+    "id": "social-fb98d367499c",
+    "url": "https://x.com/tashanreed/status/2116260352602309119",
+    "text": "Bates, Burks, Newton and Payne are questionable:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-30T20:06:00.000Z",
+    "collectedAt": "2026-10-30T20:48:50.057Z"
   }
 }
