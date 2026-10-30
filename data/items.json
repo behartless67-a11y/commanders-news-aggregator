@@ -1,40 +1,4 @@
 {
-  "riggos-rag-5746948fba77": {
-    "id": "riggos-rag-5746948fba77",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/predicting-washington-commanders-next-five-games-after-0-1-start-2026",
-    "title": "Predicting the Commanders' next five games after 0-1 start in 2026",
-    "excerpt": "Predicting the Washington Commanderes' next five games after their 0-1 start to their 2026 campaign.",
-    "publishedAt": "2026-09-15T10:00:00.000Z",
-    "collectedAt": "2026-09-15T10:06:15.452Z"
-  },
-  "riggos-rag-cdb1832b4167": {
-    "id": "riggos-rag-cdb1832b4167",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-should-call-steelers-about-joey-porter-jr-trade-after-week-1",
-    "title": "Commanders should call Steelers about Joey Porter Jr. trade after Week 1",
-    "excerpt": "The Washington Commanders should call the Pittsburgh Steelers about a trade for cornerback Joey Porter Jr. after their Week 1 loss.",
-    "publishedAt": "2026-09-15T11:30:00.000Z",
-    "collectedAt": "2026-09-15T12:06:16.151Z"
-  },
-  "yahoo-nfl-9837f343179f": {
-    "id": "yahoo-nfl-9837f343179f",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/eagles-snap-counts-takeaways-lopsided-070000149.html",
-    "title": "Eagles snap counts: Takeaways from a lopsided Week 1 vs. Commanders",
-    "excerpt": "Eagles snap counts: Takeaways from a lopsided Week 1 vs. Commanders originally appeared on NBC Sports Philadelphia \n It was a little too close for comfort, but the Eagles are 1-0 after beating the Washington Commanders 24-22 in their opener on Sunday.\n The Eagles’ offense had some big explosive plays but struggled to find consistency. Because of that, the Commanders won the time of possession battle 33:20-26:40 on Sunday afternoon.\n That showed up in the snap counts.\n The Eagles’ offense was on…",
-    "publishedAt": "2026-09-15T07:00:00.000Z",
-    "collectedAt": "2026-09-15T12:06:21.849Z"
-  },
   "riggos-rag-bbf6038d030f": {
     "id": "riggos-rag-bbf6038d030f",
     "sourceId": "riggos-rag",
@@ -18142,5 +18106,89 @@
     "excerpt": "The Washington Commanders just put star wide receiver Terry McLaurin on season-ending injured reserve after his knee injury against the San Francisco 49ers. The Commanders could now find themselves down another wideout when they take on the Philadelphia Eagles in Week 8 following their bye week.\n\n Treylon Burks has been downgraded in the team’s latest injury report , per ESPN’s John Keim. After being limited on Wednesday, Burks did not participate on Thursday due to a foot injury.\n\n In his…",
     "publishedAt": "2026-10-30T04:14:36.000Z",
     "collectedAt": "2026-10-30T05:51:11.859Z"
+  },
+  "hogs-haven-3be9bb59956c": {
+    "id": "hogs-haven-3be9bb59956c",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/451867/espn-ranks-sonny-styles-at-top-of-2026-rookie-class-austin-ekeler-daronte-jones-david-blough",
+    "title": "Commanders News: ESPN ranks Sonny Styles at the top of 2026 rookie class",
+    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Sonny Styles #52 of the Washington Commanders defends a pass against Jadarian Price #8 of the Seattle Seahawks during the second quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n The Daily Slop – 30 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the…",
+    "publishedAt": "2026-10-30T12:00:00.000Z",
+    "collectedAt": "2026-10-30T12:05:28.718Z"
+  },
+  "riggos-rag-d072f8083112": {
+    "id": "riggos-rag-d072f8083112",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/bears-jeffery-simmons-trade-exposes-how-far-washington-commanders-fallen-behind",
+    "title": "Bears' Jeffery Simmons trade exposes how far Commanders have fallen behind",
+    "excerpt": "The Chicago Bears' bombshell trade for Jeffery Simmons exposed just how far the Washington Commanders have fallen behind their NFC rivals.",
+    "publishedAt": "2026-10-30T11:30:00.000Z",
+    "collectedAt": "2026-10-30T12:05:29.404Z"
+  },
+  "riggos-rag-fbc107164704": {
+    "id": "riggos-rag-fbc107164704",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/8-washington-commanders-hot-seat-entering-do-or-die-clash-against-eagles",
+    "title": "8 Commanders on the hot seat entering do-or-die clash against Eagles",
+    "excerpt": "Which Washington Commanders are on the hot seat entering their do-or-die clash against the Philadelphia Eagles?",
+    "publishedAt": "2026-10-30T10:00:04.000Z",
+    "collectedAt": "2026-10-30T12:05:29.404Z"
+  },
+  "athletic-commanders-fde6e003e16c": {
+    "id": "athletic-commanders-fde6e003e16c",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7737211/2026/10/30/commanders-coordinators-dan-quinn-bye-week",
+    "title": "The Commanders' first-year coordinators were both risks. When does the payoff arrive?",
+    "excerpt": "Going with new coordinators on both sides of the ball was Dan Quinn's choice and Dan Quinn's gamble, and the scrutiny is only rising.",
+    "publishedAt": "2026-10-30T10:19:13.000Z",
+    "collectedAt": "2026-10-30T12:05:32.322Z"
+  },
+  "wjla-commanders-e1ee8c7eaa1c": {
+    "id": "wjla-commanders-e1ee8c7eaa1c",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/stefon-diggs-talks-commanders-renewed-energy-washington-sunday-game-eagles-mclaurin-antonio-williams",
+    "title": "'The urgency is there': Stefon Diggs talks Commanders' renewed energy",
+    "excerpt": "Playing to the level they're capable of is the constant message that's been around the Commanders program the last few weeks.",
+    "publishedAt": "2026-10-30T11:01:20.000Z",
+    "collectedAt": "2026-10-30T12:05:36.251Z"
+  },
+  "cbs-nfl-30c1784f4eb7": {
+    "id": "cbs-nfl-30c1784f4eb7",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/nfl/news/nfl-week-8-odds-picks-against-spread-predictions-2026",
+    "title": "NFL Week 8 picks, best bets: Lions hand Vikings first loss, Commanders cruise past Eagles",
+    "excerpt": "Jordan Dajani gives his picks for Week 8 of the 2026 NFL season",
+    "publishedAt": "2026-10-30T11:50:04.000Z",
+    "collectedAt": "2026-10-30T12:05:36.750Z"
+  },
+  "yahoo-nfl-6ef745072596": {
+    "id": "yahoo-nfl-6ef745072596",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-commanders-matchups-watch-week-070000816.html",
+    "title": "Eagles-Commanders matchups to watch in Week 8",
+    "excerpt": "Eagles-Commanders matchups to watch in Week 8 originally appeared on NBC Sports Philadelphia \n The Eagles (2-5) travel to face the Washington Commanders (1-4-1) in an NFC East battle.\n Here are some matchups to watch:\n Tanner McKee vs. shaky Commanders pass defense \n With Jalen Hurts out for the rest of the season, Tanner McKee will make his third consecutive start. The offense looked a little better on Monday night against the Cowboys and put up 21 points. They even scored on their first drive…",
+    "publishedAt": "2026-10-30T07:00:00.000Z",
+    "collectedAt": "2026-10-30T12:05:37.122Z"
   }
 }
