@@ -1,40 +1,4 @@
 {
-  "social-a0556e149263": {
-    "id": "social-a0556e149263",
-    "url": "https://x.com/JPFinlayNBCS/status/2112552312623497532",
-    "text": "Washington is 1-4-1 at the bye. Who is this team?",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-20T14:31:35.000Z",
-    "collectedAt": "2026-10-20T14:51:08.974Z"
-  },
-  "social-a47896116810": {
-    "id": "social-a47896116810",
-    "url": "https://mysportgallery.com/@slessans2/117473717422969350",
-    "text": "Does DQ still have a job this morning? Asking for a friend. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-20T14:31:14.000Z",
-    "collectedAt": "2026-10-20T14:51:24.859Z"
-  },
-  "social-5225446b1abe": {
-    "id": "social-5225446b1abe",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3myctxuh4vs2m",
-    "text": "Does DQ still have a job this morning? Asking for a friend. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-10-20T14:31:15.448Z",
-    "collectedAt": "2026-10-20T14:51:24.859Z"
-  },
   "social-888bf96730d9": {
     "id": "social-888bf96730d9",
     "url": "https://x.com/john_keim/status/2112560691223892387",
@@ -3415,5 +3379,97 @@
     "images": [],
     "publishedAt": "2026-10-30T11:36:31.000Z",
     "collectedAt": "2026-10-30T12:05:43.458Z"
+  },
+  "social-05d8bf907623": {
+    "id": "social-05d8bf907623",
+    "url": "https://x.com/JPFinlayNBCS/status/2116140108730515501",
+    "text": "This is really smart - Commanders announce shuttle bus service from downtown DC to Landover starting with the Eagles game. (It’s also funny that it’s called Uber Shuttle when it’s just a bus but that’s a different topic)",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/529/813/899/088/842/original/ad10a6adefe89509.jpg"
+    ],
+    "publishedAt": "2026-10-30T12:08:12.000Z",
+    "collectedAt": "2026-10-30T14:41:51.254Z"
+  },
+  "social-8375dd4986d5": {
+    "id": "social-8375dd4986d5",
+    "url": "https://x.com/john_keim/status/2116164211399069848",
+    "text": "Quick SC4U video. Sonny styles is off to a good start but there’s one area he wants to make more of an impact 100/where-sonny-styles-wants-improve-game?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-30T13:43:59.000Z",
+    "collectedAt": "2026-10-30T14:41:52.642Z"
+  },
+  "social-3f14b11ccee8": {
+    "id": "social-3f14b11ccee8",
+    "url": "https://x.com/john_keim/status/2116154549593342281",
+    "text": "On video …Misery has company: Eagles headed to Washington on a 5-game skid. How bad is it and what’s the future look like? With @Tim_McManus . Enjoy. Plus: more on Steve Wilks and what it could really mean. More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-30T13:05:35.000Z",
+    "collectedAt": "2026-10-30T14:41:52.642Z"
+  },
+  "social-b09ac77a9606": {
+    "id": "social-b09ac77a9606",
+    "url": "https://x.com/BenStandig/status/2116167106530017496",
+    "text": "Link: the-commanders-are-still-learning?utm_source=share&utm_medium=android&r=5rru9i",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/530/202/563/807/349/original/558c8fda84b06bae.jpg"
+    ],
+    "publishedAt": "2026-10-30T13:55:29.000Z",
+    "collectedAt": "2026-10-30T14:41:54.041Z"
+  },
+  "social-40ab715988bb": {
+    "id": "social-40ab715988bb",
+    "url": "https://x.com/BenStandig/status/2116166839403159749",
+    "text": "Had a candid conversation with Commanders OLB Odafe Oweh about the challenges of playing instinctively while the position coaches/teachers are also learning the system (link below).",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/530/202/410/965/919/original/8d4209f5c761f85d.jpg"
+    ],
+    "publishedAt": "2026-10-30T13:54:25.000Z",
+    "collectedAt": "2026-10-30T14:41:54.041Z"
+  },
+  "social-acaf99926714": {
+    "id": "social-acaf99926714",
+    "url": "https://x.com/BenStandig/status/2116142147141341415",
+    "text": "The Commanders are still learning Daronte Jones' defense. So are the coaches tasked with teaching it. Odafe Oweh and Jones explain the communication disconnect, Washington's growing pains and how Steve Wilks arriving may help the cause. My latest ⬇️ the-commanders-are-still-learning",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/529/815/308/810/648/original/fc6738cf8835dd60.jpg"
+    ],
+    "publishedAt": "2026-10-30T12:16:18.000Z",
+    "collectedAt": "2026-10-30T14:41:54.041Z"
+  },
+  "social-bef68c0562fe": {
+    "id": "social-bef68c0562fe",
+    "url": "https://x.com/tashanreed/status/2116160263586029709",
+    "text": "\"Shit, not good enough.\" The #Commanders expected to have a ferocious defensive line that made them capable of shutting down opposing offenses any given week. That's yet to come to fruition through an entire contest. I dug into the reasons why: /10/30/commanders-pass-rush-has-been-aggressive-now-it-needs-be-effective/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-30T13:28:17.000Z",
+    "collectedAt": "2026-10-30T14:41:55.443Z"
   }
 }

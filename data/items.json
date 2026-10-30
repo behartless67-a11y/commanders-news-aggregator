@@ -1,16 +1,4 @@
 {
-  "riggos-rag-bbf6038d030f": {
-    "id": "riggos-rag-bbf6038d030f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/david-blough-uneven-commanders-debut-shows-steep-learning-curve-ahead",
-    "title": "David Blough’s uneven Commanders debut shows the steep learning curve ahead",
-    "excerpt": "An uneven debut from Washington Commanders offensive coordinator David Blough in Week 1 showed the steep learning curve ahead for the rookie play-caller.",
-    "publishedAt": "2026-09-15T13:00:05.000Z",
-    "collectedAt": "2026-09-15T14:06:19.146Z"
-  },
   "hogs-haven-bfa945b2b57c": {
     "id": "hogs-haven-bfa945b2b57c",
     "sourceId": "hogs-haven",
@@ -59,18 +47,6 @@
     "publishedAt": "2026-09-15T16:00:01.000Z",
     "collectedAt": "2026-09-15T16:06:17.539Z"
   },
-  "riggos-rag-adbcf9c29102": {
-    "id": "riggos-rag-adbcf9c29102",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/sam-cosmi-proves-constant-commanders-desperately-need-up-front",
-    "title": "Sam Cosmi proves he’s the constant Commanders desperately need up front",
-    "excerpt": "Washington Commanders offensive lineman Sam Cosmi was nothing short of sensational in Week 1 against the Philadelphia Eagles.",
-    "publishedAt": "2026-09-15T14:30:00.000Z",
-    "collectedAt": "2026-09-15T16:06:17.539Z"
-  },
   "commanders-youtube-a062f8ad1895": {
     "id": "commanders-youtube-a062f8ad1895",
     "sourceId": "commanders-youtube",
@@ -81,18 +57,6 @@
     "title": "TYLER OWENS ANGRY RUNS WINNER 😤",
     "excerpt": "",
     "publishedAt": "2026-09-15T15:30:12.000Z",
-    "collectedAt": "2026-09-15T16:06:18.964Z"
-  },
-  "commanders-youtube-0d132ddf75cf": {
-    "id": "commanders-youtube-0d132ddf75cf",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=VjY6xU6At74",
-    "title": "⭐️ Showing OUT In Dallas, Philly Takeaways & BIG-TIME Predictions | Get Loud | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-09-15T14:00:15.000Z",
     "collectedAt": "2026-09-15T16:06:18.964Z"
   },
   "hogs-haven-db90bb937678": {
@@ -18190,5 +18154,53 @@
     "excerpt": "Eagles-Commanders matchups to watch in Week 8 originally appeared on NBC Sports Philadelphia \n The Eagles (2-5) travel to face the Washington Commanders (1-4-1) in an NFC East battle.\n Here are some matchups to watch:\n Tanner McKee vs. shaky Commanders pass defense \n With Jalen Hurts out for the rest of the season, Tanner McKee will make his third consecutive start. The offense looked a little better on Monday night against the Cowboys and put up 21 points. They even scored on their first drive…",
     "publishedAt": "2026-10-30T07:00:00.000Z",
     "collectedAt": "2026-10-30T12:05:37.122Z"
+  },
+  "hogs-haven-bb3f8e3113ef": {
+    "id": "hogs-haven-bb3f8e3113ef",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/451915/commanders-gm-adam-peters-nfl-trade-deadline-antonio-williams-amik-robertson",
+    "title": "Commanders GM Adam Peters talks NFL trade deadline, Antonio Williams",
+    "excerpt": "The Colts dealt superstar guard Quenton Nelson to the Seattle Seahawks earlier this week. \n\n The Commanders did not make a play for him. \n\n Washington general manager Adam Peters was clear about that in his weekly (paid) interview with 106.7-FM The Fan on Friday morning. He addressed the NFL trade deadline and several other topics during the interview, including receiver Antonio Williams, cornerback Amik Robertson and the state of the Commanders coming out of their bye week. \n\n Here are the…",
+    "publishedAt": "2026-10-30T14:36:46.000Z",
+    "collectedAt": "2026-10-30T14:41:39.878Z"
+  },
+  "riggos-rag-5f9693912e3f": {
+    "id": "riggos-rag-5f9693912e3f",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/steve-wilks-changing-role-leaves-washington-commanders-explanation-problem",
+    "title": "Steve Wilks' changing role leaves Commanders with an explanation problem",
+    "excerpt": "Steve Wilks' changing role already leaves the Washington Commanders with an explanation problem they could have done without.",
+    "publishedAt": "2026-10-30T14:30:00.000Z",
+    "collectedAt": "2026-10-30T14:41:41.421Z"
+  },
+  "riggos-rag-66794daf764f": {
+    "id": "riggos-rag-66794daf764f",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/van-jefferson-promotion-leaves-commanders-trapped-familiar-roster-cycle",
+    "title": "Van Jefferson promotion leaves Commanders trapped in a familiar roster cycle",
+    "excerpt": "The Washington Commanders repeated a familiar pattern by promoting Van Jefferson Jr. over Jaden Bradley to the active roster.",
+    "publishedAt": "2026-10-30T13:00:00.000Z",
+    "collectedAt": "2026-10-30T14:41:41.421Z"
+  },
+  "commanders-youtube-2a5ea4a09b43": {
+    "id": "commanders-youtube-2a5ea4a09b43",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=2CtO_N79Wvc",
+    "title": "Treylon Burks is READY for Primetime vs. Eagles 🔥 + DeAngelo Hall's Love for the Game | Next Man Up",
+    "excerpt": "",
+    "publishedAt": "2026-10-30T14:00:20.000Z",
+    "collectedAt": "2026-10-30T14:41:46.181Z"
   }
 }
