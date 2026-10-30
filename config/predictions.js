@@ -15,6 +15,8 @@ export const BEN_PICKS = {
   '2026-10-11-NYG': { commanders: 24, opponent: 20 },
   // "Turning the Page" (data/originals/turning-the-page.json), Oct 16: we win, and only God knows why.
   '2026-10-19-SF': { commanders: 17, opponent: 16 },
+  // "The Worst Sunday Night Game Ever Made" (data/originals/the-worst-sunday-night-game-ever-made.json), Oct 30: bold, so bold, but we're due.
+  '2026-11-01-PHI': { commanders: 27, opponent: 13 },
 };
 
 /**

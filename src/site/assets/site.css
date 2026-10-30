@@ -5464,6 +5464,35 @@ body.tv-page{
   overflow-wrap: anywhere;
 }
 
+/* The "chip in" pill under the share button (postDonate() in templates.js).
+   Solid gold, so it reads as the one ask, but small: same height as the
+   share button, and the line beside it is muted. */
+.post-donate{
+  max-width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 0 0 20px;
+}
+.post-donate-ask{
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.post-donate-btn{
+  display: inline-flex;
+  align-items: center;
+  background: var(--gold);
+  color: #0a0807;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.post-donate-btn:hover{ background: transparent; color: var(--gold); }
+
 /* ---------- Who's reffing (whos-reffing.html, renderRefsPage()) ---------- */
 .widget .ref-more{
   font-size: 12.5px;

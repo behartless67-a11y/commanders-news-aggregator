@@ -1413,6 +1413,22 @@ function postShare({ siteUrl, path, title }) {
 }
 
 /**
+ * A small gold "chip in" button at the end of each of Ben's posts, under the
+ * share button. Added Oct 29: the Donate tab in the nav hadn't brought in a
+ * dollar since the first week, and the end of a post is where a reader is
+ * most likely to feel they owe the site something. One solid pill and one
+ * line, no box, no banner; it sits in the share row's spot so the end of a
+ * post doesn't grow a new section. Plain HTML, so it shows with JavaScript
+ * off (the share button doesn't).
+ */
+function postDonate() {
+  return `<p class="post-donate">
+      <span class="post-donate-ask">Zero pop-ups, zero car insurance ads. Just me, rattling the tip jar like it's fourth and short.</span>
+      <a class="post-donate-btn" href="donate.html">Chip in a few bucks</a>
+    </p>`;
+}
+
+/**
  * Model citation markers ("[3, 11]") are for validation, not the reading
  * view — the consolidated source list at the end of the post carries that
  * job instead. Also spaces out ESPN's own play-by-play abbreviation style
@@ -1773,9 +1789,29 @@ function essayParagraphs(paragraphs, rosterIndex, { photos = {}, videos = {}, th
         const video = videos[p.slice(7).trim()];
         return video ? essayVideo(video) : '';
       }
-      return `<p class="digest-para">${linkPlayers(p, rosterIndex)}</p>`;
+      return `<p class="digest-para">${proseWithLinks(p, rosterIndex)}</p>`;
     })
     .join('\n');
+}
+
+/**
+ * `[text](page.html)` inside a paragraph becomes a link; everything else is
+ * escaped and player-linked as before. Added Oct 30 so a post can point at
+ * the site's own pages (Ref Watch, the leaderboard) mid-sentence instead of
+ * only in the plug box at the end. Only this site's own pages or https URLs,
+ * and the link text is escaped like any other prose.
+ */
+const PROSE_LINK = /\[([^\]\n]+)\]\(((?:https:\/\/|[a-z0-9-]+\.html)[^)\s]*)\)/g;
+function proseWithLinks(p, rosterIndex) {
+  let out = '';
+  let last = 0;
+  for (const m of p.matchAll(PROSE_LINK)) {
+    out += linkPlayers(p.slice(last, m.index), rosterIndex);
+    const external = m[2].startsWith('https://');
+    out += `<a href="${escapeHtml(m[2])}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${escapeHtml(m[1])}</a>`;
+    last = m.index + m[0].length;
+  }
+  return out + linkPlayers(p.slice(last), rosterIndex);
 }
 
 /**
@@ -1796,7 +1832,7 @@ function essayProse(paragraphs) {
       p.trim() !== '!thanks' &&
       p.trim() !== '!callout' &&
       p.trim() !== '!slideshow',
-  );
+  ).map((p) => p.replace(PROSE_LINK, '$1'));
 }
 
 /**
@@ -2276,6 +2312,7 @@ ${header('blog.html', true, isGameLive)}
   <div>
 ${originalArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
     ${postShare({ siteUrl, path: `blog-original-${record.slug}.html`, title: record.title })}
+    ${postDonate()}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
@@ -2337,6 +2374,7 @@ ${header('blog.html', true, isGameLive)}
   <div>
 ${mondayArticleBody(record, rosterIndex, 'h1', gameWeek?.poll || null)}
     ${postShare({ siteUrl, path: `blog-monday-${record.key}.html`, title: record.title })}
+    ${postDonate()}
     ${originalDisclosure()}
     ${postHailMailSignup()}
   </div>
