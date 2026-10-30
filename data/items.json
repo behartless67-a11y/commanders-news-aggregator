@@ -23,18 +23,6 @@
     "publishedAt": "2026-09-15T15:40:00.000Z",
     "collectedAt": "2026-09-15T16:06:16.721Z"
   },
-  "hogs-haven-ba5e3c75557e": {
-    "id": "hogs-haven-ba5e3c75557e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-power-rankings/440328/nfl-power-rankings-washington-commanders-are-better-after-2-point-loss",
-    "title": "NFL Power Rankings: Washington Commanders are better after 2-point loss?",
-    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Jayden Daniels #5 of the Washington Commanders celebrates after a touchdown against the Philadelphia Eagles during an NFL football game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images The Washington Commanders lost their season opener to the Philadelphia Eagles, and everyone is trying to find the positives…except for most power rankers. The Commanders were 5.5-point…",
-    "publishedAt": "2026-09-15T15:00:24.000Z",
-    "collectedAt": "2026-09-15T16:06:16.721Z"
-  },
   "riggos-rag-013313987afc": {
     "id": "riggos-rag-013313987afc",
     "sourceId": "riggos-rag",
@@ -18202,5 +18190,17 @@
     "excerpt": "",
     "publishedAt": "2026-10-30T14:00:20.000Z",
     "collectedAt": "2026-10-30T14:41:46.181Z"
+  },
+  "yahoo-nfl-468853b60eca": {
+    "id": "yahoo-nfl-468853b60eca",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-gm-adam-peters-talks-143646583.html",
+    "title": "Commanders GM Adam Peters talks NFL trade deadline, Antonio Williams and more",
+    "excerpt": "The Colts dealt superstar guard Quenton Nelson to the Seattle Seahawks earlier this week. \n The Commanders did not make a play for him. \n Washington general manager Adam Peters was clear about that in his weekly (paid) interview with 106.7-FM The Fan on Friday morning. He addressed the NFL trade deadline and several other topics during the interview, including receiver Antonio Williams, cornerback Amik Robertson and the state of the Commanders coming out of their bye week. \n Also, Peters…",
+    "publishedAt": "2026-10-30T14:36:46.000Z",
+    "collectedAt": "2026-10-30T15:03:49.053Z"
   }
 }
