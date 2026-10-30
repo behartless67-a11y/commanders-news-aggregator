@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T02:06:30.690Z",
+  "fetchedAt": "2026-10-30T05:52:16.142Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -6065,6 +6065,22 @@
         "abbr": "KC",
         "flags": 2,
         "yards": 15
+      }
+    },
+    "401873023": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-10-30T00:15Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "GB",
+        "flags": 6,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "CAR",
+        "flags": 5,
+        "yards": 41
       }
     }
   }
