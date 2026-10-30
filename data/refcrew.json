@@ -1,13 +1,7 @@
 {
-  "fetchedAt": "2026-10-29T21:09:25.723Z",
+  "fetchedAt": "2026-10-30T02:06:30.690Z",
   "season": 2026,
-  "assignment": {
-    "season": 2026,
-    "week": 8,
-    "game": "Eagles at Commanders",
-    "referee": "Alex Moore",
-    "url": "https://www.footballzebras.com/2026/10/week-8-referee-assignments-2026/"
-  },
+  "assignment": null,
   "games": {
     "401772510": {
       "season": 2025,
