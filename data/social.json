@@ -25,18 +25,6 @@
     "publishedAt": "2026-10-21T14:49:00.000Z",
     "collectedAt": "2026-10-21T14:58:16.288Z"
   },
-  "social-d78664548151": {
-    "id": "social-d78664548151",
-    "url": "https://x.com/john_keim/status/2112912629903802643",
-    "text": "With @RealBramW@twitter.com on the McLaurin news; after the injury, appreciating what he has achieved @ESPNRichmond@twitter.com i=jJn6Ct1wHgsUuz3Q",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-21T14:23:21.000Z",
-    "collectedAt": "2026-10-21T14:58:18.950Z"
-  },
   "social-49d110f5539e": {
     "id": "social-49d110f5539e",
     "url": "https://x.com/JPFinlayNBCS/status/2112935663683109335",
@@ -3366,5 +3354,53 @@
     "images": [],
     "publishedAt": "2026-10-31T02:40:12.000Z",
     "collectedAt": "2026-10-31T05:43:39.815Z"
+  },
+  "social-13b65d59926c": {
+    "id": "social-13b65d59926c",
+    "url": "https://x.com/Commanders/status/2116530631140413765",
+    "text": "Uce matching teammates to their @CampbellsChunky@twitter.com alter ego 🥣🙂‍↕️",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "collectedAt": "2026-10-31T14:33:11.151Z"
+  },
+  "social-d2aa90cc53ef": {
+    "id": "social-d2aa90cc53ef",
+    "url": "https://x.com/Commanders/status/2116522129453731963",
+    "text": "Our head of real estate Andy VanHorn took a walk with @BC__TV@twitter.com at the RFK site to preview 2030",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-10-31T13:26:13.000Z",
+    "collectedAt": "2026-10-31T14:33:11.152Z"
+  },
+  "social-a441a91279b4": {
+    "id": "social-a441a91279b4",
+    "url": "https://x.com/john_keim/status/2116522117713862849",
+    "text": "Five thoughts … (pre-Daron Payne news)… on a huge game Sunday for many reasons… Antonio Williams’ growth; what simplifying the O means; a few minutes with rookie Joshua Josephs and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000798953690",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-31T13:26:10.000Z",
+    "collectedAt": "2026-10-31T14:33:14.113Z"
+  },
+  "social-603b8766c97a": {
+    "id": "social-603b8766c97a",
+    "url": "https://x.com/john_keim/status/2116518032118022348",
+    "text": "@EST1981JAB@twitter.com Also note: podcasts get more ads the more people it has listening. Odd how that works.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-10-31T13:09:56.000Z",
+    "collectedAt": "2026-10-31T14:33:14.113Z"
   }
 }
