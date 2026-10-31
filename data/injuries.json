@@ -7,6 +7,13 @@
     "notes": null
   },
   {
+    "name": "Daron Payne",
+    "position": "DT",
+    "status": "Out",
+    "bodyPart": "Foot",
+    "notes": null
+  },
+  {
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
     "status": "IR",
@@ -61,13 +68,6 @@
     "status": "IR",
     "bodyPart": "Neck",
     "notes": "Surgery"
-  },
-  {
-    "name": "Nick Allegretti",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Back",
-    "notes": null
   },
   {
     "name": "Terry McLaurin",
