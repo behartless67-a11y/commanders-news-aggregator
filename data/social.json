@@ -1,28 +1,4 @@
 {
-  "social-e7e9c7b18bbb": {
-    "id": "social-e7e9c7b18bbb",
-    "url": "https://x.com/BenStandig/status/2113040428698128537",
-    "text": "Pre-game reading. Don't freak out. It's positive.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-21T22:51:11.000Z",
-    "collectedAt": "2026-10-21T23:01:11.097Z"
-  },
-  "social-f8c4a15deabd": {
-    "id": "social-f8c4a15deabd",
-    "url": "https://x.com/tashanreed/status/2113031314345545994",
-    "text": "#Commanders WR Jaylin Lane had surgery to repair his fractured and dislocated ankle on Oct. 9, per source. The procedure was successful and he's expected to be cleared for football activities just before OTAs.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-21T22:14:58.000Z",
-    "collectedAt": "2026-10-21T23:01:12.535Z"
-  },
   "social-e2ae13642b2d": {
     "id": "social-e2ae13642b2d",
     "url": "https://x.com/BenStandig/status/2113057950189425031",
@@ -3190,5 +3166,43 @@
     "images": [],
     "publishedAt": "2026-10-31T18:07:34.781Z",
     "collectedAt": "2026-10-31T20:00:23.093Z"
+  },
+  "social-f4bab1bcf060": {
+    "id": "social-f4bab1bcf060",
+    "url": "https://x.com/Commanders/status/2116623232279421103",
+    "text": "We have elevated DT Byron Cowart from the practice squad DT Jer’Zhan Newton (pectoral) has been downgraded to out",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/537/329/621/970/386/original/92c5ccc168e9a4bb.jpg"
+    ],
+    "publishedAt": "2026-10-31T20:07:58.000Z",
+    "collectedAt": "2026-10-31T23:25:17.466Z"
+  },
+  "social-a2857e7ec9ff": {
+    "id": "social-a2857e7ec9ff",
+    "url": "https://x.com/BenStandig/status/2116624592739451106",
+    "text": "The Commanders elevated DT Byron Cowart from the practice squad DT Jer’Zhan Newton (pectoral) has been downgraded to out",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-10-31T20:13:22.000Z",
+    "collectedAt": "2026-10-31T23:25:21.661Z"
+  },
+  "social-0f92dd56420d": {
+    "id": "social-0f92dd56420d",
+    "url": "https://x.com/tashanreed/status/2116639823637426495",
+    "text": "#Commanders will be without Kinlaw, Payne and Newton at DT. Would expect to see a lot of Omenihu inside if he plays.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-10-31T21:13:53.000Z",
+    "collectedAt": "2026-10-31T23:25:23.081Z"
   }
 }
