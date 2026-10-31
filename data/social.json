@@ -1,42 +1,4 @@
 {
-  "social-214d303b6fec": {
-    "id": "social-214d303b6fec",
-    "url": "https://x.com/Commanders/status/2112906760592007548",
-    "text": "We have signed LB Austin Keys and TE Quentin Moore to the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/479/266/405/524/487/original/a11d770810c05dbf.jpg"
-    ],
-    "publishedAt": "2026-10-21T14:00:02.000Z",
-    "collectedAt": "2026-10-21T14:05:41.033Z"
-  },
-  "social-3a2658956485": {
-    "id": "social-3a2658956485",
-    "url": "https://x.com/BenStandig/status/2112907040158884001",
-    "text": "The Commanders signed LB Austin Keys back to the practice squad, and TE Quentin Moore to the practice squad.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-21T14:01:08.000Z",
-    "collectedAt": "2026-10-21T14:05:47.324Z"
-  },
-  "social-c0dd28dc6bda": {
-    "id": "social-c0dd28dc6bda",
-    "url": "https://x.com/RapSheet/status/2112889820590559473",
-    "text": "From @gmfb@twitter.com with @MikeGarafolo : A look at some of the key injury situations, focusing on Terry McLaurin, Baker Mayfield, and Lamar Jackson.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "NFL Network",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-10-21T12:52:43.000Z",
-    "collectedAt": "2026-10-21T14:05:53.930Z"
-  },
   "social-36cc8f422936": {
     "id": "social-36cc8f422936",
     "url": "https://x.com/Commanders/status/2112916523689865461",
@@ -73,18 +35,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-10-21T14:23:21.000Z",
-    "collectedAt": "2026-10-21T14:58:18.950Z"
-  },
-  "social-1a18f0b9a274": {
-    "id": "social-1a18f0b9a274",
-    "url": "https://x.com/john_keim/status/2112907839341723788",
-    "text": "The Commanders signed LB Austin Keys and TE Quentin Moore to the practice squad.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-21T14:04:19.000Z",
     "collectedAt": "2026-10-21T14:58:18.950Z"
   },
   "social-49d110f5539e": {
