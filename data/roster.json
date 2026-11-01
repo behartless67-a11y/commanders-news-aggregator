@@ -652,6 +652,31 @@
     }
   },
   {
+    "slug": "byron-cowart",
+    "name": "Byron Cowart",
+    "jersey": "55",
+    "position": "DT",
+    "espnId": "3916922",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
+    "stats": {
+      "season": 2024,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "26"
+        },
+        {
+          "label": "SACK",
+          "value": "2.5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "nick-cross",
     "name": "Nick Cross",
     "jersey": "25",
@@ -1448,31 +1473,6 @@
     "espnId": "4683111",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683111.png",
     "stats": null
-  },
-  {
-    "slug": "byron-cowart",
-    "name": "Byron Cowart",
-    "jersey": "55",
-    "position": "DT",
-    "espnId": "3916922",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
-    "stats": {
-      "season": 2024,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "26"
-        },
-        {
-          "label": "SACK",
-          "value": "2.5"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
   },
   {
     "slug": "fred-davis-ii",

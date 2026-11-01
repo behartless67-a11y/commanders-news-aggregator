@@ -3072,5 +3072,43 @@
     "images": [],
     "publishedAt": "2026-10-31T21:13:53.000Z",
     "collectedAt": "2026-10-31T23:25:23.081Z"
+  },
+  "social-cde965182c71": {
+    "id": "social-cde965182c71",
+    "url": "https://x.com/Commanders/status/2116696726295966118",
+    "text": "Under the cover of darkness @BankofAmerica@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-01T01:00:00.000Z",
+    "collectedAt": "2026-11-01T04:05:34.686Z"
+  },
+  "social-f637efb9a6c5": {
+    "id": "social-f637efb9a6c5",
+    "url": "https://x.com/Commanders/status/2116686658678460542",
+    "text": "tomorrow night 🌙 @SeatGeek@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/538/329/050/348/166/original/747f38fbae1b97ce.jpg"
+    ],
+    "publishedAt": "2026-11-01T00:20:00.000Z",
+    "collectedAt": "2026-11-01T04:05:34.687Z"
+  },
+  "social-f6ba69d2b4a0": {
+    "id": "social-f6ba69d2b4a0",
+    "url": "https://x.com/tashanreed/status/2116727477821190560",
+    "text": "I can't believe what we witnessed from Rhyne and Gray tonight bro that was some of the worst hoops we've ever seen in a Finals closeout game",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-01T03:02:12.000Z",
+    "collectedAt": "2026-11-01T04:05:40.590Z"
   }
 }
