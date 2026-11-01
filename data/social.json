@@ -3084,5 +3084,57 @@
     "images": [],
     "publishedAt": "2026-11-01T03:02:12.000Z",
     "collectedAt": "2026-11-01T04:05:40.590Z"
+  },
+  "social-b7b15a4b43c1": {
+    "id": "social-b7b15a4b43c1",
+    "url": "https://x.com/Commanders/status/2116893026488312097",
+    "text": "Tonight. @BIG100Radio@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/541/544/671/707/178/original/34279232ec37331f.jpg"
+    ],
+    "publishedAt": "2026-11-01T14:00:02.000Z",
+    "collectedAt": "2026-11-01T15:11:46.989Z"
+  },
+  "social-20758d309486": {
+    "id": "social-20758d309486",
+    "url": "https://x.com/BenStandig/status/2116909984873115747",
+    "text": "Very cool, @HogfarmerChris@twitter.com .",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-01T15:07:25.000Z",
+    "collectedAt": "2026-11-01T15:11:51.405Z"
+  },
+  "social-3fc0d87cbcf1": {
+    "id": "social-3fc0d87cbcf1",
+    "url": "https://x.com/BenStandig/status/2116168544299655611",
+    "text": "Commanders 2027 roster, Part 2: Defense and special teams. Looking ahead through the prism of the present season. Big decisions on Daron Payne and Frankie Luvu. Building around Sonny Styles. Which edge defenders stay. An early look at what's ahead ⬇️ commanders-2027-who-stays-who-goes",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/541/677/099/334/565/original/cb61c02c7d2e0938.jpg"
+    ],
+    "publishedAt": "2026-10-30T14:01:12.000Z",
+    "collectedAt": "2026-11-01T15:11:51.405Z"
+  },
+  "social-b1dc03e2f041": {
+    "id": "social-b1dc03e2f041",
+    "url": "https://x.com/AdamSchefter/status/2116865613473656864",
+    "text": "Commanders WR Treylon Burks, listed as questionable for Sunday night, is expected to play vs. the Eagles. Cowboys WR George Pickens, listed as questionable, is expected to play vs. the Cardinals. Broncos WR Jaylen Waddle, listed as questionable for today, is trending toward playing vs. the Chiefs.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [],
+    "publishedAt": "2026-11-01T12:11:06.000Z",
+    "collectedAt": "2026-11-01T15:11:56.847Z"
   }
 }
