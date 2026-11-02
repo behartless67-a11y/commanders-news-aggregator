@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T20:31:36.994Z",
+  "fetchedAt": "2026-11-02T01:06:52.266Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -6081,6 +6081,182 @@
         "abbr": "CAR",
         "flags": 5,
         "yards": 41
+      }
+    },
+    "401873024": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Ronald Torbert",
+      "home": {
+        "abbr": "DAL",
+        "flags": 7,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "ARI",
+        "flags": 9,
+        "yards": 77
+      }
+    },
+    "401873025": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "TB",
+        "flags": 5,
+        "yards": 40
+      },
+      "away": {
+        "abbr": "ATL",
+        "flags": 3,
+        "yards": 25
+      }
+    },
+    "401873026": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "BUF",
+        "flags": 10,
+        "yards": 87
+      },
+      "away": {
+        "abbr": "BAL",
+        "flags": 7,
+        "yards": 38
+      }
+    },
+    "401873027": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "PIT",
+        "flags": 5,
+        "yards": 47
+      },
+      "away": {
+        "abbr": "CLE",
+        "flags": 9,
+        "yards": 85
+      }
+    },
+    "401873028": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Adrian Hill",
+      "home": {
+        "abbr": "JAX",
+        "flags": 8,
+        "yards": 65
+      },
+      "away": {
+        "abbr": "IND",
+        "flags": 9,
+        "yards": 54
+      }
+    },
+    "401873029": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "John Hussey",
+      "home": {
+        "abbr": "NYJ",
+        "flags": 6,
+        "yards": 32
+      },
+      "away": {
+        "abbr": "LV",
+        "flags": 5,
+        "yards": 37
+      }
+    },
+    "401873030": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "DET",
+        "flags": 7,
+        "yards": 76
+      },
+      "away": {
+        "abbr": "MIN",
+        "flags": 5,
+        "yards": 40
+      }
+    },
+    "401873031": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "CIN",
+        "flags": 8,
+        "yards": 67
+      },
+      "away": {
+        "abbr": "TEN",
+        "flags": 10,
+        "yards": 73
+      }
+    },
+    "401873032": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T21:05Z",
+      "referee": "Brad Rogers",
+      "home": {
+        "abbr": "LAR",
+        "flags": 8,
+        "yards": 40
+      },
+      "away": {
+        "abbr": "LAC",
+        "flags": 3,
+        "yards": 20
+      }
+    },
+    "401873033": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T21:25Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "DEN",
+        "flags": 6,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "KC",
+        "flags": 11,
+        "yards": 105
+      }
+    },
+    "401873034": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-01T21:25Z",
+      "referee": "Alex Moore",
+      "home": {
+        "abbr": "MIA",
+        "flags": 6,
+        "yards": 50
+      },
+      "away": {
+        "abbr": "NE",
+        "flags": 7,
+        "yards": 46
       }
     }
   }

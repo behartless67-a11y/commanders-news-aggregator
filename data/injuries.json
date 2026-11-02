@@ -1,9 +1,9 @@
 [
   {
-    "name": "Charles Omenihu",
-    "position": "DE",
-    "status": "Questionable",
-    "bodyPart": "Groin",
+    "name": "Athan Kaliakmanis",
+    "position": "QB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -11,6 +11,20 @@
     "position": "DT",
     "status": "Out",
     "bodyPart": "Foot",
+    "notes": null
+  },
+  {
+    "name": "Fabian Moreau",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Isaac Yiadom",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -49,13 +63,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "John Bates",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
-  },
-  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
@@ -75,12 +82,5 @@
     "status": "IR",
     "bodyPart": "Knee",
     "notes": "Surgery"
-  },
-  {
-    "name": "Treylon Burks",
-    "position": "WR",
-    "status": "Questionable",
-    "bodyPart": "Foot",
-    "notes": null
   }
 ]
