@@ -87,6 +87,10 @@ const VIA_LABELS = {
   hogwaller: 'Högwaller (QR code)',
   sticker: 'Sticker (QR code)',
   hailmail: 'Hail Mail email',
+  // "hailmail" letter-swapped (a→b, h→u, i→v, l→y, m→z). Some subscriber's
+  // mail system rewrites the query on its way through; first seen on the
+  // Oct 30 send, 12 visits landing on exactly that issue's links.
+  ubvyzbvy: 'Hail Mail email',
   podcast: 'Podcast mention',
   // The "Send it to the group chat" button at the end of a post (postShare()
   // in templates.js): a reader passing a link along, not Ben.

@@ -4,6 +4,13 @@ import { SOURCES } from '../../config/sources.js';
 
 const sourceName = (id) => SOURCES.find((s) => s.id === id)?.name || id;
 
+// Traffic-source counts written under a label track.js has since learned to
+// name properly. Folded into the right row before ranking so the old label
+// doesn't sit in the list on its own; new visits already land correctly.
+const REF_ALIASES = {
+  'Tagged: ubvyzbvy': 'Hail Mail email',
+};
+
 // Sunday-first, matching how this site's own audience thinks about a week —
 // NFL Sunday is the traffic event a day-of-week chart exists to reveal, and
 // burying it in the middle of a Monday-first row would be an odd way to show
@@ -46,11 +53,19 @@ export default async (req) => {
     const { blobs } = await store.list({ prefix });
     const rows = await Promise.all(
       blobs.map(async (b) => ({
-        [mapKey]: decodeURIComponent(b.key.slice(prefix.length)),
+        name: decodeURIComponent(b.key.slice(prefix.length)),
         count: await text(b.key),
       })),
     );
-    return rows.sort((a, b) => b.count - a.count).slice(0, 10);
+    const merged = new Map();
+    for (const { name, count } of rows) {
+      const label = (prefix === 'ref:' && REF_ALIASES[name]) || name;
+      merged.set(label, (merged.get(label) || 0) + count);
+    }
+    return [...merged]
+      .map(([name, count]) => ({ [mapKey]: name, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10);
   };
 
   const [
@@ -95,7 +110,10 @@ export default async (req) => {
     // Written newest-first by track.js, so no sort here. Capped again on
     // read: the stored log is the last 200 pageviews, but the panel only
     // renders a screenful and there's no reason to ship the rest.
-    store.get('recent', { type: 'json' }).then((v) => (Array.isArray(v) ? v.slice(0, 60) : [])).catch(() => []),
+    store.get('recent', { type: 'json' })
+      .then((v) => (Array.isArray(v) ? v.slice(0, 60) : []))
+      .then((v) => v.map((r) => (REF_ALIASES[r.referrer] ? { ...r, referrer: REF_ALIASES[r.referrer] } : r)))
+      .catch(() => []),
   ]);
 
   // Chart keeps its original 14-day shape; only the comparison below uses
