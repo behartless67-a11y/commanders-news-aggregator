@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T01:06:52.266Z",
+  "fetchedAt": "2026-11-02T06:07:43.754Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -6257,6 +6257,22 @@
         "abbr": "NE",
         "flags": 7,
         "yards": 46
+      }
+    },
+    "401873035": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-02T01:20Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "WSH",
+        "flags": 9,
+        "yards": 70
+      },
+      "away": {
+        "abbr": "PHI",
+        "flags": 6,
+        "yards": 30
       }
     }
   }

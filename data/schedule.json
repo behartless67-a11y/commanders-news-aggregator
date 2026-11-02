@@ -139,9 +139,9 @@
     "opponent": "Philadelphia Eagles",
     "opponentShort": "Eagles",
     "venue": "Northwest Stadium",
-    "result": null,
-    "points": null,
-    "broadcast": "NBC",
+    "result": "W",
+    "points": "27 - 10",
+    "broadcast": null,
     "isBye": false
   },
   {

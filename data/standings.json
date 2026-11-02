@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-11-02T01:05:55.604Z",
+  "fetchedAt": "2026-11-02T06:07:08.042Z",
   "teams": [
     {
       "abbr": "NYG",
@@ -17,17 +17,17 @@
       "winPercent": 0.375
     },
     {
-      "abbr": "PHI",
-      "name": "Philadelphia Eagles",
-      "overall": "2-5",
-      "streak": "L5",
-      "winPercent": 0.2857143
-    },
-    {
       "abbr": "WAS",
       "name": "Washington Commanders",
-      "overall": "1-4-1",
-      "streak": "L1",
+      "overall": "2-4-1",
+      "streak": "W1",
+      "winPercent": 0.35714287
+    },
+    {
+      "abbr": "PHI",
+      "name": "Philadelphia Eagles",
+      "overall": "2-6",
+      "streak": "L6",
       "winPercent": 0.25
     }
   ]
