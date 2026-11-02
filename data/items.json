@@ -1,28 +1,4 @@
 {
-  "riggos-rag-c47e548bb3a5": {
-    "id": "riggos-rag-c47e548bb3a5",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/washington-commanders-trapped-troubling-mismatches-against-dallas-cowboys-week-2",
-    "title": "6 Commanders trapped in troubling mismatches against the Cowboys",
-    "excerpt": "Which Washington Commanders players could find themselves in concerning mismatches when they take on the Dallas Cowboys in Week 2?",
-    "publishedAt": "2026-09-18T10:00:04.000Z",
-    "collectedAt": "2026-09-18T10:06:26.198Z"
-  },
-  "athletic-jhabvala-14b1092bc4db": {
-    "id": "athletic-jhabvala-14b1092bc4db",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7606538/2026/09/18/antonio-williams-commanders-rookie-receiver",
-    "title": "Why Commanders rookie receiver Antonio Williams is already capturing attention",
-    "excerpt": "Showing out in Week 1 is another confidence builder for the rookie receiver, but the Commanders envision many more leaps ahead.",
-    "publishedAt": "2026-09-18T10:00:38.000Z",
-    "collectedAt": "2026-09-18T10:06:27.759Z"
-  },
   "riggos-rag-06bc1c18fc21": {
     "id": "riggos-rag-06bc1c18fc21",
     "sourceId": "riggos-rag",
@@ -45,18 +21,6 @@
     "title": "Washington Commanders vs Dallas Cowboys Week 2: Five Questions with Blogging the Boys",
     "excerpt": "Dec 25, 2025; Landover, Maryland, USA; Dallas Cowboys quarterback Dak Prescott (4) is sacked by Washington Commanders defensive tackle Jer’Zhan Newton (95) during the second half at Northwest Stadium. | Geoff Burke-Imagn Images \n \n It’s week 2 of the NFL season and the 0-1 Washington Commanders will be facing an 0-1 Dallas Cowboys team on the road at AT&T Stadium in Arlington, TX this Sunday at 4:25 p.m. EDT. The Cowboys had a very disappointing week 1, getting beat in very physical fashion by…",
     "publishedAt": "2026-09-18T12:00:00.000Z",
-    "collectedAt": "2026-09-18T14:06:27.615Z"
-  },
-  "hogs-haven-9cfba6ecfdf6": {
-    "id": "hogs-haven-9cfba6ecfdf6",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-odds/439602/washington-commanders-vs-dallas-cowboys-predictions-prop-bets",
-    "title": "Washington Commanders vs Dallas Cowboys Predictions and Prop Bets",
-    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Antonio Williams #14 of the Washington Commanders celebrates after scoring a touchdown against the Philadelphia Eagles during an NFL football game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images \n \n The Washington Commanders are visiting the Dallas Cowboys on Sunday, and they are 4.5-point underdogs. Both teams started their season with a division loss. The Commanders…",
-    "publishedAt": "2026-09-18T11:00:00.000Z",
     "collectedAt": "2026-09-18T14:06:27.615Z"
   },
   "riggos-rag-51bf54d846d7": {
@@ -18262,5 +18226,149 @@
     "excerpt": "Photo by Emilee Chinn/Getty Images | Getty Images The Philadelphia Eagles are on the road for a Sunday Night Football matchup against the Washington Commanders. \n Despite all the injuries the Eagles have had to deal with, the team still has potential, and the offense was able to finish multiple extended drives with a touchdown last week against Dallas. Unfortunately, it was the defense that underwhelmed last week, and they’ll have another challenge on Sunday night against the Commanders.\n The…",
     "publishedAt": "2026-11-02T04:21:34.000Z",
     "collectedAt": "2026-11-02T06:06:45.682Z"
+  },
+  "hogs-haven-5eff658cb80a": {
+    "id": "hogs-haven-5eff658cb80a",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/452442/commanders-eagles-jayden-daniels-sideline-speech-snf-nfl-week-8",
+    "title": "How Jayden Daniels sideline speech impacted Commanders win over Eagles",
+    "excerpt": "The Commanders offense did not start Sunday’s game well, by the eye test or any proven metric. Washington’s attack, point blank and pulling no punches, was awful. \n\n They went just 18 yards on seven plays following an excellent Luke McCaffrey opening return, and then missed a field goal largely due to consecutive false starts taking a third-and-1 to a third-and-11 . The second series went three-and-out. The third started with two more penalties, an ineligible man downfield and a false start.…",
+    "publishedAt": "2026-11-02T08:36:49.000Z",
+    "collectedAt": "2026-11-02T11:05:28.229Z"
+  },
+  "hogs-haven-27643cd23191": {
+    "id": "hogs-haven-27643cd23191",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/452385/commanders-report-card-nfl-week-8-eagles-jayden-daniels-dan-quinn-saquon-barkley",
+    "title": "Commanders report card: Team grades in NFL Week 8 win Eagles",
+    "excerpt": "The Commanders played horrible football in the first quarter of Sunday’s game against the Philadelphia Eagles. They spotted a beat-up and beaten down Eagles squad 10 points with inexcusable mistakes. \n\n To Washington’s credit, they tightened up after that. The defense locked Philly down and the offense started moving the ball well enough to at least get a steady dose of field goals. \n\n Philly on third down : 5-for-15. Good for Washington’s defense. Commanders on third down: 5-for-13. Meh.…",
+    "publishedAt": "2026-11-02T06:52:52.000Z",
+    "collectedAt": "2026-11-02T11:05:28.229Z"
+  },
+  "riggos-rag-c60746113b99": {
+    "id": "riggos-rag-c60746113b99",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/6-winners-2-losers-washington-commanders-desperate-triumph-over-eagles",
+    "title": "6 winners (and 2 losers) from Commanders' desperate triumph over the Eagles",
+    "excerpt": "Who were the big winners and losers from the Washington Commanders' triumph oveer the Philadelphia Eagles on Sunday Night Football?",
+    "publishedAt": "2026-11-02T11:00:03.000Z",
+    "collectedAt": "2026-11-02T11:05:28.915Z"
+  },
+  "athletic-commanders-363e39d42b46": {
+    "id": "athletic-commanders-363e39d42b46",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7745519/2026/11/02/commanders-win-eagles-jayden-daniels-sunday-night-football",
+    "title": "The Commanders, after an awful start, do enough to buy themselves another week",
+    "excerpt": "Washington got an earful from Jayden Daniels then got itself together to beat the Eagles for a much-needed win.",
+    "publishedAt": "2026-11-02T10:00:30.000Z",
+    "collectedAt": "2026-11-02T11:05:30.118Z"
+  },
+  "beltway-football-1985be898706": {
+    "id": "beltway-football-1985be898706",
+    "sourceId": "beltway-football",
+    "sourceName": "Beltway Football",
+    "sourceHomepage": "https://art19.com/shows/beltway-football",
+    "category": "team",
+    "url": "https://art19.com/shows/beltway-football/episodes/d887c5f1-942e-4350-8ebb-e871d0d924aa",
+    "title": "Week 8 Postgame: Commanders Score 27 Unanswered to Hand Eagles Sixth-Straight Loss",
+    "excerpt": "Season saved? JP Finlay and Mitch Tischler break down the Washington Commanders' Week 8 win against the Philadelphia Eagles. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
+    "publishedAt": "2026-11-02T06:30:00.000Z",
+    "collectedAt": "2026-11-02T11:05:31.524Z"
+  },
+  "commanders-youtube-b77da17d2c1d": {
+    "id": "commanders-youtube-b77da17d2c1d",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=RaNO7Bbxf5o",
+    "title": "PRIMETIME DUB! | Breaking Down The SNF Victory vs. Philadelphia On Gameday LIVE | NFL Week 8",
+    "excerpt": "",
+    "publishedAt": "2026-11-02T05:54:06.000Z",
+    "collectedAt": "2026-11-02T11:05:31.635Z"
+  },
+  "commanders-youtube-f4a3e5c4378e": {
+    "id": "commanders-youtube-f4a3e5c4378e",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=utNOQdYMcqQ",
+    "title": "Gameday LIVE: Sunday Night Football Edition! | Eagles vs. Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-11-02T01:04:38.000Z",
+    "collectedAt": "2026-11-02T11:05:31.635Z"
+  },
+  "dc-sports-king-654e665390d5": {
+    "id": "dc-sports-king-654e665390d5",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/commanders-crush-spiraling-eagles-27-10-in-season-saving-comeback",
+    "title": "Commanders Crush Spiraling Eagles 27-10 in Season-Saving Comeback",
+    "excerpt": "The Washington Commanders didn’t just need a win on Sunday night; they needed a spark. Trailing 10-0 early in the first quarter against a desperate Philadelphia Eagles team, the season felt like it was teetering on the brink. Instead, Washington delivered 27 unanswered points, dominated the Eagles 27-10, and captured their first win since Week 3.\n\n Here is the instant reaction and breakdown of how the Commanders flipped the script to push the spiraling Eagles further into the NFC East…",
+    "publishedAt": "2026-11-02T08:11:56.000Z",
+    "collectedAt": "2026-11-02T11:05:33.536Z"
+  },
+  "yahoo-nfl-f11d588cc796": {
+    "id": "yahoo-nfl-f11d588cc796",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-vs-rams-odds-opening-110000282.html",
+    "title": "Commanders vs. Rams odds: Opening lines for Week 9 matchup",
+    "excerpt": "INGLEWOOD, CA -DECEMBER 17: Los Angeles Rams quarterback Matthew Stafford (9) stands in the pocket to deliver a pass during third quarter action against the Washington Commanders at SoFi Stadium on December 17, 2023. (Photo by Jonathan Newton/The Washington Post via Getty Images) The Washington Commanders are 2-4-1 after a Week 8 win over the Eagles on Sunday Night Football at home. That win kept them in the division race, two games behind the Giants and 1.5 behind the Cowboys. The Eagles now…",
+    "publishedAt": "2026-11-02T11:00:00.000Z",
+    "collectedAt": "2026-11-02T11:05:36.364Z"
+  },
+  "yahoo-nfl-b44619d14b28": {
+    "id": "yahoo-nfl-b44619d14b28",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/10-eagles-things-think-think-072142507.html",
+    "title": "10 Eagles things I think I think from the loss to the Commanders",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 01: Tanner McKee #16 of the Philadelphia Eagles reacts to a unnecessary roughness penalty by K'lavon Chaisson #45 of the Washington Commanders during the second quarter at Northwest Stadium on November 01, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images The Eagles certainly put up a performance for the ages on Sunday Night Football.\n This was a game where the Eagles needed a win to salvage a season that was on the verge of…",
+    "publishedAt": "2026-11-02T07:21:42.000Z",
+    "collectedAt": "2026-11-02T11:05:36.364Z"
+  },
+  "yahoo-nfl-ad15bc6e48df": {
+    "id": "yahoo-nfl-ad15bc6e48df",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/report-card-grading-commanders-crucial-065252974.html",
+    "title": "Report card: Grading the Commanders in a crucial Week 8 win over the Eagles",
+    "excerpt": "The Commanders played horrible football in the first quarter of Sunday’s game against the Philadelphia Eagles. They spotted a beat-up and beaten down Eagles squad 10 points with inexcusable mistakes. \n To Washington’s credit, they tightened up after that. The defense locked Philly down and the offense started moving the ball well enough to at least get a steady dose of field goals. \n Philly on third down : 5-for-15. Good for Washington’s defense. Commanders on third down: 5-for-13. Meh.…",
+    "publishedAt": "2026-11-02T06:52:52.000Z",
+    "collectedAt": "2026-11-02T11:05:36.364Z"
+  },
+  "yahoo-nfl-f895f56807e9": {
+    "id": "yahoo-nfl-f895f56807e9",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-vs-commanders-good-bad-060112020.html",
+    "title": "Eagles vs. Commanders: The good, the bad, and the ugly",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 01: Stefon Diggs #3 of the Washington Commanders scores a touchdown reception against Kenny Moore II #23 of the Philadelphia Eagles during the second quarter at Northwest Stadium on November 01, 2026 in Landover, Maryland. (Photo by Patrick Smith/Getty Images) | Getty Images In the last six days, the Eagles’ checkout line has quadrupled. Apathy has arrived on November 1st after the Eagles lost their sixth-straight game, stumbling against the previously one-win…",
+    "publishedAt": "2026-11-02T06:01:12.000Z",
+    "collectedAt": "2026-11-02T11:05:36.364Z"
   }
 }
