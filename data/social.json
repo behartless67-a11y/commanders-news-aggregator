@@ -4990,5 +4990,67 @@
     "images": [],
     "publishedAt": "2026-11-03T02:40:28.000Z",
     "collectedAt": "2026-11-03T07:05:51.413Z"
+  },
+  "social-cfc26befd52b": {
+    "id": "social-cfc26befd52b",
+    "url": "https://x.com/Commanders/status/2117617803364868565",
+    "text": "Burks making biiiiig moves",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-03T14:00:02.000Z",
+    "collectedAt": "2026-11-03T17:05:50.119Z"
+  },
+  "social-0ee0db8ea708": {
+    "id": "social-0ee0db8ea708",
+    "url": "https://x.com/john_keim/status/2117658001276297538",
+    "text": "According to @NextGenStats : The Commanders generated a season-high pressure percentage of 46.5 vs. the Eagles. On 12 blitzes, they recorded 10 pressures and a sack -- the 83.3percent rate was the 2nd highest by any D this season (minimum 5 blitzes) They produced pressure on just 32.3 percent of their four-man rushes, but they did record 4 sacks out of that look. That's where having guys like Amos, Cross back in the secondary helps.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-03T16:39:46.000Z",
+    "collectedAt": "2026-11-03T17:05:52.629Z"
+  },
+  "social-a93ef9fc56c6": {
+    "id": "social-a93ef9fc56c6",
+    "url": "https://x.com/john_keim/status/2117636682505916472",
+    "text": "With @RealBramW@twitter.com at 7 PM ET tonight. No therapy. Just questions: what did Sundays win mean? Can it kickstart or need to see more/better? Perhaps some trade talk. @ESPNRichmond@twitter.com i=fFuhU_TTceUic9Dm",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-03T15:15:03.000Z",
+    "collectedAt": "2026-11-03T17:05:52.629Z"
+  },
+  "social-98076141bc07": {
+    "id": "social-98076141bc07",
+    "url": "https://x.com/john_keim/status/2117596920608653738",
+    "text": "On video with some second thoughts after a re-watch. Trey Amos’ impact; what Jayden Daniels showed; a better, more consistent/disciplined pass rush. Can it continue? More. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-03T12:37:03.000Z",
+    "collectedAt": "2026-11-03T17:05:52.629Z"
+  },
+  "social-2af689d90005": {
+    "id": "social-2af689d90005",
+    "url": "https://x.com/BenStandig/status/2117622682615226708",
+    "text": "Commanders notebook: 🏈 Trade deadline buzz 🏈 Pass rush production 🏈 Post-Daron Payne changes 🏈 Antonio Williams' time trade-candidates-surging-pass-rush",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/552/972/091/051/398/original/11a82aa8d731c4e7.jpg"
+    ],
+    "publishedAt": "2026-11-03T14:19:25.000Z",
+    "collectedAt": "2026-11-03T17:05:55.103Z"
   }
 }
