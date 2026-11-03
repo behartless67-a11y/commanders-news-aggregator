@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T02:21:17.171Z",
+  "fetchedAt": "2026-11-03T07:06:42.695Z",
   "season": 2026,
   "assignment": null,
   "games": {
@@ -6273,6 +6273,22 @@
         "abbr": "PHI",
         "flags": 6,
         "yards": 30
+      }
+    },
+    "401873036": {
+      "season": 2026,
+      "week": 8,
+      "date": "2026-11-03T01:15Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "SEA",
+        "flags": 5,
+        "yards": 43
+      },
+      "away": {
+        "abbr": "CHI",
+        "flags": 10,
+        "yards": 85
       }
     }
   }

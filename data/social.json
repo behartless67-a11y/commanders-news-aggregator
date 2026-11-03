@@ -4990,5 +4990,55 @@
     "images": [],
     "publishedAt": "2026-11-03T01:12:38.000Z",
     "collectedAt": "2026-11-03T02:20:35.287Z"
+  },
+  "social-502db4d6fbed": {
+    "id": "social-502db4d6fbed",
+    "url": "https://x.com/Commanders/status/2117444149876277651",
+    "text": "guitar cellys are BACK 🎸 @AustinEkeler@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/550/156/691/871/643/original/aa28ca8c005a6824.jpg"
+    ],
+    "publishedAt": "2026-11-03T02:30:00.000Z",
+    "collectedAt": "2026-11-03T07:05:45.707Z"
+  },
+  "social-0a76b5a178ec": {
+    "id": "social-0a76b5a178ec",
+    "url": "https://x.com/JPFinlayNBCS/status/2117449862136627326",
+    "text": "Wiz win ✅ Dybantsa over 15.5 points ✅",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-03T02:52:42.000Z",
+    "collectedAt": "2026-11-03T07:05:47.145Z"
+  },
+  "social-93a1cfc782f6": {
+    "id": "social-93a1cfc782f6",
+    "url": "https://x.com/BenStandig/status/2117450305424007302",
+    "text": "Wizards win. Wizards win.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-03T02:54:27.000Z",
+    "collectedAt": "2026-11-03T07:05:49.932Z"
+  },
+  "social-6d977078f622": {
+    "id": "social-6d977078f622",
+    "url": "https://x.com/krisrhim1/status/2117446785144623472",
+    "text": "Just interviewed Troy Clemons, the Sixers fan whose wine LeBron took a sip of during tonight’s game And no, he did not save the cup",
+    "handle": "krisrhim1",
+    "author": "Kris Rhim",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-03T02:40:28.000Z",
+    "collectedAt": "2026-11-03T07:05:51.413Z"
   }
 }
