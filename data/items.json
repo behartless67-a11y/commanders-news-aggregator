@@ -1,16 +1,4 @@
 {
-  "yahoo-nfl-5672fabfcf53": {
-    "id": "yahoo-nfl-5672fabfcf53",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-opponent-cowboys-233000033.html",
-    "title": "Commanders have been ‘get right’ opponent for Cowboys before",
-    "excerpt": "ARLINGTON, TX - OCTOBER 19: Donovan Ezeiruaku #41 of the Dallas Cowboys lines up before the snap during an NFL football game against the Washington Commanders at AT&T Field on October 19, 2025 in Arlington, Texas. (Photo by Cooper Neill/Getty Images) | Getty Images The 2026 Dallas Cowboys were supposed to find themselves in better positions to compete in all phases compared to the 7-9-1 campaign of a year ago. Instead, after one game, they find themselves in eerily similar position ahead of a…",
-    "publishedAt": "2026-09-18T23:30:00.000Z",
-    "collectedAt": "2026-09-19T00:06:30.968Z"
-  },
   "hogs-haven-11e723b99589": {
     "id": "hogs-haven-11e723b99589",
     "sourceId": "hogs-haven",
@@ -18274,5 +18262,29 @@
     "excerpt": "Before the advent of media devices, football coaches at all levels used simple whiteboards to outline plays, map out player positions and explain schemes in real time. Nowadays digital playbooks and tablets have taken over, but coaches still use whiteboards on occasion to impart information quickly and effectively. The following are some quick notes and observations from the Washington Commanders ‘ 27-10 win on Sunday Night Football. \n Dan Quinn and the Washington Commanders continue to start…",
     "publishedAt": "2026-11-02T22:00:00.000Z",
     "collectedAt": "2026-11-02T23:05:34.439Z"
+  },
+  "commanders-youtube-e55e61a0a115": {
+    "id": "commanders-youtube-e55e61a0a115",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/shorts/HO_Ii1hv95A",
+    "title": "SURPRISE!! 💍",
+    "excerpt": "",
+    "publishedAt": "2026-11-03T00:00:02.000Z",
+    "collectedAt": "2026-11-03T02:20:17.185Z"
+  },
+  "yahoo-nfl-9387f23668c4": {
+    "id": "yahoo-nfl-9387f23668c4",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/eagles-commanders-snap-counts-makai-233702899.html",
+    "title": "Eagles-Commanders snap counts: Makai Lemon seeing more opportunity",
+    "excerpt": "LANDOVER, MARYLAND - NOVEMBER 1: Trey Amos #23 of the Washington Commanders breaks up a pass intended for Makai Lemon #9 of the Philadelphia Eagles during the second quarter of an NFL football game at Northwest Stadium on November 1, 2026 in Landover, Maryland. (Photo by Kevin Sabitus/Getty Images) | Getty Images The official snap counts from the Philadelphia Eagles’ Week 8 loss to the Washington Commanders are in. Does anyone actually care? Regardless, let’s take a look and run through some…",
+    "publishedAt": "2026-11-02T23:37:02.000Z",
+    "collectedAt": "2026-11-03T02:20:19.959Z"
   }
 }
