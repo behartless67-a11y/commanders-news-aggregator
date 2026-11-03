@@ -1,28 +1,4 @@
 {
-  "riggos-rag-1d7388ac3cfd": {
-    "id": "riggos-rag-1d7388ac3cfd",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/8-commanders-who-must-raise-their-game-against-cowboys-week-2",
-    "title": "8 Commanders who must raise their game against the Cowboys in Week 2",
-    "excerpt": "Which Washington Commanders players must raise their game in a crucial divisional clash against the Dallas Cowboys in Week 2?",
-    "publishedAt": "2026-09-19T10:00:03.000Z",
-    "collectedAt": "2026-09-19T12:06:29.952Z"
-  },
-  "pft-af16dbfb43a6": {
-    "id": "pft-af16dbfb43a6",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-sainristil-says-hell-stay-positive-after-dan-quinn-called-his-play-not-acceptable",
-    "title": "Mike Sainristil says he'll stay positive after Dan Quinn called his play \"not acceptable\"",
-    "excerpt": "When discussing the Week 1 loss to the Eagles, Commanders head coach Dan Quinn made a specific point of saying that cornerback Mike Sainristil didn't play well enough. Sainristil says he's staying positive.\n Quinn doesn't often call out players by name, but during his Monday press conference after Sunday's loss, he named Sainristil, whose coverage breakdown gave up an Eagles touchdown pass, as one of the players who needed to correct the way he played.\n \"We’ve definitely identified a few things…",
-    "publishedAt": "2026-09-19T10:31:51.000Z",
-    "collectedAt": "2026-09-19T12:06:34.845Z"
-  },
   "hogs-haven-1b3dfce7cd9c": {
     "id": "hogs-haven-1b3dfce7cd9c",
     "sourceId": "hogs-haven",
@@ -18298,5 +18274,29 @@
     "excerpt": "The Washington Commanders delivered a resounding 27-10 victory over their NFC East rival, the Philadelphia Eagles, on Sunday, a win that displayed complementary football in all three phases of the game. Amid the defensive stops and offensive points led by quarterback Jayden Daniels, a much-needed spark came from an unexpected source on special teams: wide receiver Luke McCaffrey.\n\n Waiting for an Opening \n\n For McCaffrey, the 2026 season has been a true test of patience and perseverance.…",
     "publishedAt": "2026-11-02T11:27:00.000Z",
     "collectedAt": "2026-11-03T07:05:42.222Z"
+  },
+  "hogs-haven-a6981313b7f9": {
+    "id": "hogs-haven-a6981313b7f9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/452802/stefon-diggs-jayden-daniels-eagles-commanders-best-performers-week-8",
+    "title": "Stefon Diggs, Jayden Daniels among best Commanders from Week 8 win",
+    "excerpt": "Another victory means it is time to crown the Boss Hog of the week. Marcus Mariota took home the crown following a Week 3 win over Seattle , so let us see where the votes swing today. \n\n As a quick reminder of the rules: each week represents a standalone vote. At the end of the year, I will tally up all the weekly winners to crown the official, definitive Boss Hog of the Season. \n\n Without further ado, let us look at the standout performers. Here is your first nominee for this week’s award…",
+    "publishedAt": "2026-11-03T11:00:00.000Z",
+    "collectedAt": "2026-11-03T11:56:46.283Z"
+  },
+  "riggos-rag-cc27b648074c": {
+    "id": "riggos-rag-cc27b648074c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/8-trades-washington-commanders-should-consider-after-keeping-season-alive",
+    "title": "8 trades the Commanders should consider after keeping their season alive",
+    "excerpt": "Could the Washington Commanders look to buy before the 2026 trade deadline after saving their season against the Philadelphia Eagles?",
+    "publishedAt": "2026-11-03T11:36:18.000Z",
+    "collectedAt": "2026-11-03T11:56:47.152Z"
   }
 }
