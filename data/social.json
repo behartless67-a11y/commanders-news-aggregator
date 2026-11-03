@@ -5052,5 +5052,55 @@
     ],
     "publishedAt": "2026-11-03T14:19:25.000Z",
     "collectedAt": "2026-11-03T17:05:55.103Z"
+  },
+  "social-678fb37e9c61": {
+    "id": "social-678fb37e9c61",
+    "url": "https://x.com/JPFinlayNBCS/status/2117675312506868150",
+    "text": "From @NextGenStats : Commanders Chig Okonkwo had only a 17.4% chance of making this 21-yard catch from QB Jayden Daniels in the 3rd quarter of the win over the Eagles",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/553/769/089/949/761/original/d000dd86e0ad0de2.jpg"
+    ],
+    "publishedAt": "2026-11-03T17:48:33.000Z",
+    "collectedAt": "2026-11-03T19:30:24.273Z"
+  },
+  "social-93ec6182564e": {
+    "id": "social-93ec6182564e",
+    "url": "https://x.com/JPFinlayNBCS/status/2117665357439934950",
+    "text": "Talking w @cfrelund about the Rams/Commanders matchup: \"I am extremely concerned about that O-Line...It wont look the same for Washington as it did against the Eagles, but the blitz is working. It will be a test.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-03T17:09:00.000Z",
+    "collectedAt": "2026-11-03T19:30:24.273Z"
+  },
+  "social-3706c1873b54": {
+    "id": "social-3706c1873b54",
+    "url": "https://x.com/john_keim/status/2117689871863017570",
+    "text": "Local author Mike Richman has updated his encyclopedia on the history of the Redskins/Commanders. Quite an in-depth look at the franchise history.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-03T18:46:24.000Z",
+    "collectedAt": "2026-11-03T19:30:25.623Z"
+  },
+  "social-a64b991a5666": {
+    "id": "social-a64b991a5666",
+    "url": "https://x.com/john_keim/status/2117686622388994221",
+    "text": "How you have offensive success: Washington faced 3rd-4 or less on 7 of 13 third downs Sunday. In the previous three games combined, they faced 3-4 or less on 7 of 39 third downs. They entered Sunday having averaged only 3.5 third downs per game needing 4 yards or less. They also had 7 such situations in Week 2 at Dallas. They had 1 such 3rd down vs. the Colts No surprise: Washington ranks 31st in third down conversions this season.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-03T18:33:30.000Z",
+    "collectedAt": "2026-11-03T19:30:25.623Z"
   }
 }
