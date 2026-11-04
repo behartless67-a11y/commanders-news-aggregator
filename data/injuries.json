@@ -9,9 +9,9 @@
   {
     "name": "Daron Payne",
     "position": "DT",
-    "status": "Out",
+    "status": "IR",
     "bodyPart": "Foot",
-    "notes": null
+    "notes": "Surgery"
   },
   {
     "name": "Fabian Moreau",
@@ -37,7 +37,7 @@
   {
     "name": "Javon Kinlaw",
     "position": "DT",
-    "status": "Out",
+    "status": "IR",
     "bodyPart": "Knee",
     "notes": null
   },
@@ -65,8 +65,8 @@
   {
     "name": "Jeremy McNichols",
     "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Undisclosed",
+    "status": "IR",
+    "bodyPart": "Foot",
     "notes": null
   },
   {

@@ -1,7 +1,13 @@
 {
-  "fetchedAt": "2026-11-03T19:31:23.464Z",
+  "fetchedAt": "2026-11-04T00:38:47.104Z",
   "season": 2026,
-  "assignment": null,
+  "assignment": {
+    "season": 2026,
+    "week": 9,
+    "game": "Rams at Commanders",
+    "referee": "John Hussey",
+    "url": "https://www.footballzebras.com/2026/11/week-9-referee-assignments-2026/"
+  },
   "games": {
     "401772510": {
       "season": 2025,
