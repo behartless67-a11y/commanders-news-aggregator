@@ -1,16 +1,4 @@
 {
-  "riggos-rag-217c50734cfd": {
-    "id": "riggos-rag-217c50734cfd",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jacory-croskey-merritt-can-punish-cowboys-again-commanders-restore-trust",
-    "title": "Jacory Croskey-Merritt can punish Cowboys again if Commanders restore trust",
-    "excerpt": "Jacory Croskey-Merritt is the most important player for the Washington Commanders in Week 2, somebody who's primed for a bounce-back game against the Dallas Cowboys.",
-    "publishedAt": "2026-09-20T12:00:01.000Z",
-    "collectedAt": "2026-09-20T12:06:36.355Z"
-  },
   "hogs-haven-74e24c883cb9": {
     "id": "hogs-haven-74e24c883cb9",
     "sourceId": "hogs-haven",
@@ -81,18 +69,6 @@
     "title": "These five Washington Commanders must dominate to beat Dallas Cowboys in Week 2",
     "excerpt": "The Commanders and Cowboys face off on Sunday afternoon. For the (checks notes) 133rd time . Rarely do these matchups come so early in the season. \n Honestly, it’s kind of a bummer that the first contest falls in Week 2, but the Commanders were dealt this hand and simply must play it well. They can’t lose their second straight NFC East game in as many weeks. \n That would create a huge hole with lots of digging required to get out. That’s why the Commanders must play well and come away with a…",
     "publishedAt": "2026-09-20T13:00:00.000Z",
-    "collectedAt": "2026-09-20T14:06:38.237Z"
-  },
-  "yahoo-nfl-96ba0f98c9fa": {
-    "id": "yahoo-nfl-96ba0f98c9fa",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-watch-game-120000491.html",
-    "title": "Cowboys vs Commanders: How to watch, game time, TV schedule, streaming, radio",
-    "excerpt": "LANDOVER, MARYLAND - DECEMBER 25: Quan Martin #20 of the Washington Commanders tackles Malik Davis #43 of the Dallas Cowboys in the first quarter of a game at Northwest Stadium on December 25, 2025 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images The Dallas Cowboys will try to get back on track after a disappointing Week 1 in New York. They will host another NFC East rival, the Washington Commanders. The Commanders lost to the Philadelphia Eagles in Week 1.\n Both…",
-    "publishedAt": "2026-09-20T12:00:00.000Z",
     "collectedAt": "2026-09-20T14:06:38.237Z"
   },
   "hogs-haven-c7b53ae04f28": {
@@ -18262,5 +18238,29 @@
     "excerpt": "The Commanders have disappointed so far, but a weak division has kept their hopes afloat. So how should they approach the trade deadline?",
     "publishedAt": "2026-11-04T11:00:15.000Z",
     "collectedAt": "2026-11-04T11:06:32.181Z"
+  },
+  "riggos-rag-c962190d144c": {
+    "id": "riggos-rag-c962190d144c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/6-overlooked-washington-commanders-growing-harder-replace-injuries-mount",
+    "title": "6 overlooked Commanders players growing harder to replace as injuries mount",
+    "excerpt": "Which overlooked Washington Commanders players are becoming more important as the team continues to navigate troubling injuries?",
+    "publishedAt": "2026-11-04T11:00:04.000Z",
+    "collectedAt": "2026-11-04T12:09:57.649Z"
+  },
+  "yahoo-nfl-5ca5187bc1ab": {
+    "id": "yahoo-nfl-5ca5187bc1ab",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/buyers-sellers-deep-dive-potential-110000302.html",
+    "title": "Buyers or Sellers?: A deep dive into potential Commanders trade deadline targets",
+    "excerpt": "Once again, Washington finds itself at a familiar crossroads as the NFL trade deadline approaches, trapped in the classic dilemma of whether to buy or sell. However, the internal and external landscape has shifted dramatically. The team’s presumed primary trade target, left guard Quenton Nelson was shipped off to Seattle , while their most valuable trade asset , Daron Payne, was lost for the season after suffering a Jones fracture in his foot. \n While most front offices in this precarious…",
+    "publishedAt": "2026-11-04T11:00:00.000Z",
+    "collectedAt": "2026-11-04T12:10:04.564Z"
   }
 }
