@@ -1,28 +1,4 @@
 {
-  "yahoo-nfl-102552ab5657": {
-    "id": "yahoo-nfl-102552ab5657",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-mike-sainristil-vs-cowboys-040000370.html",
-    "title": "How will Commanders Mike Sainristil do vs Cowboys today? – All aTwitter",
-    "excerpt": "ARLINGTON, TX - JANUARY 05: Dallas Cowboys wide receiver Brandin Cooks (3) and Washington Commanders cornerback Mike Sainristil (0) battle for the football in the end zone during the game between the Dallas Cowboys and the Washington Commanders on January 5, 2025 at AT&T Stadium in Arlington, Texas. (Photo by Matthew Pearce/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images All aTwitter – 20 September 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to…",
-    "publishedAt": "2026-09-20T04:00:00.000Z",
-    "collectedAt": "2026-09-20T06:06:38.849Z"
-  },
-  "commanders-youtube-23dc8ada52ef": {
-    "id": "commanders-youtube-23dc8ada52ef",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=s9n-V9gEFo4",
-    "title": "HC Dan Quinn Previews Week 2 Cowboys Matchup | Washington Commanders | The Gameplan | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-09-20T04:00:18.000Z",
-    "collectedAt": "2026-09-20T08:06:38.435Z"
-  },
   "hogs-haven-5f8b03ecd8cb": {
     "id": "hogs-haven-5f8b03ecd8cb",
     "sourceId": "hogs-haven",
@@ -18310,5 +18286,17 @@
     "excerpt": "SportsLine's advanced model has simulated every game in the Week 9 NFL schedule 10,000 times and locked in its NFL best bets today",
     "publishedAt": "2026-11-03T21:10:40.000Z",
     "collectedAt": "2026-11-04T00:37:47.990Z"
+  },
+  "clutchpoints-29201cc401cc": {
+    "id": "clutchpoints-29201cc401cc",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-3-players-injured-reserve-2-key-d-linemen",
+    "title": "Commanders send 3 players to injured reserve, including 2 key D-Linemen",
+    "excerpt": "The Washington Commanders will be missing more players following a victory in Week 8 .\n\n The Commanders, who are still fresh off a 27-10 win over the Philadelphia Eagles at home on Sunday, have moved three players to the injured reserve , as reported by Ian Rapoport of the NFL Network on Tuesday.\n\n “The #Commanders are placing RB Jeremy McNichols, DL Daron Payne, and DL Javon Kinlaw on Injured Reserve,” Rapoport shared via a social media post on X, formerly Twitter.\n\n McNichols, who is in his…",
+    "publishedAt": "2026-11-03T22:28:38.000Z",
+    "collectedAt": "2026-11-04T05:05:27.769Z"
   }
 }

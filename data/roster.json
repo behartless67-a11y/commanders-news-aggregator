@@ -233,6 +233,15 @@
     "stats": null
   },
   {
+    "slug": "robert-henry-jr",
+    "name": "Robert Henry Jr.",
+    "jersey": "34",
+    "position": "RB",
+    "espnId": "5151317",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5151317.png",
+    "stats": null
+  },
+  {
     "slug": "van-jefferson",
     "name": "Van Jefferson",
     "jersey": "12",
@@ -827,31 +836,6 @@
     }
   },
   {
-    "slug": "javon-kinlaw",
-    "name": "Javon Kinlaw",
-    "jersey": "99",
-    "position": "DT",
-    "espnId": "4259491",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4259491.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "13"
-        },
-        {
-          "label": "SACK",
-          "value": "1"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "frankie-luvu",
     "name": "Frankie Luvu",
     "jersey": "4",
@@ -1043,31 +1027,6 @@
         {
           "label": "SACK",
           "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "daron-payne",
-    "name": "Daron Payne",
-    "jersey": "94",
-    "position": "DT",
-    "espnId": "3925354",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3925354.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "14"
-        },
-        {
-          "label": "SACK",
-          "value": "1"
         },
         {
           "label": "INT",
@@ -1382,6 +1341,31 @@
     }
   },
   {
+    "slug": "javon-kinlaw",
+    "name": "Javon Kinlaw",
+    "jersey": "99",
+    "position": "DT",
+    "espnId": "4259491",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4259491.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "13"
+        },
+        {
+          "label": "SACK",
+          "value": "1"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "terry-mclaurin",
     "name": "Terry McLaurin",
     "jersey": "17",
@@ -1448,6 +1432,31 @@
         {
           "label": "SACK",
           "value": "5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "daron-payne",
+    "name": "Daron Payne",
+    "jersey": "94",
+    "position": "DT",
+    "espnId": "3925354",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3925354.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "14"
+        },
+        {
+          "label": "SACK",
+          "value": "1"
         },
         {
           "label": "INT",
