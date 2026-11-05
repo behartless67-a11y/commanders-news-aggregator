@@ -5894,5 +5894,108 @@
     ],
     "publishedAt": "2026-11-05T00:13:08.000Z",
     "collectedAt": "2026-11-05T00:54:37.076Z"
+  },
+  "social-0b65b50b7972": {
+    "id": "social-0b65b50b7972",
+    "url": "https://x.com/Commanders/status/2118184025592615412",
+    "text": "\"I just make plays, bruh\" 🗣️ @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-05T03:30:00.000Z",
+    "collectedAt": "2026-11-05T07:05:36.560Z"
+  },
+  "social-583a452e87cb": {
+    "id": "social-583a452e87cb",
+    "url": "https://x.com/Commanders/status/2118168928119591397",
+    "text": "🗓️ Week 9: #LARvsWAS 🏟️ Northwest Stadium 📺 1pm on FOX",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/561/486/371/361/811/original/89b47d1810ed6cef.jpg"
+    ],
+    "publishedAt": "2026-11-05T02:30:00.000Z",
+    "collectedAt": "2026-11-05T07:05:36.561Z"
+  },
+  "social-529235cee06f": {
+    "id": "social-529235cee06f",
+    "url": "https://x.com/Commanders/status/2118157349391331702",
+    "text": "This week, we honor 4️⃣4️⃣",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-05T01:44:00.000Z",
+    "collectedAt": "2026-11-05T07:05:36.561Z"
+  },
+  "social-8a64ac178a09": {
+    "id": "social-8a64ac178a09",
+    "url": "https://x.com/Commanders/status/2118145018192159068",
+    "text": "stadium pulse 1000000 📈 @NWStadium@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/500/031/442/original/22f72305ae222bfd.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/532/980/430/original/2f625f0512e3bdee.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/579/234/469/original/235147c84da30de7.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/606/473/880/original/cfa1c52c6c22aafb.jpg"
+    ],
+    "publishedAt": "2026-11-05T00:55:00.000Z",
+    "collectedAt": "2026-11-05T07:05:36.561Z"
+  },
+  "social-2dc1141dcbe6": {
+    "id": "social-2dc1141dcbe6",
+    "url": "https://x.com/JPFinlayNBCS/status/2118191475015971263",
+    "text": "You’re chance to win PFT’s Wiz seats. They’re sick",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-05T03:59:36.000Z",
+    "collectedAt": "2026-11-05T07:05:37.972Z"
+  },
+  "social-b22985d29082": {
+    "id": "social-b22985d29082",
+    "url": "https://x.com/PFTCommenter/status/2118165249962447230",
+    "text": "I need your help. If you know a good person in the VA/Maryland/DC area that you think would enjoy my courtside(pretty much) seats at a Wizards game please send their nomination to PFTGameDay@MonumentalSports.com. Shoutout Jarrett at Thurgood Marshall Academy the first winner!",
+    "handle": "PFTCommenter",
+    "author": "PFT Commenter",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-05T02:15:23.000Z",
+    "collectedAt": "2026-11-05T07:05:40.732Z"
+  },
+  "social-9102a8adae12": {
+    "id": "social-9102a8adae12",
+    "url": "https://x.com/BenStandig/status/2118153444746006839",
+    "text": "AJ Dybantsa's willing defense might be his most skill so far among several impressive skills.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-05T01:28:29.000Z",
+    "collectedAt": "2026-11-05T07:05:40.732Z"
+  },
+  "social-ed444adc3ed9": {
+    "id": "social-ed444adc3ed9",
+    "url": "https://x.com/tashanreed/status/2118166444181512661",
+    "text": "The #Wizards trail the Hawks 118-103 with just 2:43 to go and the fans are starting to head for the exits here in D.C. The difference in this one: Atlanta has hit 19 threes while Washington is just 6-25 from deep. Barring a crazy comeback, the Wizards will fall to 4-4.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-05T02:20:08.000Z",
+    "collectedAt": "2026-11-05T07:05:42.189Z"
   }
 }
