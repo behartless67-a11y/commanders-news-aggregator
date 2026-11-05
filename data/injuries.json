@@ -49,6 +49,13 @@
     "notes": null
   },
   {
+    "name": "John Bates",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
+    "notes": null
+  },
+  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
@@ -63,10 +70,31 @@
     "notes": "Surgery"
   },
   {
+    "name": "Sam Cosmi",
+    "position": "OL",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
+    "name": "Shy Tuttle",
+    "position": "DT",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
+    "notes": null
+  },
+  {
     "name": "Terry McLaurin",
     "position": "WR",
     "status": "IR",
     "bodyPart": "Knee",
     "notes": "Surgery"
+  },
+  {
+    "name": "Treylon Burks",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Foot",
+    "notes": null
   }
 ]

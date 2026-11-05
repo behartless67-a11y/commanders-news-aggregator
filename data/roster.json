@@ -661,31 +661,6 @@
     }
   },
   {
-    "slug": "byron-cowart",
-    "name": "Byron Cowart",
-    "jersey": "55",
-    "position": "DT",
-    "espnId": "3916922",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
-    "stats": {
-      "season": 2024,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "26"
-        },
-        {
-          "label": "SACK",
-          "value": "2.5"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "nick-cross",
     "name": "Nick Cross",
     "jersey": "25",
@@ -1484,6 +1459,31 @@
     "stats": null
   },
   {
+    "slug": "byron-cowart",
+    "name": "Byron Cowart",
+    "jersey": "55",
+    "position": "DT",
+    "espnId": "3916922",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916922.png",
+    "stats": {
+      "season": 2024,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "26"
+        },
+        {
+          "label": "SACK",
+          "value": "2.5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "fred-davis-ii",
     "name": "Fred Davis II",
     "jersey": "38",
@@ -1499,6 +1499,15 @@
     "position": "WR",
     "espnId": "4692796",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4692796.png",
+    "stats": null
+  },
+  {
+    "slug": "daniel-ekuale",
+    "name": "Daniel Ekuale",
+    "jersey": "",
+    "position": "DT",
+    "espnId": "3052059",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3052059.png",
     "stats": null
   },
   {
