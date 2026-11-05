@@ -5887,5 +5887,105 @@
     ],
     "publishedAt": "2026-11-05T12:03:07.000Z",
     "collectedAt": "2026-11-05T12:23:51.033Z"
+  },
+  "social-b2b433a76f18": {
+    "id": "social-b2b433a76f18",
+    "url": "https://x.com/Commanders/status/2118368287033577738",
+    "text": "LIVE: DC Daronte Jones speaks to the media before practice oAz",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-05T15:42:11.000Z",
+    "collectedAt": "2026-11-05T17:05:44.569Z"
+  },
+  "social-cc61273a923a": {
+    "id": "social-cc61273a923a",
+    "url": "https://x.com/Commanders/status/2118361444219777126",
+    "text": "That Kid @Gatorade@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/564/507/307/852/494/original/952977b162bd626b.jpg"
+    ],
+    "publishedAt": "2026-11-05T15:15:00.000Z",
+    "collectedAt": "2026-11-05T17:05:44.570Z"
+  },
+  "social-b0682abcd249": {
+    "id": "social-b0682abcd249",
+    "url": "https://x.com/Commanders/status/2118346345329070465",
+    "text": "HBD, @joshuaconerlyjr@twitter.com 🥳",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/564/269/785/416/165/original/747474528c7cefbc.jpg"
+    ],
+    "publishedAt": "2026-11-05T14:15:00.000Z",
+    "collectedAt": "2026-11-05T17:05:44.570Z"
+  },
+  "social-767ebaaf62ab": {
+    "id": "social-767ebaaf62ab",
+    "url": "https://x.com/Commanders/status/2118331246078001609",
+    "text": "Wing szn 🍗 #PepsiTailgateMVP | #TailgatingDeservesPepsi",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-05T13:15:00.000Z",
+    "collectedAt": "2026-11-05T17:05:44.570Z"
+  },
+  "social-5ce1f3266cd5": {
+    "id": "social-5ce1f3266cd5",
+    "url": "https://x.com/JPFinlayNBCS/status/2118335444819837065",
+    "text": "How good are the Rams? A lot of that answer will depend on if Washington can actually play a complete game s=1LS3CSmMKSx3uuTr",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-05T13:31:41.000Z",
+    "collectedAt": "2026-11-05T17:05:46.231Z"
+  },
+  "social-2a1ccc213eab": {
+    "id": "social-2a1ccc213eab",
+    "url": "https://x.com/john_keim/status/2118373981292044368",
+    "text": "David Blough on Kliff Kingsbury: \"He's one of the most gracious people I've ever met.\" He said Kingsbury has sent him a \"text of encouragement at different low points of the season.\" \"I really appreciate him and he knows that,\" Blough said.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-05T16:04:49.000Z",
+    "collectedAt": "2026-11-05T17:05:47.450Z"
+  },
+  "social-a569c22bebdd": {
+    "id": "social-a569c22bebdd",
+    "url": "https://x.com/john_keim/status/2118334645691617720",
+    "text": "On video with a midweek report. On the injuries, how the DL can compensate, the Chig one handed catch; OL splits and more. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-05T13:28:30.000Z",
+    "collectedAt": "2026-11-05T17:05:47.450Z"
+  },
+  "social-d90edb59628e": {
+    "id": "social-d90edb59628e",
+    "url": "https://x.com/BenStandig/status/2118374817875267796",
+    "text": "Asked David Blough about this week facing the coach instrumental in his coaching career, Kliff Kingsbury. Blough said they've stayed in contact, with Kliff texting words of encouragement at times. Called him \"one of the most gracious people I've met.\" \"I really appreciate him, and I think he knows that.\"",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-05T16:08:08.000Z",
+    "collectedAt": "2026-11-05T17:05:48.907Z"
   }
 }
