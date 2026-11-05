@@ -11,18 +11,6 @@
     "publishedAt": "2026-10-26T12:49:50.000Z",
     "collectedAt": "2026-10-26T15:13:24.951Z"
   },
-  "social-a2d3d6e2a634": {
-    "id": "social-a2d3d6e2a634",
-    "url": "https://x.com/BenStandig/status/2114692751547658544",
-    "text": "🎙 Commanders by the numbers with @SethWalder@twitter.com : 🏈 Offensive line (run blocking, woof) ⏳️Jayden Daniels' time to throw 🏈 Oweh, Chaisson, Payne 📈 Sonny Styles' speed and recovery 🏈 NFC East race by-the-numbers/id1760952448?i=1000798089334",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-26T12:16:55.000Z",
-    "collectedAt": "2026-10-26T15:13:26.443Z"
-  },
   "social-fd6e52bc8570": {
     "id": "social-fd6e52bc8570",
     "url": "https://x.com/Commanders/status/2114764328771748343",
@@ -5997,5 +5985,19 @@
     "images": [],
     "publishedAt": "2026-11-05T02:20:08.000Z",
     "collectedAt": "2026-11-05T07:05:42.189Z"
+  },
+  "social-a72103f8db11": {
+    "id": "social-a72103f8db11",
+    "url": "https://x.com/BenStandig/status/2118313156497772562",
+    "text": "Robert Henry Jr. goes from the champs to a second chance with Commanders — and a bigger opportunity. robert-henry-jr-goes-from-the-super",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/563/737/968/692/471/original/6dbe045a553fd0e7.jpg"
+    ],
+    "publishedAt": "2026-11-05T12:03:07.000Z",
+    "collectedAt": "2026-11-05T12:23:51.033Z"
   }
 }
