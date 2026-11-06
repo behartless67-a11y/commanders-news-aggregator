@@ -1,16 +1,4 @@
 {
-  "social-b3ee6d6787f7": {
-    "id": "social-b3ee6d6787f7",
-    "url": "https://x.com/Commanders/status/2115188285672989128",
-    "text": "2 HOFers if it was up to us 🥱",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-27T21:06:00.000Z",
-    "collectedAt": "2026-10-28T02:05:35.703Z"
-  },
   "social-22692dd86d76": {
     "id": "social-22692dd86d76",
     "url": "https://x.com/JPFinlayNBCS/status/2115216262896791801",
@@ -35,30 +23,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/515/921/547/839/470/original/e957fd03c717b5a3.jpg"
     ],
     "publishedAt": "2026-10-28T01:23:30.000Z",
-    "collectedAt": "2026-10-28T02:05:39.921Z"
-  },
-  "social-efc29c12d108": {
-    "id": "social-efc29c12d108",
-    "url": "https://x.com/BenStandig/status/2115192740728246649",
-    "text": "Christian Haynes was a 2024 third-round pick. He is also local (Bowie). He will now be on waivers should the Commanders be interested.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-27T21:23:42.000Z",
-    "collectedAt": "2026-10-28T02:05:39.921Z"
-  },
-  "social-7669b830e15c": {
-    "id": "social-7669b830e15c",
-    "url": "https://x.com/BenStandig/status/2115189362849620476",
-    "text": "The Commanders are signing DE Kyle Kennard to the practice squad. The 2024 SEC DPOY worked out for WSH today. 4th-round pick by the Chargers in 2025. Released in September after suffering a high ankle sprain and being on wrong end of a roster battle. .",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-27T21:10:17.000Z",
     "collectedAt": "2026-10-28T02:05:39.921Z"
   },
   "social-2660472a5927": {
@@ -6212,5 +6176,19 @@
     ],
     "publishedAt": "2026-11-06T17:28:46.000Z",
     "collectedAt": "2026-11-06T21:05:50.267Z"
+  },
+  "social-1b5a95d21ded": {
+    "id": "social-1b5a95d21ded",
+    "url": "https://x.com/john_keim/status/2118811668566151378",
+    "text": "The full game status report:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/571/528/819/398/111/original/22d720a711ab963f.jpg"
+    ],
+    "publishedAt": "2026-11-06T21:04:02.000Z",
+    "collectedAt": "2026-11-06T21:30:15.667Z"
   }
 }
