@@ -1,28 +1,4 @@
 {
-  "atoz-sports-2d0844c00910": {
-    "id": "atoz-sports-2d0844c00910",
-    "sourceId": "atoz-sports",
-    "sourceName": "A to Z Sports",
-    "sourceHomepage": "https://atozsports.com/nfl/washington-commanders-news/",
-    "category": "team",
-    "url": "https://atozsports.com/nfl/washington-commanders-news/jayden-daniels-elbow-injury-update-dan-quinn",
-    "title": "Jayden Daniels’ elbow MRI results in holding pattern as Commanders prepare for Seattle without their franchise QB",
-    "excerpt": "Sep 20, 2026; Arlington, Texas, USA; Washington Commanders quarterback Jayden Daniels (5) leaves the game with an apparent injury to his left arm during the second half against the Dallas Cowboys at AT&T Stadium. Mandatory Credit: Kevin Jairaj-Imagn Images \n \n\n Washington is staring down a midweek holding pattern with no concrete answers on Daniels, while a string of other injury updates complicates the Week 3 picture against Seattle.\n\n The Washington Commanders received an update on…",
-    "publishedAt": "2026-09-21T22:38:52.000Z",
-    "collectedAt": "2026-09-21T22:59:35.783Z"
-  },
-  "wjla-commanders-d783736f3ee7": {
-    "id": "wjla-commanders-d783736f3ee7",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/while-awaiting-more-info-on-daniels-injury-commanders-announce-mariota-will-start-sunday",
-    "title": "While awaiting more info on Daniels' injury, Commanders announce Mariota will start Sunday",
-    "excerpt": "ASHBURN, Va. (AP) — Marcus Mariota will start at quarterback for the Washington Commanders this weekend after Jayden Daniels went down with a dislocated left el",
-    "publishedAt": "2026-09-21T22:13:02.000Z",
-    "collectedAt": "2026-09-21T22:59:40.900Z"
-  },
   "hogs-haven-e022df8067f0": {
     "id": "hogs-haven-e022df8067f0",
     "sourceId": "hogs-haven",
@@ -1041,18 +1017,6 @@
     "title": "NFL Week 2 injury roundup: Caleb Williams, Jayden Daniels and more",
     "excerpt": "Apparently, this week was not a good week to be an NFL quarterback. Week 2 of the 2026 NFL season saw three young quarterbacks suffer potentially serious injuries. Chicago Bears’ Caleb Williams, Washington Commanders’ Jayden Daniels, and New York Giants’ Jaxson Dart were three of the notable quarterbacks who went down with an injury of some sort in Week 2.\n\n Let’s take a closer look at some of the notable injuries around the NFL.\n\n Caleb Williams, Chicago Bears \n\n The Chicago Bears were already…",
     "publishedAt": "2026-09-22T05:48:16.000Z",
-    "collectedAt": "2026-09-24T22:05:36.622Z"
-  },
-  "clutchpoints-853968cd045e": {
-    "id": "clutchpoints-853968cd045e",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-magic-johnson-reveals-jayden-daniels-is-in-good-spirits-after-elbow-injury",
-    "title": "Magic Johnson reveals Commanders QB Jayden Daniels is in good spirits after elbow injury",
-    "excerpt": "Washington Commanders star quarterback Jayden Daniels suffered a dislocated left elbow on the final play of the first half during Sunday night’s 37-20 loss to the Dallas Cowboys.\n\n The 25-year-old sustained the same type of elbow injury during Week 9 of last season . He missed four games before returning in Week 14, only to reinjure the elbow in that game and miss the final four contests of the season.\n\n The Commanders announced on Monday that Daniels’ X-rays were negative. However, Washington…",
-    "publishedAt": "2026-09-21T23:13:45.000Z",
     "collectedAt": "2026-09-24T22:05:36.622Z"
   },
   "commanders-youtube-448d24c4e41d": {
@@ -17770,5 +17734,41 @@
     "excerpt": "",
     "publishedAt": "2026-11-05T20:00:35.000Z",
     "collectedAt": "2026-11-05T21:59:54.463Z"
+  },
+  "hogs-haven-6b88f992e695": {
+    "id": "hogs-haven-6b88f992e695",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/453536/commanders-rams-thursday-injury-report-johnny-newton-treylon-burks-dyami-brown",
+    "title": "Commanders vs. Rams Thursday injury report: Johnny Newton trending up",
+    "excerpt": "The Commanders need reinforcements along the defensive line, like, in the worst possible way. Daron Payne is done for the season. Javon Kinlaw’s also on injured reserve. \n\n That’s why the fact that Johnny Newton practiced in full for a second straight day matters so much. He’s working to come off injured reserve, with his 21-day practice window having been opened up last week. There’s no guarantee that he’ll return in time for Sunday afternoon’s game against the Los Angeles Rams, but the odds…",
+    "publishedAt": "2026-11-05T23:38:26.000Z",
+    "collectedAt": "2026-11-06T03:05:28.822Z"
+  },
+  "hogs-haven-67839d10184e": {
+    "id": "hogs-haven-67839d10184e",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/452394/daronte-jones-david-blough-talk-injuries-puka-nacua-aaron-donald-visiting-rams",
+    "title": "Daronte Jones and David Blough talk injuries, Puka Nacua, and the visiting Rams",
+    "excerpt": "The second day of practice means Washington Commanders coordinators Daronte Jones and David Blough are up at the podium for their weekly media sessions. They both got their second career wins at this level when the Commanders beat the Eagles 27-10 last week. The Rams are coming to town for the Commanders second straight home game, and they bring a new set of challenges with starters like Myles Garrett, Aaron Donald, Matthew Stafford, and Puka Nacua demanding attention whenever they’re on the…",
+    "publishedAt": "2026-11-05T22:00:00.000Z",
+    "collectedAt": "2026-11-06T03:05:28.822Z"
+  },
+  "beltway-football-c40ebc3bdcdf": {
+    "id": "beltway-football-c40ebc3bdcdf",
+    "sourceId": "beltway-football",
+    "sourceName": "Beltway Football",
+    "sourceHomepage": "https://art19.com/shows/beltway-football",
+    "category": "team",
+    "url": "https://art19.com/shows/beltway-football/episodes/d54bb2c4-3070-4055-a8fa-3a3d5c818881",
+    "title": "Week 9 Preview: Can the Commanders slow down Puka Nacua, Matt Stafford and upset the Rams?",
+    "excerpt": "JP Finlay and Mitch Tischler break down the Washington Commanders' Week 9 matchup with Puka Nacua, Matt Stafford and the LA Rams, and discuss whether Dan Quinn's team can rise to this particular challenge after beating the Eagles in Week 8. Then, the guys debate whether the result of Commanders-Rams should seriously impact Washington's trade deadline plans. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
+    "publishedAt": "2026-11-05T22:30:00.000Z",
+    "collectedAt": "2026-11-06T03:05:34.277Z"
   }
 }
