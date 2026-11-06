@@ -1,16 +1,4 @@
 {
-  "dc-sports-king-46f246c40c35": {
-    "id": "dc-sports-king-46f246c40c35",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/nick-cross-hospitalized-in-dallas-with-after-commanders-loss",
-    "title": "Nick Cross Hospitalized in Dallas with After Commanders Loss",
-    "excerpt": "When the final whistle blew in Dallas this past Sunday, the Washington Commanders were left dealing with much more than just a Week 2 loss to the Cowboys. While the spotlight initially focused on quarterback Jayden Daniels’s dislocated elbow , a much more terrifying situation was quietly unfolding in the locker room: safety Nick Cross was being taken to a local Dallas hospital.\n\n Commanders Head Coach Dan Quinn revealed that Cross suffered an “internal injury” during the matchup, forcing him to…",
-    "publishedAt": "2026-09-22T07:04:54.000Z",
-    "collectedAt": "2026-09-22T09:00:52.216Z"
-  },
   "riggos-rag-5b6a3108094d": {
     "id": "riggos-rag-5b6a3108094d",
     "sourceId": "riggos-rag",
@@ -35,18 +23,6 @@
     "publishedAt": "2026-09-22T11:30:00.000Z",
     "collectedAt": "2026-09-22T14:05:43.642Z"
   },
-  "riggos-rag-fd1048225801": {
-    "id": "riggos-rag-fd1048225801",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/5-washington-commanders-already-nearing-unplayable-status-two-games-into-2026",
-    "title": "5 Commanders already nearing unplayable status two games into 2026",
-    "excerpt": "Which Washington Commanders players are already nearing unplayable status just two games into the 2026 campaign?",
-    "publishedAt": "2026-09-22T10:00:00.000Z",
-    "collectedAt": "2026-09-22T14:05:43.642Z"
-  },
   "yahoo-nfl-af0fc2002c8e": {
     "id": "yahoo-nfl-af0fc2002c8e",
     "sourceId": "yahoo-nfl",
@@ -57,18 +33,6 @@
     "title": "Future Hogs – Week 3: College football players who could help the Commanders",
     "excerpt": "Jan 8, 2026; Glendale, AZ, USA; Mississippi Rebels defensive tackle Will Echoles (52) against the Miami Hurricanes during the 2026 Fiesta Bowl and semifinal game of the College Football Playoff at State Farm Stadium. Mandatory Credit: Mark J. Rebilas-Imagn Images | IMAGN IMAGES via Reuters Connect It did not look like the premier matchup of Week 3 of the college football between LSU and Ole Miss would live up to the hype. Quarterback Trinidad Chambliss looked like a Heisman front-runner in the…",
     "publishedAt": "2026-09-22T13:51:08.000Z",
-    "collectedAt": "2026-09-22T14:05:50.054Z"
-  },
-  "yahoo-nfl-5f5a15ae65d0": {
-    "id": "yahoo-nfl-5f5a15ae65d0",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/terps-nfl-week-2-diggs-105000207.html",
-    "title": "Terps in the NFL Week 2: Diggs scores twice for Commanders in gutting loss to Cowboys",
-    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders catches a touchdown against Markquese Bell #14 and Caleb Downs #13 of the Dallas Cowboys in the fourth quarter of a game at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images Week 2 of the NFL season concluded with 12 Maryland football alumni seeing the field. \n Washington Commanders wide receiver Stefon Diggs recorded his best game with the team against the…",
-    "publishedAt": "2026-09-22T10:50:00.000Z",
     "collectedAt": "2026-09-22T14:05:50.054Z"
   },
   "hogs-haven-b16331622c45": {
@@ -17746,5 +17710,29 @@
     "excerpt": "JP Finlay and Mitch Tischler break down the Washington Commanders' Week 9 matchup with Puka Nacua, Matt Stafford and the LA Rams, and discuss whether Dan Quinn's team can rise to this particular challenge after beating the Eagles in Week 8. Then, the guys debate whether the result of Commanders-Rams should seriously impact Washington's trade deadline plans. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
     "publishedAt": "2026-11-05T22:30:00.000Z",
     "collectedAt": "2026-11-06T03:05:34.277Z"
+  },
+  "riggos-rag-749121346efd": {
+    "id": "riggos-rag-749121346efd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/7-washington-commanders-hot-seat-entering-crucial-game-against-rams",
+    "title": "7 Commanders on the hot seat entering crucial game against LA Rams",
+    "excerpt": "Which Washington Commanders playters are under pressure to perform during their crucial Week 9 game against the Los Angeles Rams?",
+    "publishedAt": "2026-11-06T11:00:02.000Z",
+    "collectedAt": "2026-11-06T11:05:27.280Z"
+  },
+  "commanders-youtube-4b62fb2740bc": {
+    "id": "commanders-youtube-4b62fb2740bc",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/shorts/cEgb1vZG66s",
+    "title": "John Riggins has found another way to make an impact: supporting service members 🤍",
+    "excerpt": "",
+    "publishedAt": "2026-11-06T00:37:36.000Z",
+    "collectedAt": "2026-11-06T11:05:30.779Z"
   }
 }
