@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T03:06:37.339Z",
+  "fetchedAt": "2026-11-06T06:49:54.285Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6295,6 +6295,22 @@
         "abbr": "CHI",
         "flags": 10,
         "yards": 85
+      }
+    },
+    "401873037": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-06T01:15Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "BAL",
+        "flags": 7,
+        "yards": 46
+      },
+      "away": {
+        "abbr": "JAX",
+        "flags": 4,
+        "yards": 24
       }
     }
   }
