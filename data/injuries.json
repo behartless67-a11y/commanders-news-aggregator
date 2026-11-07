@@ -9,7 +9,7 @@
   {
     "name": "Dyami Brown",
     "position": "WR",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Calf",
     "notes": null
   },
@@ -56,13 +56,6 @@
     "notes": null
   },
   {
-    "name": "John Bates",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
-  },
-  {
     "name": "Laremy Tunsil",
     "position": "OL",
     "status": "IR",
@@ -77,20 +70,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "Sam Cosmi",
-    "position": "OL",
-    "status": "Questionable",
-    "bodyPart": "Knee",
-    "notes": null
-  },
-  {
-    "name": "Shy Tuttle",
-    "position": "DT",
-    "status": "Questionable",
-    "bodyPart": "Shoulder",
-    "notes": null
-  },
-  {
     "name": "Terry McLaurin",
     "position": "WR",
     "status": "IR",
@@ -100,7 +79,7 @@
   {
     "name": "Treylon Burks",
     "position": "WR",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Foot",
     "notes": null
   }
