@@ -34,29 +34,13 @@
     }
   },
   {
-    "slug": "dyami-brown",
-    "name": "Dyami Brown",
-    "jersey": "6",
+    "slug": "jaden-bradley",
+    "name": "Jaden Bradley",
+    "jersey": "86",
     "position": "WR",
-    "espnId": "4361577",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361577.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "9"
-        },
-        {
-          "label": "YDS",
-          "value": "94"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
+    "espnId": "4683111",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683111.png",
+    "stats": null
   },
   {
     "slug": "treylon-burks",
@@ -1291,6 +1275,31 @@
     }
   },
   {
+    "slug": "dyami-brown",
+    "name": "Dyami Brown",
+    "jersey": "6",
+    "position": "WR",
+    "espnId": "4361577",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4361577.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "9"
+        },
+        {
+          "label": "YDS",
+          "value": "94"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "leo-chenal",
     "name": "Leo Chenal",
     "jersey": "54",
@@ -1447,15 +1456,6 @@
     "position": "OT",
     "espnId": "3051890",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3051890.png",
-    "stats": null
-  },
-  {
-    "slug": "jaden-bradley",
-    "name": "Jaden Bradley",
-    "jersey": "86",
-    "position": "WR",
-    "espnId": "4683111",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683111.png",
     "stats": null
   },
   {
