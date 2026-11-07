@@ -425,6 +425,13 @@ async function main() {
       } else if (sub === 'approve') await setMondayStatus(rest[1], 'published');
       else if (sub === 'reject') await setMondayStatus(rest[1], 'rejected');
       else if (sub === 'corpus') {
+        // Refresh the college football cache first. The scheduled Monday run
+        // that used to keep it current fires hours late (GitHub queues
+        // scheduled jobs), long after the post is written from this corpus,
+        // so it was always a week behind. Soft-fails like the workflow step.
+        const cfb = await fetchCollegeFootball().catch(() => null);
+        if (cfb) await saveCollegeFootballCache(cfb);
+        else log.warn('college-football: fetch failed, using the cached results');
         const now = flags.now ? new Date(flags.now) : undefined;
         await exportMondayPrompt({ ...(now && { now }) });
       } else {

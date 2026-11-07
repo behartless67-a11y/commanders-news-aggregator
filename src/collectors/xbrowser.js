@@ -27,6 +27,14 @@ const run = promisify(execFile);
 const CHROME_PATH = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const PROFILE_DIR = process.env.CHROME_X_PROFILE || 'C:/tmp/chrome-x-scraper';
 const PER_ACCOUNT = Number(process.env.X_BROWSER_PER_ACCOUNT || 15);
+// Headless Chrome announces itself as "HeadlessChrome" in its user agent, and
+// since about Oct 29, 2026 X answers that with an HTTP error and no page at
+// all (Chrome logs ERR_HTTP_RESPONSE_CODE_FAILURE and --dump-dom prints
+// nothing), which the scraper then reported as an empty page every run.
+// Sending an ordinary desktop Chrome user agent gets the normal page back.
+// Bump the version now and then so it doesn't look ancient.
+const USER_AGENT = process.env.X_BROWSER_UA
+  || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36';
 
 async function dumpProfileDom(handle) {
   const url = `https://x.com/${encodeURIComponent(handle)}`;
@@ -36,6 +44,7 @@ async function dumpProfileDom(handle) {
     '--no-sandbox',
     `--user-data-dir=${PROFILE_DIR}`,
     '--window-size=1280,2400',
+    `--user-agent=${USER_AGENT}`,
     '--virtual-time-budget=15000',
     '--dump-dom',
     url,
