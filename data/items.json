@@ -1,76 +1,4 @@
 {
-  "pft-28a0ab36ccd9": {
-    "id": "pft-28a0ab36ccd9",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kurt-warner-i-played-through-a-dislocated-left-elbow-jayden-daniels-can-if-he-wants-to",
-    "title": "Kurt Warner: I played through a dislocated left elbow, Jayden Daniels can if he wants to",
-    "excerpt": "Hall of Fame quarterback Kurt Warner says Commanders quarterback Jayden Daniels could play through the left elbow injury he suffered on Sunday.\n Warner, who now appears on ESPN , described suffering the same injury in 2007 and not missing a game.\n “I suffered the exact same injury back in ’07, and I played the next week,\" Warner said. \"I braced it up, obviously a couple shots along the way, I had to hand the football off with my right hand in both directions, but this to me is something,…",
-    "publishedAt": "2026-09-24T08:35:55.000Z",
-    "collectedAt": "2026-09-24T08:59:56.538Z"
-  },
-  "hogs-haven-bcbd8bc2dcc1": {
-    "id": "hogs-haven-bcbd8bc2dcc1",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/the-5-oclock-club/441757/washington-commanders-home-opener-vs-seahawks-week-3-inside-matchup",
-    "title": "Washington Commanders vs. Seahawks in Week 3: Inside the Matchup",
-    "excerpt": "Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games during the regular season, Hogs Haven will revisit each of these previews with John Portis adding additional thoughts and updates as we go inside the matchup to get you ready for every opponent the Commanders face in 2026. \n\n From John Portis:\n\n Bill-in-Bangkok was certainly right…",
-    "publishedAt": "2026-09-24T11:00:00.000Z",
-    "collectedAt": "2026-09-24T14:05:33.998Z"
-  },
-  "riggos-rag-a9769e69e441": {
-    "id": "riggos-rag-a9769e69e441",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/proposed-shedeur-sanders-trade-would-make-commanders-qb-crisis-even-worse",
-    "title": "Proposed Shedeur Sanders trade would make Commanders’ QB crisis even worse",
-    "excerpt": "A proposed trade that would send Shedeur Sanders to the Washington Commanders would make their quarterback crisis even worse.",
-    "publishedAt": "2026-09-24T13:00:04.000Z",
-    "collectedAt": "2026-09-24T14:05:34.766Z"
-  },
-  "riggos-rag-e8a7f9b212d1": {
-    "id": "riggos-rag-e8a7f9b212d1",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/washington-commanders-investment-audit-stefon-diggs-rises-leo-chenal-sinks",
-    "title": "Commanders Investment Audit: Stefon Diggs rises as Leo Chenal sinks",
-    "excerpt": "How are the Washington Commanders' offseason investments working out through two weeks of the 2026 campaign?",
-    "publishedAt": "2026-09-24T11:30:00.000Z",
-    "collectedAt": "2026-09-24T14:05:34.766Z"
-  },
-  "riggos-rag-980e52ba2d88": {
-    "id": "riggos-rag-980e52ba2d88",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/3-likely-paths-jayden-daniels-washington-commanders-recovery-decision-looming",
-    "title": "3 likely paths for Jayden Daniels with Commanders’ recovery decision looming",
-    "excerpt": "Examining some realistic scenarios for quarterback Jayden Daniels as the Washington Commanders put together a recovery plan.",
-    "publishedAt": "2026-09-24T10:00:02.000Z",
-    "collectedAt": "2026-09-24T14:05:34.766Z"
-  },
-  "yahoo-nfl-9cec7f88cf9a": {
-    "id": "yahoo-nfl-9cec7f88cf9a",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/inside-matchup-commanders-defy-odds-110000949.html",
-    "title": "Inside the matchup: How Commanders can defy odds, best the Seahawks in Week 3",
-    "excerpt": "Back in June and early July, HH veteran writer Bill-in-Bangkok, offered a week-by-week preview via the 5 O’Clock Club of the Washington Commanders regular season schedule for 2026. As we roll into the actual games during the regular season, Hogs Haven will revisit each of these previews with John Portis adding additional thoughts and updates as we go inside the matchup to get you ready for every opponent the Commanders face in 2026. \n From John Portis:\n Bill-in-Bangkok was certainly right back…",
-    "publishedAt": "2026-09-24T11:00:00.000Z",
-    "collectedAt": "2026-09-24T14:05:40.645Z"
-  },
   "hogs-haven-2d73cc622b8c": {
     "id": "hogs-haven-2d73cc622b8c",
     "sourceId": "hogs-haven",
@@ -81,18 +9,6 @@
     "title": "What advanced stats tell us about Commanders loss to Cowboys — Stats and Snaps",
     "excerpt": "The Commanders were always going to go as far as Jayden Daniels took them this season. On the final play of the first half, Daniels aggravated the elbow dislocation he suffered last season. At the time of this story’s Thursday publication, the prognosis is unknown. He could miss anywhere from three weeks to the rest of the season.\n\n The speed of Daniels’ recovery and return to play will likely set the limit on the Commanders’ season outlook. That is all up in the air right now.\n\n While Daniels’…",
     "publishedAt": "2026-09-24T15:59:54.000Z",
-    "collectedAt": "2026-09-24T16:05:33.411Z"
-  },
-  "hogs-haven-1bacf25e85d3": {
-    "id": "hogs-haven-1bacf25e85d3",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/442964/should-fans-give-up-because-of-losses-in-2-nfce-road-games-marcus-mariota",
-    "title": "Commanders: Should fans give up because of losses in 2 NFCE road games?",
-    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders looks on prior to a game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images \n \n The Daily Slop – 24 September 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of…",
-    "publishedAt": "2026-09-24T15:00:00.000Z",
     "collectedAt": "2026-09-24T16:05:33.411Z"
   },
   "riggos-rag-f09908d8099e": {
@@ -107,18 +23,6 @@
     "publishedAt": "2026-09-24T16:00:03.000Z",
     "collectedAt": "2026-09-24T16:05:34.231Z"
   },
-  "riggos-rag-599bcbdd15d9": {
-    "id": "riggos-rag-599bcbdd15d9",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/javon-kinlaw-injury-interrupts-strong-commanders-start-adam-peters-needed",
-    "title": "Javon Kinlaw injury interrupts the strong Commanders start Adam Peters needed",
-    "excerpt": "Washington Commanders defensive lineman Javon Kinlaw has gained a new lease of life in Daronte Jones' defensive shift.",
-    "publishedAt": "2026-09-24T14:30:00.000Z",
-    "collectedAt": "2026-09-24T16:05:34.231Z"
-  },
   "commanders-youtube-34778549cf8c": {
     "id": "commanders-youtube-34778549cf8c",
     "sourceId": "commanders-youtube",
@@ -130,30 +34,6 @@
     "excerpt": "",
     "publishedAt": "2026-09-24T15:16:15.000Z",
     "collectedAt": "2026-09-24T16:05:36.085Z"
-  },
-  "commanders-youtube-0f2b303c12d4": {
-    "id": "commanders-youtube-0f2b303c12d4",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=OrLYMfrtCz8",
-    "title": "LIVE: OC David Blough Speaks To The Media Before Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-09-24T14:56:22.000Z",
-    "collectedAt": "2026-09-24T16:05:36.085Z"
-  },
-  "yahoo-nfl-b83ca0037f25": {
-    "id": "yahoo-nfl-b83ca0037f25",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-fans-because-losses-2-150000200.html",
-    "title": "Should Commanders fans give up because of losses in 2 NFC East road games? - Daily Slop",
-    "excerpt": "ARLINGTON, TEXAS - SEPTEMBER 20: Stefon Diggs #3 of the Washington Commanders looks on prior to a game against the Dallas Cowboys at AT&T Stadium on September 20, 2026 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images The Daily Slop – 24 September 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other…",
-    "publishedAt": "2026-09-24T15:00:00.000Z",
-    "collectedAt": "2026-09-24T16:05:39.657Z"
   },
   "wjla-commanders-690ccc0491a2": {
     "id": "wjla-commanders-690ccc0491a2",
@@ -249,30 +129,6 @@
     "title": "Jayden Daniels’ teammate calls ‘bulls**t’ on viral rage-bait injury clip",
     "excerpt": "The Washington Commanders saw their starting quarterback, Jayden Daniels, go down with an elbow injury at the end of the first half against the Dallas Cowboys last week. Instead of people worrying about Daniels’ injury, they seem to be more worried about how his teammates reacted to the injury.\n\n In a clip that has gone viral, Daniels is seen getting medical attention while several of his teammates are walking past him. Usually when a player is injured, the team gets on one knee or crowds the…",
     "publishedAt": "2026-09-24T17:17:14.000Z",
-    "collectedAt": "2026-09-24T22:05:36.622Z"
-  },
-  "clutchpoints-9b860ffdc2cd": {
-    "id": "clutchpoints-9b860ffdc2cd",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-stefon-diggs-draws-laughs-marcus-mariota-scouting-report",
-    "title": "Commanders’ Stefon Diggs draws laughs with his Marcus Mariota scouting report",
-    "excerpt": "The Washington Commanders will be facing the Seattle Seahawks in Week 3, and Marcus Mariota’s time has once again started with the team. With Jayden Daniels injuring his elbow last week and uncertainty surrounding when he’ll be back on the field, Mariota will slot in as the starting quarterback, something he’s been familiar with doing since last season.\n\n Mariota will have a few different options to work with this time around, as he has Stefon Diggs to throw the ball to. He actually threw him a…",
-    "publishedAt": "2026-09-24T13:36:18.000Z",
-    "collectedAt": "2026-09-24T22:05:36.622Z"
-  },
-  "clutchpoints-8b4cc03bf883": {
-    "id": "clutchpoints-8b4cc03bf883",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-happy-play-jayden-daniels-injury",
-    "title": "Why Commanders’ Marcus Mariota is more than happy to play ‘point guard’ in Jayden Daniels’ absence",
-    "excerpt": "Marcus Mariota will be in the spotlight on Sunday as he will try to lead the Washington Commanders past the Seattle Seahawks at Northwest Stadium. It will be an acid test for Mariota, as he will have to figure out the defending champions.\n\n There will be extra pressure to perform as the replacement for Jayden Daniels, who is out indefinitely due to an elbow injury. At 32 years old, it is not exactly Mariota’s first rodeo, but he has a lot of productivity to fill.\n\n According to NBC4 Sports’ JP…",
-    "publishedAt": "2026-09-24T12:23:00.000Z",
     "collectedAt": "2026-09-24T22:05:36.622Z"
   },
   "commanders-youtube-448d24c4e41d": {
@@ -5721,18 +5577,6 @@
     "title": "Commanders vs Seahawks Game Thread",
     "excerpt": "It’s game day! Unfortunately, it looks like it will be a tough one for the Commanders. They’re hosting the Super Bowl champion Seattle Seahawks today, and they’re doing so without a number of key players. Quarterback Jayden Daniels won’t be out as long as initially feared, but he will miss this game, meaning Marcus Mariota will start. Right guard Sam Cosmi is also out of this one with a concussion suffered late on in the Cowboys game. Linebacker Frankie Luvu and tight end Chig Okonkwo are also…",
     "publishedAt": "2026-09-27T16:02:04.000Z",
-    "collectedAt": "2026-10-07T02:42:29.187Z"
-  },
-  "bullock-film-room-710fc70b9541": {
-    "id": "bullock-film-room-710fc70b9541",
-    "sourceId": "bullock-film-room",
-    "sourceName": "Bullock's Film Room",
-    "sourceHomepage": "https://markbullock.substack.com/",
-    "category": "team",
-    "url": "https://markbullock.substack.com/p/commanders-film-review-antonio-williams",
-    "title": "Commanders Film Review: Antonio Williams Impressive Start",
-    "excerpt": "One of the bright spots in the Commanders 0-2 start to the season has been rookie receiver Antonio Williams. Williams was drafted in the third round and immediately drew comparisons to Amon-Ra St. Brown of the Lions. With new offensive coordinator David Blough expecting to build his offense around the 2023 Lions attack that he was a part of, Williams looked like someone that could fill that slot receiver role that St. Brown plays so well . \n There were multiple strong reports on Williams…",
-    "publishedAt": "2026-09-24T10:55:58.000Z",
     "collectedAt": "2026-10-07T02:42:29.187Z"
   },
   "beltway-football-2dd88a8d1853": {
@@ -17554,5 +17398,149 @@
     "excerpt": "UPDATE: The Commanders made the Jer'Zhan Newton activation from injured reserve on Saturday afternoon, formally making him available for Sunday's game against the L.A. Rams. That move was expected after he practiced in full all week leading up to this game.\n \n We have made the following roster moves: \n– Activated DT Jer’Zhan Newton from the Reserve/Injured List and removed him from the injury report \n – Placed WR Dyami Brown on the Reserve/Injured List\n– Elevated WR Jaden Bradley from the…",
     "publishedAt": "2026-11-07T21:15:20.000Z",
     "collectedAt": "2026-11-07T23:39:42.700Z"
+  },
+  "riggos-rag-20525cd60f6a": {
+    "id": "riggos-rag-20525cd60f6a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-schefter-reopens-washington-commanders-brandon-aiyuk-dilemma-trust-stake",
+    "title": "Adam Schefter reopens Commanders' Brandon Aiyuk dilemma with trust at stake",
+    "excerpt": "The Washington Commanders are still reportedly weighing up whether to make a move for San Francisco 49ers wide receiver Brandon Aiyuk.",
+    "publishedAt": "2026-11-08T14:11:36.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "riggos-rag-ec993c5e9ea3": {
+    "id": "riggos-rag-ec993c5e9ea3",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/frankie-luvu-could-turn-washington-commanders-blitz-revival-matthew-stafford-undoing",
+    "title": "Frankie Luvu could turn Commanders’ blitz revival into Matthew Stafford’s undoing",
+    "excerpt": "Blitzing linebacker Frankie Luvu is the Washington Commanders' perfect weapon to attack NFL MVP Matthew Stafford and the Los Angeles Rams in Week 9.",
+    "publishedAt": "2026-11-08T13:00:29.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "riggos-rag-e1a9c1e2325a": {
+    "id": "riggos-rag-e1a9c1e2325a",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-peters-next-move-could-prove-whether-washington-commanders-serious-stuck",
+    "title": "Adam Peters' next move could prove whether Commanders are serious or stuck",
+    "excerpt": "General manager Adam Peters' next move could prove whether the Washington Commanders are serious or stuck this season.",
+    "publishedAt": "2026-11-08T12:00:02.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "riggos-rag-9974c071ee60": {
+    "id": "riggos-rag-9974c071ee60",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/ben-sinnott-key-washington-commanders-surviving-myles-garrett-return",
+    "title": "Ben Sinnott could hold the key to Commanders surviving Myles Garrett's return",
+    "excerpt": "Washington Commanders' underachieving tight end Ben Sinnott has a sneakily important role to play against Myles Garrett and the Los Angeles Rams in Week 9.",
+    "publishedAt": "2026-11-08T11:30:00.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "riggos-rag-e3e1ddedf025": {
+    "id": "riggos-rag-e3e1ddedf025",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/puka-nacua-gives-washington-commanders-one-clear-task-keep-momentum-alive",
+    "title": "Puka Nacua gives Commanders one clear task to keep their momentum alive",
+    "excerpt": "Los Angeles Rams wide receiver Puka Nacua gives the Washington Commanders one clear task to keep their momentum alive.",
+    "publishedAt": "2026-11-08T11:00:02.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "riggos-rag-7e10e883d9e9": {
+    "id": "riggos-rag-7e10e883d9e9",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/4-bold-washington-commanders-predictions-crunch-week-9-clash-rams",
+    "title": "4 bold Commanders predictions for crunch Week 9 clash with the Rams",
+    "excerpt": "Bold predictions for the Washington Commanders during their crunch Week 9 clash against the Los Angeles Rams at Northwest Stadium.",
+    "publishedAt": "2026-11-08T10:30:00.000Z",
+    "collectedAt": "2026-11-08T15:14:03.888Z"
+  },
+  "commanders-youtube-ae5dcafad2ed": {
+    "id": "commanders-youtube-ae5dcafad2ed",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=2Ye4HNAuU3M",
+    "title": "HC Dan Quinn Previews Los Angeles Rams Matchup | Washington Commanders | The Gameplan | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-11-08T05:00:18.000Z",
+    "collectedAt": "2026-11-08T15:14:07.630Z"
+  },
+  "commanders-youtube-ca3b326ddbcc": {
+    "id": "commanders-youtube-ca3b326ddbcc",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=DtfKwvr3rnA",
+    "title": "Honor, Courage & Commitment: Stories From John Riggins' Biggest Fans",
+    "excerpt": "",
+    "publishedAt": "2026-11-07T20:00:37.000Z",
+    "collectedAt": "2026-11-08T15:14:07.630Z"
+  },
+  "cbs-nfl-d2dd1170aef0": {
+    "id": "cbs-nfl-d2dd1170aef0",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/prediction/news/rams-vs-commanders-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-in-nfl-week-9",
+    "title": "Rams vs. Commanders odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus in NFL Week 9",
+    "excerpt": "Here's a closer look at the top trading markets available at Kalshi for Sunday's Week 9 matchup between Los Angeles and Washington",
+    "publishedAt": "2026-11-08T15:04:42.000Z",
+    "collectedAt": "2026-11-08T15:14:10.169Z"
+  },
+  "cbs-nfl-dbe0550dfc11": {
+    "id": "cbs-nfl-dbe0550dfc11",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/betting/news/nfl-odds-lines-picks-game-predictions-spreads-best-bets-for-week-9-2026",
+    "title": "Week 9 NFL odds, picks, predictions: Computer model backs Chiefs and Commanders",
+    "excerpt": "SportsLine's advanced model has simulated every game in the Week 9 NFL schedule 10,000 times and locked in its NFL best bets today",
+    "publishedAt": "2026-11-08T14:46:53.000Z",
+    "collectedAt": "2026-11-08T15:14:10.169Z"
+  },
+  "cbs-nfl-0a0ddf4143c1": {
+    "id": "cbs-nfl-0a0ddf4143c1",
+    "sourceId": "cbs-nfl",
+    "sourceName": "CBS Sports",
+    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
+    "category": "league",
+    "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rams-commanders-packers-patriots-nfl-betting",
+    "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Rams-Commanders, Packers-Patriots, NFL betting",
+    "excerpt": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting",
+    "publishedAt": "2026-11-08T14:26:11.000Z",
+    "collectedAt": "2026-11-08T15:14:10.169Z"
+  },
+  "yahoo-nfl-3141de58da3a": {
+    "id": "yahoo-nfl-3141de58da3a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/seahawks-fan-chat-nfl-week-141500341.html",
+    "title": "Seahawks fan chat: NFL Week 9 Sunday early games, Rams vs. Commanders live discussion",
+    "excerpt": "We’ve got ourselves another early morning NFL game to look forward to, Seattle Seahawks fans! It’s the Cincinnati Bengals and the Atlanta Falcons at the Santiago Bernabeu, aka the home of Real Madrid in Madrid, Spain. It won’t be Kylian Mbappe rampaging through a defense; it’ll be Bijan Robinson trying to get on track against the Bengals defense. Ja’Marr Chase and Tee Higgins could be in for a big day against the Falcons, although it turns out the Falcons can also lose a game without even…",
+    "publishedAt": "2026-11-08T14:15:00.000Z",
+    "collectedAt": "2026-11-08T15:14:10.658Z"
   }
 }
