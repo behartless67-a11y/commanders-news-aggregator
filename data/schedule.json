@@ -146,20 +146,6 @@
   },
   {
     "season": "regular",
-    "week": "WEEK 9",
-    "gametime": "11/08/2026 13:00:00 -05:00",
-    "homeAway": "VS",
-    "opponentAbbr": "LA",
-    "opponent": "Los Angeles Rams",
-    "opponentShort": "Rams",
-    "venue": "Northwest Stadium",
-    "result": null,
-    "points": null,
-    "broadcast": "FOX",
-    "isBye": false
-  },
-  {
-    "season": "regular",
     "week": "WEEK 10",
     "gametime": "11/12/2026 20:15:00 -05:00",
     "homeAway": "AT",

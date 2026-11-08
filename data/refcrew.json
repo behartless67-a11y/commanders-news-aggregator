@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T15:15:08.927Z",
+  "fetchedAt": "2026-11-08T20:31:19.661Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6311,6 +6311,22 @@
         "abbr": "JAX",
         "flags": 4,
         "yards": 24
+      }
+    },
+    "401873038": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T14:30Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "ATL",
+        "flags": 12,
+        "yards": 88
+      },
+      "away": {
+        "abbr": "CIN",
+        "flags": 6,
+        "yards": 43
       }
     }
   }

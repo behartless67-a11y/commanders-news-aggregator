@@ -1,5 +1,12 @@
 [
   {
+    "name": "Athan Kaliakmanis",
+    "position": "QB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
     "name": "Daron Payne",
     "position": "DT",
     "status": "IR",
@@ -11,6 +18,20 @@
     "position": "WR",
     "status": "IR",
     "bodyPart": "Calf",
+    "notes": null
+  },
+  {
+    "name": "Fabian Moreau",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
+    "notes": null
+  },
+  {
+    "name": "Isaac Yiadom",
+    "position": "CB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -42,13 +63,6 @@
     "notes": "Surgery"
   },
   {
-    "name": "Jer'Zhan Newton",
-    "position": "DL",
-    "status": "Questionable",
-    "bodyPart": "Pectoral",
-    "notes": "Surgery"
-  },
-  {
     "name": "Jeremy McNichols",
     "position": "RB",
     "status": "IR",
@@ -68,6 +82,13 @@
     "status": "IR",
     "bodyPart": "Neck",
     "notes": "Surgery"
+  },
+  {
+    "name": "Lucas Patrick",
+    "position": "G",
+    "status": "Questionable",
+    "bodyPart": "Concussion",
+    "notes": null
   },
   {
     "name": "Terry McLaurin",

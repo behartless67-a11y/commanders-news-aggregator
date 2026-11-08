@@ -6326,5 +6326,31 @@
     "images": [],
     "publishedAt": "2026-11-08T16:38:17.980Z",
     "collectedAt": "2026-11-08T20:23:38.898Z"
+  },
+  "social-ec0a765079c1": {
+    "id": "social-ec0a765079c1",
+    "url": "https://x.com/Commanders/status/2119526077597196364",
+    "text": "Headed to the fourth @Verizon@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/582/687/125/203/029/original/28e91f80157988bb.jpg"
+    ],
+    "publishedAt": "2026-11-08T20:22:50.000Z",
+    "collectedAt": "2026-11-08T20:30:21.722Z"
+  },
+  "social-3f30f9bca451": {
+    "id": "social-3f30f9bca451",
+    "url": "https://x.com/BenStandig/status/2119527117394215140",
+    "text": "Puka Nacua is taking a big bite out of the Commanders today. 14-150-1. Whew.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-08T20:26:58.000Z",
+    "collectedAt": "2026-11-08T20:30:25.959Z"
   }
 }
