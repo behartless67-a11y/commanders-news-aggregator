@@ -920,6 +920,31 @@
     }
   },
   {
+    "slug": "jer-zhan-newton",
+    "name": "Jer'Zhan Newton",
+    "jersey": "95",
+    "position": "DT",
+    "espnId": "4430560",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430560.png",
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "38"
+        },
+        {
+          "label": "SACK",
+          "value": "5"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
     "slug": "charles-omenihu",
     "name": "Charles Omenihu",
     "jersey": "90",
@@ -1394,31 +1419,6 @@
         },
         {
           "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "jer-zhan-newton",
-    "name": "Jer'Zhan Newton",
-    "jersey": "95",
-    "position": "DT",
-    "espnId": "4430560",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430560.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "38"
-        },
-        {
-          "label": "SACK",
-          "value": "5"
-        },
-        {
-          "label": "INT",
           "value": "0"
         }
       ]
