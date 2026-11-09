@@ -1,34 +1,34 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-11-08T20:30:43.311Z",
+  "fetchedAt": "2026-11-09T06:33:07.686Z",
   "teams": [
     {
       "abbr": "NYG",
       "name": "New York Giants",
-      "overall": "4-2-1",
-      "streak": "W1",
-      "winPercent": 0.64285713
+      "overall": "5-2-1",
+      "streak": "W2",
+      "winPercent": 0.6875
     },
     {
       "abbr": "DAL",
       "name": "Dallas Cowboys",
-      "overall": "3-5",
-      "streak": "L1",
-      "winPercent": 0.375
+      "overall": "4-5",
+      "streak": "W1",
+      "winPercent": 0.44444445
     },
     {
       "abbr": "WAS",
       "name": "Washington Commanders",
-      "overall": "2-4-1",
-      "streak": "W1",
-      "winPercent": 0.35714287
+      "overall": "2-5-1",
+      "streak": "L1",
+      "winPercent": 0.3125
     },
     {
       "abbr": "PHI",
       "name": "Philadelphia Eagles",
-      "overall": "2-6",
-      "streak": "L6",
-      "winPercent": 0.25
+      "overall": "2-7",
+      "streak": "L7",
+      "winPercent": 0.22222222
     }
   ]
 }

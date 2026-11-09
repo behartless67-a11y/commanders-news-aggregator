@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T20:31:19.661Z",
+  "fetchedAt": "2026-11-09T06:34:08.473Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6327,6 +6327,198 @@
         "abbr": "CIN",
         "flags": 6,
         "yards": 43
+      }
+    },
+    "401873039": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "NO",
+        "flags": 4,
+        "yards": 25
+      },
+      "away": {
+        "abbr": "CLE",
+        "flags": 10,
+        "yards": 58
+      }
+    },
+    "401873040": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "IND",
+        "flags": 9,
+        "yards": 67
+      },
+      "away": {
+        "abbr": "DAL",
+        "flags": 14,
+        "yards": 153
+      }
+    },
+    "401873041": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "CAR",
+        "flags": 13,
+        "yards": 119
+      },
+      "away": {
+        "abbr": "DEN",
+        "flags": 8,
+        "yards": 50
+      }
+    },
+    "401873042": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "MIA",
+        "flags": 11,
+        "yards": 87
+      },
+      "away": {
+        "abbr": "DET",
+        "flags": 9,
+        "yards": 63
+      }
+    },
+    "401873043": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "John Hussey",
+      "home": {
+        "abbr": "WSH",
+        "flags": 6,
+        "yards": 39
+      },
+      "away": {
+        "abbr": "LAR",
+        "flags": 10,
+        "yards": 70
+      }
+    },
+    "401873044": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Bill Vinovich",
+      "home": {
+        "abbr": "PHI",
+        "flags": 6,
+        "yards": 56
+      },
+      "away": {
+        "abbr": "NYG",
+        "flags": 9,
+        "yards": 86
+      }
+    },
+    "401873045": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "referee": "Adrian Hill",
+      "home": {
+        "abbr": "KC",
+        "flags": 3,
+        "yards": 20
+      },
+      "away": {
+        "abbr": "NYJ",
+        "flags": 9,
+        "yards": 57
+      }
+    },
+    "401873046": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T21:05Z",
+      "referee": "Alex Moore",
+      "home": {
+        "abbr": "LAC",
+        "flags": 9,
+        "yards": 79
+      },
+      "away": {
+        "abbr": "HOU",
+        "flags": 6,
+        "yards": 36
+      }
+    },
+    "401873047": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T21:25Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "SF",
+        "flags": 7,
+        "yards": 59
+      },
+      "away": {
+        "abbr": "LV",
+        "flags": 5,
+        "yards": 29
+      }
+    },
+    "401873048": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T21:25Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "SEA",
+        "flags": 9,
+        "yards": 83
+      },
+      "away": {
+        "abbr": "ARI",
+        "flags": 9,
+        "yards": 97
+      }
+    },
+    "401873049": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-08T21:25Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "NE",
+        "flags": 5,
+        "yards": 31
+      },
+      "away": {
+        "abbr": "GB",
+        "flags": 3,
+        "yards": 14
+      }
+    },
+    "401873050": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-09T01:20Z",
+      "referee": "Ronald Torbert",
+      "home": {
+        "abbr": "CHI",
+        "flags": 9,
+        "yards": 74
+      },
+      "away": {
+        "abbr": "TB",
+        "flags": 8,
+        "yards": 45
       }
     }
   }

@@ -1,50 +1,50 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-11-08T20:31:11.240Z",
+  "fetchedAt": "2026-11-09T06:33:36.446Z",
   "offense": {
     "yardsPerGame": {
-      "value": "327.1",
-      "rank": 19,
-      "rankLabel": "19th"
-    },
-    "pointsPerGame": {
-      "value": "22.7",
-      "rank": 17,
-      "rankLabel": "17th"
-    },
-    "passYardsPerGame": {
-      "value": "200.6",
-      "rank": 22,
-      "rankLabel": "22nd"
-    },
-    "rushYardsPerGame": {
-      "value": "126.6",
-      "rank": 9,
-      "rankLabel": "9th"
-    }
-  },
-  "defense": {
-    "games": 7,
-    "yardsPerGame": {
-      "value": "342.1",
+      "value": "325.4",
       "rank": 20,
       "rankLabel": "20th"
     },
     "pointsPerGame": {
-      "value": "26.0",
-      "rank": 25,
-      "rankLabel": "25th"
+      "value": "21.5",
+      "rank": 21,
+      "rankLabel": "21st"
     },
     "passYardsPerGame": {
-      "value": "243.0",
+      "value": "207.1",
+      "rank": 21,
+      "rankLabel": "21st"
+    },
+    "rushYardsPerGame": {
+      "value": "118.3",
+      "rank": 11,
+      "rankLabel": "11th"
+    }
+  },
+  "defense": {
+    "games": 8,
+    "yardsPerGame": {
+      "value": "342.3",
+      "rank": 20,
+      "rankLabel": "20th"
+    },
+    "pointsPerGame": {
+      "value": "25.3",
+      "rank": 21,
+      "rankLabel": "Tied-21st"
+    },
+    "passYardsPerGame": {
+      "value": "240.0",
       "rank": 28,
       "rankLabel": "28th"
     },
     "rushYardsPerGame": {
-      "value": "99.1",
-      "rank": 12,
-      "rankLabel": "12th"
+      "value": "102.3",
+      "rank": 13,
+      "rankLabel": "13th"
     }
   },
   "leaders": {
@@ -52,24 +52,24 @@
       {
         "key": "Pass",
         "name": "Jayden Daniels",
-        "value": "976"
+        "value": "1,250"
       },
       {
         "key": "Rush",
-        "name": "Jacory Croskey-Merritt",
-        "value": "239"
+        "name": "Jayden Daniels",
+        "value": "252"
       },
       {
         "key": "Recv",
-        "name": "Antonio Williams",
-        "value": "259"
+        "name": "Stefon Diggs",
+        "value": "303"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
         "name": "Sonny Styles",
-        "value": "54"
+        "value": "67"
       },
       {
         "key": "Sack",
