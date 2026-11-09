@@ -11,30 +11,6 @@
     "publishedAt": "2026-10-30T19:30:00.000Z",
     "collectedAt": "2026-10-30T20:05:40.793Z"
   },
-  "social-296d19b233cf": {
-    "id": "social-296d19b233cf",
-    "url": "https://x.com/DZangaroNBCS/status/2116225589367484865",
-    "text": "Saquon Barkley says he hopes to play on Sunday. He’ll need to manage his injuries in the game. Basically he doesn’t want his body to lock up.",
-    "handle": "DZangaroNBCS",
-    "author": "Dave Zangaro",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-30T17:47:52.000Z",
-    "collectedAt": "2026-10-30T20:05:42.315Z"
-  },
-  "social-005eb7289bb4": {
-    "id": "social-005eb7289bb4",
-    "url": "https://x.com/JPFinlayNBCS/status/2116222135102218651",
-    "text": "Commanders now selling \"Embrace the Brace\" t-shirts. Pretty funny and smart ayden-daniels-black-washington-commanders-embrace-the-brace-t-shirt/p-461172021767045150+z-96-1485077739",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-10-30T17:34:09.000Z",
-    "collectedAt": "2026-10-30T20:05:42.315Z"
-  },
   "social-5e9f89475ec5": {
     "id": "social-5e9f89475ec5",
     "url": "https://x.com/BenStandig/status/2116257332296286247",
@@ -45,20 +21,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-10-30T19:54:00.000Z",
-    "collectedAt": "2026-10-30T20:05:45.088Z"
-  },
-  "social-de7fba051942": {
-    "id": "social-de7fba051942",
-    "url": "https://x.com/BenStandig/status/2116229538266947862",
-    "text": "FYI. I deleted a screenshot of my story from today because I saw a quote from Odafe Oweh taken out of context, and I didn't want to contribute further. The story remains up. No changes. Unlocking it so all can read (maybe subscribe while you're here). 👍 the-commanders-are-still-learning?r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/531/177/456/878/563/original/94dff8351eecd06d.jpg"
-    ],
-    "publishedAt": "2026-10-30T18:03:34.000Z",
     "collectedAt": "2026-10-30T20:05:45.088Z"
   },
   "social-d7750b893893": {
@@ -6514,5 +6476,105 @@
     "images": [],
     "publishedAt": "2026-11-09T13:08:41.000Z",
     "collectedAt": "2026-11-09T15:05:45.958Z"
+  },
+  "social-dd7c2c2d9041": {
+    "id": "social-dd7c2c2d9041",
+    "url": "https://x.com/JPFinlayNBCS/status/2119839332907548884",
+    "text": "Crazy world where the Giants rest Skattebo against Philly to play him against Washington",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-09T17:07:36.000Z",
+    "collectedAt": "2026-11-09T18:50:47.660Z"
+  },
+  "social-a798983e2df7": {
+    "id": "social-a798983e2df7",
+    "url": "https://x.com/SWhyno/status/2119837507160277087",
+    "text": "Giants coach John Harbaugh expresses optimism about J.J. McCarthy being ready to play Thursday night against the Commanders: ccarthy-injury-commanders-170ae9f09632ea89756d77358ca74462",
+    "handle": "SWhyno",
+    "author": "Stephen Whyno",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-09T17:00:21.000Z",
+    "collectedAt": "2026-11-09T18:50:47.661Z"
+  },
+  "social-1580045d86be": {
+    "id": "social-1580045d86be",
+    "url": "https://x.com/JPFinlayNBCS/status/2119817606945275926",
+    "text": "Commanders netted ZERO first downs in the 3rd qtr of the loss to the Rams, even after a Stafford INT that gave Washington possession at LA's 27.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/587/301/360/027/187/original/c2ecfe426722afd7.png"
+    ],
+    "publishedAt": "2026-11-09T15:41:16.000Z",
+    "collectedAt": "2026-11-09T18:50:47.661Z"
+  },
+  "social-4a43e4b14e22": {
+    "id": "social-4a43e4b14e22",
+    "url": "https://x.com/JordanRaanan/status/2119835333760045335",
+    "text": "Cam Skattebo will be \"full go\" on Thursday night, per John Harbaugh. He was \"very close\" to playing on Sunday in Philly but they thought he was just be limited and had their eyes on the second game in four days.",
+    "handle": "JordanRaanan",
+    "author": "Jordan Raanan",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-09T16:51:42.000Z",
+    "collectedAt": "2026-11-09T18:50:48.886Z"
+  },
+  "social-d197bfdd4ee3": {
+    "id": "social-d197bfdd4ee3",
+    "url": "https://x.com/JordanRaanan/status/2119810081214861744",
+    "text": "The Giants are calling for a White Out on Thursday night vs. Commanders. Asking fans to wear white while they wear their vintage white jerseys. Also will be a White Out shop open Wednesday and Thursday. Parking available in Lot F.",
+    "handle": "JordanRaanan",
+    "author": "Jordan Raanan",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/587/125/967/091/915/original/dc4abcb9f0ff8502.jpg"
+    ],
+    "publishedAt": "2026-11-09T15:11:22.000Z",
+    "collectedAt": "2026-11-09T18:50:48.886Z"
+  },
+  "social-92a4e75aef41": {
+    "id": "social-92a4e75aef41",
+    "url": "https://x.com/JordanRaanan/status/2119831426111774758",
+    "text": "Giants seem pretty optimistic right now about J.J. McCarthy and his hip. \"It does look like he's going to play [Thursday]. Feel fairly good about that,\" coach John Harbaugh said. Harbaugh added they'll find out more later in the day. Early returns seem positive.",
+    "handle": "JordanRaanan",
+    "author": "Jordan Raanan",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-09T16:36:11.000Z",
+    "collectedAt": "2026-11-09T18:50:48.886Z"
+  },
+  "social-7a5184136ea3": {
+    "id": "social-7a5184136ea3",
+    "url": "https://x.com/tashanreed/status/2119831515336962498",
+    "text": "McCarthy is expected to play against the #Commanders :",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-09T16:36:32.000Z",
+    "collectedAt": "2026-11-09T18:50:51.671Z"
+  },
+  "social-5245e8b5f0f8": {
+    "id": "social-5245e8b5f0f8",
+    "url": "https://x.com/tashanreed/status/2119821865233347023",
+    "text": "I broke down the #Commanders ' weird final play against the Rams:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-09T15:58:11.000Z",
+    "collectedAt": "2026-11-09T18:50:51.671Z"
   }
 }
