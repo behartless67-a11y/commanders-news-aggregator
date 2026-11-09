@@ -1,100 +1,4 @@
 {
-  "riggos-rag-a6eb0cac8fb3": {
-    "id": "riggos-rag-a6eb0cac8fb3",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/5-washington-commanders-under-pressure-step-up-amid-growing-injury-crisis",
-    "title": "5 Commanders under pressure to step up amid growing injury crisis",
-    "excerpt": "Which Washington Commanders players could be on standby for bigger roles as injury doubts cloud their Week 3 game against the Seattle Seahawks?",
-    "publishedAt": "2026-09-25T10:00:00.000Z",
-    "collectedAt": "2026-09-25T10:05:31.157Z"
-  },
-  "hogs-haven-01a3313d9ada": {
-    "id": "hogs-haven-01a3313d9ada",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/442573/washington-commanders-vs-seattle-seahawks-week-3-five-questions-field-gulls",
-    "title": "Washington Commanders vs Seattle Seahawks Week 3: Five Questions with Field Gulls",
-    "excerpt": "In a home game at Northwest Stadium on Nov. 2, quarterback Jayden Daniels scores the only Commanders touchdown in the 38-14 week nine loss against the Seattle Seahawks. | Marcus Relacion/The Washington Informer \n \n It’s week 3 of the NFL season, and the 0-2 Washington Commanders will be facing a 2-0 Seattle Seahawks team at home in Northwest Stadium in Landover, MD this Sunday at 1:00 p.m. ET. Despite losing starting QB Sam Darnold to a glute injury on the first drive of the first game, the…",
-    "publishedAt": "2026-09-25T11:30:00.000Z",
-    "collectedAt": "2026-09-25T12:05:30.841Z"
-  },
-  "riggos-rag-0dbf5bb700ec": {
-    "id": "riggos-rag-0dbf5bb700ec",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/terry-mclaurin-fuels-jayden-daniels-hope-before-commanders-reveal-next-step",
-    "title": "Terry McLaurin fuels Jayden Daniels hope before Commanders reveal next step",
-    "excerpt": "Terry McLaurin fueled hope around Jayden Daniels' potential return before the Washington Commanders reveal the next step.",
-    "publishedAt": "2026-09-25T11:30:00.000Z",
-    "collectedAt": "2026-09-25T12:05:31.113Z"
-  },
-  "hogs-haven-1dfb0817a7be": {
-    "id": "hogs-haven-1dfb0817a7be",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/443423/commanders-adam-peters-jayden-daniels-injury-update-radio-1067",
-    "title": "Commanders GM Adam Peters provides Jayden Daniels injury update",
-    "excerpt": "Commanders quarterback Jayden Daniels has traveled around the country seeing specialists for how to best treat a left elbow dislocation that occurred at the end of the first half of a Week 2 loss at Dallas . \n\n Daniels got back late on Thursday and the team was still sitting down to decide on the best course of action moving forward. \n\n General manager Adam Peters didn’t have definitive answers about Daniels’ rehab process, but he did say that surgery is not on the table and that the team isn’t…",
-    "publishedAt": "2026-09-25T12:59:32.000Z",
-    "collectedAt": "2026-09-25T14:05:32.381Z"
-  },
-  "riggos-rag-0b8634807b6a": {
-    "id": "riggos-rag-0b8634807b6a",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/jayden-daniels-avoids-surgery-washington-commanders-confront-repeat-injury-risk",
-    "title": "Jayden Daniels avoids surgery as Commanders confront repeat-injury risk",
-    "excerpt": "Washington Commanders general manager Adam Peters confirmed that quarterback Jayden Daniels won't have surgery, nor will he be going to injured reserve.",
-    "publishedAt": "2026-09-25T13:03:56.000Z",
-    "collectedAt": "2026-09-25T14:05:32.885Z"
-  },
-  "athletic-jhabvala-ec05bb96769e": {
-    "id": "athletic-jhabvala-ec05bb96769e",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7626823/2026/09/25/jayden-daniels-injury-update-surgery-ir",
-    "title": "Jayden Daniels not expected to have surgery or go on IR, Commanders GM Adam Peters says",
-    "excerpt": "Daniels dislocated his elbow for the second time in 10 months during Washington's Week 2 loss to the Dallas Cowboys.",
-    "publishedAt": "2026-09-25T13:21:20.000Z",
-    "collectedAt": "2026-09-25T14:05:34.571Z"
-  },
-  "commanders-youtube-469609ef416f": {
-    "id": "commanders-youtube-469609ef416f",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=MYlnvocDju8",
-    "title": "Quan Martin On Growth, Marcus Mariota & The Seahawks + Anthony Armstrong’s NFL Journey | Next Man Up",
-    "excerpt": "",
-    "publishedAt": "2026-09-25T14:00:32.000Z",
-    "collectedAt": "2026-09-25T14:05:34.938Z"
-  },
-  "pft-056ab928a553": {
-    "id": "pft-056ab928a553",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/surgery-not-on-table-for-jayden-daniels-commanders-havent-discussed-ir",
-    "title": "Surgery not on table for Jayden Daniels, Commanders haven't discussed IR",
-    "excerpt": "Commanders head coach Dan Quinn said on Wednesday that he didn't have an update on quarterback Jayden Daniels's outlook for the coming weeks because he was still meeting with specialists about his dislocated left elbow, but General Manager Adam Peters had more to offer on Friday morning. \n Daniels will not play against the Seahawks this Sunday, but Peters indicated that the Commanders expect to have the quarterback in the lineup in the near future. \n “He met with doctors all over the country,\"…",
-    "publishedAt": "2026-09-25T13:00:50.000Z",
-    "collectedAt": "2026-09-25T14:05:38.489Z"
-  },
   "atoz-sports-90ba2e305ae4": {
     "id": "atoz-sports-90ba2e305ae4",
     "sourceId": "atoz-sports",
@@ -119,42 +23,6 @@
     "publishedAt": "2026-09-25T16:00:02.000Z",
     "collectedAt": "2026-09-25T16:05:35.660Z"
   },
-  "riggos-rag-ae175711c172": {
-    "id": "riggos-rag-ae175711c172",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-may-be-ready-slash-mike-sainristil-role-against-seahawks",
-    "title": "Commanders may be ready to slash Mike Sainristil’s role against Seahawks",
-    "excerpt": "The Washington Commanders may be ready to slash struggling cornerback Mike Sainristil’s role against the Seattle Seahawks.",
-    "publishedAt": "2026-09-25T14:30:00.000Z",
-    "collectedAt": "2026-09-25T16:05:35.660Z"
-  },
-  "clutchpoints-7ca3e55f1d3b": {
-    "id": "clutchpoints-7ca3e55f1d3b",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-unhinged-advice-jayden-daniels-marshawn-lynch-elbow-injury",
-    "title": "You’ll never guess the NSFW unhinged advice Commanders’ Jayden Daniels got from Marshawn Lynch after another elbow injury",
-    "excerpt": "After suffering a grotesque elbow injury , Washington Commanders QB Jayden Daniels received some unique advice from former NFL running back Marshawn Lynch.\n\n Speaking on the Get Got podcast, Lynch claimed that Daniels needs “to start going to j**k off,” doubling down that he has “got to be ambidextrous when it comes to beating that motherf****r.”\n\n \n . @MoneyLynch and @RealMikeRob react to Caleb Williams’ and Jayden Daniels’ injuries with some words of advice pic.twitter.com/vummRUfrGc…",
-    "publishedAt": "2026-09-25T13:39:39.000Z",
-    "collectedAt": "2026-09-25T16:05:35.853Z"
-  },
-  "clutchpoints-f92b37b40dec": {
-    "id": "clutchpoints-f92b37b40dec",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-best-case-scenario-injury-verdict",
-    "title": "Commanders QB Jayden Daniels gets best-case scenario injury verdict",
-    "excerpt": "The Washington Commanders have already dealt with plenty of adversity this season. Commanders QB Jayden Daniels suffered another gruesome injury to his left elbow against the Cowboys in Week 2. Washington’s latest update on Daniels makes the situation look a lot better than fans expected.\n\n Commanders general manager Adam Peters gave a positive injury update on Daniels on Friday. He explained that Washington is optimistic that Daniels will be able to return soon after visiting multiple…",
-    "publishedAt": "2026-09-25T13:12:16.000Z",
-    "collectedAt": "2026-09-25T16:05:35.853Z"
-  },
   "cbs-nfl-d6f2c6c9a98b": {
     "id": "cbs-nfl-d6f2c6c9a98b",
     "sourceId": "cbs-nfl",
@@ -166,30 +34,6 @@
     "excerpt": "The Week 3 card features two receiver props, a low-scoring Panthers-Browns prediction and a Saints same-game combination",
     "publishedAt": "2026-09-25T15:19:18.000Z",
     "collectedAt": "2026-09-25T16:05:40.961Z"
-  },
-  "cbs-nfl-8c7b3a86c225": {
-    "id": "cbs-nfl-8c7b3a86c225",
-    "sourceId": "cbs-nfl",
-    "sourceName": "CBS Sports",
-    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
-    "category": "league",
-    "url": "https://www.cbssports.com/nfl/news/jayden-daniels-injury-update-commanders-qb-elbow-2026",
-    "title": "Jayden Daniels injury update: Commanders QB will avoid injured reserve after dislocating elbow",
-    "excerpt": "Daniels is considered week-to-week and will miss Sunday's game against the Seahawks, with Marcus Mariota set to start for 0-2 Washington",
-    "publishedAt": "2026-09-25T13:52:21.000Z",
-    "collectedAt": "2026-09-25T16:05:40.961Z"
-  },
-  "yahoo-nfl-cb33e9568a8c": {
-    "id": "yahoo-nfl-cb33e9568a8c",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-predictions-expect-140000117.html",
-    "title": "Seahawks vs. Commanders predictions: Expect another big game from Seattle’s rushing attack",
-    "excerpt": "GLENDALE, ARIZONA - SEPTEMBER 20: Jadarian Price #8 of the Seattle Seahawks rushes the football against the Arizona Cardinals during the NFL game at State Farm Stadium on September 20, 2026 in Glendale, Arizona. The Seahawks defeated the Cardinals 31-7. (Photo by Christian Petersen/Getty Images) | Getty Images The Seattle Seahawks enters Week 3 with a 2-0 record and will travel to Maryland to take on the Washington Commanders and try and extend their winning streak to 13 games. The Seahawks are…",
-    "publishedAt": "2026-09-25T14:00:00.000Z",
-    "collectedAt": "2026-09-25T16:05:41.644Z"
   },
   "clutchpoints-41f1692401c2": {
     "id": "clutchpoints-41f1692401c2",
@@ -17578,5 +17422,113 @@
     "excerpt": "Sunday's early action didn't exactly stir up some hot Monday debate. Several games were blowouts, with only five decided by one score. \n There were some fascinating close-game finishes, however, and a few non-one-score games whose fates could have looked far different had one or two plays gone the other way.\n The Washington Commanders, frequent guests of this list, have ended up here again thanks to a few fateful late plays in their failed upset bid against the Los Angeles Rams.\n The Browns…",
     "publishedAt": "2026-11-09T03:31:36.000Z",
     "collectedAt": "2026-11-09T06:32:44.841Z"
+  },
+  "riggos-rag-4e128ff14838": {
+    "id": "riggos-rag-4e128ff14838",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/brandon-coleman-leaves-washington-commanders-benching-call-cant-keep-delaying",
+    "title": "Brandon Coleman leaves Commanders with a benching call they can't keep delaying",
+    "excerpt": "Struggling left tackle Brandon Coleman leaves the Washington Commanders with a benching call they can't keep delaying.",
+    "publishedAt": "2026-11-09T14:00:05.000Z",
+    "collectedAt": "2026-11-09T15:05:31.396Z"
+  },
+  "riggos-rag-300865044b21": {
+    "id": "riggos-rag-300865044b21",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/6-major-observations-from-jayden-daniels-performance-against-rams-week-9",
+    "title": "6 major observations from Jayden Daniels' performance against the Rams",
+    "excerpt": "What were some major observations from Washington Commanders quarterback Jayden Daniels' performance against the Los Angeles Rams?",
+    "publishedAt": "2026-11-09T12:30:01.000Z",
+    "collectedAt": "2026-11-09T15:05:31.396Z"
+  },
+  "riggos-rag-0ace4799d42d": {
+    "id": "riggos-rag-0ace4799d42d",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/3-winners-5-losers-washington-commanders-feeble-defeat-rams",
+    "title": "3 winners (and 5 losers) from Commanders' feeble defeat to the Rams",
+    "excerpt": "Who were the big winners and losers from the Washington Commanders' disappointing loss to the Los Angeles Rams in Week 9?",
+    "publishedAt": "2026-11-09T11:00:01.000Z",
+    "collectedAt": "2026-11-09T15:05:31.396Z"
+  },
+  "clutchpoints-d7b90878639f": {
+    "id": "clutchpoints-d7b90878639f",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-dan-quinn-disgusted-loss-rams-season-tubes",
+    "title": "Commanders’ Dan Quinn disgusted by loss to Rams as season goes down tubes",
+    "excerpt": "The Washington Commanders failed to build on their momentum from their Week 9 win over the Philadelphia Eagles, as they lost their next game.\n\n On Sunday, Washington suffered a 20-13 loss at the hands of the Los Angeles Rams at Northwest Stadium in Landover, leaving Commanders head coach Dan Quinn with a blunt assessment of what just took place on the field, particularly regarding his team’s performance.\n\n “Once again, like we have not nailed our complementary football,” Quinn told reporters in…",
+    "publishedAt": "2026-11-08T23:42:46.000Z",
+    "collectedAt": "2026-11-09T15:05:32.258Z"
+  },
+  "athletic-commanders-e4ff7e033639": {
+    "id": "athletic-commanders-e4ff7e033639",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7764065/2026/11/09/commanders-rams-mistakes-playoffs",
+    "title": "The Commanders battle. And then they falter. Rinse, repeat",
+    "excerpt": "Washington keeps doing the same things, and getting the same results. That's not a coincidence.",
+    "publishedAt": "2026-11-09T11:35:40.000Z",
+    "collectedAt": "2026-11-09T15:05:34.160Z"
+  },
+  "athletic-commanders-0314c4e2e10a": {
+    "id": "athletic-commanders-0314c4e2e10a",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7765820/2026/11/09/commanders-center-offensive-line-myles-garrett",
+    "title": "The Commanders had a sixth-round rookie blocking Myles Garrett. How did we get here?",
+    "excerpt": "When center Lucas Patrick went down Sunday, the Commanders turned to an untested rookie rather than the guy who started the season.",
+    "publishedAt": "2026-11-09T10:59:39.000Z",
+    "collectedAt": "2026-11-09T15:05:34.160Z"
+  },
+  "commanders-youtube-8fbfb7d7fb5a": {
+    "id": "commanders-youtube-8fbfb7d7fb5a",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=x-4-gwEYBI8",
+    "title": "Postgame LIVE: Commanders vs. Rams | NFL Week 9",
+    "excerpt": "",
+    "publishedAt": "2026-11-08T22:23:41.000Z",
+    "collectedAt": "2026-11-09T15:05:35.215Z"
+  },
+  "commanders-youtube-e20472cdc08f": {
+    "id": "commanders-youtube-e20472cdc08f",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=M6F-jQBjf5I",
+    "title": "HALFTIME CEREMONY: John Riggins' 44 Is Officially Retired In The Burgundy & Gold",
+    "excerpt": "",
+    "publishedAt": "2026-11-08T21:04:09.000Z",
+    "collectedAt": "2026-11-09T15:05:35.215Z"
+  },
+  "pft-5c652fedbfbe": {
+    "id": "pft-5c652fedbfbe",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-had-one-final-shot-at-the-end-zone-and-they-blew-it",
+    "title": "Commanders had one final shot at the end zone, and they blew it",
+    "excerpt": "The Commanders, in key moments of games, continue to have a little too much Backward Hat Energy.\n On Sunday, it wasn't an issue of letting the clock expire or not knowing it was fourth down. Which made it less obvious on the surface.\n Still, Commanders coach Dan Quinn made another questionable (to put it kindly) decision at the conclusion of the 20-13 loss to the Rams.\n Fast forward through 59 minutes and 57 seconds. Three seconds remained. The Commanders had the ball on the L.A. 31.\n One play.…",
+    "publishedAt": "2026-11-09T14:41:53.000Z",
+    "collectedAt": "2026-11-09T15:05:38.337Z"
   }
 }
