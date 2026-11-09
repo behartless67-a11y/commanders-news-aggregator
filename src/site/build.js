@@ -212,9 +212,15 @@ async function loadShareCards() {
 function pinFreshBlogPosts(sorted, now) {
   const pinned = [];
   const rest = [];
+  // A pregame post (it carries its game's poll) has done its job once a newer
+  // Monday recap is up, so it stops holding the top of the river above it.
+  const latestMonday = Math.max(0, ...sorted
+    .filter((i) => i.category === 'monday' && i.publishedAt)
+    .map((i) => Date.parse(i.publishedAt)));
   for (const item of sorted) {
     const fresh =
       item.sourceId === 'blog' && item.publishedAt
+      && !(item.pollGame && latestMonday > Date.parse(item.publishedAt))
       // A post can ask to stay up longer than the default. Used sparingly:
       // a win over the reigning champions is worth more than a day at the
       // top, a routine recap is not.

@@ -1074,6 +1074,57 @@ main.layout{
   margin: 0;
 }
 
+/* The pinned post's own photo, beside the text (itemCard() in templates.js).
+   Only pinned posts with a photo get this; every other card is unchanged. */
+.card-has-thumb{
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-thumb{
+  flex: 0 0 140px;
+  width: 140px;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+}
+
+.card-thumb img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.card-read{
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.card-read:hover,
+.card-read:focus-visible{
+  text-decoration: underline;
+}
+
+@media (max-width: 600px){
+  .card-has-thumb{ gap: 12px; }
+  .card-thumb{ flex-basis: 88px; width: 88px; }
+}
+
 .card-top{
   display:flex;
   align-items:center;

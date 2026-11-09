@@ -300,8 +300,18 @@ function itemCard(item, index, rosterIndex) {
   const pinNote = item.pinned
     ? `<p class="card-pin-note">Pinned for ${pinDays ? `${pinDays} days` : '24 hours'}, then it fends for itself</p>`
     : '';
-  return `
-    <article class="card${extra}${item.pinned ? ' card-pinned' : ''}">
+  // A pinned post of ours is the one card a regular would otherwise scan past
+  // as just another headline (they read the river and rarely click in), so it
+  // gets the post's own photo and a plain "read it" link. Only pinned cards:
+  // every other card in the river renders exactly as before.
+  const pinnedOwn = item.pinned && isOwnPost;
+  const thumb = pinnedOwn && item.thumb
+    ? `<a class="card-thumb" href="${escapeHtml(item.url)}" tabindex="-1" aria-hidden="true"><img src="${escapeHtml(item.thumb.src)}" alt="" width="${Number(item.thumb.w) || ''}" height="${Number(item.thumb.h) || ''}" decoding="async"></a>`
+    : '';
+  const readIt = pinnedOwn
+    ? `<a class="card-read" href="${escapeHtml(item.url)}">Read the post <span aria-hidden="true">&rarr;</span></a>`
+    : '';
+  const body = `
       <div class="card-top">
         ${ownLabel}<span class="card-source">${escapeHtml(item.sourceName)}</span>${paywall}${breakdown}
         ${when ? `<span class="card-time"><time datetime="${escapeHtml(item.publishedAt || '')}">${escapeHtml(when)}</time></span>` : ''}
@@ -310,6 +320,9 @@ function itemCard(item, index, rosterIndex) {
       <h3 class="card-headline"><a href="${escapeHtml(item.url)}"${item.internal ? '' : ` target="_blank" rel="noopener noreferrer" data-outbound="${escapeHtml(item.sourceId)}"`}>${escapeHtml(item.title)}</a></h3>
       ${excerptMarkup}
       ${moreMarkup}
+      ${readIt}`;
+  return `
+    <article class="card${extra}${item.pinned ? ' card-pinned' : ''}${thumb ? ' card-has-thumb' : ''}">${thumb ? `<div class="card-body">${body}</div>${thumb}` : body}
     </article>`;
 }
 
@@ -1452,6 +1465,17 @@ const stripInlineCites = (text) =>
  * same-site instead of opening a new tab.
  */
 export function blogRiverItems(digests, previews, originals = [], mondays = []) {
+  // The post's own first photo (the first `!photo` marker it actually shows),
+  // for the thumbnail on its pinned river card (see itemCard). Never the stock
+  // share-card backgrounds: there are only three, so every post would look the
+  // same. A post without a photo just gets the card without one.
+  const firstPhoto = (record) => {
+    const key = (record.paragraphs || [])
+      .map((p) => (String(p).startsWith('!photo ') ? String(p).slice(7).trim() : null))
+      .find((k) => k && record.photos?.[k]);
+    const photo = key && record.photos[key];
+    return photo ? { src: `photos/${photo.file}`, w: photo.w, h: photo.h } : null;
+  };
   const fromDigest = (record) => ({
     id: `blog-digest-${record.week}`,
     sourceId: 'blog',
@@ -1495,6 +1519,10 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     // Optional per-post override for how long it stays pinned; see
     // pinFreshBlogPosts in build.js. Undefined means the normal window.
     pinHours: record.pinHours,
+    // A pregame post carries its game's poll; pinFreshBlogPosts uses it to
+    // drop the pin once that game's Monday recap is up.
+    pollGame: record.pollGame,
+    thumb: firstPhoto(record),
     internal: true,
   });
   // Same reasoning as fromOriginal above: its own category so the river
@@ -1512,6 +1540,7 @@ export function blogRiverItems(digests, previews, originals = [], mondays = []) 
     // Optional per-post override for how long it stays pinned; see
     // pinFreshBlogPosts in build.js. Undefined means the normal window.
     pinHours: record.pinHours,
+    thumb: firstPhoto(record),
     internal: true,
   });
   return [...digests.map(fromDigest), ...previews.map(fromPreview), ...originals.map(fromOriginal), ...mondays.map(fromMonday)];

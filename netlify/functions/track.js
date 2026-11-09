@@ -92,6 +92,10 @@ const VIA_LABELS = {
   // Oct 30 send, 12 visits landing on exactly that issue's links.
   ubvyzbvy: 'Hail Mail email',
   podcast: 'Podcast mention',
+  // Links Ben hands out himself in texts and Slack. Both apps open links in an
+  // in-app browser with no referrer, so without a tag they land in "Direct".
+  text: 'Text message',
+  slack: 'Slack',
   // The "Send it to the group chat" button at the end of a post (postShare()
   // in templates.js): a reader passing a link along, not Ben.
   share: 'Reader share (group chat)',
