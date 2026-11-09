@@ -105,6 +105,10 @@ PHOTOS=(
   # output was added by hand with the post and the original is gone; the row
   # is here so dimensions.json keeps the entry (see the skip branch below).
   "brunch-crew|$DESKTOP/brunch-crew.jpg|-|-|-"
+  # Chris's bathroom TV (the Nov 9 Monday post, "Those Snaps Really Counted"),
+  # from the group chat with his OK. Cropped off the cluttered vanity on the
+  # left; the TV, the mirror and the toilet are the joke, so they stay.
+  "chris-bathroom|$DESKTOP/chris-bathroom.jpg|3854:5712:430:0|contrast=1.04:saturation=1.04|-"
   # Header backdrops (config/hero-images.js). The header is a very wide,
   # short band, about 5:1 on a desktop, so each is cut to a 3:1 strip: wide
   # enough to fill it, with vertical room left over for the slow drift in
