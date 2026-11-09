@@ -28,18 +28,6 @@
     "publishedAt": "2026-10-31T00:00:02.000Z",
     "collectedAt": "2026-10-31T02:05:36.737Z"
   },
-  "social-5d9f8b250c92": {
-    "id": "social-5d9f8b250c92",
-    "url": "https://x.com/Commanders/status/2116304910861914134",
-    "text": "DT Daron Payne (foot) has been downgraded to out for Sunday’s game",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-10-30T23:03:04.000Z",
-    "collectedAt": "2026-10-31T02:05:36.737Z"
-  },
   "social-609b6c1f31b8": {
     "id": "social-609b6c1f31b8",
     "url": "https://x.com/JPFinlayNBCS/status/2116337248782430352",
@@ -64,20 +52,6 @@
     "publishedAt": "2026-10-30T23:46:09.000Z",
     "collectedAt": "2026-10-31T02:05:38.212Z"
   },
-  "social-a58907f94994": {
-    "id": "social-a58907f94994",
-    "url": "https://x.com/RapSheet/status/2116303392855253338",
-    "text": "#Commanders standout DT Daron Payne suffered a significant foot injury today in practice that will knock him out for the foreseeable future and likely land him IR, sources tell me and @MikeGarafolo . Payne will undergo more evaluations tomorrow. But another tough blow for Washington.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/532/333/624/899/708/original/b329c9ee10c3a547.jpg"
-    ],
-    "publishedAt": "2026-10-30T22:57:02.000Z",
-    "collectedAt": "2026-10-31T02:05:38.212Z"
-  },
   "social-aa0bebf00466": {
     "id": "social-aa0bebf00466",
     "url": "https://x.com/john_keim/status/2116316586680197144",
@@ -88,30 +62,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-10-30T23:49:28.000Z",
-    "collectedAt": "2026-10-31T02:05:39.615Z"
-  },
-  "social-529c647a6879": {
-    "id": "social-529c647a6879",
-    "url": "https://x.com/john_keim/status/2116305414296084989",
-    "text": "Daron Payne has now been downgraded to out for Sunday. Just a terrible turn of events for Washington.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-30T23:05:04.000Z",
-    "collectedAt": "2026-10-31T02:05:39.615Z"
-  },
-  "social-9b7834ce1777": {
-    "id": "social-9b7834ce1777",
-    "url": "https://x.com/john_keim/status/2116304302599794779",
-    "text": "A horrible development for Washington",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-10-30T23:00:39.000Z",
     "collectedAt": "2026-10-31T02:05:39.615Z"
   },
   "social-f10581a5c2f4": {
@@ -154,30 +104,6 @@
     "publishedAt": "2026-10-30T23:48:58.000Z",
     "collectedAt": "2026-10-31T02:05:40.905Z"
   },
-  "social-06664102aa88": {
-    "id": "social-06664102aa88",
-    "url": "https://x.com/BenStandig/status/2116304339153162403",
-    "text": "@MikeGarafolo and @RapSheet first.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-30T23:00:48.000Z",
-    "collectedAt": "2026-10-31T02:05:40.905Z"
-  },
-  "social-459db115b23c": {
-    "id": "social-459db115b23c",
-    "url": "https://x.com/BenStandig/status/2116304231359754690",
-    "text": "Unreal. Another injury. DT Daron Payne suffered a foot injury today in practice, per source. The injury is considered significant enough that he may land on IR.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-10-30T23:00:22.000Z",
-    "collectedAt": "2026-10-31T02:05:40.906Z"
-  },
   "social-f00f249c2f12": {
     "id": "social-f00f249c2f12",
     "url": "https://x.com/tashanreed/status/2116342723544338448",
@@ -200,18 +126,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-10-30T23:17:36.000Z",
-    "collectedAt": "2026-10-31T02:05:42.362Z"
-  },
-  "social-5df27a8e8b6c": {
-    "id": "social-5df27a8e8b6c",
-    "url": "https://x.com/tashanreed/status/2116304888510767295",
-    "text": "I can confirm that #Commanders DT Daron Payne suffered a significant foot injury in practice today, won't play Sunday and is expected to miss significant time. The hits just keep coming for Washington.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-10-30T23:02:59.000Z",
     "collectedAt": "2026-10-31T02:05:42.362Z"
   },
   "social-f8693a7f4a98": {
@@ -238,32 +152,6 @@
     "publishedAt": "2026-10-30T23:06:48.000Z",
     "collectedAt": "2026-10-31T02:05:47.061Z"
   },
-  "social-1f3482c24bcf": {
-    "id": "social-1f3482c24bcf",
-    "url": "https://x.com/MikeGarafolo/status/2116303780274725359",
-    "text": "Daron Payne was a name to watch at the trade deadline but this injury likely takes him out of play there for the #Commanders and other teams.",
-    "handle": "MikeGarafolo",
-    "author": "Mike Garafolo",
-    "label": "",
-    "sourceKey": "@MikeGarafolo",
-    "images": [],
-    "publishedAt": "2026-10-30T22:58:34.000Z",
-    "collectedAt": "2026-10-31T02:05:48.392Z"
-  },
-  "social-549a8a39f2a5": {
-    "id": "social-549a8a39f2a5",
-    "url": "https://x.com/MikeGarafolo/status/2116303433141543258",
-    "text": "#Commanders DT Daron Payne suffered a significant foot injury that will knock him out for the foreseeable future and and likely land him on IR, sources tell me and @RapSheet . More tests coming for Payne, who was added to the injury report today, but it appears he’s out a while.",
-    "handle": "MikeGarafolo",
-    "author": "Mike Garafolo",
-    "label": "",
-    "sourceKey": "@MikeGarafolo",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/532/333/534/601/154/original/2256a9783d555722.jpg"
-    ],
-    "publishedAt": "2026-10-30T22:57:12.000Z",
-    "collectedAt": "2026-10-31T02:05:48.392Z"
-  },
   "social-e3c4317fc757": {
     "id": "social-e3c4317fc757",
     "url": "https://x.com/pfrumors/status/2116319632311140497",
@@ -274,18 +162,6 @@
     "sourceKey": "@pfrumors",
     "images": [],
     "publishedAt": "2026-10-31T00:01:34.000Z",
-    "collectedAt": "2026-10-31T02:05:50.924Z"
-  },
-  "social-e611d834393b": {
-    "id": "social-e611d834393b",
-    "url": "https://x.com/pfrumors/status/2116304614987366860",
-    "text": "A rough season on the NFC East health front continues. A foot injury will sideline Daron Payne -- perhaps for the entire season. The contract-year #Commanders DT had been mentioned as a possible trade piece commanders-dt-daron-payne-to-miss-extensive-time",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [],
-    "publishedAt": "2026-10-30T23:01:53.000Z",
     "collectedAt": "2026-10-31T02:05:50.924Z"
   },
   "social-2ffa3bfa90ba": {
