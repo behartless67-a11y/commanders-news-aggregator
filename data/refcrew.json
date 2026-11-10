@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T02:46:00.142Z",
+  "fetchedAt": "2026-11-10T07:06:35.158Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6519,6 +6519,22 @@
         "abbr": "TB",
         "flags": 8,
         "yards": 45
+      }
+    },
+    "401873051": {
+      "season": 2026,
+      "week": 9,
+      "date": "2026-11-10T01:15Z",
+      "referee": "Carl Cheffers",
+      "home": {
+        "abbr": "MIN",
+        "flags": 4,
+        "yards": 20
+      },
+      "away": {
+        "abbr": "BUF",
+        "flags": 8,
+        "yards": 62
       }
     }
   }
