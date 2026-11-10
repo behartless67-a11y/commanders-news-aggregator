@@ -7,6 +7,20 @@
     "notes": null
   },
   {
+    "name": "Chig Okonkwo",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Hip",
+    "notes": null
+  },
+  {
+    "name": "Colson Yankoff",
+    "position": "TE",
+    "status": "Questionable",
+    "bodyPart": "Knee",
+    "notes": null
+  },
+  {
     "name": "Daron Payne",
     "position": "DT",
     "status": "IR",
@@ -88,6 +102,13 @@
     "position": "G",
     "status": "Questionable",
     "bodyPart": "Concussion",
+    "notes": null
+  },
+  {
+    "name": "Shy Tuttle",
+    "position": "DT",
+    "status": "Questionable",
+    "bodyPart": "Shoulder",
     "notes": null
   },
   {
