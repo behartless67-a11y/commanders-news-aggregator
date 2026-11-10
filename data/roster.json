@@ -40,7 +40,23 @@
     "position": "WR",
     "espnId": "4683111",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683111.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "REC",
+          "value": "1"
+        },
+        {
+          "label": "YDS",
+          "value": "12"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "treylon-burks",
@@ -131,15 +147,15 @@
       "fields": [
         {
           "label": "CMP/ATT",
-          "value": "91/145"
+          "value": "115/180"
         },
         {
           "label": "YDS",
-          "value": "976"
+          "value": "1,250"
         },
         {
           "label": "TD",
-          "value": "6"
+          "value": "7"
         },
         {
           "label": "INT",
@@ -160,11 +176,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "27"
+          "value": "30"
         },
         {
           "label": "YDS",
-          "value": "252"
+          "value": "303"
         },
         {
           "label": "TD",
@@ -185,11 +201,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "16"
+          "value": "24"
         },
         {
           "label": "YDS",
-          "value": "67"
+          "value": "83"
         },
         {
           "label": "TD",
@@ -233,15 +249,15 @@
     "espnId": "3930066",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3930066.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "REC",
-          "value": "29"
+          "value": "5"
         },
         {
           "label": "YDS",
-          "value": "350"
+          "value": "58"
         },
         {
           "label": "TD",
@@ -345,11 +361,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "0"
+          "value": "1"
         },
         {
           "label": "YDS",
-          "value": "0"
+          "value": "6"
         },
         {
           "label": "TD",
@@ -370,11 +386,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "17"
+          "value": "23"
         },
         {
           "label": "YDS",
-          "value": "182"
+          "value": "239"
         },
         {
           "label": "TD",
@@ -472,11 +488,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "47"
+          "value": "54"
         },
         {
           "label": "YDS",
-          "value": "200"
+          "value": "228"
         },
         {
           "label": "TD",
@@ -497,11 +513,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "23"
+          "value": "26"
         },
         {
           "label": "YDS",
-          "value": "259"
+          "value": "284"
         },
         {
           "label": "TD",
@@ -531,11 +547,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "2"
+          "value": "3"
         },
         {
           "label": "YDS",
-          "value": "16"
+          "value": "22"
         },
         {
           "label": "TD",
@@ -577,15 +593,15 @@
     "espnId": "4428343",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428343.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "2"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -631,7 +647,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "19"
+          "value": "22"
         },
         {
           "label": "SACK",
@@ -656,7 +672,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "22"
+          "value": "30"
         },
         {
           "label": "SACK",
@@ -664,7 +680,7 @@
         },
         {
           "label": "INT",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -681,7 +697,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "27"
+          "value": "29"
         },
         {
           "label": "SACK",
@@ -756,7 +772,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "8"
+          "value": "9"
         },
         {
           "label": "SACK",
@@ -806,11 +822,11 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "34"
+          "value": "49"
         },
         {
           "label": "SACK",
-          "value": "1"
+          "value": "2"
         },
         {
           "label": "INT",
@@ -856,7 +872,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "30"
+          "value": "38"
         },
         {
           "label": "SACK",
@@ -927,15 +943,15 @@
     "espnId": "4430560",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4430560.png",
     "stats": {
-      "season": 2025,
+      "season": 2026,
       "fields": [
         {
           "label": "TCKL",
-          "value": "38"
+          "value": "3"
         },
         {
           "label": "SACK",
-          "value": "5"
+          "value": "0"
         },
         {
           "label": "INT",
@@ -956,7 +972,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "8"
         },
         {
           "label": "SACK",
@@ -1031,7 +1047,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "47"
+          "value": "53"
         },
         {
           "label": "SACK",
@@ -1056,7 +1072,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "46"
+          "value": "48"
         },
         {
           "label": "SACK",
@@ -1131,7 +1147,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "54"
+          "value": "67"
         },
         {
           "label": "SACK",
@@ -1156,7 +1172,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "13"
+          "value": "17"
         },
         {
           "label": "SACK",
@@ -1181,7 +1197,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "4"
+          "value": "5"
         },
         {
           "label": "SACK",
@@ -1240,11 +1256,11 @@
       "fields": [
         {
           "label": "FG",
-          "value": "14-17"
+          "value": "16-19"
         },
         {
           "label": "XP",
-          "value": "11/14"
+          "value": "12/15"
         }
       ]
     }
@@ -1261,15 +1277,15 @@
       "fields": [
         {
           "label": "PUNTS",
-          "value": "31"
+          "value": "36"
         },
         {
           "label": "AVG",
-          "value": "49.0"
+          "value": "48.6"
         },
         {
           "label": "IN20",
-          "value": "10"
+          "value": "13"
         }
       ]
     }
@@ -1286,7 +1302,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "10"
         },
         {
           "label": "SACK",
@@ -1508,7 +1524,23 @@
     "position": "DT",
     "espnId": "3052059",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3052059.png",
-    "stats": null
+    "stats": {
+      "season": 2025,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "6"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "sam-hartman",
