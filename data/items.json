@@ -1,16 +1,4 @@
 {
-  "commanders-youtube-620368daa50a": {
-    "id": "commanders-youtube-620368daa50a",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=myQFsgjNAWo",
-    "title": "HC Dan Quinn Previews Seahawks Vs. Commanders | Washington Commanders | The Gameplan | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-09-27T04:00:00.000Z",
-    "collectedAt": "2026-09-27T08:05:36.193Z"
-  },
   "riggos-rag-d818c3dac05c": {
     "id": "riggos-rag-d818c3dac05c",
     "sourceId": "riggos-rag",
@@ -17734,5 +17722,17 @@
     "excerpt": "Treylon Burks had a big Tuesday ahead. He needed to work and show the Commanders that he can play again. This was a big practice, and, honestly, the only one where the veteran receiver could prove worthy of playing in Thursday’s game against the New York Giants. \n Are we sure he’s going to go? We are not. \n But there’s some hope after he was considered limited on the Commanders’ official injury report. \n Tight end Colson Yankoff was a DNP for the second straight day with a knee injury, putting…",
     "publishedAt": "2026-11-10T23:05:20.000Z",
     "collectedAt": "2026-11-11T03:05:40.696Z"
+  },
+  "clutchpoints-a62afb7eec2d": {
+    "id": "clutchpoints-a62afb7eec2d",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-gets-encouraging-treylon-burks-injury-update-for-tnf-showdown-vs-giants",
+    "title": "Commanders get encouraging Treylon Burks injury update for TNF showdown vs. Giants",
+    "excerpt": "A potentially positive development involving wide receiver Treylon Burks has emerged at an opportune time for the Washington Commanders ahead of their Thursday Night Football showdown with the New York Giants. The 26-year-old is working his way back from a foot injury that forced him to miss Sunday’s loss to the Los Angeles Rams .\n\n Burks was upgraded to limited participation during Tuesday’s practice after initially being listed as a non-participant to begin Washington’s Week 10 preparations.…",
+    "publishedAt": "2026-11-11T03:01:30.000Z",
+    "collectedAt": "2026-11-11T06:24:13.925Z"
   }
 }
