@@ -1,18 +1,4 @@
 {
-  "social-b7b15a4b43c1": {
-    "id": "social-b7b15a4b43c1",
-    "url": "https://x.com/Commanders/status/2116893026488312097",
-    "text": "Tonight. @BIG100Radio@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/541/544/671/707/178/original/34279232ec37331f.jpg"
-    ],
-    "publishedAt": "2026-11-01T14:00:02.000Z",
-    "collectedAt": "2026-11-01T15:11:46.989Z"
-  },
   "social-20758d309486": {
     "id": "social-20758d309486",
     "url": "https://x.com/BenStandig/status/2116909984873115747",
@@ -47,18 +33,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-01T15:38:09.000Z",
-    "collectedAt": "2026-11-01T20:30:44.002Z"
-  },
-  "social-2d83ba8b5206": {
-    "id": "social-2d83ba8b5206",
-    "url": "https://x.com/nflnetwork/status/2116905793928962454",
-    "text": "Learn how @TheHogfarmers@twitter.com are showing up for kids, like Callum, who are fighting pediatric cancer ❤️",
-    "handle": "nflnetwork",
-    "author": "NFL Network",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-01T14:50:46.000Z",
     "collectedAt": "2026-11-01T20:30:44.002Z"
   },
   "social-5d3cb5ced217": {
