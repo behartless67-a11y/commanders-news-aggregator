@@ -38,18 +38,6 @@
     "publishedAt": "2026-11-02T00:34:34.000Z",
     "collectedAt": "2026-11-02T01:05:35.683Z"
   },
-  "social-22cf2841ea9d": {
-    "id": "social-22cf2841ea9d",
-    "url": "https://x.com/JPFinlayNBCS/status/2117027176990015946",
-    "text": "Jayden Daniels out for early warmups. T shirt honoring Terry McLaurin",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-01T22:53:06.000Z",
-    "collectedAt": "2026-11-02T01:05:35.683Z"
-  },
   "social-4ca7767b6807": {
     "id": "social-4ca7767b6807",
     "url": "https://x.com/john_keim/status/2117049619578581308",
@@ -74,20 +62,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-01T23:56:46.000Z",
-    "collectedAt": "2026-11-02T01:05:37.082Z"
-  },
-  "social-93340899b907": {
-    "id": "social-93340899b907",
-    "url": "https://x.com/john_keim/status/2117028997276237995",
-    "text": "Jayden Daniels repping Terry McLaurin tonight on his T-shirt.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/543/675/310/262/211/original/282e6426381f98df.jpg"
-    ],
-    "publishedAt": "2026-11-01T23:00:20.000Z",
     "collectedAt": "2026-11-02T01:05:37.082Z"
   },
   "social-a15e70135b90": {
