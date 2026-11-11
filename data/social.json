@@ -1,16 +1,4 @@
 {
-  "social-20758d309486": {
-    "id": "social-20758d309486",
-    "url": "https://x.com/BenStandig/status/2116909984873115747",
-    "text": "Very cool, @HogfarmerChris@twitter.com .",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-01T15:07:25.000Z",
-    "collectedAt": "2026-11-01T15:11:51.405Z"
-  },
   "social-892765b61848": {
     "id": "social-892765b61848",
     "url": "https://x.com/john_keim/status/2116932334792450395",
@@ -21,18 +9,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-01T16:36:13.000Z",
-    "collectedAt": "2026-11-01T20:30:44.002Z"
-  },
-  "social-464f37607f0d": {
-    "id": "social-464f37607f0d",
-    "url": "https://x.com/john_keim/status/2116917721715589468",
-    "text": "On video with 5 thoughts on the Commanders: a huge game for many reasons; no excuses… on Antonio Williams and what he’s learned; on areas they can simplify/streamline the O; a few minutes with rookie Joshua Josephs and more. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-01T15:38:09.000Z",
     "collectedAt": "2026-11-01T20:30:44.002Z"
   },
   "social-5d3cb5ced217": {
@@ -57,18 +33,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-11-01T18:35:57.000Z",
-    "collectedAt": "2026-11-01T20:30:45.405Z"
-  },
-  "social-4004b7c8c0e4": {
-    "id": "social-4004b7c8c0e4",
-    "url": "https://x.com/BenStandig/status/2116923381731746264",
-    "text": "Re: Sitting Daron Payne to avoid injury before the trade deadline. GMs must take a sober look at whether their team is a worthy buyer or realistically should sell. AP waiting until after seeing whether WSH beats Philly to make the call, it seemed. Due diligence talks, sure.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-01T16:00:39.000Z",
     "collectedAt": "2026-11-01T20:30:45.405Z"
   },
   "social-15da2e1f5e32": {
@@ -145,44 +109,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/542/190/056/460/103/original/0f5e95b323063a68.jpeg"
     ],
     "publishedAt": "2026-11-01T16:44:37.681Z",
-    "collectedAt": "2026-11-01T20:30:58.085Z"
-  },
-  "social-2375521de2ba": {
-    "id": "social-2375521de2ba",
-    "url": "https://mysportgallery.com/@slessans2/117541861129498204",
-    "text": "Happy game day to those who celebrate. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-01T15:21:04.000Z",
-    "collectedAt": "2026-11-01T20:30:58.085Z"
-  },
-  "social-2b01ee8968d5": {
-    "id": "social-2b01ee8968d5",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mzb4e25dkd2b",
-    "text": "Happy game day to those who celebrate. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-01T15:21:06.145Z",
-    "collectedAt": "2026-11-01T20:30:58.085Z"
-  },
-  "social-efc2abf0a178": {
-    "id": "social-efc2abf0a178",
-    "url": "https://mastodon.social/@atobsmith/117541853399231196",
-    "text": "It’s Game Day!! #WashingtonCommanders #Commanders #HTTC #RaiseHail #nfl #PHIvsWAS #SNF #ShuttupCollinsworth",
-    "handle": "atobsmith",
-    "author": "Michael Smith",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/541/853/347/090/703/original/4bfbd66348548ce4.jpg"
-    ],
-    "publishedAt": "2026-11-01T15:19:07.080Z",
     "collectedAt": "2026-11-01T20:30:58.085Z"
   },
   "social-d515fb6469c6": {
@@ -6903,5 +6829,165 @@
     "images": [],
     "publishedAt": "2026-11-11T04:57:51.000Z",
     "collectedAt": "2026-11-11T06:24:23.028Z"
+  },
+  "social-5cf0ff3c781c": {
+    "id": "social-5cf0ff3c781c",
+    "url": "https://x.com/Commanders/status/2120501811920703564",
+    "text": "Honoring all who serve or have served this #VeteransDay 🇺🇸",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/597/939/261/826/338/original/3289b888441d55fa.jpg"
+    ],
+    "publishedAt": "2026-11-11T13:00:03.000Z",
+    "collectedAt": "2026-11-11T16:11:23.544Z"
+  },
+  "social-cec21a009a3d": {
+    "id": "social-cec21a009a3d",
+    "url": "https://x.com/JPFinlayNBCS/status/2120536140088496452",
+    "text": "Adam Peters on the trade deadline via @JunksRadio@twitter.com : \"I was on the phone a lot the last few days...We made some efforts but ultimately those guys weren't moved.\"",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-11T15:16:28.000Z",
+    "collectedAt": "2026-11-11T16:11:24.931Z"
+  },
+  "social-f2b0ff57c192": {
+    "id": "social-f2b0ff57c192",
+    "url": "https://x.com/john_keim/status/2120534265888698700",
+    "text": "Also not sure where you get that record. It’s not good but it’s 7-17-1. (No parade for that either!). They didn’t receive any great offers. Not worth it to just sell for a 5-6 round pick when a win Thur puts them two back. Maybe you think the season is over but They don’t. That’s all that matters. But, no, it has not been good at all so definitely agree there.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-11T15:09:01.000Z",
+    "collectedAt": "2026-11-11T16:11:26.235Z"
+  },
+  "social-4c5ca33840f1": {
+    "id": "social-4c5ca33840f1",
+    "url": "https://x.com/john_keim/status/2120527110578257999",
+    "text": "GM Adam Peters during his weekly spot on the @junkies@twitter.com on the last play: “the bottom line is the ball needs to get in the end zone there.” Daniels said he ran the play that was called. But, regardless, two plays from the 32 and no shot at the end zone.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-11T14:40:35.000Z",
+    "collectedAt": "2026-11-11T16:11:26.235Z"
+  },
+  "social-ff2f083852a1": {
+    "id": "social-ff2f083852a1",
+    "url": "https://x.com/john_keim/status/2120519279259115771",
+    "text": "My SC4U video where my face appears to be glowing. why the Commanders stood pat at the deadline. 935/commanders-stand-pat-trade-deadline?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-11T14:09:28.000Z",
+    "collectedAt": "2026-11-11T16:11:26.235Z"
+  },
+  "social-2d28085889cf": {
+    "id": "social-2d28085889cf",
+    "url": "https://x.com/john_keim/status/2120517659305312662",
+    "text": "Adam Peters told @JunksRadio@twitter.com : \"We looked to find guys that could help us short- and long-term. We made some efforts, but ultimately those guys weren't moved. ... Nothing really made sense in the end that was of great value for us, and other teams decided to hold onto their guys.\" In other words: Brian Thomas (among others). Someone who could help beyond this season.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-11T14:03:01.000Z",
+    "collectedAt": "2026-11-11T16:11:26.235Z"
+  },
+  "social-f549c8b8c957": {
+    "id": "social-f549c8b8c957",
+    "url": "https://x.com/john_keim/status/2120498407190024196",
+    "text": "On video with @RealBramW@twitter.com . On the trade deadline and no moves by the Commanders. Why? @ESPNRichmond@twitter.com i=B9-E1XrxNV9ovLRV",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-11T12:46:31.000Z",
+    "collectedAt": "2026-11-11T16:11:26.235Z"
+  },
+  "social-363815d95956": {
+    "id": "social-363815d95956",
+    "url": "https://x.com/BenStandig/status/2120525061342081478",
+    "text": "Unnamed Wiz pod, episode 4: First-rounders stock watch, AJ Dybantsa making moves, Trae and Tre, Anthony Davis, Brian Keefe and more. @Truth_About_It@twitter.com and @LedellsPlace@twitter.com along for the ride. unnamed-wiz-pod-episode-4-first-rounders?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/598/298/598/134/130/original/9f84b760eddaa018.jpg"
+    ],
+    "publishedAt": "2026-11-11T14:32:26.000Z",
+    "collectedAt": "2026-11-11T16:11:27.732Z"
+  },
+  "social-2cc934cc1cc5": {
+    "id": "social-2cc934cc1cc5",
+    "url": "https://x.com/BenStandig/status/2120515302655979854",
+    "text": "Peters said calls went both ways and that \"there was a lot of Interest in our players.\" Ultimately, they didn't love the value coming back. Some \"fishing\" inquiries were based on the Commanders dumping dudes when they were not. He declined to name names in either direction. The obvious buy target, Jags WR Brian Thomas. He was not dealt.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-11T13:53:40.000Z",
+    "collectedAt": "2026-11-11T16:11:27.732Z"
+  },
+  "social-aa9b487db5f3": {
+    "id": "social-aa9b487db5f3",
+    "url": "https://x.com/BenStandig/status/2120513059860976054",
+    "text": "Adam Peters on @JunksRadio@twitter.com : \"We looked to find guys that could help us short- and long-term. We made some efforts, but ultimately those guys weren't moved. ... Nothing really made sense in the end that was of great value for us, and other teams decided to hold onto their guys.\"",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-11T13:44:45.000Z",
+    "collectedAt": "2026-11-11T16:11:27.732Z"
+  },
+  "social-3d012fdcbc07": {
+    "id": "social-3d012fdcbc07",
+    "url": "https://x.com/tashanreed/status/2120533643290624478",
+    "text": "When Terry McLaurin got hurt, he had a message for Treylon Burks. “He told me, ‘This is your opportunity. Just go be you. You don’t have to be nobody else,’” Burks told the Post. How he's turned his career around to become a key piece for the #Commanders : /11/11/treylon-burks-questioned-his-nfl-future-commanders-are-glad-he-stuck-with-it/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-11T15:06:32.000Z",
+    "collectedAt": "2026-11-11T16:11:29.342Z"
+  },
+  "social-1b66025f404e": {
+    "id": "social-1b66025f404e",
+    "url": "https://x.com/tashanreed/status/2120490271804944692",
+    "text": "If you're gonna have this energy... you can't finish with 13 on 9 shots",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-11T12:14:12.000Z",
+    "collectedAt": "2026-11-11T16:11:29.342Z"
+  },
+  "social-263c7e418d83": {
+    "id": "social-263c7e418d83",
+    "url": "https://x.com/PLeonardNYDN/status/2120531406614937721",
+    "text": "“Stefon Diggs. I don’t know if it’s Cardi B that took his legs or if it’s years playing.” Wink Martindale says #Giants defense “needs to set an NFL record for max pressures in a game” vs Jayden Daniels & the #Commanders Thursday night “Wednesdays with Wink” Week 10 is PREMIERING NOW on the Talkin’ Ball with Pat Leonard @YouTube@twitter.com channel, presented by @edge_marketsio@twitter.com SUBSCRIBE & LIKE! Be here every Wednesday 8 a.m. ET 3ZJMen-gmi",
+    "handle": "PLeonardNYDN",
+    "author": "Pat Leonard",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-11T14:57:39.000Z",
+    "collectedAt": "2026-11-11T16:11:39.713Z"
   }
 }
