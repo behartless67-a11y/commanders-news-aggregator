@@ -1,100 +1,4 @@
 {
-  "riggos-rag-ba609ca4864e": {
-    "id": "riggos-rag-ba609ca4864e",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/grading-marcus-mariota-heroic-performance-commanders-stun-seahawks",
-    "title": "Grading Marcus Mariota's heroic performance as Commanders stun Seahawks",
-    "excerpt": "Grading Washington Commanders quarterback Marcus Mariota's performance during a sensational win over the Seattle Seahawks.",
-    "publishedAt": "2026-09-27T21:06:51.000Z",
-    "collectedAt": "2026-09-27T22:05:36.211Z"
-  },
-  "commanders-youtube-6dbb8d65cc03": {
-    "id": "commanders-youtube-6dbb8d65cc03",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=KzxJC6FmWew",
-    "title": "COMMANDERS KNOCK OFF SEAHAWKS! | Breaking Down The Win On Gameday LIVE | NFL Week 3",
-    "excerpt": "",
-    "publishedAt": "2026-09-27T21:57:31.000Z",
-    "collectedAt": "2026-09-27T22:05:38.107Z"
-  },
-  "dc-sports-king-a221d3a01ddb": {
-    "id": "dc-sports-king-a221d3a01ddb",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/commanders-shock-undefeated-seahawks-in-thrilling-33-31-upset-behind-marcus-mariota",
-    "title": "Commanders Shock Undefeated Seahawks in Thrilling 33-31 Upset Behind Marcus Mariota",
-    "excerpt": "No one gave the Washington Commanders much of a chance in Week 3, and honestly, it was hard to blame the skeptics. Coming off the devastating loss of rookie sensation Jayden Daniels to an elbow injury just a week ago , Washington faced a daunting matchup against a Seattle Seahawks team that hadn’t lost a game since last November. Yet, in a 33-31 thriller that defied every script, the Commanders didn’t just survive—they made a massive statement.\n\n Marcus Mariota Stepped Up to Right the Ship…",
-    "publishedAt": "2026-09-27T21:41:05.000Z",
-    "collectedAt": "2026-09-27T22:05:39.682Z"
-  },
-  "wjla-commanders-1c38bbbb6228": {
-    "id": "wjla-commanders-1c38bbbb6228",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-snap-seattles-12-game-winning-streak-beat-the-seahawks-33-31",
-    "title": "Commanders snap Seattle's 12-game winning streak, beat the Seahawks 33-31",
-    "excerpt": "LANDOVER, Md. (AP) — Marcus Mariota threw three touchdown passes, and Kain Medrano returned an interception 50 yards for a touchdown to help the Washington Comm",
-    "publishedAt": "2026-09-27T21:20:08.000Z",
-    "collectedAt": "2026-09-27T22:05:40.554Z"
-  },
-  "riggos-rag-7ce14fbaa3e7": {
-    "id": "riggos-rag-7ce14fbaa3e7",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/kain-medrano-came-from-nowhere-deliver-commanders-season-saving-moment",
-    "title": "Kain Medrano came from nowhere to deliver Commanders’ season-saving moment",
-    "excerpt": "Washington Commanders linebacker Kain Medrano came from nowhere to deliver a season-saving moment against the Seattle Seahawks.",
-    "publishedAt": "2026-09-27T22:22:05.000Z",
-    "collectedAt": "2026-09-27T22:48:55.126Z"
-  },
-  "riggos-rag-2f7ae808faf2": {
-    "id": "riggos-rag-2f7ae808faf2",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-next-man-up-response-gives-their-season-renewed-belief",
-    "title": "Commanders’ next-man-up response gives their season renewed belief",
-    "excerpt": "The Washington Commanders rediscovered their fight when their season needed it most against the Seattle Seahawks.",
-    "publishedAt": "2026-09-27T22:05:53.000Z",
-    "collectedAt": "2026-09-27T22:48:55.126Z"
-  },
-  "clutchpoints-afb18833f358": {
-    "id": "clutchpoints-afb18833f358",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-save-season-breaking-seahawks-winning-streak-despite-jayden-daniels-absence",
-    "title": "Commanders save season by breaking Seahawks’ winning streak despite Jayden Daniels’ absence",
-    "excerpt": "The Washington Commanders entered Week 3 fearing a nightmare scenario. Washington lost Jayden Daniels to another elbow injury in Week 2, knocking the young QB out for multiple weeks. The odds looked stacked against them going up against the defending Super Bowl champions . But the Commanders showed that they are no pushovers.\n\n Washington got a huge upset win against Seattle in Week 3 with the score of 33-31. The Commanders improved to 1-2 on the season.\n\n The game-winning play took place on a…",
-    "publishedAt": "2026-09-27T21:11:10.000Z",
-    "collectedAt": "2026-09-27T22:48:55.398Z"
-  },
-  "cbs-nfl-1160495cd709": {
-    "id": "cbs-nfl-1160495cd709",
-    "sourceId": "cbs-nfl",
-    "sourceName": "CBS Sports",
-    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
-    "category": "league",
-    "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles",
-    "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Drake Maye's miserable start continues",
-    "excerpt": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
-    "publishedAt": "2026-09-27T22:18:59.000Z",
-    "collectedAt": "2026-09-27T22:49:00.658Z"
-  },
   "hogs-haven-b61b4f447dca": {
     "id": "hogs-haven-b61b4f447dca",
     "sourceId": "hogs-haven",
@@ -4281,18 +4185,6 @@
     "title": "London Day 1: Jayden Daniels practices and nobody has gotten any sleep",
     "excerpt": "JP Finlay and Mitch Tischler join you from London to break down the first day of Commanders practice across the pond. Hear about Jayden Daniels' practice with an elbow brace, as well as some travel talk, as the guys are operating on practically no sleep. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
     "publishedAt": "2026-09-30T21:00:00.000Z",
-    "collectedAt": "2026-10-07T02:43:27.056Z"
-  },
-  "beltway-football-4c0df13766db": {
-    "id": "beltway-football-4c0df13766db",
-    "sourceId": "beltway-football",
-    "sourceName": "Beltway Football",
-    "sourceHomepage": "https://art19.com/shows/beltway-football",
-    "category": "team",
-    "url": "https://art19.com/shows/beltway-football/episodes/4a574e35-e3de-43d6-a220-6402d4016a3a",
-    "title": "Week 3 Postgame: Commanders pull off season-saving upset win vs. Seahawks",
-    "excerpt": "JP Finlay and Mitch Tischler join you from Northwest Stadium to react to a massive victory for the Washington Commanders, who stunned the defending-champion Seattle Seahawks with a 33-31 win in Week 3. \n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
-    "publishedAt": "2026-09-27T22:30:00.000Z",
     "collectedAt": "2026-10-07T02:43:27.056Z"
   },
   "clutchpoints-f80d275f6253": {
@@ -17578,5 +17470,77 @@
     "excerpt": "Close isn't cutting it: Commanders running out of time to save their season",
     "publishedAt": "2026-11-11T18:48:08.000Z",
     "collectedAt": "2026-11-11T21:05:47.374Z"
+  },
+  "hogs-haven-f3753b18f0c4": {
+    "id": "hogs-haven-f3753b18f0c4",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/454779/commanders-giants-wednesday-injury-report-treylon-burks-lucas-patrick-colson-yankoff",
+    "title": "Commanders vs. Giants Wednesday injury report: Treylon Burks will play",
+    "excerpt": "Commanders receiver Treylon Burks didn’t practice on Wednesday, the last day of prep before Thursday night’s showdown with the New York Giants. That’s not the negative development that it sounds like. \n\n That became clear on the official injury report, where Burks was not given a designation. He will play this key upcoming contest, a welcome return after he missed Washington’s loss to the Rams. \n\n The Commanders did rule center Lucas Patrick (concussion) and tight end Colson Yankoff (knee) out…",
+    "publishedAt": "2026-11-11T21:26:16.000Z",
+    "collectedAt": "2026-11-11T22:42:51.736Z"
+  },
+  "hogs-haven-a5d2db6d9752": {
+    "id": "hogs-haven-a5d2db6d9752",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/454207/dan-quinn-adam-peters-talk-trades-treylon-burks-giants-rams",
+    "title": "Dan Quinn and Adam Peters talk trades, Treylon Burks, and more",
+    "excerpt": "GREEN BAY, WISCONSIN - SEPTEMBER 11: (L-R) General manger Adam Peters and head coach Dan Quinn of the Washington Commanders talk prior to the game against the Green Bay Packers at Lambeau Field on September 11, 2025 in Green Bay, Wisconsin. (Photo by Michael Reaves/Getty Images) | Getty Images \n \n Today was the last full practice for the Washington Commanders before they travel to New Jersey to take on the New York Giants on Thursday Night Football. This a big game for both teams, and for the…",
+    "publishedAt": "2026-11-11T19:00:00.000Z",
+    "collectedAt": "2026-11-11T22:42:51.736Z"
+  },
+  "wjla-commanders-c4c94147ae4c": {
+    "id": "wjla-commanders-c4c94147ae4c",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/jj-mccarthy-makes-his-first-giants-home-start-against-the-desperate-commanders",
+    "title": "J.J. McCarthy makes his first Giants home start against the desperate Commanders",
+    "excerpt": "J.J. McCarthy makes his first Giants home start against the desperate Commanders",
+    "publishedAt": "2026-11-11T22:03:14.000Z",
+    "collectedAt": "2026-11-11T22:42:57.949Z"
+  },
+  "yahoo-nfl-7185317855ae": {
+    "id": "yahoo-nfl-7185317855ae",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/giants-only-one-player-injury-213239699.html",
+    "title": "Giants have only one player on their injury report for game vs. Commanders",
+    "excerpt": "Linebacker Malik Harrison, questionable with a groin injury, is the only member of the New York Giants carrying an injury designation heading into Thursday’s game with the Washington Commanders.\n Quarterback J.J. McCarthy (hip), and running back Cam Skattebo (hamstring) will play as the 5-2-1 Giants seek to solidify their NFC East lead. It will be interesting to see if McCarthy’s mobility is limited.\n The Giants have a number of players dealing with some type of ailment heading into Week 10,…",
+    "publishedAt": "2026-11-11T21:32:39.000Z",
+    "collectedAt": "2026-11-11T22:42:58.544Z"
+  },
+  "yahoo-nfl-c4200db5944a": {
+    "id": "yahoo-nfl-c4200db5944a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/commanders-injury-report-treylon-burks-212616773.html",
+    "title": "Commanders injury report: Treylon Burks will play, Lucas Patrick will not",
+    "excerpt": "Commanders receiver Treylon Burks didn’t practice on Wednesday, the last day of prep before Thursday night’s showdown with the New York Giants. That’s not the negative development that it sounds like. \n That became clear on the official injury report, where Burks was not given a designation. He will play this key upcoming contest, a welcome return after he missed Washington’s loss to the Rams. \n The Commanders did rule center Lucas Patrick (concussion) and tight end Colson Yankoff (knee) out of…",
+    "publishedAt": "2026-11-11T21:26:16.000Z",
+    "collectedAt": "2026-11-11T22:42:58.544Z"
+  },
+  "yahoo-nfl-596a1fba03f2": {
+    "id": "yahoo-nfl-596a1fba03f2",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/giants-commanders-matchup-giants-offense-210547268.html",
+    "title": "Giants-Commanders matchup: Giants’ offense needs to be better than it was vs. Philly",
+    "excerpt": "New York Giants wide receiver Malik Nabers runs with the ball against the Washington Commanders. | Getty Images The New York Giants have a quick turnaround and little time to get ready to face the Washington Commanders on Thursday Night Football. \n The Giants are currently 5-2-1 and leading the NFC East, while the Commanders come into the game with a 2-5-1 and in third place in the division. We should expect another tough game, and not just because the Giants can’t seem to do anything easy.…",
+    "publishedAt": "2026-11-11T21:05:47.000Z",
+    "collectedAt": "2026-11-11T22:42:58.544Z"
   }
 }
