@@ -1,64 +1,4 @@
 {
-  "pft-513b0272c045": {
-    "id": "pft-513b0272c045",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jadarian-price-fumbles-marcus-mariota-takes-advantage-as-commanders-lead-seahawks-7-0",
-    "title": "Jadarian Price fumbles, Marcus Mariota takes advantage as Commanders lead Seahawks 7-0",
-    "excerpt": "The underdog Commanders have taken a surprising early lead over the defending champion Seahawks today.\n Seahawks rookie running back Jadarian Price fumbled in the first quarter, setting up the Commanders in great field position, and Commanders quarterback Marcus Mariota quickly hit Rachaad White for a six-yard touchdown pass.\n The touchdown gave Washington a 7-0 lead at home.\n Seahawks quarterback Sam Darnold is back from his Week 1 injury, and in the early going he has looked a little rusty.…",
-    "publishedAt": "2026-09-27T17:27:38.000Z",
-    "collectedAt": "2026-09-27T18:05:39.662Z"
-  },
-  "pft-5dd4fc94f190": {
-    "id": "pft-5dd4fc94f190",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-leo-chenal-carted-off-on-stretcher-with-apparent-neck-injury",
-    "title": "Commanders' Leo Chenal carted off on stretcher with neck injury",
-    "excerpt": "Commanders linebacker Leo Chenal suffered a potentially serious neck injury today against the Seahawks.\n Chenal ran head-first into Seahawks running back Emmanuel Wilson and immediately went down. Chenal was on the ground for a few minutes while the medical staff attended to him, then put on a stretcher and carted off the field.\n Every Commanders player left the sideline to surround Chenal on the field, with players clearly concerned about their teammate. The crowd in Washington chanted \"Leo!…",
-    "publishedAt": "2026-09-27T18:28:50.000Z",
-    "collectedAt": "2026-09-27T20:05:41.782Z"
-  },
-  "yahoo-nfl-eda85b96f10f": {
-    "id": "yahoo-nfl-eda85b96f10f",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/commanders-lb-leo-chenal-carted-off-on-backboard-after-sustaining-neck-injury-184727675.html",
-    "title": "Commanders LB Leo Chenal carted off on backboard after sustaining neck injury",
-    "excerpt": "In a scary moment, Washington Commanders linebacker Leo Chenal was carted off of the field in Sunday's game against the Seattle Seahawks. The Commanders later ruled him out with a neck injury.\n Chenal appeared to take a knee to the head during the second quarter, leading to him going down. He was tended to by staff for a while, before being loaded onto a backboard and carted off into the locker room. The entire team gathered around him while he was on the ground.\n As Chenal was taken into the…",
-    "publishedAt": "2026-09-27T18:47:27.000Z",
-    "collectedAt": "2026-09-27T20:05:42.535Z"
-  },
-  "hogs-haven-09f0d5b57093": {
-    "id": "hogs-haven-09f0d5b57093",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/pressers/442763/dan-quinn-marcus-mariota-kain-medrano-talk-about-upset-win-over-seahawks",
-    "title": "Dan Quinn and Marcus Mariota talk about upset win over Seahawks",
-    "excerpt": "The Washington Commanders shocked the Seattle Seahawks at Northwest Stadium and came away with the 33-31 win in their home opener. The team lost back-to-back division games to start the season, and also lost starting QB Jayden Daniels for a few weeks due to a dislocated elbow. Marcus Mariota led the team to victory today, and said it was an unbelievable win that the team needed. He said the team came together through adversity and they didn’t blink when last season’s Super Bowl champions came…",
-    "publishedAt": "2026-09-27T21:05:35.000Z",
-    "collectedAt": "2026-09-27T22:05:35.467Z"
-  },
-  "hogs-haven-eb2f0e039747": {
-    "id": "hogs-haven-eb2f0e039747",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-analysis/443836/takeaways-washington-commanders-seattle-seahawks-week-3-marcus-mariota-sam-darnold",
-    "title": "Key takeaways from Washington Commanders Week 3 win over Seattle Seahawks",
-    "excerpt": "BOX SCORE \n\n News has been kind to the Washington Commanders in the aftermath of Jayden Daniels’ dislocated left elbow. All things considered, anyway. \n\n We first heard that surgery wasn’t on the table and that injured reserve wasn’t being considered. Then came a more definitive timeline, with NFL Network reporting that Daniels could be back within three weeks . \n\n While those are pluses, the Commanders are still 0-2 and must survive a little while without Daniels. \n\n Veteran backup Marcus…",
-    "publishedAt": "2026-09-27T20:30:02.000Z",
-    "collectedAt": "2026-09-27T22:05:35.467Z"
-  },
   "riggos-rag-ba609ca4864e": {
     "id": "riggos-rag-ba609ca4864e",
     "sourceId": "riggos-rag",
@@ -70,42 +10,6 @@
     "excerpt": "Grading Washington Commanders quarterback Marcus Mariota's performance during a sensational win over the Seattle Seahawks.",
     "publishedAt": "2026-09-27T21:06:51.000Z",
     "collectedAt": "2026-09-27T22:05:36.211Z"
-  },
-  "riggos-rag-92c20510e945": {
-    "id": "riggos-rag-92c20510e945",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/11-instant-reactions-from-commanders-stunning-upset-over-seahawks",
-    "title": "11 instant reactions from Commanders' stunning upset over the Seahawks",
-    "excerpt": "Instant reactions from the Washington Commanders' stunning upset win over the Seattle Seahawks in Week 3.",
-    "publishedAt": "2026-09-27T20:31:17.000Z",
-    "collectedAt": "2026-09-27T22:05:36.211Z"
-  },
-  "clutchpoints-d7ededf00c05": {
-    "id": "clutchpoints-d7ededf00c05",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-marcus-mariota-pulls-off-feat-vs-seahawks-not-done-since-sam-darnold",
-    "title": "Commanders’ Marcus Mariota pulls off feat vs. Seahawks not done since Sam Darnold",
-    "excerpt": "The Washington Commanders started Marcus Mariota at quarterback on Sunday with Jayden Daniels out with a dislocated left elbow. It’s been an impressive outing for Mariota on Sunday, as he’s playing rather well against a tough Seattle Seahawks defense. His play has been so good, in fact, that he accomplished an impressive feat against Seattle not seen since Sam Darnold.\n\n When Darnold was playing for the Minnesota Vikings, he threw two touchdowns in the first half during a game against the…",
-    "publishedAt": "2026-09-27T19:11:20.000Z",
-    "collectedAt": "2026-09-27T22:05:36.316Z"
-  },
-  "athletic-jhabvala-486f1f00b82f": {
-    "id": "athletic-jhabvala-486f1f00b82f",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7636370/2026/09/27/commanders-seahawks-result-takeaways-week-3-nfl",
-    "title": "How Marcus Mariota and Commanders stunned Seahawks, spoiled Sam Darnold's return",
-    "excerpt": "Washington, without starting QB Jayden Daniels, upset the reigning Super Bowl champions, 33-31.",
-    "publishedAt": "2026-09-27T20:39:20.000Z",
-    "collectedAt": "2026-09-27T22:05:37.892Z"
   },
   "commanders-youtube-6dbb8d65cc03": {
     "id": "commanders-youtube-6dbb8d65cc03",
@@ -142,42 +46,6 @@
     "excerpt": "LANDOVER, Md. (AP) — Marcus Mariota threw three touchdown passes, and Kain Medrano returned an interception 50 yards for a touchdown to help the Washington Comm",
     "publishedAt": "2026-09-27T21:20:08.000Z",
     "collectedAt": "2026-09-27T22:05:40.554Z"
-  },
-  "pft-5a7df399efdf": {
-    "id": "pft-5a7df399efdf",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/marcus-mariota-and-the-commanders-stun-the-seahawks-33-31",
-    "title": "Marcus Mariota and the Commanders stun the Seahawks 33-31",
-    "excerpt": "No Jayden Daniels? No problem for the Commanders today, as backup quarterback Marcus Mariota turned in an incredible effort against the stout Seahawks' defense, leading Washington to a 33-31 win.\n Mariota sealed the Commanders' win with a nine-yard run on third-and-7 with 1:15 remaining, and that was just the last of a number of spectacular plays by Mariota, who played very well against this Seahawks defense that has shut down so many quarterbacks over the last two years.\n The 32-year-old…",
-    "publishedAt": "2026-09-27T20:31:49.000Z",
-    "collectedAt": "2026-09-27T22:05:40.725Z"
-  },
-  "yahoo-nfl-f5d9d1a81234": {
-    "id": "yahoo-nfl-f5d9d1a81234",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/breaking-news/article/marcus-mariota-leads-commanders-past-sam-darnold-seahawks-in-first-start-after-jayden-daniels-injury-202718720.html",
-    "title": "Marcus Mariota leads Commanders past Sam Darnold, Seahawks in first start after Jayden Daniels' injury",
-    "excerpt": "Marcus Mariota had no problem filling in for Jayden Daniels.\n Mariota led the Washington Commanders to a huge 33-31 upset win over Sam Darnold and the Seattle Seahawks at Northwest Stadium on Sunday afternoon. The win marked the team's first of the season, and stopped what would have been its worst start to a campaign since 2019. It was also Mariota's first start since taking over for Daniels, who went down last week with a gruesome elbow injury.\n The win was made possible only after Seahawks…",
-    "publishedAt": "2026-09-27T20:27:18.000Z",
-    "collectedAt": "2026-09-27T22:05:41.016Z"
-  },
-  "yahoo-nfl-72277532c63d": {
-    "id": "yahoo-nfl-72277532c63d",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/seahawks-fall-commanders-stunning-turnover-203308342.html",
-    "title": "Seahawks fall to Commanders in stunning, turnover-fueled loss",
-    "excerpt": "The Seattle Seahawks (2-1), for whatever reason, cannot solve Marcus Mariota regardless of which team he’s playing for. Mariota is now 3-0 lifetime as a starter against Seattle, with his other wins coming as a member of the Tennessee Titans and Atlanta Falcons.\n In the most disappointing loss arguably of the entire Mike Macdonald era, three turnovers led to 21 Washington Commanders points, and Dan Quinn was able to get the better of his former team in a 33-31 upset victory. Sam Darnold threw…",
-    "publishedAt": "2026-09-27T20:33:08.000Z",
-    "collectedAt": "2026-09-27T22:05:41.016Z"
   },
   "riggos-rag-7ce14fbaa3e7": {
     "id": "riggos-rag-7ce14fbaa3e7",
@@ -333,18 +201,6 @@
     "title": "Colts-Commanders opening odds: The Colts are coming!",
     "excerpt": "BALTIMORE, MARYLAND - AUGUST 28: A view of the Washington Commanders helmet before a preseason game against the Baltimore Ravens at M&T Bank Stadium on August 28, 2026 in Baltimore, Maryland. (Photo by G Fiume/Getty Images) | Getty Images The Indianapolis Colts are bound for Europe again. After winning in Berlin, the Colts finally got off their nine-game losing streak. They are hoping to continue their international success and build a winning streak to get to .500. FanDuel Sportsbook is liking…",
     "publishedAt": "2026-09-28T00:23:41.000Z",
-    "collectedAt": "2026-09-28T02:05:38.923Z"
-  },
-  "yahoo-nfl-6fbcbd6a9cdc": {
-    "id": "yahoo-nfl-6fbcbd6a9cdc",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/commanders-lb-leo-chenal-carted-off-on-backboard-after-sustaining-neck-injury-has-movement-in-his-extremities-184727675.html",
-    "title": "Commanders LB Leo Chenal carted off on backboard after sustaining neck injury, has movement in his extremities",
-    "excerpt": "In a scary moment, Washington Commanders linebacker Leo Chenal was carted off the field in Sunday's 33-31 victory over the Seattle Seahawks . The Commanders later ruled him out with a neck injury.\n Chenal appeared to take a knee to the head during the second quarter, leading to him going down. He was tended to by staff for a while, before being loaded onto a backboard and carted off into the locker room. The entire team gathered around him while he was on the ground.\n Prayers up for Leo Chenal…",
-    "publishedAt": "2026-09-27T18:47:27.000Z",
     "collectedAt": "2026-09-28T02:05:38.923Z"
   },
   "clutchpoints-f0f445c6babb": {
@@ -17626,5 +17482,101 @@
     "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 15: Austin Ekeler #30 of the Washington Commanders runs with the ball as Isaiah Simmons #19 of the New York Giants works to make tackle during the second quarter at Northwest Stadium on September 15, 2024 in Landover, Maryland. (Photo by Tim Nwachukwu/Getty Images) | Getty Images The Daily Slop – 11 November 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders,…",
     "publishedAt": "2026-11-11T15:00:00.000Z",
     "collectedAt": "2026-11-11T16:11:22.071Z"
+  },
+  "hogs-haven-b403ecf4cc69": {
+    "id": "hogs-haven-b403ecf4cc69",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/454673/washingtons-offensive-problems-run-deeper-than-you-think-commanders-film-session-with-scott-turner",
+    "title": "Washington’s Offensive Problems Run Deeper Than You Think | Commanders Film Session With Scott Turner",
+    "excerpt": "Former Washington Commanders offensive coordinator Scott Turner joined the Trap or Dive Podcast this week for an in-depth film review of Washington’s offensive performance against the Los Angeles Rams. With a short turnaround ahead of Thursday night’s matchup against the New York Giants, the Commanders face another difficult defensive test—and one that could further expose the issues plaguing David Blough’s offense.\n\n According to SumerSports, both the Rams and Giants rank among the NFL’s top…",
+    "publishedAt": "2026-11-11T20:00:00.000Z",
+    "collectedAt": "2026-11-11T21:05:39.935Z"
+  },
+  "riggos-rag-6c2a08a9f9c7": {
+    "id": "riggos-rag-6c2a08a9f9c7",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/mike-sainristil-trade-price-buys-him-time-rescue-washington-commanders-career",
+    "title": "Mike Sainristil’s trade price buys him time to rescue his Commanders career",
+    "excerpt": "The Washington Commanders were looking for a quality draft pick to part ways with cornerback Mike Sainristil, which was never going to happen.",
+    "publishedAt": "2026-11-11T20:00:01.000Z",
+    "collectedAt": "2026-11-11T21:05:40.487Z"
+  },
+  "riggos-rag-06591d29ffb8": {
+    "id": "riggos-rag-06591d29ffb8",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/howie-roseman-cashes-in-failure-while-washington-commanders-keep-bargaining",
+    "title": "Howie Roseman cashes in on failure while Commanders keep bargaining with it",
+    "excerpt": "Philadelphia Eagles general manager Howie Roseman cashed in on his team's failure while the Washington Commanders keep bargaining with it.",
+    "publishedAt": "2026-11-11T18:30:00.000Z",
+    "collectedAt": "2026-11-11T21:05:40.487Z"
+  },
+  "riggos-rag-1e278de806bd": {
+    "id": "riggos-rag-1e278de806bd",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jayden-daniels-comments-lay-bare-coaching-gamble-holding-washington-commanders-back",
+    "title": "Jayden Daniels’ comments lay bare the coaching gamble holding Commanders back",
+    "excerpt": "Washington Commanders quarterback Jayden Daniels couldn't hide his frustration when discussing the team's issues on offense.",
+    "publishedAt": "2026-11-11T17:00:03.000Z",
+    "collectedAt": "2026-11-11T21:05:40.487Z"
+  },
+  "clutchpoints-c65fda26efbb": {
+    "id": "clutchpoints-c65fda26efbb",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-stefon-diggs-cardi-b-stray-wink-martindale-before-giants",
+    "title": "Commanders’ Stefon Diggs catches savage Cardi B stray from Wink Martindale before Giants showdown",
+    "excerpt": "Ahead of the Thursday Night Football game between the Washington Commanders and the New York Giants , former Big Blue defensive coordinator Wink Martindale took a shot at Stefon Diggs after his breakup with Cardi B .\n\n Speaking to Pat Leonard for his Talkin’ Ball show, Martindale broke down the Commanders’ offense. He believes the Giants need to “set a record [for] max pressures this game” against the Commanders. Martindale only believes that the Commanders have “one” offensive threat in their…",
+    "publishedAt": "2026-11-11T16:15:03.000Z",
+    "collectedAt": "2026-11-11T21:05:40.665Z"
+  },
+  "commanders-youtube-4b170516f1dc": {
+    "id": "commanders-youtube-4b170516f1dc",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/shorts/3efZc2YoX_Y",
+    "title": "heading up to NJ #football #NFL",
+    "excerpt": "",
+    "publishedAt": "2026-11-11T18:45:37.000Z",
+    "collectedAt": "2026-11-11T21:05:44.091Z"
+  },
+  "commanders-youtube-90852c9636ec": {
+    "id": "commanders-youtube-90852c9636ec",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=SdclpsEnZ1g",
+    "title": "HC Dan Quinn Speaks To The Media After Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-11-11T18:31:29.000Z",
+    "collectedAt": "2026-11-11T21:05:44.091Z"
+  },
+  "wjla-commanders-1e308e0f7c8d": {
+    "id": "wjla-commanders-1e308e0f7c8d",
+    "sourceId": "wjla-commanders",
+    "sourceName": "WJLA (ABC7)",
+    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
+    "category": "team",
+    "url": "https://wjla.com/sports/washington-commanders/close-isnt-cutting-it-commanders-running-out-of-time-to-save-their-season",
+    "title": "Close isn't cutting it: Commanders running out of time to save their season",
+    "excerpt": "Close isn't cutting it: Commanders running out of time to save their season",
+    "publishedAt": "2026-11-11T18:48:08.000Z",
+    "collectedAt": "2026-11-11T21:05:47.374Z"
   }
 }
