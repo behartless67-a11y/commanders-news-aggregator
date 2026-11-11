@@ -133,6 +133,38 @@ function referrerBucket(rawReferrer, requestHost) {
 }
 
 /**
+ * The crawler's name when the User-Agent says it's one, else null. Ordered so
+ * the specific names win over the generic "bot"/"crawler" catch-alls, which
+ * are there for the long tail. Pure UA matching: a crawler pretending to be a
+ * normal phone still gets through, which is why `recent` also records the
+ * browser and OS, so the leftovers can be spotted by eye.
+ */
+const BOT_PATTERNS = [
+  ['Googlebot', /Googlebot|Google-InspectionTool|GoogleOther|AdsBot-Google|Mediapartners-Google|Google-Extended|APIs-Google/i],
+  ['Bing', /bingbot|BingPreview|msnbot|adidxbot/i],
+  ['Apple', /Applebot/i],
+  ['DuckDuckGo', /DuckDuckBot|DuckAssistBot/i],
+  ['Yandex', /YandexBot|YandexRender/i],
+  ['Baidu', /Baiduspider/i],
+  ['OpenAI', /GPTBot|ChatGPT-User|OAI-SearchBot/i],
+  ['Anthropic', /ClaudeBot|Claude-User|Claude-SearchBot|anthropic-ai/i],
+  ['Perplexity', /PerplexityBot|Perplexity-User/i],
+  ['Common Crawl', /CCBot/i],
+  ['ByteDance', /Bytespider/i],
+  ['Meta', /facebookexternalhit|meta-externalagent|FacebookBot/i],
+  ['SEO tools', /AhrefsBot|SemrushBot|MJ12bot|DotBot|PetalBot|SeznamBot|DataForSeoBot/i],
+  ['Headless browser', /HeadlessChrome|PhantomJS|Puppeteer|Playwright|Lighthouse|Chrome-Lighthouse/i],
+  ['Other bot', /bot\b|bot\/|crawler|spider|scraper|slurp|preview|fetch|monitor|python|curl|wget|axios|node-fetch|go-http-client|java\//i],
+];
+
+function botFamily(ua) {
+  const s = String(ua || '');
+  if (!s) return 'No user agent';
+  for (const [name, re] of BOT_PATTERNS) if (re.test(s)) return name;
+  return null;
+}
+
+/**
  * Coarse browser/OS names off the User-Agent header every request already
  * sends — no client code needed. Order matters: Edge and Opera both carry a
  * "Chrome/" token for compatibility, and iOS Chrome (CriOS) carries "Safari/"
@@ -287,6 +319,23 @@ export default async (req, context) => {
   const body = await req.json().catch(() => ({}));
   const store = getStore('site-stats');
 
+  // Crawlers that run the page's JavaScript (Googlebot renders every page it
+  // indexes, as a phone) send this beacon like a reader would. From Nov 9,
+  // 2026 they were most of the "traffic": one page each, all hours of the
+  // night, from data-center states, never returning. They are tallied under
+  // their own `bot:<name>` counter, so we can see who they are, and kept out
+  // of every reader number.
+  const botName = botFamily(req.headers.get('user-agent'));
+  if (botName) {
+    const botKey = `bot:${encodeURIComponent(botName)}`;
+    const seen = Number((await store.get(botKey, { type: 'text' })) || '0');
+    await store.set(botKey, String(seen + 1));
+    return new Response(JSON.stringify({ country: null, milestone: null }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+    });
+  }
+
   // Read-then-write, same as the rest of this file — Blobs has no atomic
   // increment, and at this site's traffic volume the occasional lost count
   // under concurrent requests is the same acceptable-and-already-present risk
@@ -411,6 +460,10 @@ export default async (req, context) => {
     country: geo?.country?.name || null,
     state: geo?.subdivision?.name || null,
     device,
+    // Same coarse buckets as the browser:/os: counters above. Here so a
+    // crawler that slips past botFamily() can still be spotted in the feed.
+    browser,
+    os,
     returning: !!body.returning,
   });
   tasks.push(store.setJSON('recent', recent.slice(0, RECENT_MAX)));
