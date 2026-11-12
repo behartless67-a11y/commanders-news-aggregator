@@ -1,16 +1,4 @@
 {
-  "yahoo-nfl-79b597f0e7d6": {
-    "id": "yahoo-nfl-79b597f0e7d6",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/seahawks-commanders-review-win-horseshoes-045626740.html",
-    "title": "Seahawks-Commanders review: A win in horseshoes, but that’s not what they were playing",
-    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Terry McLaurin #17 of the Washington Commanders reacts after play against the Seattle Seahawks during the fourth quarter at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images The invincible Seattle Seahawks, literal champions of the world, found the losing column. A fate which was unavoidable, probably, given the sport they play and the league they play in. What would’ve been nice to avoid is…",
-    "publishedAt": "2026-09-28T04:56:26.000Z",
-    "collectedAt": "2026-09-28T06:05:35.019Z"
-  },
   "riggos-rag-8efb3722a5e7": {
     "id": "riggos-rag-8efb3722a5e7",
     "sourceId": "riggos-rag",
@@ -22,18 +10,6 @@
     "excerpt": "Who were the big winners and losers from the Washington Commanders' phenomenal upset win over the Seattle Seahawks?",
     "publishedAt": "2026-09-28T10:00:00.000Z",
     "collectedAt": "2026-09-28T10:05:32.314Z"
-  },
-  "clutchpoints-e9a7beeb31c4": {
-    "id": "clutchpoints-e9a7beeb31c4",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-reaction-win-seahawks",
-    "title": "Commanders’ Marcus Mariota shares eye-opening take after shocking Seahawks",
-    "excerpt": "Washington Commanders quarterback Marcus Mariota may have found a new favorite word: Unbelievable.\n\n He kept saying it after leading the Commanders to a stunning win over the Seattle Seahawks, 33-31, at Northwest Stadium on Sunday. They snapped the Seahawks’ 12-game winning streak dating back to last season.\n\n It is a worn-out adjective in sports, but the Commanders did play unbelievably against the defending champions. Mariota could be given a pass for repeating it several times in his…",
-    "publishedAt": "2026-09-28T06:40:25.000Z",
-    "collectedAt": "2026-09-28T10:05:32.501Z"
   },
   "riggos-rag-5f1c9180b63a": {
     "id": "riggos-rag-5f1c9180b63a",
@@ -17458,5 +17434,17 @@
     "excerpt": "Rematch! | Getty Images Welcome to the New York Giants betting angle, Week 10 edition! Each week, I’m giving you my three favorite wagers for that week’s New York Giants game. My one rule: I won’t ever give you wagers that go beyond -120. No gimmes!\n The 5-2-1 Giants host the 2-5-1 Commanders on Thursday Night Football, and it’s Big Blue’s first rematch of the season. Fans will remember that the first contest between these teams resulted in the NFL’s only tie this season, with each team blowing…",
     "publishedAt": "2026-11-12T00:00:00.000Z",
     "collectedAt": "2026-11-12T03:05:45.853Z"
+  },
+  "athletic-commanders-534c1661b7b8": {
+    "id": "athletic-commanders-534c1661b7b8",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7774669/2026/11/12/commanders-giants-odds-picks-predictions-tnf",
+    "title": "Commanders vs. Giants odds, picks, predictions for 'Thursday Night Football'",
+    "excerpt": "The Week 10 edition of this primetime showdown features two NFC East teams looking for redemption.",
+    "publishedAt": "2026-11-12T07:00:39.000Z",
+    "collectedAt": "2026-11-12T07:12:49.135Z"
   }
 }
