@@ -1,30 +1,4 @@
 {
-  "social-891782d5bbcb": {
-    "id": "social-891782d5bbcb",
-    "url": "https://x.com/JPFinlayNBCS/status/2117291532722016546",
-    "text": "Jayden Daniels wasnt at his best Sunday night but when Washington needed it most he was his best. Down 10-3 early 2nd qtr at their own 11, Daniels engineered an 89 yard TD drive. Went 5 of 6 and had a 14 yard run for a first down",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/547/775/322/551/744/original/d56c4e3fa2b36fdb.png"
-    ],
-    "publishedAt": "2026-11-02T16:23:33.000Z",
-    "collectedAt": "2026-11-02T17:05:38.234Z"
-  },
-  "social-0de88c18aa9c": {
-    "id": "social-0de88c18aa9c",
-    "url": "https://x.com/tashanreed/status/2117288196409106613",
-    "text": "\"That has to go down.” The #Commanders were sloppy against the Eagles. Once again, penalties cost them dearly. They were able to overcome their undisciplined mistakes against a hobbled foe, but they'll need to be much cleaner moving forward: /11/02/commanders-snapped-their-skid-their-penalty-problem-persists/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-02T16:10:17.000Z",
-    "collectedAt": "2026-11-02T17:05:42.283Z"
-  },
   "social-1a09d554bba9": {
     "id": "social-1a09d554bba9",
     "url": "https://x.com/JPFinlayNBCS/status/2117302828259840358",
@@ -195,20 +169,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/548/653/594/900/309/original/8f7e582c883ceecf.jpg"
     ],
     "publishedAt": "2026-11-02T20:03:33.000Z",
-    "collectedAt": "2026-11-02T23:05:38.609Z"
-  },
-  "social-6b9cf89c676a": {
-    "id": "social-6b9cf89c676a",
-    "url": "https://x.com/AroundTheNFL/status/2117289646346670464",
-    "text": "Washington's 83.3% pressure rate on blitzes in win over Philly was the second-highest by any defense in a game this season, per @NextGenStats eek-8-what-we-learned-from-sunday-s-games#was",
-    "handle": "AroundTheNFL",
-    "author": "Around The NFL",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/547/743/185/537/886/original/ad2c3a7fc641ad7b.jpg"
-    ],
-    "publishedAt": "2026-11-02T16:16:03.000Z",
     "collectedAt": "2026-11-02T23:05:38.609Z"
   },
   "social-bf07cb1f5446": {
@@ -5946,5 +5906,67 @@
     ],
     "publishedAt": "2026-11-12T09:36:21.839Z",
     "collectedAt": "2026-11-12T13:05:54.591Z"
+  },
+  "social-1f7ec304ae65": {
+    "id": "social-1f7ec304ae65",
+    "url": "https://x.com/JPFinlayNBCS/status/2120921500983468210",
+    "text": "Skattebo with a lot to prove tonight",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-12T16:47:45.000Z",
+    "collectedAt": "2026-11-12T16:49:27.656Z"
+  },
+  "social-cbe44add3398": {
+    "id": "social-cbe44add3398",
+    "url": "https://x.com/john_keim/status/2120873930650968148",
+    "text": "Part of Jayden Daniels process is to pick the brains of top athletes, learning about how they lasted, dealt with injuries and adversity and more. From Kobe (via Rob Pelinka), LeBron, Steph Curry, Matthew Stafford and more. 88/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-12T13:38:43.000Z",
+    "collectedAt": "2026-11-12T16:49:29.166Z"
+  },
+  "social-4825230fcbca": {
+    "id": "social-4825230fcbca",
+    "url": "https://x.com/john_keim/status/2120868113025794051",
+    "text": "On video with 5 thoughts: on late game failures; the D taking a step forward; Nick Allegretti and mental health and a look at the Giants. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-12T13:15:36.000Z",
+    "collectedAt": "2026-11-12T16:49:29.166Z"
+  },
+  "social-933237bc329b": {
+    "id": "social-933237bc329b",
+    "url": "https://x.com/TheGiantTakePod/status/2120878825651466681",
+    "text": "#Giants vs #Commanders Preview OUT NOW!! LISTEN 🎧: the-giant-take-a-new-york-giants-podcast/id1510481089?i=1000801499028",
+    "handle": "TheGiantTakePod",
+    "author": "The Giant Take Podcast",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/603/822/745/169/747/original/1b0664bd657871a2.jpg"
+    ],
+    "publishedAt": "2026-11-12T13:58:10.000Z",
+    "collectedAt": "2026-11-12T16:49:43.563Z"
+  },
+  "social-4ea0983a4d9c": {
+    "id": "social-4ea0983a4d9c",
+    "url": "https://mysportgallery.com/@slessans2/117603794509211993",
+    "text": "Happy game day to those who celebrate? Maybe? Do people still care? #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
+    "handle": "slessans2",
+    "author": "Seth \"Football Collector\"",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-12T13:51:33.000Z",
+    "collectedAt": "2026-11-12T16:49:43.563Z"
   }
 }
