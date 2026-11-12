@@ -9,4 +9,5 @@
 export const REF_NOTES = {
   '2026-8': 'Alex, please. Not on fourth and short.',
   '2026-9': 'Be boring, John. We believe in you.',
+  '2026-10': "Thursday again, Brad. Let's break the streak together.",
 };

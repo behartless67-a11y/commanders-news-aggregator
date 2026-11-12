@@ -17,6 +17,9 @@ export const BEN_PICKS = {
   '2026-10-19-SF': { commanders: 17, opponent: 16 },
   // "The Worst Sunday Night Game Ever Made" (data/originals/the-worst-sunday-night-game-ever-made.json), Oct 30: bold, so bold, but we're due.
   '2026-11-01-PHI': { commanders: 27, opponent: 13 },
+  // (Rams, Nov 8: "20-17, winner to be determined." No winner, so no entry.)
+  // Giants pregame post, Nov 12: just enough to keep us interested in the season, "because I'm a full fledged masochist."
+  '2026-11-12-NYG': { commanders: 28, opponent: 20 },
 };
 
 /**
