@@ -63,18 +63,6 @@
     "publishedAt": "2026-11-03T22:52:35.000Z",
     "collectedAt": "2026-11-04T00:37:52.855Z"
   },
-  "social-d547edb48e1a": {
-    "id": "social-d547edb48e1a",
-    "url": "https://x.com/john_keim/status/2117701409659670693",
-    "text": "My SC4U video talking about Trey Amos and his impact. With a view from my driveway! 932/trey-amos-making-impact-commanders?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-03T19:32:15.000Z",
-    "collectedAt": "2026-11-04T00:37:52.855Z"
-  },
   "social-b99cceb31d45": {
     "id": "social-b99cceb31d45",
     "url": "https://x.com/BenStandig/status/2117734667336221085",
@@ -7069,5 +7057,100 @@
     ],
     "publishedAt": "2026-11-13T13:08:02.335Z",
     "collectedAt": "2026-11-13T17:06:03.059Z"
+  },
+  "social-28df80fa2f59": {
+    "id": "social-28df80fa2f59",
+    "url": "https://x.com/Commanders/status/2121319183392866355",
+    "text": "First career fumble recovery for @JR1ERA@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/708/099/920/647/original/b88c0bed80994695.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/708/245/228/636/original/ad6ee649dc2d5c0c.jpg"
+    ],
+    "publishedAt": "2026-11-13T19:08:00.000Z",
+    "collectedAt": "2026-11-13T19:47:45.996Z"
+  },
+  "social-76de1417f104": {
+    "id": "social-76de1417f104",
+    "url": "https://x.com/Commanders/status/2121300057357996395",
+    "text": "brothers 🫶 @OhioStateFB@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/409/627/771/290/original/fe567e9fb1eaf3de.jpg"
+    ],
+    "publishedAt": "2026-11-13T17:52:00.000Z",
+    "collectedAt": "2026-11-13T19:47:45.997Z"
+  },
+  "social-3dea82f41259": {
+    "id": "social-3dea82f41259",
+    "url": "https://x.com/Commanders/status/2121290494592405654",
+    "text": "Antonio Williams is the first rookie wide receiver in franchise history to have a receiving TD in a TNF game",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/260/136/468/202/original/e23bde024e7a387b.jpg"
+    ],
+    "publishedAt": "2026-11-13T17:14:00.000Z",
+    "collectedAt": "2026-11-13T19:47:45.997Z"
+  },
+  "social-927fa580ab98": {
+    "id": "social-927fa580ab98",
+    "url": "https://x.com/john_keim/status/2121314055906373868",
+    "text": "Quick SC4U video on Sonny Styles and his big tackle 946/sonny-styles-setting-washington-game-winning-drive?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-13T18:47:37.000Z",
+    "collectedAt": "2026-11-13T19:47:48.958Z"
+  },
+  "social-603ba6546f91": {
+    "id": "social-603ba6546f91",
+    "url": "https://x.com/tashanreed/status/2121309754928558497",
+    "text": "The latest episode of The Tashan Reed Show breaking down the #Commanders ' win over the Giants is out now. Watch here: tashan-reed-show-recapping-the-2b4?r=1gwknd",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/603/774/410/048/original/2fbf8b3ec7d2d439.jpg"
+    ],
+    "publishedAt": "2026-11-13T18:30:32.000Z",
+    "collectedAt": "2026-11-13T19:47:51.635Z"
+  },
+  "social-864c8ee951c9": {
+    "id": "social-864c8ee951c9",
+    "url": "https://x.com/tashanreed/status/2121307052769513759",
+    "text": "\"The easy thing would be to be nervous in that spot and to back off, but he’s aggressive.” The #Commanders ' defense got burned, and defensive coordinator Daronte Jones stayed aggressive. It may have saved their season: /11/13/commanders-got-burned-stayed-aggressive-it-may-have-saved-their-season/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-13T18:19:48.000Z",
+    "collectedAt": "2026-11-13T19:47:51.635Z"
+  },
+  "social-c00d95cff429": {
+    "id": "social-c00d95cff429",
+    "url": "https://x.com/tashanreed/status/2121288135329947772",
+    "text": "I'll be livestreaming The Tashan Reed Show at 12:45 p.m. to discuss the #Commanders ' win over the Giants. Join here: 456634?r=1gwknd&utm_medium=ios",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/610/349/072/163/473/original/c41346fd4d8afffa.jpg"
+    ],
+    "publishedAt": "2026-11-13T17:04:37.000Z",
+    "collectedAt": "2026-11-13T19:47:51.635Z"
   }
 }
