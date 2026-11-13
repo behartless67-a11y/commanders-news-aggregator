@@ -167,9 +167,9 @@
     "opponent": "New York Giants",
     "opponentShort": "Giants",
     "venue": "MetLife Stadium",
-    "result": null,
-    "points": null,
-    "broadcast": "AMAZON PRIME",
+    "result": "W",
+    "points": "24 - 21",
+    "broadcast": null,
     "isBye": false
   },
   {

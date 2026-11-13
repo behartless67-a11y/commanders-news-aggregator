@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T01:06:36.270Z",
+  "fetchedAt": "2026-11-13T07:06:40.999Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6535,6 +6535,22 @@
         "abbr": "BUF",
         "flags": 8,
         "yards": 62
+      }
+    },
+    "401873052": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-13T01:15Z",
+      "referee": "Brad Rogers",
+      "home": {
+        "abbr": "NYG",
+        "flags": 6,
+        "yards": 62
+      },
+      "away": {
+        "abbr": "WSH",
+        "flags": 4,
+        "yards": 17
       }
     }
   }

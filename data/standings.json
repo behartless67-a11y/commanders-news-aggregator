@@ -1,13 +1,13 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-11-13T01:06:00.695Z",
+  "fetchedAt": "2026-11-13T07:06:03.273Z",
   "teams": [
     {
       "abbr": "NYG",
       "name": "New York Giants",
-      "overall": "5-2-1",
-      "streak": "W2",
-      "winPercent": 0.6875
+      "overall": "5-3-1",
+      "streak": "L1",
+      "winPercent": 0.6111111
     },
     {
       "abbr": "DAL",
@@ -19,9 +19,9 @@
     {
       "abbr": "WAS",
       "name": "Washington Commanders",
-      "overall": "2-5-1",
-      "streak": "L1",
-      "winPercent": 0.3125
+      "overall": "3-5-1",
+      "streak": "W1",
+      "winPercent": 0.3888889
     },
     {
       "abbr": "PHI",

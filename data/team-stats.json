@@ -1,27 +1,27 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-11-13T01:06:28.640Z",
+  "fetchedAt": "2026-11-13T07:06:31.669Z",
   "offense": {
     "yardsPerGame": {
-      "value": "325.4",
-      "rank": 20,
-      "rankLabel": "20th"
+      "value": "327.0",
+      "rank": 18,
+      "rankLabel": "18th"
     },
     "pointsPerGame": {
-      "value": "21.5",
+      "value": "21.8",
       "rank": 21,
       "rankLabel": "21st"
     },
     "passYardsPerGame": {
-      "value": "207.1",
+      "value": "210.2",
       "rank": 21,
       "rankLabel": "21st"
     },
     "rushYardsPerGame": {
-      "value": "118.3",
-      "rank": 11,
-      "rankLabel": "11th"
+      "value": "116.8",
+      "rank": 14,
+      "rankLabel": "14th"
     }
   },
   "defense": {
@@ -52,34 +52,34 @@
       {
         "key": "Pass",
         "name": "Jayden Daniels",
-        "value": "1,250"
+        "value": "1,499"
       },
       {
         "key": "Rush",
         "name": "Jayden Daniels",
-        "value": "252"
+        "value": "280"
       },
       {
         "key": "Recv",
         "name": "Stefon Diggs",
-        "value": "303"
+        "value": "386"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
         "name": "Sonny Styles",
-        "value": "67"
+        "value": "80"
       },
       {
         "key": "Sack",
         "name": "Odafe Oweh",
-        "value": "4"
+        "value": "5"
       },
       {
         "key": "Int",
         "name": "Rasul Douglas",
-        "value": "2"
+        "value": "3"
       }
     ]
   }
