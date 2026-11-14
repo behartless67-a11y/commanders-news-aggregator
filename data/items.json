@@ -1,16 +1,4 @@
 {
-  "riggos-rag-21772f062e57": {
-    "id": "riggos-rag-21772f062e57",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/predicting-washington-commanders-next-five-games-after-season-saving-seahawks-upset",
-    "title": "Predicting the Commanders’ next five games after season-saving Seahawks upset",
-    "excerpt": "Predicting the Washington Commanders' next five games after their season-saving upset over the Seattle Seahawks.",
-    "publishedAt": "2026-09-30T10:00:01.000Z",
-    "collectedAt": "2026-09-30T10:05:33.863Z"
-  },
   "atoz-sports-42fc5fdaff6b": {
     "id": "atoz-sports-42fc5fdaff6b",
     "sourceId": "atoz-sports",
@@ -34,30 +22,6 @@
     "excerpt": "The Washington Commanders signed Charles Snowden to their practice squad, which could give them timely help beyond the edge.",
     "publishedAt": "2026-09-30T11:30:00.000Z",
     "collectedAt": "2026-09-30T12:05:35.138Z"
-  },
-  "athletic-jhabvala-4e861356a242": {
-    "id": "athletic-jhabvala-4e861356a242",
-    "sourceId": "athletic-jhabvala",
-    "sourceName": "Nicki Jhabvala (The Athletic)",
-    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7645213/2026/09/30/commanders-david-blough-offense-run-defense",
-    "title": "Commanders first 3 games revealed what's working, what still needs work",
-    "excerpt": "Washington's run defense and offensive play calling has looked promising through three weeks, though penalties remain a concern.",
-    "publishedAt": "2026-09-30T11:19:38.000Z",
-    "collectedAt": "2026-09-30T12:05:35.895Z"
-  },
-  "pft-5b1bb11029f3": {
-    "id": "pft-5b1bb11029f3",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-rule-out-g-sam-cosmi-s-nick-cross-for-week-4",
-    "title": "Commanders rule out G Sam Cosmi, S Nick Cross for Week 4",
-    "excerpt": "The Commanders went to London on Tuesday night to prepare for Sunday's game against the Colts, but a couple of players did not make the trip. \n Right guard Sam Cosmi and safety Nick Cross both stayed in Washington and they have been ruled out for this week's game. Cosmi has a concussion and a throat injury while Cross is recovering from internal injuries that required him to have surgery after the team's Week 2 game in Dallas. \n Nick Allegretti replaced Cosmi in Week 3 with Lucas Patrick at…",
-    "publishedAt": "2026-09-30T11:09:43.000Z",
-    "collectedAt": "2026-09-30T12:05:38.975Z"
   },
   "hogs-haven-27c365b8b97a": {
     "id": "hogs-haven-27c365b8b97a",
@@ -3081,18 +3045,6 @@
     "title": "Commanders Film Review: Run Defense Off To Strong Start",
     "excerpt": "One of the biggest turnarounds on the Commanders defense this year compared to last season has been the run defense. After three games, the Commanders are currently ranked third in the NFL with an average of 82 yards per game surrendered on the ground. Last year, they ranked third worst, with an average of 141.8 rushing yards per game given up. That’s a 60 yard per game swing from last year, and for reference of how big that is, if the Commanders 2026 average of 82 yards per game continued over…",
     "publishedAt": "2026-10-01T10:55:54.000Z",
-    "collectedAt": "2026-10-07T02:42:29.187Z"
-  },
-  "bullock-film-room-77df5adecc77": {
-    "id": "bullock-film-room-77df5adecc77",
-    "sourceId": "bullock-film-room",
-    "sourceName": "Bullock's Film Room",
-    "sourceHomepage": "https://markbullock.substack.com/",
-    "category": "team",
-    "url": "https://markbullock.substack.com/p/commanders-film-review-sonny-styles-20d",
-    "title": "Commanders Film Review: Sonny Styles vs Seahawks",
-    "excerpt": "Commanders rookie linebacker Sonny Styles had another impressive performance in Washington’s stunning upset victory over the Seattle Seahawks on Sunday. Since veteran linebacker Frankie Luvu left the Eagles game early with an injury, Styles has worn the green dot, which signals he has the speaker in his headset that enables him to hear the plays that defensive coordinator Daronte Jones calls and then relay those to the rest of the defense. That’s a big job to handle as a rookie, especially in…",
-    "publishedAt": "2026-09-30T10:55:42.000Z",
     "collectedAt": "2026-10-07T02:42:29.187Z"
   },
   "beltway-football-2dd88a8d1853": {
@@ -18046,5 +17998,65 @@
     "excerpt": "The New York Giants let one slip away on Thursday Night Football, and Aqib Talib believes they have nobody to blame but themselves. Breaking down the Giants’ 24-21 loss to the Washington Commanders on the “Gridiron” podcast, the former All-Pro cornerback did not mince words.\n\n “I think the Giants lost this game more than the Commanders won this game. But I love how the Commanders finished the game,” Talib said.\n\n Talib pointed to Washington’s aggressive defensive approach as a key factor ,…",
     "publishedAt": "2026-11-14T03:27:46.000Z",
     "collectedAt": "2026-11-14T07:05:28.700Z"
+  },
+  "riggos-rag-980453d1f780": {
+    "id": "riggos-rag-980453d1f780",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/6-unsung-washington-commanders-heroes-became-impossible-ignore-against-giants",
+    "title": "6 unsung Commanders heroes who became impossible to ignore against Giants",
+    "excerpt": "Which unsung heroes played overlooked yet significant roles in the Washington Commanders' prime-time win over the New York Giants?",
+    "publishedAt": "2026-11-14T11:00:01.000Z",
+    "collectedAt": "2026-11-14T11:29:06.029Z"
+  },
+  "clutchpoints-bb71cc8aafe0": {
+    "id": "clutchpoints-bb71cc8aafe0",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/new-york-giants/giants-news-aqib-talib-100-real-nys-tnf-loss-commanders",
+    "title": "Aqib Talib gets 100% real on Giants’ TNF loss to Commanders",
+    "excerpt": "The New York Giants let one slip away on Thursday Night Football, and Aqib Talib believes they have nobody to blame but themselves. Breaking down the Giants’ 24-21 loss to the Washington Commanders on the “Gridiron” podcast, the former All-Pro cornerback did not mince words.\n\n “I think the Giants lost this game more than the Commanders won this game. But I love how the Commanders finished the game,” Talib said.\n\n Talib pointed to Washington’s aggressive defensive approach as a key factor ,…",
+    "publishedAt": "2026-11-14T03:27:46.000Z",
+    "collectedAt": "2026-11-14T11:29:06.246Z"
+  },
+  "athletic-commanders-458de109358b": {
+    "id": "athletic-commanders-458de109358b",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7779011/2026/11/14/jayden-daniels-commanders-giants-comeback",
+    "title": "The biggest thing Jayden Daniels is doing this fall has nothing to do with results",
+    "excerpt": "What Jayden Daniels needs most is to just play football, week after week after week. It's finally happening.",
+    "publishedAt": "2026-11-14T11:00:21.000Z",
+    "collectedAt": "2026-11-14T11:29:08.030Z"
+  },
+  "commanders-youtube-c141fb4bb2e1": {
+    "id": "commanders-youtube-c141fb4bb2e1",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=zfl1IzMPzUI",
+    "title": "Celebrating Washington's GREATEST Legends + Linebacker Frankie Luvu | The Player's Club",
+    "excerpt": "",
+    "publishedAt": "2026-11-14T05:00:27.000Z",
+    "collectedAt": "2026-11-14T11:29:08.657Z"
+  },
+  "commanders-youtube-38bfa99142c6": {
+    "id": "commanders-youtube-38bfa99142c6",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=WDjr5niS1qE",
+    "title": "Highlights & Analysis of Commanders BIG NFC East Victory Over Giants | Command Center",
+    "excerpt": "",
+    "publishedAt": "2026-11-13T21:00:31.000Z",
+    "collectedAt": "2026-11-14T11:29:08.657Z"
   }
 }
