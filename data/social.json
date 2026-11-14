@@ -6508,5 +6508,43 @@
     "images": [],
     "publishedAt": "2026-11-14T15:23:35.000Z",
     "collectedAt": "2026-11-14T17:05:59.047Z"
+  },
+  "social-93ed9dfe4895": {
+    "id": "social-93ed9dfe4895",
+    "url": "https://x.com/Commanders/status/2121698180723069039",
+    "text": "Schemed it up 🧑‍🍳 @Visa@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-14T20:14:00.000Z",
+    "collectedAt": "2026-11-14T23:05:42.034Z"
+  },
+  "social-4c7e4c17ad0a": {
+    "id": "social-4c7e4c17ad0a",
+    "url": "https://x.com/Commanders/status/2121670750012579922",
+    "text": "Spark plug 🔌 @NextGenStats x @awscloud@twitter.com",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/616/195/416/225/093/original/4ec6776d2030485a.jpg"
+    ],
+    "publishedAt": "2026-11-14T18:25:00.000Z",
+    "collectedAt": "2026-11-14T23:05:42.034Z"
+  },
+  "social-dc3159697bde": {
+    "id": "social-dc3159697bde",
+    "url": "https://x.com/john_keim/status/2121712717614485834",
+    "text": "Washington S Quan Martin was fined $17,911 for a hit on a defenseless player vs the Rams.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-14T21:11:46.000Z",
+    "collectedAt": "2026-11-14T23:05:45.072Z"
   }
 }
