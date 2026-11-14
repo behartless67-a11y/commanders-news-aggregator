@@ -2,6 +2,8 @@
 
 Things we've talked about building but haven't yet. Newest batch first. When one ships, move it to `how-everything-works.md` and delete it here.
 
+**Before building any of these,** write one "Design:" line for it: which existing component it lives inside, and which tokens from `docs/design.md` it uses. If it needs a new color, font size, radius or label style, add that to `design.md` first. That's how the site stays one design instead of drifting one feature at a time.
+
 ---
 
 ## Follow-ups to check (October 28, 2026)

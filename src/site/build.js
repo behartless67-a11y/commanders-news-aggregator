@@ -671,6 +671,10 @@ export async function buildSite() {
   // subfolder rather than the single flat files handled above.
   await fs.cp(path.resolve('src/site/assets/music'), path.join(DIST_DIR, 'music'), { recursive: true });
 
+  // Self-hosted Barlow and Barlow Condensed (see the @font-face block at the
+  // top of site.css and docs/design.md), plus their OFL license file.
+  await fs.cp(path.resolve('src/site/assets/fonts'), path.join(DIST_DIR, 'fonts'), { recursive: true });
+
   // Ben's own photos, referenced as photos/<file> by the `photos` map on a
   // Blog record. Same recursive copy as music/ for the same reason: it's a
   // folder that grows, and listing each file above would mean a code edit

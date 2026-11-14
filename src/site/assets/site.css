@@ -1,8 +1,37 @@
-/* Design: "The Burgundy Wire" handoff — colors, type, spacing, and markup
-   are final per design_handoff_burgundy_wire/README.md. Keep class names in
-   sync with src/site/templates.js if you restructure the markup. */
+/* Design: the "Gameday" system in docs/design.md is the source of truth for
+   colors, type, corners, depth and capitals. Read it before adding a
+   component, and add any new value there first. Keep class names in sync
+   with src/site/templates.js if you restructure the markup. */
+
+/* ---------- Fonts (self-hosted, SIL Open Font License, see fonts/OFL.txt) ----------
+   Barlow for reading, Barlow Condensed for headlines: one family, so the
+   condensed face reads as the loud cousin of the body text rather than a
+   stranger. Served from our own domain instead of Google Fonts so there's
+   no outside request on every page. Split into latin and latin-ext with
+   unicode-range so an English page only downloads the latin files.
+   font-display: swap shows text in the fallback right away rather than
+   leaving headlines blank on a slow connection. */
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:400; font-display:swap; src:url(fonts/barlow-latin-400-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:400; font-display:swap; src:url(fonts/barlow-latin-ext-400-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow'; font-style:italic; font-weight:400; font-display:swap; src:url(fonts/barlow-latin-400-italic.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:italic; font-weight:400; font-display:swap; src:url(fonts/barlow-latin-ext-400-italic.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:500; font-display:swap; src:url(fonts/barlow-latin-500-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:500; font-display:swap; src:url(fonts/barlow-latin-ext-500-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:600; font-display:swap; src:url(fonts/barlow-latin-600-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:600; font-display:swap; src:url(fonts/barlow-latin-ext-600-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:700; font-display:swap; src:url(fonts/barlow-latin-700-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:700; font-display:swap; src:url(fonts/barlow-latin-ext-700-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:800; font-display:swap; src:url(fonts/barlow-latin-800-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow'; font-style:normal; font-weight:800; font-display:swap; src:url(fonts/barlow-latin-ext-800-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow Condensed'; font-style:normal; font-weight:600; font-display:swap; src:url(fonts/barlow-condensed-latin-600-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow Condensed'; font-style:normal; font-weight:600; font-display:swap; src:url(fonts/barlow-condensed-latin-ext-600-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face{ font-family:'Barlow Condensed'; font-style:normal; font-weight:700; font-display:swap; src:url(fonts/barlow-condensed-latin-700-normal.woff2) format('woff2'); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face{ font-family:'Barlow Condensed'; font-style:normal; font-weight:700; font-display:swap; src:url(fonts/barlow-condensed-latin-ext-700-normal.woff2) format('woff2'); unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 
 :root{
+  /* Type. See docs/design.md for why these two. */
+  --font-body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif-condensed, var(--font-body);
   --burgundy: #5A1414;
   --burgundy-600: #7a1c1c;
   --burgundy-800: #3c0d0d;
@@ -22,7 +51,19 @@
      background it sits on (5.39 on --bg, 4.98 on --surface, 4.76 on
      --surface-2) and still reads a step quieter than --text-muted. */
   --text-faint: #908784;
-  --radius: 10px;
+  --radius: 6px;
+  --radius-sm: 3px;
+  /* All-caps labels come in three tiers (docs/design.md, "Capitals"):
+     kickers and eyebrows (BLOG, BREAKDOWN) are 11px/800 and spaced wide;
+     section titles (FILM ROOM, footer columns) a step tighter; buttons, tabs
+     and table headers tightest. A new label picks a tier, not a new value. */
+  --label-track-wide: 0.1em;
+  --label-track: 0.07em;
+  --label-track-tight: 0.04em;
+  /* Text that sits on a color rather than the page. */
+  --on-gold: #0a0807;          /* dark text on gold buttons */
+  --text-on-burgundy: #e2d9d5; /* body text inside burgundy panels */
+  --alert: #ff8a7a;            /* form errors and Out/IR status */
   /* Dark-only site: tells the browser to draw form fields, scrollbars and
      autofill in their dark styles instead of glaring white ones. */
   color-scheme: dark;
@@ -40,7 +81,11 @@ html, body{ margin:0; padding:0; }
 body{
   background: radial-gradient(1200px 600px at 15% -10%, rgba(90,20,20,0.35), transparent 60%), var(--bg);
   color: var(--text);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-body);
+  /* Barlow's x-height is 0.51 of its size, Inter's was 0.546. Matching it
+     keeps every one of the existing font sizes reading the same as before
+     the switch instead of about 7% smaller, so nothing gets cramped. */
+  font-size-adjust: 0.546;
   line-height: 1.45;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
@@ -202,7 +247,7 @@ img, svg{ display:block; max-width:100%; }
 
 .brand-mark{
   width:36px; height:36px;
-  border-radius: 7px;
+  border-radius: var(--radius);
   background: linear-gradient(160deg, var(--burgundy) 0%, var(--burgundy-800) 100%);
   border: 1px solid rgba(255,182,18,0.35);
   display:flex; align-items:center; justify-content:center;
@@ -281,7 +326,7 @@ img, svg{ display:block; max-width:100%; }
   font-size: 12.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--label-track-tight);
   color: var(--text-muted);
   border-bottom: 2px solid transparent;
   white-space: nowrap;
@@ -289,6 +334,13 @@ img, svg{ display:block; max-width:100%; }
 
 .filter-tabs a:hover{
   color: var(--text);
+}
+
+/* At common laptop widths (1280) the full nav ran about 65px past one row,
+   which left DONATE alone on a second line. Slightly tighter padding there
+   keeps it to one row; wider screens keep the roomier 14px. */
+@media (max-width: 1360px){
+  .filter-tabs a{ padding-left: 11px; padding-right: 11px; }
 }
 
 /* One consistent, actually-visible divider between every link, not just a
@@ -327,11 +379,11 @@ img, svg{ display:block; max-width:100%; }
   padding: 1px 6px;
   font-size: 9.5px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track-tight);
   text-transform: uppercase;
-  color: #14100f;
+  color: var(--bg);
   background: var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   vertical-align: 2px;
   animation: live-pulse 1.8s ease-in-out infinite;
 }
@@ -376,7 +428,7 @@ img, svg{ display:block; max-width:100%; }
   gap: 5px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.09em;
+  letter-spacing: var(--label-track-tight);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -538,7 +590,7 @@ img, svg{ display:block; max-width:100%; }
   margin: 0;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
 }
@@ -548,7 +600,7 @@ img, svg{ display:block; max-width:100%; }
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--label-track-tight);
   color: var(--gold);
 }
 
@@ -688,7 +740,7 @@ img, svg{ display:block; max-width:100%; }
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--label-track-tight);
   color: var(--gold);
 }
 
@@ -771,11 +823,11 @@ main.layout{
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   color: var(--gold);
   background: var(--burgundy);
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
 }
 
@@ -830,7 +882,7 @@ main.layout{
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
@@ -865,7 +917,7 @@ main.layout{
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
@@ -924,7 +976,7 @@ main.layout{
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
@@ -1002,7 +1054,7 @@ main.layout{
     padding: 13px 17px 13px 18px;
     border: 1px solid rgba(255,182,18,0.4);
     border-left: none;
-    border-radius: 0 999px 999px 0;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     background: rgba(20,16,15,0.88);
     color: var(--text-muted);
     font-size: 14.5px;
@@ -1094,7 +1146,7 @@ main.layout{
   flex: 0 0 140px;
   width: 140px;
   aspect-ratio: 1;
-  border-radius: 6px;
+  border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border-soft);
 }
@@ -1135,10 +1187,10 @@ main.layout{
 .badge{
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   text-transform: uppercase;
   padding: 3px 9px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
   white-space: nowrap;
 }
@@ -1146,9 +1198,15 @@ main.layout{
 /* The "Blog" pill at the top of a post page (originalArticleBody(),
    mondayArticleBody()). River cards no longer use pills; see .card-label. */
 .badge-blog{
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--burgundy);
+  display: inline-block;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--gold);
+  border-radius: 0;
+  padding: 0 0 3px;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.12em;
 }
 
 /* The site's own posts in the river: "Blog" in gold text ahead of the source,
@@ -1157,7 +1215,7 @@ main.layout{
 .card-label{
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -1183,7 +1241,7 @@ main.layout{
 .card-breakdown{
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
   text-decoration: none;
@@ -1311,7 +1369,7 @@ main.layout{
   display: block;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: var(--radius);
   border: 1px solid var(--border-soft);
   background: var(--surface);
 }
@@ -1362,9 +1420,9 @@ main.layout{
 .breakdown-tag{
   display: block;
   margin: 0 0 3px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -1419,13 +1477,13 @@ main.layout{
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: var(--radius);
 }
 .breakdown-meta{
   margin: 0 0 4px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   text-transform: uppercase;
   color: var(--text-faint);
 }
@@ -1580,7 +1638,7 @@ main.layout{
 .widget-teamstats h2{
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   margin: 0 0 10px;
   display: flex;
@@ -1615,7 +1673,7 @@ main.layout{
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track-tight);
   padding: 5px 9px;
   color: var(--text-faint);
   cursor: pointer;
@@ -1699,7 +1757,7 @@ main.layout{
 .ts-stat-label{
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track-tight);
   text-transform: uppercase;
   color: var(--text-faint);
   white-space: nowrap;
@@ -1727,7 +1785,7 @@ main.layout{
   margin: 0 0 8px;
   font-size: 9.5px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--text-faint);
 }
@@ -1761,7 +1819,7 @@ main.layout{
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track-tight);
   color: var(--text-faint);
 }
 
@@ -1829,7 +1887,7 @@ main.layout{
 .live-final-thoughts h3{
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   margin: 0 0 10px;
 }
@@ -1912,7 +1970,7 @@ main.layout{
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--label-track);
   color: var(--gold);
 }
 
@@ -1939,7 +1997,7 @@ main.layout{
   margin: 0;
   font-size: 13.5px;
   line-height: 1.55;
-  color: #e2d9d5;
+  color: var(--text-on-burgundy);
 }
 
 .digest-lede{
@@ -1970,11 +2028,8 @@ main.layout{
    A rest stop for the eye, not a new article, so it stays well under the post
    title's size and leans on the gold rather than scale for emphasis. */
 .digest-subhead{
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--gold);
-  margin: 36px 0 14px;
+  margin: 40px 0 12px;
 }
 
 .digest-subhead:first-child{ margin-top: 0; }
@@ -2022,12 +2077,12 @@ main.layout{
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius);
   border: 1px solid var(--border-soft);
 }
 
 /* A phone clip is portrait, so at full column width it would stand about
-   1300px tall and push the whole post off the screen. Capped and centred
+   1300px tall and push the whole post off the screen. Capped and centered
    instead: the caption below it still spans the column, which keeps it
    reading as part of the prose rather than as an embed dropped in. */
 .essay-figure-video{
@@ -2041,7 +2096,7 @@ main.layout{
   width: 100%;
   max-width: 420px;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius);
   border: 1px solid var(--border-soft);
   background: #000;
 }
@@ -2052,7 +2107,7 @@ main.layout{
 
 /* A portrait phone photo at full column width stood ~940px tall, a screen and
    a half on a laptop. essayPhoto() gives a portrait photo a max-width worked
-   out from its own dimensions so it tops out at 720px tall; this centres it.
+   out from its own dimensions so it tops out at 720px tall; this centers it.
    Doing it with max-width rather than max-height keeps width:100% plus the
    width/height attributes in charge of the box, so the space is reserved
    before the image loads and the prose never jumps. Inline figures only: a
@@ -2159,7 +2214,7 @@ main.layout{
   aspect-ratio: 4 / 3;
   object-fit: contain;
   background: #0d0d10;
-  border-radius: 8px 8px 0 0;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 
 /* Captions run different lengths and the track is as tall as its tallest
@@ -2269,7 +2324,7 @@ main.layout{
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
 }
@@ -2360,7 +2415,7 @@ main.layout{
     color: var(--gold);
     text-decoration: none;
     border: 1px solid rgba(255,182,18,0.45);
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     padding: 7px 12px;
   }
   .gameweek-jump a:active{ background: rgba(255,182,18,0.12); }
@@ -2502,7 +2557,7 @@ main.layout{
   padding: 8px 10px;
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   color: var(--text-faint);
   border-bottom: 1px solid var(--border);
   white-space: nowrap;
@@ -2529,13 +2584,13 @@ main.layout{
   display: inline-block;
   margin-left: 6px;
   padding: 1px 7px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--gold);
   color: var(--burgundy-800);
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--label-track-tight);
   vertical-align: 1px;
 }
 
@@ -2595,7 +2650,7 @@ main.layout{
   width: 240px;
   height: 80px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: var(--surface);
 }
 .credit-text p{ margin: 0; }
@@ -2638,7 +2693,7 @@ main.layout{
   box-sizing: border-box;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 8px 10px;
   font-size: 22px;
   font-weight: 800;
@@ -2653,9 +2708,9 @@ main.layout{
 .poll-submit{
   width: 100%;
   background: var(--gold);
-  color: #0a0807;
+  color: var(--on-gold);
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 10px 18px;
   font-size: 14px;
   font-weight: 700;
@@ -2681,9 +2736,9 @@ main.layout{
 }
 .poll-crowd-label{
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track-wide);
   color: var(--text-faint);
 }
 .poll-crowd strong{ color: var(--gold); }
@@ -2722,7 +2777,7 @@ main.layout{
   box-sizing: border-box;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 7px 10px;
   font-size: 16px;
   color: var(--text);
@@ -2741,9 +2796,9 @@ main.layout{
 }
 .widget .poll-board-title{
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track-wide);
   color: var(--text-faint);
   margin: 0 0 6px;
 }
@@ -2804,9 +2859,9 @@ main.layout{
 .post-poll-results p{ margin: 0 0 6px; }
 .post-poll-eyebrow{
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   color: var(--text-faint);
 }
 .post-poll-final{
@@ -2858,7 +2913,7 @@ main.layout{
   margin: 0 0 10px;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
   display: flex;
@@ -2943,7 +2998,7 @@ main.layout{
   margin: 0 0 10px;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
 }
@@ -3020,7 +3075,7 @@ main.layout{
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
 }
 
 .contact-input{
@@ -3057,7 +3112,7 @@ main.layout{
   color: var(--gold);
   background: var(--burgundy);
   border: 1px solid var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, color 120ms ease;
 }
@@ -3082,7 +3137,7 @@ main.layout{
   color: var(--burgundy-800);
   background: var(--gold);
   border: 1px solid var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
   transition: background 120ms ease, color 120ms ease;
 }
@@ -3311,7 +3366,7 @@ main.layout{
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
@@ -3415,7 +3470,7 @@ main.layout{
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
 }
@@ -3508,7 +3563,7 @@ main.layout{
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   color: var(--text-muted);
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -3539,7 +3594,7 @@ main.layout{
   padding: 8px 10px;
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   color: var(--text-faint);
   border-bottom: 1px solid var(--border);
   white-space: nowrap;
@@ -3573,14 +3628,14 @@ main.layout{
 .injury-status{
   display: inline-block;
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-size: 11.5px;
   font-weight: 700;
 }
 
 .injury-status-out{
   background: rgba(178,15,3,0.18);
-  color: #ff8a7a;
+  color: var(--alert);
 }
 
 .injury-status-doubtful{
@@ -3617,7 +3672,7 @@ main.layout{
   display: block;
   width: 72px;
   height: 72px;
-  border-radius: 10px;
+  border-radius: var(--radius);
   object-fit: cover;
   background: var(--surface-2);
 }
@@ -3696,7 +3751,7 @@ main.layout{
   font-size: 11px;
   color: var(--text-faint);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
 }
 
 .roster-stat{
@@ -3868,7 +3923,7 @@ main.layout{
   margin: 0 0 8px;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
 }
@@ -3883,7 +3938,7 @@ main.layout{
 .widget p:last-child{ margin-bottom:0; }
 
 /* ---------- Footer ----------
-   Team burgundy (#5A1414, the official colour) rather than the page's near-black,
+   Team burgundy (#5A1414, the official color) rather than the page's near-black,
    with a gold hairline to seat it. The palette variables are re-declared inside
    this scope because the muted greys were tuned against #14100f: --text-faint on
    burgundy drops to about 3:1, which is under the 4.5:1 needed for body text, so
@@ -3899,7 +3954,7 @@ main.layout{
 
 .site-footer .source-list a,
 .site-footer .footer-col p{
-  color: #e2d9d5;
+  color: var(--text-on-burgundy);
 }
 
 .site-footer .source-list a:hover{ color: var(--gold); }
@@ -3930,7 +3985,7 @@ main.layout{
   margin: 0 0 14px;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track);
   color: var(--gold);
   font-weight: 700;
 }
@@ -3982,7 +4037,7 @@ main.layout{
   font-weight: 600;
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 8px 16px;
 }
 
@@ -4032,7 +4087,7 @@ main.layout{
   border-left: 4px solid var(--gold);
   border-radius: var(--radius);
   background: rgba(0,0,0,0.28);
-  color: #e2d9d5;
+  color: var(--text-on-burgundy);
   text-decoration: none;
   transition: background 0.15s ease, border-color 0.15s ease;
 }
@@ -4043,9 +4098,9 @@ main.layout{
 }
 
 .warpath-eyebrow{
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
   white-space: nowrap;
@@ -4082,8 +4137,8 @@ main.layout{
 .partner-pull-eyebrow{
   display: block;
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  font-weight: 800;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--text-faint);
   margin-bottom: 10px;
@@ -4204,7 +4259,7 @@ main.layout.page-admin{
 }
 
 .admin-error{
-  color: #ff8a8a;
+  color: var(--alert);
   font-size: 13px;
   margin: 4px 0 0;
 }
@@ -4251,7 +4306,7 @@ main.layout.page-admin{
   margin: 0 0 10px;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--label-track);
   color: var(--text-faint);
   font-weight: 700;
 }
@@ -4321,7 +4376,7 @@ main.layout.page-admin{
   display: flex;
   align-items: flex-end;
   background: var(--surface);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
@@ -4409,9 +4464,9 @@ main.layout.page-admin{
   font-size: 10.5px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--label-track-tight);
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--surface);
   color: var(--text-muted);
 }
@@ -4607,7 +4662,7 @@ main.layout.page-admin{
     padding: 10px 0;
     font-size: 12.5px;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: var(--label-track-tight);
     text-transform: uppercase;
     color: var(--gold);
     cursor: pointer;
@@ -4657,7 +4712,7 @@ main.layout.page-admin{
     padding: 10px 0;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--label-track-tight);
     text-transform: uppercase;
     color: var(--gold);
     text-align: center;
@@ -4806,7 +4861,7 @@ body.tv-page{
   color: var(--gold);
   font-weight: 800;
   font-size: 0.6em;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--label-track-tight);
   text-transform: uppercase;
 }
 
@@ -4818,7 +4873,7 @@ body.tv-page{
   right: 28px;
   z-index: 2;
   padding: 14px 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(255,182,18,0.4);
   background: rgba(20,16,15,0.6);
   color: var(--gold);
@@ -4826,7 +4881,7 @@ body.tv-page{
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--label-track-tight);
   cursor: pointer;
 }
 
@@ -4879,7 +4934,7 @@ body.tv-page{
     max-width: none;
     max-height: 82vh;
     border-width: 2px 0 0;
-    border-radius: 16px 16px 0 0;
+    border-radius: var(--radius) var(--radius) 0 0;
     box-shadow: 0 -4px 0 var(--burgundy);
     padding: 22px 20px calc(20px + env(safe-area-inset-bottom, 0px));
     animation: sheet-up 0.25s ease;
@@ -4929,9 +4984,9 @@ body.tv-page{
 
 .subscribe-modal-eyebrow{
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--label-track-wide);
   color: var(--gold);
   margin: 0 0 8px;
 }
@@ -4967,7 +5022,7 @@ body.tv-page{
   flex: 1;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 9px 12px;
   font-size: 14px;
   color: var(--text);
@@ -4980,9 +5035,9 @@ body.tv-page{
 
 .subscribe-modal-submit{
   background: var(--gold);
-  color: #0a0807;
+  color: var(--on-gold);
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 9px 16px;
   font-size: 13px;
   font-weight: 700;
@@ -5032,7 +5087,7 @@ body.tv-page{
   margin: 0 0 6px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -5057,7 +5112,7 @@ body.tv-page{
   margin: 0 0 6px;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -5086,7 +5141,7 @@ body.tv-page{
   min-width: 0;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 10px 12px;
   font-size: 16px;
   color: var(--text);
@@ -5097,9 +5152,9 @@ body.tv-page{
 }
 .hail-mail-box-submit{
   background: var(--gold);
-  color: #0a0807;
+  color: var(--on-gold);
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 10px 18px;
   font-size: 14px;
   font-weight: 700;
@@ -5196,7 +5251,7 @@ body.tv-page{
   color: var(--gold);
   background: var(--burgundy);
   border: 1px solid var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: background 120ms ease, color 120ms ease;
 }
@@ -5401,9 +5456,9 @@ body.tv-page{
 
 .hail-mail-bar-btn{
   background: var(--gold);
-  color: #0a0807;
+  color: var(--on-gold);
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 8px 18px;
   font-size: 13px;
   font-weight: 700;
@@ -5444,7 +5499,7 @@ body.tv-page{
   display: block;
   background: var(--surface-2);
   border: 1px solid var(--border-soft);
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 12px 14px;
   text-decoration: none;
   transition: border-color 0.15s;
@@ -5498,7 +5553,7 @@ body.tv-page{
   background: transparent;
   color: var(--gold);
   border: 1px solid var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 9px 18px;
   font: inherit;
   font-size: 14px;
@@ -5506,7 +5561,7 @@ body.tv-page{
   cursor: pointer;
 }
 .post-share-btn svg{ fill: currentColor; }
-.post-share-btn:hover{ background: var(--gold); color: #0a0807; }
+.post-share-btn:hover{ background: var(--gold); color: var(--on-gold); }
 .post-share-done{
   flex-basis: 100%;
   margin: 0;
@@ -5534,9 +5589,9 @@ body.tv-page{
   display: inline-flex;
   align-items: center;
   background: var(--gold);
-  color: #0a0807;
+  color: var(--on-gold);
   border: 1px solid var(--gold);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 7px 16px;
   font-size: 13px;
   font-weight: 800;
@@ -5555,7 +5610,7 @@ body.tv-page{
   margin: 0 0 4px;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: var(--label-track-wide);
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -5581,7 +5636,7 @@ body.tv-page{
   padding: 12px 16px;
   border-left: 3px solid var(--gold);
   background: var(--surface);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
   line-height: 1.55;
 }
 .refs-note-ben strong{ color: var(--gold); }
@@ -5590,3 +5645,37 @@ body.tv-page{
   margin: 28px 0 10px;
 }
 .data-page .post-poll{ margin-top: 28px; }
+
+/* ---------- Display type (Barlow Condensed) ----------
+   Everything a reader would call a headline: post and page titles, the
+   river's headlines, post subheads and the section titles on data pages.
+   Small labels (widget titles like FILM ROOM, footer columns, kickers) stay
+   in Barlow caps; they're labels, not headlines. See docs/design.md.
+
+   Condensed type sets about 20% narrower than Barlow at the same size, so
+   every size here is a step up from what these had in Inter. Kept in one
+   block on purpose: it's the whole heading scale in one place.
+
+   font-size-adjust is reset because body sets it for Barlow's x-height
+   (see body{}); these sizes are already chosen for the condensed face. */
+:is(.digest-post h1, .digest-post h2, .podcasts-heading, .card-headline, .river-heading,
+    .digest-subhead, .refs-h2, .data-section h2, .how-section h2, .breakdowns-heading,
+    .breakdown-title, .hail-mail-box-heading, .subscribe-modal-heading, .roster-name){
+  font-family: var(--font-display);
+  font-size-adjust: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.digest-post h1{ font-size: clamp(34px, 4.4vw, 50px); line-height: 1.02; }
+.digest-post h2{ font-size: 28px; line-height: 1.08; }
+.podcasts-heading{ font-size: 34px; line-height: 1.05; }
+.card-headline{ font-size: clamp(19px, 1.7vw, 21px); line-height: 1.15; }
+.river-heading{ font-size: 28px; }
+.digest-subhead{ font-size: 26px; line-height: 1.15; }
+.refs-h2, .breakdown-title{ font-size: 23px; line-height: 1.12; }
+.data-section h2{ font-size: 24px; line-height: 1.12; }
+.how-section h2{ font-size: 22px; line-height: 1.12; }
+.breakdowns-heading{ font-size: 28px; line-height: 1.08; }
+.hail-mail-box-heading{ font-size: 25px; line-height: 1.1; }
+.subscribe-modal-heading{ font-size: 23px; line-height: 1.1; }
+.roster-name{ font-size: 20px; line-height: 1.1; }

@@ -2198,9 +2198,8 @@ export function renderWeeklyPost(record, { siteName, siteUrl, sources, generated
 <title>${escapeHtml(digest.headline)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
 ${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: digest.lede, siteUrl, path: `blog-${record.week}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2254,9 +2253,8 @@ export function renderPreviewPost(record, { siteName, siteUrl, sources, generate
 <title>${escapeHtml(digest.headline)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(digest.lede)}">
 ${socialMetaTags({ title: `${digest.headline} | ${siteName}`, description: digest.lede, siteUrl, path: `blog-preview-${record.gameKey}.html`, publishedAt: record.reviewedAt || record.generatedAt })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2319,9 +2317,8 @@ export function renderOriginalPost(record, { siteName, siteUrl, sources, generat
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `${record.seoTitle || record.title} | ${siteName}`, description, siteUrl, path: `blog-original-${record.slug}.html`, image: shareImage, publishedAt: record.publishedAt })}
 ${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, siteUrl, path: `blog-original-${record.slug}.html`, publishedAt: record.publishedAt, modifiedAt: record.updatedAt, image: shareImage })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2381,9 +2378,8 @@ export function renderMondayPost(record, { siteName, siteUrl, sources, generated
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `${record.seoTitle || record.title} | ${siteName}`, description, siteUrl, path: `blog-monday-${record.key}.html`, image: shareImage, publishedAt: record.reviewedAt || record.generatedAt })}
 ${blogPostingJsonLd({ headline: record.seoTitle || record.title, description, siteUrl, path: `blog-monday-${record.key}.html`, publishedAt: record.reviewedAt || record.generatedAt, modifiedAt: record.updatedAt, image: shareImage })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2481,9 +2477,8 @@ export function renderWeeklyIndex(records, { siteName, siteUrl, sources, generat
 <title>Blog | ${escapeHtml(siteName)}</title>
 <meta name="description" content="AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.">
 ${socialMetaTags({ title: `Blog | ${siteName}`, description: 'AI-written recaps and posts about Washington Commanders news, generated locally and reviewed before publishing.', siteUrl, path: 'blog.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2549,9 +2544,8 @@ export function renderHowItWorksPage({ siteName, siteUrl, sources, generatedAt, 
 <title>How It Works | ${escapeHtml(siteName)}</title>
 <meta name="description" content="A mostly-honest, occasionally unhinged explanation of the robots that run this site.">
 ${socialMetaTags({ title: `How It Works | ${siteName}`, description: 'A mostly-honest, occasionally unhinged explanation of the robots that run this site.', siteUrl, path: 'how-it-works.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2584,7 +2578,7 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 
     <section class="how-section">
       <h2>The Blog (weekly editions)</h2>
-      <p class="digest-para">Once a week, an AI model that lives on this computer reads everything that happened and writes a proper column, quotes and all. It doesn't get to publish itself — a human reads the draft and has to click "approve" first, after an early test model once confidently invented a player who never put on a Commanders helmet.</p>
+      <p class="digest-para">Once a week, an AI model that lives on this computer reads everything that happened and writes a proper column, quotes and all. It doesn't get to publish itself. A human reads the draft and has to click "approve" first, after an early test model once confidently invented a player who never put on a Commanders helmet.</p>
     </section>
 
     <section class="how-section">
@@ -2766,9 +2760,8 @@ export function renderRosterPage({
 <title>Commanders Roster | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Commanders Roster | ${siteName}`, description, siteUrl, path: 'roster.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2795,7 +2788,7 @@ ${header('roster.html', hasWeekly, isGameLive)}
   <div class="roster-page">
     <h1 class="podcasts-heading">Roster</h1>
     ${rosterSubTabs('roster')}
-    <p class="page-intro page-intro-wide">Every player on the roster, ranked by who's actually showing up in this site's own Commanders coverage — not just an alphabetical list you could get anywhere.</p>
+    <p class="page-intro page-intro-wide">Every player on the roster, ranked by who's actually showing up in this site's own Commanders coverage, not just an alphabetical list you could get anywhere.</p>
     ${
       rosterPlayers.length
         ? `<div class="roster-list${mentionedCollapsed ? ' is-collapsed' : ''}">${mentionedCards}
@@ -2804,7 +2797,7 @@ ${header('roster.html', hasWeekly, isGameLive)}
     ${
       unmentioned.length
         ? `<details class="roster-quiet-section">
-      <summary>Rest of the roster — no recent mentions (${unmentioned.length})</summary>
+      <summary>Rest of the roster: no recent mentions (${unmentioned.length})</summary>
       <div class="roster-list">${unmentionedCards}
       </div>
     </details>`
@@ -2894,9 +2887,8 @@ export function renderDepthChartPage({ siteName, siteUrl, sources, generatedAt, 
 <title>Commanders Depth Chart | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Commanders Depth Chart | ${siteName}`, description, siteUrl, path: 'depth-chart.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2989,9 +2981,8 @@ export function renderInjuryReportPage({ siteName, siteUrl, sources, generatedAt
 <title>Commanders Injury Report | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Commanders Injury Report | ${siteName}`, description, siteUrl, path: 'injury-report.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3043,9 +3034,8 @@ export function renderPodcastsPage({ siteName, siteUrl, sources, generatedAt, ha
 <meta name="description" content="Commanders podcasts worth your time, embedded to stream right from ${escapeHtml(siteName)}.">
 ${socialMetaTags({ title: `Podcasts | ${siteName}`, description: `Commanders podcasts worth your time, embedded to stream right from ${siteName}.`, siteUrl, path: 'podcasts.html' })}
 ${RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3107,9 +3097,8 @@ export function renderVideosPage({ siteName, siteUrl, sources, generatedAt, hasW
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Videos | ${siteName}`, description, siteUrl, path: 'videos.html' })}
 ${RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3189,9 +3178,8 @@ export function renderMusicPage({ siteName, siteUrl, sources, generatedAt, hasWe
 <title>Music | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Music | ${siteName}`, description, siteUrl, path: 'music.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3277,9 +3265,8 @@ export function renderTvPage({ siteName, siteUrl, socialPosts = [] }) {
 <title>${escapeHtml(siteName)} | Display</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3391,9 +3378,8 @@ export function renderContactPage({ siteName, siteUrl, sources, generatedAt, has
 <title>Contact | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Contact | ${siteName}`, description, siteUrl, path: 'contact.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3473,9 +3459,8 @@ export function renderWireTapsPage({ siteName, siteUrl, sources, generatedAt, ha
 <title>Wire Taps | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Wire Taps | ${siteName}`, description, siteUrl, path: 'wiretaps.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3546,9 +3531,8 @@ export function renderAboutPage({ siteName, siteUrl, sources, generatedAt, hasWe
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `About Ben | ${siteName}`, description, siteUrl, path: 'about.html' })}
 ${jsonLdScript({ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: { '@type': 'Person', name: AUTHOR.name, url: canonicalUrl(siteUrl, AUTHOR.path) } })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3605,9 +3589,8 @@ export function renderFiveThousandPage({ siteName, siteUrl, sources, generatedAt
 <title>Visit #5,000 | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3707,9 +3690,8 @@ export function renderHailMailPage({ siteName, siteUrl, sources, generatedAt, ha
 <title>Hail Mail | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Hail Mail | ${siteName}`, description, siteUrl, path: 'hail-mail.html', image: shareImage })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3778,9 +3760,8 @@ export function renderAbroadPage({ siteName, siteUrl, sources, generatedAt, hasW
 <title>Hello from Charlottesville | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Hello from Charlottesville | ${siteName}`, description, siteUrl, path: 'abroad.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -3923,9 +3904,8 @@ export function renderRollCallPage({ siteName, siteUrl, sources, generatedAt, ha
 <title>Roll Call | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -4037,9 +4017,8 @@ export function renderDonatePage({ siteName, siteUrl, sources, generatedAt, hasW
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Donate | ${siteName}`, description, siteUrl, path: 'donate.html' })}
 ${RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -4102,9 +4081,8 @@ export function renderLocalSpotsPage({ siteName, siteUrl, sources, generatedAt, 
 <title>Where to Watch the Commanders in Charlottesville | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Where to Watch the Commanders in Charlottesville | ${siteName}`, description, siteUrl, path: 'cville.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -4160,9 +4138,8 @@ ${jsonLdScript({
     dateModified: generatedAt,
     isPartOf: { '@type': 'WebSite', name: siteName, url: `${siteUrl}/` },
   })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -4460,9 +4437,8 @@ export function renderRefsPage({ siteName, siteUrl, sources, generatedAt, hasWee
 <title>${escapeHtml(title)} | ${escapeHtml(siteName)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `${title} | ${siteName}`, description, siteUrl, path: 'whos-reffing.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -4530,9 +4506,8 @@ export function renderAdminPage({ siteName, siteUrl, sources, generatedAt, newsl
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Admin | ${siteName}`, description, siteUrl, path: 'admin.html' })}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -5313,9 +5288,8 @@ export function renderBeatWritersPage({ siteName, siteUrl, sources, generatedAt,
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Beat Writers | ${siteName}`, description, siteUrl, path: 'beat-writers.html' })}
 ${RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -5341,7 +5315,7 @@ ${header('beat-writers.html', hasWeekly, isGameLive)}
 <main class="layout layout-wide">
   <div class="beat-writers-page">
     <h1 class="podcasts-heading">Beat Writers</h1>
-    <p class="page-intro page-intro-wide">Every Commanders beat reporter's own feed, one column each — the same reporters in the ticker up top, without waiting for their posts to scroll past. Updates on the same schedule as the ticker, every two hours.</p>
+    <p class="page-intro page-intro-wide">Every Commanders beat reporter's own feed, one column each: the same reporters in the ticker up top, without waiting for their posts to scroll past. Updates on the same schedule as the ticker, every two hours.</p>
     <div class="beat-grid">${columns}
     </div>
   </div>
@@ -5436,9 +5410,8 @@ export function renderSocialFeedPage({ siteName, siteUrl, sources, generatedAt, 
 <meta name="description" content="${escapeHtml(description)}">
 ${socialMetaTags({ title: `Social Feed | ${siteName}`, description, siteUrl, path: 'social-feed.html' })}
 ${RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -5541,9 +5514,8 @@ export function renderPage(
 ${socialMetaTags({ title: `${siteName} | Washington Commanders News`, description: "The Burgundy Wire aggregates every Washington Commanders headline in one place, updated around the clock. Built by one fan who's been unreasonably invested since a wood-paneled basement in 1991.", siteUrl, path: activeFile })}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(siteName)}" href="feed.xml" />
 ${activeFile === 'index.html' ? websiteJsonLd(siteName, siteUrl) : RIVER_NOINDEX}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css" />
 ${SPECULATION_RULES}
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">

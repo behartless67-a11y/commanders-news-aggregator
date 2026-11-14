@@ -426,7 +426,13 @@ whole league needs the keyword filter.
 
 ## Design
 
-`src/site/assets/site.css` is the finished "Burgundy Wire" design — dark
+**Read [`docs/design.md`](docs/design.md) before adding or restyling anything.**
+It's the "Gameday" design system: the colors and why, the two fonts (self-hosted
+Barlow and Barlow Condensed), the heading scale, the two corner radii, the three
+label tiers, and what the site is deliberately not. New components use its
+tokens; a value that isn't there gets added there first.
+
+`src/site/assets/site.css` is the finished "Burgundy Wire" design: dark
 burgundy/gold, hairline-separated river running wide (`--max: 1920px`) with the
 video rail on the right. "About this page" and "Reading the badges" live in the
 footer rather than a sidebar widget, because the right column is the video rail.

@@ -46,9 +46,12 @@ const ASSETS = path.join(ROOT, 'src/site/assets');
 const SHARE_DIR = path.join(ASSETS, 'share');
 const MANIFEST = path.join(SHARE_DIR, 'cards.json');
 const STOCK = ['bowl', 'huddle', 'pregame'];
-// Segoe UI Black: heavy enough to read at thumbnail size, and on every Windows
-// machine. FONT overrides it anywhere else.
-const FONT = process.env.FONT || 'C:/Windows/Fonts/seguibl.ttf';
+// Barlow Condensed Bold, the site's headline face (docs/design.md), so a
+// shared link looks like the page it opens. The TTF lives in scripts/fonts/
+// rather than with the site's woff2 files because ffmpeg's drawtext can't read
+// woff2, and nothing on the site needs the TTF. Condensed also fits more of a
+// long headline per line at thumbnail size. FONT overrides it.
+const FONT = process.env.FONT || path.join(ROOT, 'scripts/fonts/BarlowCondensed-Bold.ttf');
 
 const W = 1200;
 const H = 630;
@@ -143,12 +146,12 @@ function greedy(title, perLine) {
  * that still needs no more lines than the full width does. Plain greedy
  * wrapping left orphans like "A Case of the Mondays: I" / "Told You So".
  *
- * Segoe UI Black measures about 0.52em a character in title case; 0.55 leaves
- * a little slack so a line of capitals or wide letters still clears the right
- * margin.
+ * Barlow Condensed Bold measures about 0.40em a character in title case;
+ * 0.43 leaves a little slack so a line of capitals or wide letters still
+ * clears the right margin.
  */
 function wrap(title, size, maxWidth) {
-  const perLine = Math.floor(maxWidth / (size * 0.55));
+  const perLine = Math.floor(maxWidth / (size * 0.43));
   const count = greedy(title, perLine).length;
   let budget = perLine;
   while (budget > 1 && greedy(title, budget - 1).length === count) budget -= 1;
@@ -158,11 +161,11 @@ function wrap(title, size, maxWidth) {
 /** Biggest size that fits the headline in three lines, or four at the smallest. */
 function layout(title) {
   const maxWidth = W - MARGIN * 2;
-  for (const size of [76, 68, 60, 54, 48]) {
+  for (const size of [108, 96, 88, 80, 72, 64]) {
     const lines = wrap(title, size, maxWidth);
     if (lines.length <= 3) return { size, lines };
   }
-  return { size: 44, lines: wrap(title, 44, maxWidth) };
+  return { size: 58, lines: wrap(title, 58, maxWidth) };
 }
 
 function makeCard(post, tmp) {
@@ -170,7 +173,7 @@ function makeCard(post, tmp) {
   const bg = backgroundFor(post);
   const focusY = Math.min(1, Math.max(0, Number(record.share?.focusY ?? 0.35)));
   const { size, lines } = layout(record.title);
-  const lineH = Math.round(size * 1.14);
+  const lineH = Math.round(size * 1.04);
   const blockTop = H - MARGIN - lines.length * lineH;
 
   // drawtext reads each line from a file in the working directory, so no
