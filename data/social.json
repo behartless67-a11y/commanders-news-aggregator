@@ -1,18 +1,4 @@
 {
-  "social-8765ada16d3b": {
-    "id": "social-8765ada16d3b",
-    "url": "https://x.com/Commanders/status/2118055681802526883",
-    "text": "DOUG 👏 One of the five finalists will move onto consideration for the @ProFootballHOF '27 class",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/559/716/665/734/489/original/89c7c19cd396402c.jpg"
-    ],
-    "publishedAt": "2026-11-04T19:00:00.000Z",
-    "collectedAt": "2026-11-04T19:46:46.833Z"
-  },
   "social-8c3dbe0ea077": {
     "id": "social-8c3dbe0ea077",
     "url": "https://x.com/JPFinlayNBCS/status/2118057639753994357",
@@ -24,94 +10,6 @@
     "images": [],
     "publishedAt": "2026-11-04T19:07:47.000Z",
     "collectedAt": "2026-11-04T19:46:48.290Z"
-  },
-  "social-22683c09a68e": {
-    "id": "social-22683c09a68e",
-    "url": "https://x.com/MikeGarafolo/status/2118055680158691537",
-    "text": "The #Eagles are making a QB change: It’ll be Joe Milton III for Sunday’s game against the #Giants , sources tell @AdamSchefter and me. Less than a month after signing in Philly, Milton takes over for Tanner McKee.",
-    "handle": "MikeGarafolo",
-    "author": "Mike Garafolo",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/559/723/138/690/205/original/acab89503d1399de.jpg"
-    ],
-    "publishedAt": "2026-11-04T19:00:00.000Z",
-    "collectedAt": "2026-11-04T19:46:48.290Z"
-  },
-  "social-a963b3f164dd": {
-    "id": "social-a963b3f164dd",
-    "url": "https://x.com/JPFinlayNBCS/status/2118047179205963788",
-    "text": "New All Ears tonight - hit me with mailbag questions s=t0lS1ijq6uElpyhU",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-04T18:26:13.000Z",
-    "collectedAt": "2026-11-04T19:46:48.290Z"
-  },
-  "social-10eca82360f6": {
-    "id": "social-10eca82360f6",
-    "url": "https://x.com/JPFinlayNBCS/status/2118043436763005005",
-    "text": "Dan Quinn says \"we've seen it at times\" with the offense featuring Jayden Daniels under center and using play action but the coach adds now is the time for more",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-04T18:11:21.000Z",
-    "collectedAt": "2026-11-04T19:46:48.290Z"
-  },
-  "social-b03ea0326aa9": {
-    "id": "social-b03ea0326aa9",
-    "url": "https://x.com/john_keim/status/2118046398914711849",
-    "text": "TE John Bates working in the black non-contact jersey today.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-04T18:23:07.000Z",
-    "collectedAt": "2026-11-04T19:46:49.978Z"
-  },
-  "social-2525ad3f33c3": {
-    "id": "social-2525ad3f33c3",
-    "url": "https://x.com/john_keim/status/2118042914898997396",
-    "text": "WR Stefon Diggs with another rest day today. Dan Quinn said last week this would be the plan moving forward.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-04T18:09:16.000Z",
-    "collectedAt": "2026-11-04T19:46:49.978Z"
-  },
-  "social-2ccccae0d878": {
-    "id": "social-2ccccae0d878",
-    "url": "https://x.com/BenStandig/status/2118043154909724793",
-    "text": "Stefon Diggs not at practice. Rest day.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-04T18:10:14.000Z",
-    "collectedAt": "2026-11-04T19:46:51.226Z"
-  },
-  "social-25a590754bd2": {
-    "id": "social-25a590754bd2",
-    "url": "https://x.com/BenStandig/status/2118041610206454255",
-    "text": "The 🌞 is out in more ways than one.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/559/495/616/495/836/original/9035bea3ad764483.jpg"
-    ],
-    "publishedAt": "2026-11-04T18:04:05.000Z",
-    "collectedAt": "2026-11-04T19:46:51.226Z"
   },
   "social-5da0776b6147": {
     "id": "social-5da0776b6147",
