@@ -1,40 +1,4 @@
 {
-  "yahoo-nfl-4b9e652ee82b": {
-    "id": "yahoo-nfl-4b9e652ee82b",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/not-commanders-hop-across-pond-040000295.html",
-    "title": "(Not all of the) Commanders make the hop across the pond to play the Colts at “home” - All aTwitter",
-    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Jayden Daniels #5 of the Washington Commanders looks on after their 33-31 win against the Seattle Seahawks after the game at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Patrick Smith/Getty Images) | Getty Images All aTwitter – \n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along…",
-    "publishedAt": "2026-09-30T04:00:00.000Z",
-    "collectedAt": "2026-09-30T04:05:37.087Z"
-  },
-  "hogs-haven-33aa0fc48735": {
-    "id": "hogs-haven-33aa0fc48735",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/443755/schefter-expect-offseason-surgery-for-jayden-daniels-all-atwitter",
-    "title": "Schefter: Expect offseason surgery for Jayden Daniels – All aTwitter",
-    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Jayden Daniels #5 of the Washington Commanders looks on after their 33-31 win against the Seattle Seahawks after the game at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Patrick Smith/Getty Images) | Getty Images \n \n All aTwitter – \n\n We follow Twitter so you don’t have to\n\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general,…",
-    "publishedAt": "2026-09-30T04:00:00.000Z",
-    "collectedAt": "2026-09-30T06:10:40.809Z"
-  },
-  "dc-sports-king-a5aa73562294": {
-    "id": "dc-sports-king-a5aa73562294",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/re-signing-austin-ekeler-makes-perfect-sense-for-the-washington-commanders",
-    "title": "Re-signing Austin Ekeler Makes Perfect Sense for the Washington Commanders",
-    "excerpt": "The Burgundy and Gold are bringing back a familiar face just in time for their trip across the pond.\n\n On Tuesday, the Washington Commanders officially signed veteran running back Austin Ekeler to the 53-man roster, bringing him back after a torn Achilles cut his 2025 season short.\n\n Here’s why this reunion makes total sense, how close he was to landing elsewhere, and what it means for the Washington backfield moving forward.\n\n A Narrow Escape from Carolina\n\n It almost didn’t happen. Just last…",
-    "publishedAt": "2026-09-30T04:06:44.000Z",
-    "collectedAt": "2026-09-30T06:10:44.851Z"
-  },
   "riggos-rag-21772f062e57": {
     "id": "riggos-rag-21772f062e57",
     "sourceId": "riggos-rag",
@@ -18070,5 +18034,17 @@
     "excerpt": "Ar’Darius Washington celebrates a defensive stop with Greg Newsome | Getty Images The post-mortem on a game the New York Giants should have won but didn’t is never fun. Let’s see what we can learn from the Pro Football Focus grades and advanced stats about who played well and who didn’t. Before looking at the offense and defense, let’s note that PFF gave Jordan Stout his lowest grade of the season because of that 12-yard shank in the fourth quarter that gave the Commanders decent field position…",
     "publishedAt": "2026-11-13T19:59:31.000Z",
     "collectedAt": "2026-11-14T00:54:12.135Z"
+  },
+  "clutchpoints-399f9be3e72e": {
+    "id": "clutchpoints-399f9be3e72e",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/giants-news-aqib-talib-100-real-nys-tnf-loss-commanders",
+    "title": "Aqib Talib gets 100% real on Giants’ TNF loss to Commanders",
+    "excerpt": "The New York Giants let one slip away on Thursday Night Football, and Aqib Talib believes they have nobody to blame but themselves. Breaking down the Giants’ 24-21 loss to the Washington Commanders on the “Gridiron” podcast, the former All-Pro cornerback did not mince words.\n\n “I think the Giants lost this game more than the Commanders won this game. But I love how the Commanders finished the game,” Talib said.\n\n Talib pointed to Washington’s aggressive defensive approach as a key factor ,…",
+    "publishedAt": "2026-11-14T03:27:46.000Z",
+    "collectedAt": "2026-11-14T07:05:28.700Z"
   }
 }
