@@ -1,28 +1,4 @@
 {
-  "riggos-rag-56f22e95a2d4": {
-    "id": "riggos-rag-56f22e95a2d4",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/bobby-wagner-backward-step-linebacker-needy-washington-commanders",
-    "title": "Bobby Wagner would be a backward step for linebacker-needy Commanders",
-    "excerpt": "Bringing back veteran linebacker Bobby Wagner would be a backward step for the Washington Commanders after the injury to Leo Chenal.",
-    "publishedAt": "2026-09-30T17:30:00.000Z",
-    "collectedAt": "2026-09-30T18:05:37.554Z"
-  },
-  "wjla-commanders-8f461b57d57d": {
-    "id": "wjla-commanders-8f461b57d57d",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-sonny-styles-nfc-defensive-player-of-the-week-nfl-rookie-linebacker-seattle-seahawks-interception-forced-fumble-tackles-quarterback-hit-passes-defended-ryan-kerrigan-keenan-robinson-champ-bailey-chris-horton-brian-orakpo-award",
-    "title": "Commanders rookie Sonny Styles named NFC Defensive Player of the Week after Seahawks win",
-    "excerpt": "Commanders rookie Sonny Styles earned NFC Defensive Player of the Week after an interception and forced fumble in Washington’s win over Seattle.",
-    "publishedAt": "2026-09-30T17:30:16.000Z",
-    "collectedAt": "2026-09-30T18:05:45.055Z"
-  },
   "hogs-haven-3926224b35c0": {
     "id": "hogs-haven-3926224b35c0",
     "sourceId": "hogs-haven",
@@ -58,18 +34,6 @@
     "excerpt": "The Washington quarterback took part in the Commanders' non-padded workout held outside the team’s hotel Wednesday afternoon.",
     "publishedAt": "2026-09-30T19:30:31.000Z",
     "collectedAt": "2026-09-30T20:05:39.774Z"
-  },
-  "clutchpoints-824ca41dcd62": {
-    "id": "clutchpoints-824ca41dcd62",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-said-jayden-daniels-possibly-playing-week-4",
-    "title": "What Commanders’ Marcus Mariota said about Jayden Daniels possibly playing Week 4 after practice return",
-    "excerpt": "The Washington Commanders are currently gearing up for their upcoming matchup against the Indianapolis Colts, which will take place on Sunday. The Commanders are coming off a surprising home win over the Seattle Seahawks, with Marcus Mariota turning back the clock as he started in place of the injured Jayden Daniels. \n\n Daniels has since returned to practice after suffering an ugly dislocated elbow injury vs the Dallas Cowboys, and could return as soon as Sunday.\n\n Now, Mariota has weighed in…",
-    "publishedAt": "2026-09-30T17:30:12.000Z",
-    "collectedAt": "2026-09-30T20:32:17.483Z"
   },
   "pft-f86a85789a66": {
     "id": "pft-f86a85789a66",
@@ -17854,5 +17818,17 @@
     "excerpt": "",
     "publishedAt": "2026-11-14T16:00:02.000Z",
     "collectedAt": "2026-11-14T17:05:36.106Z"
+  },
+  "hogs-haven-ebca8f832f13": {
+    "id": "hogs-haven-ebca8f832f13",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/455469/tylers-take-commanders-tush-push-luke-mccaffrey-colson-yankoff",
+    "title": "Tyler’s Take – Washington Commanders need a short-yardage package",
+    "excerpt": "I was absolutely thrilled to watch the Commanders get the win on Thursday night against the rival Giants on the road in primetime.\n\n For as pleased as I was with the effort and fight the team showed, there were some things that still need IMMEDIATE attention! I brought up one of these issues in my Studs and Duds article. \n\n \n David Blough’s gameplan looked a LOT different than previous games – IN A GOOD WAY! It actually resembled more Kliff Kingsbury than Ben Johnson with all the shotgun, tempo…",
+    "publishedAt": "2026-11-14T15:32:20.000Z",
+    "collectedAt": "2026-11-14T18:03:35.463Z"
   }
 }
