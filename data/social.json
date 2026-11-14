@@ -1,30 +1,4 @@
 {
-  "social-4aa026f08af2": {
-    "id": "social-4aa026f08af2",
-    "url": "https://x.com/john_keim/status/2117762215457546371",
-    "text": "Players who worked out for Washington today: G Zack Johnson C Doug Kramer C Michael Niese G Brandon Walton",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-03T23:33:52.000Z",
-    "collectedAt": "2026-11-04T00:37:52.855Z"
-  },
-  "social-fb8a7bf36f85": {
-    "id": "social-fb8a7bf36f85",
-    "url": "https://x.com/tashanreed/status/2117758547874521130",
-    "text": "The latest episode of The Tashan Reed Show is out now on Substack. I broke down the #Commanders ' win over the Eagles and explained why they'll need to be much better to knock off the Rams this week. Watch here: tashan-reed-show-the-commanders?r=1gwknd",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/555/068/106/584/813/original/9c443e86b0d34a9a.jpg"
-    ],
-    "publishedAt": "2026-11-03T23:19:18.000Z",
-    "collectedAt": "2026-11-04T00:37:55.682Z"
-  },
   "social-091f96f448a5": {
     "id": "social-091f96f448a5",
     "url": "https://x.com/BenStandig/status/2117833825770205334",
@@ -59,18 +33,6 @@
     "sourceKey": "@pfrumors",
     "images": [],
     "publishedAt": "2026-11-04T01:00:13.000Z",
-    "collectedAt": "2026-11-04T05:05:51.066Z"
-  },
-  "social-b09b04968278": {
-    "id": "social-b09b04968278",
-    "url": "https://x.com/pfrumors/status/2117777780490543385",
-    "text": "The #Commanders make a handful of roster moves commanders-make-series-of-moves",
-    "handle": "pfrumors",
-    "author": "Pro Football Rumors",
-    "label": "",
-    "sourceKey": "@pfrumors",
-    "images": [],
-    "publishedAt": "2026-11-04T00:35:43.000Z",
     "collectedAt": "2026-11-04T05:05:51.066Z"
   },
   "social-1f58a3bc7f3c": {
@@ -6988,5 +6950,135 @@
     ],
     "publishedAt": "2026-11-13T17:04:37.000Z",
     "collectedAt": "2026-11-13T19:47:51.635Z"
+  },
+  "social-4e837da9a2ec": {
+    "id": "social-4e837da9a2ec",
+    "url": "https://x.com/Commanders/status/2121375051857666269",
+    "text": "Big plays on both sides of the ball @DabosInc@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/586/672/976/262/original/babc9853e993dab5.jpg"
+    ],
+    "publishedAt": "2026-11-13T22:50:00.000Z",
+    "collectedAt": "2026-11-14T00:54:13.455Z"
+  },
+  "social-fd576e35e161": {
+    "id": "social-fd576e35e161",
+    "url": "https://x.com/Commanders/status/2121362972521963677",
+    "text": "RBs... beware of this man 😤",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/424/357/674/766/original/aabd2896026ec0d3.jpg"
+    ],
+    "publishedAt": "2026-11-13T22:02:00.000Z",
+    "collectedAt": "2026-11-14T00:54:13.455Z"
+  },
+  "social-b18126542fa2": {
+    "id": "social-b18126542fa2",
+    "url": "https://x.com/Commanders/status/2121347377076339084",
+    "text": "no emails, just Commanders",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/155/699/477/862/original/98dbb9bb5182e250.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/155/904/662/952/original/ddc3385f75699453.jpg"
+    ],
+    "publishedAt": "2026-11-13T21:00:02.000Z",
+    "collectedAt": "2026-11-14T00:54:13.455Z"
+  },
+  "social-0d62207ceaf6": {
+    "id": "social-0d62207ceaf6",
+    "url": "https://x.com/john_keim/status/2121334000044114378",
+    "text": "Good look at the TD. A strike from Daniels.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-13T20:06:52.000Z",
+    "collectedAt": "2026-11-14T00:54:16.363Z"
+  },
+  "social-b02fac613d90": {
+    "id": "social-b02fac613d90",
+    "url": "https://x.com/BenStandig/status/2121383612020900318",
+    "text": "The winning TD gets the \"Inside the NFL\" treatment.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-13T23:24:01.000Z",
+    "collectedAt": "2026-11-14T00:54:17.707Z"
+  },
+  "social-6307b40839d5": {
+    "id": "social-6307b40839d5",
+    "url": "https://x.com/BenStandig/status/2121362644305387640",
+    "text": "Understanding this is hardly the main concern, but this air travel shutdown could impact all kinds of sporting events. NFL teams will often fly out Saturday for a Sunday game.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-13T22:00:42.000Z",
+    "collectedAt": "2026-11-14T00:54:17.707Z"
+  },
+  "social-122c81803414": {
+    "id": "social-122c81803414",
+    "url": "https://x.com/BenStandig/status/2121346481789481271",
+    "text": "Commanders’ Wk 10 snaps: 🏈 Distinct top 3 WRs 🏈 Oweh/Chaisson almost double Armstrong's reps 🏈 Henry's 1st career snaps",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/190/559/443/725/original/f343ff6f65d57280.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/611/190/628/978/109/original/e34fd749a648afa5.jpg"
+    ],
+    "publishedAt": "2026-11-13T20:56:28.000Z",
+    "collectedAt": "2026-11-14T00:54:17.707Z"
+  },
+  "social-7b30a464b94b": {
+    "id": "social-7b30a464b94b",
+    "url": "https://x.com/tashanreed/status/2121369701297062146",
+    "text": "Flight canceled so I'm whipping it in a Toyota Corola I guess?",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-13T22:28:44.000Z",
+    "collectedAt": "2026-11-14T00:54:19.136Z"
+  },
+  "social-be1a9094a7fa": {
+    "id": "social-be1a9094a7fa",
+    "url": "https://x.com/tashanreed/status/2121353314835017976",
+    "text": "*Me, in the airport, about to fly out of New York*",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-13T21:23:37.000Z",
+    "collectedAt": "2026-11-14T00:54:19.136Z"
+  },
+  "social-999bae7c3545": {
+    "id": "social-999bae7c3545",
+    "url": "https://x.com/tashanreed/status/2121344425662255174",
+    "text": "Sensational belt 2 ass is on the way",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-13T20:48:18.000Z",
+    "collectedAt": "2026-11-14T00:54:19.136Z"
   }
 }
