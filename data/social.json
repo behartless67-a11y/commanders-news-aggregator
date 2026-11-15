@@ -1,19 +1,4 @@
 {
-  "social-98443223bec8": {
-    "id": "social-98443223bec8",
-    "url": "https://x.com/Commanders/status/2118459591478722716",
-    "text": "⚙️⚙️⚙️ @bigbearai@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/566/040/084/012/355/original/5f5077e0215f833d.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/566/040/148/731/280/original/b634289462ebe5b9.jpg"
-    ],
-    "publishedAt": "2026-11-05T21:45:00.000Z",
-    "collectedAt": "2026-11-05T21:59:59.182Z"
-  },
   "social-2357180f787f": {
     "id": "social-2357180f787f",
     "url": "https://x.com/Commanders/status/2118502876154675330",
@@ -40,18 +25,6 @@
     "publishedAt": "2026-11-05T23:30:00.000Z",
     "collectedAt": "2026-11-06T03:05:39.850Z"
   },
-  "social-1be29edeffbc": {
-    "id": "social-1be29edeffbc",
-    "url": "https://x.com/grantcohn/status/2118472686829765080",
-    "text": "I asked George Kittle if he’s looking forward to seeing Brandon Aiyuk in the 49ers’ facility tomorrow.",
-    "handle": "grantcohn",
-    "author": "Grant Cohn",
-    "label": "",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-05T22:37:02.000Z",
-    "collectedAt": "2026-11-06T03:05:41.303Z"
-  },
   "social-1c1dd72c3e1b": {
     "id": "social-1c1dd72c3e1b",
     "url": "https://x.com/JPFinlayNBCS/status/2118492466039165314",
@@ -64,18 +37,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/566/538/992/618/247/original/24e492dc6160d2d2.jpg"
     ],
     "publishedAt": "2026-11-05T23:55:38.000Z",
-    "collectedAt": "2026-11-06T03:05:41.304Z"
-  },
-  "social-f64f73e80a48": {
-    "id": "social-f64f73e80a48",
-    "url": "https://x.com/JPFinlayNBCS/status/2118471682356629909",
-    "text": "RE: atuses/2118402971327144424 This is awesome. Kotwica the real deal as a coach and a soldier.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-05T22:33:03.000Z",
     "collectedAt": "2026-11-06T03:05:41.304Z"
   },
   "social-26e97fda333d": {
