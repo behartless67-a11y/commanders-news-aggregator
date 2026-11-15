@@ -2577,18 +2577,13 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
     </section>
 
     <section class="how-section">
-      <h2>The Blog (weekly editions)</h2>
-      <p class="digest-para">Once a week, an AI model that lives on this computer reads everything that happened and writes a proper column, quotes and all. It doesn't get to publish itself. A human reads the draft and has to click "approve" first, after an early test model once confidently invented a player who never put on a Commanders helmet.</p>
+      <h2>The Blog</h2>
+      <p class="digest-para">The blog is me, Ben, a Commanders fan who should probably know better by now. I write a pregame post before every game, a recap after, and whatever else I can't stop thinking about in between. Most posts start as a pile of rambling notes I type after the game, plus the best lines from the group chat. I use an AI assistant to help me shape that pile into paragraphs and to fact-check me against the actual play-by-play, because my memory at 10 p.m. is not admissible evidence. Then I read every word and change anything that doesn't sound like me before it goes up. The opinions, the bad picks and the masochism are all mine.</p>
     </section>
 
     <section class="how-section">
-      <h2>The Blog (game previews)</h2>
-      <p class="digest-para">The day before a game, the same local AI writes a preview from the matchup itself, the current betting line, and whatever's been reported that week, no result implied since there isn't one yet. Same rule as the weekly edition: a human has to approve it before it publishes.</p>
-    </section>
-
-    <section class="how-section">
-      <h2>The Blog (game days, new and slightly reckless)</h2>
-      <p class="digest-para">During an actual game there's no time for a human between quarters, so this part runs unsupervised. Every 15 minutes a faster, cloud-based AI checks the score and, if a quarter just ended, writes a recap from the real play-by-play plus what fans and reporters are posting live. Its one leash: it can only call a play "amazing" if a real person already said so first, with their name attached.</p>
+      <h2>The Breakdowns</h2>
+      <p class="digest-para">Videos marked "Breakdown" come with a short written summary of the press conference or film session, so you can get the gist in about a minute without sitting through all of it. An AI writes it from the video's own transcript, and every one links back to the full video, so you can always check the tape.</p>
     </section>
 
     <section class="how-section">
@@ -2613,7 +2608,7 @@ ${header('how-it-works.html', hasWeekly, isGameLive)}
 
     <section class="how-section">
       <h2>The plumbing nobody asked about</h2>
-      <p class="digest-para">None of this lives on a server anyone has to babysit. A robot on GitHub's own computers wakes up every few hours, does the collecting and writing, and hands the result to Netlify to serve. If it oversleeps, the site just keeps showing whatever it built last time.</p>
+      <p class="digest-para">None of this lives on a server anyone has to babysit. A robot on GitHub's own computers wakes up every few hours, does the collecting, and hands the result to Netlify to serve. If it oversleeps, the site just keeps showing whatever it built last time.</p>
     </section>
 
     <section class="how-section">
