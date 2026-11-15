@@ -14,54 +14,6 @@
     "publishedAt": "2026-11-05T21:45:00.000Z",
     "collectedAt": "2026-11-05T21:59:59.182Z"
   },
-  "social-7f6803abf94f": {
-    "id": "social-7f6803abf94f",
-    "url": "https://x.com/Commanders/status/2118445637725540769",
-    "text": "Taking a walk down memory lane in honor of American Football Day 2026 #AmericanFootballWeek x #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-05T20:49:33.000Z",
-    "collectedAt": "2026-11-05T21:59:59.182Z"
-  },
-  "social-96608d913bcd": {
-    "id": "social-96608d913bcd",
-    "url": "https://x.com/JPFinlayNBCS/status/2118425602076426724",
-    "text": "Talking with Commanders defenders and it’s clear gang tackling Puke Nacua is a priority. Big focus on limiting his YAC ability",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-05T19:29:56.000Z",
-    "collectedAt": "2026-11-05T22:00:00.622Z"
-  },
-  "social-6fd426fd6ed2": {
-    "id": "social-6fd426fd6ed2",
-    "url": "https://x.com/JPFinlayNBCS/status/2118424361686421716",
-    "text": "Stef Diggs says “I hope we’re close” to a complete offensive game. ‘We do it in practice and they say practice makes perfect.’",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-05T19:25:00.000Z",
-    "collectedAt": "2026-11-05T22:00:00.623Z"
-  },
-  "social-8c566d2de319": {
-    "id": "social-8c566d2de319",
-    "url": "https://x.com/john_keim/status/2118439248541913221",
-    "text": "Other part to note here: check out Jayden’s feet. In the photo on the right, his left foot is offset (it’s how Mariota stands under center). Some QBs stand as Jayden did in the first photo - but the guard split is wider.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-05T20:24:10.000Z",
-    "collectedAt": "2026-11-05T22:00:02.080Z"
-  },
   "social-2357180f787f": {
     "id": "social-2357180f787f",
     "url": "https://x.com/Commanders/status/2118502876154675330",
@@ -6197,5 +6149,17 @@
     "images": [],
     "publishedAt": "2026-11-15T15:13:06.000Z",
     "collectedAt": "2026-11-15T15:40:34.843Z"
+  },
+  "social-4191929d3407": {
+    "id": "social-4191929d3407",
+    "url": "https://x.com/BenStandig/status/2122058244889739610",
+    "text": "Joey Slye! Dude, is jacked.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-15T20:04:46.000Z",
+    "collectedAt": "2026-11-15T21:03:34.990Z"
   }
 }

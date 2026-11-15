@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T15:41:30.566Z",
+  "fetchedAt": "2026-11-15T21:04:33.210Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6551,6 +6551,38 @@
         "abbr": "WSH",
         "flags": 4,
         "yards": 17
+      }
+    },
+    "401873053": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T14:30Z",
+      "referee": "Clay Martin",
+      "home": {
+        "abbr": "DET",
+        "flags": 7,
+        "yards": 75
+      },
+      "away": {
+        "abbr": "NE",
+        "flags": 7,
+        "yards": 45
+      }
+    },
+    "401873060": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "GB",
+        "flags": 6,
+        "yards": 45
+      },
+      "away": {
+        "abbr": "MIN",
+        "flags": 7,
+        "yards": 75
       }
     }
   }
