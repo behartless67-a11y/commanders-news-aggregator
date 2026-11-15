@@ -11,20 +11,6 @@
     "publishedAt": "2026-11-05T15:42:11.000Z",
     "collectedAt": "2026-11-05T17:05:44.569Z"
   },
-  "social-cc61273a923a": {
-    "id": "social-cc61273a923a",
-    "url": "https://x.com/Commanders/status/2118361444219777126",
-    "text": "That Kid @Gatorade@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/564/507/307/852/494/original/952977b162bd626b.jpg"
-    ],
-    "publishedAt": "2026-11-05T15:15:00.000Z",
-    "collectedAt": "2026-11-05T17:05:44.570Z"
-  },
   "social-2a1ccc213eab": {
     "id": "social-2a1ccc213eab",
     "url": "https://x.com/john_keim/status/2118373981292044368",
@@ -6323,5 +6309,17 @@
     "images": [],
     "publishedAt": "2026-11-15T03:44:34.000Z",
     "collectedAt": "2026-11-15T05:05:43.165Z"
+  },
+  "social-d37c9a95a44b": {
+    "id": "social-d37c9a95a44b",
+    "url": "https://x.com/JPFinlayNBCS/status/2121984845471797567",
+    "text": "Injured on a celly is the worst",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-15T15:13:06.000Z",
+    "collectedAt": "2026-11-15T15:40:34.843Z"
   }
 }
