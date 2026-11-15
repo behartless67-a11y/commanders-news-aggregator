@@ -1,84 +1,4 @@
 {
-  "social-a0337ddbd5be": {
-    "id": "social-a0337ddbd5be",
-    "url": "https://x.com/Commanders/status/2118138729831272613",
-    "text": "Wednesday injury report #LARvsWAS | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/020/544/765/495/original/5fed1f7f3076ff5c.jpg"
-    ],
-    "publishedAt": "2026-11-05T00:30:00.000Z",
-    "collectedAt": "2026-11-05T00:54:31.246Z"
-  },
-  "social-7a0add77e656": {
-    "id": "social-7a0add77e656",
-    "url": "https://x.com/Commanders/status/2118131185268445323",
-    "text": "25 on the mic for SNF 🎤 @NWFCU@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-05T00:00:02.000Z",
-    "collectedAt": "2026-11-05T00:54:31.247Z"
-  },
-  "social-d39404e2ca71": {
-    "id": "social-d39404e2ca71",
-    "url": "https://x.com/BenStandig/status/2118143201756209300",
-    "text": "Treylon Burks (foot) didn't practice today. Johnny Newton practiced in full. Myles Garrett was a \"limited\" participant, an actual good sign after missing several weeks with a knee injury. The Rams' secondary is banged up. CB Jaylen Wataon is headed to IR. DNP for Kam Curl.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/086/517/387/414/original/d0faa42a9cef1c2d.jpg"
-    ],
-    "publishedAt": "2026-11-05T00:47:47.000Z",
-    "collectedAt": "2026-11-05T00:54:35.663Z"
-  },
-  "social-cdbd6593baa3": {
-    "id": "social-cdbd6593baa3",
-    "url": "https://x.com/BenStandig/status/2118139294166421782",
-    "text": "Treylon Burks (foot) did not practice today. Johnny Newton practiced in full.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/017/362/860/976/original/d6da026cdb24854d.jpg"
-    ],
-    "publishedAt": "2026-11-05T00:32:15.000Z",
-    "collectedAt": "2026-11-05T00:54:35.663Z"
-  },
-  "social-b1d6d29c30f9": {
-    "id": "social-b1d6d29c30f9",
-    "url": "https://x.com/tashanreed/status/2118140917425271100",
-    "text": "Burks didn't practice today due to a foot injury:",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-05T00:38:42.000Z",
-    "collectedAt": "2026-11-05T00:54:37.076Z"
-  },
-  "social-525d81e1ccb3": {
-    "id": "social-525d81e1ccb3",
-    "url": "https://x.com/tashanreed/status/2118134481668522281",
-    "text": "In the building for a #Wizards game for the first time. Follow along with @jakekauderer@twitter.com for our game coverage @washingtonpost@twitter.com tonight. Keep an eye out for some stories on the Wizards from myself moving forward 👀",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/560/968/428/097/401/original/8f9f2cf3d80ba6a9.jpg"
-    ],
-    "publishedAt": "2026-11-05T00:13:08.000Z",
-    "collectedAt": "2026-11-05T00:54:37.076Z"
-  },
   "social-0b65b50b7972": {
     "id": "social-0b65b50b7972",
     "url": "https://x.com/Commanders/status/2118184025592615412",
@@ -115,23 +35,6 @@
     "sourceKey": "@Commanders",
     "images": [],
     "publishedAt": "2026-11-05T01:44:00.000Z",
-    "collectedAt": "2026-11-05T07:05:36.561Z"
-  },
-  "social-8a64ac178a09": {
-    "id": "social-8a64ac178a09",
-    "url": "https://x.com/Commanders/status/2118145018192159068",
-    "text": "stadium pulse 1000000 📈 @NWStadium@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/500/031/442/original/22f72305ae222bfd.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/532/980/430/original/2f625f0512e3bdee.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/579/234/469/original/235147c84da30de7.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/561/111/606/473/880/original/cfa1c52c6c22aafb.jpg"
-    ],
-    "publishedAt": "2026-11-05T00:55:00.000Z",
     "collectedAt": "2026-11-05T07:05:36.561Z"
   },
   "social-2dc1141dcbe6": {
