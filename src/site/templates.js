@@ -5068,6 +5068,23 @@ ${footer(sources, generatedAt)}
         // leave empty below a short bar row — same info the axis already
         // implies, spelled out for whoever's glancing at this without having
         // read the axis first.
+        // One row per week a reader first showed up in (track.js keeps two
+        // counters per week, nothing per reader). The newest weeks always
+        // look low at first, because their readers haven't had time to come
+        // back yet; the caption says so, so a fresh week doesn't read as bad.
+        tiles.push(tile('Do new readers come back?', (function () {
+          var rows = data.cohorts || [];
+          if (!rows.length) {
+            return '<p class="page-intro" style="font-size:12.5px">Counting started Nov 15, 2026. Rows show up as new readers arrive, and fill in as they come back.</p>';
+          }
+          return '<ul class="admin-path-list">' + rows.map(function (r) {
+            var pct = r.new ? Math.round((r.back / r.new) * 100) : 0;
+            var label = 'Week of ' + new Date(r.week + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+            return '<li><span class="admin-path-label">' + esc(label) + ': ' + r.new + ' new, ' + r.back + ' came back</span> <strong>' + pct + '%</strong></li>';
+          }).join('') + '</ul>' +
+            '<p class="admin-chart-caption">A new reader is a browser visiting for the first time. "Came back" means it visited again on a later day. Recent weeks keep climbing as those readers return. Counting started Nov 15, 2026.</p>';
+        }())));
+
         tiles.push(tile('Last 14 days', barRow(data.days, function (d) {
           return d.date + ': ' + d.count + ' view' + (d.count === 1 ? '' : 's') + ', ' + d.uniques + ' unique';
         }, function (d) { return dayLabel(d.date); }) +

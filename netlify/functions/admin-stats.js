@@ -68,7 +68,23 @@ export default async (req) => {
       .slice(0, 10);
   };
 
+  // `cohort:<monday>:new` and `cohort:<monday>:back` (see track.js), folded
+  // into one row per week, newest first, last 10 weeks.
+  const cohortRows = async () => {
+    const { blobs } = await store.list({ prefix: 'cohort:' });
+    const weeks = new Map();
+    await Promise.all(blobs.map(async (b) => {
+      const m = /^cohort:(\d{4}-\d{2}-\d{2}):(new|back)$/.exec(b.key);
+      if (!m) return;
+      const row = weeks.get(m[1]) || { week: m[1], new: 0, back: 0 };
+      row[m[2]] = await text(b.key);
+      weeks.set(m[1], row);
+    }));
+    return [...weeks.values()].sort((a, b) => b.week.localeCompare(a.week)).slice(0, 10);
+  };
+
   const [
+    cohorts,
     total,
     outboundTotal,
     visitorNew,
@@ -89,6 +105,7 @@ export default async (req) => {
     topStates,
     recent,
   ] = await Promise.all([
+    cohortRows().catch(() => []),
     text('total'),
     text('outboundTotal'),
     text('visitor:new'),
@@ -138,6 +155,7 @@ export default async (req) => {
       total,
       outboundTotal,
       visitors: { new: visitorNew, returning: visitorReturn },
+      cohorts,
       trend,
       days,
       months,

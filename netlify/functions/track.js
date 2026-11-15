@@ -250,6 +250,25 @@ function hourAndWeekday(date) {
 }
 
 /**
+ * The Monday that starts this date's week, as YYYY-MM-DD, in the site's
+ * timezone. It's the name of a "cohort": everyone whose first visit fell in
+ * that week, for the admin page's "Do new readers come back?" table.
+ */
+function weekStart(date) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: TZ,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    weekday: 'short',
+  }).formatToParts(date);
+  const get = (type) => parts.find((p) => p.type === type).value;
+  const back = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].indexOf(get('weekday'));
+  return new Date(Date.UTC(Number(get('year')), Number(get('month')) - 1, Number(get('day')) - back))
+    .toISOString().slice(0, 10);
+}
+
+/**
  * Pageview counts Ben wants to meet the reader behind. Whoever's pageview
  * first reaches one gets a "you're visit #5,000" hello and an invitation to
  * write in (celebrateMilestone() in site.js, five-thousand.html). Only marks
@@ -411,6 +430,22 @@ export default async (req, context) => {
   // record is kept, just which of two buckets this one pageview falls into.
   tasks.push(bump(body.returning ? 'visitor:return' : 'visitor:new'));
 
+  // Do new readers come back? (Added Nov 15, 2026.) Two counters per week,
+  // and still nothing per reader: `cohort:<monday>:new` counts browsers
+  // whose first visit ever fell in that week, and `cohort:<monday>:back`
+  // counts the ones that later returned on another day. The browser keeps
+  // its own week (see visitorState() in site.js) and sends it back exactly
+  // once. The week it names must already have a :new counter, so a made-up
+  // value can't create keys of its own.
+  let cohort = null;
+  if (body.firstVisit === true && !body.returning) {
+    cohort = weekStart(now);
+    tasks.push(bump(`cohort:${cohort}:new`));
+  } else if (typeof body.cameBackFrom === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(body.cameBackFrom)) {
+    const known = await store.get(`cohort:${body.cameBackFrom}:new`, { type: 'text' }).catch(() => null);
+    if (known) tasks.push(bump(`cohort:${body.cameBackFrom}:back`));
+  }
+
   // Unique-visitor count for today, deduped against a per-day session-id set
   // rather than a persistent cookie — `sid` (see site.js) lives in
   // sessionStorage, so it identifies "this browser tab today," never a
@@ -476,7 +511,9 @@ export default async (req, context) => {
   // counters; returning it stores nothing new. `milestone` is set on exactly
   // one pageview per mark (see claimMilestone() below), and site.js greets
   // that reader.
-  return new Response(JSON.stringify({ country: geo?.country?.code || null, milestone }), {
+  // `cohort` is only set on a browser's first pageview: the week it gets to
+  // remember, so it can say which week it belongs to if it comes back.
+  return new Response(JSON.stringify({ country: geo?.country?.code || null, milestone, cohort }), {
     status: 200,
     headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
   });

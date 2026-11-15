@@ -598,14 +598,44 @@
     try { return sessionStorage.getItem(VIA_KEY); } catch (e) { return null; }
   }
 
-  function isReturningVisitor() {
+  /**
+   * The returning bit above, plus what the admin page's "Do new readers come
+   * back?" table needs (added Nov 15, 2026):
+   *   - firstVisit: this is the browser's first pageview ever. The server
+   *     answers with the week it falls in (its "cohort"), kept here as
+   *     bw_cohort. Only true when storage actually works, so a private
+   *     window that forgets everything doesn't count as a new reader on
+   *     every page.
+   *   - cameBackFrom: the first pageview on a later day than that first
+   *     visit, sent once per browser with the stored week. Clicking around
+   *     on the first day doesn't count; coming back does.
+   * Browsers that were already here before Nov 15 have bw_seen but no
+   * bw_first_day, so they never count as coming back. Their first week
+   * wasn't recorded, and guessing would skew the table.
+   */
+  function localDay() {
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+
+  function visitorState() {
     try {
-      var key = 'bw_seen';
-      var seenBefore = Boolean(localStorage.getItem(key));
-      if (!seenBefore) localStorage.setItem(key, '1');
-      return seenBefore;
+      var today = localDay();
+      if (!localStorage.getItem('bw_seen')) {
+        localStorage.setItem('bw_seen', '1');
+        localStorage.setItem('bw_first_day', today);
+        return { returning: false, firstVisit: Boolean(localStorage.getItem('bw_seen')), cameBackFrom: null };
+      }
+      var firstDay = localStorage.getItem('bw_first_day');
+      var cohort = localStorage.getItem('bw_cohort');
+      var cameBackFrom = null;
+      if (firstDay && cohort && today > firstDay && !localStorage.getItem('bw_came_back')) {
+        localStorage.setItem('bw_came_back', '1');
+        cameBackFrom = cohort;
+      }
+      return { returning: true, firstVisit: false, cameBackFrom: cameBackFrom };
     } catch (err) {
-      return false;
+      return { returning: false, firstVisit: false, cameBackFrom: null };
     }
   }
 
@@ -786,7 +816,9 @@
   // Add ?country=DE to preview the version a reader outside the US gets.
   if (forcedMilestone > 0) celebrateMilestone(forcedMilestone, true, forcedCountry || null);
 
-  if (document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; })) {
+  var isOwner = document.cookie.split(';').some(function (c) { return c.trim() === 'bw_owner=1'; });
+  var visitor = isOwner ? null : visitorState();
+  if (isOwner) {
     // Ben's own browser (bw_owner, set by the admin page): don't count it.
     // track.js checks too, since this is only the cheap early exit.
   } else
@@ -798,7 +830,9 @@
       referrer: document.referrer,
       via: landingVia,
       sid: sessionId(),
-      returning: isReturningVisitor(),
+      returning: visitor.returning,
+      firstVisit: visitor.firstVisit,
+      cameBackFrom: visitor.cameBackFrom,
       // A bare number, bucketed server-side (see deviceBucket() in
       // track.js) rather than a label chosen here — one thing this client
       // doesn't have to decide, and one fewer arbitrary string that could
@@ -810,6 +844,11 @@
     .then(function (d) {
       if (d && !forcedCountry) sayHelloAbroad(d.country);
       if (d && d.milestone) celebrateMilestone(d.milestone, false, d.country);
+      // The week this browser first showed up, as track.js counted it. Saved
+      // so a visit on a later day can say which week came back.
+      if (d && d.cohort && visitor.firstVisit) {
+        try { localStorage.setItem('bw_cohort', d.cohort); } catch (e) {}
+      }
     })
     .catch(function () {});
 
