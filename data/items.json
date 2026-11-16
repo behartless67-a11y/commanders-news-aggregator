@@ -1,40 +1,4 @@
 {
-  "hogs-haven-ba35b5b13e8b": {
-    "id": "hogs-haven-ba35b5b13e8b",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-injuries/445819/commanders-colts-injury-report-terry-mclaurin-chig-okonkwo-frankie-luvu-jayden-daniels-rachaad-white",
-    "title": "Commanders vs. Colts injury report: Terry McLaurin questionable",
-    "excerpt": "The Commanders didn’t even wait for their formal injury report to announce the return of some key starters. Head coach Dan Quinn said that linebacker Frankie Luvu (groin) and tight end Chig Okonkwo (hamstring) will play on Sunday against the Indianapolis Colts at Tottenham Hotspur Stadium in London. \n\n That’s a huge win for Washington, getting two primary starters back in the lineup. \n\n Not everything in the Commanders official injury report was positive. Star receiver Terry McLaurin was…",
-    "publishedAt": "2026-10-02T17:10:48.000Z",
-    "collectedAt": "2026-10-02T18:05:33.882Z"
-  },
-  "riggos-rag-8e8de24569ef": {
-    "id": "riggos-rag-8e8de24569ef",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/sauce-gardner-terry-mclaurin-focus-could-set-stefon-diggs-loose-commanders",
-    "title": "Sauce Gardner’s Terry McLaurin focus could set Stefon Diggs loose for Commanders",
-    "excerpt": "Washington Commanders wide receiver Stefon Diggs could be set loose against the Indianapolis Colts in Week 4.",
-    "publishedAt": "2026-10-02T17:30:01.000Z",
-    "collectedAt": "2026-10-02T18:05:34.728Z"
-  },
-  "pft-c001d455b82b": {
-    "id": "pft-c001d455b82b",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/terry-mclaurin-added-to-injury-report-listed-as-questionable-for-sunday",
-    "title": "Terry McLaurin added to injury report, listed as questionable for Sunday",
-    "excerpt": "The Commanders made a late addition to their injury report for Sunday's game against the Colts in London. \n Wide receiver Terry McLaurin is listed as questionable to play in that contest. McLaurin was not on the injury report until Friday and he was limited by a hamstring injury. \n Injuries that pop up late in the week can often lead to absences from the lineup, so the Commanders may need to try for their second straight win with Stefon Diggs at the top of their receiver group. \n Running back…",
-    "publishedAt": "2026-10-02T17:10:52.000Z",
-    "collectedAt": "2026-10-02T18:05:39.089Z"
-  },
   "hogs-haven-050e284a5e25": {
     "id": "hogs-haven-050e284a5e25",
     "sourceId": "hogs-haven",
@@ -58,18 +22,6 @@
     "excerpt": "Pro Bowl wide receiver Terry McLaurin’s late hamstring concern gives the Washington Commanders a London headache.",
     "publishedAt": "2026-10-02T19:00:01.000Z",
     "collectedAt": "2026-10-02T20:05:34.886Z"
-  },
-  "clutchpoints-6b173032bdbc": {
-    "id": "clutchpoints-6b173032bdbc",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/commanders-news-terry-mclaurin-questionable-colts-game-injury-report",
-    "title": "Commanders’ Terry McLaurin suddenly questionable for Colts game after popping up on injury report",
-    "excerpt": "The Commanders’ passing game got good news on Jayden Daniels , but will have to make due without him vs. Indianapolis in Week 4. Wide receiver Terry McLaurin has had a brutal start to the season , including an injury that has recently popped up.\n\n NFL reporter Tom Pelissero had news about the situation and it looks like a big challenge for the Commanders wideout.\n\n “Commanders WR Terry McLaurin had a hamstring issue pop up in practice today and now is questionable for Sunday’s game against the…",
-    "publishedAt": "2026-10-02T18:18:16.000Z",
-    "collectedAt": "2026-10-02T22:05:35.943Z"
   },
   "cbs-nfl-b9073800ce7d": {
     "id": "cbs-nfl-b9073800ce7d",
@@ -17290,5 +17242,17 @@
     "excerpt": "",
     "publishedAt": "2026-11-16T14:58:58.000Z",
     "collectedAt": "2026-11-16T17:05:38.583Z"
+  },
+  "riggos-rag-edeabb0d7c61": {
+    "id": "riggos-rag-edeabb0d7c61",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-fans-have-new-home-for-their-obsession-fansided-app",
+    "title": "Commanders fans have a new home for their obsession on the FanSided App",
+    "excerpt": "Washington Commanders fans can now follow all the breaking news on their favorite teams in the new FanSided app.",
+    "publishedAt": "2026-11-16T18:09:18.000Z",
+    "collectedAt": "2026-11-16T18:34:02.156Z"
   }
 }
