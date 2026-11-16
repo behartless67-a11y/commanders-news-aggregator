@@ -1,18 +1,4 @@
 {
-  "social-ba44a05df492": {
-    "id": "social-ba44a05df492",
-    "url": "https://x.com/Commanders/status/2118722750193999898",
-    "text": "\"I'm the guy\" More on how John Riggins reached another level in the 1982 playoffs",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/570/137/802/345/153/original/2100c86831f455ef.jpg"
-    ],
-    "publishedAt": "2026-11-06T15:10:42.000Z",
-    "collectedAt": "2026-11-06T15:56:19.788Z"
-  },
   "social-c36e6c8bebf2": {
     "id": "social-c36e6c8bebf2",
     "url": "https://x.com/Commanders/status/2118795554742517902",
@@ -51,32 +37,6 @@
     "sourceKey": "@Commanders",
     "images": [],
     "publishedAt": "2026-11-06T17:38:04.000Z",
-    "collectedAt": "2026-11-06T21:05:40.509Z"
-  },
-  "social-c927d9c49678": {
-    "id": "social-c927d9c49678",
-    "url": "https://x.com/Commanders/status/2118751515179356309",
-    "text": "💪 @CampbellsChunky@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/570/588/999/731/261/original/2824065ad5485d11.jpg"
-    ],
-    "publishedAt": "2026-11-06T17:05:00.000Z",
-    "collectedAt": "2026-11-06T21:05:40.509Z"
-  },
-  "social-e223648e030e": {
-    "id": "social-e223648e030e",
-    "url": "https://x.com/Commanders/status/2118735158455288074",
-    "text": "Another Sunday at home 🏟️",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-06T16:00:00.000Z",
     "collectedAt": "2026-11-06T21:05:40.509Z"
   },
   "social-63cdd95551db": {
@@ -129,18 +89,6 @@
     "publishedAt": "2026-11-06T17:10:06.000Z",
     "collectedAt": "2026-11-06T21:05:41.909Z"
   },
-  "social-1ddc059996d3": {
-    "id": "social-1ddc059996d3",
-    "url": "https://x.com/JPFinlayNBCS/status/2118742111168122997",
-    "text": "Not good news w Burks and then concerns about Dyami",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-06T16:27:38.000Z",
-    "collectedAt": "2026-11-06T21:05:41.909Z"
-  },
   "social-89b68c605367": {
     "id": "social-89b68c605367",
     "url": "https://x.com/john_keim/status/2118811057263366356",
@@ -163,30 +111,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-06T17:41:02.000Z",
-    "collectedAt": "2026-11-06T21:05:43.257Z"
-  },
-  "social-2f00e6627c76": {
-    "id": "social-2f00e6627c76",
-    "url": "https://x.com/john_keim/status/2118741667083677968",
-    "text": "WR Trey Burks is not on the practice field as they begin their work. He has not practiced yet this week because of a foot issue.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-06T16:25:52.000Z",
-    "collectedAt": "2026-11-06T21:05:43.257Z"
-  },
-  "social-5e45190a4a19": {
-    "id": "social-5e45190a4a19",
-    "url": "https://x.com/john_keim/status/2118736273250893949",
-    "text": "On the @JunksRadio@twitter.com GM Adam Peters said WR Dyami Brown “tweaked something” and that it didn’t look good. Brown was listed as limited on the Thur injury report with a calf injury. Trey Burks has not yet practiced this week because of a foot issue.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-06T16:04:26.000Z",
     "collectedAt": "2026-11-06T21:05:43.257Z"
   },
   "social-dbcb1096f74b": {
@@ -225,18 +149,6 @@
     "publishedAt": "2026-11-06T17:35:35.000Z",
     "collectedAt": "2026-11-06T21:05:44.817Z"
   },
-  "social-87231ebd743c": {
-    "id": "social-87231ebd743c",
-    "url": "https://x.com/BenStandig/status/2118748794904891681",
-    "text": "Adam Peters with @JunksRadio@twitter.com today said \"it doesn’t look great\" for Dyami this week. Burks sounds more like a TBD situation.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-06T16:54:11.000Z",
-    "collectedAt": "2026-11-06T21:05:44.817Z"
-  },
   "social-7a819ffbca48": {
     "id": "social-7a819ffbca48",
     "url": "https://x.com/tashanreed/status/2118757995769418152",
@@ -247,30 +159,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-11-06T17:30:45.000Z",
-    "collectedAt": "2026-11-06T21:05:46.097Z"
-  },
-  "social-9c41bf097fee": {
-    "id": "social-9c41bf097fee",
-    "url": "https://x.com/tashanreed/status/2118743642277855386",
-    "text": "Jefferson started 7 games last year for the Titans",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-06T16:33:43.000Z",
-    "collectedAt": "2026-11-06T21:05:46.097Z"
-  },
-  "social-2f649368476d": {
-    "id": "social-2f649368476d",
-    "url": "https://x.com/tashanreed/status/2118741447583100943",
-    "text": "Don't see #Commanders WRs Treylon Burks (foot) and Dyami Brown (calf) at practice today. Doesn't bode well for their respective statuses against the Rams. Figure it'd be Van Jefferson starting at outside WR if they can't go.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-06T16:25:00.000Z",
     "collectedAt": "2026-11-06T21:05:46.097Z"
   },
   "social-732de78d89cb": {
