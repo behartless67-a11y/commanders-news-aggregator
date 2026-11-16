@@ -6,12 +6,12 @@
         "position": "WR",
         "tiers": [
           {
-            "slug": "terry-mclaurin",
-            "name": "Terry McLaurin"
-          },
-          {
             "slug": "treylon-burks",
             "name": "Treylon Burks"
+          },
+          {
+            "slug": "van-jefferson",
+            "name": "Van Jefferson"
           }
         ]
       },
@@ -36,8 +36,8 @@
             "name": "Chris Paul"
           },
           {
-            "slug": "tanoa-togiai",
-            "name": "Tanoa Togiai"
+            "slug": "nick-allegretti",
+            "name": "Nick Allegretti"
           }
         ]
       },
@@ -45,8 +45,8 @@
         "position": "C",
         "tiers": [
           {
-            "slug": "nick-allegretti",
-            "name": "Nick Allegretti"
+            "slug": "lucas-patrick",
+            "name": "Lucas Patrick"
           },
           {
             "slug": "matt-gulbin",
@@ -114,8 +114,8 @@
             "name": "Stefon Diggs"
           },
           {
-            "slug": "jaylin-lane",
-            "name": "Jaylin Lane"
+            "slug": "luke-mccaffrey",
+            "name": "Luke McCaffrey"
           }
         ]
       },
@@ -123,16 +123,8 @@
         "position": "WR",
         "tiers": [
           {
-            "slug": "dyami-brown",
-            "name": "Dyami Brown"
-          },
-          {
             "slug": "antonio-williams",
             "name": "Antonio Williams"
-          },
-          {
-            "slug": "luke-mccaffrey",
-            "name": "Luke McCaffrey"
           }
         ]
       },
@@ -157,16 +149,16 @@
         "position": "RB",
         "tiers": [
           {
-            "slug": "jacory-croskey-merritt",
-            "name": "Jacory Croskey-Merritt"
-          },
-          {
             "slug": "rachaad-white",
             "name": "Rachaad White"
           },
           {
             "slug": "austin-ekeler",
             "name": "Austin Ekeler"
+          },
+          {
+            "slug": "robert-henry-jr",
+            "name": "Robert Henry Jr."
           }
         ]
       }
@@ -179,8 +171,12 @@
         "position": "DL",
         "tiers": [
           {
-            "slug": "daron-payne",
-            "name": "Daron Payne"
+            "slug": "charles-omenihu",
+            "name": "Charles Omenihu"
+          },
+          {
+            "slug": "jer-zhan-newton",
+            "name": "Jer'Zhan Newton"
           }
         ]
       },
@@ -201,12 +197,12 @@
         "position": "DL",
         "tiers": [
           {
-            "slug": "javon-kinlaw",
-            "name": "Javon Kinlaw"
+            "slug": "deatrich-wise",
+            "name": "Deatrich Wise Jr."
           },
           {
-            "slug": "charles-omenihu",
-            "name": "Charles Omenihu"
+            "slug": "ricky-barber",
+            "name": "Ricky Barber"
           }
         ]
       },
@@ -244,8 +240,8 @@
             "name": "Frankie Luvu"
           },
           {
-            "slug": "kain-medrano",
-            "name": "Kain Medrano"
+            "slug": "jordan-magee",
+            "name": "Jordan Magee"
           }
         ]
       },
@@ -259,10 +255,6 @@
           {
             "slug": "dorance-armstrong",
             "name": "Dorance Armstrong"
-          },
-          {
-            "slug": "javontae-jean-baptiste",
-            "name": "Javontae Jean-Baptiste"
           }
         ]
       },
@@ -276,12 +268,20 @@
           {
             "slug": "rasul-douglas",
             "name": "Rasul Douglas"
+          },
+          {
+            "slug": "isaac-yiadom",
+            "name": "Isaac Yiadom"
           }
         ]
       },
       {
         "position": "CB",
         "tiers": [
+          {
+            "slug": "trey-amos",
+            "name": "Trey Amos"
+          },
           {
             "slug": "mike-sainristil",
             "name": "Mike Sainristil"
@@ -371,12 +371,8 @@
             "name": "Luke McCaffrey"
           },
           {
-            "slug": "jaylin-lane",
-            "name": "Jaylin Lane"
-          },
-          {
-            "slug": "dyami-brown",
-            "name": "Dyami Brown"
+            "slug": "austin-ekeler",
+            "name": "Austin Ekeler"
           }
         ]
       },
@@ -384,8 +380,8 @@
         "position": "PR",
         "tiers": [
           {
-            "slug": "jaylin-lane",
-            "name": "Jaylin Lane"
+            "slug": "antonio-williams",
+            "name": "Antonio Williams"
           },
           {
             "slug": "luke-mccaffrey",
