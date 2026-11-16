@@ -1,12 +1,12 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-11-16T03:06:26.054Z",
+  "fetchedAt": "2026-11-16T06:32:55.190Z",
   "offense": {
     "yardsPerGame": {
       "value": "327.0",
-      "rank": 18,
-      "rankLabel": "18th"
+      "rank": 17,
+      "rankLabel": "17th"
     },
     "pointsPerGame": {
       "value": "21.8",
@@ -15,13 +15,13 @@
     },
     "passYardsPerGame": {
       "value": "210.2",
-      "rank": 21,
-      "rankLabel": "21st"
+      "rank": 20,
+      "rankLabel": "20th"
     },
     "rushYardsPerGame": {
       "value": "116.8",
-      "rank": 14,
-      "rankLabel": "14th"
+      "rank": 12,
+      "rankLabel": "12th"
     }
   },
   "defense": {

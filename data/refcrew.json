@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T03:06:52.005Z",
+  "fetchedAt": "2026-11-16T06:33:04.186Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6727,6 +6727,22 @@
         "abbr": "SF",
         "flags": 11,
         "yards": 100
+      }
+    },
+    "401873064": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-16T01:20Z",
+      "referee": "Don Willard",
+      "home": {
+        "abbr": "CIN",
+        "flags": 8,
+        "yards": 80
+      },
+      "away": {
+        "abbr": "PIT",
+        "flags": 4,
+        "yards": 46
       }
     }
   }

@@ -1,28 +1,4 @@
 {
-  "yahoo-nfl-21c5b02f5137": {
-    "id": "yahoo-nfl-21c5b02f5137",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/ranking-the-nfls-remaining-international-games-starting-with-sundays-colts-commanders-matchup-040044766.html",
-    "title": "Ranking the NFL's remaining international games, starting with Sunday's Colts-Commanders matchup",
-    "excerpt": "The NFL's first international game of the 2026 season was a 49ers blowout over the Rams. It might not have been a great game, but it was significant — and surprising.\n The second international game of 2026 became an instant classic.\n The Ravens and Cowboys traded blows back and forth, with Baltimore winning at the buzzer, giving Rio de Janeiro a terrific first NFL contest in the city. All three Brazil games the past three seasons have been tightly contested, one-score games.\n And the ratings…",
-    "publishedAt": "2026-10-02T04:00:44.000Z",
-    "collectedAt": "2026-10-02T04:07:15.461Z"
-  },
-  "hogs-haven-c140efe28174": {
-    "id": "hogs-haven-c140efe28174",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/445475/commanders-could-feast-against-colts-32nd-ranked-defense-all-atwitter",
-    "title": "Commanders could feast against Colts 32nd-ranked defense – All aTwitter",
-    "excerpt": "KANSAS CITY, MISSOURI - SEPTEMBER 20: Tyquan Thornton #2 of the Kansas City Chiefs catches a pass during overtime of an NFL football game against the Indianapolis Colts at Arrowhead Stadium on September 20, 2026 in Kansas City, Missouri. (Photo by Kevin Sabitus/Getty Images) | Getty Images \n \n All aTwitter – 2 October 2026\n\n We follow Twitter so you don’t have to\n\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the…",
-    "publishedAt": "2026-10-02T04:00:00.000Z",
-    "collectedAt": "2026-10-02T10:10:44.937Z"
-  },
   "riggos-rag-4029afabe637": {
     "id": "riggos-rag-4029afabe637",
     "sourceId": "riggos-rag",
@@ -34,18 +10,6 @@
     "excerpt": "These Washington Commanders players are facing increasingly precarious situations after just three games of the 2026 season.",
     "publishedAt": "2026-10-02T10:00:00.000Z",
     "collectedAt": "2026-10-02T10:10:45.941Z"
-  },
-  "yahoo-nfl-08f64407b794": {
-    "id": "yahoo-nfl-08f64407b794",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-could-feast-week-against-040000863.html",
-    "title": "Commanders could feast this week against Colts 32nd-ranked defense - All aTwitter",
-    "excerpt": "KANSAS CITY, MISSOURI - SEPTEMBER 20: Tyquan Thornton #2 of the Kansas City Chiefs catches a pass during overtime of an NFL football game against the Indianapolis Colts at Arrowhead Stadium on September 20, 2026 in Kansas City, Missouri. (Photo by Kevin Sabitus/Getty Images) | Getty Images All aTwitter – 2 October 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL,…",
-    "publishedAt": "2026-10-02T04:00:00.000Z",
-    "collectedAt": "2026-10-02T10:10:51.534Z"
   },
   "hogs-haven-fa085a939d2f": {
     "id": "hogs-haven-fa085a939d2f",
@@ -17482,5 +17446,17 @@
     "excerpt": "The Commanders vaulted themselves back to relevance with Thursday night’s victory over the Giants. \n\n After spending the season’s first half mired in irrelevance, save a few embarrassing moments, this spot feels like a ray of sunshine. \n\n Let’s go ahead and enjoy this for a second. Like, take a deep freaking breath. \n\n The Commanders will try to hold it as long as they can. \n\n Despite having a dormant NFL Sunday, the Commanders were paying attention to Sunday afternoon’s clash between the…",
     "publishedAt": "2026-11-16T00:47:07.000Z",
     "collectedAt": "2026-11-16T03:05:27.559Z"
+  },
+  "hogs-haven-50be8c8d2144": {
+    "id": "hogs-haven-50be8c8d2144",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-odds/455571/commanders-vs-bengals-odds-week-11-opening-lines-point-spread-total",
+    "title": "Commanders vs. Bengals odds: Opening lines for Week 11 matchup",
+    "excerpt": "CINCINNATI, OHIO - SEPTEMBER 23: Jayden Daniels #5 of the Washington Commanders scores a touchdown against the Cincinnati Bengals during the second quarter at Paycor Stadium on September 23, 2024 in Cincinnati, Ohio. (Photo by Dylan Buell/Getty Images) | Getty Images \n \n The Washington Commanders are 3-5-1 after a Week 10 Thursday Night Football win over the New York Giants. The Dallas Cowboys also lost on Sunday which is good news for the Commanders as their stock in the NFC East continues to…",
+    "publishedAt": "2026-11-16T05:20:18.000Z",
+    "collectedAt": "2026-11-16T06:31:56.649Z"
   }
 }
