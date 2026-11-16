@@ -23,21 +23,6 @@
     "publishedAt": "2026-11-07T00:45:00.000Z",
     "collectedAt": "2026-11-07T05:59:47.079Z"
   },
-  "social-17aa6936e240": {
-    "id": "social-17aa6936e240",
-    "url": "https://x.com/Commanders/status/2118833308289188022",
-    "text": "Rocking the Hometown Remix Thanks for hooking us up, @Capitals !",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/572/070/124/920/525/original/88fb806bf75ce8ec.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/572/070/265/010/629/original/c33b3d7f11ec4bf9.jpg"
-    ],
-    "publishedAt": "2026-11-06T22:30:01.000Z",
-    "collectedAt": "2026-11-07T05:59:47.079Z"
-  },
   "social-ca7b9f85ba69": {
     "id": "social-ca7b9f85ba69",
     "url": "https://x.com/BenStandig/status/2118884579138232661",
@@ -75,30 +60,6 @@
     "images": [],
     "publishedAt": "2026-11-06T23:45:55.000Z",
     "collectedAt": "2026-11-07T05:59:55.579Z"
-  },
-  "social-d00e37f6b6f3": {
-    "id": "social-d00e37f6b6f3",
-    "url": "https://x.com/RapSheet/status/2118826247056945573",
-    "text": "Injury updates: — #Eagles WR DeVonta Smith (hamstring) and WR Dontayvion Wicks (ankle) are out. — #GiantsWR Malik Nabers (knee) is good to go, while RB Cam Skattebo (hamstring) is doubtful. — #Commanders ruled out WRs Treylon Burks and Dyami Brown for Sunday.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-11-06T22:01:57.000Z",
-    "collectedAt": "2026-11-07T05:59:56.889Z"
-  },
-  "social-7b9decd22b21": {
-    "id": "social-7b9decd22b21",
-    "url": "https://x.com/RapSheet/status/2118819321040498805",
-    "text": "Injury updates: — #Eagles WR DeVonta Smith (hamstring) or WR Dontayvion Wicks (ankle) are out. — #GiantsWR Malik Nabers (knee) is good to go, while RB Cam Skattebo (hamstring) is doubtful. — #Commanders ruled out WRs Treylon Burks and Dyami Brown for Sunday.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [],
-    "publishedAt": "2026-11-06T21:34:26.000Z",
-    "collectedAt": "2026-11-07T05:59:56.889Z"
   },
   "social-c399bb7f7418": {
     "id": "social-c399bb7f7418",
