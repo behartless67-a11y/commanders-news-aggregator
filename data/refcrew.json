@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T21:04:33.210Z",
+  "fetchedAt": "2026-11-16T03:06:52.005Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6569,6 +6569,102 @@
         "yards": 45
       }
     },
+    "401873054": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Ronald Torbert",
+      "home": {
+        "abbr": "NYJ",
+        "flags": 7,
+        "yards": 53
+      },
+      "away": {
+        "abbr": "BUF",
+        "flags": 7,
+        "yards": 35
+      }
+    },
+    "401873055": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Duane Heydt",
+      "home": {
+        "abbr": "NO",
+        "flags": 3,
+        "yards": 46
+      },
+      "away": {
+        "abbr": "CAR",
+        "flags": 17,
+        "yards": 152
+      }
+    },
+    "401873056": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "CLE",
+        "flags": 2,
+        "yards": 47
+      },
+      "away": {
+        "abbr": "HOU",
+        "flags": 13,
+        "yards": 112
+      }
+    },
+    "401873057": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Barry Anderson",
+      "home": {
+        "abbr": "TEN",
+        "flags": 5,
+        "yards": 27
+      },
+      "away": {
+        "abbr": "JAX",
+        "flags": 2,
+        "yards": 20
+      }
+    },
+    "401873058": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "ATL",
+        "flags": 9,
+        "yards": 65
+      },
+      "away": {
+        "abbr": "KC",
+        "flags": 7,
+        "yards": 61
+      }
+    },
+    "401873059": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "referee": "Don Willard",
+      "home": {
+        "abbr": "IND",
+        "flags": 13,
+        "yards": 83
+      },
+      "away": {
+        "abbr": "MIA",
+        "flags": 3,
+        "yards": 30
+      }
+    },
     "401873060": {
       "season": 2026,
       "week": 10,
@@ -6583,6 +6679,54 @@
         "abbr": "MIN",
         "flags": 7,
         "yards": 75
+      }
+    },
+    "401873061": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T21:05Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "ARI",
+        "flags": 4,
+        "yards": 20
+      },
+      "away": {
+        "abbr": "LAR",
+        "flags": 5,
+        "yards": 15
+      }
+    },
+    "401873062": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T21:05Z",
+      "referee": "Bill Vinovich",
+      "home": {
+        "abbr": "LV",
+        "flags": 0,
+        "yards": 0
+      },
+      "away": {
+        "abbr": "SEA",
+        "flags": 2,
+        "yards": 15
+      }
+    },
+    "401873063": {
+      "season": 2026,
+      "week": 10,
+      "date": "2026-11-15T21:25Z",
+      "referee": "John Hussey",
+      "home": {
+        "abbr": "DAL",
+        "flags": 5,
+        "yards": 35
+      },
+      "away": {
+        "abbr": "SF",
+        "flags": 11,
+        "yards": 100
       }
     }
   }

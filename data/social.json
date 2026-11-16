@@ -6028,5 +6028,81 @@
     "images": [],
     "publishedAt": "2026-11-15T20:04:46.000Z",
     "collectedAt": "2026-11-15T21:03:34.990Z"
+  },
+  "social-450d5f868b38": {
+    "id": "social-450d5f868b38",
+    "url": "https://x.com/Commanders/status/2122117445976576412",
+    "text": "Stef makin' plays 💪 @Gatorade@twitter.com x #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/623/222/663/489/626/original/55e20684683b3222.jpg"
+    ],
+    "publishedAt": "2026-11-16T00:00:00.000Z",
+    "collectedAt": "2026-11-16T03:05:37.599Z"
+  },
+  "social-6e716fdd0511": {
+    "id": "social-6e716fdd0511",
+    "url": "https://x.com/JPFinlayNBCS/status/2122114636480680074",
+    "text": "Crazy smart special teams in Seattle",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-15T23:48:50.000Z",
+    "collectedAt": "2026-11-16T03:05:39.104Z"
+  },
+  "social-cc0c001da827": {
+    "id": "social-cc0c001da827",
+    "url": "https://x.com/JPFinlayNBCS/status/2122113874979885313",
+    "text": "The current scene in Dallas looks good for the Commanders NFC East chase",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-15T23:45:49.000Z",
+    "collectedAt": "2026-11-16T03:05:39.104Z"
+  },
+  "social-e419a018fb91": {
+    "id": "social-e419a018fb91",
+    "url": "https://x.com/BenStandig/status/2122122283636371641",
+    "text": "Hanging with a Commanders fan.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/623/298/511/046/318/original/6f1331a086748d59.jpg"
+    ],
+    "publishedAt": "2026-11-16T00:19:14.000Z",
+    "collectedAt": "2026-11-16T03:05:41.889Z"
+  },
+  "social-4a4bce67188d": {
+    "id": "social-4a4bce67188d",
+    "url": "https://x.com/tashanreed/status/2122154058903617631",
+    "text": "I don't know what you do about Chase 😂",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-16T02:25:30.000Z",
+    "collectedAt": "2026-11-16T03:05:43.221Z"
+  },
+  "social-eca707fb0772": {
+    "id": "social-eca707fb0772",
+    "url": "https://x.com/rydunleavy/status/2122120281179471979",
+    "text": "Bad news for #Giants : #Niners are a freight train coming to MetLife Stadium on 12/6 Good news for #Giants : The #Cowboys defense. Losing the tiebreaker vs #Commanders is rough, but I can't shake that they might have been willing to trade one of their best players to Giants for a Day 2 draft pcick so do they even believe internally that they can compete?",
+    "handle": "rydunleavy",
+    "author": "Ryan Dunleavy",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-16T00:11:16.000Z",
+    "collectedAt": "2026-11-16T03:05:53.868Z"
   }
 }

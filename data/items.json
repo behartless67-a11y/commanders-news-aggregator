@@ -2279,18 +2279,6 @@
     "publishedAt": "2026-10-04T23:00:00.000Z",
     "collectedAt": "2026-10-07T02:43:27.056Z"
   },
-  "beltway-football-fbfb9813c46f": {
-    "id": "beltway-football-fbfb9813c46f",
-    "sourceId": "beltway-football",
-    "sourceName": "Beltway Football",
-    "sourceHomepage": "https://art19.com/shows/beltway-football",
-    "category": "team",
-    "url": "https://art19.com/shows/beltway-football/episodes/49162e78-bada-428c-aded-3616c8ccc662",
-    "title": "London Day 2: Previewing Commanders vs. Colts at an English pub",
-    "excerpt": "JP Finlay and Mitch Tischler join you from The Barrow Boy & Banker to break down the Washington Commanders' Week 4 matchup with the Colts at Tottenham Hotspur Stadium. It's a pod party you won't want to miss.\n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
-    "publishedAt": "2026-10-01T22:30:00.000Z",
-    "collectedAt": "2026-10-07T02:43:27.056Z"
-  },
   "clutchpoints-f80d275f6253": {
     "id": "clutchpoints-f80d275f6253",
     "sourceId": "clutchpoints",
@@ -17482,5 +17470,17 @@
     "excerpt": "Indiana Hoosiers wide receiver Charlie Becker offers the Washington Commanders a potentially tempting path beyond Terry McLaurin.",
     "publishedAt": "2026-11-15T17:00:03.000Z",
     "collectedAt": "2026-11-15T21:03:23.015Z"
+  },
+  "hogs-haven-dd906ae8a9c6": {
+    "id": "hogs-haven-dd906ae8a9c6",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/455600/washington-commanders-nfc-east-cowboys-standings-nfl-week-10",
+    "title": "Where Washington Commanders stand in NFC East after Cowboys loss",
+    "excerpt": "The Commanders vaulted themselves back to relevance with Thursday night’s victory over the Giants. \n\n After spending the season’s first half mired in irrelevance, save a few embarrassing moments, this spot feels like a ray of sunshine. \n\n Let’s go ahead and enjoy this for a second. Like, take a deep freaking breath. \n\n The Commanders will try to hold it as long as they can. \n\n Despite having a dormant NFL Sunday, the Commanders were paying attention to Sunday afternoon’s clash between the…",
+    "publishedAt": "2026-11-16T00:47:07.000Z",
+    "collectedAt": "2026-11-16T03:05:27.559Z"
   }
 }

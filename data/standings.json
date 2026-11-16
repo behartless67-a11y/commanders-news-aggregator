@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-11-15T21:03:53.896Z",
+  "fetchedAt": "2026-11-16T03:05:57.975Z",
   "teams": [
     {
       "abbr": "NYG",
@@ -12,9 +12,9 @@
     {
       "abbr": "DAL",
       "name": "Dallas Cowboys",
-      "overall": "4-5",
-      "streak": "W1",
-      "winPercent": 0.44444445
+      "overall": "4-6",
+      "streak": "L1",
+      "winPercent": 0.4
     },
     {
       "abbr": "WAS",
