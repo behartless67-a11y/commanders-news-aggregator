@@ -1,18 +1,18 @@
 {
-  "fetchedAt": "2026-11-09T21:50:43.199Z",
+  "fetchedAt": "2026-11-16T21:30:50.349Z",
   "uva": {
     "lastGame": {
-      "date": "2026-10-31T19:45Z",
-      "uvaScore": "7",
-      "opponentScore": "51",
-      "opponent": "Wake Forest Demon Deacons",
-      "isHome": false,
-      "won": false,
-      "venue": "Allegacy Federal Credit Union Stadium"
+      "date": "2026-11-14T20:30Z",
+      "uvaScore": "36",
+      "opponentScore": "7",
+      "opponent": "California Golden Bears",
+      "isHome": true,
+      "won": true,
+      "venue": "Scott Stadium"
     },
     "nextGame": {
-      "date": "2026-11-14T20:30Z",
-      "opponent": "California Golden Bears",
+      "date": "2026-11-21T17:30Z",
+      "opponent": "North Carolina Tar Heels",
       "isHome": true
     }
   },
