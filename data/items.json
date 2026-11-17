@@ -1,52 +1,4 @@
 {
-  "hogs-haven-53b6ba7c0562": {
-    "id": "hogs-haven-53b6ba7c0562",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/445867/commanders-will-sport-new-logo-in-2027-season-report-all-atwitter",
-    "title": "Commanders will sport new logo in 2027 season – report – All aTwitter",
-    "excerpt": "All aTwitter – 3 October 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along with a smattering of other things. \n Click here for Washington Commanders Beat Writers Twitter Feed \n Click here for NFL News, Rumors & Reports Twitter Feed \n Tip: If a tweet isn’t fully visible on your screen, clicking on the date at the bottom of the tweet will…",
-    "publishedAt": "2026-10-03T04:00:00.000Z",
-    "collectedAt": "2026-10-03T06:05:29.899Z"
-  },
-  "commanders-youtube-2765f44cd985": {
-    "id": "commanders-youtube-2765f44cd985",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=E80VYfPLfPU",
-    "title": "CB Amik Robertson + Linebackers In London + Colts Preview I The Players Club",
-    "excerpt": "",
-    "publishedAt": "2026-10-03T04:05:28.000Z",
-    "collectedAt": "2026-10-03T08:05:31.884Z"
-  },
-  "hogs-haven-6b7d71e123b6": {
-    "id": "hogs-haven-6b7d71e123b6",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/445385/who-gets-credit-for-commanders-upset-of-seahawks-survey-results",
-    "title": "Who gets credit for Commanders upset of Seahawks? – survey results",
-    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Players of the Washington Commanders pose for a photo during the second half against the Seattle Seahawks at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images \n \n Sunday’s 33-31 upset over the Seattle Seahawks did a lot more than just put a mark in the win column. It gave Commanders fans a collective sigh of relief and brought back an energy that seemed completely sapped just seven days…",
-    "publishedAt": "2026-10-03T09:00:00.000Z",
-    "collectedAt": "2026-10-03T09:40:14.469Z"
-  },
-  "yahoo-nfl-ea884e6d94bc": {
-    "id": "yahoo-nfl-ea884e6d94bc",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/did-offense-defense-dan-quinn-090000169.html",
-    "title": "Did the offense, defense, or Dan Quinn win it for Washington? Fans weigh in after the Seattle upset - survey results",
-    "excerpt": "LANDOVER, MARYLAND - SEPTEMBER 27: Players of the Washington Commanders pose for a photo during the second half against the Seattle Seahawks at Northwest Stadium on September 27, 2026 in Landover, Maryland. (Photo by Scott Taetsch/Getty Images) | Getty Images Sunday’s 33-31 upset over the Seattle Seahawks did a lot more than just put a mark in the win column. It gave Commanders fans a collective sigh of relief and brought back an energy that seemed completely sapped just seven days earlier.\n In…",
-    "publishedAt": "2026-10-03T09:00:00.000Z",
-    "collectedAt": "2026-10-03T09:40:21.345Z"
-  },
   "riggos-rag-b241d995334f": {
     "id": "riggos-rag-b241d995334f",
     "sourceId": "riggos-rag",
@@ -17278,5 +17230,17 @@
     "excerpt": "Thursday night's game became surprisingly entertaining, except for Giants fans who still don't quite understand how the Commanders won the game.\n The audience wasn't surprising — a good-not-great 16.29 million on average watched the game on Prime Video.\n It was a 17-percent increase over last year's Week 10 Thursday night game between the Raiders and Broncos, at 13.93 million. Which continues to be a standard basis for comparison, even if it still seems to be not fully apples-to-apples.\n The…",
     "publishedAt": "2026-11-16T20:58:26.000Z",
     "collectedAt": "2026-11-16T23:05:39.303Z"
+  },
+  "bullock-film-room-7d1dff161b29": {
+    "id": "bullock-film-room-7d1dff161b29",
+    "sourceId": "bullock-film-room",
+    "sourceName": "Bullock's Film Room",
+    "sourceHomepage": "https://markbullock.substack.com/",
+    "category": "team",
+    "url": "https://markbullock.substack.com/p/commanders-learn-lesson-vs-cover",
+    "title": "Commanders Learn Lesson vs Cover-0",
+    "excerpt": "One of the biggest turnarounds from the Commanders tie back in Week 5 against the Giants and their win over the Giants on Thursday night was the plan of attack against Cover-0. In Week 5, the Giants spammed Cover-0 blitzes throughout the second half and overtime and the Commanders just couldn’t handle it. They continually attempted to take shots down the field to try and hit explosive plays rather than just finding a simple quick solution.\n I wrote in detail about this problem in a full…",
+    "publishedAt": "2026-11-15T12:41:05.000Z",
+    "collectedAt": "2026-11-17T09:05:39.749Z"
   }
 }
