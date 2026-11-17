@@ -1,30 +1,4 @@
 {
-  "social-4e9df1d1998a": {
-    "id": "social-4e9df1d1998a",
-    "url": "https://x.com/Commanders/status/2119127749008777518",
-    "text": "see you soon for a @NWStadium@twitter.com sellout 🙌 @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/576/479/434/661/469/original/3c3b6f1a575e9ad9.jpg"
-    ],
-    "publishedAt": "2026-11-07T18:00:01.000Z",
-    "collectedAt": "2026-11-07T20:14:56.073Z"
-  },
-  "social-f73cda58b8a5": {
-    "id": "social-f73cda58b8a5",
-    "url": "https://x.com/JPFinlayNBCS/status/2119135776541675701",
-    "text": "11 yr old soccer playoff game going to penalties 😬",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-07T18:31:55.000Z",
-    "collectedAt": "2026-11-07T20:14:57.411Z"
-  },
   "social-1a18891c1854": {
     "id": "social-1a18891c1854",
     "url": "https://x.com/BenStandig/status/2119158632935993717",
@@ -38,32 +12,6 @@
     ],
     "publishedAt": "2026-11-07T20:02:44.000Z",
     "collectedAt": "2026-11-07T20:15:00.084Z"
-  },
-  "social-b90dc667261b": {
-    "id": "social-b90dc667261b",
-    "url": "https://x.com/BenStandig/status/2119141431671448002",
-    "text": "The Commanders are expected to activate DT Johnny Newton off IR ahead of tomorrow's game against the Rams. Newton practiced in full all week. Sidelined 12 weeks with a torn pec, Newton spoke with reporters yesterday about how he's trained getting ready for this. He has been running a mile daily. Strict diet. Quinn praised Newton’s \"crazy shape.\" As for coming back with Payne/Kinlaw out, \"There probably is more responsibility on me, but pressure is a privilege. ... I'm just happy to be back.\"",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-07T18:54:23.000Z",
-    "collectedAt": "2026-11-07T20:15:00.084Z"
-  },
-  "social-30e01549996e": {
-    "id": "social-30e01549996e",
-    "url": "https://x.com/RapSheet/status/2119138119991820486",
-    "text": "The #Commanders are activating DL Johnny Newton, who practiced fully all week as he's recovering from a torn pectoral muscle, to the 53-man roster from IR. He was previously listed as questionable.",
-    "handle": "RapSheet",
-    "author": "Ian Rapoport",
-    "label": "",
-    "sourceKey": "@RapSheet",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/576/630/508/058/149/original/be5a9d5234b55678.jpg"
-    ],
-    "publishedAt": "2026-11-07T18:41:14.000Z",
-    "collectedAt": "2026-11-07T20:15:05.758Z"
   },
   "social-956303e4548b": {
     "id": "social-956303e4548b",
@@ -101,18 +49,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-07T21:01:54.000Z",
-    "collectedAt": "2026-11-07T23:39:46.806Z"
-  },
-  "social-5f7095117f7c": {
-    "id": "social-5f7095117f7c",
-    "url": "https://x.com/JFowlerESPN/status/2119137761349214562",
-    "text": "This is pretty great from Aidan Hutchinson.",
-    "handle": "JFowlerESPN",
-    "author": "Jeremy Fowler",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-07T18:39:48.000Z",
     "collectedAt": "2026-11-07T23:39:46.806Z"
   },
   "social-c84b7b9f3ca1": {
