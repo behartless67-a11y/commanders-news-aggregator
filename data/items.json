@@ -1,40 +1,4 @@
 {
-  "riggos-rag-b241d995334f": {
-    "id": "riggos-rag-b241d995334f",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-7-round-2027-nfl-mock-draft-shaped-early-warning-signs",
-    "title": "Commanders 7-round 2027 NFL mock draft shaped by early warning signs",
-    "excerpt": "The Washington Commanders' warning signs are becoming clearer, and general manager Adam Peters has a full complement of 2027 draft picks to solve them.",
-    "publishedAt": "2026-10-03T10:00:04.000Z",
-    "collectedAt": "2026-10-03T10:05:30.800Z"
-  },
-  "riggos-rag-32b591e1c349": {
-    "id": "riggos-rag-32b591e1c349",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/marcus-mariota-makes-commanders-cautious-jayden-daniels-call-easy-one",
-    "title": "Marcus Mariota makes Commanders’ cautious Jayden Daniels call an easy one",
-    "excerpt": "Veteran quarterback Marcus Mariota made the Washington Commanders’ cautious Jayden Daniels call an easy one to make.",
-    "publishedAt": "2026-10-03T11:30:00.000Z",
-    "collectedAt": "2026-10-03T12:05:32.535Z"
-  },
-  "riggos-rag-bdaf9e1afe03": {
-    "id": "riggos-rag-bdaf9e1afe03",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/chig-okonkwo-return-gives-commanders-counter-colts-star-tyler-warren",
-    "title": "Chig Okonkwo’s return gives Commanders a counter to Colts star Tyler Warren",
-    "excerpt": "Chig Okonkwo’s return gives the Washington Commanders a counter to Indianapolis Colts star tight end Tyler Warren.",
-    "publishedAt": "2026-10-03T13:00:00.000Z",
-    "collectedAt": "2026-10-03T14:05:31.695Z"
-  },
   "yahoo-nfl-94df04c47671": {
     "id": "yahoo-nfl-94df04c47671",
     "sourceId": "yahoo-nfl",
@@ -17242,5 +17206,77 @@
     "excerpt": "One of the biggest turnarounds from the Commanders tie back in Week 5 against the Giants and their win over the Giants on Thursday night was the plan of attack against Cover-0. In Week 5, the Giants spammed Cover-0 blitzes throughout the second half and overtime and the Commanders just couldn’t handle it. They continually attempted to take shots down the field to try and hit explosive plays rather than just finding a simple quick solution.\n I wrote in detail about this problem in a full…",
     "publishedAt": "2026-11-15T12:41:05.000Z",
     "collectedAt": "2026-11-17T09:05:39.749Z"
+  },
+  "hogs-haven-773f50f2abfc": {
+    "id": "hogs-haven-773f50f2abfc",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-analysis/455751/washingtons-offensive-identity-is-beginning-to-take-shape-commanders-film-session",
+    "title": "Washington’s offensive identity is beginning to take shape|Commanders Film Session",
+    "excerpt": "EAST RUTHERFORD, NJ - NOVEMBER 12: Jayden Daniels #5 of the Washington Commanders celebrates during an NFL football game against the New York Giants at MetLife Stadium on November 12, 2026 in East Rutherford, New Jersey. (Photo by Cooper Neill/Getty Images) | Getty Images The Washington Commanders handled the New York Giants’ pressure packages significantly better than they did in their first matchup in Week 5, and the improvement stemmed from several areas. Offensive coordinator David Blough…",
+    "publishedAt": "2026-11-17T11:49:19.000Z",
+    "collectedAt": "2026-11-17T13:28:31.745Z"
+  },
+  "riggos-rag-0d75fc5ad28c": {
+    "id": "riggos-rag-0d75fc5ad28c",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/washington-commanders-rushing-struggles-jacory-croskey-merritt-return-feel-urgent",
+    "title": "Commanders’ rushing struggles make Jacory Croskey-Merritt’s return feel urgent",
+    "excerpt": "The Washington Commanders’ rushing struggles make Jacory Croskey-Merritt’s return feel urgent before taking on the Cincinnati Bengals.",
+    "publishedAt": "2026-11-17T12:30:00.000Z",
+    "collectedAt": "2026-11-17T13:28:32.665Z"
+  },
+  "riggos-rag-aa55648d9389": {
+    "id": "riggos-rag-aa55648d9389",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-offseason-decisions-washington-commanders-should-already-questioning",
+    "title": "5 offseason decisions the Commanders should already be questioning",
+    "excerpt": "What offseason decisions by the Washington Commanders should those in power already be questioning after nine games in 2026?",
+    "publishedAt": "2026-11-17T11:00:05.000Z",
+    "collectedAt": "2026-11-17T13:28:32.665Z"
+  },
+  "athletic-jhabvala-66d3df46113d": {
+    "id": "athletic-jhabvala-66d3df46113d",
+    "sourceId": "athletic-jhabvala",
+    "sourceName": "Nicki Jhabvala (The Athletic)",
+    "sourceHomepage": "https://www.nytimes.com/athletic/author/nicki-jhabvala/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7789058/2026/11/17/commanders-defense-bengals-joe-burrow-monday-night-football",
+    "title": "The Commanders' defense is making progress, but here comes Joe Burrow",
+    "excerpt": "The Commanders' defense has turned a corner since Washington's bye week, but Monday night will bring the toughest challenge yet.",
+    "publishedAt": "2026-11-17T12:36:23.000Z",
+    "collectedAt": "2026-11-17T13:28:33.416Z"
+  },
+  "yahoo-nfl-2a0bea28ebf1": {
+    "id": "yahoo-nfl-2a0bea28ebf1",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/future-hogs-week-11-college-130000934.html",
+    "title": "Future Hogs Week 11: College football players who could help the Commanders",
+    "excerpt": "BATON ROUGE, LA - NOVEMBER 14: Jelani McDonald #4 of the Texas Longhorns celebrates after his second interception of the night during the first half of a game against the LSU Tigers at Tiger Stadium on November 14, 2026 in Baton Rouge, Louisiana. (Photo by Derick Hingle/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images The college football games from Week 11 are unlikely to change the College Football Playoff landscape much because 11 of the top 12 teams in the playoff…",
+    "publishedAt": "2026-11-17T13:00:00.000Z",
+    "collectedAt": "2026-11-17T13:28:39.015Z"
+  },
+  "yahoo-nfl-9327094b9a33": {
+    "id": "yahoo-nfl-9327094b9a33",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/terps-nfl-week-10-stefon-114000079.html",
+    "title": "Terps in the NFL Week 10: Stefon Diggs scores in victory to keep Commanders season alive",
+    "excerpt": "EAST RUTHERFORD, NJ - NOVEMBER 12: Washington Commanders Wide Receiver Stefon Diggs (3) falls into the end zone to score a touchdown during the second half of the National Football League game between the Washington Commanders and New York Giants on November 12, 2026, at MetLife Stadium in East Rutherford, NJ. (Photo by Gregory Fisher/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images Week 10 of the NFL season concluded with 17 Maryland football alumni seeing the field.…",
+    "publishedAt": "2026-11-17T11:40:00.000Z",
+    "collectedAt": "2026-11-17T13:28:39.015Z"
   }
 }
