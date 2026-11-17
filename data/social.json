@@ -1,32 +1,4 @@
 {
-  "social-1a18891c1854": {
-    "id": "social-1a18891c1854",
-    "url": "https://x.com/BenStandig/status/2119158632935993717",
-    "text": "Softer schedule awaits the Commanders. Now comes the hard part. softer-schedule-awaits-the-commanders",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/576/948/568/613/939/original/fb2e0ad2cf90c329.jpg"
-    ],
-    "publishedAt": "2026-11-07T20:02:44.000Z",
-    "collectedAt": "2026-11-07T20:15:00.084Z"
-  },
-  "social-956303e4548b": {
-    "id": "social-956303e4548b",
-    "url": "https://x.com/Commanders/status/2119173045931983095",
-    "text": "We have made the following roster moves: - Activated DT Jer’Zhan Newton from the Reserve/Injured List and removed him from the injury report - Placed WR Dyami Brown on the Reserve/Injured List - Elevated WR Jaden Bradley from the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/577/176/553/356/784/original/5afdaafe1dd6afb5.jpg"
-    ],
-    "publishedAt": "2026-11-07T21:00:01.000Z",
-    "collectedAt": "2026-11-07T23:39:43.993Z"
-  },
   "social-4e5b07592d01": {
     "id": "social-4e5b07592d01",
     "url": "https://x.com/john_keim/status/2119178204200186187",
@@ -37,18 +9,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-07T21:20:30.000Z",
-    "collectedAt": "2026-11-07T23:39:46.806Z"
-  },
-  "social-02e2da7d8711": {
-    "id": "social-02e2da7d8711",
-    "url": "https://x.com/john_keim/status/2119173521649672629",
-    "text": "Multiple moves today: DT Jer’Zhan Newton activated off IR. No longer on the injury report and will play They placed WR Dyami Brown (calf) on IR WR Jaden Bradley was elevated off the practice squad",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-07T21:01:54.000Z",
     "collectedAt": "2026-11-07T23:39:46.806Z"
   },
   "social-c84b7b9f3ca1": {
@@ -74,18 +34,6 @@
     "images": [],
     "publishedAt": "2026-11-07T21:52:11.000Z",
     "collectedAt": "2026-11-07T23:39:48.445Z"
-  },
-  "social-673c51086444": {
-    "id": "social-673c51086444",
-    "url": "https://x.com/tashanreed/status/2119173276727484721",
-    "text": "The #Commanders have activated Newton, so he'll play tomorrow. Brown is headed to IR due to his calf injury.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-07T21:00:56.000Z",
-    "collectedAt": "2026-11-07T23:39:49.820Z"
   },
   "social-2d44fd7998dc": {
     "id": "social-2d44fd7998dc",
