@@ -70,11 +70,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "12"
+          "value": "14"
         },
         {
           "label": "YDS",
-          "value": "233"
+          "value": "260"
         },
         {
           "label": "TD",
@@ -147,19 +147,19 @@
       "fields": [
         {
           "label": "CMP/ATT",
-          "value": "115/180"
+          "value": "138/213"
         },
         {
           "label": "YDS",
-          "value": "1,250"
+          "value": "1,499"
         },
         {
           "label": "TD",
-          "value": "7"
+          "value": "10"
         },
         {
           "label": "INT",
-          "value": "0"
+          "value": "2"
         }
       ]
     }
@@ -176,15 +176,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "30"
+          "value": "36"
         },
         {
           "label": "YDS",
-          "value": "303"
+          "value": "386"
         },
         {
           "label": "TD",
-          "value": "5"
+          "value": "6"
         }
       ]
     }
@@ -201,11 +201,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "24"
+          "value": "33"
         },
         {
           "label": "YDS",
-          "value": "83"
+          "value": "109"
         },
         {
           "label": "TD",
@@ -230,7 +230,23 @@
     "position": "RB",
     "espnId": "5151317",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5151317.png",
-    "stats": null
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "2"
+        },
+        {
+          "label": "YDS",
+          "value": "4"
+        },
+        {
+          "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
   },
   {
     "slug": "van-jefferson",
@@ -377,11 +393,11 @@
       "fields": [
         {
           "label": "REC",
-          "value": "23"
+          "value": "27"
         },
         {
           "label": "YDS",
-          "value": "239"
+          "value": "263"
         },
         {
           "label": "TD",
@@ -445,15 +461,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "1"
+          "value": "5"
         },
         {
           "label": "YDS",
-          "value": "6"
+          "value": "48"
         },
         {
           "label": "TD",
-          "value": "0"
+          "value": "1"
         }
       ]
     }
@@ -479,11 +495,11 @@
       "fields": [
         {
           "label": "CAR",
-          "value": "54"
+          "value": "65"
         },
         {
           "label": "YDS",
-          "value": "228"
+          "value": "275"
         },
         {
           "label": "TD",
@@ -504,15 +520,15 @@
       "fields": [
         {
           "label": "REC",
-          "value": "26"
+          "value": "28"
         },
         {
           "label": "YDS",
-          "value": "284"
+          "value": "326"
         },
         {
           "label": "TD",
-          "value": "1"
+          "value": "2"
         }
       ]
     }
@@ -613,7 +629,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "7"
+          "value": "12"
         },
         {
           "label": "SACK",
@@ -638,7 +654,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "22"
+          "value": "24"
         },
         {
           "label": "SACK",
@@ -663,7 +679,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "30"
+          "value": "36"
         },
         {
           "label": "SACK",
@@ -696,7 +712,7 @@
         },
         {
           "label": "INT",
-          "value": "2"
+          "value": "3"
         }
       ]
     }
@@ -763,7 +779,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "9"
+          "value": "10"
         },
         {
           "label": "SACK",
@@ -788,7 +804,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "6"
         },
         {
           "label": "SACK",
@@ -813,7 +829,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "49"
+          "value": "55"
         },
         {
           "label": "SACK",
@@ -863,7 +879,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "38"
+          "value": "43"
         },
         {
           "label": "SACK",
@@ -888,7 +904,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "12"
+          "value": "14"
         },
         {
           "label": "SACK",
@@ -938,7 +954,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "3"
+          "value": "4"
         },
         {
           "label": "SACK",
@@ -963,7 +979,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "8"
+          "value": "9"
         },
         {
           "label": "SACK",
@@ -988,11 +1004,11 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "16"
+          "value": "20"
         },
         {
           "label": "SACK",
-          "value": "4"
+          "value": "5"
         },
         {
           "label": "INT",
@@ -1013,7 +1029,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "6"
+          "value": "8"
         },
         {
           "label": "SACK",
@@ -1038,7 +1054,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "53"
+          "value": "62"
         },
         {
           "label": "SACK",
@@ -1063,7 +1079,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "48"
+          "value": "53"
         },
         {
           "label": "SACK",
@@ -1113,7 +1129,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "11"
+          "value": "13"
         },
         {
           "label": "SACK",
@@ -1138,7 +1154,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "67"
+          "value": "80"
         },
         {
           "label": "SACK",
@@ -1163,7 +1179,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "17"
+          "value": "20"
         },
         {
           "label": "SACK",
@@ -1188,7 +1204,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "5"
+          "value": "7"
         },
         {
           "label": "SACK",
@@ -1247,11 +1263,11 @@
       "fields": [
         {
           "label": "FG",
-          "value": "16-19"
+          "value": "17-20"
         },
         {
           "label": "XP",
-          "value": "12/15"
+          "value": "15/18"
         }
       ]
     }
@@ -1268,11 +1284,11 @@
       "fields": [
         {
           "label": "PUNTS",
-          "value": "36"
+          "value": "40"
         },
         {
           "label": "AVG",
-          "value": "48.6"
+          "value": "48.7"
         },
         {
           "label": "IN20",
@@ -1293,7 +1309,7 @@
       "fields": [
         {
           "label": "TCKL",
-          "value": "10"
+          "value": "14"
         },
         {
           "label": "SACK",
