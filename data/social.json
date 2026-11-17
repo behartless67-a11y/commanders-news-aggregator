@@ -1,28 +1,4 @@
 {
-  "social-8d1612a1c141": {
-    "id": "social-8d1612a1c141",
-    "url": "https://x.com/Commanders/status/2118882125009338823",
-    "text": "One of the most iconic plays in team history Riggo’s Run",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-07T01:44:00.000Z",
-    "collectedAt": "2026-11-07T05:59:47.079Z"
-  },
-  "social-ca7b9f85ba69": {
-    "id": "social-ca7b9f85ba69",
-    "url": "https://x.com/BenStandig/status/2118884579138232661",
-    "text": "I grasp that the person behind this tweet wasn't born when Riggo roamed. All good. But to be clear, this is the most iconic play in team history. Talk about a cinematic moment.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-07T01:53:45.000Z",
-    "collectedAt": "2026-11-07T05:59:51.618Z"
-  },
   "social-c399bb7f7418": {
     "id": "social-c399bb7f7418",
     "url": "https://x.com/Commanders/status/2119078419031904345",
@@ -5983,5 +5959,55 @@
     "images": [],
     "publishedAt": "2026-11-16T20:02:41.000Z",
     "collectedAt": "2026-11-16T23:05:47.738Z"
+  },
+  "social-ded9a74fe929": {
+    "id": "social-ded9a74fe929",
+    "url": "https://x.com/Commanders/status/2122468239607574740",
+    "text": "🙂‍↕️ @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/628/689/984/289/509/original/ecd3cee378e82e5a.jpg"
+    ],
+    "publishedAt": "2026-11-16T23:13:56.000Z",
+    "collectedAt": "2026-11-17T02:56:48.946Z"
+  },
+  "social-7bdf1b5f3c84": {
+    "id": "social-7bdf1b5f3c84",
+    "url": "https://x.com/BenStandig/status/2122506639668330658",
+    "text": "🎙 Kevin Durant interview. Commanders injury updates. Missing linebackers. More. kevin-durant/id1760952448?i=1000802380779",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-17T01:46:31.000Z",
+    "collectedAt": "2026-11-17T02:56:53.848Z"
+  },
+  "social-feb8c45ab019": {
+    "id": "social-feb8c45ab019",
+    "url": "https://x.com/MonSportsNet/status/2122494753400893706",
+    "text": ". @Commanders in the building 👀🏈 Jayden Daniels and Rachaad White are taking in some @WashWizards action tonight!",
+    "handle": "MonSportsNet",
+    "author": "Monumental Sports Network",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-17T00:59:17.000Z",
+    "collectedAt": "2026-11-17T02:56:53.848Z"
+  },
+  "social-69d0083ef8a9": {
+    "id": "social-69d0083ef8a9",
+    "url": "https://x.com/BenStandig/status/2122485983291814041",
+    "text": "NFC East by DVOA: 1. Cowboys (18th) 2. Commanders (20th) 3. Giants (24th) 4. Eagles (28th)",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-17T00:24:26.000Z",
+    "collectedAt": "2026-11-17T02:56:53.848Z"
   }
 }
