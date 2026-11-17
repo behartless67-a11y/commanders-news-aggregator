@@ -11,18 +11,6 @@
     "publishedAt": "2026-11-07T01:44:00.000Z",
     "collectedAt": "2026-11-07T05:59:47.079Z"
   },
-  "social-04fc452a1f78": {
-    "id": "social-04fc452a1f78",
-    "url": "https://x.com/Commanders/status/2118867277374525685",
-    "text": "WFH = When's Friday Here?!",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-07T00:45:00.000Z",
-    "collectedAt": "2026-11-07T05:59:47.079Z"
-  },
   "social-ca7b9f85ba69": {
     "id": "social-ca7b9f85ba69",
     "url": "https://x.com/BenStandig/status/2118884579138232661",
@@ -34,32 +22,6 @@
     "images": [],
     "publishedAt": "2026-11-07T01:53:45.000Z",
     "collectedAt": "2026-11-07T05:59:51.618Z"
-  },
-  "social-04ba20ba0ac5": {
-    "id": "social-04ba20ba0ac5",
-    "url": "https://x.com/BenStandig/status/2118850056128512504",
-    "text": "The Commanders opened the season with seven receivers on the active roster. Only three of them will be available against the Rams. commanders-wr-room-loses-two-more",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/572/126/677/276/266/original/c0bd6f8783fd8824.jpg"
-    ],
-    "publishedAt": "2026-11-06T23:36:34.000Z",
-    "collectedAt": "2026-11-07T05:59:51.618Z"
-  },
-  "social-063fb4e007f9": {
-    "id": "social-063fb4e007f9",
-    "url": "https://x.com/AdamSchefter/status/2118852411724878025",
-    "text": "Rams now say TE Terrance Ferguson is out for Sunday’s game against the Commanders.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "ESPN",
-    "sourceKey": "@AdamSchefter",
-    "images": [],
-    "publishedAt": "2026-11-06T23:45:55.000Z",
-    "collectedAt": "2026-11-07T05:59:55.579Z"
   },
   "social-c399bb7f7418": {
     "id": "social-c399bb7f7418",
