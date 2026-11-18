@@ -5906,5 +5906,33 @@
     "images": [],
     "publishedAt": "2026-11-17T19:05:31.000Z",
     "collectedAt": "2026-11-17T23:31:17.508Z"
+  },
+  "social-61485b6a4ebb": {
+    "id": "social-61485b6a4ebb",
+    "url": "https://x.com/Commanders/status/2122873676634915049",
+    "text": "aura (Hail Raiser edition)",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/634/995/002/586/798/original/2ae3c6d11e61d419.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/634/995/060/356/238/original/b31ed1e78b25ddf3.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/634/995/100/628/673/original/7ceac58c0558d860.jpg"
+    ],
+    "publishedAt": "2026-11-18T02:05:00.000Z",
+    "collectedAt": "2026-11-18T05:05:38.861Z"
+  },
+  "social-40b6cda77b9d": {
+    "id": "social-40b6cda77b9d",
+    "url": "https://x.com/john_keim/status/2122867881314558356",
+    "text": "Quick video on Commanders RB Jacory Croskey-Merritt set to resume practice. The impact. 816",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-18T01:41:58.000Z",
+    "collectedAt": "2026-11-18T05:05:41.600Z"
   }
 }

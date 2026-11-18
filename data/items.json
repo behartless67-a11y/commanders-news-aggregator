@@ -1,28 +1,4 @@
 {
-  "wjla-commanders-f9420cfa12a2": {
-    "id": "wjla-commanders-f9420cfa12a2",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-terry-mclaurin-hamstring-injury-questionable-rachaad-white-shoulder-indianapolis-colts-london-sunday-nfl-football-seattle-seahawks-receptions-touchdown-rushing-practice",
-    "title": "Terry McLaurin listed as doubtful for Colts matchup",
-    "excerpt": "Terry McLaurin’s status is uncertain with a hamstring injury, while Rachaad White is out for the Commanders’ game against the Colts in London.",
-    "publishedAt": "2026-10-04T01:20:31.000Z",
-    "collectedAt": "2026-10-04T02:05:36.619Z"
-  },
-  "commanders-youtube-b119dabdca43": {
-    "id": "commanders-youtube-b119dabdca43",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=hU-RjHqPR6A",
-    "title": "HC Dan Quinn Previews Colts Vs. Commanders | Washington Commanders | The Gameplan | NFL",
-    "excerpt": "",
-    "publishedAt": "2026-10-04T04:00:08.000Z",
-    "collectedAt": "2026-10-04T08:05:33.085Z"
-  },
   "hogs-haven-a7191bffb85f": {
     "id": "hogs-haven-a7191bffb85f",
     "sourceId": "hogs-haven",
@@ -1449,18 +1425,6 @@
     "title": "What to know about Athan Kaliakmanis, now starting at QB for the Commanders",
     "excerpt": "Kaliakmanis, a seventh-round rookie from Rutgers, is in for Washington after Marcus Mariota was ruled out with a knee injury.",
     "publishedAt": "2026-10-04T15:25:20.000Z",
-    "collectedAt": "2026-10-07T02:42:28.430Z"
-  },
-  "athletic-commanders-d52919854315": {
-    "id": "athletic-commanders-d52919854315",
-    "sourceId": "athletic-commanders",
-    "sourceName": "The Athletic",
-    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7645180/2026/10/04/colts-commanders-nfl-london-tottenham-tv",
-    "title": "Colts vs. Commanders in London: What to know about NFL's first U.K. game of 2026",
-    "excerpt": "Sunday marks the first of three NFL exports to the U.K. Here's how to tune in.",
-    "publishedAt": "2026-10-04T04:01:15.000Z",
     "collectedAt": "2026-10-07T02:42:28.430Z"
   },
   "bullock-film-room-39aaec7943ba": {
