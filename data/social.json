@@ -725,20 +725,6 @@
     "publishedAt": "2026-11-08T18:01:50.000Z",
     "collectedAt": "2026-11-08T20:23:38.897Z"
   },
-  "social-fdd947d69377": {
-    "id": "social-fdd947d69377",
-    "url": "https://mastodon.social/@atobsmith/117581939875471557",
-    "text": "It’s Game Day! #WashingtonCommanders #Commanders #HTTC #RaiseHail #nfl #LARvsWAS",
-    "handle": "atobsmith",
-    "author": "Michael Smith",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/581/939/814/671/700/original/8d304b3047fa2e01.jpg"
-    ],
-    "publishedAt": "2026-11-08T17:13:38.122Z",
-    "collectedAt": "2026-11-08T20:23:38.898Z"
-  },
   "social-ec0a765079c1": {
     "id": "social-ec0a765079c1",
     "url": "https://x.com/Commanders/status/2119526077597196364",
@@ -5882,5 +5868,83 @@
     "images": [],
     "publishedAt": "2026-11-18T01:41:58.000Z",
     "collectedAt": "2026-11-18T05:05:41.600Z"
+  },
+  "social-c4a687d7def6": {
+    "id": "social-c4a687d7def6",
+    "url": "https://x.com/JPFinlayNBCS/status/2123087551414010040",
+    "text": "Brandon Aiyuk reached out to Jayden Daniels \"about a month ago, and the two settled their differences. Daniels was receptive and understanding.\" Full story here from @JFowlerESPN : 79/week-11-buzz-fantasy-predictions-graziano-fowler-2026",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/638/340/898/413/095/original/30f5205f8dae6543.jpg"
+    ],
+    "publishedAt": "2026-11-18T16:14:51.000Z",
+    "collectedAt": "2026-11-18T17:16:28.821Z"
+  },
+  "social-3468fea387e9": {
+    "id": "social-3468fea387e9",
+    "url": "https://x.com/john_keim/status/2123091464116699395",
+    "text": "@ColeyHarvey Awesome. Congrats Coley",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-18T16:30:24.000Z",
+    "collectedAt": "2026-11-18T17:16:30.224Z"
+  },
+  "social-c3c8e8c0160c": {
+    "id": "social-c3c8e8c0160c",
+    "url": "https://x.com/SheilKapadia/status/2123072166078161132",
+    "text": "Since the Micah Parsons trade, the Cowboys have: * Traded a 1st, two 2nds, and a 4th for Q. Williams, Gary, and Joey Porter Jr. * Used 3 top-100 picks (including 2 in the first round) on defensive players. * Cycled through multiple DCs. And they rank 32nd in defensive EPA.",
+    "handle": "SheilKapadia",
+    "author": "Sheil Kapadia",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-18T15:13:43.000Z",
+    "collectedAt": "2026-11-18T17:16:30.224Z"
+  },
+  "social-cf4599c60514": {
+    "id": "social-cf4599c60514",
+    "url": "https://x.com/BenStandig/status/2123083955511722465",
+    "text": "Schedule math will-eight-wins-be-enough-to-win?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/638/323/567/629/980/original/9c46f9327642208a.jpg"
+    ],
+    "publishedAt": "2026-11-18T16:00:34.000Z",
+    "collectedAt": "2026-11-18T17:16:31.577Z"
+  },
+  "social-210f5f2059e8": {
+    "id": "social-210f5f2059e8",
+    "url": "https://x.com/RapSheet/status/2123065784880795978",
+    "text": "#Cowboys senior assistant coach Mike Pettine will now take over as play-caller, so do for the first time since he was with the #Packers in 2021. Action from coach Brian Schottenheimer after a stretch of defense he called “unacceptable.”",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/637/998/060/993/339/original/332339d02fab0885.jpg"
+    ],
+    "publishedAt": "2026-11-18T14:48:22.000Z",
+    "collectedAt": "2026-11-18T17:16:31.577Z"
+  },
+  "social-e3561b0fc2c8": {
+    "id": "social-e3561b0fc2c8",
+    "url": "https://x.com/tashanreed/status/2123067084976582890",
+    "text": "RE: tatuses/2123065689347113324 Might as well just fire him lol",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-18T14:53:32.000Z",
+    "collectedAt": "2026-11-18T17:16:33.166Z"
   }
 }
