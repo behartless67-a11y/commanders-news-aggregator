@@ -161,18 +161,6 @@
     "publishedAt": "2026-11-08T23:10:47.000Z",
     "collectedAt": "2026-11-09T06:32:50.303Z"
   },
-  "social-09c3198dc55e": {
-    "id": "social-09c3198dc55e",
-    "url": "https://x.com/BenStandig/status/2119566945829687529",
-    "text": "Jayden Daniels on the final plays.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-08T23:05:14.000Z",
-    "collectedAt": "2026-11-09T06:32:50.303Z"
-  },
   "social-24b8b92fa9aa": {
     "id": "social-24b8b92fa9aa",
     "url": "https://x.com/tashanreed/status/2119591203696222661",
@@ -4770,5 +4758,167 @@
     "images": [],
     "publishedAt": "2026-11-18T14:53:32.000Z",
     "collectedAt": "2026-11-18T17:16:33.166Z"
+  },
+  "social-8b9467ee52af": {
+    "id": "social-8b9467ee52af",
+    "url": "https://x.com/Commanders/status/2123166859063377944",
+    "text": "something new for this week ⚫️ @SherwinWilliams@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/639/579/817/106/153/original/68a9ea634d28eac2.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/639/579/904/546/995/original/c8f58935b1e92f63.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/639/579/958/854/560/original/f7ed5c26d1822511.jpg"
+    ],
+    "publishedAt": "2026-11-18T21:30:00.000Z",
+    "collectedAt": "2026-11-18T23:05:43.847Z"
+  },
+  "social-29957b43b31b": {
+    "id": "social-29957b43b31b",
+    "url": "https://x.com/JPFinlayNBCS/status/2123180740011586013",
+    "text": "The Cowboys, Commanders and Giants all have a shot at the NFC East. All 3 teams have major questions. Washington does have one answer, however, and his name is Jayden Daniels. My latest for @TheStandardDC@twitter.com : e/jp-finlay-how-realistic-is-the-commanders-chase-for-the-nfc-east-crown/",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-18T22:25:09.000Z",
+    "collectedAt": "2026-11-18T23:05:45.278Z"
+  },
+  "social-337976a828cb": {
+    "id": "social-337976a828cb",
+    "url": "https://x.com/JPFinlayNBCS/status/2123131626313941122",
+    "text": "New All Ears tonight - hit me with mailbag questions s=mHdv7HrEvgBr5xDJ",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-18T19:10:00.000Z",
+    "collectedAt": "2026-11-18T23:05:45.278Z"
+  },
+  "social-012d308be3c2": {
+    "id": "social-012d308be3c2",
+    "url": "https://x.com/JPFinlayNBCS/status/2123121113060237324",
+    "text": "Gonna talk Urban Meyer and the Terps next on @1067theFan@twitter.com",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-18T18:28:13.000Z",
+    "collectedAt": "2026-11-18T23:05:45.278Z"
+  },
+  "social-1742a0d7b4fb": {
+    "id": "social-1742a0d7b4fb",
+    "url": "https://x.com/DMRussini/status/2123101643331792911",
+    "text": "Will Brandon Aiyuk ever take another snap in a 49ers uniform? @DrewJRosenhaus@twitter.com explains why he and Aiyuk haven’t seriously discussed the possibility of him returning to San Francisco. More on The @RussiniReport@twitter.com :",
+    "handle": "DMRussini",
+    "author": "Dianna Russini",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-18T17:10:51.000Z",
+    "collectedAt": "2026-11-18T23:05:45.278Z"
+  },
+  "social-0cf0a5634a76": {
+    "id": "social-0cf0a5634a76",
+    "url": "https://x.com/john_keim/status/2123171885894733994",
+    "text": "Today's workouts: WR Elijah Cooks WR Cameron Dorner QB Mark Gronkowski WR Malik Heath WR Ainias Smith (when they work out WRs, they bring in a QB as well to throw to them).",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-18T21:49:58.000Z",
+    "collectedAt": "2026-11-18T23:05:46.822Z"
+  },
+  "social-4633e3daa622": {
+    "id": "social-4633e3daa622",
+    "url": "https://x.com/john_keim/status/2123171095297606049",
+    "text": "Sad news. Was a terrific writer and certainly a big personality. Clearly wrote with conviction on topics. Leaves behind a family.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-18T21:46:50.000Z",
+    "collectedAt": "2026-11-18T23:05:46.822Z"
+  },
+  "social-8e50cdbabdcc": {
+    "id": "social-8e50cdbabdcc",
+    "url": "https://x.com/BenStandig/status/2123185984200450480",
+    "text": "Source: The Commanders are expected to sign WR Malik Heath to the practice squad. Heath had 31 receptions in 37 games with the Packers (2023-25). Also spent time with the Falcons.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-18T22:46:00.000Z",
+    "collectedAt": "2026-11-18T23:05:48.114Z"
+  },
+  "social-ba89a41a5715": {
+    "id": "social-ba89a41a5715",
+    "url": "https://x.com/BenStandig/status/2123169545821020520",
+    "text": "The Commanders worked out the following players today: Elijah Cooks, WR, San Jose State Cameron Dorner, WR, North Texas Mark Gronowski, QB, Iowa Malik Heath, WR, Mississippi Ainias Smith, WR, Texas A&M",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-18T21:40:40.000Z",
+    "collectedAt": "2026-11-18T23:05:48.114Z"
+  },
+  "social-c9ad6ed8f266": {
+    "id": "social-c9ad6ed8f266",
+    "url": "https://x.com/BenStandig/status/2123167332495233331",
+    "text": "Oh, no. This is incredibly sad. I hadn't seen Mike for a bit as he and his family began living outside the States, but I always enjoyed our chats. Even when he went hard to the paint with takes I didn't buy, I still enjoyed our chats. He brought the gusto. More personally, as I tried to find a foothold in this industry, he supported my work publicly and privately, even when we didn't know each other well. RIP.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-18T21:31:53.000Z",
+    "collectedAt": "2026-11-18T23:05:48.114Z"
+  },
+  "social-0841ca019268": {
+    "id": "social-0841ca019268",
+    "url": "https://x.com/BenStandig/status/2123139549547405502",
+    "text": "Dug into several aspects of the Wizards' 8-game losing streak with @LedellsPlace@twitter.com , but one theme emerged most: Give AJ the damn ball. This episode is open to all (and is @HousefromDC@twitter.com approved). Take a listen. Subscribe. unnamed-wizards-pod-episode-5-give?r=5rru9i&utm_campaign=post&utm_medium=web",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/639/152/010/955/430/original/8f76fb0128a1fc5c.jpg"
+    ],
+    "publishedAt": "2026-11-18T19:41:29.000Z",
+    "collectedAt": "2026-11-18T23:05:48.114Z"
+  },
+  "social-33afcc508c1e": {
+    "id": "social-33afcc508c1e",
+    "url": "https://x.com/jeffzrebiec/status/2123142393075806703",
+    "text": "There have been times over the past three or four months where I wondered if Marlon Humphrey is actively trying to get cut.",
+    "handle": "jeffzrebiec",
+    "author": "Jeff Zrebiec",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-18T19:52:47.000Z",
+    "collectedAt": "2026-11-18T23:05:48.114Z"
+  },
+  "social-ac6ec3562ad8": {
+    "id": "social-ac6ec3562ad8",
+    "url": "https://x.com/JFowlerESPN/status/2123098816010490084",
+    "text": "Also here: Brandon Aiyuk and Jayden Daniels have reconciled. Aiyuk reached out about a month ago and the two are on good terms again.",
+    "handle": "JFowlerESPN",
+    "author": "Jeremy Fowler",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-18T16:59:37.000Z",
+    "collectedAt": "2026-11-18T23:05:49.622Z"
   }
 }
