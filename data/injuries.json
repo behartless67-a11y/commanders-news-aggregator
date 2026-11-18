@@ -1,22 +1,8 @@
 [
   {
-    "name": "Athan Kaliakmanis",
-    "position": "QB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
-    "name": "Chig Okonkwo",
-    "position": "TE",
-    "status": "Questionable",
-    "bodyPart": "Back",
-    "notes": null
-  },
-  {
     "name": "Colson Yankoff",
     "position": "TE",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Knee",
     "notes": null
   },
@@ -32,13 +18,6 @@
     "position": "WR",
     "status": "IR",
     "bodyPart": "Calf",
-    "notes": null
-  },
-  {
-    "name": "Isaac Yiadom",
-    "position": "CB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -93,15 +72,8 @@
   {
     "name": "Lucas Patrick",
     "position": "G",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Concussion",
-    "notes": null
-  },
-  {
-    "name": "Ricky Barber",
-    "position": "DT",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
