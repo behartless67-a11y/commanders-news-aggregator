@@ -1,18 +1,4 @@
 {
-  "social-4a53b0ed23ce": {
-    "id": "social-4a53b0ed23ce",
-    "url": "https://x.com/BenStandig/status/2119446588619710945",
-    "text": "Early arrival for John Riggins Day",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/581/447/835/803/219/original/2f36d2a431b8c219.jpg"
-    ],
-    "publishedAt": "2026-11-08T15:06:58.000Z",
-    "collectedAt": "2026-11-08T15:14:16.245Z"
-  },
   "social-fe39c33a5d22": {
     "id": "social-fe39c33a5d22",
     "url": "https://x.com/Commanders/status/2119522974847902195",
@@ -751,30 +737,6 @@
       "https://files.mastodon.social/media_attachments/files/117/581/939/814/671/700/original/8d304b3047fa2e01.jpg"
     ],
     "publishedAt": "2026-11-08T17:13:38.122Z",
-    "collectedAt": "2026-11-08T20:23:38.898Z"
-  },
-  "social-d216d0ffe7d5": {
-    "id": "social-d216d0ffe7d5",
-    "url": "https://mysportgallery.com/@slessans2/117581800853830607",
-    "text": "Happy game day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-11-08T16:38:16.000Z",
-    "collectedAt": "2026-11-08T20:23:38.898Z"
-  },
-  "social-0add1aff7833": {
-    "id": "social-0add1aff7833",
-    "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:gs6u2pkupaaj56bvpcyo4rg2/post/3mzstwjlvxq2w",
-    "text": "Happy game day to those who celebrate! #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans.bsky.social",
-    "author": "Seth “Football Collector”",
-    "label": "",
-    "sourceKey": "#RaiseHail",
-    "images": [],
-    "publishedAt": "2026-11-08T16:38:17.980Z",
     "collectedAt": "2026-11-08T20:23:38.898Z"
   },
   "social-ec0a765079c1": {
