@@ -87,18 +87,6 @@
     "publishedAt": "2026-11-09T01:51:50.000Z",
     "collectedAt": "2026-11-09T06:32:47.490Z"
   },
-  "social-ee18cb9ba484": {
-    "id": "social-ee18cb9ba484",
-    "url": "https://x.com/JPFinlayNBCS/status/2119567628670828919",
-    "text": "Live All Ears tonight 9pm. Hit me with mailbag questions s=0WevYkBPBOaq3TsM",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-08T23:07:56.000Z",
-    "collectedAt": "2026-11-09T06:32:47.490Z"
-  },
   "social-690a22b724ec": {
     "id": "social-690a22b724ec",
     "url": "https://x.com/john_keim/status/2119616648454054087",
@@ -134,58 +122,6 @@
     "images": [],
     "publishedAt": "2026-11-09T02:36:11.000Z",
     "collectedAt": "2026-11-09T06:32:50.303Z"
-  },
-  "social-505f3bc7d7d7": {
-    "id": "social-505f3bc7d7d7",
-    "url": "https://x.com/BenStandig/status/2119585893615116339",
-    "text": "Jayden Daniels on the final play:",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-09T00:20:31.000Z",
-    "collectedAt": "2026-11-09T06:32:50.303Z"
-  },
-  "social-8cd568876606": {
-    "id": "social-8cd568876606",
-    "url": "https://x.com/BenStandig/status/2119568343799898243",
-    "text": "Sean McVay spoke postgme about Emmanuel Forbes' playing \"tough\" in run support and wa \"sticky\" in coverage.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/583/350/828/964/729/original/a4edcc56ee301b20.jpg"
-    ],
-    "publishedAt": "2026-11-08T23:10:47.000Z",
-    "collectedAt": "2026-11-09T06:32:50.303Z"
-  },
-  "social-24b8b92fa9aa": {
-    "id": "social-24b8b92fa9aa",
-    "url": "https://x.com/tashanreed/status/2119591203696222661",
-    "text": "The latest episode of The Tashan Reed Show is out now on Substack. I broke down the #Commanders ' loss to the Rams and explained how I think they should handle the trade deadline: c-382401412?r=1gwknd&utm_medium=ios&utm_source=notes-share-action",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/583/702/944/856/095/original/d11c62dac6bab45e.jpg"
-    ],
-    "publishedAt": "2026-11-09T00:41:37.000Z",
-    "collectedAt": "2026-11-09T06:32:51.840Z"
-  },
-  "social-3c5e7d8a0757": {
-    "id": "social-3c5e7d8a0757",
-    "url": "https://x.com/tashanreed/status/2119567171751969210",
-    "text": "I'm going to livestream The Tashan Reed Show at 6:30 p.m. ET. I'll be breaking down the #Commanders ' loss to the Rams. Tune in here: 449032?utm_source=live-stream-scheduled-upsell",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-08T23:06:08.000Z",
-    "collectedAt": "2026-11-09T06:32:51.840Z"
   },
   "social-bfce35918ac5": {
     "id": "social-bfce35918ac5",
