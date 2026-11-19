@@ -13,18 +13,6 @@
     "publishedAt": "2026-11-09T22:01:03.000Z",
     "collectedAt": "2026-11-10T01:05:37.139Z"
   },
-  "social-a7a3c2336567": {
-    "id": "social-a7a3c2336567",
-    "url": "https://x.com/Commanders/status/2119870383830495354",
-    "text": "LIVE: HC Dan Quinn speaks to the media rmB",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-09T19:10:59.000Z",
-    "collectedAt": "2026-11-10T01:05:37.140Z"
-  },
   "social-41c9da67ddfa": {
     "id": "social-41c9da67ddfa",
     "url": "https://x.com/JPFinlayNBCS/status/2119920928402329707",
@@ -51,30 +39,6 @@
     "publishedAt": "2026-11-09T22:03:48.000Z",
     "collectedAt": "2026-11-10T01:05:38.583Z"
   },
-  "social-4bb8980f6940": {
-    "id": "social-4bb8980f6940",
-    "url": "https://x.com/JPFinlayNBCS/status/2119871009075409326",
-    "text": "Dan Quinn “optimistic” for both Trey Burks and Amik Robertson playing Thursday night",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-09T19:13:28.000Z",
-    "collectedAt": "2026-11-10T01:05:38.583Z"
-  },
-  "social-3c15af6005af": {
-    "id": "social-3c15af6005af",
-    "url": "https://x.com/JPFinlayNBCS/status/2119870788136227306",
-    "text": "Dan Quinn says he frequently talks with Josh Harris and there’s always a call on Mondays to go over the previous game",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-09T19:12:35.000Z",
-    "collectedAt": "2026-11-10T01:05:38.583Z"
-  },
   "social-767a7afc41b3": {
     "id": "social-767a7afc41b3",
     "url": "https://x.com/john_keim/status/2119923028012445964",
@@ -99,30 +63,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/588/844/782/757/388/original/225985a14afb56af.jpg"
     ],
     "publishedAt": "2026-11-09T22:08:04.000Z",
-    "collectedAt": "2026-11-10T01:05:39.993Z"
-  },
-  "social-7b68c51cfcbd": {
-    "id": "social-7b68c51cfcbd",
-    "url": "https://x.com/john_keim/status/2119894218571493654",
-    "text": "Been that kind of season: On the Daniels fumble, Bates is coming over to block Garrett. But... Aaron Donald, squeezing between Cosmi and Conerly, pushes the RT back enough that Sinnott trips over his foot en route to the block. That forced Daniels up and Garrett strips the ball. The kicker, of course, is that if there's no trip and even a medium obstruction, Daniels has Van Jefferson wide open at the 35; probably picks up the first down. So instead of picking up a 1st and 20, a fumble led to a field goal and 10-6 halftime lead. 2026.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-09T20:45:42.000Z",
-    "collectedAt": "2026-11-10T01:05:39.993Z"
-  },
-  "social-a856002d84fc": {
-    "id": "social-a856002d84fc",
-    "url": "https://x.com/john_keim/status/2119871288181436425",
-    "text": "Dan Quinn said he's \"more optimistic\" heading into Thursday about WR Trey Burks, but tomorrow will provide more info. Quinn also said he's also optimistic about Amik Robertson who injured his ankle Sunday.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-09T19:14:35.000Z",
     "collectedAt": "2026-11-10T01:05:39.993Z"
   },
   "social-d2b3fb988296": {
@@ -165,30 +105,6 @@
     "publishedAt": "2026-11-09T21:45:31.000Z",
     "collectedAt": "2026-11-10T01:05:41.367Z"
   },
-  "social-188fdd00732e": {
-    "id": "social-188fdd00732e",
-    "url": "https://x.com/BenStandig/status/2119871205494710702",
-    "text": "Dan Quinn says there is more optimism with Treylon Burks' availability for Thursday after sitting out yesterday.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-09T19:14:15.000Z",
-    "collectedAt": "2026-11-10T01:05:41.368Z"
-  },
-  "social-89ecfa88a2c2": {
-    "id": "social-89ecfa88a2c2",
-    "url": "https://x.com/BenStandig/status/2119869329374171626",
-    "text": "Dan Quinn said Washington could turn to Matt Gulbin or Nick Allegretti if Lucas Patrick is not out of concussion protocol by Thursday's game.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-09T19:06:48.000Z",
-    "collectedAt": "2026-11-10T01:05:41.368Z"
-  },
   "social-3013db1f9d15": {
     "id": "social-3013db1f9d15",
     "url": "https://x.com/tashanreed/status/2119913520636825918",
@@ -200,56 +116,6 @@
     "images": [],
     "publishedAt": "2026-11-09T22:02:24.000Z",
     "collectedAt": "2026-11-10T01:05:42.739Z"
-  },
-  "social-00a048aa5d6b": {
-    "id": "social-00a048aa5d6b",
-    "url": "https://x.com/tashanreed/status/2119871085915279614",
-    "text": "Quinn said the #Commanders are optimistic about the chances for CB Amik Robertson (ankle) and WR Treylon Burks (foot) to play against the Giants on Thursday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-09T19:13:46.000Z",
-    "collectedAt": "2026-11-10T01:05:42.739Z"
-  },
-  "social-aafb865ee443": {
-    "id": "social-aafb865ee443",
-    "url": "https://x.com/tashanreed/status/2119869184569909470",
-    "text": "#Commanders HC Dan Quinn said Matt Gulbin and Nick Allegretti will both be candidates to start at center if Lucas Patrick can't clear concussion protocol by Thursday.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-09T19:06:13.000Z",
-    "collectedAt": "2026-11-10T01:05:42.739Z"
-  },
-  "social-702e7a62c99d": {
-    "id": "social-702e7a62c99d",
-    "url": "https://mastodon.social/@top_news/117588432077920378",
-    "text": "Commanders had one final shot at the end zone, and they blew it The Commanders, in key moments of games, continue to have a little too much Backward Hat Energy. alk/rumor-mill/news/commanders-had-one-final-shot-at-the-end-zone-and-they-blew-it #TopNews #News #Commanders #Rams #BackwardHatEnergy",
-    "handle": "top_news",
-    "author": "News",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/588/432/052/888/442/original/a8499a66679ca9d5.jpg"
-    ],
-    "publishedAt": "2026-11-09T20:44:41.279Z",
-    "collectedAt": "2026-11-10T01:05:53.561Z"
-  },
-  "social-f245cd38bb37": {
-    "id": "social-f245cd38bb37",
-    "url": "https://x.com/Connor_J_Hughes/status/2119876964748312615",
-    "text": "Let’s talk #Commanders s=vHxUQHWSYhqoaA6d",
-    "handle": "Connor_J_Hughes",
-    "author": "Connor Hughes",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-09T19:37:08.000Z",
-    "collectedAt": "2026-11-10T01:05:53.561Z"
   },
   "social-2358903f7bea": {
     "id": "social-2358903f7bea",
