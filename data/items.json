@@ -1,76 +1,4 @@
 {
-  "riggos-rag-7290d9893202": {
-    "id": "riggos-rag-7290d9893202",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/3-winners-5-losers-washington-commanders-dismal-defeat-indianapolis-colts",
-    "title": "3 winners (and 5 losers) from Commanders' dismal defeat to the Colts",
-    "excerpt": "Who were the big winners and losers from the Washington Commanders' dismal defeat to the Indianapolis Colts in Week 4?",
-    "publishedAt": "2026-10-05T10:00:01.000Z",
-    "collectedAt": "2026-10-05T10:05:32.903Z"
-  },
-  "riggos-rag-296c9514d8ec": {
-    "id": "riggos-rag-296c9514d8ec",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-season-now-hinges-jayden-daniels-surviving-early-return",
-    "title": "Commanders’ season now hinges on Jayden Daniels surviving an early return",
-    "excerpt": "The Washington Commanders’ season now hinges on star quarterback Jayden Daniels surviving an early return from his dislocated elbow.",
-    "publishedAt": "2026-10-05T11:30:00.000Z",
-    "collectedAt": "2026-10-05T12:05:37.656Z"
-  },
-  "hogs-haven-b2d28fdca138": {
-    "id": "hogs-haven-b2d28fdca138",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-news/446376/odafe-oweh-bright-light-in-dark-season-athan-kaliakmanis-marcus-mariota",
-    "title": "Commanders News: Odafe Oweh – bright light in a (so far) dark season",
-    "excerpt": "The Daily Slop – 5 October 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n NFL.com \n\n Commanders QB Marcus Mariota suffers knee injury in loss to Colts\n\n Mariota suffered the knee injury on a third-down sack midway through the first quarter when Indy defensive end…",
-    "publishedAt": "2026-10-05T12:05:33.000Z",
-    "collectedAt": "2026-10-05T14:05:31.279Z"
-  },
-  "riggos-rag-ce9d3cd74e89": {
-    "id": "riggos-rag-ce9d3cd74e89",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-indiscipline-questionable-officiating-fuel-london-unraveling",
-    "title": "Commanders’ indiscipline and questionable officiating fuel London unraveling",
-    "excerpt": "Indiscipline and questionable officiating marred the Washington Commanders' international defeat to the Indianapolis Colts in Week 4.",
-    "publishedAt": "2026-10-05T13:00:01.000Z",
-    "collectedAt": "2026-10-05T14:05:32.199Z"
-  },
-  "dc-sports-king-30395e5934bd": {
-    "id": "dc-sports-king-30395e5934bd",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/jayden-daniels-now-faces-immense-pressure-to-return-just-weeks-after-injury",
-    "title": "Jayden Daniels Now Faces Immense Pressure to Return Just Weeks after Injury",
-    "excerpt": "The Washington Commanders’ 30-13 loss to the Indianapolis Colts in London on Sunday did more than drop the team to a 1-3 record. In the first quarter, starting quarterback Marcus Mariota reaggravated an MCL injury on a sack by Laiatu Latu and was ruled out, leaving the offense in the hands of third-string rookie Athan Kaliakmanis. \n\n When Commanders turned to Mariota, the vision was clear: provide a steady, experienced insurance policy while their third-year franchise quarterback need time to…",
-    "publishedAt": "2026-10-05T12:30:00.000Z",
-    "collectedAt": "2026-10-05T14:05:35.112Z"
-  },
-  "yahoo-nfl-6b0dcb544497": {
-    "id": "yahoo-nfl-6b0dcb544497",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-dl-odafe-oweh-bright-120533918.html",
-    "title": "Commanders DL Odafe Oweh has been a bright light in a (so far) dark season - Daily Slop",
-    "excerpt": "The Daily Slop – 5 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n Commanders links \n Articles\n NFL.com \n Commanders QB Marcus Mariota suffers knee injury in loss to Colts\n Mariota suffered the knee injury on a third-down sack midway through the first quarter when Indy defensive end Laiatu…",
-    "publishedAt": "2026-10-05T12:05:33.000Z",
-    "collectedAt": "2026-10-05T14:05:36.806Z"
-  },
   "riggos-rag-da905476b990": {
     "id": "riggos-rag-da905476b990",
     "sourceId": "riggos-rag",
@@ -250,18 +178,6 @@
     "excerpt": "The Commanders' loss in London to the Colts had nothing to do with a lack of fan support.\n Via Nathan Brown of the Indianapolis Star, the neutral-site game for which the Commanders were the designated home team was dominated by Commanders fans .\n \"I think out of all the teams I've played overseas, [the Commanders] is the fanbase that traveled the best that I've seen,\" Colts safety Camryn Bynum said. \"Maybe that's because they're on the east coast, and so it's a closer flight?\n \"But it is still…",
     "publishedAt": "2026-10-05T20:57:35.000Z",
     "collectedAt": "2026-10-05T22:05:42.367Z"
-  },
-  "wjla-commanders-2fe57d862588": {
-    "id": "wjla-commanders-2fe57d862588",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/jury-selection-set-to-begin-murder-trial-manassas-park-man-killing-wife-naresh-bhatt-mamta-prince-william-county-crime-court",
-    "title": "Jury selection begins in murder trial of Manassas Park man accused of killing wife",
-    "excerpt": "A case that has drawn global attention is heading to trial in Prince William County on Monday.",
-    "publishedAt": "2026-10-05T09:58:20.000Z",
-    "collectedAt": "2026-10-06T00:05:35.119Z"
   },
   "yahoo-nfl-1b2cbc1e2473": {
     "id": "yahoo-nfl-1b2cbc1e2473",
@@ -609,18 +525,6 @@
     "title": "Commanders Film Room: Athan Kaliakmanis vs Colts",
     "excerpt": "One of the worst case scenarios for the Commanders played out against the Colts on Sunday. With Jayden Daniels already out injured, back up quarterback Marcus Mariota went down injured on the Commanders second drive of the game. That meant the offense had to turn to seventh round rookie quarterback Athan Kaliakmanis. Kaliakmanis showed some promise in the preseason for sure , but he was drafted in the seventh round as a developmental project behind the scenes, not to be playing the majority of…",
     "publishedAt": "2026-10-06T10:55:05.000Z",
-    "collectedAt": "2026-10-07T02:42:29.187Z"
-  },
-  "bullock-film-room-1a65522a8a58": {
-    "id": "bullock-film-room-1a65522a8a58",
-    "sourceId": "bullock-film-room",
-    "sourceName": "Bullock's Film Room",
-    "sourceHomepage": "https://markbullock.substack.com/",
-    "category": "team",
-    "url": "https://markbullock.substack.com/p/commanders-film-room-run-game-struggles",
-    "title": "Commanders Film Room: Run Game Struggles vs Colts",
-    "excerpt": "The Washington Commanders fell to perhaps their most disappointing defeat of the season so far. In London, the Commanders faced off against a very beatable Colts team and they started off well but things quickly fell apart as Marcus Mariota was injured on the second drive and seventh round rookie quarterback Athan Kaliakmanis, the Commanders third string quarterback, was forced into the game. Kaliakmanis performed admirably in his first NFL action, but the team struggled to support him.\n The…",
-    "publishedAt": "2026-10-05T10:55:52.000Z",
     "collectedAt": "2026-10-07T02:42:29.187Z"
   },
   "clutchpoints-f80d275f6253": {
@@ -1054,18 +958,6 @@
     "excerpt": "Jayden Daniels is expected to return against the Giants on Sunday, wearing a new brace after dislocating his left elbow in Week 2.",
     "publishedAt": "2026-10-07T21:35:55.000Z",
     "collectedAt": "2026-10-07T22:05:43.144Z"
-  },
-  "yahoo-nfl-0439a810c6d6": {
-    "id": "yahoo-nfl-0439a810c6d6",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-fantasy-football-lamar-jackson-saquon-barkley-jamarr-chase-120206335.html",
-    "title": "NFL news, live updates: Eagles trade Cam Jurgens to Ravens; Lamar Jackson uncertain for Week 5, while Jayden Daniels logs full practice",
-    "excerpt": "Several injuries from last weekend have NFL fans on notice for Week 5, headlined by Baltimore Ravens quarterback Lamar Jackson, who suffered an ankle sprain in Sunday's win over the Tennessee Titans, now with an \"outside\" chance of playing in Week 5 .\n Also worth monitoring: running back Saquon Barkley exited Week 4 with a hamstring injury and is reportedly considered \"week-to-week ,\" while the Cincinnati Bengals saw both Ja'Marr Chase (concussion) and Tee Higgins (adductor) suffer injuries…",
-    "publishedAt": "2026-10-05T12:02:06.000Z",
-    "collectedAt": "2026-10-07T22:05:43.636Z"
   },
   "atoz-sports-8568fd1bd8a9": {
     "id": "atoz-sports-8568fd1bd8a9",
@@ -16558,5 +16450,77 @@
     "excerpt": "The emergence of tight end Ben Sinnott has quickly become one of the most intriguing storylines for the Washington Commanders following his breakout performance against the New York Giants last week. After spending most of the season operating quietly as an inline blocker, the third-year tight end seized his opportunity on Thursday Night Football. It delivered a much-needed spark in Washington’s 24-21 division win. What began as an unexpected increase in snaps quickly turned into a clear sign…",
     "publishedAt": "2026-11-19T06:10:32.000Z",
     "collectedAt": "2026-11-19T07:05:36.096Z"
+  },
+  "hogs-haven-4a70294e26a5": {
+    "id": "hogs-haven-4a70294e26a5",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/the-5-oclock-club/455904/washington-commanders-vs-bengals-mnf-week-11-matchup-joe-burrow-trey-amos-jayden-daniels",
+    "title": "Washington Commanders vs. Bengals MNF Week 11: Inside the Matchup",
+    "excerpt": "From John Portis:\n\n The 3-5-1 Washington Commanders return home for another primetime matchup after securing a must-have win versus the Giants on Thursday Night Football. Also, the Dallas Cowboys lost to the 49ers on Sunday, further tightening the race for first place in the NFC East. The Commanders look to secure consecutive wins for the first time this season but could find it tough going against the Cincinnati Bengals ( 7-2 ), who are coming off an impressive win over the Steelers in their…",
+    "publishedAt": "2026-11-19T11:00:00.000Z",
+    "collectedAt": "2026-11-19T13:05:29.854Z"
+  },
+  "riggos-rag-a394de07ba48": {
+    "id": "riggos-rag-a394de07ba48",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/jackson-harris-rise-gives-washington-commanders-first-round-wr1-fit-jayden-daniels",
+    "title": "Jackson Harris’ rise gives Commanders a first-round WR1 fit for Jayden Daniels",
+    "excerpt": "Jackson Harris’ rise at LSU gives the Washington Commanders a potential first-round WR1 fit for quarterback Jayden Daniels.",
+    "publishedAt": "2026-11-19T12:30:00.000Z",
+    "collectedAt": "2026-11-19T13:05:30.811Z"
+  },
+  "riggos-rag-fc3bccfedff5": {
+    "id": "riggos-rag-fc3bccfedff5",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/5-understated-washington-commanders-deserve-more-credit-keeping-season-alive",
+    "title": "5 understated Commanders who deserve more credit for keeping the season alive",
+    "excerpt": "Which understated Washington Commanders deserve more credit for keeping their season alive?",
+    "publishedAt": "2026-11-19T11:00:05.000Z",
+    "collectedAt": "2026-11-19T13:05:30.811Z"
+  },
+  "athletic-commanders-ea1f20bcdb84": {
+    "id": "athletic-commanders-ea1f20bcdb84",
+    "sourceId": "athletic-commanders",
+    "sourceName": "The Athletic",
+    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
+    "category": "team",
+    "url": "https://www.nytimes.com/athletic/7792628/2026/11/19/stefon-diggs-commanders-route-running",
+    "title": "How is Stefon Diggs still getting it done? He's a 'technician,' and he loves the work",
+    "excerpt": "Washington's 12th-year receiver is a celebrity. Behind that is a next-level attention to detail.",
+    "publishedAt": "2026-11-19T11:00:44.000Z",
+    "collectedAt": "2026-11-19T13:05:32.500Z"
+  },
+  "dc-sports-king-ed6030f61598": {
+    "id": "dc-sports-king-ed6030f61598",
+    "sourceId": "dc-sports-king",
+    "sourceName": "DC Sports King",
+    "sourceHomepage": "https://dcsportsking.com/",
+    "category": "team",
+    "url": "https://dcsportsking.com/brandon-aiyuk-to-the-washington-commanders-suddenly-feels-real-again-after-reconciling-with-jayden-daniels",
+    "title": "Brandon Aiyuk to the Washington Commanders Suddenly Feels Real Again After Reconciling With Jayden Daniels",
+    "excerpt": "Just when it looked like the door had been slammed shut for good, the Brandon Aiyuk to the Washington Commanders rumor mill is spinning at full speed again. For months, the idea of reuniting the former San Francisco 49ers standout with his college quarterback felt like an offseason pipe dream that went off the rails — especially after a bizarre summer of social media antics. Yet in the span of a few weeks, three major developments have completely shifted the conversation in Ashburn: Aiyuk has…",
+    "publishedAt": "2026-11-19T07:37:50.000Z",
+    "collectedAt": "2026-11-19T13:05:34.476Z"
+  },
+  "yahoo-nfl-31830983d4d8": {
+    "id": "yahoo-nfl-31830983d4d8",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/expect-commanders-bengals-meet-encore-110000094.html",
+    "title": "What to expect when Commanders, Bengals meet for encore of 2024 MNF thriller in Week 11",
+    "excerpt": "From John Portis:\n The 3-5-1 Washington Commanders return home for another primetime matchup after securing a must-have win versus the Giants on Thursday Night Football. Also, the Dallas Cowboys lost to the 49ers on Sunday, further tightening the race for first place in the NFC East. The Commanders look to secure consecutive wins for the first time this season but could find it tough going against the Cincinnati Bengals ( 7-2 ), who are coming off an impressive win over the Steelers in their…",
+    "publishedAt": "2026-11-19T11:00:00.000Z",
+    "collectedAt": "2026-11-19T13:05:35.822Z"
   }
 }

@@ -4394,7 +4394,7 @@
     "text": "RB Jacory Croskey-Merritt has returned to practice and his 21-day window has been opened",
     "handle": "Commanders",
     "author": "Washington Commanders",
-    "label": "",
+    "label": "Official",
     "sourceKey": "@Commanders",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/633/389/987/124/219/original/526eac74c1a848e0.jpg"
@@ -4767,5 +4767,29 @@
     "images": [],
     "publishedAt": "2026-11-19T03:00:49.000Z",
     "collectedAt": "2026-11-19T07:05:44.312Z"
+  },
+  "social-fdfac8ab240d": {
+    "id": "social-fdfac8ab240d",
+    "url": "https://x.com/JPFinlayNBCS/status/2123393753113059456",
+    "text": "One theory to beat the Bengals is to slow the game down, control possession. @CharlieG__@twitter.com says maybe try the opposite, speed it up. New All Ears is up s=S5Zk6RVGgH0Abz2I",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-19T12:31:36.000Z",
+    "collectedAt": "2026-11-19T13:05:38.538Z"
+  },
+  "social-2e34fcc0fb39": {
+    "id": "social-2e34fcc0fb39",
+    "url": "https://x.com/john_keim/status/2123398366407074153",
+    "text": "On video with @NickiJhabvala@twitter.com . Where the Commanders stand entering the final 8 games. Level of confidence … @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-19T12:49:56.000Z",
+    "collectedAt": "2026-11-19T13:05:39.929Z"
   }
 }
