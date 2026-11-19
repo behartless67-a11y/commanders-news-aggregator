@@ -75,18 +75,6 @@
     "publishedAt": "2026-11-09T01:54:22.000Z",
     "collectedAt": "2026-11-09T06:32:47.490Z"
   },
-  "social-38e47dc48e6f": {
-    "id": "social-38e47dc48e6f",
-    "url": "https://x.com/JPFinlayNBCS/status/2119608872818155947",
-    "text": "K'Lavon Chaisson: \"On days like this, it hurts a little more for the defense because they threw the ball to one person all day. They ran one play all day. So, when the game plan is that constricted, when you just have to do a nine-on-seven matchup and stop one person from catching the ball, a defense should have an advantage on that for sure.”",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-09T01:51:50.000Z",
-    "collectedAt": "2026-11-09T06:32:47.490Z"
-  },
   "social-690a22b724ec": {
     "id": "social-690a22b724ec",
     "url": "https://x.com/john_keim/status/2119616648454054087",
@@ -4856,5 +4844,31 @@
     "images": [],
     "publishedAt": "2026-11-18T16:59:37.000Z",
     "collectedAt": "2026-11-18T23:05:49.622Z"
+  },
+  "social-a53a5466c7e1": {
+    "id": "social-a53a5466c7e1",
+    "url": "https://x.com/Commanders/status/2123197057263710515",
+    "text": "Tone on TNF 🗣️ @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-18T23:30:00.000Z",
+    "collectedAt": "2026-11-19T01:52:44.831Z"
+  },
+  "social-63c906f39cc4": {
+    "id": "social-63c906f39cc4",
+    "url": "https://x.com/JPFinlayNBCS/status/2123222766983971015",
+    "text": "Looking ahead to Week 16. Commanders/Vikings is 1 of 4 TBD games. Current Thursday night game is 3-6 Texans vs 2-7 Eagles. Could a flex be coming?",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/640/583/903/039/139/original/2afc9da4c7e4b8d8.jpg"
+    ],
+    "publishedAt": "2026-11-19T01:12:09.000Z",
+    "collectedAt": "2026-11-19T01:52:46.259Z"
   }
 }

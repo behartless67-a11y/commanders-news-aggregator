@@ -1,28 +1,4 @@
 {
-  "cbs-nfl-75f385f791db": {
-    "id": "cbs-nfl-75f385f791db",
-    "sourceId": "cbs-nfl",
-    "sourceName": "CBS Sports",
-    "sourceHomepage": "https://www.cbssports.com/nfl/teams/WAS/washington-commanders/",
-    "category": "league",
-    "url": "https://www.cbssports.com/nfl/news/commanders-jayden-daniels-update-hope-week-5-return",
-    "title": "Jayden Daniels update: Dan Quinn says 'the hope' is for Commanders QB to return in Week 5",
-    "excerpt": "The plan is for Daniels to practice in full this week",
-    "publishedAt": "2026-10-04T23:06:51.000Z",
-    "collectedAt": "2026-10-05T00:05:35.138Z"
-  },
-  "clutchpoints-89fa81777d54": {
-    "id": "clutchpoints-89fa81777d54",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-brandon-coleman-calls-out-bullst-after-ugly-week-4-loss-to-colts",
-    "title": "Commanders’ Brandon Coleman calls out ‘bulls**t’ after ugly Week 4 loss to Colts",
-    "excerpt": "The Washington Commanders’ 30-13 loss to the Indianapolis Colts in Week 4 was compounded by injuries, penalties and missed opportunities, leaving starting left tackle Brandon Coleman openly frustrated after the game .\n\n Washington committed 10 penalties for 84 yards, while Indianapolis was flagged only once for five yards.\n\n “I mean, we say the same thing every week, like, we gotta fix it,” said Coleman. “But it’s just bulls**t. There’s stuff that we know we gotta do and there’s stuff that we…",
-    "publishedAt": "2026-10-05T00:03:50.000Z",
-    "collectedAt": "2026-10-05T02:05:33.551Z"
-  },
   "pft-3586952fd62f": {
     "id": "pft-3586952fd62f",
     "sourceId": "pft",
@@ -16219,7 +16195,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-news/455875/commanders-news-links-washington-needs-jacory-croskey-merritt-joe-burrow",
     "title": "Commanders News: Washington needs Jacory Croskey-Merritt back soon",
-    "excerpt": "The Daily Slop\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Bullock’s Film Room (paywall) \n\n Commanders find success switching run schemes vs Giants \n\n The Washington Commanders run game against the Giants wasn’t particularly noteworthy on the face of things. The…",
+    "excerpt": "The Daily Slop – 17 November 2026\n\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a sprinkling of other stuff. Enjoy! \n\n Commanders links \n\n Articles\n\n Bullock’s Film Room (paywall) \n\n Commanders find success switching run schemes vs Giants \n\n The Washington Commanders run game against the Giants wasn’t particularly noteworthy on the face of…",
     "publishedAt": "2026-11-17T14:22:36.000Z",
     "collectedAt": "2026-11-17T19:05:33.199Z"
   },
@@ -16594,5 +16570,17 @@
     "excerpt": ") The New York Giants are leading the NFC East after 10 weeks of play, but the gap is closing. The Dallas Cowboys and Washington Commanders are hoping to take them down.\n There likely will only be one team coming out of the division for the playoffs, and the Giants want to make sure they are the ones that come out on top. Here’s a look at each team’s remaining schedule and how difficult it will be for each team to navigate.\n Dallas Cowboys (.477, 25th-toughest in NFL)\n Current standing: 4–6,…",
     "publishedAt": "2026-11-18T23:00:00.000Z",
     "collectedAt": "2026-11-18T23:05:42.579Z"
+  },
+  "hogs-haven-2a04a0fc49cd": {
+    "id": "hogs-haven-2a04a0fc49cd",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-news/456116/jonathan-allen-washington-commanders-bengals-mnf",
+    "title": "Former Commanders DL Jonathan Allen on ‘emotional’ return to Washington",
+    "excerpt": "Jonathan Allen played his first eight NFL seasons in Washington. The 2017 first-round NFL draft pick went to two Pro Bowls . He was a Walter Payton Man of the Year nominee. He was a solid interior pass rusher and run defender, and that got him paid to the tune of $72 million over the four years following the expiration of his rookie contract. \n\n Even the good professional relationships between team and player eventually come to an end, and Washington cut Allen before the 2025 campaign . It was…",
+    "publishedAt": "2026-11-18T23:36:45.000Z",
+    "collectedAt": "2026-11-19T01:52:36.964Z"
   }
 }
