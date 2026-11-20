@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T23:05:03.395Z",
+  "fetchedAt": "2026-11-20T05:06:44.785Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6759,6 +6759,22 @@
         "abbr": "LAC",
         "flags": 4,
         "yards": 30
+      }
+    },
+    "401873066": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-20T01:15Z",
+      "referee": "Shawn Smith",
+      "home": {
+        "abbr": "HOU",
+        "flags": 4,
+        "yards": 23
+      },
+      "away": {
+        "abbr": "IND",
+        "flags": 2,
+        "yards": 15
       }
     }
   }
