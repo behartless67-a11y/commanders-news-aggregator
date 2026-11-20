@@ -70,10 +70,24 @@
     "notes": null
   },
   {
+    "name": "Rachaad White",
+    "position": "RB",
+    "status": "Questionable",
+    "bodyPart": "Heel",
+    "notes": null
+  },
+  {
     "name": "Terry McLaurin",
     "position": "WR",
     "status": "IR",
     "bodyPart": "Knee",
     "notes": "Surgery"
+  },
+  {
+    "name": "Treylon Burks",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Foot",
+    "notes": null
   }
 ]
