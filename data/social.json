@@ -1,68 +1,4 @@
 {
-  "social-57bad20b7960": {
-    "id": "social-57bad20b7960",
-    "url": "https://x.com/BenStandig/status/2120264883602358642",
-    "text": "The trade deadline has come and gone, and it would appear the Commanders stayed pat, as anticipated. Would love to know if any opportunity had them 🤔. I didn't hear of any earlier today. Regardless, on to Cincinnati, i.e. New York Giants.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-10T21:18:35.000Z",
-    "collectedAt": "2026-11-10T21:49:04.075Z"
-  },
-  "social-a9287c1f4827": {
-    "id": "social-a9287c1f4827",
-    "url": "https://x.com/tashanreed/status/2120267023229874394",
-    "text": "For the second straight year, the #Commanders stood pat at the NFL trade deadline. They haven't made a trade since last August. Why I think it was the right call: /11/09/should-commanders-buy-or-sell-deadline-neither/",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-10T21:27:05.000Z",
-    "collectedAt": "2026-11-10T21:49:06.022Z"
-  },
-  "social-9cd0edd2edca": {
-    "id": "social-9cd0edd2edca",
-    "url": "https://x.com/Commanders/status/2120290415157154039",
-    "text": "Uce makin' plays @NextGenStats x @awscloud@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/594/632/467/453/294/original/00af0e1b443d711d.jpg"
-    ],
-    "publishedAt": "2026-11-10T23:00:02.000Z",
-    "collectedAt": "2026-11-11T03:05:42.174Z"
-  },
-  "social-ad91c55ca3be": {
-    "id": "social-ad91c55ca3be",
-    "url": "https://x.com/Commanders/status/2120284039550496845",
-    "text": "Tuesday injury report #WASvsNYG | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/594/530/450/030/297/original/4c72a6e8e824b78e.jpg"
-    ],
-    "publishedAt": "2026-11-10T22:34:42.000Z",
-    "collectedAt": "2026-11-11T03:05:42.174Z"
-  },
-  "social-08a09f758e23": {
-    "id": "social-08a09f758e23",
-    "url": "https://x.com/Commanders/status/2120266497088225402",
-    "text": "Nick Cross was everywhere 🙅‍♂️ @Nick_Cross26@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-10T21:25:00.000Z",
-    "collectedAt": "2026-11-11T03:05:42.174Z"
-  },
   "social-2f186c7675dc": {
     "id": "social-2f186c7675dc",
     "url": "https://x.com/john_keim/status/2120307082687893616",
@@ -125,20 +61,6 @@
     "publishedAt": "2026-11-10T23:08:57.000Z",
     "collectedAt": "2026-11-11T03:05:46.728Z"
   },
-  "social-66b584a0a3ab": {
-    "id": "social-66b584a0a3ab",
-    "url": "https://x.com/BenStandig/status/2120284310041137575",
-    "text": "Treylon Burks was upgraded to \"limited\" on today's injury report.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/594/537/853/030/696/original/b7bb4fd30050ea87.jpg"
-    ],
-    "publishedAt": "2026-11-10T22:35:47.000Z",
-    "collectedAt": "2026-11-11T03:05:46.728Z"
-  },
   "social-372b9ffc536c": {
     "id": "social-372b9ffc536c",
     "url": "https://x.com/tashanreed/status/2120315860569166133",
@@ -163,30 +85,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-11-10T23:16:07.000Z",
-    "collectedAt": "2026-11-11T03:05:47.864Z"
-  },
-  "social-152915a7d323": {
-    "id": "social-152915a7d323",
-    "url": "https://x.com/tashanreed/status/2120284212313878978",
-    "text": "The #Commanders upgraded Treylon Burks to limited in their estimated injury report today. They did a walkthrough. They'll have their first full practice of the week tomorrow.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-10T22:35:23.000Z",
-    "collectedAt": "2026-11-11T03:05:47.864Z"
-  },
-  "social-f4776adca79f": {
-    "id": "social-f4776adca79f",
-    "url": "https://x.com/krisrhim1/status/2120271761380196766",
-    "text": "RE: tatuses/2120270754159706257 The first unseasoned lamb chop on air in ESPN history, sources say",
-    "handle": "krisrhim1",
-    "author": "Kris Rhim",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-10T21:45:55.000Z",
     "collectedAt": "2026-11-11T03:05:47.864Z"
   },
   "social-033e2e56ea35": {
