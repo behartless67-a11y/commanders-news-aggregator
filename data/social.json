@@ -4683,5 +4683,22 @@
     "images": [],
     "publishedAt": "2026-11-20T17:46:36.000Z",
     "collectedAt": "2026-11-20T23:05:47.334Z"
+  },
+  "social-8c611fd83fe2": {
+    "id": "social-8c611fd83fe2",
+    "url": "https://x.com/Commanders/status/2123921833024242053",
+    "text": "breaking news: we practiced today 😌",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/651/375/771/266/800/original/15205b35cfab7cbc.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/651/375/821/182/557/original/da4a491440c4f325.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/651/375/861/451/161/original/94a06ead252515cc.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/651/375/931/109/786/original/87285c2046c277e6.jpg"
+    ],
+    "publishedAt": "2026-11-20T23:30:00.000Z",
+    "collectedAt": "2026-11-21T01:32:05.483Z"
   }
 }
