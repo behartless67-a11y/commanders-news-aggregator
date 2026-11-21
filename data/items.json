@@ -1,40 +1,4 @@
 {
-  "riggos-rag-c3f353ef2ab4": {
-    "id": "riggos-rag-c3f353ef2ab4",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/predicting-washington-commanders-next-five-games-after-costly-colts-loss-london",
-    "title": "Predicting the Commanders' next five games after costly Colts loss in London",
-    "excerpt": "Predicting the Washington Commanders' next five games after their costly loss to the Indianapolis Colts in London.",
-    "publishedAt": "2026-10-07T10:00:00.000Z",
-    "collectedAt": "2026-10-07T10:05:30.891Z"
-  },
-  "athletic-commanders-84c82ef9d8dd": {
-    "id": "athletic-commanders-84c82ef9d8dd",
-    "sourceId": "athletic-commanders",
-    "sourceName": "The Athletic",
-    "sourceHomepage": "https://www.nytimes.com/athletic/nfl/team/commanders/",
-    "category": "team",
-    "url": "https://www.nytimes.com/athletic/7649613/2026/10/07/giants-eagles-cowboys-commanders-jj-mccarthy-joey-porter",
-    "title": "NFC East roundtable: QB chaos, trades and a shock retirement. Wait, it's only Week 5?!",
-    "excerpt": "The Giants lead the East but could soon turn to a third starting QB. Which of their foes can work out their own issues and catch them?",
-    "publishedAt": "2026-10-07T09:30:20.000Z",
-    "collectedAt": "2026-10-07T10:05:33.454Z"
-  },
-  "riggos-rag-01857b34ac11": {
-    "id": "riggos-rag-01857b34ac11",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/breaking-down-washington-commanders-2024-day-2-draft-failures-where-blame-lies",
-    "title": "Breaking down Commanders’ 2024 Day 2 draft failures and where the blame lies",
-    "excerpt": "Breaking down the Washington Commanders' failures on Day 2 of the 2024 NFL Draft and where the blame lies.",
-    "publishedAt": "2026-10-07T11:30:01.000Z",
-    "collectedAt": "2026-10-07T12:05:35.234Z"
-  },
   "hogs-haven-4d06a2461725": {
     "id": "hogs-haven-4d06a2461725",
     "sourceId": "hogs-haven",
@@ -81,18 +45,6 @@
     "title": "Do Commanders have enough [healthy] QBs on the roster? - Daily Slop",
     "excerpt": "ASHBURN, VA - AUGUST 01: Jayden Daniels #5 and Athan Kaliakmanis #16 of the Washington Commanders share a laugh during training camp at BigBear.ai Performance Center on August 1, 2026 in Ashburn, Virginia. (Photo by Scott Taetsch/Getty Images) | Getty Images The Daily Slop – 7 October 2026\n Editor’s note: Each day, Hogs Haven compiles a collection of articles, podcasts & tweets from around the web to keep you in touch with the Commanders, the NFC East, the NFL and sports in general, with a…",
     "publishedAt": "2026-10-07T13:00:00.000Z",
-    "collectedAt": "2026-10-07T14:05:44.234Z"
-  },
-  "yahoo-nfl-77328cdca48b": {
-    "id": "yahoo-nfl-77328cdca48b",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/6-storylines-giants-commanders-week-120000405.html",
-    "title": "6 storylines for Giants-Commanders in Week 5: Prepping for Jayden Daniels",
-    "excerpt": "Jayden Daniels | Getty Images The NFC-East leading New York Giants (3-1) travel to Landover, Md. Sunday to face the 1-3 Washington Commanders. What are the storylines to watch this week, beyond the Giants trying to defend a solo grip on first place for the first time since November of 2015?\n Let’s take a look.\n Jayden Daniels: ‘Looks like we’re going to get him’\n Washington quarterback Jayden Daniels has not played since dislocating his left, non-throwing, elbow in Week 2 against the…",
-    "publishedAt": "2026-10-07T12:00:00.000Z",
     "collectedAt": "2026-10-07T14:05:44.234Z"
   },
   "hogs-haven-9b8337b32624": {
@@ -16486,5 +16438,29 @@
     "excerpt": "",
     "publishedAt": "2026-11-21T05:05:23.000Z",
     "collectedAt": "2026-11-21T07:05:29.425Z"
+  },
+  "hogs-haven-096d080b05a0": {
+    "id": "hogs-haven-096d080b05a0",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-discussion/456114/commanders-favored-to-win-nfc-east-in-latest-fan-poll-survey-results",
+    "title": "Commanders favored to win NFC East in latest fan poll – survey results",
+    "excerpt": "EAST RUTHERFORD, NJ - NOVEMBER 12: Washington Commanders Wide Receiver Stefon Diggs (3) falls into the end zone to score a touchdown during the second half of the National Football League game between the Washington Commanders and New York Giants on November 12, 2026, at MetLife Stadium in East Rutherford, NJ. (Photo by Gregory Fisher/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images \n \n So, you’re telling me there’s a chance…\n\n Here’s what Ben Standig had to say earlier this…",
+    "publishedAt": "2026-11-21T11:00:00.000Z",
+    "collectedAt": "2026-11-21T12:40:43.976Z"
+  },
+  "riggos-rag-963e7abec3aa": {
+    "id": "riggos-rag-963e7abec3aa",
+    "sourceId": "riggos-rag",
+    "sourceName": "Riggo's Rag",
+    "sourceHomepage": "https://riggosrag.com/",
+    "category": "team",
+    "url": "https://riggosrag.com/adam-peters-trusts-jayden-daniels-finish-job-washington-commanders",
+    "title": "Adam Peters trusts Jayden Daniels to finish the job if the Commanders do theirs",
+    "excerpt": "General manager Adam Peters trusts quarterback Jayden Daniels to finish the job if the Washington Commanders keep games close.",
+    "publishedAt": "2026-11-21T11:00:03.000Z",
+    "collectedAt": "2026-11-21T12:40:44.457Z"
   }
 }
