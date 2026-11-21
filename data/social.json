@@ -1,18 +1,4 @@
 {
-  "social-5cf0ff3c781c": {
-    "id": "social-5cf0ff3c781c",
-    "url": "https://x.com/Commanders/status/2120501811920703564",
-    "text": "Honoring all who serve or have served this #VeteransDay 🇺🇸",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/597/939/261/826/338/original/3289b888441d55fa.jpg"
-    ],
-    "publishedAt": "2026-11-11T13:00:03.000Z",
-    "collectedAt": "2026-11-11T16:11:23.544Z"
-  },
   "social-cec21a009a3d": {
     "id": "social-cec21a009a3d",
     "url": "https://x.com/JPFinlayNBCS/status/2120536140088496452",
@@ -71,18 +57,6 @@
     "sourceKey": "@john_keim",
     "images": [],
     "publishedAt": "2026-11-11T14:03:01.000Z",
-    "collectedAt": "2026-11-11T16:11:26.235Z"
-  },
-  "social-f549c8b8c957": {
-    "id": "social-f549c8b8c957",
-    "url": "https://x.com/john_keim/status/2120498407190024196",
-    "text": "On video with @RealBramW@twitter.com . On the trade deadline and no moves by the Commanders. Why? @ESPNRichmond@twitter.com i=B9-E1XrxNV9ovLRV",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-11T12:46:31.000Z",
     "collectedAt": "2026-11-11T16:11:26.235Z"
   },
   "social-363815d95956": {
