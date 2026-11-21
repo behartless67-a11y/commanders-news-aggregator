@@ -1,28 +1,4 @@
 {
-  "hogs-haven-a15da599a73e": {
-    "id": "hogs-haven-a15da599a73e",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/446769/will-commanders-fill-open-roster-spot-with-an-ir-return-all-atwitter-trey-amos",
-    "title": "Will Commanders fill open roster spot with an IR return? – All aTwitter",
-    "excerpt": "All aTwitter – 7 October 2026\n\n We follow Twitter so you don’t have to\n\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along with a smattering of other things. \n\n \n\n Click here for Washington Commanders Beat Writers Twitter Feed \n\n \n\n Click here for NFL News, Rumors & Reports Twitter Feed \n\n \n\n Tip: If a tweet isn’t fully visible on your screen, clicking on the date at the bottom of…",
-    "publishedAt": "2026-10-07T04:00:00.000Z",
-    "collectedAt": "2026-10-07T04:20:29.508Z"
-  },
-  "yahoo-nfl-eabe868c654c": {
-    "id": "yahoo-nfl-eabe868c654c",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-fill-open-roster-spot-040000862.html",
-    "title": "Will Commanders fill their open roster spot with a player returning from injured reserve? - All aTwitter",
-    "excerpt": "All aTwitter – 7 October 2026\n We follow Twitter so you don’t have to\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the Commanders, the NFL, and sports in general, along with a smattering of other things. \n Tip: If a tweet isn’t fully visible on your screen, clicking on the date at the bottom of the tweet will open it up individually in either the X app or your browser. \n The Commanders have officially placed Jaylin Lane on IR.…",
-    "publishedAt": "2026-10-07T04:00:00.000Z",
-    "collectedAt": "2026-10-07T06:05:35.031Z"
-  },
   "riggos-rag-c3f353ef2ab4": {
     "id": "riggos-rag-c3f353ef2ab4",
     "sourceId": "riggos-rag",
@@ -16459,7 +16435,7 @@
     "category": "team",
     "url": "https://www.hogshaven.com/washington-commanders-analysis/456377/daronte-jones-washington-commanders-defense-bengals-joe-burrow",
     "title": "Why Daronte Jones has Washington Commanders defense trending up",
-    "excerpt": "Commanders defensive coordinator Daronte Jones sent two extra pass rushers at Giants quarterback J.J. McCarthy on a key third down midway through the fourth quarter. \n\n He got burned for it. \n\n Frankie Luvu got picked up in protection, Nick Cross did not, but the unblocked safety hesitated just enough to let the ball get out. The result was disastrous, with Sonny Styles going for an interception instead of a sure tackle, allowing Isaiah Likely to make a catch and run for a 66-yard touchdown…",
+    "excerpt": "Commanders defensive coordinator Daronte Jones sent two extra pass rushers at Giants quarterback J.J. McCarthy on a key third down midway through the fourth quarter. \n\n He got burned for it. \n\n Blitzing linebacker Frankie Luvu got picked up in protection. Nick Cross did not, but the unblocked safety hesitated just enough to let the ball get out. The result was disastrous, with Sonny Styles going for an interception instead of a sure tackle — he probably picks it a year from now — that allowed…",
     "publishedAt": "2026-11-20T23:00:00.000Z",
     "collectedAt": "2026-11-21T01:31:49.647Z"
   },
@@ -16498,5 +16474,17 @@
     "excerpt": "",
     "publishedAt": "2026-11-21T01:00:39.000Z",
     "collectedAt": "2026-11-21T01:32:01.133Z"
+  },
+  "commanders-youtube-b0c5551ca5a5": {
+    "id": "commanders-youtube-b0c5551ca5a5",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=QyPdQs0lEU0",
+    "title": "Commanders And Bengals Take PRIMETIME + Tight End Ben Sinnott | The Player’s Club",
+    "excerpt": "",
+    "publishedAt": "2026-11-21T05:05:23.000Z",
+    "collectedAt": "2026-11-21T07:05:29.425Z"
   }
 }
