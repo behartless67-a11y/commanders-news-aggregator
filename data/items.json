@@ -1,172 +1,4 @@
 {
-  "hogs-haven-c65a47881087": {
-    "id": "hogs-haven-c65a47881087",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/pressers/447080/dan-quinn-marcus-mariotas-return-expected-sooner-than-later-need-ir",
-    "title": "Dan Quinn: Marcus Mariota’s return expected sooner than later, no need for IR",
-    "excerpt": "The Washington Commanders are home from their international game in London against the Indianapolis Colts. They lost the game, and injuries to Marcus Mariota (MCL) and Jaylin Lane (ankle/IR) deflated the team. Dan Quinn has said they plan on having Jayden Daniels back as a full participant with the expectation he can start this week at home vs the Giants. Daniels will be wearing a brace when he plays, and Quinn said they’ve talked about protecting the elbow. He traveled with the team and was…",
-    "publishedAt": "2026-10-07T17:20:16.000Z",
-    "collectedAt": "2026-10-07T18:05:36.039Z"
-  },
-  "riggos-rag-e197181668fe": {
-    "id": "riggos-rag-e197181668fe",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/commanders-open-three-return-windows-welcome-roster-squeeze-takes-shape",
-    "title": "Commanders open three return windows as welcome roster squeeze takes shape",
-    "excerpt": "The Washington Commanders have opened the return window of Trey Amos, Deatrich Wise Jr., and Jeremy McNichols, whis could leave some on the outside looking in.",
-    "publishedAt": "2026-10-07T17:44:57.000Z",
-    "collectedAt": "2026-10-07T18:05:36.956Z"
-  },
-  "dc-sports-king-89e9cbd5b72b": {
-    "id": "dc-sports-king-89e9cbd5b72b",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/seahawks-poach-preseason-standout-rb-robert-henry-from-commanders-after-joe-mixon-deal-fails",
-    "title": "Seahawks Poach Preseason Standout RB Robert Henry from Commanders after Joe Mixon Deal Fails",
-    "excerpt": "The Seattle Seahawks’ running back room has been a revolving door of injuries and “almosts” this week. But after a high-profile signing fell through at the finish line, the front office quickly pivoted to inject some young, explosive talent into the backfield.\n\n On Tuesday, the Seahawks officially signed undrafted rookie running back Robert Henry Jr. off the Washington Commanders’ practice squad to their 53-man roster. The move comes after a frantic 24 hours that saw veteran Joe Mixon work out…",
-    "publishedAt": "2026-10-07T17:10:08.000Z",
-    "collectedAt": "2026-10-07T18:05:42.176Z"
-  },
-  "yahoo-nfl-eb9df8a67dca": {
-    "id": "yahoo-nfl-eb9df8a67dca",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-expected-to-practice-in-full-ahead-of-possible-week-5-return-172615563.html",
-    "title": "Jayden Daniels expected to practice in full ahead of possible Week 5 return",
-    "excerpt": "Washington Commanders fans experienced horrible déjà vu in Week 2 upon seeing quarterback Jayden Daniels go down with another dislocated elbow . But their fears may have been overblown, as the quarterback appears on schedule to return to action in Week 5.\n Daniels was spotted throwing Wednesday and is expected to be listed as a full participant in practice ahead of a possible return against the New York Giants on Sunday.\n Jayden Daniels throwing again today. Expected to be a full participant in…",
-    "publishedAt": "2026-10-07T17:26:15.000Z",
-    "collectedAt": "2026-10-07T18:05:44.003Z"
-  },
-  "riggos-rag-68f73e915445": {
-    "id": "riggos-rag-68f73e915445",
-    "sourceId": "riggos-rag",
-    "sourceName": "Riggo's Rag",
-    "sourceHomepage": "https://riggosrag.com/",
-    "category": "team",
-    "url": "https://riggosrag.com/trey-amos-long-awaited-commanders-return-puts-mike-sainristil-clock",
-    "title": "Trey Amos’ long-awaited Commanders return puts Mike Sainristil on the clock",
-    "excerpt": "Trey Amos’ long-awaited return to Washington Commanders' practice puts fellow cornerback Mike Sainristil on the clock.",
-    "publishedAt": "2026-10-07T19:00:01.000Z",
-    "collectedAt": "2026-10-07T20:05:35.145Z"
-  },
-  "commanders-youtube-f108e19f4daf": {
-    "id": "commanders-youtube-f108e19f4daf",
-    "sourceId": "commanders-youtube",
-    "sourceName": "Commanders (YouTube)",
-    "sourceHomepage": "https://www.youtube.com/@Commanders",
-    "category": "team",
-    "url": "https://www.youtube.com/watch?v=5dzFONrMSI8",
-    "title": "QB Jayden Daniels Speaks To The Media After Practice | Washington Commanders",
-    "excerpt": "",
-    "publishedAt": "2026-10-07T19:04:34.000Z",
-    "collectedAt": "2026-10-07T20:05:39.510Z"
-  },
-  "wjla-commanders-d2af06813748": {
-    "id": "wjla-commanders-d2af06813748",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/commanders-focusing-on-ways-jayden-daniels-can-protect-himself-as-he-prepares-for-return",
-    "title": "Commanders focusing on ways Jayden Daniels can protect himself as he prepares for return",
-    "excerpt": "ByASHBURN, Va. (AP) — The Washington Commanders are focusing on ways in which quarterback Jayden Daniels can protect himself as he prepares for his expected re",
-    "publishedAt": "2026-10-07T19:44:34.000Z",
-    "collectedAt": "2026-10-07T20:05:42.471Z"
-  },
-  "yahoo-nfl-7b8c4132ad41": {
-    "id": "yahoo-nfl-7b8c4132ad41",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/jayden-daniels-injury-commanders-qb-184605670.html",
-    "title": "Jayden Daniels injury update as Commanders QB readies for return",
-    "excerpt": "This reinforcement could not have come soon enough.\n Washington Commanders quarterback Jayden Daniels looked to be a full participant in practice on Wednesday, Oct. 7. It marked the first time he wasn't a limited participant or held out of practice since suffering his gruesome dislocated elbow injury in Week 2.\n The 2026 season has been brutal for injuries to NFL quarterbacks, and few teams have more first-hand experience on that front than the Commanders .\n Daniels missed the second half of…",
-    "publishedAt": "2026-10-07T18:46:05.000Z",
-    "collectedAt": "2026-10-07T20:05:43.640Z"
-  },
-  "hogs-haven-d07cbbcb6744": {
-    "id": "hogs-haven-d07cbbcb6744",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-injuries/447192/commanders-vs-giants-wednesday-injury-report-stefon-diggs-terry-mclaurin-croskey-merritt",
-    "title": "Commanders vs. Giants Wednesday injury report: Stefon Diggs unavailable",
-    "excerpt": "The Commanders injury list is so long. Like, scroll down and check it out. Things are getting, well, extreme when it comes to player availability.\n\n The receiver corps has been hit hard, with the top pass catching options missing time with hamstring issues.\n\n We knew that Terry McLaurin was dealing with one, but seeing Stefon Diggs on the injury list was a surprising development. \n\n Defensive lineman Charles Omenihu has developed into an essential component of the front seven, so losing him for…",
-    "publishedAt": "2026-10-07T20:39:44.000Z",
-    "collectedAt": "2026-10-07T20:59:41.884Z"
-  },
-  "clutchpoints-034bf075eea1": {
-    "id": "clutchpoints-034bf075eea1",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-injury-update-week-5-availability",
-    "title": "Commanders’ Crucial Jayden Daniels injury update hints at Week 5 availability",
-    "excerpt": "The Washington Commanders are currently gearing up for their upcoming home game against the New York Giants. The Commanders are coming off an ugly loss to the Indianapolis Colts in England, one in which they were down to their third-string quarterback after Marcus Mariota went down with an injury.\n\n Mariota had been starting in place of the injured Jayden Daniels, who suffered a dislocated elbow in Week 2 vs the Dallas Cowboys in gruesome fashion, but now, the team has gotten a positive update…",
-    "publishedAt": "2026-10-07T18:07:29.000Z",
-    "collectedAt": "2026-10-07T20:59:42.718Z"
-  },
-  "clutchpoints-7c9c4d66e2a2": {
-    "id": "clutchpoints-7c9c4d66e2a2",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-marcus-mariota-injury-update-jayden-daniels-nears-return",
-    "title": "Commanders’ Marcus Mariota injury update officially keeps him off IR as Jayden Daniels nears return",
-    "excerpt": "On Sunday, the Washington Commanders fell back into the loss column with an ugly loss at the hands of the Indianapolis Colts overseas. The Commanders started backup Marcus Mariota in place of Jayden Daniels in this one, but he too went down with an injury, forcing the team to turn to Athan Kaliakmanis in his absence, with subpar results to show for it.\n\n Now, the team has gotten the latest update on Mariota’s injury status moving forward.\n\n “Quinn said they’re optimistic with Mariota will…",
-    "publishedAt": "2026-10-07T17:14:36.000Z",
-    "collectedAt": "2026-10-07T20:59:42.718Z"
-  },
-  "beltway-football-4f3db062efa7": {
-    "id": "beltway-football-4f3db062efa7",
-    "sourceId": "beltway-football",
-    "sourceName": "Beltway Football",
-    "sourceHomepage": "https://art19.com/shows/beltway-football",
-    "category": "team",
-    "url": "https://art19.com/shows/beltway-football/episodes/000027d9-a17c-4d8a-8e11-c8c9becb8229",
-    "title": "Week 5: Jayden Daniels Returns to Practice as Injuries Pile up",
-    "excerpt": "JP Finlay and Mitch Tischler are back on American soil and bring you some updates early in the week from Commanders practice. The biggest of which is Jayden Daniels returning to practice, then the guys run through some other injuries around the team and some reason for optimism and some for the half glass empty crowd.\n See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info .",
-    "publishedAt": "2026-10-07T20:30:00.000Z",
-    "collectedAt": "2026-10-07T20:59:46.336Z"
-  },
-  "pft-f70963488f81": {
-    "id": "pft-f70963488f81",
-    "sourceId": "pft",
-    "sourceName": "Pro Football Talk",
-    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
-    "category": "league",
-    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jayden-daniels-up-to-full-practice-on-wednesday",
-    "title": "Jayden Daniels up to full practice on Wednesday",
-    "excerpt": "Word last weekend was that Jayden Daniels's practice participation would determine whether he's able to return as the Commanders' starting quarterback against the Giants in Week 5 and Wednesday's injury report offers reason to believe he's moving in the right direction. \n Daniels was listed as a full practice participant for the first time since dislocating his left elbow in Week 2. Daniels said after practice that he's getting used to wearing a brace on the elbow because it is the only way…",
-    "publishedAt": "2026-10-07T20:18:12.000Z",
-    "collectedAt": "2026-10-07T20:59:49.683Z"
-  },
-  "wjla-commanders-969a81abe14c": {
-    "id": "wjla-commanders-969a81abe14c",
-    "sourceId": "wjla-commanders",
-    "sourceName": "WJLA (ABC7)",
-    "sourceHomepage": "https://wjla.com/sports/washington-commanders",
-    "category": "team",
-    "url": "https://wjla.com/sports/washington-commanders/washington-commanders-quarterback-jayden-daniels-sunday-new-york-giants-left-elbow-injury-brace-nonthrowing-arm-minnesota-vikings-interception-practice-specialists-return-northwest-stadium",
-    "title": "Jayden Daniels ready to 'embrace the brace’ in expected return vs. Giants",
-    "excerpt": "Jayden Daniels is expected to return against the Giants on Sunday, wearing a new brace after dislocating his left elbow in Week 2.",
-    "publishedAt": "2026-10-07T21:35:55.000Z",
-    "collectedAt": "2026-10-07T22:05:43.144Z"
-  },
   "atoz-sports-8568fd1bd8a9": {
     "id": "atoz-sports-8568fd1bd8a9",
     "sourceId": "atoz-sports",
@@ -178,18 +10,6 @@
     "excerpt": "Aug 6, 2025; Foxborough, MA, USA; Washington Commanders cornerback Trey Amos (23) makes a catch at training camp at Gillette Stadium. Mandatory Credit: Eric Canha-Imagn Images \n \n\n Washington’s secondary, defensive front, and backfield are all getting reinforcements back on the practice field, and Dan Quinn is in no rush to set a timeline on a return to game action. \n\n Washington Commanders coach Dan Quinn confirmed Wednesday that cornerback Trey Amos, defensive end Deatrich Wise Jr., and…",
     "publishedAt": "2026-10-07T23:15:40.000Z",
     "collectedAt": "2026-10-08T00:05:33.113Z"
-  },
-  "clutchpoints-2573d64989cc": {
-    "id": "clutchpoints-2573d64989cc",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/giants-news-malik-nabers-cryptic-injury-update-week-5-vs-commanders",
-    "title": "Giants’ Malik Nabers provides cryptic injury update for Week 5 vs. Commanders",
-    "excerpt": "The New York Giants are currently gearing up for their Week 5 game against the Washington Commanders on the road. The Giants improbably sit at 3-1 so far this year despite not playing very well overall, having recently knocked off the Arizona Cardinals at home.\n\n Injuries have been a major issue for New York this year, headlined by starting quarterback Jaxson Dart, and now, the team has gotten a cryptic injury update regarding star wide receiver Malik Nabers.\n\n “Malik Nabers says he’s ‘sore.’…",
-    "publishedAt": "2026-10-07T21:05:49.000Z",
-    "collectedAt": "2026-10-08T00:05:34.188Z"
   },
   "hogs-haven-e35c2b1be607": {
     "id": "hogs-haven-e35c2b1be607",
@@ -466,18 +286,6 @@
     "excerpt": "Commanders quarterback Jayden Daniels is good to go for Sunday's game against the Giants.\n That's the word from Commanders offensive coordinator David Blough, who said there are no challenges or limitations with what Daniels will be able to do on Sunday.\n \"He's full go, man. We're looking forward to having him back.\"\n Daniels was a full participant in practice yesterday, his first full practice since suffering a dislocated left elbow in Week 2. Marcus Mariota played fairly well in place of…",
     "publishedAt": "2026-10-08T15:16:19.000Z",
     "collectedAt": "2026-10-08T16:05:38.971Z"
-  },
-  "yahoo-nfl-2cceb17ad53c": {
-    "id": "yahoo-nfl-2cceb17ad53c",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-practices-in-full-ahead-of-week-5-considered-full-go-to-return-151223785.html",
-    "title": "Jayden Daniels practices in full ahead of Week 5, considered 'full go' to return",
-    "excerpt": "Washington Commanders fans experienced horrible déjà vu in Week 2 upon seeing quarterback Jayden Daniels go down with another dislocated elbow . But their fears may have been overblown, as the quarterback is ready to return to action in Week 5.\n Daniels was spotted throwing Wednesday and was listed as a full participant in practice ahead of the team’s game against the New York Giants on Sunday.\n On Thursday, team offensive coordinator David Blough said Daniels was “full go” for the contest,…",
-    "publishedAt": "2026-10-07T17:26:15.000Z",
-    "collectedAt": "2026-10-08T16:05:39.839Z"
   },
   "hogs-haven-109092807ef5": {
     "id": "hogs-haven-109092807ef5",
@@ -16366,5 +16174,77 @@
     "excerpt": "Joe Burrow's historic MVP push, Tampa Bay's dominant rushing attack and Fernando Mendoza's second NFL start highlight three overlooked Week 11 games worth watching",
     "publishedAt": "2026-11-21T14:04:41.000Z",
     "collectedAt": "2026-11-21T17:05:35.197Z"
+  },
+  "hogs-haven-2870c9e8c06e": {
+    "id": "hogs-haven-2870c9e8c06e",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/washington-commanders-injuries/456444/commanders-bengals-injury-report-treylon-burks-rachaad-white-amik-robertson-croskey-merritt",
+    "title": "Commanders vs. Bengals injury report: Four key players questionable",
+    "excerpt": "The Commanders listed four starters as questionable to play the Cincinnati Bengals on Monday night. The team formally made that announcement Saturday afternoon on their official injury report. \n\n Center Lucas Patrick (concussion), cornerback Amik Robertson (ankle) and running backs Rachaad White (heel) and Bill Croskey-Merritt received them, though not all questionable designations are equal in this instance.\n\n Head coach Dan Quinn essentially said that Patrick would start at center despite…",
+    "publishedAt": "2026-11-21T21:15:19.000Z",
+    "collectedAt": "2026-11-21T21:39:59.695Z"
+  },
+  "hogs-haven-55e6f03e3ac9": {
+    "id": "hogs-haven-55e6f03e3ac9",
+    "sourceId": "hogs-haven",
+    "sourceName": "Hogs Haven",
+    "sourceHomepage": "https://www.hogshaven.com/",
+    "category": "team",
+    "url": "https://www.hogshaven.com/pressers/456487/dan-quinn-lucas-patrick-to-start-at-center-vs-bengals",
+    "title": "Dan Quinn: Lucas Patrick to start at center vs Bengals",
+    "excerpt": "Dan Quinn spoke to reporters after the Washington Commanders finished their last full practice of the week. The team hosts the Cincinnati Bengals on Monday Night Football this week, and they’re coming off a mini-bye following last week’s Thursday Night Football win over the Giants.\n\n That break was good for the team’s injury report, as some players got a little healthier. The Commanders are still dealing with several injuries, including one that happened yesterday. CB Amik Robertson was seen…",
+    "publishedAt": "2026-11-21T18:35:01.000Z",
+    "collectedAt": "2026-11-21T21:39:59.695Z"
+  },
+  "clutchpoints-6b3a87db741b": {
+    "id": "clutchpoints-6b3a87db741b",
+    "sourceId": "clutchpoints",
+    "sourceName": "ClutchPoints",
+    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
+    "category": "team",
+    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-will-jacory-croskey-merritt-play-vs-bengals-injury-update-encouraging",
+    "title": "Will Commanders’ Jacory Croskey-Merritt play vs. Bengals? This injury update is encouraging",
+    "excerpt": "In October, the Washington Commanders faced significant uncertainty in their backfield as they prepared for a Monday Night Football game against the San Francisco 49ers. Running back Jacory Croskey-Merritt was ruled out after missing several practice sessions , forcing Washington to adjust its rushing rotation. They closely monitored veteran Austin Ekeler, who was wearing a non-contact jersey.\n\n Now, in November, the Commanders are gearing up for another high-profile primetime matchup, this…",
+    "publishedAt": "2026-11-21T18:09:48.000Z",
+    "collectedAt": "2026-11-21T21:40:01.361Z"
+  },
+  "commanders-youtube-ac285360a104": {
+    "id": "commanders-youtube-ac285360a104",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=D1lF-M-YeyI",
+    "title": "Draft Day Memories & Major Signing Secrets | Fletch, Fred & Friends | Commanders | NFL",
+    "excerpt": "",
+    "publishedAt": "2026-11-21T18:00:16.000Z",
+    "collectedAt": "2026-11-21T21:40:03.772Z"
+  },
+  "commanders-youtube-098ac5a21194": {
+    "id": "commanders-youtube-098ac5a21194",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=cxOAejgcpe0",
+    "title": "LIVE: HC Dan Quinn Speaks To The Media After Practice | Washington Commanders",
+    "excerpt": "",
+    "publishedAt": "2026-11-21T17:55:47.000Z",
+    "collectedAt": "2026-11-21T21:40:03.772Z"
+  },
+  "pft-aa745d6de344": {
+    "id": "pft-aa745d6de344",
+    "sourceId": "pft",
+    "sourceName": "Pro Football Talk",
+    "sourceHomepage": "https://www.nbcsports.com/profootballtalk",
+    "category": "league",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-list-jacory-croskey-merritt-rachaad-white-as-questionable-for-monday",
+    "title": "Commanders list Jacory Croskey-Merritt, Rachaad White as questionable for Monday",
+    "excerpt": "The Commanders have a pair of running backs with questionable designations for Monday night's game against the Bengals. \n Jacory Croskey-Merritt and Rachaad White drew those tags. Croskey-Merritt was a full participant in practice all week as he returns from a groin injury that landed him on injured reserve. The Commanders will have to make a roster move to activate him by Monday afternoon. \n White as added to the report on Friday with a heel injury and he did not practice on Saturday. \n Center…",
+    "publishedAt": "2026-11-21T21:11:52.000Z",
+    "collectedAt": "2026-11-21T21:40:05.747Z"
   }
 }

@@ -27,18 +27,6 @@
     "publishedAt": "2026-11-11T22:27:36.000Z",
     "collectedAt": "2026-11-11T22:43:04.201Z"
   },
-  "social-01d3204d7da2": {
-    "id": "social-01d3204d7da2",
-    "url": "https://x.com/AdamSchefter/status/2120624858862363016",
-    "text": "Giants RB Cam Skattebo (hamstring) and QB JJ McCarthy (hip) have no injury status designation for Thursday night and are good to go vs. the Commanders.",
-    "handle": "AdamSchefter",
-    "author": "Adam Schefter",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-11T21:09:00.000Z",
-    "collectedAt": "2026-11-11T22:43:05.522Z"
-  },
   "social-84ca86702460": {
     "id": "social-84ca86702460",
     "url": "https://x.com/Commanders/status/2120698092659876042",
@@ -80,18 +68,6 @@
     ],
     "publishedAt": "2026-11-11T23:20:51.000Z",
     "collectedAt": "2026-11-12T03:05:47.208Z"
-  },
-  "social-d6b644858008": {
-    "id": "social-d6b644858008",
-    "url": "https://x.com/JordanRaanan/status/2120627688817730042",
-    "text": "QB J.J. McCarthy (hip) and RB Cam Skattebo (hamstring) don't have injury designations for Thursday night vs Commanders. Only LB Malik Harrison (groin) is questionable.",
-    "handle": "JordanRaanan",
-    "author": "Jordan Raanan",
-    "label": "",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-11T21:20:15.000Z",
-    "collectedAt": "2026-11-12T03:05:49.981Z"
   },
   "social-707459f86f08": {
     "id": "social-707459f86f08",
@@ -4364,5 +4340,257 @@
     "images": [],
     "publishedAt": "2026-11-21T00:38:10.000Z",
     "collectedAt": "2026-11-21T17:05:42.458Z"
+  },
+  "social-0973d844dcda": {
+    "id": "social-0973d844dcda",
+    "url": "https://x.com/Commanders/status/2124231374089441769",
+    "text": "LET'S GO @WashSpirit 🗣️ Good luck tonight in the NWSL Championship!",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/211/529/432/586/original/264c27ead51befe9.jpg"
+    ],
+    "publishedAt": "2026-11-21T20:00:00.000Z",
+    "collectedAt": "2026-11-21T21:40:08.005Z"
+  },
+  "social-b1136cc70042": {
+    "id": "social-b1136cc70042",
+    "url": "https://x.com/Commanders/status/2124196586477486170",
+    "text": "LIVE: HC Dan Quinn speaks to the media after practice lgz",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-21T17:41:46.000Z",
+    "collectedAt": "2026-11-21T21:40:08.005Z"
+  },
+  "social-afcb2a485feb": {
+    "id": "social-afcb2a485feb",
+    "url": "https://x.com/JPFinlayNBCS/status/2124252234942710225",
+    "text": "The Amik Robertson injury is a huge thing to monitor before Monday nights game. If he’s out could have major repercussions against the Bengals explosive passing attack",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/536/877/410/392/original/f416a0434975a089.jpg"
+    ],
+    "publishedAt": "2026-11-21T21:22:54.000Z",
+    "collectedAt": "2026-11-21T21:40:09.827Z"
+  },
+  "social-50e50e145a33": {
+    "id": "social-50e50e145a33",
+    "url": "https://x.com/JPFinlayNBCS/status/2124241924995658207",
+    "text": "These Kansas uniforms are terrible",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-21T20:41:56.000Z",
+    "collectedAt": "2026-11-21T21:40:09.827Z"
+  },
+  "social-aeb50a58d185": {
+    "id": "social-aeb50a58d185",
+    "url": "https://x.com/john_keim/status/2124197925311913990",
+    "text": "C Lucas Patrick will start Monday.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-21T17:47:05.000Z",
+    "collectedAt": "2026-11-21T21:40:09.827Z"
+  },
+  "social-dddac2bedfa4": {
+    "id": "social-dddac2bedfa4",
+    "url": "https://x.com/john_keim/status/2124251986749210840",
+    "text": "Commanders LB Frankie Luvu was fined $17,911 for unnecessary roughness in the game vs New York.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-21T21:21:54.000Z",
+    "collectedAt": "2026-11-21T21:40:10.820Z"
+  },
+  "social-cad6bedbde05": {
+    "id": "social-cad6bedbde05",
+    "url": "https://x.com/john_keim/status/2124247177463832934",
+    "text": "Croskey-Merritt, Robertson and White all questionable. So is Patrick but Quinn said he will start at C. Optimism with White; JCM trending toward playing. Not sure yet on Robertson.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/480/849/963/221/original/8868099c158016a7.jpg"
+    ],
+    "publishedAt": "2026-11-21T21:02:48.000Z",
+    "collectedAt": "2026-11-21T21:40:10.820Z"
+  },
+  "social-a272024b9a63": {
+    "id": "social-a272024b9a63",
+    "url": "https://x.com/john_keim/status/2124197669258019175",
+    "text": "Dan Quinn said they'll decide on Jacory Croskey-Merritt's status likely tomorrow. Quinn said it's trending in the right direction. On Amik Robertson: hurt it on the last play of practice Thursday; held out today. will monitor the next 48 hours. On Rachaad White: held out with heel soreness. Optimism for Monday. WR Trey Burks practiced today.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-21T17:46:04.000Z",
+    "collectedAt": "2026-11-21T21:40:10.820Z"
+  },
+  "social-46450d52a64a": {
+    "id": "social-46450d52a64a",
+    "url": "https://x.com/BenStandig/status/2124248082468803066",
+    "text": "Four players officially \"questionable\" for MNF. Amik Robertson's game status seemed the most uncertain based on Dan Quinn's comments today.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/471/814/087/793/original/9c54e4c226fab6ec.jpg"
+    ],
+    "publishedAt": "2026-11-21T21:06:24.000Z",
+    "collectedAt": "2026-11-21T21:40:12.176Z"
+  },
+  "social-e2a66810d16f": {
+    "id": "social-e2a66810d16f",
+    "url": "https://x.com/BenStandig/status/2124206586579362014",
+    "text": "Bengals will play without their starting right guard (Risner).",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-21T18:21:30.000Z",
+    "collectedAt": "2026-11-21T21:40:12.176Z"
+  },
+  "social-2120d1279449": {
+    "id": "social-2120d1279449",
+    "url": "https://x.com/BenStandig/status/2124198008489222570",
+    "text": "Lucas Patrick will start at center on MNF.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-21T17:47:25.000Z",
+    "collectedAt": "2026-11-21T21:40:12.176Z"
+  },
+  "social-b5cb6a528b72": {
+    "id": "social-b5cb6a528b72",
+    "url": "https://x.com/BenStandig/status/2124197776309334242",
+    "text": "Sounds like Treylon Burks (foot) will be fine for MNF. Resting him during the practice week will be part of injury management.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-21T17:46:30.000Z",
+    "collectedAt": "2026-11-21T21:40:12.176Z"
+  },
+  "social-abb6549f441f": {
+    "id": "social-abb6549f441f",
+    "url": "https://x.com/BenStandig/status/2124197418077917260",
+    "text": "Dan Quinn said Jacory Croskey-Merritt had a \"great week\" of practice and is \"certainly trending the right way\" for Monday's game.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-21T17:45:04.000Z",
+    "collectedAt": "2026-11-21T21:40:12.176Z"
+  },
+  "social-d4f7252cd4f1": {
+    "id": "social-d4f7252cd4f1",
+    "url": "https://x.com/tashanreed/status/2124248646652960871",
+    "text": "Croskey-Merritt, Patrick, White and Robertson are all questionable, but DQ said earlier that the first three will likely play.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-21T21:08:38.000Z",
+    "collectedAt": "2026-11-21T21:40:13.689Z"
+  },
+  "social-7789767897ae": {
+    "id": "social-7789767897ae",
+    "url": "https://x.com/tashanreed/status/2124198035211346253",
+    "text": "Quinn said the #Commanders will go back to Lucas Patrick as their starting center this week. He missed last week's game due to a concussion.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-21T17:47:31.000Z",
+    "collectedAt": "2026-11-21T21:40:13.689Z"
+  },
+  "social-28d58e31f839": {
+    "id": "social-28d58e31f839",
+    "url": "https://x.com/tashanreed/status/2124197659032555595",
+    "text": "Quinn said WR Treylon Burks (foot) will also be good to go Monday",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-21T17:46:02.000Z",
+    "collectedAt": "2026-11-21T21:40:13.689Z"
+  },
+  "social-cd8e86964723": {
+    "id": "social-cd8e86964723",
+    "url": "https://x.com/tashanreed/status/2124196925322752175",
+    "text": "Injury updates from #Commanders HC Dan Quinn ahead of their matchup with the #Bengals : - RB Jacory Croskey-Merritt (groin) is trending toward playing - RB Rachaad White (heel) should be fine - CB Amik Robertson (leg) is TBD",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-21T17:43:07.000Z",
+    "collectedAt": "2026-11-21T21:40:13.689Z"
+  },
+  "social-94598bae1ecd": {
+    "id": "social-94598bae1ecd",
+    "url": "https://x.com/MikeGarafolo/status/2124247690091630956",
+    "text": "The #Commanders list RBs Jacory Crowley-Merritt and Rachaad White as questionable, though Dan Quinn was optimistic on both earlier today.",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "@MikeGarafolo",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/482/139/322/973/original/0cd18f8ab23841f8.jpg"
+    ],
+    "publishedAt": "2026-11-21T21:04:50.000Z",
+    "collectedAt": "2026-11-21T21:40:19.203Z"
+  },
+  "social-aa0cecda4f4c": {
+    "id": "social-aa0cecda4f4c",
+    "url": "https://x.com/LaurelPfahler/status/2124252532927017274",
+    "text": "#Bengals #Commanders injury reports.",
+    "handle": "LaurelPfahler",
+    "author": "Laurel Pfahler",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/656/537/025/181/364/original/5963c5b801fa21aa.jpg"
+    ],
+    "publishedAt": "2026-11-21T21:24:05.000Z",
+    "collectedAt": "2026-11-21T21:40:24.351Z"
+  },
+  "social-f1a2851d954d": {
+    "id": "social-f1a2851d954d",
+    "url": "https://x.com/MikeGarafolo/status/2124197303355310259",
+    "text": "#Commanders RB Jacory Croskey-Merritt is trending in the right direction to play Monday against the #Bengals , per Dan Quinn: “Great week.”",
+    "handle": "MikeGarafolo",
+    "author": "Mike Garafolo",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-21T17:44:37.000Z",
+    "collectedAt": "2026-11-21T21:40:24.351Z"
   }
 }
