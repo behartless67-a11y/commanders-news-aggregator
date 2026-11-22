@@ -20,6 +20,8 @@ export const BEN_PICKS = {
   // (Rams, Nov 8: "20-17, winner to be determined." No winner, so no entry.)
   // Giants pregame post, Nov 12: just enough to keep us interested in the season, "because I'm a full fledged masochist."
   '2026-11-12-NYG': { commanders: 28, opponent: 20 },
+  // "35-30 Us, Because I Said So" (data/originals/because-i-said-so.json), Nov 22: "somehow, someway i think we pull this out because why? i said so."
+  '2026-11-23-CIN': { commanders: 35, opponent: 30 },
 };
 
 /**
