@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T16:18:43.169Z",
+  "fetchedAt": "2026-11-22T21:06:48.445Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6775,6 +6775,70 @@
         "abbr": "IND",
         "flags": 2,
         "yards": 15
+      }
+    },
+    "401873067": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "KC",
+        "flags": 2,
+        "yards": 15
+      },
+      "away": {
+        "abbr": "ARI",
+        "flags": 4,
+        "yards": 25
+      }
+    },
+    "401873070": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Scott Novak",
+      "home": {
+        "abbr": "BUF",
+        "flags": 7,
+        "yards": 48
+      },
+      "away": {
+        "abbr": "MIA",
+        "flags": 3,
+        "yards": 25
+      }
+    },
+    "401873071": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Brad Rogers",
+      "home": {
+        "abbr": "CHI",
+        "flags": 3,
+        "yards": 15
+      },
+      "away": {
+        "abbr": "NO",
+        "flags": 7,
+        "yards": 30
+      }
+    },
+    "401873073": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Clete Blakeman",
+      "home": {
+        "abbr": "DAL",
+        "flags": 11,
+        "yards": 128
+      },
+      "away": {
+        "abbr": "TEN",
+        "flags": 8,
+        "yards": 60
       }
     }
   }
