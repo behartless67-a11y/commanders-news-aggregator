@@ -4479,5 +4479,81 @@
     "images": [],
     "publishedAt": "2026-11-22T00:45:24.000Z",
     "collectedAt": "2026-11-22T03:05:51.908Z"
+  },
+  "social-ab42612b6022": {
+    "id": "social-ab42612b6022",
+    "url": "https://x.com/Commanders/status/2124533371510694101",
+    "text": "Amik Robertson rating fits is a 10/10 👏 @AdiosSpirits@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-22T16:00:02.000Z",
+    "collectedAt": "2026-11-22T16:17:45.080Z"
+  },
+  "social-d6e8be617603": {
+    "id": "social-d6e8be617603",
+    "url": "https://x.com/Commanders/status/2124525813559447574",
+    "text": "Happy birthday to Darryl Grant! 🎂",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/660/815/194/760/835/original/c0fbdbfab7875a85.jpg"
+    ],
+    "publishedAt": "2026-11-22T15:30:00.000Z",
+    "collectedAt": "2026-11-22T16:17:45.080Z"
+  },
+  "social-ae3cab242e79": {
+    "id": "social-ae3cab242e79",
+    "url": "https://x.com/AdamSchefter/status/2124522612424598009",
+    "text": "“We’ve lost one of the best human beings to ever walk the planet.” Chris Berman announces the death of his longtime broadcast partner and best friend, Tom Jackson.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-22T15:17:17.000Z",
+    "collectedAt": "2026-11-22T16:17:46.554Z"
+  },
+  "social-a6c41e6f5900": {
+    "id": "social-a6c41e6f5900",
+    "url": "https://x.com/AdamSchefter/status/2124519819160568215",
+    "text": "The life and legacy of the great Tom Jackson: 78/tom-jackson-broncos-star-espn-legend-dies-75",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-22T15:06:11.000Z",
+    "collectedAt": "2026-11-22T16:17:47.929Z"
+  },
+  "social-e81b4a4dbce6": {
+    "id": "social-e81b4a4dbce6",
+    "url": "https://x.com/john_keim/status/2124512132540539328",
+    "text": "On video with 5 thoughts on the Commanders. Amik Robertson. On Jayden Daniels, Drew Stevens and how pressure doesn’t bother him; on Croskey-Merritt and the run game; eyeing the Bengals —where can they take advantage— and more. @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-22T14:35:38.000Z",
+    "collectedAt": "2026-11-22T16:17:47.929Z"
+  },
+  "social-52c85379e42f": {
+    "id": "social-52c85379e42f",
+    "url": "https://x.com/BenStandig/status/2124521013660541417",
+    "text": "Jacory Croskey-Merritt is poised to return for MNF bringing some much-needed explosiveness to the Commanders' backfield. The twist: Washington's rushing efficiency kinda improved during Bill's absence. The run game + LSU QBs, Styles, Amik, flags, more. jacory-croskey-merritt-expected-return?r=5rru9i&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/660/735/556/679/591/original/ecc2c0b7a04f04c4.jpg"
+    ],
+    "publishedAt": "2026-11-22T15:10:56.000Z",
+    "collectedAt": "2026-11-22T16:17:49.292Z"
   }
 }
