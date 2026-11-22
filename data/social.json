@@ -1,82 +1,4 @@
 {
-  "social-8d221867101b": {
-    "id": "social-8d221867101b",
-    "url": "https://x.com/Commanders/status/2120984992251822580",
-    "text": "We have made the following roster moves: - Signed LB Ale Kaho from the practice squad - Elevated C Julian Good-Jones from the practice squad",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/605/480/848/914/357/original/984b96a8b1e2a60e.jpg"
-    ],
-    "publishedAt": "2026-11-12T21:00:02.000Z",
-    "collectedAt": "2026-11-12T21:05:40.119Z"
-  },
-  "social-e9fa0356e853": {
-    "id": "social-e9fa0356e853",
-    "url": "https://x.com/JPFinlayNBCS/status/2120975787088117978",
-    "text": "Beautiful day for a ballgame",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/605/389/156/338/187/original/faf11f43df8cd465.jpg"
-    ],
-    "publishedAt": "2026-11-12T20:23:28.000Z",
-    "collectedAt": "2026-11-12T21:05:41.164Z"
-  },
-  "social-dad31af70aa2": {
-    "id": "social-dad31af70aa2",
-    "url": "https://x.com/JPFinlayNBCS/status/2120967143516954632",
-    "text": "People always act like I’m crazy because I don’t use outlook. Well not today.",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-12T19:49:07.000Z",
-    "collectedAt": "2026-11-12T21:05:41.164Z"
-  },
-  "social-a236be6494f7": {
-    "id": "social-a236be6494f7",
-    "url": "https://x.com/tashanreed/status/2120985190222696583",
-    "text": "The #Commanders signed Kaho to the roster, so he'll be on the 53-man moving forward. Good-Jones provides some center depth.",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-12T21:00:50.000Z",
-    "collectedAt": "2026-11-12T21:05:45.458Z"
-  },
-  "social-f6aa905d34e8": {
-    "id": "social-f6aa905d34e8",
-    "url": "https://x.com/Connor_J_Hughes/status/2120970712584462725",
-    "text": "Previewing #Giants - #Commanders with @DDuggan21 on NYG 411",
-    "handle": "Connor_J_Hughes",
-    "author": "Connor Hughes",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-12T20:03:18.000Z",
-    "collectedAt": "2026-11-12T21:05:56.382Z"
-  },
-  "social-8bfb504180dd": {
-    "id": "social-8bfb504180dd",
-    "url": "https://mastodon.social/@top_news/117605153285968736",
-    "text": "NFL Thursday Night Football preview: Commanders try to put previous nightmare vs. Giants behind them The Commanders and Giants had a memorable tie in their first meeting. fl-thursday-night-football-preview-commanders-try-to-put-previous-nightmare-vs-giants-behind-them-163400629.html #TopNews #News #Washington #Giants #Commanders",
-    "handle": "top_news",
-    "author": "News",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [
-      "https://files.mastodon.social/media_attachments/files/117/605/153/232/688/666/original/69b3e371e34f0e2a.jpg"
-    ],
-    "publishedAt": "2026-11-12T19:37:06.660Z",
-    "collectedAt": "2026-11-12T21:05:56.382Z"
-  },
   "social-05e18f1f4977": {
     "id": "social-05e18f1f4977",
     "url": "https://x.com/Commanders/status/2121046350515093895",
@@ -281,18 +203,6 @@
       "https://files.mastodon.social/cache/media_attachments/files/117/605/831/437/801/666/original/a192254c4d0eeb46.jpg"
     ],
     "publishedAt": "2026-11-12T22:21:02.000Z",
-    "collectedAt": "2026-11-13T01:05:42.382Z"
-  },
-  "social-ba0eebe1c156": {
-    "id": "social-ba0eebe1c156",
-    "url": "https://x.com/john_keim/status/2120985304328716412",
-    "text": "The Commanders signed LB Ale Kaho off the practice squad and elevated OL Julian Good-Jones off PS for tonight.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-12T21:01:17.000Z",
     "collectedAt": "2026-11-13T01:05:42.382Z"
   },
   "social-457e752748cb": {
