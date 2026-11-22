@@ -1,40 +1,4 @@
 {
-  "hogs-haven-bfd921ae047d": {
-    "id": "hogs-haven-bfd921ae047d",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/447134/dont-write-off-te-chig-okonkwo-just-yet-all-atwitter",
-    "title": "Don’t write off TE Chig Okonkwo just yet – All aTwitter",
-    "excerpt": "PHILADELPHIA, PENNSYLVANIA - SEPTEMBER 13: Chig Okonkwo #85 of the Washington Commanders runs in the backfield against the Philadelphia Eagles during an NFL football game at Lincoln Financial Field on September 13, 2026 in Philadelphia, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images \n \n All aTwitter – 8 October 2026\n\n We follow Twitter so you don’t have to\n\n The goal of All aTwitter is to give readers a detailed or quirky look, through the unique lens of Twitter, at the…",
-    "publishedAt": "2026-10-08T04:00:00.000Z",
-    "collectedAt": "2026-10-08T04:05:27.478Z"
-  },
-  "clutchpoints-e19c5d700bbd": {
-    "id": "clutchpoints-e19c5d700bbd",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-jayden-daniels-terry-mclaurin-stefon-diggs-expected-return",
-    "title": "Commanders’ Jayden Daniels may not have Terry McLaurin, Stefon Diggs for expected return after latest update",
-    "excerpt": "The Washington Commanders have already been hit with the injury bug so far in 2026, and they are off to a 1-3 start as a result. The biggest injury of them all in Washington is to star quarterback Jayden Daniels , who dislocated his elbow once again in Week 2 and has missed the last two games as a result.\n\n Daniels is now back at Commanders practice and looks like he will be able to make his return in Week 5 against the New York Giants. The former No. 2 overall pick will have to play with an…",
-    "publishedAt": "2026-10-08T03:29:38.000Z",
-    "collectedAt": "2026-10-08T06:05:29.041Z"
-  },
-  "dc-sports-king-28009ad72d72": {
-    "id": "dc-sports-king-28009ad72d72",
-    "sourceId": "dc-sports-king",
-    "sourceName": "DC Sports King",
-    "sourceHomepage": "https://dcsportsking.com/",
-    "category": "team",
-    "url": "https://dcsportsking.com/growing-commanders-injury-report-raises-concern-as-hamstring-injuries-ground-stefon-diggs-and-terry-mclaurin",
-    "title": "Growing Commanders Injury Report Raises Concern as Hamstrings Ground Stefon Diggs, Terry McLaurin",
-    "excerpt": "The Washington Commanders’ dream wide receiver tandem is currently grounded, and the timing couldn’t be worse.\n\n Washington’s Week 5 injury report reads like a CVS receipt —spanning a staggering 23 players in total—but the two names sitting at the very top are what have fans sweating ahead of Sunday’s divisional clash with the New York Giants. Both Terry McLaurin and Stefon Diggs did not participate in Wednesday’s practice, sidelined by matching hamstring issues that threaten to derail the…",
-    "publishedAt": "2026-10-08T06:32:42.000Z",
-    "collectedAt": "2026-10-08T08:10:50.394Z"
-  },
   "riggos-rag-0a0cd54e1947": {
     "id": "riggos-rag-0a0cd54e1947",
     "sourceId": "riggos-rag",
@@ -16210,5 +16174,17 @@
     "excerpt": "Commanders linebacker Frankie Luvu was fined $17,911 for an infraction during Washington’s 24-21 victory over the New York Giants in Week 10, the NFL announced on Saturday afternoon. \n\n Luvu was fined for unnecessary roughness, due to a hit on a defenseless player. The infraction occurred with 59 seconds remaining in the third quarter, when Luvu made a tackle on Giants tight end Theo Johnson . Luvu was initially flagged for the tackle during the game, but officials picked it up. \n\n You can see…",
     "publishedAt": "2026-11-21T21:53:41.000Z",
     "collectedAt": "2026-11-22T03:05:27.890Z"
+  },
+  "commanders-youtube-556e88eeb93d": {
+    "id": "commanders-youtube-556e88eeb93d",
+    "sourceId": "commanders-youtube",
+    "sourceName": "Commanders (YouTube)",
+    "sourceHomepage": "https://www.youtube.com/@Commanders",
+    "category": "team",
+    "url": "https://www.youtube.com/watch?v=MDpemjef3sk",
+    "title": "HC Dan Quinn Previews Primetime Bengals Vs. Commanders Game | Washington Commanders | The Gameplan",
+    "excerpt": "",
+    "publishedAt": "2026-11-22T05:00:04.000Z",
+    "collectedAt": "2026-11-22T06:50:07.296Z"
   }
 }
