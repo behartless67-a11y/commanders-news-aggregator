@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "fetchedAt": "2026-11-22T21:06:04.669Z",
+  "fetchedAt": "2026-11-23T00:55:16.006Z",
   "teams": [
     {
       "abbr": "NYG",
@@ -12,9 +12,9 @@
     {
       "abbr": "DAL",
       "name": "Dallas Cowboys",
-      "overall": "4-6",
-      "streak": "L1",
-      "winPercent": 0.4
+      "overall": "5-6",
+      "streak": "W1",
+      "winPercent": 0.45454547
     },
     {
       "abbr": "WAS",
@@ -26,9 +26,9 @@
     {
       "abbr": "PHI",
       "name": "Philadelphia Eagles",
-      "overall": "2-7",
-      "streak": "L7",
-      "winPercent": 0.22222222
+      "overall": "3-7",
+      "streak": "W1",
+      "winPercent": 0.3
     }
   ]
 }

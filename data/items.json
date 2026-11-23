@@ -1,40 +1,4 @@
 {
-  "hogs-haven-23d4e9f6499f": {
-    "id": "hogs-haven-23d4e9f6499f",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/openthread/447491/thursday-night-football-tampa-bay-buccaneers-dallas-cowboys",
-    "title": "Thursday Night Football: Tampa Bay Buccaneers @ Dallas Cowboys",
-    "excerpt": "ARLINGTON, TEXAS - DECEMBER 22: CeeDee Lamb #88 of the Dallas Cowboys catches a pass in front of Zyon McCollum #27 of the Tampa Bay Buccaneers during the second quarter at AT&T Stadium on December 22, 2024 in Arlington, Texas. (Photo by Ron Jenkins/Getty Images) | Getty Images \n \n Week 5 of the 2026 season kicks off with an NFC battle between the Tampa Bay Buccaneers and the Dallas Cowboys. The Bucs haven’t won a game this season and are on their way to a top 3 pick in next year’s draft after…",
-    "publishedAt": "2026-10-09T00:00:00.000Z",
-    "collectedAt": "2026-10-09T00:11:26.521Z"
-  },
-  "hogs-haven-16c1bc50e8bc": {
-    "id": "hogs-haven-16c1bc50e8bc",
-    "sourceId": "hogs-haven",
-    "sourceName": "Hogs Haven",
-    "sourceHomepage": "https://www.hogshaven.com/",
-    "category": "team",
-    "url": "https://www.hogshaven.com/washington-commanders-discussion/447500/commanders-five-questions-week-5-giants-jayden-daniels",
-    "title": "Commanders Q+A: Five questions needing answers before Giants clash",
-    "excerpt": "It’s only Week 5, but the Commanders are encroaching on must-win territory. Yeah, that sounds a bit extreme for October, but Washington simply can’t afford to fall to 1-4 on the season and 0-3 within the NFC East so early. \n\n There are fair complaints to be made about the early-season schedule and a buzzard’s luck when it comes to injuries , but this is the hand Washington was dealt. \n\n While the injury report is a million miles long and features some star power, franchise quarterback Jayden…",
-    "publishedAt": "2026-10-08T23:00:00.000Z",
-    "collectedAt": "2026-10-09T00:11:26.521Z"
-  },
-  "yahoo-nfl-76bcdc47bb43": {
-    "id": "yahoo-nfl-76bcdc47bb43",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/jayden-daniels-playing-week-5-220911114.html",
-    "title": "Is Jayden Daniels playing Week 5? Commanders OC reveals QB's status",
-    "excerpt": "Washington Commanders quarterback Jayden Daniels dislocated his left elbow during the team's Week 2 loss to the Dallas Cowboys.\n While many anticipated in the injury – which was an aggravation of an injury he suffered during the 2025 campaign – would sideline Daniels long-term, the 25-year-old has made a speedy recovery.\n As a result, it looks like Daniels is going to be able to play in Week 5 when the Commanders face the New York Giants .\n Here's what to know about Daniels' injury , his status…",
-    "publishedAt": "2026-10-08T22:09:11.000Z",
-    "collectedAt": "2026-10-09T00:11:33.428Z"
-  },
   "atoz-sports-82c3e419fb86": {
     "id": "atoz-sports-82c3e419fb86",
     "sourceId": "atoz-sports",
@@ -59,18 +23,6 @@
     "publishedAt": "2026-10-09T04:01:40.000Z",
     "collectedAt": "2026-10-09T04:05:31.591Z"
   },
-  "clutchpoints-01fda3568ff4": {
-    "id": "clutchpoints-01fda3568ff4",
-    "sourceId": "clutchpoints",
-    "sourceName": "ClutchPoints",
-    "sourceHomepage": "https://clutchpoints.com/nfl/washington-commanders",
-    "category": "team",
-    "url": "https://clutchpoints.com/nfl/washington-commanders/commanders-news-washington-surprisingly-waives-running-back-ahead-of-giants-clash",
-    "title": "Commanders surprisingly waive running back ahead of Giants clash",
-    "excerpt": "The Washington Commanders on Thursday waived rookie running back Kaytron Allen ahead of their upcoming clash with the New York Giants in Week 5 .\n\n Washington selected the former Penn State standout with the 187th overall pick in the sixth round of the 2026 NFL Draft, who entered the NFL following a record-setting college career. However, Allen’s opportunities with the Commanders remained limited, with the 23-year-old recording 41 rushing yards on 12 carries across his first four appearances.…",
-    "publishedAt": "2026-10-08T21:56:46.000Z",
-    "collectedAt": "2026-10-09T04:05:32.457Z"
-  },
   "pft-d9f4560e9c3d": {
     "id": "pft-d9f4560e9c3d",
     "sourceId": "pft",
@@ -82,18 +34,6 @@
     "excerpt": "The European games have created a new NFL viewing window on Sunday mornings. And while the numbers aren't shabby, they're nothing close to what NFL games do in the more traditional windows.\n Via Nielsen, the Week 4 Colts-Commanders game from London averaged 4.987 million viewers on NFL Network.\n In 2025, the six Sunday morning international games on NFLN averaged 6.2 million viewers .\n That next chance to improve the international performance comes on Sunday, when the Eagles face the Jaguars at…",
     "publishedAt": "2026-10-09T02:59:39.000Z",
     "collectedAt": "2026-10-09T04:05:41.415Z"
-  },
-  "yahoo-nfl-de5219f297f0": {
-    "id": "yahoo-nfl-de5219f297f0",
-    "sourceId": "yahoo-nfl",
-    "sourceName": "Yahoo Sports",
-    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
-    "category": "league",
-    "url": "https://sports.yahoo.com/articles/commanders-abruptly-cut-rookie-running-002521811.html",
-    "title": "Commanders abruptly cut rookie running back Kaytron Allen",
-    "excerpt": "Washington Commanders running back Kaytron Allen (31) is tackled by Philadelphia Eagles linebacker Jalyx Hunt (58) at the 14-yard line during the fourth quarter of an NFL football game at Lincoln Financial Field in Philadelphia, Sunday, Sept. 13, 2026. Rookie running back Kaytron Allen’s brief tenure with the Commanders has already come to an end.\n Washington placed Allen, 23, on waivers Thursday to clear up space for players coming back from injury, ESPN’s Adam Schefter reported .\n Allen,…",
-    "publishedAt": "2026-10-09T00:25:21.000Z",
-    "collectedAt": "2026-10-09T04:35:50.553Z"
   },
   "yahoo-nfl-fa44017b2b71": {
     "id": "yahoo-nfl-fa44017b2b71",
@@ -15994,5 +15934,17 @@
     "excerpt": "The Washington Commanders are looking to increase rookie wide receiver Antonio Williams' involvement after an encouraging start to the season.",
     "publishedAt": "2026-11-22T17:11:18.000Z",
     "collectedAt": "2026-11-22T21:05:35.462Z"
+  },
+  "yahoo-nfl-2415be36eb9a": {
+    "id": "yahoo-nfl-2415be36eb9a",
+    "sourceId": "yahoo-nfl",
+    "sourceName": "Yahoo Sports",
+    "sourceHomepage": "https://sports.yahoo.com/nfl/teams/washington/",
+    "category": "league",
+    "url": "https://sports.yahoo.com/articles/watch-commanders-vs-bengals-mnf-230000305.html",
+    "title": "How to watch Commanders vs Bengals on MNF: TV, radio, streaming, Week 11 injury report",
+    "excerpt": "LANDOVER, MD - OCTOBER 11: Commanders quarterback Jayden Daniels (5) drops back and throws from the pocket while wearing his elbow brace during the New York Giants versus Washington Commanders National Football League game at Northwest Stadium on October 11, 2026 in Landover, MD. (Photo by Randy Litzinger/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images The Washington Commanders are back home in primetime and are hosting the Cincinnati Bengals. Joe Burrow is having an…",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "collectedAt": "2026-11-23T00:54:53.532Z"
   }
 }

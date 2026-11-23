@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T21:06:48.445Z",
+  "fetchedAt": "2026-11-23T00:56:04.310Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6793,6 +6793,38 @@
         "yards": 25
       }
     },
+    "401873068": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "CAR",
+        "flags": 6,
+        "yards": 54
+      },
+      "away": {
+        "abbr": "BAL",
+        "flags": 5,
+        "yards": 41
+      }
+    },
+    "401873069": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T21:25Z",
+      "referee": "Craig Wrolstad",
+      "home": {
+        "abbr": "NYG",
+        "flags": 6,
+        "yards": 46
+      },
+      "away": {
+        "abbr": "JAX",
+        "flags": 13,
+        "yards": 107
+      }
+    },
     "401873070": {
       "season": 2026,
       "week": 11,
@@ -6825,6 +6857,22 @@
         "yards": 30
       }
     },
+    "401873072": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Adrian Hill",
+      "home": {
+        "abbr": "DET",
+        "flags": 8,
+        "yards": 72
+      },
+      "away": {
+        "abbr": "TB",
+        "flags": 8,
+        "yards": 58
+      }
+    },
     "401873073": {
       "season": 2026,
       "week": 11,
@@ -6839,6 +6887,54 @@
         "abbr": "TEN",
         "flags": 8,
         "yards": 60
+      }
+    },
+    "401873074": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T21:05Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "LAC",
+        "flags": 6,
+        "yards": 50
+      },
+      "away": {
+        "abbr": "NYJ",
+        "flags": 4,
+        "yards": 18
+      }
+    },
+    "401873075": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T21:25Z",
+      "referee": null,
+      "home": {
+        "abbr": "DEN",
+        "flags": 2,
+        "yards": 10
+      },
+      "away": {
+        "abbr": "LV",
+        "flags": 9,
+        "yards": 63
+      }
+    },
+    "401873076": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "referee": "Land Clark",
+      "home": {
+        "abbr": "PHI",
+        "flags": 4,
+        "yards": 25
+      },
+      "away": {
+        "abbr": "PIT",
+        "flags": 6,
+        "yards": 49
       }
     }
   }
