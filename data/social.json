@@ -1,32 +1,4 @@
 {
-  "social-4e837da9a2ec": {
-    "id": "social-4e837da9a2ec",
-    "url": "https://x.com/Commanders/status/2121375051857666269",
-    "text": "Big plays on both sides of the ball @DabosInc@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/586/672/976/262/original/babc9853e993dab5.jpg"
-    ],
-    "publishedAt": "2026-11-13T22:50:00.000Z",
-    "collectedAt": "2026-11-14T00:54:13.455Z"
-  },
-  "social-fd576e35e161": {
-    "id": "social-fd576e35e161",
-    "url": "https://x.com/Commanders/status/2121362972521963677",
-    "text": "RBs... beware of this man 😤",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/424/357/674/766/original/aabd2896026ec0d3.jpg"
-    ],
-    "publishedAt": "2026-11-13T22:02:00.000Z",
-    "collectedAt": "2026-11-14T00:54:13.455Z"
-  },
   "social-b02fac613d90": {
     "id": "social-b02fac613d90",
     "url": "https://x.com/BenStandig/status/2121383612020900318",
@@ -38,42 +10,6 @@
     "images": [],
     "publishedAt": "2026-11-13T23:24:01.000Z",
     "collectedAt": "2026-11-14T00:54:17.707Z"
-  },
-  "social-6307b40839d5": {
-    "id": "social-6307b40839d5",
-    "url": "https://x.com/BenStandig/status/2121362644305387640",
-    "text": "Understanding this is hardly the main concern, but this air travel shutdown could impact all kinds of sporting events. NFL teams will often fly out Saturday for a Sunday game.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-13T22:00:42.000Z",
-    "collectedAt": "2026-11-14T00:54:17.707Z"
-  },
-  "social-7b30a464b94b": {
-    "id": "social-7b30a464b94b",
-    "url": "https://x.com/tashanreed/status/2121369701297062146",
-    "text": "Flight canceled so I'm whipping it in a Toyota Corola I guess?",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-13T22:28:44.000Z",
-    "collectedAt": "2026-11-14T00:54:19.136Z"
-  },
-  "social-be1a9094a7fa": {
-    "id": "social-be1a9094a7fa",
-    "url": "https://x.com/tashanreed/status/2121353314835017976",
-    "text": "*Me, in the airport, about to fly out of New York*",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-13T21:23:37.000Z",
-    "collectedAt": "2026-11-14T00:54:19.136Z"
   },
   "social-81bfbea8614a": {
     "id": "social-81bfbea8614a",
