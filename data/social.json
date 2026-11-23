@@ -1,19 +1,4 @@
 {
-  "social-28df80fa2f59": {
-    "id": "social-28df80fa2f59",
-    "url": "https://x.com/Commanders/status/2121319183392866355",
-    "text": "First career fumble recovery for @JR1ERA@twitter.com",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/610/708/099/920/647/original/b88c0bed80994695.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/610/708/245/228/636/original/ad6ee649dc2d5c0c.jpg"
-    ],
-    "publishedAt": "2026-11-13T19:08:00.000Z",
-    "collectedAt": "2026-11-13T19:47:45.996Z"
-  },
   "social-4e837da9a2ec": {
     "id": "social-4e837da9a2ec",
     "url": "https://x.com/Commanders/status/2121375051857666269",
@@ -42,33 +27,6 @@
     "publishedAt": "2026-11-13T22:02:00.000Z",
     "collectedAt": "2026-11-14T00:54:13.455Z"
   },
-  "social-b18126542fa2": {
-    "id": "social-b18126542fa2",
-    "url": "https://x.com/Commanders/status/2121347377076339084",
-    "text": "no emails, just Commanders",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "Official",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/155/699/477/862/original/98dbb9bb5182e250.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/155/904/662/952/original/ddc3385f75699453.jpg"
-    ],
-    "publishedAt": "2026-11-13T21:00:02.000Z",
-    "collectedAt": "2026-11-14T00:54:13.455Z"
-  },
-  "social-0d62207ceaf6": {
-    "id": "social-0d62207ceaf6",
-    "url": "https://x.com/john_keim/status/2121334000044114378",
-    "text": "Good look at the TD. A strike from Daniels.",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-13T20:06:52.000Z",
-    "collectedAt": "2026-11-14T00:54:16.363Z"
-  },
   "social-b02fac613d90": {
     "id": "social-b02fac613d90",
     "url": "https://x.com/BenStandig/status/2121383612020900318",
@@ -93,21 +51,6 @@
     "publishedAt": "2026-11-13T22:00:42.000Z",
     "collectedAt": "2026-11-14T00:54:17.707Z"
   },
-  "social-122c81803414": {
-    "id": "social-122c81803414",
-    "url": "https://x.com/BenStandig/status/2121346481789481271",
-    "text": "Commanders’ Wk 10 snaps: 🏈 Distinct top 3 WRs 🏈 Oweh/Chaisson almost double Armstrong's reps 🏈 Henry's 1st career snaps",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/190/559/443/725/original/f343ff6f65d57280.jpg",
-      "https://files.mastodon.social/cache/media_attachments/files/117/611/190/628/978/109/original/e34fd749a648afa5.jpg"
-    ],
-    "publishedAt": "2026-11-13T20:56:28.000Z",
-    "collectedAt": "2026-11-14T00:54:17.707Z"
-  },
   "social-7b30a464b94b": {
     "id": "social-7b30a464b94b",
     "url": "https://x.com/tashanreed/status/2121369701297062146",
@@ -130,18 +73,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-11-13T21:23:37.000Z",
-    "collectedAt": "2026-11-14T00:54:19.136Z"
-  },
-  "social-999bae7c3545": {
-    "id": "social-999bae7c3545",
-    "url": "https://x.com/tashanreed/status/2121344425662255174",
-    "text": "Sensational belt 2 ass is on the way",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-13T20:48:18.000Z",
     "collectedAt": "2026-11-14T00:54:19.136Z"
   },
   "social-81bfbea8614a": {
