@@ -1,19 +1,19 @@
 {
-  "fetchedAt": "2026-11-16T21:30:50.349Z",
+  "fetchedAt": "2026-11-23T23:14:00.473Z",
   "uva": {
     "lastGame": {
-      "date": "2026-11-14T20:30Z",
-      "uvaScore": "36",
-      "opponentScore": "7",
-      "opponent": "California Golden Bears",
+      "date": "2026-11-21T17:30Z",
+      "uvaScore": "41",
+      "opponentScore": "24",
+      "opponent": "North Carolina Tar Heels",
       "isHome": true,
       "won": true,
       "venue": "Scott Stadium"
     },
     "nextGame": {
-      "date": "2026-11-21T17:30Z",
-      "opponent": "North Carolina Tar Heels",
-      "isHome": true
+      "date": "2026-11-28T20:00Z",
+      "opponent": "Virginia Tech Hokies",
+      "isHome": false
     }
   },
   "notable": []
