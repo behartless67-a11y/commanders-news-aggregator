@@ -1,66 +1,4 @@
 {
-  "social-5037871a5ed4": {
-    "id": "social-5037871a5ed4",
-    "url": "https://x.com/Commanders/status/2121279220097728650",
-    "text": "AHHHHHHH @SeatGeek@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [],
-    "publishedAt": "2026-11-13T16:29:12.000Z",
-    "collectedAt": "2026-11-13T17:05:47.127Z"
-  },
-  "social-f3b452f3753f": {
-    "id": "social-f3b452f3753f",
-    "url": "https://x.com/Commanders/status/2121262415967084630",
-    "text": "Dug in and got it done @Ticketmaster@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/609/820/315/266/745/original/f70536bc4f140f9f.jpg"
-    ],
-    "publishedAt": "2026-11-13T15:22:25.000Z",
-    "collectedAt": "2026-11-13T17:05:47.127Z"
-  },
-  "social-6a74865bab36": {
-    "id": "social-6a74865bab36",
-    "url": "https://x.com/BenStandig/status/2121272079815193037",
-    "text": "From @NextGenStats : Stefon Diggs' game-winning 32-yard touchdown is the longest TD this season to take the lead with under one minute remaining. This was the second time Diggs caught a game-winning TD pass with less than a minute to play. The other came in 2017's “Minneapolis Miracle” playoff win.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-13T16:00:49.000Z",
-    "collectedAt": "2026-11-13T17:05:50.974Z"
-  },
-  "social-56cf1439e4fa": {
-    "id": "social-56cf1439e4fa",
-    "url": "https://x.com/BenStandig/status/2121263280480006471",
-    "text": "Good looks at the game-winner.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-13T15:25:51.000Z",
-    "collectedAt": "2026-11-13T17:05:50.974Z"
-  },
-  "social-7c833b1148c7": {
-    "id": "social-7c833b1148c7",
-    "url": "https://mysportgallery.com/@slessans2/117609882367463524",
-    "text": "Happy victory Friday to those who celebrate. #NFL | #HTTC | #Commanders | #RaiseHail | #FireDQ",
-    "handle": "slessans2",
-    "author": "Seth \"Football Collector\"",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-13T15:39:46.000Z",
-    "collectedAt": "2026-11-13T17:06:03.059Z"
-  },
   "social-28df80fa2f59": {
     "id": "social-28df80fa2f59",
     "url": "https://x.com/Commanders/status/2121319183392866355",
@@ -140,20 +78,6 @@
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-11-13T18:19:48.000Z",
-    "collectedAt": "2026-11-13T19:47:51.635Z"
-  },
-  "social-c00d95cff429": {
-    "id": "social-c00d95cff429",
-    "url": "https://x.com/tashanreed/status/2121288135329947772",
-    "text": "I'll be livestreaming The Tashan Reed Show at 12:45 p.m. to discuss the #Commanders ' win over the Giants. Join here: 456634?r=1gwknd&utm_medium=ios",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "",
-    "sourceKey": "@tashanreed",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/610/349/072/163/473/original/c41346fd4d8afffa.jpg"
-    ],
-    "publishedAt": "2026-11-13T17:04:37.000Z",
     "collectedAt": "2026-11-13T19:47:51.635Z"
   },
   "social-4e837da9a2ec": {
