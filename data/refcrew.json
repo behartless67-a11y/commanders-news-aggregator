@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T02:55:41.003Z",
+  "fetchedAt": "2026-11-24T09:06:37.830Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6951,6 +6951,22 @@
         "abbr": "MIN",
         "flags": 3,
         "yards": 23
+      }
+    },
+    "401873078": {
+      "season": 2026,
+      "week": 11,
+      "date": "2026-11-24T01:15Z",
+      "referee": "Bill Vinovich",
+      "home": {
+        "abbr": "WSH",
+        "flags": 5,
+        "yards": 40
+      },
+      "away": {
+        "abbr": "CIN",
+        "flags": 5,
+        "yards": 39
       }
     }
   }

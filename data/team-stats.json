@@ -1,12 +1,12 @@
 {
   "season": "2026",
   "seasonType": 2,
-  "fetchedAt": "2026-11-24T02:55:32.587Z",
+  "fetchedAt": "2026-11-24T09:06:28.048Z",
   "offense": {
     "yardsPerGame": {
-      "value": "327.0",
-      "rank": 18,
-      "rankLabel": "18th"
+      "value": "337.1",
+      "rank": 13,
+      "rankLabel": "13th"
     },
     "pointsPerGame": {
       "value": "21.8",
@@ -14,12 +14,12 @@
       "rankLabel": "20th"
     },
     "passYardsPerGame": {
-      "value": "210.2",
+      "value": "217.0",
       "rank": 19,
       "rankLabel": "19th"
     },
     "rushYardsPerGame": {
-      "value": "116.8",
+      "value": "120.1",
       "rank": 11,
       "rankLabel": "11th"
     }
@@ -28,8 +28,8 @@
     "games": 9,
     "yardsPerGame": {
       "value": "348.6",
-      "rank": 24,
-      "rankLabel": "24th"
+      "rank": 22,
+      "rankLabel": "22nd"
     },
     "pointsPerGame": {
       "value": "24.8",
@@ -43,8 +43,8 @@
     },
     "rushYardsPerGame": {
       "value": "103.8",
-      "rank": 12,
-      "rankLabel": "12th"
+      "rank": 11,
+      "rankLabel": "11th"
     }
   },
   "leaders": {
@@ -52,24 +52,24 @@
       {
         "key": "Pass",
         "name": "Jayden Daniels",
-        "value": "1,499"
+        "value": "1,788"
       },
       {
         "key": "Rush",
         "name": "Jayden Daniels",
-        "value": "280"
+        "value": "335"
       },
       {
         "key": "Recv",
-        "name": "Stefon Diggs",
-        "value": "386"
+        "name": "Antonio Williams",
+        "value": "448"
       }
     ],
     "defense": [
       {
         "key": "Tckl",
         "name": "Sonny Styles",
-        "value": "80"
+        "value": "85"
       },
       {
         "key": "Sack",
