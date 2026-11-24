@@ -2,8 +2,15 @@
   {
     "name": "Amik Robertson",
     "position": "CB",
-    "status": "Questionable",
+    "status": "Out",
     "bodyPart": "Ankle",
+    "notes": null
+  },
+  {
+    "name": "Athan Kaliakmanis",
+    "position": "QB",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -18,13 +25,6 @@
     "position": "WR",
     "status": "IR",
     "bodyPart": "Calf",
-    "notes": null
-  },
-  {
-    "name": "Jacory Croskey-Merritt",
-    "position": "RB",
-    "status": "IR",
-    "bodyPart": "Groin",
     "notes": null
   },
   {
@@ -70,17 +70,17 @@
     "notes": "Surgery"
   },
   {
-    "name": "Lucas Patrick",
-    "position": "G",
-    "status": "Questionable",
-    "bodyPart": "Concussion",
+    "name": "Ricky Barber",
+    "position": "DT",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
-    "name": "Rachaad White",
+    "name": "Robert Henry Jr.",
     "position": "RB",
-    "status": "Questionable",
-    "bodyPart": "Heel",
+    "status": "Out",
+    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {

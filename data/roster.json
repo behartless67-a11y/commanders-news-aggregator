@@ -111,6 +111,31 @@
     "stats": null
   },
   {
+    "slug": "jacory-croskey-merritt",
+    "name": "Jacory Croskey-Merritt",
+    "jersey": "22",
+    "position": "RB",
+    "espnId": "4575131",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4575131.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "CAR",
+          "value": "67"
+        },
+        {
+          "label": "YDS",
+          "value": "239"
+        },
+        {
+          "label": "TD",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  {
     "slug": "jayden-daniels",
     "name": "Jayden Daniels",
     "jersey": "5",
@@ -546,6 +571,31 @@
         },
         {
           "label": "TD",
+          "value": "0"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "trey-amos",
+    "name": "Trey Amos",
+    "jersey": "23",
+    "position": "CB",
+    "espnId": "4574689",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4574689.png",
+    "stats": {
+      "season": 2026,
+      "fields": [
+        {
+          "label": "TCKL",
+          "value": "14"
+        },
+        {
+          "label": "SACK",
+          "value": "0"
+        },
+        {
+          "label": "INT",
           "value": "0"
         }
       ]
@@ -1282,31 +1332,6 @@
     }
   },
   {
-    "slug": "trey-amos",
-    "name": "Trey Amos",
-    "jersey": "23",
-    "position": "CB",
-    "espnId": "4574689",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4574689.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "TCKL",
-          "value": "14"
-        },
-        {
-          "label": "SACK",
-          "value": "0"
-        },
-        {
-          "label": "INT",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "dyami-brown",
     "name": "Dyami Brown",
     "jersey": "6",
@@ -1352,31 +1377,6 @@
         {
           "label": "INT",
           "value": "0"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "jacory-croskey-merritt",
-    "name": "Jacory Croskey-Merritt",
-    "jersey": "22",
-    "position": "RB",
-    "espnId": "4575131",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4575131.png",
-    "stats": {
-      "season": 2026,
-      "fields": [
-        {
-          "label": "CAR",
-          "value": "67"
-        },
-        {
-          "label": "YDS",
-          "value": "239"
-        },
-        {
-          "label": "TD",
-          "value": "2"
         }
       ]
     }

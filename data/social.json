@@ -2434,7 +2434,7 @@
     "text": "Quinn said the #Commanders will go back to Lucas Patrick as their starting center this week. He missed last week's game due to a concussion.",
     "handle": "tashanreed",
     "author": "Tashan Reed",
-    "label": "",
+    "label": "The Washington Post",
     "sourceKey": "@tashanreed",
     "images": [],
     "publishedAt": "2026-11-21T17:47:31.000Z",
@@ -3128,5 +3128,555 @@
     "images": [],
     "publishedAt": "2026-11-23T15:53:00.951Z",
     "collectedAt": "2026-11-23T19:06:00.650Z"
+  },
+  "social-7501ef8b5dec": {
+    "id": "social-7501ef8b5dec",
+    "url": "https://x.com/Commanders/status/2125032496869834947",
+    "text": "what Bill said 🗣️ @JacoryMerritt15@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-24T01:03:23.000Z",
+    "collectedAt": "2026-11-24T01:05:38.175Z"
+  },
+  "social-535faee63b10": {
+    "id": "social-535faee63b10",
+    "url": "https://x.com/Commanders/status/2125026568544374925",
+    "text": ". @JayD__5@twitter.com x @ovi8@twitter.com 🤝",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/636/986/348/633/original/53902b21565d3ca7.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/637/062/036/775/original/403f72c35c21bfad.jpg"
+    ],
+    "publishedAt": "2026-11-24T00:39:49.000Z",
+    "collectedAt": "2026-11-24T01:05:38.176Z"
+  },
+  "social-85c3b4107455": {
+    "id": "social-85c3b4107455",
+    "url": "https://x.com/Commanders/status/2125021857870954518",
+    "text": "...and got to hang out on the sideline pregame with @sonnystyles_@twitter.com !",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/561/076/368/573/original/698738b60e75ebec.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/561/133/325/979/original/2c3df96294c21011.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/561/162/756/408/original/5b89218db72b7b87.jpg"
+    ],
+    "publishedAt": "2026-11-24T00:21:06.000Z",
+    "collectedAt": "2026-11-24T01:05:38.177Z"
+  },
+  "social-12c1bea4360d": {
+    "id": "social-12c1bea4360d",
+    "url": "https://x.com/Commanders/status/2125016587778379903",
+    "text": "MNF BLACKOUT X GAMEDAY LIVE | #CINvsWAS : 8:15pm on ESPN jmn",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-24T00:00:10.000Z",
+    "collectedAt": "2026-11-24T01:05:38.177Z"
+  },
+  "social-62889407e4c6": {
+    "id": "social-62889407e4c6",
+    "url": "https://x.com/JPFinlayNBCS/status/2125008830819955029",
+    "text": "Jon Allen catching up with some old teammates and staffers",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/358/187/895/022/original/87161308dcb12b5a.jpg"
+    ],
+    "publishedAt": "2026-11-23T23:29:20.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-dfbbe86e26b4": {
+    "id": "social-dfbbe86e26b4",
+    "url": "https://x.com/JPFinlayNBCS/status/2124994734422667562",
+    "text": "Not sure what to make of this DQ/Amik interaction but pretty clear the player doesn’t seem thrilled",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-23T22:33:19.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-da436c56244c": {
+    "id": "social-da436c56244c",
+    "url": "https://x.com/JPFinlayNBCS/status/2124988122928754790",
+    "text": "Amik Robertson testing his ankle. Would be big for the Commanders if he can go tonight. He’s wearing cleats which could be a good sign",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-23T22:07:03.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-532d73360cf7": {
+    "id": "social-532d73360cf7",
+    "url": "https://x.com/JPFinlayNBCS/status/2124987413898420378",
+    "text": "Ok now it’s actually raining",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-23T22:04:14.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-2e1a9cc6f3b2": {
+    "id": "social-2e1a9cc6f3b2",
+    "url": "https://x.com/JPFinlayNBCS/status/2124986052431757479",
+    "text": "Some light rain falling in Landover",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-23T21:58:49.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-4f9fb421a92a": {
+    "id": "social-4f9fb421a92a",
+    "url": "https://x.com/JPFinlayNBCS/status/2124973264850067686",
+    "text": "Bill is officially back. Washington will need as many explosives as they can get. Bill helps",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/833/044/782/520/original/5619c3c84fc438b6.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/833/085/534/502/original/38590d4076946385.jpg"
+    ],
+    "publishedAt": "2026-11-23T21:08:01.000Z",
+    "collectedAt": "2026-11-24T01:05:39.518Z"
+  },
+  "social-7b2505bcf6a5": {
+    "id": "social-7b2505bcf6a5",
+    "url": "https://x.com/john_keim/status/2125031442715439392",
+    "text": "The Bengals have been susceptible vs. tight ends... They're tied with Washington for the third most yards allowed to tight ends. So keep an eye on Okonkwo and, perhaps, Sinnott.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-24T00:59:11.000Z",
+    "collectedAt": "2026-11-24T01:05:40.983Z"
+  },
+  "social-38ce6225e0ca": {
+    "id": "social-38ce6225e0ca",
+    "url": "https://x.com/john_keim/status/2125030957480656947",
+    "text": "Jon Allen has been terrific inside for Cincinnati. It helps that he's getting a lot of single teams, especially in the pass game. Dexter Lawrence is doubled about 81 percent of the time when he rushes the passer. Allen is doing well in part because of this; but he's also still effective regardless. With those two on the field the Bengals allow 4.1 yards per carry. Overall, they allow 5.0 per carry.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-24T00:57:16.000Z",
+    "collectedAt": "2026-11-24T01:05:40.984Z"
+  },
+  "social-2aed910525d5": {
+    "id": "social-2aed910525d5",
+    "url": "https://x.com/john_keim/status/2125030576814002197",
+    "text": "The Bengals' protection has been outstanding. Joe Burrow has been very relaxed in the pocket even vs. pressure. But Washington has to generate some or it'll be a long night of pitch-and-catch for the Bengals. Can they make him uncomfortable to perhaps force a turnover? Probably what it will take to pull the upset.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-24T00:55:45.000Z",
+    "collectedAt": "2026-11-24T01:05:40.984Z"
+  },
+  "social-79b4d3603cbd": {
+    "id": "social-79b4d3603cbd",
+    "url": "https://x.com/john_keim/status/2125014364470043096",
+    "text": "Robertson was limping badly leaving the locker room Friday. There was some hope he could be ready, but when working out before the game his ankle clearly remained an issue when he tried to go side to side (per @NickiJhabvala@twitter.com video of him working out). It's a definite blow. Robertson is the kind of dude you want in a game like this: someone who doesn't back down. But... even with him, if they can't make Burrow a little uncomfortable at times then it won't matter.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-23T23:51:20.000Z",
+    "collectedAt": "2026-11-24T01:05:40.984Z"
+  },
+  "social-aeb894346ccb": {
+    "id": "social-aeb894346ccb",
+    "url": "https://x.com/john_keim/status/2125013919949308088",
+    "text": "Washington inactives: CB Amik Robertson, QB Athan Kaliakmanis (emergency third QB), G Tanoa Togiai, DT Ricky Barber, RB Robert Henry, Jr. Robertson worked out before the game but his left ankle was clearly still bothering him. 34231-4",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-23T23:49:34.000Z",
+    "collectedAt": "2026-11-24T01:05:40.984Z"
+  },
+  "social-1acc8f548b0d": {
+    "id": "social-1acc8f548b0d",
+    "url": "https://x.com/john_keim/status/2125012882664595746",
+    "text": "Amik Robertson is inactive tonight.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-23T23:45:26.000Z",
+    "collectedAt": "2026-11-24T01:05:40.984Z"
+  },
+  "social-30a41d54e727": {
+    "id": "social-30a41d54e727",
+    "url": "https://x.com/BenStandig/status/2125030754174267641",
+    "text": "John Riggins is here. Again. Good.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-24T00:56:27.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-e0383e899088": {
+    "id": "social-e0383e899088",
+    "url": "https://x.com/BenStandig/status/2125028926690881954",
+    "text": "Ovi walk-and-talk with Jason Kelce.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/667/402/881/990/original/98d02562c8d52369.jpg"
+    ],
+    "publishedAt": "2026-11-24T00:49:11.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-29edbb8a0fd4": {
+    "id": "social-29edbb8a0fd4",
+    "url": "https://x.com/BenStandig/status/2125023204573876422",
+    "text": "Alex Ovechkin (in the 8 jersey behind the kicking net) watching Jayden Daniels throw a football.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/581/133/731/164/original/83753f4ac5aa23aa.jpg"
+    ],
+    "publishedAt": "2026-11-24T00:26:27.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-97eca2aa2451": {
+    "id": "social-97eca2aa2451",
+    "url": "https://x.com/BenStandig/status/2125014775369179449",
+    "text": "If there are boos tonight, remember that NFL commissioner Roger Goodell is in the building.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/446/302/208/428/original/e3c7955054670d67.jpg"
+    ],
+    "publishedAt": "2026-11-23T23:52:57.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-cbaff8a97dad": {
+    "id": "social-cbaff8a97dad",
+    "url": "https://x.com/BenStandig/status/2125014198249721856",
+    "text": "No Amik Robertson means more Rasul Douglas, who is also the league leader among CBs in paper rating allowed. Bigger option against 6-foot-4 Tee Higgins.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-23T23:50:40.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-9e22bd45dfbc": {
+    "id": "social-9e22bd45dfbc",
+    "url": "https://x.com/BenStandig/status/2125013176559226889",
+    "text": "Inactives: CB Amik Robertson QB Athan Kaliakmanis (Emergency 3rd QB) RB Robert Henry Jr. DT Ricky Barber G Tanoa Togiai",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-23T23:46:36.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-a87aad8965e3": {
+    "id": "social-a87aad8965e3",
+    "url": "https://x.com/BenStandig/status/2125012867527397478",
+    "text": "CB Amik Robertson is inactive.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-23T23:45:23.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-b22b614d50b0": {
+    "id": "social-b22b614d50b0",
+    "url": "https://x.com/BenStandig/status/2125010963904487802",
+    "text": "You mean the school that employs Lane Kiffin, Will Wade and Kim Mulkey as coaches may have pushed the envelope too far? Well, now I've heard everything.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-23T23:37:49.000Z",
+    "collectedAt": "2026-11-24T01:05:42.306Z"
+  },
+  "social-37a81915636e": {
+    "id": "social-37a81915636e",
+    "url": "https://x.com/tashanreed/status/2125012925211639816",
+    "text": "#Commanders will be without Robertson tonight. Huge blow.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-23T23:45:36.000Z",
+    "collectedAt": "2026-11-24T01:05:43.801Z"
+  },
+  "social-0f14865f091d": {
+    "id": "social-0f14865f091d",
+    "url": "https://x.com/RapSheet/status/2124959836555096396",
+    "text": "Sources: The #AZCardinals have fired DC Nick Rallis. Teryl Austin will serve as the interim defensive coordinator.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/590/601/913/129/original/04950e2a3d20f2bc.jpg"
+    ],
+    "publishedAt": "2026-11-23T20:14:39.000Z",
+    "collectedAt": "2026-11-24T01:05:43.801Z"
+  },
+  "social-59b3ec944284": {
+    "id": "social-59b3ec944284",
+    "url": "https://x.com/JordanRaanan/status/2124966005898404303",
+    "text": "CB Greg Newsome will be out for \"multiple weeks\" with a high ankle sprain, per John Harbaugh. Not ready to say if surgery will be needed yet. So the Giants will have to rely on Paulson Adebo more going forward.",
+    "handle": "JordanRaanan",
+    "author": "Jordan Raanan",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-23T20:39:10.000Z",
+    "collectedAt": "2026-11-24T01:05:43.801Z"
+  },
+  "social-afb0ca1bcbc6": {
+    "id": "social-afb0ca1bcbc6",
+    "url": "https://x.com/tashanreed/status/2124971397575217437",
+    "text": "Croskey-Merritt has officially been activated, clearing him to play tonight:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-23T21:00:35.000Z",
+    "collectedAt": "2026-11-24T01:05:43.801Z"
+  },
+  "social-0f88fc8f045e": {
+    "id": "social-0f88fc8f045e",
+    "url": "https://x.com/AdamSchefter/status/2124971338347708591",
+    "text": "Commanders activated RB Jacory Croskey-Merritt from injured reserve and he will play tonight vs. the Bengals.",
+    "handle": "AdamSchefter",
+    "author": "Adam Schefter",
+    "label": "ESPN",
+    "sourceKey": "@AdamSchefter",
+    "images": [],
+    "publishedAt": "2026-11-23T21:00:21.000Z",
+    "collectedAt": "2026-11-24T01:05:46.577Z"
+  },
+  "social-25a6c11734ad": {
+    "id": "social-25a6c11734ad",
+    "url": "https://x.com/RapSheet/status/2124971234819452962",
+    "text": "The #Commanders are activating RB Jacory Croskey-Merritt from Injured Reserve and he’ll play tonight. A big list, as he’s recovered from a groin injury.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "@RapSheet",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/776/615/246/681/original/c7c4d4a2afc4cd0c.jpg"
+    ],
+    "publishedAt": "2026-11-23T20:59:57.000Z",
+    "collectedAt": "2026-11-24T01:05:48.034Z"
+  },
+  "social-880cc2c882ad": {
+    "id": "social-880cc2c882ad",
+    "url": "https://x.com/JosinaAnderson/status/2125013470554828842",
+    "text": "#Commanders CB Amik Robertson (ankle) is OUT tonight.",
+    "handle": "JosinaAnderson",
+    "author": "Josina Anderson",
+    "label": "",
+    "sourceKey": "@JosinaAnderson",
+    "images": [],
+    "publishedAt": "2026-11-23T23:47:46.000Z",
+    "collectedAt": "2026-11-24T01:05:50.767Z"
+  },
+  "social-8aeea11a9f9b": {
+    "id": "social-8aeea11a9f9b",
+    "url": "https://mastodon.online/@chessert/117668708690715842",
+    "text": "Monday Night Football. Who ya got? I'm (foolishly) taking the Commanders for an upset at home, over the Bengals. It's just time. #NFL #MNF #Bengals #Commanders",
+    "handle": "chessert",
+    "author": "Chris Hessert",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-24T01:00:05.000Z",
+    "collectedAt": "2026-11-24T01:05:54.333Z"
+  },
+  "social-a39980a651f8": {
+    "id": "social-a39980a651f8",
+    "url": "https://mastodon.social/@atobsmith/117668594101052017",
+    "text": "Commanders black unis are 🔥 #WashingtonCommanders #Commanders #HTTC #RaiseHail #nfl #CINvsWAS #MNF #ManningCast",
+    "handle": "atobsmith",
+    "author": "Michael Smith",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-24T00:30:56.670Z",
+    "collectedAt": "2026-11-24T01:05:54.333Z"
+  },
+  "social-d30bfe35e9be": {
+    "id": "social-d30bfe35e9be",
+    "url": "https://mastodon.social/@fantasydailies/117668548170985303",
+    "text": "A different MNF slip, CIN @WSH 8:15 PM ET 🏈 Burrow o2.5 pass TD, Chase anytime TD, Higgins o75.5 rec yds. +452 This ticket → c16b0 21+ | 1-800-GAMBLER #parlay #nbaparlay #nhlparlay #nflparlay #fantasydailies #sportsbetting #nflbets #Bengals #Commanders — The FantasyDailies Team",
+    "handle": "fantasydailies",
+    "author": "FantasyDailies",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/668/544/483/960/228/original/55889797325b897b.png"
+    ],
+    "publishedAt": "2026-11-24T00:19:15.845Z",
+    "collectedAt": "2026-11-24T01:05:54.333Z"
+  },
+  "social-b08ea039a303": {
+    "id": "social-b08ea039a303",
+    "url": "https://mastodon.social/@fantasydailies/117668376240735072",
+    "text": "MNF preview 🏈 Bengals (7-2) at Commanders (3-5-1), 8:15 PM ET on ESPN. CIN -6, total 54.5. Burrow threw for 409 and 4 TDs last week and Chase had 231 yards. Can Washington keep up? Odds, injuries, props + DFS: day-night-football-preview-bengals-at-commanders-can-washington-keep-up-with #fantasydailies #NFL #MNF #Bengals #Commanders 21+ · Research, not a guarantee · Gamble responsibly",
+    "handle": "fantasydailies",
+    "author": "FantasyDailies",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/668/374/519/206/354/original/80ebcdb9d5d88dfe.jpg"
+    ],
+    "publishedAt": "2026-11-23T23:35:32.386Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-c62b685cebeb": {
+    "id": "social-c62b685cebeb",
+    "url": "https://x.com/PewterReport/status/2124986356070044127",
+    "text": "PrizePicks is America’s #1 sports picks app! It is EASY to use; you can pick MORE or LESS on a few player stats and lock in your lineup. Get your picks in before MNF between the #Bengals and #Commanders ! SIGN UP for @PrizePicks@twitter.com with code: HMA R",
+    "handle": "PewterReport",
+    "author": "PewterReport 🏴‍☠️",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/668/008/697/364/870/original/2d135d5dfec2a53a.jpg"
+    ],
+    "publishedAt": "2026-11-23T22:00:02.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-5dffd826cf34": {
+    "id": "social-5dffd826cf34",
+    "url": "https://x.com/pfrumors/status/2124959157258183014",
+    "text": "Aiyuk is expected to clear waivers and become a free agent with his #49ers tenure having ended. To no surprise, the #Commanders have been mentioned as a suitor to watch: 49ers-to-waive-wr-brandon-aiyuk",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-23T20:11:57.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-1d19a2cab01d": {
+    "id": "social-1d19a2cab01d",
+    "url": "https://mastodon.social/@calebtalkssports/117667516638190726",
+    "text": "Welcome to the Jungle: Can Washington survive Cincinnati? Jayden Daniels leads his Commanders side into Cincinnati on Monday Night Football to face the spirited Bengals side that sits at 7-2. Read the full preview - p/welcome-to-the-jungle-can-washington #NFL #Commanders #Bengals #mnf",
+    "handle": "calebtalkssports",
+    "author": "Caleb Talks Sports",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-23T19:56:55.902Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-81c79b0abe65": {
+    "id": "social-81c79b0abe65",
+    "url": "https://x.com/RapSheet/status/2124949274039578732",
+    "text": "From The Aftermath: Brandon Aiyuk is being waived by the #49ers , and he’s likely to clear waivers. All eyes on the #Commanders .",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-23T19:32:41.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-68f4ebaa0490": {
+    "id": "social-68f4ebaa0490",
+    "url": "https://x.com/RapSheet/status/2124944964249440324",
+    "text": "The #49ers have waived WR Brandon Aiyuk, ending a months-long standoff, per @AdamSchefter . Aiyuk is a free agent, with an eventual spot on the #Commanders practice squad viewed as the most likely option.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/368/304/103/925/original/b663c6caa7acc954.jpg"
+    ],
+    "publishedAt": "2026-11-23T19:15:33.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-bfa088c7c7f7": {
+    "id": "social-bfa088c7c7f7",
+    "url": "https://x.com/RapSheet/status/2124943121071173690",
+    "text": "The expected outcome, all eyes now shift to the #Commanders , who could offer Brandon Aiyuk a spot on their practice squad. It's his most likely landing spot, especially now on the same page as Jayden Daniels.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [],
+    "publishedAt": "2026-11-23T19:08:14.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-932877ed507b": {
+    "id": "social-932877ed507b",
+    "url": "https://x.com/RapSheet/status/2124942841449460013",
+    "text": "The #49ers have released WR Brandon Aiyuk, ending a months-long standoff, per @AdamSchefter . Aiyuk is a free agent, with an eventual spot on the #Commanders practice squad viewed as the most likely option.",
+    "handle": "RapSheet",
+    "author": "Ian Rapoport",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/667/324/408/182/705/original/f4d340b31cd9865c.jpg"
+    ],
+    "publishedAt": "2026-11-23T19:07:07.000Z",
+    "collectedAt": "2026-11-24T01:05:54.334Z"
+  },
+  "social-b0e5e68a5b56": {
+    "id": "social-b0e5e68a5b56",
+    "url": "https://mastodon.social/@liveimtv/117667833067785114",
+    "text": "#WASvsCIN #HTTC #RuleTheJungle #NFL #RTL #SkySport #NFLGamePass #RTLPlus am 24.11.26 ab 02:15 Uhr: Washington Commanders - Cincinnati Bengals. Am 19. August 2025 gab es zum letzten Mal eine Partie zwischen Washington und Cincinnati. Das ... ington-commanders-cincinnati-bengals-63029.html?utm_source=dlvr.it&utm_medium=mastodon",
+    "handle": "liveimtv",
+    "author": "LiveimTV.de",
+    "label": "",
+    "sourceKey": "#HTTC",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/667/832/974/260/981/original/c12b22f120830cc1.jpeg"
+    ],
+    "publishedAt": "2026-11-23T21:17:24.239Z",
+    "collectedAt": "2026-11-24T01:05:55.859Z"
   }
 }
