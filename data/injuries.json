@@ -2,15 +2,8 @@
   {
     "name": "Amik Robertson",
     "position": "CB",
-    "status": "Out",
+    "status": "Questionable",
     "bodyPart": "Ankle",
-    "notes": null
-  },
-  {
-    "name": "Athan Kaliakmanis",
-    "position": "QB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
     "notes": null
   },
   {
@@ -68,20 +61,6 @@
     "status": "IR",
     "bodyPart": "Neck",
     "notes": "Surgery"
-  },
-  {
-    "name": "Ricky Barber",
-    "position": "DT",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
-  },
-  {
-    "name": "Robert Henry Jr.",
-    "position": "RB",
-    "status": "Out",
-    "bodyPart": "Coach's Decision",
-    "notes": null
   },
   {
     "name": "Terry McLaurin",
