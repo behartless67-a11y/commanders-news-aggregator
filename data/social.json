@@ -5424,7 +5424,7 @@
     "text": "Former 49ers WR Brandon Aiyuk cleared waivers today, per source. He is expected to draw interest from a few teams, including the Washington Commanders, and would like to sign soon.",
     "handle": "AdamSchefter",
     "author": "Adam Schefter",
-    "label": "ESPN",
+    "label": "",
     "sourceKey": "@JPFinlayNBCS",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/673/599/289/093/509/original/4950ee045b24d8e8.jpg"
@@ -5579,5 +5579,119 @@
     ],
     "publishedAt": "2026-11-24T21:16:25.055Z",
     "collectedAt": "2026-11-25T00:46:12.295Z"
+  },
+  "social-b69b8dcb802e": {
+    "id": "social-b69b8dcb802e",
+    "url": "https://x.com/Commanders/status/2125432870164672719",
+    "text": "RE: tuses/2125412259618816324 We join the NFL community in mourning the loss of Lions Owner / Chair Emeritus Martha Firestone Ford. Our condolences are with the Ford Family and the Lions organization.",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-25T03:34:19.000Z",
+    "collectedAt": "2026-11-25T05:05:34.990Z"
+  },
+  "social-4fde3b459d66": {
+    "id": "social-4fde3b459d66",
+    "url": "https://x.com/espn/status/2125444554367127621",
+    "text": "Breaking: The Steelers are benching QB Aaron Rodgers and are naming Mason Rudolph the starter for Friday’s game vs. the Denver Broncos, the team announced. Rodgers will be inactive for the game.",
+    "handle": "espn",
+    "author": "ESPN",
+    "label": "",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/675/167/751/697/809/original/ed397351717842ee.jpg"
+    ],
+    "publishedAt": "2026-11-25T04:20:45.000Z",
+    "collectedAt": "2026-11-25T05:05:36.337Z"
+  },
+  "social-d6430592f19f": {
+    "id": "social-d6430592f19f",
+    "url": "https://x.com/JPFinlayNBCS/status/2125430350507601974",
+    "text": "Win or lose this is an impressive effort from the Wiz to claw back after a miserable first half",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-25T03:24:18.000Z",
+    "collectedAt": "2026-11-25T05:05:36.338Z"
+  },
+  "social-bb06b254628e": {
+    "id": "social-bb06b254628e",
+    "url": "https://x.com/JPFinlayNBCS/status/2125423558725947564",
+    "text": "This Wiz game is getting chippy. Cup game.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-25T02:57:19.000Z",
+    "collectedAt": "2026-11-25T05:05:36.338Z"
+  },
+  "social-00627abd6588": {
+    "id": "social-00627abd6588",
+    "url": "https://x.com/JPFinlayNBCS/status/2125396345712148682",
+    "text": "Not sure if a visit for a potential practice squad player qualifies for an emergency pod, but it feels very close when that player is Brandon Aiyuk",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-25T01:09:11.000Z",
+    "collectedAt": "2026-11-25T05:05:36.338Z"
+  },
+  "social-aef10e71eb3f": {
+    "id": "social-aef10e71eb3f",
+    "url": "https://x.com/TomPelissero/status/2125442796467417433",
+    "text": "Stunner: The Steelers are benching Aaron Rodgers and naming Mason Rudolph the starting quarterback for Friday's game against the Broncos. Sources say this was a coach's decision. But Rodgers has struggled and now Mike McCarthy is making a change.",
+    "handle": "TomPelissero",
+    "author": "Tom Pelissero",
+    "label": "",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/675/158/463/489/936/original/6b4fad410a214c68.jpg"
+    ],
+    "publishedAt": "2026-11-25T04:13:46.000Z",
+    "collectedAt": "2026-11-25T05:05:39.165Z"
+  },
+  "social-1434e8aa0380": {
+    "id": "social-1434e8aa0380",
+    "url": "https://x.com/BenStandig/status/2125424029607907560",
+    "text": "🎙️Brandon Aiyuk is coming to town. Jayden Daniels is magic. Daronte Jones is in his bag. Drew Stevens is a kicking and press conference legend. It's time to reshape how we discuss the Commanders. @10zJohnson@twitter.com joins me for these topics and more. brandon-aiyuk-is-coming-to-town/id1760952448?i=1000803896512",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-25T02:59:11.000Z",
+    "collectedAt": "2026-11-25T05:05:39.165Z"
+  },
+  "social-4861f1bf737e": {
+    "id": "social-4861f1bf737e",
+    "url": "https://x.com/BenStandig/status/2125392463653163305",
+    "text": "Why wait? Source: Brandon Aiyuk set to visit Commanders on Wednesday source-brandon-aiyuk-set-to-visit",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/674/352/460/050/869/original/ac8e507293959b41.jpg"
+    ],
+    "publishedAt": "2026-11-25T00:53:45.000Z",
+    "collectedAt": "2026-11-25T05:05:39.165Z"
+  },
+  "social-5b212f3146fc": {
+    "id": "social-5b212f3146fc",
+    "url": "https://x.com/pfrumors/status/2125439783220720045",
+    "text": "The on-again/off-again Brandon Aiyuk- #Commanders connection is back in play. After the ex- #49ers WR cleared waivers, a Washington visit is on tap brandon-aiyuk-clears-waivers",
+    "handle": "pfrumors",
+    "author": "Pro Football Rumors",
+    "label": "",
+    "sourceKey": "@pfrumors",
+    "images": [],
+    "publishedAt": "2026-11-25T04:01:47.000Z",
+    "collectedAt": "2026-11-25T05:05:48.934Z"
   }
 }
