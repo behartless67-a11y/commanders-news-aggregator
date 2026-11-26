@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T00:23:19.038Z",
+  "fetchedAt": "2026-11-26T05:06:35.492Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6967,6 +6967,22 @@
         "abbr": "CIN",
         "flags": 5,
         "yards": 39
+      }
+    },
+    "401873079": {
+      "season": 2026,
+      "week": 12,
+      "date": "2026-11-26T01:00Z",
+      "referee": "Alan Eck",
+      "home": {
+        "abbr": "LAR",
+        "flags": 5,
+        "yards": 35
+      },
+      "away": {
+        "abbr": "GB",
+        "flags": 8,
+        "yards": 78
       }
     }
   }
