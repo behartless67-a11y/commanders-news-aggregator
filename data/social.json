@@ -1,56 +1,4 @@
 {
-  "social-450d5f868b38": {
-    "id": "social-450d5f868b38",
-    "url": "https://x.com/Commanders/status/2122117445976576412",
-    "text": "Stef makin' plays 💪 @Gatorade@twitter.com x #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/623/222/663/489/626/original/55e20684683b3222.jpg"
-    ],
-    "publishedAt": "2026-11-16T00:00:00.000Z",
-    "collectedAt": "2026-11-16T03:05:37.599Z"
-  },
-  "social-6e716fdd0511": {
-    "id": "social-6e716fdd0511",
-    "url": "https://x.com/JPFinlayNBCS/status/2122114636480680074",
-    "text": "Crazy smart special teams in Seattle",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-15T23:48:50.000Z",
-    "collectedAt": "2026-11-16T03:05:39.104Z"
-  },
-  "social-cc0c001da827": {
-    "id": "social-cc0c001da827",
-    "url": "https://x.com/JPFinlayNBCS/status/2122113874979885313",
-    "text": "The current scene in Dallas looks good for the Commanders NFC East chase",
-    "handle": "JPFinlayNBCS",
-    "author": "JP Finlay",
-    "label": "NBC Sports Washington",
-    "sourceKey": "@JPFinlayNBCS",
-    "images": [],
-    "publishedAt": "2026-11-15T23:45:49.000Z",
-    "collectedAt": "2026-11-16T03:05:39.104Z"
-  },
-  "social-e419a018fb91": {
-    "id": "social-e419a018fb91",
-    "url": "https://x.com/BenStandig/status/2122122283636371641",
-    "text": "Hanging with a Commanders fan.",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/623/298/511/046/318/original/6f1331a086748d59.jpg"
-    ],
-    "publishedAt": "2026-11-16T00:19:14.000Z",
-    "collectedAt": "2026-11-16T03:05:41.889Z"
-  },
   "social-4a4bce67188d": {
     "id": "social-4a4bce67188d",
     "url": "https://x.com/tashanreed/status/2122154058903617631",
@@ -62,18 +10,6 @@
     "images": [],
     "publishedAt": "2026-11-16T02:25:30.000Z",
     "collectedAt": "2026-11-16T03:05:43.221Z"
-  },
-  "social-eca707fb0772": {
-    "id": "social-eca707fb0772",
-    "url": "https://x.com/rydunleavy/status/2122120281179471979",
-    "text": "Bad news for #Giants : #Niners are a freight train coming to MetLife Stadium on 12/6 Good news for #Giants : The #Cowboys defense. Losing the tiebreaker vs #Commanders is rough, but I can't shake that they might have been willing to trade one of their best players to Giants for a Day 2 draft pcick so do they even believe internally that they can compete?",
-    "handle": "rydunleavy",
-    "author": "Ryan Dunleavy",
-    "label": "",
-    "sourceKey": "#Commanders",
-    "images": [],
-    "publishedAt": "2026-11-16T00:11:16.000Z",
-    "collectedAt": "2026-11-16T03:05:53.868Z"
   },
   "social-f350dabc550c": {
     "id": "social-f350dabc550c",
@@ -5750,7 +5686,7 @@
     "text": "Free-agent WR Brandon Aiyuk is signing with the Washington Commanders practice squad, per his agent Drew Rosenhaus. Aiyuk once again becomes teammates with his Commanders QB Jayden Daniels.",
     "handle": "AdamSchefter",
     "author": "Adam Schefter",
-    "label": "ESPN",
+    "label": "",
     "sourceKey": "@JPFinlayNBCS",
     "images": [
       "https://files.mastodon.social/cache/media_attachments/files/117/678/455/036/149/062/original/f0a018b1d7200e2b.jpg"
@@ -6049,5 +5985,355 @@
     ],
     "publishedAt": "2026-11-25T18:19:46.000Z",
     "collectedAt": "2026-11-25T19:05:55.728Z"
+  },
+  "social-afb16499b9fd": {
+    "id": "social-afb16499b9fd",
+    "url": "https://x.com/Commanders/status/2125744845348278343",
+    "text": "Better every day @NWFCU@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/679/859/940/025/339/original/b2d0ed35e267d08c.jpg"
+    ],
+    "publishedAt": "2026-11-26T00:14:00.000Z",
+    "collectedAt": "2026-11-26T00:22:19.724Z"
+  },
+  "social-7783a9fb5d71": {
+    "id": "social-7783a9fb5d71",
+    "url": "https://x.com/Commanders/status/2125731255727554801",
+    "text": "showing out 📈 @Gatorade@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/679/646/259/353/410/original/0eb17961e68cba1d.jpg"
+    ],
+    "publishedAt": "2026-11-25T23:20:00.000Z",
+    "collectedAt": "2026-11-26T00:22:19.725Z"
+  },
+  "social-ca01d3b3c2dd": {
+    "id": "social-ca01d3b3c2dd",
+    "url": "https://x.com/Commanders/status/2125720796861698355",
+    "text": "Wednesday injury report #WASvsAZ | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/679/481/911/769/879/original/59d58269e96f6811.jpg"
+    ],
+    "publishedAt": "2026-11-25T22:38:26.000Z",
+    "collectedAt": "2026-11-26T00:22:19.725Z"
+  },
+  "social-e456176c868b": {
+    "id": "social-e456176c868b",
+    "url": "https://x.com/Commanders/status/2125715904814268717",
+    "text": "Drew = clutch 🦵 @Visa@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-25T22:19:00.000Z",
+    "collectedAt": "2026-11-26T00:22:19.725Z"
+  },
+  "social-af619c1ef4ae": {
+    "id": "social-af619c1ef4ae",
+    "url": "https://x.com/Commanders/status/2125696427103842658",
+    "text": "LIVE: QB Jayden Daniels speaks to the media after practice Lob",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-25T21:01:36.000Z",
+    "collectedAt": "2026-11-26T00:22:19.725Z"
+  },
+  "social-268f216b1298": {
+    "id": "social-268f216b1298",
+    "url": "https://x.com/Commanders/status/2125669635135607208",
+    "text": "LIVE: HC Dan Quinn speaks to the media before practice qBk",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-25T19:15:08.000Z",
+    "collectedAt": "2026-11-26T00:22:19.726Z"
+  },
+  "social-326fee735bd9": {
+    "id": "social-326fee735bd9",
+    "url": "https://x.com/john_keim/status/2125724500180316458",
+    "text": "Jayden Daniels on repairing things with Brandon Aiyuk:",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T22:53:09.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-ff727b7778de": {
+    "id": "social-ff727b7778de",
+    "url": "https://x.com/john_keim/status/2125680764910239883",
+    "text": "WR Stefon Diggs (personal) was not at practice today.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:59:22.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-f3fb80a5b3fa": {
+    "id": "social-f3fb80a5b3fa",
+    "url": "https://x.com/john_keim/status/2125677927840805306",
+    "text": "Combo effort on Aiyuk. Why now? What happened in SF? Potential impact and more. 41/brandon-aiyuk-commanders-questions",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:48:05.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-9137f469b954": {
+    "id": "social-9137f469b954",
+    "url": "https://x.com/john_keim/status/2125675271277973513",
+    "text": "Quinn said they don’t know how long it’ll take Aiyuk to get in position to play in a game. Has to learn the language in the system. Learn the route combos. “In the workout he was strong and fast,” Quinn said .",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:37:32.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-1c196ef83e2f": {
+    "id": "social-1c196ef83e2f",
+    "url": "https://x.com/john_keim/status/2125672191517962244",
+    "text": "CB Amik Robertson (ankle) will not practice today, per Dan Quinn",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:25:18.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-98f6c207282a": {
+    "id": "social-98f6c207282a",
+    "url": "https://x.com/john_keim/status/2125671276647989322",
+    "text": "Quinn on Aiyuk: \"...guy is hungry to play ball and hungry to be there. That should mean something and it does.\"",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:21:40.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-23d21c01c9c4": {
+    "id": "social-23d21c01c9c4",
+    "url": "https://x.com/john_keim/status/2125670099210121443",
+    "text": "Dan Quinn said they expect Aiyuk to sign tomorrow.",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-25T19:16:59.000Z",
+    "collectedAt": "2026-11-26T00:22:22.600Z"
+  },
+  "social-7427988f9b28": {
+    "id": "social-7427988f9b28",
+    "url": "https://x.com/BenStandig/status/2125737774540345532",
+    "text": "Considering Brandon Aiyuk’s availability was an open secret for months, I asked Adam Peters how long he's imagined signing the WR. (The \"local\" part means he really did buy a house!)",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-25T23:45:54.000Z",
+    "collectedAt": "2026-11-26T00:22:23.972Z"
+  },
+  "social-a24b8504fbd9": {
+    "id": "social-a24b8504fbd9",
+    "url": "https://x.com/BenStandig/status/2125711409275162683",
+    "text": "Only transaction report item that matters today.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/679/336/689/171/035/original/f49de6b3b756882a.jpg"
+    ],
+    "publishedAt": "2026-11-25T22:01:08.000Z",
+    "collectedAt": "2026-11-26T00:22:23.972Z"
+  },
+  "social-865ad52757c2": {
+    "id": "social-865ad52757c2",
+    "url": "https://x.com/BenStandig/status/2125688222579605662",
+    "text": "Ja'Marr Chase on the MNF loss: \"Joey [Burrow] even said it too. We didn't really make any plays out there and didn't get any spark. Those guys came with a lot of energy, and you could obviously tell they wanted it more.\"",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-25T20:29:00.000Z",
+    "collectedAt": "2026-11-26T00:22:23.972Z"
+  },
+  "social-c4fb8fca5fb9": {
+    "id": "social-c4fb8fca5fb9",
+    "url": "https://x.com/BenStandig/status/2125675046354002329",
+    "text": "One reason why the Brandon Aiyuk agreement came together so quickly is other teams showed interest in the WR, per souces.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-25T19:36:38.000Z",
+    "collectedAt": "2026-11-26T00:22:23.972Z"
+  },
+  "social-b6d0bb530ee2": {
+    "id": "social-b6d0bb530ee2",
+    "url": "https://x.com/BenStandig/status/2125666907369959560",
+    "text": "Sources: Commanders agree to a practice squad spot with Brandon Aiyuk source-commanders-agree-to-a-practice",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/678/641/813/154/249/original/2f7a4d2fcaded408.jpg"
+    ],
+    "publishedAt": "2026-11-25T19:04:18.000Z",
+    "collectedAt": "2026-11-26T00:22:23.972Z"
+  },
+  "social-ce92cf76874c": {
+    "id": "social-ce92cf76874c",
+    "url": "https://x.com/tashanreed/status/2125739527809516000",
+    "text": "Beck didn't practice. May be Josh Johnson again for the Cardinals",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T23:52:52.000Z",
+    "collectedAt": "2026-11-26T00:22:25.373Z"
+  },
+  "social-5d43dc7a02cd": {
+    "id": "social-5d43dc7a02cd",
+    "url": "https://x.com/tashanreed/status/2125703343938892055",
+    "text": "The video of #Commanders QB Jayden Daniels elaborating on his relationship with Brandon Aiyuk:",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T21:29:05.000Z",
+    "collectedAt": "2026-11-26T00:22:25.373Z"
+  },
+  "social-86d44012f49e": {
+    "id": "social-86d44012f49e",
+    "url": "https://x.com/tashanreed/status/2125699237467820323",
+    "text": "Daniels elaborated on why he was able to get back on good terms with Aiyuk: \"I'm a grown man, he's a grown man. Things happen. You don't know what he was going through; he didn't know what I was going through at that time. That's somebody that looked out for me when I was 18 years old. He helped me out when I first got to ASU. I know the character and the person he is. He was man enough to settle our differences. We moved forward from there. That's a brother to me. ... We put the past behind us.\"",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T21:12:46.000Z",
+    "collectedAt": "2026-11-26T00:22:25.373Z"
+  },
+  "social-5e23d6cf0301": {
+    "id": "social-5e23d6cf0301",
+    "url": "https://x.com/tashanreed/status/2125696842235007120",
+    "text": "Jayden Daniels on the #Commanders signing Brandon Aiyuk: \"I'm happy for him.\" He confirmed they spoke to move past their back-and-forth this offseason.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T21:03:15.000Z",
+    "collectedAt": "2026-11-26T00:22:25.374Z"
+  },
+  "social-5ae531c3643d": {
+    "id": "social-5ae531c3643d",
+    "url": "https://x.com/tashanreed/status/2125672209796714511",
+    "text": "Quinn said #Commanders CB Amik Robertson (ankle) won't practice today.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T19:25:22.000Z",
+    "collectedAt": "2026-11-26T00:22:25.374Z"
+  },
+  "social-c97f2ef6eb27": {
+    "id": "social-c97f2ef6eb27",
+    "url": "https://x.com/tashanreed/status/2125670324356460709",
+    "text": "#Commanders HC Dan Quinn said he's excited about the team adding WR Brandon Aiyuk, who's expected to officially sign with the practice squad tomorrow. When asked when he'll be ready to play, though, he said he's unsure. Aiyuk hasn't played in over 2 years.",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T19:17:53.000Z",
+    "collectedAt": "2026-11-26T00:22:25.374Z"
+  },
+  "social-b70d3deb609d": {
+    "id": "social-b70d3deb609d",
+    "url": "https://x.com/tashanreed/status/2125667567939600576",
+    "text": "'Tis the season for forgiveness. Why the #Commanders — with Jayden Daniels onboard — took a flier on Brandon Aiyuk: /11/25/brandon-aiyuk-agrees-sign-with-commanders-practice-squad/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T19:06:55.000Z",
+    "collectedAt": "2026-11-26T00:22:25.374Z"
+  },
+  "social-7b134239fd7a": {
+    "id": "social-7b134239fd7a",
+    "url": "https://x.com/tashanreed/status/2125667052618928312",
+    "text": "'Tis the season for forgiveness. Why the #Commanders — with Jayden Daniels's onboard — took a flier on Brandon Aiyuk: /11/25/brandon-aiyuk-agrees-sign-with-commanders-practice-squad/",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-25T19:04:52.000Z",
+    "collectedAt": "2026-11-26T00:22:25.374Z"
+  },
+  "social-d7749a422318": {
+    "id": "social-d7749a422318",
+    "url": "https://mastodon.social/@top_news/117679540207162408",
+    "text": "PFT's Thanksgiving and Week 12 2026 NFL picks All games picked for one of the most compelling weeks of the season. alk/rumor-mill/news/pfts-thanksgiving-and-week-12-2026-nfl-picks #TopNews #News #Giants #Commanders #OhioState",
+    "handle": "top_news",
+    "author": "News",
+    "label": "",
+    "sourceKey": "#Commanders",
+    "images": [
+      "https://files.mastodon.social/media_attachments/files/117/679/540/163/058/565/original/095862f2004d7ff5.jpg"
+    ],
+    "publishedAt": "2026-11-25T22:54:40.995Z",
+    "collectedAt": "2026-11-26T00:22:37.098Z"
+  },
+  "social-9ac08c54ad4d": {
+    "id": "social-9ac08c54ad4d",
+    "url": "https://x.com/MundoNFL/status/2125672051021431094",
+    "text": "BRANDON AIYUK TIENE NUEVO EQUIPO! 🚨 Los Commanders han firmado al WR a su escuadra de prácticas. #MundoNFL #RaiseHail",
+    "handle": "MundoNFL",
+    "author": "Mundo NFL",
+    "label": "",
+    "sourceKey": "#RaiseHail",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/678/716/879/566/382/original/e84353769e0256e0.jpg"
+    ],
+    "publishedAt": "2026-11-25T19:24:44.000Z",
+    "collectedAt": "2026-11-26T00:22:37.987Z"
   }
 }

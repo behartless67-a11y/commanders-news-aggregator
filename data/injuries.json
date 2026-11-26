@@ -63,10 +63,24 @@
     "notes": "Surgery"
   },
   {
+    "name": "Stefon Diggs",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Personal",
+    "notes": null
+  },
+  {
     "name": "Terry McLaurin",
     "position": "WR",
     "status": "IR",
     "bodyPart": "Knee",
     "notes": "Surgery"
+  },
+  {
+    "name": "Treylon Burks",
+    "position": "WR",
+    "status": "Questionable",
+    "bodyPart": "Foot",
+    "notes": null
   }
 ]
