@@ -35,30 +35,6 @@
     "publishedAt": "2026-11-16T15:52:07.000Z",
     "collectedAt": "2026-11-16T17:05:46.723Z"
   },
-  "social-e0420f232448": {
-    "id": "social-e0420f232448",
-    "url": "https://x.com/john_keim/status/2122324811384861001",
-    "text": "Some second thoughts: on the Commanders’ aggressive D; Jayden Daniels, Brandon Coleman, Ben Sinnott and the TEs and more. @ESPNRichmond@twitter.com john-keim-report/id1455645619?i=1000802164987",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-16T13:44:00.000Z",
-    "collectedAt": "2026-11-16T17:05:46.723Z"
-  },
-  "social-c565fe7c62c9": {
-    "id": "social-c565fe7c62c9",
-    "url": "https://x.com/BenStandig/status/2122325052565647740",
-    "text": "🎙 Answering the tough questions w/ @DaltonRoss@twitter.com : How do the Commanders maintain momentum from Thursday’s W? What's the proper balance between Jayden Daniels running for yards and avoiding traffic? More famous QB after \"The Bachelor\" airs: 5 or Hartman? momentous-momentum-moment/id1760952448?i=1000802186694",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-16T13:44:58.000Z",
-    "collectedAt": "2026-11-16T17:05:48.221Z"
-  },
   "social-67b381b64a6b": {
     "id": "social-67b381b64a6b",
     "url": "https://x.com/LanceMedow/status/2122370683850158259",
@@ -6361,5 +6337,41 @@
     "images": [],
     "publishedAt": "2026-11-26T02:00:38.000Z",
     "collectedAt": "2026-11-26T05:05:52.321Z"
+  },
+  "social-35b3922dd6c6": {
+    "id": "social-35b3922dd6c6",
+    "url": "https://x.com/john_keim/status/2125947667192672619",
+    "text": "On video talking about Brandon Aiyuk. Low risk; if it’s not working, part ways. Is it a distraction? What’s the reward? And when? @ESPNRichmond@twitter.com",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-26T13:39:56.000Z",
+    "collectedAt": "2026-11-26T13:55:33.710Z"
+  },
+  "social-4fe4fa59f600": {
+    "id": "social-4fe4fa59f600",
+    "url": "https://x.com/john_keim/status/2125940727729234210",
+    "text": "My SC4U video on Daniels and Aiyuk and on-field chemistry. 450/jayden-daniels-confident-reunion-brandon-aiyuk?type=forYou&subType=sc4u&entity=Commanders&entityIcon=/i/teamlogos/nfl/500-dark/wsh.png",
+    "handle": "john_keim",
+    "author": "John Keim",
+    "label": "ESPN",
+    "sourceKey": "@john_keim",
+    "images": [],
+    "publishedAt": "2026-11-26T13:12:22.000Z",
+    "collectedAt": "2026-11-26T13:55:33.710Z"
+  },
+  "social-8066d63c88a6": {
+    "id": "social-8066d63c88a6",
+    "url": "https://x.com/BenStandig/status/2125941566896238808",
+    "text": "🎙 It finally happened. Brandon Aiyuk is joining the Commanders. Hear from Adam Peters, Austin Ekeler, and me on a wild day in Ashburn. yes-that-really-is-brandon-aiyuks-music/id1760952448?i=1000804101901",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-26T13:15:42.000Z",
+    "collectedAt": "2026-11-26T13:55:35.381Z"
   }
 }
