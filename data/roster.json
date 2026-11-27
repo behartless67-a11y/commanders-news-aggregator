@@ -224,31 +224,6 @@
     "stats": null
   },
   {
-    "slug": "malik-heath",
-    "name": "Malik Heath",
-    "jersey": "",
-    "position": "WR",
-    "espnId": "4689334",
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4689334.png",
-    "stats": {
-      "season": 2025,
-      "fields": [
-        {
-          "label": "REC",
-          "value": "6"
-        },
-        {
-          "label": "YDS",
-          "value": "86"
-        },
-        {
-          "label": "TD",
-          "value": "0"
-        }
-      ]
-    }
-  },
-  {
     "slug": "robert-henry-jr",
     "name": "Robert Henry Jr.",
     "jersey": "34",
@@ -1676,6 +1651,15 @@
     "position": "OT",
     "espnId": "3123303",
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3123303.png",
+    "stats": null
+  },
+  {
+    "slug": "ambry-thomas",
+    "name": "Ambry Thomas",
+    "jersey": "",
+    "position": "CB",
+    "espnId": "4258209",
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4258209.png",
     "stats": null
   },
   {
