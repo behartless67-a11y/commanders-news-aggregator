@@ -1,18 +1,4 @@
 {
-  "social-ded9a74fe929": {
-    "id": "social-ded9a74fe929",
-    "url": "https://x.com/Commanders/status/2122468239607574740",
-    "text": "🙂‍↕️ @NWFCU@twitter.com | #RaiseHail",
-    "handle": "Commanders",
-    "author": "Washington Commanders",
-    "label": "",
-    "sourceKey": "@Commanders",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/628/689/984/289/509/original/ecd3cee378e82e5a.jpg"
-    ],
-    "publishedAt": "2026-11-16T23:13:56.000Z",
-    "collectedAt": "2026-11-17T02:56:48.946Z"
-  },
   "social-7bdf1b5f3c84": {
     "id": "social-7bdf1b5f3c84",
     "url": "https://x.com/BenStandig/status/2122506639668330658",
@@ -35,18 +21,6 @@
     "sourceKey": "@BenStandig",
     "images": [],
     "publishedAt": "2026-11-17T00:59:17.000Z",
-    "collectedAt": "2026-11-17T02:56:53.848Z"
-  },
-  "social-69d0083ef8a9": {
-    "id": "social-69d0083ef8a9",
-    "url": "https://x.com/BenStandig/status/2122485983291814041",
-    "text": "NFC East by DVOA: 1. Cowboys (18th) 2. Commanders (20th) 3. Giants (24th) 4. Eagles (28th)",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [],
-    "publishedAt": "2026-11-17T00:24:26.000Z",
     "collectedAt": "2026-11-17T02:56:53.848Z"
   },
   "social-028431372e68": {
@@ -6335,5 +6309,71 @@
     "images": [],
     "publishedAt": "2026-11-26T17:25:14.000Z",
     "collectedAt": "2026-11-26T19:05:47.677Z"
+  },
+  "social-91c0e66003ea": {
+    "id": "social-91c0e66003ea",
+    "url": "https://x.com/Commanders/status/2126103717321822632",
+    "text": "🗓️ Week 12: #WASvsAZ 🏟️ State Farm Stadium 📺 4:25pm on FOX",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/685/469/694/540/744/original/824ab18c9b1355fb.jpg"
+    ],
+    "publishedAt": "2026-11-27T00:00:01.000Z",
+    "collectedAt": "2026-11-27T00:36:34.242Z"
+  },
+  "social-b495e2120588": {
+    "id": "social-b495e2120588",
+    "url": "https://x.com/Commanders/status/2126058413134135477",
+    "text": "dual threat @awscloud@twitter.com x @NextGenStats",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/684/754/697/225/627/original/94fad00e5b531ca6.jpg"
+    ],
+    "publishedAt": "2026-11-26T21:00:00.000Z",
+    "collectedAt": "2026-11-27T00:36:34.242Z"
+  },
+  "social-3e95003bfa98": {
+    "id": "social-3e95003bfa98",
+    "url": "https://x.com/Commanders/status/2126043314898239950",
+    "text": "Thursday injury report #WASvsAZ | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/684/525/248/513/274/original/06b9aefbfd516eb8.jpg"
+    ],
+    "publishedAt": "2026-11-26T20:00:00.000Z",
+    "collectedAt": "2026-11-27T00:36:34.242Z"
+  },
+  "social-61abc21b1de4": {
+    "id": "social-61abc21b1de4",
+    "url": "https://x.com/Commanders/status/2126031987534102621",
+    "text": "Harvest Feast 2026 🦃💛 Thanks to our partners @ClarkBuilds@twitter.com , @BankofAmerica@twitter.com , @pepsi@twitter.com , @NWFCU@twitter.com , @MarshGlobal@twitter.com and G-Unity Foundation for the assist!",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [],
+    "publishedAt": "2026-11-26T19:15:00.000Z",
+    "collectedAt": "2026-11-27T00:36:34.243Z"
+  },
+  "social-b4cc4f97d123": {
+    "id": "social-b4cc4f97d123",
+    "url": "https://x.com/BenStandig/status/2126090474783973697",
+    "text": "Joe Milton is the best QB who doesn't quite know how to play QB.",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-26T23:07:24.000Z",
+    "collectedAt": "2026-11-27T00:36:38.434Z"
   }
 }

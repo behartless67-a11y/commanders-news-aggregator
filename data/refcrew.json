@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T19:06:38.005Z",
+  "fetchedAt": "2026-11-27T00:37:34.454Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6983,6 +6983,22 @@
         "abbr": "GB",
         "flags": 8,
         "yards": 78
+      }
+    },
+    "401873081": {
+      "season": 2026,
+      "week": 12,
+      "date": "2026-11-26T18:00Z",
+      "referee": "Shawn Hochuli",
+      "home": {
+        "abbr": "DET",
+        "flags": 9,
+        "yards": 70
+      },
+      "away": {
+        "abbr": "CHI",
+        "flags": 4,
+        "yards": 25
       }
     }
   }
