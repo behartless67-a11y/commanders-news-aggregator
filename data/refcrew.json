@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-27T00:37:34.454Z",
+  "fetchedAt": "2026-11-27T05:06:40.994Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -6985,6 +6985,22 @@
         "yards": 78
       }
     },
+    "401873080": {
+      "season": 2026,
+      "week": 12,
+      "date": "2026-11-26T21:30Z",
+      "referee": "Adrian Hill",
+      "home": {
+        "abbr": "DAL",
+        "flags": 11,
+        "yards": 86
+      },
+      "away": {
+        "abbr": "PHI",
+        "flags": 8,
+        "yards": 86
+      }
+    },
     "401873081": {
       "season": 2026,
       "week": 12,
@@ -6999,6 +7015,22 @@
         "abbr": "CHI",
         "flags": 4,
         "yards": 25
+      }
+    },
+    "401873082": {
+      "season": 2026,
+      "week": 12,
+      "date": "2026-11-27T01:20Z",
+      "referee": "Alex Kemp",
+      "home": {
+        "abbr": "BUF",
+        "flags": 3,
+        "yards": 24
+      },
+      "away": {
+        "abbr": "KC",
+        "flags": 8,
+        "yards": 68
       }
     }
   }
