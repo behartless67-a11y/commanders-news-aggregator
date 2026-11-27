@@ -49,18 +49,6 @@
     "publishedAt": "2026-11-17T16:59:19.000Z",
     "collectedAt": "2026-11-17T19:05:45.255Z"
   },
-  "social-896140a2218e": {
-    "id": "social-896140a2218e",
-    "url": "https://x.com/john_keim/status/2122694672216936456",
-    "text": "On video talking about the run game; comparing some numbers on Jayden Daniels; health updates and more. @ESPNRichmond@twitter.com",
-    "handle": "john_keim",
-    "author": "John Keim",
-    "label": "ESPN",
-    "sourceKey": "@john_keim",
-    "images": [],
-    "publishedAt": "2026-11-17T14:13:42.000Z",
-    "collectedAt": "2026-11-17T19:05:45.255Z"
-  },
   "social-4862223b3c52": {
     "id": "social-4862223b3c52",
     "url": "https://x.com/BenStandig/status/2122767207260164455",
@@ -72,46 +60,6 @@
     "images": [],
     "publishedAt": "2026-11-17T19:01:55.000Z",
     "collectedAt": "2026-11-17T19:05:46.581Z"
-  },
-  "social-0b90bab74153": {
-    "id": "social-0b90bab74153",
-    "url": "https://x.com/BenStandig/status/2122695437454844232",
-    "text": "Let’s talk Commanders: The Last Man Standig subscriber mailbag is open. You ask, I answer. lets-talk-commanders-the-last-man",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/632/309/523/195/383/original/eaea61fec6827187.jpg"
-    ],
-    "publishedAt": "2026-11-17T14:16:44.000Z",
-    "collectedAt": "2026-11-17T19:05:46.581Z"
-  },
-  "social-3c1cce77597b": {
-    "id": "social-3c1cce77597b",
-    "url": "https://x.com/BenStandig/status/2122692322135581125",
-    "text": "The Commanders' \"second season\" begins with renewed NFC East hopes and potential reinforcements. 🏈 Bill nearing return 🏈 Laremy Tunsil's progress 🏈 Ben Sinnott's opportunity 🏈 What's next for Kain Medrano and Jordan Magee? Latest from Ashburn ⤵️ commanders-notebook-a-second-season?utm_source=share&utm_medium=android&r=5rru9i",
-    "handle": "BenStandig",
-    "author": "Ben Standig",
-    "label": "Last Man Standig",
-    "sourceKey": "@BenStandig",
-    "images": [
-      "https://files.mastodon.social/cache/media_attachments/files/117/632/158/940/199/057/original/a3abe7626489767f.jpg"
-    ],
-    "publishedAt": "2026-11-17T14:04:21.000Z",
-    "collectedAt": "2026-11-17T19:05:46.581Z"
-  },
-  "social-033474f4eda7": {
-    "id": "social-033474f4eda7",
-    "url": "https://x.com/tashanreed/status/2122697421608325175",
-    "text": "James Gunn and Matt Reeves will pay",
-    "handle": "tashanreed",
-    "author": "Tashan Reed",
-    "label": "The Washington Post",
-    "sourceKey": "@tashanreed",
-    "images": [],
-    "publishedAt": "2026-11-17T14:24:37.000Z",
-    "collectedAt": "2026-11-17T19:05:48.113Z"
   },
   "social-f0b1daa95d9f": {
     "id": "social-f0b1daa95d9f",
