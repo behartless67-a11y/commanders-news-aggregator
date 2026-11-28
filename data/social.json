@@ -6589,5 +6589,70 @@
     "images": [],
     "publishedAt": "2026-11-27T19:10:50.000Z",
     "collectedAt": "2026-11-28T00:04:03.497Z"
+  },
+  "social-c14004880dbd": {
+    "id": "social-c14004880dbd",
+    "url": "https://x.com/Commanders/status/2126503594912546920",
+    "text": "The crowd DELIVERED on Monday night 👏",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "Official",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/691/712/105/052/538/original/965db6a54d1e2fd5.jpg"
+    ],
+    "publishedAt": "2026-11-28T02:29:00.000Z",
+    "collectedAt": "2026-11-28T05:05:36.746Z"
+  },
+  "social-92d6483c57f5": {
+    "id": "social-92d6483c57f5",
+    "url": "https://x.com/Commanders/status/2126473395923538356",
+    "text": "IAD ✈️ PHX @united@twitter.com | #RaiseHail",
+    "handle": "Commanders",
+    "author": "Washington Commanders",
+    "label": "",
+    "sourceKey": "@Commanders",
+    "images": [
+      "https://files.mastodon.social/cache/media_attachments/files/117/691/238/146/784/271/original/90b174442aee9ab7.jpg",
+      "https://files.mastodon.social/cache/media_attachments/files/117/691/238/205/950/250/original/a4e0b37191841f6e.jpg"
+    ],
+    "publishedAt": "2026-11-28T00:29:00.000Z",
+    "collectedAt": "2026-11-28T05:05:36.747Z"
+  },
+  "social-38aac674cfc0": {
+    "id": "social-38aac674cfc0",
+    "url": "https://x.com/JPFinlayNBCS/status/2126455017443877030",
+    "text": "Just to reiterate I’m being very publicly patient with Maryland basketball. Very publicly patient.",
+    "handle": "JPFinlayNBCS",
+    "author": "JP Finlay",
+    "label": "NBC Sports Washington",
+    "sourceKey": "@JPFinlayNBCS",
+    "images": [],
+    "publishedAt": "2026-11-27T23:15:58.000Z",
+    "collectedAt": "2026-11-28T05:05:38.204Z"
+  },
+  "social-55c5bd962624": {
+    "id": "social-55c5bd962624",
+    "url": "https://x.com/BenStandig/status/2126479906640982055",
+    "text": "🎙 Brandon Aiyuk's first day at work. Safety in numbers. Fast start required Sunday at Arizona. aiyuk-and-arizona/id1760952448?i=1000804457141",
+    "handle": "BenStandig",
+    "author": "Ben Standig",
+    "label": "Last Man Standig",
+    "sourceKey": "@BenStandig",
+    "images": [],
+    "publishedAt": "2026-11-28T00:54:52.000Z",
+    "collectedAt": "2026-11-28T05:05:41.100Z"
+  },
+  "social-98e1510f00ee": {
+    "id": "social-98e1510f00ee",
+    "url": "https://x.com/tashanreed/status/2126541163196715080",
+    "text": "How do you call that foul on Kessler, man?",
+    "handle": "tashanreed",
+    "author": "Tashan Reed",
+    "label": "The Washington Post",
+    "sourceKey": "@tashanreed",
+    "images": [],
+    "publishedAt": "2026-11-28T04:58:17.000Z",
+    "collectedAt": "2026-11-28T05:05:42.562Z"
   }
 }
