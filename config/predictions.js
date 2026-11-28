@@ -22,6 +22,8 @@ export const BEN_PICKS = {
   '2026-11-12-NYG': { commanders: 28, opponent: 20 },
   // "35-30 Us, Because I Said So" (data/originals/because-i-said-so.json), Nov 22: "somehow, someway i think we pull this out because why? i said so."
   '2026-11-23-CIN': { commanders: 35, opponent: 30 },
+  // "30-17 Us. Decisive, For Once." (data/originals/decisive-for-once.json), Nov 28: "we finally win a decisive victory."
+  '2026-11-29-AZ': { commanders: 30, opponent: 17 },
 };
 
 /**
