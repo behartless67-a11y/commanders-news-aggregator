@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-27T19:06:37.775Z",
+  "fetchedAt": "2026-11-28T00:04:58.132Z",
   "season": 2026,
   "assignment": {
     "season": 2026,
@@ -7031,6 +7031,22 @@
         "abbr": "KC",
         "flags": 8,
         "yards": 68
+      }
+    },
+    "401873083": {
+      "season": 2026,
+      "week": 12,
+      "date": "2026-11-27T20:00Z",
+      "referee": "Brad Allen",
+      "home": {
+        "abbr": "PIT",
+        "flags": 2,
+        "yards": 20
+      },
+      "away": {
+        "abbr": "DEN",
+        "flags": 6,
+        "yards": 45
       }
     }
   }
